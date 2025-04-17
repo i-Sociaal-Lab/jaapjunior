@@ -25,11 +25,6 @@ const config = computed(() => {
   return translations[currentLanguage.value]
 })
 
-// Toggle between languages
-const toggleLanguage = () => {
-  currentLanguage.value = currentLanguage.value === 'en' ? 'nl' : 'en'
-}
-
 const messageInput = ref('')
 
 // Add some example messages to test scrolling
@@ -102,11 +97,6 @@ const sendMessage = () => {
 
 <template>
   <div class="chat-container">
-    <div class="language-toggle">
-      <button @click="toggleLanguage" class="toggle-button">
-        {{ config.languageToggle }}
-      </button>
-    </div>
 
     <div class="messages-container">
       <div v-if="messages.length === 0" class="empty-state">
@@ -136,26 +126,6 @@ const sendMessage = () => {
 </template>
 
 <style scoped>
-.language-toggle {
-  display: flex;
-  justify-content: flex-end;
-  padding: 8px 12px;
-}
-
-.toggle-button {
-  background-color: #6c757d;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  padding: 4px 10px;
-  font-size: 12px;
-  cursor: pointer;
-  transition: background-color 0.2s;
-}
-
-.toggle-button:hover {
-  background-color: #5a6268;
-}
 
 .chat-container {
   display: flex;
