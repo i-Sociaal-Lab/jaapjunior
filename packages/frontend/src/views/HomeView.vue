@@ -1,5 +1,10 @@
 <script setup lang="ts">
+import { useRoute } from 'vue-router'
 import TheChat from '../components/TheChat.vue'
+import { computed } from 'vue'
+
+const route = useRoute()
+const chatId = computed(() => route.params.id as string | undefined)
 </script>
 
 <template>
@@ -7,7 +12,7 @@ import TheChat from '../components/TheChat.vue'
     <div class="header">
       <img src="/ketenbureau.png" alt="Ketenbureau" class="logo ketenbureau-logo" />
     </div>
-    <TheChat class="chat" />
+    <TheChat class="chat" :chat-id />
   </main>
 </template>
 

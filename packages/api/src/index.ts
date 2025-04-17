@@ -1,27 +1,18 @@
 import { Hono } from "hono";
 import OpenAI from "openai";
 import { nanoid } from "nanoid";
+import type {
+  ResponseInput,
+  ResponseInputItem,
+  ResponseItem,
+} from "openai/src/resources/responses/responses.js";
+import { ResponseInputMessageItem } from "openai/resources/responses/responses.mjs";
 
 const app = new Hono();
 
-interface MessageContent {
-  type: string;
-  text: string;
-}
-
-interface Message {
-  role: "system" | "user" | "assistant";
-  content: MessageContent[];
-}
-
-interface ChatMessage {
-  role: "system" | "user" | "assistant";
-  content: string;
-}
-
 interface Conversation {
   id: string;
-  messages: Message[];
+  messages: ResponseInput;
   createdAt: Date;
   updatedAt: Date;
 }
@@ -48,18 +39,6 @@ app.get("/api/v1/conversations", (c) => {
   }));
 
   return c.json(conversationList);
-});
-
-// Get a specific conversation
-app.get("/api/v1/conversations/:id", (c) => {
-  const id = c.req.param("id");
-  const conversation = conversations.get(id);
-
-  if (!conversation) {
-    return c.json({ error: "Conversation not found" }, 404);
-  }
-
-  return c.json(conversation);
 });
 
 // Create a new conversation
@@ -89,58 +68,45 @@ app.post("/api/v1/conversations", (c) => {
   return c.json({ id, createdAt: now });
 });
 
-// Handle responses in a conversation
-app.post("/api/v1/responses", async (c) => {
+// Get a specific conversation
+app.get("/api/v1/conversations/:id", (c) => {
+  const id = c.req.param("id");
+  const conversation = conversations.get(id);
+
+  if (!conversation) {
+    return c.json({ error: "Conversation not found" }, 404);
+  }
+
+  return c.json({
+    ...conversation,
+    messages: conversation.messages.filter(
+      (m) => !("role" in m) || m.role !== "system",
+    ),
+  });
+});
+
+// Send a message in a conversation
+app.post("/api/v1/conversations/:id", async (c) => {
   try {
     const openai = new OpenAI({
       apiKey: process.env.OPENAI_API_KEY,
     });
 
+    const conversation_id = c.req.param("id");
     const body = await c.req.json();
-    const { input_text, conversation_id } = body;
+    const { input_text } = body;
 
     if (!input_text) {
       return c.json({ error: "input_text is required" }, 400);
     }
 
-    let conversation: Conversation;
-
-    // If conversation_id is provided, use existing conversation
-    if (conversation_id) {
-      const existingConversation = conversations.get(conversation_id);
-
-      if (!existingConversation) {
-        return c.json({ error: "Conversation not found" }, 404);
-      }
-
-      conversation = existingConversation;
-    } else {
-      // Create a new conversation if none is provided
-      const id = nanoid();
-      const now = new Date();
-
-      conversation = {
-        id,
-        messages: [
-          {
-            role: "system",
-            content: [
-              {
-                type: "input_text",
-                text: SYSTEM_PROMPT,
-              },
-            ],
-          },
-        ],
-        createdAt: now,
-        updatedAt: now,
-      };
-
-      conversations.set(id, conversation);
+    const conversation = conversations.get(conversation_id);
+    if (!conversation) {
+      return c.json({ error: "Conversation not found" }, 404);
     }
 
     // Add the new user message
-    const userMessage: Message = {
+    const userMessage: ResponseInputItem = {
       role: "user",
       content: [
         {
@@ -152,39 +118,36 @@ app.post("/api/v1/responses", async (c) => {
 
     conversation.messages.push(userMessage);
 
-    // Convert our internal message format to OpenAI's ChatMessage format
-    const chatMessages: ChatMessage[] = conversation.messages.map((message) => {
-      // Combine all text content within a message into a single string
-      const textContent = message.content
-        .filter((c) => c.type === "input_text")
-        .map((c) => c.text)
-        .join("\n");
-
-      return {
-        role: message.role,
-        content: textContent,
-      };
-    });
-
     // Call OpenAI API using the chat completions endpoint
-    const response = await openai.chat.completions.create({
+    const response = await openai.responses.create({
       model: "gpt-4.1",
-      messages: chatMessages,
+      input: conversation.messages,
+      text: {
+        format: {
+          type: "text",
+        },
+      },
+      reasoning: {},
+      tools: [
+        {
+          type: "file_search",
+          vector_store_ids: ["vs_68011edd316c8191b7725b9391f04a78"],
+        },
+      ],
       temperature: 1,
-      max_tokens: 2048,
+      max_output_tokens: 2048,
       top_p: 1,
+      store: true,
     });
-
-    // Extract the response text from the chat completion
-    const responseText = response.choices[0]?.message?.content || "";
 
     // Add the assistant response to the conversation
-    const assistantMessage: Message = {
+    const assistantMessage: ResponseInputItem = {
+      id: response.id,
       role: "assistant",
       content: [
         {
           type: "input_text",
-          text: responseText,
+          text: response.output_text,
         },
       ],
     };
@@ -196,7 +159,7 @@ app.post("/api/v1/responses", async (c) => {
     return c.json({
       ...response,
       conversation_id: conversation.id,
-      message_count: conversation.messages.length,
+      message_count: conversation.messages.length - 1,
     });
   } catch (error: unknown) {
     console.error("Error calling OpenAI API:", error);
