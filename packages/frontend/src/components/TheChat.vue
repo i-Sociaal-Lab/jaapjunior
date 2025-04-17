@@ -1,12 +1,18 @@
 <script setup lang="ts">
-import { ref } from 'vue';
+import { ref, computed } from 'vue';
 
 const messageInput = ref('');
 const messages = ref<Array<{text: string, isUser: boolean}>>([]);
+const isReceivingMessage = ref(false);
+
+// Computed property to determine if send button should be disabled
+const isSendDisabled = computed(() => {
+  return isReceivingMessage.value || !messageInput.value.trim();
+});
 
 const sendMessage = () => {
-  // Skip empty messages
-  if (!messageInput.value.trim()) return;
+  // Skip empty messages or if currently receiving a message
+  if (isSendDisabled.value) return;
   
   // Add user message to chat
   messages.value.push({
@@ -14,12 +20,18 @@ const sendMessage = () => {
     isUser: true
   });
   
+  // Set receiving state to true
+  isReceivingMessage.value = true;
+  
   // Simulate response (in a real app, this would be an API call)
   setTimeout(() => {
     messages.value.push({
       text: `Response to: ${messageInput.value}`,
       isUser: false
     });
+    
+    // Reset receiving state
+    isReceivingMessage.value = false;
   }, 1000);
   
   // Clear input after sending
@@ -49,7 +61,11 @@ const sendMessage = () => {
         placeholder="Type your message here..."
         class="message-input"
       />
-      <button @click="sendMessage" class="send-button">
+      <button 
+        @click="sendMessage" 
+        class="send-button" 
+        :disabled="isSendDisabled"
+      >
         Send
       </button>
     </div>
@@ -140,5 +156,11 @@ const sendMessage = () => {
 
 .send-button:hover {
   background-color: #0069d9;
+}
+
+.send-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+  opacity: 0.7;
 }
 </style>
