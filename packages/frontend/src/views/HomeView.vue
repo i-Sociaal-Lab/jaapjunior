@@ -26,6 +26,8 @@ main {
   position: sticky;
   top: 0;
   z-index: 2;
+  background-color: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(5px);
 }
 
 .chat {

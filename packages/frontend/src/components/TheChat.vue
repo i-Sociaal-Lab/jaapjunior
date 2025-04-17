@@ -33,19 +33,34 @@ const toggleLanguage = () => {
 const messageInput = ref('')
 
 // Add some example messages to test scrolling
-const messages = ref<Array<{ text: string; isUser: boolean }>>([  
+const messages = ref<Array<{ text: string; isUser: boolean }>>([
   { text: 'Hallo, ik heb een vraag over het berichtenverkeer.', isUser: true },
   { text: 'Natuurlijk, wat wilt u weten over het berichtenverkeer?', isUser: false },
   { text: 'Hoeveel berichten worden er dagelijks verwerkt?', isUser: true },
-  { text: 'Gemiddeld worden er ongeveer 25.000 berichten per dag verwerkt via ons systeem.', isUser: false },
+  {
+    text: 'Gemiddeld worden er ongeveer 25.000 berichten per dag verwerkt via ons systeem.',
+    isUser: false,
+  },
   { text: 'Dat is interessant. Wat voor soort berichten zijn het meestal?', isUser: true },
-  { text: 'Het merendeel bestaat uit facturen (60%), gevolgd door orders (25%) en de rest zijn verschillende soorten informatieve berichten.', isUser: false },
+  {
+    text: 'Het merendeel bestaat uit facturen (60%), gevolgd door orders (25%) en de rest zijn verschillende soorten informatieve berichten.',
+    isUser: false,
+  },
   { text: 'Worden deze berichten allemaal automatisch verwerkt?', isUser: true },
-  { text: 'Ongeveer 85% wordt volledig geautomatiseerd verwerkt. De overige 15% vereist een vorm van handmatige interventie vanwege uitzonderingssituaties.', isUser: false },
+  {
+    text: 'Ongeveer 85% wordt volledig geautomatiseerd verwerkt. De overige 15% vereist een vorm van handmatige interventie vanwege uitzonderingssituaties.',
+    isUser: false,
+  },
   { text: 'Hoe snel worden de berichten normaal gesproken verwerkt?', isUser: true },
-  { text: 'De meeste berichten worden binnen 30 seconden verwerkt. In zeldzame gevallen kan het tot 5 minuten duren als er aanvullende validatie nodig is.', isUser: false },
+  {
+    text: 'De meeste berichten worden binnen 30 seconden verwerkt. In zeldzame gevallen kan het tot 5 minuten duren als er aanvullende validatie nodig is.',
+    isUser: false,
+  },
   { text: 'Is er een piek in het berichtenverkeer op bepaalde momenten?', isUser: true },
-  { text: 'Ja, we zien een duidelijke piek rond 10 uur \'s ochtends en rond 14 uur \'s middags. Aan het einde van de maand is het verkeer ongeveer 40% hoger dan gemiddeld.', isUser: false },
+  {
+    text: "Ja, we zien een duidelijke piek rond 10 uur 's ochtends en rond 14 uur 's middags. Aan het einde van de maand is het verkeer ongeveer 40% hoger dan gemiddeld.",
+    isUser: false,
+  },
 ])
 
 const isReceivingMessage = ref(false)
@@ -125,8 +140,6 @@ const sendMessage = () => {
   display: flex;
   justify-content: flex-end;
   padding: 8px 12px;
-  background-color: #f5f5f5;
-  border-bottom: 1px solid #e1e1e1;
 }
 
 .toggle-button {
@@ -147,25 +160,20 @@ const sendMessage = () => {
 .chat-container {
   display: flex;
   flex-direction: column;
-  height: calc(100vh - 120px); /* Adjust as needed to account for header height and padding */
   max-width: 800px;
   margin: 0 auto;
-  border: 1px solid #e1e1e1;
-  border-radius: 8px;
-  overflow: hidden;
   position: relative;
+  min-height: calc(100vh - 120px); /* Minimum height but allows expanding */
 }
 
 .messages-container {
   flex: 1;
   padding: 16px;
   padding-bottom: 80px; /* Extra padding at bottom to prevent content from being hidden behind fixed input */
-  overflow-y: auto;
-  background-color: #f9f9f9;
   display: flex;
   flex-direction: column;
   gap: 12px;
-  height: 100%; /* Take full height */
+  width: 100%;
 }
 
 .empty-state {
@@ -198,13 +206,18 @@ const sendMessage = () => {
 .input-container {
   display: flex;
   padding: 12px;
-  background-color: white;
-  border-top: 1px solid #e1e1e1;
-  position: absolute;
+  width: 100%;
+  position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
   z-index: 10;
+  background-color: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(5px);
+  max-width: 800px;
+  margin: 0 auto;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .message-input {
