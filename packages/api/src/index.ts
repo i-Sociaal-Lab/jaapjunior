@@ -114,8 +114,6 @@ app.post("/api/v1/conversations/:id", async (c) => {
 
     conversation.messages.push(userMessage);
 
-    console.log(conversation.messages);
-
     // Call OpenAI API using the chat completions endpoint
     const response = await openai.responses.create({
       model: "gpt-4.1",

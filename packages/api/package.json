@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "bun src/index.ts --watch",
-    "start": "bun src/index.ts",
+    "build": "bun build --compile --minify --sourcemap ./src/index.ts --outfile dist/api",
+    "start": "./dist/api",
     "test": "echo 'Add test script here'",
     "lint": "echo 'Add lint script here'"
   },
