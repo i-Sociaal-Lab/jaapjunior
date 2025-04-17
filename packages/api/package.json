@@ -3,12 +3,15 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "echo 'Add dev script here'",
-    "build": "echo 'Add build script here'",
+    "dev": "bun src/index.ts --watch",
+    "start": "bun src/index.ts",
     "test": "echo 'Add test script here'",
     "lint": "echo 'Add lint script here'"
   },
   "dependencies": {
     "hono": "^4.7.7"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2"
   }
 }
