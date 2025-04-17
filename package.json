@@ -1,6 +1,5 @@
 {
   "name": "ketenbureau-chat-ai",
-  "module": "index.ts",
   "private": true,
   "type": "module",
   "workspaces": [
