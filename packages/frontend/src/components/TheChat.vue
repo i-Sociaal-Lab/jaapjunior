@@ -31,7 +31,23 @@ const toggleLanguage = () => {
 }
 
 const messageInput = ref('')
-const messages = ref<Array<{ text: string; isUser: boolean }>>([])
+
+// Add some example messages to test scrolling
+const messages = ref<Array<{ text: string; isUser: boolean }>>([  
+  { text: 'Hallo, ik heb een vraag over het berichtenverkeer.', isUser: true },
+  { text: 'Natuurlijk, wat wilt u weten over het berichtenverkeer?', isUser: false },
+  { text: 'Hoeveel berichten worden er dagelijks verwerkt?', isUser: true },
+  { text: 'Gemiddeld worden er ongeveer 25.000 berichten per dag verwerkt via ons systeem.', isUser: false },
+  { text: 'Dat is interessant. Wat voor soort berichten zijn het meestal?', isUser: true },
+  { text: 'Het merendeel bestaat uit facturen (60%), gevolgd door orders (25%) en de rest zijn verschillende soorten informatieve berichten.', isUser: false },
+  { text: 'Worden deze berichten allemaal automatisch verwerkt?', isUser: true },
+  { text: 'Ongeveer 85% wordt volledig geautomatiseerd verwerkt. De overige 15% vereist een vorm van handmatige interventie vanwege uitzonderingssituaties.', isUser: false },
+  { text: 'Hoe snel worden de berichten normaal gesproken verwerkt?', isUser: true },
+  { text: 'De meeste berichten worden binnen 30 seconden verwerkt. In zeldzame gevallen kan het tot 5 minuten duren als er aanvullende validatie nodig is.', isUser: false },
+  { text: 'Is er een piek in het berichtenverkeer op bepaalde momenten?', isUser: true },
+  { text: 'Ja, we zien een duidelijke piek rond 10 uur \'s ochtends en rond 14 uur \'s middags. Aan het einde van de maand is het verkeer ongeveer 40% hoger dan gemiddeld.', isUser: false },
+])
+
 const isReceivingMessage = ref(false)
 
 // Computed property to determine if send button should be disabled
