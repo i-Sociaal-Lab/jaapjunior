@@ -4,21 +4,21 @@ import { ref, computed } from 'vue'
 // Translation objects for each supported language
 const translations = {
   en: {
-    emptyState: 'Start a conversation by sending a message',
-    inputPlaceholder: 'Type your message here...',
+    emptyState: 'Start a conversation by asking a question about the message traffic',
+    inputPlaceholder: 'Type your question here...',
     sendButton: 'Send',
-    languageToggle: 'Switch to Dutch',
+    languageToggle: 'Liever in het nederlands',
   },
   nl: {
-    emptyState: 'Begin een gesprek door een bericht te sturen',
-    inputPlaceholder: 'Typ hier je bericht...',
+    emptyState: 'Stel hier een vraag over het berichtenverkeer...',
+    inputPlaceholder: 'Typ hier je vraag...',
     sendButton: 'Versturen',
-    languageToggle: 'Schakel naar Engels',
+    languageToggle: 'Switch to English',
   },
 }
 
 // Current language state
-const currentLanguage = ref<'en' | 'nl'>('en')
+const currentLanguage = ref<'en' | 'nl'>('nl')
 
 // Computed config that changes based on selected language
 const config = computed(() => {
