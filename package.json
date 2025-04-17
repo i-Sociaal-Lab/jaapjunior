@@ -6,6 +6,9 @@
   "workspaces": [
     "packages/*"
   ],
+  "dependencies": {
+    "nanoid": "^5.1.5"
+  },
   "devDependencies": {
     "@types/bun": "latest",
     "@types/nanoid": "^3.0.0",
@@ -14,8 +17,5 @@
   "peerDependencies": {
     "typescript": "^5"
   },
-  "packageManager": "bun@1.2.10",
-  "dependencies": {
-    "nanoid": "^5.1.5"
-  }
+  "packageManager": "bun@1.2.10"
 }

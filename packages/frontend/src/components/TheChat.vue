@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import { ref, computed, onMounted, watch } from 'vue'
+import { watch, ref, computed, onMounted } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
+import * as marked from 'marked'
+import { default as DOMPurify } from 'dompurify'
 
-const props = defineProps<{
-  chatId?: string
-}>()
-const conversationId = computed(() => props.chatId)
+const route = useRoute()
+const conversationId = computed(() => route.params.id as string | undefined)
 
 // API base URL - adjust as needed for your environment
 const API_BASE_URL = '/api/v1'
@@ -40,7 +40,6 @@ const config = computed(() => {
 
 // Router and route for URL handling
 const router = useRouter()
-const route = useRoute()
 
 const messageInput = ref('')
 const messages = ref<Array<{ text: string; isUser: boolean }>>([])
@@ -62,10 +61,31 @@ onMounted(async () => {
 
 // Watch for changes to the conversation ID and update the URL
 watch(conversationId, (newId) => {
-  if (newId && route.params.id !== newId) {
-    router.push({ name: 'chat', params: { id: newId } })
+  if (!newId) {
+    messages.value = []
+    isReceivingMessage.value = false
+    error.value = null
   }
 })
+
+async function createConversation() {
+  try {
+    error.value = null
+
+    const response = await fetch(`${API_BASE_URL}/conversations`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+    })
+    if (!response.ok) {
+      throw new Error(`Failed to create conversation: ${response.statusText}`)
+    }
+
+    const data = await response.json()
+    await router.push({ name: 'chat-with-id', params: { id: data.id } })
+  } catch (error) {
+    console.error(error)
+  }
+}
 
 // Load a conversation by ID
 async function loadConversation(id: string) {
@@ -74,13 +94,11 @@ async function loadConversation(id: string) {
     error.value = null
 
     const response = await fetch(`${API_BASE_URL}/conversations/${id}`)
-
     if (!response.ok) {
       throw new Error(`Failed to load conversation: ${response.statusText}`)
     }
 
     const data = await response.json()
-    conversationId.value = data.id
 
     // Convert API message format to our local format
     messages.value = []
@@ -110,6 +128,14 @@ async function loadConversation(id: string) {
   } finally {
     isReceivingMessage.value = false
   }
+}
+
+// Helper function to render markdown safely
+function renderMarkdown(text: string): string {
+  // Convert markdown to HTML
+  const html = marked.marked(text, { async: false })
+  // Sanitize HTML to prevent XSS attacks
+  return DOMPurify.sanitize(html)
 }
 
 // Send a message to the API
@@ -144,12 +170,14 @@ async function sendMessage() {
       input_text: messageText,
     }
 
-    if (conversationId.value) {
-      requestBody.conversation_id = conversationId.value
+    if (!conversationId.value) {
+      await createConversation()
     }
 
+    console.log('Sending request...', conversationId.value)
+
     // Call the API
-    const response = await fetch(`${API_BASE_URL}/responses`, {
+    const response = await fetch(`${API_BASE_URL}/conversations/${conversationId.value}`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -163,29 +191,8 @@ async function sendMessage() {
 
     const data = await response.json()
 
-    // Update conversation ID if this was a new conversation
-    if (!conversationId.value && data.conversation_id) {
-      conversationId.value = data.conversation_id
-    }
-
-    // Add AI response to the chat
-    // Define the expected API response type
-    interface ApiChatResponse {
-      choices: Array<{
-        message?: {
-          content?: string
-        }
-      }>
-      conversation_id: string
-      message_count: number
-    }
-
-    // Extract response text from the appropriate field in the API response
-    const responseData = data as ApiChatResponse
-    const responseText = responseData.choices?.[0]?.message?.content || 'No response received'
-
     messages.value.push({
-      text: responseText,
+      text: data.output_text,
       isUser: false,
     })
   } catch (e) {
@@ -214,7 +221,8 @@ async function sendMessage() {
         :key="index"
         :class="['message', message.isUser ? 'user-message' : 'response-message']"
       >
-        {{ message.text }}
+        <template v-if="message.isUser">{{ message.text }}</template>
+        <div v-else v-html="renderMarkdown(message.text)" class="markdown-content"></div>
       </div>
 
       <div v-if="isReceivingMessage" class="message response-message loading-message">
@@ -238,6 +246,58 @@ async function sendMessage() {
 </template>
 
 <style scoped>
+/* Styles for rendered markdown content */
+.markdown-content {
+  line-height: 1.5;
+}
+
+.markdown-content :deep(p) {
+  margin: 0.5em 0;
+}
+
+.markdown-content :deep(ul),
+.markdown-content :deep(ol) {
+  padding-left: 1.5em;
+  margin: 0.5em 0;
+}
+
+.markdown-content :deep(h1),
+.markdown-content :deep(h2),
+.markdown-content :deep(h3),
+.markdown-content :deep(h4),
+.markdown-content :deep(h5),
+.markdown-content :deep(h6) {
+  margin: 0.5em 0;
+  font-weight: bold;
+}
+
+.markdown-content :deep(code) {
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  font-family: monospace;
+}
+
+.markdown-content :deep(pre) {
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 0.5em;
+  border-radius: 5px;
+  overflow-x: auto;
+  margin: 0.5em 0;
+}
+
+.markdown-content :deep(blockquote) {
+  border-left: 4px solid #ddd;
+  padding-left: 1em;
+  margin: 0.5em 0;
+  color: #555;
+}
+
+.markdown-content :deep(a) {
+  color: #007bff;
+  text-decoration: underline;
+}
+
 .chat-container {
   display: flex;
   flex-direction: column;

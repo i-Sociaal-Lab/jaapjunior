@@ -1,18 +1,15 @@
 <script setup lang="ts">
-import { useRoute } from 'vue-router'
 import TheChat from '../components/TheChat.vue'
-import { computed } from 'vue'
-
-const route = useRoute()
-const chatId = computed(() => route.params.id as string | undefined)
 </script>
 
 <template>
   <main>
     <div class="header">
-      <img src="/ketenbureau.png" alt="Ketenbureau" class="logo ketenbureau-logo" />
+      <router-link to="/">
+        <img src="/ketenbureau.png" alt="Ketenbureau" class="logo ketenbureau-logo" />
+      </router-link>
     </div>
-    <TheChat class="chat" :chat-id />
+    <TheChat class="chat" />
   </main>
 </template>
 
