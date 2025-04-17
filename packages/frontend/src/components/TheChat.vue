@@ -131,23 +131,25 @@ const sendMessage = () => {
 .chat-container {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: calc(100vh - 120px); /* Adjust as needed to account for header height and padding */
   max-width: 800px;
   margin: 0 auto;
   border: 1px solid #e1e1e1;
   border-radius: 8px;
   overflow: hidden;
+  position: relative;
 }
 
 .messages-container {
   flex: 1;
   padding: 16px;
+  padding-bottom: 80px; /* Extra padding at bottom to prevent content from being hidden behind fixed input */
   overflow-y: auto;
   background-color: #f9f9f9;
   display: flex;
   flex-direction: column;
   gap: 12px;
-  min-height: 300px;
+  height: 100%; /* Take full height */
 }
 
 .empty-state {
@@ -182,6 +184,11 @@ const sendMessage = () => {
   padding: 12px;
   background-color: white;
   border-top: 1px solid #e1e1e1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
 }
 
 .message-input {
