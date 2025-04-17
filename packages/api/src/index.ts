@@ -170,4 +170,6 @@ app.post("/api/v1/conversations/:id", async (c) => {
   }
 });
 
+console.log(process.env);
+
 export default app;
