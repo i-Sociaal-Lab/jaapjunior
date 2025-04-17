@@ -1,15 +1,12 @@
 import { Hono } from 'hono';
 import OpenAI from 'openai';
 
-// Create the Hono app
 const app = new Hono();
 
-// Default route that returns OK
 app.get('/api/v1', (c) => {
   return c.text('OK');
 });
 
-// Responses route that uses OpenAI API
 app.post('/api/v1/responses', async (c) => {
   try {
     const openai = new OpenAI({
@@ -68,5 +65,4 @@ app.post('/api/v1/responses', async (c) => {
   }
 });
 
-// Export the Hono app
 export default app;
