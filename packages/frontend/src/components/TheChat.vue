@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { watch, ref, computed, onMounted } from 'vue'
+import { watch, ref, computed, onMounted, onUnmounted } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import * as marked from 'marked'
 import { default as DOMPurify } from 'dompurify'
@@ -25,7 +25,7 @@ const translations = {
     inputPlaceholder: 'Typ hier je vraag...',
     sendButton: 'Versturen',
     languageToggle: 'Switch to English',
-    loading: 'Bezig met laden...',
+    loading: 'Bezig met laden',
     error: 'Er is een fout opgetreden. Probeer het opnieuw.',
   },
 }
@@ -51,11 +51,26 @@ const isSendDisabled = computed(() => {
   return isReceivingMessage.value || !messageInput.value.trim()
 })
 
+const dots = ref('')
+let interval: number | null = null
+
 // Check for conversation ID in the URL when component mounts
 onMounted(async () => {
+  let count = 0
+  interval = setInterval(() => {
+    count = (count + 1) % 4
+    dots.value = '.'.repeat(count)
+  }, 500)
+
   const id = route.params.id as string
   if (id) {
     await loadConversation(id)
+  }
+})
+
+onUnmounted(() => {
+  if (interval) {
+    clearInterval(interval)
   }
 })
 
@@ -226,7 +241,7 @@ async function sendMessage() {
       </div>
 
       <div v-if="isReceivingMessage" class="message response-message loading-message">
-        {{ config.loading }}
+        {{ config.loading }}<span>{{ dots }}</span>
       </div>
     </div>
 

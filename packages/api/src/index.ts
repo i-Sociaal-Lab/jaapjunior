@@ -4,7 +4,7 @@ import { nanoid } from "nanoid";
 import type {
   ResponseInput,
   ResponseInputItem,
-  ResponseItem,
+  ResponseOutputItem,
 } from "openai/src/resources/responses/responses.js";
 import { SYSTEM_PROMPT } from "./prompt";
 
@@ -142,16 +142,13 @@ app.post("/api/v1/conversations/:id", async (c) => {
     });
 
     // Add the assistant response to the conversation
-    const assistantMessage: ResponseInputItem = {
-      id: response.id,
-      role: "assistant",
-      content: [
-        {
-          type: "input_text",
-          text: response.output_text,
-        },
-      ],
-    };
+    const assistantMessage = response.output.find(
+      (out) => out.type === "message",
+    );
+
+    if (!assistantMessage) {
+      throw new Error("No assistant message found in response");
+    }
 
     conversation.messages.push(assistantMessage);
     conversation.updatedAt = new Date();
