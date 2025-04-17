@@ -1,72 +1,76 @@
 <script setup lang="ts">
-import { ref, computed } from 'vue';
+import { ref, computed } from 'vue'
 
-const messageInput = ref('');
-const messages = ref<Array<{text: string, isUser: boolean}>>([]);
-const isReceivingMessage = ref(false);
+// Config object for all user-facing strings
+const config = {
+  emptyState: 'Start a conversation by sending a message',
+  inputPlaceholder: 'Type your message here...',
+  sendButton: 'Send',
+}
+
+const messageInput = ref('')
+const messages = ref<Array<{ text: string; isUser: boolean }>>([])
+const isReceivingMessage = ref(false)
 
 // Computed property to determine if send button should be disabled
 const isSendDisabled = computed(() => {
-  return isReceivingMessage.value || !messageInput.value.trim();
-});
+  return isReceivingMessage.value || !messageInput.value.trim()
+})
 
 const sendMessage = () => {
   // Skip empty messages or if currently receiving a message
-  if (isSendDisabled.value) return;
-  
+  if (isSendDisabled.value) return
+
   // Add user message to chat
   messages.value.push({
     text: messageInput.value,
-    isUser: true
-  });
-  
+    isUser: true,
+  })
+
   // Set receiving state to true
-  isReceivingMessage.value = true;
-  
+  isReceivingMessage.value = true
+
   // Simulate response (in a real app, this would be an API call)
   setTimeout(() => {
+    const response = 'This is a simulated response.'
     messages.value.push({
-      text: `Response to: ${messageInput.value}`,
-      isUser: false
-    });
-    
+      text: response,
+      isUser: false,
+    })
+
     // Reset receiving state
-    isReceivingMessage.value = false;
-  }, 1000);
-  
+    isReceivingMessage.value = false
+  }, 1000)
+
   // Clear input after sending
-  messageInput.value = '';
-};
+  messageInput.value = ''
+}
 </script>
 
 <template>
   <div class="chat-container">
     <div class="messages-container">
       <div v-if="messages.length === 0" class="empty-state">
-        Start a conversation by sending a message
+        {{ config.emptyState }}
       </div>
-      <div 
-        v-for="(message, index) in messages" 
+      <div
+        v-for="(message, index) in messages"
         :key="index"
         :class="['message', message.isUser ? 'user-message' : 'response-message']"
       >
         {{ message.text }}
       </div>
     </div>
-    
+
     <div class="input-container">
-      <input 
-        v-model="messageInput" 
+      <input
+        v-model="messageInput"
         @keyup.enter="sendMessage"
-        placeholder="Type your message here..."
+        :placeholder="config.inputPlaceholder"
         class="message-input"
       />
-      <button 
-        @click="sendMessage" 
-        class="send-button" 
-        :disabled="isSendDisabled"
-      >
-        Send
+      <button @click="sendMessage" class="send-button" :disabled="isSendDisabled">
+        {{ config.sendButton }}
       </button>
     </div>
   </div>
