@@ -1,11 +1,33 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue'
 
-// Config object for all user-facing strings
-const config = {
-  emptyState: 'Start a conversation by sending a message',
-  inputPlaceholder: 'Type your message here...',
-  sendButton: 'Send',
+// Translation objects for each supported language
+const translations = {
+  en: {
+    emptyState: 'Start a conversation by sending a message',
+    inputPlaceholder: 'Type your message here...',
+    sendButton: 'Send',
+    languageToggle: 'Switch to Dutch',
+  },
+  nl: {
+    emptyState: 'Begin een gesprek door een bericht te sturen',
+    inputPlaceholder: 'Typ hier je bericht...',
+    sendButton: 'Versturen',
+    languageToggle: 'Schakel naar Engels',
+  },
+}
+
+// Current language state
+const currentLanguage = ref<'en' | 'nl'>('en')
+
+// Computed config that changes based on selected language
+const config = computed(() => {
+  return translations[currentLanguage.value]
+})
+
+// Toggle between languages
+const toggleLanguage = () => {
+  currentLanguage.value = currentLanguage.value === 'en' ? 'nl' : 'en'
 }
 
 const messageInput = ref('')
@@ -49,6 +71,12 @@ const sendMessage = () => {
 
 <template>
   <div class="chat-container">
+    <div class="language-toggle">
+      <button @click="toggleLanguage" class="toggle-button">
+        {{ config.languageToggle }}
+      </button>
+    </div>
+
     <div class="messages-container">
       <div v-if="messages.length === 0" class="empty-state">
         {{ config.emptyState }}
@@ -77,6 +105,29 @@ const sendMessage = () => {
 </template>
 
 <style scoped>
+.language-toggle {
+  display: flex;
+  justify-content: flex-end;
+  padding: 8px 12px;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.toggle-button {
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 4px 10px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.toggle-button:hover {
+  background-color: #5a6268;
+}
+
 .chat-container {
   display: flex;
   flex-direction: column;
