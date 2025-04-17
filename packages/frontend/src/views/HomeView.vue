@@ -5,21 +5,31 @@ import TheChat from '../components/TheChat.vue'
 <template>
   <main>
     <div class="header">
-      <img src="/jaap.png" alt="Jaap" class="logo jaap-logo" />
       <img src="/ketenbureau.png" alt="Ketenbureau" class="logo ketenbureau-logo" />
     </div>
-    <TheChat />
+    <TheChat class="chat" />
   </main>
 </template>
 
 <style scoped>
+main {
+  position: relative;
+}
+
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 8px;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.chat {
+  max-width: 800px;
 }
 
 .logo {
@@ -33,11 +43,5 @@ import TheChat from '../components/TheChat.vue'
 
 .ketenbureau-logo {
   margin-left: 20px;
-}
-
-main {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
 }
 </style>
