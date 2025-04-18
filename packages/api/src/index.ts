@@ -116,7 +116,7 @@ app.post("/api/v1/conversations/:id", async (c) => {
 
     // Call OpenAI API using the chat completions endpoint
     const response = await openai.responses.create({
-      model: "gpt-4.1",
+      model: "gpt-4.1-nano",
       input: conversation.messages.map((message) => {
         if ("id" in message) {
           message.id = message.id?.replace("resp_", "msg_");
