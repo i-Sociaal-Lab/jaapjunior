@@ -1,20 +1,22 @@
 {
-  "name": "ketenbureau-chat-ai",
-  "private": true,
-  "type": "module",
-  "workspaces": [
-    "packages/*"
-  ],
-  "dependencies": {
-    "nanoid": "^5.1.5"
-  },
-  "devDependencies": {
-    "@types/bun": "latest",
-    "@types/nanoid": "^3.0.0",
-    "turbo": "^2.5.0"
-  },
-  "peerDependencies": {
-    "typescript": "^5"
-  },
-  "packageManager": "bun@1.2.9"
+	"name": "ketenbureau-chat-ai",
+	"private": true,
+	"type": "module",
+	"workspaces": ["packages/*"],
+	"scripts": {
+		"fix": "biome check --write ."
+	},
+	"dependencies": {
+		"nanoid": "^5.1.5"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^1.9.4",
+		"@types/bun": "latest",
+		"@types/nanoid": "^3.0.0",
+		"turbo": "^2.5.0"
+	},
+	"peerDependencies": {
+		"typescript": "^5"
+	},
+	"packageManager": "bun@1.2.9"
 }
