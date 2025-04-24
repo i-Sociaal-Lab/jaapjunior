@@ -1,6 +1,5 @@
 import { Hono } from "hono";
 import { except } from "hono/combine";
-import { cors } from "hono/cors";
 import { jwt } from "hono/jwt";
 import type { JwtVariables } from "hono/jwt";
 import * as jose from "jose";
@@ -34,15 +33,6 @@ function getEnvOrThrow(name: string) {
 const conversations = new Map<string, Conversation>();
 
 const app = new Hono<{ Variables: Variables }>()
-	.use(
-		"/api/v1/*",
-		cors({
-			origin: () => {
-				return "http://localhost:5174";
-			},
-			credentials: false,
-		}),
-	)
 	.use(
 		"/api/v1/*",
 		except(
