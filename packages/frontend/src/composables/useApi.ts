@@ -7,7 +7,7 @@ export function useApi() {
 
 	const {
 		api: { v1: api },
-	} = hc<AppType>(import.meta.env.VITE_API_URL, {
+	} = hc<AppType>(window.location.origin, {
 		fetch: (input: RequestInfo | URL, requestInit?: RequestInit) => {
 			const headers: Record<string, string> = {};
 			if (authStore.jwt) {
