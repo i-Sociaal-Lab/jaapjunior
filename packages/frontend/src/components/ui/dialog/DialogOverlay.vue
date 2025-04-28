@@ -3,7 +3,9 @@ import { cn } from "@/lib/utils";
 import { DialogOverlay, type DialogOverlayProps } from "reka-ui";
 import { type HTMLAttributes, computed } from "vue";
 
-const props = defineProps<DialogOverlayProps & { class?: HTMLAttributes["class"] }>();
+const props = defineProps<
+	DialogOverlayProps & { class?: HTMLAttributes["class"] }
+>();
 
 const delegatedProps = computed(() => {
 	const { class: _, ...delegated } = props;

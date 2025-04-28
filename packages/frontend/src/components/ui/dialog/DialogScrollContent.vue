@@ -12,7 +12,9 @@ import {
 } from "reka-ui";
 import { type HTMLAttributes, computed } from "vue";
 
-const props = defineProps<DialogContentProps & { class?: HTMLAttributes["class"] }>();
+const props = defineProps<
+	DialogContentProps & { class?: HTMLAttributes["class"] }
+>();
 const emits = defineEmits<DialogContentEmits>();
 
 const delegatedProps = computed(() => {

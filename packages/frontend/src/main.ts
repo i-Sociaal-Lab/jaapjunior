@@ -1,8 +1,8 @@
 import "./assets/main.css";
 
+import ui from "@nuxt/ui/vue-plugin";
 import { createPinia } from "pinia";
 import { createApp } from "vue";
-import ui from "@nuxt/ui/vue-plugin";
 
 import App from "./App.vue";
 import router from "./router";

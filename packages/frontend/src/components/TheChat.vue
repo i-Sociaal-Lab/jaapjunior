@@ -11,7 +11,8 @@ const conversationId = computed(() => route.params.id as string | undefined);
 // Translation objects for each supported language
 const translations = {
 	en: {
-		emptyState: "Start a conversation by asking a question about the message traffic",
+		emptyState:
+			"Start a conversation by asking a question about the message traffic",
 		inputPlaceholder: "Type your question here...",
 		sendButton: "Send",
 		languageToggle: "Liever in het nederlands",
@@ -41,7 +42,7 @@ const router = useRouter();
 
 const messageInput = ref("");
 const messages = ref<Array<{ text: string; isUser: boolean }>>([]);
-const selectedModel = ref("4.1-nano");
+const selectedModel = ref<"4.1-nano" | "4.1" | undefined>("4.1-nano");
 const isReceivingMessage = ref(false);
 const error = ref<string | null>(null);
 
@@ -173,17 +174,7 @@ async function sendMessage() {
 	error.value = null;
 
 	try {
-		// Define the request body interface
-		interface ResponseRequestBody {
-			input_text: string;
-			conversation_id?: string;
-		}
-
 		// Prepare request body based on whether we have an existing conversation
-		const requestBody: ResponseRequestBody = {
-			input_text: messageText,
-		};
-
 		if (!conversationId.value) {
 			await createConversation();
 		}
@@ -196,7 +187,7 @@ async function sendMessage() {
 
 		const response = await api.conversations[":id"].$post({
 			param: { id: conversationId.value },
-			json: requestBody,
+			json: { input_text: messageText, model: selectedModel.value },
 		});
 
 		if (!response.ok) {
@@ -252,6 +243,7 @@ async function sendMessage() {
 			:loading="isReceivingMessage"
 			:placeholder="config.inputPlaceholder"
 			:sendButton="config.sendButton"
+			class="bottom-0 fixed"
 		/>
 	</div>
 </template>
@@ -321,7 +313,7 @@ async function sendMessage() {
 .messages-container {
 	flex: 1;
 	padding: 16px;
-	padding-bottom: 80px; /* Extra padding at bottom to prevent content from being hidden behind fixed input */
+	padding-bottom: 160px; /* Extra padding at bottom to prevent content from being hidden behind fixed input */
 	display: flex;
 	flex-direction: column;
 	gap: 12px;

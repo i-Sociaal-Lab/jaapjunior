@@ -11,7 +11,10 @@ defineProps<{
 const input = defineModel<string | undefined>();
 const inputEl = useTemplateRef("input-el");
 
-const models = ref<string[]>(["4.1-nano", "4.1"]);
+const models = ref([
+	{ label: "GPT 4.1 nano", id: "4.1-nano" },
+	{ label: "GPT 4.1", id: "4.1" },
+]);
 const selectedModel = defineModel("selected-model", { default: "4.1-nano" });
 
 defineEmits<{
@@ -33,8 +36,18 @@ function focus() {
 			:placeholder
 			:disabled="loading"
 		/>
-		<div>
-			<USelectMenu v-model="selectedModel" :items="models" class="w-48" :disabled="loading" />
+		<div class="self-end flex gap-2">
+			<USelectMenu
+				v-model="selectedModel"
+				value-key="id"
+				:items="models"
+				class="text-end hover:ring hover:ring-default hover:bg-gray-100 transition-all duration-150"
+				:disabled="loading"
+				:search-input="false"
+				variant="none"
+				:ui="{ content: 'w-36' }"
+				:content="{ align: 'end' }"
+			/>
 			<button @click="$emit('submit')" class="send-button" :disabled>
 				{{ sendButton }}
 			</button>
@@ -49,18 +62,11 @@ function focus() {
 	cursor: text;
 	padding: 12px;
 	width: 100%;
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	right: 0;
 	background-color: rgba(255, 255, 255, 0.9);
 	backdrop-filter: blur(5px);
 	max-width: 800px;
-	margin: 0 auto;
-	left: 50%;
-	transform: translateX(-50%);
 	border: 1px solid var(--border);
-	border-radius: 20px;
+	border-radius: 20px 20px 0 0;
 	transition: box-shadow 0.2s;
 }
 

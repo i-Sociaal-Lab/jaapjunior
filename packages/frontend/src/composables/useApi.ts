@@ -9,18 +9,16 @@ export function useApi() {
 		api: { v1: api },
 	} = hc<AppType>(window.location.origin, {
 		fetch: (input: RequestInfo | URL, requestInit?: RequestInit) => {
-			const headers: Record<string, string> = {};
+			const headers = new Headers(requestInit?.headers);
 			if (authStore.jwt) {
-				headers.Authorization = `Bearer ${authStore.jwt}`;
+				headers.set("Authorization", `Bearer ${authStore.jwt}`);
 			}
 
-			const fetchOpts = requestInit ?? {};
-			fetchOpts.headers = {
-				...fetchOpts.headers,
-				...headers,
-			};
+			if (requestInit) {
+				requestInit.headers = headers;
+			}
 
-			return fetch(input, fetchOpts);
+			return fetch(input, requestInit);
 		},
 	});
 

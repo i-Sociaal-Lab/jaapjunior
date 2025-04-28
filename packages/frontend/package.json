@@ -13,8 +13,7 @@
 		"type-check": "vue-tsc --build",
 		"lint:oxlint": "oxlint . --fix -D correctness --ignore-path .gitignore",
 		"lint:eslint": "eslint . --fix",
-		"lint": "run-s lint:*",
-		"format": "prettier --write src/"
+		"lint": "run-s lint:*"
 	},
 	"dependencies": {
 		"@nuxt/ui": "^3.1.0",
