@@ -34,8 +34,8 @@ const password = ref<string>("");
 				id="login"
 				@submit="
 					(e) => {
-						e.preventDefault()
-						emit('login', password)
+						e.preventDefault();
+						emit('login', password);
 					}
 				"
 			>

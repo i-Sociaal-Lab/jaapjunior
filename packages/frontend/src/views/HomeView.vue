@@ -3,49 +3,49 @@ import TheChat from "../components/TheChat.vue";
 </script>
 
 <template>
-  <main>
-    <div class="header">
-      <router-link to="/">
-        <img src="/ketenbureau.png" alt="Ketenbureau" class="logo ketenbureau-logo" />
-      </router-link>
-    </div>
-    <TheChat class="chat" />
-  </main>
+	<main>
+		<div class="header">
+			<router-link to="/">
+				<img src="/ketenbureau.png" alt="Ketenbureau" class="logo ketenbureau-logo" />
+			</router-link>
+		</div>
+		<TheChat class="chat" />
+	</main>
 </template>
 
 <style scoped>
 main {
-  position: relative;
+	position: relative;
 }
 
 .header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  width: 100%;
-  border-bottom: 1px solid #ccc;
-  position: sticky;
-  top: 0;
-  z-index: 2;
-  background-color: rgba(255, 255, 255, 0.9);
-  backdrop-filter: blur(5px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	width: 100%;
+	border-bottom: 1px solid var(--border);
+	position: sticky;
+	top: 0;
+	z-index: 2;
+	background-color: rgba(255, 255, 255, 0.9);
+	backdrop-filter: blur(5px);
 }
 
 .chat {
-  max-width: 800px;
+	max-width: 800px;
 }
 
 .logo {
-  height: 60px;
-  object-fit: contain;
+	height: 60px;
+	object-fit: contain;
 }
 
 .jaap-logo {
-  margin-right: auto;
+	margin-right: auto;
 }
 
 .ketenbureau-logo {
-  margin-left: 20px;
+	margin-left: 20px;
 }
 </style>

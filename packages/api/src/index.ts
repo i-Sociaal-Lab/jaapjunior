@@ -5,11 +5,10 @@ import type { JwtVariables } from "hono/jwt";
 import * as jose from "jose";
 import { nanoid } from "nanoid";
 import OpenAI from "openai";
-import type {
-	ResponseInput,
-	ResponseInputItem,
-} from "openai/src/resources/responses/responses.js";
+import type { ResponseInput, ResponseInputItem } from "openai/src/resources/responses/responses.js";
 import { SYSTEM_PROMPT } from "./prompt.js";
+import { type } from "arktype";
+import { arktypeValidator } from "@hono/arktype-validator";
 
 interface Conversation {
 	id: string;
@@ -27,6 +26,11 @@ function getEnvOrThrow(name: string) {
 	}
 	return value;
 }
+
+const sendMessageSchema = type({
+	input_text: "string",
+	"model?": "'4.1-nano' | '4.1'",
+});
 
 // In-memory store for conversations
 // Note: In a production environment, you would use a database instead
@@ -55,10 +59,7 @@ const app = new Hono<{ Variables: Variables }>()
 			const secret = new TextEncoder().encode(getEnvOrThrow("JWT_SECRET"));
 			const alg = "HS256";
 
-			const jwt = await new jose.SignJWT()
-				.setProtectedHeader({ alg })
-				.setIssuedAt()
-				.sign(secret);
+			const jwt = await new jose.SignJWT().setProtectedHeader({ alg }).setIssuedAt().sign(secret);
 
 			c.status(200);
 			return c.json({ jwt: jwt });
@@ -118,24 +119,21 @@ const app = new Hono<{ Variables: Variables }>()
 
 		return c.json({
 			...conversation,
-			messages: conversation.messages.filter(
-				(m) => !("role" in m) || m.role !== "system",
-			),
+			messages: conversation.messages.filter((m) => !("role" in m) || m.role !== "system"),
 		});
 	})
 
 	// Send a message in a conversation
-	.post("/api/v1/conversations/:id", async (c) => {
+	.post("/api/v1/conversations/:id", arktypeValidator("json", sendMessageSchema), async (c) => {
 		try {
 			const openai = new OpenAI({
 				apiKey: process.env.OPENAI_API_KEY,
 			});
 
 			const conversation_id = c.req.param("id");
-			const body = await c.req.json();
-			const { input_text } = body;
+			const { input_text: inputText, model: selectedModel } = c.req.valid("json");
 
-			if (!input_text) {
+			if (!inputText) {
 				return c.json({ error: "input_text is required" }, 400);
 			}
 
@@ -150,16 +148,18 @@ const app = new Hono<{ Variables: Variables }>()
 				content: [
 					{
 						type: "input_text",
-						text: input_text,
+						text: inputText,
 					},
 				],
 			};
 
 			conversation.messages.push(userMessage);
 
+			const model = selectedModel === "4.1" ? "gpt-4.1" : "gpt-4.1-nano";
+
 			// Call OpenAI API using the chat completions endpoint
 			const response = await openai.responses.create({
-				model: "gpt-4.1-nano",
+				model,
 				input: conversation.messages.map((message) => {
 					if ("id" in message) {
 						message.id = message.id?.replace("resp_", "msg_");
@@ -185,9 +185,7 @@ const app = new Hono<{ Variables: Variables }>()
 			});
 
 			// Add the assistant response to the conversation
-			const assistantMessage = response.output.find(
-				(out) => out.type === "message",
-			);
+			const assistantMessage = response.output.find((out) => out.type === "message");
 
 			if (!assistantMessage) {
 				throw new Error("No assistant message found in response");
@@ -204,8 +202,7 @@ const app = new Hono<{ Variables: Variables }>()
 			});
 		} catch (error: unknown) {
 			console.error("Error calling OpenAI API:", error);
-			const errorMessage =
-				error instanceof Error ? error.message : "Unknown error";
+			const errorMessage = error instanceof Error ? error.message : "Unknown error";
 			return c.json({ error: errorMessage }, 500);
 		}
 	});

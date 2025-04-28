@@ -11,8 +11,7 @@ const conversationId = computed(() => route.params.id as string | undefined);
 // Translation objects for each supported language
 const translations = {
 	en: {
-		emptyState:
-			"Start a conversation by asking a question about the message traffic",
+		emptyState: "Start a conversation by asking a question about the message traffic",
 		inputPlaceholder: "Type your question here...",
 		sendButton: "Send",
 		languageToggle: "Liever in het nederlands",
@@ -42,6 +41,7 @@ const router = useRouter();
 
 const messageInput = ref("");
 const messages = ref<Array<{ text: string; isUser: boolean }>>([]);
+const selectedModel = ref("4.1-nano");
 const isReceivingMessage = ref(false);
 const error = ref<string | null>(null);
 
@@ -56,7 +56,7 @@ let interval: number | null = null;
 // Check for conversation ID in the URL when component mounts
 onMounted(async () => {
 	let count = 0;
-	interval = setInterval(() => {
+	interval = window.setInterval(() => {
 		count = (count + 1) % 4;
 		dots.value = ".".repeat(count);
 	}, 500);
@@ -69,7 +69,7 @@ onMounted(async () => {
 
 onUnmounted(() => {
 	if (interval) {
-		clearInterval(interval);
+		window.clearInterval(interval);
 	}
 });
 
@@ -244,18 +244,15 @@ async function sendMessage() {
 			</div>
 		</div>
 
-		<div class="input-container">
-			<input
-				v-model="messageInput"
-				@keyup.enter="sendMessage"
-				:placeholder="config.inputPlaceholder"
-				class="message-input"
-				:disabled="isReceivingMessage"
-			/>
-			<button @click="sendMessage" class="send-button" :disabled="isSendDisabled">
-				{{ config.sendButton }}
-			</button>
-		</div>
+		<TheChatInput
+			v-model="messageInput"
+			v-model:selected-model="selectedModel"
+			@submit="sendMessage"
+			:disabled="isSendDisabled"
+			:loading="isReceivingMessage"
+			:placeholder="config.inputPlaceholder"
+			:sendButton="config.sendButton"
+		/>
 	</div>
 </template>
 
@@ -371,57 +368,5 @@ async function sendMessage() {
 	background-color: #f8f9fa;
 	color: #777;
 	font-style: italic;
-}
-
-.input-container {
-	display: flex;
-	padding: 12px;
-	width: 100%;
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	z-index: 10;
-	background-color: rgba(255, 255, 255, 0.9);
-	backdrop-filter: blur(5px);
-	max-width: 800px;
-	margin: 0 auto;
-	left: 50%;
-	transform: translateX(-50%);
-}
-
-.message-input {
-	flex: 1;
-	padding: 10px 14px;
-	border: 1px solid #ddd;
-	border-radius: 20px;
-	margin-right: 8px;
-	font-size: 14px;
-	outline: none;
-}
-
-.message-input:focus {
-	border-color: #007bff;
-}
-
-.send-button {
-	background-color: #007bff;
-	color: white;
-	border: none;
-	border-radius: 20px;
-	padding: 0 20px;
-	cursor: pointer;
-	font-weight: 500;
-	transition: background-color 0.2s;
-}
-
-.send-button:hover {
-	background-color: #0069d9;
-}
-
-.send-button:disabled {
-	background-color: #cccccc;
-	cursor: not-allowed;
-	opacity: 0.7;
 }
 </style>

@@ -1,22 +1,25 @@
 {
-	"name": "@jaap/api",
-	"version": "0.0.0",
-	"private": true,
-	"type": "module",
-	"exports": {
-		".": "./src/index.ts"
-	},
-	"scripts": {
-		"dev": "bun --watch src/index.ts",
-		"build": "bun build --compile --minify --sourcemap ./src/index.ts --outfile dist/api",
-		"start": "./dist/api"
-	},
-	"dependencies": {
-		"hono": "^4.7.7",
-		"jose": "^6.0.10",
-		"openai": "^4.95.0"
-	},
-	"devDependencies": {
-		"typescript": "^5.2.2"
-	}
+  "name": "@jaap/api",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "dev": "bun --watch src/index.ts",
+    "build": "bun build --compile --minify --sourcemap ./src/index.ts --outfile dist/api",
+    "start": "./dist/api",
+    "fix": "prettier --write ."
+  },
+  "dependencies": {
+    "@hono/arktype-validator": "^2.0.1",
+    "arktype": "^2.1.20",
+    "hono": "^4.7.7",
+    "jose": "^6.0.10",
+    "openai": "^4.95.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  }
 }
