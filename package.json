@@ -14,7 +14,7 @@
 		"@biomejs/biome": "^1.9.4",
 		"@types/bun": "latest",
 		"@types/nanoid": "^3.0.0",
-		"turbo": "^2.5.0"
+		"turbo": "^2.5.2"
 	},
 	"peerDependencies": {
 		"typescript": "^5"
