@@ -3,5 +3,6 @@ packages:
 
 onlyBuiltDependencies:
   - '@biomejs/biome'
+  - bun
   - esbuild
   - vue-demi
