@@ -47,13 +47,13 @@ declare module "vue" {
 		TheChat: typeof import("./src/components/TheChat.vue")["default"];
 		TheChatInput: typeof import("./src/components/TheChatInput.vue")["default"];
 		UApp: typeof import(
-			"./../../node_modules/@nuxt/ui/dist/runtime/components/App.vue",
+			"./../../node_modules/.pnpm/@nuxt+ui@3.1.0_@babel+parser@7.27.0_embla-carousel@8.6.0_typescript@5.8.3_valibot@1.0.0_a9e741d6498295f21b1313e2136bb2cc/node_modules/@nuxt/ui/dist/runtime/components/App.vue",
 		)["default"];
 		ULinkBase: typeof import(
-			"./../../node_modules/@nuxt/ui/dist/runtime/components/LinkBase.vue",
+			"./../../node_modules/.pnpm/@nuxt+ui@3.1.0_@babel+parser@7.27.0_embla-carousel@8.6.0_typescript@5.8.3_valibot@1.0.0_a9e741d6498295f21b1313e2136bb2cc/node_modules/@nuxt/ui/dist/runtime/components/LinkBase.vue",
 		)["default"];
 		USelectMenu: typeof import(
-			"./../../node_modules/@nuxt/ui/dist/runtime/components/SelectMenu.vue",
+			"./../../node_modules/.pnpm/@nuxt+ui@3.1.0_@babel+parser@7.27.0_embla-carousel@8.6.0_typescript@5.8.3_valibot@1.0.0_a9e741d6498295f21b1313e2136bb2cc/node_modules/@nuxt/ui/dist/runtime/components/SelectMenu.vue",
 		)["default"];
 	}
 }

@@ -5,7 +5,8 @@
 	"workspaces": ["packages/*"],
 	"scripts": {
 		"fix": "biome check --write .",
-		"dev": "turbo dev"
+		"dev": "turbo dev",
+		"build": "turbo build"
 	},
 	"dependencies": {
 		"nanoid": "^5.1.5"
