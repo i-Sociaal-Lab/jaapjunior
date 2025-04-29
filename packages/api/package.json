@@ -9,7 +9,8 @@
 	"scripts": {
 		"dev": "bun --watch src/index.ts",
 		"build": "bun build --compile --minify --sourcemap ./src/index.ts --outfile dist/api",
-		"start": "./dist/api"
+		"start": "./dist/api",
+		"typecheck": "tsc --noEmit"
 	},
 	"dependencies": {
 		"@hono/valibot-validator": "^0.5.2",

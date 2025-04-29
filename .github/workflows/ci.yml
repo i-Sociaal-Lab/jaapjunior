@@ -35,4 +35,5 @@ jobs:
 
       - run: pnpm install
       - run: bun run build
+      - run: bun run typecheck
       - run: bun check
