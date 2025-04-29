@@ -9,12 +9,17 @@
 	"scripts": {
 		"dev": "bun --watch src/index.ts",
 		"build": "bun build --compile --minify --sourcemap ./src/index.ts --outfile dist/api",
-		"start": "./dist/api"
+		"start": "./dist/api",
+		"typecheck": "tsc --noEmit"
 	},
 	"dependencies": {
+		"@hono/valibot-validator": "^0.5.2",
+		"@valibot/to-json-schema": "^1.0.0",
 		"hono": "^4.7.7",
+		"hono-openapi": "^0.4.6",
 		"jose": "^6.0.10",
-		"openai": "^4.95.0"
+		"openai": "^4.95.0",
+		"valibot": "^1.0.0"
 	},
 	"devDependencies": {
 		"typescript": "^5.2.2"

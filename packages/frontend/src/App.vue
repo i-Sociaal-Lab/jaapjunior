@@ -30,8 +30,10 @@ async function login(password: string) {
 </script>
 
 <template>
-	<template v-if="showLoginModal !== null">
-		<RouterView />
-		<TheAuthDialog v-model:open="showLoginModal" @login="login" />
-	</template>
+	<UApp>
+		<template v-if="showLoginModal !== null">
+			<RouterView />
+			<TheAuthDialog v-model:open="showLoginModal" @login="login" />
+		</template>
+	</UApp>
 </template>

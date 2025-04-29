@@ -1,4 +1,5 @@
 import { Hono } from "hono";
+import { validator } from "hono-openapi/valibot";
 import { except } from "hono/combine";
 import { jwt } from "hono/jwt";
 import type { JwtVariables } from "hono/jwt";
@@ -9,6 +10,7 @@ import type {
 	ResponseInput,
 	ResponseInputItem,
 } from "openai/src/resources/responses/responses.js";
+import * as v from "valibot";
 import { SYSTEM_PROMPT } from "./prompt.js";
 
 interface Conversation {
@@ -27,6 +29,11 @@ function getEnvOrThrow(name: string) {
 	}
 	return value;
 }
+
+const sendMessageSchema = v.object({
+	input_text: v.string(),
+	model: v.optional(v.union([v.literal("4.1"), v.literal("4.1-nano")])),
+});
 
 // In-memory store for conversations
 // Note: In a production environment, you would use a database instead
@@ -125,90 +132,96 @@ const app = new Hono<{ Variables: Variables }>()
 	})
 
 	// Send a message in a conversation
-	.post("/api/v1/conversations/:id", async (c) => {
-		try {
-			const openai = new OpenAI({
-				apiKey: process.env.OPENAI_API_KEY,
-			});
+	.post(
+		"/api/v1/conversations/:id",
+		validator("json", sendMessageSchema),
+		async (c) => {
+			try {
+				const openai = new OpenAI({
+					apiKey: process.env.OPENAI_API_KEY,
+				});
 
-			const conversation_id = c.req.param("id");
-			const body = await c.req.json();
-			const { input_text } = body;
+				const conversationId = c.req.param("id");
+				const { input_text: inputText, model: selectedModel } =
+					c.req.valid("json");
 
-			if (!input_text) {
-				return c.json({ error: "input_text is required" }, 400);
-			}
+				if (!inputText) {
+					return c.json({ error: "input_text is required" }, 400);
+				}
 
-			const conversation = conversations.get(conversation_id);
-			if (!conversation) {
-				return c.json({ error: "Conversation not found" }, 404);
-			}
+				const conversation = conversations.get(conversationId);
+				if (!conversation) {
+					return c.json({ error: "Conversation not found" }, 404);
+				}
 
-			// Add the new user message
-			const userMessage: ResponseInputItem = {
-				role: "user",
-				content: [
-					{
-						type: "input_text",
-						text: input_text,
+				// Add the new user message
+				const userMessage: ResponseInputItem = {
+					role: "user",
+					content: [
+						{
+							type: "input_text",
+							text: inputText,
+						},
+					],
+				};
+
+				conversation.messages.push(userMessage);
+
+				const model = selectedModel === "4.1" ? "gpt-4.1" : "gpt-4.1-nano";
+
+				// Call OpenAI API using the chat completions endpoint
+				const response = await openai.responses.create({
+					model,
+					input: conversation.messages.map((message) => {
+						if ("id" in message) {
+							message.id = message.id?.replace("resp_", "msg_");
+						}
+						return message;
+					}),
+					text: {
+						format: {
+							type: "text",
+						},
 					},
-				],
-			};
+					reasoning: {},
+					tools: [
+						{
+							type: "file_search",
+							vector_store_ids: ["vs_68011edd316c8191b7725b9391f04a78"],
+						},
+					],
+					temperature: 1,
+					max_output_tokens: 2048,
+					top_p: 1,
+					store: true,
+				});
 
-			conversation.messages.push(userMessage);
+				// Add the assistant response to the conversation
+				const assistantMessage = response.output.find(
+					(out) => out.type === "message",
+				);
 
-			// Call OpenAI API using the chat completions endpoint
-			const response = await openai.responses.create({
-				model: "gpt-4.1-nano",
-				input: conversation.messages.map((message) => {
-					if ("id" in message) {
-						message.id = message.id?.replace("resp_", "msg_");
-					}
-					return message;
-				}),
-				text: {
-					format: {
-						type: "text",
-					},
-				},
-				reasoning: {},
-				tools: [
-					{
-						type: "file_search",
-						vector_store_ids: ["vs_68011edd316c8191b7725b9391f04a78"],
-					},
-				],
-				temperature: 1,
-				max_output_tokens: 2048,
-				top_p: 1,
-				store: true,
-			});
+				if (!assistantMessage) {
+					throw new Error("No assistant message found in response");
+				}
 
-			// Add the assistant response to the conversation
-			const assistantMessage = response.output.find(
-				(out) => out.type === "message",
-			);
+				conversation.messages.push(assistantMessage);
+				conversation.updatedAt = new Date();
 
-			if (!assistantMessage) {
-				throw new Error("No assistant message found in response");
+				// Return the response with conversation details
+				return c.json({
+					...response,
+					conversation_id: conversation.id,
+					message_count: conversation.messages.length - 1,
+				});
+			} catch (error: unknown) {
+				console.error("Error calling OpenAI API:", error);
+				const errorMessage =
+					error instanceof Error ? error.message : "Unknown error";
+				return c.json({ error: errorMessage }, 500);
 			}
-
-			conversation.messages.push(assistantMessage);
-			conversation.updatedAt = new Date();
-
-			// Return the response with conversation details
-			return c.json({
-				...response,
-				conversation_id: conversation.id,
-				message_count: conversation.messages.length - 1,
-			});
-		} catch (error: unknown) {
-			console.error("Error calling OpenAI API:", error);
-			const errorMessage =
-				error instanceof Error ? error.message : "Unknown error";
-			return c.json({ error: errorMessage }, 500);
-		}
-	});
+		},
+	);
 
 export type AppType = typeof app;
 export default app;

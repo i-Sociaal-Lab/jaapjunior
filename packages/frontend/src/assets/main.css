@@ -1,6 +1,7 @@
 @import "tailwindcss";
-@import "./base.css";
 @import "tw-animate-css";
+@import "@nuxt/ui";
+@import "./base.css";
 
 @custom-variant dark (&:is(.dark *));
 

@@ -42,6 +42,7 @@ const router = useRouter();
 
 const messageInput = ref("");
 const messages = ref<Array<{ text: string; isUser: boolean }>>([]);
+const selectedModel = ref<"4.1-nano" | "4.1" | undefined>("4.1-nano");
 const isReceivingMessage = ref(false);
 const error = ref<string | null>(null);
 
@@ -56,7 +57,7 @@ let interval: number | null = null;
 // Check for conversation ID in the URL when component mounts
 onMounted(async () => {
 	let count = 0;
-	interval = setInterval(() => {
+	interval = window.setInterval(() => {
 		count = (count + 1) % 4;
 		dots.value = ".".repeat(count);
 	}, 500);
@@ -69,7 +70,7 @@ onMounted(async () => {
 
 onUnmounted(() => {
 	if (interval) {
-		clearInterval(interval);
+		window.clearInterval(interval);
 	}
 });
 
@@ -173,17 +174,7 @@ async function sendMessage() {
 	error.value = null;
 
 	try {
-		// Define the request body interface
-		interface ResponseRequestBody {
-			input_text: string;
-			conversation_id?: string;
-		}
-
 		// Prepare request body based on whether we have an existing conversation
-		const requestBody: ResponseRequestBody = {
-			input_text: messageText,
-		};
-
 		if (!conversationId.value) {
 			await createConversation();
 		}
@@ -196,7 +187,7 @@ async function sendMessage() {
 
 		const response = await api.conversations[":id"].$post({
 			param: { id: conversationId.value },
-			json: requestBody,
+			json: { input_text: messageText, model: selectedModel.value },
 		});
 
 		if (!response.ok) {
@@ -244,18 +235,16 @@ async function sendMessage() {
 			</div>
 		</div>
 
-		<div class="input-container">
-			<input
-				v-model="messageInput"
-				@keyup.enter="sendMessage"
-				:placeholder="config.inputPlaceholder"
-				class="message-input"
-				:disabled="isReceivingMessage"
-			/>
-			<button @click="sendMessage" class="send-button" :disabled="isSendDisabled">
-				{{ config.sendButton }}
-			</button>
-		</div>
+		<TheChatInput
+			v-model="messageInput"
+			v-model:selected-model="selectedModel"
+			@submit="sendMessage"
+			:disabled="isSendDisabled"
+			:loading="isReceivingMessage"
+			:placeholder="config.inputPlaceholder"
+			:sendButton="config.sendButton"
+			class="bottom-0 fixed"
+		/>
 	</div>
 </template>
 
@@ -324,7 +313,7 @@ async function sendMessage() {
 .messages-container {
 	flex: 1;
 	padding: 16px;
-	padding-bottom: 80px; /* Extra padding at bottom to prevent content from being hidden behind fixed input */
+	padding-bottom: 160px; /* Extra padding at bottom to prevent content from being hidden behind fixed input */
 	display: flex;
 	flex-direction: column;
 	gap: 12px;
@@ -371,57 +360,5 @@ async function sendMessage() {
 	background-color: #f8f9fa;
 	color: #777;
 	font-style: italic;
-}
-
-.input-container {
-	display: flex;
-	padding: 12px;
-	width: 100%;
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	z-index: 10;
-	background-color: rgba(255, 255, 255, 0.9);
-	backdrop-filter: blur(5px);
-	max-width: 800px;
-	margin: 0 auto;
-	left: 50%;
-	transform: translateX(-50%);
-}
-
-.message-input {
-	flex: 1;
-	padding: 10px 14px;
-	border: 1px solid #ddd;
-	border-radius: 20px;
-	margin-right: 8px;
-	font-size: 14px;
-	outline: none;
-}
-
-.message-input:focus {
-	border-color: #007bff;
-}
-
-.send-button {
-	background-color: #007bff;
-	color: white;
-	border: none;
-	border-radius: 20px;
-	padding: 0 20px;
-	cursor: pointer;
-	font-weight: 500;
-	transition: background-color 0.2s;
-}
-
-.send-button:hover {
-	background-color: #0069d9;
-}
-
-.send-button:disabled {
-	background-color: #cccccc;
-	cursor: not-allowed;
-	opacity: 0.7;
 }
 </style>

@@ -1,5 +1,6 @@
 import { URL, fileURLToPath } from "node:url";
 
+import ui from "@nuxt/ui/vite";
 import tailwindcss from "@tailwindcss/vite";
 import vue from "@vitejs/plugin-vue";
 import { defineConfig } from "vite";
@@ -12,7 +13,7 @@ export default defineConfig({
 			"/api": "http://localhost:3000",
 		},
 	},
-	plugins: [vue(), vueDevTools(), tailwindcss()],
+	plugins: [vue(), tailwindcss(), ui(), vueDevTools()],
 	resolve: {
 		alias: {
 			"@": fileURLToPath(new URL("./src", import.meta.url)),
