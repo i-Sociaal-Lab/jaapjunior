@@ -11,6 +11,10 @@ jobs:
   ci:
     runs-on: ubuntu-latest
 
+    strategy:
+      matrix:
+        node-version: [22]
+
     steps:
       - uses: actions/checkout@v4
         with:
@@ -21,11 +25,11 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version: ${{ matrix.node-version }}
           cache: 'pnpm'
 
       - uses: oven-sh/setup-bun@v2
 
       - run: pnpm install
-      - run: bun build
+      - run: bun run build
       - run: bun check
