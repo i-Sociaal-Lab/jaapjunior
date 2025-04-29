@@ -6,7 +6,7 @@
 	"scripts": {
 		"dev": "vite",
 		"build": "vite build",
-		"start": "bun start dist/index.html",
+		"start": "bun run dist/index.html",
 		"preview": "vite preview",
 		"test:unit": "vitest",
 		"typecheck": "vue-tsc --noEmit -p tsconfig.app.json",
