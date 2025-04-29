@@ -10,6 +10,9 @@
 				"packages/frontend/auto-imports.d.ts",
 				"packages/frontend/components.d.ts"
 			],
+			"linter": {
+				"enabled": false
+			},
 			"formatter": {
 				"enabled": false
 			}

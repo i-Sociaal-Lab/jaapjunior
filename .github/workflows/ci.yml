@@ -1,0 +1,21 @@
+name: CI
+
+on:
+  push:
+    branches: [$default-branch]
+  pull_request:
+    branches:
+      - "**"
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: oven-sh/setup-bun@v2
+      - run: bun install
+      - run: bun build
+      - run: bun check
