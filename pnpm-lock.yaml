@@ -21,6 +21,9 @@ importers:
       '@types/bun':
         specifier: latest
         version: 1.2.11
+      bun:
+        specifier: ^1.2.11
+        version: 1.2.11
       turbo:
         specifier: ^2.5.2
         version: 2.5.2
@@ -49,9 +52,6 @@ importers:
         specifier: ^1.0.0
         version: 1.0.0(typescript@5.8.3)
     devDependencies:
-      bun:
-        specifier: ^1.2.11
-        version: 1.2.11
       typescript:
         specifier: ^5.2.2
         version: 5.8.3
@@ -140,9 +140,6 @@ importers:
       '@vue/tsconfig':
         specifier: ^0.7.0
         version: 0.7.0(typescript@5.8.3)(vue@3.5.13(typescript@5.8.3))
-      bun:
-        specifier: ^1.2.11
-        version: 1.2.11
       eslint:
         specifier: ^9.22.0
         version: 9.25.1(jiti@2.4.2)
@@ -1550,6 +1547,7 @@ packages:
 
   bun@1.2.11:
     resolution: {integrity: sha512-9brVfsp6/TYVsE3lCl1MUxoyKhvljqyL1MNPErgwsOaS9g4Gzi2nY+W5WtRAXGzLrgz5jzsoGHHwyH/rTeRCIg==}
+    cpu: [arm64, x64, aarch64]
     os: [darwin, linux, win32]
     hasBin: true
 

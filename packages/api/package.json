@@ -22,7 +22,6 @@
 		"valibot": "^1.0.0"
 	},
 	"devDependencies": {
-		"bun": "^1.2.11",
 		"typescript": "^5.2.2"
 	}
 }
