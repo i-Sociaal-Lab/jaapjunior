@@ -1,12 +1,12 @@
 import "dotenv/config";
-import { agent, openai, Settings, VectorStoreIndex } from "llamaindex";
-import type { ChatModel } from "openai/resources/shared.mjs";
 import {
-	Anthropic,
 	type ALL_AVAILABLE_ANTHROPIC_MODELS,
+	Anthropic,
 } from "@llamaindex/anthropic";
-import { SimpleDirectoryReader } from "@llamaindex/readers/directory";
 import { HuggingFaceEmbedding } from "@llamaindex/huggingface";
+import { SimpleDirectoryReader } from "@llamaindex/readers/directory";
+import { Settings, VectorStoreIndex, agent, openai } from "llamaindex";
+import type { ChatModel } from "openai/resources/shared.mjs";
 
 function openaiModel(model: ChatModel) {
 	return openai({
