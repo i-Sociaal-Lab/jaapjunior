@@ -113,15 +113,9 @@ importers:
       '@tsconfig/node22':
         specifier: ^22.0.1
         version: 22.0.1
-      '@types/dompurify':
-        specifier: ^3.0.5
-        version: 3.2.0
       '@types/jsdom':
         specifier: ^21.1.7
         version: 21.1.7
-      '@types/marked':
-        specifier: ^5.0.2
-        version: 5.0.2
       '@vitejs/plugin-vue':
         specifier: ^5.2.3
         version: 5.2.3(vite@6.3.3(@types/node@22.15.3)(jiti@2.4.2)(lightningcss@1.29.2))(vue@3.5.13(typescript@5.8.3))
@@ -1110,10 +1104,6 @@ packages:
   '@types/bun@1.2.11':
     resolution: {integrity: sha512-ZLbbI91EmmGwlWTRWuV6J19IUiUC5YQ3TCEuSHI3usIP75kuoA8/0PVF+LTrbEnVc8JIhpElWOxv1ocI1fJBbw==}
 
-  '@types/dompurify@3.2.0':
-    resolution: {integrity: sha512-Fgg31wv9QbLDA0SpTOXO3MaxySc4DKGLi8sna4/Utjo4r3ZRPdCt4UQee8BWr+Q5z21yifghREPJGYaEOEIACg==}
-    deprecated: This is a stub types definition. dompurify provides its own type definitions, so you do not need this installed.
-
   '@types/estree@1.0.7':
     resolution: {integrity: sha512-w28IoSUCJpidD/TGviZwwMJckNESJZXFu7NBZ5YJ4mEUnNraUn9Pm8HSZm/jDF1pDWYKspWE7oVphigUPRakIQ==}
 
@@ -1122,9 +1112,6 @@ packages:
 
   '@types/json-schema@7.0.15':
     resolution: {integrity: sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==}
-
-  '@types/marked@5.0.2':
-    resolution: {integrity: sha512-OucS4KMHhFzhz27KxmWg7J+kIYqyqoW5kdIEI319hqARQQUTqhao3M/F+uFnDXD0Rg72iDDZxZNxq5gvctmLlg==}
 
   '@types/node-fetch@2.6.12':
     resolution: {integrity: sha512-8nneRWKCg3rMtF69nLQJnOYUcbafYeFSjqkw3jCRLsqkWFlHaoQrr5mXmofFGOx3DKn7UfmBMyov8ySvLRVldA==}
@@ -1547,7 +1534,6 @@ packages:
 
   bun@1.2.11:
     resolution: {integrity: sha512-9brVfsp6/TYVsE3lCl1MUxoyKhvljqyL1MNPErgwsOaS9g4Gzi2nY+W5WtRAXGzLrgz5jzsoGHHwyH/rTeRCIg==}
-    cpu: [arm64, x64, aarch64]
     os: [darwin, linux, win32]
     hasBin: true
 
@@ -4443,10 +4429,6 @@ snapshots:
     dependencies:
       bun-types: 1.2.11
 
-  '@types/dompurify@3.2.0':
-    dependencies:
-      dompurify: 3.2.5
-
   '@types/estree@1.0.7': {}
 
   '@types/jsdom@21.1.7':
@@ -4456,8 +4438,6 @@ snapshots:
       parse5: 7.3.0
 
   '@types/json-schema@7.0.15': {}
-
-  '@types/marked@5.0.2': {}
 
   '@types/node-fetch@2.6.12':
     dependencies:

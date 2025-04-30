@@ -1,8 +1,10 @@
 packages:
   - packages/*
-
 onlyBuiltDependencies:
   - '@biomejs/biome'
   - bun
   - esbuild
+  - onnxruntime-node
+  - protobufjs
+  - sharp
   - vue-demi
