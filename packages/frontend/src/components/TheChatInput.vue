@@ -6,6 +6,7 @@ defineProps<{
 	sendButton: string;
 	loading: boolean;
 	disabled: boolean;
+	autofocus?: boolean;
 }>();
 
 const input = defineModel<string | undefined>();
@@ -14,8 +15,9 @@ const inputEl = useTemplateRef("input-el");
 const models = ref([
 	{ label: "GPT 4.1 nano", id: "4.1-nano" },
 	{ label: "GPT 4.1", id: "4.1" },
+	{ label: "Willekeurig", id: undefined },
 ]);
-const selectedModel = defineModel("selected-model", { default: "4.1-nano" });
+const selectedModel = defineModel("selected-model", { default: undefined });
 
 defineEmits<{
 	submit: [];
@@ -33,6 +35,7 @@ function focus() {
 			ref="input-el"
 			class="message-input"
 			@keyup.enter="$emit('submit')"
+            :autofocus
 			:placeholder
 			:disabled="loading"
 		/>

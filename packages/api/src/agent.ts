@@ -3,16 +3,18 @@ import { ChromaVectorStore } from "@llamaindex/chroma";
 import { GEMINI_MODEL, Gemini } from "@llamaindex/google";
 import { SimpleDirectoryReader } from "@llamaindex/readers/directory";
 import {
+	type ChatMessage,
 	DocStoreStrategy,
+	type LLM,
+	OpenAI,
 	VectorStoreIndex,
 	storageContextFromDefaults,
 } from "llamaindex";
 import { getEnvOrThrow } from "./get-env.js";
-import { SYSTEM_PROMPT } from "./prompt.js";
+import { initialPrompt, promptRobin } from "./prompt.js";
 
-console.time("query");
+export type AvailableModel = "4.1" | "4.1-nano";
 
-console.log("Loading vector store...");
 const chromaUri = `http://${getEnvOrThrow("CHROMA_HOST")}:${getEnvOrThrow("CHROMA_PORT")}`;
 const vectorStore = new ChromaVectorStore({
 	collectionName: getEnvOrThrow("CHROMA_COLLECTION"),
@@ -38,23 +40,45 @@ if (fromStore) {
 	});
 }
 
-console.log("Creating llm...");
-const geminiLLM = new Gemini({
-	model: GEMINI_MODEL.GEMINI_2_0_FLASH,
-});
+interface Strategy {
+	model: () => LLM;
+	systemPrompt: string;
+}
 
-console.log("Creating chat engine...");
-const chatEngine = index.asChatEngine({
-	systemPrompt: SYSTEM_PROMPT,
-	chatModel: geminiLLM,
-});
+function gemini(model: GEMINI_MODEL) {
+	return new Gemini({
+		model,
+	});
+}
 
-console.log("Chat engine created. Sending message");
-console.time("chat");
-const response = await chatEngine.chat({
-	message: "Is het gebruik van de iStandaarden verplicht?",
-});
-console.timeEnd("chat");
+export const llms = {
+	flash: () => new Gemini({ model: GEMINI_MODEL.GEMINI_2_0_FLASH }),
+	"4.1": () => new OpenAI({ model: "gpt-4.1" }),
+	"4.1-nano": () => new OpenAI({ model: "gpt-4.1-nano" }),
+};
 
-console.log(response);
-console.timeEnd("query");
+export const prompts = {
+	initial: initialPrompt,
+	robin: promptRobin,
+};
+
+export async function query(
+	q: string,
+	chatHistory: (ChatMessage | ChatMessage[])[],
+	model: keyof typeof llms = "4.1",
+	systemPromptKey: keyof typeof prompts = "initial",
+) {
+	console.log("Creating chat engine...");
+	const chatEngine = index.asChatEngine({
+		systemPrompt: prompts[systemPromptKey],
+		chatModel: llms[model](),
+	});
+
+	console.log("Chat engine created. Sending message");
+	const response = await chatEngine.chat({
+		message: q,
+		chatHistory,
+	});
+
+	return response;
+}

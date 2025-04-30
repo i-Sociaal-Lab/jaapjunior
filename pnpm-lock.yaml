@@ -175,6 +175,9 @@ importers:
       jsdom:
         specifier: ^26.0.0
         version: 26.1.0
+      llamaindex:
+        specifier: ^0.10.3
+        version: 0.10.3(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0)(hono@4.7.8)(p-retry@6.2.1)(tree-sitter@0.22.4)(web-tree-sitter@0.24.7)(ws@8.18.1)(zod@3.24.3)
       npm-run-all2:
         specifier: ^7.0.2
         version: 7.0.2
@@ -1948,6 +1951,7 @@ packages:
 
   bun@1.2.11:
     resolution: {integrity: sha512-9brVfsp6/TYVsE3lCl1MUxoyKhvljqyL1MNPErgwsOaS9g4Gzi2nY+W5WtRAXGzLrgz5jzsoGHHwyH/rTeRCIg==}
+    cpu: [arm64, x64, aarch64]
     os: [darwin, linux, win32]
     hasBin: true
 
@@ -3438,18 +3442,6 @@ packages:
   open@10.1.1:
     resolution: {integrity: sha512-zy1wx4+P3PfhXSEPJNtZmJXfhkkIaxU1VauWIrDZw1O7uJRDRJtKr9n3Ic4NgbA16KyOxOXO2ng9gYwCdXuSXA==}
     engines: {node: '>=18'}
-
-  openai@4.96.0:
-    resolution: {integrity: sha512-dKoW56i02Prv2XQolJ9Rl9Svqubqkzg3QpwEOBuSVZLk05Shelu7s+ErRTwFc1Bs3JZ2qBqBfVpXQiJhwOGG8A==}
-    hasBin: true
-    peerDependencies:
-      ws: ^8.18.0
-      zod: ^3.23.8
-    peerDependenciesMeta:
-      ws:
-        optional: true
-      zod:
-        optional: true
 
   openai@4.96.2:
     resolution: {integrity: sha512-R2XnxvMsizkROr7BV3uNp1q/3skwPZ7fmPjO1bXLnfB4Tu5xKxrT1EVwzjhxn0MZKBKAvOaGWS63jTMN6KrIXA==}
@@ -5284,7 +5276,7 @@ snapshots:
     dependencies:
       '@llamaindex/core': 0.6.3(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0)
       '@llamaindex/env': 0.1.29(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0)
-      openai: 4.96.0(ws@8.18.1)(zod@3.24.3)
+      openai: 4.96.2(ws@8.18.1)(zod@3.24.3)
     transitivePeerDependencies:
       - '@huggingface/transformers'
       - encoding
@@ -7971,21 +7963,6 @@ snapshots:
       define-lazy-prop: 3.0.0
       is-inside-container: 1.0.0
       is-wsl: 3.1.0
-
-  openai@4.96.0(ws@8.18.1)(zod@3.24.3):
-    dependencies:
-      '@types/node': 18.19.87
-      '@types/node-fetch': 2.6.12
-      abort-controller: 3.0.0
-      agentkeepalive: 4.6.0
-      form-data-encoder: 1.7.2
-      formdata-node: 4.4.1
-      node-fetch: 2.7.0
-    optionalDependencies:
-      ws: 8.18.1
-      zod: 3.24.3
-    transitivePeerDependencies:
-      - encoding
 
   openai@4.96.2(ws@8.18.1)(zod@3.24.3):
     dependencies:

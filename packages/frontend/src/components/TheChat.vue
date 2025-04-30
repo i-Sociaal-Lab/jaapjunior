@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { useApi } from "@/composables/useApi";
 import { default as DOMPurify } from "dompurify";
+import type { ChatMessage } from "llamaindex";
 import * as marked from "marked";
 import { computed, onMounted, onUnmounted, ref, watch } from "vue";
 import { useRoute, useRouter } from "vue-router";
@@ -41,8 +42,8 @@ const config = computed(() => {
 const router = useRouter();
 
 const messageInput = ref("");
-const messages = ref<Array<{ text: string; isUser: boolean }>>([]);
-const selectedModel = ref<"4.1-nano" | "4.1" | undefined>("4.1-nano");
+const messages = ref<(ChatMessage | ChatMessage[])[]>([]);
+const selectedModel = ref<"4.1-nano" | "4.1" | "flash" | undefined>("4.1-nano");
 const isReceivingMessage = ref(false);
 const error = ref<string | null>(null);
 
@@ -109,36 +110,20 @@ async function loadConversation(id: string) {
 		error.value = null;
 
 		const response = await api.conversations[":id"].$get({ param: { id } });
+		if (response.status === 404) {
+			isReceivingMessage.value = false;
+			await router.push({ name: "home" });
+			return;
+		}
+
 		if (!response.ok) {
 			throw new Error(`Failed to load conversation: ${response.statusText}`);
 		}
 
 		const data = await response.json();
 
-		// Convert API message format to our local format
-		messages.value = [];
-
-		// Define the expected API message type
-		interface ApiMessage {
-			role: "system" | "user" | "assistant";
-			content: Array<{ type: string; text: string }>;
-		}
-
-		// Use for...of instead of forEach as recommended by the linter
-		for (const msg of data.messages as ApiMessage[]) {
-			// Skip system messages as they shouldn't be displayed to the user
-			if (msg.role === "system") continue;
-
-			// Get the text content from the message
-			const text = msg.content[0]?.text || "";
-
-			messages.value.push({
-				text,
-				isUser: msg.role === "user",
-			});
-		}
+		messages.value = data.messages;
 	} catch (e) {
-		console.error("Error loading conversation:", e);
 		error.value = config.value.error;
 	} finally {
 		isReceivingMessage.value = false;
@@ -160,10 +145,10 @@ async function sendMessage() {
 
 	const messageText = messageInput.value.trim();
 
-	// Add user message to chat immediately for better UX
+	// Add user message to chat immediately for improved UX
 	messages.value.push({
-		text: messageText,
-		isUser: true,
+		content: messageText,
+		role: "user",
 	});
 
 	// Clear input after sending
@@ -183,23 +168,24 @@ async function sendMessage() {
 			throw new Error("No conversation ID available");
 		}
 
-		console.log("Sending request...", conversationId.value);
-
 		const response = await api.conversations[":id"].$post({
 			param: { id: conversationId.value },
-			json: { input_text: messageText, model: selectedModel.value },
+			json: { inputText: messageText, model: selectedModel.value },
 		});
 
 		if (!response.ok) {
 			throw new Error(`API request failed: ${response.statusText}`);
 		}
 
-		const data = await response.json();
+		const responses = await response.json();
 
-		messages.value.push({
-			text: data.output_text,
-			isUser: false,
-		});
+		console.log(responses);
+
+		if (responses.length === 1) {
+			messages.value.push(responses[0]);
+		} else {
+			messages.value.push(responses);
+		}
 	} catch (e) {
 		console.error("Error sending message:", e);
 		error.value = config.value.error;
@@ -221,14 +207,28 @@ async function sendMessage() {
 				{{ config.emptyState }}
 			</div>
 
-			<div
-				v-for="(message, index) in messages"
+			<template
+				v-for="(messageMaybePair, index) in messages"
 				:key="index"
-				:class="['message', message.isUser ? 'user-message' : 'response-message']"
 			>
-				<template v-if="message.isUser">{{ message.text }}</template>
-				<div v-else v-html="renderMarkdown(message.text)" class="markdown-content"></div>
-			</div>
+                <template v-if="Array.isArray(messageMaybePair)">
+                    <!-- <div v-for="(message, subIndex) in messageMaybePair" :key="subIndex" -->
+                    <!---->
+                    <!-- > -->
+                    <!--     <template v-if="message.role === 'user'">{{ message.content }}</template> -->
+                    <!--     <div v-else v-html="renderMarkdown(message.content as string)" class="markdown-content"></div> -->
+                    <!-- </div> -->
+                </template>
+<template v-else>
+                    <div
+				:class="['message', messageMaybePair.role === 'user' ? 'user-message' : 'response-message']"
+                    >
+				<template v-if="messageMaybePair.role === 'user'">
+                        {{ messageMaybePair.content }}</template>
+				<div v-else v-html="renderMarkdown(messageMaybePair.content as string)" class="markdown-content"></div>
+                    </div>
+                </template>
+			</template>
 
 			<div v-if="isReceivingMessage" class="message response-message loading-message">
 				{{ config.loading }}<span>{{ dots }}</span>
@@ -239,6 +239,7 @@ async function sendMessage() {
 			v-model="messageInput"
 			v-model:selected-model="selectedModel"
 			@submit="sendMessage"
+            autofocus
 			:disabled="isSendDisabled"
 			:loading="isReceivingMessage"
 			:placeholder="config.inputPlaceholder"
