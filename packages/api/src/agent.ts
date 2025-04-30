@@ -1,57 +1,60 @@
 import "dotenv/config";
-import {
-	type ALL_AVAILABLE_ANTHROPIC_MODELS,
-	Anthropic,
-} from "@llamaindex/anthropic";
-import { HuggingFaceEmbedding } from "@llamaindex/huggingface";
+import { ChromaVectorStore } from "@llamaindex/chroma";
+import { GEMINI_MODEL, Gemini } from "@llamaindex/google";
 import { SimpleDirectoryReader } from "@llamaindex/readers/directory";
-import { Settings, VectorStoreIndex, agent, openai } from "llamaindex";
-import type { ChatModel } from "openai/resources/shared.mjs";
+import {
+	DocStoreStrategy,
+	VectorStoreIndex,
+	storageContextFromDefaults,
+} from "llamaindex";
+import { getEnvOrThrow } from "./get-env.js";
+import { SYSTEM_PROMPT } from "./prompt.js";
 
-function openaiModel(model: ChatModel) {
-	return openai({
-		model,
-		apiKey: process.env.OPENAI_API_KEY,
+console.time("query");
+
+console.log("Loading vector store...");
+const chromaUri = `http://${getEnvOrThrow("CHROMA_HOST")}:${getEnvOrThrow("CHROMA_PORT")}`;
+const vectorStore = new ChromaVectorStore({
+	collectionName: getEnvOrThrow("CHROMA_COLLECTION"),
+	chromaClientParams: { path: chromaUri },
+});
+
+const fromStore = true;
+let index: VectorStoreIndex;
+if (fromStore) {
+	console.log("Creating vector store...");
+	index = await VectorStoreIndex.fromVectorStore(vectorStore);
+} else {
+	console.log("Loading documents...");
+	const reader = new SimpleDirectoryReader();
+	const documents = await reader.loadData("./data");
+
+	console.log("Indexing documents...");
+
+	const storageContext = await storageContextFromDefaults({ vectorStore });
+	index = await VectorStoreIndex.fromDocuments(documents, {
+		docStoreStrategy: DocStoreStrategy.UPSERTS,
+		storageContext,
 	});
 }
 
-function anthropic(model: keyof typeof ALL_AVAILABLE_ANTHROPIC_MODELS) {
-	return new Anthropic({ model, apiKey: process.env.ANTHROPIC_API_KEY });
-}
-
-export const llms = {
-	"4.1-nano": () => openaiModel("gpt-4.1-nano"),
-	"4.1": () => openaiModel("gpt-4.1"),
-	"3.7": () => anthropic("claude-3-7-sonnet"),
-};
-
-const reader = new SimpleDirectoryReader();
-const documents = await reader.loadData("./data");
-
-Settings.embedModel = new HuggingFaceEmbedding({
-	modelType: "BAAI/bge-small-en-v1.5",
+console.log("Creating llm...");
+const geminiLLM = new Gemini({
+	model: GEMINI_MODEL.GEMINI_2_0_FLASH,
 });
-const index = await VectorStoreIndex.fromDocuments(documents);
 
-const tools = [
-	index.queryTool({
-		metadata: {
-			name: "san_francisco_budget_tool",
-			description:
-				"This tool can answer detailed questions about the individual components of the budget of San Francisco in 2023-2024.",
-		},
-		options: { similarityTopK: 10 },
-	}),
-];
-const llm = llms["4.1-nano"]();
+console.log("Creating chat engine...");
+const chatEngine = index.asChatEngine({
+	systemPrompt: SYSTEM_PROMPT,
+	chatModel: geminiLLM,
+});
 
-const myAgent = agent({ tools, llm });
+console.log("Chat engine created. Sending message");
+console.time("chat");
+const response = await chatEngine.chat({
+	message: "Is het gebruik van de iStandaarden verplicht?",
+});
+console.timeEnd("chat");
 
-const toolResponse = await myAgent.run(
-	"What's the budget of San Francisco in 2023-2024?",
-);
-console.log(toolResponse);
-
-// export default {
-// 	agent: myAgent,
-// };
+console.log(response);
+console.timeEnd("query");
