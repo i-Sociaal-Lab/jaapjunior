@@ -43,7 +43,7 @@ const app = new Hono<{ Variables: Variables }>()
 	.use(
 		"/api/v1/*",
 		except(
-			"/api/v1/auth",
+			["/api/v1/auth", "/api/v1"],
 			jwt({
 				secret: getEnvOrThrow("JWT_SECRET"),
 			}),
