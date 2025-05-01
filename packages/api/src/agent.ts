@@ -15,7 +15,7 @@ import { initialPrompt, promptRobin } from "./prompt.js";
 
 export type AvailableModel = "4.1" | "4.1-nano";
 
-const chromaUri = `http://${getEnvOrThrow("CHROMA_HOST")}:${getEnvOrThrow("CHROMA_PORT")}`;
+const chromaUri = getEnvOrThrow("CHROMA_URI");
 const vectorStore = new ChromaVectorStore({
 	collectionName: getEnvOrThrow("CHROMA_COLLECTION"),
 	chromaClientParams: { path: chromaUri },
@@ -79,6 +79,10 @@ export async function query(
 		message: q,
 		chatHistory,
 	});
+
+	response.message.options ??= {};
+	response.message.options.model = model;
+	response.message.options.prompt = systemPromptKey;
 
 	return response;
 }

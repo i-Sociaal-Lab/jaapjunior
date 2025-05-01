@@ -10,6 +10,7 @@ import * as v from "valibot";
 import { llms, prompts, query } from "./agent.js";
 import { getEnvOrThrow } from "./get-env.js";
 import { getRandomItem } from "./random.js";
+import { Database } from "bun:sqlite";
 
 interface Conversation {
 	id: string;
@@ -22,9 +23,12 @@ type Variables = JwtVariables;
 
 const sendMessageSchema = v.object({
 	inputText: v.string(),
-	model: v.optional(
-		v.union([v.literal("flash"), v.literal("4.1"), v.literal("4.1-nano")]),
-	),
+	model: v.union([
+		v.literal("flash"),
+		v.literal("4.1"),
+		v.literal("4.1-nano"),
+		v.literal("rate"),
+	]),
 });
 
 // In-memory store for conversations
@@ -110,7 +114,7 @@ export const api = new Hono<{ Variables: Variables }>()
 					return c.json({ error: "Conversation not found" }, 404);
 				}
 
-				if (!selectedModel) {
+				if (selectedModel === "rate") {
 					let modelFirst: keyof typeof llms;
 					let modelSecond: keyof typeof llms;
 					let promptFirst: keyof typeof prompts;
@@ -127,20 +131,12 @@ export const api = new Hono<{ Variables: Variables }>()
 
 						promptFirst = getRandomItem(availablePrompts);
 						promptSecond = getRandomItem(availablePrompts);
-					} while (modelFirst !== modelSecond || promptFirst !== promptSecond);
+					} while (modelFirst === modelSecond && promptFirst === promptSecond);
 
-					const responseFirst = await query(
-						inputText,
-						conversation.messages,
-						modelFirst,
-						promptFirst,
-					);
-					const responseSecond = await query(
-						inputText,
-						conversation.messages,
-						modelSecond,
-						promptSecond,
-					);
+					const [responseFirst, responseSecond] = await Promise.all([
+						query(inputText, conversation.messages, modelFirst, promptFirst),
+						query(inputText, conversation.messages, modelSecond, promptSecond),
+					]);
 
 					conversation.messages.push([
 						responseFirst.message,
@@ -167,4 +163,36 @@ export const api = new Hono<{ Variables: Variables }>()
 				return c.json({ error: errorMessage }, 500);
 			}
 		},
-	);
+	)
+
+	// Pick a message in a conversation
+	.post("conversations/:id/pick", async (c) => {
+		const conversationId = c.req.param("id");
+		const { prefers, over } = await c.req.json();
+
+		const conversation = conversations.get(conversationId);
+		if (!conversation) {
+			return c.json({ error: "Conversation not found" }, 404);
+		}
+
+		const idx = conversation.messages.findIndex((m) => {
+			return (
+				Array.isArray(m) &&
+				(m[0].content === prefers.content || m[1].content === prefers.content)
+			);
+		});
+		conversation.messages[idx] = prefers;
+
+		const db = new Database("storage.sqlite", { create: true });
+		db.run(
+			"CREATE TABLE IF NOT EXISTS model_picks (id INTEGER PRIMARY KEY, prefers TEXT, over TEXT, created_at DATETIME DEFAULT CURRENT_TIMESTAMP)",
+		);
+
+		const q = db.query(
+			"INSERT INTO model_picks (prefers, over) VALUES ($1, $2)",
+		);
+
+		q.run({ $1: JSON.stringify(prefers), $2: JSON.stringify(over) });
+
+		return c.json({ success: true });
+	});
