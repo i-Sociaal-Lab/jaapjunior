@@ -9,7 +9,7 @@ const api = useApi();
 const authStore = useAuthStore();
 const showLoginModal = ref<boolean | null>(null);
 onMounted(async () => {
-	const res = await api.$get();
+	const res = await api.authenticated.$get();
 
 	if (!res.ok) {
 		showLoginModal.value = true;

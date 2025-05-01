@@ -50,6 +50,10 @@ export const api = new Hono<{ Variables: Variables }>()
 		return c.text("OK");
 	})
 
+	.get("/authenticated", (c) => {
+		return c.text("OK");
+	})
+
 	.post("auth", async (c) => {
 		const { password } = await c.req.json();
 
