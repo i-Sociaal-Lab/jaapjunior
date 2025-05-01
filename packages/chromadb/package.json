@@ -1,0 +1,6 @@
+{
+	"name": "@jaap/chromadb",
+	"scripts": {
+		"dev": "docker-compose up"
+	}
+}

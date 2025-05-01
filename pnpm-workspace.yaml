@@ -1,10 +1,14 @@
 packages:
   - packages/*
+
 onlyBuiltDependencies:
   - '@biomejs/biome'
+  - better-sqlite3
   - bun
+  - canvas
   - esbuild
   - onnxruntime-node
   - protobufjs
   - sharp
+  - tree-sitter
   - vue-demi

@@ -8,9 +8,11 @@
 		"fix": "biome check --write .",
 		"dev": "turbo dev",
 		"build": "turbo build",
-		"typecheck": "turbo typecheck"
+		"typecheck": "turbo typecheck",
+		"seed:chroma": "cd packages/api && bun src/seed.ts"
 	},
 	"dependencies": {
+		"@llamaindex/chroma": "^0.0.17",
 		"nanoid": "^5.1.5"
 	},
 	"devDependencies": {

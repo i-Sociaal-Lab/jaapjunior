@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { useApi } from "@/composables/useApi";
-import { default as DOMPurify } from "dompurify";
-import * as marked from "marked";
+import type { ChatMessage } from "llamaindex";
 import { computed, onMounted, onUnmounted, ref, watch } from "vue";
 import { useRoute, useRouter } from "vue-router";
 
@@ -15,6 +14,7 @@ const translations = {
 			"Start a conversation by asking a question about the message traffic",
 		inputPlaceholder: "Type your question here...",
 		sendButton: "Send",
+		sendButtonHasToPick: "First pick your preferred response",
 		languageToggle: "Liever in het nederlands",
 		loading: "Loading...",
 		error: "An error occurred. Please try again.",
@@ -23,6 +23,7 @@ const translations = {
 		emptyState: "Stel hier een vraag over het berichtenverkeer...",
 		inputPlaceholder: "Typ hier je vraag...",
 		sendButton: "Versturen",
+		sendButtonHasToPick: "Kies eerst welk bericht je voorkeur heeft",
 		languageToggle: "Switch to English",
 		loading: "Bezig met laden",
 		error: "Er is een fout opgetreden. Probeer het opnieuw.",
@@ -41,14 +42,23 @@ const config = computed(() => {
 const router = useRouter();
 
 const messageInput = ref("");
-const messages = ref<Array<{ text: string; isUser: boolean }>>([]);
-const selectedModel = ref<"4.1-nano" | "4.1" | undefined>("4.1-nano");
+const messages = ref<(ChatMessage | ChatMessage[])[]>([]);
+const selectedModel = ref<"4.1-nano" | "4.1" | "flash" | "rate">("rate");
 const isReceivingMessage = ref(false);
 const error = ref<string | null>(null);
 
+const hasToPickMessage = computed(() => {
+	const lastMessage = messages.value[messages.value.length - 1];
+	return Array.isArray(lastMessage);
+});
+
 // Computed property to determine if send button should be disabled
 const isSendDisabled = computed(() => {
-	return isReceivingMessage.value || !messageInput.value.trim();
+	return (
+		isReceivingMessage.value ||
+		!messageInput.value.trim() ||
+		hasToPickMessage.value
+	);
 });
 
 const dots = ref("");
@@ -109,48 +119,25 @@ async function loadConversation(id: string) {
 		error.value = null;
 
 		const response = await api.conversations[":id"].$get({ param: { id } });
+		if (response.status === 404) {
+			isReceivingMessage.value = false;
+			await router.push({ name: "home" });
+			return;
+		}
+
 		if (!response.ok) {
 			throw new Error(`Failed to load conversation: ${response.statusText}`);
 		}
 
 		const data = await response.json();
 
-		// Convert API message format to our local format
-		messages.value = [];
-
-		// Define the expected API message type
-		interface ApiMessage {
-			role: "system" | "user" | "assistant";
-			content: Array<{ type: string; text: string }>;
-		}
-
-		// Use for...of instead of forEach as recommended by the linter
-		for (const msg of data.messages as ApiMessage[]) {
-			// Skip system messages as they shouldn't be displayed to the user
-			if (msg.role === "system") continue;
-
-			// Get the text content from the message
-			const text = msg.content[0]?.text || "";
-
-			messages.value.push({
-				text,
-				isUser: msg.role === "user",
-			});
-		}
+		// @ts-expect-error - should line up --- but doesn't
+		messages.value = data.messages;
 	} catch (e) {
-		console.error("Error loading conversation:", e);
 		error.value = config.value.error;
 	} finally {
 		isReceivingMessage.value = false;
 	}
-}
-
-// Helper function to render markdown safely
-function renderMarkdown(text: string): string {
-	// Convert markdown to HTML
-	const html = marked.marked(text, { async: false });
-	// Sanitize HTML to prevent XSS attacks
-	return DOMPurify.sanitize(html);
 }
 
 // Send a message to the API
@@ -160,10 +147,10 @@ async function sendMessage() {
 
 	const messageText = messageInput.value.trim();
 
-	// Add user message to chat immediately for better UX
+	// Add user message to chat immediately for improved UX
 	messages.value.push({
-		text: messageText,
-		isUser: true,
+		content: messageText,
+		role: "user",
 	});
 
 	// Clear input after sending
@@ -183,23 +170,24 @@ async function sendMessage() {
 			throw new Error("No conversation ID available");
 		}
 
-		console.log("Sending request...", conversationId.value);
-
 		const response = await api.conversations[":id"].$post({
 			param: { id: conversationId.value },
-			json: { input_text: messageText, model: selectedModel.value },
+			json: { inputText: messageText, model: selectedModel.value },
 		});
 
 		if (!response.ok) {
 			throw new Error(`API request failed: ${response.statusText}`);
 		}
 
-		const data = await response.json();
+		const responses = await response.json();
 
-		messages.value.push({
-			text: data.output_text,
-			isUser: false,
-		});
+		if (responses.length === 1) {
+			// @ts-expect-error - should line up --- but doesn't
+			messages.value.push(responses[0]);
+		} else {
+			// @ts-expect-error - should line up --- but doesn't
+			messages.value.push(responses);
+		}
 	} catch (e) {
 		console.error("Error sending message:", e);
 		error.value = config.value.error;
@@ -207,6 +195,23 @@ async function sendMessage() {
 		// Reset receiving state
 		isReceivingMessage.value = false;
 	}
+}
+
+async function pickMessage(message: ChatMessage, messagePair: ChatMessage[]) {
+	const indexToChange = messages.value.findIndex((m) => m === messagePair);
+	messages.value[indexToChange] = message;
+
+	if (!conversationId.value) {
+		throw new Error("No conversation ID available");
+	}
+
+	const otherMessage = messagePair.find((m) => m !== message);
+
+	await api.conversations[":id"].pick.$post({
+		param: { id: conversationId.value },
+		// @ts-expect-error - to fix we have to add this to the conversations pick endpoint
+		json: { prefers: message, over: otherMessage },
+	});
 }
 </script>
 
@@ -221,14 +226,35 @@ async function sendMessage() {
 				{{ config.emptyState }}
 			</div>
 
-			<div
-				v-for="(message, index) in messages"
+			<template
+				v-for="(messageOrMessagePair, index) in messages"
 				:key="index"
-				:class="['message', message.isUser ? 'user-message' : 'response-message']"
 			>
-				<template v-if="message.isUser">{{ message.text }}</template>
-				<div v-else v-html="renderMarkdown(message.text)" class="markdown-content"></div>
-			</div>
+                <template v-if="Array.isArray(messageOrMessagePair)">
+                    <span class="text-center">Welk bericht heeft je voorkeur?</span>
+                    <div class="flex gap-2">
+                    <div class="border rounded p-4 flex-1 self-start hover:bg-muted cursor-pointer"
+                            v-for="message in messageOrMessagePair"
+                            :key="message.content as string"
+                            @click="pickMessage(message, messageOrMessagePair)"
+                    >
+                        <MessageContent
+                            :message="message"
+                        />
+                    </div>
+                    </div>
+                </template>
+                <template v-else>
+                    <div
+                        :class="['message', messageOrMessagePair.role === 'user' ? 'user-message' : 'response-message']"
+                    >
+                        <template v-if="messageOrMessagePair.role === 'user'">
+                            {{ messageOrMessagePair.content }}
+                        </template>
+                        <MessageContent v-else :message="messageOrMessagePair" />
+                    </div>
+                </template>
+			</template>
 
 			<div v-if="isReceivingMessage" class="message response-message loading-message">
 				{{ config.loading }}<span>{{ dots }}</span>
@@ -239,11 +265,12 @@ async function sendMessage() {
 			v-model="messageInput"
 			v-model:selected-model="selectedModel"
 			@submit="sendMessage"
+            autofocus
 			:disabled="isSendDisabled"
 			:loading="isReceivingMessage"
 			:placeholder="config.inputPlaceholder"
-			:sendButton="config.sendButton"
-			class="bottom-0 fixed"
+			:sendButton="hasToPickMessage ? config.sendButtonHasToPick : config.sendButton "
+			class="bottom-0 fixed self-center"
 		/>
 	</div>
 </template>
@@ -304,7 +331,6 @@ async function sendMessage() {
 .chat-container {
 	display: flex;
 	flex-direction: column;
-	max-width: 800px;
 	margin: 0 auto;
 	position: relative;
 	min-height: calc(100vh - 120px); /* Minimum height but allows expanding */
@@ -327,8 +353,8 @@ async function sendMessage() {
 }
 
 .error-message {
-	color: #e74c3c;
-	background-color: #fde2e2;
+    background-color: var(--destructive);
+	color: var(--destructive-foreground);
 	padding: 10px;
 	border-radius: 8px;
 	margin-bottom: 12px;
@@ -338,27 +364,27 @@ async function sendMessage() {
 .message {
 	padding: 10px 14px;
 	border-radius: 18px;
-	max-width: 70%;
 	word-break: break-word;
 }
 
 .user-message {
 	align-self: flex-end;
-	background-color: #007bff;
-	color: white;
+	background-color: var(--primary);
+	color: var(--primary-foreground);
+	max-width: 70%;
 	border-bottom-right-radius: 4px;
 }
 
 .response-message {
 	align-self: flex-start;
-	background-color: #e1e1e1;
-	color: #333;
+	background-color: var(--secondary);
+	color: var(--secondary-foreground);
 	border-bottom-left-radius: 4px;
 }
 
 .loading-message {
-	background-color: #f8f9fa;
-	color: #777;
+	background-color: var(--secondary);
+	color: var(--secondary-foreground);
 	font-style: italic;
 }
 </style>

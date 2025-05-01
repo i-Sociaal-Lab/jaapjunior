@@ -1,0 +1,9 @@
+services:
+  chromadb:
+    image: chromadb/chroma:latest
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./chroma_data:/chroma/chroma   # persist DB files on host
+    environment:
+      - IS_PERSISTENT=TRUE            # keep data between restarts

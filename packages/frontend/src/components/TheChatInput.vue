@@ -6,16 +6,19 @@ defineProps<{
 	sendButton: string;
 	loading: boolean;
 	disabled: boolean;
+	autofocus?: boolean;
 }>();
 
 const input = defineModel<string | undefined>();
 const inputEl = useTemplateRef("input-el");
 
 const models = ref([
+	{ label: "Modellen beoordelen", id: "rate" },
 	{ label: "GPT 4.1 nano", id: "4.1-nano" },
 	{ label: "GPT 4.1", id: "4.1" },
+	{ label: "Gemini 2.0 flash", id: "flash" },
 ]);
-const selectedModel = defineModel("selected-model", { default: "4.1-nano" });
+const selectedModel = defineModel<string>("selected-model");
 
 defineEmits<{
 	submit: [];
@@ -33,6 +36,7 @@ function focus() {
 			ref="input-el"
 			class="message-input"
 			@keyup.enter="$emit('submit')"
+            :autofocus
 			:placeholder
 			:disabled="loading"
 		/>
@@ -41,11 +45,11 @@ function focus() {
 				v-model="selectedModel"
 				value-key="id"
 				:items="models"
-				class="text-end hover:ring hover:ring-default hover:bg-gray-100 transition-all duration-150"
+				class="text-end hover:ring hover:ring-default hover:brightness-85 transition-all duration-150"
 				:disabled="loading"
 				:search-input="false"
 				variant="none"
-				:ui="{ content: 'w-36' }"
+				:ui="{ content: 'w-48' }"
 				:content="{ align: 'end' }"
 			/>
 			<button @click="$emit('submit')" class="send-button" :disabled>
@@ -62,7 +66,7 @@ function focus() {
 	cursor: text;
 	padding: 12px;
 	width: 100%;
-	background-color: rgba(255, 255, 255, 0.9);
+	background-color: var(--background);
 	backdrop-filter: blur(5px);
 	max-width: 800px;
 	border: 1px solid var(--border);
@@ -82,27 +86,24 @@ function focus() {
 	outline: none;
 }
 
-.message-input:focus {
-	border-color: #007bff;
-}
-
 .send-button {
-	background-color: #007bff;
-	color: white;
+	background-color: var(--primary);
+	color: var(--primary-foreground);
 	border: none;
 	border-radius: 20px;
 	padding: 0 20px;
 	cursor: pointer;
 	font-weight: 500;
-	transition: background-color 0.2s;
+	transition: filter 0.2s;
 }
 
 .send-button:hover {
-	background-color: #0069d9;
+  filter: brightness(85%);
 }
 
 .send-button:disabled {
-	background-color: #cccccc;
+	background-color: var(--muted);
+    color: var(--muted-foreground);
 	cursor: not-allowed;
 	opacity: 0.7;
 }
