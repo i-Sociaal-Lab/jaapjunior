@@ -11,6 +11,6 @@
 		}
 	},
 	"deploy": {
-		"startCommand": "echo $CHROMA_CONFIG > config.yaml && docker run -v ./chroma-data:/data -v ./config.yaml:/config.yaml -p 8000:8000 chromadb/chroma"
+		"startCommand": "sudo systemctl start docker && echo $CHROMA_CONFIG > config.yaml && docker run -v ./chroma-data:/data -v ./config.yaml:/config.yaml -p 8000:8000 chromadb/chroma"
 	}
 }
