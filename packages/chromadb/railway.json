@@ -1,0 +1,16 @@
+{
+	"$schema": "https://railway.com/railway.schema.json",
+	"build": {
+		"nixpacksPlan": {
+			"providers": [],
+			"phases": {
+				"setup": {
+					"nixPkgs": ["...", "docker"]
+				}
+			}
+		}
+	},
+	"deploy": {
+		"startCommand": "echo $CHROMA_CONFIG > config.yaml && docker run -v ./chroma-data:/data -v ./config.yaml:/config.yaml -p 8000:8000 chromadb/chroma"
+	}
+}
