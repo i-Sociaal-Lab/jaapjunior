@@ -64,7 +64,7 @@ export const prompts = {
 
 export async function query(
 	q: string,
-	chatHistory: (ChatMessage | ChatMessage[])[],
+	chatHistory: ChatMessage[],
 	model: keyof typeof llms = "4.1",
 	systemPromptKey: keyof typeof prompts = "initial",
 ) {
@@ -81,7 +81,9 @@ export async function query(
 	});
 
 	response.message.options ??= {};
+	// @ts-expect-error
 	response.message.options.model = model;
+	// @ts-expect-error
 	response.message.options.prompt = systemPromptKey;
 
 	return response;

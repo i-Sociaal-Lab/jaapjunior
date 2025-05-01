@@ -3,6 +3,7 @@ packages:
 
 onlyBuiltDependencies:
   - '@biomejs/biome'
+  - better-sqlite3
   - bun
   - canvas
   - esbuild

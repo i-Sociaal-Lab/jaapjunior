@@ -131,6 +131,7 @@ async function loadConversation(id: string) {
 
 		const data = await response.json();
 
+		// @ts-expect-error - should line up --- but doesn't
 		messages.value = data.messages;
 	} catch (e) {
 		error.value = config.value.error;
@@ -181,8 +182,10 @@ async function sendMessage() {
 		const responses = await response.json();
 
 		if (responses.length === 1) {
+			// @ts-expect-error - should line up --- but doesn't
 			messages.value.push(responses[0]);
 		} else {
+			// @ts-expect-error - should line up --- but doesn't
 			messages.value.push(responses);
 		}
 	} catch (e) {
@@ -206,6 +209,7 @@ async function pickMessage(message: ChatMessage, messagePair: ChatMessage[]) {
 
 	await api.conversations[":id"].pick.$post({
 		param: { id: conversationId.value },
+		// @ts-expect-error - to fix we have to add this to the conversations pick endpoint
 		json: { prefers: message, over: otherMessage },
 	});
 }
@@ -231,7 +235,7 @@ async function pickMessage(message: ChatMessage, messagePair: ChatMessage[]) {
                     <div class="flex gap-2">
                     <div class="border rounded p-4 flex-1 self-start hover:bg-muted cursor-pointer"
                             v-for="message in messageOrMessagePair"
-                            :key="message"
+                            :key="message.content as string"
                             @click="pickMessage(message, messageOrMessagePair)"
                     >
                         <MessageContent

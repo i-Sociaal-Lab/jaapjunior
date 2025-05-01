@@ -1,3 +1,4 @@
+import Database from "better-sqlite3";
 import { Hono } from "hono";
 import { validator } from "hono-openapi/valibot";
 import { except } from "hono/combine";
@@ -10,7 +11,6 @@ import * as v from "valibot";
 import { llms, prompts, query } from "./agent.js";
 import { getEnvOrThrow } from "./get-env.js";
 import { getRandomItem } from "./random.js";
-import { Database } from "bun:sqlite";
 
 interface Conversation {
 	id: string;
@@ -134,8 +134,18 @@ export const api = new Hono<{ Variables: Variables }>()
 					} while (modelFirst === modelSecond && promptFirst === promptSecond);
 
 					const [responseFirst, responseSecond] = await Promise.all([
-						query(inputText, conversation.messages, modelFirst, promptFirst),
-						query(inputText, conversation.messages, modelSecond, promptSecond),
+						query(
+							inputText,
+							conversation.messages as ChatMessage[],
+							modelFirst,
+							promptFirst,
+						),
+						query(
+							inputText,
+							conversation.messages as ChatMessage[],
+							modelSecond,
+							promptSecond,
+						),
 					]);
 
 					conversation.messages.push([
@@ -148,7 +158,7 @@ export const api = new Hono<{ Variables: Variables }>()
 
 				const response = await query(
 					inputText,
-					conversation.messages,
+					conversation.messages as ChatMessage[],
 					selectedModel,
 					"robin",
 				);
@@ -183,16 +193,15 @@ export const api = new Hono<{ Variables: Variables }>()
 		});
 		conversation.messages[idx] = prefers;
 
-		const db = new Database("storage.sqlite", { create: true });
-		db.run(
+		const db = new Database("storage.sqlite");
+		db.prepare(
 			"CREATE TABLE IF NOT EXISTS model_picks (id INTEGER PRIMARY KEY, prefers TEXT, over TEXT, created_at DATETIME DEFAULT CURRENT_TIMESTAMP)",
-		);
+		).run();
 
-		const q = db.query(
-			"INSERT INTO model_picks (prefers, over) VALUES ($1, $2)",
-		);
-
-		q.run({ $1: JSON.stringify(prefers), $2: JSON.stringify(over) });
+		db.prepare("INSERT INTO model_picks (prefers, over) VALUES ($1, $2)").run({
+			$1: JSON.stringify(prefers),
+			$2: JSON.stringify(over),
+		});
 
 		return c.json({ success: true });
 	});

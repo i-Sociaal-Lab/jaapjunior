@@ -19,6 +19,7 @@
 		"@llamaindex/huggingface": "^0.1.7",
 		"@llamaindex/readers": "^3.1.1",
 		"@valibot/to-json-schema": "^1.0.0",
+		"better-sqlite3": "^11.9.1",
 		"dotenv": "^16.5.0",
 		"gpt-tokenizer": "^2.9.0",
 		"hono": "^4.7.7",
@@ -29,6 +30,7 @@
 		"valibot": "^1.0.0"
 	},
 	"devDependencies": {
+		"@types/better-sqlite3": "^7.6.13",
 		"typescript": "^5.2.2"
 	}
 }
