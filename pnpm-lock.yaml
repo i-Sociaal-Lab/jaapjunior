@@ -23,7 +23,7 @@ importers:
         version: 1.9.4
       '@types/bun':
         specifier: latest
-        version: 1.2.11
+        version: 1.2.12
       bun:
         specifier: ^1.2.11
         version: 1.2.11
@@ -115,8 +115,8 @@ importers:
         specifier: ^4.7.7
         version: 4.7.8
       lucide-vue-next:
-        specifier: ^0.503.0
-        version: 0.503.0(vue@3.5.13(typescript@5.8.3))
+        specifier: ^0.508.0
+        version: 0.508.0(vue@3.5.13(typescript@5.8.3))
       marked:
         specifier: ^15.0.8
         version: 15.0.11
@@ -1764,8 +1764,8 @@ packages:
   '@types/better-sqlite3@7.6.13':
     resolution: {integrity: sha512-NMv9ASNARoKksWtsq/SHakpYAYnhBrQgGD8zkLYk/jaK8jUGn08CfEdTRgYhMypUQAfzSP8W6gNLe0q19/t4VA==}
 
-  '@types/bun@1.2.11':
-    resolution: {integrity: sha512-ZLbbI91EmmGwlWTRWuV6J19IUiUC5YQ3TCEuSHI3usIP75kuoA8/0PVF+LTrbEnVc8JIhpElWOxv1ocI1fJBbw==}
+  '@types/bun@1.2.12':
+    resolution: {integrity: sha512-lY/GQTXDGsolT/TiH72p1tuyUORuRrdV7VwOTOjDOt8uTBJQOJc5zz3ufwwDl0VBaoxotSk4LdP0hhjLJ6ypIQ==}
 
   '@types/estree@1.0.7':
     resolution: {integrity: sha512-w28IoSUCJpidD/TGviZwwMJckNESJZXFu7NBZ5YJ4mEUnNraUn9Pm8HSZm/jDF1pDWYKspWE7oVphigUPRakIQ==}
@@ -2293,8 +2293,8 @@ packages:
   buffer@6.0.3:
     resolution: {integrity: sha512-FTiCpNxtwiZZHEZbcbTIcZjERVICn9yq/pDFkTl95/AxzD1naBctN7YO68riM/gLSDY7sdrMby8hofADYuuqOA==}
 
-  bun-types@1.2.11:
-    resolution: {integrity: sha512-dbkp5Lo8HDrXkLrONm6bk+yiiYQSntvFUzQp0v3pzTAsXk6FtgVMjdQ+lzFNVAmQFUkPQZ3WMZqH5tTo+Dp/IA==}
+  bun-types@1.2.12:
+    resolution: {integrity: sha512-tvWMx5vPqbRXgE8WUZI94iS1xAYs8bkqESR9cxBB1Wi+urvfTrF1uzuDgBHFAdO0+d2lmsbG3HmeKMvUyj6pWA==}
 
   bun@1.2.11:
     resolution: {integrity: sha512-9brVfsp6/TYVsE3lCl1MUxoyKhvljqyL1MNPErgwsOaS9g4Gzi2nY+W5WtRAXGzLrgz5jzsoGHHwyH/rTeRCIg==}
@@ -3538,8 +3538,8 @@ packages:
   lru-cache@5.1.1:
     resolution: {integrity: sha512-KpNARQA3Iwv+jTA0utUVVbrh+Jlrr1Fv0e56GGzAFOXN7dk/FviaDW8LHmK52DlcH4WP2n6gI8vN1aesBFgo9w==}
 
-  lucide-vue-next@0.503.0:
-    resolution: {integrity: sha512-3MrtHIBdh4dPCUZDLxQnvmQ17UzUnBYgezUSIo87Laais8hOz6qIPllp0iG/uS/UIzk7bJxyZRzoZTW/gLSr4A==}
+  lucide-vue-next@0.508.0:
+    resolution: {integrity: sha512-ZPO/Kh1gz7RU2/hd8FWw3SjLVMUIm/TJAhOGV9CbM1zvNwiJ8DK6W33LFWxtlZZ1IUPOXAny0pbttY+yyOsjKg==}
     peerDependencies:
       vue: '>=3.0.1'
 
@@ -6995,9 +6995,9 @@ snapshots:
     dependencies:
       '@types/node': 22.15.3
 
-  '@types/bun@1.2.11':
+  '@types/bun@1.2.12':
     dependencies:
-      bun-types: 1.2.11
+      bun-types: 1.2.12
 
   '@types/estree@1.0.7': {}
 
@@ -7595,7 +7595,7 @@ snapshots:
       base64-js: 1.5.1
       ieee754: 1.2.1
 
-  bun-types@1.2.11:
+  bun-types@1.2.12:
     dependencies:
       '@types/node': 22.15.3
 
@@ -8923,7 +8923,7 @@ snapshots:
     dependencies:
       yallist: 3.1.1
 
-  lucide-vue-next@0.503.0(vue@3.5.13(typescript@5.8.3)):
+  lucide-vue-next@0.508.0(vue@3.5.13(typescript@5.8.3)):
     dependencies:
       vue: 3.5.13(typescript@5.8.3)
 

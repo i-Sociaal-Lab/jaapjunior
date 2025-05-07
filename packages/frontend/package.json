@@ -25,7 +25,7 @@
 		"clsx": "^2.1.1",
 		"dompurify": "^3.2.5",
 		"hono": "^4.7.7",
-		"lucide-vue-next": "^0.503.0",
+		"lucide-vue-next": "^0.508.0",
 		"marked": "^15.0.8",
 		"pinia": "^3.0.1",
 		"reka-ui": "^2.2.0",
