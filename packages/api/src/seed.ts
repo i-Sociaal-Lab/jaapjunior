@@ -18,7 +18,8 @@ const vectorStore = new ChromaVectorStore({
 
 console.log("Deleting existing collection...");
 const col = await vectorStore.getCollection();
-await col.delete();
+const { ids } = await col.get();
+await col.delete({ ids });
 
 console.log("Loading documents...");
 const reader = new SimpleDirectoryReader();
