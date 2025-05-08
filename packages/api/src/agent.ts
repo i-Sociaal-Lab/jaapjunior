@@ -4,9 +4,12 @@ import { GEMINI_MODEL, Gemini } from "@llamaindex/google";
 import { SimpleDirectoryReader } from "@llamaindex/readers/directory";
 import {
 	type ChatMessage,
+	ContextChatEngine,
 	DocStoreStrategy,
 	type LLM,
 	OpenAI,
+	OpenAIEmbedding,
+	Settings,
 	VectorStoreIndex,
 	storageContextFromDefaults,
 } from "llamaindex";
@@ -19,6 +22,10 @@ const chromaUri = getEnvOrThrow("CHROMA_URI");
 const vectorStore = new ChromaVectorStore({
 	collectionName: getEnvOrThrow("CHROMA_COLLECTION"),
 	chromaClientParams: { path: chromaUri },
+});
+
+Settings.embedModel = new OpenAIEmbedding({
+	model: "text-embedding-ada-002",
 });
 
 const fromStore = true;
@@ -69,7 +76,11 @@ export async function query(
 	systemPromptKey: keyof typeof prompts = "initial",
 ) {
 	console.log("Creating chat engine...");
-	const chatEngine = index.asChatEngine({
+	const retriever = index.asRetriever({
+		similarityTopK: 5,
+	});
+	const chatEngine = new ContextChatEngine({
+		retriever,
 		systemPrompt: prompts[systemPromptKey],
 		chatModel: llms[model](),
 	});
