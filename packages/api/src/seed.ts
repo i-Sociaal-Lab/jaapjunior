@@ -15,6 +15,11 @@ const vectorStore = new ChromaVectorStore({
 	collectionName: getEnvOrThrow("CHROMA_COLLECTION"),
 	chromaClientParams: { path: chromaUri },
 });
+
+console.log("Deleting existing collection...");
+const col = await vectorStore.getCollection();
+await col.delete();
+
 console.log("Loading documents...");
 const reader = new SimpleDirectoryReader();
 const documents = await reader.loadData("./data");

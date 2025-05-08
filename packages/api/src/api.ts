@@ -1,4 +1,4 @@
-import Database from "better-sqlite3";
+import { Database } from "bun:sqlite";
 import { Hono } from "hono";
 import { validator } from "hono-openapi/valibot";
 import { except } from "hono/combine";
@@ -34,6 +34,11 @@ const sendMessageSchema = v.object({
 // In-memory store for conversations
 // Note: In a production environment, you would use a database instead
 const conversations = new Map<string, Conversation>();
+
+const db = new Database("storage.sqlite");
+db.prepare(
+	"CREATE TABLE IF NOT EXISTS model_picks (id INTEGER PRIMARY KEY, prefers TEXT, over TEXT, created_at DATETIME DEFAULT CURRENT_TIMESTAMP)",
+).run();
 
 export const api = new Hono<{ Variables: Variables }>()
 	.use(
@@ -197,15 +202,15 @@ export const api = new Hono<{ Variables: Variables }>()
 		});
 		conversation.messages[idx] = prefers;
 
-		const db = new Database("storage.sqlite");
-		db.prepare(
-			"CREATE TABLE IF NOT EXISTS model_picks (id INTEGER PRIMARY KEY, prefers TEXT, over TEXT, created_at DATETIME DEFAULT CURRENT_TIMESTAMP)",
-		).run();
-
 		db.prepare("INSERT INTO model_picks (prefers, over) VALUES ($1, $2)").run({
 			$1: JSON.stringify(prefers),
 			$2: JSON.stringify(over),
 		});
 
 		return c.json({ success: true });
+	})
+
+	.get("picks", async (c) => {
+		const rows = db.prepare("SELECT * FROM model_picks").all();
+		return c.json(rows);
 	});
