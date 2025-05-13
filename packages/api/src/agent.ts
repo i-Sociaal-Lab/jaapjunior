@@ -1,6 +1,9 @@
 import "dotenv/config";
+import type { Database } from "better-sqlite3";
 import { ChromaVectorStore } from "@llamaindex/chroma";
 import { GEMINI_MODEL, Gemini } from "@llamaindex/google";
+import { Groq } from "@llamaindex/groq";
+import { MistralAI } from "@llamaindex/mistral";
 import { SimpleDirectoryReader } from "@llamaindex/readers/directory";
 import {
 	type ChatMessage,
@@ -14,18 +17,17 @@ import {
 	storageContextFromDefaults,
 } from "llamaindex";
 import { getEnvOrThrow } from "./get-env.js";
-import { initialPrompt, promptRobin } from "./prompt.js";
+import { prompt13May, promptRobin } from "./prompt.js";
 
-export type AvailableModel = "4.1" | "4.1-nano";
+Settings.embedModel = new OpenAIEmbedding({
+	model: "text-embedding-ada-002",
+});
 
 const chromaUri = getEnvOrThrow("CHROMA_URI");
 const vectorStore = new ChromaVectorStore({
 	collectionName: getEnvOrThrow("CHROMA_COLLECTION"),
 	chromaClientParams: { path: chromaUri },
-});
-
-Settings.embedModel = new OpenAIEmbedding({
-	model: "text-embedding-ada-002",
+	embeddingModel: Settings.embedModel,
 });
 
 const fromStore = true;
@@ -47,33 +49,28 @@ if (fromStore) {
 	});
 }
 
-interface Strategy {
-	model: () => LLM;
-	systemPrompt: string;
-}
-
-function gemini(model: GEMINI_MODEL) {
-	return new Gemini({
-		model,
-	});
-}
-
 export const llms = {
-	flash: () => new Gemini({ model: GEMINI_MODEL.GEMINI_2_0_FLASH }),
 	"4.1": () => new OpenAI({ model: "gpt-4.1" }),
-	"4.1-nano": () => new OpenAI({ model: "gpt-4.1-nano" }),
-};
+	"2.5-pro": () => new Gemini({ model: GEMINI_MODEL.GEMINI_2_5_PRO_PREVIEW }),
+	"llama-4": () =>
+		new Groq({ model: "meta-llama/llama-4-maverick-17b-128e-instruct" }) as LLM,
+	"mistral-medium": () => new MistralAI({ model: "mistral-medium" }) as LLM,
+	// "deepseek-r1": () =>
+	// 	new Groq({ model: "deepseek-r1-distill-llama-70b" }) as LLM,
+} satisfies Record<string, () => LLM>;
 
 export const prompts = {
-	initial: initialPrompt,
+	// initial: initialPrompt,
 	robin: promptRobin,
+	may13: prompt13May,
 };
 
 export async function query(
 	q: string,
 	chatHistory: ChatMessage[],
+	db: Database,
 	model: keyof typeof llms = "4.1",
-	systemPromptKey: keyof typeof prompts = "initial",
+	systemPromptKey: keyof typeof prompts = "may13",
 ) {
 	console.log("Creating chat engine...");
 	const retriever = index.asRetriever({
@@ -85,10 +82,24 @@ export async function query(
 		chatModel: llms[model](),
 	});
 
+	const startTime = Date.now();
+
 	console.log("Chat engine created. Sending message");
 	const response = await chatEngine.chat({
 		message: q,
 		chatHistory,
+	});
+
+	const endTime = Date.now();
+
+	const responseTime = endTime - startTime;
+
+	console.log("Model responded", model, responseTime);
+	db.prepare(
+		"INSERT INTO model_responses (model, response_time) VALUES ($1, $2)",
+	).run({
+		$1: model,
+		$2: responseTime,
 	});
 
 	response.message.options ??= {};

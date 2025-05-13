@@ -1,4 +1,3 @@
-import { Database } from "bun:sqlite";
 import { Hono } from "hono";
 import { validator } from "hono-openapi/valibot";
 import { except } from "hono/combine";
@@ -11,6 +10,21 @@ import * as v from "valibot";
 import { llms, prompts, query } from "./agent.js";
 import { getEnvOrThrow } from "./get-env.js";
 import { getRandomItem } from "./random.js";
+import type { Database as BunDB } from "bun:sqlite";
+import type SQLiteDB from "better-sqlite3";
+
+// Define a generic type to extract the 'value' type
+type ExtractValue<T> = T extends { value: infer V } ? V : never;
+
+// Define a type to map an array of objects to a tuple of their 'value' types
+type ValuesTuple<Arr extends Readonly<unknown[]>> = {
+	[K in keyof Arr]: ExtractValue<Arr[K]>;
+};
+
+// Generic type to wrap each element of a tuple
+type WrapTupleElements<TTuple extends Readonly<v.Literal[]>> = {
+	[P in keyof TTuple]: v.LiteralSchema<TTuple[P], undefined>;
+};
 
 interface Conversation {
 	id: string;
@@ -21,21 +35,43 @@ interface Conversation {
 
 type Variables = JwtVariables;
 
+const availableModels = [
+	{ label: "GPT-4.1", value: "4.1" },
+	{ label: "Gemini 2.5 Pro", value: "2.5-pro" },
+	{ label: "Llama 4", value: "llama-4" },
+	{ label: "Mistral Medium", value: "mistral-medium" },
+] as const satisfies ReadonlyArray<{
+	label: string;
+	value: keyof typeof llms;
+}>;
+
 const sendMessageSchema = v.object({
 	inputText: v.string(),
 	model: v.union([
-		v.literal("flash"),
-		v.literal("4.1"),
-		v.literal("4.1-nano"),
+		v.union(
+			availableModels.map((model) =>
+				v.literal(model.value),
+			) as unknown as WrapTupleElements<ValuesTuple<typeof availableModels>>,
+		),
 		v.literal("rate"),
 	]),
 });
 
 const conversations = new Map<string, Conversation>();
 
+let Database: typeof BunDB | typeof SQLiteDB;
+if (typeof Bun !== "undefined") {
+	({ Database } = await import("bun:sqlite"));
+} else {
+	Database = await import("better-sqlite3").then((m) => m.default);
+}
+
 const db = new Database(getEnvOrThrow("DB_PATH"));
 db.prepare(
 	"CREATE TABLE IF NOT EXISTS model_picks (id INTEGER PRIMARY KEY, prefers TEXT, over TEXT, created_at DATETIME DEFAULT CURRENT_TIMESTAMP)",
+).run();
+db.prepare(
+	"CREATE TABLE IF NOT EXISTS model_responses (id INTEGER PRIMARY KEY, model TEXT, response_time REAL, created_at DATETIME DEFAULT CURRENT_TIMESTAMP)",
 ).run();
 
 export const api = new Hono<{ Variables: Variables }>()
@@ -144,12 +180,14 @@ export const api = new Hono<{ Variables: Variables }>()
 						query(
 							inputText,
 							conversation.messages as ChatMessage[],
+							db,
 							modelFirst,
 							promptFirst,
 						),
 						query(
 							inputText,
 							conversation.messages as ChatMessage[],
+							db,
 							modelSecond,
 							promptSecond,
 						),
@@ -166,8 +204,9 @@ export const api = new Hono<{ Variables: Variables }>()
 				const response = await query(
 					inputText,
 					conversation.messages as ChatMessage[],
+					db,
 					selectedModel,
-					"robin",
+					"may13",
 				);
 
 				conversation.messages.push(response.message);
@@ -206,6 +245,10 @@ export const api = new Hono<{ Variables: Variables }>()
 		});
 
 		return c.json({ success: true });
+	})
+
+	.get("models", (c) => {
+		return c.json(availableModels);
 	})
 
 	.get("picks", async (c) => {

@@ -8,9 +8,6 @@ importers:
 
   .:
     dependencies:
-      '@llamaindex/chroma':
-        specifier: ^0.0.17
-        version: 0.0.17(@huggingface/transformers@3.5.0)(cohere-ai@7.17.1(encoding@0.1.13))(encoding@0.1.13)(gpt-tokenizer@2.9.0)(openai@4.96.2(encoding@0.1.13)(ws@8.18.1)(zod@3.24.3))
       nanoid:
         specifier: ^5.1.5
         version: 5.1.5
@@ -25,11 +22,11 @@ importers:
         specifier: latest
         version: 1.2.12
       bun:
-        specifier: ^1.2.11
-        version: 1.2.11
+        specifier: ^1.2.13
+        version: 1.2.13
       turbo:
-        specifier: ^2.5.2
-        version: 2.5.2
+        specifier: ^2.5.3
+        version: 2.5.3
 
   packages/api:
     dependencies:
@@ -37,16 +34,22 @@ importers:
         specifier: ^0.5.2
         version: 0.5.2(hono@4.7.8)(valibot@1.0.0(typescript@5.8.3))
       '@llamaindex/anthropic':
-        specifier: ^0.3.4
+        specifier: 0.3.4
         version: 0.3.4(@huggingface/transformers@3.5.0)(encoding@0.1.13)(gpt-tokenizer@2.9.0)
+      '@llamaindex/chroma':
+        specifier: 0.0.17
+        version: 0.0.17(@huggingface/transformers@3.5.0)(cohere-ai@7.17.1(encoding@0.1.13))(encoding@0.1.13)(gpt-tokenizer@2.9.0)(openai@4.96.2(encoding@0.1.13)(ws@8.18.1)(zod@3.24.3))
       '@llamaindex/google':
-        specifier: ^0.2.5
+        specifier: 0.2.5
         version: 0.2.5(@huggingface/transformers@3.5.0)(encoding@0.1.13)(gpt-tokenizer@2.9.0)
-      '@llamaindex/huggingface':
-        specifier: ^0.1.7
-        version: 0.1.7(@huggingface/transformers@3.5.0)(encoding@0.1.13)(gpt-tokenizer@2.9.0)(ws@8.18.1)(zod@3.24.3)
+      '@llamaindex/groq':
+        specifier: 0.0.69
+        version: 0.0.69(@huggingface/transformers@3.5.0)(encoding@0.1.13)(gpt-tokenizer@2.9.0)(ws@8.18.1)(zod@3.24.3)
+      '@llamaindex/mistral':
+        specifier: 0.1.4
+        version: 0.1.4(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0)(zod@3.24.3)
       '@llamaindex/readers':
-        specifier: ^3.1.1
+        specifier: 3.1.1
         version: 3.1.1(@llamaindex/core@0.6.3(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0))(@llamaindex/env@0.1.29(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0))(encoding@0.1.13)
       '@valibot/to-json-schema':
         specifier: ^1.0.0
@@ -73,7 +76,7 @@ importers:
         specifier: ^6.0.10
         version: 6.0.10
       llamaindex:
-        specifier: ^0.10.3
+        specifier: 0.10.3
         version: 0.10.3(@huggingface/transformers@3.5.0)(encoding@0.1.13)(gpt-tokenizer@2.9.0)(hono@4.7.8)(p-retry@6.2.1)(tree-sitter@0.22.4)(web-tree-sitter@0.24.7)(ws@8.18.1)(zod@3.24.3)
       openai:
         specifier: ^4.95.0
@@ -185,7 +188,7 @@ importers:
         specifier: ^26.0.0
         version: 26.1.0
       llamaindex:
-        specifier: ^0.10.3
+        specifier: 0.10.3
         version: 0.10.3(@huggingface/transformers@3.5.0)(encoding@0.1.13)(gpt-tokenizer@2.9.0)(hono@4.7.8)(p-retry@6.2.1)(tree-sitter@0.22.4)(web-tree-sitter@0.24.7)(ws@8.18.1)(zod@3.24.3)
       npm-run-all2:
         specifier: ^8.0.0
@@ -335,7 +338,6 @@ packages:
   '@aws-sdk/protocol-http@3.374.0':
     resolution: {integrity: sha512-9WpRUbINdGroV3HiZZIBoJvL2ndoWk39OfwxWs2otxByppJZNN14bg/lvCx5e8ggHUti7IBk5rb0nqQZ4m05pg==}
     engines: {node: '>=14.0.0'}
-    deprecated: This package has moved to @smithy/protocol-http
 
   '@aws-sdk/region-config-resolver@3.775.0':
     resolution: {integrity: sha512-40iH3LJjrQS3LKUJAl7Wj0bln7RFPEvUYKFxtP8a+oKFDO0F65F52xZxIJbPn6sHkxWDAnZlGgdjZXM3p2g5wQ==}
@@ -344,7 +346,6 @@ packages:
   '@aws-sdk/signature-v4@3.374.0':
     resolution: {integrity: sha512-2xLJvSdzcZZAg0lsDLUAuSQuihzK0dcxIK7WmfuJeF7DGKJFmp9czQmz5f3qiDz6IDQzvgK1M9vtJSVCslJbyQ==}
     engines: {node: '>=14.0.0'}
-    deprecated: This package has moved to @smithy/signature-v4
 
   '@aws-sdk/token-providers@3.799.0':
     resolution: {integrity: sha512-/8iDjnsJs/D8AhGbDAmdF5oSHzE4jsDsM2RIIxmBAKTZXkaaclQBNX9CmAqLKQmO3IUMZsDH2KENHLVAk/N/mw==}
@@ -825,10 +826,6 @@ packages:
       hono: '>=3.9.0'
       valibot: ^1.0.0 || ^1.0.0-beta.4 || ^1.0.0-rc
 
-  '@huggingface/inference@2.8.1':
-    resolution: {integrity: sha512-EfsNtY9OR6JCNaUa5bZu2mrs48iqeTz0Gutwf+fU0Kypx33xFQB4DKMhp8u4Ee6qVbLbNWvTHuWwlppLQl4p4Q==}
-    engines: {node: '>=18'}
-
   '@huggingface/jinja@0.1.3':
     resolution: {integrity: sha512-9KsiorsdIK8+7VmlamAT7Uh90zxAhC/SeKaKc80v58JhtPYuwaJpmR/ST7XAUxrHAFqHTCoTH5aJnJDwSL6xIQ==}
     engines: {node: '>=18'}
@@ -836,9 +833,6 @@ packages:
   '@huggingface/jinja@0.3.4':
     resolution: {integrity: sha512-kFFQWJiWwvxezKQnvH1X7GjsECcMljFx+UZK9hx6P26aVHwwidJVTB0ptLfRVZQvVkOGHoMmTGvo4nT0X9hHOA==}
     engines: {node: '>=18'}
-
-  '@huggingface/tasks@0.12.30':
-    resolution: {integrity: sha512-A1ITdxbEzx9L8wKR8pF7swyrTLxWNDFIGDLUWInxvks2ruQ8PLRBZe8r0EcjC3CDdtlj9jV1V4cgV35K/iy3GQ==}
 
   '@huggingface/transformers@3.5.0':
     resolution: {integrity: sha512-/KE7pb22NIJw30gjA56MKuvOI7KgipfcP2n1PSmNKfxXnaBE6T75JUVYWAExp1UNmrwaMm20yzDhSgoCk2NL7w==}
@@ -1063,6 +1057,9 @@ packages:
   '@llamaindex/core@0.6.3':
     resolution: {integrity: sha512-65v8+UdoCQqXo/3a8Icl0Tr0NSBeUUKGRFjJLKQY7kDnjly2rCUaOxmQE4y/JSo30cDFdlG4wuPtaAqqvbjtPg==}
 
+  '@llamaindex/core@0.6.4':
+    resolution: {integrity: sha512-M6Lwnp3CwqlPyJnn2xPPz8cGg2AFUt44BycOsY7Y/bNXm/tokTSFUhGSfL/etaubWOURvOeUYUm2Fs1lGI6YWw==}
+
   '@llamaindex/env@0.1.29':
     resolution: {integrity: sha512-GoITt+QLDNIhu2i1sGsPH8tHH13Gxp4i4ofMFlefrHagytvF761MG7nvTAQVIqP9kxBYk4dnSQ3lQnVPFAfMZQ==}
     peerDependencies:
@@ -1074,13 +1071,25 @@ packages:
       gpt-tokenizer:
         optional: true
 
+  '@llamaindex/env@0.1.30':
+    resolution: {integrity: sha512-y6kutMcCevzbmexUgz+HXf7KiZemzAoFEYSjAILfR+cG6FmYSF8XvLbGOB34Kx8mlRi7EI8rZXpezJ5qCqOyZg==}
+    peerDependencies:
+      '@huggingface/transformers': ^3.5.0
+      gpt-tokenizer: ^2.5.0
+    peerDependenciesMeta:
+      '@huggingface/transformers':
+        optional: true
+      gpt-tokenizer:
+        optional: true
+
   '@llamaindex/google@0.2.5':
     resolution: {integrity: sha512-qBqu5VKiwCLT9JG/8NR8YgiipIJwyHv3z5eFsHnYFY79TAhc+B4Aptf0I3fgbaTY+eUoxw3RhTg/2ggTeBkwJQ==}
 
-  '@llamaindex/huggingface@0.1.7':
-    resolution: {integrity: sha512-r72da3q+n9TwjJFn8y9sb9a3R74cLSYkXuNP2jLVOHIKngEg4YTGMGJ1Gw4MA+VLPrh8aM8qYAYcIP2kOX+61Q==}
-    peerDependencies:
-      '@huggingface/transformers': ^3.0.2
+  '@llamaindex/groq@0.0.69':
+    resolution: {integrity: sha512-FjndQ2sZdQPGuoeuLuTgylQiu+sm67q0WmhE3RjMHorIRbWHITvw2AjZxuIDzsYcmkUCx6Ti+jqeRkbphYEtrg==}
+
+  '@llamaindex/mistral@0.1.4':
+    resolution: {integrity: sha512-5reJTQI2+ERnn5R5RPC27ytXL5gwKCJLufcg2N3V5VXHgqhx/yN8qlGR7y706VfgttXf2jhOa8CGG15gbOLlZQ==}
 
   '@llamaindex/node-parser@2.0.3':
     resolution: {integrity: sha512-Zlfp7xAtkKtlC7GgoLZBVHYu+Gk1+MsfCO6rAJE6qRF9pKIu6ed5tRJQmGxcS8xgnmZfV9DbBq/8DA02CkeiEA==}
@@ -1092,6 +1101,9 @@ packages:
 
   '@llamaindex/openai@0.3.5':
     resolution: {integrity: sha512-KgU9mqK4kgCgt2FvRp+1+TjxYzVqxNkxxsc0Bfu2EZlvjCFFhMT/PgutyGRoCduItfPOjAEPv5lqGF1okN4kwA==}
+
+  '@llamaindex/openai@0.3.6':
+    resolution: {integrity: sha512-Od7OdYswIDV8BPPS/L3QkzxSnaWuUp6rX0BB3ypdMD7aHn6gy7cJHrB0otw/bDKDLnHknagouS6psOZxs5QfeQ==}
 
   '@llamaindex/readers@3.1.1':
     resolution: {integrity: sha512-deaD53q+KnxGpfs49VuivpNG4o1Ai+DFuC9HkVCLc4sk1wYenMif/gi31GN2wZ7CapuWC6H68o7EGN+ryIc1Eg==}
@@ -1109,6 +1121,11 @@ packages:
   '@mapbox/node-pre-gyp@1.0.11':
     resolution: {integrity: sha512-Yhlar6v9WQgUp/He7BdgzOz8lqMQ8sU+jkCq7Wx8Myc5YFJLbEe7lgui/V7G1qB1DJykHSGwreceSaD60Y0PUQ==}
     hasBin: true
+
+  '@mistralai/mistralai@1.6.0':
+    resolution: {integrity: sha512-PQwGV3+n7FbE7Dp3Vnd8DAa3ffx6WuVV966Gfmf4QvzwcO3Mvxpz0SnJ/PjaZcsCwApBCZpNyQzvarAKEQLKeQ==}
+    peerDependencies:
+      zod: '>= 3'
 
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -1175,58 +1192,58 @@ packages:
   '@one-ini/wasm@0.1.1':
     resolution: {integrity: sha512-XuySG1E38YScSJoMlqovLru4KTUNSjgVTIjyh7qMX6aNN5HY5Ct5LhRJdxO79JtTzKfzV/bnWpz+zquYrISsvw==}
 
-  '@oven/bun-darwin-aarch64@1.2.11':
-    resolution: {integrity: sha512-LN7gshxqEHJ1LA0B43Z56Ts3LxRjp2LrIz45FIgeKWE81PYglR9NMNou90gFuYlUtMyarSk6MV9Jdvo2kFnn8Q==}
+  '@oven/bun-darwin-aarch64@1.2.13':
+    resolution: {integrity: sha512-AOU4O9jxRp2TXeqoEfOjEaUNZb3+SUPBN8TIEnUjpnyLWPoYJGCeNdQuCDcUkmF3MJEmEuJdyF1IeOITozpC6A==}
     cpu: [arm64]
     os: [darwin]
 
-  '@oven/bun-darwin-x64-baseline@1.2.11':
-    resolution: {integrity: sha512-ksZJzq0Id3YsGcs++QnL1oGYjqY5XNihR0MscZ+M4YYruvVKHKim9Aql46+TI55YmKD810HVpeLolIeeTl2JUg==}
+  '@oven/bun-darwin-x64-baseline@1.2.13':
+    resolution: {integrity: sha512-bZpIUOvx9np07AmH5MVXGYHWZ40m2vCpNV74fma6sCzBlssJclS2V3BZgO+lLvtUKSqnW3HAyJBGsRF34wPbNw==}
     cpu: [x64]
     os: [darwin]
 
-  '@oven/bun-darwin-x64@1.2.11':
-    resolution: {integrity: sha512-AmmlGdQmzORFeUZRa2Ki9UWYTt5ZGUwTp0z+H0uR4bYHy7sQhpDbNKtZcfKKuLRQ6P23DKc3Lpo+yhR0cg7prg==}
+  '@oven/bun-darwin-x64@1.2.13':
+    resolution: {integrity: sha512-kJ2iOvxY8uz5/nu+8zIjKf4LmRIHBH9pJJM2q+tA47U04Tod6k6rtntDOI8SdmRe2M5c87RfbadWdxhpYHFIWQ==}
     cpu: [x64]
     os: [darwin]
 
-  '@oven/bun-linux-aarch64-musl@1.2.11':
-    resolution: {integrity: sha512-A/h7WxC2GbNus8fupz5EHsD8YugG19uW9GQWDf4tk0YWYuSaUOCP14JYbXbiJ48OFELWNchEc/2azajH+votbA==}
+  '@oven/bun-linux-aarch64-musl@1.2.13':
+    resolution: {integrity: sha512-P56m718KXeyu4Vq5fsESFktfu+0Us1jhu/ZzgHYFRYJcm/hjs6AUA/RJtUAifFy5PNAM5IJdrYl3xPsE8Wa+pg==}
     cpu: [aarch64]
     os: [linux]
 
-  '@oven/bun-linux-aarch64@1.2.11':
-    resolution: {integrity: sha512-jNQ5F6o9qC/KNhBnyxnjVRfiTxZB7thvZ7T+oPZSNh1IV8UWDunEGmUdOqSqoPsigpXHRjbV3DKJKN+YaPQCCA==}
+  '@oven/bun-linux-aarch64@1.2.13':
+    resolution: {integrity: sha512-hocSJmblX4CCjP1HpaM64I65erB+CONUCCwKzGGOfLGLobVi+vn/G56UaYWsje1y/Z7WlVaUSgKYVWl7EJ6T9g==}
     cpu: [arm64]
     os: [linux]
 
-  '@oven/bun-linux-x64-baseline@1.2.11':
-    resolution: {integrity: sha512-xswex8EPmzX8BqbNXpiwgrpDkaD/FMIaxD85EIBaaksi6I8nln2kzEmlO/uVhbFAn9PPWydi3Q+FCcNnJGRazQ==}
+  '@oven/bun-linux-x64-baseline@1.2.13':
+    resolution: {integrity: sha512-9n1ai2ejEpxEMqpbHQMWFyvacq3MYsB7gh5mxRlFwhNFPCWu/Sv6gyrO+q2vkOYgcEIGhJb6dqJ6L9vBNaL61A==}
     cpu: [x64]
     os: [linux]
 
-  '@oven/bun-linux-x64-musl-baseline@1.2.11':
-    resolution: {integrity: sha512-YYglLgFkHwNMjECCyM/kZDUZa6UW3ssVtg5k6+8QU1Rp5cPF+0SBlGGTr5ho2lFkNn/ylKmwyuqE1tB45zgVvA==}
+  '@oven/bun-linux-x64-musl-baseline@1.2.13':
+    resolution: {integrity: sha512-VI8hVdfqk0QmbAbyrsIdo2O95n3fkbt72E0h3Wu69cHD1iKJqRXG28R8QoHdehoLSJnKVzRTwsUzHp764nefWQ==}
     cpu: [x64]
     os: [linux]
 
-  '@oven/bun-linux-x64-musl@1.2.11':
-    resolution: {integrity: sha512-yF1Urgsy8xkQu8iAd03ORxuZ/DWrNPCST2r1EVIwjHuzpZ3o2odKjnE9Hnwsq+wcWdCRsakqL/muILB/9aCxeQ==}
+  '@oven/bun-linux-x64-musl@1.2.13':
+    resolution: {integrity: sha512-w5Ob+GM3Ww4yRA6f1N845o6wEvuwHSmipFUGaRaVp4UELrFnIV9G3pmrlBbYHFnWhk13o8Q7H1/4ZphOkCRJmQ==}
     cpu: [x64]
     os: [linux]
 
-  '@oven/bun-linux-x64@1.2.11':
-    resolution: {integrity: sha512-6pH556SgOR2UOgWQfEiYI3DWgkm7T+L9fmBe2dfEYrKCEu/TbXZXOJeMi943NSMIiT3q2gVwlCEdoxZwedQs4A==}
+  '@oven/bun-linux-x64@1.2.13':
+    resolution: {integrity: sha512-pf8+Kn2GLrFKLcb8JSLM6Z147Af6L9GQODpnOHM4gvXQv6E/GwQg47/o+7f1XCfzib3fdzOTJlDPvvO1rnXOTA==}
     cpu: [x64]
     os: [linux]
 
-  '@oven/bun-windows-x64-baseline@1.2.11':
-    resolution: {integrity: sha512-uzappBblyA3GlX0PDENU1HTPZR82tzPuNd5jumTiDQ22FZmc2ZqCYTIZ/ngwHKOHDD6Rxdsux8+9EXgVS51G2w==}
+  '@oven/bun-windows-x64-baseline@1.2.13':
+    resolution: {integrity: sha512-Aiezu99fOUJJpzGuylOJryd6w9Syg2TBigHeXV2+RJsouBzvAnIEYIBA94ZspRq1ulD26Wmkk8Ae+jZ4edk9GA==}
     cpu: [x64]
     os: [win32]
 
-  '@oven/bun-windows-x64@1.2.11':
-    resolution: {integrity: sha512-5mGVsGSS8JWBq8IHXGvFJ7rlET4XCUdDTKEaLLq3O1YaqyZZiPMQFnU70MfkpjPe4stRDZ+/NWBRNDMaNTYQxw==}
+  '@oven/bun-windows-x64@1.2.13':
+    resolution: {integrity: sha512-sArgbRmT7V3mUdNFaAdUcuJsuS+oeMDZLPWFSg0gtQZpRrURs9nPzEnZMmVCFo4+kPF9Tb5ujQT9uDySh6/qVg==}
     cpu: [x64]
     os: [win32]
 
@@ -2173,7 +2190,6 @@ packages:
   are-we-there-yet@2.0.0:
     resolution: {integrity: sha512-Ci/qENmwHnsYo9xKIcUJN5LeDKdJ6R1Z1j9V/J5wyq8nh/mYPEpIKJbBZXtZjG04HiK7zV/p6Vs9952MrMeUIw==}
     engines: {node: '>=10'}
-    deprecated: This package is no longer supported.
 
   argparse@1.0.10:
     resolution: {integrity: sha512-o5Roy6tNG4SL/FOkCAN6RzjiakZS25RLYFrcMttJqbdd8BWrnA+fGz57iN5Pb06pvBGvl5gQ0B48dJlslXvoTg==}
@@ -2296,8 +2312,8 @@ packages:
   bun-types@1.2.12:
     resolution: {integrity: sha512-tvWMx5vPqbRXgE8WUZI94iS1xAYs8bkqESR9cxBB1Wi+urvfTrF1uzuDgBHFAdO0+d2lmsbG3HmeKMvUyj6pWA==}
 
-  bun@1.2.11:
-    resolution: {integrity: sha512-9brVfsp6/TYVsE3lCl1MUxoyKhvljqyL1MNPErgwsOaS9g4Gzi2nY+W5WtRAXGzLrgz5jzsoGHHwyH/rTeRCIg==}
+  bun@1.2.13:
+    resolution: {integrity: sha512-EhP1MhFbicqtaRSFCbEZdkcFco8Ov47cNJcB9QmKS8U4cojKHfLU+dQR14lCvLYmtBvGgwv/Lp+9SSver2OPzQ==}
     os: [darwin, linux, win32]
     hasBin: true
 
@@ -2980,7 +2996,6 @@ packages:
   gauge@3.0.2:
     resolution: {integrity: sha512-+5J6MS/5XksCuXq++uFRsnUd7Ovu1XenbeuIuNRJxYWjgQbPuFhT14lAvsWfqfAmnwluf1OwMjz39HjfLPci0Q==}
     engines: {node: '>=10'}
-    deprecated: This package is no longer supported.
 
   gaxios@6.7.1:
     resolution: {integrity: sha512-LDODD4TMYx7XXdpwxAVRAIAuB0bzv0s+ywFonY46k126qzQHT9ygyoa9tncmOiQmmDrik65UYsEkv3lbfqQ3yQ==}
@@ -3031,7 +3046,6 @@ packages:
 
   glob@7.2.3:
     resolution: {integrity: sha512-nFR0zLpU2YCaRxwoCJvL6UvCH2JFyFVIvwTLsIf21AuHlMskA1hhTdk+LlYJtOlYt9v6dvszD2BGRqBL+iQK9Q==}
-    deprecated: Glob versions prior to v9 are no longer supported
 
   global-agent@3.0.0:
     resolution: {integrity: sha512-PT6XReJ+D07JvGoxQMkT6qji/jVNfX/h364XHZOWeRzy64sSFr+xJ5OX7LI3b4MPQzdL4H8Y8M0xzPpsVMwA8Q==}
@@ -3073,6 +3087,9 @@ packages:
 
   graphemer@1.4.0:
     resolution: {integrity: sha512-EtKwoO6kxCL9WO5xipiHTZlSzBm7WLT627TqC/uVRd0HKmq8NXyebnNYxDoBi7wt8eTWrUrKXCOVaFq9x1kgag==}
+
+  groq-sdk@0.8.0:
+    resolution: {integrity: sha512-hSgCjZCkoM4CY/TWfsaNlh512svWRR2td4HGpmEV8MbVEVrxZARJq5BHt8gbEF9Gex092/X7VJvaQpha0dIC8g==}
 
   gtoken@7.1.0:
     resolution: {integrity: sha512-pCcEwRi+TKpMlxAQObHDQ56KawURgyAf6jtIY046fJ5tIv3zDe/LEIubckAO8fj6JnAxLdmWkUfNyulQ2iKdEw==}
@@ -3224,7 +3241,6 @@ packages:
 
   inflight@1.0.6:
     resolution: {integrity: sha512-k92I/b08q4wvFscXCLvqfsHCrjrF7yiXsQuIVvVE7N82W3+aqpzuUdBbfhWcy/FZR3/4IgflMgKLOsvPDrGCJA==}
-    deprecated: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
 
   inherits@2.0.4:
     resolution: {integrity: sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==}
@@ -3711,7 +3727,6 @@ packages:
   node-domexception@1.0.0:
     resolution: {integrity: sha512-/jKZoMpw0F8GRwl4/eLROPA3cfcXtLApP0QzLmUT/HuPCZWyB7IY9ZrMeKw2O/nFIqPQB3PVM9aYm0F312AXDQ==}
     engines: {node: '>=10.5.0'}
-    deprecated: Use your platform's native DOMException instead
 
   node-fetch-native@1.6.6:
     resolution: {integrity: sha512-8Mc2HhqPdlIfedsuZoc3yioPuzp6b+L5jRCRY1QzuWZh2EGJVQrGppC6V6cF0bLdbW0+O2YpqCA25aF/1lvipQ==}
@@ -3768,7 +3783,6 @@ packages:
 
   npmlog@5.0.1:
     resolution: {integrity: sha512-AqZtDUWOMKs1G/8lwylVjrdYgqA4d9nu8hc+0gzRxlDb1I10+FHBGMXs6aiQHFdCUUlqH99MUMuLfzWDNDtfxw==}
-    deprecated: This package is no longer supported.
 
   nth-check@2.1.1:
     resolution: {integrity: sha512-lqjrjmaOoAnWfMmBPL+XNnynZh2+swxiX3WUE0s4yEHI6m+AwrK2UZOimIRl3X/4QctVqS8AiZjFqyOGrMXb/w==}
@@ -4108,7 +4122,6 @@ packages:
 
   rimraf@3.0.2:
     resolution: {integrity: sha512-JZkJMZkAGFFPP2YqXZXPbMlMBgsxzE8ILs4lMIX/2o0L9UBw9O/Y3o6wFw/i9YLapcUJWwqbi3kdxIPdC62TIA==}
-    deprecated: Rimraf versions prior to v4 are no longer supported
     hasBin: true
 
   roarr@2.15.4:
@@ -4427,38 +4440,38 @@ packages:
   tunnel-agent@0.6.0:
     resolution: {integrity: sha512-McnNiV1l8RYeY8tBgEpuodCC1mLUdbSN+CYBL7kJsJNInOP8UjDDEwdk6Mw60vdLLrr5NHKZhMAOSrR2NZuQ+w==}
 
-  turbo-darwin-64@2.5.2:
-    resolution: {integrity: sha512-2aIl0Sx230nLk+Cg2qSVxvPOBWCZpwKNuAMKoROTvWKif6VMpkWWiR9XEPoz7sHeLmCOed4GYGMjL1bqAiIS/g==}
+  turbo-darwin-64@2.5.3:
+    resolution: {integrity: sha512-YSItEVBUIvAGPUDpAB9etEmSqZI3T6BHrkBkeSErvICXn3dfqXUfeLx35LfptLDEbrzFUdwYFNmt8QXOwe9yaw==}
     cpu: [x64]
     os: [darwin]
 
-  turbo-darwin-arm64@2.5.2:
-    resolution: {integrity: sha512-MrFYhK/jYu8N6QlqZtqSHi3e4QVxlzqU3ANHTKn3/tThuwTLbNHEvzBPWSj5W7nZcM58dCqi6gYrfRz6bJZyAA==}
+  turbo-darwin-arm64@2.5.3:
+    resolution: {integrity: sha512-5PefrwHd42UiZX7YA9m1LPW6x9YJBDErXmsegCkVp+GjmWrADfEOxpFrGQNonH3ZMj77WZB2PVE5Aw3gA+IOhg==}
     cpu: [arm64]
     os: [darwin]
 
-  turbo-linux-64@2.5.2:
-    resolution: {integrity: sha512-LxNqUE2HmAJQ/8deoLgMUDzKxd5bKxqH0UBogWa+DF+JcXhtze3UTMr6lEr0dEofdsEUYK1zg8FRjglmwlN5YA==}
+  turbo-linux-64@2.5.3:
+    resolution: {integrity: sha512-M9xigFgawn5ofTmRzvjjLj3Lqc05O8VHKuOlWNUlnHPUltFquyEeSkpQNkE/vpPdOR14AzxqHbhhxtfS4qvb1w==}
     cpu: [x64]
     os: [linux]
 
-  turbo-linux-arm64@2.5.2:
-    resolution: {integrity: sha512-0MI1Ao1q8zhd+UUbIEsrM+yLq1BsrcJQRGZkxIsHFlGp7WQQH1oR3laBgfnUCNdCotCMD6w4moc9pUbXdOR3bg==}
+  turbo-linux-arm64@2.5.3:
+    resolution: {integrity: sha512-auJRbYZ8SGJVqvzTikpg1bsRAsiI9Tk0/SDkA5Xgg0GdiHDH/BOzv1ZjDE2mjmlrO/obr19Dw+39OlMhwLffrw==}
     cpu: [arm64]
     os: [linux]
 
-  turbo-windows-64@2.5.2:
-    resolution: {integrity: sha512-hOLcbgZzE5ttACHHyc1ajmWYq4zKT42IC3G6XqgiXxMbS+4eyVYTL+7UvCZBd3Kca1u4TLQdLQjeO76zyDJc2A==}
+  turbo-windows-64@2.5.3:
+    resolution: {integrity: sha512-arLQYohuHtIEKkmQSCU9vtrKUg+/1TTstWB9VYRSsz+khvg81eX6LYHtXJfH/dK7Ho6ck+JaEh5G+QrE1jEmCQ==}
     cpu: [x64]
     os: [win32]
 
-  turbo-windows-arm64@2.5.2:
-    resolution: {integrity: sha512-fMU41ABhSLa18H8V3Z7BMCGynQ8x+wj9WyBMvWm1jeyRKgkvUYJsO2vkIsy8m0vrwnIeVXKOIn6eSe1ddlBVqw==}
+  turbo-windows-arm64@2.5.3:
+    resolution: {integrity: sha512-3JPn66HAynJ0gtr6H+hjY4VHpu1RPKcEwGATvGUTmLmYSYBQieVlnGDRMMoYN066YfyPqnNGCfhYbXfH92Cm0g==}
     cpu: [arm64]
     os: [win32]
 
-  turbo@2.5.2:
-    resolution: {integrity: sha512-Qo5lfuStr6LQh3sPQl7kIi243bGU4aHGDQJUf6ylAdGwks30jJFloc9NYHP7Y373+gGU9OS0faA4Mb5Sy8X9Xw==}
+  turbo@2.5.3:
+    resolution: {integrity: sha512-iHuaNcq5GZZnr3XDZNuu2LSyCzAOPwDuo5Qt+q64DfsTP1i3T2bKfxJhni2ZQxsvAoxRbuUK5QetJki4qc5aYA==}
     hasBin: true
 
   tw-animate-css@1.2.8:
@@ -5858,15 +5871,10 @@ snapshots:
       hono: 4.7.8
       valibot: 1.0.0(typescript@5.8.3)
 
-  '@huggingface/inference@2.8.1':
-    dependencies:
-      '@huggingface/tasks': 0.12.30
-
   '@huggingface/jinja@0.1.3': {}
 
-  '@huggingface/jinja@0.3.4': {}
-
-  '@huggingface/tasks@0.12.30': {}
+  '@huggingface/jinja@0.3.4':
+    optional: true
 
   '@huggingface/transformers@3.5.0':
     dependencies:
@@ -5874,6 +5882,7 @@ snapshots:
       onnxruntime-node: 1.21.0
       onnxruntime-web: 1.22.0-dev.20250409-89f8206ba4
       sharp: 0.34.1
+    optional: true
 
   '@humanfs/core@0.19.1': {}
 
@@ -6010,6 +6019,7 @@ snapshots:
   '@isaacs/fs-minipass@4.0.1':
     dependencies:
       minipass: 7.1.2
+    optional: true
 
   '@jridgewell/gen-mapping@0.3.8':
     dependencies:
@@ -6091,7 +6101,27 @@ snapshots:
       - '@huggingface/transformers'
       - gpt-tokenizer
 
+  '@llamaindex/core@0.6.4(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0)':
+    dependencies:
+      '@llamaindex/env': 0.1.30(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0)
+      '@types/node': 22.15.3
+      magic-bytes.js: 1.12.1
+      zod: 3.24.3
+      zod-to-json-schema: 3.24.5(zod@3.24.3)
+    transitivePeerDependencies:
+      - '@huggingface/transformers'
+      - gpt-tokenizer
+
   '@llamaindex/env@0.1.29(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0)':
+    dependencies:
+      '@aws-crypto/sha256-js': 5.2.0
+      js-tiktoken: 1.0.20
+      pathe: 1.1.2
+    optionalDependencies:
+      '@huggingface/transformers': 3.5.0
+      gpt-tokenizer: 2.9.0
+
+  '@llamaindex/env@0.1.30(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0)':
     dependencies:
       '@aws-crypto/sha256-js': 5.2.0
       js-tiktoken: 1.0.20
@@ -6115,17 +6145,26 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@llamaindex/huggingface@0.1.7(@huggingface/transformers@3.5.0)(encoding@0.1.13)(gpt-tokenizer@2.9.0)(ws@8.18.1)(zod@3.24.3)':
+  '@llamaindex/groq@0.0.69(@huggingface/transformers@3.5.0)(encoding@0.1.13)(gpt-tokenizer@2.9.0)(ws@8.18.1)(zod@3.24.3)':
     dependencies:
-      '@huggingface/inference': 2.8.1
-      '@huggingface/transformers': 3.5.0
-      '@llamaindex/core': 0.6.3(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0)
-      '@llamaindex/env': 0.1.29(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0)
-      '@llamaindex/openai': 0.3.5(@huggingface/transformers@3.5.0)(encoding@0.1.13)(gpt-tokenizer@2.9.0)(ws@8.18.1)(zod@3.24.3)
+      '@llamaindex/env': 0.1.30(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0)
+      '@llamaindex/openai': 0.3.6(@huggingface/transformers@3.5.0)(encoding@0.1.13)(gpt-tokenizer@2.9.0)(ws@8.18.1)(zod@3.24.3)
+      groq-sdk: 0.8.0(encoding@0.1.13)
     transitivePeerDependencies:
+      - '@huggingface/transformers'
       - encoding
       - gpt-tokenizer
       - ws
+      - zod
+
+  '@llamaindex/mistral@0.1.4(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0)(zod@3.24.3)':
+    dependencies:
+      '@llamaindex/core': 0.6.4(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0)
+      '@llamaindex/env': 0.1.30(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0)
+      '@mistralai/mistralai': 1.6.0(zod@3.24.3)
+    transitivePeerDependencies:
+      - '@huggingface/transformers'
+      - gpt-tokenizer
       - zod
 
   '@llamaindex/node-parser@2.0.3(@llamaindex/core@0.6.3(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0))(@llamaindex/env@0.1.29(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0))(tree-sitter@0.22.4)(web-tree-sitter@0.24.7)':
@@ -6140,6 +6179,18 @@ snapshots:
     dependencies:
       '@llamaindex/core': 0.6.3(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0)
       '@llamaindex/env': 0.1.29(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0)
+      openai: 4.96.2(encoding@0.1.13)(ws@8.18.1)(zod@3.24.3)
+    transitivePeerDependencies:
+      - '@huggingface/transformers'
+      - encoding
+      - gpt-tokenizer
+      - ws
+      - zod
+
+  '@llamaindex/openai@0.3.6(@huggingface/transformers@3.5.0)(encoding@0.1.13)(gpt-tokenizer@2.9.0)(ws@8.18.1)(zod@3.24.3)':
+    dependencies:
+      '@llamaindex/core': 0.6.4(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0)
+      '@llamaindex/env': 0.1.30(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0)
       openai: 4.96.2(encoding@0.1.13)(ws@8.18.1)(zod@3.24.3)
     transitivePeerDependencies:
       - '@huggingface/transformers'
@@ -6188,6 +6239,11 @@ snapshots:
       - encoding
       - supports-color
     optional: true
+
+  '@mistralai/mistralai@1.6.0(zod@3.24.3)':
+    dependencies:
+      zod: 3.24.3
+      zod-to-json-schema: 3.24.5(zod@3.24.3)
 
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
@@ -6409,37 +6465,37 @@ snapshots:
 
   '@one-ini/wasm@0.1.1': {}
 
-  '@oven/bun-darwin-aarch64@1.2.11':
+  '@oven/bun-darwin-aarch64@1.2.13':
     optional: true
 
-  '@oven/bun-darwin-x64-baseline@1.2.11':
+  '@oven/bun-darwin-x64-baseline@1.2.13':
     optional: true
 
-  '@oven/bun-darwin-x64@1.2.11':
+  '@oven/bun-darwin-x64@1.2.13':
     optional: true
 
-  '@oven/bun-linux-aarch64-musl@1.2.11':
+  '@oven/bun-linux-aarch64-musl@1.2.13':
     optional: true
 
-  '@oven/bun-linux-aarch64@1.2.11':
+  '@oven/bun-linux-aarch64@1.2.13':
     optional: true
 
-  '@oven/bun-linux-x64-baseline@1.2.11':
+  '@oven/bun-linux-x64-baseline@1.2.13':
     optional: true
 
-  '@oven/bun-linux-x64-musl-baseline@1.2.11':
+  '@oven/bun-linux-x64-musl-baseline@1.2.13':
     optional: true
 
-  '@oven/bun-linux-x64-musl@1.2.11':
+  '@oven/bun-linux-x64-musl@1.2.13':
     optional: true
 
-  '@oven/bun-linux-x64@1.2.11':
+  '@oven/bun-linux-x64@1.2.13':
     optional: true
 
-  '@oven/bun-windows-x64-baseline@1.2.11':
+  '@oven/bun-windows-x64-baseline@1.2.13':
     optional: true
 
-  '@oven/bun-windows-x64@1.2.11':
+  '@oven/bun-windows-x64@1.2.13':
     optional: true
 
   '@oxlint/darwin-arm64@0.16.8':
@@ -7558,7 +7614,8 @@ snapshots:
 
   boolbase@1.0.0: {}
 
-  boolean@3.2.0: {}
+  boolean@3.2.0:
+    optional: true
 
   bowser@2.11.0: {}
 
@@ -7602,19 +7659,19 @@ snapshots:
     dependencies:
       '@types/node': 22.15.3
 
-  bun@1.2.11:
+  bun@1.2.13:
     optionalDependencies:
-      '@oven/bun-darwin-aarch64': 1.2.11
-      '@oven/bun-darwin-x64': 1.2.11
-      '@oven/bun-darwin-x64-baseline': 1.2.11
-      '@oven/bun-linux-aarch64': 1.2.11
-      '@oven/bun-linux-aarch64-musl': 1.2.11
-      '@oven/bun-linux-x64': 1.2.11
-      '@oven/bun-linux-x64-baseline': 1.2.11
-      '@oven/bun-linux-x64-musl': 1.2.11
-      '@oven/bun-linux-x64-musl-baseline': 1.2.11
-      '@oven/bun-windows-x64': 1.2.11
-      '@oven/bun-windows-x64-baseline': 1.2.11
+      '@oven/bun-darwin-aarch64': 1.2.13
+      '@oven/bun-darwin-x64': 1.2.13
+      '@oven/bun-darwin-x64-baseline': 1.2.13
+      '@oven/bun-linux-aarch64': 1.2.13
+      '@oven/bun-linux-aarch64-musl': 1.2.13
+      '@oven/bun-linux-x64': 1.2.13
+      '@oven/bun-linux-x64-baseline': 1.2.13
+      '@oven/bun-linux-x64-musl': 1.2.13
+      '@oven/bun-linux-x64-musl-baseline': 1.2.13
+      '@oven/bun-windows-x64': 1.2.13
+      '@oven/bun-windows-x64-baseline': 1.2.13
 
   bundle-name@4.1.0:
     dependencies:
@@ -7697,7 +7754,8 @@ snapshots:
   chownr@2.0.0:
     optional: true
 
-  chownr@3.0.0: {}
+  chownr@3.0.0:
+    optional: true
 
   chromadb-default-embed@2.14.0:
     dependencies:
@@ -7888,6 +7946,7 @@ snapshots:
       es-define-property: 1.0.1
       es-errors: 1.3.0
       gopd: 1.2.0
+    optional: true
 
   define-lazy-prop@3.0.0: {}
 
@@ -7896,6 +7955,7 @@ snapshots:
       define-data-property: 1.1.4
       has-property-descriptors: 1.0.2
       object-keys: 1.1.1
+    optional: true
 
   defu@6.1.4: {}
 
@@ -7908,7 +7968,8 @@ snapshots:
 
   detect-libc@2.0.4: {}
 
-  detect-node@2.1.0: {}
+  detect-node@2.1.0:
+    optional: true
 
   dfa@1.2.0: {}
 
@@ -8043,7 +8104,8 @@ snapshots:
       has-tostringtag: 1.0.2
       hasown: 2.0.2
 
-  es6-error@4.1.1: {}
+  es6-error@4.1.1:
+    optional: true
 
   esbuild@0.25.3:
     optionalDependencies:
@@ -8279,7 +8341,8 @@ snapshots:
 
   flatbuffers@1.12.0: {}
 
-  flatbuffers@25.2.10: {}
+  flatbuffers@25.2.10:
+    optional: true
 
   flatted@3.3.3: {}
 
@@ -8460,6 +8523,7 @@ snapshots:
       roarr: 2.15.4
       semver: 7.7.1
       serialize-error: 7.0.1
+    optional: true
 
   globals@11.12.0: {}
 
@@ -8471,6 +8535,7 @@ snapshots:
     dependencies:
       define-properties: 1.2.1
       gopd: 1.2.0
+    optional: true
 
   google-auth-library@9.15.1(encoding@0.1.13):
     dependencies:
@@ -8493,6 +8558,18 @@ snapshots:
   graceful-fs@4.2.11: {}
 
   graphemer@1.4.0: {}
+
+  groq-sdk@0.8.0(encoding@0.1.13):
+    dependencies:
+      '@types/node': 18.19.87
+      '@types/node-fetch': 2.6.12
+      abort-controller: 3.0.0
+      agentkeepalive: 4.6.0
+      form-data-encoder: 1.7.2
+      formdata-node: 4.4.1
+      node-fetch: 2.7.0(encoding@0.1.13)
+    transitivePeerDependencies:
+      - encoding
 
   gtoken@7.1.0(encoding@0.1.13):
     dependencies:
@@ -8521,6 +8598,7 @@ snapshots:
   has-property-descriptors@1.0.2:
     dependencies:
       es-define-property: 1.0.1
+    optional: true
 
   has-symbols@1.1.0: {}
 
@@ -8769,7 +8847,8 @@ snapshots:
 
   json-stable-stringify-without-jsonify@1.0.1: {}
 
-  json-stringify-safe@5.0.1: {}
+  json-stringify-safe@5.0.1:
+    optional: true
 
   json5@2.2.3: {}
 
@@ -8910,7 +8989,8 @@ snapshots:
 
   long@4.0.0: {}
 
-  long@5.3.2: {}
+  long@5.3.2:
+    optional: true
 
   lop@0.4.2:
     dependencies:
@@ -8969,6 +9049,7 @@ snapshots:
   matcher@3.0.0:
     dependencies:
       escape-string-regexp: 4.0.0
+    optional: true
 
   math-intrinsics@1.1.0: {}
 
@@ -9035,6 +9116,7 @@ snapshots:
   minizlib@3.0.2:
     dependencies:
       minipass: 7.1.2
+    optional: true
 
   mitt@3.0.1: {}
 
@@ -9043,7 +9125,8 @@ snapshots:
   mkdirp@1.0.4:
     optional: true
 
-  mkdirp@3.0.1: {}
+  mkdirp@3.0.1:
+    optional: true
 
   mlly@1.7.4:
     dependencies:
@@ -9153,7 +9236,8 @@ snapshots:
 
   object-inspect@1.13.4: {}
 
-  object-keys@1.1.1: {}
+  object-keys@1.1.1:
+    optional: true
 
   ofetch@1.4.1:
     dependencies:
@@ -9177,9 +9261,11 @@ snapshots:
 
   onnxruntime-common@1.14.0: {}
 
-  onnxruntime-common@1.21.0: {}
+  onnxruntime-common@1.21.0:
+    optional: true
 
-  onnxruntime-common@1.22.0-dev.20250409-89f8206ba4: {}
+  onnxruntime-common@1.22.0-dev.20250409-89f8206ba4:
+    optional: true
 
   onnxruntime-node@1.14.0:
     dependencies:
@@ -9191,6 +9277,7 @@ snapshots:
       global-agent: 3.0.0
       onnxruntime-common: 1.21.0
       tar: 7.4.3
+    optional: true
 
   onnxruntime-web@1.14.0:
     dependencies:
@@ -9209,6 +9296,7 @@ snapshots:
       onnxruntime-common: 1.22.0-dev.20250409-89f8206ba4
       platform: 1.3.6
       protobufjs: 7.5.0
+    optional: true
 
   open@10.1.1:
     dependencies:
@@ -9423,6 +9511,7 @@ snapshots:
       '@protobufjs/utf8': 1.1.0
       '@types/node': 22.15.3
       long: 5.3.2
+    optional: true
 
   pump@3.0.2:
     dependencies:
@@ -9536,6 +9625,7 @@ snapshots:
       json-stringify-safe: 5.0.1
       semver-compare: 1.0.0
       sprintf-js: 1.1.3
+    optional: true
 
   rollup@4.40.1:
     dependencies:
@@ -9587,7 +9677,8 @@ snapshots:
     dependencies:
       parseley: 0.12.1
 
-  semver-compare@1.0.0: {}
+  semver-compare@1.0.0:
+    optional: true
 
   semver@6.3.1: {}
 
@@ -9596,6 +9687,7 @@ snapshots:
   serialize-error@7.0.1:
     dependencies:
       type-fest: 0.13.1
+    optional: true
 
   set-blocking@2.0.0:
     optional: true
@@ -9641,6 +9733,7 @@ snapshots:
       '@img/sharp-wasm32': 0.34.1
       '@img/sharp-win32-ia32': 0.34.1
       '@img/sharp-win32-x64': 0.34.1
+    optional: true
 
   shebang-command@2.0.0:
     dependencies:
@@ -9716,7 +9809,8 @@ snapshots:
 
   sprintf-js@1.0.3: {}
 
-  sprintf-js@1.1.3: {}
+  sprintf-js@1.1.3:
+    optional: true
 
   stackback@0.0.2: {}
 
@@ -9848,6 +9942,7 @@ snapshots:
       minizlib: 3.0.2
       mkdirp: 3.0.1
       yallist: 5.0.0
+    optional: true
 
   text-decoder@1.2.3:
     dependencies:
@@ -9909,32 +10004,32 @@ snapshots:
     dependencies:
       safe-buffer: 5.2.1
 
-  turbo-darwin-64@2.5.2:
+  turbo-darwin-64@2.5.3:
     optional: true
 
-  turbo-darwin-arm64@2.5.2:
+  turbo-darwin-arm64@2.5.3:
     optional: true
 
-  turbo-linux-64@2.5.2:
+  turbo-linux-64@2.5.3:
     optional: true
 
-  turbo-linux-arm64@2.5.2:
+  turbo-linux-arm64@2.5.3:
     optional: true
 
-  turbo-windows-64@2.5.2:
+  turbo-windows-64@2.5.3:
     optional: true
 
-  turbo-windows-arm64@2.5.2:
+  turbo-windows-arm64@2.5.3:
     optional: true
 
-  turbo@2.5.2:
+  turbo@2.5.3:
     optionalDependencies:
-      turbo-darwin-64: 2.5.2
-      turbo-darwin-arm64: 2.5.2
-      turbo-linux-64: 2.5.2
-      turbo-linux-arm64: 2.5.2
-      turbo-windows-64: 2.5.2
-      turbo-windows-arm64: 2.5.2
+      turbo-darwin-64: 2.5.3
+      turbo-darwin-arm64: 2.5.3
+      turbo-linux-64: 2.5.3
+      turbo-linux-arm64: 2.5.3
+      turbo-windows-64: 2.5.3
+      turbo-windows-arm64: 2.5.3
 
   tw-animate-css@1.2.8: {}
 
@@ -9942,7 +10037,8 @@ snapshots:
     dependencies:
       prelude-ls: 1.2.1
 
-  type-fest@0.13.1: {}
+  type-fest@0.13.1:
+    optional: true
 
   type-fest@4.40.1: {}
 
@@ -10381,7 +10477,8 @@ snapshots:
   yallist@4.0.0:
     optional: true
 
-  yallist@5.0.0: {}
+  yallist@5.0.0:
+    optional: true
 
   yargs-parser@20.2.9: {}
 

@@ -38,12 +38,19 @@ const config = computed(() => {
 	return translations[currentLanguage.value];
 });
 
+type AllowedModels = Parameters<
+	(typeof api)["conversations"][":id"]["$post"]
+>[0]["json"]["model"];
+
+type Modes = "rate" | "pick";
+
 // Router and route for URL handling
 const router = useRouter();
 
 const messageInput = ref("");
 const messages = ref<(ChatMessage | ChatMessage[])[]>([]);
-const selectedModel = ref<"4.1-nano" | "4.1" | "flash" | "rate">("rate");
+const selectedMode = ref<Modes>("rate");
+const selectedModel = ref<Exclude<AllowedModels, "rate"> | undefined>();
 const isReceivingMessage = ref(false);
 const error = ref<string | null>(null);
 
@@ -170,9 +177,17 @@ async function sendMessage() {
 			throw new Error("No conversation ID available");
 		}
 
+		const model = selectedMode.value === "rate" ? "rate" : selectedModel.value;
+		if (!model) {
+			throw new Error("No model selected");
+		}
+
 		const response = await api.conversations[":id"].$post({
 			param: { id: conversationId.value },
-			json: { inputText: messageText, model: selectedModel.value },
+			json: {
+				inputText: messageText,
+				model,
+			},
 		});
 
 		if (!response.ok) {
@@ -263,6 +278,7 @@ async function pickMessage(message: ChatMessage, messagePair: ChatMessage[]) {
 
 		<TheChatInput
 			v-model="messageInput"
+			v-model:mode="selectedMode"
 			v-model:selected-model="selectedModel"
 			@submit="sendMessage"
             autofocus

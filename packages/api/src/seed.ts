@@ -1,6 +1,6 @@
 import "dotenv/config";
 import { ChromaVectorStore } from "@llamaindex/chroma";
-import { OpenAIEmbedding } from "@llamaindex/openai";
+import { OpenAIEmbedding } from "llamaindex";
 import { SimpleDirectoryReader } from "@llamaindex/readers/directory";
 import {
 	DocStoreStrategy,
@@ -9,8 +9,6 @@ import {
 	storageContextFromDefaults,
 } from "llamaindex";
 import { getEnvOrThrow } from "./get-env.js";
-
-export type AvailableModel = "4.1" | "4.1-nano";
 
 const chromaUri = getEnvOrThrow("CHROMA_URI");
 const vectorStore = new ChromaVectorStore({

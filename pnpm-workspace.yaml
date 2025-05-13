@@ -3,9 +3,12 @@ packages:
 
 onlyBuiltDependencies:
   - '@biomejs/biome'
+  - '@sentry/profiling-node'
+  - '@tailwindcss/oxide'
   - better-sqlite3
   - bun
   - canvas
+  - es5-ext
   - esbuild
   - onnxruntime-node
   - protobufjs

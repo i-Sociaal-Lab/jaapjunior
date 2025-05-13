@@ -3,6 +3,9 @@
 	"private": true,
 	"type": "module",
 	"workspaces": ["packages/*"],
+	"engines": {
+		"node": "22"
+	},
 	"scripts": {
 		"check": "biome check .",
 		"fix": "biome check --write .",
@@ -12,14 +15,13 @@
 		"seed:chroma": "cd packages/api && bun src/seed.ts"
 	},
 	"dependencies": {
-		"@llamaindex/chroma": "^0.0.17",
 		"nanoid": "^5.1.5"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "^1.9.4",
 		"@types/bun": "latest",
-		"bun": "^1.2.11",
-		"turbo": "^2.5.2"
+		"bun": "^1.2.13",
+		"turbo": "^2.5.3"
 	},
 	"peerDependencies": {
 		"typescript": "^5"
