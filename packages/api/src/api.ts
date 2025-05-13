@@ -31,11 +31,9 @@ const sendMessageSchema = v.object({
 	]),
 });
 
-// In-memory store for conversations
-// Note: In a production environment, you would use a database instead
 const conversations = new Map<string, Conversation>();
 
-const db = new Database("storage.sqlite");
+const db = new Database(getEnvOrThrow("DB_PATH"));
 db.prepare(
 	"CREATE TABLE IF NOT EXISTS model_picks (id INTEGER PRIMARY KEY, prefers TEXT, over TEXT, created_at DATETIME DEFAULT CURRENT_TIMESTAMP)",
 ).run();
