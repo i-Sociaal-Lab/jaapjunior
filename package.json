@@ -2,9 +2,7 @@
 	"name": "ketenbureau-chat-ai",
 	"private": true,
 	"type": "module",
-	"workspaces": [
-		"packages/*"
-	],
+	"workspaces": ["packages/*"],
 	"engines": {
 		"node": "22"
 	},
