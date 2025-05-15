@@ -1,5 +1,4 @@
 import "dotenv/config";
-import type { Database } from "better-sqlite3";
 import { ChromaVectorStore } from "@llamaindex/chroma";
 import { GEMINI_MODEL, Gemini } from "@llamaindex/google";
 import { Groq } from "@llamaindex/groq";
@@ -16,6 +15,7 @@ import {
 	VectorStoreIndex,
 	storageContextFromDefaults,
 } from "llamaindex";
+import type { IDB } from "./api.js";
 import { getEnvOrThrow } from "./get-env.js";
 import { prompt13May, promptRobin } from "./prompt.js";
 
@@ -68,7 +68,7 @@ export const prompts = {
 export async function query(
 	q: string,
 	chatHistory: ChatMessage[],
-	db: Database,
+	db: IDB,
 	model: keyof typeof llms = "4.1",
 	systemPromptKey: keyof typeof prompts = "may13",
 ) {

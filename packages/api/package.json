@@ -4,14 +4,14 @@
 	"private": true,
 	"type": "module",
 	"exports": {
-		".": "./src/index.ts"
+		".": "./dist/index.js"
 	},
 	"engines": {
 		"node": "22"
 	},
 	"scripts": {
 		"dev": "bun --watch src/index.ts",
-		"build": "bun build --compile --minify --sourcemap ./src/index.ts --outfile dist/api",
+		"build": "tsc && bun build --compile --minify --sourcemap ./src/index.ts --outfile dist/api",
 		"start": "./dist/api",
 		"typecheck": "tsc --noEmit"
 	},

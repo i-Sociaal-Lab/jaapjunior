@@ -1,3 +1,5 @@
+import type { Database as BunDB } from "bun:sqlite";
+import type SQLiteDB from "better-sqlite3";
 import { Hono } from "hono";
 import { validator } from "hono-openapi/valibot";
 import { except } from "hono/combine";
@@ -10,8 +12,6 @@ import * as v from "valibot";
 import { llms, prompts, query } from "./agent.js";
 import { getEnvOrThrow } from "./get-env.js";
 import { getRandomItem } from "./random.js";
-import type { Database as BunDB } from "bun:sqlite";
-import type SQLiteDB from "better-sqlite3";
 
 // Define a generic type to extract the 'value' type
 type ExtractValue<T> = T extends { value: infer V } ? V : never;
@@ -59,14 +59,26 @@ const sendMessageSchema = v.object({
 
 const conversations = new Map<string, Conversation>();
 
-let Database: typeof BunDB | typeof SQLiteDB;
-if (typeof Bun !== "undefined") {
-	({ Database } = await import("bun:sqlite"));
-} else {
-	Database = await import("better-sqlite3").then((m) => m.default);
+export interface IStatement {
+	// biome-ignore lint/suspicious/noExplicitAny: This is a workaround for Bun's type system
+	run: (params?: any) => void;
+	// biome-ignore lint/suspicious/noExplicitAny: This is a workaround for Bun's type system
+	all: (params?: any) => unknown[];
 }
 
-const db = new Database(getEnvOrThrow("DB_PATH"));
+export interface IDB {
+	prepare: (query: string) => IStatement;
+}
+
+let db: IDB;
+if (typeof Bun !== "undefined") {
+	const { Database } = await import("bun:sqlite");
+	db = new Database(getEnvOrThrow("DB_PATH"));
+} else {
+	const Database = await import("better-sqlite3").then((m) => m.default);
+	db = new Database(getEnvOrThrow("DB_PATH"));
+}
+
 db.prepare(
 	"CREATE TABLE IF NOT EXISTS model_picks (id INTEGER PRIMARY KEY, prefers TEXT, over TEXT, created_at DATETIME DEFAULT CURRENT_TIMESTAMP)",
 ).run();

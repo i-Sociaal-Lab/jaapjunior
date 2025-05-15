@@ -1,7 +1,7 @@
 import "dotenv/config";
 import { ChromaVectorStore } from "@llamaindex/chroma";
-import { OpenAIEmbedding } from "llamaindex";
 import { SimpleDirectoryReader } from "@llamaindex/readers/directory";
+import { OpenAIEmbedding } from "llamaindex";
 import {
 	DocStoreStrategy,
 	Settings,
