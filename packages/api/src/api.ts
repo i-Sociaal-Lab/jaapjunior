@@ -90,7 +90,7 @@ export const api = new Hono<{ Variables: Variables }>()
 	.use(
 		"/*",
 		except(
-			["/api/v1/auth", "/api/v1", "/api/v1/picks"],
+			["/api/v1/auth", "/api/v1", "/api/v1/picks", "/api/v1/responses"],
 			jwt({
 				secret: getEnvOrThrow("JWT_SECRET"),
 			}),
@@ -261,6 +261,11 @@ export const api = new Hono<{ Variables: Variables }>()
 
 	.get("models", (c) => {
 		return c.json(availableModels);
+	})
+
+	.get("responses", async (c) => {
+		const rows = db.prepare("SELECT * FROM model_responses").all();
+		return c.json(rows);
 	})
 
 	.get("picks", async (c) => {
