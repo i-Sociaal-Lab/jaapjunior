@@ -6,3 +6,8 @@ export function getEnvOrThrow(key: string) {
 
 	return value;
 }
+
+export function getEnv(key: string) {
+	const value = process.env[key];
+	return value;
+}

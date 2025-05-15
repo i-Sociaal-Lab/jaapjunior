@@ -4,20 +4,25 @@
 	"private": true,
 	"type": "module",
 	"exports": {
-		".": "./src/index.ts"
+		".": "./dist/index.js"
+	},
+	"engines": {
+		"node": "22"
 	},
 	"scripts": {
 		"dev": "bun --watch src/index.ts",
-		"build": "bun build --compile --minify --sourcemap ./src/index.ts --outfile dist/api",
+		"build": "tsc && bun build --compile --minify --sourcemap ./src/index.ts --outfile dist/api",
 		"start": "./dist/api",
 		"typecheck": "tsc --noEmit"
 	},
 	"dependencies": {
 		"@hono/valibot-validator": "^0.5.2",
-		"@llamaindex/anthropic": "^0.3.4",
-		"@llamaindex/google": "^0.2.5",
-		"@llamaindex/huggingface": "^0.1.7",
-		"@llamaindex/readers": "^3.1.1",
+		"@llamaindex/anthropic": "0.3.4",
+		"@llamaindex/chroma": "0.0.17",
+		"@llamaindex/google": "0.2.5",
+		"@llamaindex/groq": "0.0.69",
+		"@llamaindex/mistral": "0.1.4",
+		"@llamaindex/readers": "3.1.1",
 		"@valibot/to-json-schema": "^1.0.0",
 		"better-sqlite3": "^11.9.1",
 		"cohere-ai": "^7.17.1",
@@ -26,7 +31,7 @@
 		"hono": "^4.7.7",
 		"hono-openapi": "^0.4.6",
 		"jose": "^6.0.10",
-		"llamaindex": "^0.10.3",
+		"llamaindex": "0.10.3",
 		"openai": "^4.95.0",
 		"valibot": "^1.0.0"
 	},
