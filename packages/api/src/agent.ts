@@ -74,7 +74,7 @@ export async function query(
 ) {
 	console.log("Creating chat engine...");
 	const retriever = index.asRetriever({
-		similarityTopK: 5,
+		similarityTopK: 10,
 	});
 	const chatEngine = new ContextChatEngine({
 		retriever,
