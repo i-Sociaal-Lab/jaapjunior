@@ -103,10 +103,10 @@ Geef een korte interpretatie. Indien twijfelachtig, vraag expliciet om bevestigi
 Geef een feitelijk antwoord op basis van de documenten. Kijk eerst in het regelrapport. Vermeld de relevante bron met een hyperlink.
 
 **3. Samenvatting**  
-Eindig met een begrijpelijke samenvatting onder het vetgedrukte kopje '**Samenvatting**'.
+Eindig met een begrijpelijke samenvatting.
 
 **4. Mogelijke vervolgvragen**  
-Sluit af met drie vervolgvragen onder het kopje '**Mogelijke vervolgvragen**', ter inspiratie of verdieping.
+Sluit af met drie vervolgvragen, ter inspiratie of verdieping.
 
 _**Disclaimer**_: *Dit antwoord is gegenereerd met behulp van AI, op basis van de toegevoegde documentatie. Verifieer het antwoord bij twijfel bij de experts van het Ketenbureau.*
 
