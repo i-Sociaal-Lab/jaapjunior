@@ -46,6 +46,18 @@ defineEmits<{
 function focus() {
 	inputEl.value?.focus();
 }
+
+const canUseSelector = ref(false);
+watch(
+	canUseSelector,
+	(value) => {
+		if (!value) {
+			mode.value = "pick";
+			selectedModel.value = "4.1";
+		}
+	},
+	{ immediate: true },
+);
 </script>
 
 <template>
@@ -60,25 +72,25 @@ function focus() {
 			:disabled="loading"
 		/>
 		<div class="flex gap-2 justify-between">
-            <URadioGroup v-model="mode" orientation="horizontal"  indicator="hidden" variant="table" :items="modes"
+            <URadioGroup v-if="canUseSelector" v-model="mode" orientation="horizontal"  indicator="hidden" variant="table" :items="modes"
                 :ui="{ item: 'p-2 first-of-type:rounded-l-md last-of-type:rounded-r-md' }"
             />
 
-            <div class="flex gap-2">
-			<USelectMenu
-                v-if="mode === 'pick'"
-				v-model="selectedModel"
-				value-key="id"
-				:items="models"
-				class="text-end hover:ring hover:ring-default hover:brightness-85 transition-all duration-150"
-				:search-input="false"
-				variant="none"
-				:ui="{ content: 'w-48' }"
-				:content="{ align: 'end' }"
-			/>
-			<button @click="$emit('submit')" class="send-button" :disabled>
-				{{ sendButton }}
-			</button>
+            <div class="flex gap-2 ml-auto">
+                <USelectMenu
+                    v-if="canUseSelector && mode === 'pick'"
+                    v-model="selectedModel"
+                    value-key="id"
+                    :items="models"
+                    class="text-end hover:ring hover:ring-default hover:brightness-85 transition-all duration-150"
+                    :search-input="false"
+                    variant="none"
+                    :ui="{ content: 'w-48' }"
+                    :content="{ align: 'end' }"
+                />
+                <UButton @click="$emit('submit')" class="rounded-full" :disabled>
+                    {{ sendButton }}
+                </UButton>
             </div>
 		</div>
 	</div>
@@ -109,27 +121,5 @@ function focus() {
 	border: none;
 	font-size: 14px;
 	outline: none;
-}
-
-.send-button {
-	background-color: var(--primary);
-	color: var(--primary-foreground);
-	border: none;
-	border-radius: 20px;
-	padding: 0 20px;
-	cursor: pointer;
-	font-weight: 500;
-	transition: filter 0.2s;
-}
-
-.send-button:hover {
-  filter: brightness(85%);
-}
-
-.send-button:disabled {
-	background-color: var(--muted);
-    color: var(--muted-foreground);
-	cursor: not-allowed;
-	opacity: 0.7;
 }
 </style>

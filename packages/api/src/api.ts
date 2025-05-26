@@ -1,9 +1,5 @@
-import type { Database as BunDB } from "bun:sqlite";
-import type SQLiteDB from "better-sqlite3";
 import { Hono } from "hono";
 import { validator } from "hono-openapi/valibot";
-import { except } from "hono/combine";
-import { jwt } from "hono/jwt";
 import type { JwtVariables } from "hono/jwt";
 import * as jose from "jose";
 import type { ChatMessage } from "llamaindex";
@@ -87,16 +83,6 @@ db.prepare(
 ).run();
 
 export const api = new Hono<{ Variables: Variables }>()
-	.use(
-		"/*",
-		except(
-			["/api/v1/auth", "/api/v1", "/api/v1/picks", "/api/v1/responses"],
-			jwt({
-				secret: getEnvOrThrow("JWT_SECRET"),
-			}),
-		),
-	)
-
 	.get("/", (c) => {
 		return c.text("OK");
 	})
