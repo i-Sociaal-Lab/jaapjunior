@@ -28,7 +28,14 @@ const password = ref<string>("");
 			@escapeKeyDown="(e) => e.preventDefault()"
 		>
 			<DialogHeader>
-				<DialogTitle>Inloggen</DialogTitle>
+				<DialogTitle>
+                    <div class="flex flex-col">
+                    Inloggen
+                    <span class="text-sm font-normal text-muted-foreground">
+                        We zitten nu nog in de gesloten testfase. Wil je ook testen, of wil je een vraag voor JaapJunior indienen? Dat kan <a href="https://podio.com/webforms/30328614/2551585" class="text-info underline" target="_blank" rel="noopener noreferrer">hier</a>.
+                    </span>
+                    </div>
+                </DialogTitle>
 			</DialogHeader>
 			<form
 				id="login"
