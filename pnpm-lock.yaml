@@ -38,7 +38,7 @@ importers:
         version: 0.3.6(@llamaindex/core@0.6.5(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0))(@llamaindex/env@0.1.30(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0))(encoding@0.1.13)
       '@llamaindex/chroma':
         specifier: 0.0.19
-        version: 0.0.19(@llamaindex/core@0.6.5(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0))(@llamaindex/env@0.1.30(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0))(cohere-ai@7.17.1(encoding@0.1.13))(encoding@0.1.13)(openai@4.104.0(encoding@0.1.13)(ws@8.18.1)(zod@3.24.4))
+        version: 0.0.19(@llamaindex/core@0.6.5(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0))(@llamaindex/env@0.1.30(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0))(cohere-ai@7.17.1(encoding@0.1.13))(encoding@0.1.13)(openai@5.1.1(ws@8.18.1)(zod@3.24.4))
       '@llamaindex/google':
         specifier: 0.3.1
         version: 0.3.1(@llamaindex/core@0.6.5(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0))(@llamaindex/env@0.1.30(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0))(encoding@0.1.13)
@@ -79,8 +79,8 @@ importers:
         specifier: 0.10.6
         version: 0.10.6(@huggingface/transformers@3.5.0)(encoding@0.1.13)(gpt-tokenizer@2.9.0)(tree-sitter@0.22.4)(web-tree-sitter@0.24.7)(ws@8.18.1)(zod@3.24.4)
       openai:
-        specifier: ^4.95.0
-        version: 4.104.0(encoding@0.1.13)(ws@8.18.1)(zod@3.24.4)
+        specifier: ^5.0.0
+        version: 5.1.1(ws@8.18.1)(zod@3.24.4)
       valibot:
         specifier: ^1.0.0
         version: 1.1.0(typescript@5.8.3)
@@ -4176,6 +4176,18 @@ packages:
       zod:
         optional: true
 
+  openai@5.1.1:
+    resolution: {integrity: sha512-lgIdLqvpLpz8xPUKcEIV6ml+by74mbSBz8zv/AHHebtLn/WdpH4kdXT3/Q5uUKDHg3vHV/z9+G9wZINRX6rkDg==}
+    hasBin: true
+    peerDependencies:
+      ws: ^8.18.0
+      zod: ^3.23.8
+    peerDependenciesMeta:
+      ws:
+        optional: true
+      zod:
+        optional: true
+
   openapi-types@12.1.3:
     resolution: {integrity: sha512-N4YtSYJqghVu4iek2ZUvcN/0aqH1kRDuNqzcycDxhOUpg7GdvLa2F3DgS6yBNhInhv2r/6I0Flkn7CqL8+nIcw==}
 
@@ -6534,11 +6546,11 @@ snapshots:
     transitivePeerDependencies:
       - encoding
 
-  '@llamaindex/chroma@0.0.19(@llamaindex/core@0.6.5(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0))(@llamaindex/env@0.1.30(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0))(cohere-ai@7.17.1(encoding@0.1.13))(encoding@0.1.13)(openai@4.104.0(encoding@0.1.13)(ws@8.18.1)(zod@3.24.4))':
+  '@llamaindex/chroma@0.0.19(@llamaindex/core@0.6.5(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0))(@llamaindex/env@0.1.30(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0))(cohere-ai@7.17.1(encoding@0.1.13))(encoding@0.1.13)(openai@5.1.1(ws@8.18.1)(zod@3.24.4))':
     dependencies:
       '@llamaindex/core': 0.6.5(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0)
       '@llamaindex/env': 0.1.30(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0)
-      chromadb: 1.10.3(cohere-ai@7.17.1(encoding@0.1.13))(encoding@0.1.13)(openai@4.104.0(encoding@0.1.13)(ws@8.18.1)(zod@3.24.4))
+      chromadb: 1.10.3(cohere-ai@7.17.1(encoding@0.1.13))(encoding@0.1.13)(openai@5.1.1(ws@8.18.1)(zod@3.24.4))
       chromadb-default-embed: 2.14.0
     transitivePeerDependencies:
       - '@google/generative-ai'
@@ -8270,13 +8282,13 @@ snapshots:
     transitivePeerDependencies:
       - bare-buffer
 
-  chromadb@1.10.3(cohere-ai@7.17.1(encoding@0.1.13))(encoding@0.1.13)(openai@4.104.0(encoding@0.1.13)(ws@8.18.1)(zod@3.24.4)):
+  chromadb@1.10.3(cohere-ai@7.17.1(encoding@0.1.13))(encoding@0.1.13)(openai@5.1.1(ws@8.18.1)(zod@3.24.4)):
     dependencies:
       cliui: 8.0.1
       isomorphic-fetch: 3.0.0(encoding@0.1.13)
     optionalDependencies:
       cohere-ai: 7.17.1(encoding@0.1.13)
-      openai: 4.104.0(encoding@0.1.13)(ws@8.18.1)(zod@3.24.4)
+      openai: 5.1.1(ws@8.18.1)(zod@3.24.4)
     transitivePeerDependencies:
       - encoding
 
@@ -9958,6 +9970,11 @@ snapshots:
       zod: 3.24.4
     transitivePeerDependencies:
       - encoding
+
+  openai@5.1.1(ws@8.18.1)(zod@3.24.4):
+    optionalDependencies:
+      ws: 8.18.1
+      zod: 3.24.4
 
   openapi-types@12.1.3: {}
 
