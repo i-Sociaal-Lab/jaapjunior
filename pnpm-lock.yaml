@@ -6557,7 +6557,7 @@ snapshots:
   '@llamaindex/core@0.6.5(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0)':
     dependencies:
       '@llamaindex/env': 0.1.30(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0)
-      '@types/node': 22.15.18
+      '@types/node': 22.15.29
       magic-bytes.js: 1.12.1
       zod: 3.24.4
       zod-to-json-schema: 3.24.5(zod@3.24.4)
@@ -9584,7 +9584,7 @@ snapshots:
       '@llamaindex/openai': 0.3.7(@llamaindex/core@0.6.5(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0))(@llamaindex/env@0.1.30(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0))(encoding@0.1.13)(ws@8.18.1)(zod@3.24.4)
       '@llamaindex/workflow': 1.0.3(@llamaindex/core@0.6.5(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0))(@llamaindex/env@0.1.30(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0))(zod@3.24.4)
       '@types/lodash': 4.17.16
-      '@types/node': 22.15.18
+      '@types/node': 22.15.29
       ajv: 8.17.1
       lodash: 4.17.21
       magic-bytes.js: 1.12.1
