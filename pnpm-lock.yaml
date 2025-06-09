@@ -35,22 +35,22 @@ importers:
         version: 0.5.2(hono@4.7.11)(valibot@1.1.0(typescript@5.8.3))
       '@llamaindex/anthropic':
         specifier: 0.3.6
-        version: 0.3.6(@llamaindex/core@0.6.5(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0))(@llamaindex/env@0.1.30(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0))(encoding@0.1.13)
+        version: 0.3.6(@llamaindex/core@0.6.5(@huggingface/transformers@3.5.0)(gpt-tokenizer@3.0.0))(@llamaindex/env@0.1.30(@huggingface/transformers@3.5.0)(gpt-tokenizer@3.0.0))(encoding@0.1.13)
       '@llamaindex/chroma':
         specifier: 0.0.19
-        version: 0.0.19(@llamaindex/core@0.6.5(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0))(@llamaindex/env@0.1.30(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0))(cohere-ai@7.17.1(encoding@0.1.13))(encoding@0.1.13)(openai@4.104.0(encoding@0.1.13)(ws@8.18.1)(zod@3.24.4))
+        version: 0.0.19(@llamaindex/core@0.6.5(@huggingface/transformers@3.5.0)(gpt-tokenizer@3.0.0))(@llamaindex/env@0.1.30(@huggingface/transformers@3.5.0)(gpt-tokenizer@3.0.0))(cohere-ai@7.17.1(encoding@0.1.13))(encoding@0.1.13)(openai@4.104.0(encoding@0.1.13)(ws@8.18.1)(zod@3.24.4))
       '@llamaindex/google':
         specifier: 0.3.1
-        version: 0.3.1(@llamaindex/core@0.6.5(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0))(@llamaindex/env@0.1.30(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0))(encoding@0.1.13)
+        version: 0.3.1(@llamaindex/core@0.6.5(@huggingface/transformers@3.5.0)(gpt-tokenizer@3.0.0))(@llamaindex/env@0.1.30(@huggingface/transformers@3.5.0)(gpt-tokenizer@3.0.0))(encoding@0.1.13)
       '@llamaindex/groq':
         specifier: 0.0.70
-        version: 0.0.70(@huggingface/transformers@3.5.0)(@llamaindex/core@0.6.5(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0))(encoding@0.1.13)(gpt-tokenizer@2.9.0)(ws@8.18.1)(zod@3.24.4)
+        version: 0.0.70(@huggingface/transformers@3.5.0)(@llamaindex/core@0.6.5(@huggingface/transformers@3.5.0)(gpt-tokenizer@3.0.0))(encoding@0.1.13)(gpt-tokenizer@3.0.0)(ws@8.18.1)(zod@3.24.4)
       '@llamaindex/mistral':
         specifier: 0.1.5
-        version: 0.1.5(@llamaindex/core@0.6.5(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0))(@llamaindex/env@0.1.30(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0))(zod@3.24.4)
+        version: 0.1.5(@llamaindex/core@0.6.5(@huggingface/transformers@3.5.0)(gpt-tokenizer@3.0.0))(@llamaindex/env@0.1.30(@huggingface/transformers@3.5.0)(gpt-tokenizer@3.0.0))(zod@3.24.4)
       '@llamaindex/readers':
         specifier: 3.1.3
-        version: 3.1.3(@llamaindex/core@0.6.5(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0))(@llamaindex/env@0.1.30(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0))(encoding@0.1.13)
+        version: 3.1.3(@llamaindex/core@0.6.5(@huggingface/transformers@3.5.0)(gpt-tokenizer@3.0.0))(@llamaindex/env@0.1.30(@huggingface/transformers@3.5.0)(gpt-tokenizer@3.0.0))(encoding@0.1.13)
       '@valibot/to-json-schema':
         specifier: ^1.0.0
         version: 1.3.0(valibot@1.1.0(typescript@5.8.3))
@@ -64,8 +64,8 @@ importers:
         specifier: ^16.5.0
         version: 16.5.0
       gpt-tokenizer:
-        specifier: ^2.9.0
-        version: 2.9.0
+        specifier: ^3.0.0
+        version: 3.0.0
       hono:
         specifier: ^4.7.7
         version: 4.7.11
@@ -77,7 +77,7 @@ importers:
         version: 6.0.11
       llamaindex:
         specifier: 0.10.6
-        version: 0.10.6(@huggingface/transformers@3.5.0)(encoding@0.1.13)(gpt-tokenizer@2.9.0)(tree-sitter@0.22.4)(web-tree-sitter@0.24.7)(ws@8.18.1)(zod@3.24.4)
+        version: 0.10.6(@huggingface/transformers@3.5.0)(encoding@0.1.13)(gpt-tokenizer@3.0.0)(tree-sitter@0.22.4)(web-tree-sitter@0.24.7)(ws@8.18.1)(zod@3.24.4)
       openai:
         specifier: ^4.95.0
         version: 4.104.0(encoding@0.1.13)(ws@8.18.1)(zod@3.24.4)
@@ -3358,6 +3358,9 @@ packages:
   gpt-tokenizer@2.9.0:
     resolution: {integrity: sha512-YSpexBL/k4bfliAzMrRqn3M6+it02LutVyhVpDeMKrC/O9+pCe/5s8U2hYKa2vFLD5/vHhsKc8sOn/qGqII8Kg==}
 
+  gpt-tokenizer@3.0.0:
+    resolution: {integrity: sha512-S7SWrQHkl73wpZEJjeIh9Gfx2aVHudAEadezI2/SSvqRMtQiUjjHDah4m8LWTxcw9Fx9VphNXpqdnMo3FapDFg==}
+
   graceful-fs@4.2.11:
     resolution: {integrity: sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==}
 
@@ -6525,19 +6528,19 @@ snapshots:
 
   '@jsdevtools/ono@7.1.3': {}
 
-  '@llamaindex/anthropic@0.3.6(@llamaindex/core@0.6.5(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0))(@llamaindex/env@0.1.30(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0))(encoding@0.1.13)':
+  '@llamaindex/anthropic@0.3.6(@llamaindex/core@0.6.5(@huggingface/transformers@3.5.0)(gpt-tokenizer@3.0.0))(@llamaindex/env@0.1.30(@huggingface/transformers@3.5.0)(gpt-tokenizer@3.0.0))(encoding@0.1.13)':
     dependencies:
       '@anthropic-ai/sdk': 0.37.0(encoding@0.1.13)
-      '@llamaindex/core': 0.6.5(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0)
-      '@llamaindex/env': 0.1.30(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0)
+      '@llamaindex/core': 0.6.5(@huggingface/transformers@3.5.0)(gpt-tokenizer@3.0.0)
+      '@llamaindex/env': 0.1.30(@huggingface/transformers@3.5.0)(gpt-tokenizer@3.0.0)
       remeda: 2.21.3
     transitivePeerDependencies:
       - encoding
 
-  '@llamaindex/chroma@0.0.19(@llamaindex/core@0.6.5(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0))(@llamaindex/env@0.1.30(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0))(cohere-ai@7.17.1(encoding@0.1.13))(encoding@0.1.13)(openai@4.104.0(encoding@0.1.13)(ws@8.18.1)(zod@3.24.4))':
+  '@llamaindex/chroma@0.0.19(@llamaindex/core@0.6.5(@huggingface/transformers@3.5.0)(gpt-tokenizer@3.0.0))(@llamaindex/env@0.1.30(@huggingface/transformers@3.5.0)(gpt-tokenizer@3.0.0))(cohere-ai@7.17.1(encoding@0.1.13))(encoding@0.1.13)(openai@4.104.0(encoding@0.1.13)(ws@8.18.1)(zod@3.24.4))':
     dependencies:
-      '@llamaindex/core': 0.6.5(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0)
-      '@llamaindex/env': 0.1.30(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0)
+      '@llamaindex/core': 0.6.5(@huggingface/transformers@3.5.0)(gpt-tokenizer@3.0.0)
+      '@llamaindex/env': 0.1.30(@huggingface/transformers@3.5.0)(gpt-tokenizer@3.0.0)
       chromadb: 1.10.3(cohere-ai@7.17.1(encoding@0.1.13))(encoding@0.1.13)(openai@4.104.0(encoding@0.1.13)(ws@8.18.1)(zod@3.24.4))
       chromadb-default-embed: 2.14.0
     transitivePeerDependencies:
@@ -6554,9 +6557,26 @@ snapshots:
       '@llamaindex/env': 0.1.30(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0)
       p-retry: 6.2.1
 
+  '@llamaindex/cloud@4.0.7(@llamaindex/core@0.6.5(@huggingface/transformers@3.5.0)(gpt-tokenizer@3.0.0))(@llamaindex/env@0.1.30(@huggingface/transformers@3.5.0)(gpt-tokenizer@3.0.0))':
+    dependencies:
+      '@llamaindex/core': 0.6.5(@huggingface/transformers@3.5.0)(gpt-tokenizer@3.0.0)
+      '@llamaindex/env': 0.1.30(@huggingface/transformers@3.5.0)(gpt-tokenizer@3.0.0)
+      p-retry: 6.2.1
+
   '@llamaindex/core@0.6.5(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0)':
     dependencies:
       '@llamaindex/env': 0.1.30(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0)
+      '@types/node': 22.15.18
+      magic-bytes.js: 1.12.1
+      zod: 3.24.4
+      zod-to-json-schema: 3.24.5(zod@3.24.4)
+    transitivePeerDependencies:
+      - '@huggingface/transformers'
+      - gpt-tokenizer
+
+  '@llamaindex/core@0.6.5(@huggingface/transformers@3.5.0)(gpt-tokenizer@3.0.0)':
+    dependencies:
+      '@llamaindex/env': 0.1.30(@huggingface/transformers@3.5.0)(gpt-tokenizer@3.0.0)
       '@types/node': 22.15.18
       magic-bytes.js: 1.12.1
       zod: 3.24.4
@@ -6574,23 +6594,32 @@ snapshots:
       '@huggingface/transformers': 3.5.0
       gpt-tokenizer: 2.9.0
 
-  '@llamaindex/google@0.3.1(@llamaindex/core@0.6.5(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0))(@llamaindex/env@0.1.30(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0))(encoding@0.1.13)':
+  '@llamaindex/env@0.1.30(@huggingface/transformers@3.5.0)(gpt-tokenizer@3.0.0)':
+    dependencies:
+      '@aws-crypto/sha256-js': 5.2.0
+      js-tiktoken: 1.0.20
+      pathe: 1.1.2
+    optionalDependencies:
+      '@huggingface/transformers': 3.5.0
+      gpt-tokenizer: 3.0.0
+
+  '@llamaindex/google@0.3.1(@llamaindex/core@0.6.5(@huggingface/transformers@3.5.0)(gpt-tokenizer@3.0.0))(@llamaindex/env@0.1.30(@huggingface/transformers@3.5.0)(gpt-tokenizer@3.0.0))(encoding@0.1.13)':
     dependencies:
       '@google-cloud/vertexai': 1.9.0(encoding@0.1.13)
       '@google/genai': 0.12.0(encoding@0.1.13)
       '@google/generative-ai': 0.24.0
-      '@llamaindex/core': 0.6.5(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0)
-      '@llamaindex/env': 0.1.30(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0)
+      '@llamaindex/core': 0.6.5(@huggingface/transformers@3.5.0)(gpt-tokenizer@3.0.0)
+      '@llamaindex/env': 0.1.30(@huggingface/transformers@3.5.0)(gpt-tokenizer@3.0.0)
     transitivePeerDependencies:
       - bufferutil
       - encoding
       - supports-color
       - utf-8-validate
 
-  '@llamaindex/groq@0.0.70(@huggingface/transformers@3.5.0)(@llamaindex/core@0.6.5(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0))(encoding@0.1.13)(gpt-tokenizer@2.9.0)(ws@8.18.1)(zod@3.24.4)':
+  '@llamaindex/groq@0.0.70(@huggingface/transformers@3.5.0)(@llamaindex/core@0.6.5(@huggingface/transformers@3.5.0)(gpt-tokenizer@3.0.0))(encoding@0.1.13)(gpt-tokenizer@3.0.0)(ws@8.18.1)(zod@3.24.4)':
     dependencies:
-      '@llamaindex/env': 0.1.30(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0)
-      '@llamaindex/openai': 0.3.7(@llamaindex/core@0.6.5(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0))(@llamaindex/env@0.1.30(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0))(encoding@0.1.13)(ws@8.18.1)(zod@3.24.4)
+      '@llamaindex/env': 0.1.30(@huggingface/transformers@3.5.0)(gpt-tokenizer@3.0.0)
+      '@llamaindex/openai': 0.3.7(@llamaindex/core@0.6.5(@huggingface/transformers@3.5.0)(gpt-tokenizer@3.0.0))(@llamaindex/env@0.1.30(@huggingface/transformers@3.5.0)(gpt-tokenizer@3.0.0))(encoding@0.1.13)(ws@8.18.1)(zod@3.24.4)
       groq-sdk: 0.8.0(encoding@0.1.13)
     transitivePeerDependencies:
       - '@huggingface/transformers'
@@ -6600,10 +6629,10 @@ snapshots:
       - ws
       - zod
 
-  '@llamaindex/mistral@0.1.5(@llamaindex/core@0.6.5(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0))(@llamaindex/env@0.1.30(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0))(zod@3.24.4)':
+  '@llamaindex/mistral@0.1.5(@llamaindex/core@0.6.5(@huggingface/transformers@3.5.0)(gpt-tokenizer@3.0.0))(@llamaindex/env@0.1.30(@huggingface/transformers@3.5.0)(gpt-tokenizer@3.0.0))(zod@3.24.4)':
     dependencies:
-      '@llamaindex/core': 0.6.5(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0)
-      '@llamaindex/env': 0.1.30(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0)
+      '@llamaindex/core': 0.6.5(@huggingface/transformers@3.5.0)(gpt-tokenizer@3.0.0)
+      '@llamaindex/env': 0.1.30(@huggingface/transformers@3.5.0)(gpt-tokenizer@3.0.0)
       '@mistralai/mistralai': 1.6.0(zod@3.24.4)
     transitivePeerDependencies:
       - zod
@@ -6612,6 +6641,14 @@ snapshots:
     dependencies:
       '@llamaindex/core': 0.6.5(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0)
       '@llamaindex/env': 0.1.30(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0)
+      html-to-text: 9.0.5
+      tree-sitter: 0.22.4
+      web-tree-sitter: 0.24.7
+
+  '@llamaindex/node-parser@2.0.5(@llamaindex/core@0.6.5(@huggingface/transformers@3.5.0)(gpt-tokenizer@3.0.0))(@llamaindex/env@0.1.30(@huggingface/transformers@3.5.0)(gpt-tokenizer@3.0.0))(tree-sitter@0.22.4)(web-tree-sitter@0.24.7)':
+    dependencies:
+      '@llamaindex/core': 0.6.5(@huggingface/transformers@3.5.0)(gpt-tokenizer@3.0.0)
+      '@llamaindex/env': 0.1.30(@huggingface/transformers@3.5.0)(gpt-tokenizer@3.0.0)
       html-to-text: 9.0.5
       tree-sitter: 0.22.4
       web-tree-sitter: 0.24.7
@@ -6626,11 +6663,21 @@ snapshots:
       - ws
       - zod
 
-  '@llamaindex/readers@3.1.3(@llamaindex/core@0.6.5(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0))(@llamaindex/env@0.1.30(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0))(encoding@0.1.13)':
+  '@llamaindex/openai@0.3.7(@llamaindex/core@0.6.5(@huggingface/transformers@3.5.0)(gpt-tokenizer@3.0.0))(@llamaindex/env@0.1.30(@huggingface/transformers@3.5.0)(gpt-tokenizer@3.0.0))(encoding@0.1.13)(ws@8.18.1)(zod@3.24.4)':
+    dependencies:
+      '@llamaindex/core': 0.6.5(@huggingface/transformers@3.5.0)(gpt-tokenizer@3.0.0)
+      '@llamaindex/env': 0.1.30(@huggingface/transformers@3.5.0)(gpt-tokenizer@3.0.0)
+      openai: 4.104.0(encoding@0.1.13)(ws@8.18.1)(zod@3.24.4)
+    transitivePeerDependencies:
+      - encoding
+      - ws
+      - zod
+
+  '@llamaindex/readers@3.1.3(@llamaindex/core@0.6.5(@huggingface/transformers@3.5.0)(gpt-tokenizer@3.0.0))(@llamaindex/env@0.1.30(@huggingface/transformers@3.5.0)(gpt-tokenizer@3.0.0))(encoding@0.1.13)':
     dependencies:
       '@discoveryjs/json-ext': 0.6.3
-      '@llamaindex/core': 0.6.5(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0)
-      '@llamaindex/env': 0.1.30(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0)
+      '@llamaindex/core': 0.6.5(@huggingface/transformers@3.5.0)(gpt-tokenizer@3.0.0)
+      '@llamaindex/env': 0.1.30(@huggingface/transformers@3.5.0)(gpt-tokenizer@3.0.0)
       csv-parse: 5.6.0
       mammoth: 1.9.0
       unpdf: 0.12.1(encoding@0.1.13)
@@ -6642,6 +6689,12 @@ snapshots:
     dependencies:
       '@llamaindex/core': 0.6.5(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0)
       '@llamaindex/env': 0.1.30(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0)
+      zod: 3.24.4
+
+  '@llamaindex/workflow@1.0.3(@llamaindex/core@0.6.5(@huggingface/transformers@3.5.0)(gpt-tokenizer@3.0.0))(@llamaindex/env@0.1.30(@huggingface/transformers@3.5.0)(gpt-tokenizer@3.0.0))(zod@3.24.4)':
+    dependencies:
+      '@llamaindex/core': 0.6.5(@huggingface/transformers@3.5.0)(gpt-tokenizer@3.0.0)
+      '@llamaindex/env': 0.1.30(@huggingface/transformers@3.5.0)(gpt-tokenizer@3.0.0)
       zod: 3.24.4
 
   '@mapbox/node-pre-gyp@1.0.11(encoding@0.1.13)':
@@ -9172,7 +9225,10 @@ snapshots:
 
   gopd@1.2.0: {}
 
-  gpt-tokenizer@2.9.0: {}
+  gpt-tokenizer@2.9.0:
+    optional: true
+
+  gpt-tokenizer@3.0.0: {}
 
   graceful-fs@4.2.11: {}
 
@@ -9583,6 +9639,28 @@ snapshots:
       '@llamaindex/node-parser': 2.0.5(@llamaindex/core@0.6.5(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0))(@llamaindex/env@0.1.30(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0))(tree-sitter@0.22.4)(web-tree-sitter@0.24.7)
       '@llamaindex/openai': 0.3.7(@llamaindex/core@0.6.5(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0))(@llamaindex/env@0.1.30(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0))(encoding@0.1.13)(ws@8.18.1)(zod@3.24.4)
       '@llamaindex/workflow': 1.0.3(@llamaindex/core@0.6.5(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0))(@llamaindex/env@0.1.30(@huggingface/transformers@3.5.0)(gpt-tokenizer@2.9.0))(zod@3.24.4)
+      '@types/lodash': 4.17.16
+      '@types/node': 22.15.18
+      ajv: 8.17.1
+      lodash: 4.17.21
+      magic-bytes.js: 1.12.1
+    transitivePeerDependencies:
+      - '@huggingface/transformers'
+      - encoding
+      - gpt-tokenizer
+      - tree-sitter
+      - web-tree-sitter
+      - ws
+      - zod
+
+  llamaindex@0.10.6(@huggingface/transformers@3.5.0)(encoding@0.1.13)(gpt-tokenizer@3.0.0)(tree-sitter@0.22.4)(web-tree-sitter@0.24.7)(ws@8.18.1)(zod@3.24.4):
+    dependencies:
+      '@llamaindex/cloud': 4.0.7(@llamaindex/core@0.6.5(@huggingface/transformers@3.5.0)(gpt-tokenizer@3.0.0))(@llamaindex/env@0.1.30(@huggingface/transformers@3.5.0)(gpt-tokenizer@3.0.0))
+      '@llamaindex/core': 0.6.5(@huggingface/transformers@3.5.0)(gpt-tokenizer@3.0.0)
+      '@llamaindex/env': 0.1.30(@huggingface/transformers@3.5.0)(gpt-tokenizer@3.0.0)
+      '@llamaindex/node-parser': 2.0.5(@llamaindex/core@0.6.5(@huggingface/transformers@3.5.0)(gpt-tokenizer@3.0.0))(@llamaindex/env@0.1.30(@huggingface/transformers@3.5.0)(gpt-tokenizer@3.0.0))(tree-sitter@0.22.4)(web-tree-sitter@0.24.7)
+      '@llamaindex/openai': 0.3.7(@llamaindex/core@0.6.5(@huggingface/transformers@3.5.0)(gpt-tokenizer@3.0.0))(@llamaindex/env@0.1.30(@huggingface/transformers@3.5.0)(gpt-tokenizer@3.0.0))(encoding@0.1.13)(ws@8.18.1)(zod@3.24.4)
+      '@llamaindex/workflow': 1.0.3(@llamaindex/core@0.6.5(@huggingface/transformers@3.5.0)(gpt-tokenizer@3.0.0))(@llamaindex/env@0.1.30(@huggingface/transformers@3.5.0)(gpt-tokenizer@3.0.0))(zod@3.24.4)
       '@types/lodash': 4.17.16
       '@types/node': 22.15.18
       ajv: 8.17.1

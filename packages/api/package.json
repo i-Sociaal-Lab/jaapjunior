@@ -27,7 +27,7 @@
 		"better-sqlite3": "^11.9.1",
 		"cohere-ai": "^7.17.1",
 		"dotenv": "^16.5.0",
-		"gpt-tokenizer": "^2.9.0",
+		"gpt-tokenizer": "^3.0.0",
 		"hono": "^4.7.7",
 		"hono-openapi": "^0.4.6",
 		"jose": "^6.0.10",
