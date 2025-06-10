@@ -53,7 +53,7 @@ watch(
 	(value) => {
 		if (!value) {
 			mode.value = "pick";
-			selectedModel.value = "4.1";
+			selectedModel.value = "llama-4";
 		}
 	},
 	{ immediate: true },
