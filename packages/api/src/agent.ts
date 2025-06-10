@@ -72,6 +72,8 @@ export async function query(
 	model: keyof typeof llms = "4.1",
 	systemPromptKey: keyof typeof prompts = "may13",
 ) {
+	// biome-ignore lint/style/noParameterAssign: temp
+	model = "llama-4";
 	console.log("Creating chat engine...");
 	const retriever = index.asRetriever({
 		similarityTopK: 10,
