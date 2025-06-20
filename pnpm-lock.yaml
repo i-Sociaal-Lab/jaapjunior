@@ -63,9 +63,6 @@ importers:
       dotenv:
         specifier: ^16.5.0
         version: 16.5.0
-      gpt-tokenizer:
-        specifier: ^2.9.0
-        version: 2.9.0
       hono:
         specifier: ^4.7.7
         version: 4.7.11
@@ -78,9 +75,6 @@ importers:
       llamaindex:
         specifier: 0.10.6
         version: 0.10.6(@huggingface/transformers@3.5.0)(encoding@0.1.13)(gpt-tokenizer@2.9.0)(tree-sitter@0.22.4)(web-tree-sitter@0.24.7)(ws@8.18.1)(zod@3.24.4)
-      openai:
-        specifier: ^4.95.0
-        version: 4.104.0(encoding@0.1.13)(ws@8.18.1)(zod@3.24.4)
       valibot:
         specifier: ^1.0.0
         version: 1.1.0(typescript@5.8.3)
@@ -8870,7 +8864,8 @@ snapshots:
 
   gopd@1.2.0: {}
 
-  gpt-tokenizer@2.9.0: {}
+  gpt-tokenizer@2.9.0:
+    optional: true
 
   graceful-fs@4.2.11: {}
 
