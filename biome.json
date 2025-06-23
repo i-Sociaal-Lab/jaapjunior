@@ -1,12 +1,13 @@
 {
-	"$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+	"$schema": "https://biomejs.dev/schemas/2.0.0/schema.json",
 	"vcs": {
 		"enabled": true,
-		"clientKind": "git"
+		"clientKind": "git",
+		"useIgnoreFile": true
 	},
 	"overrides": [
 		{
-			"include": [
+			"includes": [
 				"packages/frontend/auto-imports.d.ts",
 				"packages/frontend/components.d.ts"
 			],
@@ -15,6 +16,17 @@
 			},
 			"formatter": {
 				"enabled": false
+			}
+		},
+		{
+			"includes": ["**/*.vue"],
+			"linter": {
+				"rules": {
+					"correctness": {
+						"noUnusedVariables": "off",
+						"noUnusedImports": "off"
+					}
+				}
 			}
 		}
 	]

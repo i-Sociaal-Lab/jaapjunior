@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import TheAuthDialog from "@/components/TheAuthDialog.vue";
-import { useApi } from "@/composables/useApi";
 import { onMounted, ref } from "vue";
 import { RouterView } from "vue-router";
+import TheAuthDialog from "@/components/TheAuthDialog.vue";
+import { useApi } from "@/composables/useApi";
 import { useAuthStore } from "./store/useAuth";
 
 const api = useApi();

@@ -2,7 +2,9 @@
 	"name": "ketenbureau-chat-ai",
 	"private": true,
 	"type": "module",
-	"workspaces": ["packages/*"],
+	"workspaces": [
+		"packages/*"
+	],
 	"engines": {
 		"node": "22"
 	},
@@ -18,7 +20,7 @@
 		"nanoid": "^5.1.5"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "1.9.4",
+		"@biomejs/biome": "2.0.4",
 		"@types/bun": "latest",
 		"bun": "1.2.13",
 		"turbo": "2.5.3"

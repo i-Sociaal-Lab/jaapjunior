@@ -1,12 +1,12 @@
 import "dotenv/config";
 import { ChromaVectorStore } from "@llamaindex/chroma";
+import { OpenAIEmbedding } from "@llamaindex/openai";
 import { SimpleDirectoryReader } from "@llamaindex/readers/directory";
-import { OpenAIEmbedding } from "llamaindex";
 import {
 	DocStoreStrategy,
 	Settings,
-	VectorStoreIndex,
 	storageContextFromDefaults,
+	VectorStoreIndex,
 } from "llamaindex";
 import { getEnvOrThrow } from "./get-env.js";
 

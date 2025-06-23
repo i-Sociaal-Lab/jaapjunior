@@ -1,6 +1,6 @@
-import { useAuthStore } from "@/store/useAuth";
 import type { AppType } from "@jaap/api";
 import { hc } from "hono/client";
+import { useAuthStore } from "@/store/useAuth";
 
 export function useApi() {
 	const authStore = useAuthStore();

@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import { useApi } from "@/composables/useApi";
 import type { ChatMessage } from "llamaindex";
 import { computed, onMounted, onUnmounted, ref, watch } from "vue";
 import { useRoute, useRouter } from "vue-router";
+import { useApi } from "@/composables/useApi";
 
 const route = useRoute();
 const conversationId = computed(() => route.params.id as string | undefined);

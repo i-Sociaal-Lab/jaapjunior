@@ -3,17 +3,16 @@ import { ChromaVectorStore } from "@llamaindex/chroma";
 import { GEMINI_MODEL, Gemini } from "@llamaindex/google";
 import { Groq } from "@llamaindex/groq";
 import { MistralAI } from "@llamaindex/mistral";
+import { OpenAI, OpenAIEmbedding } from "@llamaindex/openai";
 import { SimpleDirectoryReader } from "@llamaindex/readers/directory";
 import {
 	type ChatMessage,
 	ContextChatEngine,
 	DocStoreStrategy,
 	type LLM,
-	OpenAI,
-	OpenAIEmbedding,
 	Settings,
-	VectorStoreIndex,
 	storageContextFromDefaults,
+	VectorStoreIndex,
 } from "llamaindex";
 import type { IDB } from "./api.js";
 import { getEnvOrThrow } from "./get-env.js";
@@ -72,7 +71,6 @@ export async function query(
 	model: keyof typeof llms = "4.1",
 	systemPromptKey: keyof typeof prompts = "may13",
 ) {
-	// biome-ignore lint/style/noParameterAssign: temp
 	model = "llama-4";
 	console.log("Creating chat engine...");
 	const retriever = index.asRetriever({

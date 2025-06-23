@@ -1,4 +1,4 @@
-import { URL, fileURLToPath } from "node:url";
+import { fileURLToPath, URL } from "node:url";
 
 import ui from "@nuxt/ui/vite";
 import tailwindcss from "@tailwindcss/vite";

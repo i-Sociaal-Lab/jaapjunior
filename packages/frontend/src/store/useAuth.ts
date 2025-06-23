@@ -1,6 +1,6 @@
-import { useApi } from "@/composables/useApi";
 import { useLocalStorage } from "@vueuse/core";
 import { defineStore } from "pinia";
+import { useApi } from "@/composables/useApi";
 
 export const useAuthStore = defineStore("auth", () => {
 	const jwt = useLocalStorage<string | null>("jwt", null);
