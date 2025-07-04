@@ -71,7 +71,6 @@ export async function query(
 	model: keyof typeof llms = "4.1",
 	systemPromptKey: keyof typeof prompts = "may13",
 ) {
-	model = "llama-4";
 	console.log("Creating chat engine...");
 	const retriever = index.asRetriever({
 		similarityTopK: 10,
