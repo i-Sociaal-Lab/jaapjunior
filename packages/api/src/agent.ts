@@ -8,10 +8,8 @@ import { SimpleDirectoryReader } from "@llamaindex/readers/directory";
 import {
 	type ChatMessage,
 	ContextChatEngine,
-	DocStoreStrategy,
 	type LLM,
 	Settings,
-	storageContextFromDefaults,
 	VectorStoreIndex,
 } from "llamaindex";
 import type { IDB } from "./api.js";
@@ -29,24 +27,40 @@ const vectorStore = new ChromaVectorStore({
 	embeddingModel: Settings.embedModel,
 });
 
-const fromStore = true;
-let index: VectorStoreIndex;
-if (fromStore) {
-	console.log("Creating vector store...");
-	index = await VectorStoreIndex.fromVectorStore(vectorStore);
-} else {
-	console.log("Loading documents...");
-	const reader = new SimpleDirectoryReader();
-	const documents = await reader.loadData("./data");
+const existingDocs = await vectorStore.getCollection().then((c) => c.get());
+const existingDocIds = new Set(existingDocs.metadatas?.map((m) => m?.doc_id));
 
-	console.log("Indexing documents...");
+console.log("Loading documents...");
+const reader = new SimpleDirectoryReader();
+const newDocs = await reader.loadData("./data").then((docs) =>
+	docs.map((d) => {
+		d.id_ = `${d.id_}__${d.generateHash()}`;
+		return d;
+	}),
+);
+const newDocIds = new Set(newDocs.map((d) => d.id_));
 
-	const storageContext = await storageContextFromDefaults({ vectorStore });
-	index = await VectorStoreIndex.fromDocuments(documents, {
-		docStoreStrategy: DocStoreStrategy.UPSERTS,
-		storageContext,
-	});
+const docsToDelete = existingDocIds.difference(newDocIds);
+const docsToAdd = newDocIds.difference(existingDocIds);
+
+const col = await vectorStore.getCollection();
+
+for (const doc of docsToDelete) {
+	if (!doc) continue;
+
+	const { ids } = await col.get({ where: { doc_id: doc } });
+	if (ids.length) {
+		try {
+			await col.delete({ ids });
+		} catch {}
+	}
 }
+
+const newDocsToAdd = newDocs.filter((d) => docsToAdd.has(d.id_));
+await vectorStore.add(newDocsToAdd);
+
+console.log("Creating vector store...");
+const index = await VectorStoreIndex.fromVectorStore(vectorStore);
 
 export const llms = {
 	"4.1": () => new OpenAI({ model: "gpt-4.1" }),
