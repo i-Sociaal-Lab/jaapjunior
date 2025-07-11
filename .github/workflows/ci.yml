@@ -23,17 +23,14 @@ jobs:
         with:
           persist-credentials: false
 
-      - uses: pnpm/action-setup@v4
+      - uses: oven-sh/setup-bun@v2
 
       - name: Install Node.js
         uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
-          cache: 'pnpm'
 
-      - uses: oven-sh/setup-bun@v2
-
-      - run: pnpm install
+      - run: bun install
       - run: bun run build
       - run: bun run typecheck
       - run: bun check
