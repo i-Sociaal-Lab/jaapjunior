@@ -1,4 +1,4 @@
-# Master Overview – iJW‑ XSD‑schema’s (14 berichten)
+# Master Overview iJW XSD‑schema’s
 
 Versie: 1.0
 Status: Productie
