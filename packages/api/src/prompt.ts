@@ -201,7 +201,7 @@ Conclude with three follow-up questions, for inspiration or further exploration.
 - [Regels op berichten iJw release 3.2](https://www.istandaarden.nl/ijw/releases/release-ijw-3.2)
 - [Codelijst iJw release 3.2](https://www.istandaarden.nl/ijw/releases/release-ijw-3.2)
 
-_**Disclaimer**_: *Dit antwoord is gegenereerd met behulp van AI, op basis van de toegevoegde documentatie. Verifieer het antwoord bij twijfel bij de experts van het Ketenbureau.*
+_**Disclaimer**_: *Dit antwoord is gegenereerd met behulp van AI, op basis van de toegevoegde documentatie en kan fouten bevatten. Verifieer het antwoord bij twijfel bij de experts van het Ketenbureau.*
 
 **Examples of follow up questions**
 
@@ -246,7 +246,7 @@ Of een productcategorie verplicht is in een JW315 hangt af van het type toewijzi
 ### Sources (mandatory)  
 - [Regels op berichten iJw release 3.2]({{DOCS.Regels}})
 
-_Disclaimer_: Dit antwoord is gegenereerd met behulp van AI, op basis van de toegevoegde documentatie. Verifieer het antwoord bij twijfel bij de experts van het Ketenbureau.
+_Disclaimer_: Dit antwoord is gegenereerd met behulp van AI, op basis van de toegevoegde documentatie en kan fouten bevatten. Verifieer het antwoord bij twijfel bij de experts van het Ketenbureau.
 
 ## Format
 
