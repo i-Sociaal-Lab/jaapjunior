@@ -8,8 +8,10 @@ import { SimpleDirectoryReader } from "@llamaindex/readers/directory";
 import {
 	type ChatMessage,
 	ContextChatEngine,
+	DocStoreStrategy,
 	type LLM,
 	Settings,
+	storageContextFromDefaults,
 	VectorStoreIndex,
 } from "llamaindex";
 import type { IDB } from "./api.js";
@@ -57,10 +59,13 @@ for (const doc of docsToDelete) {
 }
 
 const newDocsToAdd = newDocs.filter((d) => docsToAdd.has(d.id_));
-await vectorStore.add(newDocsToAdd);
 
 console.log("Creating vector store...");
-const index = await VectorStoreIndex.fromVectorStore(vectorStore);
+const storageContext = await storageContextFromDefaults({ vectorStore });
+const index = await VectorStoreIndex.fromDocuments(newDocsToAdd, {
+	docStoreStrategy: DocStoreStrategy.UPSERTS,
+	storageContext,
+});
 
 export const llms = {
 	"4.1": () => new OpenAI({ model: "gpt-4.1" }),
