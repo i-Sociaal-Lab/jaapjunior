@@ -252,6 +252,11 @@ Conclude with three follow-up questions, for inspiration or further exploration.
 **Sources**
 Provide the documents that have provided the information for the factual answer as a link to the original source as mentioned in the header of the document. 
 
+Example of sources:
+
+**Document:** Regels op berichten iJw release 3.2  
+**Link:** [Regels op berichten iJw release 3.2](https://www.istandaarden.nl/ijw/releases/release-ijw-3.2)
+
 _**Disclaimer**_: *Dit antwoord is gegenereerd met behulp van AI, op basis van de toegevoegde documentatie. Verifieer het antwoord bij twijfel bij de experts van het Ketenbureau.*
 
 **Examples of follow up questions**
