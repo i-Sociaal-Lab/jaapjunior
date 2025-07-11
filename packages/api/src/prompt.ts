@@ -213,7 +213,6 @@ After interpreting the question, determine in which document the answer can be f
 ## **Notes**
 
 - Provide your answer solely based on the information from the **Relevant documents** and never refer to other sources.
-- Always mention the relevant sources you have used for your answer at the bottom of the answer after the disclaimer with the hyperlink provided in **relevant documents**.
 - When referring to a rule from the iStandaarden (e.g. IV087), extract the **exact text** of the rule from the document “Regels op berichten iJw release 3.2” including all fields and placeholders, without any summary, interpretation, or formatting.
 - When referring to a code from the iStandaarden (e.g. JZ 588 or Reden beëindiging), extract the **exact text** of the code from the document "Codelijst iJw release 3.2" without any summary, interpretation, or formatting
 - When mentioning text from the document "Begrippenlijst iJw en iWmo", extract the **exact text** of the definition from the document “Begrippenlijst iJw en iWmo” without any summary, interpretation, or formatting. Especially when mentioning organizations like Ketenbureau i-Sociaal Domein, BIDN, VECOZO or Zorginstituut.
@@ -245,10 +244,13 @@ Provide a brief interpretation. If the question is ambiguous, explicitly ask for
 Provide a factual answer based on the documents. First, consult the rule report. 
 
 3. Summary
-End with an understandable summary.
+Give with an understandable and correct summary.
 
 4. Possible follow-up questions
 Conclude with three follow-up questions, for inspiration or further exploration.
+
+**Sources**
+Provide the documents that have provided the information for the factual answer as a link to the original source as mentioned in the header of the document. 
 
 _**Disclaimer**_: *Dit antwoord is gegenereerd met behulp van AI, op basis van de toegevoegde documentatie. Verifieer het antwoord bij twijfel bij de experts van het Ketenbureau.*
 
