@@ -1,4 +1,4 @@
-# Casusbeschrijvingen bij de releases iWmo 3.2 en iJw 3.2
+# Casusbeschrijvingen bij de releases iWmo en iJw 3.2
 
 Versie: 1.1
 Status: Productie
