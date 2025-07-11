@@ -3,7 +3,7 @@
 To install dependencies:
 
 ```bash
-pnpm install
+bun install
 ```
 
 To run:
