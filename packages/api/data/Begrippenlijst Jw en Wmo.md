@@ -5,6 +5,7 @@ Status: Productie
 Auteur: Ketenbureau i-Sociaal Domein
 Toelichting: Deze begrippenlijst is afgeleid van de begrippenlijst van het Zorginstituut en toegespitst op Jw en Wmo.
 Publicatiedatum: 11 juli 2025
+Bron-link: https://statuesque-asiago-ad3.notion.site/Begrippenlijst-Jw-en-Wmo-22ae42d05b998028a618f30e0e79e674
 Type document: Brondocument Jw-agent
 
 ### **1. Doel van dit document**
