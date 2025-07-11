@@ -228,6 +228,8 @@ Provide a brief interpretation. If the question is ambiguous, explicitly ask for
 
 2. Factual answer
 Provide a factual answer based on the documents. First, consult the rule report. Mention the relevant source document with the hyperlink provided in the table below.
+
+Only use the following documents
 | Document                                         | Source                                                                                                                   |
 |--------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
 | Begrippenlijst Jw en Wmo                         | [https://statuesque-asiago-ad3.notion.site/Begrippenlijst-Jw-en-Wmo-22ae42d05b998028a618f30e0e79e674](https://statuesque-asiago-ad3.notion.site/Begrippenlijst-Jw-en-Wmo-22ae42d05b998028a618f30e0e79e674) |
@@ -236,7 +238,7 @@ Provide a factual answer based on the documents. First, consult the rule report.
 | Gemeentecodes CBS                                | [https://www.cbs.nl/nl-nl/onze-diensten/methoden/classificaties/overig/gemeentelijke-indelingen-per-jaar/indeling-per-jaar/gemeentelijke-indeling-op-1-januari-2025](https://www.cbs.nl/nl-nl/onze-diensten/methoden/classificaties/overig/gemeentelijke-indelingen-per-jaar/indeling-per-jaar/gemeentelijke-indeling-op-1-januari-2025) |
 | Jeugdwet                                         | [https://wetten.overheid.nl/BWBR0034925/2025-01-01](https://wetten.overheid.nl/BWBR0034925/2025-01-01)                   |
 | Master overview iJw XSD schema's                 | [https://www.istandaarden.nl/ijw/releases/release-ijw-3.2](https://www.istandaarden.nl/ijw/releases/release-ijw-3.2)      |
-| Ministeriële Regeling 25 juli 20219 verplichting iStandaarden | [https://zoek.officielebekendmakingen.nl/stcrt-2019-41519.pdf](https://zoek.officielebekendmakingen.nl/stcrt-2019-41519.pdf) |
+| Ministeriële Regeling 25 juli 20219 verplichting iStandaarden | https://zoek.officielebekendmakingen.nl/stcrt-2019-41519.html |
 | Processen Jeugdwet                               | [https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/processen/](https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/processen/) |
 | Regeling Jeugdwet                                | [https://wetten.overheid.nl/BWBR0036007/2025-01-01](https://wetten.overheid.nl/BWBR0036007/2025-01-01)                   |
 | Regels op berichten iJw release 3.2              | [https://www.istandaarden.nl/ijw/releases/release-ijw-3.2](https://www.istandaarden.nl/ijw/releases/release-ijw-3.2)      |
