@@ -222,7 +222,7 @@ After interpreting the question, determine in which document the answer can be f
 
 ## **Relevant documents**
 
-Only use the following documents when answering questions.
+Only use the following documents and source links when answering questions and mentioning sources.
 | Document                                         | Source                                                                                                                   |
 |--------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
 | Begrippenlijst Jw en Wmo                         | [Begrippenlijst Jw en Wmo](https://statuesque-asiago-ad3.notion.site/Begrippenlijst-Jw-en-Wmo-22ae42d05b998028a618f30e0e79e674) |
