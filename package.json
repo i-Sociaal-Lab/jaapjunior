@@ -20,9 +20,9 @@
 		"nanoid": "^5.1.5"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "2.0.6",
+		"@biomejs/biome": "2.1.1",
 		"@types/bun": "latest",
-		"bun": "1.2.13",
+		"bun": "1.2.18",
 		"turbo": "2.5.4"
 	},
 	"peerDependencies": {
