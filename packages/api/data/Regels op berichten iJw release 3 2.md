@@ -2095,11 +2095,11 @@ Dit heeft dus te maken met de omrekening van wekelijks toewijzen naar maandelijk
 
 **CD087:**
 
-*Als eenheid ongelijk is aan 83 (euro's) dan verplicht vullen, anders leeg laten.*
+*Als eenheid ongelijk is aan 83 (euro's) dan verplicht vullen, anders leeg laten.*;Element ProductTarief
 
 **CD095:**
 
-*Indien Code in AangevraagdProduct leeg is en ToewijzingEinddatum van het AangevraagdProduct groter dan 31-12-2020 of leeg is, dan leeg laten*;Element ProductTarief
+*Indien Code in AangevraagdProduct leeg is en ToewijzingEinddatum van het AangevraagdProduct groter dan 31-12-2020 of leeg is, dan leeg laten*
 
 **CD096:**
 
