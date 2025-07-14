@@ -2095,7 +2095,7 @@ Dit heeft dus te maken met de omrekening van wekelijks toewijzen naar maandelijk
 
 **CD087:**
 
-*Als eenheid ongelijk is aan 83 (euro's) dan verplicht vullen, anders leeg laten.*;Element ProductTarief
+*Als eenheid ongelijk is aan 83 (euro's) dan verplicht vullen, anders leeg laten.*
 
 **CD095:**
 
