@@ -2099,7 +2099,7 @@ Dit heeft dus te maken met de omrekening van wekelijks toewijzen naar maandelijk
 
 **CD095:**
 
-*Indien Code in AangevraagdProduct leeg is en ToewijzingEinddatum van het AangevraagdProduct groter dan 31-12-2020 of leeg is, dan leeg laten*
+*Indien Code in AangevraagdProduct leeg is en ToewijzingEinddatum van het AangevraagdProduct groter dan 31-12-2020 of leeg is, dan leeg laten*;Element ProductTarief
 
 **CD096:**
 
