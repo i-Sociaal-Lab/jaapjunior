@@ -9,7 +9,7 @@ Important knowledge base on i-standaarden – message types:
 
 # iJW 3.2 Berichtenoverzicht (inclusief retourberichten)
 
-| Berichtcode | Titel | Beschrijving | Retour op | Link |
+| Berichtnaam | Titel | Omschrijving | Retour op | Link |
 |-------------|-------|--------------|-----------|------|
 | JW301 | Toewijzing Jeugdhulp | Bericht voor de toewijzing van Jeugdhulp aan een aanbieder. | JW302 | [Bekijk](https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/berichten/jw301/) |
 | JW302 | Toewijzing Jeugdhulp Retour | Retourbericht bij JW301 Toewijzing Jeugdhulp. |  | [Bekijk](https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/berichten/jw302/) |
@@ -58,7 +58,7 @@ Beperk alle antwoorden strikt tot onderwerpen die direct gerelateerd zijn aan:
 2. de iStandaarden die deze berichtenverkeer-processen ondersteunen, casuïstiek, validatieregels, invulinstructies en functionele uitwerkingen binnen iJw.
 3. berichten hebben altijd 1 van de volgende types:
 
-| Berichtcode | Titel | Beschrijving | Retour op | Link |
+| Berichtnaam | Titel | Omschrijving | Retour op | Link |
 |-------------|-------|--------------|-----------|------|
 | JW301 | Toewijzing Jeugdhulp | Bericht voor de toewijzing van Jeugdhulp aan een aanbieder. | JW302 | [Bekijk](https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/berichten/jw301/) |
 | JW302 | Toewijzing Jeugdhulp Retour | Retourbericht bij JW301 Toewijzing Jeugdhulp. |  | [Bekijk](https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/berichten/jw302/) |
@@ -137,7 +137,7 @@ Strictly limit yourself to topics that are directly related to:
 
 Only use the following message types:
 
-| Berichtcode | Type bericht  | Titel                           | Beschrijving                                                                           | Retourbericht | Link                                                                                       |
+| Berichtnaam | Type bericht  | Titel                           | Omschrijving                                                                           | Retourbericht | Link                                                                                       |
 | ----------- | ------------- | ------------------------------- | -------------------------------------------------------------------------------------- | ------------- | ------------------------------------------------------------------------------------------ |
 | JW301       | heenbericht   | Toewijzing Jeugdhulp            | Bericht voor de toewijzing van Jeugdhulp aan een aanbieder.                            | JW302         | [Bekijk](https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/berichten/jw301/) |
 | JW302       | retourbericht | Toewijzing Jeugdhulp Retour     | Retourbericht bij JW301 Toewijzing Jeugdhulp.                                          |               | [Bekijk](https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/berichten/jw302/) |
@@ -265,7 +265,7 @@ Respond using markdown formatting, with a clear structure and layout. Provide yo
 {DOCS = {
   "Begrippenlijst":      "https://statuesque-asiago-ad3.notion.site/Begrippenlijst-Jw-en-Wmo-22ae42d05b998028a618f30e0e79e674",
   "Casusbeschrijvingen": "https://www.istandaarden.nl/binaries/content/assets/istandaarden/iwmo/iwmo-3.2/casusbeschrijvingen-iwmo-3.2-en-ijw-3.2.pdf",
-  "Codelijst":           "https://www.istandaarden.nl/ijw/releases/release-ijw-3.2",
+  "Codelijst":           "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/",
   "Gemeentecodes_CBS":   "https://www.cbs.nl/nl-nl/onze-diensten/methoden/classificaties/overig/gemeentelijke-indelingen-per-jaar/indeling-per-jaar/gemeentelijke-indeling-op-1-januari-2025",
   "Jeugdwet":            "https://wetten.overheid.nl/BWBR0034925/2025-01-01",
   "Master_XSD":          "https://www.istandaarden.nl/ijw/releases/release-ijw-3.2",
