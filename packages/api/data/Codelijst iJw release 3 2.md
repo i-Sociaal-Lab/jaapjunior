@@ -1028,6 +1028,8 @@ S329 ProductCode hoort niet bij de ProductCategorie
 
 ## COD002-VEKT: Berichtcode
 
+Berichtcode die gebruikt wordt in de header van een bericht
+
 JW301	436
 
 JW302	437
