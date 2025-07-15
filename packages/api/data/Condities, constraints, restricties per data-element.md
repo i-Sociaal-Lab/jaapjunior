@@ -51,7 +51,7 @@ regelrapport-ijw-3.2.0 CD-CS-RS
 
 ## Tabel condities, constraints, restricties per berichtelement
 
-| Bericht | Berichtklasse | Berichtelement | CDT-element | CDT-element | Sleutelelement | Codelijst | Regelcode | Regel | Soortregel | Retourcode |
+| Bericht | Berichtklasse | Berichtelement/Datatype | CDT-element | CDT-element | Sleutelelement | Codelijst | Regelcode | Regel | Soortregel | Retourcode |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | JW Retour | Header | IdentificatieRetour_IdentificatieBericht |  |  |  |  | RS017 | Maximale lengte 12 posities | Restrictie |  |
 | JW Retour | Header | IdentificatieRetour_IdentificatieBericht |  |  |  |  | RS033 | Geen lege elementen in XML. | Restrictie |  |
