@@ -1023,3 +1023,35 @@ S329 ProductCode hoort niet bij de ProductCategorie
 4 Per maand
 
 6 Totaal binnen geldigheidsduur toewijzing
+
+---
+
+##COD002-VEKT: Berichtcode
+
+JW301	436
+
+JW302	437
+
+JW305	438
+
+JW306	439
+
+JW307	440
+
+JW308	441
+
+JW315	446
+
+JW316	447
+
+JW317	486
+
+JW318	487
+
+JW319	488
+
+JW320	489
+
+JW323	490
+
+JW325	491
