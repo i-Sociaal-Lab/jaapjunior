@@ -1026,7 +1026,7 @@ S329 ProductCode hoort niet bij de ProductCategorie
 
 ---
 
-##COD002-VEKT: Berichtcode
+## COD002-VEKT: Berichtcode
 
 JW301	436
 
