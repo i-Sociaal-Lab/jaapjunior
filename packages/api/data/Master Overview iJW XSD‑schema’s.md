@@ -91,7 +91,7 @@ Het is bedoeld om Large‑Language‑Model‑agenten snel toegang te geven tot d
 | XsdVersie | ijw:CDT_XsdVersie | 1..1 |
 
 **Omschrijving child-elementen**
-* **BerichtCode**: Code ter identificatie van een soort bericht.
+* **BerichtCode**: Code ter identificatie van een soort bericht (zie Codelijst iJw, COD002-VEKT).
 * **BerichtVersie**: Volgnummer van de formele uitgifte van een major release van een iStandaard.
 * **BerichtSubversie**: Volgnummer van de formele uitgifte van een minor release van een iStandaard.
 * **Afzender**: Identificatie van een gemeente die betrokken is bij de uitvoering van zorg of ondersteuning.
