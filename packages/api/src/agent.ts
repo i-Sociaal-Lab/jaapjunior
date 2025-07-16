@@ -34,7 +34,7 @@ const existingDocIds = new Set(existingDocs.metadatas?.map((m) => m?.doc_id));
 
 console.log("Loading documents...");
 const reader = new SimpleDirectoryReader();
-const newDocs = await reader.loadData("./data").then((docs) =>
+const newDocs = await reader.loadData("./jw").then((docs) =>
 	docs.map((d) => {
 		d.id_ = `${d.id_}__${d.generateHash()}`;
 		return d;

@@ -25,7 +25,7 @@ if (ids.length) {
 
 console.log("Loading documents...");
 const reader = new SimpleDirectoryReader();
-const documents = await reader.loadData("./data");
+const documents = await reader.loadData("./jw");
 
 console.log("Indexing documents...");
 Settings.embedModel = new OpenAIEmbedding({
