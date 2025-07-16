@@ -19,7 +19,7 @@ Retourberichten, m.u.v. het declaratiebericht, kennen dezelfde regels als het he
 
 Het document dient als **naslagwerk en validatiebron** voor AI-agenten die vragen moeten beantwoorden, tekst moeten analyseren of processtappen moeten controleren binnen het domein van jeugdhulp, gemeenten en zorgaanbieders.
 
-**Gebruik voor AI-agenten:**
+**Gebruik voor AI-agenten**
 
 - Iedere regel is voorzien van een unieke code (zoals UP001, OP001, IV002), een titel en een toelichting.
 - De regels vormen de basis voor correcte administratieve verwerking, gegevensuitwisseling en procesondersteuning binnen iJw.
@@ -34,71 +34,71 @@ Het document dient als **naslagwerk en validatiebron** voor AI-agenten die vrage
 
 ## Uitgangspunten (UP-regels)
 
-**UP001:**
+**UP001**
 
 *De Jw berichtenfamilie ondersteunt het toewijzen, leveren en declareren van Jeugdhulp in het kader van de Jeugdwet die geleverd wordt als zorg in natura (ZIN).*
 
-**UP003:**
+**UP003**
 
 *De privacy van de cliënt is in de iJw geborgd doordat aangesloten ketenpartijen zich conformeren aan de Algemene Verordening Gegevensbescherming (AVG).*
 
-**UP004:**
+**UP004**
 
 *De volgens de wet verantwoordelijke gemeente coördineert de inzet van Jeugdhulp voor de cliënt door middel van toewijzingen (inspannings- en outputgericht).*
 
-**UP006:**
+**UP006**
 
 *De cliënt wordt in de informatievoorziening Jw geïdentificeerd met zijn BSN.*
 
-**UP007:**
+**UP007**
 
 *De gemeente legt in een beschikking vast of een cliënt recht heeft op ondersteuning vanuit de Jeugdwet (inspannings- en outputgericht).*
 
-**UP016:**
+**UP016**
 
 *Jeugdhulp wordt uitgedrukt in jeugdhulp-producten.*
 
-**UP017:**
+**UP017**
 
 *De informatie-uitwisseling in de Jeugdwet is gebaseerd op gestandaardiseerd berichtenverkeer.*
 
-**UP019:**
+**UP019**
 
 *De cliënt staat centraal.*
 
-**UP023:**
+**UP023**
 
 *Informatie wordt eenmalig bij de cliënt uitgevraagd.*
 
-**UP024:**
+**UP024**
 
 *De informatievoorziening Jw conformeert zich aan de wet- en regelgeving die voortvloeit uit de Jeugdwet.*
 
-**UP025:**
+**UP025**
 
 *De geleverde Jeugdhulp wordt gedeclareerd op cliëntniveau (inspannings- en outputgericht).*
 
-**UP026:**
+**UP026**
 
 *De Jeugdwet berichtenfamilie ondersteunt drie verschillende uitvoeringsvarianten: outputgericht, inspanningsgericht en taakgericht.*
 
-**UP027:**
+**UP027**
 
 *De declaratie moet passen binnen de contractafspraken en binnen de toewijzing (inspannings- en outputgericht).*
 
-**UP028:**
+**UP028**
 
 *Gemeente en aanbieder leggen een uitvoeringsvariant en een financieringsvorm voor de te verlenen jeugdhulp in een contract vast.*
 
-**UP031:**
+**UP031**
 
 *De gemeente doet geen aanpassingen in toewijzingen die bij de zorgaanbieder tot verlies van rechtmatigheid van geleverde en/of gedeclareerde zorg leiden.*
 
-**UP032:**
+**UP032**
 
 *De zorgaanbieder stelt de gemeente op de hoogte van (veranderingen in) zorgvraag door middel van een Verzoek om toewijzing of een Verzoek om wijziging.*
 
-**UP037:**
+**UP037**
 
 *De gemeente geeft iedere beschikking binnen het Jw domein een uniek nummer.*
 
@@ -106,38 +106,38 @@ Het document dient als **naslagwerk en validatiebron** voor AI-agenten die vrage
 
 # Bedrijfsregels (OP-regels)
 
-**OP001:**
+**OP001**
 
 *Van een cliënt wordt vastgelegd wie de gezagsdrager is. Indien het een cliënt betreft die 16 jaar of ouder is kan het gezag over de jeugdige ook bij de cliënt zelf liggen.*
 
-**OP002:**
+**OP002**
 
 *De gemeente stuurt in de toewijzing gegevens van de gezagsdrager van de cliënt mee. De gezagsdrager wordt opgenomen als relatie van de cliënt.*
 
-**OP002x1:**
+**OP002x1**
 
 *Indien een aanbieder in een Verzoek om toewijzing heeft aangegeven dat de gezagsdrager bekend is, hoeft in de daaropvolgende toewijzing de gezagsdrager niet meegegeven te worden.*
 
-**OP002x2:**
+**OP002x2**
 
 *Indien het gezag over een cliënt bij de jeugdige zelf ligt, wordt deze niet nogmaals als relatie opgenomen in de toewijzing.*
 
-**OP003:**
+**OP003**
 
 *Het gestandaardiseerd berichtenverkeer wordt niet gebruikt indien, naar oordeel van een (zorg)professional, de overdracht van cliëntgegevens ernstige risico's met zich meebrengt voor de veiligheid van de cliënt. Dit kan bijvoorbeeld gelden voor cliënten die opgenomen zijn of worden in een "blijf-van-mijn-lijf" huis.*
 
-**OP011:**
+**OP011**
 
 *De aanbieder meldt de begindatum van de levering nadat de ondersteuning daadwerkelijk is aangevangen.*
 
-**OP033:**
+**OP033**
 
 *Voor het doorgeven van wijzigingen en correcties op een eerder verzonden bericht, moet gebruik gemaakt worden van de systematiek van status aanlevering. Correcties op een melding start product zijn uitsluitend toegestaan voor het geleverde product. Als de ondersteuning beëindigd is, kan de aanvang niet meer op deze manier gecorrigeerd worden. Met de status aanlevering van een berichtklasse kan worden aangegeven of:
 • een berichtklasse nieuw is (waarde 1);
 • een berichtklasse gewijzigd is (waarde 2); een wijziging betekent dat de actuele aanlevering met dezelfde sleutel vervangen wordt. Deze waarde mag niet gebruikt worden in de iJw/iWmo.
 • een berichtklasse verwijderd moet worden (waarde 3). Een verwijdering betekent dat de vorige aanlevering(en) met dezelfde sleutel als niet verzonden beschouwd moet worden.*
 
-**OP033x1:**
+**OP033x1**
 
 *Een afgegeven toewijzing mag gewijzigd worden waarbij de wijziging met een nieuw bericht moet worden doorgegeven.*
 
@@ -157,51 +157,51 @@ Indien de gemeente het initiatief tot aanpassing van het maximale budget neemt, 
 
 *De meest recente toewijzing op toewijzingsdatum en -tijd is bepalend voor de inhoud van de toewijzing.*
 
-**OP033x2:**
+**OP033x2**
 
 *Het gebruik van status aanlevering met waarde 2 (een berichtklasse is gewijzigd) is niet toegestaan. Wijzigingen en correcties kunnen daarom niet altijd in één bericht worden doorgegeven.*
 
-**OP039:**
+**OP039**
 
 *In het berichtenverkeer mogen ketenpartijen cliëntgegevens doorgeven zoals deze in de administratie van de betreffende ketenpartij voorkomen, mits deze gegevens geen onderdeel zijn van een logische sleutel. Het staat ketenpartijen vrij om gewijzigde gegevens uit het berichtenverkeer over te nemen in hun administratie.*
 
-**OP043:**
+**OP043**
 
 *Indien aan een cliënt een PGB is toegekend is, mag op hetzelfde moment voor hetzelfde product geen toewijzing zijn afgegeven. Een toewijzing eindigt (uiterlijk) op de dag voorafgaand aan de ingangsdatum van het PGB.*
 
-**OP047:**
+**OP047**
 
 *Als een bericht niet aan de geldende standaard voldoet, mag het bericht afgekeurd worden.*
 
-**OP065:**
+**OP065**
 
 *Een retourbericht bevat alleen informatie over cliënten waarvan berichtklassen zijn afgekeurd. Cliënten waarvan alle berichtklassen volledig zijn goedgekeurd worden dus niet mee teruggestuurd in het retourbericht.*
 
-**OP071:**
+**OP071**
 
 *Elke relatie krijgt een uniek nummer per gemeente per cliënt. Dit nummer mag niet gewijzigd worden.*
 
-**OP072:**
+**OP072**
 
 *Pas na een melding start ondersteuning mag een aanbieder melden dat de levering beëindigd is. In het bericht moet gerefereerd worden aan de start van de levering.*
 
-**OP076:**
+**OP076**
 
 *Van iedere contactpersoon (relatie) moet worden opgegeven in welke relatie deze tot de cliënt staat. Gegevens over een contactpersoon mogen alleen worden opgenomen indien noodzakelijk voor communicatie met de cliënt.*
 
-**OP079:**
+**OP079**
 
 *Het is verplicht om gebruik te maken van het BSN van de cliënt in de onderlinge uitwisseling van gegevens.*
 
-**OP080:**
+**OP080**
 
 *Aan het tijdstip waarop en de volgorde waarin berichten worden ontvangen en verwerkt kunnen ketenpartijen geen betekenis hechten. Hoewel ongewenst kan het noodzakelijk zijn een bericht met terugwerkende kracht te moeten versturen, bijvoorbeeld als gevolg van een bezwaarprocedure.*
 
-**OP086:**
+**OP086**
 
 *Ondersteuningsproducten met een inspannings- of outputgerichte uitvoering worden altijd door de gemeente toegewezen met een toewijzingsbericht.*
 
-**OP087:**
+**OP087**
 
 *Een toewijzingsbericht bevat voor 1 cliënt altijd alle toewijzingen voor 1 aanbieder die op of na de aanmaakdatum van het bericht geldig zijn plus alle toewijzingen die gewijzigd zijn ten opzichte van het voorgaande toewijzingsbericht.*
 
@@ -211,35 +211,35 @@ Toewijzingen met einddatum gelijk aan ingangsdatum en RedenWijziging gevuld met 
 
 Voor iedere cliënt waarbij een toewijzing verandert, wordt een toewijzingsbericht gestuurd voor alle actuele toewijzingen voor die aanbieder behorende bij die cliënt .
 
-**OP090:**
+**OP090**
 
 *Voor ieder ontvangen heenbericht wordt binnen 3 werkdagen na ontvangst een retourbericht verzonden.*
 
 De verzendende partij van het heenbericht is verantwoordelijk voor het signaleren van het ontbreken van een retourbericht en dient actie te ondernemen.
 
-**OP090x2:**
+**OP090x2**
 
 *Indien voor een ontvangen heenbericht geen retourbericht kan worden gemaakt moet de ontvangende partij dit buiten het berichtenverkeer om melden aan de verzendende partij.*
 
-**OP090x4:**
+**OP090x4**
 
 *Voor ieder ontvangen declaratiebericht wordt binnen 10 werkdagen na ontvangst een declaratie-antwoordbericht verzonden.*
 
 Indien de gemeente niet binnen 10 werkdagen een declaratie-antwoordbericht kan versturen, neemt de gemeente buiten het berichtenverkeer om contact op met de aanbieder. De aanbieder is verantwoordelijk voor het signaleren van het ontbreken van een declaratie-antwoordbericht en dient, indien er nog geen contact geweest is met de gemeente, actie te ondernemen.
 
-**OP091:**
+**OP091**
 
 *Van een cliënt mogen aanvullende contactgegevens vastgelegd worden; er moet dan wel vastgelegd worden wat voor soort adres het betreft.*
 
-**OP095:**
+**OP095**
 
 *Een bericht mag niet worden afgekeurd op basis van informatie waartoe de verzendende partij geen toegang heeft.*
 
-**OP130:**
+**OP130**
 
 *Van de relatie moet altijd een naam worden vastgelegd, aangevuld met een volledig adres en/of een telefoonnummer.*
 
-**OP155:**
+**OP155**
 
 *Een (tijdelijke) beëindiging van levering, bevat een verwijzing naar de laatste melding van de start van de levering.*
 
@@ -279,7 +279,7 @@ Commentaar mag in de berichten gebruikt worden om extra informatie op te nemen. 
 
 *In de iJw berichten worden AGB-codes gebruikt voor routering van de berichten en voor identificatie van de aanbieder.*
 
-**OP257:** 
+**OP257** 
 
 *Bij een wijziging van de zorgvraag wordt voor het betreffende product een nieuwe toewijzing afgegeven.*
 
@@ -296,7 +296,7 @@ Het heeft de voorkeur een bestaande toewijzing aan te passen indien:
 - Het volume wijzigt bij een frequentie totaal binnen geldigheidsduur toewijzing
 - Het maximaal budget wordt gewijzigd
 
-**OP258:** 
+**OP258** 
 
 *Bij een beëindiging van een toewijzing wordt de aanbieder hiervan op de hoogte gebracht met een toewijzingbericht.*
 
@@ -310,15 +310,15 @@ Hetzelfde zorg- of ondersteuningsproduct betekent dezelfde productcode of dezelf
 
 Verwijderde toewijzingen (waarvan de einddatum gelijk is aan de ingangsdatum en de reden wijziging is gevuld met 13 (Verwijderd)) maken geen onderdeel uit van de bepaling of sprake is van stapeling. Deze toewijzingen worden niet gezien als actuele toewijzing.  Hetzelfde geldt voor toewijzingen met reden wijziging 01 (Administratieve correctie (vervallen)) en einddatum gelijk aan ingangsdatum.
 
-**OP260:** 
+**OP260** 
 
 *Een ondersteuningsproduct wordt omschreven als een Productcategorie en kan nader gespecificeerd worden met een Productcode.*
 
-**OP261:** 
+**OP261** 
 
 *Per ondersteuningsproduct wordt vastgelegd of de uitvoering inspanningsgericht, outputgericht of taakgericht is.*
 
-**OP262:** 
+**OP262** 
 
 *Voor ondersteuningsproducten met een inspanningsgerichte uitvoering wordt een tarief per tijdseenheid afgesproken behalve voor ondersteuningsproducten met de eenheid stuks (inspanning) daar wordt een tarief per stuk afgesproken.*
 
@@ -370,25 +370,25 @@ Als een antwoordbericht in VerzoekAntwoord de waarde 2 (Aanvraag in onderzoek) b
 
 *De aanbieder declareert voor een cliënt waarvoor de aanbieder een toewijzing ontvangen heeft.*
 
-**OP279:**
+**OP279**
 
 De aanbieder declareert een product binnen de toegewezen periode.
 
-**OP280:**
+**OP280**
 
 *Een declaratiebericht heeft betrekking op één declaratieperiode.*
 
 Een declaratiebericht over een periode kan prestaties bevatten uit eerdere declaratieperioden.
 
-**OP281:**
+**OP281**
 
 *Een declaratiebericht kan prestaties van één of meer cliënten bevatten.*
 
-**OP283:**
+**OP283**
 
 *Iedere prestatie krijgt een uniek nummer (ProductReferentie) per aanbieder per wettelijk domein.*
 
-**OP284:**
+**OP284**
 
 *Indien iedere declaratieperiode zorg is geleverd door de aanbieder, moeten de declaratieperioden aansluitend zijn in opvolgende declaratieberichten.*
 
@@ -396,19 +396,19 @@ Als gedurende een volledige declaratieperiode door de aanbieder geen zorg is gel
 
 Overlap van declaratieperiode is (voor correcties) toegestaan op de laatst ingediende declaratieperiode. Zie ook IV090.
 
-**OP286:**
+**OP286**
 
 *Als de ontvanger van een heenbericht een technische fout constateert, keurt deze het bericht in zijn geheel af en laat hij dit weten aan de verzender.*
 
 Het bericht moet daarmee functioneel als niet-verzonden worden beschouwd.
 
-**OP288:**
+**OP288**
 
 *Indien de start van de levering gemeld is met een Startbericht, wordt de beëindiging van die levering altijd doorgegeven met een Stopbericht.*
 
 Dit geldt ook wanneer de levering volgens plan en/of op de einddatum van de toewijzing beëindigd wordt.
 
-**OP289:**
+**OP289**
 
 *Bij een toegewezen product kan slechts één startbericht actueel zijn.*
 
@@ -416,33 +416,33 @@ Op ieder moment kan er maar één begindatum zijn van een levering die gestart i
 
 Let op: een product kan hierbij niet gevuld zijn (generiek) of bestaan uit alleen een productcategorie (aspecifiek) ofwel een productcategorie en een productcode (specifiek).
 
-**OP295:**
+**OP295**
 
 *Het gebruik van regieberichten is verplicht.*
 
 Het gebruik van de regieberichten is voor de uitvoeringsvarianten inspannings- en outputgericht verplicht. Een Stopbericht kan alleen worden verstuurd indien er een bijbehorend Startbericht aanwezig is. Bij leveringen gestart voor het verplicht stellen van de regieberichten (iWmo/iJw release 2.4) kan het zo zijn dat er geen Startbericht gestuurd is. Bij eindigen van de levering kan in dat geval geen Stopbericht worden verstuurd.
 
-**OP296:**
+**OP296**
 
 *Het ingediende Verzoek om Toewijzing dient te passen binnen de gemaakte contractafspraken tussen gemeente en aanbieder.*
 
-**OP297:**
+**OP297**
 
 *Indien de zorgverlenercode van de verwijzer bekend is, dient de aanbieder deze mee te geven in het verzoek om toewijzing.*
 
 Indien bij de verwijzing van huisarts, Jeugdarts, Gecertificeerde instelling of Medisch specialist een zorgverlenerscode (AGB-code van het Zorgpartijtype Zorgverlener) is meegegeven, dient bij de verwijzing deze ZorgverlenerCode gevuld te worden. Indien de zorgaanbieder deze informatie niet heeft, mag worden volstaan met de naam van de verwijzer.
 
-**OP298:**
+**OP298**
 
 *Het verlagen van het Volume bij de frequentie totaal binnen geldigheid toewijzing is alleen toegestaan na overleg met en instemming van de betreffende aanbieder.*
 
-**OP299:**
+**OP299**
 
 *Het verlagen van het Budget is alleen toegestaan na overleg met en instemming van de betreffende aanbieder.*
 
 Indien dit op verzoek van de aanbieder (via een verzoek om wijziging) is, mag dit zonder overleg worden aangepast door de gemeente.
 
-**OP302:**
+**OP302**
 
 *De aanbieder declareert een zorg- of ondersteuningsproduct dat aansluit bij de toewijzing.*
 
@@ -454,7 +454,7 @@ Dit betekent onder andere dat de prestatie hetzelfde óf (een) nader gespecifice
 - **Aspecifieke toewijzing**: (in de toewijzing is alleen productcategorie gevuld, productcode is leeg) worden 1 of meer nader gespecificeerde zorg- of ondersteuningsproducten gedeclareerd. Dat betekent dat de aanbieder binnen de toegewezen productcategorie 1 of meer productcode(s) declareert die volgens de gehanteerde productcodelijst horen bij die productcategorie.
 - **Generieke toewijzing**: (in de toewijzing is alleen het budget gevuld, productcategorie en productcode zijn leeg), declareert de aanbieder 1 of meer productcategorie(en) met bijpassende productcode(s) passend binnen het afgesproken contract met de gemeente.
 
-**OP303:**
+**OP303**
 
 *Het declaratie-antwoordbericht bevat alle informatie om het bericht administratief te verwerken.*
 
@@ -466,17 +466,17 @@ Toegekende prestaties
 
 Toegekende prestaties worden niet opgenomen in het retourbericht. Alleen de som van de ingediende bedragen van de toegekende prestaties wordt in de berichtklasse `DeclaratieAntwoord` van het declaratie-antwoordbericht opgenomen.
 
-**OP304:**
+**OP304**
 
 *Een declaratie-antwoordbericht bevat alleen detailinformatie over cliënten waarvan berichtklassen zijn afgekeurd.*
 
 Een declaratie-antwoordbericht bevat alleen detailinformatie over cliënten waarvan berichtklassen zijn afgekeurd Cliënten waarvan alle berichtklassen volledig zijn goedgekeurd worden dus niet mee teruggestuurd in het declaratie-antwoordbericht. Het declaratie-antwoordbericht bevat alleen cliënten waarvan in 1 of meer Prestaties fouten zijn geconstateerd. In dat geval wordt de berichtklasse Cliënt inclusief alle afgekeurde Prestaties retour gezonden, voorzien van de bijbehorende retourcodes.
 
-**OP305:**
+**OP305**
 
 *Indien een product op inspanningsbasis in stuks is gecontracteerd, moet toegewezen worden met eenheid 84: Stuks (inspanning).*
 
-**OP306:**
+**OP306**
 
 *Het verzoek om wijziging bericht (VOW) wordt gebruikt als tijdens levering van zorg en/of ondersteuning blijkt dat een ander pakket van toegewezen producten nodig is.*
 
@@ -486,7 +486,7 @@ Het bericht bevat altijd de complete gewenste situatie inclusief de ongewijzigde
 
 Een verzoek om wijziging bericht kan niet gebruikt worden als er geen actuele toewijzing is.
 
-**OP307:**
+**OP307**
 
 *Een verzoek om toewijzing bericht (VOT) wordt alleen gebruikt indien een cliënt zich met een (wettelijke) verwijzing of een open beschikking meldt bij de zorgaanbieder.*
 
@@ -496,19 +496,19 @@ Voor het product en de toewijzingsperiode dat met het verzoek wordt aangevraagd 
 
 Een verzoek om toewijzing bericht kan niet gebruikt worden als er al een actuele toewijzing is voor dat product voor die periode.
 
-**OP308:**
+**OP308**
 
 *Een aanbieder vraagt met een verzoek om wijziging bericht (VOW) een samenhangend geheel aan toewijzingen aan met daarin de volledige gewenste situatie.*
 
 Wanneer de aanbieder constateert dat de situatie van de cliënt verandert gedurende het leveren van zorg/ondersteuning, waardoor er een ander pakket aan zorg of ondersteuning nodig is, dan wordt dit kenbaar gemaakt met een verzoek om wijziging bericht, waarin de complete gewenste nieuwe situatie (van ongewijzigde, gewijzigde en of nieuw gewenste producten of productcategorieën) wordt aangegeven.
 
-**OP343:**
+**OP343**
 
 *Een verzoek om wijziging (VOW) moet tijdig ingediend worden.*
 
 De gemeente moet redelijkerwijs in staat zijn om op een wijzigingsverzoek te reageren voor de gewenste ingangsdatum is bereikt.
 
-**OP344:**
+**OP344**
 
 *Een verzoek wordt door de gemeente uiteindelijk beantwoord met een toewijzing of een afwijzing.*
 
@@ -520,17 +520,17 @@ Eventueel is er eerst onderzoek nodig voordat wordt toegewezen of afgewezen.
 
 Bij een verzoek om wijziging is de reactie van de gemeente altijd op het niveau van het complete verzoek, bij een verzoek om toewijzing kan de gemeente besluiten om elk aangevraagd product apart al dan niet te honoreren.
 
-**OP345:**
+**OP345**
 
 *Als de gewenste ingangsdatum van een te wijzigen product uit een verzoek om wijziging (VOW) in het verleden ligt, dan mag de nieuwe omvang of het nieuwe budget niet leiden tot onrechtmatigheid voor al gedeclareerde en of geleverde  zorg.*
 
-**OP346:**
+**OP346**
 
 *Na ontvangst van een verzoek om wijziging bericht stuurt de gemeente binnen 5 werkdagen ofwel een toewijzingbericht ofwel een antwoordbericht aan de aanbieder. (Requirement).*
 
 Als in het antwoordbericht VerzoekAntwoord de waarde 2 (Aanvraag in onderzoek) bevat, dan wordt uiterlijk binnen 8 weken na dagtekening van het verzoek ofwel een toewijzingbericht ofwel een antwoordbericht met in VerzoekAntwoord de waarde 1 (Verzoek afgewezen) gestuurd. Er moet altijd uiteindelijk ofwel een toewijzingbericht ofwel een antwoordbericht met in VerzoekAntwoord de waarde 1 (Verzoek afgewezen) worden gestuurd.
 
-**OP347:**
+**OP347**
 
 *Het is niet toegestaan om een zorg- of ondersteuningsproduct gestapeld aan te vragen.*
 
@@ -540,91 +540,91 @@ Hetzelfde zorg- of ondersteuningsproduct betekent dezelfde productcode of dezelf
 
 Verwijderde toewijzingen (waarvan de einddatum gelijk is aan de ingangsdatum en de reden wijziging is gevuld met 13 (Verwijderd)) maken geen onderdeel uit van de bepaling of er sprake is van stapeling. Deze toewijzingen worden niet gezien als actuele toewijzing.  Hetzelfde geldt voor toewijzingen met reden wijziging 01 (Administratieve correctie (vervallen)) en einddatum gelijk aan ingangsdatum.
 
-**OP348:**
+**OP348**
 
 *Bij honoreren van een Verzoek om Wijziging (VOW) dient het aangevraagde overgenomen te worden in het toewijzingsbericht.*
 
 Het toewijzingsbericht wordt gevuld conform IV093. De ingangsdatum en einddatum van de toewijzing kan afwijken van de in de VOW gevraagde data in het geval van toewijzen met terugwerkende kracht. Het ToewijzingNummer wijkt af indien voor de gevraagde wijziging een nieuwe toewijzing afgegeven moet worden (conform OP257 en IV066).
 
-**OP349:**
+**OP349**
 
 *Iedere declaratie krijgt een uniek declaratienummer per aanbieder per wettelijk domein.*
 
-**OP350:**
+**OP350**
 
 *Het is niet toegestaan een verzoek om wijziging of verzoek om toewijzing te sturen als een eerder verzoek nog niet is afgehandeld.*
 
 Als een verzoek is beantwoord met een retourbericht dat aangeeft dat er geen technische fouten zijn, dan is vanaf dat moment het verzoek in behandeling bij de gemeente. Totdat er ofwel een afkeur is gestuurd ofwel is gehonoreerd met een toewijzing, mag er door dezelfde aanbieder geen nieuw verzoek verzonden worden voor dezelfde cliënt.
 
-**OP354:**
+**OP354**
 
 *Zorg of ondersteuning geleverd aan een cliënt tijdens een bepaalde declaratieperiode wordt direct in de erop volgende declaratieperiode of achteraf in een latere declaratieperiode gedeclareerd.*
 
-**OP355:**
+**OP355**
 
 *Ieder ontvangen declaratie-antwoordbericht is gerelateerd aan een eerder ontvangen declaratiebericht.*
 
 De koppeling kan zowel op berichtniveau als op declaratieniveau plaatsvinden.
 
-**OP359:**
+**OP359**
 
 *Indien een verzoek om toewijzing wordt afgewezen op basis van het woonplaatsbeginsel, dient de gemeente dit binnen de wettelijke termijn van 2 weken af te wijzen en de financieel verantwoordelijke gemeente terug te geven aan de aanbieder met een antwoordbericht.*
 
-**OP360:**
+**OP360**
 
 *Een prestatie mag alleen worden gecrediteerd indien deze niet eerder is gecrediteerd.*
 
-**OP361:**
+**OP361**
 
 *Iedere aanvraag van een product in een verzoek om toewijzing (VOT) of Verzoek om wijziging (VOW) krijgt een uniek referentienummer per aanbieder per wettelijk domein.*
 
-**OP362:**
+**OP362**
 
 *Het verwijderen van een toewijzing mag alleen indien dit niet leidt tot verlies van rechtmatigheid van geleverde en/of gedeclareerde zorg.*
 
-**OP363:**
+**OP363**
 
 *Bij een output- of inspanningsgerichte werkwijze meldt de aanbieder een start en stop van de ondersteuning van producten waarvoor een toewijzing is ontvangen.*
 
-**OP364:**
+**OP364**
 
 *Regieberichten worden niet voorwaardelijk gesteld aan declaratie*
 
 Het is niet toegestaan ingediende prestaties in een declaratiebericht af te keuren op basis van de start- en stopdatum in het regiebericht, of op basis van het ontbreken van een start- of stopbericht.
 
-**OP365:**
+**OP365**
 
 *De aanbieder declareert een zorg- of ondersteuningsproduct met een omvang die aansluit bij de toewijzing en/of gecontracteerde afspraken.*
 
-**OP366:**
+**OP366**
 
 *Een prestatieregel moet eerst volledig worden gecrediteerd voordat er een correctie op deze prestatieregel kan worden ingediend.*
 
 Omdat een prestatieregel eerst volledig gecrediteerd moet worden alvorens er een correctie op deze prestatieregel ingediend kan worden, is het noodzakelijk dat bij de verwerking van de declaratieberichten eerst de creditregels verwerkt worden, en pas daarna de debetregels.
 
-**OP367:**
+**OP367**
 
 *Een productperiode valt altijd binnen een kalendermaand.*
 
-**OP368:**
+**OP368**
 
 *Een productperiode valt altijd binnen de geldigheidsperiode van een toewijzing.*
 
-**OP377:**
+**OP377**
 
 *Alleen een tijdelijke stop mag zonder tussenkomst van een startbericht gevolgd worden door een definitieve stop.*
 
 Een stop moet volgen op een startbericht. De enige uitzondering hierop is een definitieve stop die kan volgen op een startbericht of een tijdelijke stop.
 
-**OP378:**
+**OP378**
 
 *Zonder tussenkomst van een startbericht is na een tijdelijke stop alleen een definitieve stop toegestaan.*
 
-**OP379:**
+**OP379**
 
 *Na een (tijdelijke) stop is het toegestaan een start te sturen.*
 
-**OP380:**
+**OP380**
 
 *Het verplaatsen van de einddatum in de toekomst van de bestaande toewijzing voor het verlengen van de zorg of ondersteuning is verplicht in een aantal gevallen.*
 
@@ -638,13 +638,13 @@ Deze werkwijze is verplicht indien de toewijzing aan alle onderstaande voorwaard
 
 # Invulinstructies (IV-regels)
 
-**IV002:**
+**IV002**
 
 *Hoe om te gaan met de adressering indien er sprake is van een organisatie?*
 
 Alleen vullen indien cliënt en/of relatie cliënt in instelling verblijft.
 
-**IV007:**
+**IV007**
 
 *Hoe wordt de naam van een cliënt of relatie vastgelegd?*
 
@@ -656,7 +656,7 @@ Van een cliënt of relatie worden de achternaam, voorvoegsel en voornamen en/of 
 - Voorletters kunnen worden vastgelegd, aaneengesloten, zonder punten of spaties;
 - NaamGebruik geeft de gewenste aanspreekvorm aan. Hiermee wordt bij correspondentie de volgorde bepaald in het gebruik van de geslachtsnaam en de naam van de partner. Het vullen van NaamGebruik hangt dus af van hoe de cliënt of relatie zijn/haar naam hanteert.
 
-**IV008:**
+**IV008**
 
 *Hoe moet worden omgegaan met correcties van de regieberichten?*
 
@@ -672,7 +672,7 @@ Of de vervangende berichtklasse kan worden aangeleverd in hetzelfde bericht of d
 
 Uiteraard moet worden voorkomen dat een nieuwe aanlevering eerder wordt verwerkt dan de correctie (verwijdering). Het is daarom te adviseren om waar mogelijk de correctie (verwijdering) en nieuwe aanlevering in hetzelfde bericht op te nemen.
 
-**IV009:**
+**IV009**
 
 *Hoe moet worden omgegaan met een geboortedatum?*
 
@@ -684,7 +684,7 @@ Voorbeelden:
 - Is alleen bekend dat de geboorte in 1953 was, dan wordt de geboortedatum 01-01-1953
 - Is alleen bekend dat de geboorte in september 1949 was, dan wordt de geboortedatum 01-09-1949
 
-**IV013:**
+**IV013**
 
 *Welke toewijzing is het meest recent?*
 
@@ -692,13 +692,13 @@ Om vast te kunnen stellen welke toewijzing het recentst is, zijn Toewijzingsdatu
 Als een aanbieder de gemeente verzoekt om een bestaande toewijzing nog een keer te versturen, blijft de inhoud van Toewijzingsdatum en Toewijzingstijd onveranderd.
 Een aanpassing van het volume of de einddatum in de toewijzing moet beschouwd worden als een gewijzigde toewijzing. De gemeente vult Toewijzingsdatum en Toewijzingstijd met de datum en tijd waarop de gemeente de aanpassing vaststelt.
 
-**IV024:**
+**IV024**
 
 *Hoe moeten bedragen worden gevuld?*
 
 Bedragen worden in 1/100 van de gehanteerde valuta opgenomen. Als er sprake is van de euro (EUR), dan is als voorbeeld 10000 gelijk aan tienduizend eurocent oftewel 100 euro.
 
-**IV028:**
+**IV028**
 
 *Hoe wordt een retourbericht opgesteld?*
 
@@ -736,7 +736,7 @@ In het retourbericht worden in deze situatie de volgende retourcodes gevuld:
 - Cliënt: Retourcode 0200 (Geen opmerkingen over deze berichtklasse)
 - StartProduct: Retourcode 9063 (Het bericht kan niet verwerkt worden omdat geen eerder bericht ontvangen is)
 
-**IV032:**
+**IV032**
 
 *Welke retourcode moet gevuld worden in het retourbericht?*
 
@@ -768,20 +768,20 @@ Het bericht wordt gecontroleerd op alle technische regels waarvoor informatie no
 
 Deze regels hebben een eigen retourcode die gevuld wordt in het retourbericht bij de berichtklasse waarin de fout geconstateerd is. Indien een fout geconstateerd is, leidt dit tot volledige afkeur van het bericht.
 
-**IV033:**
+**IV033**
 
 *Hoe moet XsltVersie gevuld worden?*
 
 Wanneer de ontvanger fouten constateert in een bericht op basis van de ter beschikking gestelde XSLTs, wordt in het retourbericht aangegeven welke XSLT-versie gebruikt is voor de controle. Dit versienummer is opgenomen in de output van de XSLTs en dient overgenomen te worden in het retourbericht.
 
-**IV034:**
+**IV034**
 
 *Hoe moet XsdVersie gevuld worden?*
 
 De waarde voor de elementen BasisschemaXsdVersie en BerichtXsdVersie in het datatype CDT_XsdVersie moeten overgenomen worden uit de schemadefinitie (XSD) waarop het bericht gecreëerd/gebaseerd is. Deze waarden staan in de schemadefinitie respectievelijk in /xs:schema/xs:annotation/xs:appinfo/<namespace>:BasisschemaXsdVersie en /xs:schema/xs:annotation/xs:appinfo/<namespace>:BerichtXsdVersie.
 Voor "<namespace>" wordt de namespace van de desbetreffende  iStandaard ingevuld, bijv. 'iJw', 'iWmo', enz.
 
-**IV042:**
+**IV042**
 
 *Hoe moet de omvang van te leveren of geleverde ondersteuning gevuld worden?*
 
@@ -817,32 +817,32 @@ In een declaratie wordt aangegeven dat in de afgelopen productperiode ondersteun
 GeleverdVolume: 20000
 Eenheid: 83 (Euro's)
 
-**IV045:**
+**IV045**
 
 *Hoe wordt de voogd vastgelegd indien dit een organisatie betreft?*
 
 Indien de voogdij voor een cliënt bij een organisatie ligt, wordt in de Relatie de organisatienaam opgenomen als Geslachtsnaam, aangeduid met NaamGebruik 6 (niet-natuurlijk persoon).
 
-**IV046:**
+**IV046**
 
 *Welke gemeentecode moet gevuld worden?*
 
 In de header van de berichten wordt de gemeente opgenomen die volgens de wet verantwoordelijk is voor zorg of ondersteuning aan de cliënt. Voor aanduiding van de gemeente wordt de CBS codelijst gehanteerd.
 
-**IV047:**
+**IV047**
 
 *Hoe om te gaan met de adressering van een cliënt indien alleen een briefadres bekend is?*
 
 Van een cliënt wordt in de toewijzing altijd het GBA adres of verblijfadres meegegeven in de Contactgegevens. Dit is alleen niet mogelijk indien een cliënt in de basisregistratie personen (BRP) is ingeschreven met alleen een briefadres. Voor die situaties kan bij een Cliënt een Adres met Soort Correspondentie-adres worden meegegeven.
 
-**IV052:**
+**IV052**
 
 *Hoe om te gaan met Beschikkingnummer in Verzoek om toewijzing?*
 
 De aanbieder dient het beschikkingnummer mee te geven in het Verzoek om Toewijzing bericht indien de cliënt van haar gemeente een beschikking heeft gekregen.
 De gemeente kan op basis van het beschikkingnummmer eenvoudig de bestaande beschikking koppelen aan de informatie uit het Verzoek Om Toewijzing bericht.
 
-**IV066:**
+**IV066**
 
 *Wanneer krijgt een toewijzing een nieuw ToewijzingNummer?*
 
@@ -857,13 +857,13 @@ Let op: wijzigen van een toewijzing is slechts beperkt toegestaan (Zie ook OP33x
 - de omvang kan worden aangepast indien de frequentie de waarde 6 (Totaal binnen geldigheidsduur toewijzing) heeft.
 Indien de omvang bij andere frequenties dan Totaal binnen geldigheidsduur toewijzing gewijzigd wordt, betekent dat dat de bestaande toewijzing wordt ingetrokken en een nieuwe toewijzing wordt verzonden met als Ingangsdatum de datum waarop de gewijzigde omvang ingaat. Dit betreft dan een nieuwe initiele toekenning met een nieuw ToewijzingNummer.
 
-**IV074:**
+**IV074**
 
 *Wat is het verschil tussen de verschillende uitvoeringsvarianten?*
 
 De iStandaarden ondersteunen een aantal verschillende uitvoeringsvarianten: inspanningsgericht, outputgericht en taakgericht. De specifieke eigenschappen van deze uitvoeringsvarianten zijn beschreven in het document Handreiking uitvoeringsvarianten, deze is beschikbaar via [www.istandaarden.nl/ibieb/handreiking-uitvoeringsvarianten-iwmo-en-ijw](http://www.istandaarden.nl/ibieb/handreiking-uitvoeringsvarianten-iwmo-en-ijw).
 
-**IV075:**
+**IV075**
 
 *Hoe moeten productgegevens gevuld worden?*
 
@@ -887,7 +887,7 @@ In een Declaratiebericht (323) wordt altijd een productcategorie en productcode 
 - Indien in ToegewezenProduct de productcategorie en productcode niet gevuld zijn (generieke toewijzing met maximaal budget) dan wordt de productcategorie en productcode gevuld behorend bij de levering (gebaseerd op de productcodelijst die gebruikt moet worden). Dit betekent dat op 1 ToegewezenProduct meerdere prestatieregels voor dezelfde periode kunnen volgen indien meerdere producten uit dezelfde of verschillende productcategorieën zijn geleverd.
 - Indien in ToegewezenProduct alleen een productcategorie is gevuld (aspecifieke toewijzing), wordt deze productcategorie overgenomen en wordt een bij de toegewezen productcategorie behorende productcode (volgens de productcodelijst die gebruikt moet worden) gevuld. Dit betekent dat op 1 ToegewezenProduct meerdere prestaties voor dezelfde periode kunnen volgen indien meerdere producten van dezelfde productcategorie zijn geleverd.
 
-**IV076:**
+**IV076**
 
 *Hoe moet het volume in de prestatie gevuld worden, wanneer de toewijzing de frequentie week heeft?*
 
@@ -967,7 +967,7 @@ Volume            Aantal zondagen in de productperiode + 1 * 300 euro (1500 euro
 Declaratieperiode september
 Over september wordt er geen declaratie meer ingediend. De laatste week, die gedeeltelijk in september valt, is al meegenomen in de declaratie over augustus.
 
-**IV077:**
+**IV077**
 
 *Hoe moet het maximaal te declareren volume berekend worden over de productperiode bij gebruik van de frequentie per week in de toewijzing?*
 
@@ -1010,7 +1010,7 @@ Maximaal volume per productperiode: Het aantal zondagen vermenigvuldigd met het 
 - November 4 zondagen: 4x weekvolume (300 euro) = 1200 euro
 - December 4 zondagen + 1 weekvolume: 5x weekvolumes (300 euro) = 1500 euro
 
-**IV078:**
+**IV078**
 
 *Wat mag gedeclareerd worden wanneer een onvolledige periode is toegewezen?*
 
@@ -1034,7 +1034,7 @@ Toewijzing voor 15 uur per maand met ingangsdatum 12-10-2021 en einddatum 13-12-
 
 Voor de productperiode 12-10-2021 t/m 31-10-2021 mag maximaal 15 uur gedeclareerd worden, indien deze uren ook daadwerkelijk geleverd zijn. Ondanks dat de ingangsdatum 12-10-2021 is en er dus geen hele kalendermaand is toegewezen, mag (mits geleverd) de volledige 15 uur gedeclareerd worden.
 
-**IV079:**
+**IV079**
 
 *Hoe moet het volume in de prestatie gevuld worden wanneer de eenheid in de prestatie uren is en de geleverde prestatie niet uit volledige uren bestaat?*
 
@@ -1045,7 +1045,7 @@ Geleverde zorg per prestatie behorend bij een toewijzing wordt gesommeerd over d
 Dus indien er wekelijks 95 minuten worden geleverd en de prestatieperiode bevat 4 weken, dan wordt eerst het totaal over de prestatieperiode bepaald = 4 weken x 95 minuten =380 minuten.
 Er wordt gedeclareerd in uren: 380 / 60 = 6 uur en 20 minuten. Afgerond is dit 6 uur. In het volume van de prestatie wordt 6 uur gevuld.
 
-**IV081:**
+**IV081**
 
 *Hoe moet het ProductTarief gevuld worden?*
 
@@ -1056,7 +1056,7 @@ Alleen voor uren en minuten is er een uitzondering mogelijk. Gemeente en aanbied
 Dit (afgeronde) tarief wordt in de Prestatie bij ProductTarief opgenomen, maar niet gebruikt voor de berekening van IngediendBedrag.
 Het IngediendBedrag wordt als volgt bepaald: (contractuele uurtarief * aantal minuten) / 60. Dit bedrag wordt vervolgens afgerond op 2 decimalen.(TR346)
 
-**IV084:**
+**IV084**
 
 *Hoe moet de declaratie gevuld worden wanneer sprake is van elkaar opvolgende toewijzingen binnen 1 declaratieperiode?*
 
@@ -1074,7 +1074,7 @@ Er worden nu 2 Prestaties ingediend met de volgende ProductPeriodes:
 ProductPeriode Prestatie 1: 01-03-2021 t/m 09-03-2021
 ProductPeriode Prestatie 2: 23-03-2021 t/m 31-03-2021
 
-**IV085:**
+**IV085**
 
 *Wanneer kan een creditering van een declaratie verzonden worden?*
 
@@ -1083,7 +1083,7 @@ Dit kan alleen nadat er een declaratie-antwoordbericht op de debet prestatie is 
 
 NB: een creditering  is een eenzijdige handeling van de aanbieder, die niet bestreden kan worden door een gemeente. De gemeente kan een ingediende credit prestatie dus niet afkeuren, tenzij het technische afkeur betreft. Zie hiervoor invulinstructies IV088 en IV087).
 
-**IV086:**
+**IV086**
 
 *Hoe moet worden omgegaan met debet en credit prestaties in een declaratiebericht?*
 
@@ -1096,7 +1096,7 @@ Totaal declaratiebedrag
 
 Het totale declaratiebedrag van alle debet en credit prestaties in het declaratiebericht wordt ingevuld in TotaalIngediendBedrag in de header van het bericht. Hierbij worden debetbedragen opgeteld en creditbedragen afgetrokken.
 
-**IV087:**
+**IV087**
 
 *Hoe wordt een declaratie-antwoordbericht opgesteld?*
 
@@ -1140,7 +1140,7 @@ Het declaratie-antwoordbericht dient niet:
 - Voor het doorgeven van correcties op declaratiegegevens aan de aanbieder.
 NB: Een bericht kan informatie over meerdere cliënten bevatten. Cliënten waarin geen fouten zijn geconstateerd, worden niet opgenomen in het declaratie-antwoordbericht.
 
-**IV088:**
+**IV088**
 
 *Welke retourcode moet gevuld worden in het declaratie-antwoordbericht?*
 
@@ -1171,7 +1171,7 @@ Het declaratiebericht wordt gecontroleerd op alle technisch controleerbare regel
 
 Deze regels hebben een eigen retourcode die gevuld wordt in het declaratie-antwoordbericht bij de berichtklasse waarin de fout geconstateerd is.
 
-**IV089:**
+**IV089**
 
 *Hoe moet ProductPeriode gevuld worden?*
 
@@ -1215,7 +1215,7 @@ Cliënt ontvangt outputgerichte hulp vanaf het begin tot het eind van toegewezen
 
 - Juni: 01-06-2021 t/m 17-06-2021
 
-**IV090:**
+**IV090**
 
 *Hoe moet het declaratiebericht gevuld worden indien achteraf gedeclareerd wordt?*
 
@@ -1252,7 +1252,7 @@ In juni blijkt dat (ononderbroken) geleverde ondersteuning aan een cliënt tusse
 - ProductPeriode Prestatie 2: 01-03-2021 t/m 31-03-2021
 - ProductPeriode Prestatie 3: 01-04-2021 t/m 30-04-2021
 
-**IV091:**
+**IV091**
 
 *Hoe moet een creditprestatie gevuld worden in een declaratiebericht?*
 
@@ -1268,7 +1268,7 @@ Een creditprestatie is identiek aan de oorspronkelijke debetprestatie, met uitzo
 
 Crediteren is alleen mogelijk na ontvangst van het declaratie-antwoordbericht waarin de te crediteren prestatie is toegekend (zie IV085).
 
-**IV092:**
+**IV092**
 
 *Hoe moet een Verzoek om Wijziging (VOW bericht) gevuld worden?*
 
@@ -1351,7 +1351,7 @@ VOW bericht bevat:
 - TeWijzigenProduct: ToewijzingNummer 789, GewensteIngangsdatum 1 november 2021, 5 uur per week, einddatum 1 juli 2022
 - NieuwProduct: Product C1 GewensteIngangsdatum 1 januari 2022, 2 dagdelen per maand, einddatum 1 juli 2022
 
-**IV093:**
+**IV093**
 
 *Hoe wordt een Toewijzingbericht gevuld naar aanleiding van een verzoek om wijziging (VOW) bericht?*
 
@@ -1495,7 +1495,7 @@ Dan kan worden afgesproken dat de toewijzing wordt gestuurd zonder terugwerkende
 
 ---
 
-**IV094:**
+**IV094**
 
 *Hoe wordt een toewijzingbericht gevuld naar aanleiding van een verzoek om toewijzing (VOT) bericht?*
 
@@ -1508,7 +1508,7 @@ Elk toegewezen product krijgt de ReferentieAanbieder van de betreffende producta
 
 Alle andere actuele toegewezen producten voor deze cliënt bij deze aanbieder worden ook in het toewijzingbericht opgenomen zodat voldaan wordt aan OP087, de ReferentieAanbieder is hierbij leeg.
 
-**IV095:**
+**IV095**
 
 *Hoe moet de juiste gemeente gevuld worden?*
 
@@ -1518,7 +1518,7 @@ In dat geval moet de gemeente in Gemeente de gemeentecode meegeven die volgens h
 
 Bij alle andere waarden van RedenAfwijzingVerzoek dient de klasse Woonplaatsbeginsel niet te worden opgenomen.
 
-**IV096:**
+**IV096**
 
 *Hoe wordt de sleutel van een start-/stopbericht gevuld?*
 
@@ -1526,7 +1526,7 @@ Indien sprake is van inspanningsgericht of outputgerichte uitvoeringsvariant, za
 
 Bij een taakgerichte uitvoeringsvariant, is geen sprake van een toewijzing, daarom zal de sleutel bestaan uit Product en Begindatum.
 
-**IV097:**
+**IV097**
 
 *Hoe wordt ReferentieAanbieder gevuld in een ToegewezenProduct?*
 
@@ -1557,7 +1557,7 @@ Als de gemeente dit verzoek honoreert dan wordt een toewijzing gestuurd met beid
 - ToewijzingNummer 345001, Product A, Ingangsdatum 1 januari 2020, einddatum 31 december 2020, Referentieaanbieder 667788
 - ToewijzingNummer 345002, Product B, Ingangsdatum 1 januari 2020, einddatum 30 juni 2021, Referentieaanbieder 667788
 
-**IV099:**
+**IV099**
 
 *Wanneer moet RedenWijziging worden gevuld?*
 
@@ -1573,33 +1573,33 @@ Bij de initiële toewijzing van een product (een nieuwe toewijzing met een nieuw
 
 # Technische regels (TR-regels)
 
-**TR002:**
+**TR002**
 
 *Geboortedatum mag niet meer dan 120 jaar voor de Dagtekening liggen, tenzij Geboortedatum onbekend is.*
 
 Geboortedatum is onbekend als DatumGebruik de waarde '3 (dag, maand en jaar onbekend; onbekende datum)' heeft en Datum de waarde '01-01-1900' heeft.
 
-**TR006:**
+**TR006**
 
 *De berichtklasse Contact moet een berichtelement Telefoon, en/of de combinatie Huis en Postcode bevatten.*
 
-**TR018:**
+**TR018**
 
 *Einddatum moet groter dan of gelijk zijn aan Begindatum.*
 
-**TR019:**
+**TR019**
 
 *Bij een output- of inspanningsgerichte werkwijze moet de melding van de start of de stop van de ondersteuning gerelateerd zijn aan een toewijzing op basis van het ToewijzingNummer.*
 
-**TR056:**
+**TR056**
 
 *Identificatie moet per berichtsoort uniek zijn voor de verzendende partij.*
 
-**TR061:**
+**TR061**
 
 *Bij een Cliënt moet minimaal één Adres voorkomen waarvan Soort de waarde '01' (BRP-adres), '02' (Correspondentie-adres) of '03' (Verblijfadres) heeft.*
 
-**TR063:**
+**TR063**
 
 *Indien StatusAanlevering de waarde 3 (aanlevering verwijderen) bevat, dan moet voor de betreffende Cliënt een eerdere aanlevering met dezelfde logische sleutel verstuurd zijn.*
 
@@ -1609,33 +1609,33 @@ Opmerking:
 
 Deze regel is bedoeld om het gebruik van de waarde 3 in goede banen te leiden en zegt niets over het mogelijk toegestaan zijn van deze waarde. Eventuele beperkingen van dit gebruik worden via een constraint (of eventueel andere technische regels) beschreven.
 
-**TR071:**
+**TR071**
 
 *StatusAanlevering mag niet de waarde '3' bevatten als er voor de betreffende melding start zorg al een stop zorg is verstuurd.*
 
-**TR074:**
+**TR074**
 
 *Indien StatusAanlevering de waarde '1' bevat, dan moet de sleutel van de betreffende aanlevering niet alleen uniek zijn binnen het bericht zelf, maar ook in combinatie met alle reeds ontvangen berichten.*
 
-**TR101:**
+**TR101**
 
 *Binnen een bericht zijn dubbele regels niet toegestaan.*
 
 Dat betekent dat voor iedere berichtklasse de logische sleutel in combinatie met de logische sleutels van de bovenliggende berichtklassen uniek moet zijn.
 
-**TR134:**
+**TR134**
 
 *Vullen met een bestaande datum die niet groter is dan de Dagtekening van het bericht.*
 
-**TR135:**
+**TR135**
 
 *Vullen met een bestaande datum die niet in de toekomst ligt.*
 
-**TR137:**
+**TR137**
 
 *Vullen met een waarde die groter is dan, of gelijk is aan de Begindatum van de aangeduide periode én die niet groter is dan de Dagtekening van het bericht.*
 
-**TR302:**
+**TR302**
 
 *Een Product mag alleen vaker in een toewijzingsbericht voorkomen indien de zorgperiodes elkaar niet overlappen.*
 
@@ -1643,29 +1643,29 @@ Indien de productcode niet is meegegeven dan geldt deze technische regel op nive
 
 Verwijderde toewijzingen (waarvan de einddatum gelijk is aan de ingangsdatum en de reden wijziging is gevuld met 13 (Verwijderd)) maken geen onderdeel uit van de bepaling of er sprake is van stapeling. Deze toewijzingen worden niet gezien als actuele toewijzing.  Hetzelfde geldt voor toewijzingen met reden wijziging 01 (Administratieve correctie (vervallen)) en einddatum gelijk aan ingangsdatum.
 
-**TR304:**
+**TR304**
 
 *Bsn moet overeenkomen met Bsn van een Cliënt.*
 
-**TR307:**
+**TR307**
 
 *Begindatum in ProductPeriode in Prestatie moet groter dan of gelijk zijn aan Ingangsdatum in ToegewezenProduct.*
 
-**TR308:**
+**TR308**
 
 *Einddatum in ProductPeriode in Prestatie moet kleiner dan of gelijk zijn aan Einddatum in ToegewezenProduct, indien die gevuld is.*
 
-**TR314:**
+**TR314**
 
 *ReferentieNummer van de Prestatie moet uniek zijn voor de aanbieder binnen het wettelijk domein waarop de Prestatie betrekking heeft, zowel binnen één bericht als berichtoverstijgend.*
 
 ReferentieNummer is uniek voor de aanbieder binnen het wettelijk domein waarop de Prestatie betrekking heeft over alle (sub)versies per berichtsoort.
 
-**TR315:**
+**TR315**
 
 *VorigReferentieNummer van de Prestatie moet uniek zijn in het bericht.*
 
-**TR316:**
+**TR316**
 
 *Debetregels mogen niet in hetzelfde bericht gecrediteerd worden.*
 
@@ -1673,7 +1673,7 @@ VorigReferentieNummer mag geen waarde bevatten gelijk aan ReferentieNummer van e
 
 Creditering van een debet prestatie in hetzelfde bericht is niet toegestaan.
 
-**TR318:**
+**TR318**
 
 *Indien iedere DeclaratiePeriode zorg is geleverd, moet DeclaratiePeriode de kalendermaand volgend op voorgaande DeclaratiePeriode zijn.*
 
@@ -1695,29 +1695,29 @@ De declaraties die worden verstuurd zullen de volgende DeclaratiePerioden bevatt
 - DeclaratiePeriode juni: 01-06-2022 t/m 30-06-2022
 - DeclaratiePeriode September: 01-09-2022 t/m 30-09-2022 (01-09-2022 is dag 1 van de kalendermaand waarin de zorg weer wordt geleverd)
 
-**TR319:**
+**TR319**
 
 *Een declaratiebericht bevat alleen prestaties waarvan de ProductPeriode valt binnen de huidige, of een voorgaande declaratieperiode.*
 
-**TR321:**
+**TR321**
 
 *Indien in het ToegewezenProduct een Omvang is meegegeven, moet GeleverdVolume in de Prestatie passen binnen Volume in het ToegewezenProduct.*
 
 Hierbij moet rekening worden gehouden met de waarden van Eenheid en Frequentie in het ToegewezenProduct enerzijds en de waarde van Eenheid en de duur van de ProductPeriode in de Prestatie anderzijds.
 
-**TR322:**
+**TR322**
 
 *Indien in het ToegewezenProduct een Omvang is meegegeven, moet de som van GeleverdVolume in alle ingediende Prestaties die betrekking hebben op dat ToegewezenProduct passen binnen de toegewezen Omvang.*
 
 Hierbij moet rekening worden gehouden met de waarden van Eenheid, Frequentie en totale loopduur van het ToegewezenProduct enerzijds en de waarde van Eenheid en de duur van de DeclaratiePeriode in de ingediende Prestaties anderzijds. De som van het GeleverdVolume in alle ingediende Prestaties die betrekking hebben op dat ToegewezenProduct mag het maximale volume berekend over de loopduur van de toewijzing niet overstijgen.
 
-**TR323:**
+**TR323**
 
 *Een credit Prestatie moet gerelateerd zijn aan een eerder verzonden (goedgekeurde) debet Prestatie op basis van sleutelvelden.*
 
 VorigReferentieNummer van de credit Prestatie moet worden gevuld met ReferentieNummer van de oorspronkelijke debet Prestatie.
 
-**TR326:**
+**TR326**
 
 *Een Startbericht mag pas verstuurd worden als er géén actueel Startbericht bij ToegewezenProduct is.*
 
@@ -1725,41 +1725,41 @@ Een actueel startbericht is een startbericht waarbij nog geen stopbericht is ver
 
 De levering is dan nog niet gestopt, en er mag geen start gestuurd worden. Pas nadat er een stopbericht is gekomen kan er opnieuw een startbericht voor het toegewezen product (dezelfde combinatie van sleutelvelden) gestuurd worden.
 
-**TR332:**
+**TR332**
 
 *Ieder ToegewezenProduct binnen één gemeente heeft een uniek nummer per wettelijk domein.*
 
-**TR333:**
+**TR333**
 
 *DeclaratieNummer van de Declaratie moet uniek zijn voor de aanbieder binnen het wettelijk domein waarop de Declaratie betrekking heeft.*
 
-**TR335:**
+**TR335**
 
 *Einddatum mag niet meer dan 5 jaar voor DeclaratieDagtekening liggen.*
 
-**TR337:**
+**TR337**
 
 *De DeclaratieIdentificatie dient overeen te komen met de BerichtIdentificatie van een eerder ontvangen Declaratiebericht.*
 
 Een Declaratie-antwoordbericht is een reactie op een eerder verstuurd Declaratiebericht. Ieder Declaratie-antwoordbericht is gerelateerd aan een ingediende Declaratiebericht o.b.v. DeclaratieIdentificatie.
 
-**TR338:**
+**TR338**
 
 *De Prestatie is gerelateerd aan een ToegewezenProduct op basis van het Toewijzingnummer.*
 
-**TR339:**
+**TR339**
 
 *ProductCategorie in Prestatie moet gelijk zijn aan ProductCategorie in het ToegewezenProduct indien deze opgenomen is.*
 
 Indien de ProductCategorie in de Toewijzing gevuld is, dan moet in het declaratiebericht in de Prestatie de toegewezen ProductCategorie overgenomen worden.
 
-**TR340:**
+**TR340**
 
 *ProductCode in Prestatie moet gelijk zijn aan ProductCode in het ToegewezenProduct, indien deze opgenomen is.*
 
 Indien de ProductCode in de Toewijzing gevuld is, dan moet in het declaratiebericht in de Prestatie de toegewezen ProductCode overgenomen worden.
 
-**TR341:**
+**TR341**
 
 *Eenheid in Prestatie moet passen bij Eenheid in het ToegewezenProduct.*
 
@@ -1767,7 +1767,7 @@ Dit betekent dat de eenheid in de declaratie gelijk moet zijn aan de eenheid uit
 
 Voor aspecifieke of generieke toewijzingen geldt dat de eenheid overeen dient te komen met de eenheid in de gemaakte contractafspraken.
 
-**TR342:**
+**TR342**
 
 *Alleen afgewezen Prestaties dienen meegestuurd te worden in het declaratie-antwoordbericht op een declaratie.*
 
@@ -1775,17 +1775,17 @@ Indien afkeur op berichtklasse DeclaratieAntwoord plaatsvindt, dan vindt er geen
 
 De volgende controle dwingt dit af: SOM (Prestatie.IngediendBedrag) = DeclaratieAntwoord.TotaalIngediendBedrag -/- TotaalToegekendbedrag
 
-**TR346:**
+**TR346**
 
 *Indien Eenheid ongelijk is aan waarde 83 (Euro’s), moet IngediendBedrag gelijk zijn aan GeleverdVolume vermenigvuldigd met ProductTarief.*
 
 Indien tarief per uur is afgesproken en de declaratie in minuten wordt gedaan, vindt omrekening van het producttarief plaatst. Indien het uurtarief niet deelbaar is door 60, zal het berekende producttarief per minuut niet op hele eurocenten uitkomen. In dat geval wordt bij de berekening van IngediendBedrag eerst het contractuele uurtarief vermenigvuldigd met GeleverdVolume en daarna gedeeld door 60 en afgerond op 2 decimalen.  Zie IV081
 
-**TR347:**
+**TR347**
 
 *ReferentieAanbieder is uniek voor de aanbieder binnen het wettelijk domein*
 
-**TR349:**
+**TR349**
 
 *Het verzoek om wijziging bericht bevat alle actuele ToegewezenProducten van de cliënt.*
 
@@ -1795,15 +1795,15 @@ Actuele toewijzingen zijn toewijzingen die op of na de huidige datum geldig zijn
 
 Alle actuele toewijzingen zijn terug te vinden, hetzij als OngewijzigdProduct, hetzij als TeWijzigenProduct.
 
-**TR350:**
+**TR350**
 
 *Ieder OngewijzigdProduct in een verzoek om wijziging bericht is gerelateerd aan een actueel toegewezen product op basis van het ToewijzingNummer.*
 
-**TR351:**
+**TR351**
 
 *Ieder TeWijzigenProduct in een verzoek om wijziging is gerelateerd aan een actueel ToegewezenProduct op basis van ToewijzingNummer.*
 
-**TR352:**
+**TR352**
 
 *Bij een verzoek om wijziging komt minstens 1 OngewijzigdProduct of TeWijzigenProduct voor.*
 
@@ -1811,35 +1811,35 @@ Een verzoek om wijziging bericht is gebaseerd op een situatie waarbij er minsten
 
 In het bericht moet daarom minstens 1 product zitten dat ongewijzigd blijft of gewijzigd moet worden, aangezien alle op Ingangsdatum geldige of in de toekomst geldige ToegewezenProducten voor die betreffende aanbieder/cliënt in het verzoek om wijziging bericht moeten worden opgenomen
 
-**TR353:**
+**TR353**
 
 *Bij een verzoek om wijziging komt minstens 1 TeWijzigenProduct of NieuwProduct voor.*
 
 Als er helemaal niets veranderd hoeft te worden is er geen aanleiding voor een VOW bericht, dus moet minstens een te wijzigen product of een nieuw toe te wijzen product zijn.
 
-**TR355:**
+**TR355**
 
 *ReferentieAanbieder in het antwoordbericht komt voor in een eerder verzoek om toewijzing of verzoek om wijziging.*
 
 ReferentieAanbieder in het antwoordbericht moet worden gevuld met het ReferentieAanbieder van het oorspronkelijke verzoek om wijziging of verzoek om toewijzing.
 
-**TR357:**
+**TR357**
 
 *Als GewensteIngangsdatum kleiner dan of gelijk is aan de dagtekening, dan is GewensteIngangsdatum gelijk aan ingangsdatum van het originele ToegewezenProduct.*
 
 Als een wijziging niet in de toekomst moet ingaan, dan is het altijd een wijziging die voor de gehele looptijd geldt.
 
-**TR358:**
+**TR358**
 
 *De waarde van TotaalBedrag in TotaalIngediendBedrag  moet gelijk zijn aan de SOM van de waarden van Bedrag in Ingediendbedrag in alle onderliggende Prestaties, rekening houdend met indicatie debet/credit.*
 
 Debetposten worden opgeteld, creditposten worden afgetrokken.
 
-**TR359:**
+**TR359**
 
 *Als een antwoordbericht wordt verstuurd, mag er niet al eerder een toewijzingsbericht gestuurd zijn met dezelfde ReferentieAanbieder.*
 
-**TR360:**
+**TR360**
 
 *Een antwoordbericht met in VerzoekAntwoord de waarde 2 (Aanvraag in onderzoek), mag alleen gestuurd worden indien er nog geen antwoordbericht is met deze ReferentieAanbieder.*
 
@@ -1847,13 +1847,13 @@ Er kan slechts 1 maal een antwoordbericht verstuurd worden met in VerzoekAntwoor
 
 Daarna moet er ofwel een toewijzing ofwel een antwoordbericht met in VerzoekAntwoord de waarde 1 (Verzoek afgewezen) worden gestuurd.
 
-**TR361:**
+**TR361**
 
 *Een Product mag alleen vaker in verzoek om wijziging voorkomen als de zorgperiodes elkaar niet overlappen.*
 
 Voor producten die zijn opgenomen in de berichtklasse TeWijzigenProduct of OngewijzigdProduct moet op basis van het ToewijzingNummer de overlap op de aangevraagde producten gecontroleerd worden. Indien de productcode niet is meegegeven dan geldt deze technische regel op niveau van productcategorie. Indien productcategorie leeg is, dan mag dit met geen enkel ander aangevraagd product overlappen.
 
-**TR365:**
+**TR365**
 
 *Als er al een antwoordbericht is met dezelfde ReferentieAanbieder dan moet VerzoekAntwoord daar de waarde 2 (Aanvraag in onderzoek) hebben.*
 
@@ -1861,49 +1861,49 @@ Er kan slechts 1 maal een antwoordbericht verstuurd worden met in VerzoekAntwoor
 
 Daarna moet er ofwel een toewijzing ofwel een antwoordbericht met in VerzoekAntwoord de waarde 1 (Verzoek afgewezen) worden gestuurd.
 
-**TR366:**
+**TR366**
 
 *Iedere Prestatie in een declaratieantwoord is gerelateerd aan een declaratiebericht op basis van ProductReferentie.*
 
-**TR367:**
+**TR367**
 
 *Waarde moet overeenkomen met waarde uit het declaratiebericht dat gerelateerd is op basis van ProductReferentie.*
 
-**TR369:**
+**TR369**
 
 *Indien in het ToegewezenProduct een Budget is meegegeven, moet de som van GeleverdVolume in alle ingediende Prestaties die betrekking hebben op dat ToegewezenProduct passen binnen het toegewezen Budget.*
 
-**TR371:**
+**TR371**
 
 *Waarde moet overeenkomen met waarde van XsdVersie uit het declaratiebericht dat gerelateerd is op basis van DeclaratieIdentificatie.*
 
-**TR373:**
+**TR373**
 
 *Indien in een TeWijzigenProduct het Budget of het totaal over toewijzingsperiode wordt gewijzigd, dient GewensteIngangsdatum gelijk te zijn aan de actuele toewijzing.*
 
 Als in een verzoek om wijziging een budgetaanpassing wordt gevraagd, is dit altijd voor de gehele looptijd van de betreffende toewijzing.
 
-**TR374:**
+**TR374**
 
 *Een verzoek mag alleen worden verstuurd als er geen onderhanden verzoek is voor de betreffende cliënt van dezelfde aanbieder.*
 
 Een verzoek is in behandeling todat er ofwel een antwoordbericht met VerzoekAntwoord "Verzoek afgewezen" ofwel een toewijzingsbericht met dezelfde ReferentieAanbieder gestuurd is.
 
-**TR375:**
+**TR375**
 
 *Indien Product in de toewijzing met ToewijzingNummer leeg is en Einddatum groter dan 31-12-2020 of leeg is, dan leeg laten.*
 
-**TR376:**
+**TR376**
 
 *Het DeclaratieNummer dient overeen te komen met het DeclaratieNummer van een eerder ontvangen Declaratie.*
 
 Bij iedere goed of (deels) afgekeurde Declaratie is het Declaratie-antwoord gerelateerd aan een ingediende declaratie o.b.v. DeclaratieNummer. Een goed of (deels) afgekeurde declaratie wordt middels een Declaratie-antwoordbericht verstuurd en is een functionele/inhoudelijke reactie.
 
-**TR377:**
+**TR377**
 
 *Indien RedenAfwijzingVerzoek de waarde 8 (Woonplaatsbeginsel) heeft, dan berichtklasse Woonplaatsbeginsel opnemen.*
 
-**TR378:**
+**TR378**
 
 *Vullen met een bestaande gemeentecode uit het overzicht van CBS dat actueel is op Ingangsdatum of ToewijzingIngangsdatum.*
 
@@ -1911,7 +1911,7 @@ De gemeentecode moet voorkomen in de Gemeentelijke indeling (zie [https://www.cb
 
 Indien er sprake is van een gemeentelijke herindeling is het toegestaan om een oudere CBS lijst met gemeentecodes te gebruiken die actueel is op Ingangsdatum van ToegewezenProduct (uit 301-bericht) of in geval van een Verzoek om toewijzing (315-bericht) op ToewijzingIngangsdatum in AangevraagdProduct (uit 315-bericht).
 
-**TR379:**
+**TR379**
 
 *Indien ToegewezenProduct wordt verstuurd ter honorering van een VOT of VOW, dient ReferentieAanbieder te worden gevuld met ReferentieAanbieder uit die VOT of VOW, anders leeglaten.*
 
@@ -1919,93 +1919,93 @@ Dit geldt alleen de eerste keer dat ToegewezenProduct wordt verstuurd na honorer
 
 In een VOW kunnen meerdere producten zitten, die samen het verzoek vormen. De ReferentieAanbieder geldt voor het verzoek als geheel. Bij honorering wordt in ieder ToegewezenProduct deze ReferentieAanbieder overgenomen.
 
-**TR380:**
+**TR380**
 
 *Vullen met een datum die groter is dan de dagtekening van het bericht.*
 
-**TR381:**
+**TR381**
 
 *ProductCode vullen met een code die, volgens de gehanteerde productcodelijst, past bij de ProductCategorie.*
 
-**TR382:**
+**TR382**
 
 *De sleutelelementen uit het startbericht moeten in het stopbericht, waarin wordt aangegeven dat de betreffende levering (tijdelijk) beëindigd wordt, ongewijzigd worden overgenomen.*
 
-**TR383:**
+**TR383**
 
 *ReferentieAanbieder is uniek voor elk AangevraagdProduct binnen het bericht.*
 
-**TR384:**
+**TR384**
 
 *Het is niet toegestaan te declareren op een toewijzing met RedenWijziging waarde "13" (Verwijderd).*
 
-**TR385:**
+**TR385**
 
 *Indien de toewijzing goedgekeurde (niet gecrediteerde) prestatiesregels met gelijk ToewijzingNummer heeft, is het niet toegestaan deze toewijzing te verwijderen met RedenWijziging waarde 13 (verwijderd).*
 
-**TR386:**
+**TR386**
 
 *Een Product mag alleen vaker in een verzoek om toewijzing voorkomen indien de zorgperiodes elkaar niet overlappen.*
 
 Indien de productcode niet is meegegeven dan geldt deze technische regel op niveau van productcategorie. Indien productcategorie leeg is, dan mag het verzoek met geen enkel ander toegewezen product overlappen.
 
-**TR387:**
+**TR387**
 
 *De Begindatum van een ProductPeriode is altijd de eerste dag van de kalendermaand waarop de ProductPeriode betrekking heeft tenzij de Ingangsdatum van de toewijzing later in de betreffende maand ligt.*
 
 De Begindatum van de ProductPeriode in de declaratie is altijd gelijk aan de eerste dag van de maand behorende bij de ProductPeriode, tenzij de Begindatum van de bijbehorende toewijzing later in de betreffende maand ligt. In dat geval is de Begindatum van de ProductPeriode gelijk aan de Begindatum van de toewijzing.
 
-**TR388:**
+**TR388**
 
 *De Einddatum van een ProductPeriode is altijd de laatste dag van de kalendermaand waarop de ProductPeriode betrekking heeft tenzij de Einddatum van de toewijzing eerder in de betreffende maand ligt.*
 
 De Einddatum van de ProductPeriode in de declaratie is altijd gelijk aan de laatste dag van de maand behorende bij de ProductPeriode, tenzij de Einddatum van de bijbehorende toewijzing eerder in de betreffende maand ligt. In dat geval is de Einddatum van de ProductPeriode gelijk aan de Einddatum van de toewijzing.
 
-**TR389:**
+**TR389**
 
 *Prestatie met DebetCredit in IngediendBedrag waarde Debet mag alleen ingezonden worden voor dezelfde ProductPeriode, ProductCategorie en ProductCode met gelijk ToewijzingNummer als er niet al eerder een debetprestatie is verzonden.*
 
 Indien eerder verzonden Prestatie met DebetCredit in IngediendBedrag waarde Debet, een bijbehorende creditprestatie heeft, is het verzenden van een Prestatie met DebetCredit in IngediendBedrag waarde Debet wel toegestaan. Een debetprestatie heeft een creditprestatie, als er voor dezelfde ProductPeriode een creditprestatie bestaat, waarbij VorigeReferentieNummer de waarde heeft van ReferentieNummer uit de debetprestatie.
 
-**TR390:**
+**TR390**
 
 *DebetCredit mag alleen waarde Credit hebben indien voor Prestatie met gelijk ProductReferentie niet een Prestatie met Credit bestaat.*
 
-**TR409:**
+**TR409**
 
 *Als RedenAfwijzingVerzoek ongelijk is aan 8 (Woonplaatsbeginsel), dan berichtklasse Woonplaatsbeginsel weglaten.*
 
-**TR410:**
+**TR410**
 
 *Een Product mag alleen vaker in de berichtklassen NieuwProduct voorkomen als de zorgperiodes elkaar niet overlappen.*
 
 Indien de productcode niet is meegegeven dan geldt deze technische regel op niveau van productcategorie. Indien productcategorie leeg is, dan mag dit met geen enkel ander aangevraagd product overlappen.
 
-**TR411:**
+**TR411**
 
 *Indien Code in Product bij de toewijzing met ToewijzingNummer gevuld is, dan Omvang verplicht vullen.*
 
-**TR412:**
+**TR412**
 
 *Indien Code in Product bij de toewijzing met ToewijzingNummer leeg is en einddatum groter dan 31-12-2020 of leeg is, dan leeg laten.*
 
-**TR413:**
+**TR413**
 
 *Als er al een StopProduct voor hetzelfde Bsn, ToewijzingNummer, Begindatum en met RedenBeeindiging waarde 20 is, dan moet RedenBeeindiging <> aan waarde 20 zijn, indien StatusAanlevering waarde 1 of 2 heeft.*
 
-**TR414:**
+**TR414**
 
 *Als er al een StopProduct voor hetzelfde Bsn, ToewijzingNummer en Begindatum is, dan moet Einddatum >= zijn aan Einddatum uit actuele StopProduct.*
 
-**TR415:**
+**TR415**
 
 *Er mag geen StopProduct zijn met gelijk Bsn, ToewijzingNummer, Begindatum en RedenBeeindiging <> waarde 20, indien StatusAanlevering waarde 1 of 2 heeft.*
 
-**TR416:**
+**TR416**
 
 *Prestatie met DebetCredit in IngediendBedrag waarde Debet mag alleen ingezonden worden voor dezelfde ProductPeriode, ProductCategorie en ProductCode met gelijk ToewijzingNummer als er niet al een Prestatie met waarde Debet is.*
 
-**TR418:**
+**TR418**
 
 *ProductTarief in Prestatie dient overeen te komen met het contractuele tarief van ProductCode.*
 
