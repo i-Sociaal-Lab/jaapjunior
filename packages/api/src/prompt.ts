@@ -273,5 +273,4 @@ Respond using markdown formatting, with a clear structure and layout. Provide yo
   "Processen_Jeugdwet":  "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/processen/",
   "Regeling_Jeugdwet":   "https://wetten.overheid.nl/BWBR0036007/2025-01-01",
   "Regels":              "https://www.istandaarden.nl/ijw/releases/release-ijw-3.2"
-}}
-
+}}`;
