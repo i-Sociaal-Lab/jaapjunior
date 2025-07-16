@@ -7,7 +7,7 @@ Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/proce
 Publicatiedatum: 15 mei 2025
 AI-agent: Jw-agent
 
-## **Instructie voor de AI-agent: Gebruik van het document “Procesbeschrijvingen iiStandaarden iJw mei 2025”**
+## **Instructie voor de AI-agent: Gebruik van het document “Procesbeschrijvingen iStandaarden iJw mei 2025”**
 
 Dit document bevat procesbeschrijvingen van de administratieve processen zoals die zijn vastgelegd in de iStandaarden voor de Jeugdwet (iJw). Deze processen vormen het fundament voor het digitale berichtenverkeer tussen gemeenten en zorgaanbieders in het sociaal domein. Het document beschrijft per proces welke stappen worden doorlopen, welke berichten uitgewisseld worden, en welke rollen en gegevens hierin een rol spelen.
 
