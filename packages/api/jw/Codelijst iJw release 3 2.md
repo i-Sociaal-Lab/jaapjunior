@@ -1028,7 +1028,8 @@ S329 ProductCode hoort niet bij de ProductCategorie
 
 ## COD002-VEKT: Berichtcode
 
-Berichtcode die gebruikt wordt in de header van een bericht
+Berichtcode die gebruikt wordt in de header van een bericht deze codes zijn vastgesteld door Vektis
+Beschrijving: Code ter identificatie van een (soort) (externe-integratie)bericht.
 
 JW301	436
 
