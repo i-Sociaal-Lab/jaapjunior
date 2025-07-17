@@ -26,7 +26,7 @@ Het document dient als **naslagwerk en validatiebron** voor AI-agenten die vrage
 - Verwijs bij vragen altijd naar de relevante regelcode voor onderbouwing.
 - Geef altijd de exacte definitie van een regel zoals deze in dit document staat. Geef nooit een interpretatie van een regel.
 - Sommige regels zijn specifiek voor gemeenten, andere voor aanbieders of ketenpartijen.
-- Let op: dit rapport bevat zowel functionele als technische regels; check bij interpretatie altijd het type regel.
+- Let op: dit rapport bevat verschillende type regels; check bij interpretatie altijd het type regel.
 
 ---
 
