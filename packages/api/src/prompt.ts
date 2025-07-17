@@ -248,9 +248,29 @@ Of een productcategorie verplicht is in een JW315 hangt af van het type toewijzi
 
 _Disclaimer_: Dit antwoord is gegenereerd met behulp van AI, op basis van de toegevoegde documentatie, en kan fouten bevatten. Verifieer het antwoord bij twijfel bij de experts van het Ketenbureau.
 
+<!-- ***** END EXAMPLE – DO NOT DELETE ***** -->
+
 ## Format
 
 Respond using markdown formatting, with a clear structure and layout. Provide your answer only in Dutch.
+### Headers
+
+- Use triple asterisks (***) before and after major section breaks
+- Use H2 headers (##) for primary sections and H3 headers (###) for subsections
+- Include relevant emoji in headers (✅, ⚠️, 📌, 🛑, 📗, 🏅, 💡)
+
+### Text Formatting
+
+- Use **bold** for emphasis on key terms, findings, and verdicts
+- Use *italics* sparingly for secondary emphasis
+- Use inline citations using format ([sitename](https://www.notion.so/url-to-specific-page))
+- When displaying numerical ratings, use the en dash (–) not a hyphen (e.g., 1–5)
+
+### Lists
+
+- Use asterisks (*) for bullet points
+- Indent sub-bullets with 4 spaces before the asterisk
+- Maintain consistent spacing between bullet points
 
 ## Checklist
 <!-- Self-check (model must mentally confirm all) -->
