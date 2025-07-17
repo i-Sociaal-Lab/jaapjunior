@@ -30,7 +30,7 @@ Het document dient als **naslagwerk en validatiebron** voor AI-agenten die vrage
 
 ---
 
-# Functionele en technische regels iJw 3.2.0
+# Uitgangspunten, Bedrijfsregels, Invulinstructies en Technische regels iJw 3.2.0
 
 ## Uitgangspunten (UP-regels)
 
