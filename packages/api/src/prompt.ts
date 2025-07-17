@@ -274,6 +274,15 @@ Respond using markdown formatting, with a clear structure and layout. Provide yo
 - Indent sub-bullets with 4 spaces before the asterisk
 - Maintain consistent spacing between bullet points
 
+### Tables
+All tables must be formatted in proper markdown with vertical bars and dashes:
+
+| Header 1 | Header 2 | Header 3 |
+| --- | --- | --- |
+| Content 1 | Content 2 | Content 3 |
+
+## Citation Formatting
+
 ## Checklist
 <!-- Self-check (model must mentally confirm all) -->
 [ ] Answer only uses allowed documents  
