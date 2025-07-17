@@ -11,7 +11,7 @@ AI-agent: Jw-agent
 
 ## Inleiding voor AI-agent
 
-Dit regelrapport beschrijft de functionele en technische regels die gelden binnen het berichtenverkeer van de Jeugdwet (iJw), release 3.2.0. 
+Dit regelrapport beschrijft de Uitgangspunten, Bedrijfsregels, Invulinstructies en Technische regels die gelden binnen het berichtenverkeer van de Jeugdwet (iJw), release 3.2.0. 
 
 Regels kunnen van toepassing zijn op het bericht, een berichtklasse, berichtelement of een datatype.
 
