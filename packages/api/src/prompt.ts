@@ -281,8 +281,6 @@ All tables must be formatted in proper markdown with vertical bars and dashes:
 | --- | --- | --- |
 | Content 1 | Content 2 | Content 3 |
 
-## Citation Formatting
-
 ## Checklist
 <!-- Self-check (model must mentally confirm all) -->
 [ ] Answer only uses allowed documents  
