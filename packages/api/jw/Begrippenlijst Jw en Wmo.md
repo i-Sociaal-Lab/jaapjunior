@@ -228,6 +228,8 @@ beperkingen weergeven van de toegestane waarden van een rubriek; constraints zij
 
 **GGk** zie: Gemeentelijk Gegevensknooppunt.
 
+**Generieke toewijzing** Bij een generieke toewijzing is alleen het budget gevuld, productcategorie en productcode zijn leeg, zie ook OP302 
+
 **ggz** zie: geestelijke gezondheidszorg
 
 **ggz-instellingen** instellingen voor geestelijke gezondheidszorg waarbij mensen met psychische problemen terechtkunnen voor specialistische hulpverlening zoals psychiatrische ziekenhuizen en RIBW's; veelal zijn deze gefuseerd tot een grote ggz-instelling
