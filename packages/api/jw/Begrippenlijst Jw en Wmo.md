@@ -194,7 +194,7 @@ beperkingen weergeven van de toegestane waarden van een rubriek; constraints zij
 
 **enkelvoudige datatypen** zie: logische datatypen
 
-**facturen** formele, financieel-administratieve documenten die aan bepaalde wettelijke eisen moeten voldoen (bevatten onder meer een datum, uniek factuurnummer, omschrijving van geleverde diensten of producten, btw-nummer) en die degene die de dienst of het product geleverd heeft, indient bij degene die voor deze dienst of product moet betalen
+**facturen** formele, financieel-administratieve documenten die aan bepaalde wettelijke eisen moeten voldoen (bevatten onder meer een datum, uniek factuurnummer, omschrijving van geleverde diensten of producten, btw-nummer) en die degene die de dienst of het product geleverd heeft, indient bij degene die voor deze dienst of product moet betalen. In het berichtenverkeer iJw/iWmo spreken we over declareren en declaraties, niet over factureren of facturen.
 
 **financiering** een van de processen in de iStandaarden, naast de primaire processen en het proces sturing en controle (iJW en iWmo). Voor iWmo en iJw gaat het om het declareren van de ondersteuning door de aanbieder van zorg of ondersteuning bij de gemeente en voor iWmo gaat het daarbij nog om het aanleveren van geleverde ondersteuning aan het CAK door gemeenten en zorgaanbieders i.v.m. het vaststellen en opleggen van de eigen bijdrage
 
