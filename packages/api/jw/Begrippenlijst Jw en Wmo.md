@@ -74,6 +74,8 @@ Door deze richtlijnen te volgen bouw je een solide, reproduceerbare semantische 
 
 **Antwoordbericht** Bericht voor antwoordinformatie over het Verzoek om toewijzing of Verzoek om wijziging Jeugdhulp. Het bericht dat hiervoor wordt gebruikt is JW319.
 
+**Aspecifieke toewijzing** Een toewijzing waarbij alleen een  productcategorie is gevuld, de productcode is leeg. De aanbieder levert een of meerdere producten uit een productlijst, vallend onder de categorie, die contractueel zijn afgesproken.
+
 **Autoriteit Persoonsgegevens** zelfstandig bestuursorgaan dat zich bezighoudt met het toezicht op de naleving van de privacywetgeving, zoals de Wet bescherming persoonsgegevens (Wbp), de Wet basisregistratie personen (Wet BRP) en de Wet justitiële en strafvorderlijke gegevens (Wjsg); de taken en bevoegdheden staan in de Wbp; taken zijn toezicht houden, adviseren over nieuwe regelgeving, voorlichting, informatieverstrekking en verantwoording, en internationale taken.
 
 **AVG (verordening)** zie: Algemene Verordening Gegevensbescherming.
@@ -228,7 +230,7 @@ beperkingen weergeven van de toegestane waarden van een rubriek; constraints zij
 
 **GGk** zie: Gemeentelijk Gegevensknooppunt.
 
-**Generieke toewijzing** Bij een generieke toewijzing is alleen het budget gevuld, productcategorie en productcode zijn leeg, zie ook OP302 
+**Generieke toewijzing** Een toewijzing waarbij alleen het budget gevuld is, de productcategorie en de productcode zijn leeg. De aanbieder levert een of meerdere specifieke producten uit een productlijst die contractueel zijn afgesproken.
 
 **ggz** zie: geestelijke gezondheidszorg
 
@@ -401,6 +403,8 @@ De reden beëindiging wordt vastgelegd met een standaardcode in het veld RedenEi
 **softwareleveranciers** commerciële organisaties die software ontwikkelen en verkopen aan hun klanten; (binnen de iStandaarden) grote of kleine onafhankelijke en commerciële partijen die software ontwikkelen voor gemeenten en aanbieders van zorg en ondersteuning en die hun software moeten aanpassen aan de iStandaarden zodat de berichtuitwisseling in de Wlz, Wmo en Jeugdwet mogelijk is.
 
 **softwareleveranciersoverleg** SLO; landelijk overleg dat Ketenbureau i-sociaaldomein samen met Zorginstituut Nederland regelmatig organiseert voor softwareleveranciers die een softwarepakket bieden dat een van de iStandaarden ondersteunt en waarmee zij op de hoogte kunnen blijven van ontwikkelingen in de informatievoorziening in de Jeugdwet en WMO en langdurige zorg en ondersteuning; het overleg is ook bedoeld voor vertegenwoordigers van VECOZO, het BIDN, Vektis, Zorgverzekeraars Nederland en brancheorganisaties van zorgaanbieders.
+
+**Specifieke toewijzing** Een toewijzing waarbij zowel de productcategorie als de productcode is gevuld. Het betreft een toewijzing van een specifiek product. De aanbieder levert dit product.
 
 **spoedzorg** spoedeisende zorg, geleverd door onder meer afdelingen spoedeisende hulp, ambulancezorg, huisartsenzorg en crisisopvang, waarbij de zorgvrager een dringend beroep doet op de zorgaanbieder(s), of de zorgvraag nu bewezen acuut is of niet.
 
