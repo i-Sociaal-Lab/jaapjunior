@@ -244,7 +244,7 @@ Of een productcategorie verplicht is in een JW315 hangt af van het type toewijzi
 - Welke gevolgen heeft het niet (correct) invullen van de productcategorie voor de verwerking van het verzoek?  
 - Hoe wordt de productcategorie bepaald en welke codelijst moet worden gebruikt?  
 
-### Sources (mandatory)  
+**Bronnen**  
 - [Regels op berichten iJw release 3.2]({{DOCS.Regels}})
 
 _Disclaimer_: Dit antwoord is gegenereerd met behulp van AI, op basis van de toegevoegde documentatie, en kan fouten bevatten. Verifieer het antwoord bij twijfel bij de experts van het Ketenbureau.
