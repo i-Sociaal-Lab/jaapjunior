@@ -131,13 +131,14 @@ Het document dient als **naslagwerk en validatiebron** voor AI-agenten die vrage
 *De aanbieder meldt de begindatum van de levering nadat de ondersteuning daadwerkelijk is aangevangen.*
 
 **OP033**
-
+*wordt gebruikt in JW305; JW307*
 *Voor het doorgeven van wijzigingen en correcties op een eerder verzonden bericht, moet gebruik gemaakt worden van de systematiek van status aanlevering. Correcties op een melding start product zijn uitsluitend toegestaan voor het geleverde product. Als de ondersteuning beëindigd is, kan de aanvang niet meer op deze manier gecorrigeerd worden. Met de status aanlevering van een berichtklasse kan worden aangegeven of:
-• een berichtklasse nieuw is (waarde 1);
-• een berichtklasse gewijzigd is (waarde 2); een wijziging betekent dat de actuele aanlevering met dezelfde sleutel vervangen wordt. Deze waarde mag niet gebruikt worden in de iJw/iWmo.
-• een berichtklasse verwijderd moet worden (waarde 3). Een verwijdering betekent dat de vorige aanlevering(en) met dezelfde sleutel als niet verzonden beschouwd moet worden.*
+- *een berichtklasse nieuw is (waarde 1)*
+- *een berichtklasse gewijzigd is (waarde 2); een wijziging betekent dat de actuele aanlevering met dezelfde sleutel vervangen wordt. Deze waarde mag niet gebruikt worden in de iJw/iWmo.*
+- *een berichtklasse verwijderd moet worden (waarde 3). Een verwijdering betekent dat de vorige aanlevering(en) met dezelfde sleutel als niet verzonden beschouwd moet worden.*
 
 **OP033x1**
+*wordt gebruikt in JW301*
 
 *Een afgegeven toewijzing mag gewijzigd worden waarbij de wijziging met een nieuw bericht moet worden doorgegeven.*
 
