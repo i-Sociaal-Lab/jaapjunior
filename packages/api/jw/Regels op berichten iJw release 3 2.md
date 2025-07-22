@@ -161,7 +161,7 @@ Indien de gemeente het initiatief tot aanpassing van het maximale budget neemt, 
 
 **OP033x2**
 
-*Het gebruik van status aanlevering met waarde 2 (een berichtklasse is gewijzigd) is niet toegestaan. Wijzigingen en correcties kunnen daarom niet altijd in één bericht worden doorgegeven.*
+*Het gebruik van status aanlevering met waarde 2 (een berichtklasse is gewijzigd) is niet toegestaan.*
 
 **OP039**
 
