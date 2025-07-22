@@ -660,7 +660,7 @@ Van een cliënt of relatie worden de achternaam, voorvoegsel en voornamen en/of 
 
 *Hoe moet worden omgegaan met correcties van de regieberichten?*
 
-Voor de regieberichten (start- en stopbericht) bestaat de mogelijkheid om eerder verstuurde berichtklassen te corrigeren. Hiervoor wordt eerst de betreffende berichtklasse verwijderd en wordt vervolgens (eventueel) een nieuwe berichtklasse verstuurd.
+Voor de regieberichten (startbericht en stopbericht) bestaat de mogelijkheid om eerder verstuurde berichtklassen te corrigeren. Hiervoor wordt eerst de betreffende berichtklasse verwijderd en wordt vervolgens (eventueel) een nieuwe berichtklasse verstuurd.
 Om aan te geven dat een berichtklasse dient te worden verwijderd wordt StatusAanlevering van de betreffende berichtklasse gevuld met de waarde 3 (verwijderen aanlevering). De te verwijderen berichtklasse wordt geidentificeerd door de logische sleutel van de klasse.
 
 Eventueel kan in hetzelfde bericht ook de vervangende berichtklasse worden aangeleverd; in deze berichtklasse wordt StatusAanlevering gevuld met de waarde 1 (eerste aanlevering).
@@ -847,7 +847,7 @@ De gemeente kan op basis van het beschikkingnummmer eenvoudig de bestaande besch
 *Wanneer krijgt een toewijzing een nieuw ToewijzingNummer?*
 
 Een initiële toekenning van een product aan een cliënt is een nieuwe toewijzing en krijgt een nieuw toewijzingnummer. Een initiële toekenning kent nooit een RedenWijziging.
-Indien een eerder afgegeven toewijzing gewijzigd wordt (intrekken, oprekken, verwijderen of corrigeren), wordt het ToewijzingNummer gevuld van de initiële toekenning. De start-, stop en declaratieberichten refereren naar het ToewijzingNummer uit het toewijzingbericht. Het (opnieuw) versturen van een bericht heeft geen invloed op ToewijzingNummer.
+Indien een eerder afgegeven toewijzing gewijzigd wordt (intrekken, oprekken, verwijderen of corrigeren), wordt het ToewijzingNummer gevuld van de initiële toekenning. De startberichten, stopberichten en declaratieberichten refereren naar het ToewijzingNummer uit het toewijzingbericht. Het (opnieuw) versturen van een bericht heeft geen invloed op ToewijzingNummer.
 
 Let op: wijzigen van een toewijzing is slechts beperkt toegestaan (Zie ook OP33x1):
 
@@ -875,11 +875,11 @@ Bij het aanvragen van een product via een VOT of een VOW wordt Product in Aangev
 - Bij het aanvragen van aspecifieke toewijzingen moet alleen de productcategorie gevuld zijn.
 - Bij het aanvragen van generieke toewijzingen is het product leeg; de productcategorie en de productcode zijn niet gevuld.
 
-Voor het vullen van het Product in Start- en Stopberichten (bij inspannings- en outputgerichte uitvoeringsvariant) en Declaratieberichten is de vulling afhankelijk van ToegewezenProduct in de bijbehorende Toewijzing:
+Voor het vullen van het Product in Startberichten en Stopberichten (bij inspannings- en outputgerichte uitvoeringsvariant) en Declaratieberichten is de vulling afhankelijk van ToegewezenProduct in de bijbehorende Toewijzing:
 In een Startbericht (305) of Stopbericht (307) wordt altijd hetzelfde zorg- of ondersteuningsproduct opgenomen zoals meegegeven in het Toewijzingsbericht (301).
 
-- Bij specifieke toewijzingen moet in het Start- en Stopbericht zowel de productcategorie als de productcode gevuld worden.
-- Bij aspecifieke toewijzingen moet in het Start- en Stopbericht alleen de productcategorie gevuld zijn.
+- Bij specifieke toewijzingen moet in het Startbericht en Stopbericht zowel de productcategorie als de productcode gevuld worden.
+- Bij aspecifieke toewijzingen moet in het Startbericht en Stopbericht alleen de productcategorie gevuld zijn.
 - Bij generieke toewijzingen is het product leeg; de productcategorie en de productcode zijn niet gevuld.
 
 In een Declaratiebericht (323) wordt altijd een productcategorie en productcode gevuld.
@@ -1520,7 +1520,7 @@ Bij alle andere waarden van RedenAfwijzingVerzoek dient de klasse Woonplaatsbegi
 
 **IV096**
 
-*Hoe wordt de sleutel van een start-/stopbericht gevuld?*
+*Hoe wordt de sleutel van een startbericht/stopbericht gevuld?*
 
 Indien sprake is van inspanningsgericht of outputgerichte uitvoeringsvariant, zal ToewijzingNummer gebruikt worden als sleutel tussen het start-/stopbericht en de toewijzing.
 
