@@ -381,6 +381,8 @@ De reden beëindiging wordt vastgelegd met een standaardcode in het veld RedenEi
 
 **regels** afspraken en voorwaarden in de informatiemodellen van de iStandaarden waaraan het berichtenverkeer moet voldoen, te onderscheiden in uitgangspunten, bedrijfsregels en uitzonderingen daarop, technische regels, invulinstructies, constraints en condities.
 
+**regieberichten** start- en stopberichten zijn regieberichten
+
 **relatie** de partner of een contactpersoon van de cliënt die in de context van de zorgvraag van de cliënt te benaderen is; de partner hoeft in die zin niet per definitie ook de contactpersoon te zijn.
 
 **releases** nieuwe versies van een informatiestandaard die worden uitgebracht.
