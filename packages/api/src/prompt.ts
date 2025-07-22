@@ -164,7 +164,7 @@ After interpreting the question, determine in which document the answer can be f
     
 4. **Questions about conditions, constraints or restrictions per data-element:
 
-    → Refer to document **Condities, constraints, restriciets per data-element bericht**
+    → Refer to document **Condities, constraints, restricties per data-element bericht**
 
     
 
