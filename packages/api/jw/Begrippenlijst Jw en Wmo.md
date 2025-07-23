@@ -177,7 +177,7 @@ beperkingen weergeven van de toegestane waarden van een rubriek; constraints zij
 
 **declaratieperiode** administratieve periode waarbinnen de geleverde hulp in de administratie tot een declaratie wordt verwerkt; in geval van maandelijks declareren heeft de declaratieperiode betrekking op één maand.
 
-**declaratieregel** som van het geleverde volume van één product binnen één productperiode, aan één cliënt. Een declaratieregel wordt verstuurd middels een declaratiebericht. In een declaratiebericht kunnen 1 of meerdere declaratieregels zitten. Een declaratieregel wordt uniek gemaakt door een ProductReferentie. Dit is een id. Dit ProductReferentie wordt gebruikt om credit-regels te versturen. Zo kan een gemeente de creditregel aan een goedgekeurde debetregel koppelen.
+**declaratieregel** som van het geleverde volume van één product binnen één productperiode, aan één cliënt. Een declaratieregel wordt verstuurd middels een declaratiebericht. In een declaratiebericht kunnen 1 of meerdere declaratieregels zitten. Een declaratieregel wordt uniek gemaakt door een ProductReferentie. Dit is een id. Dit ProductReferentie wordt gebruikt om creditregels te versturen. Zo kan een gemeente de creditregel aan een goedgekeurde debetregel koppelen.
 
 **declaratiestandaarden** onderdelen van de informatiestandaarden waarmee het berichtenverkeer rondom declaratie wordt geregeld, beheerd en gepubliceerd.
 
@@ -277,7 +277,7 @@ internationale classificatie van ziekten, versie 10
 
 **inspanningsgerichte uitvoeringsvariant** uitvoering van zorg en/of ondersteuning waarbij er een duidelijke afspraak tussen gemeente en zorgaanbieder is gemaakt over de levering van een specifiek product of dienst in een afgesproken tijdseenheid; gemeenten stellen voor de individuele voorzieningen een vooraf gedefinieerde set van producten en diensten op en bepalen op welke vorm van zorg of ondersteuning een cliënt recht heeft en sturen een toewijzing naar de zorgaanbieder; een van de drie uitvoeringsvarianten waaruit gemeenten kunnen kiezen bij de inrichting van hun Wmo- en Jw-processen.
 
-**intramurale zorg** zorg die verleend wordt aan mensen die langer dan 24 uur in een instelling verblijven zoals een verpleeg- of verzorgingshuis, ziekenhuis of een instelling voor mensen met een verstandelijke beperking.
+**intramurale zorg** zorg die verleend wordt aan mensen die langer dan 24 uur in een instelling verblijven zoals een verpleeghuis of verzorgingshuis, ziekenhuis of een instelling voor mensen met een verstandelijke beperking.
 
 **intrekking** wijziging van een bestaande zorgtoewijzing waarbij de einddatum wordt aangepast zodat deze dichter bij de ingangsdatum komt te liggen.
 
@@ -313,11 +313,11 @@ internationale classificatie van ziekten, versie 10
 
 **leveren of levering** een van de vier deelprocessen uit het primair proces van iJw/iWmo waarbij de aanbieder aan de gemeente meldt wanneer de zorg van start is gegaan. In de iJw maken Aanbieder en gemeente onderling afspraken over welke datums gehanteerd moeten worden om de start en stop van de levering door te geven. De aanbieder meldt op basis daarvan de startzorg aan de gemeente. De aanbieder stuurt hiervoor een startbericht naar de gemeente. In dit startbericht vult de aanbieder de begindatum met de startdatum zoals overeengekomen met de gemeente.
 
-Op het moment dat de levering van de zorg (tijdelijk) gestopt wordt, geeft de aanbieder dit door aan de gemeente. De aanbieder stuurt hiervoor een stopbericht en vult de einddatum met de stopdatum van de levering van de zorg zoals afgesproken. Zowel zorg die tijdelijk- als zorg die definitief gestopt is, kan herstart worden. De aanbieder stuurt dan opnieuw een startbericht naar de gemeente. Zodra blijkt dat de zorg niet meer gestart wordt na een tijdelijke stop, stuurt de aanbieder een definitieve stop.
+Op het moment dat de levering van de zorg (tijdelijk) gestopt wordt, geeft de aanbieder dit door aan de gemeente. De aanbieder stuurt hiervoor een stopbericht en vult de einddatum met de stopdatum van de levering van de zorg zoals afgesproken. Zowel zorg die tijdelijk als zorg die definitief gestopt is, kan herstart worden. De aanbieder stuurt dan opnieuw een startbericht naar de gemeente. Zodra blijkt dat de zorg niet meer gestart wordt na een tijdelijke stop, stuurt de aanbieder een definitieve stop.
 
-De startberichten en stopberichten zijn regieberichten en mogen niet voorwaardelijk gesteld worden aan een declaratie. Dat betekent dat een declaratie niet mag worden afgekeurd indien er geen startbericht is gestuurd. NB bij de uitvoeringsvariant Taakgericht kan de gemeente afgesproken hebben dat er geen gebruik gemaakt wordt van start- en stopberichten. Het hierboven beschreven proces is dan niet van toepassing.
+De startberichten en stopberichten zijn regieberichten en mogen niet voorwaardelijk gesteld worden aan een declaratie. Dat betekent dat een declaratie niet mag worden afgekeurd indien er geen startbericht is gestuurd. NB bij de uitvoeringsvariant Taakgericht kan de gemeente afgesproken hebben dat er geen gebruik gemaakt wordt van startberichten en stopberichten. Het hierboven beschreven proces is dan niet van toepassing.
 
-Indien er gebruik gemaakt wordt van de start- en stopberichten maar niet van het toewijzingsbericht, dan wordt Startproduct in het startbericht en StopProduct in het stopbericht niet gerelateerd aan het ToewijzingNummer uit het toewijzingsbericht. Wanneer de aanbieder vaststelt dat de zorgvraag van de client tijdens de zorglevering gewijzigd is en de toewijzing niet meer aansluit bij de zorgbehoefte, meldt de aanbieder dit bij de gemeente. De aanbieder stuurt hiervoor naar afspraak met de gemeente een verzoek om wijziging-bericht met daarin een samenhangend geheel aan gewenste toewijzingen die de volledige gewenste situatie weergeeft. De gewenste situatie wordt als 1 verzoek ingediend en beoordeeld.
+Indien er gebruik gemaakt wordt van de startberichten en stopberichten maar niet van het toewijzingsbericht, dan wordt Startproduct in het startbericht en StopProduct in het stopbericht niet gerelateerd aan het ToewijzingNummer uit het toewijzingsbericht. Wanneer de aanbieder vaststelt dat de zorgvraag van de client tijdens de zorglevering gewijzigd is en de toewijzing niet meer aansluit bij de zorgbehoefte, meldt de aanbieder dit bij de gemeente. De aanbieder stuurt hiervoor naar afspraak met de gemeente een verzoek om wijziging-bericht met daarin een samenhangend geheel aan gewenste toewijzingen die de volledige gewenste situatie weergeeft. De gewenste situatie wordt als 1 verzoek ingediend en beoordeeld.
 
 **logische datatypen** enkelvoudige datatypen die functionele betekenis geven aan primitieve datatypen, bijvoorbeeld LDT_Plaatsnaam is de door de gemeente vastgestelde naam van een woonplaats, dit wordt vastgelegd als een string datatype van maximaal 80 posities; bij een logisch datatype wordt ook vastgelegd of, en zo ja welke, codelijst gebruikt wordt.
 
@@ -351,7 +351,7 @@ aangeboden kunnen worden; (binnen de iStandaarden) softwarepakketten die hulp bi
 
 **ouderbijdrage** eigen bijdrage die ouders moeten betalen, bijvoorbeeld voor studiekosten (in het kader van de studiefinanciering); de eigen bijdrage in de kosten van jeugdhulp voor ouders van een kind dat buiten het gezin hulp met verblijf ontvangt, wordt per 1 januari 2016 niet meer geïnd.
 
-**outputgerichte uitvoeringsvariant** uitvoering van zorg en/of ondersteuning waarbij er een duidelijke afspraak tussen gemeente en zorgaanbieder is over de te behalen output; de manier waarop deze output wordt behaald, is niet vastgelegd; een van de drie uitvoeringsvarianten waaruit gemeenten kunnen kiezen bij de inrichting van hun Wmo- en Jw-processen.
+**outputgerichte uitvoeringsvariant** uitvoering van zorg en/of ondersteuning waarbij er een duidelijke afspraak tussen gemeente en zorgaanbieder is over de te behalen output; de manier waarop deze output wordt behaald, is niet vastgelegd; een van de drie uitvoeringsvarianten waaruit gemeenten kunnen kiezen bij de inrichting van hun Wmo- en Jw processen.
 
 **overbruggingszorg** tijdelijke zorg voor mensen die op de wachtlijst staan voor verblijfszorg die nog niet geleverd kan worden; het gaat om inzet van zorg anders dan geïndiceerd of bij een andere aanbieder dan de voorkeuraanbieder van de cliënt.
 
@@ -375,7 +375,7 @@ aangeboden kunnen worden; (binnen de iStandaarden) softwarepakketten die hulp bi
 
 De reden beëindiging wordt vastgelegd met een standaardcode in het veld RedenEindeLevering (of vergelijkbare benaming, afhankelijk van de technische uitwerking). Deze code geeft aan of de beëindiging bijvoorbeeld het gevolg is van een levering die volgens plan is beëindigd.
 
-**referentiegroepen** bijeenkomsten van vertegenwoordigers van alle partijen die werken met de iStandaarden (zorgaanbieders, gemeenten, softwareleveranciers, brancheverenigingen, CAK, VNG, Vektis, VWS, het Ketenbureau i-Sociaal Domein en Zorginstituut Nederland); zij leveren een bijdrage aan de verdere inhoudelijke voorbereiding op nieuwe releases van de iStandaarden; zie functionele referentiegroepen, integrale referentiegroepen en technische referentiegroepen.
+**referentiegroepen** bijeenkomsten van vertegenwoordigers van alle partijen die werken met de iStandaarden (zorgaanbieders, gemeenten, softwareleveranciers, brancheverenigingen, CAK, VNG, Vektis, VWS, het Ketenbureau i-Sociaaldomein en Zorginstituut Nederland); zij leveren een bijdrage aan de verdere inhoudelijke voorbereiding op nieuwe releases van de iStandaarden; zie functionele referentiegroepen, integrale referentiegroepen en technische referentiegroepen.
 
 **Referentiemodel Zorg en Ondersteuning** model dat gebruikers van de iStandaarden inzicht geeft in gegevens die gelijk zijn in de verschillende informatiestandaarden (iWlz, iWmo, iJw, iEb en iPgb); het model maakt duidelijk welke informatie (processen, regels en gegevenselementen) in de standaarden deels of geheel gelijk is (ofwel referent is) in alle domeinen; een voorbeeld van een referent gegevenselement is Geboortedatum, deze moet qua structuur in alle domeinen gelijk blijven.
 
@@ -415,7 +415,7 @@ De reden beëindiging wordt vastgelegd met een standaardcode in het veld RedenEi
 
 **standaardproductcodelijst** standaardlijst van productcodes die door de meeste gemeenten en aanbieders van zorg en ondersteuning worden gebruikt met het oog op standaardisatie en vermindering van administratieve lasten; afwijkingen op deze lijst zijn mogelijk maar moeten gemeenten zelf beheren en delen met de zorgaanbieders.
 
-**Stapelen of Stapeling** betekent dat voor een client hetzelfde zorg- of ondersteuningsproduct meerdere keren wordt aangevraagd door dezelfde aanbieder voor (gedeeltelijk) dezelfde periode.
+**Stapelen of Stapeling** betekent dat voor een client hetzelfde zorgproduct of ondersteuningsproduct meerdere keren wordt aangevraagd door dezelfde aanbieder voor (gedeeltelijk) dezelfde periode.
 
 **Start Jeugdhulp** Bericht voor het melden van de start van levering van Jeugdhulp. Dit bericht wordt ook Start ondersteuning of Start levering of Start Zorg of startbericht of start genoemd hierna te gebruiken startbericht. Het bericht dat hiervoor wordt gebruikt is JW305.
 
@@ -425,7 +425,7 @@ De reden beëindiging wordt vastgelegd met een standaardcode in het veld RedenEi
 
 **SVB** Sociale Verzekeringsbank; voert onder meer de volksverzekeringen AOW, Anw en AKW uit, beheert persoonsgebonden budgetten op grond van de Wlz, Wmo 2015 en de Jeugdwet en betaalt deze uit en is betrokken bij de voorbereiding en toetsing van nieuwe regelingen.
 
-**taakgerichte uitvoeringsvariant** uitvoering van zorg en/of ondersteuning waarbij de gemeente een taak voor een (deel)populatie heeft gegeven aan een zorgaanbieder en deze aanbieder de vrijheid heeft om de invulling van deze taak vorm te geven; een van de drie uitvoeringsvarianten waaruit gemeenten kunnen kiezen bij de inrichting van hun Wmo- en Jw-processen.
+**taakgerichte uitvoeringsvariant** uitvoering van zorg en/of ondersteuning waarbij de gemeente een taak voor een (deel)populatie heeft gegeven aan een zorgaanbieder en deze aanbieder de vrijheid heeft om de invulling van deze taak vorm te geven; een van de drie uitvoeringsvarianten waaruit gemeenten kunnen kiezen bij de inrichting van hun Wmo en Jw processen.
 
 **technische referentiegroepen** referentiegroepen die de resultaten uit de functionele referentiegroepen vertalen naar de technische specificaties.
 
