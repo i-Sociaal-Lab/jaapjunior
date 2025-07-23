@@ -315,7 +315,7 @@ internationale classificatie van ziekten, versie 10
 
 Op het moment dat de levering van de zorg (tijdelijk) gestopt wordt, geeft de aanbieder dit door aan de gemeente. De aanbieder stuurt hiervoor een stopbericht en vult de einddatum met de stopdatum van de levering van de zorg zoals afgesproken. Zowel zorg die tijdelijk- als zorg die definitief gestopt is, kan herstart worden. De aanbieder stuurt dan opnieuw een startbericht naar de gemeente. Zodra blijkt dat de zorg niet meer gestart wordt na een tijdelijke stop, stuurt de aanbieder een definitieve stop.
 
-De start- en stopberichten zijn regieberichten en mogen niet voorwaardelijk gesteld worden aan een declaratie. Dat betekent dat een declaratie niet mag worden afgekeurd indien er geen startbericht is gestuurd. NB bij de uitvoeringsvariant Taakgericht kan de gemeente afgesproken hebben dat er geen gebruik gemaakt wordt van start- en stopberichten. Het hierboven beschreven proces is dan niet van toepassing.
+De startberichten en stopberichten zijn regieberichten en mogen niet voorwaardelijk gesteld worden aan een declaratie. Dat betekent dat een declaratie niet mag worden afgekeurd indien er geen startbericht is gestuurd. NB bij de uitvoeringsvariant Taakgericht kan de gemeente afgesproken hebben dat er geen gebruik gemaakt wordt van start- en stopberichten. Het hierboven beschreven proces is dan niet van toepassing.
 
 Indien er gebruik gemaakt wordt van de start- en stopberichten maar niet van het toewijzingsbericht, dan wordt Startproduct in het startbericht en StopProduct in het stopbericht niet gerelateerd aan het ToewijzingNummer uit het toewijzingsbericht. Wanneer de aanbieder vaststelt dat de zorgvraag van de client tijdens de zorglevering gewijzigd is en de toewijzing niet meer aansluit bij de zorgbehoefte, meldt de aanbieder dit bij de gemeente. De aanbieder stuurt hiervoor naar afspraak met de gemeente een verzoek om wijziging-bericht met daarin een samenhangend geheel aan gewenste toewijzingen die de volledige gewenste situatie weergeeft. De gewenste situatie wordt als 1 verzoek ingediend en beoordeeld.
 
@@ -381,7 +381,7 @@ De reden beëindiging wordt vastgelegd met een standaardcode in het veld RedenEi
 
 **regels** afspraken en voorwaarden in de informatiemodellen van de iStandaarden waaraan het berichtenverkeer moet voldoen, te onderscheiden in uitgangspunten, bedrijfsregels en uitzonderingen daarop, technische regels, invulinstructies, constraints en condities.
 
-**regieberichten** start- en stopberichten zijn regieberichten
+**regieberichten** startberichten en stopberichten zijn regieberichten
 
 **relatie** de partner of een contactpersoon van de cliënt die in de context van de zorgvraag van de cliënt te benaderen is; de partner hoeft in die zin niet per definitie ook de contactpersoon te zijn.
 
