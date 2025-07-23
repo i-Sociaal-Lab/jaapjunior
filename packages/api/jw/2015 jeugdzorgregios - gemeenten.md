@@ -1,4 +1,4 @@
-|Jeugdregio| |Gemeenten|
+|:Jeugdregio| |:Gemeenten|
 |:----|:----|:----|
 |Achterhoek| |Aalten
 Berkelland
