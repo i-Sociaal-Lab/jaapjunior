@@ -137,7 +137,7 @@ Het document dient als **naslagwerk en validatiebron** voor AI-agenten die vrage
 - *een berichtklasse gewijzigd is (waarde 2); een wijziging betekent dat de actuele aanlevering met dezelfde sleutel vervangen wordt. Deze waarde mag niet gebruikt worden in de iJw/iWmo.*
 - *een berichtklasse verwijderd moet worden (waarde 3). Een verwijdering betekent dat de vorige aanlevering(en) met dezelfde sleutel als niet verzonden beschouwd moet worden.
 
-**OP033x1**
+**OP033(1)**
 
 *Een afgegeven toewijzing mag gewijzigd worden waarbij de wijziging met een nieuw bericht moet worden doorgegeven.*
 
@@ -157,7 +157,7 @@ Indien de gemeente het initiatief tot aanpassing van het maximale budget neemt, 
 
 *De meest recente toewijzing op toewijzingsdatum en -tijd is bepalend voor de inhoud van de toewijzing.*
 
-**OP033x2**
+**OP033(2)**
 
 *Het gebruik van status aanlevering met waarde 2 (een berichtklasse is gewijzigd) is niet toegestaan.*
 
@@ -217,11 +217,11 @@ Voor iedere cliënt waarbij een toewijzing verandert, wordt een toewijzingsberic
 
 De verzendende partij van het heenbericht is verantwoordelijk voor het signaleren van het ontbreken van een retourbericht en dient actie te ondernemen.
 
-**OP090x2**
+**OP090(2)**
 
 *Indien voor een ontvangen heenbericht geen retourbericht kan worden gemaakt moet de ontvangende partij dit buiten het berichtenverkeer om melden aan de verzendende partij.*
 
-**OP090x4**
+**OP090(4)**
 
 *Voor ieder ontvangen declaratiebericht wordt binnen 10 werkdagen na ontvangst een declaratie-antwoordbericht verzonden.*
 
