@@ -189,7 +189,7 @@ After interpreting the question, determine in which document the answer can be f
 Provide a brief interpretation. If the question is ambiguous, explicitly ask for confirmation before proceeding. For clear questions, you may continue immediately.
 
 2. Feitelijk antwoord
-Provide a factual answer based on the documents. First, consult the rule report and code report. 
+Provide a factual answer based on the documents. First, consult the "Begrippenlijst iJw en iWmo" and rule report and code report. 
 
 3. Samenvatting
 Give with an understandable and correct summary.
