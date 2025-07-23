@@ -135,9 +135,9 @@ Het document dient als **naslagwerk en validatiebron** voor AI-agenten die vrage
 *Voor het doorgeven van wijzigingen, verwijderen en correcties op een eerder verzonden regiebericht, moet gebruik gemaakt worden van de systematiek van status aanlevering. Correcties op een melding start product zijn uitsluitend toegestaan voor het geleverde product. Als de ondersteuning beëindigd is, kan de aanvang niet meer op deze manier gecorrigeerd worden. Met de status aanlevering van een berichtklasse kan worden aangegeven of:*
 - *een berichtklasse nieuw is (waarde 1)*
 - *een berichtklasse gewijzigd is (waarde 2); een wijziging betekent dat de actuele aanlevering met dezelfde sleutel vervangen wordt. Deze waarde mag niet gebruikt worden in de iJw/iWmo.*
-- *een berichtklasse verwijderd moet worden (waarde 3). Een verwijdering betekent dat de vorige aanlevering(en) met dezelfde sleutel als niet verzonden beschouwd moet worden.
+- *een berichtklasse verwijderd moet worden (waarde 3). Een verwijdering betekent dat de vorige aanlevering(en) met dezelfde sleutel als niet verzonden beschouwd moet worden.*
 
-**OP033(1)**
+**OP033x1**
 
 *Een afgegeven toewijzing mag gewijzigd worden waarbij de wijziging met een nieuw bericht moet worden doorgegeven.*
 
@@ -151,13 +151,13 @@ Het document dient als **naslagwerk en validatiebron** voor AI-agenten die vrage
 - *Volume wijzigen: Als de omvang is gespecificeerd met in Frequentie de waarde "Totaal binnen geldigheidsduur toewijzing", dan mag Volume worden aangepast.
 Indien dit op verzoek van de aanbieder is, mag dit zonder overleg worden aangepast door de gemeente.
 Indien de gemeente het initiatief tot aanpassing van het volume neemt, mag dit alleen in overleg met en na instemming van de aanbieder worden aangepast.*
-- Budget wijzigen: Als Budget op verzoek van de aanbieder wordt gewijzigd, mag dit zonder overleg worden aangepast door de gemeente.
+- *Budget wijzigen: Als Budget op verzoek van de aanbieder wordt gewijzigd, mag dit zonder overleg worden aangepast door de gemeente.*
 
-Indien de gemeente het initiatief tot aanpassing van het maximale budget neemt, mag dit alleen in overleg met en na instemming van de aanbieder worden aangepast.
+*Indien de gemeente het initiatief tot aanpassing van het maximale budget neemt, mag dit alleen in overleg met en na instemming van de aanbieder worden aangepast.*
 
 *De meest recente toewijzing op toewijzingsdatum en -tijd is bepalend voor de inhoud van de toewijzing.*
 
-**OP033(2)**
+**OP033x2**
 
 *Het gebruik van status aanlevering met waarde 2 (een berichtklasse is gewijzigd) is niet toegestaan.*
 
@@ -217,11 +217,11 @@ Voor iedere cliënt waarbij een toewijzing verandert, wordt een toewijzingsberic
 
 De verzendende partij van het heenbericht is verantwoordelijk voor het signaleren van het ontbreken van een retourbericht en dient actie te ondernemen.
 
-**OP090(2)**
+**OP090x2**
 
 *Indien voor een ontvangen heenbericht geen retourbericht kan worden gemaakt moet de ontvangende partij dit buiten het berichtenverkeer om melden aan de verzendende partij.*
 
-**OP090(4)**
+**OP090x4**
 
 *Voor ieder ontvangen declaratiebericht wordt binnen 10 werkdagen na ontvangst een declaratie-antwoordbericht verzonden.*
 
@@ -243,13 +243,13 @@ Indien de gemeente niet binnen 10 werkdagen een declaratie-antwoordbericht kan v
 
 *Een (tijdelijke) beëindiging van levering, bevat een verwijzing naar de laatste melding van de start van de levering.*
 
-**OP179**: 
+**OP179**
 
 *De grootte van verzonden bestanden mag niet meer zijn dan 25 Mb.*
 
 Deze regel wordt niet naar de techniek vertaald; daar waar grotere bestanden verwerkt kunnen worden is dat uiteraard toegestaan. Daar waar de grootte van bestanden tot problemen in de verwerking leidt, is deze regel bedoeld om duidelijk te maken dat de verzender de bestandsgrootte moet aanpassen.
 
-OP186: 
+**OP186** 
 
 Het beëindigen van een toewijzing op een datum die in het verleden ligt kan alleen in overeenstemming met de betreffende aanbieder
 
@@ -266,10 +266,10 @@ Commentaar mag in de berichten gebruikt worden om extra informatie op te nemen. 
 *Verzonden berichten moeten voldoen aan de technische eisen.*
 
 1. Het berichtuitwisselingsformaat is XML.
-2. 2. De bestandcodering is UTF-8.
-3. 3. Het gebruik van Byte-Order-Mark (BOM) is niet toegestaan.
-4. 4. Het einderegel teken is een combinatie van CR/LF (Windows einde-regel teken).
-5. 5. Gebruik xml als bestandextensie voor het bestand waar het XML bericht in opgenomen is.
+2. De bestandcodering is UTF-8.
+3. Het gebruik van Byte-Order-Mark (BOM) is niet toegestaan.
+4. Het einderegel teken is een combinatie van CR/LF (Windows einde-regel teken).
+5. Gebruik xml als bestandextensie voor het bestand waar het XML bericht in opgenomen is.
 
 **OP252**: 
 
