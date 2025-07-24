@@ -22,24 +22,6 @@ Deze codelijst bevat de gestandaardiseerde codes, waarden en definities zoals ge
 COD002-VEKTIS: Berichtcode
 |Codelijstnaam|Codelijstnr|Code|Documentatie|Mutatiedatum|Mutatie|Ingangsdatum||Expiratiedatum|
 |:-------------------------------------|:-------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------------|:--------------------|:---------------|-----------------:|
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 |Land|COD032|COD032: Land|Identificatie van een (historisch/actueel) land of gebiedsdeel.||||||
 |Land|COD032|AD|ANDORRA||niet gespecificeerd||||
 |Land|COD032|AE|VERENIGDE ARABISCHE EMIRATEN||niet gespecificeerd||||
