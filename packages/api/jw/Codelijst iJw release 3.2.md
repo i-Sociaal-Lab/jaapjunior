@@ -21,7 +21,7 @@ Deze codelijst bevat de gestandaardiseerde codes, waarden en definities zoals ge
 
 
 |Codelijst|Codelijstnr|Code|Documentatie|Mutatiedatum|Mutatie|Ingangsdatum|
-|:-----------------|:------------|:------|:----------------|:-----------------|:--------|:-----------------|
+|:-----------------|:------------|:----:|:----------------|:-----------------|:--------|:-----------------|
 |Land|COD032|COD032: Land|Identificatie van een (historisch/actueel) land of gebiedsdeel.|||||
 |Land|COD032|AD|ANDORRA||niet gespecificeerd|||
 |Land|COD032|AE|VERENIGDE ARABISCHE EMIRATEN||niet gespecificeerd|||
