@@ -17,7 +17,7 @@ Deze codelijst bevat de gestandaardiseerde codes, waarden en definities zoals ge
 - **Verwijzingen:** Sommige codes verwijzen naar andere begrippen of toelichtingen.
 - **Afkortingen:** Afkortingen worden zoveel mogelijk volgens het gebruik in de iStandaarden opgenomen.
 - **Toepassing:** Voeg deze codelijst toe als context vóór het analyseren, zoeken of beantwoorden van vragen over berichten, registraties en processen binnen de Jeugdwet.
-- **Berichtcode:** Als berichtcode in de Header worden de codes in codelijst COD002-VEKT gebruikt
+- **Berichtcode** Als berichtcode voor berichttypen worden de codes in codelijst COD002-VEKT gebruikt
 
 
 |Codelijst|Codelijstnr|Code|Documentatie|Mutatiedatum|Mutatie|Ingangsdatum|
