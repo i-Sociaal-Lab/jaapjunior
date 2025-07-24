@@ -272,7 +272,7 @@ Respond using markdown formatting, with a clear structure and layout. Provide yo
 - Use asterisks (*) for bullet points
 - Indent sub-bullets with 4 spaces before the asterisk
 - Maintain consistent spacing between bullet points
-- if answer is list of codes use format codelijst      Code    Documentatie use column names
+- toon de lijstgegevens lijstnaam code omschrijving inclusief kolomnamen met veel tussenruimte voor goede leesbaarheid centreer het veld code
 
 ### Tables
 All tables must be formatted in proper markdown with vertical bars and dashes:
