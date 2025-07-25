@@ -1,6 +1,71 @@
-|Codelijst|Codelijstnr|Code|Documentatie|Mutatiedatum|Mutatie|Ingangsdatum|
-|:-----------------|:------------|:----:|:----------------|:-----------------|:--------|:-----------------|
-|Land|COD032|COD032: Land|Identificatie van een (historisch/actueel) land of gebiedsdeel.|||||
+|Codelijstnaam|Codelijstnr|Code|Documentatie|Mutatiedatum|Mutatie|Ingangsdatum|
+|:-----------------|:------------|:------:|:----------------|:-----------------|:--------|:-----------------|
+|Aanduiding woonadres|NUM061|AB|Aan boord||niet gespecificeerd|||
+|Aanduiding woonadres|NUM061|BY|Bij||niet gespecificeerd|||
+|Aanduiding woonadres|NUM061|NUM061: Aanduiding woonadres|De aanduiding die wordt gebruikt voor adressen die niet zijn voorzien van de gebruikelijke straatnaam en huisnummeraanduidingen.|||||
+|Aanduiding woonadres|NUM061|TO|Tegenover||niet gespecificeerd|||
+|Aanduiding woonadres|NUM061|WW|Woonwagen||niet gespecificeerd|||
+|Berichtcode|COD002-VEKT|436|JW301|||||
+|Berichtcode|COD002-VEKT|437|JW302|||||
+|Berichtcode|COD002-VEKT|438|JW305|||||
+|Berichtcode|COD002-VEKT|439|JW306|||||
+|Berichtcode|COD002-VEKT|440|JW307|||||
+|Berichtcode|COD002-VEKT|441|JW308|||||
+|Berichtcode|COD002-VEKT|446|JW315|||||
+|Berichtcode|COD002-VEKT|447|JW316|||||
+|Berichtcode|COD002-VEKT|486|JW317|01-04-2020|toegevoegd|01-01-2021||
+|Berichtcode|COD002-VEKT|487|JW318|01-04-2020|toegevoegd|01-01-2021||
+|Berichtcode|COD002-VEKT|488|JW319|01-04-2020|toegevoegd|01-01-2021||
+|Berichtcode|COD002-VEKT|489|JW320|01-04-2020|toegevoegd|01-01-2021||
+|Berichtcode|COD002-VEKT|490|JW323|01-04-2020|toegevoegd|01-01-2021||
+|Berichtcode|COD002-VEKT|491|JW325|01-04-2020|toegevoegd|01-01-2021||
+|Code verwijzer|COD327|01|Gemeente||niet gespecificeerd|||
+|Code verwijzer|COD327|02|Huisarts||niet gespecificeerd|||
+|Code verwijzer|COD327|03|Jeugdarts||niet gespecificeerd|||
+|Code verwijzer|COD327|04|Gecertificeerde instelling||niet gespecificeerd|||
+|Code verwijzer|COD327|05|Medisch specialist||niet gespecificeerd|||
+|Code verwijzer|COD327|06|Zelfverwijzer/geen verwijzer||niet gespecificeerd|||
+|Code verwijzer|COD327|08|Rechter, Officier van Justitie, functionaris Justitiële jeugdinrichting|01-07-2019|gewijzigd|||
+|Code verwijzer|COD327|COD327: Code verwijzer|Aanduiding van de aard van de (zelf)verwijzer.|||||
+|Communicatievorm|COD747|1|Tolk taal||niet gespecificeerd|||
+|Communicatievorm|COD747|2|Doventolk||niet gespecificeerd|||
+|Communicatievorm|COD747|3|Doofblindentolk||niet gespecificeerd|||
+|Communicatievorm|COD747|COD747: Communicatievorm|Gecodeerde aanduiding van de bijzondere vorm van communicatie die gebruikt dient te worden.|||||
+|Datumgebruik|COD170|1|dag onbekend; alleen maand en jaar gebruiken||niet gespecificeerd|||
+|Datumgebruik|COD170|2|dag en maand onbekend; alleen jaar gebruiken||niet gespecificeerd|||
+|Datumgebruik|COD170|3|dag, maand en jaar onbekend; onbekende datum||niet gespecificeerd|||
+|Datumgebruik|COD170|COD170: Datumgebruik|Codering om aan te geven welk deel van een datum onbekend is.|||||
+|Eenheid|WJ756|01|Minuut||niet gespecificeerd|||
+|Eenheid|WJ756|04|Uur||niet gespecificeerd|||
+|Eenheid|WJ756|14|Etmaal||niet gespecificeerd|||
+|Eenheid|WJ756|16|Dagdeel (4 uur)||niet gespecificeerd|||
+|Eenheid|WJ756|82|Stuks (output)|01-04-2020|gewijzigd|01-01-2021||
+|Eenheid|WJ756|83|Euro's||niet gespecificeerd|||
+|Eenheid|WJ756|84|Stuks (inspanning)|01-04-2020|toegevoegd|01-01-2021||
+|Eenheid|WJ756|WJ756: Eenheid|Gecodeerde aanduiding van de mate van zorg betreffende een product, uitgedrukt in een eenheid.|||||
+|Frequentie|WMO757|1|Per dag||niet gespecificeerd|||
+|Frequentie|WMO757|2|Per week||niet gespecificeerd|||
+|Frequentie|WMO757|4|Per maand||niet gespecificeerd|||
+|Frequentie|WMO757|6|Totaal binnen geldigheidsduur toewijzing|16-07-2018|gewijzigd|||
+|Frequentie|WMO757|WMO757: Frequentie|Frequentie van de te leveren of geleverde ondersteuning.|||||
+|Geslacht|COD046|0|Onbekend||niet gespecificeerd|||
+|Geslacht|COD046|1|Mannelijk||niet gespecificeerd|||
+|Geslacht|COD046|2|Vrouwelijk||niet gespecificeerd|||
+|Geslacht|COD046|COD046: Geslacht|Unieke aanduiding van de sexe van een persoon.|||||
+|Indicatie debet/credit|COD043|C|Creditbedrag en aantal|01-07-2017|toegevoegd|01-04-2018||
+|Indicatie debet/credit|COD043|COD043: Indicatie debet/credit|Gecodeerde aanduiding voor debet of credit.|||||
+|Indicatie debet/credit|COD043|D|Debetbedrag en aantal|01-07-2017|toegevoegd|01-04-2018||
+|Ja of nee|COD260|1|Ja||niet gespecificeerd|||
+|Ja of nee|COD260|2|Nee||niet gespecificeerd|||
+|Ja of nee|COD260|COD260: Ja of nee|Codering voor ja of nee.|||||
+|Juridische status|WJ232|01|Rechterlijke machtiging (rm) voorlopig / voortgezette machtiging||niet gespecificeerd|||
+|Juridische status|WJ232|02|RM op eigen verzoek||niet gespecificeerd|||
+|Juridische status|WJ232|03|RM met voorwaardelijk ontslag||niet gespecificeerd|||
+|Juridische status|WJ232|04|Onder toezichtstelling (ots)||niet gespecificeerd|||
+|Juridische status|WJ232|05|In bewaring stelling (ibs)||niet gespecificeerd|||
+|Juridische status|WJ232|11|Strafrechterlijke justitiele contacten: tbs||niet gespecificeerd|||
+|Juridische status|WJ232|12|Strafrechterlijke justitiele contacten: overig||niet gespecificeerd|||
+|Juridische status|WJ232|WJ232: Juridische status|Juridische situatie die voor de client van toepassing is op het moment van beoordeling.|||||
 |Land|COD032|AD|ANDORRA||niet gespecificeerd|||
 |Land|COD032|AE|VERENIGDE ARABISCHE EMIRATEN||niet gespecificeerd|||
 |Land|COD032|AF|AFGHANISTAN||niet gespecificeerd|||
@@ -50,6 +115,7 @@
 |Land|COD032|CM|KAMEROEN||niet gespecificeerd|||
 |Land|COD032|CN|CHINA||niet gespecificeerd|||
 |Land|COD032|CO|COLOMBIA||niet gespecificeerd|||
+|Land|COD032|COD032: Land|Identificatie van een (historisch/actueel) land of gebiedsdeel.|||||
 |Land|COD032|CR|COSTA RICA||niet gespecificeerd|||
 |Land|COD032|CU|CUBA||niet gespecificeerd|||
 |Land|COD032|CV|KAAPVERDIE||niet gespecificeerd|||
@@ -250,89 +316,13 @@
 |Land|COD032|ZA|ZUID-AFRIKA||niet gespecificeerd|||
 |Land|COD032|ZM|ZAMBIA||niet gespecificeerd|||
 |Land|COD032|ZW|ZIMBABWE||niet gespecificeerd|||
-|Indicatie debet/credit|COD043|COD043: Indicatie debet/credit|Gecodeerde aanduiding voor debet of credit.|||||
-|Indicatie debet/credit|COD043|C|Creditbedrag en aantal|01-07-2017|toegevoegd|01-04-2018||
-|Indicatie debet/credit|COD043|D|Debetbedrag en aantal|01-07-2017|toegevoegd|01-04-2018||
-|Geslacht|COD046|COD046: Geslacht|Unieke aanduiding van de sexe van een persoon.|||||
-|Geslacht|COD046|0|Onbekend||niet gespecificeerd|||
-|Geslacht|COD046|1|Mannelijk||niet gespecificeerd|||
-|Geslacht|COD046|2|Vrouwelijk||niet gespecificeerd|||
-|Datumgebruik|COD170|COD170: Datumgebruik|Codering om aan te geven welk deel van een datum onbekend is.|||||
-|Datumgebruik|COD170|1|dag onbekend; alleen maand en jaar gebruiken||niet gespecificeerd|||
-|Datumgebruik|COD170|2|dag en maand onbekend; alleen jaar gebruiken||niet gespecificeerd|||
-|Datumgebruik|COD170|3|dag, maand en jaar onbekend; onbekende datum||niet gespecificeerd|||
-|Ja of nee|COD260|COD260: Ja of nee|Codering voor ja of nee.|||||
-|Ja of nee|COD260|1|Ja||niet gespecificeerd|||
-|Ja of nee|COD260|2|Nee||niet gespecificeerd|||
-|Code verwijzer|COD327|COD327: Code verwijzer|Aanduiding van de aard van de (zelf)verwijzer.|||||
-|Code verwijzer|COD327|01|Gemeente||niet gespecificeerd|||
-|Code verwijzer|COD327|02|Huisarts||niet gespecificeerd|||
-|Code verwijzer|COD327|03|Jeugdarts||niet gespecificeerd|||
-|Code verwijzer|COD327|04|Gecertificeerde instelling||niet gespecificeerd|||
-|Code verwijzer|COD327|05|Medisch specialist||niet gespecificeerd|||
-|Code verwijzer|COD327|06|Zelfverwijzer/geen verwijzer||niet gespecificeerd|||
-|Code verwijzer|COD327|08|Rechter, Officier van Justitie, functionaris Justitiële jeugdinrichting|01-07-2019|gewijzigd|||
-|Status aanlevering|COD467|COD467: Status aanlevering|Indicatie over de status van de informatie in de berichtklasse.|||||
-|Status aanlevering|COD467|1|Eerste aanlevering||niet gespecificeerd|||
-|Status aanlevering|COD467|2|Gewijzigde aanlevering||niet gespecificeerd|||
-|Status aanlevering|COD467|3|Verwijderen aanlevering||niet gespecificeerd|||
-|Status aanlevering|COD467|9|Niet van toepassing (ongewijzigd)||niet gespecificeerd|||
-|Soort relatie|COD472|COD472: Soort relatie|De soort relatie die een persoon ten opzichte van de client heeft.|||||
-|Soort relatie|COD472|03|Curator (juridisch)||niet gespecificeerd|||
-|Soort relatie|COD472|04|Financieel (gemachtigd)||niet gespecificeerd|||
-|Soort relatie|COD472|05|Financieel (toetsing)||niet gespecificeerd|||
-|Soort relatie|COD472|06|Leefeenheid||niet gespecificeerd|||
-|Soort relatie|COD472|07|Hulpverlener||niet gespecificeerd|||
-|Soort relatie|COD472|08|Specialist||niet gespecificeerd|||
-|Soort relatie|COD472|09|Anders||niet gespecificeerd|||
-|Soort relatie|COD472|10|Ouder||niet gespecificeerd|||
-|Soort relatie|COD472|11|Voogd||niet gespecificeerd|||
-|Soort relatie|COD472|12|Partner/echtgeno(o)t(e)||niet gespecificeerd|||
-|Soort relatie|COD472|13|Pleegouder||niet gespecificeerd|||
-|Soort relatie|COD472|14|Bewindvoerder||niet gespecificeerd|||
-|Soort relatie|COD472|15|Mentor||niet gespecificeerd|||
-|Soort relatie|COD472|16|Zoon/dochter||niet gespecificeerd|||
-|Soort relatie|COD472|17|Familielid||niet gespecificeerd|||
-|Soort relatie|COD472|18|Gezinslid||niet gespecificeerd|||
-|Soort relatie|COD472|19|Buur||niet gespecificeerd|||
-|Soort relatie|COD472|20|Vriend(in)/kennis||niet gespecificeerd|||
-|Soort relatie|COD472|21|Clientondersteuner||niet gespecificeerd|||
-|Soort relatie|COD472|22|Huisarts||niet gespecificeerd|||
-|Soort relatie|COD472|23|Erven van||niet gespecificeerd|||
-|Soort relatie|COD472|24|Werkgever||niet gespecificeerd|||
-|Soort relatie|COD472|25|Wijkcoach||niet gespecificeerd|||
-|Naamgebruik|COD700|COD700: Naamgebruik|Aanduiding naamgebruik (gecodeerd).|||||
 |Naamgebruik|COD700|1|Eigen naam||niet gespecificeerd|||
 |Naamgebruik|COD700|2|Naam echtgenoot of geregistreerd partner of alternatieve naam||niet gespecificeerd|||
 |Naamgebruik|COD700|3|Naam echtgenoot of geregistreerd partner gevolgd door eigen naam||niet gespecificeerd|||
 |Naamgebruik|COD700|4|Eigen naam gevolgd door naam echtgenoot of geregistreerd partner||niet gespecificeerd|||
 |Naamgebruik|COD700|5|Pseudoniem||niet gespecificeerd|||
 |Naamgebruik|COD700|6|Niet-natuurlijk persoon||niet gespecificeerd|||
-|Communicatievorm|COD747|COD747: Communicatievorm|Gecodeerde aanduiding van de bijzondere vorm van communicatie die gebruikt dient te worden.|||||
-|Communicatievorm|COD747|1|Tolk taal||niet gespecificeerd|||
-|Communicatievorm|COD747|2|Doventolk||niet gespecificeerd|||
-|Communicatievorm|COD747|3|Doofblindentolk||niet gespecificeerd|||
-|Soort adres|COD757|COD757: Soort adres|Nadere typering van het adres.|||||
-|Soort adres|COD757|01|BRP-adres|01-07-2017|gewijzigd|||
-|Soort adres|COD757|02|Correspondentie-adres||niet gespecificeerd|||
-|Soort adres|COD757|03|Verblijfadres||niet gespecificeerd|||
-|Soort adres|COD757|04|Tijdelijk verblijfadres||niet gespecificeerd|||
-|Reden wijziging toewijzing|JZ002|JZ002: Reden wijziging toewijzing|De reden waarom een toewijzing wordt gewijzigd.|||||
-|Reden wijziging toewijzing|JZ002|01|Administratieve correctie (vervallen)|30-09-2021|gewijzigd|||
-|Reden wijziging toewijzing|JZ002|02|Client overleden||niet gespecificeerd|||
-|Reden wijziging toewijzing|JZ002|03|Contractwijziging||niet gespecificeerd|||
-|Reden wijziging toewijzing|JZ002|04|Herbeoordeling: verlenging toewijzing||niet gespecificeerd|||
-|Reden wijziging toewijzing|JZ002|05|Herbeoordeling: verkorting toewijzing||niet gespecificeerd|||
-|Reden wijziging toewijzing|JZ002|06|Uitstroom naar ander domein||niet gespecificeerd|||
-|Reden wijziging toewijzing|JZ002|07|Verhuizing naar een andere gemeente||niet gespecificeerd|||
-|Reden wijziging toewijzing|JZ002|08|Wijziging leveringsvorm||niet gespecificeerd|||
-|Reden wijziging toewijzing|JZ002|09|Overstap naar andere aanbieder||niet gespecificeerd|||
-|Reden wijziging toewijzing|JZ002|10|Overgang naar nieuwe bekostigingssystematiek|03-04-2017|toegevoegd|01-10-2017||
-|Reden wijziging toewijzing|JZ002|11|Gemeentelijke herindeling|01-07-2017|toegevoegd|01-04-2018||
-|Reden wijziging toewijzing|JZ002|12|Geinitieerd door de aanbieder|01-04-2020|toegevoegd|01-01-2021||
-|Reden wijziging toewijzing|JZ002|13|Verwijderd|30-09-2021|toegevoegd|01-04-2022||
-|Reden wijziging toewijzing|JZ002|14|Administratieve correctie |30-09-2021|toegevoegd|01-04-2022||
-|Productcategorie|JZ020|JZ020: Productcategorie|Gecodeerde aanduiding van een (reeks van) productcategorie(en) in functionele termen die losgekoppeld is van een bepaalde leverancier, waarbij wordt beschreven wat de inhoud en aard van de productcategorie is in termen van hulpverlening (wonen, zorg en welzijn).|||||
+|Naamgebruik|COD700|COD700: Naamgebruik|Aanduiding naamgebruik (gecodeerd).|||||
 |Productcategorie|JZ020|31|(2015) Zonder verblijf: uitgevoerd door wijk- of buurtteam||niet gespecificeerd|||
 |Productcategorie|JZ020|32|(2015) Zonder verblijf: ambulante jeugdhulp op locatie van de aanbieder||niet gespecificeerd|||
 |Productcategorie|JZ020|33|(2015) Zonder verblijf: daghulp op locatie van de aanbieder||niet gespecificeerd|||
@@ -357,7 +347,17 @@
 |Productcategorie|JZ020|53|Kindergeneeskunde||niet gespecificeerd|||
 |Productcategorie|JZ020|54|Jeugd-ggz|03-04-2017|toegevoegd|01-10-2017||
 |Productcategorie|JZ020|55|Landelijk ingekochte zorg|03-04-2017|toegevoegd|01-10-2017||
-|Reden beeindiging|JZ588|JZ588: Reden beeindiging|De reden van beeindiging van de Jeugdhulp bij een client.|||||
+|Productcategorie|JZ020|JZ020: Productcategorie|Gecodeerde aanduiding van een (reeks van) productcategorie(en) in functionele termen die losgekoppeld is van een bepaalde leverancier, waarbij wordt beschreven wat de inhoud en aard van de productcategorie is in termen van hulpverlening (wonen, zorg en welzijn).|||||
+|Reden afwijzing verzoek|WJ759|1|Geen wijziging, maar nieuwe aanvraag|01-04-2020|toegevoegd|01-01-2021||
+|Reden afwijzing verzoek|WJ759|2|Past niet binnen budget|01-04-2020|toegevoegd|01-01-2021||
+|Reden afwijzing verzoek|WJ759|3|Geen contract|01-04-2020|toegevoegd|01-01-2021||
+|Reden afwijzing verzoek|WJ759|4|Past niet binnen contract|01-04-2020|toegevoegd|01-01-2021||
+|Reden afwijzing verzoek|WJ759|5|Andere gemeente|01-04-2020|toegevoegd|01-01-2021||
+|Reden afwijzing verzoek|WJ759|6|Stapeling|01-04-2020|toegevoegd|01-01-2021||
+|Reden afwijzing verzoek|WJ759|7|Zorginhoudelijke afkeur|01-04-2020|toegevoegd|01-01-2021||
+|Reden afwijzing verzoek|WJ759|8|Woonplaatsbeginsel|01-04-2020|toegevoegd|01-01-2021||
+|Reden afwijzing verzoek|WJ759|9|Leeftijdsgrens is bereikt|01-04-2020|toegevoegd|01-01-2021||
+|Reden afwijzing verzoek|WJ759|WJ759: Reden afwijzing verzoek|Gecodeerde aanduiding voor de reden van afwijzing van een verzoek.|||||
 |Reden beeindiging|JZ588|02|Overlijden||niet gespecificeerd|||
 |Reden beeindiging|JZ588|20|Levering is tijdelijk beeindigd.||niet gespecificeerd|||
 |Reden beeindiging|JZ588|31|Levering is volgens plan beeindigd.||niet gespecificeerd|||
@@ -369,12 +369,25 @@
 |Reden beeindiging|JZ588|37|In verband met wijzigingsverzoek|01-04-2020|toegevoegd|01-01-2021||
 |Reden beeindiging|JZ588|38|Overstap naar andere aanbieder|30-09-2021|toegevoegd|01-04-2022||
 |Reden beeindiging|JZ588|39|Uitstroom naar ander domein|30-09-2021|toegevoegd|01-04-2022||
-|Aanduiding woonadres|NUM061|NUM061: Aanduiding woonadres|De aanduiding die wordt gebruikt voor adressen die niet zijn voorzien van de gebruikelijke straatnaam en huisnummeraanduidingen.|||||
-|Aanduiding woonadres|NUM061|AB|Aan boord||niet gespecificeerd|||
-|Aanduiding woonadres|NUM061|BY|Bij||niet gespecificeerd|||
-|Aanduiding woonadres|NUM061|TO|Tegenover||niet gespecificeerd|||
-|Aanduiding woonadres|NUM061|WW|Woonwagen||niet gespecificeerd|||
-|Retourcode|WJ001|WJ001: Retourcode|Melding in een retourbericht. Het betreft een code die in een retourbericht het resultaat van de beoordeling van een (deel van een) ontvangen bericht weergeeft.|||||
+|Reden beeindiging|JZ588|JZ588: Reden beeindiging|De reden van beeindiging van de Jeugdhulp bij een client.|||||
+|Reden verzoek|WJ758|1|Verandering clientsituatie|01-04-2020|toegevoegd|01-01-2021||
+|Reden verzoek|WJ758|2|Wijziging zorgplan|01-04-2020|toegevoegd|01-01-2021||
+|Reden verzoek|WJ758|WJ758: Reden verzoek|Gecodeerde aanduiding voor de reden van een verzoek.|||||
+|Reden wijziging toewijzing|JZ002|01|Administratieve correctie (vervallen)|30-09-2021|gewijzigd|||
+|Reden wijziging toewijzing|JZ002|02|Client overleden||niet gespecificeerd|||
+|Reden wijziging toewijzing|JZ002|03|Contractwijziging||niet gespecificeerd|||
+|Reden wijziging toewijzing|JZ002|04|Herbeoordeling: verlenging toewijzing||niet gespecificeerd|||
+|Reden wijziging toewijzing|JZ002|05|Herbeoordeling: verkorting toewijzing||niet gespecificeerd|||
+|Reden wijziging toewijzing|JZ002|06|Uitstroom naar ander domein||niet gespecificeerd|||
+|Reden wijziging toewijzing|JZ002|07|Verhuizing naar een andere gemeente||niet gespecificeerd|||
+|Reden wijziging toewijzing|JZ002|08|Wijziging leveringsvorm||niet gespecificeerd|||
+|Reden wijziging toewijzing|JZ002|09|Overstap naar andere aanbieder||niet gespecificeerd|||
+|Reden wijziging toewijzing|JZ002|10|Overgang naar nieuwe bekostigingssystematiek|03-04-2017|toegevoegd|01-10-2017||
+|Reden wijziging toewijzing|JZ002|11|Gemeentelijke herindeling|01-07-2017|toegevoegd|01-04-2018||
+|Reden wijziging toewijzing|JZ002|12|Geinitieerd door de aanbieder|01-04-2020|toegevoegd|01-01-2021||
+|Reden wijziging toewijzing|JZ002|13|Verwijderd|30-09-2021|toegevoegd|01-04-2022||
+|Reden wijziging toewijzing|JZ002|14|Administratieve correctie |30-09-2021|toegevoegd|01-04-2022||
+|Reden wijziging toewijzing|JZ002|JZ002: Reden wijziging toewijzing|De reden waarom een toewijzing wordt gewijzigd.|||||
 |Retourcode|WJ001|0001|Bericht is afgekeurd om technische redenen.||niet gespecificeerd|||
 |Retourcode|WJ001|0200|Geen opmerking over deze berichtklasse.||niet gespecificeerd|||
 |Retourcode|WJ001|0233|Berichtklasse is niet beoordeeld.||niet gespecificeerd|||
@@ -434,60 +447,47 @@
 |Retourcode|WJ001|9415| Er is al een StopProduct met gelijk Bsn, ToewijzingNummer, Begindatum en RedenBeeindiging <> waarde 20 en StatusAanlevering heeft waarde 1 of 2. |29-09-2022|toegevoegd|01-04-2023||
 |Retourcode|WJ001|S300|Gemeentecode komt niet voor in de lijst van CBS.|01-07-2017|gewijzigd|||
 |Retourcode|WJ001|S329|ProductCode hoort niet bij de ProductCategorie.|01-07-2018|toegevoegd|01-04-2019||
-|Wettelijke vertegenwoordiging|WJ003|WJ003: Wettelijke vertegenwoordiging|Wettelijke vertegenwoordiging die voor de client van toepassing is op het moment van beoordeling.|||||
+|Retourcode|WJ001|WJ001: Retourcode|Melding in een retourbericht. Het betreft een code die in een retourbericht het resultaat van de beoordeling van een (deel van een) ontvangen bericht weergeeft.|||||
+|Soort adres|COD757|01|BRP-adres|01-07-2017|gewijzigd|||
+|Soort adres|COD757|02|Correspondentie-adres||niet gespecificeerd|||
+|Soort adres|COD757|03|Verblijfadres||niet gespecificeerd|||
+|Soort adres|COD757|04|Tijdelijk verblijfadres||niet gespecificeerd|||
+|Soort adres|COD757|COD757: Soort adres|Nadere typering van het adres.|||||
+|Soort relatie|COD472|03|Curator (juridisch)||niet gespecificeerd|||
+|Soort relatie|COD472|04|Financieel (gemachtigd)||niet gespecificeerd|||
+|Soort relatie|COD472|05|Financieel (toetsing)||niet gespecificeerd|||
+|Soort relatie|COD472|06|Leefeenheid||niet gespecificeerd|||
+|Soort relatie|COD472|07|Hulpverlener||niet gespecificeerd|||
+|Soort relatie|COD472|08|Specialist||niet gespecificeerd|||
+|Soort relatie|COD472|09|Anders||niet gespecificeerd|||
+|Soort relatie|COD472|10|Ouder||niet gespecificeerd|||
+|Soort relatie|COD472|11|Voogd||niet gespecificeerd|||
+|Soort relatie|COD472|12|Partner/echtgeno(o)t(e)||niet gespecificeerd|||
+|Soort relatie|COD472|13|Pleegouder||niet gespecificeerd|||
+|Soort relatie|COD472|14|Bewindvoerder||niet gespecificeerd|||
+|Soort relatie|COD472|15|Mentor||niet gespecificeerd|||
+|Soort relatie|COD472|16|Zoon/dochter||niet gespecificeerd|||
+|Soort relatie|COD472|17|Familielid||niet gespecificeerd|||
+|Soort relatie|COD472|18|Gezinslid||niet gespecificeerd|||
+|Soort relatie|COD472|19|Buur||niet gespecificeerd|||
+|Soort relatie|COD472|20|Vriend(in)/kennis||niet gespecificeerd|||
+|Soort relatie|COD472|21|Clientondersteuner||niet gespecificeerd|||
+|Soort relatie|COD472|22|Huisarts||niet gespecificeerd|||
+|Soort relatie|COD472|23|Erven van||niet gespecificeerd|||
+|Soort relatie|COD472|24|Werkgever||niet gespecificeerd|||
+|Soort relatie|COD472|25|Wijkcoach||niet gespecificeerd|||
+|Soort relatie|COD472|COD472: Soort relatie|De soort relatie die een persoon ten opzichte van de client heeft.|||||
+|Status aanlevering|COD467|1|Eerste aanlevering||niet gespecificeerd|||
+|Status aanlevering|COD467|2|Gewijzigde aanlevering||niet gespecificeerd|||
+|Status aanlevering|COD467|3|Verwijderen aanlevering||niet gespecificeerd|||
+|Status aanlevering|COD467|9|Niet van toepassing (ongewijzigd)||niet gespecificeerd|||
+|Status aanlevering|COD467|COD467: Status aanlevering|Indicatie over de status van de informatie in de berichtklasse.|||||
+|Verzoek antwoord|WJ760|1|Verzoek afgewezen|01-04-2020|toegevoegd|01-01-2021||
+|Verzoek antwoord|WJ760|2|Aanvraag in onderzoek|01-04-2020|toegevoegd|01-01-2021||
+|Verzoek antwoord|WJ760|WJ760: Verzoek antwoord|Gecodeerde aanduiding voor het antwoord op een verzoek.|||||
 |Wettelijke vertegenwoordiging|WJ003|06|Voogdij||niet gespecificeerd|||
 |Wettelijke vertegenwoordiging|WJ003|07|Bewindvoering||niet gespecificeerd|||
 |Wettelijke vertegenwoordiging|WJ003|08|Mentorschap||niet gespecificeerd|||
 |Wettelijke vertegenwoordiging|WJ003|09|Onder curatele stelling||niet gespecificeerd|||
 |Wettelijke vertegenwoordiging|WJ003|10|Zaakwaarneming||niet gespecificeerd|||
-|Juridische status|WJ232|WJ232: Juridische status|Juridische situatie die voor de client van toepassing is op het moment van beoordeling.|||||
-|Juridische status|WJ232|01|Rechterlijke machtiging (rm) voorlopig / voortgezette machtiging||niet gespecificeerd|||
-|Juridische status|WJ232|02|RM op eigen verzoek||niet gespecificeerd|||
-|Juridische status|WJ232|03|RM met voorwaardelijk ontslag||niet gespecificeerd|||
-|Juridische status|WJ232|04|Onder toezichtstelling (ots)||niet gespecificeerd|||
-|Juridische status|WJ232|05|In bewaring stelling (ibs)||niet gespecificeerd|||
-|Juridische status|WJ232|11|Strafrechterlijke justitiele contacten: tbs||niet gespecificeerd|||
-|Juridische status|WJ232|12|Strafrechterlijke justitiele contacten: overig||niet gespecificeerd|||
-|Eenheid|WJ756|WJ756: Eenheid|Gecodeerde aanduiding van de mate van zorg betreffende een product, uitgedrukt in een eenheid.|||||
-|Eenheid|WJ756|01|Minuut||niet gespecificeerd|||
-|Eenheid|WJ756|04|Uur||niet gespecificeerd|||
-|Eenheid|WJ756|14|Etmaal||niet gespecificeerd|||
-|Eenheid|WJ756|16|Dagdeel (4 uur)||niet gespecificeerd|||
-|Eenheid|WJ756|82|Stuks (output)|01-04-2020|gewijzigd|01-01-2021||
-|Eenheid|WJ756|83|Euro's||niet gespecificeerd|||
-|Eenheid|WJ756|84|Stuks (inspanning)|01-04-2020|toegevoegd|01-01-2021||
-|Reden verzoek|WJ758|WJ758: Reden verzoek|Gecodeerde aanduiding voor de reden van een verzoek.|||||
-|Reden verzoek|WJ758|1|Verandering clientsituatie|01-04-2020|toegevoegd|01-01-2021||
-|Reden verzoek|WJ758|2|Wijziging zorgplan|01-04-2020|toegevoegd|01-01-2021||
-|Reden afwijzing verzoek|WJ759|WJ759: Reden afwijzing verzoek|Gecodeerde aanduiding voor de reden van afwijzing van een verzoek.|||||
-|Reden afwijzing verzoek|WJ759|1|Geen wijziging, maar nieuwe aanvraag|01-04-2020|toegevoegd|01-01-2021||
-|Reden afwijzing verzoek|WJ759|2|Past niet binnen budget|01-04-2020|toegevoegd|01-01-2021||
-|Reden afwijzing verzoek|WJ759|3|Geen contract|01-04-2020|toegevoegd|01-01-2021||
-|Reden afwijzing verzoek|WJ759|4|Past niet binnen contract|01-04-2020|toegevoegd|01-01-2021||
-|Reden afwijzing verzoek|WJ759|5|Andere gemeente|01-04-2020|toegevoegd|01-01-2021||
-|Reden afwijzing verzoek|WJ759|6|Stapeling|01-04-2020|toegevoegd|01-01-2021||
-|Reden afwijzing verzoek|WJ759|7|Zorginhoudelijke afkeur|01-04-2020|toegevoegd|01-01-2021||
-|Reden afwijzing verzoek|WJ759|8|Woonplaatsbeginsel|01-04-2020|toegevoegd|01-01-2021||
-|Reden afwijzing verzoek|WJ759|9|Leeftijdsgrens is bereikt|01-04-2020|toegevoegd|01-01-2021||
-|Verzoek antwoord|WJ760|WJ760: Verzoek antwoord|Gecodeerde aanduiding voor het antwoord op een verzoek.|||||
-|Verzoek antwoord|WJ760|1|Verzoek afgewezen|01-04-2020|toegevoegd|01-01-2021||
-|Verzoek antwoord|WJ760|2|Aanvraag in onderzoek|01-04-2020|toegevoegd|01-01-2021||
-|Frequentie|WMO757|WMO757: Frequentie|Frequentie van de te leveren of geleverde ondersteuning.|||||
-|Frequentie|WMO757|1|Per dag||niet gespecificeerd|||
-|Frequentie|WMO757|2|Per week||niet gespecificeerd|||
-|Frequentie|WMO757|4|Per maand||niet gespecificeerd|||
-|Frequentie|WMO757|6|Totaal binnen geldigheidsduur toewijzing|16-07-2018|gewijzigd|||
-|Berichtcode|COD002-VEKT|436|JW301|||||
-|Berichtcode|COD002-VEKT|437|JW302|||||
-|Berichtcode|COD002-VEKT|438|JW305|||||
-|Berichtcode|COD002-VEKT|439|JW306|||||
-|Berichtcode|COD002-VEKT|440|JW307|||||
-|Berichtcode|COD002-VEKT|441|JW308|||||
-|Berichtcode|COD002-VEKT|446|JW315|||||
-|Berichtcode|COD002-VEKT|447|JW316|||||
-|Berichtcode|COD002-VEKT|486|JW317|01-04-2020|toegevoegd|01-01-2021||
-|Berichtcode|COD002-VEKT|487|JW318|01-04-2020|toegevoegd|01-01-2021||
-|Berichtcode|COD002-VEKT|488|JW319|01-04-2020|toegevoegd|01-01-2021||
-|Berichtcode|COD002-VEKT|489|JW320|01-04-2020|toegevoegd|01-01-2021||
-|Berichtcode|COD002-VEKT|490|JW323|01-04-2020|toegevoegd|01-01-2021||
-|Berichtcode|COD002-VEKT|491|JW325|01-04-2020|toegevoegd|01-01-2021||
+|Wettelijke vertegenwoordiging|WJ003|WJ003: Wettelijke vertegenwoordiging|Wettelijke vertegenwoordiging die voor de client van toepassing is op het moment van beoordeling.|||||
