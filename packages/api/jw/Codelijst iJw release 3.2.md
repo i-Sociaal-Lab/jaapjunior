@@ -1,25 +1,3 @@
-Versie: 1.0
-Status: Productie
-Auteur: Zorginstituut
-Bron-link: https://www.istandaarden.nl/ijw/releases/release-ijw-3.2
-Publicatiedatum: 29 september 2022
-AI-agent: Jw-agent, Wmo-agent
-
-# Codelijst iJw Release 3.2 (Jaap, 24-07-2025)
-
-## Inleiding
-
-Deze codelijst bevat de gestandaardiseerde codes, waarden en definities zoals gebruikt binnen het iJw berichtenverkeer tussen gemeenten en zorgaanbieders. Dit document is bedoeld als kennisbron voor een AI-agent die automatisch documenten, berichten en data uit het sociaal domein moet kunnen interpreteren en verwerken.
-
-### Belangrijk voor AI-agenten
-
-- **Herkenning:** De lijst maakt het mogelijk om entiteiten, waarden, statussen, productcategorieën en codes in berichtenverkeer eenduidig te herkennen, te labelen en te koppelen aan betekenis.
-- **Verwijzingen:** Sommige codes verwijzen naar andere begrippen of toelichtingen.
-- **Afkortingen:** Afkortingen worden zoveel mogelijk volgens het gebruik in de iStandaarden opgenomen.
-- **Toepassing:** Voeg deze codelijst toe als context vóór het analyseren, zoeken of beantwoorden van vragen over berichten, registraties en processen binnen de Jeugdwet.
-- **Berichtcode** Als berichtcode voor berichttypen worden de codes in codelijst COD002-VEKT gebruikt
-
-
 |Codelijst|Codelijstnr|Code|Documentatie|Mutatiedatum|Mutatie|Ingangsdatum|
 |:-----------------|:------------|:----:|:----------------|:-----------------|:--------|:-----------------|
 |Land|COD032|COD032: Land|Identificatie van een (historisch/actueel) land of gebiedsdeel.|||||
