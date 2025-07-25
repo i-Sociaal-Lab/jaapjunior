@@ -1,6 +1,5 @@
 |Codelijst|Codelijstnr|Code|Documentatie|
 |:-----------------|:------------|:------:|:----------------|
-|Aanduiding woonadres|NUM061|NUM061: Aanduiding woonadres|De aanduiding die wordt gebruikt voor adressen die niet zijn voorzien van de gebruikelijke straatnaam en huisnummeraanduidingen.|
 |Aanduiding woonadres|NUM061|AB|Aan boord|
 |Aanduiding woonadres|NUM061|BY|Bij|
 |Aanduiding woonadres|NUM061|TO|Tegenover|
@@ -19,7 +18,6 @@
 |Berichtcode|COD002-VEKT|489|JW320|
 |Berichtcode|COD002-VEKT|490|JW323|
 |Berichtcode|COD002-VEKT|491|JW325|
-|Code verwijzer|COD327|COD327: Code verwijzer|Aanduiding van de aard van de (zelf)verwijzer.|
 |Code verwijzer|COD327|01|Gemeente|
 |Code verwijzer|COD327|02|Huisarts|
 |Code verwijzer|COD327|03|Jeugdarts|
@@ -27,15 +25,12 @@
 |Code verwijzer|COD327|05|Medisch specialist|
 |Code verwijzer|COD327|06|Zelfverwijzer/geen verwijzer|
 |Code verwijzer|COD327|08|Rechter, Officier van Justitie, functionaris Justitiële jeugdinrichting|
-|Communicatievorm|COD747|COD747: Communicatievorm|Gecodeerde aanduiding van de bijzondere vorm van communicatie die gebruikt dient te worden.|
 |Communicatievorm|COD747|1|Tolk taal|
 |Communicatievorm|COD747|2|Doventolk|
 |Communicatievorm|COD747|3|Doofblindentolk|
-|Datumgebruik|COD170|COD170: Datumgebruik|Codering om aan te geven welk deel van een datum onbekend is.|
 |Datumgebruik|COD170|1|dag onbekend; alleen maand en jaar gebruiken|
 |Datumgebruik|COD170|2|dag en maand onbekend; alleen jaar gebruiken|
 |Datumgebruik|COD170|3|dag, maand en jaar onbekend; onbekende datum|
-|Eenheid|WJ756|WJ756: Eenheid|Gecodeerde aanduiding van de mate van zorg betreffende een product, uitgedrukt in een eenheid.|
 |Eenheid|WJ756|01|Minuut|
 |Eenheid|WJ756|04|Uur|
 |Eenheid|WJ756|14|Etmaal|
@@ -48,17 +43,14 @@
 |Frequentie|WMO757|2|Per week|
 |Frequentie|WMO757|4|Per maand|
 |Frequentie|WMO757|6|Totaal binnen geldigheidsduur toewijzing|
-|Geslacht|COD046|COD046: Geslacht|Unieke aanduiding van de sexe van een persoon.|
 |Geslacht|COD046|0|Onbekend|
 |Geslacht|COD046|1|Mannelijk|
 |Geslacht|COD046|2|Vrouwelijk|
-|Indicatie debet/credit|COD043|COD043: Indicatie debet/credit|Gecodeerde aanduiding voor debet of credit.|
 |Indicatie debet/credit|COD043|C|Creditbedrag en aantal|
 |Indicatie debet/credit|COD043|D|Debetbedrag en aantal|
 |Ja of nee|COD260|COD260: Ja of nee|Codering voor ja of nee.|
 |Ja of nee|COD260|1|Ja|
 |Ja of nee|COD260|2|Nee|
-|Juridische status|WJ232|WJ232: Juridische status|Juridische situatie die voor de client van toepassing is op het moment van beoordeling.|
 |Juridische status|WJ232|01|Rechterlijke machtiging (rm) voorlopig / voortgezette machtiging|
 |Juridische status|WJ232|02|RM op eigen verzoek|
 |Juridische status|WJ232|03|RM met voorwaardelijk ontslag|
@@ -66,7 +58,6 @@
 |Juridische status|WJ232|05|In bewaring stelling (ibs)|
 |Juridische status|WJ232|11|Strafrechterlijke justitiele contacten: tbs|
 |Juridische status|WJ232|12|Strafrechterlijke justitiele contacten: overig|
-|Land|COD032|COD032: Land|Identificatie van een (historisch/actueel) land of gebiedsdeel.|
 |Land|COD032|AD|ANDORRA|
 |Land|COD032|AE|VERENIGDE ARABISCHE EMIRATEN|
 |Land|COD032|AF|AFGHANISTAN|
@@ -316,14 +307,12 @@
 |Land|COD032|ZA|ZUID-AFRIKA|
 |Land|COD032|ZM|ZAMBIA|
 |Land|COD032|ZW|ZIMBABWE|
-|Naamgebruik|COD700|COD700: Naamgebruik|Aanduiding naamgebruik (gecodeerd).|
 |Naamgebruik|COD700|1|Eigen naam|
 |Naamgebruik|COD700|2|Naam echtgenoot of geregistreerd partner of alternatieve naam|
 |Naamgebruik|COD700|3|Naam echtgenoot of geregistreerd partner gevolgd door eigen naam|
 |Naamgebruik|COD700|4|Eigen naam gevolgd door naam echtgenoot of geregistreerd partner|
 |Naamgebruik|COD700|5|Pseudoniem|
 |Naamgebruik|COD700|6|Niet-natuurlijk persoon|
-|Productcategorie|JZ020|JZ020: Productcategorie|Gecodeerde aanduiding van een (reeks van) productcategorie(en) in functionele termen die losgekoppeld is van een bepaalde leverancier, waarbij wordt beschreven wat de inhoud en aard van de productcategorie is in termen van hulpverlening (wonen, zorg en welzijn).|
 |Productcategorie|JZ020|31|(2015) Zonder verblijf: uitgevoerd door wijk- of buurtteam|
 |Productcategorie|JZ020|32|(2015) Zonder verblijf: ambulante jeugdhulp op locatie van de aanbieder|
 |Productcategorie|JZ020|33|(2015) Zonder verblijf: daghulp op locatie van de aanbieder|
@@ -348,7 +337,6 @@
 |Productcategorie|JZ020|53|Kindergeneeskunde|
 |Productcategorie|JZ020|54|Jeugd-ggz|
 |Productcategorie|JZ020|55|Landelijk ingekochte zorg|
-|Reden afwijzing verzoek|WJ759|WJ759: Reden afwijzing verzoek|Gecodeerde aanduiding voor de reden van afwijzing van een verzoek.|
 |Reden afwijzing verzoek|WJ759|1|Geen wijziging, maar nieuwe aanvraag|
 |Reden afwijzing verzoek|WJ759|2|Past niet binnen budget|
 |Reden afwijzing verzoek|WJ759|3|Geen contract|
@@ -358,7 +346,6 @@
 |Reden afwijzing verzoek|WJ759|7|Zorginhoudelijke afkeur|
 |Reden afwijzing verzoek|WJ759|8|Woonplaatsbeginsel|
 |Reden afwijzing verzoek|WJ759|9|Leeftijdsgrens is bereikt|
-|Reden beeindiging|JZ588|JZ588: Reden beeindiging|De reden van beeindiging van de Jeugdhulp bij een client.|
 |Reden beeindiging|JZ588|02|Overlijden|
 |Reden beeindiging|JZ588|20|Levering is tijdelijk beeindigd.|
 |Reden beeindiging|JZ588|31|Levering is volgens plan beeindigd.|
@@ -370,10 +357,8 @@
 |Reden beeindiging|JZ588|37|In verband met wijzigingsverzoek|
 |Reden beeindiging|JZ588|38|Overstap naar andere aanbieder|
 |Reden beeindiging|JZ588|39|Uitstroom naar ander domein|
-|Reden verzoek|WJ758|WJ758: Reden verzoek|Gecodeerde aanduiding voor de reden van een verzoek.|
 |Reden verzoek|WJ758|1|Verandering clientsituatie|
 |Reden verzoek|WJ758|2|Wijziging zorgplan|
-|Reden wijziging toewijzing|JZ002|JZ002: Reden wijziging toewijzing|De reden waarom een toewijzing wordt gewijzigd.|
 |Reden wijziging toewijzing|JZ002|01|Administratieve correctie (vervallen)|
 |Reden wijziging toewijzing|JZ002|02|Client overleden|
 |Reden wijziging toewijzing|JZ002|03|Contractwijziging|
@@ -388,7 +373,6 @@
 |Reden wijziging toewijzing|JZ002|12|Geinitieerd door de aanbieder|
 |Reden wijziging toewijzing|JZ002|13|Verwijderd|
 |Reden wijziging toewijzing|JZ002|14|Administratieve correctie |
-|Retourcode|WJ001|WJ001: Retourcode|Melding in een retourbericht. Het betreft een code die in een retourbericht het resultaat van de beoordeling van een (deel van een) ontvangen bericht weergeeft.|
 |Retourcode|WJ001|0001|Bericht is afgekeurd om technische redenen.|
 |Retourcode|WJ001|0200|Geen opmerking over deze berichtklasse.|
 |Retourcode|WJ001|0233|Berichtklasse is niet beoordeeld.|
@@ -448,7 +432,6 @@
 |Retourcode|WJ001|9415| Er is al een StopProduct met gelijk Bsn, ToewijzingNummer, Begindatum en RedenBeeindiging <> waarde 20 en StatusAanlevering heeft waarde 1 of 2. |
 |Retourcode|WJ001|S300|Gemeentecode komt niet voor in de lijst van CBS.|
 |Retourcode|WJ001|S329|ProductCode hoort niet bij de ProductCategorie.|
-|Soort adres|COD757|COD757: Soort adres|Nadere typering van het adres.|
 |Soort adres|COD757|01|BRP-adres|
 |Soort adres|COD757|02|Correspondentie-adres|
 |Soort adres|COD757|03|Verblijfadres|
@@ -477,18 +460,15 @@
 |Soort relatie|COD472|23|Erven van|
 |Soort relatie|COD472|24|Werkgever|
 |Soort relatie|COD472|25|Wijkcoach|
-|Status aanlevering|COD467|COD467: Status aanlevering|Indicatie over de status van de informatie in de berichtklasse.|
 |Status aanlevering|COD467|1|Eerste aanlevering|
 |Status aanlevering|COD467|2|Gewijzigde aanlevering|
 |Status aanlevering|COD467|3|Verwijderen aanlevering|
 |Status aanlevering|COD467|9|Niet van toepassing (ongewijzigd)|
-|Verzoek antwoord|WJ760|WJ760: Verzoek antwoord|Gecodeerde aanduiding voor het antwoord op een verzoek.|
 |Verzoek antwoord|WJ760|1|Verzoek afgewezen|
 |Verzoek antwoord|WJ760|2|Aanvraag in onderzoek|
-|Wettelijke vertegenwoordiging|WJ003|WJ003: Wettelijke vertegenwoordiging|Wettelijke vertegenwoordiging die voor de client van toepassing is op het moment van beoordeling.|
 |Wettelijke vertegenwoordiging|WJ003|06|Voogdij|
 |Wettelijke vertegenwoordiging|WJ003|07|Bewindvoering|
 |Wettelijke vertegenwoordiging|WJ003|08|Mentorschap|
 |Wettelijke vertegenwoordiging|WJ003|09|Onder curatele stelling|
 |Wettelijke vertegenwoordiging|WJ003|10|Zaakwaarneming|
-<img width="1804" height="12326" alt="image" src="https://github.com/user-attachments/assets/f2807b88-8b03-4c7a-aa5f-c11c7d6dd08a" />
+
