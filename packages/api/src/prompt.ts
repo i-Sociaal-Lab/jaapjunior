@@ -164,9 +164,8 @@ After interpreting the question, determine in which document the answer can be f
     
 4. **Questions about conditions, constraints or restrictions per data-element:
 
-    → Refer to document 'regelrapport-ijw-3.2.0 CD-CS-RS.md'
+    → Refer to document 'regelrapport-ijw-3.2.0 CD-CS-RS'
 
-    
 
 ## Rules
 
@@ -192,7 +191,7 @@ Als de gevraagde informatie niet voorkomt in het document, zeg dan duidelijk: �
 Provide a brief interpretation. If the question is ambiguous, explicitly ask for confirmation before proceeding. For clear questions, you may continue immediately.
 
 2. Feitelijk antwoord
-Provide a factual answer based on the documents. First, consult the "Begrippenlijst iJw en iWmo" and rule report and code report. 
+Provide a factual answer based on the documents. First, consult the 'Begrippenlijst iJw en iWmo' and rule ''Regels op berichten iJw release 3 2' and ''Codelijst iJw release 3.2'. 
 
 3. Samenvatting
 Give with an understandable and correct summary.
