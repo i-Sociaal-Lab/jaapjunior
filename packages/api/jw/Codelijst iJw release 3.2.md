@@ -47,7 +47,6 @@
 |Geslacht|COD046|2|Vrouwelijk|
 |Indicatie debet/credit|COD043|C|Creditbedrag en aantal|
 |Indicatie debet/credit|COD043|D|Debetbedrag en aantal|
-|Ja of nee|COD260|COD260: Ja of nee|Codering voor ja of nee.|
 |Ja of nee|COD260|1|Ja|
 |Ja of nee|COD260|2|Nee|
 |Juridische status|WJ232|01|Rechterlijke machtiging (rm) voorlopig / voortgezette machtiging|
@@ -435,7 +434,6 @@
 |Soort adres|COD757|02|Correspondentie-adres|
 |Soort adres|COD757|03|Verblijfadres|
 |Soort adres|COD757|04|Tijdelijk verblijfadres|
-|Soort relatie|COD472|COD472: Soort relatie|De soort relatie die een persoon ten opzichte van de client heeft.|
 |Soort relatie|COD472|03|Curator (juridisch)|
 |Soort relatie|COD472|04|Financieel (gemachtigd)|
 |Soort relatie|COD472|05|Financieel (toetsing)|
