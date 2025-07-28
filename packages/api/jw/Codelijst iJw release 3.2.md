@@ -1,5 +1,5 @@
-|Codelijst                    |Codelijstnaam|Code    |Documentatie                                                             |
-|:----------------------------|:------------|:------:|:------------------------------------------------------------------------|
+|Lijstnaam|lijstnr|Code|Waarde|
+|:--------|:------|:--:|:-----|
 |Aanduiding woonadres|NUM061|AB|Aan boord|
 |Aanduiding woonadres|NUM061|BY|Bij|
 |Aanduiding woonadres|NUM061|TO|Tegenover|
