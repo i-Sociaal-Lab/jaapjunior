@@ -156,7 +156,7 @@ After interpreting the question, determine in which document the answer can be f
     
 2. **Questions about codes used in messages:**
     
-    → Refer to document 'Codelijst iJw release 3.2'
+    → Refer to document 'Codelijst iJw release 3.2' using codelijst
     
 3. **Questions about the exact content of messages, the data elements used, and whether these data elements are mandatory:**
     
