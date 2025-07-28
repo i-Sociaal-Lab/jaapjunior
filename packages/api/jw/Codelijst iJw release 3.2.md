@@ -38,7 +38,6 @@
 |Eenheid|WJ756|82|Stuks (output)|
 |Eenheid|WJ756|83|Euro's|
 |Eenheid|WJ756|84|Stuks (inspanning)|
-|Frequentie|WMO757|WMO757: Frequentie|Frequentie van de te leveren of geleverde ondersteuning.|
 |Frequentie|WMO757|1|Per dag|
 |Frequentie|WMO757|2|Per week|
 |Frequentie|WMO757|4|Per maand|
