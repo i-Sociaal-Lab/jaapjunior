@@ -273,7 +273,6 @@ Respond using markdown formatting, with a clear structure and layout. Provide yo
 - Use asterisks (*) for bullet points
 - Indent sub-bullets with 4 spaces before the asterisk
 - Maintain consistent spacing between bullet points
-- toon de lijstgegevens van Codelijst iJw release 3.2 als "codelijst code Documentatie" inclusief kolomnamen met veel tussenruimte voor goede leesbaarheid.
 
 ### Tables
 All tables must be formatted in proper markdown with vertical bars and dashes:
