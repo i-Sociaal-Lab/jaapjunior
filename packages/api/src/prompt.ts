@@ -154,7 +154,7 @@ After interpreting the question, determine in which document the answer can be f
     
     → Refer to documents 'Begrippenlijst iJw en iWmo' and 'Regels op berichten iJw release 3.2'
     
-2. **Questions about codes used in messages:**
+2. **Questions about codes and codelists used in messages:**
     
     → Refer to documents 'Begrippenlijst iJw en iWmo' and 'Codelijst iJw release 3.2' and 'Regels op berichten iJw release 3.2'
     
