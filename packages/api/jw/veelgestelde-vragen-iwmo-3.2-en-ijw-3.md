@@ -288,10 +288,13 @@ Dit ligt aan het proces en de berichten die hieraan vooraf gegaan zijn.
 Indien de intrekking een gevolg is van een door de aanbieder gestuurde (definitieve) Stopzorg, heeft de aanbieder de toewijzing hiermee al definitief gestopt. De aanbieder hoeft dan niet nogmaals een stop te sturen.
 
 In alle andere gevallen dient de aanbieder als reactie op een intrekking altijd een Stopzorg te sturen.
+## Hoe kan een Startzorg-bericht verwijderd worden?
+
+Een Startzorg kan verwijderd worden middels de status aanlevering. Zie hiervoor ook OP033 en IV008 in het informatiemodel.
 
 ## Hoe kan een Stopzorg-bericht verwijderd worden?
 
-Een Stopzorg kan verwijderd worden middels de status aanlevering. Zie hiervoor ook IV008 in het informatiemodel.
+Een Stopzorg kan verwijderd worden middels de status aanlevering. Zie hiervoor ook OP033 en IV008 in het informatiemodel.
 
 # Vragen over Modules
 
