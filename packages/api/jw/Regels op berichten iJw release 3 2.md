@@ -136,7 +136,8 @@ Het document dient als **naslagwerk en validatiebron** voor AI-agenten die vrage
 - *een berichtklasse nieuw is (waarde 1)*
 - *een berichtklasse gewijzigd is (waarde 2); een wijziging betekent dat de actuele aanlevering met dezelfde sleutel vervangen wordt. Deze waarde mag niet gebruikt worden in de iJw/iWmo.*
 - *een berichtklasse verwijderd moet worden (waarde 3). Een verwijdering betekent dat de vorige aanlevering(en) met dezelfde sleutel als niet verzonden beschouwd moet worden.*
-
+heeft betrekking op: JW305,JW307
+  
 **OP033x1**
 
 *Een afgegeven toewijzing mag gewijzigd worden waarbij de wijziging met een nieuw bericht moet worden doorgegeven.*
@@ -156,14 +157,17 @@ Indien de gemeente het initiatief tot aanpassing van het volume neemt, mag dit a
 *Indien de gemeente het initiatief tot aanpassing van het maximale budget neemt, mag dit alleen in overleg met en na instemming van de aanbieder worden aangepast.*
 
 *De meest recente toewijzing op toewijzingsdatum en -tijd is bepalend voor de inhoud van de toewijzing.*
+heeft betrekking op: JW301
 
 **OP033x2**
 
 *Het gebruik van status aanlevering met waarde 2 (een berichtklasse is gewijzigd) is niet toegestaan.*
+heeft betrekking op: JW305,JW307
 
 **OP039**
 
 *In het berichtenverkeer mogen ketenpartijen cliëntgegevens doorgeven zoals deze in de administratie van de betreffende ketenpartij voorkomen, mits deze gegevens geen onderdeel zijn van een logische sleutel. Het staat ketenpartijen vrij om gewijzigde gegevens uit het berichtenverkeer over te nemen in hun administratie.*
+heeft betrekking op: JW301,JW305,JW307,JW317,JW319,JW323,JW325
 
 **OP043**
 
@@ -184,10 +188,12 @@ Indien de gemeente het initiatief tot aanpassing van het volume neemt, mag dit a
 **OP072**
 
 *Pas na een melding start ondersteuning mag een aanbieder melden dat de levering beëindigd is. In het bericht moet gerefereerd worden aan de start van de levering.*
+heeft betrekking op: JW305,JW307
 
 **OP076**
 
 *Van iedere contactpersoon (relatie) moet worden opgegeven in welke relatie deze tot de cliënt staat. Gegevens over een contactpersoon mogen alleen worden opgenomen indien noodzakelijk voor communicatie met de cliënt.*
+heeft betrekking op: JW301
 
 **OP079**
 
@@ -200,6 +206,7 @@ Indien de gemeente het initiatief tot aanpassing van het volume neemt, mag dit a
 **OP086**
 
 *Ondersteuningsproducten met een inspannings- of outputgerichte uitvoering worden altijd door de gemeente toegewezen met een toewijzingsbericht.*
+heeft betrekking op: JW301
 
 **OP087**
 
