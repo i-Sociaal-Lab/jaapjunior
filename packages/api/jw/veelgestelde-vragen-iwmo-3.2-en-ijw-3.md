@@ -184,7 +184,7 @@ Het is op dit moment niet mogelijk om een VOW-bericht in te trekken. Mocht je er
 
 Als reactie op een verstuurd VOW en VOT zijn er drie mogelijkheden. De gemeente kan het verzoek honoreren door een toewijzingsbericht (301) te sturen. Ook kan de gemeente het verzoek afwijzen met het antwoordbericht (319). De derde mogelijkheid is dat de gemeente het verzoek nader gaat onderzoeken en dit meldt met het antwoordbericht (319).
 
-Nadat de gemeente dit onderzoek heeft afgerond zal deze het verzoek alsnog honoreren of afwijzen.
+Nadat de gemeente dit onderzoek heeft afgerond zal deze het verzoek alsnog honoreren met een toewijzingsbericht of afwijzen met een antwoordbericht.
 
 ## Mag ik als aanbieder starten met het leveren van de gewenste zorg indien de gemeente een VOW in onderzoek neemt?
 
@@ -298,16 +298,22 @@ Een Stopzorg kan verwijderd worden middels de status aanlevering. Zie hiervoor o
 
 # Vragen over reactietijden
 
-|Berichttype|Berichtnaam|Maximale termijn /voorwaarden waarbinnen het bericht moet worden verstuurd|
+|Berichttype|Berichtnaam|Max. reactie termijn|
 |:--------|:--------|:----------|
-"|301|Toewijzingsbericht |Vanuit de context van een Verzoek om Toewijzing: De gemeente kan per aangevraagd product besluiten een Toewijzingsbericht te sturen of een Antwoordbericht. Reactietermijn 5 werkdagen. 
+"|301|Toewijzingsbericht |Vanuit de context van een Verzoek om Toewijzing: De gemeente kan per 
+aangevraagd product besluiten een Toewijzingsbericht te sturen of een Antwoordbericht. Reactietermijn 5 werkdagen. 
 
 Vanuit de context van een Verzoek om Wijziging: De gemeente kan alleen voor het hele verzoek een Toewijzingsbericht sturen of een Antwoordbericht. Reactietermijn 5 werkdagen. 
 
 Vanuit de context ""aanvraag in onderzoek"": 
-Als een Antwoordbericht in het veld VerzoekAntwoord de waarde 2 (Aanvraag in onderzoek) bevat, dan wordt binnen 8 weken na dagtekening van het verzoek ofwel een Toewijzingbericht ofwel een Antwoordbericht met in VerzoekAntwoord de waarde 1 (Verzoek afgewezen) gestuurd.|"
+Als een Antwoordbericht in het veld VerzoekAntwoord de waarde 2 (Aanvraag in onderzoek) bevat, 
+dan wordt binnen 8 weken na dagtekening van het verzoek ofwel een Toewijzingbericht ofwel 
+een Antwoordbericht met in VerzoekAntwoord de waarde 1 (Verzoek afgewezen) gestuurd.|"
 |302|Toewijzingsbericht retour|3 werkdagen na ontvangst van het 301-bericht|
-|305|Startzorgbericht|De aanbieder verzendt een Startzorgbericht binnen 5 werkdagen na de daadwerkelijke datum waarop de ondersteuning gestart is of, indien de ondersteuning met terugwerkende kracht is toegewezen, binnen 5 werkdagen na ontvangst van het Toewijzingsbericht (301 bericht).|
+|305|Startzorgbericht|De aanbieder verzendt een Startzorgbericht binnen 5 werkdagen na de 
+daadwerkelijke datum waarop de ondersteuning gestart is of, indien de ondersteuning met 
+terugwerkende kracht is toegewezen, binnen 5 werkdagen na ontvangst van het 
+Toewijzingsbericht (301 bericht).|
 |306|Startzorgbericht retour|3 werkdagen na ontvangt van het 305-bericht|
 |307|Stopzorgbericht|De aanbieder verzendt een Stopzorgbericht binnen 5 werkdagen na de daadwerkelijke datum waarop de ondersteuning beëindigd is.|
 |308|Stopzorgbericht retour|3 werkdagen na ontvangt van het 307-bericht|
@@ -324,7 +330,7 @@ Als een Antwoordbericht in het veld VerzoekAntwoord de waarde 2 (Aanvraag in ond
 
 ## Hoe weet ik of mijn bericht voldoet aan de specificaties?
 
-Via de validatiemodule op istandaarden.nl kunt u de berichten valideren. De berichten worden dan gecontroleerd tegen de XSD en XSLT.
+Via de validatiemodule op istandaarden.nl kunt u de berichten valideren. De berichten worden dan gecontroleerd tegen de XSD en XSLT. De validatimodule kunt u vinden op https://www.istandaarden.nl/modules/validatiemodule.
 
 Via de Testvoorziening iStandaarden (TiS) van Zorginstituut Nederland kunnen softwareleveranciers hun producten testen in de rol van elke partij die deelneemt aan het iStandaarden-berichtenverkeer, en zo nodig verbeteren.
 
