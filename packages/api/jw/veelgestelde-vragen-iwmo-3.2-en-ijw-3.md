@@ -313,7 +313,7 @@ Een Stopzorg kan verwijderd worden middels de status aanlevering. Zie hiervoor o
 | 319 | Antwoordbericht | De gemeente verzendt een antwoordbericht binnen 5 werkdagen \nna ontvangst van een 315- of 317-bericht als het verzoek wordt \nafgewezen of in onderzoek wordt genomen. Het antwoordbericht\n wordt gebruikt om de aanbieder te informeren dat de aanvraag \n(VOT- of VOW-bericht) is afgewezen of dat de gemeente de \naanvraag in onderzoek heeft genomen. Als in het Antwoordbericht \nVerzoekAntwoord de waarde 2 (Aanvraag in onderzoek) bevat \ndan wordt bij afwijzing uiterlijk binnen 8 weken na dagtekening \nvan het verzoek een Antwoordbericht met in het veld \nVerzoekAntwoord de waarde 1 (Verzoek afgewezen) gestuurd. |
 | 320 | Antwoordbericht retour | 3 werkdagen |
 | 323 | Declaratiebericht | Volgens afspraak tussen gemeente en aanbieder voor geleverde zorg |
-| 325 | Declaratie-antwoord bericht | 10 werkdagen na ontvangst van het 325-bericht |
+| 325 | Declaratie-antwoord bericht | 10 werkdagen na ontvangst van het 325-bericht, zie ook OP090x4 |
 
 
 # Vragen over Modules
