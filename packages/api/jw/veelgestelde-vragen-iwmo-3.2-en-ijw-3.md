@@ -28,7 +28,7 @@ Doordat niveau van de beschikking uit de toewijzing is verwijderd per 1-1-2021, 
 
 ## Hoe kan ik een toewijzing corrigeren?
 
-Wat in een toewijzing gewijzigd mag/kan worden zonder een nieuwe toewijzing aan te maken is nader uitgewerkt in bedrijfsregel OP033x1.
+Wat in een toewijzing gewijzigd mag/kan worden zonder een nieuwe toewijzing aan te maken is nader uitgewerkt in bedrijfsregel OP033x1. Onder het corrigeren van toewijzingen wordt verstaan, het inkorten, het oprekken van de einddatum van de en het verwijderen van een toewijzing. Ook kunnen omvang (volume, eenheid, frequentie) en budget worden gewijzigd.
 
 ## Welke toewijzingen moeten in een toewijzingsbericht opgenomen worden, indien er maar één toewijzing wordt gewijzigd?
 
