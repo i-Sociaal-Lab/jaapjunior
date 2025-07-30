@@ -459,9 +459,11 @@ De reden beëindiging wordt vastgelegd met een standaardcode in het veld RedenEi
 
 **Verwijsindex Productcodes Wmo en Jeugdwet** overzicht per gemeente van de productcodes voor de Wmo en de productcodes voor de Jeugdwet die tot 1 januari 2016 bij gemeenten in gebruik waren; de module is omgezet naar Excel-bestanden en per 1 januari 2016 is de standaardproductcodelijst  beschikbaar. Deze heten Productcodelijst JW en voor de Productcodelijst WMO.
 
-**Verzoek om toewijzing Jeugdhulp** dit is een bericht voor het aanvragen van een toewijzing voor Jeugdhulp. Dit bericht wordt ook wel VOT genoemd. Het bericht dat hiervoor wordt gebruikt is JW315. Dit bericht wordt gebruikt indien een client zich meldt bij een aanbieder met een wettelijke verwijzing voor een zorgvraag.
+**Verzoek om toewijzing Jeugdhulp** dit is een bericht voor het aanvragen van een toewijzing voor Jeugdhulp. Dit bericht wordt ook wel VOT of Verzoek om toewijzing genoemd. Het bericht dat hiervoor wordt gebruikt is JW315. Dit bericht wordt gebruikt indien een client zich meldt bij een aanbieder met een wettelijke verwijzing voor een zorgvraag.
 
 **Verzoek om wijziging Jeugdhulp** dit is een bericht voor Verzoek om wijziging Jeugdhulp. Dit bericht wordt ook wel VOW of wijzigingsbericht genoemd. Een aanbieder stuurt dit bericht naar een gemeente om een wijziging in de toekomstige zorgvraag van een client door te geven. Het bericht dat hiervoor wordt gebruikt is JW317. Een gemeente keurt dit bericht af met een JW319 antwoordbericht of neemt het verzoek in onderzoek door een JW319 antwoordbericht te sturen of keurt het verzoek in zijn geheel goed door een gewijzigd toewijzingsbericht te sturen.
+
+**VOT** zie Verzoek om toewijzing Jeugdhulp".
 
 **VNG** Vereniging van Nederlandse Gemeenten; vereniging waar alle gemeenten vrijwillig lid van zijn en die als doel belangenbehartiging, dienstverlening en platformfunctie voor alle gemeenten heeft en opdrachtgever is voor de ontwikkeling van iWmo en iJw en die gemeenten ondersteunt bij de implementatie ervan.
 
