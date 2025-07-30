@@ -298,9 +298,14 @@ Een Stopzorg kan verwijderd worden middels de status aanlevering. Zie hiervoor o
 
 # Vragen over reactietijden
 
-|Berichttype|Berichtnaam|Maximale reactietermijn|
+|Berichttype|Berichtnaam|Maximale termijn /voorwaarden waarbinnen het bericht moet worden verstuurd|
 |:--------|:--------|:----------|
-|301|Toewijzingsbericht |Vanuit de context van een Verzoek om Toewijzing: De gemeente kan per aangevraagd product besluiten een Toewijzingsbericht te sturen of een Antwoordbericht. Reactietermijn 5 werkdagen. Vanuit de context van een Verzoek om Wijziging: De gemeente kan alleen voor het hele verzoek een Toewijzingsbericht sturen of een Antwoordbericht. Reactietermijn 5 werkdagen. Bij antwoord: aanvraag in onderzoek: Als een Antwoordbericht in het veld VerzoekAntwoord de waarde 2 (Aanvraag in onderzoek) bevat, dan wordt binnen 8 weken na dagtekening van het verzoek ofwel een Toewijzingbericht ofwel een Antwoordbericht met in VerzoekAntwoord de waarde 1 (Verzoek afgewezen) gestuurd.|
+"|301|Toewijzingsbericht |Vanuit de context van een Verzoek om Toewijzing: De gemeente kan per aangevraagd product besluiten een Toewijzingsbericht te sturen of een Antwoordbericht. Reactietermijn 5 werkdagen. 
+
+Vanuit de context van een Verzoek om Wijziging: De gemeente kan alleen voor het hele verzoek een Toewijzingsbericht sturen of een Antwoordbericht. Reactietermijn 5 werkdagen. 
+
+Vanuit de context ""aanvraag in onderzoek"": 
+Als een Antwoordbericht in het veld VerzoekAntwoord de waarde 2 (Aanvraag in onderzoek) bevat, dan wordt binnen 8 weken na dagtekening van het verzoek ofwel een Toewijzingbericht ofwel een Antwoordbericht met in VerzoekAntwoord de waarde 1 (Verzoek afgewezen) gestuurd.|"
 |302|Toewijzingsbericht retour|3 werkdagen na ontvangst van het 301-bericht|
 |305|Startzorgbericht|De aanbieder verzendt een Startzorgbericht binnen 5 werkdagen na de daadwerkelijke datum waarop de ondersteuning gestart is of, indien de ondersteuning met terugwerkende kracht is toegewezen, binnen 5 werkdagen na ontvangst van het Toewijzingsbericht (301 bericht).|
 |306|Startzorgbericht retour|3 werkdagen na ontvangt van het 305-bericht|
@@ -310,11 +315,10 @@ Een Stopzorg kan verwijderd worden middels de status aanlevering. Zie hiervoor o
 |316|Verzoek om toewijzing retour|3 werkdagen na ontvangst van het 315-bericht|
 |317|Verzoek om Wijziging|De aanbieder kan het verzoek opstellen en insturen zodra de wens en gewenste ingangsdatum bekend zijn.|
 |318|Verzoek om wijziging retour|3 werkdagen na ontvangst van het 317-bericht|
-|319|Antwoordbericht |De gemeente verzendt een antwoordbericht binnen 5 werkdagen na ontvangst van het 317-bericht als het verzoek wordt afgewezen of in onderzoek wordt genomen. Het antwoordbericht wordt gebruikt om de aanbieder te informeren dat de aanvraag (VOT- of VOW-bericht) is afgewezen of dat de gemeente de aanvraag in onderzoek heeft genomen. Als in het Antwoordbericht VerzoekAntwoord de waarde 2 (Aanvraag in onderzoek) bevat dan wordt bij afwijzing uiterlijk binnen 8 weken na dagtekening van het verzoek een Antwoordbericht met in het veld VerzoekAntwoord de waarde 1 (Verzoek afgewezen) gestuurd.|
+|319|Antwoordbericht |De gemeente verzendt een antwoordbericht binnen 5 werkdagen na ontvangst van een 315- of 317-bericht als het verzoek wordt afgewezen of in onderzoek wordt genomen. Het antwoordbericht wordt gebruikt om de aanbieder te informeren dat de aanvraag (VOT- of VOW-bericht) is afgewezen of dat de gemeente de aanvraag in onderzoek heeft genomen. Als in het Antwoordbericht VerzoekAntwoord de waarde 2 (Aanvraag in onderzoek) bevat dan wordt bij afwijzing uiterlijk binnen 8 weken na dagtekening van het verzoek een Antwoordbericht met in het veld VerzoekAntwoord de waarde 1 (Verzoek afgewezen) gestuurd.|
 |320|Antwoordbericht retour|3 werkdagen|
 |323|Declaratiebericht|Volgens afspraak tussen gemeente en aanbieder voor geleverde zorg |
 |325|Declaratie-antwoord bericht|10 werkdagen na ontvangst van het 325-bericht|
-
 
 # Vragen over Modules
 
