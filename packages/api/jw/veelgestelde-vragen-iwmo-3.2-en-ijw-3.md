@@ -26,9 +26,13 @@ Omdat de start- en stopberichten ook voor de taakgerichte variant gebruikt kunne
 
 Doordat niveau van de beschikking uit de toewijzing is verwijderd per 1-1-2021, moeten in het toewijzingsbericht voor één cliënt altijd alle toewijzingen worden opgenomen voor één aanbieder die op of na de aanmaakdatum van het bericht geldig zijn, plus alle toewijzingen die gewijzigd zijn ten opzichte van het voorgaande toewijzingsbericht.
 
-## Hoe kan ik een toewijzing corrigeren?
+## Hoe kan ik een toewijzing corrigeren of wijzigen?
 
 Wat in een toewijzing gewijzigd mag/kan worden zonder een nieuwe toewijzing aan te maken is nader uitgewerkt in bedrijfsregel OP033x1. Onder het corrigeren van toewijzingen wordt verstaan, het inkorten, het oprekken van de einddatum van de en het verwijderen van een toewijzing. Ook kunnen omvang (volume, eenheid, frequentie) en budget worden gewijzigd.
+
+## Hoe kan ik een toewijzing verwijderen?
+
+Door de einddatum van de toewijzing te wijzigen zodat deze gelijk is aan de ingangsdatum van de toewijzing. Daarbij wordt RedenWijziging gevuld met 13 (Verwijderd). De gewijzigde toewijzing wordt verstuurd naar de aanbieder. Een verwijdering betekent dat de toewijzing als niet verzonden beschouwd moet worden.
 
 ## Welke toewijzingen moeten in een toewijzingsbericht opgenomen worden, indien er maar één toewijzing wordt gewijzigd?
 
