@@ -1,9 +1,9 @@
-|Lijstnaam|lijstnr|Code|Waarde|
-|:--------|:------|:--:|:-----|
-|Aanduiding woonadres|NUM061|AB|Aan boord|
-|Aanduiding woonadres|NUM061|BY|Bij|
-|Aanduiding woonadres|NUM061|TO|Tegenover|
-|Aanduiding woonadres|NUM061|WW|Woonwagen|
+|Lijstnaam  |lijstnr  |Code  |Waarde|
+|:----------|:--------|------|:-----|
+|Aanduiding woonadres  |NUM061  |AB  |Aan boord|
+|Aanduiding woonadres  |NUM061  |BY  |Bij|
+|Aanduiding woonadres  |NUM061  |TO  |Tegenover|
+|Aanduiding woonadres  |NUM061  |WW  |Woonwagen|
 |Berichtcode|COD002-VEKT|436|JW301|
 |Berichtcode|COD002-VEKT|437|JW302|
 |Berichtcode|COD002-VEKT|438|JW305|
