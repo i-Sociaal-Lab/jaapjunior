@@ -1,4 +1,4 @@
-# Uitvoeringsvariant Inspanningsgericht
+# Toewijzingsvarianten Inspanningsgericht / Outputgericht
 
 ## Inspanningsgericht
 
