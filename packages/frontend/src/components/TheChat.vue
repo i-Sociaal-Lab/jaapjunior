@@ -237,41 +237,54 @@ async function pickMessage(message: ChatMessage, messagePair: ChatMessage[]) {
 				{{ error }}
 			</div>
 
-			<div v-if="messages.length === 0" class="empty-state">
+			<div
+				v-if="messages.length === 0"
+				class="empty-state flex flex-col items-center justify-center gap-4"
+			>
+				<img
+					src="/ketenbureau.png"
+					alt="Ketenbureau"
+					class="logo ketenbureau-logo w-48"
+				/>
+
 				{{ config.emptyState }}
 			</div>
 
-			<template
-				v-for="(messageOrMessagePair, index) in messages"
-				:key="index"
-			>
-                <template v-if="Array.isArray(messageOrMessagePair)">
-                    <span class="text-center">Welk bericht heeft je voorkeur?</span>
-                    <div class="flex gap-2">
-                    <div class="border rounded p-4 flex-1 self-start hover:bg-muted cursor-pointer"
-                            v-for="message in messageOrMessagePair"
-                            :key="message.content as string"
-                            @click="pickMessage(message, messageOrMessagePair)"
-                    >
-                        <MessageContent
-                            :message="message"
-                        />
-                    </div>
-                    </div>
-                </template>
-                <template v-else>
-                    <div
-                        :class="['message', messageOrMessagePair.role === 'user' ? 'user-message' : 'response-message']"
-                    >
-                        <template v-if="messageOrMessagePair.role === 'user'">
-                            {{ messageOrMessagePair.content }}
-                        </template>
-                        <MessageContent v-else :message="messageOrMessagePair" />
-                    </div>
-                </template>
+			<template v-for="(messageOrMessagePair, index) in messages" :key="index">
+				<template v-if="Array.isArray(messageOrMessagePair)">
+					<span class="text-center">Welk bericht heeft je voorkeur?</span>
+					<div class="flex gap-2">
+						<div
+							class="border rounded p-4 flex-1 self-start hover:bg-muted cursor-pointer"
+							v-for="message in messageOrMessagePair"
+							:key="message.content as string"
+							@click="pickMessage(message, messageOrMessagePair)"
+						>
+							<MessageContent :message="message" />
+						</div>
+					</div>
+				</template>
+				<template v-else>
+					<div
+						:class="[
+							'message',
+							messageOrMessagePair.role === 'user'
+								? 'user-message'
+								: 'response-message',
+						]"
+					>
+						<template v-if="messageOrMessagePair.role === 'user'">
+							{{ messageOrMessagePair.content }}
+						</template>
+						<MessageContent v-else :message="messageOrMessagePair" />
+					</div>
+				</template>
 			</template>
 
-			<div v-if="isReceivingMessage" class="message response-message loading-message">
+			<div
+				v-if="isReceivingMessage"
+				class="message response-message loading-message"
+			>
 				{{ config.loading }}<span>{{ dots }}</span>
 			</div>
 		</div>
@@ -281,11 +294,13 @@ async function pickMessage(message: ChatMessage, messagePair: ChatMessage[]) {
 			v-model:mode="selectedMode"
 			v-model:selected-model="selectedModel"
 			@submit="sendMessage"
-            autofocus
+			autofocus
 			:disabled="isSendDisabled"
 			:loading="isReceivingMessage"
 			:placeholder="config.inputPlaceholder"
-			:sendButton="hasToPickMessage ? config.sendButtonHasToPick : config.sendButton "
+			:sendButton="
+				hasToPickMessage ? config.sendButtonHasToPick : config.sendButton
+			"
 			class="bottom-0 fixed self-center"
 		/>
 	</div>
@@ -369,7 +384,7 @@ async function pickMessage(message: ChatMessage, messagePair: ChatMessage[]) {
 }
 
 .error-message {
-    background-color: var(--destructive);
+	background-color: var(--destructive);
 	color: var(--destructive-foreground);
 	padding: 10px;
 	border-radius: 8px;

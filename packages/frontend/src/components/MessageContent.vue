@@ -26,6 +26,8 @@ function renderMarkdown(text: string): string {
 </script>
 
 <template>
-    <div v-html="renderMarkdown(message.content as string)" class="markdown-content"></div>
+	<div
+		v-html="renderMarkdown(message.content as string)"
+		class="markdown-content"
+	></div>
 </template>
-

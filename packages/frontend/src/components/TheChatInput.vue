@@ -58,6 +58,16 @@ watch(
 	},
 	{ immediate: true },
 );
+
+const resetItems = ref([
+	{
+		label: "Nieuw gesprek",
+		icon: "i-lucide-rotate-ccw",
+		color: "neutral",
+		variant: "outline",
+		to: "/",
+	},
+]);
 </script>
 
 <template>
@@ -67,31 +77,53 @@ watch(
 			ref="input-el"
 			class="message-input"
 			@keyup.enter="$emit('submit')"
-            :autofocus
+			:autofocus
 			:placeholder
 			:disabled="loading"
 		/>
 		<div class="flex gap-2 justify-between">
-            <URadioGroup v-if="canUseSelector" v-model="mode" orientation="horizontal"  indicator="hidden" variant="table" :items="modes"
-                :ui="{ item: 'p-2 first-of-type:rounded-l-md last-of-type:rounded-r-md' }"
-            />
+			<div>
+				<URadioGroup
+					v-if="canUseSelector"
+					v-model="mode"
+					orientation="horizontal"
+					indicator="hidden"
+					variant="table"
+					:items="modes"
+					:ui="{
+						item: 'p-2 first-of-type:rounded-l-md last-of-type:rounded-r-md',
+					}"
+				/>
+				<UDropdownMenu
+					:items="resetItems"
+					:ui="{
+						content: 'w-48',
+					}"
+				>
+					<UButton
+						icon="i-lucide-rotate-ccw"
+						color="neutral"
+						variant="outline"
+					/>
+				</UDropdownMenu>
+			</div>
 
-            <div class="flex gap-2 ml-auto">
-                <USelectMenu
-                    v-if="canUseSelector && mode === 'pick'"
-                    v-model="selectedModel"
-                    value-key="id"
-                    :items="models"
-                    class="text-end hover:ring hover:ring-default hover:brightness-85 transition-all duration-150"
-                    :search-input="false"
-                    variant="none"
-                    :ui="{ content: 'w-48' }"
-                    :content="{ align: 'end' }"
-                />
-                <UButton @click="$emit('submit')" class="rounded-full" :disabled>
-                    {{ sendButton }}
-                </UButton>
-            </div>
+			<div class="flex gap-2 ml-auto">
+				<USelectMenu
+					v-if="canUseSelector && mode === 'pick'"
+					v-model="selectedModel"
+					value-key="id"
+					:items="models"
+					class="text-end hover:ring hover:ring-default hover:brightness-85 transition-all duration-150"
+					:search-input="false"
+					variant="none"
+					:ui="{ content: 'w-48' }"
+					:content="{ align: 'end' }"
+				/>
+				<UButton @click="$emit('submit')" class="rounded-full" :disabled>
+					{{ sendButton }}
+				</UButton>
+			</div>
 		</div>
 	</div>
 </template>

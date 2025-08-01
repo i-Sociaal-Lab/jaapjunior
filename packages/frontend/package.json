@@ -10,7 +10,6 @@
 		"preview": "vite preview",
 		"test:unit": "vitest",
 		"typecheck": "vue-tsc --noEmit -p tsconfig.app.json",
-
 		"fix": "bun run format & bun run lint",
 		"format": "prettier . --write --log-level warn",
 		"lint:oxlint": "oxlint . --fix -D correctness --ignore-path .gitignore",
