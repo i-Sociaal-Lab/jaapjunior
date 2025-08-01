@@ -38,10 +38,10 @@
 |Eenheid|WJ756|82|Stuks (output)|
 |Eenheid|WJ756|83|Euro's|
 |Eenheid|WJ756|84|Stuks (inspanning)|
-|Frequentie|WMO757|1|Per dag|
-|Frequentie|WMO757|2|Per week|
-|Frequentie|WMO757|4|Per maand|
-|Frequentie|WMO757|6|Totaal binnen geldigheidsduur toewijzing|
+|Frequentie|WJ757|1|Per dag|
+|Frequentie|WJ757|2|Per week|
+|Frequentie|WJ757|4|Per maand|
+|Frequentie|WJ757|6|Totaal binnen geldigheidsduur toewijzing|
 |Geslacht|COD046|0|Onbekend|
 |Geslacht|COD046|1|Mannelijk|
 |Geslacht|COD046|2|Vrouwelijk|
