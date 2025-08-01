@@ -1,9 +1,9 @@
 |Lijstnaam  |lijstnr  |Code  |Waarde|
 |:----------|:--------|------|:-----|
-|Aanduiding woonadres  |NUM061  |AB  |Aan boord|
-|Aanduiding woonadres  |NUM061  |BY  |Bij|
-|Aanduiding woonadres  |NUM061  |TO  |Tegenover|
-|Aanduiding woonadres  |NUM061  |WW  |Woonwagen|
+|Aanduiding woonadres  |  NUM061  |  AB  |Aan boord|
+|Aanduiding woonadres  |  NUM061  |  BY  |Bij|
+|Aanduiding woonadres  |  NUM061  |  TO  |Tegenover|
+|Aanduiding woonadres  |  NUM061  |  WW  |Woonwagen|
 |Berichtcode|COD002-VEKT|436|JW301|
 |Berichtcode|COD002-VEKT|437|JW302|
 |Berichtcode|COD002-VEKT|438|JW305|
@@ -31,24 +31,24 @@
 |Datumgebruik|COD170|1|dag onbekend; alleen maand en jaar gebruiken|
 |Datumgebruik|COD170|2|dag en maand onbekend; alleen jaar gebruiken|
 |Datumgebruik|COD170|3|dag, maand en jaar onbekend; onbekende datum|
-|Eenheid  |WJ756  |01  |Minuut|
-|Eenheid  |WJ756  |04  |Uur|
-|Eenheid  |WJ756  |14  |Etmaal|
-|Eenheid  |WJ756  |16  |Dagdeel (4 uur)|
-|Eenheid  |WJ756  |82  |Stuks (output)|
-|Eenheid  |WJ756  |83  |Euro's|
-|Eenheid  |WJ756  |84  |Stuks (inspanning)|
-|Frequentie  |WJ757  |1  |Per dag|
-|Frequentie  |WJ757  |2  |Per week|
-|Frequentie  |WJ757  |4  |Per maand|
-|Frequentie  |WJ757  |6  |Totaal binnen geldigheidsduur toewijzing|
-|Geslacht  |COD046  |0  |Onbekend|
-|Geslacht  |COD046  |1  |Mannelijk|
-|Geslacht  |COD046  |2  |Vrouwelijk|
-|Indicatie debet/credit|COD043|C|Creditbedrag en aantal|
-|Indicatie debet/credit|COD043|D|Debetbedrag en aantal|
-|Ja of nee|COD260|1|Ja|
-|Ja of nee|COD260|2|Nee|
+|Eenheid  |  WJ756  |  01  |  Minuut|
+|Eenheid  |  WJ756  |  04  |  Uur|
+|Eenheid  |  WJ756  |  14  |  Etmaal|
+|Eenheid  |  WJ756  |  16  |  Dagdeel (4 uur)|
+|Eenheid  |  WJ756  |  82  |  Stuks (output)|
+|Eenheid  |  WJ756  |  83  |  Euro's|
+|Eenheid  |  WJ756  |  84  |  Stuks (inspanning)|
+|Frequentie  |  WMO757  |  1  |  Per dag|
+|Frequentie  |  WMO757  |  2  |  Per week|
+|Frequentie  |  WMO757  |  4  |  Per maand|
+|Frequentie  |  WMO757  |  6  |  Totaal binnen geldigheidsduur toewijzing|
+|Geslacht  |  COD046  |  0  |  Onbekend|
+|Geslacht  |  COD046  |  1  |  Mannelijk|
+|Geslacht  |  COD046  |  2  |  Vrouwelijk|
+|Indicatie debet/credit  |  COD043  |  C  |  Creditbedrag en aantal|
+|Indicatie debet/credit  |  COD043  |  D  |  Debetbedrag en aantal|
+|Ja of nee  |  COD260  |  1  |  Ja|
+|Ja of nee  |  COD260  |  2  |  Nee|
 |Juridische status|WJ232|01|Rechterlijke machtiging (rm) voorlopig / voortgezette machtiging|
 |Juridische status|WJ232|02|RM op eigen verzoek|
 |Juridische status|WJ232|03|RM met voorwaardelijk ontslag|
@@ -149,10 +149,10 @@
 |Soort relatie|COD472|23|Erven van|
 |Soort relatie|COD472|24|Werkgever|
 |Soort relatie|COD472|25|Wijkcoach|
-|Status aanlevering|COD467|1|Eerste aanlevering|
-|Status aanlevering|COD467|2|Gewijzigde aanlevering|
-|Status aanlevering|COD467|3|Verwijderen aanlevering|
-|Status aanlevering|COD467|9|Niet van toepassing (ongewijzigd)|
+|Status aanlevering  |  COD467  |  1  |  Eerste aanlevering|
+|Status aanlevering  |  COD467  |  2  |  Gewijzigde aanlevering|
+|Status aanlevering  |  COD467  |  3  |  Verwijderen aanlevering|
+|Status aanlevering  |  COD467  |  9  |  Niet van toepassing (ongewijzigd)|
 |Verzoek antwoord|WJ760|1|Verzoek afgewezen|
 |Verzoek antwoord|WJ760|2|Aanvraag in onderzoek|
 |Wettelijke vertegenwoordiging|WJ003|06|Voogdij|
