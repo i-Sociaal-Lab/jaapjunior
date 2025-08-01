@@ -1,3 +1,9 @@
+-lijstnr beginnend met NUM worden in zowel Wmo als Jeugdwet gebruikt.
+-lijstnr beginnend met COD worden in zowel Wmo als Jeugdwet gebruikt.
+-lijstnr beginnend met WJ worden in zowel Wmo als Jeugdwet gebruikt.
+-lijstnr beginnend met JZ worden alleen in de Jeugdwet gebruikt.
+-lijstnr WMO757 wordt in zowel Wmo als Jeugdwet gebruikt.
+
 |Lijstnaam  |lijstnr  |Code  |Waarde|
 |:----------|:--------|------|:-----|
 |Aanduiding woonadres  |  NUM061  |  AB  |Aan boord|
