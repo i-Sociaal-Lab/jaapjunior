@@ -345,6 +345,8 @@ aangeboden kunnen worden; (binnen de iStandaarden) softwarepakketten die hulp bi
 
 **NZa** Nederlandse Zorgautoriteit; toezichthouder voor de zorg; stelt de tarieven en budgetten vast voor instellingen en beroepsbeoefenaren in de gezondheidszorg, volgt en stimuleert de marktontwikkeling in de gezondheidszorg en ziet toe op de uitvoering van de Zorgverzekeringswet (Zvw), de Wet langdurige zorg (Wlz) en op de naleving van de Wet marktordening gezondheidszorg (Wmg), en gaat fraude en fouten in de zorg tegen.
 
+**Open beschikking"**  beschikking met vrije aanbiederkeuze, afgegeven door gemeente aan client.  Client kan zich  direct melden bij de aanbieder. Het recht op zorg of ondersteuning is dan al vastgesteld door de gemeente. De aanbieder dient een Verzoek om Toewijzing in bij de gemeente, met vermelding van het beschikkingsnummer.
+
 **operationele bedrijfsregels** zie: bedrijfsregels.
 
 **Opplussen** is het sturen van een aanvullende declaratieregel omdat het volume van de vorige declaratieregel te laag was. Bv. eerst is in een periode10 uur gedeclareerd terwijl dit 12 uur had moeten zijn. Opplussen is sinds release 3.1 niet meer toegestaan.
