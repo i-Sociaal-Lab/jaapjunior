@@ -307,9 +307,9 @@ Een Stopzorg kan verwijderd worden middels de status aanlevering. Zie hiervoor o
 | 301 | Toewijzingsbericht | Vanuit Verzoek om Toewijzing: De gemeente kan per aangevraagd \nproduct een 301 of een 319 sturen. Reactietermijn 5 werkdagen. \n\nVanuit Verzoek om Wijziging: De gemeente kan alleen voor het hele \nVOW een 301 of een 319 sturen. Reactietermijn 5 werkdagen. \n\n"aanvraag in onderzoek": \nAls een VOT of VOW in onderzoek wordt genomen, dan wordt \nbinnen 8 weken na dagtekening van het verzoek ofwel een \n301 ofwel een 319 met Verzoek afgewezen gestuurd.\n\nWoonplaastbeginsel:\nIndien een gemeente onderzoek moet doen naar het wooplaatsbeginsel\nHeeft de gemeente een reactietermijn van 10 dagen voor een 319 (afkeur)\nof een 301. |
 | 302 | Toewijzingsbericht retour | 3 werkdagen na ontvangst van het 301-bericht |
 | 305 | Startzorgbericht | De aanbieder verzendt een Startzorgbericht binnen \n5 werkdagen na de daadwerkelijke datum waarop de \nondersteuning gestart is of, indien de ondersteuning \nmet terugwerkende kracht is toegewezen, \nbinnen 5 werkdagen na ontvangst van het \nToewijzingsbericht (301 bericht). |
-| 306 | Startzorgbericht retour | 3 werkdagen na ontvangt van het 305-bericht |
+| 306 | Startzorgbericht retour | 3 werkdagen na ontvangst van het 305-bericht |
 | 307 | Stopzorgbericht | De aanbieder verzendt een Stopzorgbericht binnen 5 werkdagen \nna de daadwerkelijke datum waarop de ondersteuning beëindigd is. |
-| 308 | Stopzorgbericht retour | 3 werkdagen na ontvangt van het 307-bericht |
+| 308 | Stopzorgbericht retour | 3 werkdagen na ontvangst van het 307-bericht |
 | 315 | Verzoek om toewijzing | 5 werkdagen na de beoordeling/intake |
 | 316 | Verzoek om toewijzing retour | 3 werkdagen na ontvangst van het 315-bericht |
 | 317 | Verzoek om Wijziging | De aanbieder kan het verzoek opstellen en insturen zodra \nde wens en gewenste ingangsdatum bekend zijn. |
