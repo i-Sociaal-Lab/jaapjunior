@@ -101,7 +101,7 @@ const resetItems = ref([
 					}"
 				>
 					<UButton
-						icon="i-lucide-rotate-ccw"
+						icon="i-lucide-menu"
 						color="neutral"
 						variant="outline"
 					/>
