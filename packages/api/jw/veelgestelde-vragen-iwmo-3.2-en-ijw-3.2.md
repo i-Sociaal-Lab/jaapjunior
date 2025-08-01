@@ -2,7 +2,7 @@
 
 ## Kunnen er bijlagen zoals zorgplannen meegestuurd worden met de berichten?
 
-Het is niet mogelijk om via het berichtenverkeer van iWmo bijlagen mee te sturen.
+Het is niet mogelijk om via het berichtenverkeer van iJW/iWmo bijlagen mee te sturen.
 
 ## Kan ik nieuwe wensen indienen ten aanzien van iWmo 3.2 en iJw 3.2?
 
