@@ -5,9 +5,6 @@
 	"workspaces": [
 		"packages/*"
 	],
-	"engines": {
-		"node": "22"
-	},
 	"scripts": {
 		"check": "biome check .",
 		"fix": "biome check --write .",

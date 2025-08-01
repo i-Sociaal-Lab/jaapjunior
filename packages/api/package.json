@@ -6,9 +6,6 @@
 	"exports": {
 		".": "./dist/index.js"
 	},
-	"engines": {
-		"node": "22"
-	},
 	"scripts": {
 		"dev": "bun --watch src/index.ts",
 		"build": "tsc && bun build --compile --minify --sourcemap ./src/index.ts --outfile dist/api",
