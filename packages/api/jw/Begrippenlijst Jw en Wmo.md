@@ -345,7 +345,7 @@ aangeboden kunnen worden; (binnen de iStandaarden) softwarepakketten die hulp bi
 
 **NZa** Nederlandse Zorgautoriteit; toezichthouder voor de zorg; stelt de tarieven en budgetten vast voor instellingen en beroepsbeoefenaren in de gezondheidszorg, volgt en stimuleert de marktontwikkeling in de gezondheidszorg en ziet toe op de uitvoering van de Zorgverzekeringswet (Zvw), de Wet langdurige zorg (Wlz) en op de naleving van de Wet marktordening gezondheidszorg (Wmg), en gaat fraude en fouten in de zorg tegen.
 
-**Open beschikking"**  Een WMO-beschikking met vrije aanbiederkeuze, afgegeven door gemeente aan client.  Client kan zich  direct melden bij de aanbieder. Het recht op zorg of ondersteuning is dan al vastgesteld door de gemeente. De aanbieder dient een Verzoek om Toewijzing in bij de gemeente, met vermelding van het beschikkingsnummer.
+**Open beschikking"**  Een WMO-beschikking met vrije aanbiederkeuze, afgegeven door gemeente aan client.  Client kan zich  direct melden bij de aanbieder. Het recht op zorg of ondersteuning is dan al vastgesteld door de gemeente. De aanbieder dient een Verzoek om Toewijzing (WMO315) in bij de gemeente, met vermelding van het beschikkingsnummer. In de jeugdzorg ken men dit proces niet.
 
 **operationele bedrijfsregels** zie: bedrijfsregels.
 
