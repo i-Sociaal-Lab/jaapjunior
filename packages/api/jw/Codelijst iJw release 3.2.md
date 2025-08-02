@@ -161,9 +161,10 @@
 |Status aanlevering  |  COD467  |  9  |  Niet van toepassing (ongewijzigd)|
 |Verzoek antwoord|WJ760|1|Verzoek afgewezen|
 |Verzoek antwoord|WJ760|2|Aanvraag in onderzoek|
-|Wettelijke vertegenwoordiging|WJ003|06|Voogdij|
-|Wettelijke vertegenwoordiging|WJ003|07|Bewindvoering|
-|Wettelijke vertegenwoordiging|WJ003|08|Mentorschap|
-|Wettelijke vertegenwoordiging|WJ003|09|Onder curatele stelling|
-|Wettelijke vertegenwoordiging|WJ003|10|Zaakwaarneming|
+|WJ003: Wettelijke vertegenwoordiging|WJ003|06|Voogdij|
+|WJ003: Wettelijke vertegenwoordiging|WJ003|07|Bewindvoering|
+|WJ003: Wettelijke vertegenwoordiging|WJ003|08|Mentorschap|
+|WJ003: Wettelijke vertegenwoordiging|WJ003|09|Onder curatele stelling|
+|WJ003: Wettelijke vertegenwoordiging|WJ003|10|Zaakwaarneming|
+
 
