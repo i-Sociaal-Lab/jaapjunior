@@ -4,12 +4,12 @@
 -lijstnr beginnend met JZ worden alleen in de Jeugdwet gebruikt.
 -lijstnr WMO757 wordt in zowel Wmo als Jeugdwet gebruikt.
 
-|Lijstnaam  |lijstnr  |Code  |Waarde|
+|zoeknaam|Lijstnaam  |lijstnr  |Code  |Waarde|
 |:----------|:--------|------|:-----|
-|Aanduiding woonadres  |  NUM061  |  AB  |Aan boord|
-|Aanduiding woonadres  |  NUM061  |  BY  |Bij|
-|Aanduiding woonadres  |  NUM061  |  TO  |Tegenover|
-|Aanduiding woonadres  |  NUM061  |  WW  |Woonwagen|
+||Aanduiding woonadres  |  NUM061  |  AB  |Aan boord|
+||Aanduiding woonadres  |  NUM061  |  BY  |Bij|
+||Aanduiding woonadres  |  NUM061  |  TO  |Tegenover|
+||Aanduiding woonadres  |  NUM061  |  WW  |Woonwagen|
 |Berichtcode|COD002-VEKT|436|JW301|
 |Berichtcode|COD002-VEKT|437|JW302|
 |Berichtcode|COD002-VEKT|438|JW305|
@@ -155,16 +155,17 @@
 |Soort relatie|COD472|23|Erven van|
 |Soort relatie|COD472|24|Werkgever|
 |Soort relatie|COD472|25|Wijkcoach|
-|Status aanlevering  |  COD467  |  1  |  Eerste aanlevering|
-|Status aanlevering  |  COD467  |  2  |  Gewijzigde aanlevering|
-|Status aanlevering  |  COD467  |  3  |  Verwijderen aanlevering|
-|Status aanlevering  |  COD467  |  9  |  Niet van toepassing (ongewijzigd)|
-|Verzoek antwoord|WJ760|1|Verzoek afgewezen|
-|Verzoek antwoord|WJ760|2|Aanvraag in onderzoek|
+|statusaanlevering|Status aanlevering|COD467|  1  |  Eerste aanlevering|
+|statusaanlevering|Status aanlevering|COD467|  2  |  Gewijzigde aanlevering|
+|statusaanlevering|Status aanlevering|COD467|  3  |  Verwijderen aanlevering|
+|statusaanlevering|Status aanlevering|COD467|  9  |  Niet van toepassing (ongewijzigd)|
+|verzoekantwoord|Verzoek antwoord|WJ760|1|Verzoek afgewezen|
+|verzoekantwoord|Verzoek antwoord|WJ760|2|Aanvraag in onderzoek|
 |WJ003: Wettelijke vertegenwoordiging|WJ003|06|Voogdij|
 |WJ003: Wettelijke vertegenwoordiging|WJ003|07|Bewindvoering|
 |WJ003: Wettelijke vertegenwoordiging|WJ003|08|Mentorschap|
 |WJ003: Wettelijke vertegenwoordiging|WJ003|09|Onder curatele stelling|
 |WJ003: Wettelijke vertegenwoordiging|WJ003|10|Zaakwaarneming|
+
 
 
