@@ -21,7 +21,6 @@
 - [Communicatievorm] (#communicatievorm)
 - [Datumgebruik] (#datumgebruik)
 - [Eenheid] (#eenheid)
-- [Eenheid] (#ldt_eenheid)
 - [Frequentie] (#frequentie)
 - [Geslacht] (#geslacht)
 - [Indicatie debet/credit] (#indicatie-debet/credit)
@@ -97,8 +96,8 @@
 
 ## Eenheid
 
-|Lijstnaam|Element|lijstnr|Code|Waarde|
-|:--------|-------|-------|----|------|
+|Lijstnaam|veld   |lijstcode|Code|Waarde|
+|:--------|-------|---------|----|------|
 |Eenheid|LDT_Eenheid|WJ756|01|Minuut|
 |Eenheid|LDT_Eenheid|WJ756|04|Uur|
 |Eenheid|LDT_Eenheid|WJ756|14|Etmaal|
@@ -308,5 +307,6 @@
 |Wettelijke vertegenwoordiging|WJ003|08|Mentorschap|
 |Wettelijke vertegenwoordiging|WJ003|09|Onder curatele stelling|
 |Wettelijke vertegenwoordiging|WJ003|10|Zaakwaarneming|
+
 
 
