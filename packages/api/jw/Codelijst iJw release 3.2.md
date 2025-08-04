@@ -6,8 +6,7 @@
 - Lijstcode beginnend met JZ worden alleen in de Jeugdwet gebruikt.
 - Lijstcode WMO757 wordt in zowel Wmo als Jeugdwet gebruikt.
 - geef alleen codes die in deze lijstnamen voorkomen, gebruik geen andere documenten om codes te bedenken.
-- als je zoekt naar de waarden van een veld, gebruik de codelijst met dezelfde lijstnaam als het veld.
-
+- veld is lijstnaam
 
 ##Inhoudsopgave
 - [Aanduiding woonadres] (#aanduiding-woonadres)
@@ -302,6 +301,7 @@
 |Wettelijke vertegenwoordiging|WJ003|08|Mentorschap|
 |Wettelijke vertegenwoordiging|WJ003|09|Onder curatele stelling|
 |Wettelijke vertegenwoordiging|WJ003|10|Zaakwaarneming|
+
 
 
 
