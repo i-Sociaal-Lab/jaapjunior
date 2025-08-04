@@ -1,5 +1,5 @@
-|:Jeugdzorgregio|:Gemeenten|
-|:----|:----|
+|Jeugdzorgregio|Gemeenten|
+|--------------|---------|
 |Achterhoek|Aalten|
 |Achterhoek|Berkelland|
 |Achterhoek|Bronckhorst|
@@ -395,4 +395,5 @@
 |Zuid-Oost Utrecht|Utrechtse Heuvelrug|
 |Zuid-Oost Utrecht|Wijk bij Duurstede|
 |Zuid-Oost Utrecht|Zeist|
+
 
