@@ -21,7 +21,7 @@ Het document dient als **naslagwerk en validatiebron** voor AI-agenten die vrage
 
 **Gebruik voor AI-agenten**
 
-- Iedere regel is voorzien van een unieke code (zoals UP001, OP001, IV002), een titel en een toelichting.
+- Iedere regel is voorzien van een unieke code (zoals UP001, OP001, IV002), een omschrijving en een toelichting.
 - De regels vormen de basis voor correcte administratieve verwerking, gegevensuitwisseling en procesondersteuning binnen iJw.
 - Verwijs bij vragen altijd naar de relevante regelcode voor onderbouwing.
 - Geef altijd de exacte definitie van een regel zoals deze in dit document staat. Geef nooit een interpretatie van een regel.
@@ -38,7 +38,7 @@ Het document dient als **naslagwerk en validatiebron** voor AI-agenten die vrage
 
 ## Uitgangspunt
 
-|Type|Prioriteit|Regelcode|Titel|Documentatie|XSD restrictie|Retourcode|Controleniveau|Berichttypen|Uitgewerkt in regel| Uitwerking van regel|
+|Type|Prioriteit|Regelcode|Omschrijving|Toelichting|XSD restrictie|Retourcode|Controleniveau|Berichttypen|Uitgewerkt in regel| Uitwerking van regel|
 |----|----------|---------|-----|------------|--------------|----------|--------------|------------|-------------------|-------------------------|
 | Uitgangspunt | 1 | UP001 | UP001: De Jw berichtenfamilie ondersteunt het toewijzen, leveren en declareren van Jeugdhulp in het kader van de Jeugdwet die geleverd wordt als zorg in natura (ZIN). | NaN | NaN | NaN | NaN | NaN | OP086, OP295, OP296, OP297 | NaN |
 | Uitgangspunt | 1 | UP003 | UP003: De privacy van de client is in de iJw geborgd doordat aangesloten ketenpartijen zich conformeren aan de Algemene Verordening Gegevensbescherming (AVG). | NaN | NaN | NaN | NaN | NaN | OP003, OP087, OP191 | NaN |
@@ -60,7 +60,7 @@ Het document dient als **naslagwerk en validatiebron** voor AI-agenten die vrage
 
 ## Bedrijfsregel
 
-|Type|Prioriteit|Regelcode|Titel|Documentatie|XSD restrictie|Retourcode|Controleniveau|Berichttypen|Uitgewerkt in regel| Uitwerking van regel|
+|Type|Prioriteit|Regelcode|Omschrijving|Toelichting|XSD restrictie|Retourcode|Controleniveau|Berichttypen|Uitgewerkt in regel| Uitwerking van regel|
 |----|----------|---------|-----|------------|--------------|----------|--------------|------------|-------------------|-------------------------|
 | Bedrijfsregel | 2 | OP001 | OP001: Van een client wordt vastgelegd wie de gezagsdrager is. | Indien het een client betreft die 16 jaar of ouder is kan het gezag over de jeugdige ook bij de client zelf liggen. | NaN | NaN | NaN | JW301 | n.v.t. | UP004 |
 | Bedrijfsregel | 2 | OP002 | OP002: De gemeente stuurt in de toewijzing gegevens van de gezagsdrager van de client mee. | De gezagsdrager wordt opgenomen als relatie van de client. | NaN | NaN | NaN | JW301 | OP002x1, OP002x2 | UP004 |
@@ -156,7 +156,7 @@ Het document dient als **naslagwerk en validatiebron** voor AI-agenten die vrage
 
 ## Invulinstructie
 
-|Type|Prioriteit|Regelcode|Titel|Documentatie|XSD restrictie|Retourcode|Controleniveau|Berichttypen|Uitgewerkt in regel| Uitwerking van regel|
+|Type|Prioriteit|Regelcode|Omschrijving|Toelichting|XSD restrictie|Retourcode|Controleniveau|Berichttypen|Uitgewerkt in regel| Uitwerking van regel|
 |----|----------|---------|-----|------------|--------------|----------|--------------|------------|-------------------|-------------------------|
 | Invulinstructie | 3 | IV002 | IV002: Hoe om te gaan met de adressering indien er sprake is van een organisatie? | Alleen vullen indien client en/of relatie client in instelling verblijft. | NaN | NaN | NaN | JW301 | NaN | NaN |
 | Invulinstructie | 3 | IV007 | IV007: Hoe wordt de naam van een client of relatie vastgelegd?` | Van een client of relatie worden de achternaam, voorvoegsel en voornamen en/of voorletters gescheiden vastgelegd. Voor het vastleggen van de VolledigeNaam van een client geldt het volgende format: \n\* De Geslachtsnaam wordt altijd vastgelegd. Deze bestaat uit de Naam en eventueel een Voorvoegsel; \n\* De Partnernaam kan worden vastgelegd. Ook deze bestaat uit de Naam en eventueel een Voorvoegsel; \n\* Voornamen kunnen worden vastgelegd, gescheiden door spaties; \n\* Voorletters kunnen worden vastgelegd, aaneengesloten, zonder punten of spaties; \n\* NaamGebruik geeft de gewenste aanspreekvorm aan. Hiermee wordt bij correspondentie de volgorde bepaald in het gebruik van de geslachtsnaam en de naam van de partner. Het vullen van NaamGebruik hangt dus af van hoe de client of relatie zijn/haar naam hanteert. | NaN | NaN | NaN | JW301 | NaN | NaN |
@@ -199,7 +199,7 @@ Het document dient als **naslagwerk en validatiebron** voor AI-agenten die vrage
 
 ## Technische regel
 
-|Type|Prioriteit|Regelcode|Titel|Documentatie|XSD restrictie|Retourcode|Controleniveau|Berichttypen|Uitgewerkt in regel| Uitwerking van regel|
+|Type|Prioriteit|Regelcode|Omschrijving|Toelichting|XSD restrictie|Retourcode|Controleniveau|Berichttypen|Uitgewerkt in regel| Uitwerking van regel|
 |----|----------|---------|-----|------------|--------------|----------|--------------|------------|-------------------|-------------------------|
 | Technische regel | 4 | TR002 | TR002: Geboortedatum mag niet meer dan 120 jaar voor de Dagtekening liggen, tenzij Geboortedatum onbekend is. | Geboortedatum is onbekend als DatumGebruik de waarde '3 (dag, maand en jaar onbekend; onbekende datum)' heeft en Datum de waarde '01-01-1900' heeft. | NaN | 0001 | bericht inhoud (xslt) | JW301;JW305;JW307;JW315 | NaN | NaN |
 | Technische regel | 4 | TR006 | TR006: De berichtklasse Contact moet een berichtelement Telefoon, en/of de combinatie Huis en Postcode bevatten. | \n | NaN | 0001 | bericht inhoud (xslt) | JW301 | NaN | NaN |
@@ -284,7 +284,7 @@ Het document dient als **naslagwerk en validatiebron** voor AI-agenten die vrage
 
 ## Conditie
 
-|Type|Prioriteit|Regelcode|Titel|Documentatie|XSD restrictie|Retourcode|Controleniveau|Berichttypen|Uitgewerkt in regel| Uitwerking van regel|
+|Type|Prioriteit|Regelcode|Omschrijving|Toelichting|XSD restrictie|Retourcode|Controleniveau|Berichttypen|Uitgewerkt in regel| Uitwerking van regel|
 |----|----------|---------|-----|------------|--------------|----------|--------------|------------|-------------------|-------------------------|
 | Conditie | 5 | CD005 | CD005: Als Postcode gevuld is, dan verplicht vullen, anders leeg laten. | \n | NaN | 0001 | bericht inhoud (xslt) | JW301 | NaN | NaN |
 | Conditie | 5 | CD007 | CD007: Als Communicatie / Vorm de waarde 1 (tolk taal) heeft, dan verplicht vullen, anders leeglaten. | NaN | NaN | 0001 | bericht inhoud (xslt) | JW301 | NaN | NaN |
@@ -311,7 +311,7 @@ Het document dient als **naslagwerk en validatiebron** voor AI-agenten die vrage
 
 ## Constraint
 
-|Type|Prioriteit|Regelcode|Titel|Documentatie|XSD restrictie|Retourcode|Controleniveau|Berichttypen|Uitgewerkt in regel| Uitwerking van regel|
+|Type|Prioriteit|Regelcode|Omschrijving|Toelichting|XSD restrictie|Retourcode|Controleniveau|Berichttypen|Uitgewerkt in regel| Uitwerking van regel|
 |----|----------|---------|-----|------------|--------------|----------|--------------|------------|-------------------|-------------------------|
 | Constraint | 5 | CS002 | CS002: De waarde moet voldoen aan de 11-proef. | NaN | NaN | 0001 | bericht inhoud (xslt) | JW301;JW305;JW307;JW315;JW317;JW323;JW325 | NaN | NaN |
 | Constraint | 5 | CS003 | CS003: Indien van toepassing vullen met een waarde die groter is dan, of gelijk is aan de Begindatum (of Ingangsdatum) van de aangeduide periode. | NaN | NaN | 0001 | bericht inhoud (xslt) | JW301;JW315;JW317 | NaN | NaN |
