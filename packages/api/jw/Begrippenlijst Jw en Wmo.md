@@ -439,6 +439,8 @@ De reden beëindiging wordt vastgelegd met een standaardcode in het veld RedenEi
 
 **toeleiden** een van de vier deelprocessen uit het primair proces van de iStandaarden; Voor Wmo bestaat toeleiden uit het toewijzen of intrekken van een opdracht voor Wmo-ondersteuning aan een cliënt door de gemeente aan een aanbieder van zorg of ondersteuning; voor iJw bestaat toeleiden uit het toewijzen of intrekken van een opdracht voor jeugdhulp aan een cliënt door de gemeente aan de aanbieder van jeugdhulp.
 
+**Toewijzing** synoniem voor Toewijzing Jeugdhulp, JW301.	
+
 **treeknormen** door zorgaanbieders en zorgverzekeraars opgestelde streefnormen voor wachttijden in de in acute zorg.
 
 **uitgangspunten** vaststaande gegevens waarop de iStandaarden steunen.
