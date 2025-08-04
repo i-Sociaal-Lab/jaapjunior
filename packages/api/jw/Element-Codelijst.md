@@ -1,4 +1,4 @@
-|element|codelijst|
+|element|lijstnaam|
 |-------|---------|
 |LDT_Eenheid|Eenheid|
 |LDT_Frequentie|Frequentie|
