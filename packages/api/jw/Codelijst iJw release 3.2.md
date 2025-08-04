@@ -1,11 +1,11 @@
 #Codelijst iJw releae 3.2
 
--lijstnr beginnend met NUM worden in zowel Wmo als Jeugdwet gebruikt.
--lijstnr beginnend met COD worden in zowel Wmo als Jeugdwet gebruikt.
--lijstnr beginnend met WJ worden in zowel Wmo als Jeugdwet gebruikt.
--lijstnr beginnend met JZ worden alleen in de Jeugdwet gebruikt.
--lijstnr WMO757 wordt in zowel Wmo als Jeugdwet gebruikt.
--geef alleen codes die in deze lijstnamen voorkomen, gebruik geen andere documenten om codes te bedenken.
+- lijstnr beginnend met NUM worden in zowel Wmo als Jeugdwet gebruikt.
+- lijstnr beginnend met COD worden in zowel Wmo als Jeugdwet gebruikt.
+- lijstnr beginnend met WJ worden in zowel Wmo als Jeugdwet gebruikt.
+- lijstnr beginnend met JZ worden alleen in de Jeugdwet gebruikt.
+- lijstnr WMO757 wordt in zowel Wmo als Jeugdwet gebruikt.
+- geef alleen codes die in deze lijstnamen voorkomen, gebruik geen andere documenten om codes te bedenken.
 
 ##Inhoudsopgave
 - [Aanduiding woonadres] (#aanduiding-woonadres)
@@ -301,6 +301,7 @@
 |Wettelijke vertegenwoordiging|WJ003|08|Mentorschap|
 |Wettelijke vertegenwoordiging|WJ003|09|Onder curatele stelling|
 |Wettelijke vertegenwoordiging|WJ003|10|Zaakwaarneming|
+
 
 
 
