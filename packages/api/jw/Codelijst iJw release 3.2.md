@@ -1,17 +1,19 @@
+#Codelijst iJw releae 3.2
+
 -lijstnr beginnend met NUM worden in zowel Wmo als Jeugdwet gebruikt.
 -lijstnr beginnend met COD worden in zowel Wmo als Jeugdwet gebruikt.
 -lijstnr beginnend met WJ worden in zowel Wmo als Jeugdwet gebruikt.
 -lijstnr beginnend met JZ worden alleen in de Jeugdwet gebruikt.
 -lijstnr WMO757 wordt in zowel Wmo als Jeugdwet gebruikt.
 
-#Inhoudsopgave
+##Inhoudsopgave
 - [Aanduiding woonadres] (#aanduiding-woonadres)
 - [Berichtcode] (#berichtcode)
 - [Code verwijzer] (#code-verwijzer)
 - [Communicatievorm] (#communicatievorm)
 - [Datumgebruik] (#datumgebruik)
-- [Eenheid] (#eenheid)
-- [Frequentie] (#frequentie)
+- [Eenheid] (#eenheid,#ldt_eenheid)
+- [Frequentie] (#frequentie,#ldt_frequentie)
 - [Geslacht] (#geslacht)
 - [Indicatie debet/credit] (#indicatie-debet/credit)
 - [Ja of nee] (#ja-of-nee)
@@ -32,10 +34,10 @@
 
 |Lijstnaam|lijstnr|Code|Waarde|
 |:--------|-------|----|------|
-|Aanduiding woonadres|  NUM061|AB|Aan boord|
-|Aanduiding woonadres|  NUM061|BY|Bij|
-|Aanduiding woonadres|  NUM061|TO|Tegenover|
-|Aanduiding woonadres|  NUM061|WW|Woonwagen|
+|Aanduiding woonadres|NUM061|AB|Aan boord|
+|Aanduiding woonadres|NUM061|BY|Bij|
+|Aanduiding woonadres|NUM061|TO|Tegenover|
+|Aanduiding woonadres|NUM061|WW|Woonwagen|
 
 ## Berichtcode
 
@@ -298,4 +300,5 @@
 |Wettelijke vertegenwoordiging|WJ003|08|Mentorschap|
 |Wettelijke vertegenwoordiging|WJ003|09|Onder curatele stelling|
 |Wettelijke vertegenwoordiging|WJ003|10|Zaakwaarneming|
+
 
