@@ -240,6 +240,16 @@ Voor deze situaties is een declaratie per maand dus niet toegestaan. Zie voor de
 
 In andere gevallen is het wel mogelijk om een volume per maand toe te wijzen, dat dan ook per maand gedeclareerd wordt.
 
+## Hoe declareer ik een toewijzing met de eenheid Euro's
+
+Als Eenheid de waarde 83 (Euro’s) bevat, wordt in GeleverdVolume een bedrag gevuld in eurocent. Bijvoorbeeld 10000 is gelijk aan tienduizend eurocent oftewel 100 euro. Het tarief wordt niet gevuld, omdat er geen sprake is van een tarief.
+Als Eenheid een andere waarde dan 83 (Euro’s) bevat, wordt GeleverdVolume gevuld met een geheel getal, zonder decimalen.
+Voorbeeld:
+In een declaratie wordt aangegeven dat in de afgelopen productperiode ondersteuning is geleverd volgens het vaste, afgesproken maandbedrag van 200 euro. Dit wordt als volgt aangegeven in het declaratiebericht:
+GeleverdVolume: 20000
+Eenheid: 83 (Euro’s)
+IngediendBedrag: 20000
+
 ## Kan door de werkwijze behorend bij frequentie per week het gedeclareerde volume het maximale volume behorend bij de toewijzing overstijgen?
 
 Nee dit is niet mogelijk. De werkwijze voor het berekenen van het maximaal te declareren volume bij de frequentie per week, bestaat uit 2 delen.
@@ -329,3 +339,4 @@ Via de validatiemodule op istandaarden.nl kunt u de berichten valideren. De beri
 Via de Testvoorziening iStandaarden (TiS) van Zorginstituut Nederland kunnen softwareleveranciers hun producten testen in de rol van elke partij die deelneemt aan het iStandaarden-berichtenverkeer, en zo nodig verbeteren.
 
 Voor meer informatie of het aanvragen van een account kunt u contact opnemen met Zorginstituut Nederland (<info@istandaarden.nl>).
+
