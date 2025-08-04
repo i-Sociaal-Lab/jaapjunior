@@ -5,6 +5,7 @@
 -lijstnr beginnend met WJ worden in zowel Wmo als Jeugdwet gebruikt.
 -lijstnr beginnend met JZ worden alleen in de Jeugdwet gebruikt.
 -lijstnr WMO757 wordt in zowel Wmo als Jeugdwet gebruikt.
+-geef alleen codes die in deze lijstnamen voorkomen, gebruik geen andere documenten om codes te bedenken.
 
 ##Inhoudsopgave
 - [Aanduiding woonadres] (#aanduiding-woonadres)
@@ -12,8 +13,8 @@
 - [Code verwijzer] (#code-verwijzer)
 - [Communicatievorm] (#communicatievorm)
 - [Datumgebruik] (#datumgebruik)
-- [Eenheid] (#eenheid,#ldt_eenheid)
-- [Frequentie] (#frequentie,#ldt_frequentie)
+- [Eenheid] (#eenheid)
+- [Frequentie] (#frequentie)
 - [Geslacht] (#geslacht)
 - [Indicatie debet/credit] (#indicatie-debet/credit)
 - [Ja of nee] (#ja-of-nee)
@@ -300,5 +301,6 @@
 |Wettelijke vertegenwoordiging|WJ003|08|Mentorschap|
 |Wettelijke vertegenwoordiging|WJ003|09|Onder curatele stelling|
 |Wettelijke vertegenwoordiging|WJ003|10|Zaakwaarneming|
+
 
 
