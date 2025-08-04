@@ -166,6 +166,16 @@ After interpreting the question, determine in which document the answer can be f
 
     → Refer to document 'Regels op berichten iJw release 3.2'
 
+5.**vragen over zorgregio's
+
+    → Verwijs naar document '2015 jeugdzorgregios - gemeenten'
+
+6. **vragen over combinaties van volume, eenheid, frequentie
+
+    → Verwijs naar document 'Toewijzingsvarianten inspanning-output'
+
+    
+
 
 ## Rules
 
