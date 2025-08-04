@@ -1,4 +1,4 @@
-|:Jeugdregio|:Gemeenten|
+|:Jeugdzorgregio|:Gemeenten|
 |:----|:----|
 |Achterhoek|Aalten|
 |Achterhoek|Berkelland|
@@ -26,7 +26,7 @@
 |Arnhem|Wageningen|
 |Arnhem|Westervoort|
 |Arnhem|Zevenaar|
-||Aa en Hunze|
+|Drenthe|Aa en Hunze|
 |Drenthe|Assen|
 |Drenthe|Borger-Odoorn|
 |Drenthe|Coevorden|
@@ -171,7 +171,7 @@
 |Midden Holland|Krimpenerwaard (Bergambacht, Nederlek, Ouderkerk, Schoonhoven & Vlist)|
 |Midden Holland|Waddinxveen|
 |Midden Holland|Zuidplas|
-|Midden IJssel -Oost Veluwe||
+|Midden IJssel -Oost Veluwe|
 |Midden IJssel -Oost Veluwe|Brummen|
 |Midden IJssel -Oost Veluwe|Epe|
 |Midden IJssel -Oost Veluwe|Hattem|
@@ -395,3 +395,4 @@
 |Zuid-Oost Utrecht|Utrechtse Heuvelrug|
 |Zuid-Oost Utrecht|Wijk bij Duurstede|
 |Zuid-Oost Utrecht|Zeist|
+
