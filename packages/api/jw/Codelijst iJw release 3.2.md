@@ -7,6 +7,13 @@
 - lijstnr WMO757 wordt in zowel Wmo als Jeugdwet gebruikt.
 - geef alleen codes die in deze lijstnamen voorkomen, gebruik geen andere documenten om codes te bedenken.
 
+#vertaaltabel
+|element|lijstnaam|
+|-------|---------|
+|LDT_Eenheid|Eenheid|
+|LDT_Frequentie|Frequentie|
+|LDT_Communicatievorm|Communicatievorm|
+
 ##Inhoudsopgave
 - [Aanduiding woonadres] (#aanduiding-woonadres)
 - [Berichtcode] (#berichtcode)
@@ -301,4 +308,5 @@
 |Wettelijke vertegenwoordiging|WJ003|08|Mentorschap|
 |Wettelijke vertegenwoordiging|WJ003|09|Onder curatele stelling|
 |Wettelijke vertegenwoordiging|WJ003|10|Zaakwaarneming|
+
 
