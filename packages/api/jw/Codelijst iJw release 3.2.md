@@ -14,6 +14,7 @@
 - [Communicatievorm] (#communicatievorm)
 - [Datumgebruik] (#datumgebruik)
 - [Eenheid] (#eenheid)
+- [Eenheid] (#ldt_eenheid)
 - [Frequentie] (#frequentie)
 - [Geslacht] (#geslacht)
 - [Indicatie debet/credit] (#indicatie-debet/credit)
@@ -89,15 +90,15 @@
 
 ## Eenheid
 
-|Lijstnaam|lijstnr|Code|Waarde|
-|:--------|-------|----|------|
-|Eenheid|WJ756|01|  Minuut|
-|Eenheid|WJ756|04|  Uur|
-|Eenheid|WJ756|14|  Etmaal|
-|Eenheid|WJ756|16|  Dagdeel (4 uur)|
-|Eenheid|WJ756|82|  Stuks (output)|
-|Eenheid|WJ756|83|  Euro's|
-|Eenheid|WJ756|84|  Stuks (inspanning)|
+|Lijstnaam|Element|lijstnr|Code|Waarde|
+|:--------|-------|-------|----|------|
+|Eenheid|LDT_Eenheid|WJ756|01|Minuut|
+|Eenheid|LDT_Eenheid|WJ756|04|Uur|
+|Eenheid|LDT_Eenheid|WJ756|14|Etmaal|
+|Eenheid|LDT_Eenheid|WJ756|16|Dagdeel (4 uur)|
+|Eenheid|LDT_Eenheid|WJ756|82|Stuks (output)|
+|Eenheid|LDT_Eenheid|WJ756|83|Euro's|
+|Eenheid|LDT_Eenheid|WJ756|84|Stuks (inspanning)|
 
 ## Frequentie
 
@@ -300,3 +301,4 @@
 |Wettelijke vertegenwoordiging|WJ003|08|Mentorschap|
 |Wettelijke vertegenwoordiging|WJ003|09|Onder curatele stelling|
 |Wettelijke vertegenwoordiging|WJ003|10|Zaakwaarneming|
+
