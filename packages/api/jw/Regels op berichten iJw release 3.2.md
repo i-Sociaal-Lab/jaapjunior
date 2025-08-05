@@ -27,7 +27,13 @@ Het document dient als **naslagwerk en validatiebron** voor AI-agenten die vrage
 - Geef altijd de exacte definitie van een regel zoals deze in dit document staat. Geef nooit een interpretatie van een regel.
 - Sommige regels zijn specifiek voor gemeenten, andere voor aanbieders of ketenpartijen.
 - Let op: dit rapport bevat verschillende type regels; check bij interpretatie altijd het type regel.
-- 
+- Regelcode beginnend met UP is Uitgangspunt
+- Regelcode beginnend met OP is Bedrijfsregel
+- Regelcode beginnend met IV is Invulinstructie
+- Regelcode beginnend met TR is Technische regel
+- Regelcode beginnend met CD is Conditie
+- Regelcode beginnend met CS is Constraint
+  
 #Inhoudsopgave
 - [Uitgangspunt] (#uitgangspunt)
 - [Bedrijfsregel] (#bedrijfsregel)
@@ -202,7 +208,7 @@ Het document dient als **naslagwerk en validatiebron** voor AI-agenten die vrage
 |Type|Prioriteit|Regelcode|Omschrijving|Toelichting|XSD restrictie|Retourcode|Controleniveau|Berichttypen|Uitgewerkt in regel| Uitwerking van regel|
 |----|----------|---------|-----|------------|--------------|----------|--------------|------------|-------------------|-------------------------|
 | Technische regel | 4 | TR002 | TR002: Geboortedatum mag niet meer dan 120 jaar voor de Dagtekening liggen, tenzij Geboortedatum onbekend is. | Geboortedatum is onbekend als DatumGebruik de waarde '3 (dag, maand en jaar onbekend; onbekende datum)' heeft en Datum de waarde '01-01-1900' heeft. | NaN | 0001 | bericht inhoud (xslt) | JW301;JW305;JW307;JW315 | NaN | NaN |
-| Technische regel | 4 | TR006 | TR006: De berichtklasse Contact moet een berichtelement Telefoon, en/of de combinatie Huis en Postcode bevatten. | \n | NaN | 0001 | bericht inhoud (xslt) | JW301 | NaN | NaN |
+| Technische regel | 4 | TR006 | TR006: De berichtklasse Contact moet een berichtelement Telefoon, en/of de combinatie Huis en Postcode bevatten. | NaN | NaN | 0001 | bericht inhoud (xslt) | JW301 | NaN | NaN |
 | Technische regel | 4 | TR018 | TR018: Einddatum moet groter dan of gelijk zijn aan Begindatum. | NaN | NaN | 0001 | bericht inhoud (xslt) | JW307 | NaN | NaN |
 | Technische regel | 4 | TR019 | TR019: Bij een output- of inspanningsgerichte werkwijze moet de melding van de start of de stop van de ondersteuning gerelateerd zijn aan een toewijzing op basis van het ToewijzingNummer | NaN | NaN | 9019 | berichtoverstijgend | JW305;JW307 | NaN | NaN |
 | Technische regel | 4 | TR056 | TR056: Identificatie moet per berichtsoort uniek zijn voor de verzendende partij. | NaN | NaN | 9056 | berichtoverstijgend | JW301;JW305;JW307;JW315;JW317;JW319;JW323;JW325 | NaN | NaN |
