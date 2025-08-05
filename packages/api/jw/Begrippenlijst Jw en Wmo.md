@@ -419,9 +419,13 @@ De reden beëindiging wordt vastgelegd met een standaardcode in het veld RedenEi
 
 **Stapelen of Stapeling** betekent dat voor een client hetzelfde zorgproduct of ondersteuningsproduct meerdere keren wordt aangevraagd door dezelfde aanbieder voor (gedeeltelijk) dezelfde periode.
 
+**Startdatum** synoniem voor begindatum in startbericht
+
 **Start Jeugdhulp** Bericht voor het melden van de start van levering van Jeugdhulp. Dit bericht wordt ook Start ondersteuning of Start levering of Start Zorg of startbericht of start genoemd hierna te gebruiken startbericht. Het bericht dat hiervoor wordt gebruikt is JW305.
 
-**Stop Jeugdhulp** Bericht voor het melden van de stop van levering van Jeugdhulp. Dit bericht wordt ook Stop ondersteuning of stopbericht of tijdelijke stop of definitieve stop genoemd hierna te gebruiken stopbericht. Het bericht dat hiervoor wordt gebruikt is JW307.
+**Stopdatum** synoniem voor einddatum in stopbericht
+
+**Stop Jeugdhulp** Bericht voor het melden van de stop van levering van Jeugdhulp. Dit bericht wordt ook Stop ondersteuning of stopbericht of tijdelijke stop of definitieve stop of stop genoemd hierna te gebruiken stopbericht. Het bericht dat hiervoor wordt gebruikt is JW307.
 
 **De StUF-standaarden** worden gebruik voor het elektronisch uitwisselen van data tussen applicaties van overheidsorganisaties. Bijvoorbeeld voor het uitwisselen van zaakgegevens en data uit basisregistraties. StUF-standaarden zijn gebaseerd op het Standaard Uitwisseling Formaat (StUF). StUF bevat zelf geen berichten maar de bouwstenen en richtlijnen waarmee berichtstandaarden zijn te maken. StUF is beschreven in XML en gebaseerd op geaccepteerde internetstandaarden. In het sociaaldomein waar berichtenverkeer plaatsvindt tussen gemeenten en aanbieders wordt en StUF-envelop gebruikt.
 
