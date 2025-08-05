@@ -32,7 +32,7 @@ Het document dient als **naslagwerk en validatiebron** voor AI-agenten die vrage
 - Sommige regels zijn specifiek voor gemeenten, andere voor aanbieders of ketenpartijen.
 - Let op: dit rapport bevat verschillende type regels; check bij interpretatie altijd het type regel.
 - Let op: regelnummer (bijv. OP001, OP047, IV008) zijn louter administratieve identifiers zonder hiërarchische betekenis. Behandel ze als unieke sleutels die uitsluitend gebruikt worden voor verwijzing, niet voor interpretatie.
-- Kijk bij een hoe vraag eerst in de invulinstructies, daarna in andere regels.
+- Bekijk alle regels om tot een juist antwoord te komen.
 ---
 
 # Uitgangspunten, Bedrijfsregels, Invulinstructies en Technische regels iJw 3.2.0
