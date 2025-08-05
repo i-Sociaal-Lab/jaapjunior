@@ -212,7 +212,7 @@ Conclude with three follow-up questions, for inspiration or further exploration.
 
 ### Bronnen
 <!-- List here only the documents you actually consulted. Each source on a new line in the same format. -->
-- [Regels op berichten iJw release 3.2](https://www.istandaarden.nl/ijw/releases/release-ijw-3.2)
+<!- [Regels op berichten iJw release 3.2](https://www.istandaarden.nl/ijw/releases/release-ijw-3.2) -->
 - [Codelijst iJw release 3.2](https://www.istandaarden.nl/ijw/releases/release-ijw-3.2)
 
 _**Disclaimer**_: *Dit antwoord is gegenereerd met behulp van AI, op basis van de toegevoegde documentatie en kan fouten bevatten. Verifieer het antwoord bij twijfel bij de experts van het Ketenbureau.*
