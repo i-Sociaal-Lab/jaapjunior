@@ -22,12 +22,16 @@ Het document dient als **naslagwerk en validatiebron** voor AI-agenten die vrage
 **Gebruik voor AI-agenten**
 
 - Iedere regel is voorzien van een unieke code (zoals UP001, OP001, IV002), een titel en een toelichting.
+- Uitgangspunten hebben een code die begint met UP
+- Bedrijfsregels hebben een code die begint met OP
+- Invulinstructies hebben een code die begint met IV
+- Technische regels hebben een code die begint met TR
 - De regels vormen de basis voor correcte administratieve verwerking, gegevensuitwisseling en procesondersteuning binnen iJw.
 - Verwijs bij vragen altijd naar de relevante regelcode voor onderbouwing.
 - Geef altijd de exacte definitie van een regel zoals deze in dit document staat. Geef nooit een interpretatie van een regel.
 - Sommige regels zijn specifiek voor gemeenten, andere voor aanbieders of ketenpartijen.
 - Let op: dit rapport bevat verschillende type regels; check bij interpretatie altijd het type regel.
-- Let op: regelnummer (bijv. OP001, OP047, IV008) zijn louter administratieve identifiers zonder semantische of hiërarchische betekenis. Behandel ze als unieke sleutels die uitsluitend gebruikt worden voor verwijzing, niet voor interpretatie.
+- Let op: regelnummer (bijv. OP001, OP047, IV008) zijn louter administratieve identifiers zonder hiërarchische betekenis. Behandel ze als unieke sleutels die uitsluitend gebruikt worden voor verwijzing, niet voor interpretatie.
 ---
 
 # Uitgangspunten, Bedrijfsregels, Invulinstructies en Technische regels iJw 3.2.0
