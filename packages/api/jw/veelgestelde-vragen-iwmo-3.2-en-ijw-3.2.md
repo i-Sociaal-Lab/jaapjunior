@@ -58,6 +58,17 @@ Optie 2
 
 De afgegeven toewijzing kan worden ingetrokken.
 
+## Kun je op basis van een generieke toewijzing meerdere zorgtrajecten starten?
+Ja, het is mogelijk om op basis van een generieke toewijzing meerdere zorgtrajecten te starten. Dit wordt ondersteund binnen de iJw-standaard. In het regelrapport wordt dit als volgt beschreven:
+
+OP302: Bij een generieke toewijzing (in de toewijzing is alleen het budget gevuld, productcategorie en productcode zijn leeg), declareert de aanbieder 1 of meer productcategorie(en) met bijpassende productcode(s) passend binnen het afgesproken contract met de gemeente. (Bron: regelrapport-ijw-3.2.0.docx)
+Dit betekent dat de aanbieder binnen het afgesproken contract met de gemeente, op basis van de generieke toewijzing, meerdere zorgtrajecten kan starten en declareren. Elk zorgtraject kan bestaan uit een combinatie van productcategorieën en productcodes die passen binnen het toegewezen budget.
+
+Deze zorgtrajecten worden niet afzonderlijk voorzien van een startbericht. Voor de gehele toewijzing wordt 1 generiek startbericht gemaakt bij start van de eerste levering.
+
+Samenvatting
+Op basis van een generieke toewijzing kan de aanbieder meerdere zorgtrajecten starten en declareren. Elk zorgtraject moet bestaan uit productcategorieën en productcodes die passen binnen het afgesproken contract met de gemeente en binnen het toegewezen budget.
+
 # Vragen over VOT & VOW (Verzoek Om Toewijzing & Verzoek Om Wijziging)
 
 ## Wanneer gebruik ik een Verzoek om Toewijzing (VOT) en wanneer een Verzoek om Wijziging (VOW)?
@@ -345,5 +356,6 @@ Via de validatiemodule op istandaarden.nl kunt u de berichten valideren. De beri
 Via de Testvoorziening iStandaarden (TiS) van Zorginstituut Nederland kunnen softwareleveranciers hun producten testen in de rol van elke partij die deelneemt aan het iStandaarden-berichtenverkeer, en zo nodig verbeteren.
 
 Voor meer informatie of het aanvragen van een account kunt u contact opnemen met Zorginstituut Nederland (<info@istandaarden.nl>).
+
 
 
