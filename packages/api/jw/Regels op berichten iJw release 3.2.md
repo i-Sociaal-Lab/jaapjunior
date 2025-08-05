@@ -32,6 +32,7 @@ Het document dient als **naslagwerk en validatiebron** voor AI-agenten die vrage
 - Sommige regels zijn specifiek voor gemeenten, andere voor aanbieders of ketenpartijen.
 - Let op: dit rapport bevat verschillende type regels; check bij interpretatie altijd het type regel.
 - Let op: regelnummer (bijv. OP001, OP047, IV008) zijn louter administratieve identifiers zonder hiërarchische betekenis. Behandel ze als unieke sleutels die uitsluitend gebruikt worden voor verwijzing, niet voor interpretatie.
+- Kijk bij een hoe vraag eerst in de invulinstructies, daarna in andere regels.
 ---
 
 # Uitgangspunten, Bedrijfsregels, Invulinstructies en Technische regels iJw 3.2.0
@@ -152,9 +153,9 @@ Het document dient als **naslagwerk en validatiebron** voor AI-agenten die vrage
 
 *De volgende wijzigingen in volume en maximaal budget zijn toegestaan:*
 
-- *Volume wijzigen: Als de omvang is gespecificeerd met in Frequentie de waarde "Totaal binnen geldigheidsduur toewijzing", dan mag Volume worden aangepast.
-Indien dit op verzoek van de aanbieder is, mag dit zonder overleg worden aangepast door de gemeente.
-Indien de gemeente het initiatief tot aanpassing van het volume neemt, mag dit alleen in overleg met en na instemming van de aanbieder worden aangepast.*
+- *Volume wijzigen: Als de omvang is gespecificeerd met in Frequentie de waarde "Totaal binnen geldigheidsduur toewijzing", dan mag Volume worden aangepast.*
+*Indien dit op verzoek van de aanbieder is, mag dit zonder overleg worden aangepast door de gemeente.*
+*Indien de gemeente het initiatief tot aanpassing van het volume neemt, mag dit alleen in overleg met en na instemming van de aanbieder worden aangepast.*
 - *Budget wijzigen: Als Budget op verzoek van de aanbieder wordt gewijzigd, mag dit zonder overleg worden aangepast door de gemeente.*
 
 *Indien de gemeente het initiatief tot aanpassing van het maximale budget neemt, mag dit alleen in overleg met en na instemming van de aanbieder worden aangepast.*
@@ -784,6 +785,7 @@ Wanneer de ontvanger fouten constateert in een bericht op basis van de ter besch
 
 De waarde voor de elementen BasisschemaXsdVersie en BerichtXsdVersie in het datatype CDT_XsdVersie moeten overgenomen worden uit de schemadefinitie (XSD) waarop het bericht gecreëerd/gebaseerd is. Deze waarden staan in de schemadefinitie respectievelijk in /xs:schema/xs:annotation/xs:appinfo/<namespace>:BasisschemaXsdVersie en /xs:schema/xs:annotation/xs:appinfo/<namespace>:BerichtXsdVersie.
 Voor "<namespace>" wordt de namespace van de desbetreffende  iStandaard ingevuld, bijv. 'iJw', 'iWmo', enz.
+Bijv: <jw301:Bericht xmlns:ijw="http://www.istandaarden.nl/ijw/3_2/basisschema/schema" xmlns:jw301="http://www.istandaarden.nl/ijw/3_2/jw301/schema">
 
 **IV042**
 
