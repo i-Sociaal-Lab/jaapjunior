@@ -140,7 +140,6 @@ Het document dient als **naslagwerk en validatiebron** voor AI-agenten die vrage
 - *een berichtklasse nieuw is (waarde 1)*
 - *een berichtklasse gewijzigd is (waarde 2); een wijziging betekent dat de actuele aanlevering met dezelfde sleutel vervangen wordt. Deze waarde mag niet gebruikt worden in de iJw/iWmo.*
 - *een berichtklasse verwijderd moet worden (waarde 3). Een verwijdering betekent dat de vorige aanlevering(en) met dezelfde sleutel als niet verzonden beschouwd moet worden.*
-heeft betrekking op: JW305,JW307
   
 **OP033x1**
 
@@ -161,17 +160,14 @@ Indien de gemeente het initiatief tot aanpassing van het volume neemt, mag dit a
 *Indien de gemeente het initiatief tot aanpassing van het maximale budget neemt, mag dit alleen in overleg met en na instemming van de aanbieder worden aangepast.*
 
 *De meest recente toewijzing op toewijzingsdatum en -tijd is bepalend voor de inhoud van de toewijzing.*
-heeft betrekking op: JW301
 
 **OP033x2**
 
 *Het gebruik van status aanlevering met waarde 2 (een berichtklasse is gewijzigd) is niet toegestaan.*
-heeft betrekking op: JW305,JW307
 
 **OP039**
 
 *In het berichtenverkeer mogen ketenpartijen cliëntgegevens doorgeven zoals deze in de administratie van de betreffende ketenpartij voorkomen, mits deze gegevens geen onderdeel zijn van een logische sleutel. Het staat ketenpartijen vrij om gewijzigde gegevens uit het berichtenverkeer over te nemen in hun administratie.*
-heeft betrekking op: JW301,JW305,JW307,JW317,JW319,JW323,JW325
 
 **OP043**
 
@@ -192,12 +188,10 @@ heeft betrekking op: JW301,JW305,JW307,JW317,JW319,JW323,JW325
 **OP072**
 
 *Pas na een melding start ondersteuning mag een aanbieder melden dat de levering beëindigd is. In het bericht moet gerefereerd worden aan de start van de levering.*
-heeft betrekking op: JW305,JW307
 
 **OP076**
 
 *Van iedere contactpersoon (relatie) moet worden opgegeven in welke relatie deze tot de cliënt staat. Gegevens over een contactpersoon mogen alleen worden opgenomen indien noodzakelijk voor communicatie met de cliënt.*
-heeft betrekking op: JW301
 
 **OP079**
 
@@ -210,23 +204,22 @@ heeft betrekking op: JW301
 **OP086**
 
 *Ondersteuningsproducten met een inspannings- of outputgerichte uitvoering worden altijd door de gemeente toegewezen met een toewijzingsbericht.*
-heeft betrekking op: JW301
 
 **OP087**
 
-*Een toewijzingsbericht bevat voor 1 cliënt altijd alle toewijzingen voor 1 aanbieder die op of na de aanmaakdatum van het bericht geldig zijn plus alle toewijzingen die gewijzigd zijn ten opzichte van het voorgaande toewijzingsbericht.*
+*Een toewijzingsbericht bevat voor 1 cliënt altijd alle toewijzingen voor 1 aanbieder die op of na de aanmaakdatum van het bericht geldig zijn plus alle toewijzingen die gewijzigd zijn ten opzichte van het voorgaande toewijzingsbericht.
 
 Deze regel is van toepassing indien voor 1 cliënt  meerdere producten toegewezen zijn. Alle geldige toewijzingen binnen 1 cliënt, voor 1 aanbieder worden in 1 toewijzingsbericht geplaatst en naar de betreffende aanbieder gestuurd inclusief de toewijzingen die gewijzigd zijn sinds het laatst verstuurde toewijzingsbericht voor deze cliënt en aanbieder. Denk hierbij aan intrekkingen die zijn gedaan en waar de aanbieder nog niet van op de hoogte is.
 
 Toewijzingen met einddatum gelijk aan ingangsdatum en RedenWijziging gevuld met 13 (Verwijderd) worden niet gezien als actuele toewijzing. Ook toewijzingen met einddatum gelijk aan ingangsdatum en RedenWijziging gevuld met 01 (Administratieve correctie (vervallen)) worden niet gezien als actuele toewijzing.
 
-Voor iedere cliënt waarbij een toewijzing verandert, wordt een toewijzingsbericht gestuurd voor alle actuele toewijzingen voor die aanbieder behorende bij die cliënt .
+Voor iedere cliënt waarbij een toewijzing verandert, wordt een toewijzingsbericht gestuurd voor alle actuele toewijzingen voor die aanbieder behorende bij die cliënt*
 
 **OP090**
 
 *Voor ieder ontvangen heenbericht wordt binnen 3 werkdagen na ontvangst een retourbericht verzonden.*
 
-De verzendende partij van het heenbericht is verantwoordelijk voor het signaleren van het ontbreken van een retourbericht en dient actie te ondernemen.
+De verzendende partij van het heenbericht is verantwoordelijk voor het signaleren van het ontbreken van een retourbericht en dient actie te ondernemen.*
 
 **OP090x2**
 
@@ -234,9 +227,9 @@ De verzendende partij van het heenbericht is verantwoordelijk voor het signalere
 
 **OP090x4**
 
-*Voor ieder ontvangen declaratiebericht wordt binnen 10 werkdagen na ontvangst een declaratie-antwoordbericht verzonden.*
+*Voor ieder ontvangen declaratiebericht wordt binnen 10 werkdagen na ontvangst een declaratie-antwoordbericht verzonden.
 
-Indien de gemeente niet binnen 10 werkdagen een declaratie-antwoordbericht kan versturen, neemt de gemeente buiten het berichtenverkeer om contact op met de aanbieder. De aanbieder is verantwoordelijk voor het signaleren van het ontbreken van een declaratie-antwoordbericht en dient, indien er nog geen contact geweest is met de gemeente, actie te ondernemen.
+Indien de gemeente niet binnen 10 werkdagen een declaratie-antwoordbericht kan versturen, neemt de gemeente buiten het berichtenverkeer om contact op met de aanbieder. De aanbieder is verantwoordelijk voor het signaleren van het ontbreken van een declaratie-antwoordbericht en dient, indien er nog geen contact geweest is met de gemeente, actie te ondernemen.*
 
 **OP091**
 
