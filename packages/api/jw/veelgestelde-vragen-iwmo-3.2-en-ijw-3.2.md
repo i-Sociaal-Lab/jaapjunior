@@ -292,6 +292,12 @@ Nee, de regieberichten mogen niet voorwaardelijk worden gesteld voor de goedkeur
 
 Daarnaast is het niet toegestaan om de startdatum in het startbericht en de stopdatum in het stopbericht te controleren tegen de declaratieperiode. Een en ander is nader uitgewerkt in Invulinstructie IV089: Hoe moet ProductPeriode gevuld worden?
 
+# Vragen over Start- Stopberichten
+
+## Mag ik een startbericht sturen, nadat ik een definitieve stop heb gestuurd?
+Ja, dat mag. Na een tijdelijke stop of na een definiteve stop is het toegestaan een startbericht te sturen.
+zie OP379.
+
 # Vragen over Afsluiten zorg
 
 ## Moet na het intrekken van een toewijzing door de gemeente een Stopzorg door de aanbieder worden gestuurd?
@@ -339,4 +345,5 @@ Via de validatiemodule op istandaarden.nl kunt u de berichten valideren. De beri
 Via de Testvoorziening iStandaarden (TiS) van Zorginstituut Nederland kunnen softwareleveranciers hun producten testen in de rol van elke partij die deelneemt aan het iStandaarden-berichtenverkeer, en zo nodig verbeteren.
 
 Voor meer informatie of het aanvragen van een account kunt u contact opnemen met Zorginstituut Nederland (<info@istandaarden.nl>).
+
 
