@@ -33,6 +33,8 @@ Het document dient als **naslagwerk en validatiebron** voor AI-agenten die vrage
 - Regelcode beginnend met TR is Technische regel
 - Regelcode beginnend met CD is Conditie
 - Regelcode beginnend met CS is Constraint
+- Regelcodes zijn niet oplopend genummerd.
+- Regelcodes van bedrijfsregels beginnen bij OP001 en eindigen bij OP380
   
 #Inhoudsopgave
 - [Uitgangspunt] (#uitgangspunt)
@@ -158,7 +160,7 @@ Het document dient als **naslagwerk en validatiebron** voor AI-agenten die vrage
 |Bedrijfsregel|2|OP377|OP377: Alleen een tijdelijke stop mag zonder tussenkomst van een startbericht gevolgd worden door een definitieve stop.|Een stop moet volgen op een startbericht. De enige uitzondering hierop is een definitieve stop die kan volgen op een startbericht of een tijdelijke stop.|NaN|NaN|NaN|JW307|TR414, TR415|UP017|
 |Bedrijfsregel|2|OP378|OP378: Zonder tussenkomst van een startbericht is na een tijdelijke stop alleen een definitieve stop toegestaan.|NaN|NaN|NaN|NaN|JW307|TR413|UP017|
 |Bedrijfsregel|2|OP379|OP379: Na een tijdelijke stop en na een definiteve stop is het toegestaan een start te sturen.|NaN|NaN|NaN|NaN|JW305|NaN|UP017|
-|Bedrijfsregel|2|OP380|OP380: Het oprekken van de einddatum van de bestaande toewijzing voor een verlenging van de zorg of ondersteuning is verplicht.|Deze werkwijze is verplicht indien de toewijzing aan alle onderstaande voorwaarden voldoet: "*" het volume blijft gelijk of is leeg "*" de frequentie is leeg of ongelijk aan totaal binnen geldigheidsduur toewijzing en blijft gelijk "*" de einddatum van de bestaande toewijzing is niet verstreken op het moment dat de toewijzing wordt opgerekt en verstuurd|NaN|NaN|NaN|JW301|NaN|UP017|
+|Bedrijfsregel|2|OP380|OP380: Het oprekken van de einddatum van de bestaande toewijzing voor een verlenging van de zorg of ondersteuning is verplicht.|Deze werkwijze is verplicht indien de toewijzing aan alle onderstaande voorwaarden voldoet: het volume blijft gelijk of is leeg, de frequentie is leeg of ongelijk aan totaal binnen geldigheidsduur toewijzing en blijft gelijk, de einddatum van de bestaande toewijzing is niet verstreken op het moment dat de toewijzing wordt opgerekt en verstuurd|NaN|NaN|NaN|JW301|NaN|UP017|
 
 ## Invulinstructie
 
