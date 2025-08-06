@@ -1,4 +1,4 @@
-# Condities, constraints, restricties per data-element bericht
+# Condities, constraints per data-element bericht
 
 Versie: 1.0
 Status: In behandeling
@@ -44,10 +44,6 @@ Het document dient als **naslagwerk en validatiebron** voor AI-agenten die vrage
 Condities (CD-regels): https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/conditie/#regel
 
 Constraints (CS-regels): https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/constraint/#regel
-
-Restricties (RS-regels): 
-
-regelrapport-ijw-3.2.0 CD-CS-RS
 
 ## Tabel condities, constraints, restricties per berichtelement
 
