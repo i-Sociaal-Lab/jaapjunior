@@ -881,18 +881,19 @@ Welke productcodes gebruikt mogen worden in het berichtenverkeer is afhankelijk 
 - Bij het aanvragen van aspecifieke toewijzingen moet alleen de productcategorie gevuld zijn.
 - Bij het aanvragen van generieke toewijzingen is het product leeg; de productcategorie en de productcode zijn niet gevuld.*
 
-*Voor het vullen van het Product in Startberichten en Stopberichten (bij inspannings- en outputgerichte uitvoeringsvariant) en Declaratieberichten is de vulling afhankelijk van ToegewezenProduct in de bijbehorende Toewijzing:
-In een Startbericht (305) of Stopbericht (307) wordt altijd hetzelfde zorg- of ondersteuningsproduct opgenomen zoals meegegeven in het Toewijzingsbericht (301).
+*Voor het vullen van het Product in Startberichten en Stopberichten (bij inspannings- en outputgerichte uitvoeringsvariant) en Declaratieberichten is de vulling afhankelijk van ToegewezenProduct in de bijbehorende Toewijzing*
+
+*In een Startbericht (305) of Stopbericht (307) wordt altijd hetzelfde zorg- of ondersteuningsproduct opgenomen zoals meegegeven in het Toewijzingsbericht (301).
 
 - Bij specifieke toewijzingen moet in het Startbericht en Stopbericht zowel de productcategorie als de productcode gevuld worden.
 - Bij aspecifieke toewijzingen moet in het Startbericht en Stopbericht alleen de productcategorie gevuld zijn.
 - Bij generieke toewijzingen is het product leeg; de productcategorie en de productcode zijn niet gevuld.*
 
-*In een Declaratiebericht (323) wordt altijd een productcategorie en productcode gevuld.
+*In een Declaratiebericht (323) wordt altijd een productcategorie en productcode gevuld.*
 
-- Indien in ToegewezenProduct de productcategorie en productcode niet gevuld zijn (generieke toewijzing met maximaal budget) dan wordt de productcategorie en productcode gevuld behorend bij de levering (gebaseerd op de productcodelijst die gebruikt moet worden). Dit betekent dat op 1 ToegewezenProduct meerdere prestatieregels voor dezelfde periode kunnen volgen indien meerdere producten uit dezelfde of verschillende productcategorieën zijn geleverd.
+*- Indien in ToegewezenProduct de productcategorie en productcode niet gevuld zijn (generieke toewijzing met maximaal budget) dan wordt de productcategorie en productcode gevuld behorend bij de levering (gebaseerd op de productcodelijst die gebruikt moet worden). Dit betekent dat op 1 ToegewezenProduct meerdere prestatieregels voor dezelfde periode kunnen volgen indien meerdere producten uit dezelfde of verschillende productcategorieën zijn geleverd.*
   
-- Indien in ToegewezenProduct alleen een productcategorie is gevuld (aspecifieke toewijzing), wordt deze productcategorie overgenomen en wordt een bij de toegewezen productcategorie behorende productcode (volgens de productcodelijst die gebruikt moet worden) gevuld. Dit betekent dat op 1 ToegewezenProduct meerdere prestaties voor dezelfde periode kunnen volgen indien meerdere producten van dezelfde productcategorie zijn geleverd.*
+*- Indien in ToegewezenProduct alleen een productcategorie is gevuld (aspecifieke toewijzing), wordt deze productcategorie overgenomen en wordt een bij de toegewezen productcategorie behorende productcode (volgens de productcodelijst die gebruikt moet worden) gevuld. Dit betekent dat op 1 ToegewezenProduct meerdere prestaties voor dezelfde periode kunnen volgen indien meerdere producten van dezelfde productcategorie zijn geleverd.*
 
 **IV076**
 
