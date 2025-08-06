@@ -1,4 +1,4 @@
-#Codelijst iJw releae 3.2
+#Codelijst iJw release 3.2
 
 - Lijstcode beginnend met NUM worden in zowel Wmo als Jeugdwet gebruikt.
 - Lijstcode beginnend met COD worden in zowel Wmo als Jeugdwet gebruikt.
@@ -6,9 +6,10 @@
 - Lijstcode beginnend met JZ worden alleen in de Jeugdwet gebruikt.
 - Lijstcode WMO757 wordt in zowel Wmo als Jeugdwet gebruikt.
 - geef alleen codes die in deze lijstnamen voorkomen, gebruik geen andere documenten om codes te bedenken.
+- Let op: lijstcodes en codes (bijv. COD002, COD327, 01, 4) zijn louter administratieve identifiers zonder hiërarchische betekenis. Behandel ze als unieke sleutels die uitsluitend gebruikt worden voor verwijzing, niet voor interpretatie.
 - veldnaam is lijstnaam
+- zoek in Regels op berichten iJw release 3.2 en in Condities, constraints per data-element of er aanvullende regels bestaan op de getoonde codes in de codelijsten.
   
-
 ##Inhoudsopgave
 - [Aanduiding woonadres] (#aanduiding-woonadres)
 - [Berichtcode] (#berichtcode)
@@ -302,6 +303,7 @@
 |Wettelijke vertegenwoordiging|WJ003|08|Mentorschap|
 |Wettelijke vertegenwoordiging|WJ003|09|Onder curatele stelling|
 |Wettelijke vertegenwoordiging|WJ003|10|Zaakwaarneming|
+
 
 
 
