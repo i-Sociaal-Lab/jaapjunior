@@ -164,7 +164,7 @@ After interpreting the question, determine in which document the answer can be f
     
 4. **Questions about conditions, constraints or restrictions per data-element:
 
-    → Refer to document 'Condities, constraints per data-element.md'
+    → Refer to document 'regelrapport-ijw-3.2.0 CD-CS-RS'
 
 5.**vragen over zorgregio's
 
