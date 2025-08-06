@@ -5,10 +5,10 @@
 - Lijstcode beginnend met WJ worden in zowel Wmo als Jeugdwet gebruikt.
 - Lijstcode beginnend met JZ worden alleen in de Jeugdwet gebruikt.
 - Lijstcode WMO757 wordt in zowel Wmo als Jeugdwet gebruikt.
-- geef alleen codes die in deze lijstnamen voorkomen, gebruik geen andere documenten om codes te bedenken.
+- Bedenk niet zelf nieuwe codes, of lijstcodes.
 - Let op: lijstcodes en codes (bijv. COD002, COD327, 01, 4) zijn louter administratieve identifiers zonder hiërarchische betekenis. Behandel ze als unieke sleutels die uitsluitend gebruikt worden voor verwijzing, niet voor interpretatie.
 - veldnaam is lijstnaam
-- zoek in Regels op berichten iJw release 3.2 en in Condities, constraints per data-element of er aanvullende regels bestaan op de getoonde codes in de codelijsten.
+- zoek in Regels op berichten iJw release 3.2 en in Condities, constraints per data-element of er aanvullende regels bestaan op de getoonde codes in de codelijsten. Geef in je antwoord ook de gevonden regels.
   
 ##Inhoudsopgave
 - [Aanduiding woonadres] (#aanduiding-woonadres)
@@ -303,6 +303,7 @@
 |Wettelijke vertegenwoordiging|WJ003|08|Mentorschap|
 |Wettelijke vertegenwoordiging|WJ003|09|Onder curatele stelling|
 |Wettelijke vertegenwoordiging|WJ003|10|Zaakwaarneming|
+
 
 
 
