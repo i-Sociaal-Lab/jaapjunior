@@ -346,6 +346,26 @@ Een Stopzorg kan verwijderd worden middels de status aanlevering. Zie hiervoor o
 | 323 | Declaratiebericht | Volgens afspraak tussen gemeente en aanbieder voor geleverde zorg |
 | 325 | Declaratie-antwoord bericht | 10 werkdagen na ontvangst van het 325-bericht, zie ook OP090x4 |
 
+# Vragen over controles
+
+## Hoe wordt gecontroleerd of partijen zich aan verplicht gebruik berichtenverkeer houden?
+
+De naleving wordt op verschillende manieren bewaakt:
+
+- Accountantscontrole: Gemeenten en aanbieders zijn verplicht hun administratie goed op orde te hebben. Tijdens de jaarlijkse accountantscontrole wordt gekeken of de processen correct verlopen, inclusief het gebruik van de iStandaarden.
+
+- Ketenbureau i-Sociaal Domein: Dit bureau monitort de werking van het berichtenverkeer en signaleert knelpunten. Zij hebben geen sanctiebevoegdheid, maar geven signalen en adviezen aan gemeenten en aanbieders.
+
+- Contractuele afspraken: In de overeenkomsten tussen gemeenten en aanbieders zijn vaak bepalingen opgenomen over het gebruik van het berichtenverkeer. Niet-naleving kan leiden tot opschorting van betalingen of andere contractuele maatregelen.
+
+In de ministeriële regeling zelf staan geen specifieke controle- of sanctiebepalingen, maar de verplichting wordt indirect gehandhaafd via deze toezichtslagen.
+
+Letterlijke tekst uit de documentatie:
+De MR-staatscourant juli 2019 regelt alleen de verplichting:
+
+“Toepassing van de iJw houdt in ieder geval in dat er overeenkomstig de iJw elektronisch berichtenverkeer is tussen gemeenten en de in het eerste lid bedoelde personen en instanties bij het toewijzen, factureren en declareren, en leveren van producten, diensten of resultaten.”
+
+De controle zelf wordt georganiseerd via de gemeentelijke en aanbiederspraktijk, niet vanuit de regeling.
 
 # Vragen over Modules
 
@@ -356,6 +376,7 @@ Via de validatiemodule op istandaarden.nl kunt u de berichten valideren. De beri
 Via de Testvoorziening iStandaarden (TiS) van Zorginstituut Nederland kunnen softwareleveranciers hun producten testen in de rol van elke partij die deelneemt aan het iStandaarden-berichtenverkeer, en zo nodig verbeteren.
 
 Voor meer informatie of het aanvragen van een account kunt u contact opnemen met Zorginstituut Nederland (<info@istandaarden.nl>).
+
 
 
 
