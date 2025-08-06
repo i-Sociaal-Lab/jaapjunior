@@ -6,8 +6,6 @@ Auteur: Zorginstituut Nederland
 Publicatiedatum: 29 september 2022
 Type document: Brondocument Jw-agent
 
-# Condities, constraints, restricties per data-element bericht
-
 ## Inleiding voor AI-agent
 
 Dit document beschrijft de condities (CD), constraints (CS) en restricties (RS) die gelden binnen het berichtenverkeer van de Jeugdwet (iJw), release 3.2.0. 
