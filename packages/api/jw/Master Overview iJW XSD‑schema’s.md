@@ -15,6 +15,7 @@ Type document: Brondocument Jw-agent
 Dit document bevat **samenvattingen van 14 iJW XSD‑schema’s van de iStandaarden**.
 
 Het is bedoeld om Large‑Language‑Model‑agenten snel toegang te geven tot de *semantische* en *structurele* inhoud van elk schema, zonder de volledige XSD’s in één prompt te hoeven laden.
+A = 0..1
 
 ### Structuur van elke samenvatting
 
@@ -298,7 +299,7 @@ Het is bedoeld om Large‑Language‑Model‑agenten snel toegang te geven tot d
 | Naam | ijw:CDT_VolledigeNaam | 1..1 |
 | Communicatie | ijw:CDT_Communicatie | 0..1 |
 | JuridischeStatus | ijw:LDT_JuridischeStatus | 0..1 |
-| WettelijkeVertegenwoordiging | ijw:LDT_WettelijkeVertegenwoordiging | 0..1 |
+| WettelijkeVertegenwoordiging | ijw:LDT_WettelijkeVertegenwoordiging | A |
 | Commentaar | ijw:LDT_Commentaar | 0..1 |
 | Relaties | jw302:Relaties | 0..1 |
 | Contactgegevens | jw302:Contactgegevens | 1..1 |
