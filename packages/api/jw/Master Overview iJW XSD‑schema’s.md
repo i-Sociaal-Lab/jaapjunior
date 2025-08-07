@@ -27,7 +27,7 @@ A = 0..1
 3. **ComplexTypes**
     - Zakelijke *beschrijving* (tekst uit `xs:documentation`)
     - **Tabel ‘Child‑elementen’**
-        - Kolommen: `Name`, `Type`, `Card.` (= `minOccurs..maxOccurs`)
+        - Kolommen: `Name`, `Type`, `Card.` (= [`minOccurs..maxOccurs`])
         - Na de tabel staan – indien aanwezig – de *omschrijving per child‑element*
     - **Attributen‑sectie** (optioneel)
 
@@ -112,7 +112,7 @@ A = 0..1
 | Naam | ijw:CDT_VolledigeNaam | 1..1 |
 | Communicatie | ijw:CDT_Communicatie | 0..1 |
 | JuridischeStatus | ijw:LDT_JuridischeStatus | 0..1 |
-| WettelijkeVertegenwoordiging | ijw:LDT_WettelijkeVertegenwoordiging |0..1|
+| WettelijkeVertegenwoordiging | ijw:LDT_WettelijkeVertegenwoordiging |[0..1]|
 | Commentaar | ijw:LDT_Commentaar | 0..1 |
 | Relaties | jw301:Relaties | 0..1 |
 | Contactgegevens | jw301:Contactgegevens | 1..1 |
@@ -299,7 +299,7 @@ A = 0..1
 | Naam | ijw:CDT_VolledigeNaam | 1..1 |
 | Communicatie | ijw:CDT_Communicatie | 0..1 |
 | JuridischeStatus | ijw:LDT_JuridischeStatus | 0..1 |
-| WettelijkeVertegenwoordiging | ijw:LDT_WettelijkeVertegenwoordiging | A |
+| WettelijkeVertegenwoordiging | ijw:LDT_WettelijkeVertegenwoordiging |[0..1]|
 | Commentaar | ijw:LDT_Commentaar | 0..1 |
 | Relaties | jw302:Relaties | 0..1 |
 | Contactgegevens | jw302:Contactgegevens | 1..1 |
