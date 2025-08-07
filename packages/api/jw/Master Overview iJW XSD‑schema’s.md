@@ -104,19 +104,19 @@ A = 0..1
 
 *Beschrijving*: Persoonsgegevens van de client.
 
-| Child-element | Type | Card. |
-| --- | --- | --- |
-| Bsn | ijw:LDT_BurgerServicenummer | 1..1 |
-| Geboortedatum | ijw:CDT_Geboortedatum | 1..1 |
-| Geslacht | ijw:LDT_Geslacht | 1..1 |
-| Naam | ijw:CDT_VolledigeNaam | 1..1 |
-| Communicatie | ijw:CDT_Communicatie | 0..1 |
-| JuridischeStatus | ijw:LDT_JuridischeStatus | 0..1 |
-| WettelijkeVertegenwoordiging | ijw:LDT_WettelijkeVertegenwoordiging |minOccurs="0" maxOccurs="1"|
-| Commentaar | ijw:LDT_Commentaar | 0..1 |
-| Relaties | jw301:Relaties | 0..1 |
-| Contactgegevens | jw301:Contactgegevens | 1..1 |
-| ToegewezenProducten | jw301:ToegewezenProducten | 1..1 |
+| Child-element | Type | Card. min| Card. max|
+| --- | --- | --- | --- |
+| Bsn | ijw:LDT_BurgerServicenummer | 1|1|
+| Geboortedatum | ijw:CDT_Geboortedatum |1|1|
+| Geslacht | ijw:LDT_Geslacht | 1|1|
+| Naam | ijw:CDT_VolledigeNaam | 1|1|
+| Communicatie | ijw:CDT_Communicatie |0|1|
+| JuridischeStatus | ijw:LDT_JuridischeStatus |0|1|
+| WettelijkeVertegenwoordiging | ijw:LDT_WettelijkeVertegenwoordiging |0|1|
+| Commentaar | ijw:LDT_Commentaar |0|1|
+| Relaties | jw301:Relaties |0|1|
+| Contactgegevens | jw301:Contactgegevens |1|1|
+| ToegewezenProducten | jw301:ToegewezenProducten |1|1|
 
 **Omschrijving child-elementen**
 * **Bsn**: Een door de overheid toegekend identificerend nummer in het kader van het vereenvoudigen van het contact tussen overheid en burgers en het verminderen van de administratieve lasten.
