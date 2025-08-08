@@ -85,6 +85,10 @@ Code 8 (Woonplaatsbeginsel) mag alleen gebruikt worden als een Verzoek om Toewij
 
 Code 5 (Andere gemeente) moet in alle andere gevallen gebruikt worden wanneer een Verzoek om Toewijzing of Verzoek om Wijziging aan de niet verantwoordelijke gemeente verstuurd is, of wanneer tijdens het beoordelingsproces blijkt dat de gemeente niet langer verantwoordelijk is voor de cliënt.
 
+## Wat wordt bedoeld met Raamcontract J/N?
+
+Raamcontract J/N is een indicator of de aanbieder voor de te leveren ondersteuning beroep doet op een landelijk raamcontract.
+
 ## Hoe wordt een VOW-bericht gevuld?
 
 Voor het vullen van het VOW-bericht is een infographic opgesteld: ‘Hoe wordt VOW gevuld?’. Deze infographic bestaat uit twee onderdelen. Het eerste onderdeel is een stroomschema. Aan de hand hiervan kunt u controleren of het VOW-bericht volledig en correct gevuld is en klaar is om ingediend te worden.
@@ -100,7 +104,6 @@ Om het vullen van een toewijzingsbericht als gevolg van het honoreren van een VO
 De tabel beschrijft de situatie die in het VOW-bericht gevraagd wordt en verwijst dan naar een scenario. In het uitgewerkte scenario wordt vervolgens weergegeven welke toegewezen producten in het toewijzingsbericht moeten worden opgenomen en hoe de elementen van deze toegewezen producten gevuld moeten worden.
 
 De tabel en de uitgewerkte scenario’s zijn als te vinden op de ondersteuningspagina’s voor release 3.2. https://www.istandaarden.nl/iwmo/ondersteuning-bij-de-releases/vow-informatiepunt)
-
 
 ## Voor Release 3.0 was het mogelijk om een inhoudelijke reactie op een Verzoek om Toewijzing (315) te geven met een retourbericht (316). Vervangt het antwoordbericht (319) deze inhoudelijke terugkoppeling?
 
@@ -376,6 +379,7 @@ Via de validatiemodule op istandaarden.nl kunt u de berichten valideren. De beri
 Via de Testvoorziening iStandaarden (TiS) van Zorginstituut Nederland kunnen softwareleveranciers hun producten testen in de rol van elke partij die deelneemt aan het iStandaarden-berichtenverkeer, en zo nodig verbeteren.
 
 Voor meer informatie of het aanvragen van een account kunt u contact opnemen met Zorginstituut Nederland (<info@istandaarden.nl>).
+
 
 
 
