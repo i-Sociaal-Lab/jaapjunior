@@ -5,6 +5,7 @@
 - Lijstcode beginnend met WJ worden in zowel Wmo als Jeugdwet gebruikt.
 - Lijstcode beginnend met JZ worden alleen in de Jeugdwet gebruikt.
 - Lijstcode WMO757 wordt in zowel Wmo als Jeugdwet gebruikt.
+- Lijstcode beginnend met WMO worden alleen in de WMO gebruikt.
 - Bedenk niet zelf nieuwe codes, of lijstcodes.
 - Let op: lijstcodes en codes (bijv. COD002, COD327, 01, 4) zijn louter administratieve identifiers zonder hiërarchische betekenis. Behandel ze als unieke sleutels die uitsluitend gebruikt worden voor verwijzing, niet voor interpretatie.
 - veldnaam is lijstnaam
@@ -214,12 +215,47 @@
 |Reden beeindiging|JZ588|38|Overstap naar andere aanbieder|
 |Reden beeindiging|JZ588|39|Uitstroom naar ander domein|
 
+## Reden beeindiging
+
+|Lijstnaam|Lijstcode|Code|Waarde|
+|:--------|-------|----|------|
+|Reden beeindiging|WMO588|02|Overlijden|
+|Reden beeindiging|WMO588|20|Levering is tijdelijk beeindigd.|
+|Reden beeindiging|WMO588|31|Levering is volgens plan beeindigd.|
+|Reden beeindiging|WMO588|32|Voortijdig afgesloten: eenzijdig door de client.|
+|Reden beeindiging|WMO588|33|Voortijdig afgesloten: eenzijdig door de aanbieder.|
+|Reden beeindiging|WMO588|34|Voortijdig afgesloten: in overeenstemming.|
+|Reden beeindiging|WMO588|35|Voortijdig afgesloten: wegens externe omstandigheden.|
+|Reden beeindiging|WMO588|36|Geinitieerd door de gemeente|
+|Reden beeindiging|WMO588|37|In verband met wijzigingsverzoek|
+|Reden beeindiging|WMO588|38|Overstap naar andere aanbieder|
+|Reden beeindiging|WMO588|39|Uitstroom naar ander domein|
+
 ## Reden verzoek
 
 |Lijstnaam|Lijstcode|Code|Waarde|
 |:--------|-------|----|------|
 |Reden verzoek|WJ758|1|Verandering clientsituatie|
 |Reden verzoek|WJ758|2|Wijziging zorgplan|
+
+## Reden wijziging toewijzing
+
+|Lijstnaam|Lijstcode|Code|Waarde|
+|:--------|-------|----|------|
+|Reden wijziging toewijzing|WMO002|01|Administratieve correctie (vervallen)|
+|Reden wijziging toewijzing|WMO002|02|Client overleden|
+|Reden wijziging toewijzing|WMO002|03|Contractwijziging|
+|Reden wijziging toewijzing|WMO002|04|Herbeoordeling: verlenging toewijzing|
+|Reden wijziging toewijzing|WMO002|05|Herbeoordeling: verkorting toewijzing|
+|Reden wijziging toewijzing|WMO002|06|Uitstroom naar ander domein|
+|Reden wijziging toewijzing|WMO002|07|Verhuizing naar een andere gemeente|
+|Reden wijziging toewijzing|WMO002|08|Wijziging leveringsvorm|
+|Reden wijziging toewijzing|WMO002|09|Overstap naar andere aanbieder|
+|Reden wijziging toewijzing|WMO002|10|Overgang naar nieuwe bekostigingssystematiek|
+|Reden wijziging toewijzing|WMO002|11|Gemeentelijke herindeling|
+|Reden wijziging toewijzing|WMO002|12|Geinitieerd door de aanbieder|
+|Reden wijziging toewijzing|WMO002|13|Verwijderd|
+|Reden wijziging toewijzing|WMO002|14|Administratieve correctie|
 
 ## Reden wijziging toewijzing
 
@@ -302,6 +338,7 @@
 |Wettelijke vertegenwoordiging|WJ003|08|Mentorschap|
 |Wettelijke vertegenwoordiging|WJ003|09|Onder curatele stelling|
 |Wettelijke vertegenwoordiging|WJ003|10|Zaakwaarneming|
+
 
 
 
