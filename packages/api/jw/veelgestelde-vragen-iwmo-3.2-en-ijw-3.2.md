@@ -95,7 +95,7 @@ Deze PowerPoint is te vinden op de ondersteuningspagina's voor release 3.2 : htt
 
 ## Hoe wordt het toewijzingsbericht gevuld na het honoreren van een VOW?
 
-Om het vullen van een toewijzingsbericht als gevolg van het honoreren van een VOW uniform te laten verlopen, is een tabel met uitgewerkte scenario’s gemaakt.
+Om het vullen van een toewijzingsbericht als gevolg van het honoreren van een VOW uniform te laten verlopen, is een tabel met uitgewerkte scenario’s gemaakt. Algemeen geldt : Een VOW wordt in zijn geheel goedgekeurd, of afgekeurd. Dat betekent dat hetgeen wordt aangevraagd in een VOW, niet mag worden gewijzigd door de gemeente.
 
 De tabel beschrijft de situatie die in het VOW-bericht gevraagd wordt en verwijst dan naar een scenario. In het uitgewerkte scenario wordt vervolgens weergegeven welke toegewezen producten in het toewijzingsbericht moeten worden opgenomen en hoe de elementen van deze toegewezen producten gevuld moeten worden.
 
@@ -376,6 +376,7 @@ Via de validatiemodule op istandaarden.nl kunt u de berichten valideren. De beri
 Via de Testvoorziening iStandaarden (TiS) van Zorginstituut Nederland kunnen softwareleveranciers hun producten testen in de rol van elke partij die deelneemt aan het iStandaarden-berichtenverkeer, en zo nodig verbeteren.
 
 Voor meer informatie of het aanvragen van een account kunt u contact opnemen met Zorginstituut Nederland (<info@istandaarden.nl>).
+
 
 
 
