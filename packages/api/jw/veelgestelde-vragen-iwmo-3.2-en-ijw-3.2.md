@@ -10,7 +10,7 @@ Voor alle iStandaarden (iWlz, iWmo, iJw, iPgb en iEb) is het mogelijk om nieuwe 
 
 ## Een partij waar ik gegevens mee uitwissel houdt zich niet aan de standaarden. Wat moet ik doen?
 
-Indien een partij zich niet aan de standaarden houdt, kunt u dit melden aan Zorginstituut via <info@istandaarden.nl>. het Zorginstituut zal dan met u en de betreffende partij contact opnemen om het gebruik van de standaard uit te leggen. Gezamenlijk zorgen ze er dan voor dat de standaard wordt gevolgd.
+Indien een partij zich niet aan de standaarden houdt, kunt u dit melden aan Zorginstituut via <info@istandaarden.nl>. Het Zorginstituut zal dan met u en de betreffende partij contact opnemen om het gebruik van de standaard uit te leggen. Gezamenlijk zorgen ze er dan voor dat de standaard wordt gevolgd.
 
 # Vragen over Toewijzingen
 
@@ -306,7 +306,7 @@ Daarnaast is het niet toegestaan om de startdatum in het startbericht en de stop
 # Vragen over Start- Stopberichten
 
 ## Mag ik een startbericht sturen, nadat ik een definitieve stop heb gestuurd?
-Ja, dat mag. Na een tijdelijke stop of na een definiteve stop is het toegestaan een startbericht te sturen.
+Ja, dat mag. Na een tijdelijke stop of na een definitieve stop is het toegestaan een startbericht te sturen.
 zie OP379.
 
 # Vragen over Afsluiten zorg
@@ -361,7 +361,7 @@ De naleving wordt op verschillende manieren bewaakt:
 In de ministeriële regeling zelf staan geen specifieke controle- of sanctiebepalingen, maar de verplichting wordt indirect gehandhaafd via deze toezichtslagen.
 
 Letterlijke tekst uit de documentatie:
-De MR-staatscourant juli 2019 regelt alleen de verplichting:
+De MR-Staatscourant juli 2019 regelt alleen de verplichting:
 
 “Toepassing van de iJw houdt in ieder geval in dat er overeenkomstig de iJw elektronisch berichtenverkeer is tussen gemeenten en de in het eerste lid bedoelde personen en instanties bij het toewijzen, factureren en declareren, en leveren van producten, diensten of resultaten.”
 
@@ -371,11 +371,12 @@ De controle zelf wordt georganiseerd via de gemeentelijke en aanbiederspraktijk,
 
 ## Hoe weet ik of mijn bericht voldoet aan de specificaties?
 
-Via de validatiemodule op istandaarden.nl kunt u de berichten valideren. De berichten worden dan gecontroleerd tegen de XSD en XSLT. De validatimodule kunt u vinden op https://www.istandaarden.nl/modules/validatiemodule.
+Via de validatiemodule op istandaarden.nl kunt u de berichten valideren. De berichten worden dan gecontroleerd tegen de XSD en XSLT. De validatiemodule kunt u vinden op https://www.istandaarden.nl/modules/validatiemodule.
 
 Via de Testvoorziening iStandaarden (TiS) van Zorginstituut Nederland kunnen softwareleveranciers hun producten testen in de rol van elke partij die deelneemt aan het iStandaarden-berichtenverkeer, en zo nodig verbeteren.
 
 Voor meer informatie of het aanvragen van een account kunt u contact opnemen met Zorginstituut Nederland (<info@istandaarden.nl>).
+
 
 
 
