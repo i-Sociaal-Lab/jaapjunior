@@ -225,6 +225,12 @@ De gemeente stuurt een 318-retourbericht en vervolgens een afwijzing van het VOW
 
 Het is namelijk noodzakelijk om ook in deze situatie het VOW bericht af te handelen, aangezien het niet is toegestaan een verzoek om wijziging of verzoek om toewijzing te sturen als een eerder verzoek nog niet is afgehandeld (OP350).
 
+## Hoe te handelen als gemeente wanneer een aanbieder een VOT verstuurt, maar geen contract heeft voor het leveren van zorg bij betreffende gemeente.
+
+De gemeente stuurt een 318-retourbericht en vervolgens een afwijzing van het VOW middels een 319-bericht. Hierbij wordt RedenAfwijzingVerzoek gevuld met de waarde 3 (“Geen contract”). De aanbieder stuurt na ontvangst van het 319-bericht het 320-retourbericht.
+
+Het is namelijk noodzakelijk om ook in deze situatie het VOT bericht af te handelen, aangezien het niet is toegestaan een  verzoek om toewijzing te sturen als een eerder verzoek nog niet is afgehandeld (OP350).
+
 # Vragen over Declareren
 
 ## In de header van het declaratie-antwoordbericht staan de elementen BerichtIdentificatie en DeclaratieIdentificatie. Wat is het verschil tussen deze twee elementen?
@@ -382,6 +388,7 @@ Via de validatiemodule op istandaarden.nl kunt u de berichten valideren. De beri
 Via de Testvoorziening iStandaarden (TiS) van Zorginstituut Nederland kunnen softwareleveranciers hun producten testen in de rol van elke partij die deelneemt aan het iStandaarden-berichtenverkeer, en zo nodig verbeteren.
 
 Voor meer informatie of het aanvragen van een account kunt u contact opnemen met Zorginstituut Nederland (<info@istandaarden.nl>).
+
 
 
 
