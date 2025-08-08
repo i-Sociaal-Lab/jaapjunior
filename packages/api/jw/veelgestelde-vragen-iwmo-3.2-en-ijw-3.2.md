@@ -88,6 +88,8 @@ Code 5 (Andere gemeente) moet in alle andere gevallen gebruikt worden wanneer ee
 ## Wat wordt bedoeld met Raamcontract J/N?
 
 Raamcontract J/N is een indicator of de aanbieder voor de te leveren ondersteuning beroep doet op een landelijk raamcontract.
+De VNG maakt namens alle gemeenten afspraken met aanbieders die een essentiële, landelijke functie vervullen in het zorglandschap. Voor deze functies sluiten we (namens het collectief van gemeenten) raamovereenkomsten waarbinnen gemeenten naar gebruik afrekenen. Zij hebben hiervoor het mandaat gekregen in de algemene ledenvergadering.
+zie : https://vng.nl/artikelen/over-landelijke-inkoop-jeugdzorg-en-wmo-zg
 
 ## Hoe wordt een VOW-bericht gevuld?
 
@@ -124,6 +126,7 @@ Als een gemeente een Verzoek om Wijziging honoreert, zal deze een nieuw toewijzi
 Een Verzoek om Toewijzing (315) kan zowel binnen iJw (als gevolg van een wettelijke verwijzing) als binnen iWmo (als gevolg van een open beschikking) gebruikt worden.
 
 Niet iedere gemeente werkt met open beschikkingen. Daarom zal niet iedere aanbieder gebruik kunnen maken van het 315-bericht binnen de iWmo. Dit is een afspraak tussen gemeenten en aanbieders.
+
 
 ## Is het gebruik van het nieuwe VOW-bericht verplicht?
 
@@ -379,6 +382,7 @@ Via de validatiemodule op istandaarden.nl kunt u de berichten valideren. De beri
 Via de Testvoorziening iStandaarden (TiS) van Zorginstituut Nederland kunnen softwareleveranciers hun producten testen in de rol van elke partij die deelneemt aan het iStandaarden-berichtenverkeer, en zo nodig verbeteren.
 
 Voor meer informatie of het aanvragen van een account kunt u contact opnemen met Zorginstituut Nederland (<info@istandaarden.nl>).
+
 
 
 
