@@ -225,7 +225,7 @@ beperkingen weergeven van de toegestane waarden van een rubriek; constraints zij
 
 **gemeentecode** viercijferige coderingen waarmee iedere gemeente uniek geïdentificeerd kan worden.
 
-**Gemeentelijk Gegevensknooppunt of GGk** is een ****online infrastructuur waarover berichtenverkeer in het kader van de uitvoering van de Wmo en de Jeugdwet mogelijk is tussen gemeenten en aanbieders van zorg en ondersteuning; het GGk wordt beheerd door het BIDN.
+**Gemeentelijk Gegevensknooppunt of GGk** is een online infrastructuur waarover berichtenverkeer in het kader van de uitvoering van de Wmo en de Jeugdwet mogelijk is tussen gemeenten en aanbieders van zorg en ondersteuning; het GGk wordt beheerd door het BIDN.
 
 **GGk** zie: Gemeentelijk Gegevensknooppunt.
 
