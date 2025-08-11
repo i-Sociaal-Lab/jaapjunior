@@ -297,6 +297,14 @@ internationale classificatie van ziekten, versie 10
 
 **Jeugdzorg** Sinds de decentralisatie van alle zorg voor jeugd naar gemeenten op 1 januari 2015 hanteert het CBS het begrip jeugdzorg als verzamel naam voor jeugdhulp, jeugdbescherming en jeugd reclassering.
 
+**Jeugdzorgregio** Voor de goede uitvoering van alle jeugdhulptaken is het nodig dat gemeenten bovenlokaal samenwerken. De gemeenten hebben 42 samenwerkingsverbanden voor de jeugdhulp ingericht. Er is niet één schaal van samenwerking voor alle gedecentraliseerde jeugdzorgtaken. Men kiest vanuit de inhoud van de taak, voor een efficiënte aanpak: lokaal, regionaal of bovenregionaal. Hieronder een paar keuzes:
+
+- Alle gemeenten geven de organisatie van de eerstelijnszorg lokaal vorm. Dat geldt veelal ook voor de ambulante hulp.
+- De taken pleegzorg, crisisopvang en residentiële zorg worden bijna altijd op de schaal van de 42 jeugdzorgregio’s georganiseerd.
+- Voor een aantal taken (specialistische jeugdhulp, jeugdbescherming en jeugdreclassering, Veilig Thuis, jeugdzorgplus) is voldoende omvang, expertise en mogelijkheden om financiële risico’s te verevenen nodig. Hierbij kiezen gemeenten voor een schaal van meerdere regio’s.
+
+Jeugdzorgregio's zijn geen deelnemers in het berichtenverkeer iJw.
+
 **kadernotities** notities die Zorginstituut Nederland aan het begin van het jaarlijkse releaseproces voor nieuwe versies van de iStandaarden opstelt en waarin de uitgangspunten staan voor de nieuwe releases.
 
 **ketenpartners** instellingen en/of organisaties die deel uitmaken van een keten waarin zij met elkaar samenwerken, zoals een zorgnetwerk of binnen het passend onderwijs of het berichtenverkeer in de zorg en ondersteuning.
