@@ -1,0 +1,151 @@
+#20220105-indeling-categorien-hulpmiddelen-iWmo
+
+Codering: 11 X 00
+
+Categorie: 
+- 11: Rolvoorzieningen
+- 12: Vervoersvoorzieningen
+- 13: Woonvoorzieningen
+----
+Tussenletter: 
+- X voor hulpmiddelen
+Hoofdgroep (0 t/m Z ):
+- Globale verdeling in hoofdgroepen, 
+- Dit niveau is bruikbaar voor o.a. aanbestedingen
+- Hoofdgroep 9 is gereserveerd voor ontbrekende overige voorzieningen
+-----
+Volgnummer: (0 t/m Z ):
+- Detail indeling binnen de hoofdgroep
+- Volgnummer 0 gereserveerd voor een ‘niet-specifieke’ opdracht aan de leverancier
+
+|Productcode|Omschrijving_Categorie|Hoofdgroep beschrijving|Omschrijving/indeling 2022|
+|           |                      |                       |                          |
+|11X00|Rolvoorzieningen|Handmatig bewogen rolstoel (Volw.)|Handmatig bewogen rolstoel (Volw.)|
+|11X01|Rolvoorzieningen|Handmatig bewogen rolstoel (Volw.)|Rolstoel kortdurend gebruik / lichtgewicht|
+|11X02|Rolvoorzieningen|Handmatig bewogen rolstoel (Volw.)|Rolstoel semipermanent gebruik|
+|11X03|Rolvoorzieningen|Handmatig bewogen rolstoel (Volw.)|Rolstoel actief gebruik, vouwframe|
+|11X04|Rolvoorzieningen|Handmatig bewogen rolstoel (Volw.)|Rolstoel actief gebruik, vastframe|
+|11X05|Rolvoorzieningen|Handmatig bewogen rolstoel (Volw.)|Rolstoel actief gebruik, maatwerk|
+|11X06|Rolvoorzieningen|Handmatig bewogen rolstoel (Volw.)|Rolstoel voor permanent gebruik, kantelbaar|
+|11X10|Rolvoorzieningen|Elektrisch bewogen rolstoel (Volw.)|Elektrisch bewogen rolstoel (Volw.)|
+|11X11|Rolvoorzieningen|Elektrisch bewogen rolstoel (Volw.)|Elektrische rolstoel voor gebruik in huis|
+|11X12|Rolvoorzieningen|Elektrisch bewogen rolstoel (Volw.)|Elektrische rolstoel voor buiten en binnen gebruik|
+|11X13|Rolvoorzieningen|Elektrisch bewogen rolstoel (Volw.)|Elektrische rolstoel, maatwerk|
+|11X20|Rolvoorzieningen|Duwondersteuning|Duwondersteuning|
+|11X21|Rolvoorzieningen|Duwondersteuning|Duwondersteuning, aankoppelbaar tbv begeleider|
+|11X22|Rolvoorzieningen|Duwondersteuning|Elektrische aandrijving tbv handrolstoel|
+|11X30|Rolvoorzieningen|Handmatig bewogen rolstoel (Kind)|Handmatig bewogen rolstoel (Kind)|
+|11X31|Rolvoorzieningen|Handmatig bewogen rolstoel (Kind)|Buggy|
+|11X32|Rolvoorzieningen|Handmatig bewogen rolstoel (Kind)|Kinderduwwandelwagen|
+|11X33|Rolvoorzieningen|Handmatig bewogen rolstoel (Kind)|Kinderduwrolstoel|
+|11X34|Rolvoorzieningen|Handmatig bewogen rolstoel (Kind)|Kinderrolstoel kortdurend gebruik / lichtgewicht|
+|11X35|Rolvoorzieningen|Handmatig bewogen rolstoel (Kind)|Kinderrolstoel semipermanent gebruk|
+|11X36|Rolvoorzieningen|Handmatig bewogen rolstoel (Kind)|Kinderrolstoel permanent, passief gebruik|
+|11X37|Rolvoorzieningen|Handmatig bewogen rolstoel (Kind)|Kinderrolstoel actief gebruik, vouwframe|
+|11X38|Rolvoorzieningen|Handmatig bewogen rolstoel (Kind)|Kinderrolstoel actief gebruik, maatwerk|
+|11X40|Rolvoorzieningen|Elektrisch bewogen rolstoel (Kind)|Elektrisch bewogen rolstoel (Kind)|
+|11X41|Rolvoorzieningen|Elektrisch bewogen rolstoel (Kind)|Elektrische rolstoel voor buiten en binnen gebruik (Kind)|
+|11X42|Rolvoorzieningen|Elektrisch bewogen rolstoel (Kind)|Elektrische rolstoel, maatwerk (Kind)|
+|11X50|Rolvoorzieningen|Kussens en ortheses|Kussens en ortheses|
+|11X51|Rolvoorzieningen|Kussens en ortheses|Anti-decubituskussen|
+|11X52|Rolvoorzieningen|Kussens en ortheses|Complete orthese|
+|11X53|Rolvoorzieningen|Kussens en ortheses|Ortheserugleuning|
+|11X54|Rolvoorzieningen|Kussens en ortheses|Orthesezitting|
+|11X60|Rolvoorzieningen|Sportvoorzieningen|Sportvoorzieningen|
+|11X61|Rolvoorzieningen|Sportvoorzieningen|Sportrolstoel|
+|11X95|Rolvoorzieningen|Overige Rolvoorzieningen|Onderhoud Rol (voorziening niet in beheer)|
+|11X96|Rolvoorzieningen|Overige Rolvoorzieningen|Reparatie Rol (voorziening niet in beheer)|
+|11X97|Rolvoorzieningen|Overige Rolvoorzieningen|Aanpassing (niet afgekocht of niet in beheer)|
+|11X99|Rolvoorzieningen|Overige Rolvoorzieningen|Overige rolvoorziening|
+|12X00|Vervoersvoorzieningen|Scootmobiel|Scootmobiel|
+|12X01|Vervoersvoorzieningen|Scootmobiel|3 wiel, variatie 1|
+|12X02|Vervoersvoorzieningen|Scootmobiel|3 wiel, variatie 2|
+|12X03|Vervoersvoorzieningen|Scootmobiel|3 wiel, variatie 3|
+|12X04|Vervoersvoorzieningen|Scootmobiel|3 wiel, variatie 2, extra geveerd|
+|12X05|Vervoersvoorzieningen|Scootmobiel|3 wiel, variatie 3, extra geveerd|
+|12X06|Vervoersvoorzieningen|Scootmobiel|Meeneembaar/opvouwbaar|
+|12X07|Vervoersvoorzieningen|Scootmobiel|4 wiel, variatie 2|
+|12X08|Vervoersvoorzieningen|Scootmobiel|4 wiel, variatie 3|
+|12X10|Vervoersvoorzieningen|Aangepaste fiets|Aangepaste fiets|
+|12X11|Vervoersvoorzieningen|Aangepaste fiets|tweewielfiets, lage instap|
+|12X12|Vervoersvoorzieningen|Aangepaste fiets|tweewielfiets, met trapondersteuning|
+|12X13|Vervoersvoorzieningen|Aangepaste fiets|driewielfiets, zelfrijder|
+|12X14|Vervoersvoorzieningen|Aangepaste fiets|driewielfiets, met trapondersteuning|
+|12X15|Vervoersvoorzieningen|Aangepaste fiets|driewielligfiets|
+|12X16|Vervoersvoorzieningen|Aangepaste fiets|driewielligfiets, met trapondersteuning|
+|12X20|Vervoersvoorzieningen|Handbike|Handbike|
+|12X21|Vervoersvoorzieningen|Handbike|handbike, aankoppeldeel.|
+|12X22|Vervoersvoorzieningen|Handbike|handbike, aankoppeldeel, elektrisch ondersteund|
+|12X23|Vervoersvoorzieningen|Handbike|handbike, aankoppeldeel, volledig elektrisch|
+|12X30|Vervoersvoorzieningen|Duofiets/tandem|Duofiets/tandem|
+|12X31|Vervoersvoorzieningen|Duofiets/tandem|Duofiets Volwassenen (naast elkaar)|
+|12X32|Vervoersvoorzieningen|Duofiets/tandem|Duofiets volwassene en kind (naast elkaar)|
+|12X33|Vervoersvoorzieningen|Duofiets/tandem|Tandem Volwassenen (achter elkaar)|
+|12X34|Vervoersvoorzieningen|Duofiets/tandem|Tandem volwassene en kind (achter elkaar)|
+|12X40|Vervoersvoorzieningen|Transportfiets / Rolstoelfiets|Transportfiets / Rolstoelfiets|
+|12X41|Vervoersvoorzieningen|Transportfiets / Rolstoelfiets|Zelfrijder|
+|12X42|Vervoersvoorzieningen|Transportfiets / Rolstoelfiets|Met trapondersteuning|
+|12X50|Vervoersvoorzieningen|Autostoeltje|Autostoeltje|
+|12X51|Vervoersvoorzieningen|Autostoeltje|Aangepast autozitje|
+|12X60|Vervoersvoorzieningen|Rijlessen|Rijlessen|
+|12X61|Vervoersvoorzieningen|Rijlessen|Afleverrijles / gebruiksinstructie|
+|12X62|Vervoersvoorzieningen|Rijlessen|Gewenningslessen (na levering)|
+|12X63|Vervoersvoorzieningen|Rijlessen|Beoordeling rijvaardigheid (voor levering)|
+|12X64|Vervoersvoorzieningen|Rijlessen|Evaluatierijles (na proefplaatsing of onderbreking_|
+|12X95|Vervoersvoorzieningen|Overige vervoersvoorzieningen|Onderhoud (geen beheerde voorzienig)|
+|12X96|Vervoersvoorzieningen|Overige vervoersvoorzieningen|Reparatie (voorziening niet in beheer)|
+|12X97|Vervoersvoorzieningen|Overige vervoersvoorzieningen|Aanpassing (niet afgekocht of niet in beheer)|
+|12X99|Vervoersvoorzieningen|Overige vervoersvoorzieningen|Overige vervoervoorziening|
+|13X00|Woonvoorzieningen|Transferhulpmiddelen|Transferhulpmiddelen|
+|13X01|Woonvoorzieningen|Transferhulpmiddelen|Tillift actief|
+|13X02|Woonvoorzieningen|Transferhulpmiddelen|Tillift passief|
+|13X03|Woonvoorzieningen|Transferhulpmiddelen|Actief transferhulpmiddel|
+|13X04|Woonvoorzieningen|Transferhulpmiddelen|Stalen steunstang|
+|13X05|Woonvoorzieningen|Transferhulpmiddelen|Bedhulp|
+|13X06|Woonvoorzieningen|Transferhulpmiddelen|Overschuifplank|
+|13X10|Woonvoorzieningen|Douche- en toiletvoorzieningen|Douche- en toiletvoorzieningen|
+|13X11|Woonvoorzieningen|Douche- en toiletvoorzieningen|Douche-/toiletstoel zonder wielen|
+|13X12|Woonvoorzieningen|Douche- en toiletvoorzieningen|Douche-/toiletstoel zwenkwielen|
+|13X13|Woonvoorzieningen|Douche- en toiletvoorzieningen|Douche-/toiletstoel verstelbaar en/of kantelbaar|
+|13X14|Woonvoorzieningen|Douche- en toiletvoorzieningen|Douche-/toiletstoel zelfrijder|
+|13X15|Woonvoorzieningen|Douche- en toiletvoorzieningen|Toiletstoel|
+|13X16|Woonvoorzieningen|Douche- en toiletvoorzieningen|Badlift|
+|13X17|Woonvoorzieningen|Douche- en toiletvoorzieningen|Douchewagen/douchebrancard|
+|13X18|Woonvoorzieningen|Douche- en toiletvoorzieningen|Badplank|
+|13X19|Woonvoorzieningen|Douche- en toiletvoorzieningen|Spoelföhninstallatie|
+|13X20|Woonvoorzieningen|Trapliften|Trapliften|
+|13X21|Woonvoorzieningen|Trapliften|Rechte trap|
+|13X22|Woonvoorzieningen|Trapliften|1 bocht, muurzijde|
+|13X23|Woonvoorzieningen|Trapliften|1 bocht, spilzijde|
+|13X24|Woonvoorzieningen|Trapliften|2 bochten, muurzijde|
+|13X25|Woonvoorzieningen|Trapliften|2 bochten, spilzijde|
+|13X26|Woonvoorzieningen|Trapliften|Meer dan 2 bochten of 2+ etages|
+|13X27|Woonvoorzieningen|Trapliften|Plateaulift|
+|13X28|Woonvoorzieningen|Trapliften|Huislift|
+|13X30|Woonvoorzieningen|Deurbediening|Deurbediening|
+|13X31|Woonvoorzieningen|Deurbediening|Deurautomaat Individuele deur|
+|13X32|Woonvoorzieningen|Deurbediening|Deurautomaat Collectieve deur (galerij)|
+|13X33|Woonvoorzieningen|Deurbediening|Deurautomaat Collectieve deur (centrale toegang)|
+|13X34|Woonvoorzieningen|Deurbediening|Deurautomaat Collectieve deur (overige locaties)|
+|13X35|Woonvoorzieningen|Deurbediening|Intercom (spraakverbinding)|
+|13X36|Woonvoorzieningen|Deurbediening|Intercom (spraak- en beeldverbinding)|
+|13X37|Woonvoorzieningen|Deurbediening|Elektrische slotontgrendeling|
+|13X38|Woonvoorzieningen|Deurbediening|Elektrisch slot|
+|13X39|Woonvoorzieningen|Deurbediening|Handzender|
+|13X40|Woonvoorzieningen|Vlonders en opritten|Vlonders en opritten|
+|13X41|Woonvoorzieningen|Vlonders en opritten|Tussentrede (vlak)|
+|13X42|Woonvoorzieningen|Vlonders en opritten|Drempelhulp / schegplaat (helling)|
+|13X43|Woonvoorzieningen|Vlonders en opritten|Vlonder (helling-vlak)|
+|13X44|Woonvoorzieningen|Vlonders en opritten|Vlonder (helling-vlak-helling)|
+|13X45|Woonvoorzieningen|Vlonders en opritten|Balkonbevlondering (vlak)|
+|13X50|Woonvoorzieningen|Semi-permanente woonvoorzieningen|Semi-permanente woonvoorzieningen|
+|13X51|Woonvoorzieningen|Semi-permanente woonvoorzieningen|Plafondlift|
+|13X52|Woonvoorzieningen|Semi-permanente woonvoorzieningen|Scootersafe|
+|13X53|Woonvoorzieningen|Semi-permanente woonvoorzieningen|Woonunit / zorgunit|
+|13X60|Woonvoorzieningen|Onroerende woonvoorzieningen|Onroerende woonvoorzieningen|
+|13X61|Woonvoorzieningen|Onroerende woonvoorzieningen|Keuken Nastelbaar|
+|13X62|Woonvoorzieningen|Onroerende woonvoorzieningen|Keuken Mechanisch of elektrisch verstelbaar|
+|13X95|Woonvoorzieningen|Overige Woonvoorzieningen|Onderhoud (geen beheerde voorzienig)|
+|13X96|Woonvoorzieningen|Overige Woonvoorzieningen|Reparatie (voorziening niet in beheer)|
+|13X97|Woonvoorzieningen|Overige Woonvoorzieningen|Aanpassing (niet afgekocht of niet in beheer)|
+|13X99|Woonvoorzieningen|Overige Woonvoorzieningen|Overige woonvoorziening|
