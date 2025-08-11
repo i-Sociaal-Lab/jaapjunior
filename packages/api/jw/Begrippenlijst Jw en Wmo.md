@@ -349,6 +349,8 @@ Indien er gebruik gemaakt wordt van de startberichten en stopberichten maar niet
 
 aangeboden kunnen worden; (binnen de iStandaarden) softwarepakketten die hulp bieden bij het gebruik, de inrichting en de doorontwikkeling van iStandaarden; softwareleveranciers kunnen bijvoorbeeld hun producten testen en administratief medewerkers kunnen hun Excel-bestanden omzetten naar informatie-uitwisseling die landelijk in gebruik is.
 
+**mpt** modulair pakket thuis.
+
 **Nederlandse Zorgautoriteit** zie: NZa
 
 **NZa** Nederlandse Zorgautoriteit; toezichthouder voor de zorg; stelt de tarieven en budgetten vast voor instellingen en beroepsbeoefenaren in de gezondheidszorg, volgt en stimuleert de marktontwikkeling in de gezondheidszorg en ziet toe op de uitvoering van de Zorgverzekeringswet (Zvw), de Wet langdurige zorg (Wlz) en op de naleving van de Wet marktordening gezondheidszorg (Wmg), en gaat fraude en fouten in de zorg tegen.
@@ -485,6 +487,8 @@ De reden beëindiging wordt vastgelegd met een standaardcode in het veld RedenEi
 
 **VNG** Vereniging van Nederlandse Gemeenten; vereniging waar alle gemeenten vrijwillig lid van zijn en die als doel belangenbehartiging, dienstverlening en platformfunctie voor alle gemeenten heeft en opdrachtgever is voor de ontwikkeling van iWmo en iJw en die gemeenten ondersteunt bij de implementatie ervan.
 
+**vpt** volledig pakket thuis.
+
 **waardeketen** schematische weergave van activiteiten die de strategisch relevante processen van een organisatie met elkaar in verband brengt en waarin primaire processen en ondersteunende processen worden onderscheiden.
 
 **wachtlijsten** lijsten waarop mensen die zorg nodig hebben worden geplaatst, omdat de zorg nog niet kan worden gegeven.
@@ -502,6 +506,10 @@ De reden beëindiging wordt vastgelegd met een standaardcode in het veld RedenEi
 **Wet gebruik BSN in de zorg** zie: Wbsn-z
 
 **Wet verplichte geestelijke gezondheidszorg** Wvggz; regelt gedwongen zorg van mensen met psychische aandoeningen die een gevaar voor zichzelf of anderen veroorzaken; dwang (verplichte zorg) is ook mogelijk in de thuissituatie; opvolger van de Wet Bopz; inwerkingtreding 1 januari 2020
+
+**Wlz-zorg in een Wlz-instelling** verblijf met of zonder behandeling.
+
+**Wlz-zorg thuis** Zorg op thuis-locatie vergoed uit de WLZ (vpt, mpt, pgb).
 
 **Wmo** Wet maatschappelijke ondersteuning 2015; regelt een samenhangend aanbod van zorg- en welzijnsvoorzieningen die gemeenten verstrekken om mensen te ondersteunen op het gebied van zelfredzaamheid, participatie, beschermd wonen en opvang; inwerkingtreding 1 januari 2015, opvolger van de eerdere Wmo
 
