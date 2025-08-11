@@ -979,7 +979,7 @@ Over september wordt er geen declaratie meer ingediend. De laatste week, die ged
 
 *Hoe moet het maximaal te declareren volume berekend worden over de productperiode bij gebruik van de frequentie per week in de toewijzing?*
 
-De frequentie per week is niet 1-op1 passend binnen de declaratieperiode maand. Hierdoor zijn bij de omrekening naar een maximaal te declareren volume over de productperiode  aanvullende afspraken noodzakelijk, zodat het volume in de prestatie gecontroleerd kan worden. Afhankelijk van de uitvoeringsvarianten zijn hiervoor verschillende rekenmethoden opgesteld. (voor het vullen van het volume in de prestatie bij toewijzingen met frequentie week, zie IV076)
+De frequentie per week is niet 1-op-1 passend binnen de declaratieperiode maand. Hierdoor zijn bij de omrekening naar een maximaal te declareren volume over de productperiode  aanvullende afspraken noodzakelijk, zodat het volume in de prestatie gecontroleerd kan worden. Afhankelijk van de uitvoeringsvarianten zijn hiervoor verschillende rekenmethoden opgesteld. (voor het vullen van het volume in de prestatie bij toewijzingen met frequentie week, zie IV076)
 
 Rekenmethode inspanningsgerichte toewijzing met frequentie per week
 Het maximale volume wordt bepaald op basis van het aantal (eventueel gebroken) kalenderweken die de productperiode beslaat, binnen de toewijzing. Dit aantal wordt vermenigvuldigd met het volume uit de toewijzing. Voor het bepalen van het aantal kalenderweken, worden de weeknummers geteld.
