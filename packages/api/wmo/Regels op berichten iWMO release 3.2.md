@@ -3,7 +3,7 @@
 Versie: 1.0
 Status: Productie
 Auteur: Zorginstituut
-Bron-link: https://www.istandaarden.nl/iWmo/releases/release-iWmo-3.2
+Bron-link: https://www.istandaarden.nl/iwmo/releases/release-iwmo-3.2
 Publicatiedatum: 29 september 2022
 AI-agent: WMO-agent
 
@@ -11,7 +11,7 @@ AI-agent: WMO-agent
 
 ## Inleiding voor AI-agent
 
-Dit regelrapport beschrijft de Uitgangspunten, Bedrijfsregels, Invulinstructies en Technische regels die gelden binnen het berichtenverkeer van de Jeugdwet (iWmo), release 3.2.0. 
+Dit regelrapport beschrijft de Uitgangspunten, Bedrijfsregels, Invulinstructies en Technische regels die gelden binnen het berichtenverkeer van de WMO (iWmo), release 3.2.0. 
 
 Regels kunnen van toepassing zijn op het bericht, een berichtklasse, berichtelement of een datatype.
 
@@ -106,7 +106,7 @@ Het document dient als **naslagwerk en validatiebron** voor AI-agenten die vrage
 
 **UP037**
 
-*De gemeente geeft iedere beschikking binnen het Jw domein een uniek nummer.*
+*De gemeente geeft iedere beschikking binnen het Wmo domein een uniek nummer.*
 
 ---
 
@@ -597,6 +597,14 @@ Omdat een prestatieregel eerst volledig gecrediteerd moet worden alvorens er een
 
 Het gebruik van de regieberichten is voor de uitvoeringsvarianten inspannings- en outputgericht verplicht. De periode tussen de begin- en einddatum in de regieberichten markeert de periode van levering van de daadwerkelijk toegewezen ondersteuning.
 
+NB
+Start en Stop Wmo-ondersteuning moeten gebruikt kunnen worden als triggers voor het aanleveren van de eigen bijdrage-periode aan het CAK.
+De definitie van de Start en Stop Wmo-ondersteuning sluit zoveel mogelijk aan op de definitie van de eigen bijdrage-periode. 
+Hiervan afwijken, kan leiden tot aanlevering van een onjuiste eigen bijdrage-periode. 
+Indien het toegewezen product een product betreft dat niet eigen bijdrage-plichtig is, dienen de Start- en Stop Wmo-ondersteuning niet gebruikt 
+te worden als triggers voor het aanleveren van de eigen bijdrage-periode.
+
+
 **OP377**
 
 *Alleen een tijdelijke stop mag zonder tussenkomst van een startbericht gevolgd worden door een definitieve stop.*
@@ -702,7 +710,7 @@ Wat na de Header volgt is afhankelijk van of en op welk controleniveau fouten zi
 Er zijn geen fouten geconstateerd:
 Wanneer geen fouten geconstateerd zijn, is het heenbericht volledig goedgekeurd. Het retourbericht bevat in dat geval alleen een Header, zonder retourcodes.
 
-Controleniveau 1: Er zijn fouten geconstateerd bij XSD-validatie
+Controleniveau 1: Er zijn fouten geconstateerd bij XSD-validatie.
 Indien het bericht niet valideert tegen het XSD krijgt de afzender een foutmelding. Er wordt geen retourbericht verzonden.
 
 Controleniveau 2: Er zijn fouten geconstateerd bij XSLT-validatie
@@ -710,13 +718,15 @@ Voor alle regels die binnen een bericht gecontroleerd kunnen worden, maar die ni
 regels wordt alleen de Header retour gestuurd met de algemene retourcode 0001 (Bericht is afgekeurd om technische redenen).
 Wanneer de ter beschikking gestelde XSLTs gebruikt zijn, moet bovendien het versienummer van de XSLTs worden meegegeven.
 
-Controleniveau 3 of 4: Er zijn fouten geconstateerd op berichtoverstijgende controles of controles tegen een externe bron
+Controleniveau 3 of 4: Er zijn fouten geconstateerd op berichtoverstijgende controles of controles tegen een externe bron.
+
 Indien er een fout geconstateerd is in de Header, bevat het retourbericht alleen de Header met daarbij de retourcode van de regel op basis waarvan de fout geconstateerd is.
 Indien in één of meer berichtklassen over een Cliënt fouten zijn geconstateerd, worden alle berichtklassen van die Cliënt ongewijzigd overgenomen in het retourbericht. Bij iedere berichtklasse wordt telkens met een retourcode aangegeven wat de status is:
 
 - Geen fouten geconstateerd in deze berichtklasse: retourcode 0200
 - Deze berichtklasse is niet gecontroleerd: retourcode 0233
 - Er is een fout geconstateerd in deze berichtklasse: de retourcode van de regel op basis waarvan de fout geconstateerd is.
+
 Bijvoorbeeld: De gemeente ontvangt een startbericht met daarin een StartProduct met StatusAanlevering 3 (verwijderen aanlevering), maar heeft niet eerder een startbericht met hetzelfde StartProduct en StatusAanlevering 1 (eerste aanlevering) ontvangen. Het bericht wordt dan afgekeurd op basis van TR063.
 In het retourbericht worden in deze situatie de volgende retourcodes gevuld:
 - Header: Retourcode 0200 (Geen opmerkingen over deze berichtklasse)
@@ -730,6 +740,7 @@ In het retourbericht worden in deze situatie de volgende retourcodes gevuld:
 Welke retourcode gevuld moet worden, wordt bepaald door controle op basis waarvan het bericht wordt afgekeurd. Deze controles zijn beschreven als technisch te controleren regels die op verschillende niveaus gecontroleerd worden. Bij iedere technisch te controleren regel is aangegeven op welk controleniveau deze gecontroleerd wordt. Indien van toepassing is ook aangegeven welke retourcode gebruikt moet worden in het retourbericht indien op basis van de regel een heenbericht wordt afgekeurd.
 Deze invulinstructie heeft betrekking op bijna alle retourberichten. Voor het declaratie-antwoordbericht (325-bericht) is een aparte invulinstructie opgesteld (IV088).
 Een ontvangen heenbericht wordt op vier niveaus gecontroleerd:
+
 Controleniveau 1: berichtformaat (XSD)
 Het bericht wordt gevalideerd tegen het XSD.
 
@@ -767,7 +778,7 @@ Wanneer de ontvanger fouten constateert in een bericht op basis van de ter besch
 
 De waarde voor de elementen BasisschemaXsdVersie en BerichtXsdVersie in het datatype CDT_XsdVersie moeten overgenomen worden uit de schemadefinitie (XSD) waarop het bericht gecreëerd/gebaseerd is. Deze waarden staan in de schemadefinitie respectievelijk in /xs:schema/xs:annotation/xs:appinfo/<namespace>:BasisschemaXsdVersie en /xs:schema/xs:annotation/xs:appinfo/<namespace>:BerichtXsdVersie.
 Voor "<namespace>" wordt de namespace van de desbetreffende  iStandaard ingevuld, bijv. 'iJw', 'iWmo', enz.
-Bijv: <jw301:Bericht xmlns:iWmo="http://www.istandaarden.nl/iWmo/3_2/basisschema/schema" xmlns:jw301="http://www.istandaarden.nl/iWmo/3_2/jw301/schema">
+Bijv: <wmo301:Bericht xmlns:iWmo="http://www.istandaarden.nl/iWmo/3_2/basisschema/schema" xmlns:wmo301="http://www.istandaarden.nl/iWmo/3_2/wmo301/schema">
 
 **IV042**
 
@@ -785,25 +796,25 @@ Voorbeelden
 
 Voorbeeld 1A:
 In een inspanningsgerichte toewijzing wordt aangegeven dat een cliënt recht heeft op 5 dagdelen per week ondersteuning. Omvang in de toewijzing wordt als volgt gevuld:
-Volume: 5
-Eenheid: 16 (Dagdeel (4 uur))
+Volume    : 5
+Eenheid   : 16 (Dagdeel (4 uur))
 Frequentie: 2 (Per week)
 
 Voorbeeld 2A:
 In een outputgerichte toewijzing wordt aangegeven dat een cliënt ondersteuning krijgt voor een vast bedrag van 200 euro per maand. Omvang in de toewijzing wordt als volgt gevuld:
-Volume: 20000
-Eenheid: 83 (Euro's)
+Volume    : 20000
+Eenheid   : 83 (Euro's)
 Frequentie: 4 (Per maand)
 
 Voorbeeld 1B:
 In een declaratie wordt aangegeven dat in de afgelopen productperiode in totaal 20 dagdelen ondersteuning is geleverd. Dit wordt als volgt aangegeven in het declaratiebericht:
 GeleverdVolume: 20
-Eenheid: 16 (Dagdeel (4 uur))
+Eenheid   : 16 (Dagdeel (4 uur))
 
 Voorbeeld 2B:
 In een declaratie wordt aangegeven dat in de afgelopen productperiode ondersteuning is geleverd volgens het vaste, afgesproken maandbedrag van 200 euro. Dit wordt als volgt aangegeven in het declaratiebericht:
 GeleverdVolume: 20000
-Eenheid: 83 (Euro's)
+Eenheid   : 83 (Euro's)
 
 **IV046**
 
@@ -837,6 +848,7 @@ Let op: wijzigen van een toewijzing is slechts beperkt toegestaan (Zie ook OP33x
 - de einddatum kan worden aangepast
 - het budget kan worden aangepast
 - de omvang kan worden aangepast indien de frequentie de waarde 6 (Totaal binnen geldigheidsduur toewijzing) heeft.
+
 Indien de omvang bij andere frequenties dan Totaal binnen geldigheidsduur toewijzing gewijzigd wordt, betekent dat dat de bestaande toewijzing wordt ingetrokken en een nieuwe toewijzing wordt verzonden met als Ingangsdatum de datum waarop de gewijzigde omvang ingaat. Dit betreft dan een nieuwe initiele toekenning met een nieuw ToewijzingNummer.
 
 **IV074**
@@ -881,27 +893,27 @@ De datum van levering bepaalt in welke productperiode de leveringen worden inged
 De productperiode bevat het te declareren volume van alle leveringen op dagen die vallen in de betreffende productperiode. Bij weken die vallen over 2 productperioden bepaalt de datum van levering in welke ProductPeriode de levering opgenomen wordt.
 
 Voorbeeld:
-Toewijzing:     11-07-2022 t/m 04-09-2022 voor 3 uur per week
-Levering:    elke week op donderdag 2,5 uur
+Toewijzing  :     11-07-2022 t/m 04-09-2022 voor 3 uur per week
+Levering    :    elke week op donderdag 2,5 uur
 
 Declaratieperiode juli
-Declaratieperiode:    01-07-2022 t/m 31-07-2022
-Productperiode:        11-07-2022 t/m 31-07-2022
-Volume:            7,5 (3 leveringen x 2,5 uur = 7,5 uur)
+Declaratieperiode: 01-07-2022 t/m 31-07-2022
+Productperiode   : 11-07-2022 t/m 31-07-2022
+Volume           : 7,5 (3 leveringen x 2,5 uur = 7,5 uur)
 Controle maximaal volume 9 (3 weken x 3 uur = 9 uur)
 
 Declaratieperiode augustus
-Declaratieperiode:    01-08-2022 t/m 31-08-2022
-Productperiode:        01-08-2022 t/m 31-08-2022
-Volume:            10 (4 leveringen x 2,5 uur = 10 uur)
+Declaratieperiode: 01-08-2022 t/m 31-08-2022
+Productperiode   : 01-08-2022 t/m 31-08-2022
+Volume           : 10 (4 leveringen x 2,5 uur = 10 uur)
 (n.b. in week 35 valt de levering op donderdag 01-09, dus deze levering zit in ProductPeriode september)
 
 Controle maximaal volume 15 (5 weken x 3 uur= 15 uur)
 
 Declaratieperiode september
-Declaratieperiode:    01-09-2022 t/m 30-09-2022
-Productperiode:        01-09-2022 t/m 04-09-2022
-Volume:            2,5 (1 leveringen x 2,5 uur = 2,5 uur)
+Declaratieperiode: 01-09-2022 t/m 30-09-2022
+Productperiode   : 01-09-2022 t/m 04-09-2022
+Volume           : 2,5 (1 leveringen x 2,5 uur = 2,5 uur)
 Controle maximaal volume 3 (1 week x 3 uur= 3 uur)
 
 Controle maximaal volume over toewijzingsperiode 24 uur
@@ -920,32 +932,32 @@ Voorbeeld 1 (toewijzing eindigt op een zondag):
 Toewijzing:     11-07-2022 t/m 04-09-2022 voor 300 euro per week
 
 Declaratieperiode juli
-Declaratieperiode:   01-07-2022 t/m 31-07-2022
-Productperiode:        11-07-2022 t/m 31-07-2022
-Volume:            Aantal zondagen in de productperiode * 300 euro (900 euro)
+Declaratieperiode : 01-07-2022 t/m 31-07-2022
+Productperiode    : 11-07-2022 t/m 31-07-2022
+Volume            : Aantal zondagen in de productperiode * 300 euro (900 euro)
 
 Declaratieperiode augustus
-Declaratieperiode:    01-08-2022 t/m 31-08-2022
-Productperiode:        01-08-2022 t/m 31-08-2022
-Volume:            Aantal zondagen in de productperiode * 300 euro (1200 euro)
+Declaratieperiode : 01-08-2022 t/m 31-08-2022
+Productperiode    : 01-08-2022 t/m 31-08-2022
+Volume            : Aantal zondagen in de productperiode * 300 euro (1200 euro)
 
 Declaratieperiode september
-Declaratieperiode:    01-09-2022 t/m 30-09-2022
-Productperiode:        01-09-2022 t/m 04-09-2022
-Volume:            Aantal zondagen in de productperiode * 300 euro (300 euro)
+Declaratieperiode : 01-09-2022 t/m 30-09-2022
+Productperiode    : 01-09-2022 t/m 04-09-2022
+Volume            : Aantal zondagen in de productperiode * 300 euro (300 euro)
 
 Voorbeeld 2 (toewijzing eindigt niet op een zondag):
-Toewijzing:     11-07-2022 t/m 03-09-2022 voor 300 euro per week
+Toewijzing        : 11-07-2022 t/m 03-09-2022 voor 300 euro per week
 
 Declaratieperiode juli
-Declaratieperiode:    01-07-2022 t/m 31-07-2022
-Productperiode:        11-07-2022 t/m 31-07-2022
-Volume:            Aantal zondagen in de productperiode * 300 euro (900 euro)
+Declaratieperiode : 01-07-2022 t/m 31-07-2022
+Productperiode    : 11-07-2022 t/m 31-07-2022
+Volume            : Aantal zondagen in de productperiode * 300 euro (900 euro)
 
 Declaratieperiode augustus
-Declaratieperiode    01-08-2022 t/m 31-08-2022
-Productperiode        01-08-2022 t/m 31-08-2022
-Volume            Aantal zondagen in de productperiode + 1 * 300 euro (1500 euro)
+Declaratieperiode   01-08-2022 t/m 31-08-2022
+Productperiode      01-08-2022 t/m 31-08-2022
+Volume :		Aantal zondagen in de productperiode + 1 * 300 euro (1500 euro)
 
 Declaratieperiode september
 Over september wordt er geen declaratie meer ingediend. De laatste week, die gedeeltelijk in september valt, is al meegenomen in de declaratie over augustus.
@@ -954,7 +966,7 @@ Over september wordt er geen declaratie meer ingediend. De laatste week, die ged
 
 *Hoe moet het maximaal te declareren volume berekend worden over de productperiode bij gebruik van de frequentie per week in de toewijzing?*
 
-De frequentie per week is niet 1-op1 passend binnen de declaratieperiode maand.Hierdoor zijn bij de omrekening naar een maximaal te declareren volume over de productperiode  aanvullende afspraken noodzakelijk, zodat het volume in de prestatie gecontroleerd kan worden. Afhankelijk van de uitvoeringsvarianten zijn hiervoor verschillende rekenmethoden opgesteld. (voor het vullen van het volume in de prestatie bij toewijzingen met frequentie week, zie IV076)
+De frequentie per week is niet 1-op-1 passend binnen de declaratieperiode maand.Hierdoor zijn bij de omrekening naar een maximaal te declareren volume over de productperiode  aanvullende afspraken noodzakelijk, zodat het volume in de prestatie gecontroleerd kan worden. Afhankelijk van de uitvoeringsvarianten zijn hiervoor verschillende rekenmethoden opgesteld. (voor het vullen van het volume in de prestatie bij toewijzingen met frequentie week, zie IV076)
 
 Rekenmethode inspanningsgerichte toewijzing met frequentie per week 
 Het maximale volume wordt bepaald op basis van het aantal (eventueel gebroken) kalenderweken die de productperiode beslaat, binnen de toewijzing. Dit aantal wordt vermenigvuldigd met het volume uit de toewijzing. Voor het bepalen van het aantal kalenderweken, worden de weeknummers geteld. 
@@ -982,11 +994,11 @@ Het maximale volume over de toewijzingsperiode is 36 uur
 Voorbeeld bij Outputgerichte toewijzing: 
 Client heeft een toewijzing voor 300 euro per week met ingangsdatum 11-10-2022 en einddatum 31-12-2022
 Het aantal zondagen in de productperiodes:
-- Oktober: 11-10 t/m 31-10 -> telt 3 zondagen 
+- Oktober : 11-10 t/m 31-10 -> telt 3 zondagen 
 - November: 1-11 t/m 30-11 -> telt 4 zondagen
 - December: 1-12 t/m 31-12 -> telt 4 zondagen. Daar wordt een weekvolume bijgeteld, omdat de einddatum van de toewijzing niet op zondag is. 
 Maximaal volume per productperiode: Het aantal zondagen vermenigvuldigd met het volume uit de toewijzing (evt. vermeerderd met een extra weekvolume):  
-- Oktober 3 zondagen: 3x weekvolume (300 euro) = 900 euro
+- Oktober  3 zondagen: 3x weekvolume (300 euro) = 900 euro
 - November 4 zondagen: 4x weekvolume (300 euro) = 1200 euro
 - December 4 zondagen + 1 weekvolume: 5x weekvolumes (300 euro) = 1500 euro
 
