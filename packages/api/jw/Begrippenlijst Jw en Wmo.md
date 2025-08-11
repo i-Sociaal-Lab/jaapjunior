@@ -349,7 +349,7 @@ Indien er gebruik gemaakt wordt van de startberichten en stopberichten maar niet
 
 aangeboden kunnen worden; (binnen de iStandaarden) softwarepakketten die hulp bieden bij het gebruik, de inrichting en de doorontwikkeling van iStandaarden; softwareleveranciers kunnen bijvoorbeeld hun producten testen en administratief medewerkers kunnen hun Excel-bestanden omzetten naar informatie-uitwisseling die landelijk in gebruik is.
 
-**mpt** modulair pakket thuis. Dit is een 'pakket zorg' voor mensen met een indicatie voor de Wet langdurige zorg (Wlz). Het mpt is een leveringsvorm: de manier waarop u de zorg ontvangt. Met een mpt kunt u zorg van verschillende zorgaanbieders krijgen.
+**mpt** modulair pakket thuis. Leveringsvorm voor mensen met een Wlz-indicatie die de zorg thuis willen ontvangen in plaats van in een zorginstelling; mogelijk indien iemand niet het volledige pakket aan zorg nodig heeft (VPT) en/of waarbij iemand verschillende zorgaanbieders wil inschakelen en/of via een combinatie van zorg in natura en een persoonsgebonden budget
 
 **Nederlandse Zorgautoriteit** zie: NZa
 
@@ -487,7 +487,7 @@ De reden beëindiging wordt vastgelegd met een standaardcode in het veld RedenEi
 
 **VNG** Vereniging van Nederlandse Gemeenten; vereniging waar alle gemeenten vrijwillig lid van zijn en die als doel belangenbehartiging, dienstverlening en platformfunctie voor alle gemeenten heeft en opdrachtgever is voor de ontwikkeling van iWmo en iJw en die gemeenten ondersteunt bij de implementatie ervan.
 
-**VPT** volledig pakket thuis. Voor mensen met een indicatie voor de Wet langdurige zorg (Wlz). Bij het VPT regelt 1 zorgaanbieder alle zorg en diensten die u nodig heeft en neemt daarmee veel regelwerk uit handen.
+**VPT** volledig pakket thuis. Leveringsvorm voor mensen met een Wlz-indicatie die de zorg thuis willen ontvangen in plaats van in een zorginstelling waarbij één zorgaanbieder het totale pakket aan benodigde zorg in natura aan huis levert
 
 **waardeketen** schematische weergave van activiteiten die de strategisch relevante processen van een organisatie met elkaar in verband brengt en waarin primaire processen en ondersteunende processen worden onderscheiden.
 
