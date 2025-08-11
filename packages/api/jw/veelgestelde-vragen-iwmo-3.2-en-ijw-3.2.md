@@ -93,6 +93,27 @@ Een Verzoek om Wijziging (VOW) moet gebruikt worden indien er sprake is een gewi
 
 Om de juiste afweging te maken welk bericht gebruikt moet worden, is een stroomschema opgesteld: ‘Wanneer wordt VOT of VOW gebruikt?’. Dit schema is als [infographic](https://www.istandaarden.nl/iwmo/ondersteuning-bij-de-releases/vow-informatiepunt)te vinden op de ondersteuningspagina’s voor release 3.2.
 
+## welke regels zijn afgesproken in het berichtenverkeer mbt gezagsdrager?
+
+OP001
+
+Van een cliënt wordt vastgelegd wie de gezagsdrager is. Indien het een cliënt betreft die 16 jaar of ouder is kan het gezag over de jeugdige ook bij de cliënt zelf liggen.
+
+OP002 :
+De gemeente stuurt in de toewijzing gegevens van de gezagsdrager van de cliënt mee. De gezagsdrager wordt opgenomen als relatie van de cliënt.
+
+OP002x1 :
+Indien een aanbieder in een Verzoek om toewijzing heeft aangegeven dat de gezagsdrager bekend is, hoeft in de daaropvolgende toewijzing de gezagsdrager niet meegegeven te worden.
+
+OP002x2 :
+Indien het gezag over een cliënt bij de jeugdige zelf ligt, wordt deze niet nogmaals als relatie opgenomen in de toewijzing.
+
+OP076 :
+Van iedere contactpersoon (relatie) moet worden opgegeven in welke relatie deze tot de cliënt staat. Gegevens over een contactpersoon mogen alleen worden opgenomen indien noodzakelijk voor communicatie met de cliënt.
+
+OP130 :
+Van de relatie moet altijd een naam worden vastgelegd, aangevuld met een volledig adres en/of een telefoonnummer.
+
 ## Wanneer gebruik ik in RedenAfwijzingVerzoek code 5 (Andere Gemeente) en wanneer code 8 (Woonplaatsbeginsel)?
 
 Code 8 (Woonplaatsbeginsel) mag alleen gebruikt worden als een Verzoek om Toewijzing afgewezen wordt in verband met het woonplaatsbeginsel. Deze reden is dus alleen van toepassing in het domein van de Jeugdwet (iJw).
@@ -402,6 +423,7 @@ Via de validatiemodule op istandaarden.nl kunt u de berichten valideren. De beri
 Via de Testvoorziening iStandaarden (TiS) van Zorginstituut Nederland kunnen softwareleveranciers hun producten testen in de rol van elke partij die deelneemt aan het iStandaarden-berichtenverkeer, en zo nodig verbeteren.
 
 Voor meer informatie of het aanvragen van een account kunt u contact opnemen met Zorginstituut Nederland (<info@istandaarden.nl>).
+
 
 
 
