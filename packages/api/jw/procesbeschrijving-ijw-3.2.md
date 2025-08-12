@@ -1,8 +1,8 @@
-Release iJw 3.1
+Release iJw 3.2
 Procesbeschrijving
 ## 30 september 2021
 Dit document is een weergave van de procesbeschrijvingen zoals die zijn opgenomen in het 
-informatiemodel bij iJw release 3.1. 
+informatiemodel bij iJw release 3.2. 
  
  
 Versiebeheer
