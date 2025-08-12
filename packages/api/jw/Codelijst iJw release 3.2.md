@@ -8,9 +8,17 @@
 - Lijstcodes beginnend met WMO worden alleen in de WMO gebruikt.
 - Bedenk niet zelf nieuwe codes, of lijstcodes.
 - Let op: lijstcodes en codes (bijv. COD002, COD327, 01, 4) zijn louter administratieve identifiers zonder hiërarchische betekenis. Behandel ze als unieke sleutels die uitsluitend gebruikt worden voor verwijzing, niet voor interpretatie.
-- Als in de vraag een geldige lijstcode zit, zoek via lijstcode
+- Als in de vraag een lijstcode zit, zoek via lijstcode
 - Als in de vraag een lijstnaam zit, zoek via lijstnaam
 - Als gevraagd wordt om een codes van een veldnaam, zoek via lijstnaam
+
+|lijstcode|lijstnaam|
+|---------|---------|
+|COD472|Soort Relatie|
+|NUM061|Aanduiding woonadres|
+|WJ756|Eenheid|
+
+--------------
   
 ##Inhoudsopgave
 - [Aanduiding woonadres] (#aanduiding-woonadres)
@@ -495,10 +503,8 @@ je dacht nog vooruitgang te kunnen boeken, uitval.*|
 |Reden wijziging toewijzing|JZ002|02|Client overleden|De toewijzing moet worden gestopt, omdat de client is overleden. Over het algemeen zal dan worden gevuld: einddatum toewijzing = overlijdensdatum client.|
 |Reden wijziging toewijzing|JZ002|03|Contractwijziging|Gemeente maakt een nieuwe contractafspraak met aanbieder, waardoor toewijzing nodig is met ander bijvoorbeeld andere productcodes. NB: niet elke contractwijziging zal leiden tot een nieuwe toewijzing.|
 |Reden wijziging toewijzing|JZ002|04|Herbeoordeling: verlenging toewijzing|Als gevolg van een herbeoordeling kan een toewijzing verlengd worden. Als de zorg verlengd wordt, dan kan eventueel gebruik gemaakt worden van dezelfde toewijzing.|
-|Reden wijziging toewijzing|JZ002|05|Herbeoordeling: verkorting toewijzing|In verschillende situaties zal de huidige toewijzing ingetrokken moeten worden:
-* Client moet ander product toegewezen krijgen.*
-* Client moet korter zorg krijgen.*
-* Client moet andere omvang krijgen, bijvoorbeeld meer uren per week, tenzij het een toewijzing in budget of totaal per toewijzing periode betreft*|
+|Reden wijziging toewijzing|JZ002|05|Herbeoordeling: verkorting toewijzing|In verschillende situaties zal de huidige toewijzing ingetrokken moeten worden: - Client moet ander product toegewezen krijgen. - Client moet korter zorg krijgen.
+- Client moet andere omvang krijgen, bijvoorbeeld meer uren per week, tenzij het een toewijzing in budget of totaal per toewijzing periode betreft|
 |Reden wijziging toewijzing|JZ002|06|Uitstroom naar ander domein|Client gaat over naar ander domein, bijvoorbeeld naar Wlz, en daarom eindigt de Jw toewijzing.|  
 |Reden wijziging toewijzing|JZ002|07|Verhuizing naar een andere gemeente|De gemeente kan een afgegeven Toewijzing niet zomaar intrekken bij verhuizing naar een andere gemeente. De gemeente die de toewijzing heeft verstrekt, blijft verantwoordelijk voor de cliënt tot het moment dat de cliënt is overgedragen aan de gemeente die volgens het woonplaatsbeginsel verantwoordelijk is voor de cliënt. Dit betekent dat een toewijzing door de oude gemeente niet kan worden afgesloten voordat er zekerheid is dat de nieuwe gemeente een aansluitende toewijzing verzendt.| 
 |Reden wijziging toewijzing|JZ002|08|Wijziging leveringsvorm|Client gaat gebruik maken van pgb.|
@@ -572,6 +578,7 @@ basis waarvan de wijziging is doorgevoerd.|
 |Wettelijke vertegenwoordiging|WJ003|08|Mentorschap|
 |Wettelijke vertegenwoordiging|WJ003|09|Onder curatele stelling|
 |Wettelijke vertegenwoordiging|WJ003|10|Zaakwaarneming|
+
 
 
 
