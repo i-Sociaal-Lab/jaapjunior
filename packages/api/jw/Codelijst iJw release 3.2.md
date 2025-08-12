@@ -516,7 +516,7 @@
 
 |Lijstnaam|Lijstcode|Code|Waarde|Gebruik|
 |:--------|---------|----|------|-------|
-|Reden wijziging toewijzing|JZ002|01|Administratieve correctie (vervallen)||
+|Reden wijziging toewijzing|JZ002|01|Administratieve correctie (vervallen)|nvt|
 |Reden wijziging toewijzing|JZ002|02|Client overleden|De toewijzing moet worden gestopt, omdat de client is overleden. Over het algemeen zal dan worden gevuld: einddatum toewijzing = overlijdensdatum client.|
 |Reden wijziging toewijzing|JZ002|03|Contractwijziging|Gemeente maakt een nieuwe contractafspraak met aanbieder, waardoor toewijzing nodig is met ander bijvoorbeeld andere productcodes. NB: niet elke contractwijziging zal leiden tot een nieuwe toewijzing.|
 |Reden wijziging toewijzing|JZ002|04|Herbeoordeling: verlenging toewijzing|Als gevolg van een herbeoordeling kan een toewijzing verlengd worden. Als de zorg verlengd wordt, dan kan eventueel gebruik gemaakt worden van dezelfde toewijzing.|
@@ -597,6 +597,7 @@ basis waarvan de wijziging is doorgevoerd.|
 |Wettelijke vertegenwoordiging|WJ003|08|Mentorschap|
 |Wettelijke vertegenwoordiging|WJ003|09|Onder curatele stelling|
 |Wettelijke vertegenwoordiging|WJ003|10|Zaakwaarneming|
+
 
 
 
