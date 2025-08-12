@@ -456,19 +456,27 @@
 
 ## Reden beeindiging
 
-|Lijstnaam|Lijstcode|Code|Waarde|
-|:--------|---------|----|------|
-|Reden beeindiging|JZ588|02|Overlijden|
+|Lijstnaam|Lijstcode|Code|Waarde|Gebruik|
+|:--------|---------|----|------|-------|
+|Reden beeindiging|JZ588|02|Overlijden|Indien de client is overleden wordt deze code gebruikt|
 |Reden beeindiging|JZ588|20|Levering is tijdelijk beeindigd.|
-|Reden beeindiging|JZ588|31|Levering is volgens plan beeindigd.|
-|Reden beeindiging|JZ588|32|Voortijdig afgesloten: eenzijdig door de client.|
-|Reden beeindiging|JZ588|33|Voortijdig afgesloten: eenzijdig door de aanbieder.|
-|Reden beeindiging|JZ588|34|Voortijdig afgesloten: in overeenstemming.|
-|Reden beeindiging|JZ588|35|Voortijdig afgesloten: wegens externe omstandigheden.|
-|Reden beeindiging|JZ588|36|Geinitieerd door de gemeente|
-|Reden beeindiging|JZ588|37|In verband met wijzigingsverzoek|
-|Reden beeindiging|JZ588|38|Overstap naar andere aanbieder|
-|Reden beeindiging|JZ588|39|Uitstroom naar ander domein|
+|Reden beeindiging|JZ588|31|Levering is volgens plan beeindigd.|Enige wijzigingen in het plan zijn normaal. Het is niet wenselijk om te rigide vast te houden aan een vooropgesteld plan. Als je met elkaar, zoals gepland, het traject doorloopt en niet voortijdig stopt, is het traject volgens plan afgesloten. Ook als de jongere de leeftijd van 18 jaar bereikt en de jeugdhulp wordt beëindigd|
+|Reden beeindiging|JZ588|32|Voortijdig afgesloten: eenzijdig door de client.|*Het traject wordt voortijdig afgesloten, bijvoorbeeld omdat: 
+• de cliënt op eigen initiatief naar een andere zorgaanbieder gaat;
+• de cliënt ontevreden is over de zorg;
+• de cliënt vindt dat de zorg niet (meer) nodig is;
+• de cliënt geen hulp accepteert.
+Dit kan gaan om cliënten die ineens niet meer op afspraken verschijnen maar ook in een overleg
+aangeven te willen stoppen. Als de aanbieder nog wel mogelijkheden ziet om de client te helpen,
+is de afsluiting eenzijdig door de cliënt. Dit brengt in beeld hoe vaak je cliënten verliest waarmee
+je dacht nog vooruitgang te kunnen boeken, uitval.*|
+|Reden beeindiging|JZ588|33|Voortijdig afgesloten: eenzijdig door de aanbieder.|Het lukt de aanbieder niet voldoende passende hulp te bieden. De aanbieder komt tot de conclusie dat verdere hulp vanuit aanbieder niet meer haalbaar is, verantwoord is (bijvoorbeeld vanwege agressie richting de hulpverlener) en/of geen perspectief meer kent. Als de cliënt die conclusie niet deelt, geldt: ‘Voortijdig afgesloten: eenzijdig door de aanbieder.|
+|Reden beeindiging|JZ588|34|Voortijdig afgesloten: in overeenstemming.|De situatie van de jeugdige of het gezin is veranderd waardoor de gestarte hulp niet meer passend is. Als de cliënt en behandelaar het eens zijn dat de eerder afgesproken hulp geen toegevoegde waarde meer heeft, of dat andere hulp nodig is dan dat binnen het lopende traject geboden kan worden.|
+|Reden beeindiging|JZ588|35|Voortijdig afgesloten: wegens externe omstandigheden.|Indien er externe omstandigheden zijn die noodzaken dat de zorg moet worden gestopt, wordt deze code gebruikt. Denk bv aan verhuizingen etc.|
+|Reden beeindiging|JZ588|36|Geinitieerd door de gemeente|Indien op intiatief van een gemeente een toewijzing wordt beëindigd, wordt deze code gebruikt.|
+|Reden beeindiging|JZ588|37|In verband met wijzigingsverzoek|Indien op initatief van de aanbieder een bepaalde zorg die geleverd wordt, niet meer geleverd gaat worden, en de aanbieder heeft en VOW ingediend, wordt deze code gebruikt.|
+|Reden beeindiging|JZ588|38|Overstap naar andere aanbieder|Client gaat naar een andere aanbieder, dus de toewijzing bij deze aanbieder moet beeindigd worden.|
+|Reden beeindiging|JZ588|39|Uitstroom naar ander domein|Client gaat over naar ander domein, bijvoorbeeld naar Wlz, en daarom moet de zorg vanuit de Jeugdwet worden beëindigd. Ook de toewijzing zal hierdoor worden beeindigd.|
 
 ## Reden verzoek
 
@@ -562,6 +570,7 @@ basis waarvan de wijziging is doorgevoerd.|
 |Wettelijke vertegenwoordiging|WJ003|08|Mentorschap|
 |Wettelijke vertegenwoordiging|WJ003|09|Onder curatele stelling|
 |Wettelijke vertegenwoordiging|WJ003|10|Zaakwaarneming|
+
 
 
 
