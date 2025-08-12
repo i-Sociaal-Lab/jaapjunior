@@ -470,22 +470,6 @@
 |Reden beeindiging|JZ588|38|Overstap naar andere aanbieder|
 |Reden beeindiging|JZ588|39|Uitstroom naar ander domein|
 
-## Reden beeindiging
-
-|Lijstnaam|Lijstcode|Code|Waarde|
-|:--------|---------|----|------|
-|Reden beeindiging|WMO588|02|Overlijden|
-|Reden beeindiging|WMO588|20|Levering is tijdelijk beeindigd.|
-|Reden beeindiging|WMO588|31|Levering is volgens plan beeindigd.|
-|Reden beeindiging|WMO588|32|Voortijdig afgesloten: eenzijdig door de client.|
-|Reden beeindiging|WMO588|33|Voortijdig afgesloten: eenzijdig door de aanbieder.|
-|Reden beeindiging|WMO588|34|Voortijdig afgesloten: in overeenstemming.|
-|Reden beeindiging|WMO588|35|Voortijdig afgesloten: wegens externe omstandigheden.|
-|Reden beeindiging|WMO588|36|Geinitieerd door de gemeente|
-|Reden beeindiging|WMO588|37|In verband met wijzigingsverzoek|
-|Reden beeindiging|WMO588|38|Overstap naar andere aanbieder|
-|Reden beeindiging|WMO588|39|Uitstroom naar ander domein|
-
 ## Reden verzoek
 
 |Lijstnaam|Lijstcode|Code|Waarde|
@@ -578,6 +562,7 @@ basis waarvan de wijziging is doorgevoerd.|
 |Wettelijke vertegenwoordiging|WJ003|08|Mentorschap|
 |Wettelijke vertegenwoordiging|WJ003|09|Onder curatele stelling|
 |Wettelijke vertegenwoordiging|WJ003|10|Zaakwaarneming|
+
 
 
 
