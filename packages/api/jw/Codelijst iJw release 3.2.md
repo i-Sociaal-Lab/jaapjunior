@@ -1,14 +1,16 @@
 #Codelijst iJw release 3.2
 
-- Lijstcode beginnend met NUM worden in zowel Wmo als Jeugdwet gebruikt.
-- Lijstcode beginnend met COD worden in zowel Wmo als Jeugdwet gebruikt.
-- Lijstcode beginnend met WJ worden in zowel Wmo als Jeugdwet gebruikt.
-- Lijstcode beginnend met JZ worden alleen in de Jeugdwet gebruikt.
-- Lijstcode WMO757 wordt in zowel Wmo als Jeugdwet gebruikt.
-- Lijstcode beginnend met WMO worden alleen in de WMO gebruikt.
+- Lijstcodes beginnend met NUM worden in zowel Wmo als Jeugdwet gebruikt.
+- Lijstcodes beginnend met COD worden in zowel Wmo als Jeugdwet gebruikt.
+- Lijstcodes beginnend met WJ worden in zowel Wmo als Jeugdwet gebruikt.
+- Lijstcodes beginnend met JZ worden alleen in de Jeugdwet gebruikt.
+- Lijstcodes WMO757 wordt in zowel Wmo als Jeugdwet gebruikt.
+- Lijstcodes beginnend met WMO worden alleen in de WMO gebruikt.
 - Bedenk niet zelf nieuwe codes, of lijstcodes.
 - Let op: lijstcodes en codes (bijv. COD002, COD327, 01, 4) zijn louter administratieve identifiers zonder hiërarchische betekenis. Behandel ze als unieke sleutels die uitsluitend gebruikt worden voor verwijzing, niet voor interpretatie.
-- veldnaam is lijstnaam
+- Als in de vraag een geldige lijstcode zit, zoek via lijstcode
+- Als in de vraag een lijstnaam zit, zoek via lijstnaam
+- Als gevraagd wordt om een codes van een veldnaam, zoek via lijstnaam
   
 ##Inhoudsopgave
 - [Aanduiding woonadres] (#aanduiding-woonadres)
@@ -107,18 +109,18 @@
 
 |Lijstnaam|Lijstcode|Code|Waarde|
 |:--------|---------|----|------|
-|Frequentie|WMO757|1|  Per dag|
-|Frequentie|WMO757|2|  Per week|
-|Frequentie|WMO757|4|  Per maand|
-|Frequentie|WMO757|6|  Totaal binnen geldigheidsduur toewijzing|
+|Frequentie|WMO757|1|Per dag|
+|Frequentie|WMO757|2|Per week|
+|Frequentie|WMO757|4|Per maand|
+|Frequentie|WMO757|6|Totaal binnen geldigheidsduur toewijzing|
 
 ## Geslacht
 
 |Lijstnaam|Lijstcode|Code|Waarde|
 |:--------|---------|----|------|
-|Geslacht|COD046|0|  Onbekend|
-|Geslacht|COD046|1|  Mannelijk|
-|Geslacht|COD046|2|  Vrouwelijk|
+|Geslacht|COD046|0|Onbekend|
+|Geslacht|COD046|1|Mannelijk|
+|Geslacht|COD046|2|Vrouwelijk|
 
 ## Indicatie debet/credit
 
@@ -570,6 +572,7 @@ basis waarvan de wijziging is doorgevoerd.|
 |Wettelijke vertegenwoordiging|WJ003|08|Mentorschap|
 |Wettelijke vertegenwoordiging|WJ003|09|Onder curatele stelling|
 |Wettelijke vertegenwoordiging|WJ003|10|Zaakwaarneming|
+
 
 
 
