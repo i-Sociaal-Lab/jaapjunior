@@ -8,9 +8,12 @@
 - Lijstcodes beginnend met WMO worden alleen in de WMO gebruikt.
 - Bedenk niet zelf nieuwe codes, of lijstcodes.
 - Let op: lijstcodes en codes (bijv. COD002, COD327, 01, 4) zijn louter administratieve identifiers zonder hiërarchische betekenis. Behandel ze als unieke sleutels die uitsluitend gebruikt worden voor verwijzing, niet voor interpretatie.
-- Als in de vraag een lijstcode zit, zoek via lijstcode
+- Als in de vraag een lijstcode zit, zoek via lijstcode, naar lijstnaam in vertaaltabel
 - Als in de vraag een lijstnaam zit, zoek via lijstnaam
 - Als gevraagd wordt om een codes van een veldnaam, zoek via lijstnaam
+- Zoek via lijstnaam
+- 
+## vertaaltabel
 
 |lijstcode|lijstnaam|
 |---------|---------|
@@ -578,6 +581,7 @@ basis waarvan de wijziging is doorgevoerd.|
 |Wettelijke vertegenwoordiging|WJ003|08|Mentorschap|
 |Wettelijke vertegenwoordiging|WJ003|09|Onder curatele stelling|
 |Wettelijke vertegenwoordiging|WJ003|10|Zaakwaarneming|
+
 
 
 
