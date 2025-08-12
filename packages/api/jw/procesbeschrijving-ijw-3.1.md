@@ -5,15 +5,11 @@ Dit document is een weergave van de procesbeschrijvingen zoals die zijn opgenome
 informatiemodel bij iJw release 3.1. 
  
  
-Versiebeheer 
+Versiebeheer
  
-Versie 
-Datum 
-Toelichting
-## 1.0 
-30-09-2021 
-Versie bij publicatie definitieve specificaties 
-iWmo 3.1 en iJw 3.1
+Versie 1.0
+Datum 30-09-2021
+Toelichting Versie bij publicatie definitieve specificaties iJw 3.1
 
 ## Inhoudsopgave (automatisch gegenereerd)
 
@@ -311,27 +307,29 @@ toegelicht. Zie voor meer informatie de casuistiek.
  
 ## JZ002: Reden wijziging toewijzing
 
-Client overleden
+* Client overleden
 De toewijzing moet worden gestopt, omdat de client is overleden.
 Over het algemeen zal dan worden gevuld: einddatum toewijzing = overlijdensdatum client.   
  
-Contractwijziging  
+* Contractwijziging  
 Gemeente maakt een nieuwe contractafspraak met aanbieder, waardoor toewijzing nodig is 
 met ander bijvoorbeeld andere productcodes. NB: niet elke contractwijziging zal leiden tot een 
 nieuwe toewijzing.  
  
-Herbeoordeling: verlenging toewijzing 
+* Herbeoordeling: verlenging toewijzing 
 Als gevolg van een herbeoordeling kan een toewijzing verlengd worden. Als de zorg verlengd 
 wordt, dan kan eventueel gebruik gemaakt worden van dezelfde toewijzing.
  
-Herbeoordeling: verkorting toewijzing 
+* Herbeoordeling: verkorting toewijzing 
 In verschillende situaties zal de huidige toewijzing ingetrokken moeten worden:
 
-* Client moet ander product toegewezen krijgen.
-* Client moet korter zorg krijgen.
-* Client moet andere omvang krijgen, bijvoorbeeld meer uren per week, tenzij het een 
-toewijzing in budget of totaal per toewijzing periode betreft
-* Uitstroom naar ander domein Client gaat over naar ander domein, bijvoorbeeld naar Wlz, en daarom eindigt de Jw 
+- Client moet ander product toegewezen krijgen.
+- Client moet korter zorg krijgen.
+- Client moet andere omvang krijgen, bijvoorbeeld meer uren per week, tenzij het een 
+toewijzing in budget of totaal per toewijzing periode betreft.
+
+* Uitstroom naar ander domein 
+Client gaat over naar ander domein, bijvoorbeeld naar Wlz, en daarom eindigt de Jw 
 toewijzing.  
  
 * Verhuizing naar een andere gemeente  
@@ -359,7 +357,7 @@ Volgens protocol gemeentelijke herindeling is deze toewijzing niet meer geldig.
 * Geinitieerd door de aanbieder 
 Indien een toewijzing wijzigt als gevolg van een verzoek om wijziging, kan dit door de 
 gemeente worden aangegeven middels deze code. Het is dan voor de aanbieder duidelijk op 
-basis waarvan de wijziging is doorgevoerd.\
+basis waarvan de wijziging is doorgevoerd.
 
 * Verwijderd 
 Als een toewijzing ten onrechte is verstuurd en de gemeente dit ongedaan wil maken. Hierbij 
