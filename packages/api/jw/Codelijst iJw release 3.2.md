@@ -8,19 +8,8 @@
 - Lijstcodes beginnend met WMO worden alleen in de WMO gebruikt.
 - Bedenk niet zelf nieuwe codes, of lijstcodes.
 - Let op: lijstcodes en codes (bijv. COD002, COD327, 01, 4) zijn louter administratieve identifiers zonder hiërarchische betekenis. Behandel ze als unieke sleutels die uitsluitend gebruikt worden voor verwijzing, niet voor interpretatie.
-- Als in de vraag een lijstcode zit, zoek via lijstcode, naar lijstnaam in vertaaltabel
-- Als in de vraag een lijstnaam zit, zoek via lijstnaam
-- Als gevraagd wordt om een codes van een veldnaam, zoek via lijstnaam
-- Zoek via lijstnaam
-- 
-## vertaaltabel
-
-|lijstcode|lijstnaam|
-|---------|---------|
-|COD472|Soort Relatie|
-|NUM061|Aanduiding woonadres|
-|WJ756|Eenheid|
-
+- zoek via lijstnaam
+  
 --------------
   
 ##Inhoudsopgave
@@ -80,13 +69,13 @@
 
 |Lijstnaam|Lijstcode|Code|Waarde|
 |:--------|---------|----|------|
-|Code verwijzer|COD327|01|Gemeente|
-|Code verwijzer|COD327|02|Huisarts|
-|Code verwijzer|COD327|03|Jeugdarts|
-|Code verwijzer|COD327|04|Gecertificeerde instelling|
-|Code verwijzer|COD327|05|Medisch specialist|
-|Code verwijzer|COD327|06|Zelfverwijzer/geen verwijzer|
-|Code verwijzer|COD327|08|Rechter, Officier van Justitie, functionaris Justitiële jeugdinrichting|
+|COD327:Code verwijzer|COD327|01|Gemeente|
+|COD327:Code verwijzer|COD327|02|Huisarts|
+|COD327:Code verwijzer|COD327|03|Jeugdarts|
+|COD327:Code verwijzer|COD327|04|Gecertificeerde instelling|
+|COD327:Code verwijzer|COD327|05|Medisch specialist|
+|COD327:Code verwijzer|COD327|06|Zelfverwijzer/geen verwijzer|
+|COD327:Code verwijzer|COD327|08|Rechter, Officier van Justitie, functionaris Justitiële jeugdinrichting|
 
 ## Cummunicatievorm
 
@@ -108,13 +97,13 @@
 
 |Lijstnaam|lijstcode|Code|Waarde|
 |:--------|---------|----|------|
-|Eenheid|WJ756|01|Minuut|
-|Eenheid|WJ756|04|Uur|
-|Eenheid|WJ756|14|Etmaal|
-|Eenheid|WJ756|16|Dagdeel (4 uur)|
-|Eenheid|WJ756|82|Stuks (output)|
-|Eenheid|WJ756|83|Euro's|
-|Eenheid|WJ756|84|Stuks (inspanning)|
+|WJ756:Eenheid|WJ756|01|Minuut|
+|WJ756:Eenheid|WJ756|04|Uur|
+|WJ756:Eenheid|WJ756|14|Etmaal|
+|WJ756:Eenheid|WJ756|16|Dagdeel (4 uur)|
+|WJ756:Eenheid|WJ756|82|Stuks (output)|
+|WJ756:Eenheid|WJ756|83|Euro's|
+|WJ756:Eenheid|WJ756|84|Stuks (inspanning)|
 
 ## Frequentie
 
@@ -581,6 +570,7 @@ basis waarvan de wijziging is doorgevoerd.|
 |Wettelijke vertegenwoordiging|WJ003|08|Mentorschap|
 |Wettelijke vertegenwoordiging|WJ003|09|Onder curatele stelling|
 |Wettelijke vertegenwoordiging|WJ003|10|Zaakwaarneming|
+
 
 
 
