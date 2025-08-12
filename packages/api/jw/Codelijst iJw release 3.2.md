@@ -4,10 +4,10 @@
 - Lijstcodes beginnend met COD worden in zowel Wmo als Jeugdwet gebruikt.
 - Lijstcodes beginnend met WJ worden in zowel Wmo als Jeugdwet gebruikt.
 - Lijstcodes beginnend met JZ worden alleen in de Jeugdwet gebruikt.
-- Lijstcodes WMO757 wordt in zowel Wmo als Jeugdwet gebruikt.
 - Lijstcodes beginnend met WMO worden alleen in de WMO gebruikt.
-- Bedenk niet zelf nieuwe codes, of lijstcodes.
-- Let op: lijstcodes en codes (bijv. COD002, COD327, 01, 4) zijn louter administratieve identifiers zonder hiërarchische betekenis. Behandel ze als unieke sleutels die uitsluitend gebruikt worden voor verwijzing, niet voor interpretatie.
+- Lijstcodes WMO757 wordt in zowel Wmo als Jeugdwet gebruikt.
+- Bedenk niet zelf nieuwe lijstnamen, lijstcodes, of codes.
+- Let op: lijstnamen, lijstcodes en codes (bijv. Eenheid, COD002-VEKT, COD327, 01, 4) zijn louter administratieve identifiers zonder hiërarchische betekenis. Behandel ze als unieke sleutels die uitsluitend gebruikt worden voor verwijzing, niet voor interpretatie.
 - zoek via lijstnaam
   
 --------------
@@ -570,6 +570,7 @@ basis waarvan de wijziging is doorgevoerd.|
 |WJ003:Wettelijke vertegenwoordiging|WJ003|08|Mentorschap|
 |WJ003:Wettelijke vertegenwoordiging|WJ003|09|Onder curatele stelling|
 |WJ003:Wettelijke vertegenwoordiging|WJ003|10|Zaakwaarneming|
+
 
 
 
