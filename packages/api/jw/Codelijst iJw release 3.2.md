@@ -497,25 +497,6 @@
 
 |Lijstnaam|Lijstcode|Code|Waarde|Gebruik|
 |:--------|---------|----|------|-------|
-|Reden wijziging toewijzing|WMO002|01|Administratieve correctie (vervallen)|
-|Reden wijziging toewijzing|WMO002|02|Client overleden|
-|Reden wijziging toewijzing|WMO002|03|Contractwijziging|
-|Reden wijziging toewijzing|WMO002|04|Herbeoordeling: verlenging toewijzing|
-|Reden wijziging toewijzing|WMO002|05|Herbeoordeling: verkorting toewijzing|
-|Reden wijziging toewijzing|WMO002|06|Uitstroom naar ander domein|
-|Reden wijziging toewijzing|WMO002|07|Verhuizing naar een andere gemeente|
-|Reden wijziging toewijzing|WMO002|08|Wijziging leveringsvorm|
-|Reden wijziging toewijzing|WMO002|09|Overstap naar andere aanbieder|
-|Reden wijziging toewijzing|WMO002|10|Overgang naar nieuwe bekostigingssystematiek|
-|Reden wijziging toewijzing|WMO002|11|Gemeentelijke herindeling|
-|Reden wijziging toewijzing|WMO002|12|Geinitieerd door de aanbieder|
-|Reden wijziging toewijzing|WMO002|13|Verwijderd|
-|Reden wijziging toewijzing|WMO002|14|Administratieve correctie|
-
-## Reden wijziging toewijzing
-
-|Lijstnaam|Lijstcode|Code|Waarde|Gebruik|
-|:--------|---------|----|------|-------|
 |Reden wijziging toewijzing|JZ002|01|Administratieve correctie (vervallen)|nvt|
 |Reden wijziging toewijzing|JZ002|02|Client overleden|De toewijzing moet worden gestopt, omdat de client is overleden. Over het algemeen zal dan worden gevuld: einddatum toewijzing = overlijdensdatum client.|
 |Reden wijziging toewijzing|JZ002|03|Contractwijziging|Gemeente maakt een nieuwe contractafspraak met aanbieder, waardoor toewijzing nodig is met ander bijvoorbeeld andere productcodes. NB: niet elke contractwijziging zal leiden tot een nieuwe toewijzing.|
@@ -597,6 +578,7 @@ basis waarvan de wijziging is doorgevoerd.|
 |Wettelijke vertegenwoordiging|WJ003|08|Mentorschap|
 |Wettelijke vertegenwoordiging|WJ003|09|Onder curatele stelling|
 |Wettelijke vertegenwoordiging|WJ003|10|Zaakwaarneming|
+
 
 
 
