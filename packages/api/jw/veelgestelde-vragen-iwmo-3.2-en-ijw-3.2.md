@@ -36,8 +36,8 @@ Door de einddatum van de toewijzing te wijzigen zodat deze gelijk is aan de inga
 
 ## Wat is het verschil tussen code 01 en 14 in de lijst Reden wijziging toewijzing?
 
-In Release 3.1 (april 2022) is er gekozen voor een eenduidige werkwijze voor corrigeren van invoerfouten.
-De redenen voor het wijzigen van een toewijzing zijn toen gewijzigd. Eén code is komen te vervallen en door twee nieuwe codes vervangen. Zo is er een eenduidige werkwijze en duidelijkheid over de status van de toewijzingen waarvan de ingangs- en einddatum gelijk zijn aan elkaar.
+In Release 3.1 (april 2022) is er gekozen voor een eenduidige werkwijze voor het corrigeren van invoerfouten.
+De redenen voor het wijzigen van een toewijzing zijn toen gewijzigd. Eén code (01) is komen te vervallen en door twee nieuwe codes (13 en 14) vervangen. Zo is er een eenduidige werkwijze en duidelijkheid over de status van de toewijzingen waarvan de ingangs- en einddatum gelijk zijn aan elkaar.
 
 De volgende wijzigingen zijn toen doorgevoerd en waren van invloed op de migratie van Release 3.0 naar 3.1:
 
@@ -423,6 +423,7 @@ Via de validatiemodule op istandaarden.nl kunt u de berichten valideren. De beri
 Via de Testvoorziening iStandaarden (TiS) van Zorginstituut Nederland kunnen softwareleveranciers hun producten testen in de rol van elke partij die deelneemt aan het iStandaarden-berichtenverkeer, en zo nodig verbeteren.
 
 Voor meer informatie of het aanvragen van een account kunt u contact opnemen met Zorginstituut Nederland (<info@istandaarden.nl>).
+
 
 
 
