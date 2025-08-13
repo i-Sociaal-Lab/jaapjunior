@@ -466,7 +466,7 @@
 |JZ588:Reden beeindiging|JZ588|32|Voortijdig afgesloten: eenzijdig door de client.|Het traject wordt voortijdig afgesloten, bijvoorbeeld omdat: 1. de cliënt op eigen initiatief naar een andere zorgaanbieder gaat; 2. de cliënt ontevreden is over de zorg; 3. de cliënt vindt dat de zorg niet (meer) nodig is; 4. cliënt geen hulp accepteert. Dit kan gaan om cliënten die ineens niet meer op afspraken verschijnen maar ook in een overleg aangeven te willen stoppen. Als de aanbieder nog wel mogelijkheden ziet om de client te helpen, is de afsluiting eenzijdig door de cliënt. Dit brengt in beeld hoe vaak je cliënten verliest waarmeeje dacht nog vooruitgang te kunnen boeken, uitval.|
 |JZ588:Reden beeindiging|JZ588|33|Voortijdig afgesloten: eenzijdig door de aanbieder.|Het lukt de aanbieder niet voldoende passende hulp te bieden. De aanbieder komt tot de conclusie dat verdere hulp vanuit aanbieder niet meer haalbaar is, verantwoord is (bijvoorbeeld vanwege agressie richting de hulpverlener) en/of geen perspectief meer kent. Als de cliënt die conclusie niet deelt, geldt: ‘Voortijdig afgesloten: eenzijdig door de aanbieder.|
 |JZ588:Reden beeindiging|JZ588|34|Voortijdig afgesloten: in overeenstemming.|De situatie van de jeugdige of het gezin is veranderd waardoor de gestarte hulp niet meer passend is. Als de cliënt en behandelaar het eens zijn dat de eerder afgesproken hulp geen toegevoegde waarde meer heeft, of dat andere hulp nodig is dan dat binnen het lopende traject geboden kan worden.|
-|JZ588:Reden beeindiging|JZ588|35|Voortijdig afgesloten: wegens externe omstandigheden.|Indien er externe omstandigheden zijn die noodzaken dat de zorg moet worden gestopt, wordt deze code gebruikt. Denk bv aan verhuizingen etc.|
+|JZ588:Reden beeindiging|JZ588|35|Voortijdig afgesloten: wegens externe omstandigheden.|Indien er externe omstandigheden zijn die noodzaken dat de zorg moet worden gestopt, wordt deze code gebruikt. Denk bv Verhuizing, het overlijden van de cliënt, langdurige vermissing of ontvoering van het kind|
 |JZ588:Reden beeindiging|JZ588|36|Geinitieerd door de gemeente|Indien op intiatief van een gemeente een toewijzing wordt beëindigd, wordt deze code gebruikt.|
 |JZ588:Reden beeindiging|JZ588|37|In verband met wijzigingsverzoek|Indien op initatief van de aanbieder een bepaalde zorg die geleverd wordt, niet meer geleverd gaat worden, en de aanbieder heeft en VOW ingediend, wordt deze code gebruikt.|
 |JZ588:Reden beeindiging|JZ588|38|Overstap naar andere aanbieder|Client gaat naar een andere aanbieder, dus de toewijzing bij deze aanbieder moet beeindigd worden.|
@@ -561,6 +561,7 @@ basis waarvan de wijziging is doorgevoerd.|
 |WJ003:Wettelijke vertegenwoordiging|WJ003|08|Mentorschap|
 |WJ003:Wettelijke vertegenwoordiging|WJ003|09|Onder curatele stelling|
 |WJ003:Wettelijke vertegenwoordiging|WJ003|10|Zaakwaarneming|
+
 
 
 
