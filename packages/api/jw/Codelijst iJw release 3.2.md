@@ -29,7 +29,8 @@
 - [Productcategorie] (#productcategorie)
 - [Reden afwijzing verzoek] (#reden-afwijzing-verzoek)
 - [Reden beeindiging] (#reden-beeindiging)
-- [Reden verzoek] (#Reden-verzoek)
+- [Reden beëindiging jeugdhulp] (#reden-beeindiging-jeugdhulp)
+- [Reden verzoek] (#reden-verzoek)
 - [Reden wijziging toewijzing] (#reden-wijziging-toewijzing)
 - [Soort adres] (#soort-adres)
 - [Soort relatie] (#soort-relatie)
@@ -472,6 +473,17 @@
 |JZ588:Reden beeindiging|JZ588|38|Overstap naar andere aanbieder|Client gaat naar een andere aanbieder, dus de toewijzing bij deze aanbieder moet beeindigd worden.|
 |JZ588:Reden beeindiging|JZ588|39|Uitstroom naar ander domein|Client gaat over naar ander domein, bijvoorbeeld naar Wlz, en daarom moet de zorg vanuit de Jeugdwet worden beëindigd. Ook de toewijzing zal hierdoor worden beeindigd.|
 
+## Reden beëindiging jeugdhulp (CBS)
+# Beleidsinformatie Jeugd
+
+|Lijstnaam|Lijstcode|Code|Waarde|
+|:--------|---------|----|------|
+|Reden Beeindiging Jeugdhulp|CBS|01|Beëindigd volgens plan|
+|Reden Beeindiging Jeugdhulp|CBS|02|Voortijdig afgesloten: in overeenstemming|
+|Reden Beeindiging Jeugdhulp|CBS|03|Voortijdig afgesloten: eenzijdig door de cliënt|
+|Reden Beeindiging Jeugdhulp|CBS|04|Voortijdig afgesloten: eenzijdig door de aanbieder|
+|Reden Beeindiging Jeugdhulp|CBS|05|Voortijdig afgesloten: wegens externe omstandigheden|
+
 ## Reden verzoek
 
 |Lijstnaam|Lijstcode|Code|Waarde|
@@ -561,6 +573,7 @@ basis waarvan de wijziging is doorgevoerd.|
 |WJ003:Wettelijke vertegenwoordiging|WJ003|08|Mentorschap|
 |WJ003:Wettelijke vertegenwoordiging|WJ003|09|Onder curatele stelling|
 |WJ003:Wettelijke vertegenwoordiging|WJ003|10|Zaakwaarneming|
+
 
 
 
