@@ -463,15 +463,7 @@
 |JZ588:Reden beeindiging|JZ588|02|Overlijden|Indien de client is overleden wordt deze code gebruikt|
 |JZ588:Reden beeindiging|JZ588|20|Levering is tijdelijk beeindigd.|
 |JZ588:Reden beeindiging|JZ588|31|Levering is volgens plan beeindigd.|Enige wijzigingen in het plan zijn normaal. Het is niet wenselijk om te rigide vast te houden aan een vooropgesteld plan. Als je met elkaar, zoals gepland, het traject doorloopt en niet voortijdig stopt, is het traject volgens plan afgesloten. Ook als de jongere de leeftijd van 18 jaar bereikt en de jeugdhulp wordt beëindigd|
-|JZ588:Reden beeindiging|JZ588|32|Voortijdig afgesloten: eenzijdig door de client.|*Het traject wordt voortijdig afgesloten, bijvoorbeeld omdat: 
-• de cliënt op eigen initiatief naar een andere zorgaanbieder gaat;
-• de cliënt ontevreden is over de zorg;
-• de cliënt vindt dat de zorg niet (meer) nodig is;
-• de cliënt geen hulp accepteert.
-Dit kan gaan om cliënten die ineens niet meer op afspraken verschijnen maar ook in een overleg
-aangeven te willen stoppen. Als de aanbieder nog wel mogelijkheden ziet om de client te helpen,
-is de afsluiting eenzijdig door de cliënt. Dit brengt in beeld hoe vaak je cliënten verliest waarmee
-je dacht nog vooruitgang te kunnen boeken, uitval.*|
+|JZ588:Reden beeindiging|JZ588|32|Voortijdig afgesloten: eenzijdig door de client.|Het traject wordt voortijdig afgesloten, bijvoorbeeld omdat: 1. de cliënt op eigen initiatief naar een andere zorgaanbieder gaat; 2. de cliënt ontevreden is over de zorg; 3. de cliënt vindt dat de zorg niet (meer) nodig is; 4. cliënt geen hulp accepteert. Dit kan gaan om cliënten die ineens niet meer op afspraken verschijnen maar ook in een overleg aangeven te willen stoppen. Als de aanbieder nog wel mogelijkheden ziet om de client te helpen, is de afsluiting eenzijdig door de cliënt. Dit brengt in beeld hoe vaak je cliënten verliest waarmeeje dacht nog vooruitgang te kunnen boeken, uitval.|
 |JZ588:Reden beeindiging|JZ588|33|Voortijdig afgesloten: eenzijdig door de aanbieder.|Het lukt de aanbieder niet voldoende passende hulp te bieden. De aanbieder komt tot de conclusie dat verdere hulp vanuit aanbieder niet meer haalbaar is, verantwoord is (bijvoorbeeld vanwege agressie richting de hulpverlener) en/of geen perspectief meer kent. Als de cliënt die conclusie niet deelt, geldt: ‘Voortijdig afgesloten: eenzijdig door de aanbieder.|
 |JZ588:Reden beeindiging|JZ588|34|Voortijdig afgesloten: in overeenstemming.|De situatie van de jeugdige of het gezin is veranderd waardoor de gestarte hulp niet meer passend is. Als de cliënt en behandelaar het eens zijn dat de eerder afgesproken hulp geen toegevoegde waarde meer heeft, of dat andere hulp nodig is dan dat binnen het lopende traject geboden kan worden.|
 |JZ588:Reden beeindiging|JZ588|35|Voortijdig afgesloten: wegens externe omstandigheden.|Indien er externe omstandigheden zijn die noodzaken dat de zorg moet worden gestopt, wordt deze code gebruikt. Denk bv aan verhuizingen etc.|
@@ -495,8 +487,7 @@ je dacht nog vooruitgang te kunnen boeken, uitval.*|
 |JZ002:Reden wijziging toewijzing|JZ002|02|Client overleden|De toewijzing moet worden gestopt, omdat de client is overleden. Over het algemeen zal dan worden gevuld: einddatum toewijzing = overlijdensdatum client.|
 |JZ002:Reden wijziging toewijzing|JZ002|03|Contractwijziging|Gemeente maakt een nieuwe contractafspraak met aanbieder, waardoor toewijzing nodig is met ander bijvoorbeeld andere productcodes. NB: niet elke contractwijziging zal leiden tot een nieuwe toewijzing.|
 |JZ002:Reden wijziging toewijzing|JZ002|04|Herbeoordeling: verlenging toewijzing|Als gevolg van een herbeoordeling kan een toewijzing verlengd worden. Als de zorg verlengd wordt, dan kan eventueel gebruik gemaakt worden van dezelfde toewijzing.|
-|JZ002:Reden wijziging toewijzing|JZ002|05|Herbeoordeling: verkorting toewijzing|In verschillende situaties zal de huidige toewijzing ingetrokken moeten worden: Client moet ander product toegewezen krijgen. Client moet korter zorg krijgen.
-Client moet andere omvang krijgen, bijvoorbeeld meer uren per week, tenzij het een toewijzing in budget of totaal per toewijzing periode betreft|
+|JZ002:Reden wijziging toewijzing|JZ002|05|Herbeoordeling: verkorting toewijzing|In verschillende situaties zal de huidige toewijzing ingetrokken moeten worden: Client moet ander product toegewezen krijgen. Client moet korter zorg krijgen. Client moet andere omvang krijgen, bijvoorbeeld meer uren per week, tenzij het een toewijzing in budget of totaal per toewijzing periode betreft|
 |JZ002:Reden wijziging toewijzing|JZ002|06|Uitstroom naar ander domein|Client gaat over naar ander domein, bijvoorbeeld naar Wlz, en daarom eindigt de Jw toewijzing.|
 |JZ002:Reden wijziging toewijzing|JZ002|07|Verhuizing naar een andere gemeente|De gemeente kan een afgegeven Toewijzing niet zomaar intrekken bij verhuizing naar een andere gemeente. De gemeente die de toewijzing heeft verstrekt, blijft  er verantwoordelijk voor de cliënt tot het moment dat de cliënt is overgedragen aan de gemeente die volgens het woonplaatsbeginsel verantwoordelijk is voor de cliënt. Dit betekent dat een toewijzing door de oude gemeente niet kan worden afgesloten voordat er zekerheid is dat de nieuwe gemeente een aansluitende toewijzing verzendt.| 
 |JZ002:Reden wijziging toewijzing|JZ002|08|Wijziging leveringsvorm|Client gaat gebruik maken van pgb.|
@@ -570,6 +561,7 @@ basis waarvan de wijziging is doorgevoerd.|
 |WJ003:Wettelijke vertegenwoordiging|WJ003|08|Mentorschap|
 |WJ003:Wettelijke vertegenwoordiging|WJ003|09|Onder curatele stelling|
 |WJ003:Wettelijke vertegenwoordiging|WJ003|10|Zaakwaarneming|
+
 
 
 
