@@ -495,10 +495,10 @@ je dacht nog vooruitgang te kunnen boeken, uitval.*|
 |JZ002:Reden wijziging toewijzing|JZ002|02|Client overleden|De toewijzing moet worden gestopt, omdat de client is overleden. Over het algemeen zal dan worden gevuld: einddatum toewijzing = overlijdensdatum client.|
 |JZ002:Reden wijziging toewijzing|JZ002|03|Contractwijziging|Gemeente maakt een nieuwe contractafspraak met aanbieder, waardoor toewijzing nodig is met ander bijvoorbeeld andere productcodes. NB: niet elke contractwijziging zal leiden tot een nieuwe toewijzing.|
 |JZ002:Reden wijziging toewijzing|JZ002|04|Herbeoordeling: verlenging toewijzing|Als gevolg van een herbeoordeling kan een toewijzing verlengd worden. Als de zorg verlengd wordt, dan kan eventueel gebruik gemaakt worden van dezelfde toewijzing.|
-|JZ002:Reden wijziging toewijzing|JZ002|05|Herbeoordeling: verkorting toewijzing|In verschillende situaties zal de huidige toewijzing ingetrokken moeten worden: - Client moet ander product toegewezen krijgen. - Client moet korter zorg krijgen.
-- Client moet andere omvang krijgen, bijvoorbeeld meer uren per week, tenzij het een toewijzing in budget of totaal per toewijzing periode betreft|
-|JZ002:Reden wijziging toewijzing|JZ002|06|Uitstroom naar ander domein|Client gaat over naar ander domein, bijvoorbeeld naar Wlz, en daarom eindigt de Jw toewijzing.|  
-|JZ002:Reden wijziging toewijzing|JZ002|07|Verhuizing naar een andere gemeente|De gemeente kan een afgegeven Toewijzing niet zomaar intrekken bij verhuizing naar een andere gemeente. De gemeente die de toewijzing heeft verstrekt, blijft verantwoordelijk voor de cliënt tot het moment dat de cliënt is overgedragen aan de gemeente die volgens het woonplaatsbeginsel verantwoordelijk is voor de cliënt. Dit betekent dat een toewijzing door de oude gemeente niet kan worden afgesloten voordat er zekerheid is dat de nieuwe gemeente een aansluitende toewijzing verzendt.| 
+|JZ002:Reden wijziging toewijzing|JZ002|05|Herbeoordeling: verkorting toewijzing|In verschillende situaties zal de huidige toewijzing ingetrokken moeten worden: Client moet ander product toegewezen krijgen. Client moet korter zorg krijgen.
+Client moet andere omvang krijgen, bijvoorbeeld meer uren per week, tenzij het een toewijzing in budget of totaal per toewijzing periode betreft|
+|JZ002:Reden wijziging toewijzing|JZ002|06|Uitstroom naar ander domein|Client gaat over naar ander domein, bijvoorbeeld naar Wlz, en daarom eindigt de Jw toewijzing.|
+|JZ002:Reden wijziging toewijzing|JZ002|07|Verhuizing naar een andere gemeente|De gemeente kan een afgegeven Toewijzing niet zomaar intrekken bij verhuizing naar een andere gemeente. De gemeente die de toewijzing heeft verstrekt, blijft  er verantwoordelijk voor de cliënt tot het moment dat de cliënt is overgedragen aan de gemeente die volgens het woonplaatsbeginsel verantwoordelijk is voor de cliënt. Dit betekent dat een toewijzing door de oude gemeente niet kan worden afgesloten voordat er zekerheid is dat de nieuwe gemeente een aansluitende toewijzing verzendt.| 
 |JZ002:Reden wijziging toewijzing|JZ002|08|Wijziging leveringsvorm|Client gaat gebruik maken van pgb.|
 |JZ002:Reden wijziging toewijzing|JZ002|09|Overstap naar andere aanbieder|Client gaat naar een andere aanbieder, dus de toewijzing bij deze aanbieder moet beeindigd worden.|
 |JZ002:Reden wijziging toewijzing|JZ002|10|Overgang naar nieuwe bekostigingssystematiek|De toewijzing is ingetrokken, omdat de client is overgegaan naar een andere regeling/bekostiging.|
@@ -570,6 +570,7 @@ basis waarvan de wijziging is doorgevoerd.|
 |WJ003:Wettelijke vertegenwoordiging|WJ003|08|Mentorschap|
 |WJ003:Wettelijke vertegenwoordiging|WJ003|09|Onder curatele stelling|
 |WJ003:Wettelijke vertegenwoordiging|WJ003|10|Zaakwaarneming|
+
 
 
 
