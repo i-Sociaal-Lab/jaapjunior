@@ -473,7 +473,7 @@ De reden beëindiging wordt vastgelegd met een standaardcode in het veld RedenEi
 
 **verblijf** het tijdelijk of permanent wonen in een instelling voor mensen die vanwege een aandoening of beperking niet (meer) thuis kunnen wonen.
 
-**Verlengde Jeugdwet** De Jeugdwet kent geen formele term "verlengde jeugdwet". Wel zijn er bepalingen in de Jeugdwet die het mogelijk maken om jeugdhulp (en dus toepassing van de Jeugdwet) voort te zetten na het bereiken van de leeftijd van 18 jaar. Dit wordt in de praktijk soms aangeduid als "verlengde jeugdhulp" of "verlengde Jeugdwet". 
+**Verlengde Jeugdwet** De Jeugdwet kent geen formele term "verlengde jeugdwet". Wel zijn er bepalingen in de Jeugdwet en regeling Jeugdwet die het mogelijk maken om jeugdhulp (en dus toepassing van de Jeugdwet) voort te zetten na het bereiken van de leeftijd van 18 jaar. Dit wordt in de praktijk soms aangeduid als "verlengde jeugdhulp" of "verlengde Jeugdwet". 
 
 **Verlengen of verlenging** van een toewijzing is het oprekken van de einddatum
 
