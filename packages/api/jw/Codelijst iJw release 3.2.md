@@ -1,4 +1,4 @@
-#Codelijst iJw release 3.2
+# Codelijst iJw release 3.2
 
 - Lijstcodes beginnend met NUM worden in zowel Wmo als Jeugdwet gebruikt.
 - Lijstcodes beginnend met COD worden in zowel Wmo als Jeugdwet gebruikt.
@@ -12,7 +12,7 @@
   
 --------------
   
-##Inhoudsopgave
+## Inhoudsopgave
 - [Aanduiding woonadres] (#aanduiding-woonadres)
 - [Berichtcode] (#berichtcode)
 - [Code verwijzer] (#code-verwijzer)
@@ -573,6 +573,7 @@ basis waarvan de wijziging is doorgevoerd.|
 |WJ003:Wettelijke vertegenwoordiging|WJ003|08|Mentorschap|
 |WJ003:Wettelijke vertegenwoordiging|WJ003|09|Onder curatele stelling|
 |WJ003:Wettelijke vertegenwoordiging|WJ003|10|Zaakwaarneming|
+
 
 
 
