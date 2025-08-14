@@ -462,7 +462,7 @@
 |Lijstnaam|Lijstcode|Code|Waarde|Gebruik|
 |:--------|---------|----|------|-------|
 |JZ588:Reden beeindiging|JZ588|02|Overlijden|Indien de client is overleden wordt deze code gebruikt|
-|JZ588:Reden beeindiging|JZ588|20|Levering is tijdelijk beeindigd.|
+|JZ588:Reden beeindiging|JZ588|20|Levering is tijdelijk beeindigd.|bijvoorbeeld indien de cliënt wordt opgenomen in het ziekenhuis, verwacht de aanbieder dat de levering van de toegewezen jeugdhulp op een later moment weer hervat wordt. De afgegeven toewijzing blijft geldig en blijft bij de gemeente open staan. (toewijzing aanhouden). De aanbieder houdt contact met de cliënt en geeft aan de gemeente door wanneer de levering hervat wordt, middels een startbericht, ofwel definitief wordt beëindigd (monitoren).
 |JZ588:Reden beeindiging|JZ588|31|Levering is volgens plan beeindigd.|Enige wijzigingen in het plan zijn normaal. Het is niet wenselijk om te rigide vast te houden aan een vooropgesteld plan. Als je met elkaar, zoals gepland, het traject doorloopt en niet voortijdig stopt, is het traject volgens plan afgesloten. Ook als de jongere de leeftijd van 18 jaar bereikt en de jeugdhulp wordt beëindigd|
 |JZ588:Reden beeindiging|JZ588|32|Voortijdig afgesloten: eenzijdig door de client.|Het traject wordt voortijdig afgesloten, bijvoorbeeld omdat: 1. de cliënt op eigen initiatief naar een andere zorgaanbieder gaat; 2. de cliënt ontevreden is over de zorg; 3. de cliënt vindt dat de zorg niet (meer) nodig is; 4. cliënt geen hulp accepteert. Dit kan gaan om cliënten die ineens niet meer op afspraken verschijnen maar ook in een overleg aangeven te willen stoppen. Als de aanbieder nog wel mogelijkheden ziet om de client te helpen, is de afsluiting eenzijdig door de cliënt. Dit brengt in beeld hoe vaak je cliënten verliest waarmeeje dacht nog vooruitgang te kunnen boeken, uitval.|
 |JZ588:Reden beeindiging|JZ588|33|Voortijdig afgesloten: eenzijdig door de aanbieder.|Het lukt de aanbieder niet voldoende passende hulp te bieden. De aanbieder komt tot de conclusie dat verdere hulp vanuit aanbieder niet meer haalbaar is, verantwoord is (bijvoorbeeld vanwege agressie richting de hulpverlener) en/of geen perspectief meer kent. Als de cliënt die conclusie niet deelt, geldt: ‘Voortijdig afgesloten: eenzijdig door de aanbieder.|
@@ -573,6 +573,7 @@ basis waarvan de wijziging is doorgevoerd.|
 |WJ003:Wettelijke vertegenwoordiging|WJ003|08|Mentorschap|
 |WJ003:Wettelijke vertegenwoordiging|WJ003|09|Onder curatele stelling|
 |WJ003:Wettelijke vertegenwoordiging|WJ003|10|Zaakwaarneming|
+
 
 
 
