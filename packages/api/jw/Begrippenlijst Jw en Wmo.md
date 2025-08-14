@@ -473,11 +473,13 @@ De reden beëindiging wordt vastgelegd met een standaardcode in het veld RedenEi
 
 **verblijf** het tijdelijk of permanent wonen in een instelling voor mensen die vanwege een aandoening of beperking niet (meer) thuis kunnen wonen.
 
+**Verlengde Jeugdwet** De Jeugdwet kent geen formele term "verlengde jeugdwet". Wel zijn er bepalingen in de Jeugdwet die het mogelijk maken om jeugdhulp (en dus toepassing van de Jeugdwet) voort te zetten na het bereiken van de leeftijd van 18 jaar. Dit wordt in de praktijk soms aangeduid als "verlengde jeugdhulp" of "verlengde Jeugdwet". 
+
 **Verlengen of verlenging** van een toewijzing is het oprekken van de einddatum
 
 **Verwijsindex Productcodes Wmo en Jeugdwet** overzicht per gemeente van de productcodes voor de Wmo en de productcodes voor de Jeugdwet die tot 1 januari 2016 bij gemeenten in gebruik waren; de module is omgezet naar Excel-bestanden en per 1 januari 2016 is de standaardproductcodelijst  beschikbaar. Deze heten Productcodelijst JW en voor de Productcodelijst WMO.
 
-**Verozek om toewijzing** zie verzoek om toewijzing Jeugdhulp, JW315.
+**Verzoek om toewijzing** zie verzoek om toewijzing Jeugdhulp, JW315.
 
 **Verzoek om toewijzing Jeugdhulp** dit is een bericht voor het aanvragen van een toewijzing voor Jeugdhulp. Dit bericht wordt ook wel VOT of Verzoek om toewijzing genoemd. Het bericht dat hiervoor wordt gebruikt is JW315. Dit bericht wordt gebruikt indien een client zich meldt bij een aanbieder met een wettelijke verwijzing voor een zorgvraag.
 
