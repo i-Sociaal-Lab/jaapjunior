@@ -127,10 +127,12 @@ zie : https://vng.nl/artikelen/over-landelijke-inkoop-jeugdzorg-en-wmo-zg
 
 ## Kan ik opmerkingen of vrije tekst toevoegen aan een VOT?
 
-In de context van het iJw-berichtenverkeer wordt hiermee doorgaans bedoeld: het toevoegen van een toelichting, motivatie of vrije tekst bij het verzoek. In het JW315-bericht (Verzoek om Toewijzing Jeugdhulp) is een veld aanwezig met de naam Commentaar. Dit veld is optioneel. Het kan gebruikt worden als vrij tekstveld voor toelichting op het verzoek.
+In de context van het iJw-berichtenverkeer wordt hiermee doorgaans bedoeld: het toevoegen van een toelichting, motivatie of vrije tekst bij het verzoek. In het JW315-bericht (Verzoek om Toewijzing Jeugdhulp) is voor de klassen "client" en "aangevraagd product" een veld aanwezig met de naam Commentaar. Dit veld is optioneel. Het kan gebruikt worden als vrij tekstveld voor toelichting op het verzoek.
+Naast de beschikbaarheid van een commentaarvelden in het VOT bericht zijn in het toewijzingsbericht ook voor de klassen "client" en "toegewezen product" commmentaarvelden beschikbaar. 
 Er zit wel een beperking op het gebruik van dit veld. Het veld "Commentaar" mag gebruikt worden voor extra toelichting, maar alleen als deze toelichting niet elders in het bericht kan worden opgenomen.
 Het gebruik van ongestructureerde informatie (zoals vrije tekst in commentaar) moet tot een minimum worden beperkt.
 Er mogen geen tot een persoon herleidbare gegevens in het commentaarveld worden opgenomen zonder toestemming van die persoon.
+(zie OP191)
 
 ## Hoe wordt een VOW-bericht gevuld?
 
@@ -429,6 +431,7 @@ Via de validatiemodule op istandaarden.nl kunt u de berichten valideren. De beri
 Via de Testvoorziening iStandaarden (TiS) van Zorginstituut Nederland kunnen softwareleveranciers hun producten testen in de rol van elke partij die deelneemt aan het iStandaarden-berichtenverkeer, en zo nodig verbeteren.
 
 Voor meer informatie of het aanvragen van een account kunt u contact opnemen met Zorginstituut Nederland (<info@istandaarden.nl>).
+
 
 
 
