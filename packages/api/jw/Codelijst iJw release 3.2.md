@@ -132,8 +132,8 @@
 
 ## Ja of Nee
 
-|Lijstnaam|Lijstcode|Code|Waarde|
-|:--------|---------|----|------|
+|Lijstnaam       |Lijstcode|Code|Waarde|
+|:---------------|---------|----|------|
 |COD260:Ja of nee|COD260|1|Ja|
 |COD260:Ja of nee|COD260|2|Nee|
 
@@ -514,7 +514,7 @@ basis waarvan de wijziging is doorgevoerd.|
 ## Soort adres
 
 |Lijstnaam|Lijstcode|Code|Waarde|
-|:--------|---------|----|------|
+|:-----------------|------|--|-----------------------|
 |COD757:Soort adres|COD757|01|BRP-adres|
 |COD757:Soort adres|COD757|02|Correspondentie-adres|
 |COD757:Soort adres|COD757|03|Verblijfadres|
@@ -573,6 +573,7 @@ basis waarvan de wijziging is doorgevoerd.|
 |WJ003:Wettelijke vertegenwoordiging|WJ003|08|Mentorschap|
 |WJ003:Wettelijke vertegenwoordiging|WJ003|09|Onder curatele stelling|
 |WJ003:Wettelijke vertegenwoordiging|WJ003|10|Zaakwaarneming|
+
 
 
 
