@@ -24,6 +24,7 @@ Deze codelijst bevat de gestandaardiseerde codes, waarden en definities zoals ge
 - Controleer of de waarde die u gebruikt, direct op dezelfde regel staat als de code.
 - Let op dat de codes niet altijd oplopend zijn; controleer dus altijd de hele lijst.
 - Gebruik geen interpretatie, geen samenvatting, geen afleiding uit context of eerdere antwoorden, maar toon uitsluitend de letterlijke tekst uit de codelijst.
+- code 14 van codelijst Eenheid is altijd "etmaal", nooit dag of dagdeel
 
 
 ## COD002-VEKTIS: Berichtcode
@@ -1053,6 +1054,7 @@ WMO757: Frequentie - Frequentie van de te leveren of geleverde ondersteuning.
 4 - Per maand
 
 6 - Totaal binnen geldigheidsduur toewijzing
+
 
 
 
