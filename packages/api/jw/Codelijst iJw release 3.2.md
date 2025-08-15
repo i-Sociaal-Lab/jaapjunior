@@ -19,6 +19,8 @@ Deze codelijst bevat de gestandaardiseerde codes, waarden en definities zoals ge
 - **Verwijzingen:** Sommige codes verwijzen naar andere begrippen of toelichtingen.
 - **Afkortingen:** Afkortingen worden zoveel mogelijk volgens het gebruik in de iStandaarden opgenomen.
 - **Toepassing:** Voeg deze codelijst toe als context vóór het analyseren, zoeken of beantwoorden van vragen over berichten, registraties en processen binnen de Jeugdwet.
+- Let op: lijstnamen, lijstcodes en codes zijn louter administratieve identifiers zonder hiërarchische betekenis. Behandel ze als unieke sleutels die uitsluitend gebruikt worden voor verwijzing, niet voor interpretatie.
+
 
 ## COD002-VEKTIS: Berichtcode
 COD002-VEKTIS: Berichtcode is een data-element uit de Header van een bericht en dient conform de codelijst van Vektis ingevuld te worden. Bijvoorbeeld de Berichtcode van een WMO318 bericht is 481.  
@@ -1047,3 +1049,4 @@ WMO757: Frequentie - Frequentie van de te leveren of geleverde ondersteuning.
 4 - Per maand
 
 6 - Totaal binnen geldigheidsduur toewijzing
+
