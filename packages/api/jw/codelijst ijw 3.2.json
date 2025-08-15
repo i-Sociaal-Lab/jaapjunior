@@ -1,10 +1,10 @@
 [
   {
-    "Codelijstnummer;Codelijst;Omschrijving;Alias / Zoekwaarden;Code;Waarde": "",
-    "NUM061;Aanduiding woonadres;Aanduiding woonadres;geen adres": "geen postcode;AB;Aan boord",
-    "NUM061;Aanduiding woonadres;Aanduiding woonadres;geen adres__1": "geen postcode;BY;Bij",
-    "NUM061;Aanduiding woonadres;Aanduiding woonadres;geen adres__2": "geen postcode;TO;Tegenover",
-    "NUM061;Aanduiding woonadres;Aanduiding woonadres;geen adres__3": "geen postcode;WW;Woonwagen",
+    "Codelijstnummer;Codelijst / Codelijstnaam;Omschrijving;Alias / Zoekwaarden;Code;Waarde": "",
+    "NUM061;Aanduiding woonadres;Aanduiding woonadres;geen adres, op boot;AB;Aan boord": "",
+    "NUM061;Aanduiding woonadres;Aanduiding woonadres;geen adres, geen postcode;BY;Bij": "",
+    "NUM061;Aanduiding woonadres;Aanduiding woonadres;geen adres, vlakbij;TO;Tegenover": "",
+    "NUM061;Aanduiding woonadres;Aanduiding woonadres;geen adres, woonwagen;WW;Woonwagen": "",
     "COD002-VEKT;Berichtcode;Vektis code voor berichttype voor gebruik in Header van het bericht;Vektiscode;JW301;436": "",
     "COD002-VEKT;Berichtcode;Vektis code voor berichttype voor gebruik in Header van het bericht;Vektiscode;JW302;437": "",
     "COD002-VEKT;Berichtcode;Vektis code voor berichttype voor gebruik in Header van het bericht;Vektiscode;JW305;438": "",
