@@ -1,408 +1,1232 @@
-Codelijstnummer;Codelijst / Codelijstnaam;Omschrijving;Alias / Zoekwaarden;Code;Waarde
-NUM061;Aanduiding woonadres;Aanduiding woonadres;geen adres, geen postcode;AB;Aan boord
-NUM061;Aanduiding woonadres;Aanduiding woonadres;geen adres, geen postcode;BY;Bij
-NUM061;Aanduiding woonadres;Aanduiding woonadres;geen adres, geen postcode;TO;Tegenover
-NUM061;Aanduiding woonadres;Aanduiding woonadres;geen adres, geen postcode;WW;Woonwagen
-COD002-VEKT;Berichtcode;Vektis code voor berichttype voor gebruik in Header van het bericht;Vektiscode;JW301;436
-COD002-VEKT;Berichtcode;Vektis code voor berichttype voor gebruik in Header van het bericht;Vektiscode;JW302;437
-COD002-VEKT;Berichtcode;Vektis code voor berichttype voor gebruik in Header van het bericht;Vektiscode;JW305;438
-COD002-VEKT;Berichtcode;Vektis code voor berichttype voor gebruik in Header van het bericht;Vektiscode;JW306;439
-COD002-VEKT;Berichtcode;Vektis code voor berichttype voor gebruik in Header van het bericht;Vektiscode;JW307;440
-COD002-VEKT;Berichtcode;Vektis code voor berichttype voor gebruik in Header van het bericht;Vektiscode;JW308;441
-COD002-VEKT;Berichtcode;Vektis code voor berichttype voor gebruik in Header van het bericht;Vektiscode;JW315;446
-COD002-VEKT;Berichtcode;Vektis code voor berichttype voor gebruik in Header van het bericht;Vektiscode;JW316;447
-COD002-VEKT;Berichtcode;Vektis code voor berichttype voor gebruik in Header van het bericht;Vektiscode;JW317;486
-COD002-VEKT;Berichtcode;Vektis code voor berichttype voor gebruik in Header van het bericht;Vektiscode;JW318;487
-COD002-VEKT;Berichtcode;Vektis code voor berichttype voor gebruik in Header van het bericht;Vektiscode;JW319;488
-COD002-VEKT;Berichtcode;Vektis code voor berichttype voor gebruik in Header van het bericht;Vektiscode;JW320;489
-COD002-VEKT;Berichtcode;Vektis code voor berichttype voor gebruik in Header van het bericht;Vektiscode;JW323;490
-COD002-VEKT;Berichtcode;Vektis code voor berichttype voor gebruik in Header van het bericht;Vektiscode;JW325;491
-COD327;Code verwijzer;Code wettelijke verwijzer gebruikt in het JW315 bericht;Verwijzer;1;Gemeente
-COD328;Code verwijzer;Code wettelijke verwijzer gebruikt in het JW315 bericht;Verwijzer;2;Huisarts
-COD329;Code verwijzer;Code wettelijke verwijzer gebruikt in het JW315 bericht;Verwijzer;3;Jeugdarts
-COD330;Code verwijzer;Code wettelijke verwijzer gebruikt in het JW315 bericht;Verwijzer;4;Gecertificeerde instelling
-COD331;Code verwijzer;Code wettelijke verwijzer gebruikt in het JW315 bericht;Verwijzer;5;Medisch specialist
-COD332;Code verwijzer;Code wettelijke verwijzer gebruikt in het JW315 bericht;Verwijzer;6;Zelfverwijzer/geen verwijzer
-COD333;Code verwijzer;Code wettelijke verwijzer gebruikt in het JW315 bericht;Verwijzer;8;Rechter, Officier van Justitie, functionaris Justitiële jeugdinrichting
-COD747;Communicatievorm;Wijze van communiceren met client;;1;Tolk taal
-COD747;Communicatievorm;Wijze van communiceren met client;;2;Doventolk
-COD747;Communicatievorm;Wijze van communiceren met client;;3;Doofblindentolk
-COD170;Datumgebruik;;;1;dag onbekend, alleen maand en jaar gebruiken
-COD170;Datumgebruik;;;2;dag en maand onbekend, alleen jaar gebruiken
-COD170;Datumgebruik;;;3;dag, maand en jaar onbekend, onbekende datum
-WJ756;Eenheid;;;1;Minuut
-WJ756;Eenheid;;;4;Uur
-WJ756;Eenheid;;;14;Etmaal
-WJ756;Eenheid;;;16;Dagdeel (4 uur)
-WJ756;Eenheid;;;82;Stuks (output)
-WJ756;Eenheid;;;83;Euro's
-WJ756;Eenheid;;;84;Stuks (inspanning)
-WMO757;Frequentie;;;1;Per dag
-WMO757;Frequentie;;;2;Per week
-WMO757;Frequentie;;;4;Per maand
-WMO757;Frequentie;;;6;Totaal binnen geldigheidsduur toewijzing
-COD046;Geslacht;;;0;Onbekend
-COD046;Geslacht;;;1;Mannelijk
-COD046;Geslacht;;;2;Vrouwelijk
-COD043;Indicatie debet/credit;;;C;Creditbedrag en aantal
-COD043;Indicatie debet/credit;;;D;Debetbedrag en aantal
-WJ232;Juridische status;;;01;Rechterlijke machtiging (rm) voorlopig / voortgezette machtiging
-WJ232;Juridische status;;;02;RM op eigen verzoek
-WJ232;Juridische status;;;03;RM met voorwaardelijk ontslag
-WJ232;Juridische status;;;04;Onder toezichtstelling (ots)
-WJ232;Juridische status;;;05;In bewaring stelling (ibs)
-WJ232;Juridische status;;;11;Strafrechterlijke justitiele contacten
-WJ232;Juridische status;;;12;Strafrechterlijke justitiele contacten
-COD032;Land;;;AD;ANDORRA
-COD032;Land;;;AE;VERENIGDE
-COD032;Land;;;AF;AFGHANISTAN
-COD032;Land;;;AG;ANTIGUA
-COD032;Land;;;AI;ANGUILA
-COD032;Land;;;AL;ALBANIE
-COD032;Land;;;AM;ARMENIE
-COD032;Land;;;AO;ANGOLA
-COD032;Land;;;AQ;ANTARTICA
-COD032;Land;;;AR;ARGENTINIE
-COD032;Land;;;AS;AMERIKAANS-SAMOA
-COD032;Land;;;AT;OOSTENRIJK
-COD032;Land;;;AU;AUSTRALIE
-COD032;Land;;;AW;ARUBA
-COD032;Land;;;AX;ÅLANDSEILANDEN
-COD032;Land;;;AZ;AZERBEIDZJAN
-COD032;Land;;;BA;BOSNIE
-COD032;Land;;;BB;BARBADOS
-COD032;Land;;;BD;BANGLADESH
-COD032;Land;;;BE;BELGIE
-COD032;Land;;;BF;BURKINA
-COD032;Land;;;BG;BULGARIJE
-COD032;Land;;;BH;BAHREIN
-COD032;Land;;;BI;BURUNDI
-COD032;Land;;;BJ;BENIN
-COD032;Land;;;BL;SAINT
-COD032;Land;;;BM;BERMUDA
-COD032;Land;;;BN;BRUNEI
-COD032;Land;;;BO;BOLIVIA
-COD032;Land;;;BQ;BONAIRE,
-COD032;Land;;;BR;BRAZILIE
-COD032;Land;;;BS;BAHAMA'S
-COD032;Land;;;BT;BHUTAN
-COD032;Land;;;BV;BOUVET
-COD032;Land;;;BW;BOTSWANA
-COD032;Land;;;BY;WIT-RUSLand
-COD032;Land;;;BZ;BELIZE
-COD032;Land;;;CA;CANADA
-COD032;Land;;;CC;COCOSEILANDEN
-COD032;Land;;;CD;CONGO-KINSHASA
-COD032;Land;;;CF;CENTRAAL-AFRIKAANSE
-COD032;Land;;;CG;CONGO-BRAZZAVILLE
-COD032;Land;;;CH;ZWITSERLand
-COD032;Land;;;CI;IVOORKUST
-COD032;Land;;;CK;COOKEILANDEN
-COD032;Land;;;CL;CHILI
-COD032;Land;;;CM;KAMEROEN
-COD032;Land;;;CN;CHINA
-COD032;Land;;;CO;COLOMBIA
-COD032;Land;;;CR;COSTA
-COD032;Land;;;CU;CUBA
-COD032;Land;;;CV;KAAPVERDIE
-COD032;Land;;;CW;CURAÇAO
-COD032;Land;;;CX;CHRISTMASEILand
-COD032;Land;;;CY;CYPRUS
-COD032;Land;;;CZ;TSJECHIE
-COD032;Land;;;DE;DUITSLand
-COD032;Land;;;DJ;DJIBOUTI
-COD032;Land;;;DK;DENEMARKEN
-COD032;Land;;;DM;DOMINICA
-COD032;Land;;;DO;DOMINICAANSE
-COD032;Land;;;DZ;ALGERIJE
-COD032;Land;;;EC;ECUADOR
-COD032;Land;;;EE;ESTLand
-COD032;Land;;;EG;EGYPTE
-COD032;Land;;;EH;WESTELIJKE
-COD032;Land;;;ER;ERITREA
-COD032;Land;;;ES;SPANJE
-COD032;Land;;;ET;ETHIOPIE
-COD032;Land;;;FI;FINLand
-COD032;Land;;;FJ;FIJI
-COD032;Land;;;FK;FALKLANDEILANDEN
-COD032;Land;;;FM;MICRONESIA
-COD032;Land;;;FO;FAERÖER
-COD032;Land;;;FR;FRANKRIJK
-COD032;Land;;;GA;GABON
-COD032;Land;;;GB;VERENIGD
-COD032;Land;;;GD;GRENADA
-COD032;Land;;;GE;GEORGIE
-COD032;Land;;;GF;FRANS-GUYANA
-COD032;Land;;;GG;GUERNSEY
-COD032;Land;;;GH;GHANA
-COD032;Land;;;GI;GIBRALTAR
-COD032;Land;;;GL;GROENLand
-COD032;Land;;;GM;GAMBIA
-COD032;Land;;;GN;GUINEA
-COD032;Land;;;GP;GUADELOUPE
-COD032;Land;;;GQ;EQUATORIAAL-GUINEA
-COD032;Land;;;GR;GRIEKENLand
-COD032;Land;;;GS;ZUID-GEORGIE
-COD032;Land;;;GT;GUATEMALA
-COD032;Land;;;GU;GUAM
-COD032;Land;;;GW;GUINEE-BISSAU
-COD032;Land;;;GY;GUYANA
-COD032;Land;;;HK;HONGKONG
-COD032;Land;;;HM;HEARD
-COD032;Land;;;HN;HONDURAS
-COD032;Land;;;HR;KROATIE
-COD032;Land;;;HT;HAÏTI
-COD032;Land;;;HU;HONGARIJE
-COD032;Land;;;ID;INDONESIE
-COD032;Land;;;IE;IERLand
-COD032;Land;;;IL;ISRAEL
-COD032;Land;;;IM;ISLE
-COD032;Land;;;IN;INDIA
-COD032;Land;;;IO;BRITS
-COD032;Land;;;IQ;IRAK
-COD032;Land;;;IR;IRAN
-COD032;Land;;;IS;IJSLand
-COD032;Land;;;IT;ITALIE
-COD032;Land;;;JE;JERSEY
-COD032;Land;;;JM;JAMAICA
-COD032;Land;;;JO;JORDANIE
-COD032;Land;;;JP;JAPAN
-COD032;Land;;;KE;KENIA
-COD032;Land;;;KG;KIRGIZIE
-COD032;Land;;;KH;CAMBODJA
-COD032;Land;;;KI;KIRIBATI
-COD032;Land;;;KM;COMOREN
-COD032;Land;;;KN;SAINT
-COD032;Land;;;KP;NOORD-KOREA
-COD032;Land;;;KR;ZUID-KOREA
-COD032;Land;;;KW;KOEWEIT
-COD032;Land;;;KY;CAYMANEILANDEN
-COD032;Land;;;KZ;KAZACHSTAN
-COD032;Land;;;LA;LAOS
-COD032;Land;;;LB;LIBANON
-COD032;Land;;;LC;SAINT
-COD032;Land;;;LI;LIECHTENSTEIN
-COD032;Land;;;LK;SRI
-COD032;Land;;;LR;LIBERIA
-COD032;Land;;;LS;LESOTHO
-COD032;Land;;;LT;LITOUWEN
-COD032;Land;;;LU;LUXEMBURG
-COD032;Land;;;LV;LETLand
-COD032;Land;;;LY;LIBIE
-COD032;Land;;;MA;MAROKKO
-COD032;Land;;;MC;MONACO
-COD032;Land;;;MD;MOLDAVIE
-COD032;Land;;;ME;MONTENEGRO
-COD032;Land;;;MF;SAINT
-COD032;Land;;;MG;MADAGASKAR
-COD032;Land;;;MH;MARSHALLEILANDEN
-COD032;Land;;;MK;MACEDONIE
-COD032;Land;;;ML;MALI
-COD032;Land;;;MM;MYANMAR
-COD032;Land;;;MN;MONGOLIE
-COD032;Land;;;MO;MACAU
-COD032;Land;;;MP;NOORDELIJKE
-COD032;Land;;;MQ;MARTINIQUE
-COD032;Land;;;MR;MAURITANIE
-COD032;Land;;;MS;MONTSERRAT
-COD032;Land;;;MT;MALTA
-COD032;Land;;;MU;MAURITIUS
-COD032;Land;;;MV;MALDIVEN
-COD032;Land;;;MW;MALAWI
-COD032;Land;;;MX;MEXICO
-COD032;Land;;;MY;MALEISIE
-COD032;Land;;;MZ;MOZAMBIQUE
-COD032;Land;;;NA;NAMIBIE
-COD032;Land;;;NC;NIEUW-CALEDONIE
-COD032;Land;;;NE;NIGER
-COD032;Land;;;NF;NORFOLK
-COD032;Land;;;NG;NIGERIA
-COD032;Land;;;NI;NICARAGUA
-COD032;Land;;;NL;NEDERLand
-COD032;Land;;;NO;NOORWEGEN
-COD032;Land;;;NP;NEPAL
-COD032;Land;;;NR;NAURU
-COD032;Land;;;NU;NIUE
-COD032;Land;;;NZ;NIEUW-ZEELand
-COD032;Land;;;OM;OMAN
-COD032;Land;;;PA;PANAMA
-COD032;Land;;;PE;PERU
-COD032;Land;;;PF;FRANS-POLYNESIE
-COD032;Land;;;PG;PAPOEA-NIEUW-GUINEA
-COD032;Land;;;PH;FILIPIJNEN
-COD032;Land;;;PK;PAKISTAN
-COD032;Land;;;PL;POLEN
-COD032;Land;;;PM;SAINT-PIERRE
-COD032;Land;;;PN;PITCAIRNEILANDEN
-COD032;Land;;;PR;PUERTO
-COD032;Land;;;PS;PALESTIJNSE
-COD032;Land;;;PT;PORTUGAL
-COD032;Land;;;PW;PALAU
-COD032;Land;;;PY;PARAGUAY
-COD032;Land;;;QA;QATAR
-COD032;Land;;;RE;RÉUNION
-COD032;Land;;;RO;ROEMENIE
-COD032;Land;;;RS;SERVIE
-COD032;Land;;;RU;RUSLand
-COD032;Land;;;RW;RWANDA
-COD032;Land;;;SA;SAOEDI-ARABIE
-COD032;Land;;;SB;SALOMONSEILANDEN
-COD032;Land;;;SC;SEYCHELLEN
-COD032;Land;;;SD;SOEDAN
-COD032;Land;;;SE;ZWEDEN
-COD032;Land;;;SG;SINGAPORE
-COD032;Land;;;SH;SINT-HELENA
-COD032;Land;;;SI;SLOVENIE
-COD032;Land;;;SJ;SPITSBERGEN
-COD032;Land;;;SK;SLOWAKIJE
-COD032;Land;;;SL;SIERRA
-COD032;Land;;;SM;SAN
-COD032;Land;;;SN;SENEGAL
-COD032;Land;;;SO;SOMALIE
-COD032;Land;;;SR;SURINAME
-COD032;Land;;;SS;ZUID
-COD032;Land;;;ST;SAO
-COD032;Land;;;SV;EL
-COD032;Land;;;SX;SINT
-COD032;Land;;;SY;SYRIE
-COD032;Land;;;SZ;SWAZILand
-COD032;Land;;;TC;TURKS-
-COD032;Land;;;TD;TSJAAD
-COD032;Land;;;TF;FRANSE
-COD032;Land;;;TG;TOGO
-COD032;Land;;;TH;THAILand
-COD032;Land;;;TJ;TADZJIKISTAN
-COD032;Land;;;TK;TOKELAU
-COD032;Land;;;TL;OOST-TIMOR
-COD032;Land;;;TM;TURKMENISTAN
-COD032;Land;;;TN;TUNESIE
-COD032;Land;;;TO;TONGA
-COD032;Land;;;TR;TURKIJE
-COD032;Land;;;TT;TRINIDAD
-COD032;Land;;;TV;TUVALU
-COD032;Land;;;TW;TAIWAN
-COD032;Land;;;TZ;TANZANIA
-COD032;Land;;;UA;OEKRAINE
-COD032;Land;;;UG;OEGANDA
-COD032;Land;;;UM;KLEINE
-COD032;Land;;;US;VERENIGDE
-COD032;Land;;;UY;URUGUAY
-COD032;Land;;;UZ;OEZBEKISTAN
-COD032;Land;;;VA;VATICAANSTAD
-COD032;Land;;;VC;SAINT
-COD032;Land;;;VE;VENEZUELA
-COD032;Land;;;VG;BRITSE
-COD032;Land;;;VI;AMERIKAANSE
-COD032;Land;;;VN;VIETNAM
-COD032;Land;;;VU;VANUATU
-COD032;Land;;;WF;WALLIS
-COD032;Land;;;WS;SAMOA
-COD032;Land;;;YE;JEMEN
-COD032;Land;;;YT;MAYOTTE
-COD032;Land;;;ZA;ZUID-AFRIKA
-COD032;Land;;;ZM;ZAMBIA
-COD032;Land;;;ZW;ZIMBABWE
-COD700;Naamgebruik;;;1;Eigen naam
-COD700;Naamgebruik;;;2;Naam echtgenoot of geregistreerd partner of alternatieve naam
-COD700;Naamgebruik;;;3;Naam echtgenoot of geregistreerd partner gevolgd door eigen naam
-COD700;Naamgebruik;;;4;Eigen naam gevolgd door naam echtgenoot of geregistreerd partner
-COD700;Naamgebruik;;;5;Pseudoniem
-COD700;Naamgebruik;;;6;Niet-natuurlijk persoon
-JZ020;Productcategorie;;;31;(2015) Zonder verblijf: uitgevoerd door wijk- of buurtteam
-JZ020;Productcategorie;;;32;(2015) Zonder verblijf: ambulante jeugdhulp op locatie van de aanbieder
-JZ020;Productcategorie;;;33;(2015) Zonder verblijf: daghulp op locatie van de aanbieder
-JZ020;Productcategorie;;;34;(2015) Zonder verblijf: jeugdhulp in het netwerk van de jeugdige
-JZ020;Productcategorie;;;35;(2015) Met verblijf: pleegzorg
-JZ020;Productcategorie;;;36;(2015) Met verblijf: gezinsgericht
-JZ020;Productcategorie;;;37;(2015) Met verblijf: gesloten plaatsing
-JZ020;Productcategorie;;;38;(2015) Met verblijf: overig residentieel
-JZ020;Productcategorie;;;40;Persoonlijke verzorging
-JZ020;Productcategorie;;;41;Dagbehandeling
-JZ020;Productcategorie;;;42;Vervoerdiensten
-JZ020;Productcategorie;;;43;Jeugdhulp verblijf (incl. behandeling)
-JZ020;Productcategorie;;;44;Jeugdhulp verblijf (excl. behandeling)
-JZ020;Productcategorie;;;45;Jeugdhulp ambulant
-JZ020;Productcategorie;;;46;Jeugdhulp crisis
-JZ020;Productcategorie;;;47;Jeugdreclassering
-JZ020;Productcategorie;;;48;Jeugdbescherming
-JZ020;Productcategorie;;;49;Activiteiten in het preventief justitieel kader
-JZ020;Productcategorie;;;50;Maatwerkarrangementen jeugd
-JZ020;Productcategorie;;;51;Generalistische basis-ggz
-JZ020;Productcategorie;;;52;Specialistische ggz
-JZ020;Productcategorie;;;53;Kindergeneeskunde
-JZ020;Productcategorie;;;54;Jeugd-ggz
-JZ020;Productcategorie;;;55;Landelijk ingekochte zorg
-WJ759;Reden afwijzing verzoek;;;1;Geen wijziging, maar nieuwe aanvraag
-WJ759;Reden afwijzing verzoek;;;2;Past niet binnen budget
-WJ759;Reden afwijzing verzoek;;;3;Geen contract
-WJ759;Reden afwijzing verzoek;;;4;Past niet binnen contract
-WJ759;Reden afwijzing verzoek;;;5;Andere gemeente
-WJ759;Reden afwijzing verzoek;;;6;Stapeling
-WJ759;Reden afwijzing verzoek;;;7;Zorginhoudelijke afkeur
-WJ759;Reden afwijzing verzoek;;;8;Woonplaatsbeginsel
-WJ759;Reden afwijzing verzoek;;;9;Leeftijdsgrens is bereikt
-JZ588;Reden beeindiging;Indien de client is overleden wordt deze code gebruikt;;02;Overlijden
-JZ588;Reden beeindiging;bijvoorbeeld indien de cliënt wordt opgenomen in het ziekenhuis, verwacht de aanbieder dat de levering van de toegewezen jeugdhulp op een later moment weer hervat wordt. De afgegeven toewijzing blijft geldig en blijft bij de gemeente open staan. (toewijzing aanhouden). De aanbieder houdt contact met de cliënt en geeft aan de gemeente door wanneer de levering hervat wordt, middels een startbericht, ofwel definitief wordt beëindigd (monitoren).;;20;Levering is tijdelijk beeindigd.
-JZ588;Reden beeindiging;Enige wijzigingen in het plan zijn normaal. Het is niet wenselijk om te rigide vast te houden aan een vooropgesteld plan. Als je met elkaar, zoals gepland, het traject doorloopt en niet voortijdig stopt, is het traject volgens plan afgesloten. Ook als de jongere de leeftijd van 18 jaar bereikt en de jeugdhulp wordt beëindigd.;;31;Levering is volgens plan beeindigd.
-JZ588;Reden beeindiging;Het traject wordt voortijdig afgesloten, bijvoorbeeld omdat: 1. de cliënt op eigen initiatief naar een andere zorgaanbieder gaat: 2. de cliënt ontevreden is over de zorg 3. de cliënt vindt dat de zorg niet (meer) nodig is 4. cliënt geen hulp accepteert. Dit kan gaan om cliënten die ineens niet meer op afspraken verschijnen maar ook in een overleg aangeven te willen stoppen. Als de aanbieder nog wel mogelijkheden ziet om de client te helpen, is de afsluiting eenzijdig door de cliënt. Dit brengt in beeld hoe vaak je cliënten verliest waarmeeje dacht nog vooruitgang te kunnen boeken, uitval.;;32;Voortijdig afgesloten: eenzijdig door de client.
-JZ588;Reden beeindiging;Het lukt de aanbieder niet voldoende passende hulp te bieden. De aanbieder komt tot de conclusie dat verdere hulp vanuit aanbieder niet meer haalbaar is, verantwoord is (bijvoorbeeld vanwege agressie richting de hulpverlener) en/of geen perspectief meer kent. Als de cliënt die conclusie niet deelt, geldt: ‘Voortijdig afgesloten: eenzijdig door de aanbieder.;;33;Voortijdig afgesloten: eenzijdig door de aanbieder.
-JZ588;Reden beeindiging;De situatie van de jeugdige of het gezin is veranderd waardoor de gestarte hulp niet meer passend is. Als de cliënt en behandelaar het eens zijn dat de eerder afgesproken hulp geen toegevoegde waarde meer heeft, of dat andere hulp nodig is dan dat binnen het lopende traject geboden kan worden.;;34;Voortijdig afgesloten: in overeenstemming.
-JZ588;Reden beeindiging;Indien er externe omstandigheden zijn die noodzaken dat de zorg moet worden gestopt, wordt deze code gebruikt. Denk bv Verhuizing, het overlijden van de cliënt, langdurige vermissing of ontvoering van het kind;;35;Voortijdig afgesloten: wegens externe omstandigheden.
-JZ588;Reden beeindiging;Indien op intiatief van een gemeente een toewijzing wordt beëindigd, wordt deze code gebruikt.;;36;Geinitieerd door de gemeente
-JZ588;Reden beeindiging;Indien op initatief van de aanbieder een bepaalde zorg die geleverd wordt, niet meer geleverd gaat worden, en de aanbieder heeft en VOW ingediend, wordt deze code gebruikt.;;37;In verband met wijzigingsverzoek
-JZ588;Reden beeindiging;Client gaat naar een andere aanbieder, dus de toewijzing bij deze aanbieder moet beeindigd worden.;;38;Overstap naar andere aanbieder
-JZ588;Reden beeindiging;Client gaat over naar ander domein, bijvoorbeeld naar Wlz, en daarom moet de zorg vanuit de Jeugdwet worden beëindigd. Ook de toewijzing zal hierdoor worden beeindigd.;;39;Uitstroom naar ander domein
-WJ758;Reden verzoek;Code om aan te geven waarom een VOW wordt aangevraagd;;1;Verandering clientsituatie
-WJ758;Reden verzoek;Code om aan te geven waarom een VOW wordt aangevraagd;;2;Wijziging zorgplan
-JZ002;Reden wijziging toewijzing;nvt;;01;Administratieve correctie (vervallen)
-JZ002;Reden wijziging toewijzing;De toewijzing moet worden gestopt, omdat de client is overleden. Over het algemeen zal dan worden gevuld;;02;Client overleden
-JZ002;Reden wijziging toewijzing;Gemeente maakt een nieuwe contractafspraak met aanbieder, waardoor toewijzing nodig is met ander bijvoorbeeld andere productcodes. NB;;03;Contractwijziging
-JZ002;Reden wijziging toewijzing;;;04;Herbeoordeling
-JZ002;Reden wijziging toewijzing;;;05;Herbeoordeling
-JZ002;Reden wijziging toewijzing;Client gaat over naar ander domein, bijvoorbeeld naar Wlz, en daarom eindigt de Jw toewijzing.;;06;Uitstroom naar ander domein
-JZ002;Reden wijziging toewijzing;De gemeente kan een afgegeven Toewijzing niet zomaar intrekken bij verhuizing naar een andere gemeente. De gemeente die de toewijzing heeft verstrekt, blijft  er verantwoordelijk voor de cliënt tot het moment dat de cliënt is overgedragen aan de gemeente die volgens het woonplaatsbeginsel verantwoordelijk is voor de cliënt. Dit betekent dat een toewijzing door de oude gemeente niet kan worden afgesloten voordat er zekerheid is dat de nieuwe gemeente een aansluitende toewijzing verzendt.;;07;Verhuizing naar een andere gemeente
-JZ002;Reden wijziging toewijzing;Client gaat gebruik maken van pgb.;;08;Wijziging leveringsvorm
-JZ002;Reden wijziging toewijzing;Client gaat naar een andere aanbieder, dus de toewijzing bij deze aanbieder moet beeindigd worden.;;09;Overstap naar andere aanbieder
-JZ002;Reden wijziging toewijzing;De toewijzing is ingetrokken, omdat de client is overgegaan naar een andere regeling/bekostiging.;;10;Overgang naar nieuwe bekostigingssystematiek
-JZ002;Reden wijziging toewijzing;Volgens protocol gemeentelijke herindeling is deze toewijzing niet meer geldig.;;11;Gemeentelijke herindeling
-JZ002;Reden wijziging toewijzing;Indien een toewijzing wijzigt als gevolg van een verzoek om wijziging, kan dit door de gemeente worden aangegeven middels deze code. Het is dan voor de aanbieder duidelijk op basis waarvan de wijziging is doorgevoerd.;;12;Geinitieerd door de aanbieder
-JZ002;Reden wijziging toewijzing;Als een toewijzing ten onrechte is verstuurd en de gemeente dit ongedaan wil maken. Hierbij wordt de einddatum gelijk gesteld aan de ingangsdatum. De toewijzing moet als niet verzonden beschouwd worden.;;13;Verwijderd
-JZ002;Reden wijziging toewijzing;Als de gemeente een (invoer)fout heeft gemaakt die hersteld moet worden. De velden die gewijzigd mogen worden, zijn beschreven in OP033X1;;14;Administratieve correctie
-COD757;Soort adres;;;1;BRP-adres
-COD757;Soort adres;;;2;Correspondentie-adres
-COD757;Soort adres;;;3;Verblijfadres
-COD757;Soort adres;;;4;Tijdelijk verblijfadres
-COD472;Soort relatie;;;03;Curator (juridisch)
-COD472;Soort relatie;;;04;Financieel (gemachtigd)
-COD472;Soort relatie;;;05;Financieel (toetsing)
-COD472;Soort relatie;;;06;Leefeenheid
-COD472;Soort relatie;;;07;Hulpverlener
-COD472;Soort relatie;;;08;Specialist
-COD472;Soort relatie;;;09;Anders
-COD472;Soort relatie;;;10;Ouder
-COD472;Soort relatie;;;11;Voogd
-COD472;Soort relatie;;;12;Partner/echtgeno(o)t(e)
-COD472;Soort relatie;;;13;Pleegouder
-COD472;Soort relatie;;;14;Bewindvoerder
-COD472;Soort relatie;;;15;Mentor
-COD472;Soort relatie;;;16;Zoon/dochter
-COD472;Soort relatie;;;17;Familielid
-COD472;Soort relatie;;;18;Gezinslid
-COD472;Soort relatie;;;19;Buur
-COD472;Soort relatie;;;20;Vriend(in)/kennis
-COD472;Soort relatie;;;21;Clientondersteuner
-COD472;Soort relatie;;;22;Huisarts
-COD472;Soort relatie;;;23;Erven van
-COD472;Soort relatie;;;24;Werkgever
-COD472;Soort relatie;;;25;Wijkcoach
-COD467;Status aanlevering;;;1;Eerste aanlevering
-COD467;Status aanlevering;;;2;Gewijzigde aanlevering
-COD467;Status aanlevering;;;3;Verwijderen aanlevering
-COD467;Status aanlevering;;;9;Niet van toepassing (ongewijzigd)
-WJ760;Verzoek antwoord;;;1;Verzoek afgewezen
-WJ760;Verzoek antwoord;;;2;Aanvraag in onderzoek
-WJ003;Wettelijke vertegenwoordiging;;;06;Voogdij
-WJ003;Wettelijke vertegenwoordiging;;;07;Bewindvoering
-WJ003;Wettelijke vertegenwoordiging;;;08;Mentorschap
-WJ003;Wettelijke vertegenwoordiging;;;09;Onder curatele stelling
-WJ003;Wettelijke vertegenwoordiging;;;10;Zaakwaarneming
+[
+  {
+    "Codelijstnummer;Codelijst / Codelijstnaam;Omschrijving;Alias / Zoekwaarden;Code;Waarde": "",
+    "NUM061;Aanduiding woonadres;Aanduiding woonadres;geen adres": "geen postcode;AB;Aan boord",
+    "NUM061;Aanduiding woonadres;Aanduiding woonadres;geen adres__1": "geen postcode;BY;Bij",
+    "NUM061;Aanduiding woonadres;Aanduiding woonadres;geen adres__2": "geen postcode;TO;Tegenover",
+    "NUM061;Aanduiding woonadres;Aanduiding woonadres;geen adres__3": "geen postcode;WW;Woonwagen",
+    "COD002-VEKT;Berichtcode;Vektis code voor berichttype voor gebruik in Header van het bericht;Vektiscode;JW301;436": "",
+    "COD002-VEKT;Berichtcode;Vektis code voor berichttype voor gebruik in Header van het bericht;Vektiscode;JW302;437": "",
+    "COD002-VEKT;Berichtcode;Vektis code voor berichttype voor gebruik in Header van het bericht;Vektiscode;JW305;438": "",
+    "COD002-VEKT;Berichtcode;Vektis code voor berichttype voor gebruik in Header van het bericht;Vektiscode;JW306;439": "",
+    "COD002-VEKT;Berichtcode;Vektis code voor berichttype voor gebruik in Header van het bericht;Vektiscode;JW307;440": "",
+    "COD002-VEKT;Berichtcode;Vektis code voor berichttype voor gebruik in Header van het bericht;Vektiscode;JW308;441": "",
+    "COD002-VEKT;Berichtcode;Vektis code voor berichttype voor gebruik in Header van het bericht;Vektiscode;JW315;446": "",
+    "COD002-VEKT;Berichtcode;Vektis code voor berichttype voor gebruik in Header van het bericht;Vektiscode;JW316;447": "",
+    "COD002-VEKT;Berichtcode;Vektis code voor berichttype voor gebruik in Header van het bericht;Vektiscode;JW317;486": "",
+    "COD002-VEKT;Berichtcode;Vektis code voor berichttype voor gebruik in Header van het bericht;Vektiscode;JW318;487": "",
+    "COD002-VEKT;Berichtcode;Vektis code voor berichttype voor gebruik in Header van het bericht;Vektiscode;JW319;488": "",
+    "COD002-VEKT;Berichtcode;Vektis code voor berichttype voor gebruik in Header van het bericht;Vektiscode;JW320;489": "",
+    "COD002-VEKT;Berichtcode;Vektis code voor berichttype voor gebruik in Header van het bericht;Vektiscode;JW323;490": "",
+    "COD002-VEKT;Berichtcode;Vektis code voor berichttype voor gebruik in Header van het bericht;Vektiscode;JW325;491": "",
+    "COD327;Code verwijzer;Code wettelijke verwijzer gebruikt in het JW315 bericht;Verwijzer;1;Gemeente": "",
+    "COD328;Code verwijzer;Code wettelijke verwijzer gebruikt in het JW315 bericht;Verwijzer;2;Huisarts": "",
+    "COD329;Code verwijzer;Code wettelijke verwijzer gebruikt in het JW315 bericht;Verwijzer;3;Jeugdarts": "",
+    "COD330;Code verwijzer;Code wettelijke verwijzer gebruikt in het JW315 bericht;Verwijzer;4;Gecertificeerde instelling": "",
+    "COD331;Code verwijzer;Code wettelijke verwijzer gebruikt in het JW315 bericht;Verwijzer;5;Medisch specialist": "",
+    "COD332;Code verwijzer;Code wettelijke verwijzer gebruikt in het JW315 bericht;Verwijzer;6;Zelfverwijzer/geen verwijzer": "",
+    "COD333;Code verwijzer;Code wettelijke verwijzer gebruikt in het JW315 bericht;Verwijzer;8;Rechter": "Officier van Justitie",
+    "COD747;Communicatievorm;Wijze van communiceren met client;;1;Tolk taal": "",
+    "COD747;Communicatievorm;Wijze van communiceren met client;;2;Doventolk": "",
+    "COD747;Communicatievorm;Wijze van communiceren met client;;3;Doofblindentolk": "",
+    "COD170;Datumgebruik;;;1;dag onbekend": "alleen maand en jaar gebruiken",
+    "COD170;Datumgebruik;;;2;dag en maand onbekend": "alleen jaar gebruiken",
+    "COD170;Datumgebruik;;;3;dag": "maand en jaar onbekend",
+    "WJ756;Eenheid;;;1;Minuut": "",
+    "WJ756;Eenheid;;;4;Uur": "",
+    "WJ756;Eenheid;;;14;Etmaal": "",
+    "WJ756;Eenheid;;;16;Dagdeel (4 uur)": "",
+    "WJ756;Eenheid;;;82;Stuks (output)": "",
+    "WJ756;Eenheid;;;83;Euro's": "",
+    "WJ756;Eenheid;;;84;Stuks (inspanning)": "",
+    "WMO757;Frequentie;;;1;Per dag": "",
+    "WMO757;Frequentie;;;2;Per week": "",
+    "WMO757;Frequentie;;;4;Per maand": "",
+    "WMO757;Frequentie;;;6;Totaal binnen geldigheidsduur toewijzing": "",
+    "COD046;Geslacht;;;0;Onbekend": "",
+    "COD046;Geslacht;;;1;Mannelijk": "",
+    "COD046;Geslacht;;;2;Vrouwelijk": "",
+    "COD043;Indicatie debet/credit;;;C;Creditbedrag en aantal": "",
+    "COD043;Indicatie debet/credit;;;D;Debetbedrag en aantal": "",
+    "WJ232;Juridische status;;;01;Rechterlijke machtiging (rm) voorlopig / voortgezette machtiging": "",
+    "WJ232;Juridische status;;;02;RM op eigen verzoek": "",
+    "WJ232;Juridische status;;;03;RM met voorwaardelijk ontslag": "",
+    "WJ232;Juridische status;;;04;Onder toezichtstelling (ots)": "",
+    "WJ232;Juridische status;;;05;In bewaring stelling (ibs)": "",
+    "WJ232;Juridische status;;;11;Strafrechterlijke justitiele contacten": "",
+    "WJ232;Juridische status;;;12;Strafrechterlijke justitiele contacten": "",
+    "COD032;Land;;;AD;ANDORRA": "",
+    "COD032;Land;;;AE;VERENIGDE": "",
+    "COD032;Land;;;AF;AFGHANISTAN": "",
+    "COD032;Land;;;AG;ANTIGUA": "",
+    "COD032;Land;;;AI;ANGUILA": "",
+    "COD032;Land;;;AL;ALBANIE": "",
+    "COD032;Land;;;AM;ARMENIE": "",
+    "COD032;Land;;;AO;ANGOLA": "",
+    "COD032;Land;;;AQ;ANTARTICA": "",
+    "COD032;Land;;;AR;ARGENTINIE": "",
+    "COD032;Land;;;AS;AMERIKAANS-SAMOA": "",
+    "COD032;Land;;;AT;OOSTENRIJK": "",
+    "COD032;Land;;;AU;AUSTRALIE": "",
+    "COD032;Land;;;AW;ARUBA": "",
+    "COD032;Land;;;AX;ÅLANDSEILANDEN": "",
+    "COD032;Land;;;AZ;AZERBEIDZJAN": "",
+    "COD032;Land;;;BA;BOSNIE": "",
+    "COD032;Land;;;BB;BARBADOS": "",
+    "COD032;Land;;;BD;BANGLADESH": "",
+    "COD032;Land;;;BE;BELGIE": "",
+    "COD032;Land;;;BF;BURKINA": "",
+    "COD032;Land;;;BG;BULGARIJE": "",
+    "COD032;Land;;;BH;BAHREIN": "",
+    "COD032;Land;;;BI;BURUNDI": "",
+    "COD032;Land;;;BJ;BENIN": "",
+    "COD032;Land;;;BL;SAINT": "",
+    "COD032;Land;;;BM;BERMUDA": "",
+    "COD032;Land;;;BN;BRUNEI": "",
+    "COD032;Land;;;BO;BOLIVIA": "",
+    "COD032;Land;;;BQ;BONAIRE": "",
+    "COD032;Land;;;BR;BRAZILIE": "",
+    "COD032;Land;;;BS;BAHAMA'S": "",
+    "COD032;Land;;;BT;BHUTAN": "",
+    "COD032;Land;;;BV;BOUVET": "",
+    "COD032;Land;;;BW;BOTSWANA": "",
+    "COD032;Land;;;BY;WIT-RUSLand": "",
+    "COD032;Land;;;BZ;BELIZE": "",
+    "COD032;Land;;;CA;CANADA": "",
+    "COD032;Land;;;CC;COCOSEILANDEN": "",
+    "COD032;Land;;;CD;CONGO-KINSHASA": "",
+    "COD032;Land;;;CF;CENTRAAL-AFRIKAANSE": "",
+    "COD032;Land;;;CG;CONGO-BRAZZAVILLE": "",
+    "COD032;Land;;;CH;ZWITSERLand": "",
+    "COD032;Land;;;CI;IVOORKUST": "",
+    "COD032;Land;;;CK;COOKEILANDEN": "",
+    "COD032;Land;;;CL;CHILI": "",
+    "COD032;Land;;;CM;KAMEROEN": "",
+    "COD032;Land;;;CN;CHINA": "",
+    "COD032;Land;;;CO;COLOMBIA": "",
+    "COD032;Land;;;CR;COSTA": "",
+    "COD032;Land;;;CU;CUBA": "",
+    "COD032;Land;;;CV;KAAPVERDIE": "",
+    "COD032;Land;;;CW;CURAÇAO": "",
+    "COD032;Land;;;CX;CHRISTMASEILand": "",
+    "COD032;Land;;;CY;CYPRUS": "",
+    "COD032;Land;;;CZ;TSJECHIE": "",
+    "COD032;Land;;;DE;DUITSLand": "",
+    "COD032;Land;;;DJ;DJIBOUTI": "",
+    "COD032;Land;;;DK;DENEMARKEN": "",
+    "COD032;Land;;;DM;DOMINICA": "",
+    "COD032;Land;;;DO;DOMINICAANSE": "",
+    "COD032;Land;;;DZ;ALGERIJE": "",
+    "COD032;Land;;;EC;ECUADOR": "",
+    "COD032;Land;;;EE;ESTLand": "",
+    "COD032;Land;;;EG;EGYPTE": "",
+    "COD032;Land;;;EH;WESTELIJKE": "",
+    "COD032;Land;;;ER;ERITREA": "",
+    "COD032;Land;;;ES;SPANJE": "",
+    "COD032;Land;;;ET;ETHIOPIE": "",
+    "COD032;Land;;;FI;FINLand": "",
+    "COD032;Land;;;FJ;FIJI": "",
+    "COD032;Land;;;FK;FALKLANDEILANDEN": "",
+    "COD032;Land;;;FM;MICRONESIA": "",
+    "COD032;Land;;;FO;FAERÖER": "",
+    "COD032;Land;;;FR;FRANKRIJK": "",
+    "COD032;Land;;;GA;GABON": "",
+    "COD032;Land;;;GB;VERENIGD": "",
+    "COD032;Land;;;GD;GRENADA": "",
+    "COD032;Land;;;GE;GEORGIE": "",
+    "COD032;Land;;;GF;FRANS-GUYANA": "",
+    "COD032;Land;;;GG;GUERNSEY": "",
+    "COD032;Land;;;GH;GHANA": "",
+    "COD032;Land;;;GI;GIBRALTAR": "",
+    "COD032;Land;;;GL;GROENLand": "",
+    "COD032;Land;;;GM;GAMBIA": "",
+    "COD032;Land;;;GN;GUINEA": "",
+    "COD032;Land;;;GP;GUADELOUPE": "",
+    "COD032;Land;;;GQ;EQUATORIAAL-GUINEA": "",
+    "COD032;Land;;;GR;GRIEKENLand": "",
+    "COD032;Land;;;GS;ZUID-GEORGIE": "",
+    "COD032;Land;;;GT;GUATEMALA": "",
+    "COD032;Land;;;GU;GUAM": "",
+    "COD032;Land;;;GW;GUINEE-BISSAU": "",
+    "COD032;Land;;;GY;GUYANA": "",
+    "COD032;Land;;;HK;HONGKONG": "",
+    "COD032;Land;;;HM;HEARD": "",
+    "COD032;Land;;;HN;HONDURAS": "",
+    "COD032;Land;;;HR;KROATIE": "",
+    "COD032;Land;;;HT;HAÏTI": "",
+    "COD032;Land;;;HU;HONGARIJE": "",
+    "COD032;Land;;;ID;INDONESIE": "",
+    "COD032;Land;;;IE;IERLand": "",
+    "COD032;Land;;;IL;ISRAEL": "",
+    "COD032;Land;;;IM;ISLE": "",
+    "COD032;Land;;;IN;INDIA": "",
+    "COD032;Land;;;IO;BRITS": "",
+    "COD032;Land;;;IQ;IRAK": "",
+    "COD032;Land;;;IR;IRAN": "",
+    "COD032;Land;;;IS;IJSLand": "",
+    "COD032;Land;;;IT;ITALIE": "",
+    "COD032;Land;;;JE;JERSEY": "",
+    "COD032;Land;;;JM;JAMAICA": "",
+    "COD032;Land;;;JO;JORDANIE": "",
+    "COD032;Land;;;JP;JAPAN": "",
+    "COD032;Land;;;KE;KENIA": "",
+    "COD032;Land;;;KG;KIRGIZIE": "",
+    "COD032;Land;;;KH;CAMBODJA": "",
+    "COD032;Land;;;KI;KIRIBATI": "",
+    "COD032;Land;;;KM;COMOREN": "",
+    "COD032;Land;;;KN;SAINT": "",
+    "COD032;Land;;;KP;NOORD-KOREA": "",
+    "COD032;Land;;;KR;ZUID-KOREA": "",
+    "COD032;Land;;;KW;KOEWEIT": "",
+    "COD032;Land;;;KY;CAYMANEILANDEN": "",
+    "COD032;Land;;;KZ;KAZACHSTAN": "",
+    "COD032;Land;;;LA;LAOS": "",
+    "COD032;Land;;;LB;LIBANON": "",
+    "COD032;Land;;;LC;SAINT": "",
+    "COD032;Land;;;LI;LIECHTENSTEIN": "",
+    "COD032;Land;;;LK;SRI": "",
+    "COD032;Land;;;LR;LIBERIA": "",
+    "COD032;Land;;;LS;LESOTHO": "",
+    "COD032;Land;;;LT;LITOUWEN": "",
+    "COD032;Land;;;LU;LUXEMBURG": "",
+    "COD032;Land;;;LV;LETLand": "",
+    "COD032;Land;;;LY;LIBIE": "",
+    "COD032;Land;;;MA;MAROKKO": "",
+    "COD032;Land;;;MC;MONACO": "",
+    "COD032;Land;;;MD;MOLDAVIE": "",
+    "COD032;Land;;;ME;MONTENEGRO": "",
+    "COD032;Land;;;MF;SAINT": "",
+    "COD032;Land;;;MG;MADAGASKAR": "",
+    "COD032;Land;;;MH;MARSHALLEILANDEN": "",
+    "COD032;Land;;;MK;MACEDONIE": "",
+    "COD032;Land;;;ML;MALI": "",
+    "COD032;Land;;;MM;MYANMAR": "",
+    "COD032;Land;;;MN;MONGOLIE": "",
+    "COD032;Land;;;MO;MACAU": "",
+    "COD032;Land;;;MP;NOORDELIJKE": "",
+    "COD032;Land;;;MQ;MARTINIQUE": "",
+    "COD032;Land;;;MR;MAURITANIE": "",
+    "COD032;Land;;;MS;MONTSERRAT": "",
+    "COD032;Land;;;MT;MALTA": "",
+    "COD032;Land;;;MU;MAURITIUS": "",
+    "COD032;Land;;;MV;MALDIVEN": "",
+    "COD032;Land;;;MW;MALAWI": "",
+    "COD032;Land;;;MX;MEXICO": "",
+    "COD032;Land;;;MY;MALEISIE": "",
+    "COD032;Land;;;MZ;MOZAMBIQUE": "",
+    "COD032;Land;;;NA;NAMIBIE": "",
+    "COD032;Land;;;NC;NIEUW-CALEDONIE": "",
+    "COD032;Land;;;NE;NIGER": "",
+    "COD032;Land;;;NF;NORFOLK": "",
+    "COD032;Land;;;NG;NIGERIA": "",
+    "COD032;Land;;;NI;NICARAGUA": "",
+    "COD032;Land;;;NL;NEDERLand": "",
+    "COD032;Land;;;NO;NOORWEGEN": "",
+    "COD032;Land;;;NP;NEPAL": "",
+    "COD032;Land;;;NR;NAURU": "",
+    "COD032;Land;;;NU;NIUE": "",
+    "COD032;Land;;;NZ;NIEUW-ZEELand": "",
+    "COD032;Land;;;OM;OMAN": "",
+    "COD032;Land;;;PA;PANAMA": "",
+    "COD032;Land;;;PE;PERU": "",
+    "COD032;Land;;;PF;FRANS-POLYNESIE": "",
+    "COD032;Land;;;PG;PAPOEA-NIEUW-GUINEA": "",
+    "COD032;Land;;;PH;FILIPIJNEN": "",
+    "COD032;Land;;;PK;PAKISTAN": "",
+    "COD032;Land;;;PL;POLEN": "",
+    "COD032;Land;;;PM;SAINT-PIERRE": "",
+    "COD032;Land;;;PN;PITCAIRNEILANDEN": "",
+    "COD032;Land;;;PR;PUERTO": "",
+    "COD032;Land;;;PS;PALESTIJNSE": "",
+    "COD032;Land;;;PT;PORTUGAL": "",
+    "COD032;Land;;;PW;PALAU": "",
+    "COD032;Land;;;PY;PARAGUAY": "",
+    "COD032;Land;;;QA;QATAR": "",
+    "COD032;Land;;;RE;RÉUNION": "",
+    "COD032;Land;;;RO;ROEMENIE": "",
+    "COD032;Land;;;RS;SERVIE": "",
+    "COD032;Land;;;RU;RUSLand": "",
+    "COD032;Land;;;RW;RWANDA": "",
+    "COD032;Land;;;SA;SAOEDI-ARABIE": "",
+    "COD032;Land;;;SB;SALOMONSEILANDEN": "",
+    "COD032;Land;;;SC;SEYCHELLEN": "",
+    "COD032;Land;;;SD;SOEDAN": "",
+    "COD032;Land;;;SE;ZWEDEN": "",
+    "COD032;Land;;;SG;SINGAPORE": "",
+    "COD032;Land;;;SH;SINT-HELENA": "",
+    "COD032;Land;;;SI;SLOVENIE": "",
+    "COD032;Land;;;SJ;SPITSBERGEN": "",
+    "COD032;Land;;;SK;SLOWAKIJE": "",
+    "COD032;Land;;;SL;SIERRA": "",
+    "COD032;Land;;;SM;SAN": "",
+    "COD032;Land;;;SN;SENEGAL": "",
+    "COD032;Land;;;SO;SOMALIE": "",
+    "COD032;Land;;;SR;SURINAME": "",
+    "COD032;Land;;;SS;ZUID": "",
+    "COD032;Land;;;ST;SAO": "",
+    "COD032;Land;;;SV;EL": "",
+    "COD032;Land;;;SX;SINT": "",
+    "COD032;Land;;;SY;SYRIE": "",
+    "COD032;Land;;;SZ;SWAZILand": "",
+    "COD032;Land;;;TC;TURKS-": "",
+    "COD032;Land;;;TD;TSJAAD": "",
+    "COD032;Land;;;TF;FRANSE": "",
+    "COD032;Land;;;TG;TOGO": "",
+    "COD032;Land;;;TH;THAILand": "",
+    "COD032;Land;;;TJ;TADZJIKISTAN": "",
+    "COD032;Land;;;TK;TOKELAU": "",
+    "COD032;Land;;;TL;OOST-TIMOR": "",
+    "COD032;Land;;;TM;TURKMENISTAN": "",
+    "COD032;Land;;;TN;TUNESIE": "",
+    "COD032;Land;;;TO;TONGA": "",
+    "COD032;Land;;;TR;TURKIJE": "",
+    "COD032;Land;;;TT;TRINIDAD": "",
+    "COD032;Land;;;TV;TUVALU": "",
+    "COD032;Land;;;TW;TAIWAN": "",
+    "COD032;Land;;;TZ;TANZANIA": "",
+    "COD032;Land;;;UA;OEKRAINE": "",
+    "COD032;Land;;;UG;OEGANDA": "",
+    "COD032;Land;;;UM;KLEINE": "",
+    "COD032;Land;;;US;VERENIGDE": "",
+    "COD032;Land;;;UY;URUGUAY": "",
+    "COD032;Land;;;UZ;OEZBEKISTAN": "",
+    "COD032;Land;;;VA;VATICAANSTAD": "",
+    "COD032;Land;;;VC;SAINT": "",
+    "COD032;Land;;;VE;VENEZUELA": "",
+    "COD032;Land;;;VG;BRITSE": "",
+    "COD032;Land;;;VI;AMERIKAANSE": "",
+    "COD032;Land;;;VN;VIETNAM": "",
+    "COD032;Land;;;VU;VANUATU": "",
+    "COD032;Land;;;WF;WALLIS": "",
+    "COD032;Land;;;WS;SAMOA": "",
+    "COD032;Land;;;YE;JEMEN": "",
+    "COD032;Land;;;YT;MAYOTTE": "",
+    "COD032;Land;;;ZA;ZUID-AFRIKA": "",
+    "COD032;Land;;;ZM;ZAMBIA": "",
+    "COD032;Land;;;ZW;ZIMBABWE": "",
+    "COD700;Naamgebruik;;;1;Eigen naam": "",
+    "COD700;Naamgebruik;;;2;Naam echtgenoot of geregistreerd partner of alternatieve naam": "",
+    "COD700;Naamgebruik;;;3;Naam echtgenoot of geregistreerd partner gevolgd door eigen naam": "",
+    "COD700;Naamgebruik;;;4;Eigen naam gevolgd door naam echtgenoot of geregistreerd partner": "",
+    "COD700;Naamgebruik;;;5;Pseudoniem": "",
+    "COD700;Naamgebruik;;;6;Niet-natuurlijk persoon": "",
+    "JZ020;Productcategorie;;;31;(2015) Zonder verblijf: uitgevoerd door wijk- of buurtteam": "",
+    "JZ020;Productcategorie;;;32;(2015) Zonder verblijf: ambulante jeugdhulp op locatie van de aanbieder": "",
+    "JZ020;Productcategorie;;;33;(2015) Zonder verblijf: daghulp op locatie van de aanbieder": "",
+    "JZ020;Productcategorie;;;34;(2015) Zonder verblijf: jeugdhulp in het netwerk van de jeugdige": "",
+    "JZ020;Productcategorie;;;35;(2015) Met verblijf: pleegzorg": "",
+    "JZ020;Productcategorie;;;36;(2015) Met verblijf: gezinsgericht": "",
+    "JZ020;Productcategorie;;;37;(2015) Met verblijf: gesloten plaatsing": "",
+    "JZ020;Productcategorie;;;38;(2015) Met verblijf: overig residentieel": "",
+    "JZ020;Productcategorie;;;40;Persoonlijke verzorging": "",
+    "JZ020;Productcategorie;;;41;Dagbehandeling": "",
+    "JZ020;Productcategorie;;;42;Vervoerdiensten": "",
+    "JZ020;Productcategorie;;;43;Jeugdhulp verblijf (incl. behandeling)": "",
+    "JZ020;Productcategorie;;;44;Jeugdhulp verblijf (excl. behandeling)": "",
+    "JZ020;Productcategorie;;;45;Jeugdhulp ambulant": "",
+    "JZ020;Productcategorie;;;46;Jeugdhulp crisis": "",
+    "JZ020;Productcategorie;;;47;Jeugdreclassering": "",
+    "JZ020;Productcategorie;;;48;Jeugdbescherming": "",
+    "JZ020;Productcategorie;;;49;Activiteiten in het preventief justitieel kader": "",
+    "JZ020;Productcategorie;;;50;Maatwerkarrangementen jeugd": "",
+    "JZ020;Productcategorie;;;51;Generalistische basis-ggz": "",
+    "JZ020;Productcategorie;;;52;Specialistische ggz": "",
+    "JZ020;Productcategorie;;;53;Kindergeneeskunde": "",
+    "JZ020;Productcategorie;;;54;Jeugd-ggz": "",
+    "JZ020;Productcategorie;;;55;Landelijk ingekochte zorg": "",
+    "WJ759;Reden afwijzing verzoek;;;1;Geen wijziging": "maar nieuwe aanvraag",
+    "WJ759;Reden afwijzing verzoek;;;2;Past niet binnen budget": "",
+    "WJ759;Reden afwijzing verzoek;;;3;Geen contract": "",
+    "WJ759;Reden afwijzing verzoek;;;4;Past niet binnen contract": "",
+    "WJ759;Reden afwijzing verzoek;;;5;Andere gemeente": "",
+    "WJ759;Reden afwijzing verzoek;;;6;Stapeling": "",
+    "WJ759;Reden afwijzing verzoek;;;7;Zorginhoudelijke afkeur": "",
+    "WJ759;Reden afwijzing verzoek;;;8;Woonplaatsbeginsel": "",
+    "WJ759;Reden afwijzing verzoek;;;9;Leeftijdsgrens is bereikt": "",
+    "JZ588;Reden beeindiging;Indien de client is overleden wordt deze code gebruikt;;02;Overlijden": "",
+    "JZ588;Reden beeindiging;bijvoorbeeld indien de cliënt wordt opgenomen in het ziekenhuis": "verwacht de aanbieder dat de levering van de toegewezen jeugdhulp op een later moment weer hervat wordt. De afgegeven toewijzing blijft geldig en blijft bij de gemeente open staan. (toewijzing aanhouden). De aanbieder houdt contact met de cliënt en geeft aan de gemeente door wanneer de levering hervat wordt",
+    "JZ588;Reden beeindiging;Enige wijzigingen in het plan zijn normaal. Het is niet wenselijk om te rigide vast te houden aan een vooropgesteld plan. Als je met elkaar": "zoals gepland",
+    "JZ588;Reden beeindiging;Het traject wordt voortijdig afgesloten": "bijvoorbeeld omdat: 1. de cliënt op eigen initiatief naar een andere zorgaanbieder gaat: 2. de cliënt ontevreden is over de zorg 3. de cliënt vindt dat de zorg niet (meer) nodig is 4. cliënt geen hulp accepteert. Dit kan gaan om cliënten die ineens niet meer op afspraken verschijnen maar ook in een overleg aangeven te willen stoppen. Als de aanbieder nog wel mogelijkheden ziet om de client te helpen",
+    "JZ588;Reden beeindiging;Het lukt de aanbieder niet voldoende passende hulp te bieden. De aanbieder komt tot de conclusie dat verdere hulp vanuit aanbieder niet meer haalbaar is": "verantwoord is (bijvoorbeeld vanwege agressie richting de hulpverlener) en/of geen perspectief meer kent. Als de cliënt die conclusie niet deelt",
+    "JZ588;Reden beeindiging;De situatie van de jeugdige of het gezin is veranderd waardoor de gestarte hulp niet meer passend is. Als de cliënt en behandelaar het eens zijn dat de eerder afgesproken hulp geen toegevoegde waarde meer heeft": "of dat andere hulp nodig is dan dat binnen het lopende traject geboden kan worden.;;34;Voortijdig afgesloten: in overeenstemming.",
+    "JZ588;Reden beeindiging;Indien er externe omstandigheden zijn die noodzaken dat de zorg moet worden gestopt": "wordt deze code gebruikt. Denk bv Verhuizing",
+    "JZ588;Reden beeindiging;Indien op intiatief van een gemeente een toewijzing wordt beëindigd": "wordt deze code gebruikt.;;36;Geinitieerd door de gemeente",
+    "JZ588;Reden beeindiging;Indien op initatief van de aanbieder een bepaalde zorg die geleverd wordt": "niet meer geleverd gaat worden",
+    "JZ588;Reden beeindiging;Client gaat naar een andere aanbieder": "dus de toewijzing bij deze aanbieder moet beeindigd worden.;;38;Overstap naar andere aanbieder",
+    "JZ588;Reden beeindiging;Client gaat over naar ander domein": "bijvoorbeeld naar Wlz",
+    "WJ758;Reden verzoek;Code om aan te geven waarom een VOW wordt aangevraagd;;1;Verandering clientsituatie": "",
+    "WJ758;Reden verzoek;Code om aan te geven waarom een VOW wordt aangevraagd;;2;Wijziging zorgplan": "",
+    "JZ002;Reden wijziging toewijzing;nvt;;01;Administratieve correctie (vervallen)": "",
+    "JZ002;Reden wijziging toewijzing;De toewijzing moet worden gestopt": "omdat de client is overleden. Over het algemeen zal dan worden gevuld;;02;Client overleden",
+    "JZ002;Reden wijziging toewijzing;Gemeente maakt een nieuwe contractafspraak met aanbieder": "waardoor toewijzing nodig is met ander bijvoorbeeld andere productcodes. NB;;03;Contractwijziging",
+    "JZ002;Reden wijziging toewijzing;;;04;Herbeoordeling": "",
+    "JZ002;Reden wijziging toewijzing;;;05;Herbeoordeling": "",
+    "JZ002;Reden wijziging toewijzing;Client gaat over naar ander domein": "bijvoorbeeld naar Wlz",
+    "JZ002;Reden wijziging toewijzing;De gemeente kan een afgegeven Toewijzing niet zomaar intrekken bij verhuizing naar een andere gemeente. De gemeente die de toewijzing heeft verstrekt": "blijft  er verantwoordelijk voor de cliënt tot het moment dat de cliënt is overgedragen aan de gemeente die volgens het woonplaatsbeginsel verantwoordelijk is voor de cliënt. Dit betekent dat een toewijzing door de oude gemeente niet kan worden afgesloten voordat er zekerheid is dat de nieuwe gemeente een aansluitende toewijzing verzendt.;;07;Verhuizing naar een andere gemeente",
+    "JZ002;Reden wijziging toewijzing;Client gaat gebruik maken van pgb.;;08;Wijziging leveringsvorm": "",
+    "JZ002;Reden wijziging toewijzing;Client gaat naar een andere aanbieder": "dus de toewijzing bij deze aanbieder moet beeindigd worden.;;09;Overstap naar andere aanbieder",
+    "JZ002;Reden wijziging toewijzing;De toewijzing is ingetrokken": "omdat de client is overgegaan naar een andere regeling/bekostiging.;;10;Overgang naar nieuwe bekostigingssystematiek",
+    "JZ002;Reden wijziging toewijzing;Volgens protocol gemeentelijke herindeling is deze toewijzing niet meer geldig.;;11;Gemeentelijke herindeling": "",
+    "JZ002;Reden wijziging toewijzing;Indien een toewijzing wijzigt als gevolg van een verzoek om wijziging": "kan dit door de gemeente worden aangegeven middels deze code. Het is dan voor de aanbieder duidelijk op basis waarvan de wijziging is doorgevoerd.;;12;Geinitieerd door de aanbieder",
+    "JZ002;Reden wijziging toewijzing;Als een toewijzing ten onrechte is verstuurd en de gemeente dit ongedaan wil maken. Hierbij wordt de einddatum gelijk gesteld aan de ingangsdatum. De toewijzing moet als niet verzonden beschouwd worden.;;13;Verwijderd": "",
+    "JZ002;Reden wijziging toewijzing;Als de gemeente een (invoer)fout heeft gemaakt die hersteld moet worden. De velden die gewijzigd mogen worden": "zijn beschreven in OP033X1;;14;Administratieve correctie",
+    "COD757;Soort adres;;;1;BRP-adres": "",
+    "COD757;Soort adres;;;2;Correspondentie-adres": "",
+    "COD757;Soort adres;;;3;Verblijfadres": "",
+    "COD757;Soort adres;;;4;Tijdelijk verblijfadres": "",
+    "COD472;Soort relatie;;;03;Curator (juridisch)": "",
+    "COD472;Soort relatie;;;04;Financieel (gemachtigd)": "",
+    "COD472;Soort relatie;;;05;Financieel (toetsing)": "",
+    "COD472;Soort relatie;;;06;Leefeenheid": "",
+    "COD472;Soort relatie;;;07;Hulpverlener": "",
+    "COD472;Soort relatie;;;08;Specialist": "",
+    "COD472;Soort relatie;;;09;Anders": "",
+    "COD472;Soort relatie;;;10;Ouder": "",
+    "COD472;Soort relatie;;;11;Voogd": "",
+    "COD472;Soort relatie;;;12;Partner/echtgeno(o)t(e)": "",
+    "COD472;Soort relatie;;;13;Pleegouder": "",
+    "COD472;Soort relatie;;;14;Bewindvoerder": "",
+    "COD472;Soort relatie;;;15;Mentor": "",
+    "COD472;Soort relatie;;;16;Zoon/dochter": "",
+    "COD472;Soort relatie;;;17;Familielid": "",
+    "COD472;Soort relatie;;;18;Gezinslid": "",
+    "COD472;Soort relatie;;;19;Buur": "",
+    "COD472;Soort relatie;;;20;Vriend(in)/kennis": "",
+    "COD472;Soort relatie;;;21;Clientondersteuner": "",
+    "COD472;Soort relatie;;;22;Huisarts": "",
+    "COD472;Soort relatie;;;23;Erven van": "",
+    "COD472;Soort relatie;;;24;Werkgever": "",
+    "COD472;Soort relatie;;;25;Wijkcoach": "",
+    "COD467;Status aanlevering;;;1;Eerste aanlevering": "",
+    "COD467;Status aanlevering;;;2;Gewijzigde aanlevering": "",
+    "COD467;Status aanlevering;;;3;Verwijderen aanlevering": "",
+    "COD467;Status aanlevering;;;9;Niet van toepassing (ongewijzigd)": "",
+    "WJ760;Verzoek antwoord;;;1;Verzoek afgewezen": "",
+    "WJ760;Verzoek antwoord;;;2;Aanvraag in onderzoek": "",
+    "WJ003;Wettelijke vertegenwoordiging;;;06;Voogdij": "",
+    "WJ003;Wettelijke vertegenwoordiging;;;07;Bewindvoering": "",
+    "WJ003;Wettelijke vertegenwoordiging;;;08;Mentorschap": "",
+    "WJ003;Wettelijke vertegenwoordiging;;;09;Onder curatele stelling": "",
+    "WJ003;Wettelijke vertegenwoordiging;;;10;Zaakwaarneming": ""
+  },
+  {
+    "Codelijstnummer;Codelijst / Codelijstnaam;Omschrijving;Alias / Zoekwaarden;Code;Waarde": "",
+    "NUM061;Aanduiding woonadres;Aanduiding woonadres;geen adres": "",
+    "NUM061;Aanduiding woonadres;Aanduiding woonadres;geen adres__1": "",
+    "NUM061;Aanduiding woonadres;Aanduiding woonadres;geen adres__2": "",
+    "NUM061;Aanduiding woonadres;Aanduiding woonadres;geen adres__3": "",
+    "COD002-VEKT;Berichtcode;Vektis code voor berichttype voor gebruik in Header van het bericht;Vektiscode;JW301;436": "",
+    "COD002-VEKT;Berichtcode;Vektis code voor berichttype voor gebruik in Header van het bericht;Vektiscode;JW302;437": "",
+    "COD002-VEKT;Berichtcode;Vektis code voor berichttype voor gebruik in Header van het bericht;Vektiscode;JW305;438": "",
+    "COD002-VEKT;Berichtcode;Vektis code voor berichttype voor gebruik in Header van het bericht;Vektiscode;JW306;439": "",
+    "COD002-VEKT;Berichtcode;Vektis code voor berichttype voor gebruik in Header van het bericht;Vektiscode;JW307;440": "",
+    "COD002-VEKT;Berichtcode;Vektis code voor berichttype voor gebruik in Header van het bericht;Vektiscode;JW308;441": "",
+    "COD002-VEKT;Berichtcode;Vektis code voor berichttype voor gebruik in Header van het bericht;Vektiscode;JW315;446": "",
+    "COD002-VEKT;Berichtcode;Vektis code voor berichttype voor gebruik in Header van het bericht;Vektiscode;JW316;447": "",
+    "COD002-VEKT;Berichtcode;Vektis code voor berichttype voor gebruik in Header van het bericht;Vektiscode;JW317;486": "",
+    "COD002-VEKT;Berichtcode;Vektis code voor berichttype voor gebruik in Header van het bericht;Vektiscode;JW318;487": "",
+    "COD002-VEKT;Berichtcode;Vektis code voor berichttype voor gebruik in Header van het bericht;Vektiscode;JW319;488": "",
+    "COD002-VEKT;Berichtcode;Vektis code voor berichttype voor gebruik in Header van het bericht;Vektiscode;JW320;489": "",
+    "COD002-VEKT;Berichtcode;Vektis code voor berichttype voor gebruik in Header van het bericht;Vektiscode;JW323;490": "",
+    "COD002-VEKT;Berichtcode;Vektis code voor berichttype voor gebruik in Header van het bericht;Vektiscode;JW325;491": "",
+    "COD327;Code verwijzer;Code wettelijke verwijzer gebruikt in het JW315 bericht;Verwijzer;1;Gemeente": "",
+    "COD328;Code verwijzer;Code wettelijke verwijzer gebruikt in het JW315 bericht;Verwijzer;2;Huisarts": "",
+    "COD329;Code verwijzer;Code wettelijke verwijzer gebruikt in het JW315 bericht;Verwijzer;3;Jeugdarts": "",
+    "COD330;Code verwijzer;Code wettelijke verwijzer gebruikt in het JW315 bericht;Verwijzer;4;Gecertificeerde instelling": "",
+    "COD331;Code verwijzer;Code wettelijke verwijzer gebruikt in het JW315 bericht;Verwijzer;5;Medisch specialist": "",
+    "COD332;Code verwijzer;Code wettelijke verwijzer gebruikt in het JW315 bericht;Verwijzer;6;Zelfverwijzer/geen verwijzer": "",
+    "COD333;Code verwijzer;Code wettelijke verwijzer gebruikt in het JW315 bericht;Verwijzer;8;Rechter": "functionaris Justitiële jeugdinrichting",
+    "COD747;Communicatievorm;Wijze van communiceren met client;;1;Tolk taal": "",
+    "COD747;Communicatievorm;Wijze van communiceren met client;;2;Doventolk": "",
+    "COD747;Communicatievorm;Wijze van communiceren met client;;3;Doofblindentolk": "",
+    "COD170;Datumgebruik;;;1;dag onbekend": "",
+    "COD170;Datumgebruik;;;2;dag en maand onbekend": "",
+    "COD170;Datumgebruik;;;3;dag": "onbekende datum",
+    "WJ756;Eenheid;;;1;Minuut": "",
+    "WJ756;Eenheid;;;4;Uur": "",
+    "WJ756;Eenheid;;;14;Etmaal": "",
+    "WJ756;Eenheid;;;16;Dagdeel (4 uur)": "",
+    "WJ756;Eenheid;;;82;Stuks (output)": "",
+    "WJ756;Eenheid;;;83;Euro's": "",
+    "WJ756;Eenheid;;;84;Stuks (inspanning)": "",
+    "WMO757;Frequentie;;;1;Per dag": "",
+    "WMO757;Frequentie;;;2;Per week": "",
+    "WMO757;Frequentie;;;4;Per maand": "",
+    "WMO757;Frequentie;;;6;Totaal binnen geldigheidsduur toewijzing": "",
+    "COD046;Geslacht;;;0;Onbekend": "",
+    "COD046;Geslacht;;;1;Mannelijk": "",
+    "COD046;Geslacht;;;2;Vrouwelijk": "",
+    "COD043;Indicatie debet/credit;;;C;Creditbedrag en aantal": "",
+    "COD043;Indicatie debet/credit;;;D;Debetbedrag en aantal": "",
+    "WJ232;Juridische status;;;01;Rechterlijke machtiging (rm) voorlopig / voortgezette machtiging": "",
+    "WJ232;Juridische status;;;02;RM op eigen verzoek": "",
+    "WJ232;Juridische status;;;03;RM met voorwaardelijk ontslag": "",
+    "WJ232;Juridische status;;;04;Onder toezichtstelling (ots)": "",
+    "WJ232;Juridische status;;;05;In bewaring stelling (ibs)": "",
+    "WJ232;Juridische status;;;11;Strafrechterlijke justitiele contacten": "",
+    "WJ232;Juridische status;;;12;Strafrechterlijke justitiele contacten": "",
+    "COD032;Land;;;AD;ANDORRA": "",
+    "COD032;Land;;;AE;VERENIGDE": "",
+    "COD032;Land;;;AF;AFGHANISTAN": "",
+    "COD032;Land;;;AG;ANTIGUA": "",
+    "COD032;Land;;;AI;ANGUILA": "",
+    "COD032;Land;;;AL;ALBANIE": "",
+    "COD032;Land;;;AM;ARMENIE": "",
+    "COD032;Land;;;AO;ANGOLA": "",
+    "COD032;Land;;;AQ;ANTARTICA": "",
+    "COD032;Land;;;AR;ARGENTINIE": "",
+    "COD032;Land;;;AS;AMERIKAANS-SAMOA": "",
+    "COD032;Land;;;AT;OOSTENRIJK": "",
+    "COD032;Land;;;AU;AUSTRALIE": "",
+    "COD032;Land;;;AW;ARUBA": "",
+    "COD032;Land;;;AX;ÅLANDSEILANDEN": "",
+    "COD032;Land;;;AZ;AZERBEIDZJAN": "",
+    "COD032;Land;;;BA;BOSNIE": "",
+    "COD032;Land;;;BB;BARBADOS": "",
+    "COD032;Land;;;BD;BANGLADESH": "",
+    "COD032;Land;;;BE;BELGIE": "",
+    "COD032;Land;;;BF;BURKINA": "",
+    "COD032;Land;;;BG;BULGARIJE": "",
+    "COD032;Land;;;BH;BAHREIN": "",
+    "COD032;Land;;;BI;BURUNDI": "",
+    "COD032;Land;;;BJ;BENIN": "",
+    "COD032;Land;;;BL;SAINT": "",
+    "COD032;Land;;;BM;BERMUDA": "",
+    "COD032;Land;;;BN;BRUNEI": "",
+    "COD032;Land;;;BO;BOLIVIA": "",
+    "COD032;Land;;;BQ;BONAIRE": "",
+    "COD032;Land;;;BR;BRAZILIE": "",
+    "COD032;Land;;;BS;BAHAMA'S": "",
+    "COD032;Land;;;BT;BHUTAN": "",
+    "COD032;Land;;;BV;BOUVET": "",
+    "COD032;Land;;;BW;BOTSWANA": "",
+    "COD032;Land;;;BY;WIT-RUSLand": "",
+    "COD032;Land;;;BZ;BELIZE": "",
+    "COD032;Land;;;CA;CANADA": "",
+    "COD032;Land;;;CC;COCOSEILANDEN": "",
+    "COD032;Land;;;CD;CONGO-KINSHASA": "",
+    "COD032;Land;;;CF;CENTRAAL-AFRIKAANSE": "",
+    "COD032;Land;;;CG;CONGO-BRAZZAVILLE": "",
+    "COD032;Land;;;CH;ZWITSERLand": "",
+    "COD032;Land;;;CI;IVOORKUST": "",
+    "COD032;Land;;;CK;COOKEILANDEN": "",
+    "COD032;Land;;;CL;CHILI": "",
+    "COD032;Land;;;CM;KAMEROEN": "",
+    "COD032;Land;;;CN;CHINA": "",
+    "COD032;Land;;;CO;COLOMBIA": "",
+    "COD032;Land;;;CR;COSTA": "",
+    "COD032;Land;;;CU;CUBA": "",
+    "COD032;Land;;;CV;KAAPVERDIE": "",
+    "COD032;Land;;;CW;CURAÇAO": "",
+    "COD032;Land;;;CX;CHRISTMASEILand": "",
+    "COD032;Land;;;CY;CYPRUS": "",
+    "COD032;Land;;;CZ;TSJECHIE": "",
+    "COD032;Land;;;DE;DUITSLand": "",
+    "COD032;Land;;;DJ;DJIBOUTI": "",
+    "COD032;Land;;;DK;DENEMARKEN": "",
+    "COD032;Land;;;DM;DOMINICA": "",
+    "COD032;Land;;;DO;DOMINICAANSE": "",
+    "COD032;Land;;;DZ;ALGERIJE": "",
+    "COD032;Land;;;EC;ECUADOR": "",
+    "COD032;Land;;;EE;ESTLand": "",
+    "COD032;Land;;;EG;EGYPTE": "",
+    "COD032;Land;;;EH;WESTELIJKE": "",
+    "COD032;Land;;;ER;ERITREA": "",
+    "COD032;Land;;;ES;SPANJE": "",
+    "COD032;Land;;;ET;ETHIOPIE": "",
+    "COD032;Land;;;FI;FINLand": "",
+    "COD032;Land;;;FJ;FIJI": "",
+    "COD032;Land;;;FK;FALKLANDEILANDEN": "",
+    "COD032;Land;;;FM;MICRONESIA": "",
+    "COD032;Land;;;FO;FAERÖER": "",
+    "COD032;Land;;;FR;FRANKRIJK": "",
+    "COD032;Land;;;GA;GABON": "",
+    "COD032;Land;;;GB;VERENIGD": "",
+    "COD032;Land;;;GD;GRENADA": "",
+    "COD032;Land;;;GE;GEORGIE": "",
+    "COD032;Land;;;GF;FRANS-GUYANA": "",
+    "COD032;Land;;;GG;GUERNSEY": "",
+    "COD032;Land;;;GH;GHANA": "",
+    "COD032;Land;;;GI;GIBRALTAR": "",
+    "COD032;Land;;;GL;GROENLand": "",
+    "COD032;Land;;;GM;GAMBIA": "",
+    "COD032;Land;;;GN;GUINEA": "",
+    "COD032;Land;;;GP;GUADELOUPE": "",
+    "COD032;Land;;;GQ;EQUATORIAAL-GUINEA": "",
+    "COD032;Land;;;GR;GRIEKENLand": "",
+    "COD032;Land;;;GS;ZUID-GEORGIE": "",
+    "COD032;Land;;;GT;GUATEMALA": "",
+    "COD032;Land;;;GU;GUAM": "",
+    "COD032;Land;;;GW;GUINEE-BISSAU": "",
+    "COD032;Land;;;GY;GUYANA": "",
+    "COD032;Land;;;HK;HONGKONG": "",
+    "COD032;Land;;;HM;HEARD": "",
+    "COD032;Land;;;HN;HONDURAS": "",
+    "COD032;Land;;;HR;KROATIE": "",
+    "COD032;Land;;;HT;HAÏTI": "",
+    "COD032;Land;;;HU;HONGARIJE": "",
+    "COD032;Land;;;ID;INDONESIE": "",
+    "COD032;Land;;;IE;IERLand": "",
+    "COD032;Land;;;IL;ISRAEL": "",
+    "COD032;Land;;;IM;ISLE": "",
+    "COD032;Land;;;IN;INDIA": "",
+    "COD032;Land;;;IO;BRITS": "",
+    "COD032;Land;;;IQ;IRAK": "",
+    "COD032;Land;;;IR;IRAN": "",
+    "COD032;Land;;;IS;IJSLand": "",
+    "COD032;Land;;;IT;ITALIE": "",
+    "COD032;Land;;;JE;JERSEY": "",
+    "COD032;Land;;;JM;JAMAICA": "",
+    "COD032;Land;;;JO;JORDANIE": "",
+    "COD032;Land;;;JP;JAPAN": "",
+    "COD032;Land;;;KE;KENIA": "",
+    "COD032;Land;;;KG;KIRGIZIE": "",
+    "COD032;Land;;;KH;CAMBODJA": "",
+    "COD032;Land;;;KI;KIRIBATI": "",
+    "COD032;Land;;;KM;COMOREN": "",
+    "COD032;Land;;;KN;SAINT": "",
+    "COD032;Land;;;KP;NOORD-KOREA": "",
+    "COD032;Land;;;KR;ZUID-KOREA": "",
+    "COD032;Land;;;KW;KOEWEIT": "",
+    "COD032;Land;;;KY;CAYMANEILANDEN": "",
+    "COD032;Land;;;KZ;KAZACHSTAN": "",
+    "COD032;Land;;;LA;LAOS": "",
+    "COD032;Land;;;LB;LIBANON": "",
+    "COD032;Land;;;LC;SAINT": "",
+    "COD032;Land;;;LI;LIECHTENSTEIN": "",
+    "COD032;Land;;;LK;SRI": "",
+    "COD032;Land;;;LR;LIBERIA": "",
+    "COD032;Land;;;LS;LESOTHO": "",
+    "COD032;Land;;;LT;LITOUWEN": "",
+    "COD032;Land;;;LU;LUXEMBURG": "",
+    "COD032;Land;;;LV;LETLand": "",
+    "COD032;Land;;;LY;LIBIE": "",
+    "COD032;Land;;;MA;MAROKKO": "",
+    "COD032;Land;;;MC;MONACO": "",
+    "COD032;Land;;;MD;MOLDAVIE": "",
+    "COD032;Land;;;ME;MONTENEGRO": "",
+    "COD032;Land;;;MF;SAINT": "",
+    "COD032;Land;;;MG;MADAGASKAR": "",
+    "COD032;Land;;;MH;MARSHALLEILANDEN": "",
+    "COD032;Land;;;MK;MACEDONIE": "",
+    "COD032;Land;;;ML;MALI": "",
+    "COD032;Land;;;MM;MYANMAR": "",
+    "COD032;Land;;;MN;MONGOLIE": "",
+    "COD032;Land;;;MO;MACAU": "",
+    "COD032;Land;;;MP;NOORDELIJKE": "",
+    "COD032;Land;;;MQ;MARTINIQUE": "",
+    "COD032;Land;;;MR;MAURITANIE": "",
+    "COD032;Land;;;MS;MONTSERRAT": "",
+    "COD032;Land;;;MT;MALTA": "",
+    "COD032;Land;;;MU;MAURITIUS": "",
+    "COD032;Land;;;MV;MALDIVEN": "",
+    "COD032;Land;;;MW;MALAWI": "",
+    "COD032;Land;;;MX;MEXICO": "",
+    "COD032;Land;;;MY;MALEISIE": "",
+    "COD032;Land;;;MZ;MOZAMBIQUE": "",
+    "COD032;Land;;;NA;NAMIBIE": "",
+    "COD032;Land;;;NC;NIEUW-CALEDONIE": "",
+    "COD032;Land;;;NE;NIGER": "",
+    "COD032;Land;;;NF;NORFOLK": "",
+    "COD032;Land;;;NG;NIGERIA": "",
+    "COD032;Land;;;NI;NICARAGUA": "",
+    "COD032;Land;;;NL;NEDERLand": "",
+    "COD032;Land;;;NO;NOORWEGEN": "",
+    "COD032;Land;;;NP;NEPAL": "",
+    "COD032;Land;;;NR;NAURU": "",
+    "COD032;Land;;;NU;NIUE": "",
+    "COD032;Land;;;NZ;NIEUW-ZEELand": "",
+    "COD032;Land;;;OM;OMAN": "",
+    "COD032;Land;;;PA;PANAMA": "",
+    "COD032;Land;;;PE;PERU": "",
+    "COD032;Land;;;PF;FRANS-POLYNESIE": "",
+    "COD032;Land;;;PG;PAPOEA-NIEUW-GUINEA": "",
+    "COD032;Land;;;PH;FILIPIJNEN": "",
+    "COD032;Land;;;PK;PAKISTAN": "",
+    "COD032;Land;;;PL;POLEN": "",
+    "COD032;Land;;;PM;SAINT-PIERRE": "",
+    "COD032;Land;;;PN;PITCAIRNEILANDEN": "",
+    "COD032;Land;;;PR;PUERTO": "",
+    "COD032;Land;;;PS;PALESTIJNSE": "",
+    "COD032;Land;;;PT;PORTUGAL": "",
+    "COD032;Land;;;PW;PALAU": "",
+    "COD032;Land;;;PY;PARAGUAY": "",
+    "COD032;Land;;;QA;QATAR": "",
+    "COD032;Land;;;RE;RÉUNION": "",
+    "COD032;Land;;;RO;ROEMENIE": "",
+    "COD032;Land;;;RS;SERVIE": "",
+    "COD032;Land;;;RU;RUSLand": "",
+    "COD032;Land;;;RW;RWANDA": "",
+    "COD032;Land;;;SA;SAOEDI-ARABIE": "",
+    "COD032;Land;;;SB;SALOMONSEILANDEN": "",
+    "COD032;Land;;;SC;SEYCHELLEN": "",
+    "COD032;Land;;;SD;SOEDAN": "",
+    "COD032;Land;;;SE;ZWEDEN": "",
+    "COD032;Land;;;SG;SINGAPORE": "",
+    "COD032;Land;;;SH;SINT-HELENA": "",
+    "COD032;Land;;;SI;SLOVENIE": "",
+    "COD032;Land;;;SJ;SPITSBERGEN": "",
+    "COD032;Land;;;SK;SLOWAKIJE": "",
+    "COD032;Land;;;SL;SIERRA": "",
+    "COD032;Land;;;SM;SAN": "",
+    "COD032;Land;;;SN;SENEGAL": "",
+    "COD032;Land;;;SO;SOMALIE": "",
+    "COD032;Land;;;SR;SURINAME": "",
+    "COD032;Land;;;SS;ZUID": "",
+    "COD032;Land;;;ST;SAO": "",
+    "COD032;Land;;;SV;EL": "",
+    "COD032;Land;;;SX;SINT": "",
+    "COD032;Land;;;SY;SYRIE": "",
+    "COD032;Land;;;SZ;SWAZILand": "",
+    "COD032;Land;;;TC;TURKS-": "",
+    "COD032;Land;;;TD;TSJAAD": "",
+    "COD032;Land;;;TF;FRANSE": "",
+    "COD032;Land;;;TG;TOGO": "",
+    "COD032;Land;;;TH;THAILand": "",
+    "COD032;Land;;;TJ;TADZJIKISTAN": "",
+    "COD032;Land;;;TK;TOKELAU": "",
+    "COD032;Land;;;TL;OOST-TIMOR": "",
+    "COD032;Land;;;TM;TURKMENISTAN": "",
+    "COD032;Land;;;TN;TUNESIE": "",
+    "COD032;Land;;;TO;TONGA": "",
+    "COD032;Land;;;TR;TURKIJE": "",
+    "COD032;Land;;;TT;TRINIDAD": "",
+    "COD032;Land;;;TV;TUVALU": "",
+    "COD032;Land;;;TW;TAIWAN": "",
+    "COD032;Land;;;TZ;TANZANIA": "",
+    "COD032;Land;;;UA;OEKRAINE": "",
+    "COD032;Land;;;UG;OEGANDA": "",
+    "COD032;Land;;;UM;KLEINE": "",
+    "COD032;Land;;;US;VERENIGDE": "",
+    "COD032;Land;;;UY;URUGUAY": "",
+    "COD032;Land;;;UZ;OEZBEKISTAN": "",
+    "COD032;Land;;;VA;VATICAANSTAD": "",
+    "COD032;Land;;;VC;SAINT": "",
+    "COD032;Land;;;VE;VENEZUELA": "",
+    "COD032;Land;;;VG;BRITSE": "",
+    "COD032;Land;;;VI;AMERIKAANSE": "",
+    "COD032;Land;;;VN;VIETNAM": "",
+    "COD032;Land;;;VU;VANUATU": "",
+    "COD032;Land;;;WF;WALLIS": "",
+    "COD032;Land;;;WS;SAMOA": "",
+    "COD032;Land;;;YE;JEMEN": "",
+    "COD032;Land;;;YT;MAYOTTE": "",
+    "COD032;Land;;;ZA;ZUID-AFRIKA": "",
+    "COD032;Land;;;ZM;ZAMBIA": "",
+    "COD032;Land;;;ZW;ZIMBABWE": "",
+    "COD700;Naamgebruik;;;1;Eigen naam": "",
+    "COD700;Naamgebruik;;;2;Naam echtgenoot of geregistreerd partner of alternatieve naam": "",
+    "COD700;Naamgebruik;;;3;Naam echtgenoot of geregistreerd partner gevolgd door eigen naam": "",
+    "COD700;Naamgebruik;;;4;Eigen naam gevolgd door naam echtgenoot of geregistreerd partner": "",
+    "COD700;Naamgebruik;;;5;Pseudoniem": "",
+    "COD700;Naamgebruik;;;6;Niet-natuurlijk persoon": "",
+    "JZ020;Productcategorie;;;31;(2015) Zonder verblijf: uitgevoerd door wijk- of buurtteam": "",
+    "JZ020;Productcategorie;;;32;(2015) Zonder verblijf: ambulante jeugdhulp op locatie van de aanbieder": "",
+    "JZ020;Productcategorie;;;33;(2015) Zonder verblijf: daghulp op locatie van de aanbieder": "",
+    "JZ020;Productcategorie;;;34;(2015) Zonder verblijf: jeugdhulp in het netwerk van de jeugdige": "",
+    "JZ020;Productcategorie;;;35;(2015) Met verblijf: pleegzorg": "",
+    "JZ020;Productcategorie;;;36;(2015) Met verblijf: gezinsgericht": "",
+    "JZ020;Productcategorie;;;37;(2015) Met verblijf: gesloten plaatsing": "",
+    "JZ020;Productcategorie;;;38;(2015) Met verblijf: overig residentieel": "",
+    "JZ020;Productcategorie;;;40;Persoonlijke verzorging": "",
+    "JZ020;Productcategorie;;;41;Dagbehandeling": "",
+    "JZ020;Productcategorie;;;42;Vervoerdiensten": "",
+    "JZ020;Productcategorie;;;43;Jeugdhulp verblijf (incl. behandeling)": "",
+    "JZ020;Productcategorie;;;44;Jeugdhulp verblijf (excl. behandeling)": "",
+    "JZ020;Productcategorie;;;45;Jeugdhulp ambulant": "",
+    "JZ020;Productcategorie;;;46;Jeugdhulp crisis": "",
+    "JZ020;Productcategorie;;;47;Jeugdreclassering": "",
+    "JZ020;Productcategorie;;;48;Jeugdbescherming": "",
+    "JZ020;Productcategorie;;;49;Activiteiten in het preventief justitieel kader": "",
+    "JZ020;Productcategorie;;;50;Maatwerkarrangementen jeugd": "",
+    "JZ020;Productcategorie;;;51;Generalistische basis-ggz": "",
+    "JZ020;Productcategorie;;;52;Specialistische ggz": "",
+    "JZ020;Productcategorie;;;53;Kindergeneeskunde": "",
+    "JZ020;Productcategorie;;;54;Jeugd-ggz": "",
+    "JZ020;Productcategorie;;;55;Landelijk ingekochte zorg": "",
+    "WJ759;Reden afwijzing verzoek;;;1;Geen wijziging": "",
+    "WJ759;Reden afwijzing verzoek;;;2;Past niet binnen budget": "",
+    "WJ759;Reden afwijzing verzoek;;;3;Geen contract": "",
+    "WJ759;Reden afwijzing verzoek;;;4;Past niet binnen contract": "",
+    "WJ759;Reden afwijzing verzoek;;;5;Andere gemeente": "",
+    "WJ759;Reden afwijzing verzoek;;;6;Stapeling": "",
+    "WJ759;Reden afwijzing verzoek;;;7;Zorginhoudelijke afkeur": "",
+    "WJ759;Reden afwijzing verzoek;;;8;Woonplaatsbeginsel": "",
+    "WJ759;Reden afwijzing verzoek;;;9;Leeftijdsgrens is bereikt": "",
+    "JZ588;Reden beeindiging;Indien de client is overleden wordt deze code gebruikt;;02;Overlijden": "",
+    "JZ588;Reden beeindiging;bijvoorbeeld indien de cliënt wordt opgenomen in het ziekenhuis": "middels een startbericht",
+    "JZ588;Reden beeindiging;Enige wijzigingen in het plan zijn normaal. Het is niet wenselijk om te rigide vast te houden aan een vooropgesteld plan. Als je met elkaar": "het traject doorloopt en niet voortijdig stopt",
+    "JZ588;Reden beeindiging;Het traject wordt voortijdig afgesloten": "is de afsluiting eenzijdig door de cliënt. Dit brengt in beeld hoe vaak je cliënten verliest waarmeeje dacht nog vooruitgang te kunnen boeken",
+    "JZ588;Reden beeindiging;Het lukt de aanbieder niet voldoende passende hulp te bieden. De aanbieder komt tot de conclusie dat verdere hulp vanuit aanbieder niet meer haalbaar is": "geldt: ‘Voortijdig afgesloten: eenzijdig door de aanbieder.;;33;Voortijdig afgesloten: eenzijdig door de aanbieder.",
+    "JZ588;Reden beeindiging;De situatie van de jeugdige of het gezin is veranderd waardoor de gestarte hulp niet meer passend is. Als de cliënt en behandelaar het eens zijn dat de eerder afgesproken hulp geen toegevoegde waarde meer heeft": "",
+    "JZ588;Reden beeindiging;Indien er externe omstandigheden zijn die noodzaken dat de zorg moet worden gestopt": "het overlijden van de cliënt",
+    "JZ588;Reden beeindiging;Indien op intiatief van een gemeente een toewijzing wordt beëindigd": "",
+    "JZ588;Reden beeindiging;Indien op initatief van de aanbieder een bepaalde zorg die geleverd wordt": "en de aanbieder heeft en VOW ingediend",
+    "JZ588;Reden beeindiging;Client gaat naar een andere aanbieder": "",
+    "JZ588;Reden beeindiging;Client gaat over naar ander domein": "en daarom moet de zorg vanuit de Jeugdwet worden beëindigd. Ook de toewijzing zal hierdoor worden beeindigd.;;39;Uitstroom naar ander domein",
+    "WJ758;Reden verzoek;Code om aan te geven waarom een VOW wordt aangevraagd;;1;Verandering clientsituatie": "",
+    "WJ758;Reden verzoek;Code om aan te geven waarom een VOW wordt aangevraagd;;2;Wijziging zorgplan": "",
+    "JZ002;Reden wijziging toewijzing;nvt;;01;Administratieve correctie (vervallen)": "",
+    "JZ002;Reden wijziging toewijzing;De toewijzing moet worden gestopt": "",
+    "JZ002;Reden wijziging toewijzing;Gemeente maakt een nieuwe contractafspraak met aanbieder": "",
+    "JZ002;Reden wijziging toewijzing;;;04;Herbeoordeling": "",
+    "JZ002;Reden wijziging toewijzing;;;05;Herbeoordeling": "",
+    "JZ002;Reden wijziging toewijzing;Client gaat over naar ander domein": "en daarom eindigt de Jw toewijzing.;;06;Uitstroom naar ander domein",
+    "JZ002;Reden wijziging toewijzing;De gemeente kan een afgegeven Toewijzing niet zomaar intrekken bij verhuizing naar een andere gemeente. De gemeente die de toewijzing heeft verstrekt": "",
+    "JZ002;Reden wijziging toewijzing;Client gaat gebruik maken van pgb.;;08;Wijziging leveringsvorm": "",
+    "JZ002;Reden wijziging toewijzing;Client gaat naar een andere aanbieder": "",
+    "JZ002;Reden wijziging toewijzing;De toewijzing is ingetrokken": "",
+    "JZ002;Reden wijziging toewijzing;Volgens protocol gemeentelijke herindeling is deze toewijzing niet meer geldig.;;11;Gemeentelijke herindeling": "",
+    "JZ002;Reden wijziging toewijzing;Indien een toewijzing wijzigt als gevolg van een verzoek om wijziging": "",
+    "JZ002;Reden wijziging toewijzing;Als een toewijzing ten onrechte is verstuurd en de gemeente dit ongedaan wil maken. Hierbij wordt de einddatum gelijk gesteld aan de ingangsdatum. De toewijzing moet als niet verzonden beschouwd worden.;;13;Verwijderd": "",
+    "JZ002;Reden wijziging toewijzing;Als de gemeente een (invoer)fout heeft gemaakt die hersteld moet worden. De velden die gewijzigd mogen worden": "",
+    "COD757;Soort adres;;;1;BRP-adres": "",
+    "COD757;Soort adres;;;2;Correspondentie-adres": "",
+    "COD757;Soort adres;;;3;Verblijfadres": "",
+    "COD757;Soort adres;;;4;Tijdelijk verblijfadres": "",
+    "COD472;Soort relatie;;;03;Curator (juridisch)": "",
+    "COD472;Soort relatie;;;04;Financieel (gemachtigd)": "",
+    "COD472;Soort relatie;;;05;Financieel (toetsing)": "",
+    "COD472;Soort relatie;;;06;Leefeenheid": "",
+    "COD472;Soort relatie;;;07;Hulpverlener": "",
+    "COD472;Soort relatie;;;08;Specialist": "",
+    "COD472;Soort relatie;;;09;Anders": "",
+    "COD472;Soort relatie;;;10;Ouder": "",
+    "COD472;Soort relatie;;;11;Voogd": "",
+    "COD472;Soort relatie;;;12;Partner/echtgeno(o)t(e)": "",
+    "COD472;Soort relatie;;;13;Pleegouder": "",
+    "COD472;Soort relatie;;;14;Bewindvoerder": "",
+    "COD472;Soort relatie;;;15;Mentor": "",
+    "COD472;Soort relatie;;;16;Zoon/dochter": "",
+    "COD472;Soort relatie;;;17;Familielid": "",
+    "COD472;Soort relatie;;;18;Gezinslid": "",
+    "COD472;Soort relatie;;;19;Buur": "",
+    "COD472;Soort relatie;;;20;Vriend(in)/kennis": "",
+    "COD472;Soort relatie;;;21;Clientondersteuner": "",
+    "COD472;Soort relatie;;;22;Huisarts": "",
+    "COD472;Soort relatie;;;23;Erven van": "",
+    "COD472;Soort relatie;;;24;Werkgever": "",
+    "COD472;Soort relatie;;;25;Wijkcoach": "",
+    "COD467;Status aanlevering;;;1;Eerste aanlevering": "",
+    "COD467;Status aanlevering;;;2;Gewijzigde aanlevering": "",
+    "COD467;Status aanlevering;;;3;Verwijderen aanlevering": "",
+    "COD467;Status aanlevering;;;9;Niet van toepassing (ongewijzigd)": "",
+    "WJ760;Verzoek antwoord;;;1;Verzoek afgewezen": "",
+    "WJ760;Verzoek antwoord;;;2;Aanvraag in onderzoek": "",
+    "WJ003;Wettelijke vertegenwoordiging;;;06;Voogdij": "",
+    "WJ003;Wettelijke vertegenwoordiging;;;07;Bewindvoering": "",
+    "WJ003;Wettelijke vertegenwoordiging;;;08;Mentorschap": "",
+    "WJ003;Wettelijke vertegenwoordiging;;;09;Onder curatele stelling": "",
+    "WJ003;Wettelijke vertegenwoordiging;;;10;Zaakwaarneming": ""
+  },
+  {
+    "Codelijstnummer;Codelijst / Codelijstnaam;Omschrijving;Alias / Zoekwaarden;Code;Waarde": "",
+    "NUM061;Aanduiding woonadres;Aanduiding woonadres;geen adres": "",
+    "NUM061;Aanduiding woonadres;Aanduiding woonadres;geen adres__1": "",
+    "NUM061;Aanduiding woonadres;Aanduiding woonadres;geen adres__2": "",
+    "NUM061;Aanduiding woonadres;Aanduiding woonadres;geen adres__3": "",
+    "COD002-VEKT;Berichtcode;Vektis code voor berichttype voor gebruik in Header van het bericht;Vektiscode;JW301;436": "",
+    "COD002-VEKT;Berichtcode;Vektis code voor berichttype voor gebruik in Header van het bericht;Vektiscode;JW302;437": "",
+    "COD002-VEKT;Berichtcode;Vektis code voor berichttype voor gebruik in Header van het bericht;Vektiscode;JW305;438": "",
+    "COD002-VEKT;Berichtcode;Vektis code voor berichttype voor gebruik in Header van het bericht;Vektiscode;JW306;439": "",
+    "COD002-VEKT;Berichtcode;Vektis code voor berichttype voor gebruik in Header van het bericht;Vektiscode;JW307;440": "",
+    "COD002-VEKT;Berichtcode;Vektis code voor berichttype voor gebruik in Header van het bericht;Vektiscode;JW308;441": "",
+    "COD002-VEKT;Berichtcode;Vektis code voor berichttype voor gebruik in Header van het bericht;Vektiscode;JW315;446": "",
+    "COD002-VEKT;Berichtcode;Vektis code voor berichttype voor gebruik in Header van het bericht;Vektiscode;JW316;447": "",
+    "COD002-VEKT;Berichtcode;Vektis code voor berichttype voor gebruik in Header van het bericht;Vektiscode;JW317;486": "",
+    "COD002-VEKT;Berichtcode;Vektis code voor berichttype voor gebruik in Header van het bericht;Vektiscode;JW318;487": "",
+    "COD002-VEKT;Berichtcode;Vektis code voor berichttype voor gebruik in Header van het bericht;Vektiscode;JW319;488": "",
+    "COD002-VEKT;Berichtcode;Vektis code voor berichttype voor gebruik in Header van het bericht;Vektiscode;JW320;489": "",
+    "COD002-VEKT;Berichtcode;Vektis code voor berichttype voor gebruik in Header van het bericht;Vektiscode;JW323;490": "",
+    "COD002-VEKT;Berichtcode;Vektis code voor berichttype voor gebruik in Header van het bericht;Vektiscode;JW325;491": "",
+    "COD327;Code verwijzer;Code wettelijke verwijzer gebruikt in het JW315 bericht;Verwijzer;1;Gemeente": "",
+    "COD328;Code verwijzer;Code wettelijke verwijzer gebruikt in het JW315 bericht;Verwijzer;2;Huisarts": "",
+    "COD329;Code verwijzer;Code wettelijke verwijzer gebruikt in het JW315 bericht;Verwijzer;3;Jeugdarts": "",
+    "COD330;Code verwijzer;Code wettelijke verwijzer gebruikt in het JW315 bericht;Verwijzer;4;Gecertificeerde instelling": "",
+    "COD331;Code verwijzer;Code wettelijke verwijzer gebruikt in het JW315 bericht;Verwijzer;5;Medisch specialist": "",
+    "COD332;Code verwijzer;Code wettelijke verwijzer gebruikt in het JW315 bericht;Verwijzer;6;Zelfverwijzer/geen verwijzer": "",
+    "COD333;Code verwijzer;Code wettelijke verwijzer gebruikt in het JW315 bericht;Verwijzer;8;Rechter": "",
+    "COD747;Communicatievorm;Wijze van communiceren met client;;1;Tolk taal": "",
+    "COD747;Communicatievorm;Wijze van communiceren met client;;2;Doventolk": "",
+    "COD747;Communicatievorm;Wijze van communiceren met client;;3;Doofblindentolk": "",
+    "COD170;Datumgebruik;;;1;dag onbekend": "",
+    "COD170;Datumgebruik;;;2;dag en maand onbekend": "",
+    "COD170;Datumgebruik;;;3;dag": "",
+    "WJ756;Eenheid;;;1;Minuut": "",
+    "WJ756;Eenheid;;;4;Uur": "",
+    "WJ756;Eenheid;;;14;Etmaal": "",
+    "WJ756;Eenheid;;;16;Dagdeel (4 uur)": "",
+    "WJ756;Eenheid;;;82;Stuks (output)": "",
+    "WJ756;Eenheid;;;83;Euro's": "",
+    "WJ756;Eenheid;;;84;Stuks (inspanning)": "",
+    "WMO757;Frequentie;;;1;Per dag": "",
+    "WMO757;Frequentie;;;2;Per week": "",
+    "WMO757;Frequentie;;;4;Per maand": "",
+    "WMO757;Frequentie;;;6;Totaal binnen geldigheidsduur toewijzing": "",
+    "COD046;Geslacht;;;0;Onbekend": "",
+    "COD046;Geslacht;;;1;Mannelijk": "",
+    "COD046;Geslacht;;;2;Vrouwelijk": "",
+    "COD043;Indicatie debet/credit;;;C;Creditbedrag en aantal": "",
+    "COD043;Indicatie debet/credit;;;D;Debetbedrag en aantal": "",
+    "WJ232;Juridische status;;;01;Rechterlijke machtiging (rm) voorlopig / voortgezette machtiging": "",
+    "WJ232;Juridische status;;;02;RM op eigen verzoek": "",
+    "WJ232;Juridische status;;;03;RM met voorwaardelijk ontslag": "",
+    "WJ232;Juridische status;;;04;Onder toezichtstelling (ots)": "",
+    "WJ232;Juridische status;;;05;In bewaring stelling (ibs)": "",
+    "WJ232;Juridische status;;;11;Strafrechterlijke justitiele contacten": "",
+    "WJ232;Juridische status;;;12;Strafrechterlijke justitiele contacten": "",
+    "COD032;Land;;;AD;ANDORRA": "",
+    "COD032;Land;;;AE;VERENIGDE": "",
+    "COD032;Land;;;AF;AFGHANISTAN": "",
+    "COD032;Land;;;AG;ANTIGUA": "",
+    "COD032;Land;;;AI;ANGUILA": "",
+    "COD032;Land;;;AL;ALBANIE": "",
+    "COD032;Land;;;AM;ARMENIE": "",
+    "COD032;Land;;;AO;ANGOLA": "",
+    "COD032;Land;;;AQ;ANTARTICA": "",
+    "COD032;Land;;;AR;ARGENTINIE": "",
+    "COD032;Land;;;AS;AMERIKAANS-SAMOA": "",
+    "COD032;Land;;;AT;OOSTENRIJK": "",
+    "COD032;Land;;;AU;AUSTRALIE": "",
+    "COD032;Land;;;AW;ARUBA": "",
+    "COD032;Land;;;AX;ÅLANDSEILANDEN": "",
+    "COD032;Land;;;AZ;AZERBEIDZJAN": "",
+    "COD032;Land;;;BA;BOSNIE": "",
+    "COD032;Land;;;BB;BARBADOS": "",
+    "COD032;Land;;;BD;BANGLADESH": "",
+    "COD032;Land;;;BE;BELGIE": "",
+    "COD032;Land;;;BF;BURKINA": "",
+    "COD032;Land;;;BG;BULGARIJE": "",
+    "COD032;Land;;;BH;BAHREIN": "",
+    "COD032;Land;;;BI;BURUNDI": "",
+    "COD032;Land;;;BJ;BENIN": "",
+    "COD032;Land;;;BL;SAINT": "",
+    "COD032;Land;;;BM;BERMUDA": "",
+    "COD032;Land;;;BN;BRUNEI": "",
+    "COD032;Land;;;BO;BOLIVIA": "",
+    "COD032;Land;;;BQ;BONAIRE": "",
+    "COD032;Land;;;BR;BRAZILIE": "",
+    "COD032;Land;;;BS;BAHAMA'S": "",
+    "COD032;Land;;;BT;BHUTAN": "",
+    "COD032;Land;;;BV;BOUVET": "",
+    "COD032;Land;;;BW;BOTSWANA": "",
+    "COD032;Land;;;BY;WIT-RUSLand": "",
+    "COD032;Land;;;BZ;BELIZE": "",
+    "COD032;Land;;;CA;CANADA": "",
+    "COD032;Land;;;CC;COCOSEILANDEN": "",
+    "COD032;Land;;;CD;CONGO-KINSHASA": "",
+    "COD032;Land;;;CF;CENTRAAL-AFRIKAANSE": "",
+    "COD032;Land;;;CG;CONGO-BRAZZAVILLE": "",
+    "COD032;Land;;;CH;ZWITSERLand": "",
+    "COD032;Land;;;CI;IVOORKUST": "",
+    "COD032;Land;;;CK;COOKEILANDEN": "",
+    "COD032;Land;;;CL;CHILI": "",
+    "COD032;Land;;;CM;KAMEROEN": "",
+    "COD032;Land;;;CN;CHINA": "",
+    "COD032;Land;;;CO;COLOMBIA": "",
+    "COD032;Land;;;CR;COSTA": "",
+    "COD032;Land;;;CU;CUBA": "",
+    "COD032;Land;;;CV;KAAPVERDIE": "",
+    "COD032;Land;;;CW;CURAÇAO": "",
+    "COD032;Land;;;CX;CHRISTMASEILand": "",
+    "COD032;Land;;;CY;CYPRUS": "",
+    "COD032;Land;;;CZ;TSJECHIE": "",
+    "COD032;Land;;;DE;DUITSLand": "",
+    "COD032;Land;;;DJ;DJIBOUTI": "",
+    "COD032;Land;;;DK;DENEMARKEN": "",
+    "COD032;Land;;;DM;DOMINICA": "",
+    "COD032;Land;;;DO;DOMINICAANSE": "",
+    "COD032;Land;;;DZ;ALGERIJE": "",
+    "COD032;Land;;;EC;ECUADOR": "",
+    "COD032;Land;;;EE;ESTLand": "",
+    "COD032;Land;;;EG;EGYPTE": "",
+    "COD032;Land;;;EH;WESTELIJKE": "",
+    "COD032;Land;;;ER;ERITREA": "",
+    "COD032;Land;;;ES;SPANJE": "",
+    "COD032;Land;;;ET;ETHIOPIE": "",
+    "COD032;Land;;;FI;FINLand": "",
+    "COD032;Land;;;FJ;FIJI": "",
+    "COD032;Land;;;FK;FALKLANDEILANDEN": "",
+    "COD032;Land;;;FM;MICRONESIA": "",
+    "COD032;Land;;;FO;FAERÖER": "",
+    "COD032;Land;;;FR;FRANKRIJK": "",
+    "COD032;Land;;;GA;GABON": "",
+    "COD032;Land;;;GB;VERENIGD": "",
+    "COD032;Land;;;GD;GRENADA": "",
+    "COD032;Land;;;GE;GEORGIE": "",
+    "COD032;Land;;;GF;FRANS-GUYANA": "",
+    "COD032;Land;;;GG;GUERNSEY": "",
+    "COD032;Land;;;GH;GHANA": "",
+    "COD032;Land;;;GI;GIBRALTAR": "",
+    "COD032;Land;;;GL;GROENLand": "",
+    "COD032;Land;;;GM;GAMBIA": "",
+    "COD032;Land;;;GN;GUINEA": "",
+    "COD032;Land;;;GP;GUADELOUPE": "",
+    "COD032;Land;;;GQ;EQUATORIAAL-GUINEA": "",
+    "COD032;Land;;;GR;GRIEKENLand": "",
+    "COD032;Land;;;GS;ZUID-GEORGIE": "",
+    "COD032;Land;;;GT;GUATEMALA": "",
+    "COD032;Land;;;GU;GUAM": "",
+    "COD032;Land;;;GW;GUINEE-BISSAU": "",
+    "COD032;Land;;;GY;GUYANA": "",
+    "COD032;Land;;;HK;HONGKONG": "",
+    "COD032;Land;;;HM;HEARD": "",
+    "COD032;Land;;;HN;HONDURAS": "",
+    "COD032;Land;;;HR;KROATIE": "",
+    "COD032;Land;;;HT;HAÏTI": "",
+    "COD032;Land;;;HU;HONGARIJE": "",
+    "COD032;Land;;;ID;INDONESIE": "",
+    "COD032;Land;;;IE;IERLand": "",
+    "COD032;Land;;;IL;ISRAEL": "",
+    "COD032;Land;;;IM;ISLE": "",
+    "COD032;Land;;;IN;INDIA": "",
+    "COD032;Land;;;IO;BRITS": "",
+    "COD032;Land;;;IQ;IRAK": "",
+    "COD032;Land;;;IR;IRAN": "",
+    "COD032;Land;;;IS;IJSLand": "",
+    "COD032;Land;;;IT;ITALIE": "",
+    "COD032;Land;;;JE;JERSEY": "",
+    "COD032;Land;;;JM;JAMAICA": "",
+    "COD032;Land;;;JO;JORDANIE": "",
+    "COD032;Land;;;JP;JAPAN": "",
+    "COD032;Land;;;KE;KENIA": "",
+    "COD032;Land;;;KG;KIRGIZIE": "",
+    "COD032;Land;;;KH;CAMBODJA": "",
+    "COD032;Land;;;KI;KIRIBATI": "",
+    "COD032;Land;;;KM;COMOREN": "",
+    "COD032;Land;;;KN;SAINT": "",
+    "COD032;Land;;;KP;NOORD-KOREA": "",
+    "COD032;Land;;;KR;ZUID-KOREA": "",
+    "COD032;Land;;;KW;KOEWEIT": "",
+    "COD032;Land;;;KY;CAYMANEILANDEN": "",
+    "COD032;Land;;;KZ;KAZACHSTAN": "",
+    "COD032;Land;;;LA;LAOS": "",
+    "COD032;Land;;;LB;LIBANON": "",
+    "COD032;Land;;;LC;SAINT": "",
+    "COD032;Land;;;LI;LIECHTENSTEIN": "",
+    "COD032;Land;;;LK;SRI": "",
+    "COD032;Land;;;LR;LIBERIA": "",
+    "COD032;Land;;;LS;LESOTHO": "",
+    "COD032;Land;;;LT;LITOUWEN": "",
+    "COD032;Land;;;LU;LUXEMBURG": "",
+    "COD032;Land;;;LV;LETLand": "",
+    "COD032;Land;;;LY;LIBIE": "",
+    "COD032;Land;;;MA;MAROKKO": "",
+    "COD032;Land;;;MC;MONACO": "",
+    "COD032;Land;;;MD;MOLDAVIE": "",
+    "COD032;Land;;;ME;MONTENEGRO": "",
+    "COD032;Land;;;MF;SAINT": "",
+    "COD032;Land;;;MG;MADAGASKAR": "",
+    "COD032;Land;;;MH;MARSHALLEILANDEN": "",
+    "COD032;Land;;;MK;MACEDONIE": "",
+    "COD032;Land;;;ML;MALI": "",
+    "COD032;Land;;;MM;MYANMAR": "",
+    "COD032;Land;;;MN;MONGOLIE": "",
+    "COD032;Land;;;MO;MACAU": "",
+    "COD032;Land;;;MP;NOORDELIJKE": "",
+    "COD032;Land;;;MQ;MARTINIQUE": "",
+    "COD032;Land;;;MR;MAURITANIE": "",
+    "COD032;Land;;;MS;MONTSERRAT": "",
+    "COD032;Land;;;MT;MALTA": "",
+    "COD032;Land;;;MU;MAURITIUS": "",
+    "COD032;Land;;;MV;MALDIVEN": "",
+    "COD032;Land;;;MW;MALAWI": "",
+    "COD032;Land;;;MX;MEXICO": "",
+    "COD032;Land;;;MY;MALEISIE": "",
+    "COD032;Land;;;MZ;MOZAMBIQUE": "",
+    "COD032;Land;;;NA;NAMIBIE": "",
+    "COD032;Land;;;NC;NIEUW-CALEDONIE": "",
+    "COD032;Land;;;NE;NIGER": "",
+    "COD032;Land;;;NF;NORFOLK": "",
+    "COD032;Land;;;NG;NIGERIA": "",
+    "COD032;Land;;;NI;NICARAGUA": "",
+    "COD032;Land;;;NL;NEDERLand": "",
+    "COD032;Land;;;NO;NOORWEGEN": "",
+    "COD032;Land;;;NP;NEPAL": "",
+    "COD032;Land;;;NR;NAURU": "",
+    "COD032;Land;;;NU;NIUE": "",
+    "COD032;Land;;;NZ;NIEUW-ZEELand": "",
+    "COD032;Land;;;OM;OMAN": "",
+    "COD032;Land;;;PA;PANAMA": "",
+    "COD032;Land;;;PE;PERU": "",
+    "COD032;Land;;;PF;FRANS-POLYNESIE": "",
+    "COD032;Land;;;PG;PAPOEA-NIEUW-GUINEA": "",
+    "COD032;Land;;;PH;FILIPIJNEN": "",
+    "COD032;Land;;;PK;PAKISTAN": "",
+    "COD032;Land;;;PL;POLEN": "",
+    "COD032;Land;;;PM;SAINT-PIERRE": "",
+    "COD032;Land;;;PN;PITCAIRNEILANDEN": "",
+    "COD032;Land;;;PR;PUERTO": "",
+    "COD032;Land;;;PS;PALESTIJNSE": "",
+    "COD032;Land;;;PT;PORTUGAL": "",
+    "COD032;Land;;;PW;PALAU": "",
+    "COD032;Land;;;PY;PARAGUAY": "",
+    "COD032;Land;;;QA;QATAR": "",
+    "COD032;Land;;;RE;RÉUNION": "",
+    "COD032;Land;;;RO;ROEMENIE": "",
+    "COD032;Land;;;RS;SERVIE": "",
+    "COD032;Land;;;RU;RUSLand": "",
+    "COD032;Land;;;RW;RWANDA": "",
+    "COD032;Land;;;SA;SAOEDI-ARABIE": "",
+    "COD032;Land;;;SB;SALOMONSEILANDEN": "",
+    "COD032;Land;;;SC;SEYCHELLEN": "",
+    "COD032;Land;;;SD;SOEDAN": "",
+    "COD032;Land;;;SE;ZWEDEN": "",
+    "COD032;Land;;;SG;SINGAPORE": "",
+    "COD032;Land;;;SH;SINT-HELENA": "",
+    "COD032;Land;;;SI;SLOVENIE": "",
+    "COD032;Land;;;SJ;SPITSBERGEN": "",
+    "COD032;Land;;;SK;SLOWAKIJE": "",
+    "COD032;Land;;;SL;SIERRA": "",
+    "COD032;Land;;;SM;SAN": "",
+    "COD032;Land;;;SN;SENEGAL": "",
+    "COD032;Land;;;SO;SOMALIE": "",
+    "COD032;Land;;;SR;SURINAME": "",
+    "COD032;Land;;;SS;ZUID": "",
+    "COD032;Land;;;ST;SAO": "",
+    "COD032;Land;;;SV;EL": "",
+    "COD032;Land;;;SX;SINT": "",
+    "COD032;Land;;;SY;SYRIE": "",
+    "COD032;Land;;;SZ;SWAZILand": "",
+    "COD032;Land;;;TC;TURKS-": "",
+    "COD032;Land;;;TD;TSJAAD": "",
+    "COD032;Land;;;TF;FRANSE": "",
+    "COD032;Land;;;TG;TOGO": "",
+    "COD032;Land;;;TH;THAILand": "",
+    "COD032;Land;;;TJ;TADZJIKISTAN": "",
+    "COD032;Land;;;TK;TOKELAU": "",
+    "COD032;Land;;;TL;OOST-TIMOR": "",
+    "COD032;Land;;;TM;TURKMENISTAN": "",
+    "COD032;Land;;;TN;TUNESIE": "",
+    "COD032;Land;;;TO;TONGA": "",
+    "COD032;Land;;;TR;TURKIJE": "",
+    "COD032;Land;;;TT;TRINIDAD": "",
+    "COD032;Land;;;TV;TUVALU": "",
+    "COD032;Land;;;TW;TAIWAN": "",
+    "COD032;Land;;;TZ;TANZANIA": "",
+    "COD032;Land;;;UA;OEKRAINE": "",
+    "COD032;Land;;;UG;OEGANDA": "",
+    "COD032;Land;;;UM;KLEINE": "",
+    "COD032;Land;;;US;VERENIGDE": "",
+    "COD032;Land;;;UY;URUGUAY": "",
+    "COD032;Land;;;UZ;OEZBEKISTAN": "",
+    "COD032;Land;;;VA;VATICAANSTAD": "",
+    "COD032;Land;;;VC;SAINT": "",
+    "COD032;Land;;;VE;VENEZUELA": "",
+    "COD032;Land;;;VG;BRITSE": "",
+    "COD032;Land;;;VI;AMERIKAANSE": "",
+    "COD032;Land;;;VN;VIETNAM": "",
+    "COD032;Land;;;VU;VANUATU": "",
+    "COD032;Land;;;WF;WALLIS": "",
+    "COD032;Land;;;WS;SAMOA": "",
+    "COD032;Land;;;YE;JEMEN": "",
+    "COD032;Land;;;YT;MAYOTTE": "",
+    "COD032;Land;;;ZA;ZUID-AFRIKA": "",
+    "COD032;Land;;;ZM;ZAMBIA": "",
+    "COD032;Land;;;ZW;ZIMBABWE": "",
+    "COD700;Naamgebruik;;;1;Eigen naam": "",
+    "COD700;Naamgebruik;;;2;Naam echtgenoot of geregistreerd partner of alternatieve naam": "",
+    "COD700;Naamgebruik;;;3;Naam echtgenoot of geregistreerd partner gevolgd door eigen naam": "",
+    "COD700;Naamgebruik;;;4;Eigen naam gevolgd door naam echtgenoot of geregistreerd partner": "",
+    "COD700;Naamgebruik;;;5;Pseudoniem": "",
+    "COD700;Naamgebruik;;;6;Niet-natuurlijk persoon": "",
+    "JZ020;Productcategorie;;;31;(2015) Zonder verblijf: uitgevoerd door wijk- of buurtteam": "",
+    "JZ020;Productcategorie;;;32;(2015) Zonder verblijf: ambulante jeugdhulp op locatie van de aanbieder": "",
+    "JZ020;Productcategorie;;;33;(2015) Zonder verblijf: daghulp op locatie van de aanbieder": "",
+    "JZ020;Productcategorie;;;34;(2015) Zonder verblijf: jeugdhulp in het netwerk van de jeugdige": "",
+    "JZ020;Productcategorie;;;35;(2015) Met verblijf: pleegzorg": "",
+    "JZ020;Productcategorie;;;36;(2015) Met verblijf: gezinsgericht": "",
+    "JZ020;Productcategorie;;;37;(2015) Met verblijf: gesloten plaatsing": "",
+    "JZ020;Productcategorie;;;38;(2015) Met verblijf: overig residentieel": "",
+    "JZ020;Productcategorie;;;40;Persoonlijke verzorging": "",
+    "JZ020;Productcategorie;;;41;Dagbehandeling": "",
+    "JZ020;Productcategorie;;;42;Vervoerdiensten": "",
+    "JZ020;Productcategorie;;;43;Jeugdhulp verblijf (incl. behandeling)": "",
+    "JZ020;Productcategorie;;;44;Jeugdhulp verblijf (excl. behandeling)": "",
+    "JZ020;Productcategorie;;;45;Jeugdhulp ambulant": "",
+    "JZ020;Productcategorie;;;46;Jeugdhulp crisis": "",
+    "JZ020;Productcategorie;;;47;Jeugdreclassering": "",
+    "JZ020;Productcategorie;;;48;Jeugdbescherming": "",
+    "JZ020;Productcategorie;;;49;Activiteiten in het preventief justitieel kader": "",
+    "JZ020;Productcategorie;;;50;Maatwerkarrangementen jeugd": "",
+    "JZ020;Productcategorie;;;51;Generalistische basis-ggz": "",
+    "JZ020;Productcategorie;;;52;Specialistische ggz": "",
+    "JZ020;Productcategorie;;;53;Kindergeneeskunde": "",
+    "JZ020;Productcategorie;;;54;Jeugd-ggz": "",
+    "JZ020;Productcategorie;;;55;Landelijk ingekochte zorg": "",
+    "WJ759;Reden afwijzing verzoek;;;1;Geen wijziging": "",
+    "WJ759;Reden afwijzing verzoek;;;2;Past niet binnen budget": "",
+    "WJ759;Reden afwijzing verzoek;;;3;Geen contract": "",
+    "WJ759;Reden afwijzing verzoek;;;4;Past niet binnen contract": "",
+    "WJ759;Reden afwijzing verzoek;;;5;Andere gemeente": "",
+    "WJ759;Reden afwijzing verzoek;;;6;Stapeling": "",
+    "WJ759;Reden afwijzing verzoek;;;7;Zorginhoudelijke afkeur": "",
+    "WJ759;Reden afwijzing verzoek;;;8;Woonplaatsbeginsel": "",
+    "WJ759;Reden afwijzing verzoek;;;9;Leeftijdsgrens is bereikt": "",
+    "JZ588;Reden beeindiging;Indien de client is overleden wordt deze code gebruikt;;02;Overlijden": "",
+    "JZ588;Reden beeindiging;bijvoorbeeld indien de cliënt wordt opgenomen in het ziekenhuis": "ofwel definitief wordt beëindigd (monitoren).;;20;Levering is tijdelijk beeindigd.",
+    "JZ588;Reden beeindiging;Enige wijzigingen in het plan zijn normaal. Het is niet wenselijk om te rigide vast te houden aan een vooropgesteld plan. Als je met elkaar": "is het traject volgens plan afgesloten. Ook als de jongere de leeftijd van 18 jaar bereikt en de jeugdhulp wordt beëindigd.;;31;Levering is volgens plan beeindigd.",
+    "JZ588;Reden beeindiging;Het traject wordt voortijdig afgesloten": "uitval.;;32;Voortijdig afgesloten: eenzijdig door de client.",
+    "JZ588;Reden beeindiging;Het lukt de aanbieder niet voldoende passende hulp te bieden. De aanbieder komt tot de conclusie dat verdere hulp vanuit aanbieder niet meer haalbaar is": "",
+    "JZ588;Reden beeindiging;De situatie van de jeugdige of het gezin is veranderd waardoor de gestarte hulp niet meer passend is. Als de cliënt en behandelaar het eens zijn dat de eerder afgesproken hulp geen toegevoegde waarde meer heeft": "",
+    "JZ588;Reden beeindiging;Indien er externe omstandigheden zijn die noodzaken dat de zorg moet worden gestopt": "langdurige vermissing of ontvoering van het kind;;35;Voortijdig afgesloten: wegens externe omstandigheden.",
+    "JZ588;Reden beeindiging;Indien op intiatief van een gemeente een toewijzing wordt beëindigd": "",
+    "JZ588;Reden beeindiging;Indien op initatief van de aanbieder een bepaalde zorg die geleverd wordt": "wordt deze code gebruikt.;;37;In verband met wijzigingsverzoek",
+    "JZ588;Reden beeindiging;Client gaat naar een andere aanbieder": "",
+    "JZ588;Reden beeindiging;Client gaat over naar ander domein": "",
+    "WJ758;Reden verzoek;Code om aan te geven waarom een VOW wordt aangevraagd;;1;Verandering clientsituatie": "",
+    "WJ758;Reden verzoek;Code om aan te geven waarom een VOW wordt aangevraagd;;2;Wijziging zorgplan": "",
+    "JZ002;Reden wijziging toewijzing;nvt;;01;Administratieve correctie (vervallen)": "",
+    "JZ002;Reden wijziging toewijzing;De toewijzing moet worden gestopt": "",
+    "JZ002;Reden wijziging toewijzing;Gemeente maakt een nieuwe contractafspraak met aanbieder": "",
+    "JZ002;Reden wijziging toewijzing;;;04;Herbeoordeling": "",
+    "JZ002;Reden wijziging toewijzing;;;05;Herbeoordeling": "",
+    "JZ002;Reden wijziging toewijzing;Client gaat over naar ander domein": "",
+    "JZ002;Reden wijziging toewijzing;De gemeente kan een afgegeven Toewijzing niet zomaar intrekken bij verhuizing naar een andere gemeente. De gemeente die de toewijzing heeft verstrekt": "",
+    "JZ002;Reden wijziging toewijzing;Client gaat gebruik maken van pgb.;;08;Wijziging leveringsvorm": "",
+    "JZ002;Reden wijziging toewijzing;Client gaat naar een andere aanbieder": "",
+    "JZ002;Reden wijziging toewijzing;De toewijzing is ingetrokken": "",
+    "JZ002;Reden wijziging toewijzing;Volgens protocol gemeentelijke herindeling is deze toewijzing niet meer geldig.;;11;Gemeentelijke herindeling": "",
+    "JZ002;Reden wijziging toewijzing;Indien een toewijzing wijzigt als gevolg van een verzoek om wijziging": "",
+    "JZ002;Reden wijziging toewijzing;Als een toewijzing ten onrechte is verstuurd en de gemeente dit ongedaan wil maken. Hierbij wordt de einddatum gelijk gesteld aan de ingangsdatum. De toewijzing moet als niet verzonden beschouwd worden.;;13;Verwijderd": "",
+    "JZ002;Reden wijziging toewijzing;Als de gemeente een (invoer)fout heeft gemaakt die hersteld moet worden. De velden die gewijzigd mogen worden": "",
+    "COD757;Soort adres;;;1;BRP-adres": "",
+    "COD757;Soort adres;;;2;Correspondentie-adres": "",
+    "COD757;Soort adres;;;3;Verblijfadres": "",
+    "COD757;Soort adres;;;4;Tijdelijk verblijfadres": "",
+    "COD472;Soort relatie;;;03;Curator (juridisch)": "",
+    "COD472;Soort relatie;;;04;Financieel (gemachtigd)": "",
+    "COD472;Soort relatie;;;05;Financieel (toetsing)": "",
+    "COD472;Soort relatie;;;06;Leefeenheid": "",
+    "COD472;Soort relatie;;;07;Hulpverlener": "",
+    "COD472;Soort relatie;;;08;Specialist": "",
+    "COD472;Soort relatie;;;09;Anders": "",
+    "COD472;Soort relatie;;;10;Ouder": "",
+    "COD472;Soort relatie;;;11;Voogd": "",
+    "COD472;Soort relatie;;;12;Partner/echtgeno(o)t(e)": "",
+    "COD472;Soort relatie;;;13;Pleegouder": "",
+    "COD472;Soort relatie;;;14;Bewindvoerder": "",
+    "COD472;Soort relatie;;;15;Mentor": "",
+    "COD472;Soort relatie;;;16;Zoon/dochter": "",
+    "COD472;Soort relatie;;;17;Familielid": "",
+    "COD472;Soort relatie;;;18;Gezinslid": "",
+    "COD472;Soort relatie;;;19;Buur": "",
+    "COD472;Soort relatie;;;20;Vriend(in)/kennis": "",
+    "COD472;Soort relatie;;;21;Clientondersteuner": "",
+    "COD472;Soort relatie;;;22;Huisarts": "",
+    "COD472;Soort relatie;;;23;Erven van": "",
+    "COD472;Soort relatie;;;24;Werkgever": "",
+    "COD472;Soort relatie;;;25;Wijkcoach": "",
+    "COD467;Status aanlevering;;;1;Eerste aanlevering": "",
+    "COD467;Status aanlevering;;;2;Gewijzigde aanlevering": "",
+    "COD467;Status aanlevering;;;3;Verwijderen aanlevering": "",
+    "COD467;Status aanlevering;;;9;Niet van toepassing (ongewijzigd)": "",
+    "WJ760;Verzoek antwoord;;;1;Verzoek afgewezen": "",
+    "WJ760;Verzoek antwoord;;;2;Aanvraag in onderzoek": "",
+    "WJ003;Wettelijke vertegenwoordiging;;;06;Voogdij": "",
+    "WJ003;Wettelijke vertegenwoordiging;;;07;Bewindvoering": "",
+    "WJ003;Wettelijke vertegenwoordiging;;;08;Mentorschap": "",
+    "WJ003;Wettelijke vertegenwoordiging;;;09;Onder curatele stelling": "",
+    "WJ003;Wettelijke vertegenwoordiging;;;10;Zaakwaarneming": ""
+  }
+]
