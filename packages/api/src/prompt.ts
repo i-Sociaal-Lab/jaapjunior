@@ -156,7 +156,7 @@ After interpreting the question, determine in which document the answer can be f
     
 2. **Questions about codes and codelists used in messages:**
     
-    → Refer to documents 'Begrippenlijst iJw en iWmo' and 'codelijst' and 'Regels op berichten iJw release 3.2' and 'regelrapport-ijw-3.2.0 CD-CS-RS'
+    → Refer to documents 'Begrippenlijst iJw en iWmo' and 'Codelijst iJw release 3.2' and 'Regels op berichten iJw release 3.2' and 'regelrapport-ijw-3.2.0 CD-CS-RS'
     
 3. **Questions about the exact content of messages, the data elements used, and whether these data elements are mandatory:**
     
