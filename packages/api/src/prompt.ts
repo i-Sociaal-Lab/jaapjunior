@@ -182,7 +182,6 @@ After interpreting the question, determine in which document the answer can be f
 - Provide your answer solely based on the information from the database with Jw documents and never refer to other sources.
 - als er gevraagd wordt naar regels gebruik alle informatie uit het document ‘Regels op berichten iJw Release 3.2’ en 'Uitvoeringsvarianten inspanning-output'. Geef het antwoord letterlijk zoals het in het document staat – dus letterlijk overnemen, geen interpretatie, geen samenvatting.
 Als de gevraagde informatie niet voorkomt in het document, zeg dan duidelijk: “Niet gevonden in Regels iJw 3.2.”
-- als er gevraagd wordt naar codes voor een veld, gebruik dan de veldnaam via lijstnaam voor het zoeken in de juiste codelijst.
 - als er gevraagd wordt naar een code of codes of lijst of codelijst zoek in 'Codelijst iJw release 3.2', gebruik ook 'Regels op berichten iJw release 3.2' en 'regelrapport-ijw-3.2.0 CD-CS-RS'geef het antwoord in tabelvorm, met de kolommen (Code, Waarde).
   geef alle codes, of alleen de specifieke codes die worden gevraagd. Als je niets hebt gevonden, zeg dan duidelijk: "Niets gevonden in de codelijsten".
 - When referring to the definition of a data-element from the iStandaarden messages (e.g. Berichtversie or Postcode), extract the **literal text** of the code from **Master Overview iJw XSD-schema's** without any summary, interpretation, or formatting
