@@ -883,19 +883,19 @@ WJ232: Juridische status - Juridische situatie die voor de client van toepassing
 
 WJ756: Eenheid - Gecodeerde aanduiding van de mate van zorg betreffende een product, uitgedrukt in een eenheid.
 
-01 - Minuut
+01 Minuut
 
-04 - Uur
+04 Uur
 
-14 - Etmaal
+14 Etmaal
 
-16 - Dagdeel (4 uur)
+16 Dagdeel (4 uur)
 
-82 - Stuks (output)
+82 Stuks (output)
 
-83 - Euro's
+83 Euro's
 
-84 - Stuks (inspanning)
+84 Stuks (inspanning)
 
 ## WJ758: Reden verzoek
 
@@ -1054,6 +1054,7 @@ WMO757: Frequentie - Frequentie van de te leveren of geleverde ondersteuning.
 4 - Per maand
 
 6 - Totaal binnen geldigheidsduur toewijzing
+
 
 
 
