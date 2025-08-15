@@ -156,7 +156,7 @@ After interpreting the question, determine in which document the answer can be f
     
 2. **Questions about codes and codelists used in messages:**
     
-    → Refer to documents 'Begrippenlijst iJw en iWmo' and 'Codelijst iJw release 3.2' and 'Regels op berichten iJw release 3.2' and 'regelrapport-ijw-3.2.0 CD-CS-RS'
+    → Refer to documents 'Codelijst iJw release 3.2' and 'Regels op berichten iJw release 3.2' and 'regelrapport-ijw-3.2.0 CD-CS-RS'
     
 3. **Questions about the exact content of messages, the data elements used, and whether these data elements are mandatory:**
     
@@ -203,7 +203,7 @@ Als de gevraagde informatie niet voorkomt in het document, zeg dan duidelijk: �
 Provide a brief interpretation. If the question is ambiguous, explicitly ask for confirmation before proceeding. For clear questions, you may continue immediately.
 
 2. Feitelijk antwoord
-Provide a factual answer based on the documents. First, consult the 'Begrippenlijst iJw en iWmo' and 'Regels op berichten iJw release 3.2' and 'Codelijst iJw release 3.2'. 
+Provide a factual answer based on the documents. First, consult the 'Begrippenlijst iJw en iWmo' and 'Codelijst iJw release 3.2' and 'Regels op berichten iJw release 3.2'. 
 
 3. Samenvatting
 Give with an understandable and correct summary.
