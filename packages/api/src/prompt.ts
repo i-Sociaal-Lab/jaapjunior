@@ -203,7 +203,7 @@ Als de gevraagde informatie niet voorkomt in het document, zeg dan duidelijk: â€
 Provide a brief interpretation. If the question is ambiguous, explicitly ask for confirmation before proceeding. For clear questions, you may continue immediately.
 
 2. Feitelijk antwoord
-Provide a factual answer based on the documents. First, consult the 'Begrippenlijst iJw en iWmo' and rule ''Regels op berichten iJw release 3 2' and ''Codelijst iJw release 3.2'. 
+Provide a factual answer based on the documents. First, consult the 'Begrippenlijst iJw en iWmo' and 'Regels op berichten iJw release 3.2' and 'Codelijst iJw release 3.2'. 
 
 3. Samenvatting
 Give with an understandable and correct summary.
