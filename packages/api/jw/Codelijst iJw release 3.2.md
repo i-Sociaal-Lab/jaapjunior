@@ -1,596 +1,1049 @@
 # Codelijst iJw release 3.2
 
-- Lijstcodes beginnend met NUM worden in zowel Wmo als Jeugdwet gebruikt.
-- Lijstcodes beginnend met COD worden in zowel Wmo als Jeugdwet gebruikt.
-- Lijstcodes beginnend met WJ worden in zowel Wmo als Jeugdwet gebruikt.
-- Lijstcodes beginnend met JZ worden alleen in de Jeugdwet gebruikt.
-- Lijstcodes beginnend met WMO worden alleen in de WMO gebruikt.
-- Lijstcodes WMO757 wordt in zowel Wmo als Jeugdwet gebruikt.
-- Bedenk niet zelf nieuwe lijstnamen, lijstcodes, of codes.
-- Let op: lijstnamen, lijstcodes en codes (bijv. Eenheid, COD002-VEKT, COD327, 01, 4) zijn louter administratieve identifiers zonder hiërarchische betekenis. Behandel ze als unieke sleutels die uitsluitend gebruikt worden voor verwijzing, niet voor interpretatie.
-- zoek via lijstnaam
-  
---------------
-  
-## Inhoudsopgave
-- [Aanduiding woonadres] (#aanduiding-woonadres)
-- [Berichtcode] (#berichtcode)
-- [Code verwijzer] (#code-verwijzer)
-- [Communicatievorm] (#communicatievorm)
-- [Datumgebruik] (#datumgebruik)
-- [Eenheid] (#eenheid)
-- [Frequentie] (#frequentie)
-- [Geslacht] (#geslacht)
-- [Indicatie debet/credit] (#indicatie-debet/credit)
-- [Ja of nee] (#ja-of-nee)
-- [Juridische status] (#juridische-status)
-- [Land] (#land)
-- [Naamgebruik] (#naamgebruik)
-- [Productcategorie] (#productcategorie)
-- [Reden afwijzing verzoek] (#reden-afwijzing-verzoek)
-- [Reden beeindiging] (#reden-beeindiging)
-- [Reden beëindiging jeugdhulp] (#reden-beeindiging-jeugdhulp)
-- [Reden verzoek] (#reden-verzoek)
-- [Reden wijziging toewijzing] (#reden-wijziging-toewijzing)
-- [Soort adres] (#soort-adres)
-- [Soort relatie] (#soort-relatie)
-- [Status aanlevering] (#status-aanlevering)
-- [Verzoek antwoord] (#serzoek-antwoord)
-- [Wettelijke vertegenwoordiging] (#wettelijke-vertegenwoordiging)
-
-## Aanduiding woonadres
-
-|Lijstnaam|Lijstcode|Code|Waarde|
-|:--------|---------|----|------|
-|NUM061:Aanduiding woonadres|NUM061|AB|Aan boord|
-|NUM061:Aanduiding woonadres|NUM061|BY|Bij|
-|NUM061:Aanduiding woonadres|NUM061|TO|Tegenover|
-|NUM061:Aanduiding woonadres|NUM061|WW|Woonwagen|
-
-## Berichtcode
-
-|Lijstnaam|Lijstcode|Code|Waarde|
-|:--------|---------|----|------|
-|COD002-VEKT:Berichtcode|COD002-VEKT|436|JW301|
-|COD002-VEKT:Berichtcode|COD002-VEKT|437|JW302|
-|COD002-VEKT:Berichtcode|COD002-VEKT|438|JW305|
-|COD002-VEKT:Berichtcode|COD002-VEKT|439|JW306|
-|COD002-VEKT:Berichtcode|COD002-VEKT|440|JW307|
-|COD002-VEKT:Berichtcode|COD002-VEKT|441|JW308|
-|COD002-VEKT:Berichtcode|COD002-VEKT|446|JW315|
-|COD002-VEKT:Berichtcode|COD002-VEKT|447|JW316|
-|COD002-VEKT:Berichtcode|COD002-VEKT|486|JW317|
-|COD002-VEKT:Berichtcode|COD002-VEKT|487|JW318|
-|COD002-VEKT:Berichtcode|COD002-VEKT|488|JW319|
-|COD002-VEKT:Berichtcode|COD002-VEKT|489|JW320|
-|COD002-VEKT:Berichtcode|COD002-VEKT|490|JW323|
-|COD002-VEKT:Berichtcode|COD002-VEKT|491|JW325|
-
-## Code verwijzer
-
-|Lijstnaam|Lijstcode|Code|Waarde|
-|:--------|---------|----|------|
-|COD327:Code verwijzer|COD327|01|Gemeente|
-|COD327:Code verwijzer|COD327|02|Huisarts|
-|COD327:Code verwijzer|COD327|03|Jeugdarts|
-|COD327:Code verwijzer|COD327|04|Gecertificeerde instelling|
-|COD327:Code verwijzer|COD327|05|Medisch specialist|
-|COD327:Code verwijzer|COD327|06|Zelfverwijzer/geen verwijzer|
-|COD327:Code verwijzer|COD327|08|Rechter, Officier van Justitie, functionaris Justitiële jeugdinrichting|
-
-## Cummunicatievorm
-
-|Lijstnaam|Lijstcode|Code|Waarde|
-|:--------|---------|----|------|
-|COD747:Communicatievorm|COD747|1|Tolk taal|
-|COD747:Communicatievorm|COD747|2|Doventolk|
-|COD747:Communicatievorm|COD747|3|Doofblindentolk|
-
-## Datumgebruik
-
-|Lijstnaam|Lijstcode|Code|Waarde|
-|:--------|---------|----|------|
-|COD170:Datumgebruik|COD170|1|dag onbekend; alleen maand en jaar gebruiken|
-|COD170:Datumgebruik|COD170|2|dag en maand onbekend; alleen jaar gebruiken|
-|COD170:Datumgebruik|COD170|3|dag, maand en jaar onbekend; onbekende datum|
-
-## Eenheid
-
-|Lijstnaam|lijstcode|Code|Waarde|
-|:--------|---------|----|------|
-|WJ756:Eenheid|WJ756|01|Minuut|
-|WJ756:Eenheid|WJ756|04|Uur|
-|WJ756:Eenheid|WJ756|14|Etmaal|
-|WJ756:Eenheid|WJ756|16|Dagdeel (4 uur)|
-|WJ756:Eenheid|WJ756|82|Stuks (output)|
-|WJ756:Eenheid|WJ756|83|Euro's|
-|WJ756:Eenheid|WJ756|84|Stuks (inspanning)|
-
-## Frequentie
-
-|Lijstnaam|Lijstcode|Code|Waarde|
-|:--------|---------|----|------|
-|WMO757:Frequentie|WMO757|1|Per dag|
-|WMO757:Frequentie|WMO757|2|Per week|
-|WMO757:Frequentie|WMO757|4|Per maand|
-|WMO757:Frequentie|WMO757|6|Totaal binnen geldigheidsduur toewijzing|
-
-## Geslacht
-
-|Lijstnaam|Lijstcode|Code|Waarde|
-|:--------|---------|----|------|
-|COD046:Geslacht|COD046|0|Onbekend|
-|COD046:Geslacht|COD046|1|Mannelijk|
-|COD046:Geslacht|COD046|2|Vrouwelijk|
-
-## Indicatie debet/credit
-
-|Lijstnaam|Lijstcode|Code|Waarde|
-|:--------|---------|----|------|
-|COD043:Indicatie debet/credit|COD043|C|Creditbedrag en aantal|
-|COD043:Indicatie debet/credit|COD043|D|Debetbedrag en aantal|
-
-## Ja of Nee
-
-|Lijstnaam       |Lijstcode|Code|Waarde|
-|:---------------|---------|----|------|
-|COD260:Ja of nee|COD260|1|Ja|
-|COD260:Ja of nee|COD260|2|Nee|
-
-## Juridische status
-
-|Lijstnaam|Lijstcode|Code|Waarde|
-|:--------|---------|----|------|
-|WJ232:Juridische status|WJ232|01|Rechterlijke machtiging (rm) voorlopig / voortgezette machtiging|
-|WJ232:Juridische status|WJ232|02|RM op eigen verzoek|
-|WJ232:Juridische status|WJ232|03|RM met voorwaardelijk ontslag|
-|WJ232:Juridische status|WJ232|04|Onder toezichtstelling (ots)|
-|WJ232:Juridische status|WJ232|05|In bewaring stelling (ibs)|
-|WJ232:Juridische status|WJ232|11|Strafrechterlijke justitiele contacten: tbs|
-|WJ232:Juridische status|WJ232|12|Strafrechterlijke justitiele contacten: overig|
-
-## Land
-
-|Lijstnaam|Lijstcode|Code|Waarde|
-|---------|---------|----|------|
-|COD032:Land|COD032|AD|ANDORRA|
-|COD032:Land|COD032|AE|VERENIGDE|
-|COD032:Land|COD032|AF|AFGHANISTAN|
-|COD032:Land|COD032|AG|ANTIGUA|
-|COD032:Land|COD032|AI|ANGUILA|
-|COD032:Land|COD032|AL|ALBANIE|
-|COD032:Land|COD032|AM|ARMENIE|
-|COD032:Land|COD032|AO|ANGOLA|
-|COD032:Land|COD032|AQ|ANTARTICA|
-|COD032:Land|COD032|AR|ARGENTINIE|
-|COD032:Land|COD032|AS|AMERIKAANS-SAMOA|
-|COD032:Land|COD032|AT|OOSTENRIJK|
-|COD032:Land|COD032|AU|AUSTRALIE|
-|COD032:Land|COD032|AW|ARUBA|
-|COD032:Land|COD032|AX|ÅLANDSEILANDEN|
-|COD032:Land|COD032|AZ|AZERBEIDZJAN|
-|COD032:Land|COD032|BA|BOSNIE|
-|COD032:Land|COD032|BB|BARBADOS|
-|COD032:Land|COD032|BD|BANGLADESH|
-|COD032:Land|COD032|BE|BELGIE|
-|COD032:Land|COD032|BF|BURKINA|
-|COD032:Land|COD032|BG|BULGARIJE|
-|COD032:Land|COD032|BH|BAHREIN|
-|COD032:Land|COD032|BI|BURUNDI|
-|COD032:Land|COD032|BJ|BENIN|
-|COD032:Land|COD032|BL|SAINT|
-|COD032:Land|COD032|BM|BERMUDA|
-|COD032:Land|COD032|BN|BRUNEI|
-|COD032:Land|COD032|BO|BOLIVIA|
-|COD032:Land|COD032|BQ|BONAIRE,|
-|COD032:Land|COD032|BR|BRAZILIE|
-|COD032:Land|COD032|BS|BAHAMA'S|
-|COD032:Land|COD032|BT|BHUTAN|
-|COD032:Land|COD032|BV|BOUVET|
-|COD032:Land|COD032|BW|BOTSWANA|
-|COD032:Land|COD032|BY|WIT-RUSLand|
-|COD032:Land|COD032|BZ|BELIZE|
-|COD032:Land|COD032|CA|CANADA|
-|COD032:Land|COD032|CC|COCOSEILANDEN|
-|COD032:Land|COD032|CD|CONGO-KINSHASA|
-|COD032:Land|COD032|CF|CENTRAAL-AFRIKAANSE|
-|COD032:Land|COD032|CG|CONGO-BRAZZAVILLE|
-|COD032:Land|COD032|CH|ZWITSERLand|
-|COD032:Land|COD032|CI|IVOORKUST|
-|COD032:Land|COD032|CK|COOKEILANDEN|
-|COD032:Land|COD032|CL|CHILI|
-|COD032:Land|COD032|CM|KAMEROEN|
-|COD032:Land|COD032|CN|CHINA|
-|COD032:Land|COD032|CO|COLOMBIA|
-|COD032:Land|COD032|CR|COSTA|
-|COD032:Land|COD032|CU|CUBA|
-|COD032:Land|COD032|CV|KAAPVERDIE|
-|COD032:Land|COD032|CW|CURAÇAO|
-|COD032:Land|COD032|CX|CHRISTMASEILand|
-|COD032:Land|COD032|CY|CYPRUS|
-|COD032:Land|COD032|CZ|TSJECHIE|
-|COD032:Land|COD032|DE|DUITSLand|
-|COD032:Land|COD032|DJ|DJIBOUTI|
-|COD032:Land|COD032|DK|DENEMARKEN|
-|COD032:Land|COD032|DM|DOMINICA|
-|COD032:Land|COD032|DO|DOMINICAANSE|
-|COD032:Land|COD032|DZ|ALGERIJE|
-|COD032:Land|COD032|EC|ECUADOR|
-|COD032:Land|COD032|EE|ESTLand|
-|COD032:Land|COD032|EG|EGYPTE|
-|COD032:Land|COD032|EH|WESTELIJKE|
-|COD032:Land|COD032|ER|ERITREA|
-|COD032:Land|COD032|ES|SPANJE|
-|COD032:Land|COD032|ET|ETHIOPIE|
-|COD032:Land|COD032|FI|FINLand|
-|COD032:Land|COD032|FJ|FIJI|
-|COD032:Land|COD032|FK|FALKLANDEILANDEN|
-|COD032:Land|COD032|FM|MICRONESIA|
-|COD032:Land|COD032|FO|FAERÖER|
-|COD032:Land|COD032|FR|FRANKRIJK|
-|COD032:Land|COD032|GA|GABON|
-|COD032:Land|COD032|GB|VERENIGD|
-|COD032:Land|COD032|GD|GRENADA|
-|COD032:Land|COD032|GE|GEORGIE|
-|COD032:Land|COD032|GF|FRANS-GUYANA|
-|COD032:Land|COD032|GG|GUERNSEY|
-|COD032:Land|COD032|GH|GHANA|
-|COD032:Land|COD032|GI|GIBRALTAR|
-|COD032:Land|COD032|GL|GROENLand|
-|COD032:Land|COD032|GM|GAMBIA|
-|COD032:Land|COD032|GN|GUINEA|
-|COD032:Land|COD032|GP|GUADELOUPE|
-|COD032:Land|COD032|GQ|EQUATORIAAL-GUINEA|
-|COD032:Land|COD032|GR|GRIEKENLand|
-|COD032:Land|COD032|GS|ZUID-GEORGIE|
-|COD032:Land|COD032|GT|GUATEMALA|
-|COD032:Land|COD032|GU|GUAM|
-|COD032:Land|COD032|GW|GUINEE-BISSAU|
-|COD032:Land|COD032|GY|GUYANA|
-|COD032:Land|COD032|HK|HONGKONG|
-|COD032:Land|COD032|HM|HEARD|
-|COD032:Land|COD032|HN|HONDURAS|
-|COD032:Land|COD032|HR|KROATIE|
-|COD032:Land|COD032|HT|HAÏTI|
-|COD032:Land|COD032|HU|HONGARIJE|
-|COD032:Land|COD032|ID|INDONESIE|
-|COD032:Land|COD032|IE|IERLand|
-|COD032:Land|COD032|IL|ISRAEL|
-|COD032:Land|COD032|IM|ISLE|
-|COD032:Land|COD032|IN|INDIA|
-|COD032:Land|COD032|IO|BRITS|
-|COD032:Land|COD032|IQ|IRAK|
-|COD032:Land|COD032|IR|IRAN|
-|COD032:Land|COD032|IS|IJSLand|
-|COD032:Land|COD032|IT|ITALIE|
-|COD032:Land|COD032|JE|JERSEY|
-|COD032:Land|COD032|JM|JAMAICA|
-|COD032:Land|COD032|JO|JORDANIE|
-|COD032:Land|COD032|JP|JAPAN|
-|COD032:Land|COD032|KE|KENIA|
-|COD032:Land|COD032|KG|KIRGIZIE|
-|COD032:Land|COD032|KH|CAMBODJA|
-|COD032:Land|COD032|KI|KIRIBATI|
-|COD032:Land|COD032|KM|COMOREN|
-|COD032:Land|COD032|KN|SAINT|
-|COD032:Land|COD032|KP|NOORD-KOREA|
-|COD032:Land|COD032|KR|ZUID-KOREA|
-|COD032:Land|COD032|KW|KOEWEIT|
-|COD032:Land|COD032|KY|CAYMANEILANDEN|
-|COD032:Land|COD032|KZ|KAZACHSTAN|
-|COD032:Land|COD032|LA|LAOS|
-|COD032:Land|COD032|LB|LIBANON|
-|COD032:Land|COD032|LC|SAINT|
-|COD032:Land|COD032|LI|LIECHTENSTEIN|
-|COD032:Land|COD032|LK|SRI|
-|COD032:Land|COD032|LR|LIBERIA|
-|COD032:Land|COD032|LS|LESOTHO|
-|COD032:Land|COD032|LT|LITOUWEN|
-|COD032:Land|COD032|LU|LUXEMBURG|
-|COD032:Land|COD032|LV|LETLand|
-|COD032:Land|COD032|LY|LIBIE|
-|COD032:Land|COD032|MA|MAROKKO|
-|COD032:Land|COD032|MC|MONACO|
-|COD032:Land|COD032|MD|MOLDAVIE|
-|COD032:Land|COD032|ME|MONTENEGRO|
-|COD032:Land|COD032|MF|SAINT|
-|COD032:Land|COD032|MG|MADAGASKAR|
-|COD032:Land|COD032|MH|MARSHALLEILANDEN|
-|COD032:Land|COD032|MK|MACEDONIE|
-|COD032:Land|COD032|ML|MALI|
-|COD032:Land|COD032|MM|MYANMAR|
-|COD032:Land|COD032|MN|MONGOLIE|
-|COD032:Land|COD032|MO|MACAU|
-|COD032:Land|COD032|MP|NOORDELIJKE|
-|COD032:Land|COD032|MQ|MARTINIQUE|
-|COD032:Land|COD032|MR|MAURITANIE|
-|COD032:Land|COD032|MS|MONTSERRAT|
-|COD032:Land|COD032|MT|MALTA|
-|COD032:Land|COD032|MU|MAURITIUS|
-|COD032:Land|COD032|MV|MALDIVEN|
-|COD032:Land|COD032|MW|MALAWI|
-|COD032:Land|COD032|MX|MEXICO|
-|COD032:Land|COD032|MY|MALEISIE|
-|COD032:Land|COD032|MZ|MOZAMBIQUE|
-|COD032:Land|COD032|NA|NAMIBIE|
-|COD032:Land|COD032|NC|NIEUW-CALEDONIE|
-|COD032:Land|COD032|NE|NIGER|
-|COD032:Land|COD032|NF|NORFOLK|
-|COD032:Land|COD032|NG|NIGERIA|
-|COD032:Land|COD032|NI|NICARAGUA|
-|COD032:Land|COD032|NL|NEDERLand|
-|COD032:Land|COD032|NO|NOORWEGEN|
-|COD032:Land|COD032|NP|NEPAL|
-|COD032:Land|COD032|NR|NAURU|
-|COD032:Land|COD032|NU|NIUE|
-|COD032:Land|COD032|NZ|NIEUW-ZEELand|
-|COD032:Land|COD032|OM|OMAN|
-|COD032:Land|COD032|PA|PANAMA|
-|COD032:Land|COD032|PE|PERU|
-|COD032:Land|COD032|PF|FRANS-POLYNESIE|
-|COD032:Land|COD032|PG|PAPOEA-NIEUW-GUINEA|
-|COD032:Land|COD032|PH|FILIPIJNEN|
-|COD032:Land|COD032|PK|PAKISTAN|
-|COD032:Land|COD032|PL|POLEN|
-|COD032:Land|COD032|PM|SAINT-PIERRE|
-|COD032:Land|COD032|PN|PITCAIRNEILANDEN|
-|COD032:Land|COD032|PR|PUERTO|
-|COD032:Land|COD032|PS|PALESTIJNSE|
-|COD032:Land|COD032|PT|PORTUGAL|
-|COD032:Land|COD032|PW|PALAU|
-|COD032:Land|COD032|PY|PARAGUAY|
-|COD032:Land|COD032|QA|QATAR|
-|COD032:Land|COD032|RE|RÉUNION|
-|COD032:Land|COD032|RO|ROEMENIE|
-|COD032:Land|COD032|RS|SERVIE|
-|COD032:Land|COD032|RU|RUSLand|
-|COD032:Land|COD032|RW|RWANDA|
-|COD032:Land|COD032|SA|SAOEDI-ARABIE|
-|COD032:Land|COD032|SB|SALOMONSEILANDEN|
-|COD032:Land|COD032|SC|SEYCHELLEN|
-|COD032:Land|COD032|SD|SOEDAN|
-|COD032:Land|COD032|SE|ZWEDEN|
-|COD032:Land|COD032|SG|SINGAPORE|
-|COD032:Land|COD032|SH|SINT-HELENA|
-|COD032:Land|COD032|SI|SLOVENIE|
-|COD032:Land|COD032|SJ|SPITSBERGEN|
-|COD032:Land|COD032|SK|SLOWAKIJE|
-|COD032:Land|COD032|SL|SIERRA|
-|COD032:Land|COD032|SM|SAN|
-|COD032:Land|COD032|SN|SENEGAL|
-|COD032:Land|COD032|SO|SOMALIE|
-|COD032:Land|COD032|SR|SURINAME|
-|COD032:Land|COD032|SS|ZUID|
-|COD032:Land|COD032|ST|SAO|
-|COD032:Land|COD032|SV|EL|
-|COD032:Land|COD032|SX|SINT|
-|COD032:Land|COD032|SY|SYRIE|
-|COD032:Land|COD032|SZ|SWAZILand|
-|COD032:Land|COD032|TC|TURKS-|
-|COD032:Land|COD032|TD|TSJAAD|
-|COD032:Land|COD032|TF|FRANSE|
-|COD032:Land|COD032|TG|TOGO|
-|COD032:Land|COD032|TH|THAILand|
-|COD032:Land|COD032|TJ|TADZJIKISTAN|
-|COD032:Land|COD032|TK|TOKELAU|
-|COD032:Land|COD032|TL|OOST-TIMOR|
-|COD032:Land|COD032|TM|TURKMENISTAN|
-|COD032:Land|COD032|TN|TUNESIE|
-|COD032:Land|COD032|TO|TONGA|
-|COD032:Land|COD032|TR|TURKIJE|
-|COD032:Land|COD032|TT|TRINIDAD|
-|COD032:Land|COD032|TV|TUVALU|
-|COD032:Land|COD032|TW|TAIWAN|
-|COD032:Land|COD032|TZ|TANZANIA|
-|COD032:Land|COD032|UA|OEKRAINE|
-|COD032:Land|COD032|UG|OEGANDA|
-|COD032:Land|COD032|UM|KLEINE|
-|COD032:Land|COD032|US|VERENIGDE|
-|COD032:Land|COD032|UY|URUGUAY|
-|COD032:Land|COD032|UZ|OEZBEKISTAN|
-|COD032:Land|COD032|VA|VATICAANSTAD|
-|COD032:Land|COD032|VC|SAINT|
-|COD032:Land|COD032|VE|VENEZUELA|
-|COD032:Land|COD032|VG|BRITSE|
-|COD032:Land|COD032|VI|AMERIKAANSE|
-|COD032:Land|COD032|VN|VIETNAM|
-|COD032:Land|COD032|VU|VANUATU|
-|COD032:Land|COD032|WF|WALLIS|
-|COD032:Land|COD032|WS|SAMOA|
-|COD032:Land|COD032|YE|JEMEN|
-|COD032:Land|COD032|YT|MAYOTTE|
-|COD032:Land|COD032|ZA|ZUID-AFRIKA|
-|COD032:Land|COD032|ZM|ZAMBIA|
-|COD032:Land|COD032|ZW|ZIMBABWE|
-
-## Naamgebruik
-
-|Lijstnaam|Lijstcode|Code|Waarde|
-|:--------|---------|----|------|
-|COD700:Naamgebruik|COD700|1|Eigen naam|
-|COD700:Naamgebruik|COD700|2|Naam echtgenoot of geregistreerd partner of alternatieve naam|
-|COD700:Naamgebruik|COD700|3|Naam echtgenoot of geregistreerd partner gevolgd door eigen naam|
-|COD700:Naamgebruik|COD700|4|Eigen naam gevolgd door naam echtgenoot of geregistreerd partner|
-|COD700:Naamgebruik|COD700|5|Pseudoniem|
-|COD700:Naamgebruik|COD700|6|Niet-natuurlijk persoon|
-
-## Productcategorie
-
-|Lijstnaam|Lijstcode|Code|Waarde|
-|:--------|---------|----|------|
-|JZ020:Productcategorie|JZ020|31|(2015) Zonder verblijf: uitgevoerd door wijk- of buurtteam|
-|JZ020:Productcategorie|JZ020|32|(2015) Zonder verblijf: ambulante jeugdhulp op locatie van de aanbieder|
-|JZ020:Productcategorie|JZ020|33|(2015) Zonder verblijf: daghulp op locatie van de aanbieder|
-|JZ020:Productcategorie|JZ020|34|(2015) Zonder verblijf: jeugdhulp in het netwerk van de jeugdige|
-|JZ020:Productcategorie|JZ020|35|(2015) Met verblijf: pleegzorg|
-|JZ020:Productcategorie|JZ020|36|(2015) Met verblijf: gezinsgericht|
-|JZ020:Productcategorie|JZ020|37|(2015) Met verblijf: gesloten plaatsing|
-|JZ020:Productcategorie|JZ020|38|(2015) Met verblijf: overig residentieel|
-|JZ020:Productcategorie|JZ020|40|Persoonlijke verzorging|
-|JZ020:Productcategorie|JZ020|41|Dagbehandeling|
-|JZ020:Productcategorie|JZ020|42|Vervoerdiensten|
-|JZ020:Productcategorie|JZ020|43|Jeugdhulp verblijf (incl. behandeling)|
-|JZ020:Productcategorie|JZ020|44|Jeugdhulp verblijf (excl. behandeling)|
-|JZ020:Productcategorie|JZ020|45|Jeugdhulp ambulant|
-|JZ020:Productcategorie|JZ020|46|Jeugdhulp crisis|
-|JZ020:Productcategorie|JZ020|47|Jeugdreclassering|
-|JZ020:Productcategorie|JZ020|48|Jeugdbescherming|
-|JZ020:Productcategorie|JZ020|49|Activiteiten in het preventief justitieel kader|
-|JZ020:Productcategorie|JZ020|50|Maatwerkarrangementen jeugd|
-|JZ020:Productcategorie|JZ020|51|Generalistische basis-ggz|
-|JZ020:Productcategorie|JZ020|52|Specialistische ggz|
-|JZ020:Productcategorie|JZ020|53|Kindergeneeskunde|
-|JZ020:Productcategorie|JZ020|54|Jeugd-ggz|
-|JZ020:Productcategorie|JZ020|55|Landelijk ingekochte zorg|
-
-## Reden afwijzing verzoek
-
-|Lijstnaam|Lijstcode|Code|Waarde|
-|:--------|---------|----|------|
-|WJ759:Reden afwijzing verzoek|WJ759|1|Geen wijziging, maar nieuwe aanvraag|
-|WJ759:Reden afwijzing verzoek|WJ759|2|Past niet binnen budget|
-|WJ759:Reden afwijzing verzoek|WJ759|3|Geen contract|
-|WJ759:Reden afwijzing verzoek|WJ759|4|Past niet binnen contract|
-|WJ759:Reden afwijzing verzoek|WJ759|5|Andere gemeente|
-|WJ759:Reden afwijzing verzoek|WJ759|6|Stapeling|
-|WJ759:Reden afwijzing verzoek|WJ759|7|Zorginhoudelijke afkeur|
-|WJ759:Reden afwijzing verzoek|WJ759|8|Woonplaatsbeginsel|
-|WJ759:Reden afwijzing verzoek|WJ759|9|Leeftijdsgrens is bereikt|
-
-## Reden beeindiging
-
-|Lijstnaam|Lijstcode|Code|Waarde|Gebruik|
-|:--------|---------|----|------|-------|
-|JZ588:Reden beeindiging|JZ588|02|Overlijden|Indien de client is overleden wordt deze code gebruikt|
-|JZ588:Reden beeindiging|JZ588|20|Levering is tijdelijk beeindigd.|bijvoorbeeld indien de cliënt wordt opgenomen in het ziekenhuis, verwacht de aanbieder dat de levering van de toegewezen jeugdhulp op een later moment weer hervat wordt. De afgegeven toewijzing blijft geldig en blijft bij de gemeente open staan. (toewijzing aanhouden). De aanbieder houdt contact met de cliënt en geeft aan de gemeente door wanneer de levering hervat wordt, middels een startbericht, ofwel definitief wordt beëindigd (monitoren).
-|JZ588:Reden beeindiging|JZ588|31|Levering is volgens plan beeindigd.|Enige wijzigingen in het plan zijn normaal. Het is niet wenselijk om te rigide vast te houden aan een vooropgesteld plan. Als je met elkaar, zoals gepland, het traject doorloopt en niet voortijdig stopt, is het traject volgens plan afgesloten. Ook als de jongere de leeftijd van 18 jaar bereikt en de jeugdhulp wordt beëindigd|
-|JZ588:Reden beeindiging|JZ588|32|Voortijdig afgesloten: eenzijdig door de client.|Het traject wordt voortijdig afgesloten, bijvoorbeeld omdat: 1. de cliënt op eigen initiatief naar een andere zorgaanbieder gaat; 2. de cliënt ontevreden is over de zorg; 3. de cliënt vindt dat de zorg niet (meer) nodig is; 4. cliënt geen hulp accepteert. Dit kan gaan om cliënten die ineens niet meer op afspraken verschijnen maar ook in een overleg aangeven te willen stoppen. Als de aanbieder nog wel mogelijkheden ziet om de client te helpen, is de afsluiting eenzijdig door de cliënt. Dit brengt in beeld hoe vaak je cliënten verliest waarmeeje dacht nog vooruitgang te kunnen boeken, uitval.|
-|JZ588:Reden beeindiging|JZ588|33|Voortijdig afgesloten: eenzijdig door de aanbieder.|Het lukt de aanbieder niet voldoende passende hulp te bieden. De aanbieder komt tot de conclusie dat verdere hulp vanuit aanbieder niet meer haalbaar is, verantwoord is (bijvoorbeeld vanwege agressie richting de hulpverlener) en/of geen perspectief meer kent. Als de cliënt die conclusie niet deelt, geldt: ‘Voortijdig afgesloten: eenzijdig door de aanbieder.|
-|JZ588:Reden beeindiging|JZ588|34|Voortijdig afgesloten: in overeenstemming.|De situatie van de jeugdige of het gezin is veranderd waardoor de gestarte hulp niet meer passend is. Als de cliënt en behandelaar het eens zijn dat de eerder afgesproken hulp geen toegevoegde waarde meer heeft, of dat andere hulp nodig is dan dat binnen het lopende traject geboden kan worden.|
-|JZ588:Reden beeindiging|JZ588|35|Voortijdig afgesloten: wegens externe omstandigheden.|Indien er externe omstandigheden zijn die noodzaken dat de zorg moet worden gestopt, wordt deze code gebruikt. Denk bv Verhuizing, het overlijden van de cliënt, langdurige vermissing of ontvoering van het kind|
-|JZ588:Reden beeindiging|JZ588|36|Geinitieerd door de gemeente|Indien op intiatief van een gemeente een toewijzing wordt beëindigd, wordt deze code gebruikt.|
-|JZ588:Reden beeindiging|JZ588|37|In verband met wijzigingsverzoek|Indien op initatief van de aanbieder een bepaalde zorg die geleverd wordt, niet meer geleverd gaat worden, en de aanbieder heeft en VOW ingediend, wordt deze code gebruikt.|
-|JZ588:Reden beeindiging|JZ588|38|Overstap naar andere aanbieder|Client gaat naar een andere aanbieder, dus de toewijzing bij deze aanbieder moet beeindigd worden.|
-|JZ588:Reden beeindiging|JZ588|39|Uitstroom naar ander domein|Client gaat over naar ander domein, bijvoorbeeld naar Wlz, en daarom moet de zorg vanuit de Jeugdwet worden beëindigd. Ook de toewijzing zal hierdoor worden beeindigd.|
-
-## Reden beëindiging jeugdhulp (CBS)
-# Beleidsinformatie Jeugd
-
-|Lijstnaam|Lijstcode|Code|Waarde|
-|:--------|---------|----|------|
-|Reden Beeindiging Jeugdhulp|CBS|01|Beëindigd volgens plan|
-|Reden Beeindiging Jeugdhulp|CBS|02|Voortijdig afgesloten: in overeenstemming|
-|Reden Beeindiging Jeugdhulp|CBS|03|Voortijdig afgesloten: eenzijdig door de cliënt|
-|Reden Beeindiging Jeugdhulp|CBS|04|Voortijdig afgesloten: eenzijdig door de aanbieder|
-|Reden Beeindiging Jeugdhulp|CBS|05|Voortijdig afgesloten: wegens externe omstandigheden|
-
-## Reden verzoek
-
-|Lijstnaam|Lijstcode|Code|Waarde|
-|:--------|---------|----|------|
-|WJ758:Reden verzoek|WJ758|1|Verandering clientsituatie|
-|WJ758:Reden verzoek|WJ758|2|Wijziging zorgplan|
-
-## Reden wijziging toewijzing
-
-|Lijstnaam|Lijstcode|Code|Waarde|Gebruik|
-|:--------|---------|----|------|-------|
-|JZ002:Reden wijziging toewijzing|JZ002|01|Administratieve correctie (vervallen)|nvt|
-|JZ002:Reden wijziging toewijzing|JZ002|02|Client overleden|De toewijzing moet worden gestopt, omdat de client is overleden. Over het algemeen zal dan worden gevuld: einddatum toewijzing = overlijdensdatum client.|
-|JZ002:Reden wijziging toewijzing|JZ002|03|Contractwijziging|Gemeente maakt een nieuwe contractafspraak met aanbieder, waardoor toewijzing nodig is met ander bijvoorbeeld andere productcodes. NB: niet elke contractwijziging zal leiden tot een nieuwe toewijzing.|
-|JZ002:Reden wijziging toewijzing|JZ002|04|Herbeoordeling: verlenging toewijzing|Als gevolg van een herbeoordeling kan een toewijzing verlengd worden. Als de zorg verlengd wordt, dan kan eventueel gebruik gemaakt worden van dezelfde toewijzing.|
-|JZ002:Reden wijziging toewijzing|JZ002|05|Herbeoordeling: verkorting toewijzing|In verschillende situaties zal de huidige toewijzing ingetrokken moeten worden: Client moet ander product toegewezen krijgen. Client moet korter zorg krijgen. Client moet andere omvang krijgen, bijvoorbeeld meer uren per week, tenzij het een toewijzing in budget of totaal per toewijzing periode betreft|
-|JZ002:Reden wijziging toewijzing|JZ002|06|Uitstroom naar ander domein|Client gaat over naar ander domein, bijvoorbeeld naar Wlz, en daarom eindigt de Jw toewijzing.|
-|JZ002:Reden wijziging toewijzing|JZ002|07|Verhuizing naar een andere gemeente|De gemeente kan een afgegeven Toewijzing niet zomaar intrekken bij verhuizing naar een andere gemeente. De gemeente die de toewijzing heeft verstrekt, blijft  er verantwoordelijk voor de cliënt tot het moment dat de cliënt is overgedragen aan de gemeente die volgens het woonplaatsbeginsel verantwoordelijk is voor de cliënt. Dit betekent dat een toewijzing door de oude gemeente niet kan worden afgesloten voordat er zekerheid is dat de nieuwe gemeente een aansluitende toewijzing verzendt.| 
-|JZ002:Reden wijziging toewijzing|JZ002|08|Wijziging leveringsvorm|Client gaat gebruik maken van pgb.|
-|JZ002:Reden wijziging toewijzing|JZ002|09|Overstap naar andere aanbieder|Client gaat naar een andere aanbieder, dus de toewijzing bij deze aanbieder moet beeindigd worden.|
-|JZ002:Reden wijziging toewijzing|JZ002|10|Overgang naar nieuwe bekostigingssystematiek|De toewijzing is ingetrokken, omdat de client is overgegaan naar een andere regeling/bekostiging.|
-|JZ002:Reden wijziging toewijzing|JZ002|11|Gemeentelijke herindeling|Volgens protocol gemeentelijke herindeling is deze toewijzing niet meer geldig.|
-|JZ002:Reden wijziging toewijzing|JZ002|12|Geinitieerd door de aanbieder|Indien een toewijzing wijzigt als gevolg van een verzoek om wijziging, kan dit door de gemeente worden aangegeven middels deze code. Het is dan voor de aanbieder duidelijk op 
-basis waarvan de wijziging is doorgevoerd.|
-|JZ002:Reden wijziging toewijzing|JZ002|13|Verwijderd|Als een toewijzing ten onrechte is verstuurd en de gemeente dit ongedaan wil maken. Hierbij wordt de einddatum gelijk gesteld aan de ingangsdatum. De toewijzing moet als niet verzonden beschouwd worden.|
-|JZ002:Reden wijziging toewijzing|JZ002|14|Administratieve correctie|Als de gemeente een (invoer)fout heeft gemaakt die hersteld moet worden. De velden die gewijzigd mogen worden, zijn beschreven in OP033X1|
-
-## Soort adres
-
-|Lijstnaam|Lijstcode|Code|Waarde|
-|:-----------------|------|--|-----------------------|
-|COD757:Soort adres|COD757|01|BRP-adres|
-|COD757:Soort adres|COD757|02|Correspondentie-adres|
-|COD757:Soort adres|COD757|03|Verblijfadres|
-|COD757:Soort adres|COD757|04|Tijdelijk verblijfadres|
-
-## Soort relatie
-
-|Lijstnaam|Lijstcode|Code|Waarde|
-|:--------|---------|----|------|
-|COD472:Soort relatie|COD472|03|Curator (juridisch)|
-|COD472:Soort relatie|COD472|04|Financieel (gemachtigd)|
-|COD472:Soort relatie|COD472|05|Financieel (toetsing)|
-|COD472:Soort relatie|COD472|06|Leefeenheid|
-|COD472:Soort relatie|COD472|07|Hulpverlener|
-|COD472:Soort relatie|COD472|08|Specialist|
-|COD472:Soort relatie|COD472|09|Anders|
-|COD472:Soort relatie|COD472|10|Ouder|
-|COD472:Soort relatie|COD472|11|Voogd|
-|COD472:Soort relatie|COD472|12|Partner/echtgeno(o)t(e)|
-|COD472:Soort relatie|COD472|13|Pleegouder|
-|COD472:Soort relatie|COD472|14|Bewindvoerder|
-|COD472:Soort relatie|COD472|15|Mentor|
-|COD472:Soort relatie|COD472|16|Zoon/dochter|
-|COD472:Soort relatie|COD472|17|Familielid|
-|COD472:Soort relatie|COD472|18|Gezinslid|
-|COD472:Soort relatie|COD472|19|Buur|
-|COD472:Soort relatie|COD472|20|Vriend(in)/kennis|
-|COD472:Soort relatie|COD472|21|Clientondersteuner|
-|COD472:Soort relatie|COD472|22|Huisarts|
-|COD472:Soort relatie|COD472|23|Erven van|
-|COD472:Soort relatie|COD472|24|Werkgever|
-|COD472:Soort relatie|COD472|25|Wijkcoach|
-
-## Status aanlevering
-
-|Lijstnaam|  Lijstcode|Code|Waarde|
-|:--------|-----------|----|------|
-|COD467:Status aanlevering|COD467|1|Eerste aanlevering|
-|COD467:Status aanlevering|COD467|2|Gewijzigde aanlevering|
-|COD467:Status aanlevering|COD467|3|Verwijderen aanlevering|
-|COD467:Status aanlevering|COD467|9|Niet van toepassing (ongewijzigd)|
-
-## Verzoek antwoord
-
-|Lijstnaam|Lijstcode|Code|Waarde|
-|:--------|---------|----|------|
-|WJ760:Verzoek antwoord|WJ760|1|Verzoek afgewezen|
-|WJ760:Verzoek antwoord|WJ760|2|Aanvraag in onderzoek|
-
-## Wettelijke vertenwoordiging
-
-|Lijstnaam|Lijstcode|Code|Waarde|
-|:--------|---------|----|------|
-|WJ003:Wettelijke vertegenwoordiging|WJ003|06|Voogdij|
-|WJ003:Wettelijke vertegenwoordiging|WJ003|07|Bewindvoering|
-|WJ003:Wettelijke vertegenwoordiging|WJ003|08|Mentorschap|
-|WJ003:Wettelijke vertegenwoordiging|WJ003|09|Onder curatele stelling|
-|WJ003:Wettelijke vertegenwoordiging|WJ003|10|Zaakwaarneming|
+Versie: 1.0
+Status: In behandeling
+Auteur: Zorginstituut Nederland
+Bron-link: https://www.istandaarden.nl/ijw/releases/release-ijw-3.2
+Publicatiedatum: 29 september 2022
+Type document: Brondocument JW-agent
 
+# Codelijst iJw release 3.2
 
+### Inleiding
 
+Deze codelijst bevat de gestandaardiseerde codes, waarden en definities zoals gebruikt binnen het iJw berichtenverkeer tussen gemeenten en zorgaanbieders. Dit document is bedoeld als kennisbron voor een AI-agent die automatisch documenten, berichten en data uit het sociaal domein moet kunnen interpreteren en verwerken.
 
+### Belangrijk voor AI-agenten
 
+- **Herkenning:** De lijst maakt het mogelijk om entiteiten, waarden, statussen, productcategorieën en codes in berichtenverkeer eenduidig te herkennen, te labelen en te koppelen aan betekenis.
+- **Verwijzingen:** Sommige codes verwijzen naar andere begrippen of toelichtingen.
+- **Afkortingen:** Afkortingen worden zoveel mogelijk volgens het gebruik in de iStandaarden opgenomen.
+- **Toepassing:** Voeg deze codelijst toe als context vóór het analyseren, zoeken of beantwoorden van vragen over berichten, registraties en processen binnen de Jeugdwet.
 
+## COD002-VEKTIS: Berichtcode
+COD002-VEKTIS: Berichtcode is een data-element uit de Header van een bericht en dient conform de codelijst van Vektis ingevuld te worden. Bijvoorbeeld de Berichtcode van een WMO318 bericht is 481.  
+WMO301	414
 
+WMO302	415
 
+WMO305	418
 
+WMO306	419
 
+WMO307	420
 
+WMO308	421
 
+WMO315	444
 
+WMO316	445
 
+WMO317	480
 
+WMO318	481
 
+WMO319	482
 
+WMO320	483
 
+WMO323	484
 
+WMO325	485
 
+## COD032: Land
 
+COD032: Land - Identificatie van een (historisch/actueel) land of gebiedsdeel.
+
+AD - ANDORRA
+
+AE - VERENIGDE ARABISCHE EMIRATEN
+
+AF - AFGHANISTAN
+
+AG - ANTIGUA EN BARBUDA
+
+AI - ANGUILA
+
+AL - ALBANIE
+
+AM - ARMENIE
+
+AO - ANGOLA
+
+AQ - ANTARTICA
+
+AR - ARGENTINIE
+
+AS - AMERIKAANS-SAMOA
+
+AT - OOSTENRIJK
+
+AU - AUSTRALIE
+
+AW - ARUBA
+
+AX - ÅLANDSEILANDEN
+
+AZ - AZERBEIDZJAN
+
+BA - BOSNIE EN HERZEGOVINA
+
+BB - BARBADOS
+
+BD - BANGLADESH
+
+BE - BELGIE
+
+BF - BURKINA FASO
+
+BG - BULGARIJE
+
+BH - BAHREIN
+
+BI - BURUNDI
+
+BJ - BENIN
+
+BL - SAINT BARTHÉLEMY
+
+BM - BERMUDA
+
+BN - BRUNEI
+
+BO - BOLIVIA
+
+BQ - BONAIRE, SINT EUSTATIUS en SABA
+
+BR - BRAZILIE
+
+BS - BAHAMA'S
+
+BT - BHUTAN
+
+BV - BOUVET
+
+BW - BOTSWANA
+
+BY - WIT-RUSLAND
+
+BZ - BELIZE
+
+CA - CANADA
+
+CC - COCOSEILANDEN
+
+CD - CONGO-KINSHASA
+
+CF - CENTRAAL-AFRIKAANSE REPUBLIEK
+
+CG - CONGO-BRAZZAVILLE
+
+CH - ZWITSERLAND
+
+CI - IVOORKUST
+
+CK - COOKEILANDEN
+
+CL - CHILI
+
+CM - KAMEROEN
+
+CN - CHINA
+
+CO - COLOMBIA
+
+CR - COSTA RICA
+
+CU - CUBA
+
+CV - KAAPVERDIE
+
+CW - CURAÇAO
+
+CX - CHRISTMASEILAND
+
+CY - CYPRUS
+
+CZ - TSJECHIE
+
+DE - DUITSLAND
+
+DJ - DJIBOUTI
+
+DK - DENEMARKEN
+
+DM - DOMINICA
+
+DO - DOMINICAANSE REPUBLIEK
+
+DZ - ALGERIJE
+
+EC - ECUADOR
+
+EE - ESTLAND
+
+EG - EGYPTE
+
+EH - WESTELIJKE SAHARA
+
+ER - ERITREA
+
+ES - SPANJE
+
+ET - ETHIOPIE
+
+FI - FINLAND
+
+FJ - FIJI
+
+FK - FALKLANDEILANDEN
+
+FM - MICRONESIA
+
+FO - FAERÖER
+
+FR - FRANKRIJK
+
+GA - GABON
+
+GB - VERENIGD KONINKRIJK
+
+GD - GRENADA
+
+GE - GEORGIE
+
+GF - FRANS-GUYANA
+
+GG - GUERNSEY
+
+GH - GHANA
+
+GI - GIBRALTAR
+
+GL - GROENLAND
+
+GM - GAMBIA
+
+GN - GUINEA
+
+GP - GUADELOUPE
+
+GQ - EQUATORIAAL-GUINEA
+
+GR - GRIEKENLAND
+
+GS - ZUID-GEORGIE EN DE ZUIDELIJKE SANDWICHEILANDEN
+
+GT - GUATEMALA
+
+GU - GUAM
+
+GW - GUINEE-BISSAU
+
+GY - GUYANA
+
+HK - HONGKONG
+
+HM - HEARD EN MCDONALDEILANDEN
+
+HN - HONDURAS
+
+HR - KROATIE
+
+HT - HAÏTI
+
+HU - HONGARIJE
+
+ID - INDONESIE
+
+IE - IERLAND
+
+IL - ISRAEL
+
+IM - ISLE OF MAN
+
+IN - INDIA
+
+IO - BRITS TERRITORIUM IN DE INDISCHE OCEAAN
+
+IQ - IRAK
+
+IR - IRAN
+
+IS - IJSLAND
+
+IT - ITALIE
+
+JE - JERSEY
+
+JM - JAMAICA
+
+JO - JORDANIE
+
+JP - JAPAN
+
+KE - KENIA
+
+KG - KIRGIZIE
+
+KH - CAMBODJA
+
+KI - KIRIBATI
+
+KM - COMOREN
+
+KN - SAINT KITTS EN NEVIS
+
+KP - NOORD-KOREA
+
+KR - ZUID-KOREA
+
+KW - KOEWEIT
+
+KY - CAYMANEILANDEN
+
+KZ - KAZACHSTAN
+
+LA - LAOS
+
+LB - LIBANON
+
+LC - SAINT LUCIA
+
+LI - LIECHTENSTEIN
+
+LK - SRI LANKA
+
+LR - LIBERIA
+
+LS - LESOTHO
+
+LT - LITOUWEN
+
+LU - LUXEMBURG
+
+LV - LETLAND
+
+LY - LIBIE
+
+MA - MAROKKO
+
+MC - MONACO
+
+MD - MOLDAVIE
+
+ME - MONTENEGRO
+
+MF - SAINT MARTIN
+
+MG - MADAGASKAR
+
+MH - MARSHALLEILANDEN
+
+MK - MACEDONIE
+
+ML - MALI
+
+MM - MYANMAR
+
+MN - MONGOLIE
+
+MO - MACAU
+
+MP - NOORDELIJKE MARIANEN
+
+MQ - MARTINIQUE
+
+MR - MAURITANIE
+
+MS - MONTSERRAT
+
+MT - MALTA
+
+MU - MAURITIUS
+
+MV - MALDIVEN
+
+MW - MALAWI
+
+MX - MEXICO
+
+MY - MALEISIE
+
+MZ - MOZAMBIQUE
+
+nan - NAMIBIE
+
+NC - NIEUW-CALEDONIE
+
+NE - NIGER
+
+NF - NORFOLK
+
+NG - NIGERIA
+
+NI - NICARAGUA
+
+NL - NEDERLAND
+
+NO - NOORWEGEN
+
+NP - NEPAL
+
+NR - NAURU
+
+NU - NIUE
+
+NZ - NIEUW-ZEELAND
+
+OM - OMAN
+
+PA - PANAMA
+
+PE - PERU
+
+PF - FRANS-POLYNESIE
+
+PG - PAPOEA-NIEUW-GUINEA
+
+PH - FILIPIJNEN
+
+PK - PAKISTAN
+
+PL - POLEN
+
+PM - SAINT-PIERRE EN MIQUELON
+
+PN - PITCAIRNEILANDEN
+
+PR - PUERTO RICO
+
+PS - PALESTIJNSE AUTORITEIT
+
+PT - PORTUGAL
+
+PW - PALAU
+
+PY - PARAGUAY
+
+QA - QATAR
+
+RE - RÉUNION
+
+RO - ROEMENIE
+
+RS - SERVIE
+
+RU - RUSLAND
+
+RW - RWANDA
+
+SA - SAOEDI-ARABIE
+
+SB - SALOMONSEILANDEN
+
+SC - SEYCHELLEN
+
+SD - SOEDAN
+
+SE - ZWEDEN
+
+SG - SINGAPORE
+
+SH - SINT-HELENA
+
+SI - SLOVENIE
+
+SJ - SPITSBERGEN EN JAN MAYEN
+
+SK - SLOWAKIJE
+
+SL - SIERRA LEONE
+
+SM - SAN MARINO
+
+SN - SENEGAL
+
+SO - SOMALIE
+
+SR - SURINAME
+
+SS - ZUID SOEDAN
+
+ST - SAO TOMÉ EN PRINCIPE
+
+SV - EL SALVADOR
+
+SX - SINT MAARTEN (Nederlands deel)
+
+SY - SYRIE
+
+SZ - SWAZILAND
+
+TC - TURKS- EN CAICOSEILANDEN
+
+TD - TSJAAD
+
+TF - FRANSE ZUIDELIJKE EN ANTARCTISCHE GEBIEDEN
+
+TG - TOGO
+
+TH - THAILAND
+
+TJ - TADZJIKISTAN
+
+TK - TOKELAU
+
+TL - OOST-TIMOR
+
+TM - TURKMENISTAN
+
+TN - TUNESIE
+
+TO - TONGA
+
+TR - TURKIJE
+
+TT - TRINIDAD EN TOBAGO
+
+TV - TUVALU
+
+TW - TAIWAN
+
+TZ - TANZANIA
+
+UA - OEKRAINE
+
+UG - OEGANDA
+
+UM - KLEINE PACIFISCHE EILANDEN VAN DE VERENIGDE STATEN
+
+US - VERENIGDE STATEN
+
+UY - URUGUAY
+
+UZ - OEZBEKISTAN
+
+VA - VATICAANSTAD
+
+VC - SAINT VINCENT EN DE GRENADINES
+
+VE - VENEZUELA
+
+VG - BRITSE MAAGDENEILANDEN
+
+VI - AMERIKAANSE MAAGDENEILANDEN
+
+VN - VIETNAM
+
+VU - VANUATU
+
+WF - WALLIS EN FUTUNA
+
+WS - SAMOA
+
+YE - JEMEN
+
+YT - MAYOTTE
+
+ZA - ZUID-AFRIKA
+
+ZM - ZAMBIA
+
+ZW - ZIMBABWE
+
+## COD043: Indicatie debet/credit
+
+COD043: Indicatie debet/credit - Gecodeerde aanduiding voor debet of credit.
+
+C - Creditbedrag en aantal
+
+D - Debetbedrag en aantal
+
+## COD046: Geslacht
+
+COD046: Geslacht - Unieke aanduiding van de sexe van een persoon.
+
+0 - Onbekend
+
+1 - Mannelijk
+
+2 - Vrouwelijk
+
+## COD170: Datumgebruik
+
+COD170: Datumgebruik - Codering om aan te geven welk deel van een datum onbekend is.
+
+1 - dag onbekend; alleen maand en jaar gebruiken
+
+2 - dag en maand onbekend; alleen jaar gebruiken
+
+3 - dag, maand en jaar onbekend; onbekende datum
+
+## COD260: Ja of nee
+
+COD260: Ja of nee - Codering voor ja of nee.
+
+1 - Ja
+
+2 - Nee
+
+## COD327: Code verwijzer
+
+COD327: Code verwijzer - Aanduiding van de aard van de (zelf)verwijzer.
+
+01 - Gemeente
+
+02 - Huisarts
+
+03 - Jeugdarts
+
+04 - Gecertificeerde instelling
+
+05 - Medisch specialist
+
+06 - Zelfverwijzer/geen verwijzer
+
+08 - Rechter, Officier van Justitie, functionaris Justitiële jeugdinrichting
+
+## COD467: Status aanlevering
+
+COD467: Status aanlevering - Indicatie over de status van de informatie in de berichtklasse.
+
+1 - Eerste aanlevering
+
+2 - Gewijzigde aanlevering
+
+3 - Verwijderen aanlevering
+
+9 - Niet van toepassing (ongewijzigd)
+
+## COD472: Soort relatie
+
+COD472: Soort relatie - De soort relatie die een persoon ten opzichte van de client heeft.
+
+03 - Curator (juridisch)
+
+04 - Financieel (gemachtigd)
+
+05 - Financieel (toetsing)
+
+06 - Leefeenheid
+
+07 - Hulpverlener
+
+08 - Specialist
+
+09 - Anders
+
+10 - Ouder
+
+11 - Voogd
+
+12 - Partner/echtgeno(o)t(e)
+
+13 - Pleegouder
+
+14 - Bewindvoerder
+
+15 - Mentor
+
+16 - Zoon/dochter
+
+17 - Familielid
+
+18 - Gezinslid
+
+19 - Buur
+
+20 - Vriend(in)/kennis
+
+21 - Clientondersteuner
+
+22 - Huisarts
+
+23 - Erven van
+
+24 - Werkgever
+
+25 - Wijkcoach
+
+## COD700: Naamgebruik
+
+COD700: Naamgebruik - Aanduiding naamgebruik (gecodeerd).
+
+1 - Eigen naam
+
+2 - Naam echtgenoot of geregistreerd partner of alternatieve naam
+
+3 - Naam echtgenoot of geregistreerd partner gevolgd door eigen naam
+
+4 - Eigen naam gevolgd door naam echtgenoot of geregistreerd partner
+
+5 - Pseudoniem
+
+6 - Niet-natuurlijk persoon
+
+## COD747: Communicatievorm
+
+COD747: Communicatievorm - Gecodeerde aanduiding van de bijzondere vorm van communicatie die gebruikt dient te worden.
+
+1 - Tolk taal
+
+2 - Doventolk
+
+3 - Doofblindentolk
+
+## COD757: Soort adres
+
+COD757: Soort adres - Nadere typering van het adres.
+
+01 - BRP-adres
+
+02 - Correspondentie-adres
+
+03 - Verblijfadres
+
+04 - Tijdelijk verblijfadres
+
+## NUM061: Aanduiding woonadres
+
+NUM061: Aanduiding woonadres - De aanduiding die wordt gebruikt voor adressen die niet zijn voorzien van de gebruikelijke straatnaam en huisnummeraanduidingen.
+
+AB - Aan boord
+
+BY - Bij
+
+TO - Tegenover
+
+WW - Woonwagen
+
+## WJ001: Retourcode
+
+WJ001: Retourcode - Melding in een retourbericht. Het betreft een code die in een retourbericht het resultaat van de beoordeling van een (deel van een) ontvangen bericht weergeeft.
+
+0001 - Bericht is afgekeurd om technische redenen.
+
+0200 - Geen opmerking over deze berichtklasse.
+
+0233 - Berichtklasse is niet beoordeeld.
+
+0611 - Het ingediende tarief komt niet overeen met het contractuele tarief
+
+8001 - Declaratie is volledig toegewezen.
+
+8017 - Van deze credit prestatie is geen debet prestatie bekend.
+
+8021 - Referentienummer prestatie is reeds aangeleverd.
+
+8187 - De prestatie hoort niet bij deze client.
+
+8214 - DeclaratiePeriode is niet de kalendermaand die volgt op voorgaande DeclaratiePeriode terwijl iedere declaratieperiode zorg geleverd is.
+
+8848 - Dagtekening moet gelijk zijn aan of voor de systeemdatum liggen.
+
+9019 - Het regie bericht kan niet gekoppeld worden aan een toewijzing.
+
+9056 - Identificatie moet per berichtsoort uniek zijn voor de verzendende partij.
+
+9063 - Het bericht kan niet verwerkt worden omdat geen eerder bericht ontvangen is.
+
+9069 - Er is geen actueel startbericht met dezelfde sleutel.
+
+9071 - Het eerdere start bericht kan niet verwijderd worden omdat de zorg al beeindigd is
+
+9074 - Er is al een eerder bericht ontvangen met dezelfde sleutel.
+
+9307 - Begindatum prestatie ligt niet tussen de ingangsdatum en einddatum toewijzing
+
+9308 - Einddatum prestatie ligt niet tussen de ingangsdatum en einddatum toewijzing
+
+9319 - De ProductPeriode valt niet geheel binnen een DeclaratiePeriode.
+
+9321 - Het ingediende volume overschrijdt het toegewezen volume.
+
+9322 - De som van de ingediende volumes overschrijdt het  toegewezen volume
+
+9326 - De actuele levering is nog niet gestopt met een Stopbericht.
+
+9332 - Toewijzing heeft geen uniek nummer binnen wettelijk domein.
+
+9333 - Declaratienummer is niet uniek
+
+9338 - Niet iedere prestatie in een declaratiebericht is gerelateerd aan een toegewezen product op basis van het toewijzingnummer
+
+9339 - ProductCategorie in de prestatie is niet gelijk aan ProductCategorie in het ToegewezenProduct.
+
+9340 - ProductCode in de Prestatie is niet gelijk aan ProductCode in het ToegewezenProduct.
+
+9341 - Eenheid in de Prestatie past niet bij Eenheid in het ToegewezenProduct
+
+9346 - Eenheid is ongelijk is aan waarde 83 (Euro's), maar IngediendBedrag is niet gelijk aan GeleverdVolume vermenigvuldigd met (het onafgeronde) ProductTarief.
+
+9347 - ReferentieAanbieder is niet uniek voor de aanbieder binnen het wettelijk domein
+
+9349 - Het VOW bericht bevat niet alle actuele toegewezen producten van de cliënt, hetzij in OngewijzigdProduct, hetzij in TeWijzigenProduct
+
+9350 - OngewijzigdProduct is niet gerelateerd aan een actueel toegewezen product op basis van het toewijzingnummer.
+
+9351 - TeWijzigenProduct is niet gerelateerd aan een actuele toewijzing op basis van ToewijzingNummer.
+
+9355 - ReferentieAanbieder in het antwoordbericht komt niet voor in een eerder verzoek om toewijzing of verzoek om wijziging
+
+9357 - GewensteIngangsdatum is kleiner dan of gelijk aan de dagtekening, maar niet gelijk aan de ingangsdatum van het originele ToegewezenProduct.
+
+9359 - Er is al een toewijzing gestuurd met deze ReferentieAanbieder.
+
+9360 - Er is al een antwoordbericht met deze ReferentieAanbieder, terwijl antwoordbericht in VerzoekAntwoord waarde 2 (aanvraag in onderzoek) heeft.
+
+9361 - Het product komt vaker voor met overlappende zorgperiodes.
+
+9365 - Er is al een antwoordbericht met dezelfde ReferentieAanbieder waar VerzoekAntwoord niet de waarde 'Aanvraag in onderzoek' heeft.
+
+9366 - ProductReferentie komt niet voor in een Declaratiebericht
+
+9367 - De waarde komt niet overeen met de waarde uit heenbericht met gelijke ProductReferentie
+
+9369 - Budget is meegegeven, maar de som van GeleverdVolume in alle ingediende Prestaties passen niet binnen het toegewezen Budget.
+
+9373 - Budget is gewijzigd, maar GewensteIngangsdatum is niet gelijk aan die in de actuele toewijzing
+
+9374 - Er is al een verzoek onderhanden.
+
+9375 - Omvang is gevuld, terwijl Product in toewijzing met ToewijzingNummer leeg is en Einddatum groter dan 31-12-2020 of leeg is
+
+9379 - ReferentieAanbieder refereert niet naar een verzoek om toewijzing of verzoek om wijziging, is onterecht gevuld
+
+9384 - Declaratie op toewijzing met RedenWijziging "13" (Verwijderd)
+
+9385 - Toewijzing heeft goedgekeurde declaratieregels
+
+9387 - Begindatum van de ProductPeriode is niet eerste dag van de kalendermaand waarop ProductPeriode betrekking heeft en Ingangsdatum van de toewijzing ligt niet later in deze betreffende maand
+
+9388 - Einddatum van de ProductPeriode is niet laatste dag van de kalendermaand waarop ProductPeriode betrekking heeft en Einddatum van de toewijzing ligt niet eerder in deze betreffende maand.
+
+9389 - Deze prestatie heeft een debetprestatie zonder bijbehorende creditprestatie
+
+9390 - Er is al een Prestatie met gelijk ProductReferentie met waarde Credit
+
+9411 - Omvang is leeg, terwijl Code in Product bij de toewijzing met ToewijzingNummer gevuld is.
+
+9412 - Omvang is niet leeg, terwijl Code in Product bij de toewijzing met ToewijzingNummer leeg is en einddatum groter dan 31-12-2020 of leeg is
+
+9413 - StatusAanlevering is waarde 1 of 2 en RedenBeeindiging heeft waarde 20, terwijl er al een ander StopProduct met hetzelfde Bsn, ToewijzingNummer, Begindatum en RedenBeeindiging waarde 20 is.
+
+9414 - Einddatum is niet >= aan Einddatum uit actuele StopProduct met gelijk Bsn, ToewijzingNummer en Begindatum
+
+9415 -  Er is al een StopProduct met gelijk Bsn, ToewijzingNummer, Begindatum en RedenBeeindiging <> waarde 20 en StatusAanlevering heeft waarde 1 of 2.
+
+S300 - Gemeentecode komt niet voor in de lijst van CBS.
+
+S329 - ProductCode hoort niet bij de ProductCategorie.
+
+## WJ003: Wettelijke vertegenwoordiging
+
+WJ003: Wettelijke vertegenwoordiging - Wettelijke vertegenwoordiging die voor de client van toepassing is op het moment van beoordeling.
+
+06 - Voogdij
+
+07 - Bewindvoering
+
+08 - Mentorschap
+
+09 - Onder curatele stelling
+
+10 - Zaakwaarneming
+
+## WJ232: Juridische status
+
+WJ232: Juridische status - Juridische situatie die voor de client van toepassing is op het moment van beoordeling.
+
+01 - Rechterlijke machtiging (rm) voorlopig / voortgezette machtiging
+
+02 - RM op eigen verzoek
+
+03 - RM met voorwaardelijk ontslag
+
+04 - Onder toezichtstelling (ots)
+
+05 - In bewaring stelling (ibs)
+
+11 - Strafrechterlijke justitiele contacten: tbs
+
+12 - Strafrechterlijke justitiele contacten: overig
+
+## WJ756: Eenheid
+
+WJ756: Eenheid - Gecodeerde aanduiding van de mate van zorg betreffende een product, uitgedrukt in een eenheid.
+
+01 - Minuut
+
+04 - Uur
+
+14 - Etmaal
+
+16 - Dagdeel (4 uur)
+
+82 - Stuks (output)
+
+83 - Euro's
+
+84 - Stuks (inspanning)
+
+## WJ758: Reden verzoek
+
+WJ758: Reden verzoek - Gecodeerde aanduiding voor de reden van een verzoek.
+
+1 - Verandering clientsituatie
+
+2 - Wijziging zorgplan
+
+## WJ759: Reden afwijzing verzoek
+
+WJ759: Reden afwijzing verzoek - Gecodeerde aanduiding voor de reden van afwijzing van een verzoek.
+
+1 - Geen wijziging, maar nieuwe aanvraag
+
+2 - Past niet binnen budget
+
+3 - Geen contract
+
+4 - Past niet binnen contract
+
+5 - Andere gemeente
+
+6 - Stapeling
+
+7 - Zorginhoudelijke afkeur
+
+8 - Woonplaatsbeginsel
+
+9 - Leeftijdsgrens is bereikt
+
+## WJ760: Verzoek antwoord
+
+WJ760: Verzoek antwoord - Gecodeerde aanduiding voor het antwoord op een verzoek.
+
+1 - Verzoek afgewezen
+
+2 - Aanvraag in onderzoek
+
+## JZ002: Reden wijziging toewijzing
+
+JZ002: Reden wijziging toewijzing - De reden waarom een toewijzing wordt gewijzigd.
+
+01 - Administratieve correctie (vervallen)
+
+02 - Client overleden
+
+03 - Contractwijziging
+
+04 - Herbeoordeling: verlenging toewijzing
+
+05 - Herbeoordeling: verkorting toewijzing
+
+06 - Uitstroom naar ander domein
+
+07 - Verhuizing naar een andere gemeente
+
+08 - Wijziging leveringsvorm
+
+09 - Overstap naar andere aanbieder
+
+10 - Overgang naar nieuwe bekostigingssystematiek
+
+11 - Gemeentelijke herindeling
+
+12 - Geinitieerd door de aanbieder
+
+13 - Verwijderd
+
+14 - Administratieve correctie
+
+## JZ020: Productcategorie
+
+JZO020: Productcategorie - Gecodeerde aanduiding van een (reeks van) productcategorie(en) in functionele termen die losgekoppeld is van een bepaalde leverancier, waarbij wordt beschreven wat de inhoud en aard van de productcategorie is in termen van hulpverlening (wonen, zorg en welzijn).
+
+32 - (2015) Zonder verblijf: ambulante jeugdhulp op locatie van de aanbieder
+
+33 - (2015) Zonder verblijf: daghulp op locatie van de aanbieder
+
+34 - (2015) Zonder verblijf: jeugdhulp in het netwerk van de jeugdige
+
+35 - (2015) Met verblijf: pleegzorg
+
+36 - (2015) Met verblijf: gezinsgericht
+
+37 - (2015) Met verblijf: gesloten plaatsing
+
+38 - (2015) Met verblijf: overig residentieel
+
+40 - Persoonlijke verzorging
+
+41 - Dagbehandeling
+
+42 - Vervoerdiensten
+
+43 - Jeugdhulp verblijf (incl. behandeling)
+
+44 - Jeugdhulp verblijf (excl. behandeling)
+
+45 - Jeugdhulp ambulant
+
+46 - Jeugdhulp crisis
+
+47 - Jeugdreclassering
+
+48 - Jeugdbescherming
+
+49 - Activiteiten in het preventief justitieel kader
+
+50 - Maatwerkarrangementen jeugd
+
+51 - Generalistische basis-ggz
+
+52 - Specialistische ggz
+
+53 - Kindergeneeskunde
+
+54 - Jeugd-ggz
+
+55 - Landelijk ingekochte zorg
+
+## JZ588: Reden beeindiging
+
+JZ588: Reden beeindiging - De reden van beeindiging van de jeugdhulp bij een client.
+
+02 - Overlijden
+
+19 - Levering volgens plan beeindigd
+
+20 - Levering is tijdelijk beeindigd
+
+21 - Levering is eenzijdig door client beeindigd
+
+22 - Levering is eenzijdig door aanbieder beeindigd
+
+23 - Levering is in overeenstemming voortijdig beeindigd
+
+31 - Verhuizing naar een andere gemeente
+
+36 - Geinitieerd door de gemeente
+
+37 - In verband met wijzigingsverzoek
+
+38 - Overstap naar andere aanbieder
+
+39 - Uitstroom naar ander domein
+
+## WMO757: Frequentie
+
+WMO757: Frequentie - Frequentie van de te leveren of geleverde ondersteuning.
+
+1 - Per dag
+
+2 - Per week
+
+4 - Per maand
+
+6 - Totaal binnen geldigheidsduur toewijzing
