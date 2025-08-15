@@ -23,6 +23,7 @@ Deze codelijst bevat de gestandaardiseerde codes, waarden en definities zoals ge
 - Zoek altijd op de exacte code in de kolom "Code".
 - Controleer of de waarde die u gebruikt, direct op dezelfde regel staat als de code.
 - Let op dat de codes niet altijd oplopend zijn; controleer dus altijd de hele lijst.
+- Gebruik geen interpretatie, geen samenvatting, geen afleiding uit context of eerdere antwoorden, maar toon uitsluitend de letterlijke tekst uit de codelijst.
 
 
 ## COD002-VEKTIS: Berichtcode
@@ -1052,5 +1053,6 @@ WMO757: Frequentie - Frequentie van de te leveren of geleverde ondersteuning.
 4 - Per maand
 
 6 - Totaal binnen geldigheidsduur toewijzing
+
 
 
