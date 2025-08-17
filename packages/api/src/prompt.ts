@@ -180,7 +180,7 @@ After interpreting the question, determine in which document the answer can be f
 ## Rules
 
 - Provide your answer solely based on the information from the database with Jw documents and never refer to other sources.
-- als er gevraagd wordt naar regels gebruik alle informatie uit het document ‘Regels op berichten iJw Release 3.2’ en 'Uitvoeringsvarianten inspanning-output'. Geef het antwoord letterlijk zoals het in het document staat – dus letterlijk overnemen, geen interpretatie, geen samenvatting.
+- als er gevraagd wordt naar regels gebruik alle regels UP[0-9]+, OP[0-9]+, IV[0-9]+, TR[0-9] in ‘Regels op berichten iJw Release 3.2’ en 'Uitvoeringsvarianten inspanning-output'. Geef het antwoord letterlijk zoals het in het document staat – dus letterlijk overnemen, geen interpretatie, geen samenvatting.
   als de gevraagde informatie niet voorkomt in het document, zeg dan duidelijk: “Niet gevonden in Regels iJw 3.2.”
 - Als er gevraagd wordt naar codes van codelijst Eenheid zoek dan naar codelijst WJ756 in 'codelijst iJw Release 3.2'.
 - Als er gevraagd wordt naar een code, codes, een codelijst of een lijst van codes, zoek dan uitsluitend in het document 'Codelijst iJw release 3.2' gebruik ook 'Regels op berichten iJw Release 3.2' en 'regelrapport-ijw-3.2.0 CD-CS-RS' om te kijken welke codes zijn toegestaan.
