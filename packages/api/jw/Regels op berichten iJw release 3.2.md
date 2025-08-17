@@ -31,7 +31,7 @@ Het document dient als **naslagwerk en validatiebron** voor AI-agenten die vrage
 - Geef bij het beantwoorden van vragen over regels uit het document ‘Regels op berichten iJw release 3.2’ altijd de volledige, letterlijke tekst van de gevraagde regel weer. Sla geen enkel tekstblok, opsomming of toelichting over die onder het betreffende regelnummers valt. Stop pas bij het volgende regelnummers of het einde van het document."
 - Wanneer een gebruiker vraagt om de tekst van een specifieke regel (bijvoorbeeld IV075), selecteer en retourneer altijd de volledige tekst die hoort bij het betreffende regelnummers, vanaf de eerste regel na het regelnummers tot en met de eerste volgende regel met een nieuw regelnummers of het einde van het document. Neem alle tekst, opsommingen, subkopjes en toelichtingen op die onder het regelnummers vallen. Geef geen interpretatie in dit geval.
 - Sommige regels zijn specifiek voor gemeenten, andere voor aanbieders of ketenpartijen.
-- Let op: dit rapport bevat verschillende type regels; check bij interpretatie altijd het type regel.
+- Let op: dit rapport bevat verschillende type regels check bij interpretatie altijd het type regel.
 - Let op: regelnummer (bijv. OP001, OP047, IV008) zijn louter administratieve identifiers zonder hiërarchische betekenis. Behandel ze als unieke sleutels die uitsluitend gebruikt worden voor verwijzing, niet voor interpretatie.
 - Bekijk alle regels om tot een juist antwoord te komen.
 ---
@@ -140,9 +140,9 @@ Het document dient als **naslagwerk en validatiebron** voor AI-agenten die vrage
 
 *Voor het doorgeven van wijzigingen, verwijderingen en correcties op een eerder verzonden regiebericht, moet gebruik gemaakt worden van de systematiek van status aanlevering. Correcties op een melding start product zijn uitsluitend toegestaan voor het geleverde product. Als de ondersteuning beëindigd is, kan de aanvang niet meer op deze manier gecorrigeerd worden. Met de status aanlevering van een berichtklasse kan worden aangegeven of:*
 - *een berichtklasse nieuw is (waarde 1)*
-- *een berichtklasse gewijzigd is (waarde 2); een wijziging betekent dat de actuele aanlevering met dezelfde sleutel vervangen wordt. Deze waarde mag niet gebruikt worden in de iJw/iWmo.*
+- *een berichtklasse gewijzigd is (waarde 2). Een wijziging betekent dat de actuele aanlevering met dezelfde sleutel vervangen wordt. Deze waarde mag niet gebruikt worden in de iJw/iWmo.*
 - *een berichtklasse verwijderd moet worden (waarde 3). Een verwijdering betekent dat de vorige aanlevering(en) met dezelfde sleutel als niet verzonden beschouwd moet worden.*
-  
+
 **OP033x1**
 
 *Een afgegeven toewijzing mag gewijzigd worden waarbij de wijziging met een nieuw bericht moet worden doorgegeven.*
@@ -211,7 +211,7 @@ Het document dient als **naslagwerk en validatiebron** voor AI-agenten die vrage
 
 *Een toewijzingsbericht bevat voor 1 cliënt altijd alle toewijzingen voor 1 aanbieder die op of na de aanmaakdatum van het bericht geldig zijn plus alle toewijzingen die gewijzigd zijn ten opzichte van het voorgaande toewijzingsbericht.
 
-Deze regel is van toepassing indien voor 1 cliënt  meerdere producten toegewezen zijn. Alle geldige toewijzingen binnen 1 cliënt, voor 1 aanbieder worden in 1 toewijzingsbericht geplaatst en naar de betreffende aanbieder gestuurd inclusief de toewijzingen die gewijzigd zijn sinds het laatst verstuurde toewijzingsbericht voor deze cliënt en aanbieder. Denk hierbij aan intrekkingen die zijn gedaan en waar de aanbieder nog niet van op de hoogte is.
+Deze regel is van toepassing indien voor 1 cliënt meerdere producten toegewezen zijn. Alle geldige toewijzingen binnen 1 cliënt, voor 1 aanbieder worden in 1 toewijzingsbericht geplaatst en naar de betreffende aanbieder gestuurd inclusief de toewijzingen die gewijzigd zijn sinds het laatst verstuurde toewijzingsbericht voor deze cliënt en aanbieder. Denk hierbij aan intrekkingen die zijn gedaan en waar de aanbieder nog niet van op de hoogte is.
 
 Toewijzingen met einddatum gelijk aan ingangsdatum en RedenWijziging gevuld met 13 (Verwijderd) worden niet gezien als actuele toewijzing. Ook toewijzingen met einddatum gelijk aan ingangsdatum en RedenWijziging gevuld met 01 (Administratieve correctie (vervallen)) worden niet gezien als actuele toewijzing.
 
@@ -235,7 +235,7 @@ Indien de gemeente niet binnen 10 werkdagen een declaratie-antwoordbericht kan v
 
 **OP091**
 
-*Van een cliënt mogen aanvullende contactgegevens vastgelegd worden; er moet dan wel vastgelegd worden wat voor soort adres het betreft.*
+*Van een cliënt mogen aanvullende contactgegevens vastgelegd worden. Er moet dan wel vastgelegd worden wat voor soort adres het betreft.*
 
 **OP095**
 
@@ -253,7 +253,7 @@ Indien de gemeente niet binnen 10 werkdagen een declaratie-antwoordbericht kan v
 
 *De grootte van verzonden bestanden mag niet meer zijn dan 25 Mb.*
 
-Deze regel wordt niet naar de techniek vertaald; daar waar grotere bestanden verwerkt kunnen worden is dat uiteraard toegestaan. Daar waar de grootte van bestanden tot problemen in de verwerking leidt, is deze regel bedoeld om duidelijk te maken dat de verzender de bestandsgrootte moet aanpassen.
+Deze regel wordt niet naar de techniek vertaald. Daar waar grotere bestanden verwerkt kunnen worden is dat uiteraard toegestaan. Daar waar de grootte van bestanden tot problemen in de verwerking leidt, is deze regel bedoeld om duidelijk te maken dat de verzender de bestandsgrootte moet aanpassen.
 
 **OP186** 
 
@@ -261,13 +261,13 @@ Het beëindigen van een toewijzing op een datum die in het verleden ligt kan all
 
 Deze regel is van toepassing op dié situaties waarin de aanbieder niet had kunnen weten dat hij geen ondersteuning meer mocht leveren.
 
-**OP191**: 
+**OP191**
 
 *Het gebruik van ongestructureerde informatie dient tot een minimum beperkt te worden.*
 
 Commentaar mag in de berichten gebruikt worden om extra informatie op te nemen. Het commentaar bevat een toelichting op de betreffende berichtklasse, die niet elders in het bericht kan worden opgenomen. Commentaar in het bericht mag geen tot een persoon herleidbare gegevens bevatten zonder toestemming van die persoon.
 
-**OP192**: 
+**OP192** 
 
 *Verzonden berichten moeten voldoen aan de technische eisen.*
 
@@ -277,11 +277,11 @@ Commentaar mag in de berichten gebruikt worden om extra informatie op te nemen. 
 4. Het einderegel teken is een combinatie van CR/LF (Windows einde-regel teken).
 5. Gebruik xml als bestandextensie voor het bestand waar het XML bericht in opgenomen is.
 
-**OP252**: 
+**OP252** 
 
 *Bij een (deels) onbekende geboortedatum moet aangegeven worden welk deel van de geboortedatum betrouwbaar is.*
 
-**OP254**: 
+**OP254** 
 
 *In de iJw berichten worden AGB-codes gebruikt voor routering van de berichten en voor identificatie van de aanbieder.*
 
@@ -314,7 +314,7 @@ Gestapeld betekent dat voor een cliënt hetzelfde zorg- of ondersteuningsproduct
 
 Hetzelfde zorg- of ondersteuningsproduct betekent dezelfde productcode of dezelfde productcategorie indien productcode niet gevuld is. Indien productcategorie leeg is, geldt dat er geen ander toegewezen product voor (gedeeltelijk) dezelfde periode naast mag staan.
 
-Verwijderde toewijzingen (waarvan de einddatum gelijk is aan de ingangsdatum en de reden wijziging is gevuld met 13 (Verwijderd)) maken geen onderdeel uit van de bepaling of sprake is van stapeling. Deze toewijzingen worden niet gezien als actuele toewijzing.  Hetzelfde geldt voor toewijzingen met reden wijziging 01 (Administratieve correctie (vervallen)) en einddatum gelijk aan ingangsdatum.
+Verwijderde toewijzingen (waarvan de einddatum gelijk is aan de ingangsdatum en de reden wijziging is gevuld met 13 (Verwijderd)) maken geen onderdeel uit van de bepaling of sprake is van stapeling. Deze toewijzingen worden niet gezien als actuele toewijzing. Hetzelfde geldt voor toewijzingen met reden wijziging 01 (Administratieve correctie (vervallen)) en einddatum gelijk aan ingangsdatum.
 
 **OP260** 
 
@@ -328,51 +328,51 @@ Verwijderde toewijzingen (waarvan de einddatum gelijk is aan de ingangsdatum en 
 
 *Voor ondersteuningsproducten met een inspanningsgerichte uitvoering wordt een tarief per tijdseenheid afgesproken behalve voor ondersteuningsproducten met de eenheid stuks (inspanning) daar wordt een tarief per stuk afgesproken.*
 
-**OP263**: 
+**OP263**
 
 *Voor ondersteuningsproducten met een outputgerichte werkwijze wordt een tarief per stuk afgesproken of wordt afgesproken dat een bedrag in euro's over een vastgestelde periode wordt vastgesteld.*
 
 Wanneer gemeenten en aanbieders kiezen voor een outputgerichte werkwijze moeten er duidelijke afspraken worden gemaakt over wat precies wordt verstaan onder de gewenste output en hoe kan worden vastgesteld hoe de output is behaald.
 
-**OP264**: 
+**OP264**
 
 *Voor ondersteuningsproducten met een outputgerichte werkwijze wordt vastgesteld op welk moment gedeclareerd wordt.*
 
 Bijvoorbeeld bij afronding van een traject, per behaalde mijlpaal of periodiek een vast bedrag.
 
-OP267: 
+**OP267**
 
 *De aanbieder declareert in een eenheid die aansluit bij de toewijzing.*
 
-**OP270**: 
+**OP270**
 
 *Aanbieder en gemeente maken onderling afspraken over de door te geven begin- en einddatum in de regieberichten.*
 
 Het gebruik van de regieberichten is voor de uitvoeringsvarianten inspannings- en outputgericht verplicht. Binnen de Jeugdwet maken gemeente en aanbieder onderling afspraken welke datums gehanteerd moeten worden om de start en stop van de levering door te geven. Deze afspraak kan per product afwijken, maar dit heeft niet de voorkeur.
 
-**OP271**: 
+**OP271**
 
 *De aanbieder verzendt een startbericht binnen vijf werkdagen na de daadwerkelijke datum waarop de ondersteuning gestart is.*
 
 Indien de ondersteuning met terugwerkende kracht is toegewezen, binnen vijf werkdagen na ontvangst van het toewijzingbericht.
 
-**OP272**: 
+**OP272** 
 
 *De aanbieder verzendt een stopbericht binnen vijf werkdagen na de daadwerkelijke datum waarop de ondersteuning beeindigd is.*
 
 Het verzenden van de definitieve stop, volgend op een tijdelijke stop, hoeft niet binnen 5 werkdagen na het stoppen van de levering te zijn. Wel moet het stopbericht binnen 5 werkdagen nadat bekend is dat de levering definitief gestopt is verstuurd worden.
 
-**OP274**: 
+**OP274** 
 
 *Na ontvangst van een verzoek om toewijzing stuurt de gemeente per aangevraagd product binnen 5 werkdagen ofwel een toewijzingbericht ofwel een antwoordbericht aan de aanbieder.*
 
 Als een antwoordbericht in VerzoekAntwoord de waarde 2 (Aanvraag in onderzoek) bevat, dan wordt binnen 8 weken na dagtekening van het verzoek ofwel een toewijzing bericht ofwel een antwoordbericht met in VerzoekAntwoord de waarde 1 (Verzoek afgewezen) gestuurd. Er moet altijd uiteindelijk ofwel een toewijzingsbericht ofwel een antwoordbericht met in VerzoekAntwoord de waarde 1 (Verzoek afgewezen) worden gestuurd voor elk aangevraagd product uit het verzoek om toewijzing
 
-**OP275**: 
+**OP275**
 
 *Iedere toewijzing binnen één gemeente heeft een uniek nummer per wettelijk domein.*
 
-**OP276**:
+**OP276**
 
 *De aanbieder declareert voor een cliënt waarvoor de aanbieder een toewijzing ontvangen heeft.*
 
@@ -528,7 +528,7 @@ Bij een verzoek om wijziging is de reactie van de gemeente altijd op het niveau 
 
 **OP345**
 
-*Als de gewenste ingangsdatum van een te wijzigen product uit een verzoek om wijziging (VOW) in het verleden ligt, dan mag de nieuwe omvang of het nieuwe budget niet leiden tot onrechtmatigheid voor al gedeclareerde en of geleverde  zorg.*
+*Als de gewenste ingangsdatum van een te wijzigen product uit een verzoek om wijziging (VOW) in het verleden ligt, dan mag de nieuwe omvang of het nieuwe budget niet leiden tot onrechtmatigheid voor al gedeclareerde en of geleverde zorg.*
 
 **OP346**
 
@@ -544,7 +544,7 @@ Stapeling betekent dat voor een cliënt hetzelfde zorg- of ondersteuningsproduct
 
 Hetzelfde zorg- of ondersteuningsproduct betekent dezelfde productcode of dezelfde productcategorie indien productcode niet gevuld is. Indien productcategorie leeg is, geldt dat er geen ander aangevraagd product voor (gedeeltelijk) dezelfde periode naast mag staan.
 
-Verwijderde toewijzingen (waarvan de einddatum gelijk is aan de ingangsdatum en de reden wijziging is gevuld met 13 (Verwijderd)) maken geen onderdeel uit van de bepaling of er sprake is van stapeling. Deze toewijzingen worden niet gezien als actuele toewijzing.  Hetzelfde geldt voor toewijzingen met reden wijziging 01 (Administratieve correctie (vervallen)) en einddatum gelijk aan ingangsdatum.
+Verwijderde toewijzingen (waarvan de einddatum gelijk is aan de ingangsdatum en de reden wijziging is gevuld met 13 (Verwijderd)) maken geen onderdeel uit van de bepaling of er sprake is van stapeling. Deze toewijzingen worden niet gezien als actuele toewijzing. Hetzelfde geldt voor toewijzingen met reden wijziging 01 (Administratieve correctie (vervallen)) en einddatum gelijk aan ingangsdatum.
 
 **OP348**
 
@@ -656,10 +656,10 @@ Alleen vullen indien cliënt en/of relatie cliënt in instelling verblijft.
 
 Van een cliënt of relatie worden de achternaam, voorvoegsel en voornamen en/of voorletters gescheiden vastgelegd. Voor het vastleggen van de VolledigeNaam van een cliënt geldt het volgende format:
 
-- De Geslachtsnaam wordt altijd vastgelegd. Deze bestaat uit de Naam en eventueel een Voorvoegsel;
-- De Partnernaam kan worden vastgelegd. Ook deze bestaat uit de Naam en eventueel een Voorvoegsel;
-- Voornamen kunnen worden vastgelegd, gescheiden door spaties;
-- Voorletters kunnen worden vastgelegd, aaneengesloten, zonder punten of spaties;
+- De Geslachtsnaam wordt altijd vastgelegd. Deze bestaat uit de Naam en eventueel een Voorvoegsel
+- De Partnernaam kan worden vastgelegd. Ook deze bestaat uit de Naam en eventueel een Voorvoegsel
+- Voornamen kunnen worden vastgelegd, gescheiden door spaties
+- Voorletters kunnen worden vastgelegd, aaneengesloten, zonder punten of spaties
 - NaamGebruik geeft de gewenste aanspreekvorm aan. Hiermee wordt bij correspondentie de volgorde bepaald in het gebruik van de geslachtsnaam en de naam van de partner. Het vullen van NaamGebruik hangt dus af van hoe de cliënt of relatie zijn/haar naam hanteert.
 
 **IV008**
@@ -669,7 +669,7 @@ Van een cliënt of relatie worden de achternaam, voorvoegsel en voornamen en/of 
 Voor de regieberichten (startbericht en stopbericht) bestaat de mogelijkheid om eerder verstuurde berichtklassen te corrigeren. Hiervoor wordt eerst de betreffende berichtklasse verwijderd en wordt vervolgens (eventueel) een nieuwe berichtklasse verstuurd.
 Om aan te geven dat een berichtklasse dient te worden verwijderd wordt StatusAanlevering van de betreffende berichtklasse gevuld met de waarde 3 (verwijderen aanlevering). De te verwijderen berichtklasse wordt geidentificeerd door de logische sleutel van de klasse.
 
-Eventueel kan in hetzelfde bericht ook de vervangende berichtklasse worden aangeleverd; in deze berichtklasse wordt StatusAanlevering gevuld met de waarde 1 (eerste aanlevering).
+Eventueel kan in hetzelfde bericht ook de vervangende berichtklasse worden aangeleverd. In deze berichtklasse wordt StatusAanlevering gevuld met de waarde 1 (eerste aanlevering).
 
 Of de vervangende berichtklasse kan worden aangeleverd in hetzelfde bericht of dat een nieuw bericht nodig is, is afhankelijk van het berichtelement dat gecorrigeerd moet worden. Dat heeft te maken met de logische sleutels:
 
@@ -768,8 +768,8 @@ Deze regels hebben een eigen retourcode die gevuld wordt in het retourbericht bi
 Controleniveau 4: externe bron
 Het bericht wordt gecontroleerd op alle technische regels waarvoor informatie nodig is die geen onderdeel is van het iStandaarden berichtenverkeer. Dit betreft bijvoorbeeld:
 
-- Systeemdatum van de verzender/ontvanger;
-- Een externe codelijst zoals de AGB-codelijst of de gemeentelijke indeling van CBS;
+- Systeemdatum van de verzender/ontvanger
+- Een externe codelijst zoals de AGB-codelijst of de gemeentelijke indeling van CBS
 - Bilaterale afspraken tussen ketenpartijen, zoals contractafspraken die opgenomen zijn in een regel binnen de iStandaarden.
 
 Deze regels hebben een eigen retourcode die gevuld wordt in het retourbericht bij de berichtklasse waarin de fout geconstateerd is. Indien een fout geconstateerd is, leidt dit tot volledige afkeur van het bericht.
@@ -785,7 +785,7 @@ Wanneer de ontvanger fouten constateert in een bericht op basis van de ter besch
 *Hoe moet XsdVersie gevuld worden?*
 
 De waarde voor de elementen BasisschemaXsdVersie en BerichtXsdVersie in het datatype CDT_XsdVersie moeten overgenomen worden uit de schemadefinitie (XSD) waarop het bericht gecreëerd/gebaseerd is. Deze waarden staan in de schemadefinitie respectievelijk in /xs:schema/xs:annotation/xs:appinfo/<namespace>:BasisschemaXsdVersie en /xs:schema/xs:annotation/xs:appinfo/<namespace>:BerichtXsdVersie.
-Voor "<namespace>" wordt de namespace van de desbetreffende  iStandaard ingevuld, bijv. 'iJw', 'iWmo', enz.
+Voor "<namespace>" wordt de namespace van de desbetreffende iStandaard ingevuld, bijv. 'iJw', 'iWmo', enz.
 Bijv: <jw301:Bericht xmlns:ijw="http://www.istandaarden.nl/ijw/3_2/basisschema/schema" xmlns:jw301="http://www.istandaarden.nl/ijw/3_2/jw301/schema">
 
 **IV042**
@@ -880,7 +880,7 @@ Welke productcodes gebruikt mogen worden in het berichtenverkeer is afhankelijk 
 
 - Bij het aanvragen van een specifieke toewijzing moet zowel de productcategorie als de productcode gevuld worden.
 - Bij het aanvragen van aspecifieke toewijzingen moet alleen de productcategorie gevuld zijn.
-- Bij het aanvragen van generieke toewijzingen is het product leeg; de productcategorie en de productcode zijn niet gevuld.*
+- Bij het aanvragen van generieke toewijzingen is het product leeg, de productcategorie en de productcode zijn niet gevuld.*
 
 *Voor het vullen van het Product in Startberichten en Stopberichten (bij inspannings- en outputgerichte uitvoeringsvariant) en Declaratieberichten is de vulling afhankelijk van ToegewezenProduct in de bijbehorende Toewijzing*
 
@@ -888,7 +888,7 @@ Welke productcodes gebruikt mogen worden in het berichtenverkeer is afhankelijk 
 
 - Bij specifieke toewijzingen moet in het Startbericht en Stopbericht zowel de productcategorie als de productcode gevuld worden.
 - Bij aspecifieke toewijzingen moet in het Startbericht en Stopbericht alleen de productcategorie gevuld zijn.
-- Bij generieke toewijzingen is het product leeg; de productcategorie en de productcode zijn niet gevuld.*
+- Bij generieke toewijzingen is het product leeg, de productcategorie en de productcode zijn niet gevuld.*
 
 *In een Declaratiebericht (323) wordt altijd een productcategorie en productcode gevuld.*
 
@@ -906,27 +906,27 @@ De datum van levering bepaalt in welke productperiode de leveringen worden inged
 De productperiode bevat het te declareren volume van alle leveringen op dagen die vallen in de betreffende productperiode. Bij weken die vallen over 2 productperioden bepaalt de datum van levering in welke ProductPeriode de levering opgenomen wordt.
 
 Voorbeeld:
-Toewijzing:     11-07-2022 t/m 04-09-2022 voor 3 uur per week
-Levering:    elke week op donderdag 2,5 uur
+Toewijzing: 11-07-2022 t/m 04-09-2022 voor 3 uur per week
+Levering: elke week op donderdag 2,5 uur
 
 Declaratieperiode juli
-Declaratieperiode:    01-07-2022 t/m 31-07-2022
-Productperiode:        11-07-2022 t/m 31-07-2022
-Volume:            7,5 (3 leveringen x 2,5 uur = 7,5 uur)
+Declaratieperiode: 01-07-2022 t/m 31-07-2022
+Productperiode: 11-07-2022 t/m 31-07-2022
+Volume: 7,5 (3 leveringen x 2,5 uur = 7,5 uur)
 Controle maximaal volume 9 (3 weken x 3 uur = 9 uur)
 
 Declaratieperiode augustus
-Declaratieperiode:    01-08-2022 t/m 31-08-2022
-Productperiode:        01-08-2022 t/m 31-08-2022
-Volume:            10 (4 leveringen x 2,5 uur = 10 uur)
+Declaratieperiode: 01-08-2022 t/m 31-08-2022
+Productperiode: 01-08-2022 t/m 31-08-2022
+Volume: 10 (4 leveringen x 2,5 uur = 10 uur)
 (n.b. in week 35 valt de levering op donderdag 01-09, dus deze levering zit in ProductPeriode september)
 
 Controle maximaal volume 15 (5 weken x 3 uur= 15 uur)
 
 Declaratieperiode september
-Declaratieperiode:    01-09-2022 t/m 30-09-2022
-Productperiode:        01-09-2022 t/m 04-09-2022
-Volume:            2,5 (1 leveringen x 2,5 uur = 2,5 uur)
+Declaratieperiode: 01-09-2022 t/m 30-09-2022
+Productperiode: 01-09-2022 t/m 04-09-2022
+Volume: 2,5 (1 leveringen x 2,5 uur = 2,5 uur)
 Controle maximaal volume 3 (1 week x 3 uur= 3 uur)
 
 Controle maximaal volume over toewijzingsperiode 24 uur
@@ -942,35 +942,35 @@ Indien een toewijzing niet op een zondag eindigt wordt het te declareren volume 
 Beide situaties worden met een voorbeeld toegelicht:
 
 Voorbeeld 1 (toewijzing eindigt op een zondag):
-Toewijzing:     11-07-2022 t/m 04-09-2022 voor 300 euro per week
+Toewijzing: 11-07-2022 t/m 04-09-2022 voor 300 euro per week
 
 Declaratieperiode juli
-Declaratieperiode:   01-07-2022 t/m 31-07-2022
-Productperiode:        11-07-2022 t/m 31-07-2022
-Volume:            Aantal zondagen in de productperiode * 300 euro (900 euro)
+Declaratieperiode: 01-07-2022 t/m 31-07-2022
+Productperiode: 11-07-2022 t/m 31-07-2022
+Volume: Aantal zondagen in de productperiode * 300 euro (900 euro)
 
 Declaratieperiode augustus
-Declaratieperiode:    01-08-2022 t/m 31-08-2022
-Productperiode:        01-08-2022 t/m 31-08-2022
-Volume:            Aantal zondagen in de productperiode * 300 euro (1200 euro)
+Declaratieperiode: 01-08-2022 t/m 31-08-2022
+Productperiode: 01-08-2022 t/m 31-08-2022
+Volume: Aantal zondagen in de productperiode * 300 euro (1200 euro)
 
 Declaratieperiode september
-Declaratieperiode:    01-09-2022 t/m 30-09-2022
-Productperiode:        01-09-2022 t/m 04-09-2022
-Volume:            Aantal zondagen in de productperiode * 300 euro (300 euro)
+Declaratieperiode: 01-09-2022 t/m 30-09-2022
+Productperiode: 01-09-2022 t/m 04-09-2022
+Volume: Aantal zondagen in de productperiode * 300 euro (300 euro)
 
 Voorbeeld 2 (toewijzing eindigt niet op een zondag):
-Toewijzing:     11-07-2022 t/m 03-09-2022 voor 300 euro per week
+Toewijzing: 11-07-2022 t/m 03-09-2022 voor 300 euro per week
 
 Declaratieperiode juli
-Declaratieperiode:    01-07-2022 t/m 31-07-2022
-Productperiode:        11-07-2022 t/m 31-07-2022
-Volume:            Aantal zondagen in de productperiode * 300 euro (900 euro)
+Declaratieperiode: 01-07-2022 t/m 31-07-2022
+Productperiode: 11-07-2022 t/m 31-07-2022
+Volume: Aantal zondagen in de productperiode * 300 euro (900 euro)
 
 Declaratieperiode augustus
-Declaratieperiode    01-08-2022 t/m 31-08-2022
-Productperiode        01-08-2022 t/m 31-08-2022
-Volume            Aantal zondagen in de productperiode + 1 * 300 euro (1500 euro)
+Declaratieperiode 01-08-2022 t/m 31-08-2022
+Productperiode 01-08-2022 t/m 31-08-2022
+Volume Aantal zondagen in de productperiode + 1 * 300 euro (1500 euro)
 
 Declaratieperiode september
 Over september wordt er geen declaratie meer ingediend. De laatste week, die gedeeltelijk in september valt, is al meegenomen in de declaratie over augustus.
@@ -979,7 +979,7 @@ Over september wordt er geen declaratie meer ingediend. De laatste week, die ged
 
 *Hoe moet het maximaal te declareren volume berekend worden over de productperiode bij gebruik van de frequentie per week in de toewijzing?*
 
-De frequentie per week is niet 1-op-1 passend binnen de declaratieperiode maand. Hierdoor zijn bij de omrekening naar een maximaal te declareren volume over de productperiode  aanvullende afspraken noodzakelijk, zodat het volume in de prestatie gecontroleerd kan worden. Afhankelijk van de uitvoeringsvarianten zijn hiervoor verschillende rekenmethoden opgesteld. (voor het vullen van het volume in de prestatie bij toewijzingen met frequentie week, zie IV076)
+De frequentie per week is niet 1-op-1 passend binnen de declaratieperiode maand. Hierdoor zijn bij de omrekening naar een maximaal te declareren volume over de productperiode aanvullende afspraken noodzakelijk, zodat het volume in de prestatie gecontroleerd kan worden. Afhankelijk van de uitvoeringsvarianten zijn hiervoor verschillende rekenmethoden opgesteld. (voor het vullen van het volume in de prestatie bij toewijzingen met frequentie week, zie IV076)
 
 Rekenmethode inspanningsgerichte toewijzing met frequentie per week
 Het maximale volume wordt bepaald op basis van het aantal (eventueel gebroken) kalenderweken die de productperiode beslaat, binnen de toewijzing. Dit aantal wordt vermenigvuldigd met het volume uit de toewijzing. Voor het bepalen van het aantal kalenderweken, worden de weeknummers geteld.
@@ -998,10 +998,12 @@ Bepaal het aantal kalenderweken in de productperiode
 - Oktober: 4 (week 41 t/m 44)
 - November: 5 (week 44 t/m 48)
 - December: 5 (week 48 t/m 52)
-Maximaal volume per productperiode: Vermenigvuldig het aantal kalenderweken per productperiode met het toegewezen volume per week:.
+  
+Maximaal volume per productperiode: Vermenigvuldig het aantal kalenderweken per productperiode met het toegewezen volume per week:
 - Oktober: 12 uur (4 weken x 3 uur)
 - November: 15 uur (5 weken x 3 uur)
 - December: 15 uur (5 weken x 3 uur)
+- 
 Maximaal volume over de toewijzingsperiode: tel het aantal weken (eventueel gebroken) binnen de toewijzing en vermenigvuldig dit met het volume uit de toewijzing:
 - 11-10-2022 t/m 28-12-2022 = week 41 t/m week 52 = 12 weken * 12 weken x 3 uur (volume uit de toewijzing) = 36 uur
 Het maximale volume over de toewijzingsperiode is 36 uur
@@ -1013,6 +1015,7 @@ Het aantal zondagen in de productperiodes:
 - Oktober: 11-10 t/m 31-10 -> telt 3 zondagen
 - November: 1-11 t/m 30-11 -> telt 4 zondagen
 - December: 1-12 t/m 31-12 -> telt 4 zondagen. Daar wordt een weekvolume bijgeteld, omdat de einddatum van de toewijzing niet op zondag is.
+
 Maximaal volume per productperiode: Het aantal zondagen vermenigvuldigd met het volume uit de toewijzing (evt. vermeerderd met een extra weekvolume):
 - Oktober 3 zondagen: 3x weekvolume (300 euro) = 900 euro
 - November 4 zondagen: 4x weekvolume (300 euro) = 1200 euro
@@ -1032,7 +1035,7 @@ frequentie in ToegewezenProduct = week
 
 Toewijzing voor 3 uur per week met ingangsdatum 12-10-2021 en einddatum 13-12-2021
 
-Voor de  productperiode 12-10-2021 t/m 31-10-2021 mag maximaal 9 uur gedeclareerd worden, indien deze uren ook daadwerkelijk geleverd zijn. (zie ook rekenmethode IV077. De eerste week (12-10-2021 t/m 17-10-2021) is geen volledige kalenderweek, maar indien geleverd mag voor deze week de volledige 3 uur worden gedeclareerd.
+Voor de productperiode 12-10-2021 t/m 31-10-2021 mag maximaal 9 uur gedeclareerd worden, indien deze uren ook daadwerkelijk geleverd zijn. (zie ook rekenmethode IV077. De eerste week (12-10-2021 t/m 17-10-2021) is geen volledige kalenderweek, maar indien geleverd mag voor deze week de volledige 3 uur worden gedeclareerd.
 
 Voorbeeld 2:
 
@@ -1089,7 +1092,7 @@ ProductPeriode Prestatie 2: 23-03-2021 t/m 31-03-2021
 Wanneer een eerder ingediende prestatie door de aanbieder onjuist is bevonden, kan deze door de aanbieder worden ingetrokken door aanlevering van een credit prestatie.
 Dit kan alleen nadat er een declaratie-antwoordbericht op de debet prestatie is ontvangen en de prestatie daarin niet is afgekeurd. Een door de gemeente afgekeurde prestatie wordt nooit gecrediteerd.
 
-NB: een creditering  is een eenzijdige handeling van de aanbieder, die niet bestreden kan worden door een gemeente. De gemeente kan een ingediende credit prestatie dus niet afkeuren, tenzij het technische afkeur betreft. Zie hiervoor invulinstructies IV088 en IV087).
+NB: een creditering is een eenzijdige handeling van de aanbieder, die niet bestreden kan worden door een gemeente. De gemeente kan een ingediende credit prestatie dus niet afkeuren, tenzij het technische afkeur betreft. Zie hiervoor invulinstructies IV088 en IV087).
 
 **IV086**
 
@@ -1121,7 +1124,7 @@ Wat na de Header volgt is afhankelijk van of en op welk controleniveau fouten zi
 De vulling van het declaratie-antwoordbericht is afhankelijk van de situatie en de geconstateerde fouten:
 
 Het bericht is volledig goedgekeurd:
-De Header wordt retour gestuurd met retourcode 0200 (geen opmerkingen over deze berichtklasse) en een Declaratie-Antwoord berichtklasse met Retourcode 8001 (Declaratie is volledig toegewezen), waarbij TotaalGoedgekeurdBedrag  en TotaalIngediendBedrag worden gevuld met de waarde van TotaalIngediendBedrag van het bijbehorende declaratiebericht.
+De Header wordt retour gestuurd met retourcode 0200 (geen opmerkingen over deze berichtklasse) en een Declaratie-Antwoord berichtklasse met Retourcode 8001 (Declaratie is volledig toegewezen), waarbij TotaalGoedgekeurdBedrag en TotaalIngediendBedrag worden gevuld met de waarde van TotaalIngediendBedrag van het bijbehorende declaratiebericht.
 
 Controleniveau 1: Er zijn fouten geconstateerd bij XSD-validatie
 Indien het declaratiebericht niet valideert tegen het XSD krijgt de afzender een foutmelding. Er wordt geen declaratie-antwoordbericht verzonden.
@@ -1136,7 +1139,7 @@ Voorbeeld:
 Controleniveau 3 of 4: Er zijn fouten geconstateerd op berichtoverstijgende controles of controles tegen een externe bron
 Indien er een fout geconstateerd is in de Header, bevat het declaratie-antwoordbericht alleen de Header met daarbij de retourcode van de regel op basis waarvan de fout geconstateerd is.
 
-Indien een fout geconstateerd is in de berichtklasse Declaratie, wordt de Header retour gestuurd met retourcode 0200 (geen opmerking over deze berichtklasse), berichtklasse DeclaratieAntwoord krijgt de betreffende retourcode voor afkeur. Het TotaalToegekendBedrag wordt gevuld met 0 (zie ook TR342).  De declaratie wordt als niet verzonden beschouwd en is niet verwerkt in de administratie van de gemeente.
+Indien een fout geconstateerd is in de berichtklasse Declaratie, wordt de Header retour gestuurd met retourcode 0200 (geen opmerking over deze berichtklasse), berichtklasse DeclaratieAntwoord krijgt de betreffende retourcode voor afkeur. Het TotaalToegekendBedrag wordt gevuld met 0 (zie ook TR342). De declaratie wordt als niet verzonden beschouwd en is niet verwerkt in de administratie van de gemeente.
 Voorbeeld:
 
 - Het declaratienummer is niet uniek: Declaratienummer moet uniek zijn voor de verzendende partij. De Header krijgt dan retourcode 0200 (geen opmerking over deze berichtklasse), berichtklasse DeclaratieAntwoord krijgt retourcode 9333, en bij TotaalToegekendBedrag wordt 0 gevuld.
@@ -1173,8 +1176,8 @@ Deze regels hebben een eigen retourcode die gevuld wordt in het declaratie-antwo
 Controleniveau 4: externe bron
 Het declaratiebericht wordt gecontroleerd op alle technisch controleerbare regels waarvoor informatie nodig is die geen onderdeel is van het iStandaarden berichtenverkeer. Dit betreft bijvoorbeeld:
 
-- Systeemdatum van de verzender/ontvanger;
-- Een externe codelijst zoals de AGB-codelijst of de gemeentelijke indeling van CBS;
+- Systeemdatum van de verzender/ontvanger.
+- Een externe codelijst zoals de AGB-codelijst of de gemeentelijke indeling van CBS.
 - Bilaterale afspraken tussen ketenpartijen, zoals contractafspraken die opgenomen zijn in een regel binnen de iStandaarden.
 
 Deze regels hebben een eigen retourcode die gevuld wordt in het declaratie-antwoordbericht bij de berichtklasse waarin de fout geconstateerd is.
@@ -1408,7 +1411,7 @@ Hierin staan producten waarvoor een actueel ToegewezenProduct is, maar waarvoor 
 
 - Wanneer aan de voorwaarde van OP380 wordt voldaan, dan moet het actueel ToegewezenProduct worden aangepast en opnieuw worden verstuurd. De toewijzing houdt hetzelfde ToewijzingNummer. Wel wordt de ReferentieAanbieder overgenomen uit het Verzoek om Wijziging en de RedenWijziging wordt gevuld met 'geinitieerd door aanbieder'
 - Wanneer aan de voorwaarden van OP257 wordt voldaan, kan het actueel ToegewezenProduct worden aangepast en opnieuw worden verstuurd. De toewijzing houdt hetzelfde ToewijzingNummer. Wel wordt de ReferentieAanbieder overgenomen uit het Verzoek om Wijziging en de RedenWijziging wordt gevuld met geinitieerd door aanbieder. Dit geldt voor wijzigingen van de Einddatum (intrekken of oprekken), wijzigingen van het Maximaal Budget en bij wijzigingen van het Volume indien de Frequentie de waarde totaal binnen geldigheidsduur toewijzing heeft.
-- In de andere gevallen kan geen aangepast ToegewezenProduct worden verstuurd, en wordt de wijziging gerealiseerd in twee gedeelten: het actueel ToegewezenProduct wordt ingetrokken; krijgt een einddatum GewensteIngangsdatum minus 1 dag. RedenWijziging wordt gevuld met geinitieerd door aanbieder en de ReferentieAanbieder wordt overgenomen uit het Verzoek om Wijziging.
+- In de andere gevallen kan geen aangepast ToegewezenProduct worden verstuurd, en wordt de wijziging gerealiseerd in twee gedeelten: het actueel ToegewezenProduct wordt ingetrokken krijgt een einddatum GewensteIngangsdatum minus 1 dag. RedenWijziging wordt gevuld met geinitieerd door aanbieder en de ReferentieAanbieder wordt overgenomen uit het Verzoek om Wijziging.
 Daarnaast wordt er een nieuw ToegewezenProduct gestuurd met als ingangsdatum de GewensteIngangsdatum en verder de gevraagde Einddatum, Omvang en/of Budget. ReferentieAanbieder wordt overgenomen uit het Verzoek om Wijziging, RedenWijziging blijft leeg omdat het een nieuwe toewijzing is. Zie voorbeeld 1 hieronder.
 
 GewensteIngangsdatum ligt in het verleden t.o.v. moment van toewijzen
@@ -1585,7 +1588,7 @@ Bij de initiële toewijzing van een product (een nieuwe toewijzing met een nieuw
 
 *Geboortedatum mag niet meer dan 120 jaar voor de Dagtekening liggen, tenzij Geboortedatum onbekend is.*
 
-Geboortedatum is onbekend als DatumGebruik de waarde '3 (dag, maand en jaar onbekend; onbekende datum)' heeft en Datum de waarde '01-01-1900' heeft.
+Geboortedatum is onbekend als DatumGebruik de waarde '3 (dag, maand en jaar onbekend, onbekende datum)' heeft en Datum de waarde '01-01-1900' heeft.
 
 **TR006**
 
@@ -1649,7 +1652,7 @@ Dat betekent dat voor iedere berichtklasse de logische sleutel in combinatie met
 
 Indien de productcode niet is meegegeven dan geldt deze technische regel op niveau van productcategorie. Indien productcategorie leeg is, dan mag de toewijzing met geen enkel ander toegewezen product overlappen.
 
-Verwijderde toewijzingen (waarvan de einddatum gelijk is aan de ingangsdatum en de reden wijziging is gevuld met 13 (Verwijderd)) maken geen onderdeel uit van de bepaling of er sprake is van stapeling. Deze toewijzingen worden niet gezien als actuele toewijzing.  Hetzelfde geldt voor toewijzingen met reden wijziging 01 (Administratieve correctie (vervallen)) en einddatum gelijk aan ingangsdatum.
+Verwijderde toewijzingen (waarvan de einddatum gelijk is aan de ingangsdatum en de reden wijziging is gevuld met 13 (Verwijderd)) maken geen onderdeel uit van de bepaling of er sprake is van stapeling. Deze toewijzingen worden niet gezien als actuele toewijzing. Hetzelfde geldt voor toewijzingen met reden wijziging 01 (Administratieve correctie (vervallen)) en einddatum gelijk aan ingangsdatum.
 
 **TR304**
 
@@ -1787,7 +1790,7 @@ De volgende controle dwingt dit af: SOM (Prestatie.IngediendBedrag) = Declaratie
 
 *Indien Eenheid ongelijk is aan waarde 83 (Euro’s), moet IngediendBedrag gelijk zijn aan GeleverdVolume vermenigvuldigd met ProductTarief.*
 
-Indien tarief per uur is afgesproken en de declaratie in minuten wordt gedaan, vindt omrekening van het producttarief plaatst. Indien het uurtarief niet deelbaar is door 60, zal het berekende producttarief per minuut niet op hele eurocenten uitkomen. In dat geval wordt bij de berekening van IngediendBedrag eerst het contractuele uurtarief vermenigvuldigd met GeleverdVolume en daarna gedeeld door 60 en afgerond op 2 decimalen.  Zie IV081
+Indien tarief per uur is afgesproken en de declaratie in minuten wordt gedaan, vindt omrekening van het producttarief plaatst. Indien het uurtarief niet deelbaar is door 60, zal het berekende producttarief per minuut niet op hele eurocenten uitkomen. In dat geval wordt bij de berekening van IngediendBedrag eerst het contractuele uurtarief vermenigvuldigd met GeleverdVolume en daarna gedeeld door 60 en afgerond op 2 decimalen. Zie IV081
 
 **TR347**
 
@@ -1839,7 +1842,7 @@ Als een wijziging niet in de toekomst moet ingaan, dan is het altijd een wijzigi
 
 **TR358**
 
-*De waarde van TotaalBedrag in TotaalIngediendBedrag  moet gelijk zijn aan de SOM van de waarden van Bedrag in Ingediendbedrag in alle onderliggende Prestaties, rekening houdend met indicatie debet/credit.*
+*De waarde van TotaalBedrag in TotaalIngediendBedrag moet gelijk zijn aan de SOM van de waarden van Bedrag in Ingediendbedrag in alle onderliggende Prestaties, rekening houdend met indicatie debet/credit.*
 
 Debetposten worden opgeteld, creditposten worden afgetrokken.
 
