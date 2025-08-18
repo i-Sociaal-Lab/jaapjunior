@@ -382,6 +382,19 @@ Een Startzorg kan verwijderd worden middels de status aanlevering. Zie hiervoor 
 
 Een Stopzorg kan verwijderd worden middels de status aanlevering. Zie hiervoor ook OP033 en IV008 in het informatiemodel.
 
+## Welke codes Status aanlevering kan ik gebruiken?
+
+In de codelijst COD467: Status aanlevering staan 4 codes.
+1 = Eerste aanlevering
+2 = Gewijzigde aanlevering
+3 = Verwijderen aanlevering
+9 = Niet van toepassing (ongewijzigd)
+
+Voor het veld status aanlevering in het iJw-berichtenverkeer mag u uitsluitend de volgende codes gebruiken:
+1 = Eerste aanlevering
+3 = Verwijderen aanlevering
+Dit wordt middels regels afgedwongen. 
+
 # Vragen over reactietijden
 
 | Berichttype | Berichtnaam | Maximale reactietermijn |
@@ -431,6 +444,7 @@ Via de validatiemodule op istandaarden.nl kunt u de berichten valideren. De beri
 Via de Testvoorziening iStandaarden (TiS) van Zorginstituut Nederland kunnen softwareleveranciers hun producten testen in de rol van elke partij die deelneemt aan het iStandaarden-berichtenverkeer, en zo nodig verbeteren.
 
 Voor meer informatie of het aanvragen van een account kunt u contact opnemen met Zorginstituut Nederland (<info@istandaarden.nl>).
+
 
 
 
