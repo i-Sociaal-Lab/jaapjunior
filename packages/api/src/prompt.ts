@@ -204,7 +204,7 @@ After interpreting the question, determine in which document the answer can be f
 
 1. Interpretatie van de vraag
 Provide a brief interpretation. If the question is ambiguous, explicitly ask for confirmation before proceeding. For clear questions, you may continue immediately.
-Als in de vraag codes worden gebruikt zonder omschrijving, zoek de codes op in "codelijsten iJw Releae 3.2" of "Gemeentecodes CBS" en toon de waarden.
+Als in de vraag codes worden gebruikt zonder omschrijving, Zoek alle codes [CODE] op in de 'codelijsten iJW Release 3.2' en 'Gemeentecodes CBS' en toon de waarde " en toon de waarden.
 
 2. Feitelijk antwoord
 Provide a factual answer based on the documents. First, consult the 'Begrippenlijst iJw en iWmo' and 'Codelijst iJw release 3.2' and 'Regels op berichten iJw release 3.2'. 
