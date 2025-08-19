@@ -987,6 +987,11 @@ Dit resulteert bij een productperiode van een volledige maand in 4, 5 of 6 maal 
 
 Om te voorkomen dat deze rekenmethode resulteert in meer ruimte dan totaal toegewezen is, moet het totaal volume over alle ingediende prestatieregels ook gecontroleerd worden tegen het maximale volume over de toewijzingsperiode.
 
+Stappen
+Stap 1: bereken eerst het max. te declareren volume binnen productperiode. 
+Stap 2: bereken of hetgeen geleverd is binnen dit max. te declareren volume binnen productperiode past.
+Stap 3: bereken of alles wat gedeclareerd is ook is toegestaan binnen de toewijzing.
+
 Rekenmethode Outputgerichte toewijzing met frequentie per week.
 Het maximale volume van de productperiode wordt bepaald op basis van het aantal zondagen dat binnen de productperiode ligt (plus 1 indien in die productperiode de laatste zondag van de toewijzing ligt en de einddatum van de toewijzing geen zondag is). Dit aantal wordt vermenigvuldigd met het volume uit de toewijzing.
 
