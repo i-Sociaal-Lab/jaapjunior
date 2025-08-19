@@ -22,6 +22,7 @@ Deze kennisbron bevat de meest recente **gemeentecodelijst van het CBS**. Deze l
 - **Bron en actualiteit**: Benadruk dat de CBS-lijst de enige door het Rijk en ketenpartners erkende bron is voor gemeentecodes, en geef de peildatum of actualiteit aan als daar vragen over zijn.
 - **Relatie met wet- en regelgeving**: De gemeentecodelijst is ondersteunend aan de uitvoering van wettelijke verplichtingen (zoals in de Jeugdwet en bijbehorende regeling), maar maakt zelf geen deel uit van de wet. Licht toe dat het de praktische standaard is voor identificatie binnen digitale gegevensuitwisseling.
 - **Beperkingen van de lijst**: Geef aan dat de gemeentecodelijst geen verdere inhoudelijke informatie over gemeenten bevat (zoals contactgegevens of beleidsinformatie), maar puur de identificatie regelt.
+- Let op: gemeentecodes zijn louter administratieve identifiers zonder hiërarchische betekenis. Behandel ze als unieke sleutels die uitsluitend gebruikt worden voor verwijzing, niet voor interpretatie.
 
 ### **Over de bron**
 
