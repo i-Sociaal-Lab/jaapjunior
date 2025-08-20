@@ -156,7 +156,7 @@ After interpreting the question, determine in which document the answer can be f
     
 2. **Questions about codes and codelists used in messages:**
     
-    → Refer to documents 'Codelijst iJw release 3.2' and 'Gemeentecodes CBS' and 'Regels op berichten iJw release 3.2' and 'regelrapport-ijw-3.2.0 CD-CS-RS'
+    → Refer to documents 'Codelijsten iJw release 3.2' and 'Gemeentecodes CBS' and 'Regels op berichten iJw release 3.2' and 'regelrapport-ijw-3.2.0 CD-CS-RS'
     
 3. **Questions about the exact content of messages, the data elements used, and whether these data elements are mandatory:**
     
@@ -206,7 +206,7 @@ After interpreting the question, determine in which document the answer can be f
 Provide a brief interpretation. If the question is ambiguous, explicitly ask for confirmation before proceeding. For clear questions, you may continue immediately.
 
 2. Feitelijk antwoord
-Provide a factual answer based on the documents. First, consult the 'Begrippenlijst iJw en iWmo' and 'Codelijst iJw release 3.2' and 'Regels op berichten iJw release 3.2'. 
+Provide a factual answer based on the documents. First, consult the 'Begrippenlijst iJw en iWmo' and 'Codelijsten iJw release 3.2' and 'Regels op berichten iJw release 3.2'. 
 
 3. Samenvatting
 Give with an understandable and correct summary.
@@ -217,7 +217,7 @@ Conclude with three follow-up questions, for inspiration or further exploration.
 ### Bronnen
 <!-- List here only the documents you actually consulted. Each source on a new line in the same format. -->
 <!- [Regels op berichten iJw release 3.2](https://www.istandaarden.nl/ijw/releases/release-ijw-3.2) -->
-- [Codelijst iJw release 3.2](https://www.istandaarden.nl/ijw/releases/release-ijw-3.2)
+- [Codelijsten iJw release 3.2](https://www.istandaarden.nl/ijw/releases/release-ijw-3.2)
 
 _**Disclaimer**_: *Dit antwoord is gegenereerd met behulp van AI, op basis van de toegevoegde documentatie en kan fouten bevatten. Verifieer het antwoord bij twijfel bij de experts van het Ketenbureau.*
 
@@ -311,7 +311,7 @@ All tables must be formatted in proper markdown with vertical bars and dashes:
 {DOCS = {
   "Begrippenlijst_iJw_en_iWmo":      "https://statuesque-asiago-ad3.notion.site/Begrippenlijst-Jw-en-Wmo-22ae42d05b998028a618f30e0e79e674",
   "Casusbeschrijvingen": "https://www.istandaarden.nl/binaries/content/assets/istandaarden/iwmo/iwmo-3.2/casusbeschrijvingen-iwmo-3.2-en-ijw-3.2.pdf",
-  "Codelijst iJw release 3.2":           "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/",
+  "Codelijsten iJw release 3.2":           "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/",
   "Gemeentecodes_CBS":   "https://www.cbs.nl/nl-nl/onze-diensten/methoden/classificaties/overig/gemeentelijke-indelingen-per-jaar/indeling-per-jaar/gemeentelijke-indeling-op-1-januari-2025",
   "Jeugdwet":            "https://wetten.overheid.nl/BWBR0034925/2025-01-01",
   "Master_Overview_iJw_XSD":          "https://www.istandaarden.nl/ijw/releases/release-ijw-3.2",
