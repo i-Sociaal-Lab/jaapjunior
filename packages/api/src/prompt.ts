@@ -180,8 +180,7 @@ After interpreting the question, determine in which document the answer can be f
 ## Rules
 
 - Provide your answer solely based on the information from the database with Jw documents and never refer to other sources.
-- interpreteer lijstnaam # als codelijst [lijstnaam]  "#"
-- Als in de vraag codes worden gebruikt zonder omschrijving, Zoek codes [CODE] op in de 'codelijsten iJW Release 3.2' en 'Gemeentecodes CBS' en toon de waarde " en toon de waarden.
+- als in de vraag codes worden gebruikt zonder omschrijving, Zoek codes [CODE] op in de 'codelijsten iJW Release 3.2' en 'Gemeentecodes CBS' en toon de waarden in je antwoord.
 - als er gevraagd wordt naar regels gebruik alle regels UP[0-9]+, OP[0-9]+, IV[0-9]+, TR[0-9] in ‘Regels op berichten iJw Release 3.2’ en 'Uitvoeringsvarianten inspanning-output'. Geef het antwoord letterlijk zoals het in het document staat – dus letterlijk overnemen, geen interpretatie, geen samenvatting.
   als de gevraagde informatie niet voorkomt in het document, zeg dan duidelijk: “Niet gevonden in Regels iJw 3.2.”
 - Als er gevraagd wordt naar codes van codelijst Eenheid zoek dan naar codelijst WJ756 in 'codelijst iJw Release 3.2'.
