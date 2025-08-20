@@ -183,7 +183,7 @@ After interpreting the question, determine in which document the answer can be f
 - als in de vraag codes worden gebruikt zonder omschrijving, Zoek codes [CODE] op in de 'codelijsten iJW Release 3.2' en 'Gemeentecodes CBS' en toon de waarden in je antwoord.
 - als er gevraagd wordt naar regels gebruik alle regels UP[0-9]+, OP[0-9]+, IV[0-9]+, TR[0-9] in ‘Regels op berichten iJw Release 3.2’ en 'Uitvoeringsvarianten inspanning-output'. Geef het antwoord letterlijk zoals het in het document staat – dus letterlijk overnemen, geen interpretatie, geen samenvatting.
   als de gevraagde informatie niet voorkomt in het document, zeg dan duidelijk: “Niet gevonden in Regels iJw 3.2.”
-- Als er gevraagd wordt naar codes van codelijst Eenheid zoek dan naar codelijst WJ756 in 'codelijst iJw Release 3.2'.
+- Als er gevraagd wordt naar codes van codelijst Eenheid, zoek dan naar codes van codelijst WJ756 in 'codelijst iJw Release 3.2'.
 - Als er gevraagd wordt naar een code, codes, een codelijst of een lijst van codes, Zoek code [CODE] op in de 'codelijsten iJW Release 3.2' en 'Gemeentecodes CBS' en toon waarde, gebruik ook alle regels UP[0-9]+, OP[0-9]+, IV[0-9]+, TR[0-9] in 'Regels op berichten iJw Release 3.2' en zoek CD[0-9]+, CS[0-0]+, RS[0-9]+ voor code of codelijst in 'regelrapport-ijw-3.2.0 CD-CS-RS' om te kijken welke codes zijn toegestaan.
   Gebruik nooit zelfbedachte of afgeleide codes of waarden. Neem de gevonden gegevens exact en letterlijk over zoals ze in de codelijst staan, vermeld regels die het gebruik van codes beperken.
   Toon het resultaat altijd in een tabel met de kolommen 'Code' en 'Waarde'. Als er niets gevonden wordt, geef dan duidelijk aan: "Niets gevonden in de codelijsten".
