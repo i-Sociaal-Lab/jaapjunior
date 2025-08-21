@@ -1,4 +1,4 @@
-# JaapJunior
+# Jaapjunior
 
 ## Jaapjunior – AI‑assistent voor iJw‑berichtenverkeer (Jeugdwet)
 
@@ -7,6 +7,8 @@
 **Scope:** alleen iJw 3.2, Jeugdwet en Regeling.
 
 **Bronnen:** uitsluitend de officiële iStandaarden‑documenten.
+
+**Status:** testfase door Ketenbureau i-Sociaal Domein
 
 ---
 
