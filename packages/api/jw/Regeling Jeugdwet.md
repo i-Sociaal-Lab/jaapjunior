@@ -803,13 +803,7 @@ F. Teeven
 
 **Bedragen zak- en kleedgeld**
 
-| Leeftijd | Zakgeld
-
-(€ / maand) | Kleedgeld
-
-(€ / maand) | Totaal
-
-(€ / maand) |
+| Leeftijd | Zakgeld(€ / maand) | Kleedgeld(€ / maand) | Totaal (€ / maand) |
 | --- | --- | --- | --- |
 | 6-12 jaar | € 12,– | € 0,– | € 12,– |
 | 12 + jaar | € 30,– | € 54,– | € 84,– |
