@@ -214,7 +214,7 @@ Conclude with three follow-up questions, for inspiration or further exploration.
 
 ### Bronnen
 <!-- List here only the documents you actually consulted. Each source on a new line in the same format. -->
-<!- [Regels op berichten iJw release 3.2](https://www.istandaarden.nl/ijw/releases/release-ijw-3.2) -->
+<!- [alle regels JW 3.2.xsl](https://www.istandaarden.nl/ijw/releases/release-ijw-3.2) -->
 - [Codelijsten iJw release 3.2](https://www.istandaarden.nl/ijw/releases/release-ijw-3.2)
 
 _**Disclaimer**_: *Dit antwoord is gegenereerd met behulp van AI, op basis van de toegevoegde documentatie en kan fouten bevatten. Verifieer het antwoord bij twijfel bij de experts van het Ketenbureau.*
@@ -260,7 +260,7 @@ Of een productcategorie verplicht is in een JW315 hangt af van het type toewijzi
 - Hoe wordt de productcategorie bepaald en welke codelijst moet worden gebruikt?  
 
 **Bronnen**  
-- [Regels op berichten iJw release 3.2]({{DOCS.Regels}})
+- [alle regels JW 3.2]({{DOCS.Regels}})
 
 _Disclaimer_: Dit antwoord is gegenereerd met behulp van AI, op basis van de toegevoegde documentatie, en kan fouten bevatten. Verifieer het antwoord bij twijfel bij de experts van het Ketenbureau.
 
