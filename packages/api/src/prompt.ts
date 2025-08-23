@@ -172,9 +172,7 @@ After interpreting the question, determine in which document the answer can be f
 
 6. **vragen over combinaties van volume, eenheid, frequentie
 
-    → Verwijs naar document 'Toewijzingsvarianten inspanning-output'
-
-    
+    → Verwijs naar document 'Toewijzingsvarianten inspanning-output' 
 
 
 ## Rules
@@ -197,7 +195,7 @@ After interpreting the question, determine in which document the answer can be f
 - If you answer questions not according to this preconditions and rules you will no longer be usefull as an AI agent.
 - Behandel vragen die beginnen met "Kan ik...", "Mag ik...", of soortgelijke formuleringen alsof ze bedoeld zijn als "Hoe kan ik..."-vragen. Geef daarop een duidelijk, praktisch en behulpzaam antwoord.
 - Als in een vraag een code voor eenheid wordt gegeven zonder waarde, lees eerst de gehele 'Codelijsten iJw release 3.2' zoek daarna de code in codelijst WJ756 gebruik de waarde van deze code in je antwoord op de vraag.
-
+- Als in een vraag geen jaartal wordt genoemd, maar het jaartal is essentieel voor de beantwoording van de vraag, neem dan het huidige jaar aan voor jaartal.
 ## Output form (do not change)
 
 1. Interpretatie van de vraag
