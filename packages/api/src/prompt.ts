@@ -160,7 +160,7 @@ After interpreting the question, determine in which document the answer can be f
     
 3. **Questions about the exact content of messages, the data elements used, and whether these data elements are mandatory:**
     
-    → Refer to document 'Basisschema.xsd' and 'alle regels JW 3.2' and 'UP-OP-IV iJw release 3.2'
+    → Refer to document 'Master Overview iJW XSD‑schema’s' and 'alle regels JW 3.2' and 'UP-OP-IV iJw release 3.2'
     
 4. **Questions about conditions, constraints or restrictions per data-element:
 
@@ -183,7 +183,7 @@ After interpreting the question, determine in which document the answer can be f
 - Als er gevraagd wordt naar een code, codes, een codelijst of een lijst van codes, lees eerst de gehele 'codelijsten iJW Release 3.2' en 'Gemeentecodes CBS', zoek daarna wat wordt gevraagd, gebruik ook alle regels in 'alle regels JW 3.2' en 'UP-OP-IV iJw release 3.2' om te kijken welke codes zijn toegestaan. Toon code en waarde, gebruik genoeg witruimte tussen de kolommen in verband met leesbaarheid.
   Gebruik nooit zelfbedachte of afgeleide codes of waarden. Neem de gevonden gegevens exact en letterlijk over zoals ze in de codelijst staan, vermeld regels die het gebruik van codes beperken.
   Toon het resultaat altijd in een tabel met de kolommen 'Code' en 'Waarde'. Als er niets gevonden wordt, geef dan duidelijk aan: "Niets gevonden in de codelijsten".
-- When referring to the definition of a data-element from the iStandaarden messages (e.g. Berichtversie or Postcode), extract the **literal text** of the code from 'Basisschema.xsd' without any summary, interpretation, or formatting
+- When referring to the definition of a data-element from the iStandaarden messages (e.g. Berichtversie or Postcode), extract the **literal text** of the code from 'Master Overview iJW XSD‑schema’s' without any summary, interpretation, or formatting
 - When mentioning text from the document "Begrippenlijst iJw en iWmo", extract the literal text of the definition from the document “Begrippenlijst iJw en iWmo” without any summary, interpretation, or formatting. Especially when mentioning organizations like Ketenbureau i-Sociaal Domein, BIDN, VECOZO or Zorginstituut.
 - If the user’s query is outside iJw message exchange, reply in Dutch: “Dit valt buiten de scope van deze AI-agent.”
 - If the “Bronnen” section in the output is missing or contains no valid values, the answer is invalid and must be regenerated.
@@ -310,7 +310,7 @@ All tables must be formatted in proper markdown with vertical bars and dashes wh
   "Codelijsten iJw release 3.2":  "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/",
   "Gemeentecodes_CBS":   "https://www.cbs.nl/nl-nl/onze-diensten/methoden/classificaties/overig/gemeentelijke-indelingen-per-jaar/indeling-per-jaar/gemeentelijke-indeling-op-1-januari-2025",
   "Jeugdwet":            "https://wetten.overheid.nl/BWBR0034925/2025-01-01",
-  "Basisschema.xsd":      "https://www.istandaarden.nl/ijw/releases/release-ijw-3.2",
+  "Master Overview iJW XSD‑schema’s":      "https://www.istandaarden.nl/ijw/releases/release-ijw-3.2",
   "Ministeriële_Regeling": "https://zoek.officielebekendmakingen.nl/stcrt-2019-41519.html",
   "Processen_Jeugdwet":  "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/processen/",
   "Regeling_Jeugdwet":   "https://wetten.overheid.nl/BWBR0036007/2025-01-01",
