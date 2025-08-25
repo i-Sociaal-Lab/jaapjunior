@@ -25,7 +25,6 @@ Het document dient als **naslagwerk en validatiebron** voor AI-agenten die vrage
 - Uitgangspunten hebben een code die begint met UP
 - Bedrijfsregels hebben een code die begint met OP
 - Invulinstructies hebben een code die begint met IV
-- Technische regels hebben een code die begint met TR
 - De regels vormen de basis voor correcte administratieve verwerking, gegevensuitwisseling en procesondersteuning binnen iJw.
 - Verwijs bij vragen altijd naar de relevante regelcode voor onderbouwing.
 - Geef bij het beantwoorden van vragen over regels uit het document ‘Regels op berichten iJw release 3.2’ altijd de volledige, letterlijke tekst van de gevraagde regel weer. Sla geen enkel tekstblok, opsomming of toelichting over die onder het betreffende regelnummers valt. Stop pas bij het volgende regelnummers of het einde van het document."
