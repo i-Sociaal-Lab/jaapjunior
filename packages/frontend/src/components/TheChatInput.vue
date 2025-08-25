@@ -14,6 +14,7 @@ const input = defineModel<string | undefined>();
 const inputEl = useTemplateRef("input-el");
 
 const models = ref([
+    { label: "GPT 5", id: "5" },
 	{ label: "GPT 4.1", id: "4.1" },
 	{ label: "Gemini 2.5 pro", id: "2.5-pro" },
 	{ label: "Llama 4 Maverick", id: "llama-4" },

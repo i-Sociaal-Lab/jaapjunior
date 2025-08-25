@@ -34,6 +34,7 @@ interface Conversation {
 type Variables = JwtVariables;
 
 const availableModels = [
+	{ label: "GPT-5", value: "5" },
 	{ label: "GPT-4.1", value: "4.1" },
 	{ label: "Gemini 2.5 Pro", value: "2.5-pro" },
 	{ label: "Llama 4", value: "llama-4" },

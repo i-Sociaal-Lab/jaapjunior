@@ -69,12 +69,11 @@ const index = await VectorStoreIndex.fromDocuments(newDocsToAdd, {
 
 export const llms = {
 	"4.1": () => new OpenAI({ model: "gpt-4.1" }),
+	"5": () => new OpenAI({ model: "gpt-5-mini", temperature: 1 }),
 	"2.5-pro": () => new Gemini({ model: GEMINI_MODEL.GEMINI_2_5_PRO_PREVIEW }),
 	"llama-4": () =>
 		new Groq({ model: "meta-llama/llama-4-maverick-17b-128e-instruct" }) as LLM,
 	"mistral-medium": () => new MistralAI({ model: "mistral-medium" }) as LLM,
-	// "deepseek-r1": () =>
-	// 	new Groq({ model: "deepseek-r1-distill-llama-70b" }) as LLM,
 } satisfies Record<string, () => LLM>;
 
 export const prompts = {
@@ -87,7 +86,7 @@ export async function query(
 	q: string,
 	chatHistory: ChatMessage[],
 	db: IDB,
-	model: keyof typeof llms = "4.1",
+	model: keyof typeof llms = "5",
 	systemPromptKey: keyof typeof prompts = "may13",
 ) {
 	console.log("Creating chat engine...");
