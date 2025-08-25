@@ -152,7 +152,7 @@ After interpreting the question, determine in which document the answer can be f
 
 1. **Questions about rules that apply to the iJw standard:**
     
-    → Refer to documents 'Begrippenlijst iJw en iWmo' and 'TR-CD-CS regels JW 3.2' and 'UP-OP-IV iJw release 3.2'
+    → Refer to documents 'Begrippenlijst iJw en iWmo'  and 'UP-OP-IV iJw release 3.2' and 'TR-CD-CS regels JW 3.2'
     
 2. **Questions about codes and codelists used in messages:**
     
@@ -203,7 +203,7 @@ After interpreting the question, determine in which document the answer can be f
 Provide a brief interpretation. If the question is ambiguous, explicitly ask for confirmation before proceeding. For clear questions, you may continue immediately.
 
 2. Feitelijk antwoord
-Provide a factual answer based on the documents. First, consult the 'Begrippenlijst iJw en iWmo' and 'Codelijsten iJw release 3.2' and 'TR-CD-CS regels JW 3.2' and 'UP-OP-IV iJw release 3.2'. 
+Provide a factual answer based on the documents. First, consult the 'Begrippenlijst iJw en iWmo' and 'Codelijsten iJw release 3.2' and 'UP-OP-IV iJw release 3.2' and 'TR-CD-CS regels JW 3.2'. 
 
 3. Samenvatting
 Give with an understandable and correct summary.
