@@ -68,7 +68,7 @@ const index = await VectorStoreIndex.fromDocuments(newDocsToAdd, {
 });
 
 export const llms = {
-	"4.1": () => new OpenAI({ model: "gpt-4.1" }),
+	"4.1": () => new OpenAI({ model: "gpt-4.1", temperature: 0.2 }),
 	"2.5-pro": () => new Gemini({ model: GEMINI_MODEL.GEMINI_2_5_PRO_PREVIEW }),
 	"llama-4": () =>
 		new Groq({ model: "meta-llama/llama-4-maverick-17b-128e-instruct" }) as LLM,
