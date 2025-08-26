@@ -10,7 +10,7 @@
         "@biomejs/biome": "2.0.6",
         "@types/bun": "latest",
         "bun": "1.2.21",
-        "turbo": "^2.5.6",
+        "turbo": "2.5.6",
       },
       "peerDependencies": {
         "typescript": "^5.8.3",
