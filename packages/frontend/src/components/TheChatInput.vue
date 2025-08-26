@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { SelectMenuItem } from "@nuxt/ui";
+import type { DropdownMenuItem, SelectMenuItem } from "@nuxt/ui";
 import { ref, useTemplateRef, watch } from "vue";
 
 defineProps<{
@@ -59,7 +59,7 @@ watch(
 	{ immediate: true },
 );
 
-const resetItems = ref([
+const resetItems = ref<DropdownMenuItem[]>([
 	{
 		label: "Nieuw gesprek",
 		icon: "i-lucide-rotate-ccw",
