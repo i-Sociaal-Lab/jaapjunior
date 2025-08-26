@@ -891,7 +891,7 @@ Welke productcodes gebruikt mogen worden in het berichtenverkeer is afhankelijk 
 
 *In een Declaratiebericht (323) wordt altijd een productcategorie en productcode gevuld.*
 
-- Aspecifieke toewijzing. Indien in ToegewezenProduct alleen een productcategorie is gevuld, wordt deze productcategorie overgenomen en wordt een bij de toegewezen productcategorie behorende productcode (volgens de productcodelijst die gebruikt moet worden) gevuld. Dit betekent dat op 1 to wijzingsnummer, toegewezen categorie meerdere prestaties voor dezelfde periode kunnen volgen indien meerdere producten van dezelfde productcategorie zijn geleverd.
+- Aspecifieke toewijzing. Indien in ToegewezenProduct alleen een productcategorie is gevuld, wordt deze productcategorie overgenomen en wordt een bij de toegewezen productcategorie behorende productcode (volgens de productcodelijst die gebruikt moet worden) gevuld. Dit betekent dat op 1 toewijzingsnummer, toegewezen categorie meerdere prestaties voor dezelfde periode kunnen volgen indien meerdere producten van dezelfde productcategorie zijn geleverd.
 - Generieke toewijzing met maximaal budget. Indien in ToegewezenProduct de productcategorie en productcode niet gevuld zijn dan wordt de productcategorie en productcode gevuld behorend bij de levering (gebaseerd op de productcodelijst die gebruikt moet worden). Dit betekent dat op 1 toewijzingsnummer meerdere prestatieregels voor dezelfde periode kunnen volgen indien meerdere producten uit dezelfde of verschillende productcategorieën zijn geleverd.
 
 **IV076**
@@ -981,13 +981,13 @@ Over september wordt er geen declaratie meer ingediend. De laatste week, die ged
 De frequentie per week is niet 1-op-1 passend binnen de declaratieperiode maand. Hierdoor zijn bij de omrekening naar een maximaal te declareren volume binnen de productperiode aanvullende afspraken noodzakelijk, zodat het volume in de prestatie gecontroleerd kan worden. Afhankelijk van de uitvoeringsvarianten zijn hiervoor verschillende rekenmethoden opgesteld. (voor het vullen van het volume in de prestatie bij toewijzingen met frequentie week, zie IV076)
 
 Stappen
-Stap 1: Bepaald de uitvoeringsvariant van de toewijzing, inspanningsgericht of outputgericht.
+Stap 1: Bepaal de uitvoeringsvariant van de toewijzing, inspanningsgericht of outputgericht.
 Stap 2: bereken eerst het max. te declareren volume binnen productperiode. 
 Stap 3: bereken of hetgeen geleverd is binnen dit max. te declareren volume binnen productperiode past.
 Stap 4: bereken of alles wat gedeclareerd is ook is toegestaan binnen de toewijzing.
 
 Rekenmethode inspanningsgerichte bij toewijzing met frequentie per week.
-Het maximale te declareren volume wordt bepaald op basis van het aantal (eventueel gebroken) kalenderweken dat binnen de productperiode ligt, binnen de toewijzing. Dit aantal wordt vermenigvuldigd met het volume uit de toewijzing. Voor het bepalen van het aantal kalenderweken, worden de weeknummers geteld van de de productperiode.
+Het maximale te declareren volume wordt bepaald op basis van het aantal (eventueel gebroken) kalenderweken dat binnen de productperiode ligt, binnen de toewijzing. Dit aantal wordt vermenigvuldigd met het volume uit de toewijzing. Voor het bepalen van het aantal kalenderweken, worden de weeknummers geteld van de productperiode.
 Dit resulteert bij een productperiode van een volledige maand in 4, 5 of 6 maal het weekvolume.
 
 Om te voorkomen dat deze rekenmethode resulteert in meer ruimte dan totaal toegewezen is, moet het totaal volume over alle ingediende prestatieregels ook gecontroleerd worden tegen het maximale volume over de toewijzingsperiode.
@@ -1395,7 +1395,7 @@ Actuele toewijzing heeft budget of frequentie 'totaal binnen geldigheidsduur toe
 Wanneer een actuele toewijzing moet wijzigen van het type budget of frequentie 'totaal binnen geldigheidsduur toewijzing', dan betreft dit altijd een wijziging vanaf de originele begindatum.
 Het budget of de totale omvang kan gewijzigd zijn, en de einddatum kan zijn aangepast, maar Toewijzingnummer, Product (of geen Product bij generieke toewijzing) en Begindatum blijven gelijk.
 
-Actuele toewijzing heeft frequentie anders dan 'totaal binnen geldigheidsduut toewijzing'.
+Actuele toewijzing heeft frequentie anders dan 'totaal binnen geldigheidsduur toewijzing'.
 
 Wanneer een wijziging is gewenst voor dit type toewijzing, dan is het afhankelijk van de wijziging of er een nieuwe toewijzing nodig is, of dat de bestaande toewijzing kan worden gewijzigd.
 Bestaande regels OP33x1, OP257, OP380 geven aan, dat bij het wijzigen van alléén de einddatum de bestaande toewijzing kan of moet worden aangepast. In de andere gevallen, dus als de omvang wijzigt, dan moet de actuele toewijzing beëindigd worden en aansluitend een nieuwe toewijzing met de nieuwe omvang toegewezen worden.
