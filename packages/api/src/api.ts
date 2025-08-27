@@ -35,9 +35,7 @@ type Variables = JwtVariables;
 
 const availableModels = [
 	{ label: "GPT-4.1", value: "4.1" },
-	{ label: "Gemini 2.5 Pro", value: "2.5-pro" },
-	{ label: "Llama 4", value: "llama-4" },
-	{ label: "Mistral Medium", value: "mistral-medium" },
+	{ label: "Qwen 3", value: "qwen3" },
 ] as const satisfies ReadonlyArray<{
 	label: string;
 	value: keyof typeof llms;
@@ -215,8 +213,6 @@ export const api = new Hono<{ Variables: Variables }>()
 					inputText,
 					conversation.messages as ChatMessage[],
 					db,
-					selectedModel,
-					"may13",
 				);
 
 				conversation.messages.push(response.message);

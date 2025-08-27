@@ -1,4 +1,3 @@
-import "dotenv/config";
 import { ChromaVectorStore } from "@llamaindex/chroma";
 import { OpenAIEmbedding } from "@llamaindex/openai";
 import { SimpleDirectoryReader } from "@llamaindex/readers/directory";

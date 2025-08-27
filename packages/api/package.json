@@ -24,7 +24,6 @@
 		"@valibot/to-json-schema": "1.0.0",
 		"better-sqlite3": "12.2.0",
 		"cohere-ai": "7.17.1",
-		"dotenv": "17.2.1",
 		"hono": "4.7.7",
 		"hono-openapi": "0.4.6",
 		"jose": "6.0.10",

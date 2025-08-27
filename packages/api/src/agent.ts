@@ -1,26 +1,27 @@
-import "dotenv/config";
 import { ChromaVectorStore } from "@llamaindex/chroma";
-import { GEMINI_MODEL, Gemini } from "@llamaindex/google";
-import { Groq } from "@llamaindex/groq";
-import { MistralAI } from "@llamaindex/mistral";
 import { OpenAI, OpenAIEmbedding } from "@llamaindex/openai";
 import { SimpleDirectoryReader } from "@llamaindex/readers/directory";
 import {
 	type ChatMessage,
+	ChatMessageAdapter,
 	ContextChatEngine,
 	DocStoreStrategy,
+	JinaAIReranker,
 	type LLM,
+	Memory,
 	Settings,
 	storageContextFromDefaults,
 	VectorStoreIndex,
 } from "llamaindex";
 import type { IDB } from "./api.js";
 import { getEnvOrThrow } from "./get-env.js";
-import { prompt13May, promptRobin } from "./prompt.js";
+import { Openrouter } from "./openrouter.js";
+import { prompt13May } from "./prompt.js";
 
 Settings.embedModel = new OpenAIEmbedding({
 	model: "text-embedding-ada-002",
 });
+Settings.chunkOverlap = 100;
 
 const chromaUri = getEnvOrThrow("CHROMA_URI");
 const vectorStore = new ChromaVectorStore({
@@ -52,9 +53,22 @@ for (const doc of docsToDelete) {
 
 	const { ids } = await col.get({ where: { doc_id: doc } });
 	if (ids.length) {
-		try {
-			await col.delete({ ids });
-		} catch {}
+		const batches = ids.reduce((acc, id, i) => {
+			if (i % 100 === 0) {
+				acc.push([id]);
+			} else {
+				acc[acc.length - 1].push(id);
+			}
+			return acc;
+		}, [] as string[][]);
+
+		for (const batch of batches) {
+			try {
+				await col.delete({ ids: batch });
+			} catch (err) {
+				console.error(err);
+			}
+		}
 	}
 }
 
@@ -69,17 +83,22 @@ const index = await VectorStoreIndex.fromDocuments(newDocsToAdd, {
 
 export const llms = {
 	"4.1": () => new OpenAI({ model: "gpt-4.1", temperature: 0.2 }),
-	"2.5-pro": () => new Gemini({ model: GEMINI_MODEL.GEMINI_2_5_PRO_PREVIEW }),
-	"llama-4": () =>
-		new Groq({ model: "meta-llama/llama-4-maverick-17b-128e-instruct" }) as LLM,
-	"mistral-medium": () => new MistralAI({ model: "mistral-medium" }) as LLM,
-	// "deepseek-r1": () =>
-	// 	new Groq({ model: "deepseek-r1-distill-llama-70b" }) as LLM,
+	qwen3: () =>
+		new Openrouter({
+			baseURL: "https://openrouter.ai/api/v1",
+			apiKey: process.env.OPENROUTER_API_KEY,
+			model: "qwen/qwen3-235b-a22b-2507",
+			temperature: 0.2,
+			maxTokens: 100000,
+			additionalChatOptions: {
+				provider: {
+					sort: "throughput",
+				},
+			},
+		}),
 } satisfies Record<string, () => LLM>;
 
 export const prompts = {
-	// initial: initialPrompt,
-	robin: promptRobin,
 	may13: prompt13May,
 };
 
@@ -92,12 +111,21 @@ export async function query(
 ) {
 	console.log("Creating chat engine...");
 	const retriever = index.asRetriever({
-		similarityTopK: 10,
+		similarityTopK: 100,
 	});
+
+	const llm = llms[model]();
+
 	const chatEngine = new ContextChatEngine({
 		retriever,
+		nodePostprocessors: [
+			new JinaAIReranker({
+				model: "jina-reranker-v2-base-multilingual",
+				topN: 10,
+			}),
+		],
 		systemPrompt: prompts[systemPromptKey],
-		chatModel: llms[model](),
+		chatModel: llm,
 	});
 
 	const startTime = Date.now();
