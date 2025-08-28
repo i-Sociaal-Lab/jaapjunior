@@ -5,6 +5,7 @@ import { nextTick, ref, useTemplateRef, watch } from "vue";
 defineProps<{
 	placeholder: string;
 	sendButton: string;
+	feedbackButton: string;
 	loading: boolean;
 	disabled: boolean;
 	autofocus?: boolean;
@@ -53,12 +54,24 @@ watch(
 	{ immediate: true },
 );
 
-defineEmits<{
+const emit = defineEmits<{
 	submit: [];
+	feedback: [];
 }>();
 
 function focus() {
 	inputEl.value?.focus();
+}
+
+function handleKeydown(event: KeyboardEvent) {
+	if (event.key === "Enter") {
+		if (event.shiftKey) {
+			return;
+		} else {
+			event.preventDefault();
+			emit("submit");
+		}
+	}
 }
 
 const canUseSelector = ref(false);
@@ -90,8 +103,7 @@ const resetItems = ref<DropdownMenuItem[]>([
 			v-model="input"
 			ref="input-el"
 			class="message-input"
-			@keydown.ctrl.enter="$emit('submit')"
-			@keydown.meta.enter="$emit('submit')"
+			@keydown="handleKeydown"
 			@input="autoResize"
 			:autofocus
 			:placeholder
@@ -133,7 +145,16 @@ const resetItems = ref<DropdownMenuItem[]>([
 					:ui="{ content: 'w-48' }"
 					:content="{ align: 'end' }"
 				/>
-				<UButton @click="$emit('submit')" class="rounded-full" :disabled>
+				<UButton
+					@click="emit('feedback')"
+					class="rounded-full"
+					variant="outline"
+					icon="i-lucide-message-square"
+					size="sm"
+				>
+					{{ feedbackButton }}
+				</UButton>
+				<UButton @click="emit('submit')" class="rounded-full" :disabled>
 					{{ sendButton }}
 				</UButton>
 			</div>

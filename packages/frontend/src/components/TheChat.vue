@@ -3,7 +3,6 @@ import type { ChatMessage } from "llamaindex";
 import { computed, onMounted, onUnmounted, ref, watch } from "vue";
 import { useRoute, useRouter } from "vue-router";
 import FeedbackDialog from "@/components/FeedbackDialog.vue";
-import { Button } from "@/components/ui/button";
 import { useApi } from "@/composables/useApi";
 
 const route = useRoute();
@@ -20,6 +19,7 @@ const translations = {
 		languageToggle: "Liever in het nederlands",
 		loading: "Loading...",
 		error: "An error occurred. Please try again.",
+		feedbackButton: "Give feedback",
 	},
 	nl: {
 		emptyState: "Stel hier een vraag over het berichtenverkeer...",
@@ -29,6 +29,7 @@ const translations = {
 		languageToggle: "Switch to English",
 		loading: "Bezig met laden",
 		error: "Er is een fout opgetreden. Probeer het opnieuw.",
+		feedbackButton: "Feedback geven",
 	},
 };
 
@@ -294,6 +295,7 @@ async function pickMessage(message: ChatMessage, messagePair: ChatMessage[]) {
 			v-model:mode="selectedMode"
 			v-model:selected-model="selectedModel"
 			@submit="sendMessage"
+			@feedback="showFeedbackDialog = true"
 			autofocus
 			:disabled="isSendDisabled"
 			:loading="isReceivingMessage"
@@ -301,17 +303,9 @@ async function pickMessage(message: ChatMessage, messagePair: ChatMessage[]) {
 			:sendButton="
 				hasToPickMessage ? config.sendButtonHasToPick : config.sendButton
 			"
+			:feedbackButton="config.feedbackButton"
 			class="bottom-0 fixed self-center"
 		/>
-
-		<Button
-			variant="outline"
-			size="sm"
-			class="fixed bottom-4 right-4 z-10"
-			@click="showFeedbackDialog = true"
-		>
-			Feedback geven
-		</Button>
 
 		<FeedbackDialog
 			:open="showFeedbackDialog"
