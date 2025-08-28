@@ -20,7 +20,7 @@ function autoResize() {
 		inputEl.value.style.height = "auto";
 		// Set height to scrollHeight, but cap at max-height
 		const newHeight = Math.min(inputEl.value.scrollHeight, 200);
-		inputEl.value.style.height = newHeight + "px";
+		inputEl.value.style.height = `${newHeight}px`;
 	}
 }
 
@@ -29,6 +29,7 @@ watch(input, autoResize, { immediate: true });
 
 // Also resize on mount in case there's initial content
 import { nextTick } from "vue";
+
 nextTick(() => {
 	autoResize();
 });
