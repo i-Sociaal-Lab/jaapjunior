@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { DropdownMenuItem, SelectMenuItem } from "@nuxt/ui";
-import { ref, useTemplateRef, watch } from "vue";
+import { nextTick, ref, useTemplateRef, watch } from "vue";
 
 defineProps<{
 	placeholder: string;
@@ -13,22 +13,15 @@ defineProps<{
 const input = defineModel<string | undefined>();
 const inputEl = useTemplateRef("input-el");
 
-// Auto-resize textarea
 function autoResize() {
 	if (inputEl.value) {
-		// Reset height to auto to get the correct scrollHeight
 		inputEl.value.style.height = "auto";
-		// Set height to scrollHeight, but cap at max-height
 		const newHeight = Math.min(inputEl.value.scrollHeight, 200);
 		inputEl.value.style.height = `${newHeight}px`;
 	}
 }
 
-// Watch for input changes to resize
 watch(input, autoResize, { immediate: true });
-
-// Also resize on mount in case there's initial content
-import { nextTick } from "vue";
 
 nextTick(() => {
 	autoResize();
