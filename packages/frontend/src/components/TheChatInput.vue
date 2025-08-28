@@ -45,7 +45,7 @@ watch(
 	mode,
 	(newMode) => {
 		if (newMode === "pick") {
-			selectedModel.value = models.value[0].id;
+			selectedModel.value = models.value[0]?.id;
 		} else {
 			selectedModel.value = undefined;
 		}
