@@ -3,12 +3,10 @@ import { OpenAI, OpenAIEmbedding } from "@llamaindex/openai";
 import { SimpleDirectoryReader } from "@llamaindex/readers/directory";
 import {
 	type ChatMessage,
-	ChatMessageAdapter,
 	ContextChatEngine,
 	DocStoreStrategy,
 	JinaAIReranker,
 	type LLM,
-	Memory,
 	Settings,
 	storageContextFromDefaults,
 	VectorStoreIndex,

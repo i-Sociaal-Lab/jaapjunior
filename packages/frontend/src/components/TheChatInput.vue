@@ -100,11 +100,7 @@ const resetItems = ref<DropdownMenuItem[]>([
 						content: 'w-48',
 					}"
 				>
-					<UButton
-						icon="i-lucide-menu"
-						color="neutral"
-						variant="outline"
-					/>
+					<UButton icon="i-lucide-menu" color="neutral" variant="outline" />
 				</UDropdownMenu>
 			</div>
 

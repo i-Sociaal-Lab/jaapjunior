@@ -23,7 +23,6 @@ const password = ref<string>("");
 			class="sm:max-w-[425px]"
 			:closeable="false"
 			:disableOutsidePointerEvents="true"
-			:trapFocus="true"
 			@pointerDownOutside="(e) => e.preventDefault()"
 			@escapeKeyDown="(e) => e.preventDefault()"
 		>

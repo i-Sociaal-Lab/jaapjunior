@@ -313,13 +313,15 @@ async function pickMessage(message: ChatMessage, messagePair: ChatMessage[]) {
 }
 
 .markdown-content :deep(p) {
-	margin: 0.5em 0;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
 }
 
 .markdown-content :deep(ul),
 .markdown-content :deep(ol) {
 	padding-left: 1.5em;
-	margin: 0.5em 0;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
 }
 
 .markdown-content :deep(h1),
@@ -328,7 +330,8 @@ async function pickMessage(message: ChatMessage, messagePair: ChatMessage[]) {
 .markdown-content :deep(h4),
 .markdown-content :deep(h5),
 .markdown-content :deep(h6) {
-	margin: 0.5em 0;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
 	font-weight: bold;
 }
 
@@ -344,19 +347,45 @@ async function pickMessage(message: ChatMessage, messagePair: ChatMessage[]) {
 	padding: 0.5em;
 	border-radius: 5px;
 	overflow-x: auto;
-	margin: 0.5em 0;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
 }
 
 .markdown-content :deep(blockquote) {
 	border-left: 4px solid #ddd;
 	padding-left: 1em;
-	margin: 0.5em 0;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
 	color: #555;
 }
 
 .markdown-content :deep(a) {
 	color: #007bff;
 	text-decoration: underline;
+}
+
+.markdown-content :deep(table) {
+	border-collapse: collapse;
+	width: max-content;
+}
+
+.markdown-content :deep(.table-wrapper) {
+	overflow-x: auto;
+}
+
+.markdown-content :deep(th),
+.markdown-content :deep(td) {
+	padding: 8px;
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+}
+
+.markdown-content :deep(th) {
+	background-color: #f2f2f2;
+}
+
+.mardown-content :deep(div) {
+	overflow-x: scroll;
 }
 
 .chat-container {
@@ -408,9 +437,10 @@ async function pickMessage(message: ChatMessage, messagePair: ChatMessage[]) {
 
 .response-message {
 	align-self: flex-start;
-	background-color: var(--secondary);
+	background-color: none;
 	color: var(--secondary-foreground);
 	border-bottom-left-radius: 4px;
+	width: 100%;
 }
 
 .loading-message {
