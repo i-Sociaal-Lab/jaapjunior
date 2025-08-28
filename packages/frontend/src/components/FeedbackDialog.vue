@@ -70,7 +70,7 @@ const handleSubmit = async () => {
 			<DialogHeader>
 				<DialogTitle>Feedback versturen</DialogTitle>
 				<DialogDescription>
-					Deel uw feedback over het gesprek. Uw input helpt ons de dienst te verbeteren.
+					Deel uw feedback over het gesprek en/of Jaapjunior.
 				</DialogDescription>
 				<Button
 					variant="ghost"
