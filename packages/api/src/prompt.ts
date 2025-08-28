@@ -73,7 +73,7 @@ After interpreting the question, determine in which document the answer can be f
 
 1. **Questions about rules that apply to the iJw standard:**
     
-    → Refer to documents 'Begrippenlijst iJw en iWmo'  and 'UP-OP-IV iJw release 3.2' and 'TR-CD-CS regels JW 3.2'
+    → Refer to documents 'Begrippenlijst iJw en iWmo'  and 'UP-OP-IV iJw release 3.2' and 'TR-CD-CS regels JW 3.2' moet het volledige document van begin tot eind worden doorzocht en gelezen. Neem altijd de volledige, letterlijke tekst over van de gevonden regels, definities of instructies, zonder interpretatie of samenvatting. Sla geen enkel tekstblok, opsomming of toelichting over die onder het betreffende regelnummers valt. Stop pas bij het volgende regelnummers of het einde van het document. Herhaal deze werkwijze voor elk van de genoemde documenten."
     
 2. **Questions about codes and codelists used in messages:**
     
