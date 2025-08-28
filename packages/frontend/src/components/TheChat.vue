@@ -2,6 +2,8 @@
 import type { ChatMessage } from "llamaindex";
 import { computed, onMounted, onUnmounted, ref, watch } from "vue";
 import { useRoute, useRouter } from "vue-router";
+import FeedbackDialog from "@/components/FeedbackDialog.vue";
+import { Button } from "@/components/ui/button";
 import { useApi } from "@/composables/useApi";
 
 const route = useRoute();
@@ -53,6 +55,7 @@ const selectedMode = ref<Modes>("rate");
 const selectedModel = ref<Exclude<AllowedModels, "rate"> | undefined>();
 const isReceivingMessage = ref(false);
 const error = ref<string | null>(null);
+const showFeedbackDialog = ref(false);
 
 const hasToPickMessage = computed(() => {
 	const lastMessage = messages.value[messages.value.length - 1];
@@ -303,6 +306,21 @@ async function pickMessage(message: ChatMessage, messagePair: ChatMessage[]) {
 			"
 			class="bottom-0 fixed self-center"
 		/>
+
+		<Button
+			variant="outline"
+			size="sm"
+			class="fixed bottom-4 right-4 z-10"
+			@click="showFeedbackDialog = true"
+		>
+			Feedback geven
+		</Button>
+
+		<FeedbackDialog
+			:open="showFeedbackDialog"
+			:messages="messages"
+			@close="showFeedbackDialog = false"
+		/>
 	</div>
 </template>
 
@@ -377,11 +395,12 @@ async function pickMessage(message: ChatMessage, messagePair: ChatMessage[]) {
 .markdown-content :deep(td) {
 	padding: 8px;
 	text-align: left;
-	border-bottom: 1px solid #ddd;
+	border-bottom: 1px solid var(--border);
 }
 
 .markdown-content :deep(th) {
-	background-color: #f2f2f2;
+	background-color: var(--card);
+	color: var(--card-foreground);
 }
 
 .mardown-content :deep(div) {
