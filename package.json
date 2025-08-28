@@ -17,7 +17,7 @@
 		"nanoid": "^5.1.5"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "2.0.6",
+		"@biomejs/biome": "2.2.2",
 		"@types/bun": "latest",
 		"bun": "1.2.21",
 		"turbo": "2.5.6"

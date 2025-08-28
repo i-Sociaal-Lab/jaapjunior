@@ -141,7 +141,6 @@ async function loadConversation(id: string) {
 
 		const data = await response.json();
 
-		// @ts-expect-error - should line up --- but doesn't
 		messages.value = data.messages;
 	} catch (e) {
 		error.value = config.value.error;
@@ -199,11 +198,9 @@ async function sendMessage() {
 
 		const responses = await response.json();
 
-		if (responses.length === 1) {
-			// @ts-expect-error - should line up --- but doesn't
+		if (responses.length === 1 && responses[0]) {
 			messages.value.push(responses[0]);
 		} else {
-			// @ts-expect-error - should line up --- but doesn't
 			messages.value.push(responses);
 		}
 	} catch (e) {
@@ -216,7 +213,7 @@ async function sendMessage() {
 }
 
 async function pickMessage(message: ChatMessage, messagePair: ChatMessage[]) {
-	const indexToChange = messages.value.findIndex((m) => m === messagePair);
+	const indexToChange = messages.value.indexOf(messagePair);
 	messages.value[indexToChange] = message;
 
 	if (!conversationId.value) {
