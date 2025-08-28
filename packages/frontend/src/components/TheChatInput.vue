@@ -13,6 +13,26 @@ defineProps<{
 const input = defineModel<string | undefined>();
 const inputEl = useTemplateRef("input-el");
 
+// Auto-resize textarea
+function autoResize() {
+	if (inputEl.value) {
+		// Reset height to auto to get the correct scrollHeight
+		inputEl.value.style.height = "auto";
+		// Set height to scrollHeight, but cap at max-height
+		const newHeight = Math.min(inputEl.value.scrollHeight, 200);
+		inputEl.value.style.height = newHeight + "px";
+	}
+}
+
+// Watch for input changes to resize
+watch(input, autoResize, { immediate: true });
+
+// Also resize on mount in case there's initial content
+import { nextTick } from "vue";
+nextTick(() => {
+	autoResize();
+});
+
 const models = ref([
 	{ label: "GPT 4.1", id: "4.1" },
 	{ label: "Gemini 2.5 pro", id: "2.5-pro" },
@@ -72,15 +92,18 @@ const resetItems = ref<DropdownMenuItem[]>([
 
 <template>
 	<div class="input-container gap-2" @click="focus">
-		<input
+		<textarea
 			v-model="input"
 			ref="input-el"
 			class="message-input"
-			@keyup.enter="$emit('submit')"
+			@keydown.ctrl.enter="$emit('submit')"
+			@keydown.meta.enter="$emit('submit')"
+			@input="autoResize"
 			:autofocus
 			:placeholder
 			:disabled="loading"
-		/>
+			rows="1"
+		></textarea>
 		<div class="flex gap-2 justify-between">
 			<div>
 				<URadioGroup
@@ -144,10 +167,16 @@ const resetItems = ref<DropdownMenuItem[]>([
 }
 
 .message-input {
-	flex: 1;
+	width: 100%;
 	padding: 10px 14px;
 	border: none;
 	font-size: 14px;
 	outline: none;
+	resize: none;
+	min-height: 20px;
+	max-height: 200px;
+	overflow-y: auto;
+	line-height: 1.4;
+	box-sizing: border-box;
 }
 </style>
