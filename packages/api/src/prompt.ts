@@ -81,7 +81,7 @@ After interpreting the question, determine in which document the answer can be f
     
 3. **Questions about the exact content of messages, the data elements used, and whether these data elements are mandatory:**
     
-    → Refer to document 'Basisschema.xsd' and 'JW305.xsd' and 'TR-CD-CS regels JW 3.2' and 'UP-OP-IV iJw release 3.2'
+    → Refer to document 'Basisschema.xsd' and 'JW305-jw307.xsd' and 'TR-CD-CS regels JW 3.2' and 'UP-OP-IV iJw release 3.2'
     
 4. **Questions about conditions, constraints or restrictions per data-element:
 
@@ -95,6 +95,9 @@ After interpreting the question, determine in which document the answer can be f
 
     → Verwijs naar document 'Toewijzingsvarianten inspanning-output' 
 
+7. **vragen over wetgeving en Jeugdwet
+   
+   → Verwijs naar document 'Jeugdwet' en 'Ministeriële regel 25 juli 2019 verplichting iStandaarden' en 'Regeling Jeugdwet' inclusief bijlagen.
 
 ## Rules
 
