@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { DropdownMenuItem, SelectMenuItem } from "@nuxt/ui";
-import { ref, useTemplateRef, watch } from "vue";
+import { nextTick, ref, useTemplateRef, watch } from "vue";
 
 defineProps<{
 	placeholder: string;
@@ -12,6 +12,20 @@ defineProps<{
 
 const input = defineModel<string | undefined>();
 const inputEl = useTemplateRef("input-el");
+
+function autoResize() {
+	if (inputEl.value) {
+		inputEl.value.style.height = "auto";
+		const newHeight = Math.min(inputEl.value.scrollHeight, 200);
+		inputEl.value.style.height = `${newHeight}px`;
+	}
+}
+
+watch(input, autoResize, { immediate: true });
+
+nextTick(() => {
+	autoResize();
+});
 
 const models = ref([
 	{ label: "GPT 4.1", id: "4.1" },
@@ -72,15 +86,18 @@ const resetItems = ref<DropdownMenuItem[]>([
 
 <template>
 	<div class="input-container gap-2" @click="focus">
-		<input
+		<textarea
 			v-model="input"
 			ref="input-el"
 			class="message-input"
-			@keyup.enter="$emit('submit')"
+			@keydown.ctrl.enter="$emit('submit')"
+			@keydown.meta.enter="$emit('submit')"
+			@input="autoResize"
 			:autofocus
 			:placeholder
 			:disabled="loading"
-		/>
+			rows="1"
+		></textarea>
 		<div class="flex gap-2 justify-between">
 			<div>
 				<URadioGroup
@@ -144,10 +161,16 @@ const resetItems = ref<DropdownMenuItem[]>([
 }
 
 .message-input {
-	flex: 1;
+	width: 100%;
 	padding: 10px 14px;
 	border: none;
 	font-size: 14px;
 	outline: none;
+	resize: none;
+	min-height: 20px;
+	max-height: 200px;
+	overflow-y: auto;
+	line-height: 1.4;
+	box-sizing: border-box;
 }
 </style>
