@@ -53,6 +53,11 @@ const sendMessageSchema = v.object({
 	]),
 });
 
+const feedbackSchema = v.object({
+	messageContent: v.string(),
+	conversationContent: v.array(v.any()),
+});
+
 const conversations = new Map<string, Conversation>();
 
 export interface IStatement {
@@ -80,6 +85,9 @@ db.prepare(
 ).run();
 db.prepare(
 	"CREATE TABLE IF NOT EXISTS model_responses (id INTEGER PRIMARY KEY, model TEXT, response_time REAL, created_at DATETIME DEFAULT CURRENT_TIMESTAMP)",
+).run();
+db.prepare(
+	"CREATE TABLE IF NOT EXISTS feedback (id INTEGER PRIMARY KEY, message_content TEXT, conversation_content TEXT, created_at DATETIME DEFAULT CURRENT_TIMESTAMP)",
 ).run();
 
 export const api = new Hono<{ Variables: Variables }>()
@@ -265,4 +273,17 @@ export const api = new Hono<{ Variables: Variables }>()
 	.get("picks", async (c) => {
 		const rows = db.prepare("SELECT * FROM model_picks").all();
 		return c.json(rows);
+	})
+
+	.post("feedback", validator("json", feedbackSchema), async (c) => {
+		const { messageContent, conversationContent } = c.req.valid("json");
+
+		db.prepare(
+			"INSERT INTO feedback (message_content, conversation_content) VALUES ($1, $2)",
+		).run({
+			$1: messageContent,
+			$2: JSON.stringify(conversationContent),
+		});
+
+		return c.json({ success: true });
 	});
