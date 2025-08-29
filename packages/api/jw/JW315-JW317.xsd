@@ -1,0 +1,388 @@
+## JW315.xsd
+
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ijw="http://www.istandaarden.nl/ijw/3_2/basisschema/schema" xmlns:jw315="http://www.istandaarden.nl/ijw/3_2/jw315/schema" targetNamespace="http://www.istandaarden.nl/ijw/3_2/jw315/schema" elementFormDefault="qualified">
+	<xs:import namespace="http://www.istandaarden.nl/ijw/3_2/basisschema/schema" schemaLocation="basisschema.xsd"></xs:import>
+	<xs:annotation>
+		<xs:appinfo>
+			<ijw:standaard>ijw</ijw:standaard>
+			<ijw:bericht>jw315</ijw:bericht>
+			<ijw:release>3.2</ijw:release>
+			<ijw:BerichtXsdVersie>0.1.0</ijw:BerichtXsdVersie>
+			<ijw:BerichtXsdMinVersie>0.1.0</ijw:BerichtXsdMinVersie>
+			<ijw:BerichtXsdMaxVersie>0.1.0</ijw:BerichtXsdMaxVersie>
+			<ijw:BasisschemaXsdVersie>0.1.0</ijw:BasisschemaXsdVersie>
+			<ijw:BasisschemaXsdMinVersie>0.1.0</ijw:BasisschemaXsdMinVersie>
+			<ijw:BasisschemaXsdMaxVersie>0.1.0</ijw:BasisschemaXsdMaxVersie>
+		</xs:appinfo>
+	</xs:annotation>
+	<xs:element name="Bericht" type="jw315:Root"></xs:element>
+	<xs:complexType name="Root">
+		<xs:annotation>
+			<xs:documentation>Bericht voor het aanvragen van een toewijzing voor Jeugdhulp.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="Header" type="jw315:Header"></xs:element>
+			<xs:element name="Client" type="jw315:Client"></xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="Header">
+		<xs:sequence>
+			<xs:element name="BerichtCode">
+				<xs:annotation>
+					<xs:documentation>Code ter identificatie van een soort bericht.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="ijw:LDT_BerichtCode">
+						<xs:pattern value="446"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="BerichtVersie">
+				<xs:annotation>
+					<xs:documentation>Volgnummer van de formele uitgifte van een major release van een iStandaard.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="ijw:LDT_BerichtVersie">
+						<xs:pattern value="3"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="BerichtSubversie">
+				<xs:annotation>
+					<xs:documentation>Volgnummer van de formele uitgifte van een minor release van een iStandaard.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="ijw:LDT_BerichtSubversie">
+						<xs:pattern value="2"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Afzender" type="ijw:LDT_AgbCode">
+				<xs:annotation>
+					<xs:documentation>Identificerende code van een aanbieder van zorg of ondersteuning.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Ontvanger" type="ijw:LDT_Gemeente">
+				<xs:annotation>
+					<xs:documentation>Identificatie van een gemeente die betrokken is bij de uitvoering van zorg of ondersteuning.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="BerichtIdentificatie" type="ijw:CDT_BerichtIdentificatie">
+				<xs:annotation>
+					<xs:documentation>Naam of nummer en dagtekening ter identificatie van een totale aanlevering.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="XsdVersie" type="ijw:CDT_XsdVersie">
+				<xs:annotation>
+					<xs:documentation>Volgnummer van de formele uitgifte van een versie van de XSD's die zijn ingezet voor het opstellen van het heenbericht.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="Client">
+		<xs:annotation>
+			<xs:documentation>Persoonsgegevens van de client.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="Bsn" type="ijw:LDT_BurgerServicenummer">
+				<xs:annotation>
+					<xs:documentation>Een door de overheid toegekend identificerend nummer in het kader van het vereenvoudigen van het contact tussen overheid en burgers en het verminderen van de administratieve lasten.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Geboortedatum" type="ijw:CDT_Geboortedatum">
+				<xs:annotation>
+					<xs:documentation>Datum waarop een natuurlijk persoon geboren is.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Geslacht" type="ijw:LDT_Geslacht">
+				<xs:annotation>
+					<xs:documentation>De sekse van een persoon, zoals bij geboorte formeel vastgesteld of nadien formeel gewijzigd.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Naam" type="ijw:CDT_VerkorteNaam">
+				<xs:annotation>
+					<xs:documentation>De achternaam van een natuurlijk persoon, aangeduid als Naam en Voorvoegsel.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="GezagsdragerBekend" type="ijw:LDT_JaNee" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Indicatie in een Verzoek om toewijzing waarin de aanbieder kan aangeven dat de gezagsdrager bekend is. </xs:documentation>
+					<xs:documentation>De gemeente hoeft in dat geval in de opvolgende toewijzing de gegevens van de gezagsdrager niet mee te sturen in het bericht.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Commentaar" type="ijw:LDT_Commentaar" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Vrije tekst (bijvoorbeeld toelichting) in een bericht.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="AangevraagdeProducten" type="jw315:AangevraagdeProducten"></xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="AangevraagdeProducten">
+		<xs:sequence>
+			<xs:element name="AangevraagdProduct" type="jw315:AangevraagdProduct"  maxOccurs="unbounded"></xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="AangevraagdProduct">
+		<xs:annotation>
+			<xs:documentation>Gegevens over het product waarvoor een toewijzing wordt aangevraagd.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="ReferentieAanbieder" type="ijw:LDT_Referentie">
+				<xs:annotation>
+					<xs:documentation>Naam of nummer die als referentie kan worden meegegeven.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="BeschikkingNummer" type="ijw:LDT_Nummer" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Identificerend nummer van de opdracht om ondersteuning te leveren zoals vastgesteld door de gemeente. Dit is niet noodzakelijkerwijs een officiele beschikking.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Product" type="ijw:CDT_Product" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Gecodeerde omschrijving van een product, dienst of resultaat ten behoeve van het leveren van ondersteuning aan een client.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="BeschikkingIngangsdatum" type="ijw:LDT_Datum" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Ingangsdatum van een afgegeven beschikking.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ToewijzingIngangsdatum" type="ijw:LDT_Datum">
+				<xs:annotation>
+					<xs:documentation>De aangevraagde Ingangsdatum van het toe te wijzen Product.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ToewijzingEinddatum" type="ijw:LDT_Datum" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>De aangevraagde Einddatum van het toe te wijzen Product.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Omvang" type="ijw:CDT_Omvang" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Aanduiding van de omvang van de te leveren of geleverde ondersteuning, uitgedrukt in Volume, Eenheid en Frequentie.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Budget" type="ijw:LDT_Budget" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Aanduiding van het aangevraagde budget</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Verwijzer" type="ijw:CDT_Verwijzer">
+				<xs:annotation>
+					<xs:documentation>Gegevens over de persoon of instantie die een client heeft doorverwezen naar ondersteuning, aangeduid als Type en Naam of ZorgverlenerCode.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Raamcontract" type="ijw:LDT_JaNee" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Indicator of de aanbieder voor de te leveren ondersteuning beroep doet op een landelijk raamcontract.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Commentaar" type="ijw:LDT_Commentaar" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Vrije tekst (bijvoorbeeld toelichting) in een bericht.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>
+
+## JW317.xsd
+
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ijw="http://www.istandaarden.nl/ijw/3_2/basisschema/schema" xmlns:jw317="http://www.istandaarden.nl/ijw/3_2/jw317/schema" targetNamespace="http://www.istandaarden.nl/ijw/3_2/jw317/schema" elementFormDefault="qualified">
+	<xs:import namespace="http://www.istandaarden.nl/ijw/3_2/basisschema/schema" schemaLocation="basisschema.xsd"></xs:import>
+	<xs:annotation>
+		<xs:appinfo>
+			<ijw:standaard>ijw</ijw:standaard>
+			<ijw:bericht>jw317</ijw:bericht>
+			<ijw:release>3.2</ijw:release>
+			<ijw:BerichtXsdVersie>0.1.0</ijw:BerichtXsdVersie>
+			<ijw:BerichtXsdMinVersie>0.1.0</ijw:BerichtXsdMinVersie>
+			<ijw:BerichtXsdMaxVersie>0.1.0</ijw:BerichtXsdMaxVersie>
+			<ijw:BasisschemaXsdVersie>0.1.0</ijw:BasisschemaXsdVersie>
+			<ijw:BasisschemaXsdMinVersie>0.1.0</ijw:BasisschemaXsdMinVersie>
+			<ijw:BasisschemaXsdMaxVersie>0.1.0</ijw:BasisschemaXsdMaxVersie>
+		</xs:appinfo>
+	</xs:annotation>
+	<xs:element name="Bericht" type="jw317:Root"></xs:element>
+	<xs:complexType name="Root">
+		<xs:annotation>
+			<xs:documentation>Bericht voor Verzoek om wijziging Jeugdhulp.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="Header" type="jw317:Header"></xs:element>
+			<xs:element name="Client" type="jw317:Client"></xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="Header">
+		<xs:sequence>
+			<xs:element name="BerichtCode">
+				<xs:annotation>
+					<xs:documentation>Code ter identificatie van een soort bericht.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="ijw:LDT_BerichtCode">
+						<xs:pattern value="486"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="BerichtVersie">
+				<xs:annotation>
+					<xs:documentation>Volgnummer van de formele uitgifte van een major release van een iStandaard.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="ijw:LDT_BerichtVersie">
+						<xs:pattern value="3"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="BerichtSubversie">
+				<xs:annotation>
+					<xs:documentation>Volgnummer van de formele uitgifte van een minor release van een iStandaard.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="ijw:LDT_BerichtSubversie">
+						<xs:pattern value="2"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Afzender" type="ijw:LDT_AgbCode">
+				<xs:annotation>
+					<xs:documentation>Identificerende code van een aanbieder van zorg of ondersteuning.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Ontvanger" type="ijw:LDT_Gemeente">
+				<xs:annotation>
+					<xs:documentation>Identificatie van een gemeente die betrokken is bij de uitvoering van zorg of ondersteuning.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="BerichtIdentificatie" type="ijw:CDT_BerichtIdentificatie">
+				<xs:annotation>
+					<xs:documentation>Naam of nummer en dagtekening ter identificatie van een totale aanlevering.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="XsdVersie" type="ijw:CDT_XsdVersie">
+				<xs:annotation>
+					<xs:documentation>Volgnummer van de formele uitgifte van een versie van de XSD's die zijn ingezet voor het opstellen van het heenbericht.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="Client">
+		<xs:sequence>
+			<xs:element name="Bsn" type="ijw:LDT_BurgerServicenummer">
+				<xs:annotation>
+					<xs:documentation>Een door de overheid toegekend identificerend nummer in het kader van het vereenvoudigen van het contact tussen overheid en burgers en het verminderen van de administratieve lasten.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Verzoek" type="jw317:Verzoek"></xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="Verzoek">
+		<xs:sequence>
+			<xs:element name="ReferentieAanbieder" type="ijw:LDT_Referentie">
+				<xs:annotation>
+					<xs:documentation>Naam of nummer die als referentie kan worden meegegeven.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="RedenVerzoek" type="ijw:LDT_RedenVerzoek">
+				<xs:annotation>
+					<xs:documentation>Reden waarom een verzoek wordt ingediend.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="OngewijzigdeProducten" type="jw317:OngewijzigdeProducten" minOccurs="0"></xs:element>
+			<xs:element name="TeWijzigenProducten" type="jw317:TeWijzigenProducten" minOccurs="0"></xs:element>
+			<xs:element name="NieuweProducten" type="jw317:NieuweProducten" minOccurs="0"></xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="OngewijzigdeProducten">
+		<xs:sequence>
+			<xs:element name="OngewijzigdProduct" type="jw317:OngewijzigdProduct"  maxOccurs="unbounded"></xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="OngewijzigdProduct">
+		<xs:annotation>
+			<xs:documentation>Gegevens over het product dat ongewijzigd voortgezet gaat worden. </xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="ToewijzingNummer" type="ijw:LDT_Nummer">
+				<xs:annotation>
+					<xs:documentation>Identificerend nummer van de opdracht om een zorg - of ondersteuningsproduct te leveren, zoals vastgesteld door de gemeente.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="TeWijzigenProducten">
+		<xs:sequence>
+			<xs:element name="TeWijzigenProduct" type="jw317:TeWijzigenProduct"  maxOccurs="unbounded"></xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="TeWijzigenProduct">
+		<xs:annotation>
+			<xs:documentation>Gegevens over het product waarvoor een wijziging wordt aangevraagd.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="ToewijzingNummer" type="ijw:LDT_Nummer">
+				<xs:annotation>
+					<xs:documentation>Identificerend nummer van de opdracht om een zorg - of ondersteuningsproduct te leveren, zoals vastgesteld door de gemeente.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="GewensteIngangsdatum" type="ijw:LDT_Datum">
+				<xs:annotation>
+					<xs:documentation>De gewenste ingangsdatum van het te wijzigen product of budget.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Einddatum" type="ijw:LDT_Datum" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>De gewenste Einddatum van het toe te wijzen Product of Budget.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Omvang" type="ijw:CDT_Omvang" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Aanduiding van de omvang van de te leveren of geleverde ondersteuning, uitgedrukt in Volume, Eenheid en Frequentie.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Budget" type="ijw:LDT_Budget" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Aanduiding van het toe te wijzen budget</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="NieuweProducten">
+		<xs:sequence>
+			<xs:element name="NieuwProduct" type="jw317:NieuwProduct"  maxOccurs="unbounded"></xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="NieuwProduct">
+		<xs:annotation>
+			<xs:documentation>Gegevens over het product waarvoor een toewijzing wordt aangevraagd.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="Product" type="ijw:CDT_Product" minOccurs="0">
+			</xs:element>
+			<xs:element name="GewensteIngangsdatum" type="ijw:LDT_Datum">
+				<xs:annotation>
+					<xs:documentation>De gewenste ingangsdatum van het nieuw toe te wijzen product of budget.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Einddatum" type="ijw:LDT_Datum" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>De gewenste Einddatum van het toe te wijzen Product of Budget.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Omvang" type="ijw:CDT_Omvang" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Aanduiding van de omvang van de te leveren of geleverde ondersteuning, uitgedrukt in Volume, Eenheid en Frequentie.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Budget" type="ijw:LDT_Budget" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Aanduiding van het toe te wijzen budget</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>
