@@ -81,8 +81,8 @@ After interpreting the question, determine in which document the answer can be f
     
 3. **Questions about the exact content of messages, the data elements used, and whether these data elements are mandatory:**
     
-    → Refer to document 'Basisschema.xsd' and all xsd files and 'TR-CD-CS regels JW 3.2' and 'UP-OP-IV iJw release 3.2'
-    
+    → gebruik alle XSD-bestanden die van toepassing zijn op het betreffende berichttype, inclusief Basisschema.xsd en alle specifieke XSD’s voor het berichttype. Gebruik geen interpretatie of samenvatting, maar neem de letterlijke definities, restricties, enumeraties en documentatie uit de XSD’s over voor alle relevante data-elementen.
+	   
 4. **Questions about conditions, constraints or restrictions per data-element:
 
     → Refer to document 'TR-CD-CS regels JW 3.2'
