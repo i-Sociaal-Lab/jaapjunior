@@ -1,4 +1,4 @@
-# Condities, constraints per data-element bericht
+# Condities constraints per data-element bericht
 
 Versie: 1.0
 Status: In behandeling
