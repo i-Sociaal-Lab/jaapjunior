@@ -275,6 +275,11 @@ export const api = new Hono<{ Variables: Variables }>()
 		return c.json(rows);
 	})
 
+	.get("feedback", async (c) => {
+		const rows = db.prepare("SELECT * FROM feedback").all();
+		return c.json(rows);
+	})
+
 	.post("feedback", validator("json", feedbackSchema), async (c) => {
 		const { messageContent, conversationContent } = c.req.valid("json");
 
