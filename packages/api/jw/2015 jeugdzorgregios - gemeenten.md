@@ -6,7 +6,7 @@
 |Achterhoek|Doetinchem|
 |Achterhoek|Montferland|
 |Achterhoek|Oost Gelre|
-|Achterhoek|Oude Ijsselstreek|
+|Achterhoek|Oude IJsselstreek|
 |Achterhoek|Winterswijk|
 |Amsterdam-Amstelland|Aalsmeer|
 |Amsterdam-Amstelland|Amstelveen|
@@ -152,7 +152,7 @@
 |Kop van Noord-Holland|Schagen|
 |Kop van Noord-Holland|Texel|
 |Lekstroom|Houten|
-|Lekstroom|Ijsselstein|
+|Lekstroom|IJsselstein|
 |Lekstroom|Lopik|
 |Lekstroom|Nieuwegein|
 |Lekstroom|Vianen|
@@ -171,14 +171,14 @@
 |Midden Holland|Krimpenerwaard (Bergambacht, Nederlek, Ouderkerk, Schoonhoven & Vlist)|
 |Midden Holland|Waddinxveen|
 |Midden Holland|Zuidplas|
-|Midden IJssel -Oost Veluwe|
-|Midden IJssel -Oost Veluwe|Brummen|
-|Midden IJssel -Oost Veluwe|Epe|
-|Midden IJssel -Oost Veluwe|Hattem|
-|Midden IJssel -Oost Veluwe|Heerde|
-|Midden IJssel -Oost Veluwe|Lochem|
-|Midden IJssel -Oost Veluwe|Voorst|
-|Midden IJssel -Oost Veluwe|Zutphen|
+|Midden IJssel-Oost Veluwe|
+|Midden IJssel-Oost Veluwe|Brummen|
+|Midden IJssel-Oost Veluwe|Epe|
+|Midden IJssel-Oost Veluwe|Hattem|
+|Midden IJssel-Oost Veluwe|Heerde|
+|Midden IJssel-Oost Veluwe|Lochem|
+|Midden IJssel-Oost Veluwe|Voorst|
+|Midden IJssel-Oost Veluwe|Zutphen|
 |Midden Kennemerland|Beverwijk|
 |Midden Kennemerland|Heemskerk|
 |Midden Kennemerland|Velsen|
@@ -238,10 +238,10 @@
 |Rijnmond|Albrandswaard|
 |Rijnmond|Barendrecht|
 |Rijnmond|Brielle|
-|Rijnmond|Capelle aan den Ijssel|
+|Rijnmond|Capelle aan den IJssel|
 |Rijnmond|Goeree-Overflakkee|
 |Rijnmond|Hellevoetsluis|
-|Rijnmond|Krimpen aan den Ijssel|
+|Rijnmond|Krimpen aan den IJssel|
 |Rijnmond|Lansingerland|
 |Rijnmond|Maassluis|
 |Rijnmond|Nissewaard (Bernisse & Spijkenisse)|
@@ -395,5 +395,6 @@
 |Zuid-Oost Utrecht|Utrechtse Heuvelrug|
 |Zuid-Oost Utrecht|Wijk bij Duurstede|
 |Zuid-Oost Utrecht|Zeist|
+
 
 
