@@ -146,7 +146,7 @@ Het document dient als **naslagwerk en validatiebron** voor AI-agenten die vrage
 
 *Een afgegeven toewijzing mag gewijzigd worden waarbij de wijziging met een nieuw bericht moet worden doorgegeven.*
 
-- *De volgende wijzigingen in de einddatum zijn toegestaan:*
+*De volgende wijzigingen in de einddatum zijn toegestaan:*
 - *Intrekken: aanpassen van de gewenste einddatum toewijzing zodat de periode korter wordt (alleen toegestaan in overleg met de aanbieder).*
 - *Oprekken: aanpassen van de gewenste einddatum toewijzing zodat de periode langer wordt (alleen toegestaan in overleg met de aanbieder).*
 - *Verwijderen: de einddatum van de toewijzing wordt gewijzigd zodat deze gelijk is aan de ingangsdatum van de toewijzing. Daarbij wordt RedenWijziging gevuld met 13 (Verwijderd). Een verwijdering betekent dat de toewijzing als niet verzonden beschouwd moet worden.*

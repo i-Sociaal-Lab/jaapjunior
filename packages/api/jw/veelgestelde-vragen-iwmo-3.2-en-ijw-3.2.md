@@ -399,17 +399,17 @@ Dit wordt middels regels afgedwongen.
 
 | Berichttype | Berichtnaam | Maximale reactietermijn |
 | --- | --- | --- |
-| 301 | Toewijzingsbericht | Vanuit Verzoek om Toewijzing: De gemeente kan per aangevraagd \nproduct een 301 of een 319 sturen. Reactietermijn 5 werkdagen. \n\nVanuit Verzoek om Wijziging: De gemeente kan alleen voor het hele \nVOW een 301 of een 319 sturen. Reactietermijn 5 werkdagen. \n\n"aanvraag in onderzoek": \nAls een VOT of VOW in onderzoek wordt genomen, dan wordt \nbinnen 8 weken na dagtekening van het verzoek ofwel een \n301 ofwel een 319 met Verzoek afgewezen gestuurd.\n\nWoonplaastbeginsel:\nIndien een gemeente onderzoek moet doen naar het wooplaatsbeginsel\nHeeft de gemeente een reactietermijn van 10 dagen voor een 319 (afkeur)\nof een 301. |
+| 301 | Toewijzingsbericht | Vanuit Verzoek om Toewijzing: De gemeente kan per aangevraagd product een 301 of een 319 sturen. Reactietermijn 5 werkdagen. Vanuit Verzoek om Wijziging: De gemeente kan alleen voor het hele VOW een 301 of een 319 sturen. Reactietermijn 5 werkdagen. "aanvraag in onderzoek": Als een VOT of VOW in onderzoek wordt genomen, dan wordt \nbinnen 8 weken na dagtekening van het verzoek ofwel een 301 ofwel een 319 met Verzoek afgewezen gestuurd. Woonplaastbeginsel:\nIndien een gemeente onderzoek moet doen naar het wooplaatsbeginsel heeft de gemeente een reactietermijn van 14 dagen voor een 319 (afkeur)\of een 301. (zie OP359)|
 | 302 | Toewijzingsbericht retour | 3 werkdagen na ontvangst van het 301-bericht |
-| 305 | Startzorgbericht | De aanbieder verzendt een Startzorgbericht binnen \n5 werkdagen na de daadwerkelijke datum waarop de \nondersteuning gestart is of, indien de ondersteuning \nmet terugwerkende kracht is toegewezen, \nbinnen 5 werkdagen na ontvangst van het \nToewijzingsbericht (301 bericht). |
+| 305 | Startzorgbericht | De aanbieder verzendt een Startzorgbericht binnen werkdagen na de daadwerkelijke datum waarop de ondersteuning gestart is of, indien de ondersteuning met terugwerkende kracht is toegewezen, binnen 5 werkdagen na ontvangst van het Toewijzingsbericht (301 bericht). |
 | 306 | Startzorgbericht retour | 3 werkdagen na ontvangst van het 305-bericht |
-| 307 | Stopzorgbericht | De aanbieder verzendt een Stopzorgbericht binnen 5 werkdagen \nna de daadwerkelijke datum waarop de ondersteuning beëindigd is. |
+| 307 | Stopzorgbericht | De aanbieder verzendt een Stopzorgbericht binnen 5 werkdagen na de daadwerkelijke datum waarop de ondersteuning beëindigd is. |
 | 308 | Stopzorgbericht retour | 3 werkdagen na ontvangst van het 307-bericht |
 | 315 | Verzoek om toewijzing | 5 werkdagen na de beoordeling/intake |
 | 316 | Verzoek om toewijzing retour | 3 werkdagen na ontvangst van het 315-bericht |
-| 317 | Verzoek om Wijziging | De aanbieder kan het verzoek opstellen en insturen zodra \nde wens en gewenste ingangsdatum bekend zijn. |
+| 317 | Verzoek om Wijziging | De aanbieder kan het verzoek opstellen en insturen zodra de wens en gewenste ingangsdatum bekend zijn. |
 | 318 | Verzoek om wijziging retour | 3 werkdagen na ontvangst van het 317-bericht |
-| 319 | Antwoordbericht | De gemeente verzendt een antwoordbericht binnen 5 werkdagen \nna ontvangst van een 315- of 317-bericht als het verzoek wordt \nafgewezen of in onderzoek wordt genomen. Het antwoordbericht\n wordt gebruikt om de aanbieder te informeren dat de aanvraag \n(VOT- of VOW-bericht) is afgewezen of dat de gemeente de \naanvraag in onderzoek heeft genomen. Als in het Antwoordbericht \nVerzoekAntwoord de waarde 2 (Aanvraag in onderzoek) bevat \ndan wordt bij afwijzing uiterlijk binnen 8 weken na dagtekening \nvan het verzoek een Antwoordbericht met in het veld \nVerzoekAntwoord de waarde 1 (Verzoek afgewezen) gestuurd. |
+| 319 | Antwoordbericht | De gemeente verzendt een antwoordbericht binnen 5 werkdagen na ontvangst van een 315- of 317-bericht als het verzoek wordt afgewezen of in onderzoek wordt genomen. Het antwoordbericht wordt gebruikt om de aanbieder te informeren dat de aanvraag (VOT- of VOW-bericht) is afgewezen of dat de gemeente de aanvraag in onderzoek heeft genomen. Als in het Antwoordbericht VerzoekAntwoord de waarde 2 (Aanvraag in onderzoek) bevat dan wordt bij afwijzing uiterlijk binnen 8 weken na dagtekening \nvan het verzoek een Antwoordbericht met in het veld VerzoekAntwoord de waarde 1 (Verzoek afgewezen) gestuurd. |
 | 320 | Antwoordbericht retour | 3 werkdagen |
 | 323 | Declaratiebericht | Volgens afspraak tussen gemeente en aanbieder voor geleverde zorg |
 | 325 | Declaratie-antwoord bericht | 10 werkdagen na ontvangst van het 325-bericht, zie ook OP090x4 |
@@ -444,20 +444,5 @@ Via de validatiemodule op istandaarden.nl kunt u de berichten valideren. De beri
 Via de Testvoorziening iStandaarden (TiS) van Zorginstituut Nederland kunnen softwareleveranciers hun producten testen in de rol van elke partij die deelneemt aan het iStandaarden-berichtenverkeer, en zo nodig verbeteren.
 
 Voor meer informatie of het aanvragen van een account kunt u contact opnemen met Zorginstituut Nederland (<info@istandaarden.nl>).
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
