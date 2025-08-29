@@ -94,7 +94,13 @@ export const api = new Hono<{ Variables: Variables }>()
 	.use(
 		"/*",
 		except(
-			["/api/v1/auth", "/api/v1", "/api/v1/picks", "/api/v1/responses"],
+			[
+				"/api/v1/auth",
+				"/api/v1",
+				"/api/v1/picks",
+				"/api/v1/responses",
+				"/api/v1/feedback",
+			],
 			jwt({
 				secret: getEnvOrThrow("JWT_SECRET"),
 			}),
