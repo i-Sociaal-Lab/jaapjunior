@@ -381,6 +381,7 @@ Een Startzorg kan verwijderd worden middels de status aanlevering. Zie hiervoor 
 ## Hoe kan een Stopzorg-bericht verwijderd worden?
 
 Een Stopzorg kan verwijderd worden middels de status aanlevering. Zie hiervoor ook OP033 en IV008 in het informatiemodel.
+Indien een Stopzorg-bericht is afgekeurd door de gemeente, kan een nieuw Stopzorg-bericht worden gestuurd. Het afgekeurde bericht kan als niet verzonden worden beschouwd.  
 
 ## Welke codes Status aanlevering kan ik gebruiken?
 
@@ -444,5 +445,6 @@ Via de validatiemodule op istandaarden.nl kunt u de berichten valideren. De beri
 Via de Testvoorziening iStandaarden (TiS) van Zorginstituut Nederland kunnen softwareleveranciers hun producten testen in de rol van elke partij die deelneemt aan het iStandaarden-berichtenverkeer, en zo nodig verbeteren.
 
 Voor meer informatie of het aanvragen van een account kunt u contact opnemen met Zorginstituut Nederland (<info@istandaarden.nl>).
+
 
 
