@@ -4,6 +4,7 @@ import { computed, onMounted, onUnmounted, ref, watch } from "vue";
 import { useRoute, useRouter } from "vue-router";
 import FeedbackDialog from "@/components/FeedbackDialog.vue";
 import { useApi } from "@/composables/useApi";
+import { marked } from "marked";
 
 const route = useRoute();
 const conversationId = computed(() => route.params.id as string | undefined);
@@ -22,7 +23,15 @@ const translations = {
 		feedbackButton: "Give feedback",
 	},
 	nl: {
-		emptyState: "Stel hier een vraag over het berichtenverkeer...",
+		emptyState: `Welkom! Ik ben __Jaap Junior__, een __AI-assistent__.
+
+Ik help met vragen over __correct gebruik van het iJw-berichtenverkeer__ en de __iStandaard iJw__.
+
+__Let op (testfase)__: mijn antwoorden kunnen onjuist of onvolledig zijn. __Controleer__ ze altijd aan de hand van je beleid/bronpagina’s.
+
+__Geen privacygegevens delen__ (bijv. namen cliënten, BSN, dossierdetails).
+
+__Fout of twijfel?__ Neem contact op met het __Ketenbureau i-Sociaal Domein__.`,
 		inputPlaceholder: "Typ hier je vraag...",
 		sendButton: "Versturen",
 		sendButtonHasToPick: "Kies eerst welk bericht je voorkeur heeft",
@@ -248,7 +257,7 @@ async function pickMessage(message: ChatMessage, messagePair: ChatMessage[]) {
 					class="logo ketenbureau-logo w-48"
 				/>
 
-				{{ config.emptyState }}
+                <span v-html="marked(config.emptyState, { async: false })"></span>
 			</div>
 
 			<template v-for="(messageOrMessagePair, index) in messages" :key="index">

@@ -83,8 +83,6 @@ export const llms = {
 	"4.1": () => new OpenAI({ model: "gpt-4.1", temperature: 0.2 }),
 	qwen3: () =>
 		new Openrouter({
-			baseURL: "https://openrouter.ai/api/v1",
-			apiKey: process.env.OPENROUTER_API_KEY,
 			model: "qwen/qwen3-235b-a22b-2507",
 			temperature: 0.2,
 			maxTokens: 100000,
