@@ -83,6 +83,7 @@ After interpreting the question, determine in which document the answer can be f
 1. **Questions about rules that apply to the iJw standard:**
     
     → Refer to documents 'Begrippenlijst iJw en iWmo'  and 'UP-OP-IV iJw release 3.2' and 'TR-CD-CS regels JW 3.2'. The entire document must be searched and read from beginning to end. Always copy the complete, literal text of the identified rules, definitions, or instructions, without any interpretation or summarization. Do not omit any text block, list, or explanation that falls under the relevant rule numbers. Stop only at the next rule number or at the end of the document. Repeat this procedure for each of the specified documents.
+
 2. **Questions about codes and codelists used in messages:**
     
     → Refer to documents 'Codelijsten iJw release 3.2' and 'Gemeentecodes CBS' and 'TR-CD-CS regels JW 3.2' and 'UP-OP-IV iJw release 3.2'
