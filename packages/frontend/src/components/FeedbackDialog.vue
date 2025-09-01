@@ -22,10 +22,14 @@ const emit = defineEmits<{
 }>();
 
 const feedback = ref<string>("");
+const name = ref<string>("");
 const isSubmitting = ref(false);
 const textareaRef = ref<HTMLTextAreaElement>();
 
 const api = useApi();
+
+// Load name from localStorage
+name.value = localStorage.getItem("feedbackName") || "";
 
 // Focus the textarea when dialog opens
 watch(
@@ -41,12 +45,18 @@ watch(
 const handleSubmit = async () => {
 	if (!feedback.value.trim()) return;
 
+	// Save name to localStorage
+	if (name.value.trim()) {
+		localStorage.setItem("feedbackName", name.value.trim());
+	}
+
 	isSubmitting.value = true;
 	try {
 		await api.feedback.$post({
 			json: {
 				messageContent: feedback.value,
 				conversationContent: props.messages,
+				name: name.value.trim() || undefined,
 			},
 		});
 		feedback.value = "";
@@ -92,6 +102,16 @@ const handleSubmit = async () => {
 			</DialogHeader>
 			<form @submit.prevent="handleSubmit">
 				<div class="grid gap-4 py-4">
+					<div class="grid gap-2">
+						<Label for="name">Naam (optioneel)</Label>
+						<input
+							id="name"
+							v-model="name"
+							type="text"
+							placeholder="Uw naam..."
+							class="file:text-foreground placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 border-input flex w-full min-w-0 rounded-md border bg-transparent px-3 py-2 text-base shadow-xs transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive"
+						/>
+					</div>
 					<div class="grid gap-2">
 						<Label for="feedback">Uw feedback</Label>
 						<textarea

@@ -56,6 +56,7 @@ const sendMessageSchema = v.object({
 const feedbackSchema = v.object({
 	messageContent: v.string(),
 	conversationContent: v.array(v.any()),
+	name: v.optional(v.string()),
 });
 
 const conversations = new Map<string, Conversation>();
@@ -89,6 +90,13 @@ db.prepare(
 db.prepare(
 	"CREATE TABLE IF NOT EXISTS feedback (id INTEGER PRIMARY KEY, message_content TEXT, conversation_content TEXT, created_at DATETIME DEFAULT CURRENT_TIMESTAMP)",
 ).run();
+
+// Add name column if it doesn't exist
+try {
+	db.prepare("ALTER TABLE feedback ADD COLUMN name TEXT").run();
+} catch (error) {
+	// Column already exists, ignore error
+}
 
 export const api = new Hono<{ Variables: Variables }>()
 	.use(
@@ -287,13 +295,14 @@ export const api = new Hono<{ Variables: Variables }>()
 	})
 
 	.post("feedback", validator("json", feedbackSchema), async (c) => {
-		const { messageContent, conversationContent } = c.req.valid("json");
+		const { messageContent, conversationContent, name } = c.req.valid("json");
 
 		db.prepare(
-			"INSERT INTO feedback (message_content, conversation_content) VALUES ($1, $2)",
+			"INSERT INTO feedback (message_content, conversation_content, name) VALUES ($1, $2, $3)",
 		).run({
 			$1: messageContent,
 			$2: JSON.stringify(conversationContent),
+			$3: name || null,
 		});
 
 		return c.json({ success: true });
