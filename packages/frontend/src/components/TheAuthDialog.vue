@@ -11,8 +11,13 @@ import {
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 
+defineProps<{
+	errorMessage?: string;
+}>();
+
 const emit = defineEmits<{
 	login: [password: string];
+	clearError: [];
 }>();
 const password = ref<string>("");
 </script>
@@ -49,19 +54,28 @@ const password = ref<string>("");
 				@submit="
 					(e) => {
 						e.preventDefault();
-						emit('login', password);
+						emit('login', password.trim());
 					}
 				"
 			>
 				<div class="grid gap-4 py-4">
+					<div v-if="errorMessage" class="text-red-500 text-sm text-center">
+						{{ errorMessage }}
+					</div>
 					<div class="grid grid-cols-4 items-center gap-4">
 						<Label for="password" class="text-right"> Wachtwoord </Label>
-						<Input id="password" v-model="password" class="col-span-3" />
+						<Input 
+							id="password" 
+							type="password" 
+							v-model="password" 
+							@input="emit('clearError')"
+							class="col-span-3" 
+						/>
 					</div>
 				</div>
 			</form>
 			<DialogFooter>
-				<Button type="submit" for="login"> Inloggen </Button>
+				<Button type="submit" form="login"> Inloggen </Button>
 			</DialogFooter>
 		</DialogContent>
 	</Dialog>

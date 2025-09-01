@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import type { ChatMessage } from "llamaindex";
+import { marked } from "marked";
 import { computed, onMounted, onUnmounted, ref, watch } from "vue";
 import { useRoute, useRouter } from "vue-router";
 import FeedbackDialog from "@/components/FeedbackDialog.vue";
 import { useApi } from "@/composables/useApi";
-import { marked } from "marked";
 
 const route = useRoute();
 const conversationId = computed(() => route.params.id as string | undefined);

@@ -8,6 +8,7 @@ import { useAuthStore } from "./store/useAuth";
 const api = useApi();
 const authStore = useAuthStore();
 const showLoginModal = ref<boolean | null>(null);
+const loginError = ref<string>("");
 onMounted(async () => {
 	const res = await api.authenticated.$get();
 
@@ -23,8 +24,15 @@ async function login(password: string) {
 
 	if (res.ok) {
 		showLoginModal.value = false;
+		loginError.value = "";
 	} else {
 		showLoginModal.value = true;
+		if (res.status === 401) {
+			loginError.value = "Onjuist wachtwoord. Probeer het opnieuw.";
+		} else {
+			loginError.value =
+				"Er is een fout opgetreden. Probeer het later opnieuw.";
+		}
 	}
 }
 </script>
@@ -33,7 +41,7 @@ async function login(password: string) {
 	<UApp>
 		<template v-if="showLoginModal !== null">
 			<RouterView />
-			<TheAuthDialog v-model:open="showLoginModal" @login="login" />
+			<TheAuthDialog v-model:open="showLoginModal" :error-message="loginError" @login="login" @clear-error="loginError = ''" />
 		</template>
 	</UApp>
 </template>

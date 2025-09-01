@@ -91,12 +91,9 @@ db.prepare(
 	"CREATE TABLE IF NOT EXISTS feedback (id INTEGER PRIMARY KEY, message_content TEXT, conversation_content TEXT, created_at DATETIME DEFAULT CURRENT_TIMESTAMP)",
 ).run();
 
-// Add name column if it doesn't exist
 try {
 	db.prepare("ALTER TABLE feedback ADD COLUMN name TEXT").run();
-} catch (error) {
-	// Column already exists, ignore error
-}
+} catch {}
 
 export const api = new Hono<{ Variables: Variables }>()
 	.use(
