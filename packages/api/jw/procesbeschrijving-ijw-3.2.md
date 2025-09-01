@@ -469,7 +469,7 @@ Toewijzingbericht staat beschreven in Procesbeschrijving Toeleiden/Intrekken Jeu
 Na ontvangst van een Startbericht stuurt de gemeente altijd binnen drie werkdagen een 
 retourbericht om aan te geven dat het bericht ontvangen is. 
  
-Indien het heenbericht niet aan de technische specificaties voldoet, kan het worden afgekeurd 
+Indien het heenbericht niet aan de technische specificaties voldoet, zal het worden afgekeurd 
 in een retourbericht. De verzender van het heenbericht kan de afgekeurde regels opnieuw 
 aanleveren in een nieuw Startbericht.
 
@@ -514,7 +514,7 @@ beëindigd is.
 Na ontvangst van een Stopbericht stuurt de gemeente altijd binnen drie werkdagen een 
 retourbericht om aan te geven dat het bericht ontvangen is.  
  
-Indien het heenbericht niet aan de technische specificaties voldoet, kan het worden afgekeurd 
+Indien het heenbericht niet aan de technische specificaties voldoet, zal het worden afgekeurd 
 in een retourbericht. De verzender van het heenbericht kan de afgekeurde regels opnieuw 
 aanleveren in een nieuw Stopbericht.   
  
