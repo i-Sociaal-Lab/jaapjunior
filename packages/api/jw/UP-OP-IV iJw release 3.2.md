@@ -665,6 +665,9 @@ Van een cliënt of relatie worden de achternaam, voorvoegsel en voornamen en/of 
 
 *Hoe moet worden omgegaan met correcties van de regieberichten?*
 
+Een correctie van een regiebericht, kan alleen indien het te corrigeren regiebericht is goedgekeurd door de gemeente.
+Indien een regiebericht is afgekeurd, moet het als niet verzonden worden beschouwd, en moet een nieuw regiebericht worden gestuurd.
+
 Voor de regieberichten (startbericht en stopbericht) bestaat de mogelijkheid om eerder verstuurde berichtklassen te corrigeren. Hiervoor wordt eerst de betreffende berichtklasse verwijderd en wordt vervolgens (eventueel) een nieuwe berichtklasse verstuurd.
 Om aan te geven dat een berichtklasse dient te worden verwijderd wordt StatusAanlevering van de betreffende berichtklasse gevuld met de waarde 3 (verwijderen aanlevering). De te verwijderen berichtklasse wordt geidentificeerd door de logische sleutel van de klasse.
 
