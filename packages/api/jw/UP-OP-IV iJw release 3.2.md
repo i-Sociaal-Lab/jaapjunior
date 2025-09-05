@@ -377,7 +377,7 @@ Als een antwoordbericht in VerzoekAntwoord de waarde 2 (Aanvraag in onderzoek) b
 
 **OP279**
 
-De aanbieder declareert een product binnen de toegewezen periode.
+De aanbieder declareert een product binnen de geldigheid van de toewijzing.
 
 **OP280**
 
