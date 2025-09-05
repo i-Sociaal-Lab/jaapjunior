@@ -1196,7 +1196,7 @@ Deze regels hebben een eigen retourcode die gevuld wordt in het declaratie-antwo
 Voor declareren zijn de volgende begrippen van belang:
 
 - Declaratieperiode: is een administratieve periode waarover de geleverde hulp in de administratie tot een declaratie wordt verwerkt. Dit is altijd een kalendermaand.
-- Productperiode: is een administratieve periode waarin zorg is geleverd. De productperiode valt altijd binnen de geldigheidsperiode van de toewijzing.
+- Productperiode: is een periode waarbinnen zorg is geleverd. De productperiode valt altijd binnen de geldigheidsperiode van de toewijzing. Een productperiode is niet afhankelijk van de startdatum en of stopdatum van de geleverde zorg.
 In het declaratiebericht wordt het totale geleverde volume van 1 specifiek product binnen 1 productperiode aan 1 cliënt (behorende bij 1 toewijzing) opgenomen in 1 Prestatie. Deze prestaties worden direct in de erop volgende declaratieperiode, of eventueel achteraf in een latere declaratieperiode, gedeclareerd. (zie IV076 voor vullen volume bij frequentie per week)
 
 De ProductPeriode Begindatum wordt gevuld met:
