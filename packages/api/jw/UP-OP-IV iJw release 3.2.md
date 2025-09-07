@@ -1248,11 +1248,8 @@ In onderstaande voorbeelden wordt uitgegaan van de volgende situatie:
 
 De volgende declaratieperiodes zijn ingediend:
 01-01-2021 t/m 31-01-2021
-
 01-02-2021 t/m 28-02-2021
-
 01-03-2021 t/m 31-03-2021
-
 01-05-2021 t/m 31-05-2021 (In april was er blijkbaar niets te declareren)
 
 Achteraf declareren als een declaratieperiode mist
