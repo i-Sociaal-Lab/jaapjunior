@@ -423,7 +423,7 @@ Cliënt: BSN 999996782
 | Ingangsdatum toegewezen product | 17-03-2025 |
 | Begindatum levering | 31-03-2025 |
 | Reden beëindiging | 23 (Levering is in overeenstemming voortijdig beëindigd) |
-| Einddatum levering | 29-06-2025 |
+| Einddatum levering | 27-06-2025 |
 | Status aanlevering stop product | 1 (Eerste aanlevering) |
 
 ### **4 Van levering via Stopzorg naar Corrigeren Stopzorg**
