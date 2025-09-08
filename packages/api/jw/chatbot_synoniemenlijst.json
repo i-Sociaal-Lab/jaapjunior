@@ -1,0 +1,37 @@
+{
+    "Codes uit codelijst": {
+        "Hoofdvraag": "wat zijn de codes uit codelijst wettelijke vertegenwoordiging?",
+        "Alternatieve vragen": [
+            "Welke codes voor wettelijke vertegenwoordiging kan ik gebruiken?",
+            "Welke codes wettelijke vertegenwoordiging zijn er?",
+            "Wat kan ik invullen voor code wettelijke vertegenwoordiging",
+            "Welke codes voor wettelijke vertegenwoordiging zijn geldig?",
+            "Geef de codes voor wettelijke vertegenwoordiging.",
+            "Ik zoek de codes wettelijke vertegenwoordiging.",
+            "Welke codes voor productcategorie kan ik gebruiken?",
+            "Welke codes productcategorie zijn er?",
+            "Wat kan ik invullen voor code productcategorie",
+            "Welke codes voor productcategorie zijn geldig?",
+            "Geef de codes voor productcategorie.",
+            "Ik zoek de codes productcategorie."
+        ]
+		"Hoofdvraag": "wat zijn de codes uit codelijst prodcutcategorie?",
+        "Alternatieve vragen": [
+            "Welke codes voor productcategorie kan ik gebruiken?",
+            "Welke codes productcategorie zijn er?",
+            "Wat kan ik invullen voor code productcategorie",
+            "Welke codes voor productcategorie zijn geldig?",
+            "Geef de codes voor productcategorie.",
+            "Ik zoek de codes productcategorie."
+        ]
+    },
+    "Wat is de productperiode": {
+        "Hoofdvraag": "Geef de ingangsdatum en einddatum van de productperiode?",
+        "Alternatieve vragen": [
+            "Wat is de geldige productperiode.",
+            "Hoe ziet de productperiode er uit?",
+            "Wat is de productperiode?",
+            "Geef de productperiode."
+        ]
+    }
+}
