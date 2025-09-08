@@ -358,7 +358,12 @@ Nee, de regieberichten mogen niet voorwaardelijk worden gesteld voor de goedkeur
 
 Daarnaast is het niet toegestaan om de startdatum in het startbericht en de stopdatum in het stopbericht te controleren tegen de declaratieperiode. Een en ander is nader uitgewerkt in Invulinstructie IV089: Hoe moet ProductPeriode gevuld worden?
 
-# Vragen over Start- Stopberichten
+## Heeft een start (305) of stop (307) bericht invloed op de begin- en/of einddatum van een productperiode?
+
+Nee, regieberichten hebben geen gevolgen voor de productperiode. 
+Voorbeeld: Toewijzing met ingangsdatum 1-1-2025, einddatum 5-09-2025. Er is een stopbericht gestuurd met einddatum 15-08-2025. Indien er zorg is geleverd in augustus 2025, dan geldt voor de productperiode augustus: ingangsdatum: 01-08-2025, einddatum 31-08-2025.
+
+# Vragen over Start- Stopberichten 
 
 ## Mag ik een startbericht sturen, nadat ik een definitieve stop heb gestuurd?
 Ja, dat mag. Na een tijdelijke stop of na een definitieve stop is het toegestaan een startbericht te sturen.
@@ -394,9 +399,9 @@ In de codelijst COD467: Status aanlevering staan 4 codes.
 Voor het veld status aanlevering in het iJw-berichtenverkeer mag u uitsluitend de volgende codes gebruiken:
 1 = Eerste aanlevering
 3 = Verwijderen aanlevering
-Dit wordt middels regels afgedwongen. 
+Dit wordt middels regels afgedwongen. Zie OP033x2 en CS058
 
-# Vragen over reactietijden
+# Vragen over reactietijden van berichten
 
 | Berichttype | Berichtnaam | Maximale reactietermijn |
 | --- | --- | --- |
@@ -445,6 +450,7 @@ Via de validatiemodule op istandaarden.nl kunt u de berichten valideren. De beri
 Via de Testvoorziening iStandaarden (TiS) van Zorginstituut Nederland kunnen softwareleveranciers hun producten testen in de rol van elke partij die deelneemt aan het iStandaarden-berichtenverkeer, en zo nodig verbeteren.
 
 Voor meer informatie of het aanvragen van een account kunt u contact opnemen met Zorginstituut Nederland (<info@istandaarden.nl>).
+
 
 
 
