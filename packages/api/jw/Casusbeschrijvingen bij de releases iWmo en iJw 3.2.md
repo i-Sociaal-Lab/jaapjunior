@@ -164,9 +164,9 @@ Cliënt: BSN 999900006
 | Referentie aanbieder |  |
 | Productcategorie | 45 |
 | Productcode | 45A04 |
-| Toewijzingsdatum toegewezen product | 01-01-2023 |
-| Ingangsdatum toegewezen product | 01-01-2023 |
-| Einddatum toegewezen product | 30-06-2023 |
+| Toewijzingsdatum toegewezen product | 01-01-2025 |
+| Ingangsdatum toegewezen product | 01-01-2025 |
+| Einddatum toegewezen product | 30-06-2025 |
 | Reden wijziging |  |
 | Volume | 3 |
 | Eenheid | 04 (Uur) |
@@ -190,8 +190,8 @@ BSN 999900006
 | --- | --- |
 | Productcategorie | 45 |
 | Productcode | 45A04 |
-| Ingangsdatum toegewezen product | 01-01-2023 |
-| Begindatum levering | 05-01-2023 |
+| Ingangsdatum toegewezen product | 01-01-2025 |
+| Begindatum levering | 05-01-2025 |
 | Status aanlevering start product | 1 (Eerste aanlevering) |
 
 *Stap 3: Wettelijk vertegenwoordiger vraagt verlenging*
@@ -219,9 +219,9 @@ Cliënt: BSN 999900006
 | Referentie aanbieder |  |
 | Productcategorie | 45 |
 | Productcode | 45A04 |
-| Toewijzingsdatum toegewezen product | 10-05-2023 |
-| Ingangsdatum toegewezen product | 01-01-2023 |
-| Einddatum toegewezen product | 31-12-2023 |
+| Toewijzingsdatum toegewezen product | 10-05-2025|
+| Ingangsdatum toegewezen product | 01-01-2025 |
+| Einddatum toegewezen product | 31-12-2025 |
 | Reden wijziging | 04 (herbeoordeling: verlenging toewijzing) |
 | Volume | 3 |
 | Eenheid | 04 (Uur) |
@@ -264,7 +264,7 @@ De stappen in de tabel worden doorlopen.
 
 *Stap 1: De gemeente stuurt een toewijzingsbericht*
 
-De gemeente stuurt op 09-05-2023 een initieel toewijzingsbericht voor dagbesteding regulier inspanningsgericht, 6 dagdelen per week.
+De gemeente stuurt op 09-05-2025 een initieel toewijzingsbericht voor dagbesteding regulier inspanningsgericht, 6 dagdelen per week.
 
 **Toewijzing (301):**
 
@@ -279,8 +279,8 @@ Cliënt: BSN 999996770
 | Productcategorie | 07 |
 | Productcode | 07A12 |
 | Toewijzingsdatum toegewezen product | 09-05-2023 |
-| Ingangsdatum toegewezen product | 15-05-2023 |
-| Einddatum toegewezen product | 31-12-2023 |
+| Ingangsdatum toegewezen product | 12-05-2025 |
+| Einddatum toegewezen product | 31-12-2025 |
 | Reden wijziging |  |
 | Volume | 6 |
 | Eenheid | 16 (Dagdeel (4 uur)) |
@@ -301,8 +301,8 @@ Cliënt: BSN 999996770
 | Toewijzingnummer | 668877 |
 | Productcategorie | 07 |
 | Productcode | 07A12 |
-| Ingangsdatum toegewezen product | 15-05-2023 |
-| Begindatum levering | 17-05-2023 |
+| Ingangsdatum toegewezen product | 12-05-2025 |
+| Begindatum levering | 15-05-2023 |
 | Status aanlevering start product | 1 (Eerste aanlevering) |
 
 *Stap 3:* *De aanbieder stuurt een stopbericht*
@@ -320,10 +320,10 @@ Cliënt: BSN 999996770
 | Toewijzingnummer | 668877 |
 | Productcategorie | 07 |
 | Productcode | 07A12 |
-| Ingangsdatum toegewezen product | 15-05-2023 |
-| Begindatum levering | 17-05-2023 |
+| Ingangsdatum toegewezen product | 12-05-2025 |
+| Begindatum levering | 15-05-2025 |
 | Reden beëindiging | 20 (Levering is tijdelijk beëindigd) |
-| Einddatum levering | 20-06-2023 |
+| Einddatum levering | 20-06-2025 |
 | Status aanlevering stop product | 1 (Eerste aanlevering) |
 
 *Stap 4: De aanbieder stuurt een stopbericht*
@@ -345,10 +345,10 @@ BSN 999996770
 | Toewijzingnummer | 668877 |
 | Productcategorie | 07 |
 | Productcode | 07A12 |
-| Ingangsdatum toegewezen product | 15-05-2023 |
-| Begindatum levering | 17-05-2023 |
+| Ingangsdatum toegewezen product | 12-05-2025 |
+| Begindatum levering | 15-05-2025 |
 | Reden beëindiging | 23 (Levering is in overeenstemming voortijdig beëindigd) |
-| Einddatum levering | 20-06-2023 |
+| Einddatum levering | 20-06-2025 |
 | Status aanlevering stop product | 1 (Eerste aanlevering) |
 
 ### **3 Van Tijdelijke Stopzorg naar Definitieve Stopzorg (ongelijke einddatum)**
@@ -397,10 +397,10 @@ Cliënt: BSN 999996782
 | Toewijzingnummer | 12563 |
 | Productcategorie | 07 |
 | Productcode | 07A01 |
-| Ingangsdatum toegewezen product | 16-03-2020 |
-| Begindatum levering | 30-03-2020 |
+| Ingangsdatum toegewezen product | 17-03-2025 |
+| Begindatum levering | 31-03-2025 |
 | Reden beëindiging | 20 (Levering is tijdelijk beëindigd) |
-| Einddatum levering | 07-06-2023 |
+| Einddatum levering | 07-06-2025 |
 | Status aanlevering stop product | 1 (Eerste aanlevering) |
 
 *Stap 2:* *De aanbieder stuurt een stopbericht*
@@ -420,10 +420,10 @@ Cliënt: BSN 999996782
 | Toewijzingnummer | 12563 |
 | Productcategorie | 07 |
 | Productcode | 07A01 |
-| Ingangsdatum toegewezen product | 16-03-2020 |
-| Begindatum levering | 30-03-2020 |
+| Ingangsdatum toegewezen product | 17-03-2025 |
+| Begindatum levering | 31-03-2025 |
 | Reden beëindiging | 23 (Levering is in overeenstemming voortijdig beëindigd) |
-| Einddatum levering | 29-06-2023 |
+| Einddatum levering | 29-06-2025 |
 | Status aanlevering stop product | 1 (Eerste aanlevering) |
 
 ### **4 Van levering via Stopzorg naar Corrigeren Stopzorg**
