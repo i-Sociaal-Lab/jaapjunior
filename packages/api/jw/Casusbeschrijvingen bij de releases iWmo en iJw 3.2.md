@@ -41,7 +41,7 @@ Versie voor publicatie bij definitieve specificaties.
 
 Op 22 juni 2022 zijn de conceptspecificaties van releases iWmo 3.2 en iJw 3.2 gepubliceerd.
 
-Beide releases worden op 3 april 2023 van kracht. Om de wijzigingen ten opzichte van iWmo
+Beide releases zijn op 3 april 2023 van kracht geworden. Om de wijzigingen ten opzichte van iWmo
 
 3.1 en iJw 3.1 zo veel mogelijk te verduidelijken, is een aantal casussen uitgewerkt.
 
@@ -73,7 +73,7 @@ In de berichtvoorbeelden zijn de veldnamen en veldwaarden op een functionele man
 
 | **Soort veld** | **Functionele vulling document** | **Technische vulling in bericht** |
 | --- | --- | --- |
-| Datumveld | dd-mm-eejj 21-10-2023 | eejjmmdd 20231021 |
+| Datumveld | dd-mm-eejj 21-10-2025 | eejjmmdd 20251021 |
 | Codevelden | Code + omschrijving 04 (uur) | Code 04 |
 | Bedragen | Bedrag in euro's 1234,00 | Bedrag in eurocenten 123400 |
 | Negatieve bedragen | Negatieve bedragen worden functioneel weergegeven als: -1234,00 |  |
@@ -122,7 +122,7 @@ In de ministeriële regeling is het gebruik van de informatiestandaarden iWmo en
 
 *1.1.1 Situatie en gebeurtenis*
 
-De gemeente stuurt een toewijzingsbericht naar de aanbieder voor ambulante Jeugdhulp met omvang 3 uur per week en einddatum 30 juni 2023. De aanbieder start met leveren. Medio april heeft de wettelijke vertegenwoordiger contact met de gemeente om de zorg te laten verlengen omdat de zorgvraag onveranderd is.
+De gemeente stuurt een toewijzingsbericht naar de aanbieder voor ambulante Jeugdhulp met omvang 3 uur per week en einddatum 30 juni 2025. De aanbieder start met leveren. Medio april heeft de wettelijke vertegenwoordiger contact met de gemeente om de zorg te laten verlengen omdat de zorgvraag onveranderd is.
 
 De gemeente gaat akkoord met de vraag om de zorg te verlengen. Hiervoor stuurt de gemeente een toewijzingsbericht met daarin de gewijzigde toewijzing. De einddatum van de bestaande toewijzing wordt hiervoor opgerekt.
 
@@ -149,7 +149,7 @@ De stappen in de tabel worden doorlopen.
 
 *Stap 1: De gemeente stuurt een toewijzingsbericht*
 
-De gemeente stuurt op 01-01-2023 een initieel toewijzingsbericht voor (45A04) Jeugdhulp ambulant regulier inspanningsgericht, 3 uur per week.
+De gemeente stuurt op 01-01-2025 een initieel toewijzingsbericht voor (45A04) Jeugdhulp ambulant regulier inspanningsgericht, 3 uur per week.
 
 **Toewijzing (301):**
 
@@ -384,7 +384,7 @@ De stappen in de tabel worden doorlopen.
 
 *Stap 1:* *De aanbieder stuurt een stopbericht*
 
-In juni 2023 wordt de cliënt opgenomen in het ziekenhuis. De aanbieder meldt de tijdelijke stopzorg aan de gemeente met een stopbericht.
+In juni 2025 wordt de cliënt opgenomen in het ziekenhuis. De aanbieder meldt de tijdelijke stopzorg aan de gemeente met een stopbericht.
 
 **Stop (307):**
 
@@ -432,7 +432,7 @@ Cliënt: BSN 999996782
 
 *4.1.1 Situatie en gebeurtenis*
 
-De gemeente stuurt een toewijzingsbericht naar de aanbieder voor ambulante Jeugdhulp met omvang 3 uur per week en einddatum 30 juni 2023. De aanbieder start met leveren en meldt de startzorg aan de gemeente met een startbericht.
+De gemeente stuurt een toewijzingsbericht naar de aanbieder voor ambulante Jeugdhulp met omvang 3 uur per week en einddatum 30 juni 2025. De aanbieder start met leveren en meldt de startzorg aan de gemeente met een startbericht.
 
 De zorglevering wordt volgens plan beëindigd en de aanbieder stuurt een stopzorg aan de gemeente. Enkele dagen later signaleert de aanbieder dat per abuis de verkeerde reden beëindiging is doorgegeven.
 
@@ -462,7 +462,7 @@ De stappen in de tabel worden doorlopen.
 
 *Stap 1:* *De gemeente stuurt een toewijzingsbericht*
 
-De gemeente stuurt op 01-01-2023 een initieel toewijzingsbericht voor (45A04) Jeugdhulp ambulant regulier inspanningsgericht, 3 uur per week.
+De gemeente stuurt op 01-01-2025 een initieel toewijzingsbericht voor (45A04) Jeugdhulp ambulant regulier inspanningsgericht, 3 uur per week.
 
 **Toewijzing (301):**
 
