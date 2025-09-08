@@ -908,32 +908,31 @@ De datum van levering bepaalt in welke productperiode de leveringen worden inged
 De productperiode bevat het te declareren volume van alle leveringen op dagen die vallen in de betreffende productperiode. Bij weken die vallen over 2 productperioden bepaalt de datum van levering in welke ProductPeriode de levering opgenomen wordt.
 
 Voorbeeld:
-Toewijzing: 11-07-2022 t/m 04-09-2022 voor 3 uur per week
+Toewijzing: 07-07-2025 t/m 07-09-2025 voor 3 uur per week
 Levering: elke week op donderdag 2,5 uur
 
 Declaratieperiode juli
-Declaratieperiode: 01-07-2022 t/m 31-07-2022
-Productperiode: 11-07-2022 t/m 31-07-2022
-Volume: 7,5 (3 leveringen x 2,5 uur = 7,5 uur)
-Controle maximaal volume 9 (3 weken x 3 uur = 9 uur)
+Declaratieperiode: 01-07-2025 t/m 31-07-2025
+Productperiode: 07-07-2025 t/m 31-07-2025
+Volume: 7,5 (4 leveringen x 2,5 uur = 10 uur)
+Controle maximaal volume 9 (4 weken x 3 uur = 12 uur)
 
 Declaratieperiode augustus
-Declaratieperiode: 01-08-2022 t/m 31-08-2022
-Productperiode: 01-08-2022 t/m 31-08-2022
+Declaratieperiode: 01-08-2025 t/m 31-08-2025
+Productperiode: 01-08-2025 t/m 31-08-2025
 Volume: 10 (4 leveringen x 2,5 uur = 10 uur)
-(n.b. in week 35 valt de levering op donderdag 01-09, dus deze levering zit in ProductPeriode september)
 
 Controle maximaal volume 15 (5 weken x 3 uur= 15 uur)
 
 Declaratieperiode september
-Declaratieperiode: 01-09-2022 t/m 30-09-2022
-Productperiode: 01-09-2022 t/m 04-09-2022
+Declaratieperiode: 01-09-2025 t/m 30-09-2025
+Productperiode: 01-09-2025 t/m 07-09-2025
 Volume: 2,5 (1 leveringen x 2,5 uur = 2,5 uur)
 Controle maximaal volume 3 (1 week x 3 uur= 3 uur)
 
 Controle maximaal volume over toewijzingsperiode 24 uur
-11-07-2022 t/m 04-09-2022 = 8 weken
-8 weken x 3 uur = 24 uur
+07-07-2025 t/m 07-09-2025 = 9 weken
+9 weken x 3 uur = 27 uur
 
 Methode bij Outputgerichte toewijzing
 De productperiode bevat het te declareren volume van de weken waarvan de zondag valt in de productperiode.
