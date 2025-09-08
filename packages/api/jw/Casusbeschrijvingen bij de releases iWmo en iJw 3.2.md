@@ -278,7 +278,7 @@ Cliënt: BSN 999996770
 | Referentie aanbieder |  |
 | Productcategorie | 07 |
 | Productcode | 07A12 |
-| Toewijzingsdatum toegewezen product | 09-05-2023 |
+| Toewijzingsdatum toegewezen product | 09-05-2025 |
 | Ingangsdatum toegewezen product | 12-05-2025 |
 | Einddatum toegewezen product | 31-12-2025 |
 | Reden wijziging |  |
@@ -302,7 +302,7 @@ Cliënt: BSN 999996770
 | Productcategorie | 07 |
 | Productcode | 07A12 |
 | Ingangsdatum toegewezen product | 12-05-2025 |
-| Begindatum levering | 15-05-2023 |
+| Begindatum levering | 15-05-2025 |
 | Status aanlevering start product | 1 (Eerste aanlevering) |
 
 *Stap 3:* *De aanbieder stuurt een stopbericht*
@@ -476,9 +476,9 @@ Cliënt: BSN 999900006
 | Referentie aanbieder |  |
 | Productcategorie | 45 |
 | Productcode | 45A04 |
-| Toewijzingsdatum toegewezen product | 01-01-2023 |
-| Ingangsdatum toegewezen product | 01-01-2023 |
-| Einddatum toegewezen product | 30-06-2023 |
+| Toewijzingsdatum toegewezen product | 01-01-2025 |
+| Ingangsdatum toegewezen product | 01-01-2025 |
+| Einddatum toegewezen product | 30-06-2025 |
 | Reden wijziging |  |
 | Volume | 3 |
 | Eenheid | 04 (Uur) |
@@ -499,8 +499,8 @@ Cliënt: BSN 999900006
 | Toewijzingnummer | 667899 |
 | Productcategorie | 45 |
 | Productcode | 45A04 |
-| Ingangsdatum toegewezen product | 01-01-2023 |
-| Begindatum levering | 05-01-2023 |
+| Ingangsdatum toegewezen product | 01-01-2025 |
+| Begindatum levering | 06-01-2025 |
 | Status aanlevering start product | 1 (Eerste aanlevering) |
 
 *Stap 3: De aanbieder stuurt een stopbericht*
@@ -520,29 +520,18 @@ BSN 999900006
 | Toewijzingnummer | 667899 |
 | Productcategorie | 45 |
 | Productcode | 45A04 |
-| Ingangsdatum toegewezen product | 01-01-2023 |
-| Begindatum levering | 05-01-2023 |
+| Ingangsdatum toegewezen product | 01-01-2025 |
+| Begindatum levering | 06-01-2025 |
 | Reden beëindiging | 22 (Levering is eenzijdig door aanbieder beëindigd) |
-| Einddatum levering | 17-06-2023 |
+| Einddatum levering | 17-06-2025 |
 | Status aanlevering stop product | 1 (Eerste aanlevering) |
 
 *Stap 4: De aanbieder stuurt een stopbericht*
 
-Enkele dagen nadat het stopbericht verstuurt is door de aanbieder, constateert deze dat per
-
-ongeluk de verkeerde reden beëindiging is doorgeven.
-
-De administratie heeft reden beëindiging 22 (levering is eenzijdig door aanbieder beëindigd)
-
-gevuld maar dit had reden 19 (levering volgens plan beëindigd) moeten zijn.
-
-Om dit te corrigeren stuurt de aanbieder een nieuw stopbericht met hierin zowel de intrekking
-
-van de eerder verstuurde stop, als de nieuwe vervangende stop.
-
-Door een technisch aanpassing is het nu het toegestaan voor deze correctie de verwijderde
-
-berichtklasse en de nieuwe vervangende berichtklasse in één stopbericht te sturen.
+Enkele dagen nadat het stopbericht verstuurt is door de aanbieder, constateert deze dat per ongeluk de verkeerde reden beëindiging is doorgeven.
+De administratie heeft reden beëindiging 22 (levering is eenzijdig door aanbieder beëindigd) gevuld maar dit had reden 19 (levering volgens plan beëindigd) moeten zijn.
+Om dit te corrigeren stuurt de aanbieder een nieuw stopbericht met hierin zowel de intrekking van de eerder verstuurde stop, als de nieuwe vervangende stop.
+Door een technisch aanpassing is het nu het toegestaan voor deze correctie de verwijderde berichtklasse en de nieuwe vervangende berichtklasse in één stopbericht te sturen.
 
 **Stop (307):**
 
@@ -555,10 +544,10 @@ Cliënt: BSN 999900006
 | Toewijzingnummer | 667899 |
 | Productcategorie | 45 |
 | Productcode | 45A04 |
-| Ingangsdatum toegewezen product | 01-01-2023 |
-| Begindatum levering | 05-01-2023 |
+| Ingangsdatum toegewezen product | 01-01-2025 |
+| Begindatum levering | 06-01-2025 |
 | Reden beëindiging | 22 (Levering is eenzijdig door aanbieder beëindigd) |
-| Einddatum levering | 17-06-2023 |
+| Einddatum levering | 17-06-2025 |
 | Status aanlevering stop product | 3 (Verwijdere aanlevering) |
 
 | **StopProduct** |  |
@@ -566,8 +555,8 @@ Cliënt: BSN 999900006
 | Toewijzingnummer | 667899 |
 | Productcategorie | 45 |
 | Productcode | 45A04 |
-| Ingangsdatum toegewezen product | 01-01-2023 |
-| Begindatum levering | 05-01-2023 |
+| Ingangsdatum toegewezen product | 01-01-2025 |
+| Begindatum levering | 06-01-2025 |
 | Reden beëindiging | 19 (Levering volgens plan beëindigd) |
-| Einddatum levering | 17-06-2023 |
+| Einddatum levering | 17-06-2025 |
 | Status aanlevering stop product | 1 (Eerste aanlevering) |
