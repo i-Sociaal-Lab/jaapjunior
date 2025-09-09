@@ -943,35 +943,35 @@ Indien een toewijzing niet op een zondag eindigt wordt het te declareren volume 
 Beide situaties worden met een voorbeeld toegelicht:
 
 Voorbeeld 1 (toewijzing eindigt op een zondag):
-Toewijzing: 11-07-2022 t/m 04-09-2022 voor 300 euro per week
+Toewijzing: 07-07-2025 t/m 07-09-2025 voor 300 euro per week
 
 Declaratieperiode juli
-Declaratieperiode: 01-07-2022 t/m 31-07-2022
-Productperiode: 11-07-2022 t/m 31-07-2022
+Declaratieperiode: 01-07-2025 t/m 31-07-2025
+Productperiode: 07-07-2025 t/m 31-07-2025
 Volume: Aantal zondagen in de productperiode * 300 euro (900 euro)
 
 Declaratieperiode augustus
-Declaratieperiode: 01-08-2022 t/m 31-08-2022
-Productperiode: 01-08-2022 t/m 31-08-2022
-Volume: Aantal zondagen in de productperiode * 300 euro (1200 euro)
+Declaratieperiode: 01-08-2025 t/m 31-08-2025
+Productperiode: 01-08-2025 t/m 31-08-2025
+Volume: Aantal zondagen in de productperiode * 300 euro (1500 euro)
 
 Declaratieperiode september
-Declaratieperiode: 01-09-2022 t/m 30-09-2022
-Productperiode: 01-09-2022 t/m 04-09-2022
+Declaratieperiode: 01-09-2025 t/m 30-09-2025
+Productperiode: 01-09-2025 t/m 04-09-2025
 Volume: Aantal zondagen in de productperiode * 300 euro (300 euro)
 
 Voorbeeld 2 (toewijzing eindigt niet op een zondag):
-Toewijzing: 11-07-2022 t/m 03-09-2022 voor 300 euro per week
+Toewijzing: 07-07-2025 t/m 06-09-2025 voor 300 euro per week
 
 Declaratieperiode juli
-Declaratieperiode: 01-07-2022 t/m 31-07-2022
-Productperiode: 11-07-2022 t/m 31-07-2022
+Declaratieperiode: 01-07-2025 t/m 31-07-2025
+Productperiode: 07-07-2025 t/m 31-07-2025
 Volume: Aantal zondagen in de productperiode * 300 euro (900 euro)
 
 Declaratieperiode augustus
-Declaratieperiode 01-08-2022 t/m 31-08-2022
-Productperiode 01-08-2022 t/m 31-08-2022
-Volume Aantal zondagen in de productperiode + 1 * 300 euro (1500 euro)
+Declaratieperiode 01-08-2025 t/m 31-08-2025
+Productperiode 01-08-2025 t/m 31-08-2025
+Volume Aantal zondagen in de productperiode + 1 * 300 euro (1800 euro)
 
 Declaratieperiode september
 Over september wordt er geen declaratie meer ingediend. De laatste week, die gedeeltelijk in september valt, is al meegenomen in de declaratie over augustus.
