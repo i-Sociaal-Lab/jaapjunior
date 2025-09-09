@@ -1485,13 +1485,15 @@ Lopende toewijzing is:
 Medio april 2026 wordt een wijziging aangevraagd met daarin:
 - Ongewijzigd laten ToewijzingNummer 678001
 - Nieuw product Y, Ingangsdatum 8 mei 2026
+  
 De toewijzing wordt gedaan per 15 mei 2026, omdat de gemeente eerst onderzoek moest doen.
 
 Situatie a: product X en product Y zijn aansluitend nodig, en de aanbieder is op 7 mei 2026 gestart met het leveren van Y. Dan kan worden afgesproken dat de toewijzing wordt gestuurd met terugwerkende kracht zoals in het verzoek.
 
 - Product X blijft ongewijzigd met einddatum 7 mei 2026
 - Product Y krijgt een toegewezen ingangsdatum 8 mei 2026
-NB: Het starten met leveren van product Y gebeurt terwijl er op dat moment nog geen rechtmatigheid is. Dit zal in afstemming met de gemeente moeten gebeuren om problemen rond declaratie te voorkomen.
+
+NB: Het starten met leveren van product Y gebeurt terwijl er op dat moment nog geen rechtmatigheid is. Dit zal in afstemming met de gemeente moeten gebeuren om problemen rond declaraties te voorkomen.
 
 Situatie b: product X en product Y zijn niet strikt noodzakelijk aansluitend, en door het uitblijven van de toewijzing is de aanbieder gestopt met leveren per 7 mei 2026.
 
