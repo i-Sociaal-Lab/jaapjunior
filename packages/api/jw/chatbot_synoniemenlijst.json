@@ -1,31 +1,36 @@
 {
-    "toon codes uit codelijst": {
-        "Hoofdvraag": "toon codelijst WJ003 uit Codelijsten iJw release 3.2",
-        "Alternatieve vragen": [
-            "Welke codes voor wettelijke vertegenwoordiging kan ik gebruiken?",
-            "Welke codes wettelijke vertegenwoordiging zijn er?",
-            "Wat kan ik invullen voor code wettelijke vertegenwoordiging",
-            "Welke codes voor wettelijke vertegenwoordiging zijn geldig?",
-            "Geef de codes voor wettelijke vertegenwoordiging.",
-            "Ik zoek de codes wettelijke vertegenwoordiging.",
-        ]
-		"Hoofdvraag": "toon codelijst JZ020 uit Codelijsten iJw release 3.2",
-        "Alternatieve vragen": [
-            "Welke codes voor productcategorie kan ik gebruiken?",
-            "Welke codes productcategorie zijn er?",
-            "Wat kan ik invullen voor code productcategorie",
-            "Welke codes voor productcategorie zijn geldig?",
-            "Geef de codes voor productcategorie.",
-            "Ik zoek de codes productcategorie."
-        ]
-    },
-    "Wat is de productperiode": {
-        "Hoofdvraag": "Geef de ingangsdatum en einddatum van de productperiode?",
-        "Alternatieve vragen": [
-            "Wat is de geldige productperiode.",
-            "Hoe ziet de productperiode er uit?",
+    "toon codes uit codelijst": [
+        {
+            "hoofdvraag": "toon codelijst WJ003 uit Codelijsten iJw release 3.2",
+            "alternatieve_vragen": [
+                "Welke codes voor wettelijke vertegenwoordiging kan ik gebruiken?",
+                "Welke codes wettelijke vertegenwoordiging zijn er?",
+                "Wat kan ik invullen voor code wettelijke vertegenwoordiging?",
+                "Welke codes voor wettelijke vertegenwoordiging zijn geldig?",
+                "Geef de codes voor wettelijke vertegenwoordiging.",
+                "Ik zoek de codes wettelijke vertegenwoordiging."
+            ]
+        },
+        {
+            "hoofdvraag": "toon codelijst JZ020 uit Codelijsten iJw release 3.2",
+            "alternatieve_vragen": [
+                "Welke codes voor productcategorie kan ik gebruiken?",
+                "Welke codes productcategorie zijn er?",
+                "Wat kan ik invullen voor code productcategorie?",
+                "Welke codes voor productcategorie zijn geldig?",
+                "Geef de codes voor productcategorie.",
+                "Ik zoek de codes productcategorie."
+            ]
+        }
+    ],
+    "productperiode_vragen": {
+        "hoofdvraag": "Geef de ingangsdatum en einddatum van de productperiode",
+        "alternatieve_vragen": [
+            "Wat is de geldige productperiode?",
+            "Hoe ziet de productperiode eruit?",
             "Wat is de productperiode?",
             "Geef de productperiode."
         ]
     }
 }
+
