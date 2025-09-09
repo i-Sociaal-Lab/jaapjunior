@@ -998,34 +998,33 @@ Rekenmethode Outputgerichte toewijzing met frequentie per week.
 Het maximale volume van de productperiode wordt bepaald op basis van het aantal zondagen dat binnen de productperiode ligt (plus 1 indien in die productperiode de laatste zondag van de toewijzing ligt en de einddatum van de toewijzing geen zondag is). Dit aantal wordt vermenigvuldigd met het volume uit de toewijzing.
 
 Voorbeeld bij inspanningsgerichte toewijzing:
-Cliënt heeft een toewijzing voor 3 uur per week met ingangsdatum 11-10-2022 en einddatum 28-12-2022
+Cliënt heeft een toewijzing voor 3 uur per week met ingangsdatum 7-10-2025 en einddatum 30-12-2025
 Bepaal het aantal kalenderweken in de productperiode
 
-- Oktober: 4 (week 41 t/m 44)
+- Oktober : 4 (week 41 t/m 44)
 - November: 5 (week 44 t/m 48)
-- December: 5 (week 48 t/m 52)
+- December: 5 (week 48 t/m 52,01)
   
 Maximaal volume per productperiode: Vermenigvuldig het aantal kalenderweken per productperiode met het toegewezen volume per week:
-- Oktober: 12 uur (4 weken x 3 uur)
+- Oktober : 12 uur (4 weken x 3 uur)
 - November: 15 uur (5 weken x 3 uur)
 - December: 15 uur (5 weken x 3 uur)
-- 
+
 Maximaal volume over de toewijzingsperiode: tel het aantal weken (eventueel gebroken) binnen de toewijzing en vermenigvuldig dit met het volume uit de toewijzing:
-- 11-10-2022 t/m 28-12-2022 = week 41 t/m week 52 = 12 weken * 12 weken x 3 uur (volume uit de toewijzing) = 36 uur
-Het maximale volume over de toewijzingsperiode is 36 uur
+- 07-10-2025 t/m 30-12-2025 = week 41 t/m week 52 + 1 = 13 weken,  13 weken x 3 uur (volume uit de toewijzing) = 39 uur
+Het maximale volume over de toewijzingsperiode is 39 uur
 
 Voorbeeld bij Outputgerichte toewijzing:
-Cliënt heeft een toewijzing voor 300 euro per week met ingangsdatum 11-10-2022 en einddatum 31-12-2022
+Cliënt heeft een toewijzing voor 300 euro per week met ingangsdatum 07-10-2025 en einddatum 31-12-2025
 Het aantal zondagen in de productperiodes:
 
-- Oktober: 11-10 t/m 31-10 -> telt 3 zondagen
-- November: 1-11 t/m 30-11 -> telt 4 zondagen
+- Oktober: 07-10 t/m 31-10 -> telt 3 zondagen
+- November: 1-11 t/m 30-11 -> telt 5 zondagen
 - December: 1-12 t/m 31-12 -> telt 4 zondagen. Daar wordt een weekvolume bijgeteld, omdat de einddatum van de toewijzing niet op zondag is.
-
 Maximaal volume per productperiode: Het aantal zondagen vermenigvuldigd met het volume uit de toewijzing (evt. vermeerderd met een extra weekvolume):
-- Oktober 3 zondagen: 3x weekvolume (300 euro) = 900 euro
-- November 4 zondagen: 4x weekvolume (300 euro) = 1200 euro
-- December 4 zondagen + 1 weekvolume: 5x weekvolumes (300 euro) = 1500 euro
+- Oktober 3 zondagen : 3 x weekvolume (300 euro) = 900 euro
+- November 4 zondagen: 5 x weekvolume (300 euro) = 1500 euro
+- December 4 zondagen + 1 weekvolume: 5 x weekvolumes (300 euro) = 1500 euro
 
 **IV078**
 
@@ -1039,17 +1038,17 @@ Voorbeeld 1:
 
 frequentie in ToegewezenProduct = week
 
-Toewijzing voor 3 uur per week met ingangsdatum 12-10-2021 en einddatum 13-12-2021
+Toewijzing voor 3 uur per week met ingangsdatum 14-11-2025 en einddatum 13-12-2025
 
-Voor de productperiode 12-10-2021 t/m 31-10-2021 mag maximaal 9 uur gedeclareerd worden, indien deze uren ook daadwerkelijk geleverd zijn. (zie ook rekenmethode IV077. De eerste week (12-10-2021 t/m 17-10-2021) is geen volledige kalenderweek, maar indien geleverd mag voor deze week de volledige 3 uur worden gedeclareerd.
+Voor de productperiode 11-11-2025 t/m 30-11-2025 mag maximaal 9 uur gedeclareerd worden, indien deze uren ook daadwerkelijk geleverd zijn. (zie ook rekenmethode IV077. De eerste week (11-11-2025 t/m 16-11-2025) is geen volledige kalenderweek, maar indien geleverd mag voor deze week de volledige 3 uur worden gedeclareerd.
 
 Voorbeeld 2:
 
 Frequentie in ToegewezenProduct = maand
 
-Toewijzing voor 15 uur per maand met ingangsdatum 12-10-2021 en einddatum 13-12-2021
+Toewijzing voor 15 uur per maand met ingangsdatum 14-10-2025 en einddatum 13-12-2025
 
-Voor de productperiode 12-10-2021 t/m 31-10-2021 mag maximaal 15 uur gedeclareerd worden, indien deze uren ook daadwerkelijk geleverd zijn. Ondanks dat de ingangsdatum 12-10-2021 is en er dus geen hele kalendermaand is toegewezen, mag (mits geleverd) de volledige 15 uur gedeclareerd worden.
+Voor de productperiode 14-10-2025 t/m 31-10-2025 mag maximaal 15 uur gedeclareerd worden, indien deze uren ook daadwerkelijk geleverd zijn. Ondanks dat de ingangsdatum 14-10-2025 is en er dus geen hele kalendermaand is toegewezen, mag (mits geleverd) de volledige 15 uur gedeclareerd worden.
 
 **IV079**
 
@@ -1059,7 +1058,7 @@ Indien er is toegewezen in uren en er wordt gedeclareerd in uren, kan het voorko
 In dat geval wordt het volume rekenkundig afgerond (< 30 minuten = omlaag >= 30 minuten = omhoog), met een minimaal volume van 1 uur.
 Geleverde zorg per prestatie behorend bij een toewijzing wordt gesommeerd over de gehele declaratieperiode, waarbij de afronding pas plaats vindt op het totaal volume in de prestatieregel.
 
-Dus indien er wekelijks 95 minuten worden geleverd en de prestatieperiode bevat 4 weken, dan wordt eerst het totaal over de prestatieperiode bepaald = 4 weken x 95 minuten =380 minuten.
+Dus indien er wekelijks 95 minuten worden geleverd en de prestatieperiode bevat 4 weken, dan wordt eerst het totaal over de prestatieperiode bepaald = 4 weken x 95 minuten = 380 minuten.
 Er wordt gedeclareerd in uren: 380 / 60 = 6 uur en 20 minuten. Afgerond is dit 6 uur. In het volume van de prestatie wordt 6 uur gevuld.
 
 **IV081**
@@ -1083,13 +1082,13 @@ Voorbeeld
 
 In onderstaand voorbeeld wordt uitgegaan van de volgende situatie:
 
-- De eerste toewijzing heeft Ingangsdatum 01-03-2021 en Einddatum 09-03-2021
-- De opvolgende toewijzing heeft Ingangsdatum 23-03-2021 en Einddatum 31-03-2021
+- De eerste toewijzing heeft Ingangsdatum 01-03-2025 en Einddatum 09-03-2025
+- De opvolgende toewijzing heeft Ingangsdatum 23-03-2025 en Einddatum 31-03-2025
 - Er is ononderbroken zorg geleverd gedurende beide toegewezen periodes
 
 Er worden nu 2 Prestaties ingediend met de volgende ProductPeriodes:
-ProductPeriode Prestatie 1: 01-03-2021 t/m 09-03-2021
-ProductPeriode Prestatie 2: 23-03-2021 t/m 31-03-2021
+ProductPeriode Prestatie 1: 01-03-2025 t/m 09-03-2025
+ProductPeriode Prestatie 2: 23-03-2025 t/m 31-03-2025
 
 **IV085**
 
@@ -1212,12 +1211,12 @@ Voorbeeld
 
 In onderstaande voorbeeld wordt uitgegaan van de volgende situatie:
 
-Het ToegewezenProduct heeft Ingangsdatum 08-04-2022 en Einddatum 17-06-2022 (dit is de toegewezen periode)
+Het ToegewezenProduct heeft Ingangsdatum 08-04-2025 en Einddatum 17-06-2025 (dit is de toegewezen periode)
 ProductPeriodes voor de maanden April, Mei en Juni zijn dan:
 
-- April: 08-04-2022 t/m 30-04-2022
-- Mei: 01-05-2022 t/m 31-05-2022
-- Juni: 01-06-2022 t/m 17-06-2022
+- April: 08-04-2025 t/m 30-04-2025
+- Mei  : 01-05-2025 t/m 31-05-2025
+- Juni : 01-06-2025 t/m 17-06-2025
 
 Trajectfinanciering
 
@@ -1228,9 +1227,9 @@ Als het resultaat pas aan het eind van het traject kan worden vastgesteld, wordt
 Voorbeeld
 
 Afspraak is dat op het eind van het traject de declaratie mag worden ingediend.
-Cliënt ontvangt outputgerichte hulp vanaf het begin tot het eind van toegewezen periode (08-04-2021 t/m 17-06-2021). Pas op 17-06-2021 kan het resultaat van de outputgerichte hulp worden vastgesteld. In de maanden April en Mei wordt er geen declaratie ingediend voor deze cliënt. Er volgt in de maand juni 1 Prestatie met de volgende ProductPeriode:
+Cliënt ontvangt outputgerichte hulp vanaf het begin tot het eind van toegewezen periode (08-04-2025 t/m 17-06-2025). Pas op 17-06-2025 kan het resultaat van de outputgerichte hulp worden vastgesteld. In de maanden April en Mei wordt er geen declaratie ingediend voor deze cliënt. Er volgt in de maand juni 1 Prestatie met de volgende ProductPeriode:
 
-- Juni: 01-06-2021 t/m 17-06-2021
+- Juni: 01-06-2025 t/m 17-06-2025
 
 **IV090**
 
@@ -1246,25 +1245,25 @@ Voorbeelden
 In onderstaande voorbeelden wordt uitgegaan van de volgende situatie:
 
 De volgende declaratieperiodes zijn ingediend:
-01-01-2021 t/m 31-01-2021
-01-02-2021 t/m 28-02-2021
-01-03-2021 t/m 31-03-2021
-01-05-2021 t/m 31-05-2021 (In april was er blijkbaar niets te declareren)
+01-01-2025 t/m 31-01-2025
+01-02-2025 t/m 28-02-2025
+01-03-2025 t/m 31-03-2025
+01-05-2025 t/m 31-05-2025 (In april was er blijkbaar niets te declareren)
 
 Achteraf declareren als een declaratieperiode mist
 
-In juni blijkt dat in april 2021 toch iets te declareren was, aangezien in maart 2021 zorg is geleverd aan een cliënt. Aangezien er al een declaratieperiode is ingediend die na April 2021 ligt (namelijk mei 2021), kunnen de nog niet ingediende Prestaties van Maart 2021 worden ingediend met één van de volgende declaratieperiodes:
+In juni blijkt dat in april 2025 toch iets te declareren was, aangezien in maart 2025 zorg is geleverd aan een cliënt. Aangezien er al een declaratieperiode is ingediend die na April 2025 ligt (namelijk mei 2025), kunnen de nog niet ingediende Prestaties van Maart 2025 worden ingediend met één van de volgende declaratieperiodes:
 
-- Als 2e declaratie van de maand mei: DeclaratiePeriode 01-05-2021 t/m 31-05-2021
-- Bij de eerstvolgende declaratie in juni: DeclaratiePeriode 01-06-2021 t/m 30-06-2021
+- Als 2e declaratie van de maand mei: DeclaratiePeriode 01-05-2025 t/m 31-05-2025
+- Bij de eerstvolgende declaratie in juni: DeclaratiePeriode 01-06-2025 t/m 30-06-2025
 
 Achteraf declareren als de hulpperiode meerdere declaratieperiodes beslaat
 
-In juni blijkt dat (ononderbroken) geleverde ondersteuning aan een cliënt tussen 15-02-2021 t/m 30-04-2021 nog niet is gedeclareerd. Er dient per declaratieperiode een Prestatie te worden ingediend. Er volgen in het volgende declaratiebericht 3 Prestaties met de volgende productperiodes:
+In juni blijkt dat (ononderbroken) geleverde ondersteuning aan een cliënt tussen 15-02-2025 t/m 30-04-2025 nog niet is gedeclareerd. Er dient per declaratieperiode een Prestatie te worden ingediend. Er volgen in het volgende declaratiebericht 3 Prestaties met de volgende productperiodes:
 
-- ProductPeriode Prestatie 1: 15-02-2021 t/m 28-02-2021
-- ProductPeriode Prestatie 2: 01-03-2021 t/m 31-03-2021
-- ProductPeriode Prestatie 3: 01-04-2021 t/m 30-04-2021
+- ProductPeriode Prestatie 1: 15-02-2025 t/m 28-02-2025
+- ProductPeriode Prestatie 2: 01-03-2025 t/m 31-03-2025
+- ProductPeriode Prestatie 3: 01-04-2025 t/m 30-04-2025
 
 **IV091**
 
@@ -1322,48 +1321,48 @@ Voorbeelden:
 
 Voorbeeld 1, Actuele situatie:
 
-Toewijzing 432, product B1, vanaf 1 maart 2021, 3 uur per week, einddatum 31 december 2022
+Toewijzing 432, product B1, vanaf 1 maart 2025, 3 uur per week, einddatum 31 december 2026
 
-Toewijzing 543, product C1, vanaf 1 maart 2021, 80 uur totaal over periode, einddatum 31 december 2021
+Toewijzing 543, product C1, vanaf 1 maart 2025, 80 uur totaal over periode, einddatum 31 december 2025
 
-Gewenst is om het product B1 vanaf 1 september 2021 te vervangen door product B2, voor 6 uur per week tot eind 2022 (en daarom moet product B1 dus stoppen per 31 augustus)
+Gewenst is om het product B1 vanaf 1 september 2025 te vervangen door product B2, voor 6 uur per week tot eind 2026 (en daarom moet product B1 dus stoppen per 31 augustus)
 
 VOW bericht bevat:
 
 - OngewijzigdProduct: ToewijzingNummer 543
-- TeWijzigenProduct: ToewijzingNummer 432, GewensteIngangsdatum 1 maart 2021, 3 uur per week, einddatum 31 augustus 2021
-- NieuwProduct: Product B2, GewensteIngangsdatum 1 september 2021, 6 uur per week, einddatum 31 december 2022
+- TeWijzigenProduct: ToewijzingNummer 432, GewensteIngangsdatum 1 maart 2025, 3 uur per week, einddatum 31 augustus 2025
+- NieuwProduct: Product B2, GewensteIngangsdatum 1 september 2025, 6 uur per week, einddatum 31 december 2026
 
 Voorbeeld 2a, Actuele situatie:
 
-Toewijzing 789, product A1, vanaf 1 maart 2021, 3 uur per week, einddatum 31 december 2021
+Toewijzing 789, product A1, vanaf 1 maart 2025, 3 uur per week, einddatum 31 december 2025
 
-Toewijzing 910, product C1, vanaf 1 maart 2021, 4 dagdelen per maand, einddatum 31 december 2021
+Toewijzing 910, product C1, vanaf 1 maart 2025, 4 dagdelen per maand, einddatum 31 december 2025
 
-In oktober 2021 wordt duidelijk: gewenst is om voor product A1 de levering te verlengen én te verhogen: vanaf 1 november 2021 met 5 uur per week, tot 1 juli volgend jaar
+In oktober 2025 wordt duidelijk: gewenst is om voor product A1 de levering te verlengen én te verhogen: vanaf 1 november 2025 met 5 uur per week, tot 1 juli volgend jaar
 
-Daarnaast is het nodig om na 31 december 2021 ook nog door te gaan met Product C1, ook tot 1 juli.
+Daarnaast is het nodig om na 31 december 2025 ook nog door te gaan met Product C1, ook tot 1 juli.
 
 VOW bericht bevat:
 
-- TeWijzigenProduct: ToewijzingNummer 789, GewensteIngangsdatum 1 november 2021, 5 uur per week, einddatum 1 juli 2022
-- TeWijzigenProduct: ToewijzigenNummer 910, GewensteIngangsdatum 1 maart 2021, 4 dagdelen per maand, einddatum 1 juli 2022
+- TeWijzigenProduct: ToewijzingNummer 789, GewensteIngangsdatum 1 november 2025, 5 uur per week, einddatum 1 juli 2026
+- TeWijzigenProduct: ToewijzigenNummer 910, GewensteIngangsdatum 1 maart 2025, 4 dagdelen per maand, einddatum 1 juli 2026
 
 Voorbeeld 2b, Actuele situatie:
 
-Toewijzing 789, product A1, vanaf 1 maart 2021, 3 uur per week, einddatum 31 december 2021
+Toewijzing 789, product A1, vanaf 1 maart 2025, 3 uur per week, einddatum 31 december 2025
 
-Toewijzing 910, product C1, vanaf 1 maart 2021, 4 dagdelen per maand, einddatum 31 december 2021
+Toewijzing 910, product C1, vanaf 1 maart 2025, 4 dagdelen per maand, einddatum 31 december 2025
 
-In oktober 2021 wordt duidelijk: gewenst is om voor product A1 de levering te verlengen én te verhogen: vanaf 1 november 2021 met 5 uur per week, tot 1 juli volgend jaar
+In oktober 2025 wordt duidelijk: gewenst is om voor product A1 de levering te verlengen én te verhogen: vanaf 1 november 2025 met 5 uur per week, tot 1 juli volgend jaar
 
-Daarnaast is het nodig om vanaf 1 januari 2022 ook nog door te gaan met Product C1, maar dan voor 2 dagdelen per maand, ook tot 1 juli. Dit is een ingangsdatum die niet overlapt met de actuele wijziging, dus hiervoor wordt NieuwProduct gebruikt.
+Daarnaast is het nodig om vanaf 1 januari 2026 ook nog door te gaan met Product C1, maar dan voor 2 dagdelen per maand, ook tot 1 juli. Dit is een ingangsdatum die niet overlapt met de actuele wijziging, dus hiervoor wordt NieuwProduct gebruikt.
 
 VOW bericht bevat:
 
 - OngewijzigdProduct: ToewijzingNummer 910
-- TeWijzigenProduct: ToewijzingNummer 789, GewensteIngangsdatum 1 november 2021, 5 uur per week, einddatum 1 juli 2022
-- NieuwProduct: Product C1 GewensteIngangsdatum 1 januari 2022, 2 dagdelen per maand, einddatum 1 juli 2022
+- TeWijzigenProduct: ToewijzingNummer 789, GewensteIngangsdatum 1 november 2025, 5 uur per week, einddatum 1 juli 2026
+- NieuwProduct: Product C1 GewensteIngangsdatum 1 januari 2026, 2 dagdelen per maand, einddatum 1 juli 2026
 
 **IV093**
 
@@ -1486,26 +1485,26 @@ Voorbeeld 3
 
 Lopende toewijzing is:
 
-- ToewijzingNummer 678001, Product X, Ingangsdatum 1 januari 2022, einddatum 7 mei 2023
+- ToewijzingNummer 678001, Product X, Ingangsdatum 1 januari 2025, einddatum 7 mei 2026
 
-Medio april 2023 wordt een wijziging aangevraagd met daarin:
+Medio april 2026 wordt een wijziging aangevraagd met daarin:
 
 - Ongewijzigd laten ToewijzingNummer 678001
-- Nieuw product Y, Ingangsdatum 8 mei 2023
-De toewijzing wordt gedaan per 15 mei 2023, omdat de gemeente eerst onderzoek moest doen.
+- Nieuw product Y, Ingangsdatum 8 mei 2026
+De toewijzing wordt gedaan per 15 mei 2026, omdat de gemeente eerst onderzoek moest doen.
 
-Situatie a: product X en product Y zijn aansluitend nodig, en de aanbieder is op 7 mei 2023 gestart met het leveren van Y. Dan kan worden afgesproken dat de toewijzing wordt gestuurd met terugwerkende kracht zoals in het verzoek.
+Situatie a: product X en product Y zijn aansluitend nodig, en de aanbieder is op 7 mei 2026 gestart met het leveren van Y. Dan kan worden afgesproken dat de toewijzing wordt gestuurd met terugwerkende kracht zoals in het verzoek.
 
-- Product X blijft ongewijzigd met einddatum 7 mei 2023
-- Product Y krijgt een toegewezen ingangsdatum 8 mei 2023
+- Product X blijft ongewijzigd met einddatum 7 mei 2026
+- Product Y krijgt een toegewezen ingangsdatum 8 mei 2026
 NB: Het starten met leveren van product Y gebeurt terwijl er op dat moment nog geen rechtmatigheid is. Dit zal in afstemming met de gemeente moeten gebeuren om problemen rond declaratie te voorkomen.
 
-Situatie b: product X en product Y zijn niet strikt noodzakelijk aansluitend, en door het uitblijven van de toewijzing is de aanbieder gestopt met leveren per 7 mei 2023.
+Situatie b: product X en product Y zijn niet strikt noodzakelijk aansluitend, en door het uitblijven van de toewijzing is de aanbieder gestopt met leveren per 7 mei 2026.
 
 Dan kan worden afgesproken dat de toewijzing wordt gestuurd zonder terugwerkende kracht en zonder aansluiting in de opvolgende toewijzing
 
-- Product X blijft ongewijzigd met einddatum 7 mei 2023
-- Product Y krijgt een toegewezen ingangsdatum 15 mei 2023
+- Product X blijft ongewijzigd met einddatum 7 mei 2026
+- Product Y krijgt een toegewezen ingangsdatum 15 mei 2026
 
 ---
 
@@ -1562,14 +1561,14 @@ Voorbeeld:
 
 Er lopen twee toegewezen producten:
 
-- ToewijzingNummer 345001, Product A, Ingangsdatum 1 januari 2020, einddatum 31 december 2020
-- ToewijzingNummer 345002, Product B, Ingangsdatum 1 januari 2020, einddatum 31 december 2020
-Er wordt een verzoek om wijziging gestuurd om de toewijzing van Product B te verlengen met een half jaar t/m 30 juni 2021, met ReferentieAanbieder 667788 (NB: beide producten moeten opgenomen worden in het verzoek om wijziging.)
+- ToewijzingNummer 345001, Product A, Ingangsdatum 1 januari 2025, einddatum 31 december 2025
+- ToewijzingNummer 345002, Product B, Ingangsdatum 1 januari 2025, einddatum 31 december 2025
+Er wordt een verzoek om wijziging gestuurd om de toewijzing van Product B te verlengen met een half jaar t/m 30 juni 2026, met ReferentieAanbieder 667788 (NB: beide producten moeten opgenomen worden in het verzoek om wijziging.)
 
 Als de gemeente dit verzoek honoreert dan wordt een toewijzing gestuurd met beide ToegewezenProducten (conform regel OP087) met beiden dezelfde ReferentieAanbieder:
 
-- ToewijzingNummer 345001, Product A, Ingangsdatum 1 januari 2020, einddatum 31 december 2020, Referentieaanbieder 667788
-- ToewijzingNummer 345002, Product B, Ingangsdatum 1 januari 2020, einddatum 30 juni 2021, Referentieaanbieder 667788
+- ToewijzingNummer 345001, Product A, Ingangsdatum 1 januari 2025, einddatum 31 december 2025, Referentieaanbieder 667788
+- ToewijzingNummer 345002, Product B, Ingangsdatum 1 januari 2025, einddatum 30 juni 2026, Referentieaanbieder 667788
 
 **IV099**
 
