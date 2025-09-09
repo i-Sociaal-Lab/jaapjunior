@@ -109,7 +109,7 @@ beoordeling en stelt niet op niveau van de individuele cliënt een beschikking v
 De gemeente, of bijvoorbeeld een sociaal wijkteam namens de gemeente, beoordeelt welke 
 jeugdhulp een cliënt nodig heeft, hoeveel jeugdhulp (omvang) en hoe lang (voor welke periode).
 
-## 2.4  Beoordelen (naar aanbieder) 
+## 2.4 Beoordelen (naar aanbieder) 
 De aanbieder beoordeelt welke jeugdhulp de cliënt nodig heeft, eventueel hoeveel en hoe lang. 
 Binnen een inspanningsgerichte of outputgerichte werkwijze vraagt de aanbieder vervolgens 
 bij de gemeente voor de betreffende producten een toewijzing aan. Dit is alleen mogelijk voor 
@@ -151,7 +151,7 @@ Wanneer de aanbieder vaststelt dat er een verkeerde toewijzing is aangevraagd, b
 doordat een verkeerd product is opgenomen, neemt de aanbieder buiten het berichtenverkeer 
 om contact op met de gemeente. Na afstemming met de gemeente kan vervolgens (nadat het 
 eerdere verzoek is afgewezen) een nieuw Verzoek om toewijzing bericht verzonden worden.
-Het Verzoek om toewijzing bericht  bevat clientgegevens en gegevens over de producten 
+Het Verzoek om toewijzing bericht bevat clientgegevens en gegevens over de producten 
 waarvoor de toewijzing wordt aangevraagd.
 
 ## 2.5.3 Berichtenverkeer Verzoek om toewijzing 
@@ -438,9 +438,8 @@ van de gemeente. Om die toestemming aan te vragen, stuurt de aanbieder een verzo
 wijziging bericht. Hierin wordt de volledige gewenste nieuwe situatie weergegeven, het bericht 
 bevat:
  
-* Ongewijzigde producten, hiervan wordt alleen het toewijzingnummer ingevuld 
-* Te wijzigen producten, hiervan wordt op basis van het toewijzingnummer aangegeven 
-wat de nieuwe einddatum, omvang of budget moet zijn.
+* Ongewijzigde producten, hiervan wordt alleen het toewijzingnummer ingevuld
+* Te wijzigen producten, hiervan wordt op basis van het toewijzingnummer aangegeven wat de nieuwe einddatum, omvang of budget moet zijn.
 * Nieuw producten, hierin worden alle nieuwe producten opgegeven(inclusief datums, 
 omvang en eventueel budget).
 
@@ -479,19 +478,19 @@ is en wat de reden is van de beeindiging. Het bericht is bedoeld om de gemeente 
 geven in het daadwerkelijk plaatsvinden van de levering van zorg en ondersteuning. Er kunnen 
 geen rechten ontleend worden aan dit bericht, dat wil bijvoorbeeld zeggen dat er geen 
 afhankelijkheid met de betaling (declaratie) mag bestaan. Het Stopbericht is daarmee één van 
-de regieberichten.  
+de regieberichten.
 De start van de levering wordt voor de uitvoeringsvarianten inspannings- en outputgericht 
 verplicht (met uitzondering van voor de Gecertificeerde Instellingen) altijd doorgegeven met 
 een Startbericht en de beeindiging van de levering wordt altijd doorgegeven met een 
 Stopbericht. De beeindiging kan plaatsvinden op initiatief van de gemeente: de aanbieder 
 ontvangt een Intrekkingbericht van de gemeente. Met het Stopbericht geeft de aanbieder door 
-wanneer de levering definitief gestopt is.  
+wanneer de levering definitief gestopt is.
 Ook als de einddatum conform de einddatum uit de Toewijzing is wordt een Stopbericht 
-gestuurd.  
+gestuurd.
 Na het sturen van een Stopbericht kan er binnen de kaders van de toewijzing opnieuw een 
 Startbericht worden gestuurd, bijvoorbeeld in het geval van een tijdelijke beeindiging. Het is
 niet toegestaan om tegelijkertijd meerdere Startberichten te versturen zonder tussenliggende 
-stop.  
+stop.
  
 De beëindiging kan ook plaatsvinden op initiatief van de aanbieder. De aanbieder stuurt altijd 
 een Stopbericht aan de gemeente wanneer de start van de levering met een Startbericht is 
@@ -509,7 +508,7 @@ elementen in de logische sleutel.
  
 Het Stopbericht bevat cliëntgegevens en gegevens over de producten waarvoor de levering 
 beëindigd is.  
-  
+
 ## 4.4.1 Berichtenverkeer Stop Jeugdhulp 
 Na ontvangst van een Stopbericht stuurt de gemeente altijd binnen drie werkdagen een 
 retourbericht om aan te geven dat het bericht ontvangen is.  
@@ -543,11 +542,11 @@ opdracht heeft gegeven (toewijzing).
 ## 5.2 Taakgericht uitvoeringsvariant 
 Bij taakgerichte uitvoering is geen sprake van declaratie via het berichtenverkeer iJw. 
  
-## 5.3 Aanleveren declaratie  
+## 5.3 Aanleveren declaratie
 De aanbieder declareert in het berichtenverkeer de geleverde producten in overeenstemming 
 met de toegewezen producten. De declaratieberichten zijn onderdeel van de rechtmatigheidsberichten. 
  
-## 5.4 Retourinformatie declaratie  
+## 5.4 Retourinformatie declaratie
 De gemeente beantwoordt een declaratiebericht binnen 10 werkdagen na ontvangst met een 
 declaratie-antwoordbericht.  
  
