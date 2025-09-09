@@ -381,6 +381,8 @@ aangeboden kunnen worden; (binnen de iStandaarden) softwarepakketten die hulp bi
 
 **productcodes** omschrijvingen van producten en diensten zoals aanbieders van zorg en ondersteuning vanuit de Wmo en de Jeugdwet en gemeenten met elkaar afspreken
 
+**rechtmatigheidsbericht** Berichten die rechtmatigheid verschaffen of gebruikt kunnen worden omdat rechtmatigheid vast staat. Dit zijn toewijzings-, verzoek om toewijzing en declaratieberichten. 
+
 **Reden beëindiging of stopreden** of einde levering verwijst naar de reden waarom de levering van jeugdhulp wordt beëindigd. Dit begrip wordt gebruikt in het JW307 Stop Jeugdhulp-bericht, waarmee een aanbieder aan de gemeente meldt dat de levering van een toegewezen product (jeugdhulp) wordt gestopt. In het bericht moet worden aangegeven waarom de levering stopt. De codes die hiervoor worden gebruikt staan in codelijst JZ588: Reden beeindiging.
 
 De reden beëindiging wordt vastgelegd met een standaardcode in het veld RedenEindeLevering (of vergelijkbare benaming, afhankelijk van de technische uitwerking). Deze code geeft aan of de beëindiging bijvoorbeeld het gevolg is van een levering die volgens plan is beëindigd.
