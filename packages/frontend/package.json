@@ -23,7 +23,7 @@
 		"class-variance-authority": "^0.7.1",
 		"clsx": "^2.1.1",
 		"dompurify": "^3.2.5",
-		"hono": "4.9.4",
+		"hono": "4.9.6",
 		"lucide-vue-next": "^0.542.0",
 		"marked": "^16.0.0",
 		"pinia": "^3.0.1",
