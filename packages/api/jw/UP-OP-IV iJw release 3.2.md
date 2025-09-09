@@ -1426,69 +1426,63 @@ Voorbeeld 1
 
 Lopend ToegewezenProduct is
 
-- ToewijzingNummer 123001, Product E, 4 uur/week, Ingangsdatum 1 januari 2023, Einddatum 31 december 2023
-- ToewijzingNummer 123002, Product F, 3 uur/week, Ingangsdatum 1 januari 2023, Einddatum 31 december 2023
+- ToewijzingNummer 123001, Product E, 4 uur/week, Ingangsdatum 1 januari 2025, Einddatum 31 december 2025
+- ToewijzingNummer 123002, Product F, 3 uur/week, Ingangsdatum 1 januari 2025, Einddatum 31 december 2025
 
-Medio mei 2023 wordt een wijziging aangevraagd met daarin ReferentieAanbieder A001
+Medio mei 2025 wordt een wijziging aangevraagd met daarin ReferentieAanbieder A001
 
-- TeWijzigenProduct: ToewijzingNummer123001, Product E, 4 uur/week, GewensteIngangsdatum 1 januari 2020, Einddatum 30 juni 2024
-- TeWijzigenProduct: ToewijzingNummer123002, Product F, 6 uur/week, GewensteIngangsdatum 12 juni 2023, Einddatum 31 december 2023
+- TeWijzigenProduct: ToewijzingNummer123001, Product E, 4 uur/week, GewensteIngangsdatum 1 januari 2025, Einddatum 30 juni 2026
+- TeWijzigenProduct: ToewijzingNummer123002, Product F, 6 uur/week, GewensteIngangsdatum 12 juni 2025, Einddatum 31 december 2025
 
-De gemeente ontvangt het verzoek, en besluit om het verzoek te honoreren, en doet dit tijdig, door op 2 juni 2023 het toewijzingbericht te sturen.
+De gemeente ontvangt het verzoek, en besluit om het verzoek te honoreren, en doet dit tijdig, door op 2 juni 2025 het toewijzingbericht te sturen.
 De wijziging voor product E moet met een gewijzigd ToegewezenProduct gedaan worden, omdat wordt voldaan aan OP380.
-De wijziging van product F wordt gedaan door het lopende ToegewezenProduct per 11 juni 2023 in te trekken, en aansluitend een nieuw ToegewezenProduct met het nieuwe volume te geven met een startdatum van 12 juni 2023.
+De wijziging van product F wordt gedaan door het lopende ToegewezenProduct per 11 juni 2025 in te trekken, en aansluitend een nieuw ToegewezenProduct met het nieuwe volume te geven met een ingangsdatum van 12 juni 2025.
 
 Het toewijzingbericht bevat dus:
 
-ToewijzingNummer 123001, Product E, 4 uur/week, Einddatum 30 juni 2024,
+ToewijzingNummer 123001, Product E, 4 uur/week, Einddatum 30 juni 2026, ReferentieAanbieder A001, RedenWijziging is geïnitieerd door aanbieder
 
-ReferentieAanbieder A001, RedenWijziging is geïnitieerd door aanbieder
+ToewijzingNummer 123002, Product F, 3 uur/week, Einddatum 11 juni 2025 ReferentieAanbieder A001, RedenWijziging is geïnitieerd door aanbieder
 
-ToewijzingNummer 123002, Product F, 3 uur/week, Einddatum 11 juni 2023
-
-ReferentieAanbieder A001, RedenWijziging is geïnitieerd door aanbieder
-
-ToewijzingNummer 123078, Product F, 6 uur/week, startdatum 12 juni 2023, Einddatum 31 december 2023, ReferentieAanbieder A001, RedenWijziging is leeg
+ToewijzingNummer 123078, Product F, 6 uur/week, ingangsdatum 12 juni 2025, Einddatum 31 december 2025, ReferentieAanbieder A001, RedenWijziging is leeg
 
 Voorbeeld 2
 
 Lopende toewijzing is:
 
-- ToewijzingNummer 345001, Product A, Ingangsdatum 1 januari 2023, Einddatum 31 december 2023
-- ToewijzingNummer 345002, Product B, Ingangsdatum 1 januari 2023, Einddatum 31 december 2023
+- ToewijzingNummer 345001, Product A, Ingangsdatum 1 januari 2025, Einddatum 31 december 2025
+- ToewijzingNummer 345002, Product B, Ingangsdatum 1 januari 2025, Einddatum 31 december 2025
 
 Medio april 2023 wordt een wijziging aangevraagd met daarin:
 
-- Ongewijzigd laten van Toewijzing 345001
-- Wijziging: ToewijzingNummer 345002, product B, GewensteIngangsdatum 1 januari 2023, Einddatum 15 mei 2023
-- Starten van nieuw product C per 16 mei 2023
-De toewijzing wordt gedaan per 23 mei 2023, omdat de gemeente eerst onderzoek moest doen. Dan wordt afgestemd wat er moet gebeuren, en welke datum moet worden gekozen.
+- Ongewijzigd laten van Toewijzing 345001, product A
+- Wijziging: ToewijzingNummer 345002, product B, GewensteIngangsdatum 1 januari 2025, Einddatum 15 mei 2025
+- Starten van nieuw product C per 16 mei 2025
+De toewijzing wordt gedaan per 23 mei 2025, omdat de gemeente eerst onderzoek moest doen. Dan wordt afgestemd wat er moet gebeuren, en welke datum moet worden gekozen.
 
 Situatie a: product B en product C zijn aansluitend nodig, en de aanbieder is doorgegaan met leveren van A en B.
 
-Dan kan worden afgesproken dat de toewijzing wordt gestuurd met andere maar nog steeds aansluitende datums per 24 mei 2023
+Dan kan worden afgesproken dat de toewijzing wordt gestuurd met een andere maar nog steeds aansluitende datums per 24 mei 2025
 
 - Product A blijft ongewijzigd
-- Product B krijgt een toegewezen einddatum 23 mei 2023
-- Product C krijgt een toegewezen ingangsdatum 24 mei 2023
+- Product B krijgt een toegewezen einddatum 23 mei 2025
+- Product C krijgt een toegewezen ingangsdatum 24 mei 2025
 
-Situatie b: product B en product C zijn aansluitend nodig, en de aanbieder is op 16 mei 2023 overgeschakeld naar het leveren van A en C.
+Situatie b: product B en product C zijn aansluitend nodig, en de aanbieder is op 16 mei 2025 overgeschakeld naar het leveren van A en C.
 
 Dan kan worden afgesproken dat de toewijzing wordt gestuurd zoals in het verzoek, met terugwerkende kracht
 
 - Product A blijft ongewijzigd
-- Product B krijgt een toegewezen einddatum 15 mei 2023
-- Product C krijgt een toegewezen ingangsdatum 16 mei 2023
+- Product B krijgt een toegewezen einddatum 15 mei 2025
+- Product C krijgt een toegewezen ingangsdatum 16 mei 2025
 NB: Het overschakelen naar product C gebeurt terwijl er op dat moment nog geen rechtmatigheid is. Dit zal in afstemming met de gemeente moeten gebeuren om problemen rond declaratie te voorkomen.
 
 Voorbeeld 3
 
 Lopende toewijzing is:
-
 - ToewijzingNummer 678001, Product X, Ingangsdatum 1 januari 2025, einddatum 7 mei 2026
 
 Medio april 2026 wordt een wijziging aangevraagd met daarin:
-
 - Ongewijzigd laten ToewijzingNummer 678001
 - Nieuw product Y, Ingangsdatum 8 mei 2026
 De toewijzing wordt gedaan per 15 mei 2026, omdat de gemeente eerst onderzoek moest doen.
@@ -1505,8 +1499,6 @@ Dan kan worden afgesproken dat de toewijzing wordt gestuurd zonder terugwerkende
 
 - Product X blijft ongewijzigd met einddatum 7 mei 2026
 - Product Y krijgt een toegewezen ingangsdatum 15 mei 2026
-
----
 
 **IV094**
 
