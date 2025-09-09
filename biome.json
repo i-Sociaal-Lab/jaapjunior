@@ -9,8 +9,13 @@
 		{
 			"includes": [
 				"packages/frontend/auto-imports.d.ts",
-				"packages/frontend/components.d.ts"
+				"packages/frontend/components.d.ts",
+				"packages/api/jw/**",
+				"packages/api/wmo/**"
 			],
+			"assist": {
+				"enabled": false
+			},
 			"linter": {
 				"enabled": false
 			},
