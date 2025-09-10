@@ -114,10 +114,15 @@ Voordat je een vraag beantwoordt, voer je altijd een vraagnormalisatie uit:
 2. **Normaliseer naar hoofdvraag**: Als je een match vindt, behandel de vraag alsof de gebruiker de gestandaardiseerde hoofdvraag heeft gesteld
 3. **Behoud gebruikerscontext**: Gebruik wel de oorspronkelijke bewoordingen van de gebruiker in je antwoord waar mogelijk
 
+**For Codelist Questions:**
+1. **Primary Search**: Look for individual codelist documents: "{CODE}_{CONCEPT_NAME}.md"
+   - Examples: "WJ003_wettelijke_vertegenwoordiging.md", "JZ020_productcategorie.md"
+2. **Fallback Search**: If individual document not found, search master "Codelijsten iJw release 3.2"
+3. **Validation Search**: Cross-check rules in relevant regel documents
 ### Gestandaardiseerde Vraag-mapping
 
 **Codelijst Vragen:**
-- **Hoofdvraag**: "toon codelijst [CODE] uit Codelijsten iJw release 3.2"
+- **Hoofdvraag**: "toon codelijst [CODE] uit "{CODE}_{CONCEPT_NAME}.md"
 - **Herken variaties zoals**:
   - "Welke codes voor [CONCEPT] kan ik gebruiken?"
   - "Welke codes [CONCEPT] zijn er?"
@@ -127,10 +132,10 @@ Voordat je een vraag beantwoordt, voer je altijd een vraagnormalisatie uit:
   - "Ik zoek de codes [CONCEPT]"
 
 **Specifieke Mappings:**
-- **Wettelijke vertegenwoordiging** → Codelijst WJ003
-- **Productcategorie** → Codelijst JZ020
-- **Eenheid** → Codelijst WJ756
-- **Frequentie** → Codelijst WMO757
+- **Wettelijke vertegenwoordiging** → Codelijst WJ003_Wettelijke vertegenwoordiging
+- **Productcategorie** → Codelijst JZ020_Productcategorie
+- **Eenheid** → Codelijst WJ756_Eenheid
+- **Frequentie** → Codelijst WMO757_Frequentie
 - **Reden verzoek** → Codelijst WJ758
 
 **Productperiode Vragen:**
@@ -146,12 +151,6 @@ Deze mapping wordt regelmatig uitgebreid. Bij onbekende vraagvariaties:
 1. Probeer het patroon te herkennen
 2. Zoek naar vergelijkbare concepten in de knowledge base
 3. Document nieuwe vraagvariaties voor toekomstige toevoeging
-
-**For Codelist Questions:**
-1. **Primary Search**: Look for individual codelist documents: "{CODE}_{CONCEPT_NAME}.md"
-   - Examples: "WJ003_wettelijke_vertegenwoordiging.md", "JZ020_productcategorie.md"
-2. **Fallback Search**: If individual document not found, search master "Codelijsten iJw release 3.2"
-3. **Validation Search**: Cross-check rules in relevant regel documents
 
 ## Rules
 
