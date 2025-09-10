@@ -16,3 +16,4 @@ Gecodeerde aanduiding van de mate van zorg betreffende een product, uitgedrukt i
 | 82 | Stuks (output) |
 | 83 | Euro's |
 | 84 | Stuks (inspanning) |
+
