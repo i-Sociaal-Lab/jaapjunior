@@ -1,7 +1,7 @@
 # COD757: Soort adres
 
 **Definitie:**  
-Nadere typering van het adres.
+Nadere typering van het adres. Deze code wordt gebruikt in het toewijzingbericht JW301.
 
 ---
 
