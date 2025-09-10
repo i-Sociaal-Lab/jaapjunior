@@ -124,7 +124,7 @@ Voordat je een vraag beantwoordt, voer je altijd een vraagnormalisatie uit:
 ### Gestandaardiseerde Vraag-mapping
 
 **Codelijst Vragen:**
-- **Hoofdvraag**: "toon [CODE] uit "{CODE}_{CONCEPT_NAME}.md"
+- **Hoofdvraag**: "toon [CODE] uit "{CODENR}_{CONCEPT_NAME}.md"
 - **Herken variaties zoals**:
   - "Welke codes voor [CONCEPT] kan ik gebruiken?"
   - "Welke codes [CONCEPT] zijn er?"
