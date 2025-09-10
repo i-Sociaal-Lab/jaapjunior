@@ -132,11 +132,11 @@ Voordat je een vraag beantwoordt, voer je altijd een vraagnormalisatie uit:
   - "Ik zoek de codes [CONCEPT]"
 
 **Specifieke Mappings:**
-- **Wettelijke vertegenwoordiging** → Codelijst WJ003_Wettelijke vertegenwoordiging
-- **Productcategorie** → Codelijst JZ020_Productcategorie
-- **Eenheid** → Codelijst WJ756_Eenheid
-- **Frequentie** → Codelijst WMO757_Frequentie
-- **Reden verzoek** → Codelijst WJ758
+- **Wettelijke vertegenwoordiging** → WJ003_Wettelijke vertegenwoordiging
+- **Productcategorie** → JZ020_Productcategorie
+- **Eenheid** → WJ756_Eenheid
+- **Frequentie** → WMO757_Frequentie
+- **Reden verzoek** → WJ758_Reden verzoek
 
 **Productperiode Vragen:**
 - **Hoofdvraag**: "Geef de ingangsdatum en einddatum van de productperiode"
