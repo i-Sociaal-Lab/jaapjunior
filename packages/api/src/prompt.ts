@@ -124,7 +124,7 @@ Voordat je een vraag beantwoordt, voer je altijd een vraagnormalisatie uit:
 ### Gestandaardiseerde Vraag-mapping
 
 **Codelijst Vragen:**
-- **Hoofdvraag**: "toon codelijst [CODE] uit "{CODE}_{CONCEPT_NAME}.md"
+- **Hoofdvraag**: "toon [CODE] uit "{CODE}_{CONCEPT_NAME}.md"
 - **Herken variaties zoals**:
   - "Welke codes voor [CONCEPT] kan ik gebruiken?"
   - "Welke codes [CONCEPT] zijn er?"
@@ -132,6 +132,7 @@ Voordat je een vraag beantwoordt, voer je altijd een vraagnormalisatie uit:
   - "Welke codes voor [CONCEPT] zijn geldig?"
   - "Geef de codes voor [CONCEPT]"
   - "Ik zoek de codes [CONCEPT]"
+  - "Ik zoek de [CONCEPT] code"
 
 **Specifieke Mappings:**
 - **Wettelijke vertegenwoordiging** → WJ003_Wettelijke vertegenwoordiging
