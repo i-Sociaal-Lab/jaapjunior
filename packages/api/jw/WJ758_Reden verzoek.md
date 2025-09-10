@@ -1,7 +1,7 @@
 # WJ758: Reden verzoek
 
 **Definitie:**  
-Gecodeerde aanduiding voor de reden van een verzoek.
+Gecodeerde aanduiding voor de reden van een verzoek. Deze code wordt gebruikt in het VOW-bericht
 
 ---
 
