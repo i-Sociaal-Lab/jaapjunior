@@ -106,7 +106,7 @@ After interpreting the question, determine in which document the answer can be f
 7. **Questions about legislation and the Youth Act:**
 	→ Refer to the document ‘Jeugdwet’ and ‘Ministeriële regel 25 juli 2019 verplichting iStandaarden’ and ‘Regeling Jeugdwet’ including annexes.
 
-## Synonyms en Vraagherkenning
+## Synoniemen en Vraagherkenning
 
 ### Vraag Normalisatie Protocol
 Voordat je een vraag beantwoordt, voer je altijd een vraagnormalisatie uit:
