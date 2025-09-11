@@ -7,18 +7,18 @@ Melding in een retourbericht. Het betreft een code die in een retourbericht het 
 
 ## Codelijst
 
-| Code  | Omschrijving | Regel |
-|-------|--------------|-------|
-| 0001 | Bericht is afgekeurd om technische redenen. ||
-| 0200 | Geen opmerking over deze berichtklasse. ||
-| 0233 | Berichtklasse is niet beoordeeld. ||
-| 0611 | Het ingediende tarief komt niet overeen met het contractuele tarief ||
-| 8001 | Declaratie is volledig toegewezen. ||
-| 8017 | Van deze credit prestatie is geen debet prestatie bekend. ||
-| 8021 | Referentienummer prestatie is reeds aangeleverd. ||
-| 8187 | De prestatie hoort niet bij deze cliënt. ||
-| 8214 | DeclaratiePeriode is niet de kalendermaand die volgt op voorgaande DeclaratiePeriode terwijl iedere declaratieperiode zorg geleverd is. ||
-| 8848 | Dagtekening moet gelijk zijn aan of voor de systeemdatum liggen. ||
+| Code | Omschrijving | Regel |
+|------|--------------|-------|
+| 0001 | Bericht is afgekeurd om technische redenen. | |
+| 0200 | Geen opmerking over deze berichtklasse. | |
+| 0233 | Berichtklasse is niet beoordeeld. | |
+| 0611 | Het ingediende tarief komt niet overeen met het contractuele tarief | TR418 |
+| 8001 | Declaratie is volledig toegewezen. | |
+| 8017 | Van deze credit prestatie is geen debet prestatie bekend. | TR323 |
+| 8021 | Referentienummer prestatie is reeds aangeleverd. | TR314 |
+| 8187 | De prestatie hoort niet bij deze cliënt. | TR304 |
+| 8214 | DeclaratiePeriode is niet de kalendermaand die volgt op voorgaande DeclaratiePeriode terwijl iedere declaratieperiode zorg geleverd is. | TR318 |
+| 8848 | Dagtekening moet gelijk zijn aan of voor de systeemdatum liggen. | TR135 |
 | 9019 | Het regiebericht kan niet gekoppeld worden aan een toewijzing. | TR019 |
 | 9056 | Identificatie moet per berichtsoort uniek zijn voor de verzendende partij. | TR056 |
 | 9063 | Het bericht kan niet verwerkt worden omdat geen eerder bericht ontvangen is. | TR063 |
@@ -66,5 +66,5 @@ Melding in een retourbericht. Het betreft een code die in een retourbericht het 
 | 9413 | StatusAanlevering = 1 of 2 en RedenBeeindiging = 20, terwijl er al een ander StopProduct met dezelfde sleutel is. | TR413 |
 | 9414 | Einddatum is niet ≥ aan Einddatum uit actueel StopProduct met dezelfde sleutel. | TR414 |
 | 9415 | Er is al een StopProduct met dezelfde sleutel en RedenBeeindiging ≠ 20 terwijl StatusAanlevering = 1 of 2. | TR415 |
-| S300 | Gemeentecode komt niet voor in de lijst van CBS. | |
-| S329 | ProductCode hoort niet bij de ProductCategorie. | |
+| S300 | Gemeentecode komt niet voor in de lijst van CBS. | TR378 |
+| S329 | ProductCode hoort niet bij de ProductCategorie. | TR381 |
