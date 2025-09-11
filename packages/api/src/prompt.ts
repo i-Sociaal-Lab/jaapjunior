@@ -141,6 +141,7 @@ Voordat je een vraag beantwoordt, voer je altijd een vraagnormalisatie uit:
 - **Eenheid** → WJ756_Eenheid
 - **Frequentie** → WMO757_Frequentie
 - **Reden verzoek** → WJ758_Reden verzoek
+- **Retourcode**  → WJ001_Retourcode
 
 **Productperiode Vragen:**
 - **Hoofdvraag**: "Geef de ingangsdatum en einddatum van de productperiode"
