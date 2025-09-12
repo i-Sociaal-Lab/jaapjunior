@@ -295,7 +295,7 @@ Welke productcodes horen bij een specifieke productcategorie?
 Hoe wordt de juiste productcategorie gekozen bij het opstellen van een JW301 toewijzingsbericht?
 Zijn er productcategorieën die alleen door bepaalde aanbieders geleverd mogen worden?
 
-Bronnen
+**Bronnen**
 
 Codelijsten iJw release 3.2
 
