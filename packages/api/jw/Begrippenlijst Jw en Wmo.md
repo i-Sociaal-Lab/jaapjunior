@@ -513,6 +513,12 @@ De reden beëindiging wordt vastgelegd met een standaardcode in het veld RedenEi
 
 **Wlz-zorg thuis** Zorg op thuis-locatie vergoed uit de WLZ (vpt, mpt, pgb).
 
+**Wlz signalering** Gemeenten zijn verantwoordelijk voor passende zorg aan inwoners, maar krijgen soms te maken met onbedoelde overlap tussen de Wmo en de Wet langdurige zorg (Wlz). Die samenloop kan leiden tot dubbele zorgverlening of onnodige kosten. BIDN helpt gemeenten om deze situaties te voorkomen met twee slimme diensten: de Wlz-registertoets en Wlz-signalen. Daarmee kunnen gemeenten zowel preventief als actief grip houden op de rechtmatige inzet van zorgmiddelen.
+
+**Wlz-registertoets** informatiedienst BIDN: De Wlz-registertoets is een handige controletool waarmee gemeenten kunnen nagaan of een inwoner een Wlz-indicatie heeft. Dit voorkomt dat iemand die recht heeft op Wlz-zorg onterecht een Wmo-voorziening krijgt. Deze snelle check op basis van het BSN voorkomt dat iemand per ongeluk de verkeerde zorg ontvangt. De toets is beschikbaar via het portaal van BIDN of als automatische koppeling in het systeem van de gemeente.
+
+**Wlz-signalen** informatiedienst BIDN: Als tijdens het gebruik van een Wmo-voorziening blijkt dat een inwoner een Wlz-indicatie heeft gekregen, ontvangt de gemeente automatisch een seintje. BIDN checkt dagelijks het overzicht inwoners met een Wmo-voorziening van de gemeente met het Wlz-register van het CIZ.
+
 **Wmo** Wet maatschappelijke ondersteuning 2015; regelt een samenhangend aanbod van zorg- en welzijnsvoorzieningen die gemeenten verstrekken om mensen te ondersteunen op het gebied van zelfredzaamheid, participatie, beschermd wonen en opvang; inwerkingtreding 1 januari 2015, opvolger van de eerdere Wmo
 
 **woningaanpassingen** ingrepen of voorzieningen in de woning om deze geschikt te maken voor mensen met een functiebeperking, zoals het plaatsen van een traplift en het aanpassen van de badkamer of de keuken; vergoed vanuit de Wmo 2015 of bij een Wlz-indicatie vanuit de Wlz
