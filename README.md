@@ -63,22 +63,13 @@
 
 - **Regels op berichten iJw release 3.2**
 - **Codelijst iJw release 3.2**
-- **Master XSD iJw 3.2** (samenvatting xsd’s)
+- **Basischema xsd** 
 - **Begrippenlijst iJw & iWmo** (gebaseerd op begrippenlijst Zorginstituut)
 - Jeugdwet en Regeling
+- etc.
 
 > 💡 Tip: Deze pagina bevat de download-/doorkliks naar de brondocumenten en instructies.
 > 
-
-### Antwoordregels (samengevat uit de prompt) 🧷
-
-- **Alleen** de bovengenoemde documenten gebruiken.
-- Bij een **regelaanhaling** (bijv. IV087): **exacte tekst** overnemen uit *Regels op berichten*, **zonder** interpretatie of extra opmaak.
-- Bij een **code** (bijv. JZ 588 of “Reden beëindiging”): **exacte tekst** uit de **Codelijst** overnemen.
-- Bij termen uit de **Begrippenlijst**: **exacte definitie** overnemen.
-- **Out‑of‑scope** (buiten iJw‑berichtenverkeer): standaard weigering in het Nederlands.
-- **Bronnenblok verplicht**: antwoord is **ongeldig** zonder geldige links.
-
 ---
 
 ## Hoe stel je een goede vraag? 📝
@@ -113,17 +104,6 @@ Alleen de **daadwerkelijk geraadpleegde** documenten opnemen, elk op een **nieuw
 **Disclaimer (verplicht in elk antwoord)**
 
 *“Dit antwoord is gegenereerd met behulp van AI, op basis van de toegevoegde documentatie en kan fouten bevatten. Verifieer het antwoord bij twijfel bij de experts van het Ketenbureau.”*
-
----
-
-## Criteria voor documentkeuze 🎯
-
-1. **Vragen over regels** → **Regels op berichten**
-2. **Vragen over codes** → **Codelijst**
-3. **Vragen over berichtinhoud / data‑elementen / verplichtheid** → **Master XSD**
-
-> Let op: Raadpleeg alleen het document dat bij de vraag hoort. Niet combineren of extrapoleren. 🚫
-> 
 
 ---
 
