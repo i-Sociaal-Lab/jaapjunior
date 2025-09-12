@@ -448,11 +448,11 @@ zie: https://zoek.officielebekendmakingen.nl/kst-36621-3.html
 
 Deze voorgestelde wetswijziging heeft als doel om een juridische grondslag in wetgeving aan te brengen, zodat:
 
-• het Centrum Indicatiestelling Zorg (hierna: CIZ) zonder uitdrukkelijke toestemming van de cliënt en/of diens ouders aan gemeenten informatie kan verstrekken over een toewijzend Wlz-indicatiebesluit ten behoeve van de uitvoering van de Jeugdwet. Hierdoor worden gemeenten in staat gesteld om mogelijke samenloop te signaleren en mee te nemen in hun onderzoek naar de noodzaak tot het treffen van een jeugdhulpvoorziening;
+1. Het Centrum Indicatiestelling Zorg (CIZ) zonder uitdrukkelijke toestemming van de cliënt en/of diens ouders aan gemeenten informatie kan verstrekken over een toewijzend Wlz-indicatiebesluit ten behoeve van de uitvoering van de Jeugdwet. Hierdoor worden gemeenten in staat gesteld om mogelijke samenloop te signaleren en mee te nemen in hun onderzoek naar de noodzaak tot het treffen van een jeugdhulpvoorziening;
 
-• zorgkantoren zonder voorafgaande uitdrukkelijke toestemming van de cliënt informatie aan gemeenten kunnen verstrekken over de verzilvering van een Wlz-indicatie ten behoeve van de uitvoering van de Wmo 2015 en de Jeugdwet en over de leveringsvorm ten behoeve van de uitvoering van de Wmo 2015. Hierdoor zijn gemeenten beter in staat om te beoordelen of het verstrekken van een Wmo-maatwerkvoorziening of jeugdhulpvoorziening rechtmatig is. Daarnaast scheelt dit veel administratieve lasten en regeldruk bij gemeenten, zorgkantoren, zorgaanbieders en cliënten.
+2. zorgkantoren zonder voorafgaande uitdrukkelijke toestemming van de cliënt informatie aan gemeenten kunnen verstrekken over de verzilvering van een Wlz-indicatie ten behoeve van de uitvoering van de Wmo 2015 en de Jeugdwet en over de leveringsvorm ten behoeve van de uitvoering van de Wmo 2015. Hierdoor zijn gemeenten beter in staat om te beoordelen of het verstrekken van een Wmo-maatwerkvoorziening of jeugdhulpvoorziening rechtmatig is. Daarnaast scheelt dit veel administratieve lasten en regeldruk bij gemeenten, zorgkantoren, zorgaanbieders en cliënten.
 
-# Vragen over Modules
+# Vragen over Modules, testvoorzieningen
 
 ## Hoe weet ik of mijn bericht voldoet aan de specificaties?
 
@@ -461,6 +461,7 @@ Via de validatiemodule op istandaarden.nl kunt u de berichten valideren. De beri
 Via de Testvoorziening iStandaarden (TiS) van Zorginstituut Nederland kunnen softwareleveranciers hun producten testen in de rol van elke partij die deelneemt aan het iStandaarden-berichtenverkeer, en zo nodig verbeteren.
 
 Voor meer informatie of het aanvragen van een account kunt u contact opnemen met Zorginstituut Nederland (<info@istandaarden.nl>).
+
 
 
 
