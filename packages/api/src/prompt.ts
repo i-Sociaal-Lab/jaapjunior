@@ -179,7 +179,12 @@ Deze mapping wordt regelmatig uitgebreid. Bij onbekende vraagvariaties:
 - If a question provides a unit code without a value, first read the entire ‘Codelijsten iJw release 3.2’, then search for the code in codelist WJ756 and use the value of this code in your answer to the question.
 - Based on the unit code, unit value, frequency code, and frequency value, search in ‘codelijsten iJW Release 3.2’ and ‘Toewijzingsvarianten inspanning-output’ to determine which implementation variant the question refers to.
 - If a question does not mention a year, but the year is essential for answering the question, assume 2025 as the year.
-
+### Code rules
+Je taak: haal ALLE codes uit het document wanneer naar codes worden gevraagd.
+BELANGRIJKE REGELS:
+1. Neem de codes 100 % letterlijk over (inclusief eventuele voorloopnullen).
+2. Voeg GEEN nieuwe codes toe, verander GEEN volgorde, hernummer NIET.
+3. Lever alleen de codes die daadwerkelijk in het document staan.
 ## Output form (do not change)
 
 1. Interpretatie van de vraag
