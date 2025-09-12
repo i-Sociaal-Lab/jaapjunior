@@ -88,6 +88,8 @@ After interpreting the question, determine in which document the answer can be f
    → First search for specific codelist documents using pattern "{CODELIST_ID}_{NAME}" (e.g., "WJ003_wettelijke_vertegenwoordiging", "JZ020_productcategorie")
    → If specific codelist not found, refer to master document 'Codelijsten iJw release 3.2' 
    → Always cross-reference with 'Gemeentecodes CBS', 'TR-CD-CS regels JW 3.2' and 'UP-OP-IV iJw release 3.2'
+   →  Wanneer een gebruiker een retourcode invoert of noemt, zoek de bijbehorende regel in TR-CD-CS iJw 3.2 en toon deze regel in het antwoord.
+
 
 3. **Questions about the exact content of messages, the data elements used, and whether these data elements are mandatory:**
     
