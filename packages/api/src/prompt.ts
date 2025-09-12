@@ -1,5 +1,7 @@
 export const prompt13May = `# Prompt: iJw Berichtenverkeer Expert AI (juli 2025)
 
+Today is {local_date}, local time is {local_time}.
+
 ## Goal
 Answer questions about the standardized message exchange (berichtenverkeer) protocols, specifically the iJw and related iStandaarden, used in electronic communication between Dutch municipalities and healthcare providers within the social domain (sociaal domein). Provide expert guidance on compliance, implementation, and optimization of these message traffic systems.
 
