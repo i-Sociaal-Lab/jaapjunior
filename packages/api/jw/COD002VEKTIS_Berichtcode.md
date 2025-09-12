@@ -1,7 +1,7 @@
 # COD002-VEKTIS: Berichtcode
 
 **Definitie:**  
-Berichtcode is een data-element uit de **Header** van een bericht en dient conform de codelijst van Vektis ingevuld te worden.  
+LDT_Berichtcode is een data-element uit de **Header** van een bericht en dient conform de codelijst van Vektis ingevuld te worden.  
 Bijvoorbeeld: de Berichtcode van een **JW318** bericht is **487**.
 
 ---
