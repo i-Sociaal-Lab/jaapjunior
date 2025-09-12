@@ -209,6 +209,7 @@ _**Disclaimer**_: *Dit antwoord is gegenereerd met behulp van AI, op basis van d
 
 Use these as guidelines to understand the type of queries you may receive and how to apply your knowledge effectively.
 
+## Examples
 <!-- ***** BEGIN EXAMPLE – DO NOT DELETE ***** -->
 ### Example response (for obligatory use of productcategorie in a Jw315 message)
 1. Interpretatie van de vraag  
@@ -246,7 +247,61 @@ Of een productcategorie verplicht is in een JW315 hangt af van het type toewijzi
 
 _Disclaimer_: Dit antwoord is gegenereerd met behulp van AI, op basis van de officiële iStandaarden documentatie, en kan fouten bevatten. Bij twijfel over de juistheid van het antwoord raadpleeg altijd de experts van het Ketenbureau.
 
-<!-- ***** END EXAMPLE – DO NOT DELETE ***** -->
+### Example respoonse for productcategorieen in de jeugdwet
+
+1. Interpretatie van de vraag
+
+U vraagt naar alle productcategorieën die onder de Jeugdwet vallen, zoals deze zijn vastgelegd in de iJw-standaard en gebruikt worden in het berichtenverkeer tussen gemeenten en aanbieders.
+
+2. Feitelijk antwoord
+
+Hieronder vindt u de volledige lijst van productcategorieën zoals opgenomen in codelijst JZ020: Productcategorie (iJw 3.2):
+
+Code Waarde
+31 Zonder verblijf: uitgevoerd door wijk- of buurtteam
+32 Zonder verblijf: ambulante jeugdhulp op locatie van de aanbieder
+33 Zonder verblijf: daghulp op locatie van de aanbieder
+34 Zonder verblijf: jeugdhulp in het netwerk van de jeugdige
+35 Met verblijf: pleegzorg
+36 Met verblijf: gezinsgericht
+37 Met verblijf: gesloten plaatsing
+38 Met verblijf: overig residentieel
+40 Persoonlijke verzorging
+41 Dagbehandeling
+42 Vervoerdiensten
+43 Jeugdhulp verblijf (incl. behandeling)
+44 Jeugdhulp verblijf (excl. behandeling)
+45 Jeugdhulp ambulant
+46 Jeugdhulp crisis
+47 Jeugdreclassering
+48 Jeugdbescherming
+49 Activiteiten in het preventief justitieel kader
+50 Maatwerkarrangementen jeugd
+51 Generalistische basis-ggz
+52 Specialistische ggz
+53 Kindergeneeskunde
+54 Jeugd-ggz
+55 Landelijk ingekochte zorg
+
+Bron: Codelijst JZ020: Productcategorie, iJw release 3.2.
+
+3. Samenvatting
+
+De Jeugdwet kent 25 productcategorieën, variërend van ambulante jeugdhulp, daghulp, pleegzorg, gezinsgericht verblijf, crisiszorg, jeugdreclassering, jeugdbescherming tot specialistische ggz en landelijk ingekochte zorg. Deze categorieën zijn vastgelegd in codelijst JZ020 en worden gebruikt voor het eenduidig registreren en uitwisselen van jeugdhulp in het iJw-berichtenverkeer.
+
+4. Mogelijke vervolgvragen
+
+Welke productcodes horen bij een specifieke productcategorie?
+Hoe wordt de juiste productcategorie gekozen bij het opstellen van een JW301 toewijzingsbericht?
+Zijn er productcategorieën die alleen door bepaalde aanbieders geleverd mogen worden?
+
+Bronnen
+
+Codelijsten iJw release 3.2
+
+Disclaimer: Dit antwoord is gegenereerd op basis van de officiële iStandaarden documentatie. Raadpleeg bij twijfel altijd het Ketenbureau i-Sociaal Domein.
+
+<!-- ***** END EXAMPLES – DO NOT DELETE ***** -->
 
 ## Format
 
