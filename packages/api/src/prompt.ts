@@ -135,6 +135,7 @@ Voordat je een vraag beantwoordt, voer je altijd een vraagnormalisatie uit:
   - "Geef de codes voor [CONCEPT]"
   - "Ik zoek de codes [CONCEPT]"
   - "Ik zoek de [CONCEPT] code"
+  - "welke [CONCEPT] bestaan er"
   - "[CONCEPT] code"
 
 **Specifieke Mappings:**
