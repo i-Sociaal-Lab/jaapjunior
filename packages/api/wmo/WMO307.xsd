@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:iwmo="http://www.istandaarden.nl/iwmo/3_2/basisschema/schema" xmlns:wmo305="http://www.istandaarden.nl/iwmo/3_2/wmo305/schema" targetNamespace="http://www.istandaarden.nl/iwmo/3_2/wmo305/schema" elementFormDefault="qualified">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:iwmo="http://www.istandaarden.nl/iwmo/3_2/basisschema/schema" xmlns:wmo307="http://www.istandaarden.nl/iwmo/3_2/wmo307/schema" targetNamespace="http://www.istandaarden.nl/iwmo/3_2/wmo307/schema" elementFormDefault="qualified">
 	<xs:import namespace="http://www.istandaarden.nl/iwmo/3_2/basisschema/schema" schemaLocation="basisschema.xsd"></xs:import>
 	<xs:annotation>
 		<xs:appinfo>
 			<iwmo:standaard>iwmo</iwmo:standaard>
-			<iwmo:bericht>wmo305</iwmo:bericht>
+			<iwmo:bericht>wmo307</iwmo:bericht>
 			<iwmo:release>3.2</iwmo:release>
 			<iwmo:BerichtXsdVersie>1.0.0</iwmo:BerichtXsdVersie>
 			<iwmo:BerichtXsdMinVersie>1.0.0</iwmo:BerichtXsdMinVersie>
@@ -14,14 +14,14 @@
 			<iwmo:BasisschemaXsdMaxVersie>1.0.0</iwmo:BasisschemaXsdMaxVersie>
 		</xs:appinfo>
 	</xs:annotation>
-	<xs:element name="Bericht" type="wmo305:Root"></xs:element>
+	<xs:element name="Bericht" type="wmo307:Root"></xs:element>
 	<xs:complexType name="Root">
 		<xs:annotation>
-			<xs:documentation>Bericht voor het melden van de start van levering van Wmo-ondersteuning.</xs:documentation>
+			<xs:documentation>Bericht voor het melden van de stop van levering van Wmo-ondersteuning.</xs:documentation>
 		</xs:annotation>
 		<xs:sequence>
-			<xs:element name="Header" type="wmo305:Header"></xs:element>
-			<xs:element name="Client" type="wmo305:Client"></xs:element>
+			<xs:element name="Header" type="wmo307:Header"></xs:element>
+			<xs:element name="Client" type="wmo307:Client"></xs:element>
 		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="Header">
@@ -32,7 +32,7 @@
 				</xs:annotation>
 				<xs:simpleType>
 					<xs:restriction base="iwmo:LDT_BerichtCode">
-						<xs:pattern value="418"/>
+						<xs:pattern value="420"/>
 					</xs:restriction>
 				</xs:simpleType>
 			</xs:element>
@@ -103,17 +103,17 @@
 					<xs:documentation>De naam van een natuurlijk persoon, aangeduid als Geslachtsnaam en eventueel Voornamen en/of Voorletters. </xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="StartProducten" type="wmo305:StartProducten"></xs:element>
+			<xs:element name="StopProducten" type="wmo307:StopProducten"></xs:element>
 		</xs:sequence>
 	</xs:complexType>
-	<xs:complexType name="StartProducten">
+	<xs:complexType name="StopProducten">
 		<xs:sequence>
-			<xs:element name="StartProduct" type="wmo305:StartProduct"  maxOccurs="unbounded"></xs:element>
+			<xs:element name="StopProduct" type="wmo307:StopProduct"  maxOccurs="unbounded"></xs:element>
 		</xs:sequence>
 	</xs:complexType>
-	<xs:complexType name="StartProduct">
+	<xs:complexType name="StopProduct">
 		<xs:annotation>
-			<xs:documentation>Gegevens over het product waarvan de levering gestart is.</xs:documentation>
+			<xs:documentation>Gegevens over het beeindigen van de levering van ondersteuning.</xs:documentation>
 		</xs:annotation>
 		<xs:sequence>
 			<xs:element name="ToewijzingNummer" type="iwmo:LDT_Nummer" minOccurs="0">
@@ -134,6 +134,16 @@
 			<xs:element name="Begindatum" type="iwmo:LDT_Datum">
 				<xs:annotation>
 					<xs:documentation>Datum vanaf wanneer een ondersteuningsproduct wordt geleverd.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="RedenBeeindiging" type="iwmo:LDT_RedenBeeindiging">
+				<xs:annotation>
+					<xs:documentation>De reden van beeindiging van de Wmo-ondersteuning bij de client.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Einddatum" type="iwmo:LDT_Datum">
+				<xs:annotation>
+					<xs:documentation>De datum waarop de Wmo-ondersteuning bij client wordt beeindigd.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="StatusAanlevering" type="iwmo:LDT_StatusAanlevering">
