@@ -82,9 +82,7 @@ De redenen dat gemeenten wijzigingen doorvoeren in hun productcatalogus, variër
 
 # Onderhoudscyclus van de standaardproductcodelijsten
 
-In dit protocol is ook opgenomen hoe gemeenten en aanbieders eventuele suggesties voor de standaardproductcodelijsten kenbaar kunnen maken bij de technisch beheerder.Zorginstituut Nederland werkt de lijsten jaarlijks bij en publiceert deze op 
-
-www.istandaarden.nl. De jaarlijkse onderhoudscyclus geeft gebruikers de mogelijkheid om productcodes aan te vullen en de omschrijvingen te verduidelijken. 
+In dit protocol is ook opgenomen hoe gemeenten en aanbieders eventuele suggesties voor de standaardproductcodelijsten kenbaar kunnen maken bij de technisch beheerder.Zorginstituut Nederland werkt de lijsten jaarlijks bij en publiceert deze op www.istandaarden.nl. De jaarlijkse onderhoudscyclus geeft gebruikers de mogelijkheid om productcodes aan te vullen en de omschrijvingen te verduidelijken. 
 
 # Leeswijzer
 
