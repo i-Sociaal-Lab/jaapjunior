@@ -1,0 +1,3142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema targetNamespace="http://www.istandaarden.nl/iwmo/3_2/basisschema/schema" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:iwmo="http://www.istandaarden.nl/iwmo/3_2/basisschema/schema">
+	<xs:annotation>
+		<xs:appinfo>
+			<iwmo:standaard>iwmo</iwmo:standaard>
+			<iwmo:bericht>basisschema</iwmo:bericht>
+			<iwmo:release>3.2</iwmo:release>
+			<iwmo:BasisschemaXsdVersie>1.0.0</iwmo:BasisschemaXsdVersie>
+			<iwmo:BasisschemaXsdMinVersie>1.0.0</iwmo:BasisschemaXsdMinVersie>
+			<iwmo:BasisschemaXsdMaxVersie>1.0.0</iwmo:BasisschemaXsdMaxVersie>
+		</xs:appinfo>
+	</xs:annotation>
+	<xs:complexType name="CDT_Achternaam">
+		<xs:annotation>
+			<xs:documentation>De achternaam van een natuurlijk persoon, aangeduid als Naam met Voorvoegsel.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="Achternaam" type="iwmo:LDT_Naam">
+				<xs:annotation>
+					<xs:documentation>De achternaam van een persoon, indien nodig verkort weergegeven.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Voorvoegsel" type="iwmo:LDT_Voorvoegsel" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Verzameling van een of meer voorzetsels/lidwoorden, die aan het significante deel van de achternaam van een persoon vooraf gaat en daar een onderdeel van is.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="CDT_Adres">
+		<xs:annotation>
+			<xs:documentation>Gegevens voor de aanduiding van een adres.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="Huis" type="iwmo:CDT_Huis" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Aanduiding van een specifiek huis in een straat, onderdeel van het adres.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Postcode" type="iwmo:LDT_Postcode" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Aanduiding van de (inter)nationale postcode. Dit veld is geschikt voor zowel de Nederlandse als niet-Nederlandse postcodes.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Straatnaam" type="iwmo:LDT_Straatnaam" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>De officiele door de gemeente vastgestelde naam van een straat.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Plaatsnaam" type="iwmo:LDT_Plaatsnaam" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>De door de gemeente vastgestelde naam van een woonplaats.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="LandCode" type="iwmo:LDT_LandCode" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Identificatie van een (historisch/actueel) land of gebiedsdeel.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="CDT_BedragMetDC">
+		<xs:annotation>
+			<xs:documentation>Samengesteld bedrag met DebetCredit indicatie.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="Bedrag" type="iwmo:LDT_Bedrag">
+			</xs:element>
+			<xs:element name="DebetCredit" type="iwmo:LDT_DebetCredit">
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="CDT_BerichtIdentificatie">
+		<xs:annotation>
+			<xs:documentation>Naam of nummer en dagtekening ter identificatie van een totale aanlevering.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="Identificatie" type="iwmo:LDT_IdentificatieBericht">
+				<xs:annotation>
+					<xs:documentation>Naam of nummer, die ter identificatie aan een totale aanlevering kan worden meegegeven.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Dagtekening" type="iwmo:LDT_Datum">
+				<xs:annotation>
+					<xs:documentation>De datum van verzending van het bericht.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="CDT_Communicatie">
+		<xs:annotation>
+			<xs:documentation>Aanduiding over bijzondere vorm van communicatie die gebruikt dient te worden.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="Vorm" type="iwmo:LDT_Communicatievorm">
+				<xs:annotation>
+					<xs:documentation>Gecodeerde aanduiding van de bijzondere vorm van communicatie die gebruikt dient te worden.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Taal" type="iwmo:LDT_Taal" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>De taal van de client waarin met de client wordt gecommuniceerd.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="CDT_Geboortedatum">
+		<xs:annotation>
+			<xs:documentation>Datum waarop een natuurlijk persoon geboren is.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="Datum" type="iwmo:LDT_Datum">
+				<xs:annotation>
+					<xs:documentation>Datum waarop een persoon geboren is.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="DatumGebruik" type="iwmo:LDT_DatumGebruik" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Indicator die aangeeft welk deel van de voorafgaande datum gebruikt mag worden.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="CDT_GeslotenPeriode">
+		<xs:annotation>
+			<xs:documentation>Tijdsperiode met zowel begin- als einddatum</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="Begindatum" type="iwmo:LDT_Datum">
+				<xs:annotation>
+					<xs:documentation>De begindatum van de periode.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Einddatum" type="iwmo:LDT_Datum">
+				<xs:annotation>
+					<xs:documentation>De einddatum van de periode.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="CDT_Huis">
+		<xs:annotation>
+			<xs:documentation>Aanduiding van een specifiek huis in een straat, onderdeel van het adres.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="Huisnummer" type="iwmo:LDT_Huisnummer">
+				<xs:annotation>
+					<xs:documentation>De numerieke aanduiding zoals de gemeente die aan het object heeft toegekend.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Huisletter" type="iwmo:LDT_Huisletter" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Een alfabetisch teken achter het huisnummer zoals dit door het gemeentebestuur is toegekend.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="HuisnummerToevoeging" type="iwmo:LDT_HuisnummerToevoeging" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Die letters of tekens die noodzakelijk zijn om, naast huisnummer en -letter, de brievenbus te vinden.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="AanduidingWoonadres" type="iwmo:LDT_AanduidingWoonadres" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>De aanduiding die wordt gebruikt voor adressen die niet zijn voorzien van de gebruikelijke straatnaam en huisnummeraanduidingen.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="CDT_Omvang">
+		<xs:annotation>
+			<xs:documentation>Aanduiding van de omvang van de te leveren of geleverde ondersteuning, uitgedrukt in Volume, Eenheid en Frequentie.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="Volume" type="iwmo:LDT_Volume">
+				<xs:annotation>
+					<xs:documentation>Aanduiding van de mate van zorg betreffende een product.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Eenheid" type="iwmo:LDT_Eenheid">
+				<xs:annotation>
+					<xs:documentation>Aanduiding van de eenheid waarin het volume is uitgedrukt.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Frequentie" type="iwmo:LDT_Frequentie">
+				<xs:annotation>
+					<xs:documentation>Aanduiding van de frequentie waarmee een ondersteuningsproduct geleverd wordt.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="CDT_OpenPeriode">
+		<xs:annotation>
+			<xs:documentation>Aanduiding van een tijdsperiode met een Begindatum en/of een Einddatum.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="Begindatum" type="iwmo:LDT_Datum" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>De begindatum van de periode.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Einddatum" type="iwmo:LDT_Datum" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>De einddatum van de periode.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="CDT_Product">
+		<xs:annotation>
+			<xs:documentation>Gecodeerde omschrijving van een product, dienst of resultaat ten behoeve van het leveren van ondersteuning aan een client. Product wordt uitgedrukt in een categorie en eventueel nader gespecificeerd met een specifieke productcode.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="Categorie" type="iwmo:LDT_ProductCategorie">
+				<xs:annotation>
+					<xs:documentation>Gecodeerde aanduiding van hoofdcategorieen van producten in het kader van de Wet maatschappelijke ondersteuning (Wmo).</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Code" type="iwmo:LDT_ProductCode" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Gecodeerde aanduiding van producten in het kader van de Wet maatschappelijke ondersteuning (Wmo).</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="CDT_Referentie">
+		<xs:sequence>
+			<xs:element name="ReferentieNummer" type="iwmo:LDT_ReferentieNummer">
+				<xs:annotation>
+					<xs:documentation>Uniek referentienummer dat de zorgverlener heeft toegekend aan een detailregel van de declaratie.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VorigReferentieNummer" type="iwmo:LDT_ReferentieNummer" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Uniek referentienummer dat de zorgverlener heeft toegekend aan een voorgaande detailregel, gerelateerd aan deze detailregel.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="CDT_Telefoon">
+		<xs:annotation>
+			<xs:documentation>Het telefoonnummer waarop de client of relatie van de client te bereiken is.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="Telefoonnummer" type="iwmo:LDT_Telefoonnummer">
+				<xs:annotation>
+					<xs:documentation>Het telefoonnummer waarop de client of relatie van de client te bereiken is.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Landnummer" type="iwmo:LDT_Landnummer">
+				<xs:annotation>
+					<xs:documentation>Het telefoonnummer van een land, vanuit Nederland benaderd.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="CDT_Telefoonnummers">
+		<xs:annotation>
+			<xs:documentation>De telefoonnummers waarop de client of relatie van de client te bereiken is.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="Telefoon01" type="iwmo:CDT_Telefoon">
+				<xs:annotation>
+					<xs:documentation>Het telefoonnummer waarop de client of relatie van de client te bereiken is.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Telefoon02" type="iwmo:CDT_Telefoon" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Het telefoonnummer waarop de client of relatie van de client te bereiken is.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="CDT_TotaalBedragMetDC">
+		<xs:annotation>
+			<xs:documentation>Samengesteld totaal bedrag met DebetCredit indicatie.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="TotaalBedrag" type="iwmo:LDT_TotaalBedrag">
+				<xs:annotation>
+					<xs:documentation>Het bedrag dat in zijn totaliteit gedeclareerd of gefactureerd, toegekend of berekend is.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="DebetCredit" type="iwmo:LDT_DebetCredit">
+				<xs:annotation>
+					<xs:documentation>Indicatie of een bedrag/aantal debet of credit is.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="CDT_VerkorteNaam">
+		<xs:annotation>
+			<xs:documentation>De naam van een natuurlijk persoon, aangeduid als Geslachtsnaam en eventueel Voornamen en/of Voorletters.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="Geslachtsnaam" type="iwmo:CDT_Achternaam">
+				<xs:annotation>
+					<xs:documentation>Wettelijk vastgelegde achternaam die iemand bij de geboorte erft van de vader of moeder.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Voornamen" type="iwmo:LDT_Naam" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>De verzameling namen die, gescheiden door spaties, aan de geslachtsnaam voorafgaat.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Voorletters" type="iwmo:LDT_Voorletters" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>De verzameling van letters die wordt gevormd door de eerste letter van alle in volgorde voorkomende voornamen van een persoon.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="CDT_Verwijzer">
+		<xs:annotation>
+			<xs:documentation>Gegevens over de persoon of instantie die een client heeft doorverwezen naar ondersteuning, aangeduid als Type en Naam of ZorgverlenerCode.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="Type" type="iwmo:LDT_TypeVerwijzer">
+				<xs:annotation>
+					<xs:documentation>Gecodeerde aanduiding van het type verwijzer.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Naam" type="iwmo:LDT_NaamVerwijzer" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Naam van de verwijzende persoon of instantie.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ZorgverlenerCode" type="iwmo:LDT_AgbCode" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>De AGBcode van de zorgverlener.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="CDT_VolledigeNaam">
+		<xs:annotation>
+			<xs:documentation>Volledige naam van een natuurlijk persoon, aangeduid als Geslachtsnaam, eventueel Partnernaam, Voornamen en/of Voorletters en NaamGebruik.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="Geslachtsnaam" type="iwmo:CDT_Achternaam">
+				<xs:annotation>
+					<xs:documentation>Wettelijk vastgelegde achternaam die iemand bij de geboorte erft van de vader of moeder.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Partnernaam" type="iwmo:CDT_Achternaam" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Na het voltrekken van een huwelijk of na een officiele partnerregistratie van de partner aangenomen familienaam.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Voornamen" type="iwmo:LDT_Naam" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>De verzameling namen die, gescheiden door spaties, aan de geslachtsnaam voorafgaat.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Voorletters" type="iwmo:LDT_Voorletters" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>De verzameling van letters die wordt gevormd door de eerste letter van alle in volgorde voorkomende voornamen van een persoon.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="NaamGebruik" type="iwmo:LDT_NaamGebruik">
+				<xs:annotation>
+					<xs:documentation>Aanduiding naamgebruik (gecodeerd).</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="CDT_XsdVersie">
+		<xs:sequence>
+			<xs:element name="BasisschemaXsdVersie" type="iwmo:LDT_Versie">
+			</xs:element>
+			<xs:element name="BerichtXsdVersie" type="iwmo:LDT_Versie">
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="LDT_AanduidingWoonadres">
+		<xs:annotation>
+			<xs:documentation>De aanduiding die wordt gebruikt voor adressen die niet zijn voorzien van de gebruikelijke straatnaam en huisnummeraanduidingen.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="AB">
+				<xs:annotation>
+					<xs:documentation>Aan boord</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="BY">
+				<xs:annotation>
+					<xs:documentation>Bij</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="TO">
+				<xs:annotation>
+					<xs:documentation>Tegenover</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="WW">
+				<xs:annotation>
+					<xs:documentation>Woonwagen</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:maxLength value="2"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="LDT_AdresSoort">
+		<xs:annotation>
+			<xs:documentation>Nadere typering van het adres.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="01">
+				<xs:annotation>
+					<xs:documentation>BRP-adres</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="02">
+				<xs:annotation>
+					<xs:documentation>Correspondentie-adres</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="03">
+				<xs:annotation>
+					<xs:documentation>Verblijfadres</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="04">
+				<xs:annotation>
+					<xs:documentation>Tijdelijk verblijfadres</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:maxLength value="2"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="LDT_AgbCode">
+		<xs:annotation>
+			<xs:documentation>Identificerende code van een instelling of aanbieder van zorg of ondersteuning (zie https://www.agbcode.nl)</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="8"/>
+			<xs:pattern value="[0-9]{8}"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="LDT_Bedrag">
+		<xs:annotation>
+			<xs:documentation>Bedrag in 1/100 van gehanteerde valuta. Bijvoorbeeld 10000 is tienduizend eurocent, is 100 Euro.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:integer">
+			<xs:minInclusive value="0"/>
+			<xs:maxInclusive value="99999999"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="LDT_BerichtCode">
+		<xs:annotation>
+			<xs:documentation>Code ter identificatie van een soort bericht. Per bericht is gespecificeerd welke code gebruikt moet worden. De volledige codelijst is te vinden op het portaal van Vektis (http://ei.vektis.nl/WespCodelijstenDetail.aspx?Co_Ge_Code=COD002&amp;Co_Or_Code=VEKT).</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="3"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="LDT_BerichtSubversie">
+		<xs:annotation>
+			<xs:documentation>Volgnummer van de formele uitgifte van een minor release van een iStandaard.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:integer">
+			<xs:minInclusive value="0"/>
+			<xs:maxInclusive value="99"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="LDT_BerichtVersie">
+		<xs:annotation>
+			<xs:documentation>Volgnummer van de formele uitgifte van een major release van een iStandaard.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:integer">
+			<xs:minInclusive value="0"/>
+			<xs:maxInclusive value="99"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="LDT_Budget">
+		<xs:annotation>
+			<xs:documentation>Budget in 1/100 van gehanteerde valuta. Bijvoorbeeld 10000 is tienduizend eurocent, is 100 Euro.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:integer">
+			<xs:minInclusive value="0"/>
+			<xs:maxInclusive value="99999999"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="LDT_BurgerServicenummer">
+		<xs:annotation>
+			<xs:documentation>Een door de overheid toegekend identificerend nummer in het kader van het vereenvoudigen van het contact tussen overheid en burgers en het verminderen van de administratieve lasten.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="9"/>
+			<xs:pattern value="[0-9]{9}"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="LDT_Commentaar">
+		<xs:annotation>
+			<xs:documentation>Vrije tekst (bijvoorbeeld een toelichting) in een bericht.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:pattern value="([.\s]*\S+[.\s]*)+"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="LDT_Communicatievorm">
+		<xs:annotation>
+			<xs:documentation>Gecodeerde aanduiding van de bijzondere vorm van communicatie die gebruikt dient te worden.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="1">
+				<xs:annotation>
+					<xs:documentation>Tolk taal</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2">
+				<xs:annotation>
+					<xs:documentation>Doventolk</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="3">
+				<xs:annotation>
+					<xs:documentation>Doofblindentolk</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:maxLength value="1"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="LDT_Datum">
+		<xs:annotation>
+			<xs:documentation>Datum</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:date">
+			<xs:pattern value="[^:Z]*"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="LDT_DatumGebruik">
+		<xs:annotation>
+			<xs:documentation>Indicator die aangeeft welk deel van de voorafgaande datum gebruikt mag worden.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="1">
+				<xs:annotation>
+					<xs:documentation>dag onbekend; alleen maand en jaar gebruiken</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2">
+				<xs:annotation>
+					<xs:documentation>dag en maand onbekend; alleen jaar gebruiken</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="3">
+				<xs:annotation>
+					<xs:documentation>dag, maand en jaar onbekend; onbekende datum</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:maxLength value="1"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="LDT_DebetCredit">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="C">
+				<xs:annotation>
+					<xs:documentation>Creditbedrag en aantal</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="D">
+				<xs:annotation>
+					<xs:documentation>Debetbedrag en aantal</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:maxLength value="1"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="LDT_Eenheid">
+		<xs:annotation>
+			<xs:documentation>Aanduiding van de eenheid waarin de omvang van een ondersteuningsproduct is beschreven.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="01">
+				<xs:annotation>
+					<xs:documentation>Minuut</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="04">
+				<xs:annotation>
+					<xs:documentation>Uur</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="14">
+				<xs:annotation>
+					<xs:documentation>Etmaal</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="16">
+				<xs:annotation>
+					<xs:documentation>Dagdeel (4 uur)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="82">
+				<xs:annotation>
+					<xs:documentation>Stuks (output)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="83">
+				<xs:annotation>
+					<xs:documentation>Euro's</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="84">
+				<xs:annotation>
+					<xs:documentation>Stuks (inspanning)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:maxLength value="2"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="LDT_Emailadres">
+		<xs:annotation>
+			<xs:documentation>Emailadres van een client of relatie.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="80"/>
+			<xs:pattern value=".*[^\s].*"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="LDT_Frequentie">
+		<xs:annotation>
+			<xs:documentation>Aanduiding van de frequentie waarmee een ondersteuningsproduct geleverd wordt.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="1">
+				<xs:annotation>
+					<xs:documentation>Per dag</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2">
+				<xs:annotation>
+					<xs:documentation>Per week</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="4">
+				<xs:annotation>
+					<xs:documentation>Per maand</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="6">
+				<xs:annotation>
+					<xs:documentation>Totaal binnen geldigheidsduur toewijzing</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:maxLength value="1"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="LDT_Gemeente">
+		<xs:annotation>
+			<xs:documentation>Identificerende code van een gemeente die betrokken is bij de uitvoering van zorg of ondersteuning.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:pattern value="[0-9]{4}"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="LDT_Geslacht">
+		<xs:annotation>
+			<xs:documentation>De sekse van een persoon, zoals bij geboorte formeel vastgesteld of nadien formeel gewijzigd.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="0">
+				<xs:annotation>
+					<xs:documentation>Onbekend</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="1">
+				<xs:annotation>
+					<xs:documentation>Mannelijk</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2">
+				<xs:annotation>
+					<xs:documentation>Vrouwelijk</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:maxLength value="1"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="LDT_Huisletter">
+		<xs:annotation>
+			<xs:documentation>Een alfabetisch teken achter het huisnummer zoals dit door het gemeentebestuur is toegekend.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="1"/>
+			<xs:pattern value=".*[^\s].*"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="LDT_Huisnummer">
+		<xs:annotation>
+			<xs:documentation>De numerieke aanduiding zoals de gemeente die aan het object heeft toegekend.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:integer">
+			<xs:minInclusive value="0"/>
+			<xs:maxInclusive value="99999"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="LDT_HuisnummerToevoeging">
+		<xs:annotation>
+			<xs:documentation>Die letters of tekens die noodzakelijk zijn om, naast huisnummer en -letter, de brievenbus te vinden.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="4"/>
+			<xs:pattern value=".*[^\s].*"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="LDT_IdentificatieBericht">
+		<xs:annotation>
+			<xs:documentation>Naam of nummer, die ter identificatie aan een totale aanlevering kan worden meegegeven.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="12"/>
+			<xs:pattern value=".*[^\s].*"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="LDT_IdentificatieDeclaratie">
+		<xs:annotation>
+			<xs:documentation>Identificatie van een declaratie zoals bepaald door de zorgaanbieder</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="12"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="LDT_JaNee">
+		<xs:annotation>
+			<xs:documentation>Codering voor ja of nee.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="1">
+				<xs:annotation>
+					<xs:documentation>Ja</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2">
+				<xs:annotation>
+					<xs:documentation>Nee</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:maxLength value="1"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="LDT_JuridischeStatus">
+		<xs:annotation>
+			<xs:documentation>Juridische situatie die voor de client van toepassing is op het moment van beoordeling.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="01">
+				<xs:annotation>
+					<xs:documentation>Rechterlijke machtiging (rm) voorlopig / voortgezette machtiging</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="02">
+				<xs:annotation>
+					<xs:documentation>RM op eigen verzoek</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="03">
+				<xs:annotation>
+					<xs:documentation>RM met voorwaardelijk ontslag</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="04">
+				<xs:annotation>
+					<xs:documentation>Onder toezichtstelling (ots)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="05">
+				<xs:annotation>
+					<xs:documentation>In bewaring stelling (ibs)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="11">
+				<xs:annotation>
+					<xs:documentation>Strafrechterlijke justitiele contacten: tbs</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="12">
+				<xs:annotation>
+					<xs:documentation>Strafrechterlijke justitiele contacten: overig</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:maxLength value="2"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="LDT_LandCode">
+		<xs:annotation>
+			<xs:documentation>Identificatie van een (historisch/actueel) land of gebiedsdeel.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="AD">
+				<xs:annotation>
+					<xs:documentation>ANDORRA</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="AE">
+				<xs:annotation>
+					<xs:documentation>VERENIGDE ARABISCHE EMIRATEN</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="AF">
+				<xs:annotation>
+					<xs:documentation>AFGHANISTAN</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="AG">
+				<xs:annotation>
+					<xs:documentation>ANTIGUA EN BARBUDA</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="AI">
+				<xs:annotation>
+					<xs:documentation>ANGUILA</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="AL">
+				<xs:annotation>
+					<xs:documentation>ALBANIE</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="AM">
+				<xs:annotation>
+					<xs:documentation>ARMENIE</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="AO">
+				<xs:annotation>
+					<xs:documentation>ANGOLA</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="AQ">
+				<xs:annotation>
+					<xs:documentation>ANTARTICA</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="AR">
+				<xs:annotation>
+					<xs:documentation>ARGENTINIE</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="AS">
+				<xs:annotation>
+					<xs:documentation>AMERIKAANS-SAMOA</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="AT">
+				<xs:annotation>
+					<xs:documentation>OOSTENRIJK</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="AU">
+				<xs:annotation>
+					<xs:documentation>AUSTRALIE</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="AW">
+				<xs:annotation>
+					<xs:documentation>ARUBA</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="AX">
+				<xs:annotation>
+					<xs:documentation>ÅLANDSEILANDEN</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="AZ">
+				<xs:annotation>
+					<xs:documentation>AZERBEIDZJAN</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="BA">
+				<xs:annotation>
+					<xs:documentation>BOSNIE EN HERZEGOVINA</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="BB">
+				<xs:annotation>
+					<xs:documentation>BARBADOS</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="BD">
+				<xs:annotation>
+					<xs:documentation>BANGLADESH</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="BE">
+				<xs:annotation>
+					<xs:documentation>BELGIE</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="BF">
+				<xs:annotation>
+					<xs:documentation>BURKINA FASO</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="BG">
+				<xs:annotation>
+					<xs:documentation>BULGARIJE</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="BH">
+				<xs:annotation>
+					<xs:documentation>BAHREIN</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="BI">
+				<xs:annotation>
+					<xs:documentation>BURUNDI</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="BJ">
+				<xs:annotation>
+					<xs:documentation>BENIN</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="BL">
+				<xs:annotation>
+					<xs:documentation>SAINT BARTHÉLEMY</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="BM">
+				<xs:annotation>
+					<xs:documentation>BERMUDA</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="BN">
+				<xs:annotation>
+					<xs:documentation>BRUNEI</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="BO">
+				<xs:annotation>
+					<xs:documentation>BOLIVIA</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="BQ">
+				<xs:annotation>
+					<xs:documentation>BONAIRE, SINT EUSTATIUS en SABA</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="BR">
+				<xs:annotation>
+					<xs:documentation>BRAZILIE</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="BS">
+				<xs:annotation>
+					<xs:documentation>BAHAMA'S</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="BT">
+				<xs:annotation>
+					<xs:documentation>BHUTAN</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="BV">
+				<xs:annotation>
+					<xs:documentation>BOUVET</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="BW">
+				<xs:annotation>
+					<xs:documentation>BOTSWANA</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="BY">
+				<xs:annotation>
+					<xs:documentation>WIT-RUSLAND</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="BZ">
+				<xs:annotation>
+					<xs:documentation>BELIZE</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CA">
+				<xs:annotation>
+					<xs:documentation>CANADA</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CC">
+				<xs:annotation>
+					<xs:documentation>COCOSEILANDEN</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CD">
+				<xs:annotation>
+					<xs:documentation>CONGO-KINSHASA</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CF">
+				<xs:annotation>
+					<xs:documentation>CENTRAAL-AFRIKAANSE REPUBLIEK</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CG">
+				<xs:annotation>
+					<xs:documentation>CONGO-BRAZZAVILLE</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CH">
+				<xs:annotation>
+					<xs:documentation>ZWITSERLAND</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CI">
+				<xs:annotation>
+					<xs:documentation>IVOORKUST</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CK">
+				<xs:annotation>
+					<xs:documentation>COOKEILANDEN</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CL">
+				<xs:annotation>
+					<xs:documentation>CHILI</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CM">
+				<xs:annotation>
+					<xs:documentation>KAMEROEN</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CN">
+				<xs:annotation>
+					<xs:documentation>CHINA</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CO">
+				<xs:annotation>
+					<xs:documentation>COLOMBIA</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CR">
+				<xs:annotation>
+					<xs:documentation>COSTA RICA</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CU">
+				<xs:annotation>
+					<xs:documentation>CUBA</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CV">
+				<xs:annotation>
+					<xs:documentation>KAAPVERDIE</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CW">
+				<xs:annotation>
+					<xs:documentation>CURAÇAO</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CX">
+				<xs:annotation>
+					<xs:documentation>CHRISTMASEILAND</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CY">
+				<xs:annotation>
+					<xs:documentation>CYPRUS</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CZ">
+				<xs:annotation>
+					<xs:documentation>TSJECHIE</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="DE">
+				<xs:annotation>
+					<xs:documentation>DUITSLAND</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="DJ">
+				<xs:annotation>
+					<xs:documentation>DJIBOUTI</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="DK">
+				<xs:annotation>
+					<xs:documentation>DENEMARKEN</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="DM">
+				<xs:annotation>
+					<xs:documentation>DOMINICA</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="DO">
+				<xs:annotation>
+					<xs:documentation>DOMINICAANSE REPUBLIEK</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="DZ">
+				<xs:annotation>
+					<xs:documentation>ALGERIJE</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="EC">
+				<xs:annotation>
+					<xs:documentation>ECUADOR</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="EE">
+				<xs:annotation>
+					<xs:documentation>ESTLAND</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="EG">
+				<xs:annotation>
+					<xs:documentation>EGYPTE</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="EH">
+				<xs:annotation>
+					<xs:documentation>WESTELIJKE SAHARA</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ER">
+				<xs:annotation>
+					<xs:documentation>ERITREA</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ES">
+				<xs:annotation>
+					<xs:documentation>SPANJE</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ET">
+				<xs:annotation>
+					<xs:documentation>ETHIOPIE</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="FI">
+				<xs:annotation>
+					<xs:documentation>FINLAND</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="FJ">
+				<xs:annotation>
+					<xs:documentation>FIJI</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="FK">
+				<xs:annotation>
+					<xs:documentation>FALKLANDEILANDEN</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="FM">
+				<xs:annotation>
+					<xs:documentation>MICRONESIA</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="FO">
+				<xs:annotation>
+					<xs:documentation>FAERÖER</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="FR">
+				<xs:annotation>
+					<xs:documentation>FRANKRIJK</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="GA">
+				<xs:annotation>
+					<xs:documentation>GABON</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="GB">
+				<xs:annotation>
+					<xs:documentation>VERENIGD KONINKRIJK</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="GD">
+				<xs:annotation>
+					<xs:documentation>GRENADA</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="GE">
+				<xs:annotation>
+					<xs:documentation>GEORGIE</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="GF">
+				<xs:annotation>
+					<xs:documentation>FRANS-GUYANA</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="GG">
+				<xs:annotation>
+					<xs:documentation>GUERNSEY</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="GH">
+				<xs:annotation>
+					<xs:documentation>GHANA</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="GI">
+				<xs:annotation>
+					<xs:documentation>GIBRALTAR</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="GL">
+				<xs:annotation>
+					<xs:documentation>GROENLAND</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="GM">
+				<xs:annotation>
+					<xs:documentation>GAMBIA</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="GN">
+				<xs:annotation>
+					<xs:documentation>GUINEA</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="GP">
+				<xs:annotation>
+					<xs:documentation>GUADELOUPE</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="GQ">
+				<xs:annotation>
+					<xs:documentation>EQUATORIAAL-GUINEA</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="GR">
+				<xs:annotation>
+					<xs:documentation>GRIEKENLAND</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="GS">
+				<xs:annotation>
+					<xs:documentation>ZUID-GEORGIE EN DE ZUIDELIJKE SANDWICHEILANDEN</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="GT">
+				<xs:annotation>
+					<xs:documentation>GUATEMALA</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="GU">
+				<xs:annotation>
+					<xs:documentation>GUAM</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="GW">
+				<xs:annotation>
+					<xs:documentation>GUINEE-BISSAU</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="GY">
+				<xs:annotation>
+					<xs:documentation>GUYANA</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="HK">
+				<xs:annotation>
+					<xs:documentation>HONGKONG</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="HM">
+				<xs:annotation>
+					<xs:documentation>HEARD EN MCDONALDEILANDEN</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="HN">
+				<xs:annotation>
+					<xs:documentation>HONDURAS</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="HR">
+				<xs:annotation>
+					<xs:documentation>KROATIE</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="HT">
+				<xs:annotation>
+					<xs:documentation>HAÏTI</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="HU">
+				<xs:annotation>
+					<xs:documentation>HONGARIJE</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ID">
+				<xs:annotation>
+					<xs:documentation>INDONESIE</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="IE">
+				<xs:annotation>
+					<xs:documentation>IERLAND</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="IL">
+				<xs:annotation>
+					<xs:documentation>ISRAEL</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="IM">
+				<xs:annotation>
+					<xs:documentation>ISLE OF MAN</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="IN">
+				<xs:annotation>
+					<xs:documentation>INDIA</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="IO">
+				<xs:annotation>
+					<xs:documentation>BRITS TERRITORIUM IN DE INDISCHE OCEAAN</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="IQ">
+				<xs:annotation>
+					<xs:documentation>IRAK</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="IR">
+				<xs:annotation>
+					<xs:documentation>IRAN</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="IS">
+				<xs:annotation>
+					<xs:documentation>IJSLAND</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="IT">
+				<xs:annotation>
+					<xs:documentation>ITALIE</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="JE">
+				<xs:annotation>
+					<xs:documentation>JERSEY</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="JM">
+				<xs:annotation>
+					<xs:documentation>JAMAICA</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="JO">
+				<xs:annotation>
+					<xs:documentation>JORDANIE</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="JP">
+				<xs:annotation>
+					<xs:documentation>JAPAN</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="KE">
+				<xs:annotation>
+					<xs:documentation>KENIA</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="KG">
+				<xs:annotation>
+					<xs:documentation>KIRGIZIE</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="KH">
+				<xs:annotation>
+					<xs:documentation>CAMBODJA</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="KI">
+				<xs:annotation>
+					<xs:documentation>KIRIBATI</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="KM">
+				<xs:annotation>
+					<xs:documentation>COMOREN</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="KN">
+				<xs:annotation>
+					<xs:documentation>SAINT KITTS EN NEVIS</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="KP">
+				<xs:annotation>
+					<xs:documentation>NOORD-KOREA</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="KR">
+				<xs:annotation>
+					<xs:documentation>ZUID-KOREA</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="KW">
+				<xs:annotation>
+					<xs:documentation>KOEWEIT</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="KY">
+				<xs:annotation>
+					<xs:documentation>CAYMANEILANDEN</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="KZ">
+				<xs:annotation>
+					<xs:documentation>KAZACHSTAN</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="LA">
+				<xs:annotation>
+					<xs:documentation>LAOS</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="LB">
+				<xs:annotation>
+					<xs:documentation>LIBANON</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="LC">
+				<xs:annotation>
+					<xs:documentation>SAINT LUCIA</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="LI">
+				<xs:annotation>
+					<xs:documentation>LIECHTENSTEIN</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="LK">
+				<xs:annotation>
+					<xs:documentation>SRI LANKA</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="LR">
+				<xs:annotation>
+					<xs:documentation>LIBERIA</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="LS">
+				<xs:annotation>
+					<xs:documentation>LESOTHO</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="LT">
+				<xs:annotation>
+					<xs:documentation>LITOUWEN</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="LU">
+				<xs:annotation>
+					<xs:documentation>LUXEMBURG</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="LV">
+				<xs:annotation>
+					<xs:documentation>LETLAND</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="LY">
+				<xs:annotation>
+					<xs:documentation>LIBIE</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MA">
+				<xs:annotation>
+					<xs:documentation>MAROKKO</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MC">
+				<xs:annotation>
+					<xs:documentation>MONACO</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MD">
+				<xs:annotation>
+					<xs:documentation>MOLDAVIE</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ME">
+				<xs:annotation>
+					<xs:documentation>MONTENEGRO</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MF">
+				<xs:annotation>
+					<xs:documentation>SAINT MARTIN</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MG">
+				<xs:annotation>
+					<xs:documentation>MADAGASKAR</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MH">
+				<xs:annotation>
+					<xs:documentation>MARSHALLEILANDEN</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MK">
+				<xs:annotation>
+					<xs:documentation>MACEDONIE</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ML">
+				<xs:annotation>
+					<xs:documentation>MALI</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MM">
+				<xs:annotation>
+					<xs:documentation>MYANMAR</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MN">
+				<xs:annotation>
+					<xs:documentation>MONGOLIE</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MO">
+				<xs:annotation>
+					<xs:documentation>MACAU</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MP">
+				<xs:annotation>
+					<xs:documentation>NOORDELIJKE MARIANEN</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MQ">
+				<xs:annotation>
+					<xs:documentation>MARTINIQUE</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MR">
+				<xs:annotation>
+					<xs:documentation>MAURITANIE</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MS">
+				<xs:annotation>
+					<xs:documentation>MONTSERRAT</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MT">
+				<xs:annotation>
+					<xs:documentation>MALTA</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MU">
+				<xs:annotation>
+					<xs:documentation>MAURITIUS</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MV">
+				<xs:annotation>
+					<xs:documentation>MALDIVEN</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MW">
+				<xs:annotation>
+					<xs:documentation>MALAWI</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MX">
+				<xs:annotation>
+					<xs:documentation>MEXICO</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MY">
+				<xs:annotation>
+					<xs:documentation>MALEISIE</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MZ">
+				<xs:annotation>
+					<xs:documentation>MOZAMBIQUE</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="NA">
+				<xs:annotation>
+					<xs:documentation>NAMIBIE</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="NC">
+				<xs:annotation>
+					<xs:documentation>NIEUW-CALEDONIE</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="NE">
+				<xs:annotation>
+					<xs:documentation>NIGER</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="NF">
+				<xs:annotation>
+					<xs:documentation>NORFOLK</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="NG">
+				<xs:annotation>
+					<xs:documentation>NIGERIA</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="NI">
+				<xs:annotation>
+					<xs:documentation>NICARAGUA</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="NL">
+				<xs:annotation>
+					<xs:documentation>NEDERLAND</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="NO">
+				<xs:annotation>
+					<xs:documentation>NOORWEGEN</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="NP">
+				<xs:annotation>
+					<xs:documentation>NEPAL</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="NR">
+				<xs:annotation>
+					<xs:documentation>NAURU</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="NU">
+				<xs:annotation>
+					<xs:documentation>NIUE</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="NZ">
+				<xs:annotation>
+					<xs:documentation>NIEUW-ZEELAND</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="OM">
+				<xs:annotation>
+					<xs:documentation>OMAN</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PA">
+				<xs:annotation>
+					<xs:documentation>PANAMA</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PE">
+				<xs:annotation>
+					<xs:documentation>PERU</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PF">
+				<xs:annotation>
+					<xs:documentation>FRANS-POLYNESIE</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PG">
+				<xs:annotation>
+					<xs:documentation>PAPOEA-NIEUW-GUINEA</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PH">
+				<xs:annotation>
+					<xs:documentation>FILIPIJNEN</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PK">
+				<xs:annotation>
+					<xs:documentation>PAKISTAN</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PL">
+				<xs:annotation>
+					<xs:documentation>POLEN</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PM">
+				<xs:annotation>
+					<xs:documentation>SAINT-PIERRE EN MIQUELON</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PN">
+				<xs:annotation>
+					<xs:documentation>PITCAIRNEILANDEN</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PR">
+				<xs:annotation>
+					<xs:documentation>PUERTO RICO</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PS">
+				<xs:annotation>
+					<xs:documentation>PALESTIJNSE AUTORITEIT</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PT">
+				<xs:annotation>
+					<xs:documentation>PORTUGAL</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PW">
+				<xs:annotation>
+					<xs:documentation>PALAU</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PY">
+				<xs:annotation>
+					<xs:documentation>PARAGUAY</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="QA">
+				<xs:annotation>
+					<xs:documentation>QATAR</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="RE">
+				<xs:annotation>
+					<xs:documentation>RÉUNION</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="RO">
+				<xs:annotation>
+					<xs:documentation>ROEMENIE</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="RS">
+				<xs:annotation>
+					<xs:documentation>SERVIE</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="RU">
+				<xs:annotation>
+					<xs:documentation>RUSLAND</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="RW">
+				<xs:annotation>
+					<xs:documentation>RWANDA</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SA">
+				<xs:annotation>
+					<xs:documentation>SAOEDI-ARABIE</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SB">
+				<xs:annotation>
+					<xs:documentation>SALOMONSEILANDEN</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SC">
+				<xs:annotation>
+					<xs:documentation>SEYCHELLEN</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SD">
+				<xs:annotation>
+					<xs:documentation>SOEDAN</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SE">
+				<xs:annotation>
+					<xs:documentation>ZWEDEN</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SG">
+				<xs:annotation>
+					<xs:documentation>SINGAPORE</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SH">
+				<xs:annotation>
+					<xs:documentation>SINT-HELENA</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SI">
+				<xs:annotation>
+					<xs:documentation>SLOVENIE</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SJ">
+				<xs:annotation>
+					<xs:documentation>SPITSBERGEN EN JAN MAYEN</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SK">
+				<xs:annotation>
+					<xs:documentation>SLOWAKIJE</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SL">
+				<xs:annotation>
+					<xs:documentation>SIERRA LEONE</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SM">
+				<xs:annotation>
+					<xs:documentation>SAN MARINO</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SN">
+				<xs:annotation>
+					<xs:documentation>SENEGAL</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SO">
+				<xs:annotation>
+					<xs:documentation>SOMALIE</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SR">
+				<xs:annotation>
+					<xs:documentation>SURINAME</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SS">
+				<xs:annotation>
+					<xs:documentation>ZUID SOEDAN</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ST">
+				<xs:annotation>
+					<xs:documentation>SAO TOMÉ EN PRINCIPE</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SV">
+				<xs:annotation>
+					<xs:documentation>EL SALVADOR</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SX">
+				<xs:annotation>
+					<xs:documentation>SINT MAARTEN (Nederlands deel)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SY">
+				<xs:annotation>
+					<xs:documentation>SYRIE</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SZ">
+				<xs:annotation>
+					<xs:documentation>SWAZILAND</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="TC">
+				<xs:annotation>
+					<xs:documentation>TURKS- EN CAICOSEILANDEN</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="TD">
+				<xs:annotation>
+					<xs:documentation>TSJAAD</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="TF">
+				<xs:annotation>
+					<xs:documentation>FRANSE ZUIDELIJKE EN ANTARCTISCHE GEBIEDEN</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="TG">
+				<xs:annotation>
+					<xs:documentation>TOGO</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="TH">
+				<xs:annotation>
+					<xs:documentation>THAILAND</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="TJ">
+				<xs:annotation>
+					<xs:documentation>TADZJIKISTAN</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="TK">
+				<xs:annotation>
+					<xs:documentation>TOKELAU</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="TL">
+				<xs:annotation>
+					<xs:documentation>OOST-TIMOR</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="TM">
+				<xs:annotation>
+					<xs:documentation>TURKMENISTAN</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="TN">
+				<xs:annotation>
+					<xs:documentation>TUNESIE</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="TO">
+				<xs:annotation>
+					<xs:documentation>TONGA</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="TR">
+				<xs:annotation>
+					<xs:documentation>TURKIJE</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="TT">
+				<xs:annotation>
+					<xs:documentation>TRINIDAD EN TOBAGO</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="TV">
+				<xs:annotation>
+					<xs:documentation>TUVALU</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="TW">
+				<xs:annotation>
+					<xs:documentation>TAIWAN</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="TZ">
+				<xs:annotation>
+					<xs:documentation>TANZANIA</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="UA">
+				<xs:annotation>
+					<xs:documentation>OEKRAINE</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="UG">
+				<xs:annotation>
+					<xs:documentation>OEGANDA</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="UM">
+				<xs:annotation>
+					<xs:documentation>KLEINE PACIFISCHE EILANDEN VAN DE VERENIGDE STATEN</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="US">
+				<xs:annotation>
+					<xs:documentation>VERENIGDE STATEN</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="UY">
+				<xs:annotation>
+					<xs:documentation>URUGUAY</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="UZ">
+				<xs:annotation>
+					<xs:documentation>OEZBEKISTAN</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="VA">
+				<xs:annotation>
+					<xs:documentation>VATICAANSTAD</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="VC">
+				<xs:annotation>
+					<xs:documentation>SAINT VINCENT EN DE GRENADINES</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="VE">
+				<xs:annotation>
+					<xs:documentation>VENEZUELA</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="VG">
+				<xs:annotation>
+					<xs:documentation>BRITSE MAAGDENEILANDEN</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="VI">
+				<xs:annotation>
+					<xs:documentation>AMERIKAANSE MAAGDENEILANDEN</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="VN">
+				<xs:annotation>
+					<xs:documentation>VIETNAM</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="VU">
+				<xs:annotation>
+					<xs:documentation>VANUATU</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="WF">
+				<xs:annotation>
+					<xs:documentation>WALLIS EN FUTUNA</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="WS">
+				<xs:annotation>
+					<xs:documentation>SAMOA</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="YE">
+				<xs:annotation>
+					<xs:documentation>JEMEN</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="YT">
+				<xs:annotation>
+					<xs:documentation>MAYOTTE</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ZA">
+				<xs:annotation>
+					<xs:documentation>ZUID-AFRIKA</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ZM">
+				<xs:annotation>
+					<xs:documentation>ZAMBIA</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ZW">
+				<xs:annotation>
+					<xs:documentation>ZIMBABWE</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:maxLength value="2"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="LDT_Landnummer">
+		<xs:annotation>
+			<xs:documentation>Het telefoonnummer van een land, vanuit Nederland benaderd.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="4"/>
+			<xs:pattern value=".*[^\s].*"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="LDT_Naam">
+		<xs:annotation>
+			<xs:documentation>De naam van een persoon, indien nodig verkort weergegeven.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="200"/>
+			<xs:pattern value=".*[^\s].*"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="LDT_NaamGebruik">
+		<xs:annotation>
+			<xs:documentation>Aanduiding naamgebruik (gecodeerd).</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="1">
+				<xs:annotation>
+					<xs:documentation>Eigen naam</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2">
+				<xs:annotation>
+					<xs:documentation>Naam echtgenoot of geregistreerd partner of alternatieve naam</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="3">
+				<xs:annotation>
+					<xs:documentation>Naam echtgenoot of geregistreerd partner gevolgd door eigen naam</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="4">
+				<xs:annotation>
+					<xs:documentation>Eigen naam gevolgd door naam echtgenoot of geregistreerd partner</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="5">
+				<xs:annotation>
+					<xs:documentation>Pseudoniem</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="6">
+				<xs:annotation>
+					<xs:documentation>Niet-natuurlijk persoon</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:maxLength value="1"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="LDT_NaamVerwijzer">
+		<xs:annotation>
+			<xs:documentation>Naam of organisatienaam van de persoon of instantie die de client heeft doorverwezen naar ondersteuning.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="64"/>
+			<xs:pattern value=".*[^\s].*"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="LDT_Nummer">
+		<xs:annotation>
+			<xs:documentation>Nummer</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:integer">
+			<xs:minInclusive value="0"/>
+			<xs:maxInclusive value="999999999"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="LDT_Organisatienaam">
+		<xs:annotation>
+			<xs:documentation>De naam van een organisatie waar de client of relatie client verblijft.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="35"/>
+			<xs:pattern value=".*[^\s].*"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="LDT_Persoonsid">
+		<xs:annotation>
+			<xs:documentation>Identificerend nummer van een natuurlijk persoon.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="20"/>
+			<xs:pattern value=".*[^\s].*"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="LDT_Plaatsnaam">
+		<xs:annotation>
+			<xs:documentation>De door de gemeente vastgestelde naam van een woonplaats.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="80"/>
+			<xs:pattern value=".*[^\s].*"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="LDT_Postcode">
+		<xs:annotation>
+			<xs:documentation>Aanduiding van de (inter)nationale postcode. Dit veld is geschikt voor zowel de Nederlandse als niet-Nederlandse postcodes.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="8"/>
+			<xs:pattern value=".*[^\s].*"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="LDT_ProductCategorie">
+		<xs:annotation>
+			<xs:documentation>Gecodeerde aanduiding van hoofdcategorieen van producten in het kader van de Wet maatschappelijke ondersteuning (Wmo).</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="01">
+				<xs:annotation>
+					<xs:documentation>Hulp bij het huishouden</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="02">
+				<xs:annotation>
+					<xs:documentation>Begeleiding</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="03">
+				<xs:annotation>
+					<xs:documentation>Persoonlijke verzorging</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="04">
+				<xs:annotation>
+					<xs:documentation>Kortdurend verblijf</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="05">
+				<xs:annotation>
+					<xs:documentation>Woondiensten</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="06">
+				<xs:annotation>
+					<xs:documentation>Overige ondersteuning gericht op het individu of huishouden/gezin</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="07">
+				<xs:annotation>
+					<xs:documentation>Dagbesteding</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="08">
+				<xs:annotation>
+					<xs:documentation>Vervoerdiensten</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="09">
+				<xs:annotation>
+					<xs:documentation>Overige groepsgerichte ondersteuning</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="10">
+				<xs:annotation>
+					<xs:documentation>Overige maatwerk arrangementen</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="11">
+				<xs:annotation>
+					<xs:documentation>Rolstoelen</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="12">
+				<xs:annotation>
+					<xs:documentation>Vervoervoorzieningen</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="13">
+				<xs:annotation>
+					<xs:documentation>Woonvoorzieningen</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="14">
+				<xs:annotation>
+					<xs:documentation>Overige hulpmiddelen</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="15">
+				<xs:annotation>
+					<xs:documentation>Beschermd wonen</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="16">
+				<xs:annotation>
+					<xs:documentation>Opvang</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="17">
+				<xs:annotation>
+					<xs:documentation>Spoedopvang</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="18">
+				<xs:annotation>
+					<xs:documentation>Overige beschermd wonen en opvang</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:maxLength value="2"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="LDT_ProductCode">
+		<xs:annotation>
+			<xs:documentation>Gecodeerde aanduiding van een product voor zorg of ondersteuning. </xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="5"/>
+			<xs:pattern value=".*[^\s].*"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="LDT_RedenAfwijzingVerzoek">
+		<xs:annotation>
+			<xs:documentation>De reden van afwijzing van een verzoek.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="1">
+				<xs:annotation>
+					<xs:documentation>Geen wijziging, maar nieuwe aanvraag</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2">
+				<xs:annotation>
+					<xs:documentation>Past niet binnen budget</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="3">
+				<xs:annotation>
+					<xs:documentation>Geen contract</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="4">
+				<xs:annotation>
+					<xs:documentation>Past niet binnen contract</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="5">
+				<xs:annotation>
+					<xs:documentation>Andere gemeente</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="6">
+				<xs:annotation>
+					<xs:documentation>Stapeling</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="7">
+				<xs:annotation>
+					<xs:documentation>Zorginhoudelijke afkeur</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="8">
+				<xs:annotation>
+					<xs:documentation>Woonplaatsbeginsel</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="9">
+				<xs:annotation>
+					<xs:documentation>Leeftijdsgrens is bereikt</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:maxLength value="2"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="LDT_RedenBeeindiging">
+		<xs:annotation>
+			<xs:documentation>De reden van beeindiging van Wmo ondersteuning bij een client.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="02">
+				<xs:annotation>
+					<xs:documentation>Overlijden</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="19">
+				<xs:annotation>
+					<xs:documentation>Levering volgens plan beeindigd</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="20">
+				<xs:annotation>
+					<xs:documentation>Levering is tijdelijk beeindigd</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="21">
+				<xs:annotation>
+					<xs:documentation>Levering is eenzijdig door client beeindigd</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="22">
+				<xs:annotation>
+					<xs:documentation>Levering is eenzijdig door aanbieder beeindigd</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="23">
+				<xs:annotation>
+					<xs:documentation>Levering is in overeenstemming voortijdig beeindigd</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="31">
+				<xs:annotation>
+					<xs:documentation>Verhuizing naar een andere gemeente</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="36">
+				<xs:annotation>
+					<xs:documentation>Geinitieerd door de gemeente</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="37">
+				<xs:annotation>
+					<xs:documentation>In verband met wijzigingsverzoek</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="38">
+				<xs:annotation>
+					<xs:documentation>Overstap naar andere aanbieder</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="39">
+				<xs:annotation>
+					<xs:documentation>Uitstroom naar ander domein</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:maxLength value="2"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="LDT_RedenVerzoek">
+		<xs:annotation>
+			<xs:documentation>Reden waarom een verzoek wordt ingediend</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="1">
+				<xs:annotation>
+					<xs:documentation>Verandering clientsituatie</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2">
+				<xs:annotation>
+					<xs:documentation>Wijziging zorgplan</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:maxLength value="1"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="LDT_RedenWijziging">
+		<xs:annotation>
+			<xs:documentation>De reden waarom een toewijzing wordt gewijzigd.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="01">
+				<xs:annotation>
+					<xs:documentation>Administratieve correctie (vervallen)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="02">
+				<xs:annotation>
+					<xs:documentation>Client overleden</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="03">
+				<xs:annotation>
+					<xs:documentation>Contractwijziging</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="04">
+				<xs:annotation>
+					<xs:documentation>Herbeoordeling: verlenging toewijzing</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="05">
+				<xs:annotation>
+					<xs:documentation>Herbeoordeling: verkorting toewijzing</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="06">
+				<xs:annotation>
+					<xs:documentation>Uitstroom naar ander domein</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="07">
+				<xs:annotation>
+					<xs:documentation>Verhuizing naar een andere gemeente</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="08">
+				<xs:annotation>
+					<xs:documentation>Wijziging leveringsvorm</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="09">
+				<xs:annotation>
+					<xs:documentation>Overstap naar andere aanbieder</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="10">
+				<xs:annotation>
+					<xs:documentation>Overgang naar nieuwe bekostigingssystematiek</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="11">
+				<xs:annotation>
+					<xs:documentation>Gemeentelijke herindeling</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="12">
+				<xs:annotation>
+					<xs:documentation>Geinitieerd door de aanbieder</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="13">
+				<xs:annotation>
+					<xs:documentation>Verwijderd</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="14">
+				<xs:annotation>
+					<xs:documentation>Administratieve correctie</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:maxLength value="2"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="LDT_Referentie">
+		<xs:annotation>
+			<xs:documentation>Naam of nummer dat als referentie kan worden meegegeven.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="36"/>
+			<xs:pattern value=".*[^\s].*"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="LDT_ReferentieNummer">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="20"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="LDT_RelatieVolgorde">
+		<xs:annotation>
+			<xs:documentation>Aanduiding van de prioriteit van de contactpersoon.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:integer">
+			<xs:minInclusive value="0"/>
+			<xs:maxInclusive value="99"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="LDT_RetourCode">
+		<xs:annotation>
+			<xs:documentation>Melding in een iStandaarden-retourbericht. Het betreft een code die in een retourbericht het resultaat van de beoordeling van een (deel van een) ontvangen bericht weergeeft.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="0001">
+				<xs:annotation>
+					<xs:documentation>Bericht is afgekeurd om technische redenen.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="0200">
+				<xs:annotation>
+					<xs:documentation>Geen opmerking over deze berichtklasse.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="0233">
+				<xs:annotation>
+					<xs:documentation>Berichtklasse is niet beoordeeld.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="0611">
+				<xs:annotation>
+					<xs:documentation>Het ingediende tarief komt niet overeen met het contractuele tarief</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="8001">
+				<xs:annotation>
+					<xs:documentation>Declaratie is volledig toegewezen.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="8017">
+				<xs:annotation>
+					<xs:documentation>Van deze credit prestatie is geen debet prestatie bekend.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="8021">
+				<xs:annotation>
+					<xs:documentation>Referentienummer prestatie is reeds aangeleverd.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="8187">
+				<xs:annotation>
+					<xs:documentation>De prestatie hoort niet bij deze client.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="8214">
+				<xs:annotation>
+					<xs:documentation>DeclaratiePeriode is niet de kalendermaand die volgt op voorgaande DeclaratiePeriode terwijl iedere declaratieperiode zorg geleverd is.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="8848">
+				<xs:annotation>
+					<xs:documentation>Dagtekening moet gelijk zijn aan of voor de systeemdatum liggen.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="9019">
+				<xs:annotation>
+					<xs:documentation>Het regie bericht kan niet gekoppeld worden aan een toewijzing.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="9056">
+				<xs:annotation>
+					<xs:documentation>Identificatie moet per berichtsoort uniek zijn voor de verzendende partij.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="9063">
+				<xs:annotation>
+					<xs:documentation>Het bericht kan niet verwerkt worden omdat geen eerder bericht ontvangen is.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="9069">
+				<xs:annotation>
+					<xs:documentation>Er is geen actueel startbericht met dezelfde sleutel.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="9071">
+				<xs:annotation>
+					<xs:documentation>Het eerdere start bericht kan niet verwijderd worden omdat de zorg al beeindigd is</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="9074">
+				<xs:annotation>
+					<xs:documentation>Er is al een eerder bericht ontvangen met dezelfde sleutel.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="9307">
+				<xs:annotation>
+					<xs:documentation>Begindatum prestatie ligt niet tussen de ingangsdatum en einddatum toewijzing</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="9308">
+				<xs:annotation>
+					<xs:documentation>Einddatum prestatie ligt niet tussen de ingangsdatum en einddatum toewijzing</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="9319">
+				<xs:annotation>
+					<xs:documentation>De ProductPeriode valt niet geheel binnen een DeclaratiePeriode.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="9321">
+				<xs:annotation>
+					<xs:documentation>Het ingediende volume overschrijdt het toegewezen volume.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="9322">
+				<xs:annotation>
+					<xs:documentation>De som van de ingediende volumes overschrijdt het  toegewezen volume</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="9326">
+				<xs:annotation>
+					<xs:documentation>De actuele levering is nog niet gestopt met een Stopbericht.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="9332">
+				<xs:annotation>
+					<xs:documentation>Toewijzing heeft geen uniek nummer binnen wettelijk domein.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="9333">
+				<xs:annotation>
+					<xs:documentation>Declaratienummer is niet uniek</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="9338">
+				<xs:annotation>
+					<xs:documentation>Niet iedere prestatie in een declaratiebericht is gerelateerd aan een toegewezen product op basis van het toewijzingnummer</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="9339">
+				<xs:annotation>
+					<xs:documentation>ProductCategorie in de prestatie is niet gelijk aan ProductCategorie in het ToegewezenProduct.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="9340">
+				<xs:annotation>
+					<xs:documentation>ProductCode in de Prestatie is niet gelijk aan ProductCode in het ToegewezenProduct.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="9341">
+				<xs:annotation>
+					<xs:documentation>Eenheid in de Prestatie past niet bij Eenheid in het ToegewezenProduct</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="9346">
+				<xs:annotation>
+					<xs:documentation>Eenheid is ongelijk is aan waarde 83 (Euro's), maar IngediendBedrag is niet gelijk aan GeleverdVolume vermenigvuldigd met (het onafgeronde) ProductTarief.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="9347">
+				<xs:annotation>
+					<xs:documentation>ReferentieAanbieder is niet uniek voor de aanbieder binnen het wettelijk domein</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="9349">
+				<xs:annotation>
+					<xs:documentation>Het VOW bericht bevat niet alle actuele toegewezen producten van de client, hetzij in OngewijzigdProduct, hetzij in TeWijzigenProduct</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="9350">
+				<xs:annotation>
+					<xs:documentation>OngewijzigdProduct is niet gerelateerd aan een actueel toegewezen product op basis van het toewijzingnummer.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="9351">
+				<xs:annotation>
+					<xs:documentation>TeWijzigenProduct is niet gerelateerd aan een actuele toewijzing op basis van ToewijzingNummer.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="9355">
+				<xs:annotation>
+					<xs:documentation>ReferentieAanbieder in het antwoordbericht komt niet voor in een eerder verzoek om toewijzing of verzoek om wijziging</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="9357">
+				<xs:annotation>
+					<xs:documentation>GewensteIngangsdatum is kleiner dan of gelijk aan de dagtekening, maar niet gelijk aan de ingangsdatum van het originele ToegewezenProduct.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="9359">
+				<xs:annotation>
+					<xs:documentation>Er is al een toewijzing gestuurd met deze ReferentieAanbieder.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="9360">
+				<xs:annotation>
+					<xs:documentation>Er is al een antwoordbericht met deze ReferentieAanbieder, terwijl antwoordbericht in VerzoekAntwoord waarde 2 (aanvraag in onderzoek) heeft. </xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="9361">
+				<xs:annotation>
+					<xs:documentation>Het product komt vaker voor met overlappende zorgperiodes.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="9365">
+				<xs:annotation>
+					<xs:documentation>Er is al een antwoordbericht met dezelfde ReferentieAanbieder waar VerzoekAntwoord niet de waarde 'Aanvraag in onderzoek' heeft.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="9366">
+				<xs:annotation>
+					<xs:documentation>ProductReferentie komt niet voor in een Declaratiebericht</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="9367">
+				<xs:annotation>
+					<xs:documentation>De waarde komt niet overeen met de waarde uit heenbericht met gelijke ProductReferentie</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="9369">
+				<xs:annotation>
+					<xs:documentation>Budget is meegegeven, maar de som van GeleverdVolume in alle ingediende Prestaties passen niet binnen het toegewezen Budget.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="9373">
+				<xs:annotation>
+					<xs:documentation>Budget is gewijzigd, maar GewensteIngangsdatum is niet gelijk aan die in de actuele toewijzing</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="9374">
+				<xs:annotation>
+					<xs:documentation>Er is al een verzoek onderhanden.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="9375">
+				<xs:annotation>
+					<xs:documentation>Omvang is gevuld, terwijl Product in toewijzing met ToewijzingNummer leeg is en Einddatum groter dan 31-12-2020 of leeg is</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="9379">
+				<xs:annotation>
+					<xs:documentation>ReferentieAanbieder refereert niet naar een verzoek om toewijzing of verzoek om wijziging, is onterecht gevuld</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="9384">
+				<xs:annotation>
+					<xs:documentation>Declaratie op toewijzing met RedenWijziging "13" (Verwijderd)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="9385">
+				<xs:annotation>
+					<xs:documentation>Toewijzing heeft goedgekeurde declaratieregels</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="9387">
+				<xs:annotation>
+					<xs:documentation>Begindatum van de ProductPeriode is niet eerste dag van de kalendermaand waarop ProductPeriode betrekking heeft en Ingangsdatum van de toewijzing ligt niet later in deze betreffende maand</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="9388">
+				<xs:annotation>
+					<xs:documentation>Einddatum van de ProductPeriode is niet laatste dag van de kalendermaand waarop ProductPeriode betrekking heeft en Einddatum van de toewijzing ligt niet eerder in deze betreffende maand.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="9389">
+				<xs:annotation>
+					<xs:documentation>Deze prestatie heeft een debetprestatie zonder bijbehorende creditprestatie</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="9390">
+				<xs:annotation>
+					<xs:documentation>Er is al een Prestatie met gelijk ProductReferentie met waarde Credit</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="9411">
+				<xs:annotation>
+					<xs:documentation>Omvang is leeg, terwijl Code in Product bij de toewijzing met ToewijzingNummer gevuld is.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="9412">
+				<xs:annotation>
+					<xs:documentation>Omvang is niet leeg, terwijl Code in Product bij de toewijzing met ToewijzingNummer leeg is en einddatum groter dan 31-12-2020 of leeg is</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="9413">
+				<xs:annotation>
+					<xs:documentation>StatusAanlevering is waarde 1 of 2 en RedenBeeindiging heeft waarde 20, terwijl er al een ander StopProduct met hetzelfde Bsn, ToewijzingNummer, Begindatum en RedenBeeindiging waarde 20 is.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="9414">
+				<xs:annotation>
+					<xs:documentation>Einddatum is niet &gt;= aan Einddatum uit actuele StopProduct met gelijk Bsn, ToewijzingNummer en Begindatum</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="9415">
+				<xs:annotation>
+					<xs:documentation> Er is al een StopProduct met gelijk Bsn, ToewijzingNummer, Begindatum en RedenBeeindiging &lt;&gt; waarde 20 en StatusAanlevering heeft waarde 1 of 2. </xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="S300">
+				<xs:annotation>
+					<xs:documentation>Gemeentecode komt niet voor in de lijst van CBS.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="S329">
+				<xs:annotation>
+					<xs:documentation>ProductCode hoort niet bij de ProductCategorie.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:maxLength value="4"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="LDT_SoortRelatie">
+		<xs:annotation>
+			<xs:documentation>De soort relatie die een persoon ten opzichte van de client heeft.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="03">
+				<xs:annotation>
+					<xs:documentation>Curator (juridisch)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="04">
+				<xs:annotation>
+					<xs:documentation>Financieel (gemachtigd)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="05">
+				<xs:annotation>
+					<xs:documentation>Financieel (toetsing)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="06">
+				<xs:annotation>
+					<xs:documentation>Leefeenheid</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="07">
+				<xs:annotation>
+					<xs:documentation>Hulpverlener</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="08">
+				<xs:annotation>
+					<xs:documentation>Specialist</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="09">
+				<xs:annotation>
+					<xs:documentation>Anders</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="10">
+				<xs:annotation>
+					<xs:documentation>Ouder</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="11">
+				<xs:annotation>
+					<xs:documentation>Voogd</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="12">
+				<xs:annotation>
+					<xs:documentation>Partner/echtgeno(o)t(e)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="13">
+				<xs:annotation>
+					<xs:documentation>Pleegouder</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="14">
+				<xs:annotation>
+					<xs:documentation>Bewindvoerder</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="15">
+				<xs:annotation>
+					<xs:documentation>Mentor</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="16">
+				<xs:annotation>
+					<xs:documentation>Zoon/dochter</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="17">
+				<xs:annotation>
+					<xs:documentation>Familielid</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="18">
+				<xs:annotation>
+					<xs:documentation>Gezinslid</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="19">
+				<xs:annotation>
+					<xs:documentation>Buur</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="20">
+				<xs:annotation>
+					<xs:documentation>Vriend(in)/kennis</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="21">
+				<xs:annotation>
+					<xs:documentation>Clientondersteuner</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="22">
+				<xs:annotation>
+					<xs:documentation>Huisarts</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="23">
+				<xs:annotation>
+					<xs:documentation>Erven van</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="24">
+				<xs:annotation>
+					<xs:documentation>Werkgever</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="25">
+				<xs:annotation>
+					<xs:documentation>Wijkcoach</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:maxLength value="2"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="LDT_StatusAanlevering">
+		<xs:annotation>
+			<xs:documentation>Indicatie over de status van de informatie in de berichtklasse.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="1">
+				<xs:annotation>
+					<xs:documentation>Eerste aanlevering</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2">
+				<xs:annotation>
+					<xs:documentation>Gewijzigde aanlevering</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="3">
+				<xs:annotation>
+					<xs:documentation>Verwijderen aanlevering</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="9">
+				<xs:annotation>
+					<xs:documentation>Niet van toepassing (ongewijzigd)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:maxLength value="1"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="LDT_Straatnaam">
+		<xs:annotation>
+			<xs:documentation>De officiele door de gemeente vastgestelde naam van een straat.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="24"/>
+			<xs:pattern value=".*[^\s].*"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="LDT_Taal">
+		<xs:annotation>
+			<xs:documentation>De taal van de client waarin met de client wordt gecommuniceerd.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="25"/>
+			<xs:pattern value=".*[^\s].*"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="LDT_Telefoonnummer">
+		<xs:annotation>
+			<xs:documentation>Het telefoonnummer waarop de client of relatie van de client te bereiken is.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="15"/>
+			<xs:pattern value="[0-9]*"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="LDT_Tijd">
+		<xs:annotation>
+			<xs:documentation>Tijd</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:time">
+			<xs:pattern value ="[^Z+-]+"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="LDT_TotaalBedrag">
+		<xs:annotation>
+			<xs:documentation>Totaalbedrag in 1/100 van gehanteerde valuta. Bijvoorbeeld 10000 is tienduizend eurocent, is 100 Euro.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:integer">
+			<xs:minInclusive value="0"/>
+			<xs:maxInclusive value="999999999999"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="LDT_TypeVerwijzer">
+		<xs:annotation>
+			<xs:documentation>Aanduiding van de aard van de verwijzer.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="01">
+				<xs:annotation>
+					<xs:documentation>Gemeente</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="02">
+				<xs:annotation>
+					<xs:documentation>Huisarts</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="03">
+				<xs:annotation>
+					<xs:documentation>Jeugdarts</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="04">
+				<xs:annotation>
+					<xs:documentation>Gecertificeerde instelling</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="05">
+				<xs:annotation>
+					<xs:documentation>Medisch specialist</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="06">
+				<xs:annotation>
+					<xs:documentation>Zelfverwijzer/geen verwijzer</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="08">
+				<xs:annotation>
+					<xs:documentation>Rechter, Officier van Justitie, functionaris Justitiele jeugdinrichting</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:maxLength value="2"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="LDT_Versie">
+		<xs:annotation>
+			<xs:documentation>Volgnummer van de formele uitgifte van een versie.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:pattern value="(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="LDT_VerzoekAntwoord">
+		<xs:annotation>
+			<xs:documentation>Het antwoord op een verzoek </xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="1">
+				<xs:annotation>
+					<xs:documentation>Verzoek afgewezen</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2">
+				<xs:annotation>
+					<xs:documentation>Aanvraag in onderzoek</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:maxLength value="1"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="LDT_Volume">
+		<xs:annotation>
+			<xs:documentation>Aanduiding van de mate van ondersteuning betreffende een product, onderdeel van de Omvang.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:integer">
+			<xs:minInclusive value="0"/>
+			<xs:maxInclusive value="99999999"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="LDT_Voorletters">
+		<xs:annotation>
+			<xs:documentation>De verzameling van letters die wordt gevormd door de eerste letter van alle in volgorde voorkomende voornamen van een persoon.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="6"/>
+			<xs:pattern value="([a-zA-ZÀ-ỳ])+"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="LDT_Voorvoegsel">
+		<xs:annotation>
+			<xs:documentation>Verzameling van een of meer voorzetsels/lidwoorden, die aan het significante deel van de achternaam van een persoon vooraf gaat en daar een onderdeel van is.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="10"/>
+			<xs:pattern value=".*[^\s].*"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="LDT_WettelijkeVertegenwoordiging">
+		<xs:annotation>
+			<xs:documentation>Wettelijke vertegenwoordiging die voor de client van toepassing is op het moment van beoordeling.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="06">
+				<xs:annotation>
+					<xs:documentation>Voogdij</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="07">
+				<xs:annotation>
+					<xs:documentation>Bewindvoering</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="08">
+				<xs:annotation>
+					<xs:documentation>Mentorschap</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="09">
+				<xs:annotation>
+					<xs:documentation>Onder curatele stelling</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="10">
+				<xs:annotation>
+					<xs:documentation>Zaakwaarneming</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:maxLength value="2"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>
