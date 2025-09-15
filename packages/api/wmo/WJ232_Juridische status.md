@@ -16,4 +16,3 @@ Juridische situatie die voor de cliënt van toepassing is op het moment van beoo
 | 05 | In bewaring stelling (ibs) |
 | 11 | Strafrechterlijke justitiële contacten (tbs) |
 | 12 | Strafrechterlijke justitiële contacten (overig) |
-
