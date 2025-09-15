@@ -975,39 +975,61 @@ Over september wordt er geen declaratie meer ingediend. De laatste week, die ged
 
 De frequentie per week is niet 1-op-1 passend binnen de declaratieperiode maand.Hierdoor zijn bij de omrekening naar een maximaal te declareren volume over de productperiode  aanvullende afspraken noodzakelijk, zodat het volume in de prestatie gecontroleerd kan worden. Afhankelijk van de uitvoeringsvarianten zijn hiervoor verschillende rekenmethoden opgesteld. (voor het vullen van het volume in de prestatie bij toewijzingen met frequentie week, zie IV076)
 
-Rekenmethode inspanningsgerichte toewijzing met frequentie per week 
-Het maximale volume wordt bepaald op basis van het aantal (eventueel gebroken) kalenderweken die de productperiode beslaat, binnen de toewijzing. Dit aantal wordt vermenigvuldigd met het volume uit de toewijzing. Voor het bepalen van het aantal kalenderweken, worden de weeknummers geteld. 
-Dit resulteert bij een productperiode van een volledige maand in 4, 5 of 6 maal het weekvolume. 
-Echter indien de toewijzing een Product uit de Wmo Productcategorie 01 (huishoudelijkhulp) betreft, dan wordt het maximale volume bepaald door standaard 6 maal het weekvolume uit de toewijzing te nemen.  
-Om te voorkomen dat deze rekenmethode resulteert in meer ruimte dan totaal toegewezen, moet het totaal volume over alle ingediende prestatieregels ook gecontroleerd worden tegen het maximale volume over de toewijzingsperiode. 
+Stappen
+Stap 1: Bepaal de uitvoeringsvariant van de toewijzing, inspanningsgericht of outputgericht.
+Stap 2: bereken eerst het max. te declareren volume binnen productperiode. 
+Stap 3: bereken of hetgeen geleverd is binnen dit max. te declareren volume binnen productperiode past.
+Stap 4: bereken of alles wat gedeclareerd is ook is toegestaan binnen de toewijzing.
 
-Rekenmethode Outputgerichte toewijzing met frequentie per week 
-Het maximale volume van de productperiode wordt bepaald op basis van het aantal zondagen dat binnen de productperiode ligt (plus 1 indien in die productperiode de laatste zondag van de toewijzing ligt en de einddatum van de toewijzing geen zondag is). Dit aantal wordt vermenigvuldigd met het volume uit de toewijzing. 
+Rekenmethode inspanningsgerichte bij toewijzing met frequentie per week.
+Het maximale te declareren volume wordt bepaald op basis van het aantal (eventueel gebroken) kalenderweken dat binnen de productperiode ligt, binnen de toewijzing. Dit aantal wordt vermenigvuldigd met het volume uit de toewijzing. Voor het bepalen van het aantal kalenderweken, worden de weeknummers geteld van de productperiode.
+Dit resulteert bij een productperiode van een volledige maand in 4, 5 of 6 maal het weekvolume.
+Echter indien de toewijzing een Product uit de Wmo Productcategorie 01 (huishoudelijkhulp) betreft, dan wordt het maximale volume bepaald door standaard 6 maal het weekvolume uit de toewijzing te nemen.
 
-Voorbeeld bij inspanningsgerichte toewijzing: 
-Client heeft een toewijzing voor 3 uur per week met ingangsdatum 11-10-2022 en einddatum 28-12-2022 
-Bepaal het aantal kalenderweken in de productperiode 
+Om te voorkomen dat deze rekenmethode resulteert in meer ruimte dan totaal toegewezen is, moet het totaal volume over alle ingediende prestatieregels ook gecontroleerd worden tegen het maximale volume over de toewijzingsperiode.
+
+Rekenmethode Outputgerichte toewijzing met frequentie per week.
+Het maximale volume van de productperiode wordt bepaald op basis van het aantal zondagen dat binnen de productperiode ligt (plus 1 indien in die productperiode de laatste zondag van de toewijzing ligt en de einddatum van de toewijzing geen zondag is). Dit aantal wordt vermenigvuldigd met het volume uit de toewijzing.
+
+Voorbeeld bij inspanningsgerichte toewijzing:
+Cliënt heeft een toewijzing voor 3 uur per week met ingangsdatum 7-10-2025 en einddatum 30-12-2025
+Bepaal het aantal kalenderweken in de productperiode.
+
 - Oktober : 4 (week 41 t/m 44)
-- November: 5 (week 44 t/m 48)  
-- December: 5 (week 48 t/m 52)
-Maximaal volume per productperiode: Vermenigvuldig het aantal kalenderweken per productperiode met het toegewezen volume per week: 
+- November: 5 (week 44 t/m 48)
+- December: 5 (week 48 t/m 52,01)
+  
+Maximaal volume per productperiode: Vermenigvuldig het aantal kalenderweken per productperiode met het toegewezen volume per week:
 - Oktober : 12 uur (4 weken x 3 uur)
-- November: 15 uur (5 weken x 3 uur) 
+- November: 15 uur (5 weken x 3 uur)
 - December: 15 uur (5 weken x 3 uur)
-Maximaal volume over de toewijzingsperiode: tel het aantal weken (eventueel gebroken) binnen de toewijzing en vermenigvuldig dit met het volume uit de toewijzing: 
-- 11-10-2022 t/m 28-12-2022 = week 41 t/m week 52 = 12 weken * 12 weken x 3 uur (volume uit de toewijzing) = 36 uur 
-Het maximale volume over de toewijzingsperiode is 36 uur
 
-Voorbeeld bij Outputgerichte toewijzing: 
-Client heeft een toewijzing voor 300 euro per week met ingangsdatum 11-10-2022 en einddatum 31-12-2022
+Maximaal volume over de toewijzingsperiode: tel het aantal weken (eventueel gebroken) binnen de toewijzing en vermenigvuldig dit met het volume uit de toewijzing:
+- 07-10-2025 t/m 30-12-2025 = week 41 t/m week 52 + 1 = 13 weken,  13 weken x 3 uur (volume uit de toewijzing) = 39 uur
+Het maximale volume over de toewijzingsperiode is 39 uur
+
+Voorbeeld bij Outputgerichte toewijzing:
+Cliënt heeft een toewijzing voor 300 euro per week met ingangsdatum 01-10-2025 en einddatum 31-12-2025
 Het aantal zondagen in de productperiodes:
-- Oktober : 11-10 t/m 31-10 -> telt 3 zondagen 
-- November: 1-11 t/m 30-11 -> telt 4 zondagen
-- December: 1-12 t/m 31-12 -> telt 4 zondagen. Daar wordt een weekvolume bijgeteld, omdat de einddatum van de toewijzing niet op zondag is. 
-Maximaal volume per productperiode: Het aantal zondagen vermenigvuldigd met het volume uit de toewijzing (evt. vermeerderd met een extra weekvolume):  
-- Oktober  3 zondagen: 3x weekvolume (300 euro) = 900 euro
-- November 4 zondagen: 4x weekvolume (300 euro) = 1200 euro
-- December 4 zondagen + 1 weekvolume: 5x weekvolumes (300 euro) = 1500 euro
+
+- Oktober: 07-10 t/m 31-10 -> telt 3 zondagen
+- November: 1-11 t/m 30-11 -> telt 5 zondagen
+- December: 1-12 t/m 31-12 -> telt 4 zondagen. Daar wordt een weekvolume bijgeteld, omdat de einddatum van de toewijzing niet op zondag is.
+Maximaal volume per productperiode: Het aantal zondagen vermenigvuldigd met het volume uit de toewijzing (evt. vermeerderd met een extra weekvolume):
+- Oktober 3 zondagen : 3 x weekvolume (300 euro) = 900 euro
+- November 4 zondagen: 5 x weekvolume (300 euro) = 1500 euro
+- December 4 zondagen + 1 weekvolume: 5 x weekvolumes (300 euro) = 1500 euro
+
+Voorbeeld bij Outputgerichte toewijzing:
+Cliënt heeft een toewijzing voor 300 euro per week met ingangsdatum 07-07-2025 en einddatum 05-09-2025
+Het aantal zondagen in de productperiodes:
+- Juli: 07-07 t/m 31-07 -> telt 3 zondagen
+- Augustus: 1-08 t/m 31-08 -> telt 5 zondagen
+ 1-08 t/m 31-08 -> telt 5 zondagen. Daar wordt een weekvolume bijgeteld, omdat de einddatum van de toewijzing niet op zondag is maar 31 augustus is.
+  
+Maximaal volume per productperiode: Het aantal zondagen vermenigvuldigd met het volume uit de toewijzing (evt. vermeerderd met een extra weekvolume):
+- Juli 3 zondagen : 3 x weekvolume (300 euro) = 900 euro
+- Augustus 5 zondagen + 1 weekvolume: 6 x weekvolumes (300 euro) = 1800 euro
 
 **IV078**
 
@@ -1021,9 +1043,9 @@ Voorbeeld 1:
 
 frequentie in ToegewezenProduct = week
 
-Toewijzing voor 3 uur per week met ingangsdatum 12-10-2021 en einddatum 13-12-2021
+Toewijzing voor 3 uur per week met ingangsdatum 12-11-2025 en einddatum 13-12-2025
 
-Voor de productperiode 11-11-2025 t/m 30-11-2025 mag maximaal 9 uur gedeclareerd worden, indien deze uren ook daadwerkelijk geleverd zijn. (zie ook rekenmethode IV077. De eerste week (11-11-2025 t/m 16-11-2025) is geen volledige kalenderweek, maar indien geleverd mag voor deze week de volledige 3 uur worden gedeclareerd.
+Voor de productperiode 12-11-2025 t/m 30-11-2025 mag maximaal 9 uur gedeclareerd worden, indien deze uren ook daadwerkelijk geleverd zijn. (zie ook rekenmethode IV077. De eerste week (12-11-2025 t/m 16-11-2025) is geen volledige kalenderweek, maar indien geleverd mag voor deze week de volledige 3 uur worden gedeclareerd.
 
 Voorbeeld 2:
 
