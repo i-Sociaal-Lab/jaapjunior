@@ -14,4 +14,3 @@ Wettelijke vertegenwoordiging die voor de cliënt van toepassing is op het momen
 | 08 | Mentorschap |
 | 09 | Onder curatele stelling |
 | 10 | Zaakwaarneming |
-
