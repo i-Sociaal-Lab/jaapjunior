@@ -122,7 +122,7 @@ Het document dient als **naslagwerk en validatiebron** voor AI-agenten die vrage
 - *een berichtklasse nieuw is (waarde 1)*
 - *een berichtklasse gewijzigd is (waarde 2); een wijziging betekent dat de actuele aanlevering met dezelfde sleutel vervangen wordt. Deze waarde mag niet gebruikt worden in de iWmo/iWmo.*
 - *een berichtklasse verwijderd moet worden (waarde 3). Een verwijdering betekent dat de vorige aanlevering(en) met dezelfde sleutel als niet verzonden beschouwd moet worden.*
-  
+
 **OP033x1**
 
 *Een afgegeven toewijzing mag gewijzigd worden waarbij de wijziging met een nieuw bericht moet worden doorgegeven.*
@@ -192,7 +192,7 @@ Daarnaast kan ook het afkeuren en corrigeren van berichten er toe leiden dat ber
 
 *Een toewijzingsbericht bevat voor 1 cliënt altijd alle toewijzingen voor 1 aanbieder die op of na de aanmaakdatum van het bericht geldig zijn plus alle toewijzingen die gewijzigd zijn ten opzichte van het voorgaande toewijzingsbericht.
 
-Deze regel is van toepassing indien voor 1 cliënt  meerdere producten toegewezen zijn. Alle geldige toewijzingen binnen 1 cliënt, voor 1 aanbieder worden in 1 toewijzingsbericht geplaatst en naar de betreffende aanbieder gestuurd inclusief de toewijzingen die gewijzigd zijn sinds het laatst verstuurde toewijzingsbericht voor deze cliënt en aanbieder. Denk hierbij aan intrekkingen die zijn gedaan en waar de aanbieder nog niet van op de hoogte is.
+Deze regel is van toepassing indien voor 1 cliënt meerdere producten toegewezen zijn. Alle geldige toewijzingen binnen 1 cliënt, voor 1 aanbieder worden in 1 toewijzingsbericht geplaatst en naar de betreffende aanbieder gestuurd inclusief de toewijzingen die gewijzigd zijn sinds het laatst verstuurde toewijzingsbericht voor deze cliënt en aanbieder. Denk hierbij aan intrekkingen die zijn gedaan en waar de aanbieder nog niet van op de hoogte is.
 
 Toewijzingen met einddatum gelijk aan ingangsdatum en RedenWijziging gevuld met 13 (Verwijderd) worden niet gezien als actuele toewijzing. Ook toewijzingen met einddatum gelijk aan ingangsdatum en RedenWijziging gevuld met 01 (Administratieve correctie (vervallen)) worden niet gezien als actuele toewijzing.
 
@@ -291,11 +291,11 @@ Het heeft de voorkeur een bestaande toewijzing aan te passen indien:
 
 *Het is niet toegestaan om een zorg- of ondersteuningsproduct gestapeld toe te wijzen.*
 
-Gestapeld betekent dat voor één cliënt hetzelfde zorg- of ondersteuningsproduct meerdere keren wordt toegewezen aan dezelfde aanbieder voor (gedeeltelijk) dezelfde periode.  
+Gestapeld betekent dat voor één cliënt hetzelfde zorg- of ondersteuningsproduct meerdere keren wordt toegewezen aan dezelfde aanbieder voor (gedeeltelijk) dezelfde periode.
 Hetzelfde zorg- of ondersteuningsproduct betekent dezelfde productcode of dezelfde productcategorie indien productcode niet gevuld is. Indien productcategorie leeg is, geldt dat er geen ander toegewezen product voor (gedeeltelijk) dezelfde periode naast mag staan.
 
 De producten uit de hulpmiddelencategorieen (categorie 11, 12, 13, 14) zijn hiervan uitgezonderd. 
-Verwijderde toewijzingen (waarvan de einddatum gelijk is aan de ingangsdatum en de reden wijziging is gevuld met 13 (Verwijderd)) maken geen onderdeel uit van de bepaling of sprake is van stapeling. Deze toewijzingen worden niet gezien als actuele toewijzing.  Hetzelfde geldt voor toewijzingen met reden wijziging 01 (Administratieve correctie (vervallen)) en einddatum gelijk aan ingangsdatum.
+Verwijderde toewijzingen (waarvan de einddatum gelijk is aan de ingangsdatum en de reden wijziging is gevuld met 13 (Verwijderd)) maken geen onderdeel uit van de bepaling of sprake is van stapeling. Deze toewijzingen worden niet gezien als actuele toewijzing. Hetzelfde geldt voor toewijzingen met reden wijziging 01 (Administratieve correctie (vervallen)) en einddatum gelijk aan ingangsdatum.
 
 **OP260** 
 
@@ -520,11 +520,11 @@ Als in het antwoordbericht VerzoekAntwoord de waarde 2 (Aanvraag in onderzoek) b
 
 *Het is niet toegestaan om een zorg- of ondersteuningsproduct gestapeld aan te vragen.*
 
-Stapeling betekent dat voor één cliënt hetzelfde zorg- of ondersteuningsproduct meerdere keren wordt aangevraagd door dezelfde aanbieder voor (gedeeltelijk) dezelfde periode.  
+Stapeling betekent dat voor één cliënt hetzelfde zorg- of ondersteuningsproduct meerdere keren wordt aangevraagd door dezelfde aanbieder voor (gedeeltelijk) dezelfde periode.
 Hetzelfde zorg- of ondersteuningsproduct betekent dezelfde productcode of dezelfde productcategorie indien productcode niet gevuld is. Indien productcategorie leeg is, geldt dat er geen ander aangevraagd product voor (gedeeltelijk) dezelfde periode naast mag staan. 
 
 De producten uit de hulpmiddelencategorieen (categorie 11, 12, 13, 14) zijn hiervan uitgezonderd. 
-Verwijderde toewijzingen (waarvan de einddatum gelijk is aan de ingangsdatum en de reden wijziging is gevuld met 13 (Verwijderd)) maken geen onderdeel uit van de bepaling of er sprake is van stapeling. Deze toewijzingen worden niet gezien als actuele toewijzing.  Hetzelfde geldt voor toewijzingen met reden wijziging 01 (Administratieve correctie (vervallen)) en einddatum gelijk aan ingangsdatum.
+Verwijderde toewijzingen (waarvan de einddatum gelijk is aan de ingangsdatum en de reden wijziging is gevuld met 13 (Verwijderd)) maken geen onderdeel uit van de bepaling of er sprake is van stapeling. Deze toewijzingen worden niet gezien als actuele toewijzing. Hetzelfde geldt voor toewijzingen met reden wijziging 01 (Administratieve correctie (vervallen)) en einddatum gelijk aan ingangsdatum.
 
 **OP348**
 
@@ -785,7 +785,7 @@ Wanneer de ontvanger fouten constateert in een bericht op basis van de ter besch
 *Hoe moet XsdVersie gevuld worden?*
 
 De waarde voor de elementen BasisschemaXsdVersie en BerichtXsdVersie in het datatype CDT_XsdVersie moeten overgenomen worden uit de schemadefinitie (XSD) waarop het bericht gecreëerd/gebaseerd is. Deze waarden staan in de schemadefinitie respectievelijk in /xs:schema/xs:annotation/xs:appinfo/<namespace>:BasisschemaXsdVersie en /xs:schema/xs:annotation/xs:appinfo/<namespace>:BerichtXsdVersie.
-Voor "<namespace>" wordt de namespace van de desbetreffende  iStandaard ingevuld, bijv. 'iJw', 'iWmo', enz.
+Voor "<namespace>" wordt de namespace van de desbetreffende iStandaard ingevuld, bijv. 'iJw', 'iWmo', enz.
 Bijv: <wmo301:Bericht xmlns:iWmo="http://www.istandaarden.nl/iWmo/3_2/basisschema/schema" xmlns:wmo301="http://www.istandaarden.nl/iWmo/3_2/wmo301/schema">
 
 **IV042**
@@ -974,7 +974,7 @@ Over september wordt er geen declaratie meer ingediend. De laatste week, die ged
 
 *Hoe moet het maximaal te declareren volume berekend worden over de productperiode bij gebruik van de frequentie per week in de toewijzing?*
 
-De frequentie per week is niet 1-op-1 passend binnen de declaratieperiode maand.Hierdoor zijn bij de omrekening naar een maximaal te declareren volume over de productperiode  aanvullende afspraken noodzakelijk, zodat het volume in de prestatie gecontroleerd kan worden. Afhankelijk van de uitvoeringsvarianten zijn hiervoor verschillende rekenmethoden opgesteld. (voor het vullen van het volume in de prestatie bij toewijzingen met frequentie week, zie IV076)
+De frequentie per week is niet 1-op-1 passend binnen de declaratieperiode maand.Hierdoor zijn bij de omrekening naar een maximaal te declareren volume over de productperiode aanvullende afspraken noodzakelijk, zodat het volume in de prestatie gecontroleerd kan worden. Afhankelijk van de uitvoeringsvarianten zijn hiervoor verschillende rekenmethoden opgesteld. (voor het vullen van het volume in de prestatie bij toewijzingen met frequentie week, zie IV076)
 
 Stappen
 Stap 1: Bepaal de uitvoeringsvariant van de toewijzing, inspanningsgericht of outputgericht.
@@ -999,14 +999,14 @@ Bepaal het aantal kalenderweken in de productperiode.
 - Oktober : 4 (week 41 t/m 44)
 - November: 5 (week 44 t/m 48)
 - December: 5 (week 48 t/m 52,01)
-  
+
 Maximaal volume per productperiode: Vermenigvuldig het aantal kalenderweken per productperiode met het toegewezen volume per week:
 - Oktober : 12 uur (4 weken x 3 uur)
 - November: 15 uur (5 weken x 3 uur)
 - December: 15 uur (5 weken x 3 uur)
 
 Maximaal volume over de toewijzingsperiode: tel het aantal weken (eventueel gebroken) binnen de toewijzing en vermenigvuldig dit met het volume uit de toewijzing:
-- 07-10-2025 t/m 30-12-2025 = week 41 t/m week 52 + 1 = 13 weken,  13 weken x 3 uur (volume uit de toewijzing) = 39 uur
+- 07-10-2025 t/m 30-12-2025 = week 41 t/m week 52 + 1 = 13 weken, 13 weken x 3 uur (volume uit de toewijzing) = 39 uur
 Het maximale volume over de toewijzingsperiode is 39 uur
 
 Voorbeeld bij Outputgerichte toewijzing:
@@ -1027,7 +1027,7 @@ Het aantal zondagen in de productperiodes:
 - Juli: 07-07 t/m 31-07 -> telt 3 zondagen
 - Augustus: 1-08 t/m 31-08 -> telt 5 zondagen
  1-08 t/m 31-08 -> telt 5 zondagen. Daar wordt een weekvolume bijgeteld, omdat de einddatum van de toewijzing niet op zondag is maar 31 augustus is.
-  
+
 Maximaal volume per productperiode: Het aantal zondagen vermenigvuldigd met het volume uit de toewijzing (evt. vermeerderd met een extra weekvolume):
 - Juli 3 zondagen : 3 x weekvolume (300 euro) = 900 euro
 - Augustus 5 zondagen + 1 weekvolume: 6 x weekvolumes (300 euro) = 1800 euro
@@ -1105,7 +1105,7 @@ ProductPeriode Prestatie 2: 23-03-2025 t/m 31-03-2025
 Wanneer een eerder ingediende prestatie door de aanbieder onjuist is bevonden, kan deze door de aanbieder worden ingetrokken door aanlevering van een credit prestatie.
 Dit kan alleen nadat er een declaratie-antwoordbericht op de debet prestatie is ontvangen en de prestatie daarin niet is afgekeurd. Een door de gemeente afgekeurde prestatie wordt nooit gecrediteerd.
 
-NB: een creditering  is een eenzijdige handeling van de aanbieder, die niet bestreden kan worden door een gemeente. De gemeente kan een ingediende credit prestatie dus niet afkeuren, tenzij het technische afkeur betreft. Zie hiervoor invulinstructies IV088 en IV087).
+NB: een creditering is een eenzijdige handeling van de aanbieder, die niet bestreden kan worden door een gemeente. De gemeente kan een ingediende credit prestatie dus niet afkeuren, tenzij het technische afkeur betreft. Zie hiervoor invulinstructies IV088 en IV087).
 
 **IV086**
 
@@ -1137,7 +1137,7 @@ Wat na de Header volgt is afhankelijk van of en op welk controleniveau fouten zi
 De vulling van het declaratie-antwoordbericht is afhankelijk van de situatie en de geconstateerde fouten:
 
 Het bericht is volledig goedgekeurd:
-De Header wordt retour gestuurd met retourcode 0200 (geen opmerkingen over deze berichtklasse) en een Declaratie-Antwoord berichtklasse met Retourcode 8001 (Declaratie is volledig toegewezen), waarbij TotaalGoedgekeurdBedrag  en TotaalIngediendBedrag worden gevuld met de waarde van TotaalIngediendBedrag van het bijbehorende declaratiebericht.
+De Header wordt retour gestuurd met retourcode 0200 (geen opmerkingen over deze berichtklasse) en een Declaratie-Antwoord berichtklasse met Retourcode 8001 (Declaratie is volledig toegewezen), waarbij TotaalGoedgekeurdBedrag en TotaalIngediendBedrag worden gevuld met de waarde van TotaalIngediendBedrag van het bijbehorende declaratiebericht.
 
 Controleniveau 1: Er zijn fouten geconstateerd bij XSD-validatie
 Indien het declaratiebericht niet valideert tegen het XSD krijgt de afzender een foutmelding. Er wordt geen declaratie-antwoordbericht verzonden.
@@ -1152,7 +1152,7 @@ Voorbeeld:
 Controleniveau 3 of 4: Er zijn fouten geconstateerd op berichtoverstijgende controles of controles tegen een externe bron
 Indien er een fout geconstateerd is in de Header, bevat het declaratie-antwoordbericht alleen de Header met daarbij de retourcode van de regel op basis waarvan de fout geconstateerd is.
 
-Indien een fout geconstateerd is in de berichtklasse Declaratie, wordt de Header retour gestuurd met retourcode 0200 (geen opmerking over deze berichtklasse), berichtklasse DeclaratieAntwoord krijgt de betreffende retourcode voor afkeur. Het TotaalToegekendBedrag wordt gevuld met 0 (zie ook TR342).  De declaratie wordt als niet verzonden beschouwd en is niet verwerkt in de administratie van de gemeente.
+Indien een fout geconstateerd is in de berichtklasse Declaratie, wordt de Header retour gestuurd met retourcode 0200 (geen opmerking over deze berichtklasse), berichtklasse DeclaratieAntwoord krijgt de betreffende retourcode voor afkeur. Het TotaalToegekendBedrag wordt gevuld met 0 (zie ook TR342). De declaratie wordt als niet verzonden beschouwd en is niet verwerkt in de administratie van de gemeente.
 Voorbeeld:
 
 - Het declaratienummer is niet uniek: Declaratienummer moet uniek zijn voor de verzendende partij. De Header krijgt dan retourcode 0200 (geen opmerking over deze berichtklasse), berichtklasse DeclaratieAntwoord krijgt retourcode 9333, en bij TotaalToegekendBedrag wordt 0 gevuld.
