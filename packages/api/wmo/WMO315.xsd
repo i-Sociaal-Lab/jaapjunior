@@ -1,3 +1,5 @@
+## WMO315.xsd
+
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:iwmo="http://www.istandaarden.nl/iwmo/3_2/basisschema/schema" xmlns:wmo315="http://www.istandaarden.nl/iwmo/3_2/wmo315/schema" targetNamespace="http://www.istandaarden.nl/iwmo/3_2/wmo315/schema" elementFormDefault="qualified">
 	<xs:import namespace="http://www.istandaarden.nl/iwmo/3_2/basisschema/schema" schemaLocation="basisschema.xsd"></xs:import>
@@ -179,3 +181,58 @@
 		</xs:sequence>
 	</xs:complexType>
 </xs:schema>
+
+## WMO317.xsd
+
+<?xml version="1.0" encoding="UTF-8"?>
+<wmo317:Bericht xmlns:iwmo="http://www.istandaarden.nl/iwmo/3_2/basisschema/schema" xmlns:wmo317="http://www.istandaarden.nl/iwmo/3_2/wmo317/schema" >
+	<wmo317:Header>
+		<wmo317:BerichtCode>480</wmo317:BerichtCode>
+		<wmo317:BerichtVersie>3</wmo317:BerichtVersie>
+		<wmo317:BerichtSubversie>2</wmo317:BerichtSubversie>
+		<wmo317:Afzender>65656055</wmo317:Afzender>
+		<wmo317:Ontvanger>0384</wmo317:Ontvanger>
+		<wmo317:BerichtIdentificatie>
+			<iwmo:Identificatie>987654321</iwmo:Identificatie>
+			<iwmo:Dagtekening>2023-04-02</iwmo:Dagtekening>
+		</wmo317:BerichtIdentificatie>
+		<wmo317:XsdVersie>
+			<iwmo:BasisschemaXsdVersie>1.0.0</iwmo:BasisschemaXsdVersie>
+			<iwmo:BerichtXsdVersie>1.0.0</iwmo:BerichtXsdVersie>
+		</wmo317:XsdVersie>
+	</wmo317:Header>
+	<wmo317:Client>
+		<wmo317:Bsn>999900006</wmo317:Bsn>
+		<wmo317:Verzoek>
+			<wmo317:ReferentieAanbieder>9003</wmo317:ReferentieAanbieder>
+			<wmo317:RedenVerzoek>1</wmo317:RedenVerzoek>
+			<wmo317:OngewijzigdeProducten>
+				<wmo317:OngewijzigdProduct>
+					<wmo317:ToewijzingNummer>10071</wmo317:ToewijzingNummer>
+				</wmo317:OngewijzigdProduct>
+			</wmo317:OngewijzigdeProducten>
+			<wmo317:TeWijzigenProducten>
+				<wmo317:TeWijzigenProduct>
+					<wmo317:ToewijzingNummer>10072</wmo317:ToewijzingNummer>
+					<wmo317:GewensteIngangsdatum>2023-04-02</wmo317:GewensteIngangsdatum>
+					<wmo317:Einddatum>2023-12-31</wmo317:Einddatum>
+				</wmo317:TeWijzigenProduct>
+			</wmo317:TeWijzigenProducten>
+			<wmo317:NieuweProducten>
+				<wmo317:NieuwProduct>
+					<wmo317:Product>
+						<iwmo:Categorie>01</iwmo:Categorie>
+						<iwmo:Code>01A12</iwmo:Code>
+					</wmo317:Product>
+					<wmo317:GewensteIngangsdatum>2023-04-02</wmo317:GewensteIngangsdatum>
+					<wmo317:Einddatum>2023-12-31</wmo317:Einddatum>
+					<wmo317:Omvang>
+						<iwmo:Volume>20</iwmo:Volume>
+						<iwmo:Eenheid>14</iwmo:Eenheid>
+						<iwmo:Frequentie>4</iwmo:Frequentie>
+					</wmo317:Omvang>
+				</wmo317:NieuwProduct>
+			</wmo317:NieuweProducten>
+		</wmo317:Verzoek>
+	</wmo317:Client>
+</wmo317:Bericht>
