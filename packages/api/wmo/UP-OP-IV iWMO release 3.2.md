@@ -1202,7 +1202,7 @@ Deze regels hebben een eigen retourcode die gevuld wordt in het declaratie-antwo
 Voor declareren zijn de volgende begrippen van belang:
 
 - Declaratieperiode: is een administratieve periode waarover de geleverde hulp in de administratie tot een declaratie wordt verwerkt. Dit is altijd een kalendermaand.
-- Productperiode: is de begin- en einddatum van een geleverd product binnen een declaratieperiode. De productperiode valt altijd binnen de geldigheidsperiode van de toewijzing.
+- Productperiode: De productperiode valt altijd binnen de geldigheidsperiode van de toewijzing. Een productperiode is niet afhankelijk van de startdatum en of stopdatum van de geleverde zorg.
 In het declaratiebericht wordt het totale geleverde volume van 1 specifiek product binnen 1 productperiode aan 1 cliënt (behorende bij 1 toewijzing) opgenomen in 1 Prestatie. Deze prestaties worden direct in de erop volgende declaratieperiode, of eventueel achteraf in een latere declaratieperiode, gedeclareerd. (zie IV076 voor vullen volume bij frequentie per week)
 
 De ProductPeriode Begindatum wordt gevuld met:
@@ -1444,7 +1444,7 @@ Medio mei 2023 wordt een wijziging aangevraagd met daarin ReferentieAanbieder A0
 
 De gemeente ontvangt het verzoek, en besluit om het verzoek te honoreren, en doet dit tijdig, door op 2 juni 2023 het toewijzingbericht te sturen.
 De wijziging voor product E moet met een gewijzigd ToegewezenProduct gedaan worden, omdat wordt voldaan aan OP380.
-De wijziging van product F wordt gedaan door het lopende ToegewezenProduct per 11 juni 2023 in te trekken, en aansluitend een nieuw ToegewezenProduct met het nieuwe volume te geven met een startdatum van 12 juni 2023.
+De wijziging van product F wordt gedaan door het lopende ToegewezenProduct per 11 juni 2023 in te trekken, en aansluitend een nieuw ToegewezenProduct met het nieuwe volume te geven met een ingangsdatum van 12 juni 2023.
 
 Het toewijzingbericht bevat dus:
 
