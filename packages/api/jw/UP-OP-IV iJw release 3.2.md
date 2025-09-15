@@ -1003,7 +1003,7 @@ Het maximale volume van de productperiode wordt bepaald op basis van het aantal 
 
 Voorbeeld bij inspanningsgerichte toewijzing:
 Cliënt heeft een toewijzing voor 3 uur per week met ingangsdatum 7-10-2025 en einddatum 30-12-2025
-Bepaal het aantal kalenderweken in de productperiode
+Bepaal het aantal kalenderweken in de productperiode.
 
 - Oktober : 4 (week 41 t/m 44)
 - November: 5 (week 44 t/m 48)
@@ -1019,7 +1019,7 @@ Maximaal volume over de toewijzingsperiode: tel het aantal weken (eventueel gebr
 Het maximale volume over de toewijzingsperiode is 39 uur
 
 Voorbeeld bij Outputgerichte toewijzing:
-Cliënt heeft een toewijzing voor 300 euro per week met ingangsdatum 07-10-2025 en einddatum 31-12-2025
+Cliënt heeft een toewijzing voor 300 euro per week met ingangsdatum 01-10-2025 en einddatum 31-12-2025
 Het aantal zondagen in de productperiodes:
 
 - Oktober: 07-10 t/m 31-10 -> telt 3 zondagen
@@ -1029,6 +1029,17 @@ Maximaal volume per productperiode: Het aantal zondagen vermenigvuldigd met het 
 - Oktober 3 zondagen : 3 x weekvolume (300 euro) = 900 euro
 - November 4 zondagen: 5 x weekvolume (300 euro) = 1500 euro
 - December 4 zondagen + 1 weekvolume: 5 x weekvolumes (300 euro) = 1500 euro
+
+Voorbeeld bij Outputgerichte toewijzing:
+Cliënt heeft een toewijzing voor 300 euro per week met ingangsdatum 07-07-2025 en einddatum 05-09-2025
+Het aantal zondagen in de productperiodes:
+- Juli: 07-07 t/m 31-07 -> telt 3 zondagen
+- Augustus: 1-08 t/m 31-08 -> telt 5 zondagen
+ 1-08 t/m 31-08 -> telt 5 zondagen. Daar wordt een weekvolume bijgeteld, omdat de einddatum van de toewijzing niet op zondag is maar 31 augustus is.
+  
+Maximaal volume per productperiode: Het aantal zondagen vermenigvuldigd met het volume uit de toewijzing (evt. vermeerderd met een extra weekvolume):
+- Juli 3 zondagen : 3 x weekvolume (300 euro) = 900 euro
+- Augustus 5 zondagen + 1 weekvolume: 6 x weekvolumes (300 euro) = 1800 euro
 
 **IV078**
 
