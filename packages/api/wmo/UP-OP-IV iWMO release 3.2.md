@@ -161,7 +161,7 @@ Het document dient als **naslagwerk en validatiebron** voor AI-agenten die vrage
 
 **OP065**
 
-*Een retourbericht bevat alleen informatie over cliënten waarvan berichtklassen zijn afgekeurd. Cliënten waarvan alle berichtklassen volledig zijn goedgekeurd worden dus niet mee teruggestuurd in het retourbericht.*
+*Een retourbericht bevat alleen informatie over cliënten waarvan berichtklassen zijn afgekeurd. Cliënten waarvan alle berichtklassen volledig zijn goedgekeurd worden dus niet mee teruggestuurd in het retourbericht. Het retourbericht bevat alleen clienten waarvan in één of meer berichtklassen, over of behorend bij die client, fouten zijn geconstateerd. In dat geval wordt de berichtklasse Client inclusief alle onderliggende berichtklassen retour gezonden, voorzien van retourcodes.*
 
 **OP071**
 
@@ -181,7 +181,8 @@ Het document dient als **naslagwerk en validatiebron** voor AI-agenten die vrage
 
 **OP080**
 
-*Aan het tijdstip waarop en de volgorde waarin berichten worden ontvangen en verwerkt kunnen ketenpartijen geen betekenis hechten. Hoewel ongewenst kan het noodzakelijk zijn een bericht met terugwerkende kracht te moeten versturen, bijvoorbeeld als gevolg van een bezwaarprocedure.*
+*Aan het tijdstip waarop en de volgorde waarin berichten worden ontvangen en verwerkt kunnen ketenpartijen geen betekenis hechten. Hoewel ongewenst kan het noodzakelijk zijn een bericht met terugwerkende kracht te moeten versturen, bijvoorbeeld als gevolg van een bezwaarprocedure. Dit kan aanleiding zijn voor een serie berichten die vervolgens met terugwerkende kracht moeten worden verstuurd.
+Daarnaast kan ook het afkeuren en corrigeren van berichten er toe leiden dat berichten in een andere volgorde worden verwerkt dan bedoeld. In deze situatie is het te adviseren om de ontvangst van retourberichten af te wachten om afkeur op een vervolgbericht te voorkomen.*
 
 **OP086**
 
@@ -320,7 +321,7 @@ Wanneer gemeenten en aanbieders kiezen voor een outputgerichte werkwijze moeten 
 
 Bijvoorbeeld bij afronding van een traject, per behaalde mijlpaal of periodiek een vast bedrag.
 
-OP267: 
+**OP267**: 
 
 *De aanbieder declareert in een eenheid die aansluit bij de toewijzing.*
 
@@ -507,7 +508,7 @@ Bij een verzoek om wijziging is de reactie van de gemeente altijd op het niveau 
 
 **OP345**
 
-*Als de gewenste ingangsdatum van een te wijzigen product uit een verzoek om wijziging (VOW) in het verleden ligt, dan mag de nieuwe omvang of het nieuwe budget niet leiden tot onrechtmatigheid voor al gedeclareerde en of geleverde  zorg.*
+*Als de gewenste ingangsdatum van een te wijzigen product uit een verzoek om wijziging (VOW) in het verleden ligt, dan mag de nieuwe omvang of het nieuwe budget niet leiden tot onrechtmatigheid voor al gedeclareerde en of geleverde zorg.*
 
 **OP346**
 
