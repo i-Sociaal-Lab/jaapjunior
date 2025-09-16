@@ -1409,22 +1409,19 @@ Actuele toewijzing heeft budget of frequentie 'totaal binnen geldigheidsduur toe
 Wanneer een actuele toewijzing moet wijzigen van het type budget of frequentie 'totaal binnen geldigheidsduur toewijzing', dan betreft dit altijd een wijziging vanaf de originele begindatum.
 Het budget of de totale omvang kan gewijzigd zijn, en de einddatum kan zijn aangepast, maar Toewijzingnummer, Product (of geen Product bij generieke toewijzing) en Begindatum blijven gelijk.
 
-Actuele toewijzing heeft frequentie anders dan 'totaal binnen geldigheidsduur toewijzing'.
+Actuele toewijzing heeft frequentie anders dan totaal binnen geldigheidsduur toewijzing.
 
 Wanneer een wijziging is gewenst voor dit type toewijzing, dan is het afhankelijk van de wijziging of er een nieuwe toewijzing nodig is, of dat de bestaande toewijzing kan worden gewijzigd.
 Bestaande regels OP33x1, OP257, OP380 geven aan, dat bij het wijzigen van alléén de einddatum de bestaande toewijzing kan of moet worden aangepast. In de andere gevallen, dus als de omvang wijzigt, dan moet de actuele toewijzing beëindigd worden en aansluitend een nieuwe toewijzing met de nieuwe omvang toegewezen worden.
 De te gebruiken begin- en einddatum hierbij is afhankelijk van het moment van toewijzen, zie hieronder.
 
 GewensteIngangsdatum in de toekomst t.o.v. moment van toewijzen.
-
 Indien het moment van toewijzen voor de gewenste ingangsdatum van de wijziging ligt, dan worden de velden uit het verzoek om wijziging ongewijzigd overgenomen.
 
 Producten in berichtklasse OngewijzigdProduct
-
 Deze bevat alleen een Toewijzingsnummer, dit refereert naar een actuele toewijzing die ongewijzigd voortgezet moet worden. In het toewijzingsbericht wordt deze dan ook ongewijzigd opgenomen, alleen de ReferentieAanbieder wordt overgenomen uit het Verzoek om Wijziging. Het element RedenWijziging blijft leeg.
 
 Producten in berichtklasse TeWijzigenProduct
-
 Hierin staan producten waarvoor een actueel ToegewezenProduct is, maar waarvoor nu een wijziging wordt gevraagd. Afhankelijk van wat er als wijziging gevraagd wordt zijn er twee verschillende wijzen waarop dit in het toewijzingbericht wordt opgenomen (zie ook OP257, OP380).
 
 - Wanneer aan de voorwaarde van OP380 wordt voldaan, dan moet het actueel ToegewezenProduct worden aangepast en opnieuw worden verstuurd. De toewijzing houdt hetzelfde ToewijzingNummer. Wel wordt de ReferentieAanbieder overgenomen uit het Verzoek om Wijziging en de RedenWijziging wordt gevuld met 'geinitieerd door aanbieder'
