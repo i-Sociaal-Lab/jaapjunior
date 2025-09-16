@@ -660,7 +660,9 @@ Van een cliënt of relatie worden de achternaam, voorvoegsel en voornamen en/of 
 - De Partnernaam kan worden vastgelegd. Ook deze bestaat uit de Naam en eventueel een Voorvoegsel
 - Voornamen kunnen worden vastgelegd, gescheiden door spaties
 - Voorletters kunnen worden vastgelegd, aaneengesloten, zonder punten of spaties
-- NaamGebruik geeft de gewenste aanspreekvorm aan. Hiermee wordt bij correspondentie de volgorde bepaald in het gebruik van de geslachtsnaam en de naam van de partner. Het vullen van NaamGebruik hangt dus af van hoe de cliënt of relatie zijn/haar naam hanteert.
+- NaamGebruik geeft de gewenste aanspreekvorm aan. Hiermee wordt bij correspondentie de volgorde bepaald in het gebruik van de geslachtsnaam en de naam van de partner.
+
+Het vullen van NaamGebruik hangt dus af van hoe de cliënt of relatie zijn/haar naam hanteert.
 
 **IV008**
 
