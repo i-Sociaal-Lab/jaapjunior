@@ -116,536 +116,407 @@ De gemeente geeft iedere beschikking binnen het Jw-domein een uniek nummer.
 
 # Bedrijfsregels (OP-regels)
 
-**OP001**
+## OP001 – Gezagsdrager
+- Van een cliënt wordt vastgelegd wie de gezagsdrager is.  
+- Voor cliënten van 16 jaar of ouder kan het gezag bij de cliënt zelf liggen.
 
-*Van een cliënt wordt vastgelegd wie de gezagsdrager is. Indien het een cliënt betreft die 16 jaar of ouder is kan het gezag over de jeugdige ook bij de cliënt zelf liggen.*
+## OP002 – Gegevens gezagsdrager in toewijzing
+- De gemeente stuurt in de toewijzing de gegevens van de gezagsdrager mee.  
+- De gezagsdrager wordt opgenomen als relatie van de cliënt.
 
-**OP002**
+### OP002x1
+- Als een aanbieder in een Verzoek om Toewijzing (VOT) heeft aangegeven dat de gezagsdrager bekend is, hoeft deze niet opnieuw in de toewijzing te worden opgenomen.
 
-*De gemeente stuurt in de toewijzing gegevens van de gezagsdrager van de cliënt mee. De gezagsdrager wordt opgenomen als relatie van de cliënt.*
+### OP002x2
+- Als het gezag bij de jeugdige zelf ligt, wordt deze niet als relatie opgenomen in de toewijzing.
 
-**OP002x1**
+## OP003 – Uitzondering standaard berichtenverkeer
+- Gestandaardiseerd berichtenverkeer wordt niet gebruikt als een (zorg)professional oordeelt dat overdracht ernstige risico's voor de veiligheid van de cliënt oplevert (bijv. verblijf in "blijf-van-mijn-lijf" huis).
 
-*Indien een aanbieder in een Verzoek om toewijzing heeft aangegeven dat de gezagsdrager bekend is, hoeft in de daaropvolgende toewijzing de gezagsdrager niet meegegeven te worden.*
+## OP011 – Startdatum levering
+- De aanbieder meldt de begindatum van de levering nadat de ondersteuning daadwerkelijk is gestart.
 
-**OP002x2**
+## OP033 – Wijzigingen en status aanlevering
+- Voor wijzigingen, verwijderingen en correcties op een eerder verzonden regiebericht wordt de **status aanlevering** gebruikt:  
+  - **1** – berichtklasse nieuw  
+  - **2** – berichtklasse gewijzigd (niet toegestaan in iJw/iWmo)  
+  - **3** – berichtklasse verwijderd  
 
-*Indien het gezag over een cliënt bij de jeugdige zelf ligt, wordt deze niet nogmaals als relatie opgenomen in de toewijzing.*
+### OP033x1 – Wijzigingen in toewijzing
+- Toewijzing kan gewijzigd worden via een nieuw bericht.  
+- **Einddatum wijzigingen toegestaan:**  
+  - Intrekken: einddatum korter maken (overleg aanbieder)  
+  - Oprekken: einddatum verlengen (overleg aanbieder)  
+  - Verwijderen: einddatum = ingangsdatum, RedenWijziging = 13 (Verwijderd)  
 
-**OP003**
+- **Volume wijzigingen:**  
+  - Frequentie = "Totaal binnen geldigheidsduur toewijzing": volume mag aangepast worden  
+  - Initiatief gemeente = overleg met en instemming van aanbieder vereist  
+  - Initiatief aanbieder = mag zonder overleg door gemeente worden aangepast  
 
-*Het gestandaardiseerd berichtenverkeer wordt niet gebruikt indien, naar oordeel van een (zorg)professional, de overdracht van cliëntgegevens ernstige risico's met zich meebrengt voor de veiligheid van de cliënt. Dit kan bijvoorbeeld gelden voor cliënten die opgenomen zijn of worden in een "blijf-van-mijn-lijf" huis.*
+- **Budget wijzigingen:**  
+  - Aanvraag aanbieder = mag zonder overleg door gemeente worden aangepast  
+  - Initiatief gemeente = overleg en instemming van aanbieder vereist  
+
+- **Belangrijk:** meest recente toewijzing op toewijzingsdatum/-tijd is bepalend.
 
-**OP011**
+### OP033x2
+- Gebruik van status aanlevering waarde **2** (berichtklasse gewijzigd) is niet toegestaan.
 
-*De aanbieder meldt de begindatum van de levering nadat de ondersteuning daadwerkelijk is aangevangen.*
+## OP039 – Cliëntgegevens in berichten
+- Ketenpartijen mogen cliëntgegevens doorgeven zoals geregistreerd in hun administratie, mits deze geen logische sleutel vormen.  
+- Het is toegestaan gewijzigde gegevens over te nemen in de administratie.
 
-**OP033**
+## OP043 – PGB en toewijzing
+- Als een cliënt een PGB heeft, mag voor hetzelfde product geen toewijzing zijn afgegeven.  
+- Toewijzing eindigt uiterlijk op de dag vóór ingangsdatum PGB.
 
-*Voor het doorgeven van wijzigingen, verwijderingen en correcties op een eerder verzonden regiebericht, moet gebruik gemaakt worden van de systematiek van status aanlevering. Correcties op een melding start product zijn uitsluitend toegestaan voor het geleverde product. Als de ondersteuning beëindigd is, kan de aanvang niet meer op deze manier gecorrigeerd worden. Met de status aanlevering van een berichtklasse kan worden aangegeven of:*
-- *een berichtklasse nieuw is (waarde 1)*
-- *een berichtklasse gewijzigd is (waarde 2). Een wijziging betekent dat de actuele aanlevering met dezelfde sleutel vervangen wordt. Deze waarde mag niet gebruikt worden in de iJw/iWmo.*
-- *een berichtklasse verwijderd moet worden (waarde 3). Een verwijdering betekent dat de vorige aanlevering(en) met dezelfde sleutel als niet verzonden beschouwd moet worden.*
+## OP047 – Afkeuren niet-standaard berichten
+- Berichten die niet voldoen aan de geldende standaard mogen worden afgekeurd.
 
-**OP033x1**
+## OP065 – Retourberichten
+- Retourbericht bevat alleen informatie over afgekeurde berichtklassen.  
+- Cliënten met volledig goedgekeurde berichtklassen worden niet mee teruggestuurd.  
+- Berichtklasse **Client** inclusief alle afgekeurde onderliggende berichtklassen wordt voorzien van retourcodes.
 
-*Een afgegeven toewijzing mag gewijzigd worden waarbij de wijziging met een nieuw bericht moet worden doorgegeven.*
+## OP071 – Uniek relatie-nummer
+- Elke relatie krijgt een uniek nummer per gemeente per cliënt.  
+- Dit nummer mag niet gewijzigd worden.
 
-*De volgende wijzigingen in de einddatum zijn toegestaan:*
-- *Intrekken: aanpassen van de gewenste einddatum toewijzing zodat de periode korter wordt (alleen toegestaan in overleg met de aanbieder).*
-- *Oprekken: aanpassen van de gewenste einddatum toewijzing zodat de periode langer wordt (alleen toegestaan in overleg met de aanbieder).*
-- *Verwijderen: de einddatum van de toewijzing wordt gewijzigd zodat deze gelijk is aan de ingangsdatum van de toewijzing. Daarbij wordt RedenWijziging gevuld met 13 (Verwijderd). Een verwijdering betekent dat de toewijzing als niet verzonden beschouwd moet worden.*
+## OP072 – Beëindigen ondersteuning
+- Beëindigen mag pas na melding start ondersteuning.  
+- Stopbericht moet verwijzen naar de start van de levering.
+
+## OP076 – Contactpersonen
+- Voor iedere contactpersoon moet de relatie tot de cliënt worden opgegeven.  
+- Gegevens mogen alleen worden opgenomen indien noodzakelijk voor communicatie met de cliënt.
+
+## OP079 – Gebruik BSN
+- Het gebruik van het BSN van de cliënt is verplicht in de onderlinge uitwisseling van gegevens.
+
+## OP080 – Volgorde berichten
+- Volgorde en tijdstip van ontvangen/ verwerken berichten zijn niet bepalend.  
+- Terugwerkende berichten kunnen noodzakelijk zijn (bijv. bezwaarprocedures).  
+- Ontvang retourberichten afwachten om afkeur van vervolgberichten te voorkomen.
 
-*De volgende wijzigingen in volume en maximaal budget zijn toegestaan:*
+## OP086 – Toewijzing ondersteuningsproducten
+- Ondersteuningsproducten met een **inspannings- of outputgerichte uitvoering** worden altijd door de gemeente toegewezen via een toewijzingsbericht.
+
+## OP087 – Inhoud toewijzingsbericht
+- Voor één cliënt bevat een toewijzingsbericht altijd:  
+  - Alle toewijzingen voor één aanbieder die **geldig zijn op of na de aanmaakdatum** van het bericht.  
+  - Alle toewijzingen die **gewijzigd zijn sinds het vorige toewijzingsbericht** (bijv. intrekkingen).  
+
+- Uitzonderingen:  
+  - Toewijzingen met einddatum = ingangsdatum en **RedenWijziging = 13 (Verwijderd)** worden niet als actueel beschouwd.  
+  - Toewijzingen met einddatum = ingangsdatum en **RedenWijziging = 01 (Administratieve correctie)** worden ook niet als actueel beschouwd.  
+
+- **Belangrijk:** Voor iedere cliënt waarbij een toewijzing verandert, wordt een toewijzingsbericht gestuurd met alle actuele toewijzingen voor die aanbieder.
 
-- *Volume wijzigen: Als de omvang is gespecificeerd met in Frequentie de waarde "Totaal binnen geldigheidsduur toewijzing", dan mag Volume worden aangepast.*
-*Indien dit op verzoek van de aanbieder is, mag dit zonder overleg worden aangepast door de gemeente.*
-*Indien de gemeente het initiatief tot aanpassing van het volume neemt, mag dit alleen in overleg met en na instemming van de aanbieder worden aangepast.*
-- *Budget wijzigen: Als Budget op verzoek van de aanbieder wordt gewijzigd, mag dit zonder overleg worden aangepast door de gemeente.*
+## OP090 – Retourberichten heenberichten
+- Voor ieder ontvangen heenbericht wordt **binnen 3 werkdagen** een retourbericht verzonden.  
+- De verzender is verantwoordelijk voor het signaleren van ontbrekende retourberichten en moet actie ondernemen.
 
-*Indien de gemeente het initiatief tot aanpassing van het maximale budget neemt, mag dit alleen in overleg met en na instemming van de aanbieder worden aangepast.*
+### OP090x2
+- Als er geen retourbericht kan worden gemaakt, meldt de ontvangende partij dit **buiten het berichtenverkeer om** aan de verzender.
+
+### OP090x4 – Declaratie-antwoordbericht
+- Voor ieder ontvangen declaratiebericht wordt **binnen 10 werkdagen** een declaratie-antwoordbericht verzonden.  
+- Als dit niet lukt, neemt de gemeente buiten het berichtenverkeer contact op met de aanbieder.  
+- De aanbieder is verantwoordelijk voor het signaleren van het ontbreken van het antwoordbericht en dient actie te ondernemen.
 
-*De meest recente toewijzing op toewijzingsdatum en -tijd is bepalend voor de inhoud van de toewijzing.*
+## OP091 – Contactgegevens cliënt
+- Aanvullende contactgegevens mogen worden vastgelegd.  
+- Het soort adres moet altijd worden geregistreerd.
+
+## OP095 – Afkeuren berichten
+- Een bericht mag niet afgekeurd worden op basis van informatie waartoe de verzender **geen toegang heeft**.
+
+## OP130 – Relatiegegevens
+- Van een relatie moet altijd een **naam** worden vastgelegd, aangevuld met een **volledig adres** en/of **telefoonnummer**.
+
+## OP155 – Tijdelijke stop levering
+- Een (tijdelijke) beëindiging van levering bevat een verwijzing naar de **laatste melding van de start** van de levering.
+
+## OP179 – Bestandsgrootte
+- Maximale bestandsgrootte voor verzending is **25 MB**.  
+- Uitzonderingen zijn toegestaan indien grotere bestanden verwerkt kunnen worden.  
+- Doel: verzender attenderen op aanpassing bij problemen in verwerking.
 
-**OP033x2**
+## OP186 – Stop toewijzing verleden
+- Beëindigen van een toewijzing in het verleden mag alleen in **overeenstemming met de aanbieder**.  
+- Toepassing: situaties waarin de aanbieder niet had kunnen weten dat ondersteuning niet geleverd mocht worden.
 
-*Het gebruik van status aanlevering met waarde 2 (een berichtklasse is gewijzigd) is niet toegestaan.*
+## OP191 – Ongestructureerde informatie
+- Gebruik van ongestructureerde informatie moet minimaal zijn.  
+- **Commentaar mag** in het bericht ter toelichting, mits geen persoonsgegevens zonder toestemming.
 
-**OP039**
+## OP192 – Technische eisen berichten
+- Formaat: **XML**  
+- Codering: **UTF-8**  
+- Byte-Order-Mark (BOM) niet toegestaan  
+- Einderegel: **CR/LF**  
+- Bestandsextensie: `.xml`
+
+## OP252 – Onbekende geboortedatum
+- Bij een (gedeeltelijk) onbekende geboortedatum moet worden aangegeven welk deel **betrouwbaar** is.
 
-*In het berichtenverkeer mogen ketenpartijen cliëntgegevens doorgeven zoals deze in de administratie van de betreffende ketenpartij voorkomen, mits deze gegevens geen onderdeel zijn van een logische sleutel. Het staat ketenpartijen vrij om gewijzigde gegevens uit het berichtenverkeer over te nemen in hun administratie.*
+## OP254 – AGB-codes
+- iJw-berichten gebruiken **AGB-codes** voor routering en identificatie van de aanbieder.
 
-**OP043**
+## OP257 – Wijziging zorgvraag
+- Bij wijziging van de zorgvraag:  
+  - Nieuwe toewijzing of gewijzigde toewijzing voor het product.  
 
-*Indien aan een cliënt een PGB is toegekend is, mag op hetzelfde moment voor hetzelfde product geen toewijzing zijn afgegeven. Een toewijzing eindigt (uiterlijk) op de dag voorafgaand aan de ingangsdatum van het PGB.*
+- **Beëindigen bestaande toewijzing** indien:  
+  - Omvang van ondersteuning wijzigt (meer of minder ondersteuning nodig).  
+  - Product wijzigt (ander product nodig).  
+
+- **Voorkeur aanpassing bestaande toewijzing** indien:  
+  - Einddatum zorg of ondersteuning wijzigt (intrekken/oprekken)  
+  - Volume wijzigt bij frequentie “totaal binnen geldigheidsduur”  
+  - Maximaal budget wordt gewijzigd
+
+## OP258 – Beëindiging toewijzing
+- Bij beëindiging van een toewijzing wordt de aanbieder geïnformeerd via een **toewijzingsbericht**.
+
+## OP259 – Geen stapeling van producten
+- **Gestapeld:** hetzelfde zorg- of ondersteuningsproduct meerdere keren toegewezen aan dezelfde aanbieder voor (gedeeltelijk) dezelfde periode.  
+- Zelfde product: dezelfde **productcode** of **productcategorie** (als productcode leeg).  
+- Uitzonderingen:  
+  - Verwijderde toewijzingen (einddatum = ingangsdatum, RedenWijziging = 13)  
+  - Administratieve correcties (RedenWijziging = 01)  
+  - Deze worden **niet als actuele toewijzing** gezien.
+
+## OP260 – Productomschrijving
+- Een ondersteuningsproduct wordt omschreven als een **Productcategorie** en kan nader worden gespecificeerd met een **Productcode**.
+
+## OP261 – Uitvoering per product
+- Vastleggen van de uitvoering: **inspanningsgericht**, **outputgericht**, of **taakgericht**.
+
+## OP262 – Tarieven inspanningsgericht
+- Tarief per tijdseenheid afgesproken.  
+- Uitzondering: eenheid = stuks (inspanning) → tarief per stuk.
+
+## OP263 – Tarieven outputgericht
+- Tarief per stuk of een bedrag in euro’s over een vastgestelde periode.  
+- Gemeente en aanbieder maken duidelijke afspraken over de **definitie van output** en **vaststellen van behaalde output**.
+
+## OP264 – Declaratiemoment outputgericht
+- Vaststelling van het declaratiemoment, bijvoorbeeld:  
+  - Bij afronding traject  
+  - Per behaalde mijlpaal  
+  - Periodiek vast bedrag
+
+## OP267 – Declaratie-eenheid
+- Aanbieder declareert in een eenheid die aansluit bij de **toewijzing**.
+
+## OP270 – Regieberichten
+- Begin- en einddatums afgestemd tussen **gemeente en aanbieder**.  
+- Verplicht bij uitvoeringsvarianten: **inspannings- en outputgericht**.  
+- Per product kan afwijken, maar dit heeft **niet de voorkeur**.
+
+## OP271 – Startbericht
+- Aanbieder verzendt binnen **5 werkdagen** na daadwerkelijke start.  
+- Terugwerkend toegewezen ondersteuning → binnen 5 werkdagen na ontvangst toewijzingbericht.
+
+## OP272 – Stopbericht
+- Aanbieder verzendt binnen **5 werkdagen** na daadwerkelijke stop.  
+- Definitieve stop volgend op tijdelijke stop → binnen 5 werkdagen nadat bekend is dat levering **definitief gestopt** is.
+
+## OP274 – Verzoek om toewijzing
+- Gemeente stuurt **binnen 5 werkdagen** per aangevraagd product:  
+  - Toewijzingsbericht of  
+  - Antwoordbericht  
+
+- Als **VerzoekAntwoord = 2 (In onderzoek)**:  
+  - Binnen 8 weken → toewijzingsbericht of antwoordbericht met **VerzoekAntwoord = 1 (Afgewezen)**.  
+  - Elk product uit het verzoek moet uiteindelijk **toewijzing of afwijzing** hebben.
+
+## OP275 – Uniek toewijzingsnummer
+- Iedere toewijzing binnen een gemeente heeft een **uniek nummer per wettelijk domein**.
+
+## OP276 – Declaratieaanvraag
+- Aanbieder declareert voor cliënten waarvoor **toewijzing ontvangen** is.
+
+## OP279 – Declaratie binnen geldigheid
+- Declaratie vindt plaats **binnen de geldigheid** van de toewijzing.
+
+## OP280 – Declaratieperiode
+- Declaratiebericht heeft betrekking op **één declaratieperiode**.  
+- Kan prestaties bevatten uit **eerder verlopen declaratieperioden**.
+
+## OP281 – Declaratiebericht meerdere cliënten
+- Een declaratiebericht kan prestaties bevatten van **één of meer cliënten**.
+
+## OP283 – Uniek prestatie-nummer
+- Iedere prestatie krijgt een **uniek nummer (ProductReferentie)** per aanbieder per wettelijk domein.
+
+## OP284 – Aansluitende declaratieperioden
+- Als iedere declaratieperiode zorg is geleverd, moeten declaratieperioden **aansluitend** zijn in opvolgende berichten.  
+- Geen zorg geleverd → geen declaratie over die periode, tenzij **correcties op eerdere declaraties** nodig zijn.  
+- Hiaten in declaratieperioden zijn toegestaan (duur = 1 of meer kalendermaanden).  
+- Overlap voor correcties is toegestaan op de laatst ingediende periode.
+
+## OP286 – Technische fouten heenbericht
+- Bij technische fouten keurt ontvanger **het hele bericht af**.  
+- Bericht wordt **functioneel als niet-verzonden** beschouwd en verzender geïnformeerd.
+
+## OP288 – Stopbericht bij Startbericht
+- Als een Startbericht is gestuurd, wordt de beëindiging altijd doorgegeven met een **Stopbericht**.  
+- Geldt ook bij levering volgens plan of op einddatum van de toewijzing.
+
+## OP289 – Eén actueel Startbericht
+- Per toegewezen product kan slechts **één startdatum** actueel zijn.  
+- Startbericht mag niet volgen op een bestaand Startbericht voor hetzelfde product, tenzij:  
+  - Er een (tijdelijke) beëindiging via Stopbericht is doorgegeven, of  
+  - Het betreft een correctie van het eerdere Startbericht.  
+- Toewijzing kan **generiek**, **aspecifiek**, of **specifiek** zijn.
+
+## OP295 – Verplichting regieberichten
+- Gebruik van regieberichten verplicht bij **inspannings- en outputgericht**.  
+- Stopbericht mag alleen als er een **Startbericht** is.  
+- Bij oudere leveringen (iWmo/iJw release 2.4) zonder Startbericht → Stopbericht mag niet.
+
+## OP296 – Verzoek om Toewijzing
+- Moet passen binnen de **contractafspraken** tussen gemeente en aanbieder.
+
+## OP297 – Zorgverlenercode
+- Indien bekend, moet de **ZorgverlenerCode (AGB)** van verwijzer worden meegegeven.  
+- Ontbreekt de code → naam van de verwijzer volstaat.
+
+## OP298 – Verlagen volume
+- Alleen toegestaan **na overleg en instemming** van de aanbieder bij frequentie “totaal binnen geldigheidsduur”.
+
+## OP299 – Verlagen budget
+- Alleen toegestaan **na overleg en instemming** van de aanbieder.  
+- Op verzoek van de aanbieder via wijziging → mag gemeente **zonder overleg** aanpassen.
+
+## OP302 – Declaratie passend bij toewijzing
+- Ingediende prestatie moet **passen bij toewijzing**.  
+- Soorten toewijzing:  
+  - **Specifiek**: productcategorie + productcode beide gevuld → zelfde combinatie declareren.  
+  - **Aspecifiek**: alleen productcategorie gevuld → 1 of meer productcodes uit dezelfde categorie declareren.  
+  - **Generiek**: alleen budget gevuld → 1 of meer productcategorieën + bijbehorende productcodes passend binnen contract declareren.
+
+## OP303 – Declaratie-antwoordbericht
+- Bevat alle informatie om een declaratie administratief te verwerken.  
+- Alleen **afgekeurde prestaties** worden meegestuurd met een **retourcode**.  
+- Toegekende prestaties worden niet apart vermeld, alleen de som van de bedragen wordt opgenomen in `DeclaratieAntwoord`.
+
+## OP304 – Detailinformatie retourbericht
+- Retourbericht bevat alleen cliënten met **afgekeurde berichtklassen**.  
+- Cliënten met volledig goedgekeurde berichtklassen worden niet teruggestuurd.  
+- Berichtklasse `Cliënt` inclusief alle afgekeurde prestaties en retourcodes wordt geretourneerd.
 
-**OP047**
+## OP305 – Producten op inspanningsbasis
+- Producten in **stuks** (inspanning) moeten toegewezen worden met **eenheid 84**.
 
-*Als een bericht niet aan de geldende standaard voldoet, mag het bericht afgekeurd worden.*
-
-**OP065**
-
-*Een retourbericht bevat alleen informatie over cliënten waarvan berichtklassen zijn afgekeurd. Cliënten waarvan alle berichtklassen volledig zijn goedgekeurd worden dus niet mee teruggestuurd in het retourbericht. Het retourbericht bevat alleen clienten waarvan in één of meer berichtklassen, over of behorend bij die client, fouten zijn geconstateerd. In dat geval wordt de berichtklasse Client inclusief alle onderliggende berichtklassen retour gezonden, voorzien van retourcodes.*
-
-**OP071**
-
-*Elke relatie krijgt een uniek nummer per gemeente per cliënt. Dit nummer mag niet gewijzigd worden.*
-
-**OP072**
-
-*Pas na een melding start ondersteuning mag een aanbieder melden dat de levering beëindigd is. In het bericht moet gerefereerd worden aan de start van de levering.*
-
-**OP076**
-
-*Van iedere contactpersoon (relatie) moet worden opgegeven in welke relatie deze tot de cliënt staat. Gegevens over een contactpersoon mogen alleen worden opgenomen indien noodzakelijk voor communicatie met de cliënt.*
-
-**OP079**
-
-*Het is verplicht om gebruik te maken van het BSN van de cliënt in de onderlinge uitwisseling van gegevens.*
-
-**OP080**
-
-*Aan het tijdstip waarop en de volgorde waarin berichten worden ontvangen en verwerkt kunnen ketenpartijen geen betekenis hechten. Hoewel ongewenst kan het noodzakelijk zijn een bericht met terugwerkende kracht te moeten versturen, bijvoorbeeld als gevolg van een bezwaarprocedure. Dit kan aanleiding zijn voor een serie berichten die vervolgens met terugwerkende kracht moeten worden verstuurd.
-Daarnaast kan ook het afkeuren en corrigeren van berichten er toe leiden dat berichten in een andere volgorde worden verwerkt dan bedoeld. In deze situatie is het te adviseren om de ontvangst van retourberichten af te wachten om afkeur op een vervolgbericht te voorkomen.*
-
-**OP086**
-
-*Ondersteuningsproducten met een inspannings- of outputgerichte uitvoering worden altijd door de gemeente toegewezen met een toewijzingsbericht.*
-
-**OP087**
-
-*Een toewijzingsbericht bevat voor 1 cliënt altijd alle toewijzingen voor 1 aanbieder die op of na de aanmaakdatum van het bericht geldig zijn plus alle toewijzingen die gewijzigd zijn ten opzichte van het voorgaande toewijzingsbericht.
-
-Deze regel is van toepassing indien voor 1 cliënt meerdere producten toegewezen zijn. Alle geldige toewijzingen binnen 1 cliënt, voor 1 aanbieder worden in 1 toewijzingsbericht geplaatst en naar de betreffende aanbieder gestuurd inclusief de toewijzingen die gewijzigd zijn sinds het laatst verstuurde toewijzingsbericht voor deze cliënt en aanbieder. Denk hierbij aan intrekkingen die zijn gedaan en waar de aanbieder nog niet van op de hoogte is.
-
-Toewijzingen met einddatum gelijk aan ingangsdatum en RedenWijziging gevuld met 13 (Verwijderd) worden niet gezien als actuele toewijzing. Ook toewijzingen met einddatum gelijk aan ingangsdatum en RedenWijziging gevuld met 01 (Administratieve correctie (vervallen)) worden niet gezien als actuele toewijzing.
-
-Voor iedere cliënt waarbij een toewijzing verandert, wordt een toewijzingsbericht gestuurd voor alle actuele toewijzingen voor die aanbieder behorende bij die cliënt*
-
-**OP090**
-
-*Voor ieder ontvangen heenbericht wordt binnen 3 werkdagen na ontvangst een retourbericht verzonden.*
-
-De verzendende partij van het heenbericht is verantwoordelijk voor het signaleren van het ontbreken van een retourbericht en dient actie te ondernemen.*
-
-**OP090x2**
-
-*Indien voor een ontvangen heenbericht geen retourbericht kan worden gemaakt moet de ontvangende partij dit buiten het berichtenverkeer om melden aan de verzendende partij.*
-
-**OP090x4**
-
-*Voor ieder ontvangen declaratiebericht wordt binnen 10 werkdagen na ontvangst een declaratie-antwoordbericht verzonden.
-
-Indien de gemeente niet binnen 10 werkdagen een declaratie-antwoordbericht kan versturen, neemt de gemeente buiten het berichtenverkeer om contact op met de aanbieder. De aanbieder is verantwoordelijk voor het signaleren van het ontbreken van een declaratie-antwoordbericht en dient, indien er nog geen contact geweest is met de gemeente, actie te ondernemen.*
-
-**OP091**
-
-*Van een cliënt mogen aanvullende contactgegevens vastgelegd worden. Er moet dan wel vastgelegd worden wat voor soort adres het betreft.*
-
-**OP095**
-
-*Een bericht mag niet worden afgekeurd op basis van informatie waartoe de verzendende partij geen toegang heeft.*
-
-**OP130**
-
-*Van de relatie moet altijd een naam worden vastgelegd, aangevuld met een volledig adres en/of een telefoonnummer.*
-
-**OP155**
-
-*Een (tijdelijke) beëindiging van levering, bevat een verwijzing naar de laatste melding van de start van de levering.*
-
-**OP179**
-
-*De grootte van verzonden bestanden mag niet meer zijn dan 25 Mb.*
-
-Deze regel wordt niet naar de techniek vertaald. Daar waar grotere bestanden verwerkt kunnen worden is dat uiteraard toegestaan. Daar waar de grootte van bestanden tot problemen in de verwerking leidt, is deze regel bedoeld om duidelijk te maken dat de verzender de bestandsgrootte moet aanpassen.
-
-**OP186** 
-
-Het beëindigen van een toewijzing op een datum die in het verleden ligt kan alleen in overeenstemming met de betreffende aanbieder
-
-Deze regel is van toepassing op dié situaties waarin de aanbieder niet had kunnen weten dat hij geen ondersteuning meer mocht leveren.
-
-**OP191**
-
-*Het gebruik van ongestructureerde informatie dient tot een minimum beperkt te worden.*
-
-Commentaar mag in de berichten gebruikt worden om extra informatie op te nemen. Het commentaar bevat een toelichting op de betreffende berichtklasse, die niet elders in het bericht kan worden opgenomen. Commentaar in het bericht mag geen tot een persoon herleidbare gegevens bevatten zonder toestemming van die persoon.
-
-**OP192** 
-
-*Verzonden berichten moeten voldoen aan de technische eisen.*
-
-1. Het berichtuitwisselingsformaat is XML.
-2. De bestandcodering is UTF-8.
-3. Het gebruik van Byte-Order-Mark (BOM) is niet toegestaan.
-4. Het einderegel teken is een combinatie van CR/LF (Windows einde-regel teken).
-5. Gebruik xml als bestandextensie voor het bestand waar het XML bericht in opgenomen is.
-
-**OP252** 
-
-*Bij een (deels) onbekende geboortedatum moet aangegeven worden welk deel van de geboortedatum betrouwbaar is.*
-
-**OP254** 
-
-*In de iJw berichten worden AGB-codes gebruikt voor routering van de berichten en voor identificatie van de aanbieder.*
-
-**OP257** 
-
-*Bij een wijziging van de zorgvraag wordt voor het betreffende product een nieuwe toewijzing afgegeven.*
-
-Bij een wijziging van de zorgvraag wordt voor het betreffende product een nieuwe toewijzing afgegeven of voor het betreffende product wordt een gewijzigde toewijzing gestuurd.
-
-Bij het afgeven van een nieuwe toewijzing wordt een eventueel bestaande toewijzing beëindigd indien:
-
-- De omvang van de te leveren ondersteuning wijzigt: er is meer of minder ondersteuning nodig op hetzelfde product dan vastgesteld in de bestaande toewijzing, behalve wanneer de omvang is gedefinieerd met een frequentie totaal binnen geldigheidsduur.
-- Het product wijzigt: de cliënt heeft recht op een ander product dan vastgesteld in de bestaande toewijzing.
-
-Het heeft de voorkeur een bestaande toewijzing aan te passen indien:
-
-- De einddatum van de te leveren zorg of ondersteuning wijzigt (intrekken of oprekken)
-- Het volume wijzigt bij een frequentie totaal binnen geldigheidsduur toewijzing
-- Het maximaal budget wordt gewijzigd
-
-**OP258** 
-
-*Bij een beëindiging van een toewijzing wordt de aanbieder hiervan op de hoogte gebracht met een toewijzingbericht.*
-
-**OP259**
-
-*Het is niet toegestaan om een zorg- of ondersteuningsproduct gestapeld toe te wijzen.*
-
-Gestapeld betekent dat voor een cliënt hetzelfde zorg- of ondersteuningsproduct meerdere keren wordt toegewezen aan dezelfde aanbieder voor (gedeeltelijk) dezelfde periode.
-
-Hetzelfde zorg- of ondersteuningsproduct betekent dezelfde productcode of dezelfde productcategorie indien productcode niet gevuld is. Indien productcategorie leeg is, geldt dat er geen ander toegewezen product voor (gedeeltelijk) dezelfde periode naast mag staan.
-
-Verwijderde toewijzingen (waarvan de einddatum gelijk is aan de ingangsdatum en de reden wijziging is gevuld met 13 (Verwijderd)) maken geen onderdeel uit van de bepaling of sprake is van stapeling. Deze toewijzingen worden niet gezien als actuele toewijzing. Hetzelfde geldt voor toewijzingen met reden wijziging 01 (Administratieve correctie (vervallen)) en einddatum gelijk aan ingangsdatum.
-
-**OP260** 
-
-*Een ondersteuningsproduct wordt omschreven als een Productcategorie en kan nader gespecificeerd worden met een Productcode.*
-
-**OP261** 
-
-*Per ondersteuningsproduct wordt vastgelegd of de uitvoering inspanningsgericht, outputgericht of taakgericht is.*
-
-**OP262** 
-
-*Voor ondersteuningsproducten met een inspanningsgerichte uitvoering wordt een tarief per tijdseenheid afgesproken behalve voor ondersteuningsproducten met de eenheid stuks (inspanning) daar wordt een tarief per stuk afgesproken.*
-
-**OP263**
-
-*Voor ondersteuningsproducten met een outputgerichte werkwijze wordt een tarief per stuk afgesproken of wordt afgesproken dat een bedrag in euro's over een vastgestelde periode wordt vastgesteld.*
-
-Wanneer gemeenten en aanbieders kiezen voor een outputgerichte werkwijze moeten er duidelijke afspraken worden gemaakt over wat precies wordt verstaan onder de gewenste output en hoe kan worden vastgesteld hoe de output is behaald.
-
-**OP264**
-
-*Voor ondersteuningsproducten met een outputgerichte werkwijze wordt vastgesteld op welk moment gedeclareerd wordt.*
-
-Bijvoorbeeld bij afronding van een traject, per behaalde mijlpaal of periodiek een vast bedrag.
-
-**OP267**
-
-*De aanbieder declareert in een eenheid die aansluit bij de toewijzing.*
-
-**OP270**
-
-*Aanbieder en gemeente maken onderling afspraken over de door te geven begin- en einddatum in de regieberichten.*
-
-Het gebruik van de regieberichten is voor de uitvoeringsvarianten inspannings- en outputgericht verplicht. Binnen de Jeugdwet maken gemeente en aanbieder onderling afspraken welke datums gehanteerd moeten worden om de start en stop van de levering door te geven. Deze afspraak kan per product afwijken, maar dit heeft niet de voorkeur.
-
-**OP271**
-
-*De aanbieder verzendt een startbericht binnen vijf werkdagen na de daadwerkelijke datum waarop de ondersteuning gestart is.*
-
-Indien de ondersteuning met terugwerkende kracht is toegewezen, binnen vijf werkdagen na ontvangst van het toewijzingbericht.
-
-**OP272** 
-
-*De aanbieder verzendt een stopbericht binnen vijf werkdagen na de daadwerkelijke datum waarop de ondersteuning beeindigd is.*
-
-Het verzenden van de definitieve stop, volgend op een tijdelijke stop, hoeft niet binnen 5 werkdagen na het stoppen van de levering te zijn. Wel moet het stopbericht binnen 5 werkdagen nadat bekend is dat de levering definitief gestopt is verstuurd worden.
-
-**OP274** 
-
-*Na ontvangst van een verzoek om toewijzing stuurt de gemeente per aangevraagd product binnen 5 werkdagen ofwel een toewijzingbericht ofwel een antwoordbericht aan de aanbieder.*
-
-Als een antwoordbericht in VerzoekAntwoord de waarde 2 (Aanvraag in onderzoek) bevat, dan wordt binnen 8 weken na dagtekening van het verzoek ofwel een toewijzing bericht ofwel een antwoordbericht met in VerzoekAntwoord de waarde 1 (Verzoek afgewezen) gestuurd. Er moet altijd uiteindelijk ofwel een toewijzingsbericht ofwel een antwoordbericht met in VerzoekAntwoord de waarde 1 (Verzoek afgewezen) worden gestuurd voor elk aangevraagd product uit het verzoek om toewijzing
-
-**OP275**
-
-*Iedere toewijzing binnen één gemeente heeft een uniek nummer per wettelijk domein.*
-
-**OP276**
-
-*De aanbieder declareert voor een cliënt waarvoor de aanbieder een toewijzing ontvangen heeft.*
-
-**OP279**
-
-De aanbieder declareert een product binnen de geldigheid van de toewijzing.
-
-**OP280**
-
-*Een declaratiebericht heeft betrekking op één declaratieperiode.*
-
-Een declaratiebericht over een periode kan prestaties bevatten uit eerdere declaratieperioden.
-
-**OP281**
-
-*Een declaratiebericht kan prestaties van één of meer cliënten bevatten.*
-
-**OP283**
-
-*Iedere prestatie krijgt een uniek nummer (ProductReferentie) per aanbieder per wettelijk domein.*
-
-**OP284**
-
-*Indien iedere declaratieperiode zorg is geleverd door de aanbieder, moeten de declaratieperioden aansluitend zijn in opvolgende declaratieberichten.*
-
-Als gedurende een volledige declaratieperiode door de aanbieder geen zorg is geleverd, zal de aanbieder over die betreffende periode geen declaratie indienen. Tenzij in deze declaratieperiode correcties op voorgaande declaraties moeten worden verstuurd. Dit betekent dat er hiaten in de opvolgende declaratieperioden kunnen voorkomen. Het hiaat heeft altijd de duur van 1 of meer kalendermaanden.
-
-Overlap van declaratieperiode is (voor correcties) toegestaan op de laatst ingediende declaratieperiode. Zie ook IV090.
-
-**OP286**
-
-*Als de ontvanger van een heenbericht een technische fout constateert, keurt deze het bericht in zijn geheel af en laat hij dit weten aan de verzender.*
-
-Het bericht moet daarmee functioneel als niet-verzonden worden beschouwd.
-
-**OP288**
-
-*Indien de start van de levering gemeld is met een Startbericht, wordt de beëindiging van die levering altijd doorgegeven met een Stopbericht.*
-
-Dit geldt ook wanneer de levering volgens plan en/of op de einddatum van de toewijzing beëindigd wordt.
-
-**OP289**
-
-*Bij een toegewezen product kan slechts één startbericht actueel zijn.*
-
-Op ieder moment kan er maar één begindatum zijn van een levering die gestart is naar aanleiding van één toegewezen product of productcategorie. Een startbericht kan dus nooit volgen op een startbericht voor hetzelfde toegewezen product, tenzij er voor dat toegewezen product een (tijdelijke) beëindiging is doorgegeven in een stopbericht, óf tenzij het een correctie betreft van het eerdere startbericht (zie IV008).
-
-Let op: een product kan hierbij niet gevuld zijn (generiek) of bestaan uit alleen een productcategorie (aspecifiek) ofwel een productcategorie en een productcode (specifiek).
-
-**OP295**
-
-*Het gebruik van regieberichten is verplicht.*
-
-Het gebruik van de regieberichten is voor de uitvoeringsvarianten inspannings- en outputgericht verplicht. Een Stopbericht kan alleen worden verstuurd indien er een bijbehorend Startbericht aanwezig is. Bij leveringen gestart voor het verplicht stellen van de regieberichten (iWmo/iJw release 2.4) kan het zo zijn dat er geen Startbericht gestuurd is. Bij eindigen van de levering kan in dat geval geen Stopbericht worden verstuurd.
-
-**OP296**
-
-*Het ingediende Verzoek om Toewijzing dient te passen binnen de gemaakte contractafspraken tussen gemeente en aanbieder.*
-
-**OP297**
-
-*Indien de zorgverlenercode van de verwijzer bekend is, dient de aanbieder deze mee te geven in het verzoek om toewijzing.*
-
-Indien bij de verwijzing van huisarts, Jeugdarts, Gecertificeerde instelling of Medisch specialist een zorgverlenerscode (AGB-code van het Zorgpartijtype Zorgverlener) is meegegeven, dient bij de verwijzing deze ZorgverlenerCode gevuld te worden. Indien de zorgaanbieder deze informatie niet heeft, mag worden volstaan met de naam van de verwijzer.
-
-**OP298**
-
-*Het verlagen van het Volume bij de frequentie totaal binnen geldigheid toewijzing is alleen toegestaan na overleg met en instemming van de betreffende aanbieder.*
-
-**OP299**
-
-*Het verlagen van het Budget is alleen toegestaan na overleg met en instemming van de betreffende aanbieder.*
-
-Indien dit op verzoek van de aanbieder (via een verzoek om wijziging) is, mag dit zonder overleg worden aangepast door de gemeente.
-
-**OP302**
-
-*De aanbieder declareert een zorg- of ondersteuningsproduct dat aansluit bij de toewijzing.*
-
-De in de declaratie ingediende prestatie moet passen bij de toewijzing.
-
-Dit betekent onder andere dat de prestatie hetzelfde óf (een) nader gespecificeerd(e) zorg- of ondersteuningsproduct bevat als de toewijzing.
-
-- **Specifieke toewijzing**: (productcategorie en productcode zijn beiden gevuld in de toewijzing) wordt hetzelfde zorg- of ondersteuningsproduct gedeclareerd, ofwel dezelfde combinatie van productcategorie en productcode.
-- **Aspecifieke toewijzing**: (in de toewijzing is alleen productcategorie gevuld, productcode is leeg) worden 1 of meer nader gespecificeerde zorg- of ondersteuningsproducten gedeclareerd. Dat betekent dat de aanbieder binnen de toegewezen productcategorie 1 of meer productcode(s) declareert die volgens de gehanteerde productcodelijst horen bij die productcategorie.
-- **Generieke toewijzing**: (in de toewijzing is alleen het budget gevuld, productcategorie en productcode zijn leeg), declareert de aanbieder 1 of meer productcategorie(en) met bijpassende productcode(s) passend binnen het afgesproken contract met de gemeente.
-
-**OP303**
-
-*Het declaratie-antwoordbericht bevat alle informatie om het bericht administratief te verwerken.*
-
-De aanbieder die een declaratie-antwoordbericht ontvangt kan op basis van de meegestuurde gegevens de reactie op de declaratie verwerken in haar systeem. Dit is vooral van belang wanneer van een ingediend declaratiebericht een deel van de ingediende prestaties niet wordt toegekend.
-
-In het declaratie-antwoordbericht worden alleen de prestaties meegestuurd die zijn afgewezen. Daarbij wordt met een retourcode aangegeven wat de reden is dat de ingediende prestatie niet is toegekend.
-
-Toegekende prestaties
-
-Toegekende prestaties worden niet opgenomen in het retourbericht. Alleen de som van de ingediende bedragen van de toegekende prestaties wordt in de berichtklasse `DeclaratieAntwoord` van het declaratie-antwoordbericht opgenomen.
-
-**OP304**
-
-*Een declaratie-antwoordbericht bevat alleen detailinformatie over cliënten waarvan berichtklassen zijn afgekeurd.*
-
-Een declaratie-antwoordbericht bevat alleen detailinformatie over cliënten waarvan berichtklassen zijn afgekeurd Cliënten waarvan alle berichtklassen volledig zijn goedgekeurd worden dus niet mee teruggestuurd in het declaratie-antwoordbericht. Het declaratie-antwoordbericht bevat alleen cliënten waarvan in 1 of meer Prestaties fouten zijn geconstateerd. In dat geval wordt de berichtklasse Cliënt inclusief alle afgekeurde Prestaties retour gezonden, voorzien van de bijbehorende retourcodes.
-
-**OP305**
-
-*Indien een product op inspanningsbasis in stuks is gecontracteerd, moet toegewezen worden met eenheid 84: Stuks (inspanning).*
-
-**OP306**
-
-*Het verzoek om wijziging bericht (VOW) wordt gebruikt als tijdens levering van zorg en/of ondersteuning blijkt dat een ander pakket van toegewezen producten nodig is.*
-
-Een verzoek om wijziging bericht wordt altijd verstuurd vanuit een situatie waarbij er al geleverd wordt op basis van een of meer actuele toewijzingen.
-
-Het bericht bevat altijd de complete gewenste situatie inclusief de ongewijzigde, gewijzigde en nieuwe toewijzingen.
-
-Een verzoek om wijziging bericht kan niet gebruikt worden als er geen actuele toewijzing is.
-
-**OP307**
-
-*Een verzoek om toewijzing bericht (VOT) wordt alleen gebruikt indien een cliënt zich met een (wettelijke) verwijzing of een open beschikking meldt bij de zorgaanbieder.*
-
-Een verzoek om toewijzing bericht wordt altijd verstuurd op basis van een (wettelijke) verwijzing of een open beschikking.
-
-Voor het product en de toewijzingsperiode dat met het verzoek wordt aangevraagd is er nog geen toewijzing voor dat product.
-
-Een verzoek om toewijzing bericht kan niet gebruikt worden als er al een actuele toewijzing is voor dat product voor die periode.
-
-**OP308**
-
-*Een aanbieder vraagt met een verzoek om wijziging bericht (VOW) een samenhangend geheel aan toewijzingen aan met daarin de volledige gewenste situatie.*
-
-Wanneer de aanbieder constateert dat de situatie van de cliënt verandert gedurende het leveren van zorg/ondersteuning, waardoor er een ander pakket aan zorg of ondersteuning nodig is, dan wordt dit kenbaar gemaakt met een verzoek om wijziging bericht, waarin de complete gewenste nieuwe situatie (van ongewijzigde, gewijzigde en of nieuw gewenste producten of productcategorieën) wordt aangegeven.
-
-**OP343**
-
-*Een verzoek om wijziging (VOW) moet tijdig ingediend worden.*
-
-De gemeente moet redelijkerwijs in staat zijn om op een wijzigingsverzoek te reageren voor de gewenste ingangsdatum is bereikt.
-
-**OP344**
-
-*Een verzoek wordt door de gemeente uiteindelijk beantwoord met een toewijzing of een afwijzing.*
-
-Een verzoek om toewijzing of verzoek om wijziging bevat 1 of meerdere toe te wijzen of te wijzigen producten.
-
-De gemeente reageert hierop met een of meer toegewezen producten in een toewijzingbericht, of geeft met een antwoordbericht te kennen dat het verzoek wordt afgewezen.
-
-Eventueel is er eerst onderzoek nodig voordat wordt toegewezen of afgewezen.
-
-Bij een verzoek om wijziging is de reactie van de gemeente altijd op het niveau van het complete verzoek, bij een verzoek om toewijzing kan de gemeente besluiten om elk aangevraagd product apart al dan niet te honoreren.
-
-**OP345**
-
-*Als de gewenste ingangsdatum van een te wijzigen product uit een verzoek om wijziging (VOW) in het verleden ligt, dan mag de nieuwe omvang of het nieuwe budget niet leiden tot onrechtmatigheid voor al gedeclareerde en of geleverde zorg.*
-
-**OP346**
-
-*Na ontvangst van een verzoek om wijziging bericht stuurt de gemeente binnen 5 werkdagen ofwel een toewijzingbericht ofwel een antwoordbericht aan de aanbieder. (Requirement).*
-
-Als in het antwoordbericht VerzoekAntwoord de waarde 2 (Aanvraag in onderzoek) bevat, dan wordt uiterlijk binnen 8 weken na dagtekening van het verzoek ofwel een toewijzingbericht ofwel een antwoordbericht met in VerzoekAntwoord de waarde 1 (Verzoek afgewezen) gestuurd. Er moet altijd uiteindelijk ofwel een toewijzingbericht ofwel een antwoordbericht met in VerzoekAntwoord de waarde 1 (Verzoek afgewezen) worden gestuurd.
-
-**OP347**
-
-*Het is niet toegestaan om een zorg- of ondersteuningsproduct gestapeld aan te vragen.*
-
-Stapeling betekent dat voor een cliënt hetzelfde zorg- of ondersteuningsproduct meerdere keren wordt aangevraagd door dezelfde aanbieder voor (gedeeltelijk) dezelfde periode.
-
-Hetzelfde zorg- of ondersteuningsproduct betekent dezelfde productcode of dezelfde productcategorie indien productcode niet gevuld is. Indien productcategorie leeg is, geldt dat er geen ander aangevraagd product voor (gedeeltelijk) dezelfde periode naast mag staan.
-
-Verwijderde toewijzingen (waarvan de einddatum gelijk is aan de ingangsdatum en de reden wijziging is gevuld met 13 (Verwijderd)) maken geen onderdeel uit van de bepaling of er sprake is van stapeling. Deze toewijzingen worden niet gezien als actuele toewijzing. Hetzelfde geldt voor toewijzingen met reden wijziging 01 (Administratieve correctie (vervallen)) en einddatum gelijk aan ingangsdatum.
-
-**OP348**
-
-*Bij honoreren van een Verzoek om Wijziging (VOW) dient het aangevraagde overgenomen te worden in het toewijzingsbericht.*
-
-Het toewijzingsbericht wordt gevuld conform IV093. De ingangsdatum en einddatum van de toewijzing kan afwijken van de in de VOW gevraagde data in het geval van toewijzen met terugwerkende kracht. Het ToewijzingNummer wijkt af indien voor de gevraagde wijziging een nieuwe toewijzing afgegeven moet worden (conform OP257 en IV066).
-
-**OP349**
-
-*Iedere declaratie krijgt een uniek declaratienummer per aanbieder per wettelijk domein.*
-
-**OP350**
-
-*Het is niet toegestaan een verzoek om wijziging of verzoek om toewijzing te sturen als een eerder verzoek nog niet is afgehandeld.*
-
-Als een verzoek is beantwoord met een retourbericht dat aangeeft dat er geen technische fouten zijn, dan is vanaf dat moment het verzoek in behandeling bij de gemeente. Totdat er ofwel een afkeur is gestuurd ofwel is gehonoreerd met een toewijzing, mag er door dezelfde aanbieder geen nieuw verzoek verzonden worden voor dezelfde cliënt.
-
-**OP354**
-
-*Zorg of ondersteuning geleverd aan een cliënt tijdens een bepaalde declaratieperiode wordt direct in de erop volgende declaratieperiode of achteraf in een latere declaratieperiode gedeclareerd.*
-
-**OP355**
-
-*Ieder ontvangen declaratie-antwoordbericht is gerelateerd aan een eerder ontvangen declaratiebericht.*
-
-De koppeling kan zowel op berichtniveau als op declaratieniveau plaatsvinden.
-
-**OP359**
-
-*Indien een verzoek om toewijzing wordt afgewezen op basis van het woonplaatsbeginsel, dient de gemeente dit binnen de wettelijke termijn van 2 weken af te wijzen en de financieel verantwoordelijke gemeente terug te geven aan de aanbieder met een antwoordbericht.*
-
-**OP360**
-
-*Een prestatie mag alleen worden gecrediteerd indien deze niet eerder is gecrediteerd.*
-
-**OP361**
-
-*Iedere aanvraag van een product in een verzoek om toewijzing (VOT) of Verzoek om wijziging (VOW) krijgt een uniek referentienummer per aanbieder per wettelijk domein.*
-
-**OP362**
-
-*Het verwijderen van een toewijzing mag alleen indien dit niet leidt tot verlies van rechtmatigheid van geleverde en/of gedeclareerde zorg.*
-
-**OP363**
-
-*Bij een output- of inspanningsgerichte werkwijze meldt de aanbieder een start en stop van de ondersteuning van producten waarvoor een toewijzing is ontvangen.*
-
-**OP364**
-
-*Regieberichten worden niet voorwaardelijk gesteld aan declaratie*
-
-Het is niet toegestaan ingediende prestaties in een declaratiebericht af te keuren op basis van de start- en stopdatum in het regiebericht, of op basis van het ontbreken van een start- of stopbericht.
-
-**OP365**
-
-*De aanbieder declareert een zorg- of ondersteuningsproduct met een omvang die aansluit bij de toewijzing en/of gecontracteerde afspraken.*
-
-**OP366**
-
-*Een prestatieregel moet eerst volledig worden gecrediteerd voordat er een correctie op deze prestatieregel kan worden ingediend.*
-
-Omdat een prestatieregel eerst volledig gecrediteerd moet worden alvorens er een correctie op deze prestatieregel ingediend kan worden, is het noodzakelijk dat bij de verwerking van de declaratieberichten eerst de creditregels verwerkt worden, en pas daarna de debetregels.
-
-**OP367**
-
-*Een productperiode valt altijd binnen een kalendermaand.*
-
-**OP368**
-
-*Een productperiode valt altijd binnen de geldigheidsperiode van een toewijzing.*
-
-**OP377**
-
-*Alleen een tijdelijke stop mag zonder tussenkomst van een startbericht gevolgd worden door een definitieve stop.*
-
-Een stop moet volgen op een startbericht. De enige uitzondering hierop is een definitieve stop die kan volgen op een startbericht of een tijdelijke stop.
-
-**OP378**
-
-*Zonder tussenkomst van een startbericht is na een tijdelijke stop alleen een definitieve stop toegestaan.*
-
-**OP379**
-
-*Na een (tijdelijke) stop is het toegestaan een start te sturen.*
-
-**OP380**
-
-*Het verplaatsen van de einddatum in de toekomst van de bestaande toewijzing voor het verlengen van de zorg of ondersteuning is verplicht in een aantal gevallen.*
-
-Deze werkwijze is verplicht indien de toewijzing aan alle onderstaande voorwaarden voldoet:
-
-- het volume blijft gelijk of is leeg.
-- de frequentie is leeg of ongelijk aan totaal binnen geldigheidsduur toewijzing en blijft gelijk.
-- de einddatum van de bestaande toewijzing is niet verstreken op het moment dat de toewijzing wordt opgerekt en verstuurd.
-
----
+## OP306 – Verzoek om wijziging (VOW)
+- Wordt gebruikt bij veranderingen in de zorgsituatie van een cliënt.  
+- Verstuurd vanuit **actuele toewijzingen**.  
+- Bevat de **complete gewenste situatie** (ongewijzigd, gewijzigd en nieuw).  
+- Kan niet gebruikt worden zonder actuele toewijzing.
+
+## OP307 – Verzoek om toewijzing (VOT)
+- Wordt gebruikt bij **(wettelijke) verwijzing of open beschikking**.  
+- Alleen indien er nog **geen actuele toewijzing** is voor het product en periode.  
+- Kan niet gebruikt worden als er al een actuele toewijzing bestaat.
+
+## OP308 – VOW als samenhangend geheel
+- VOW bevat **complete nieuwe situatie** bij verandering van zorg.  
+- Inclusief ongewijzigde, gewijzigde en nieuwe producten/productcategorieën.
+
+## OP343 – Tijdige indiening VOW
+- Gemeente moet redelijkerwijs kunnen **reageren vóór de gewenste ingangsdatum**.
+
+## OP344 – Reactie gemeente
+- Gemeente antwoordt met **toewijzing** of **afwijzing**.  
+- Eventueel eerst onderzoek nodig.  
+- Bij VOW: reactie op **hele verzoek**.  
+- Bij VOT: gemeente kan per product besluiten.
+
+## OP345 – Wijziging met terugwerkende kracht
+- Nieuwe omvang of budget mag **niet leiden tot onrechtmatigheid** van al geleverde of gedeclareerde zorg.
+
+## OP346 – Reactietermijn VOW
+- Binnen **5 werkdagen** toewijzing- of antwoordbericht.  
+- Indien waarde 2 ("Aanvraag in onderzoek") → binnen **8 weken** na dagtekening van het verzoek en definitieve toewijzing of afwijzing (waarde 1).
+
+## OP347 – Geen stapeling
+- **Stapeling** = zelfde product meerdere keren voor dezelfde periode door dezelfde aanbieder.  
+- Hetzelfde zorg- of ondersteuningsproduct betekent dezelfde productcode of dezelfde productcategorie indien productcode niet gevuld is. Indien productcategorie leeg is, geldt dat er geen ander aangevraagd product voor (gedeeltelijk) dezelfde periode naast mag staan. 
+- Verwijderde toewijzingen (waarvan de einddatum gelijk is aan de ingangsdatum en de reden wijziging is gevuld met 13 (Verwijderd)) maken geen onderdeel uit van de bepaling of er sprake is van stapeling. Deze toewijzingen worden niet gezien als actuele toewijzing.
+- Hetzelfde geldt voor toewijzingen met reden wijziging 01 (Administratieve correctie (vervallen)) en einddatum gelijk aan ingangsdatum.
+
+## OP348 – Honoreren VOW
+- Aangevraagde producten worden **overgenomen in toewijzingsbericht**.  
+- Ingangs- en einddatum kunnen afwijken bij terugwerkende kracht.  
+- Toewijzingnummer wijkt af bij nieuwe toewijzing. (conform OP257 en IV066)
+
+## OP349 – Uniek declaratienummer
+- Iedere declaratie krijgt een **uniek nummer per aanbieder en wettelijk domein**.
+
+## OP350 – Geen dubbele verzoeken
+- Het is niet toegestaan een verzoek om wijziging of verzoek om toewijzing te sturen als een eerder verzoek nog niet is afgehandeld. 
+- In behandeling = tot afkeur of toewijzing → geen nieuw verzoek voor dezelfde cliënt.
+
+## OP354 – Declaratieperiode
+- Zorg/ondersteuning aan client wordt gedeclareerd in **volgende of latere periode**.
+
+## OP355 – Declaratie-antwoordbericht
+- Altijd gerelateerd aan **eerder ontvangen declaratiebericht**.  
+- Koppeling kan op bericht- of declaratieniveau.
+
+## OP359 – Afwijzing woonplaatsbeginsel
+- Afwijzen binnen **2 weken** en financieel verantwoordelijke gemeente teruggeven.
+
+## OP360 – Crediteren van prestaties
+- Prestatie mag **alleen gecrediteerd worden als deze nog niet eerder gecrediteerd is**.
+
+## OP361 – Uniek referentienummer
+- Iedere aanvraag in VOT of VOW krijgt een **uniek referentienummer per aanbieder en per wettelijk domein**.
+
+## OP362 – Verwijderen toewijzing
+- Alleen toegestaan als **rechtmatigheid van geleverde/declaratie zorg** niet verloren gaat.
+
+## OP363 – Start/stop meldingen
+- Aanbieder meldt start en stop van ondersteuning bij **output- of inspanningsgerichte** producten.
+
+## OP364 – Regieberichten
+- **Niet voorwaardelijk** aan declaratie.  
+- Prestatie kan **niet afgekeurd** worden op basis van start/stopdatum regiebericht of ontbrekende start- stopberichten.
+
+## OP365 – Declaratie passend bij toewijzing
+- Declaratie moet aansluiten bij **toewijzing en/of contractafspraken**.
+
+## OP366 – Crediteren voor correctie
+- Prestatieregel eerst volledig crediteren **voor correctie**.  
+- Verwerking: **creditregels eerst**, daarna debetregels.
+
+## OP367 – Productperiode
+- Valt altijd binnen **kalendermaand**.
+
+## OP368 – Geldigheidsperiode
+- Valt altijd binnen **geldigheidsperiode van toewijzing**.
+
+## OP377 – Tijdelijke stop gevolgd door definitieve stop
+- Stop volgt op **startbericht**.  
+- Uitzondering: definitieve stop kan volgen op start of tijdelijke stop.
+
+## OP378 – Definitieve stop zonder start
+- Alleen toegestaan **na tijdelijke stop**.
+
+## OP379 – Start na stop
+- Na (tijdelijke) stop is het toegestaan **startbericht** te sturen.
+
+## OP380 – Verplaatsen einddatum toewijzing
+- Verplichting bij verlenging indien:  
+  - Volume blijft gelijk of is leeg.  
+  - Frequentie is leeg of ongelijk aan totaal binnen geldigheidsduur toewijzing en blijft gelijk.  
+  - Einddatum bestaande toewijzing **niet verstreken** op moment van verlenging.
+
+----
 
 # Invulinstructies (IV-regels)
 
