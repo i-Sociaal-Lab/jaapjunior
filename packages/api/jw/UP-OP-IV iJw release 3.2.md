@@ -510,7 +510,7 @@ De gemeente geeft iedere beschikking binnen het Jw-domein een uniek nummer.
 ## OP379 – Start na stop
 - Na (tijdelijke) stop is het toegestaan **startbericht** te sturen.
 
-## OP380 – Verplaatsen einddatum toewijzing
+## OP380 – Verplaatsen einddatum toewijzing in de toekomst
 - Verplichting bij verlenging indien:  
   - Volume blijft gelijk of is leeg.  
   - Frequentie is leeg of ongelijk aan totaal binnen geldigheidsduur toewijzing en blijft gelijk.  
