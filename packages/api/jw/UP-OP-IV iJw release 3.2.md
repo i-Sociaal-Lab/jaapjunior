@@ -618,8 +618,6 @@ Een retourbericht wordt gestuurd om de zender te informeren over de beoordeling 
 
 > Let op: voor het **declaratie-antwoordbericht (325-bericht)** is een aparte invulinstructie opgesteld: [IV087].
 
----
-
 ## Opbouw retourbericht
 
 Een retourbericht bevat altijd een **Header**:
@@ -628,8 +626,6 @@ Een retourbericht bevat altijd een **Header**:
 - Overige elementen (incl. Afzender en Ontvanger) worden ongewijzigd overgenomen van het heenbericht.  
 - Toevoegen: `IdentificatieRetour` en `DagtekeningRetour`.  
 - Optioneel: versienummer van de gebruikte XSLT’s (verplicht indien afkeur op basis van XSLTs).  
-
----
 
 ## Situaties na de Header
 
@@ -651,8 +647,6 @@ Een retourbericht bevat altijd een **Header**:
   - **0200** = Geen fouten geconstateerd  
   - **0233** = Berichtklasse niet gecontroleerd  
   - Specifieke retourcode = Fout geconstateerd  
-
----
 
 ## Voorbeeld
 
