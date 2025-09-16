@@ -35,77 +35,82 @@ Het document dient als **naslagwerk en validatiebron** voor AI-agenten die vrage
 - Bekijk alle regels om tot een juist antwoord te komen.
 ---
 
-# Uitgangspunten, Bedrijfsregels, Invulinstructies en Technische regels iJw 3.2.0
+# iJw 3.2.0 – Uitgangspunten, Bedrijfsregels en Invulinstructies
 
 ## Uitgangspunten (UP-regels)
 
-**UP001**
+De volgende uitgangspunten vormen de basis voor het berichtenverkeer binnen de Jeugdwet (iJw 3.2.0):
 
-*De Jw berichtenfamilie ondersteunt het toewijzen, leveren en declareren van Jeugdhulp in het kader van de Jeugdwet die geleverd wordt als zorg in natura (ZIN).*
+### UP001
+**Ondersteuning Jw berichtenfamilie**  
+De Jw berichtenfamilie ondersteunt het toewijzen, leveren en declareren van Jeugdhulp in het kader van de Jeugdwet, geleverd als zorg in natura (ZIN).
 
-**UP003**
+### UP003
+**Privacy cliënt**  
+De privacy van de cliënt is geborgd doordat aangesloten ketenpartijen zich conformeren aan de Algemene Verordening Gegevensbescherming (AVG).
 
-*De privacy van de cliënt is in de iJw geborgd doordat aangesloten ketenpartijen zich conformeren aan de Algemene Verordening Gegevensbescherming (AVG).*
+### UP004
+**Coördinatie door gemeente**  
+De volgens de wet verantwoordelijke gemeente coördineert de inzet van Jeugdhulp voor de cliënt via toewijzingen (inspannings- en outputgericht).
 
-**UP004**
+### UP006
+**Identificatie cliënt**  
+De cliënt wordt in de informatievoorziening Jw geïdentificeerd met zijn BSN.
 
-*De volgens de wet verantwoordelijke gemeente coördineert de inzet van Jeugdhulp voor de cliënt door middel van toewijzingen (inspannings- en outputgericht).*
+### UP007
+**Beschikking gemeente**  
+De gemeente legt in een beschikking vast of een cliënt recht heeft op ondersteuning vanuit de Jeugdwet (inspannings- en outputgericht).
 
-**UP006**
+### UP016
+**Jeugdhulp-producten**  
+Jeugdhulp wordt uitgedrukt in jeugdhulp-producten.
 
-*De cliënt wordt in de informatievoorziening Jw geïdentificeerd met zijn BSN.*
+### UP017
+**Gestandaardiseerde uitwisseling**  
+De informatie-uitwisseling in de Jeugdwet is gebaseerd op gestandaardiseerd berichtenverkeer.
 
-**UP007**
+### UP019
+**Cliënt centraal**  
+De cliënt staat centraal in alle processen.
 
-*De gemeente legt in een beschikking vast of een cliënt recht heeft op ondersteuning vanuit de Jeugdwet (inspannings- en outputgericht).*
+### UP023
+**Eenmalige informatievraag**  
+Informatie wordt eenmalig bij de cliënt uitgevraagd.
 
-**UP016**
+### UP024
+**Wet- en regelgeving**  
+De informatievoorziening Jw conformeert zich aan de wet- en regelgeving voortvloeiend uit de Jeugdwet.
 
-*Jeugdhulp wordt uitgedrukt in jeugdhulp-producten.*
+### UP025
+**Declaratie op cliëntniveau**  
+De geleverde Jeugdhulp wordt gedeclareerd op cliëntniveau (inspannings- en outputgericht).
 
-**UP017**
+### UP026
+**Uitvoeringsvarianten**  
+De Jw berichtenfamilie ondersteunt drie uitvoeringsvarianten:  
+- Outputgericht  
+- Inspanningsgericht  
+- Taakgericht
 
-*De informatie-uitwisseling in de Jeugdwet is gebaseerd op gestandaardiseerd berichtenverkeer.*
+### UP027
+**Declaratie binnen contract**  
+De declaratie moet passen binnen de contractafspraken en binnen de toewijzing (inspannings- en outputgericht).
 
-**UP019**
+### UP028
+**Contractafspraken**  
+Gemeente en aanbieder leggen een uitvoeringsvariant en een financieringsvorm voor de te verlenen jeugdhulp in een contract vast.
 
-*De cliënt staat centraal.*
+### UP031
+**Geen verlies rechtmatigheid**  
+De gemeente doet geen aanpassingen in toewijzingen die bij de zorgaanbieder tot verlies van rechtmatigheid van geleverde en/of gedeclareerde zorg leiden.
 
-**UP023**
+### UP032
+**Melden zorgvraag**  
+De zorgaanbieder stelt de gemeente op de hoogte van (veranderingen in) zorgvraag via een Verzoek om Toewijzing of een Verzoek om Wijziging.
 
-*Informatie wordt eenmalig bij de cliënt uitgevraagd.*
-
-**UP024**
-
-*De informatievoorziening Jw conformeert zich aan de wet- en regelgeving die voortvloeit uit de Jeugdwet.*
-
-**UP025**
-
-*De geleverde Jeugdhulp wordt gedeclareerd op cliëntniveau (inspannings- en outputgericht).*
-
-**UP026**
-
-*De Jeugdwet berichtenfamilie ondersteunt drie verschillende uitvoeringsvarianten: outputgericht, inspanningsgericht en taakgericht.*
-
-**UP027**
-
-*De declaratie moet passen binnen de contractafspraken en binnen de toewijzing (inspannings- en outputgericht).*
-
-**UP028**
-
-*Gemeente en aanbieder leggen een uitvoeringsvariant en een financieringsvorm voor de te verlenen jeugdhulp in een contract vast.*
-
-**UP031**
-
-*De gemeente doet geen aanpassingen in toewijzingen die bij de zorgaanbieder tot verlies van rechtmatigheid van geleverde en/of gedeclareerde zorg leiden.*
-
-**UP032**
-
-*De zorgaanbieder stelt de gemeente op de hoogte van (veranderingen in) zorgvraag door middel van een Verzoek om toewijzing of een Verzoek om wijziging.*
-
-**UP037**
-
-*De gemeente geeft iedere beschikking binnen het Jw domein een uniek nummer.*
+### UP037
+**Uniek nummer beschikking**  
+De gemeente geeft iedere beschikking binnen het Jw-domein een uniek nummer.
 
 ---
 
