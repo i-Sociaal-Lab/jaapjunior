@@ -433,7 +433,7 @@ async function pickMessage(message: ChatMessage, messagePair: ChatMessage[]) {
 
 .error-message {
 	background-color: var(--destructive);
-	color: var(--destructive-foreground);
+	color: var(--primary-foreground);
 	padding: 10px;
 	border-radius: 8px;
 	margin-bottom: 12px;

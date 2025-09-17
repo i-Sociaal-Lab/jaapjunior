@@ -22,7 +22,7 @@ function autoResize() {
 	}
 }
 
-watch(input, autoResize, { immediate: true });
+watch(input, () => nextTick(() => autoResize()), { immediate: true });
 
 nextTick(() => {
 	autoResize();
@@ -80,7 +80,7 @@ watch(
 	(value) => {
 		if (!value) {
 			mode.value = "pick";
-			selectedModel.value = "llama-4";
+			selectedModel.value = "4.1";
 		}
 	},
 	{ immediate: true },

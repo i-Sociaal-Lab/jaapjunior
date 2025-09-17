@@ -234,6 +234,10 @@ export const api = new Hono<{ Variables: Variables }>()
 					db,
 				);
 
+				conversation.messages.push({
+					content: inputText,
+					role: "user",
+				});
 				conversation.messages.push(response.message);
 
 				return c.json([response.message]);
