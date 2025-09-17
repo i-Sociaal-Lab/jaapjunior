@@ -995,7 +995,7 @@ Altijd een **productcategorie én productcode** vullen.
 Aantal weken per maand:  
 - Oktober: 4 (week 41–44)  
 - November: 5 (week 44–48)  
-- December: 5 (week 48–52,01)  
+- December: 5 (week 49–52,01)  
 
 Maximaal volume per maand:  
 - Oktober: 4 × 3 = **12 uur**  
@@ -1011,22 +1011,22 @@ Maximaal volume over toewijzingsperiode:
 - Maximaal volume = **aantal zondagen binnen de productperiode** × weekvolume uit de toewijzing.  
 - Uitzondering: als de toewijzing **niet eindigt op een zondag**, tel je 1 weekvolume extra bij de productperiode waarin de laatste zondag van de toewijzing valt.  
 
-### Voorbeeld 1 — Eindigt op zondag
+### Voorbeeld 1 — Eindigt niet op zondag
 **Toewijzing:** 01-10-2025 t/m 31-12-2025, 300 euro per week  
 
 Aantal zondagen per maand:  
-- Oktober: 3  
+- Oktober: 4  
 - November: 5  
 - December: 4 (+1 extra weekvolume, omdat einddatum geen zondag is)  
 
 Maximaal volume:  
-- Oktober: 3 × 300 = **900 euro**  
+- Oktober: 4 × 300 = **1200 euro**  
 - November: 5 × 300 = **1500 euro**  
 - December: (4 + 1) × 300 = **1500 euro**  
 
 ---
 
-### Voorbeeld 2 — Eindigt niet op zondag
+### Voorbeeld 2 — Eindigt niet op zondag, laatste zondag van toewijzing valt in voorgaande productperiode
 **Toewijzing:** 07-07-2025 t/m 05-09-2025, 300 euro per week  
 
 Aantal zondagen per maand:  
@@ -1049,7 +1049,7 @@ Maximaal volume:
 ## Werkwijze inspanningsgericht
 - Het daadwerkelijk geleverde volume in de gebroken periode mag gedeclareerd worden.  
 - Bovengrens: het **maximale volume** dat in *ToegewezenProduct* aan de frequentie is toegekend.  
-- Zie ook [IV077](#iv077--hoe-moet-het-maximaal-te-declareren-volume-berekend-worden-bij-frequentie-per-week) voor de rekenmethodes.  
+- Zie ook [IV077](#--hoe-moet-het-maximaal-te-declareren-volume-berekend-worden-bij-frequentie-per-week) voor de rekenmethodes.  
 
 ---
 
