@@ -137,12 +137,14 @@ De gemeente geeft iedere beschikking binnen het Jw-domein een uniek nummer.
 - De aanbieder meldt de begindatum van de levering nadat de ondersteuning daadwerkelijk is gestart.
 
 ## OP033 – Wijzigingen en status aanlevering
-- Voor wijzigingen, verwijderingen en correcties op een eerder verzonden regiebericht wordt de **status aanlevering** gebruikt:  
+- Voor wijzigingen, verwijderingen en correcties op een eerder verzonden regiebericht wordt de **status aanlevering** gebruikt:
+- Correcties op een melding start product zijn uitsluitend toegestaan voor het geleverde product. Als de ondersteuning beeindigd is, kan de aanvang niet meer op deze manier gecorrigeerd worden.
+- Met de status aanlevering van een berichtklasse kan worden aangegeven of:
   - **1** – berichtklasse nieuw  
   - **2** – berichtklasse gewijzigd (niet toegestaan in iJw/iWmo)  
   - **3** – berichtklasse verwijderd  
 
-### OP033x1 – Wijzigingen in toewijzing
+## OP033x1 – Wijzigingen in toewijzing
 - Toewijzing kan gewijzigd worden via een nieuw bericht.  
 - **Einddatum wijzigingen toegestaan:**  
   - Intrekken: einddatum korter maken (overleg aanbieder)  
@@ -169,7 +171,7 @@ De gemeente geeft iedere beschikking binnen het Jw-domein een uniek nummer.
 
 ## OP043 – PGB en toewijzing
 - Als een cliënt een PGB heeft, mag voor hetzelfde product geen toewijzing zijn afgegeven.  
-- Toewijzing eindigt uiterlijk op de dag vóór ingangsdatum PGB.
+- Een toewijzing eindigt uiterlijk op de dag vóór ingangsdatum PGB.
 
 ## OP047 – Afkeuren niet-standaard berichten
 - Berichten die niet voldoen aan de geldende standaard mogen worden afgekeurd.
@@ -521,17 +523,12 @@ De gemeente geeft iedere beschikking binnen het Jw-domein een uniek nummer.
 # Invulinstructies (IV-regels)
 
 # IV002: Adressering bij organisatie
-
 ## Hoe om te gaan met adressering als het om een organisatie gaat?
-
 - Adressering wordt **alleen gevuld** als de cliënt en/of relatie **in een instelling verblijft**.
 
 # IV007: Vastleggen van naam van cliënt of relatie
-
 ## Hoe wordt de naam vastgelegd?
-
 - **Achternaam**, **voorvoegsel**, **voornamen** en/of **voorletters** worden gescheiden vastgelegd.
-
 ### Format voor `VolledigeNaam`
 - **Geslachtsnaam**: altijd vastleggen (Naam + eventueel Voorvoegsel).  
 - **Partnernaam**: optioneel, ook Naam + eventueel Voorvoegsel.  
