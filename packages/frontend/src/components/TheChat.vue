@@ -1,7 +1,15 @@
 <script setup lang="ts">
 import type { ChatMessage } from "llamaindex";
 import { marked } from "marked";
-import { computed, onMounted, onUnmounted, ref, watch } from "vue";
+import {
+	computed,
+	nextTick,
+	onMounted,
+	onUnmounted,
+	ref,
+	useTemplateRef,
+	watch,
+} from "vue";
 import { useRoute, useRouter } from "vue-router";
 import FeedbackDialog from "@/components/FeedbackDialog.vue";
 import { useApi } from "@/composables/useApi";
@@ -66,6 +74,7 @@ const selectedModel = ref<Exclude<AllowedModels, "rate"> | undefined>();
 const isReceivingMessage = ref(false);
 const error = ref<string | null>(null);
 const showFeedbackDialog = ref(false);
+const messagesContainer = useTemplateRef("messagesContainer");
 
 const hasToPickMessage = computed(() => {
 	const lastMessage = messages.value[messages.value.length - 1];
@@ -238,11 +247,27 @@ async function pickMessage(message: ChatMessage, messagePair: ChatMessage[]) {
 		json: { prefers: message, over: otherMessage },
 	});
 }
+
+watch(
+	[messages, isReceivingMessage],
+	() => {
+		nextTick(() => {
+			const lastEl = messagesContainer.value?.querySelector(
+				":scope > div:last-child",
+			);
+
+			if (lastEl && "scrollIntoView" in lastEl) {
+				lastEl?.scrollIntoView({ behavior: "smooth", block: "start" });
+			}
+		});
+	},
+	{ deep: 1 },
+);
 </script>
 
 <template>
 	<div class="chat-container">
-		<div class="messages-container">
+		<div class="messages-container" ref="messagesContainer">
 			<div v-if="error" class="error-message">
 				{{ error }}
 			</div>
