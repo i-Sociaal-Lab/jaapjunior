@@ -494,7 +494,7 @@ De gemeente geeft iedere beschikking binnen het Jw-domein een uniek nummer.
 
 ## OP366 – Crediteren voor correctie
 - Prestatieregel eerst volledig crediteren **voor correctie**.  
-- Verwerking: **creditregels eerst**, daarna debetregels.
+- Verwerking: **creditregels eerst**, daarna debetregels. Omdat een prestatieregel eerst volledig gecrediteerd moet worden alvorens er een correctie op deze prestatieregel ingediend kan worden, is het noodzakelijk dat bij de verwerking van de declaratieberichten eerst de creditregels verwerkt worden, en pas daarna de debetregels.
 
 ## OP367 – Productperiode
 - Valt altijd binnen **kalendermaand**.
@@ -507,16 +507,16 @@ De gemeente geeft iedere beschikking binnen het Jw-domein een uniek nummer.
 - Uitzondering: definitieve stop kan volgen op start of tijdelijke stop.
 
 ## OP378 – Definitieve stop zonder start
-- Alleen toegestaan **na tijdelijke stop**.
+- Zonder tussenkomst van een startbericht is na een tijdelijke stop alleen een definitieve stop toegestaan.
 
 ## OP379 – Start na stop
-- Na (tijdelijke) stop is het toegestaan **startbericht** te sturen.
+- Na tijdelijke of definitieve stop is het toegestaan een **startbericht** te sturen.
 
 ## OP380 – Verplaatsen einddatum toewijzing in de toekomst
-- Verplichting bij verlenging indien:  
+- Deze werkwijze is verplicht indien de toewijzing aan alle onderstaande voorwaarden voldoet:
   - Volume blijft gelijk of is leeg.  
   - Frequentie is leeg of ongelijk aan totaal binnen geldigheidsduur toewijzing en blijft gelijk.  
-  - Einddatum bestaande toewijzing **niet verstreken** op moment van verlenging.
+  - Einddatum bestaande toewijzing **niet verstreken** op moment van verlengen en versturen.
 
 ----
 
