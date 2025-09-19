@@ -718,11 +718,9 @@ De retourcode in een retourbericht wordt bepaald door de **technische controles*
 - `<namespace>` wordt vervangen door de namespace van de betreffende iStandaard, bijvoorbeeld: `iJw`, `iWmo`, enz.  
 
 ### Voorbeeld
-```xml
 <jw301:Bericht 
     xmlns:ijw="http://www.istandaarden.nl/ijw/3_2/basisschema/schema" 
     xmlns:jw301="http://www.istandaarden.nl/ijw/3_2/jw301/schema">
-
 
 # IV042 — Hoe moet de omvang van te leveren of geleverde ondersteuning gevuld worden?
 
@@ -1681,5 +1679,6 @@ De manier waarop de sleutel van een **start- of stopbericht** wordt gevuld, hang
 - Als het toegewezen product **niet is gewijzigd** ten opzichte van de laatste verzonden toewijzing, blijft `RedenWijziging` **leeg**.
 - Als er **wel een wijziging** heeft plaatsgevonden, wordt `RedenWijziging` gevuld met de **code die past bij de wijziging**.
 - Bij de **initiële toewijzing** van een product (nieuw `ToewijzingNummer`) is `RedenWijziging` **altijd leeg**.
+
 
 
