@@ -1,9 +1,9 @@
 # Invulinstructies (IV-regels)
 
-# IV002 Hoe om te gaan met adressering als het om een organisatie gaat?
+# IV002 Hoe om te gaan met de adressering indien er sprake is van een organisatie?
 - Adressering wordt **alleen gevuld** als de cliënt en/of relatie **in een instelling verblijft**.
 
-# IV007 Hoe wordt de naam vastgelegd?
+# IV007 Hoe wordt de naam van een client of relatie vastgelegd?
 - **Achternaam**, **voorvoegsel**, **voornamen** en/of **voorletters** worden gescheiden vastgelegd.
 ### Format voor `VolledigeNaam`
 - **Geslachtsnaam**: altijd vastleggen (Naam + eventueel Voorvoegsel).  
@@ -14,7 +14,7 @@
 
 > Het vullen van `NaamGebruik` hangt af van hoe de cliënt of relatie zijn/haar naam hanteert.
 
-# IV008 Hoe moet worden omgegaan met correcties?
+# IV008 Hoe moet worden omgegaan met correcties van de regieberichten?
 
 - **Correcties** van een regiebericht zijn alleen toegestaan als het oorspronkelijke bericht **is goedgekeurd** door de gemeente.  
 - Afgekeurde regieberichten worden beschouwd als **niet verzonden**; er moet een **nieuw bericht** worden gestuurd.
@@ -40,7 +40,7 @@
 - Zorg dat een **nieuwe aanlevering** nooit eerder wordt verwerkt dan de **correctie (verwijdering)**.  
 - Waar mogelijk: neem **correctie en nieuwe aanlevering in hetzelfde bericht** op.
 
-# IV009 Hoe moet een geboortedatum worden gevuld?
+# IV009 Hoe moet worden omgegaan met een geboortedatum?
 
 - Wanneer de **geboortedatum** niet volledig of onbekend is:
   - Wordt het **bekende deel** gebruikt.
@@ -54,7 +54,7 @@
 - Alleen bekend dat geboorte in 1953 was: `01-01-1953`  
 - Alleen bekend dat geboorte in september 1949 was: `01-09-1949`
 
-# IV013 Welke toewijzing is het meest recent?
+# IV013  Welke toewijzing is het meest recent?
 
 - Om de **meest recente toewijzing** vast te stellen, worden de velden **`Toewijzingsdatum`** en **`Toewijzingstijd`** in het toewijzingbericht opgenomen.  
 - De **gemeente** vult deze velden in met de datum en tijd waarop de **toewijzing definitief is vastgesteld**.  
@@ -127,7 +127,7 @@ Een gemeente ontvangt een **Startbericht** met:
 - StartProduct: retourcode **9063** (“Geen eerder bericht ontvangen → bericht kan niet verwerkt worden”).  
 
 
-# IV032 Welke retourcode moet worden gevuld?
+# IV032 Welke retourcode moet gevuld worden in het retourbericht?
 
 De retourcode in een retourbericht wordt bepaald door de **technische controles** waarop het bericht wordt afgekeurd. Deze controles vinden plaats op verschillende niveaus:
 
@@ -166,12 +166,12 @@ De retourcode in een retourbericht wordt bepaald door de **technische controles*
 - Deze regels hebben ook een **eigen retourcode** per berichtklasse.
 - Fouten leiden tot **volledige afkeur van het bericht**.
 
-# IV033 Hoe moet `XsltVersie` worden gevuld?
+# IV033 Hoe moet XsltVersie gevuld worden?
 
 - Wanneer de **ontvanger fouten** constateert in een bericht op basis van de beschikbare **XSLTs**, wordt in het **retourbericht** aangegeven welke **XSLT-versie** is gebruikt voor de controle.  
 - Dit **versienummer** staat in de **output van de XSLTs** en moet **worden overgenomen** in het retourbericht.
 
-# IV034 Hoe moet `XsdVersie` worden gevuld?
+# IV034 Hoe moet XsdVersie gevuld worden?
 
 - De waarden voor de elementen **`BasisschemaXsdVersie`** en **`BerichtXsdVersie`** in het datatype `CDT_XsdVersie` moeten worden overgenomen uit de **schemadefinitie (XSD)** waarop het bericht is gebaseerd.  
 - In de schemadefinitie zijn deze waarden te vinden op de volgende paden:  
@@ -230,7 +230,7 @@ Ondersteuning geleverd volgens afgesproken maandbedrag (200 euro):
 - GeleverdVolume: `20000`  
 - Eenheid: `83` (Euro’s)  
 
-# IV045 Hoe wordt de voogd vastgelegd indien dit een organisatie betreft?**
+# IV045 Hoe wordt de voogd vastgelegd indien dit een organisatie betreft?
 
 Als de **voogdij** voor een cliënt bij een **organisatie** ligt:  
   - Wordt in de **Relatie** de **organisatienaam** opgenomen als `Geslachtsnaam`.  
@@ -241,13 +241,13 @@ Als de **voogdij** voor een cliënt bij een **organisatie** ligt:
 - In de **header** van de berichten wordt de **gemeente** opgenomen die volgens de wet **verantwoordelijk** is voor zorg of ondersteuning aan de cliënt.  
 - Voor de aanduiding van de gemeente wordt de **CBS-codelijst** gehanteerd.
 
-# IV047 Hoe om te gaan met adressering als alleen een briefadres bekend is?**
+# IV047 Hoe om te gaan met de adressering van een client indien alleen een briefadres bekend is?
 
 - In een toewijzing wordt altijd het **GBA-adres** of **verblijfadres** van de cliënt meegegeven in de **Contactgegevens**.  
 - Dit is **niet mogelijk** als de cliënt in de **Basisregistratie Personen (BRP)** alleen een **briefadres** heeft.  
 - In dat geval kan bij de cliënt een **Adres** met het type **Correspondentie-adres** worden meegegeven.
 
-# IV052 Hoe om te gaan met`Beschikkingnummer`in een Verzoek om Toewijzing (VOT)?
+# IV052 Hoe om te gaan met Beschikkingnummer in Verzoek om toewijzing?
 
 - De **aanbieder** dient het `Beschikkingnummer` mee te geven in het **VOT-bericht** als de cliënt van haar gemeente een beschikking heeft ontvangen.
 - De **gemeente** kan op basis van dit `Beschikkingnummer` eenvoudig de **bestaande beschikking koppelen** aan de informatie uit het VOT-bericht.
@@ -410,7 +410,7 @@ Altijd een **productcategorie én productcode** vullen.
   - Geen declaratie meer: laatste week is al meegenomen in augustus.  
 
 
-# IV077 Hoe moet het maximaal te declareren volume berekend worden bij frequentie per week?
+# IV077 Hoe moet het maximaal te declareren volume berekend worden over de productperiode bij gebruik van de frequentie per week in de toewijzing?
 
 ## Algemeen
 - De frequentie **per week** past niet 1-op-1 binnen de declaratieperiode (maand).  
