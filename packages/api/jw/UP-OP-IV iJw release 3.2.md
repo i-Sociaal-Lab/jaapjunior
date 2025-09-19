@@ -213,7 +213,7 @@ De gemeente geeft iedere beschikking binnen het Jw-domein een uniek nummer.
   - Toewijzingen met einddatum = ingangsdatum en **RedenWijziging = 13 (Verwijderd)** worden niet als actueel beschouwd.  
   - Toewijzingen met einddatum = ingangsdatum en **RedenWijziging = 01 (Administratieve correctie)** worden ook niet als actueel beschouwd.  
 
-- **Belangrijk:** Voor iedere cliënt waarbij een toewijzing verandert, wordt een toewijzingsbericht gestuurd met alle actuele toewijzingen voor die aanbieder.
+**Belangrijk:** Voor iedere cliënt waarbij een toewijzing verandert, wordt een toewijzingsbericht gestuurd met alle actuele toewijzingen voor die aanbieder.
 
 ## OP090 – Retourberichten heenberichten
 - Voor ieder ontvangen heenbericht wordt **binnen 3 werkdagen** een retourbericht verzonden.  
