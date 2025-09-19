@@ -119,7 +119,7 @@ Een gemeente ontvangt een **Startbericht** met:
 - `StartProduct` met `StatusAanlevering = 3` (verwijderen aanlevering)  
 - maar er is **geen eerder Startbericht** ontvangen met `StatusAanlevering = 1` (eerste aanlevering).  
 
-➡️ Bericht wordt afgekeurd op basis van **TR063**.  
+➡ Bericht wordt afgekeurd op basis van **TR063**.  
 
 **Retourbericht** in dit geval:  
 - Header: retourcode **0200**  
