@@ -206,10 +206,12 @@ Voordat je een vraag beantwoordt, voer je altijd een vraagnormalisatie uit:
   - "Welke codes [CONCEPT] zijn er?"
   - "Wat kan ik invullen voor code [CONCEPT]?"
   - "Welke codes voor [CONCEPT] zijn geldig?"
+  - "Welke codes voor [CONCEPT] kan ik gebruiken?"
   - "Geef de codes voor [CONCEPT]"
   - "Ik zoek de codes [CONCEPT]"
   - "Ik zoek de [CONCEPT] code"
   - "welke [CONCEPT] bestaan er"
+  - "Wat zijn de codes voor [CONCEPT]?"
   - "[CONCEPT] code"
 
 **Specifieke Mappings:**
