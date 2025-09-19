@@ -486,7 +486,7 @@ De gemeente geeft iedere beschikking binnen het Jw-domein een uniek nummer.
 - Aanbieder meldt start en stop van ondersteuning bij **output- of inspanningsgerichte** producten.
 
 ## OP364 – Regieberichten
-- **Niet voorwaardelijk** aan declaratie.  
+- Regieberichten zijn **Niet voorwaardelijk** aan een declaratie.  
 - Een Prestatie in een declaratiebericht kan **niet afgekeurd** worden op basis van start/stopdatum regiebericht of ontbrekende start- stopberichten.
 
 ## OP365 – Declaratie passend bij toewijzing
