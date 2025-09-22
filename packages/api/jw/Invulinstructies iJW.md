@@ -413,7 +413,7 @@ Altijd een **productcategorie én productcode** vullen.
 # IV077 Hoe moet het maximaal te declareren volume berekend worden over de productperiode bij gebruik van de frequentie per week in de toewijzing?
 
 ## Algemeen
-- De frequentie **per week** past niet 1-op-1 binnen de declaratieperiode (maand).  
+*- De frequentie **per week** past niet 1-op-1 binnen de declaratieperiode (maand).  
 - Daarom gelden aanvullende afspraken om te berekenen wat het **maximaal declarabele volume** per productperiode is.  
 - Werkwijze:  
   1. Bepaal uitvoeringsvariant (inspanning of output).  
@@ -469,7 +469,7 @@ Aantal zondagen per maand:
 
 Maximaal volume:  
 - Juli: 3 × 300 = **900 euro**  
-- Augustus: (5 + 1) × 300 = **1800 euro**  
+- Augustus: (5 + 1) × 300 = **1800 euro** *
 
 # IV078 Wat mag gedeclareerd worden wanneer een onvolledige periode is toegewezen?
 
