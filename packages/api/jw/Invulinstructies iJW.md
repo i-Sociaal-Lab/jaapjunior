@@ -11,8 +11,7 @@
 - **Voornamen**: gescheiden door spaties.  
 - **Voorletters**: aaneengesloten, zonder punten of spaties.  
 - **NaamGebruik**: geeft de gewenste aanspreekvorm aan en bepaalt de volgorde bij correspondentie (geslachtsnaam en partnernaam).
-
-> Het vullen van `NaamGebruik` hangt af van hoe de cliënt of relatie zijn/haar naam hanteert.
+- Het vullen van `NaamGebruik` hangt af van hoe de cliënt of relatie zijn/haar naam hanteert.
 
 # IV008 Hoe moet worden omgegaan met correcties van de regieberichten?
 
