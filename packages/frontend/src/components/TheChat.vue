@@ -252,9 +252,13 @@ watch(
 	[messages, isReceivingMessage],
 	() => {
 		nextTick(() => {
-			const lastEl = messagesContainer.value?.querySelector(
-				":scope > div:last-child",
+			const userMessages = messagesContainer.value?.querySelectorAll(
+				":scope > .user-message",
 			);
+
+            if (!userMessages) return;
+
+            const lastEl = userMessages[userMessages.length - 1];
 
 			if (lastEl && "scrollIntoView" in lastEl) {
 				lastEl?.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -477,6 +481,7 @@ watch(
 	color: var(--primary-foreground);
 	max-width: 70%;
 	border-bottom-right-radius: 4px;
+    scroll-margin-top: 20px;
 }
 
 .response-message {
