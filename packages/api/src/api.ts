@@ -133,7 +133,7 @@ const authMiddleware: MiddlewareHandler = (ctx, next) => {
 	}
 };
 
-const hono = new Hono();
+const hono = new Hono<{ Variables: Variables }>();
 hono.use(
 	"/*",
 	except([
