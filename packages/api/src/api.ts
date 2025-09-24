@@ -1,5 +1,7 @@
-import { Hono } from "hono";
+import { Hono, type MiddlewareHandler } from "hono";
+import { bearerAuth } from "hono/bearer-auth";
 import { except } from "hono/combine";
+import { HTTPException } from "hono/http-exception";
 import type { JwtVariables } from "hono/jwt";
 import { jwt } from "hono/jwt";
 import { validator } from "hono-openapi/valibot";
@@ -40,6 +42,10 @@ const availableModels = [
 	label: string;
 	value: keyof typeof llms;
 }>;
+
+const oneOffMessageSchema = v.object({
+	q: v.string(),
+});
 
 const sendMessageSchema = v.object({
 	inputText: v.string(),
@@ -95,21 +101,49 @@ try {
 	db.prepare("ALTER TABLE feedback ADD COLUMN name TEXT").run();
 } catch {}
 
+const myJwt = jwt({
+	secret: getEnvOrThrow("JWT_SECRET"),
+});
+
+const myBearerAuth = bearerAuth({
+	token: getEnvOrThrow("API_TOKEN"),
+});
+
+const authMiddleware: MiddlewareHandler = (ctx, next) => {
+	const credentials = ctx.req.raw.headers.get("Authorization");
+	if (!credentials) {
+		throw new HTTPException(401, {
+			message: "missing credentials",
+			res: Response.json({
+				error: "invalid_request",
+				errDescription: "missing credentials",
+			}),
+		});
+	}
+
+	const parts = credentials.split(/\s+/);
+	const token = parts[1];
+
+	const tokenIsJwt = token.matchAll(/\./g).toArray().length === 2;
+
+	if (tokenIsJwt) {
+		return myJwt(ctx, next);
+	} else {
+		return myBearerAuth(ctx, next);
+	}
+};
+
 export const api = new Hono<{ Variables: Variables }>()
 	.use(
 		"/*",
-		except(
-			[
-				"/api/v1/auth",
-				"/api/v1",
-				"/api/v1/picks",
-				"/api/v1/responses",
-				"/api/v1/feedback",
-			],
-			jwt({
-				secret: getEnvOrThrow("JWT_SECRET"),
-			}),
-		),
+		except([
+			"/api/v1/auth",
+			"/api/v1",
+			"/api/v1/picks",
+			"/api/v1/responses",
+			"/api/v1/feedback",
+		]),
+		authMiddleware,
 	)
 
 	.get("/", (c) => {
@@ -139,6 +173,15 @@ export const api = new Hono<{ Variables: Variables }>()
 
 		c.status(401);
 		return c.text("Unauthorized");
+	})
+
+	// Send one-off question
+	.post("question", validator("json", oneOffMessageSchema), async (c) => {
+		const { q } = c.req.valid("json");
+
+		const response = await query(q, [], db);
+
+		return c.json({ response: response.message.content });
 	})
 
 	// Create a new conversation
