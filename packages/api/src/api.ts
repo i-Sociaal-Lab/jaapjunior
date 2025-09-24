@@ -1,10 +1,10 @@
+import { vValidator } from "@hono/valibot-validator";
 import { Hono, type MiddlewareHandler } from "hono";
 import { bearerAuth } from "hono/bearer-auth";
 import { except } from "hono/combine";
 import { HTTPException } from "hono/http-exception";
 import type { JwtVariables } from "hono/jwt";
 import { jwt } from "hono/jwt";
-import { vValidator } from "@hono/valibot-validator";
 import * as jose from "jose";
 import type { ChatMessage } from "llamaindex";
 import { nanoid } from "nanoid";
