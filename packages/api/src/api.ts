@@ -1,10 +1,10 @@
+import { vValidator } from "@hono/valibot-validator";
 import { Hono, type MiddlewareHandler } from "hono";
 import { bearerAuth } from "hono/bearer-auth";
 import { except } from "hono/combine";
 import { HTTPException } from "hono/http-exception";
 import type { JwtVariables } from "hono/jwt";
 import { jwt } from "hono/jwt";
-import { validator } from "hono-openapi/valibot";
 import * as jose from "jose";
 import type { ChatMessage } from "llamaindex";
 import { nanoid } from "nanoid";
@@ -177,7 +177,7 @@ export const api = new Hono<{ Variables: Variables }>()
 	})
 
 	// Send one-off question
-	.post("question", validator("json", oneOffMessageSchema), async (c) => {
+	.post("question", vValidator("json", oneOffMessageSchema), async (c) => {
 		const { q } = c.req.valid("json");
 
 		const response = await query(q, [], db);
@@ -217,7 +217,7 @@ export const api = new Hono<{ Variables: Variables }>()
 	// Send a message in a conversation
 	.post(
 		"conversations/:id",
-		validator("json", sendMessageSchema),
+		vValidator("json", sendMessageSchema),
 		async (c) => {
 			try {
 				const conversationId = c.req.param("id");
@@ -339,7 +339,7 @@ export const api = new Hono<{ Variables: Variables }>()
 		return c.json(rows);
 	})
 
-	.post("feedback", validator("json", feedbackSchema), async (c) => {
+	.post("feedback", vValidator("json", feedbackSchema), async (c) => {
 		const { messageContent, conversationContent, name } = c.req.valid("json");
 
 		db.prepare(
