@@ -3,6 +3,7 @@
 	"extends": ["github>danielroe/renovate"],
 	"packageRules": [
 		{
+			"matchDatasources": ["npm"],
 			"minimumReleaseAge": "7 days"
 		}
 	]
