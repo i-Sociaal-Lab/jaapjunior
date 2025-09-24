@@ -256,9 +256,9 @@ watch(
 				":scope > .user-message",
 			);
 
-            if (!userMessages) return;
+			if (!userMessages) return;
 
-            const lastEl = userMessages[userMessages.length - 1];
+			const lastEl = userMessages[userMessages.length - 1];
 
 			if (lastEl && "scrollIntoView" in lastEl) {
 				lastEl?.scrollIntoView({ behavior: "smooth", block: "start" });
