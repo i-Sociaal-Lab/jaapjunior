@@ -133,20 +133,20 @@ const authMiddleware: MiddlewareHandler = (ctx, next) => {
 	}
 };
 
-const hono = new Hono<{ Variables: Variables }>();
-hono.use(
-	"/*",
-	except([
-		"/api/v1/auth",
-		"/api/v1",
-		"/api/v1/picks",
-		"/api/v1/responses",
-		"/api/v1/feedback",
-	]),
-	authMiddleware,
-);
-
-export const api = hono
+export const api = new Hono<{ Variables: Variables }>()
+	.use(
+		"/*",
+		except(
+			[
+				"/api/v1",
+				"/api/v1/auth",
+				"/api/v1/picks",
+				"/api/v1/responses",
+				"/api/v1/feedback",
+			],
+			authMiddleware,
+		),
+	)
 	.get("/", (c) => {
 		return c.text("OK");
 	})
