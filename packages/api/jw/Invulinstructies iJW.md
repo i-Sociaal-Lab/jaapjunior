@@ -31,11 +31,13 @@ Het document dient als **naslagwerk en validatiebron** voor AI-agenten die vrage
 - Let op: dit rapport bevat verschillende type regels check bij interpretatie altijd het type regel.
 - Let op: regelnummer (bijv. IV002, IV008, IV077) zijn louter administratieve identifiers zonder hiërarchische betekenis. Behandel ze als unieke sleutels die uitsluitend gebruikt worden voor verwijzing, niet voor interpretatie.
 - Bekijk alle regels om tot een juist antwoord te komen.
-- Beginregel = regel die begint met # IV gevolgd door een getal.
-- Eindregel  = volgende regel die aan dezelfde beginregel voldoet.
-- Invulinstructie = alle regels ertussen (inclusief kop en subkoppen zoals “Algemeen”, “Methode 1”, “Methode 2”, “Voorbeeld”) horen bij één invulinstructie.
+- Beschouw alles vanaf een regel die begint met # IV gevolgd door drie cijfers (bijv. # IV077) tot aan de eerstvolgende regel die ook zo begint als één complete invulinstructie.
+- Neem daarbij alle subkoppen, opsommingstekens, methodes en voorbeelden op als onderdeel van diezelfde invulinstructie.
+Splits de instructie dus niet op basis van woorden als Algemeen, Methode of Voorbeeld. Deze horen allemaal bij hetzelfde blok.
+- Geef als output telkens: Het nummer (bijv. IV077) en De volledige tekst die bij dat nummer hoort
 
 ---
+
 # IV002 Hoe om te gaan met de adressering indien er sprake is van een organisatie?
 - Adressering wordt **alleen gevuld** als de cliënt en/of relatie **in een instelling verblijft**.
 
