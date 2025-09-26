@@ -384,7 +384,7 @@ Volume Aantal zondagen in de productperiode + 1 * 300 euro (1800 euro)
 
 Declaratieperiode september
 Over september wordt er geen declaratie meer ingediend. De laatste week, die gedeeltelijk in september valt, is al meegenomen in de declaratie over augustus.
-</IV075>
+</IV076>
 
 <IV077>
 **IV077**
