@@ -49,7 +49,7 @@ De output per instructie bevat altijd:
 
 # IV007 Hoe wordt de naam van een client of relatie vastgelegd?
 - **Achternaam**, **voorvoegsel**, **voornamen** en/of **voorletters** worden gescheiden vastgelegd.
-### Format voor `VolledigeNaam`
+## Format voor `VolledigeNaam`
 - **Geslachtsnaam**: altijd vastleggen (Naam + eventueel Voorvoegsel).  
 - **Partnernaam**: optioneel, ook Naam + eventueel Voorvoegsel.  
 - **Voornamen**: gescheiden door spaties.  
@@ -64,7 +64,7 @@ De output per instructie bevat altijd:
 - **Correcties** van een regiebericht zijn alleen toegestaan als het oorspronkelijke bericht **is goedgekeurd** door de gemeente.  
 - Afgekeurde regieberichten worden beschouwd als **niet verzonden**; er moet een **nieuw bericht** worden gestuurd.
 
-### Correctieprocedure voor berichtklassen (start-/stopbericht)
+## Correctieprocedure voor berichtklassen (start-/stopbericht)
 1. **Verwijderen van de bestaande berichtklasse**
    - Vul `StatusAanlevering` van de berichtklasse met **3 (verwijderen aanlevering)**.
    - Identificeer de te verwijderen berichtklasse via de **logische sleutel** van de klasse.
@@ -73,17 +73,19 @@ De output per instructie bevat altijd:
    - Kan in hetzelfde bericht worden aangeleverd.
    - Vul `StatusAanlevering` met **1 (eerste aanlevering)**.
 
-### Logische sleutels
+## Logische sleutels
 - **Startproduct**: `(ToewijzingNummer, Product, Begindatum)`  
 - **Stopproduct**: `(ToewijzingNummer, Product, Begindatum, RedenBeeindiging, Einddatum)`
 
-### Wanneer correctie in hetzelfde bericht of apart bericht
+## Wanneer correctie in hetzelfde bericht of apart bericht
 - **Onderdeel van logische sleutel**: correctie kan in **zelfde bericht** worden doorgegeven (unieke sleutel per berichtklasse).  
 - **Niet onderdeel van logische sleutel**: correctie moet in **apart bericht** worden doorgegeven (anders afkeur door dubbele sleutel).
 
-### Advies
+## Advies
 - Zorg dat een **nieuwe aanlevering** nooit eerder wordt verwerkt dan de **correctie (verwijdering)**.  
 - Waar mogelijk: neem **correctie en nieuwe aanlevering in hetzelfde bericht** op.
+
+---
 
 # IV009 Hoe moet worden omgegaan met een geboortedatum?
 
