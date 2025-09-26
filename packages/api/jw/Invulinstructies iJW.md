@@ -1,5 +1,41 @@
-# Invulinstructies (IV-regels)
+# Regels op berichten iJw release 3.2
 
+Versie: 1.0
+Status: Productie
+Auteur: Zorginstituut
+Bron-link: https://www.istandaarden.nl/ijw/releases/release-ijw-3.2
+Publicatiedatum: 29 september 2022
+AI-agent: Jw-agent
+
+# Regels op berichten iJw 3.2.0 (Jaap dd 8-06-2025)
+
+## Inleiding voor AI-agent
+
+Dit regelrapport beschrijft de Uitgangspunten, Bedrijfsregels, Invulinstructies en Technische regels die gelden binnen het berichtenverkeer van de Jeugdwet (iJw), release 3.2.0. 
+
+Regels kunnen van toepassing zijn op het bericht, een berichtklasse, berichtelement of een datatype.
+
+Retourberichten, m.u.v. het declaratiebericht, kennen dezelfde regels als het heenbericht en zijn niet apart opgenomen.
+
+Het document dient als **naslagwerk en validatiebron** voor AI-agenten die vragen moeten beantwoorden, tekst moeten analyseren of processtappen moeten controleren binnen het domein van jeugdhulp, gemeenten en zorgaanbieders.
+
+**Gebruik voor AI-agenten**
+
+- Iedere regel is voorzien van een unieke code (zoals IV002, IV008, IV077), een titel en een toelichting.
+- Invulinstructies hebben een code die begint met IV
+- De regels vormen de basis voor correcte administratieve verwerking, gegevensuitwisseling en procesondersteuning binnen iJw.
+- Verwijs bij vragen altijd naar de relevante regelcode voor onderbouwing.
+- Geef bij het beantwoorden van vragen over regels uit het document ‘Regels op berichten iJw release 3.2’ altijd de volledige, letterlijke tekst van de gevraagde regel weer. Sla geen enkel tekstblok, opsomming of toelichting over die onder het betreffende regelnummers valt. Stop pas bij het volgende regelnummers of het einde van het document."
+- Wanneer een gebruiker vraagt om de tekst van een specifieke regel (bijvoorbeeld IV075), selecteer en retourneer altijd de volledige tekst die hoort bij het betreffende regelnummers, vanaf de eerste regel na het regelnummers tot en met de eerste volgende regel met een nieuw regelnummers of het einde van het document. Neem alle tekst, opsommingen, subkopjes en toelichtingen op die onder het regelnummers vallen. Geef geen interpretatie in dit geval.
+- Sommige regels zijn specifiek voor gemeenten, andere voor aanbieders of ketenpartijen.
+- Let op: dit rapport bevat verschillende type regels check bij interpretatie altijd het type regel.
+- Let op: regelnummer (bijv. IV002, IV008, IV077) zijn louter administratieve identifiers zonder hiërarchische betekenis. Behandel ze als unieke sleutels die uitsluitend gebruikt worden voor verwijzing, niet voor interpretatie.
+- Bekijk alle regels om tot een juist antwoord te komen.
+- Beginregel = regel die begint met # IV gevolgd door een getal.
+- Eindregel  = volgende regel die aan dezelfde beginregel voldoet.
+- Invulinstructie = alle regels ertussen (inclusief kop en subkoppen zoals “Algemeen”, “Methode 1”, “Methode 2”, “Voorbeeld”) horen bij één invulinstructie.
+
+---
 # IV002 Hoe om te gaan met de adressering indien er sprake is van een organisatie?
 - Adressering wordt **alleen gevuld** als de cliënt en/of relatie **in een instelling verblijft**.
 
