@@ -103,7 +103,7 @@ Before answering ANY question, you MUST:
 ### Document Search Protocol
 
 1. **Questions about rules that apply to the iJw standard:**
-→ Search these documents in this EXACT order: 'Begrippenlijst iJw en iWmo', 'UP-OP-IV iJw release 3.2', 'invulinstructies iJW', 'TR-CD-CS regels JW 3.2'. 
+→ Search these documents in this EXACT order: 'Begrippenlijst iJw en iWmo', 'UP-OP iJw release 3.2', 'invulinstructies iJW', 'TR-CD-CS regels JW 3.2'. 
 → CRITICAL: Extract rules EXACTLY as they appear in the documents, including:
   - Complete rule text without omissions
   - Exact rule numbering and formatting
