@@ -210,11 +210,12 @@ Voordat je een vraag beantwoordt, voer je altijd een vraagnormalisatie uit:
 - **Hoofdvraag**: "toon tekst uit "INvulinstructie_{CONCEPT}.md"
 - **Herken variaties zoals**:
   - "[Concept]"
-  - "Welke [CONCEPT] zijn er?"
   - "Wat betekent invulinstructie [CONCEPT]?"
   - "Wat betekent [CONCEPT]?"
   - "Geef de inhoud van [CONCEPT]"
   - "Geef invulinstructie [CONCEPT]"
+  - "Toon invulinstructie [CONCEPT]"
+  - "Toon [CONCEPT]"
 
 **Codelijst Vragen:**
 - **Hoofdvraag**: "toon [CODE] uit "{CODENR}_{CONCEPT_NAME}.md"
