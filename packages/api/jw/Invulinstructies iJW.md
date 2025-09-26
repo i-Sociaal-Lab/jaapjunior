@@ -36,13 +36,18 @@ Het document dient als **naslagwerk en validatiebron** voor AI-agenten die vrage
 ---
 
 # Invulinstructies (IV-regels)
+De tekst van elke invulinstructie kent een begin en een einde aangegeven door <IVXXX> en </IVXXX>
+. De exacte en volledige tekst hiertussen dient altijd te worden teruggegeven.
 
+<IV002>
 **IV002**
 
 *Hoe om te gaan met de adressering indien er sprake is van een organisatie?*
 
 Alleen vullen indien cliënt en/of relatie cliënt in instelling verblijft.
+</IV002>
 
+<IV007>
 **IV007**
 
 *Hoe wordt de naam van een cliënt of relatie vastgelegd?*
@@ -54,7 +59,9 @@ Van een cliënt of relatie worden de achternaam, voorvoegsel en voornamen en/of 
 - Voornamen kunnen worden vastgelegd, gescheiden door spaties
 - Voorletters kunnen worden vastgelegd, aaneengesloten, zonder punten of spaties
 - NaamGebruik geeft de gewenste aanspreekvorm aan. Hiermee wordt bij correspondentie de volgorde bepaald in het gebruik van de geslachtsnaam en de naam van de partner. Het vullen van NaamGebruik hangt dus af van hoe de cliënt of relatie zijn/haar naam hanteert.
+</IV002>
 
+<IV008>
 **IV008**
 
 *Hoe moet worden omgegaan met correcties van de regieberichten?*
@@ -77,6 +84,7 @@ Of de vervangende berichtklasse kan worden aangeleverd in hetzelfde bericht of d
 - Als het te corrigeren berichtelement geen onderdeel is van de logische sleutel: de correctie moet in een apart bericht worden doorgegeven. De gecorrigeerde en de originele berichtklasse hebben dezelfde logische sleutel. Binnen een (1) bericht wordt hierop afgekeurd omdat de software dit interpreteert als dat er twee keer dezelfde berichtklasse is opgenomen.
 
 Uiteraard moet worden voorkomen dat een nieuwe aanlevering eerder wordt verwerkt dan de correctie (verwijdering). Het is daarom te adviseren om waar mogelijk de correctie (verwijdering) en nieuwe aanlevering in hetzelfde bericht op te nemen.
+</IV008>
 
 **IV009**
 
