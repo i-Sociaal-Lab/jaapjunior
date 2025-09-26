@@ -11,13 +11,13 @@ AI-agent: Jw-agent
 
 ## Inleiding voor AI-agent
 
-Dit regelrapport beschrijft de Uitgangspunten, Bedrijfsregels, Invulinstructies en Technische regels die gelden binnen het berichtenverkeer van de Jeugdwet (iJw), release 3.2.0. 
+Dit regelrapport beschrijft de invulinstructie die gelden binnen het berichtenverkeer van de Jeugdwet (iJw), release 3.2.0. 
 
-Regels kunnen van toepassing zijn op het bericht, een berichtklasse, berichtelement of een datatype.
+Instructies kunnen van toepassing zijn op het bericht, een berichtklasse, berichtelement of een datatype.
 
 Retourberichten, m.u.v. het declaratiebericht, kennen dezelfde regels als het heenbericht en zijn niet apart opgenomen.
 
-Het document dient als **naslagwerk en validatiebron** voor AI-agenten die vragen moeten beantwoorden, tekst moeten analyseren of processtappen moeten controleren binnen het domein van jeugdhulp, gemeenten en zorgaanbieders.
+Het document dient als naslagwerk en validatiebron voor AI-agenten die vragen moeten beantwoorden, tekst moeten analyseren of processtappen moeten controleren binnen het domein van jeugdhulp, gemeenten en zorgaanbieders.
 
 **Gebruik voor AI-agenten**
 
@@ -44,7 +44,7 @@ Output per instructie:
 ---
 
 # IV002 Hoe om te gaan met de adressering indien er sprake is van een organisatie?
-- Adressering wordt **alleen gevuld** als de cliënt en/of relatie **in een instelling verblijft**.
+- Adressering wordt alleen gevuld als de cliënt en/of relatie in een instelling verblijft.
 
 ---
 
