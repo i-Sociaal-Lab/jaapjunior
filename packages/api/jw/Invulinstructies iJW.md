@@ -278,6 +278,7 @@ Indien de omvang bij andere frequenties dan Totaal binnen geldigheidsduur toewij
 
 De iStandaarden ondersteunen een aantal verschillende uitvoeringsvarianten: inspanningsgericht, outputgericht en taakgericht. De specifieke eigenschappen van deze uitvoeringsvarianten zijn beschreven in het document Handreiking uitvoeringsvarianten, deze is beschikbaar via [www.istandaarden.nl/ibieb/handreiking-uitvoeringsvarianten-iwmo-en-ijw](http://www.istandaarden.nl/ibieb/handreiking-uitvoeringsvarianten-iwmo-en-ijw).
 
+<IV075>
 **IV075**
 
 *Hoe moeten productgegevens gevuld worden?*
@@ -302,7 +303,9 @@ Welke productcodes gebruikt mogen worden in het berichtenverkeer is afhankelijk 
 
 - Aspecifieke toewijzing. Indien in ToegewezenProduct alleen een productcategorie is gevuld, wordt deze productcategorie overgenomen en wordt een bij de toegewezen productcategorie behorende productcode (volgens de productcodelijst die gebruikt moet worden) gevuld. Dit betekent dat op 1 toewijzingsnummer, toegewezen categorie meerdere prestaties voor dezelfde periode kunnen volgen indien meerdere producten van dezelfde productcategorie zijn geleverd.
 - Generieke toewijzing met maximaal budget. Indien in ToegewezenProduct de productcategorie en productcode niet gevuld zijn dan wordt de productcategorie en productcode gevuld behorend bij de levering (gebaseerd op de productcodelijst die gebruikt moet worden). Dit betekent dat op 1 toewijzingsnummer meerdere prestatieregels voor dezelfde periode kunnen volgen indien meerdere producten uit dezelfde of verschillende productcategorieën zijn geleverd.
+</IV075>
 
+<IV076>
 **IV076**
 
 *Hoe moet het volume in de prestatie gevuld worden, wanneer de toewijzing de frequentie week heeft?*
@@ -381,7 +384,9 @@ Volume Aantal zondagen in de productperiode + 1 * 300 euro (1800 euro)
 
 Declaratieperiode september
 Over september wordt er geen declaratie meer ingediend. De laatste week, die gedeeltelijk in september valt, is al meegenomen in de declaratie over augustus.
+</IV075>
 
+<IV077>
 **IV077**
 
 *Hoe moet het maximaal te declareren volume berekend worden over de productperiode bij gebruik van de frequentie per week in de toewijzing?*
@@ -442,7 +447,9 @@ Het aantal zondagen in de productperiodes:
 Maximaal volume per productperiode: Het aantal zondagen vermenigvuldigd met het volume uit de toewijzing (evt. vermeerderd met een extra weekvolume):
 - Juli 3 zondagen : 3 x weekvolume (300 euro) = 900 euro
 - Augustus 5 zondagen + 1 weekvolume: 6 x weekvolumes (300 euro) = 1800 euro
+</IV077>
 
+<IV078>
 **IV078**
 
 *Wat mag gedeclareerd worden wanneer een onvolledige periode is toegewezen?*
@@ -466,6 +473,7 @@ Frequentie in ToegewezenProduct = maand
 Toewijzing voor 15 uur per maand met ingangsdatum 14-10-2025 en einddatum 13-12-2025
 
 Voor de productperiode 14-10-2025 t/m 31-10-2025 mag maximaal 15 uur gedeclareerd worden, indien deze uren ook daadwerkelijk geleverd zijn. Ondanks dat de ingangsdatum 14-10-2025 is en er dus geen hele kalendermaand is toegewezen, mag (mits geleverd) de volledige 15 uur gedeclareerd worden.
+<IV078>
 
 **IV079**
 
@@ -529,6 +537,7 @@ Totaal declaratiebedrag
 
 Het totale declaratiebedrag van alle debet en credit prestaties in het declaratiebericht wordt ingevuld in TotaalIngediendBedrag in de header van het bericht. Hierbij worden debetbedragen opgeteld en creditbedragen afgetrokken.
 
+<IV087>
 **IV087**
 
 *Hoe wordt een declaratie-antwoordbericht opgesteld?*
@@ -572,7 +581,9 @@ Het declaratie-antwoordbericht dient niet:
 - Voor het opvragen van (extra) informatie door de gemeente.
 - Voor het doorgeven van correcties op declaratiegegevens aan de aanbieder.
 NB: Een bericht kan informatie over meerdere cliënten bevatten. Cliënten waarin geen fouten zijn geconstateerd, worden niet opgenomen in het declaratie-antwoordbericht.
+</IV075>
 
+<IV088>
 **IV088**
 
 *Welke retourcode moet gevuld worden in het declaratie-antwoordbericht?*
@@ -603,7 +614,9 @@ Het declaratiebericht wordt gecontroleerd op alle technisch controleerbare regel
 - Bilaterale afspraken tussen ketenpartijen, zoals contractafspraken die opgenomen zijn in een regel binnen de iStandaarden.
 
 Deze regels hebben een eigen retourcode die gevuld wordt in het declaratie-antwoordbericht bij de berichtklasse waarin de fout geconstateerd is.
+</IV088>
 
+<IV089>
 **IV089**
 
 *Hoe moet ProductPeriode gevuld worden?*
@@ -647,6 +660,7 @@ Afspraak is dat op het eind van het traject de declaratie mag worden ingediend.
 Cliënt ontvangt outputgerichte hulp vanaf het begin tot het eind van toegewezen periode (08-04-2025 t/m 17-06-2025). Pas op 17-06-2025 kan het resultaat van de outputgerichte hulp worden vastgesteld. In de maanden April en Mei wordt er geen declaratie ingediend voor deze cliënt. Er volgt in de maand juni 1 Prestatie met de volgende ProductPeriode:
 
 - Juni: 01-06-2025 t/m 17-06-2025
+</IV089>
 
 **IV090**
 
