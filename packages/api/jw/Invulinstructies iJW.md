@@ -49,53 +49,53 @@ Output per instructie:
 ---
 
 # IV007 Hoe wordt de naam van een client of relatie vastgelegd?
-- **Achternaam**, **voorvoegsel**, **voornamen** en/of **voorletters** worden gescheiden vastgelegd.
+- Achternaam, voorvoegsel, voornamen en/of voorletters worden gescheiden vastgelegd.
 ## Format voor `VolledigeNaam`
-- **Geslachtsnaam**: altijd vastleggen (Naam + eventueel Voorvoegsel).  
-- **Partnernaam**: optioneel, ook Naam + eventueel Voorvoegsel.  
-- **Voornamen**: gescheiden door spaties.  
-- **Voorletters**: aaneengesloten, zonder punten of spaties.  
-- **NaamGebruik**: geeft de gewenste aanspreekvorm aan en bepaalt de volgorde bij correspondentie (geslachtsnaam en partnernaam).
+- Geslachtsnaam: altijd vastleggen (Naam + eventueel Voorvoegsel).  
+- Partnernaam: optioneel, ook Naam + eventueel Voorvoegsel.  
+- Voornamen: gescheiden door spaties.  
+- Voorletters: aaneengesloten, zonder punten of spaties.  
+- NaamGebruik: geeft de gewenste aanspreekvorm aan en bepaalt de volgorde bij correspondentie (geslachtsnaam en partnernaam).
 - Het vullen van `NaamGebruik` hangt af van hoe de cliënt of relatie zijn/haar naam hanteert.
 
 ---
 
 # IV008 Hoe moet worden omgegaan met correcties van de regieberichten?
 
-- **Correcties** van een regiebericht zijn alleen toegestaan als het oorspronkelijke bericht **is goedgekeurd** door de gemeente.  
-- Afgekeurde regieberichten worden beschouwd als **niet verzonden**; er moet een **nieuw bericht** worden gestuurd.
+- Correcties van een regiebericht zijn alleen toegestaan als het oorspronkelijke bericht is goedgekeurd door de gemeente.  
+- Afgekeurde regieberichten worden beschouwd als niet verzonden; er moet een nieuw bericht worden gestuurd.
 
 ## Correctieprocedure voor berichtklassen (start-/stopbericht)
-1. **Verwijderen van de bestaande berichtklasse**
-   - Vul `StatusAanlevering` van de berichtklasse met **3 (verwijderen aanlevering)**.
-   - Identificeer de te verwijderen berichtklasse via de **logische sleutel** van de klasse.
+1. Verwijderen van de bestaande berichtklasse
+   - Vul `StatusAanlevering` van de berichtklasse met 3 (verwijderen aanlevering).
+   - Identificeer de te verwijderen berichtklasse via de logische sleutel van de klasse.
 
-2. **Eventuele vervangende berichtklasse**
+2. Eventuele vervangende berichtklasse
    - Kan in hetzelfde bericht worden aangeleverd.
-   - Vul `StatusAanlevering` met **1 (eerste aanlevering)**.
+   - Vul `StatusAanlevering` met 1 (eerste aanlevering).
 
 ## Logische sleutels
-- **Startproduct**: `(ToewijzingNummer, Product, Begindatum)`  
-- **Stopproduct**: `(ToewijzingNummer, Product, Begindatum, RedenBeeindiging, Einddatum)`
+- Startproduct: `(ToewijzingNummer, Product, Begindatum)`  
+- Stopproduct: `(ToewijzingNummer, Product, Begindatum, RedenBeeindiging, Einddatum)`
 
 ## Wanneer correctie in hetzelfde bericht of apart bericht
-- **Onderdeel van logische sleutel**: correctie kan in **zelfde bericht** worden doorgegeven (unieke sleutel per berichtklasse).  
-- **Niet onderdeel van logische sleutel**: correctie moet in **apart bericht** worden doorgegeven (anders afkeur door dubbele sleutel).
+- Onderdeel van logische sleutel: correctie kan in zelfde bericht worden doorgegeven (unieke sleutel per berichtklasse).  
+- Niet onderdeel van logische sleutel: correctie moet in apart bericht worden doorgegeven (anders afkeur door dubbele sleutel).
 
 ## Advies
-- Zorg dat een **nieuwe aanlevering** nooit eerder wordt verwerkt dan de **correctie (verwijdering)**.  
-- Waar mogelijk: neem **correctie en nieuwe aanlevering in hetzelfde bericht** op.
+- Zorg dat een nieuwe aanlevering nooit eerder wordt verwerkt dan de correctie (verwijdering).  
+- Waar mogelijk: neem correctie en nieuwe aanlevering in hetzelfde bericht op.
 
 ---
 
 # IV009 Hoe moet worden omgegaan met een geboortedatum?
 
-- Wanneer de **geboortedatum** niet volledig of onbekend is:
-  - Wordt het **bekende deel** gebruikt.
-  - Voor de **onbekende delen** geldt:
+- Wanneer de geboortedatum niet volledig of onbekend is:
+  - Wordt het bekende deel gebruikt.
+  - Voor de onbekende delen geldt:
     - Dag en maand: `01`
     - Jaar: `1900`
-- Het element **`DatumGebruik`** geeft aan welk deel van de datum bekend is en gebruikt moet worden.
+- Het element `DatumGebruik` geeft aan welk deel van de datum bekend is en gebruikt moet worden.
 
 ### Voorbeelden
 - Volledig onbekend: `01-01-1900`  
@@ -106,17 +106,17 @@ Output per instructie:
 
 # IV013  Welke toewijzing is het meest recent?
 
-- Om de **meest recente toewijzing** vast te stellen, worden de velden **`Toewijzingsdatum`** en **`Toewijzingstijd`** in het toewijzingbericht opgenomen.  
-- De **gemeente** vult deze velden in met de datum en tijd waarop de **toewijzing definitief is vastgesteld**.  
-  - Dit is **het moment van vaststelling**, niet het moment van verzending.  
-- De toewijzing met de **meest recente `Toewijzingsdatum` en `Toewijzingstijd`** is de actuele toewijzing.
+- Om de meest recente toewijzing vast te stellen, worden de velden `Toewijzingsdatum` en `Toewijzingstijd` in het toewijzingbericht opgenomen.  
+- De gemeente vult deze velden in met de datum en tijd waarop de toewijzing definitief is vastgesteld.  
+  - Dit is het moment van vaststelling, niet het moment van verzending.  
+- De toewijzing met de meest recente `Toewijzingsdatum` en `Toewijzingstijd` is de actuele toewijzing.
 
 ### Bij herverzoek door aanbieder
-- Als een aanbieder vraagt om een **bestaande toewijzing opnieuw te versturen**, blijven **`Toewijzingsdatum` en `Toewijzingstijd` onveranderd**.
+- Als een aanbieder vraagt om een bestaande toewijzing opnieuw te versturen, blijven `Toewijzingsdatum` en `Toewijzingstijd` onveranderd.
 
 ### Bij aanpassing
-- Wijzigingen zoals **volume of einddatum** worden beschouwd als een **gewijzigde toewijzing**.  
-- De gemeente vult dan de velden met de **datum en tijd van vaststelling van de aanpassing**.
+- Wijzigingen zoals volume of einddatum worden beschouwd als een gewijzigde toewijzing.  
+- De gemeente vult dan de velden met de datum en tijd van vaststelling van de aanpassing.
 
 # IV024 Hoe moeten bedragen worden gevuld?
 
