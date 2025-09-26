@@ -3,6 +3,8 @@
 # IV002 Hoe om te gaan met de adressering indien er sprake is van een organisatie?
 - Adressering wordt **alleen gevuld** als de cliënt en/of relatie **in een instelling verblijft**.
 
+---
+
 # IV007 Hoe wordt de naam van een client of relatie vastgelegd?
 - **Achternaam**, **voorvoegsel**, **voornamen** en/of **voorletters** worden gescheiden vastgelegd.
 ### Format voor `VolledigeNaam`
@@ -12,6 +14,8 @@
 - **Voorletters**: aaneengesloten, zonder punten of spaties.  
 - **NaamGebruik**: geeft de gewenste aanspreekvorm aan en bepaalt de volgorde bij correspondentie (geslachtsnaam en partnernaam).
 - Het vullen van `NaamGebruik` hangt af van hoe de cliënt of relatie zijn/haar naam hanteert.
+
+---
 
 # IV008 Hoe moet worden omgegaan met correcties van de regieberichten?
 
@@ -53,6 +57,8 @@
 - Alleen bekend dat geboorte in 1953 was: `01-01-1953`  
 - Alleen bekend dat geboorte in september 1949 was: `01-09-1949`
 
+---
+
 # IV013  Welke toewijzing is het meest recent?
 
 - Om de **meest recente toewijzing** vast te stellen, worden de velden **`Toewijzingsdatum`** en **`Toewijzingstijd`** in het toewijzingbericht opgenomen.  
@@ -73,6 +79,7 @@
 - Voor de **euro (EUR)** betekent dit bijvoorbeeld:
   - `10000` = 10.000 eurocent = **100 euro**.
 
+---
 
 # IV028 Hoe wordt een retourbericht opgesteld?
 
@@ -125,6 +132,7 @@ Een gemeente ontvangt een **Startbericht** met:
 - Cliënt: retourcode **0200**  
 - StartProduct: retourcode **9063** (“Geen eerder bericht ontvangen → bericht kan niet verwerkt worden”).  
 
+---
 
 # IV032 Welke retourcode moet gevuld worden in het retourbericht?
 
@@ -170,6 +178,8 @@ De retourcode in een retourbericht wordt bepaald door de **technische controles*
 - Wanneer de **ontvanger fouten** constateert in een bericht op basis van de beschikbare **XSLTs**, wordt in het **retourbericht** aangegeven welke **XSLT-versie** is gebruikt voor de controle.  
 - Dit **versienummer** staat in de **output van de XSLTs** en moet **worden overgenomen** in het retourbericht.
 
+---
+
 # IV034 Hoe moet XsdVersie gevuld worden?
 
 - De waarden voor de elementen **`BasisschemaXsdVersie`** en **`BerichtXsdVersie`** in het datatype `CDT_XsdVersie` moeten worden overgenomen uit de **schemadefinitie (XSD)** waarop het bericht is gebaseerd.  
@@ -182,6 +192,8 @@ De retourcode in een retourbericht wordt bepaald door de **technische controles*
 <jw301:Bericht 
     xmlns:ijw="http://www.istandaarden.nl/ijw/3_2/basisschema/schema" 
     xmlns:jw301="http://www.istandaarden.nl/ijw/3_2/jw301/schema">
+
+---
 
 # IV042 Hoe moet de omvang van te leveren of geleverde ondersteuning gevuld worden?
 
@@ -229,16 +241,22 @@ Ondersteuning geleverd volgens afgesproken maandbedrag (200 euro):
 - GeleverdVolume: `20000`  
 - Eenheid: `83` (Euro’s)  
 
+---
+
 # IV045 Hoe wordt de voogd vastgelegd indien dit een organisatie betreft?
 
 Als de **voogdij** voor een cliënt bij een **organisatie** ligt:  
   - Wordt in de **Relatie** de **organisatienaam** opgenomen als `Geslachtsnaam`.  
   - Wordt aangeduid met `NaamGebruik = 6` (**niet-natuurlijk persoon**).
 
+---
+
 # IV046 Welke gemeentecode moet worden gevuld?**
 
 - In de **header** van de berichten wordt de **gemeente** opgenomen die volgens de wet **verantwoordelijk** is voor zorg of ondersteuning aan de cliënt.  
 - Voor de aanduiding van de gemeente wordt de **CBS-codelijst** gehanteerd.
+
+---
 
 # IV047 Hoe om te gaan met de adressering van een client indien alleen een briefadres bekend is?
 
@@ -246,10 +264,14 @@ Als de **voogdij** voor een cliënt bij een **organisatie** ligt:
 - Dit is **niet mogelijk** als de cliënt in de **Basisregistratie Personen (BRP)** alleen een **briefadres** heeft.  
 - In dat geval kan bij de cliënt een **Adres** met het type **Correspondentie-adres** worden meegegeven.
 
+---
+
 # IV052 Hoe om te gaan met Beschikkingnummer in Verzoek om toewijzing?
 
 - De **aanbieder** dient het `Beschikkingnummer` mee te geven in het **VOT-bericht** als de cliënt van haar gemeente een beschikking heeft ontvangen.
 - De **gemeente** kan op basis van dit `Beschikkingnummer` eenvoudig de **bestaande beschikking koppelen** aan de informatie uit het VOT-bericht.
+
+---
 
 # IV066 Wanneer krijgt een toewijzing een nieuw ToewijzingNummer?
 
@@ -274,6 +296,7 @@ Als de **omvang** gewijzigd wordt bij een andere frequentie dan `6` (Totaal binn
   - **Ingangsdatum** = de datum waarop de gewijzigde omvang ingaat.  
   - **Nieuw ToewijzingNummer**.  
 
+---
 
 # IV074 Wat is het verschil tussen de verschillende uitvoeringsvarianten?
 
@@ -288,6 +311,7 @@ De specifieke eigenschappen van deze varianten zijn beschreven in het document *
 
 📄 Zie: [Handreiking uitvoeringsvarianten iWmo en iJw](http://www.istandaarden.nl/ibieb/handreiking-uitvoeringsvarianten-iwmo-en-ijw).  
 
+---
 
 # IV075 Hoe moeten productgegevens gevuld worden?
 
@@ -295,8 +319,6 @@ De specifieke eigenschappen van deze varianten zijn beschreven in het document *
 - Welke productcodes gebruikt mogen worden in het berichtenverkeer is afhankelijk van **bilaterale afspraken**.  
 - Er is een landelijke codelijst **021 - PRODUCTCODE** beschikbaar.  
 - Gemeente en aanbieder leggen in de **contractafspraken** vast of deze landelijke codelijst gebruikt wordt of dat een **eigen productcodelijst** geldt.  
-
----
 
 ## Aanvragen (VOT of VOW)
 Het element **Product** wordt gevuld in:  
@@ -308,16 +330,12 @@ Afhankelijk van de gewenste toewijzingsvariant:
 - **Aspecifieke toewijzing** → vul **alleen productcategorie**.  
 - **Generieke toewijzing** → **Product leeg**, dus geen productcategorie en productcode gevuld.  
 
----
-
 ## Start- en Stopberichten (305 / 307)
 Bij inspannings- en outputgerichte uitvoeringsvarianten:  
 - Hetzelfde product opnemen als in de **Toewijzing (301)**.  
 - **Specifieke toewijzing** → vul **productcategorie én productcode**.  
 - **Aspecifieke toewijzing** → vul **alleen productcategorie**.  
 - **Generieke toewijzing** → **Product leeg** (geen productcategorie of productcode).  
-
----
 
 ## Declaratieberichten (323)
 Altijd een **productcategorie én productcode** vullen.  
@@ -333,6 +351,7 @@ Altijd een **productcategorie én productcode** vullen.
   - Vul de productcategorie en productcode die horen bij de levering (volgens de afgesproken productcodelijst).  
 - Gevolg: op **1 toewijzingsnummer** kunnen meerdere prestatieregels voor dezelfde periode volgen (indien meerdere producten uit dezelfde of verschillende categorieën geleverd zijn).  
 
+---
 
 # IV076 Hoe moet het volume in de prestatie gevuld worden, wanneer de toewijzing de frequentie week heeft?
 
@@ -342,8 +361,6 @@ Altijd een **productcategorie én productcode** vullen.
 - Er bestaan 2 methoden om het volume te bepalen:  
   - **Inspanningsgerichte toewijzing**  
   - **Outputgerichte toewijzing**  
-
----
 
 ## Methode 1 — Inspanningsgerichte toewijzing
 - De **datum van levering** bepaalt in welke productperiode de levering wordt opgenomen.  
@@ -372,8 +389,6 @@ Altijd een **productcategorie én productcode** vullen.
 **Controle totaalperiode:**  
 - 07-07-2025 t/m 07-09-2025 = 9 weken × 3 uur = **27 uur** toegestaan.  
 - Gedeclareerd = 20 uur.  
-
----
 
 ## Methode 2 — Outputgerichte toewijzing
 - De productperiode bevat het volume van de weken waarvan de **zondag in die productperiode valt**.  
@@ -408,6 +423,7 @@ Altijd een **productcategorie én productcode** vullen.
 - **Declaratieperiode september**  
   - Geen declaratie meer: laatste week is al meegenomen in augustus.  
 
+---
 
 # IV077 Hoe moet het maximaal te declareren volume berekend worden over de productperiode bij gebruik van de frequentie per week in de toewijzing?
 
@@ -470,6 +486,8 @@ Maximaal volume:
 - Juli: 3 × 300 = **900 euro**  
 - Augustus: (5 + 1) × 300 = **1800 euro** *
 
+----
+
 # IV078 Wat mag gedeclareerd worden wanneer een onvolledige periode is toegewezen?
 
 ## Algemeen
@@ -497,6 +515,8 @@ Maximaal volume:
 - Maximaal declarabel: **15 uur**, mits daadwerkelijk geleverd.  
 - Ook al is oktober een **gebroken maand**, de volledige maandcapaciteit mag gedeclareerd worden als die uren geleverd zijn.  
 
+---
+
 # IV079 Hoe moet het volume in de prestatie gevuld worden wanneer de eenheid uren is en geleverde prestatie niet uit volledige uren bestaat?
 
 ## Algemeen
@@ -523,6 +543,7 @@ Berekening:
 
 **Volume prestatie:** 6 uur
 
+---
 
 # IV081 Hoe moet het ProductTarief gevuld worden?
 
@@ -544,6 +565,7 @@ Berekening:
 - Afronden op **2 decimalen**.  
 - Zie ook **TR346**.
 
+---
 
 # IV084 Hoe moet de declaratie gevuld worden bij elkaar opvolgende toewijzingen binnen één declaratieperiode?
 
@@ -561,6 +583,7 @@ Berekening:
 - **Prestatie 1**: ProductPeriode 01-03-2025 t/m 09-03-2025  
 - **Prestatie 2**: ProductPeriode 23-03-2025 t/m 31-03-2025  
 
+---
 
 # IV085 Wanneer kan een creditering van een declaratie verzonden worden?
 
@@ -578,6 +601,7 @@ Berekening:
 - De gemeente **kan een ingediende creditprestatie niet afkeuren**, behalve bij **technische afkeur**.  
 - Zie ook invulinstructies **IV087** en **IV088** voor details.
 
+---
 
 # IV086 Hoe moet worden omgegaan met debet en credit prestaties in een declaratiebericht?
 
@@ -597,6 +621,7 @@ Berekening:
   - Debetprestaties: **optellen**  
   - Creditprestaties: **aftrekken**
 
+---
 
 # IV087 Hoe wordt een declaratie-antwoordbericht opgesteld?
 
@@ -650,6 +675,8 @@ Berekening:
 - **Niet** bedoeld om extra informatie op te vragen of correcties door te geven.  
 - Berichten kunnen info bevatten over meerdere cliënten; cliënten **zonder fouten** worden niet opgenomen.
 
+---
+
 # IV088 Welke retourcode moet gevuld worden in het declaratie-antwoordbericht?
 
 ## Algemeen
@@ -684,6 +711,7 @@ Berekening:
 - Elke regel op dit niveau heeft een **specifieke retourcode**.  
 - Retourcode wordt gevuld in de **berichtklasse waarin de fout is geconstateerd**.  
 
+---
 
 # IV089 Hoe moet ProductPeriode gevuld worden?
 
@@ -725,6 +753,7 @@ ToegewezenProduct: 08-04-2025 t/m 17-06-2025
 - Declaraties in april en mei: geen  
 - Declaratie in juni: **ProductPeriode 01-06-2025 t/m 17-06-2025**
 
+---
 
 # IV090 Hoe moet het declaratiebericht gevuld worden indien achteraf gedeclareerd wordt?
 
@@ -763,6 +792,7 @@ Situatie:
 | 2         | 01-03-2025 t/m 31-03-2025 |
 | 3         | 01-04-2025 t/m 30-04-2025 |
 
+---
 
 # IV091 Hoe moet een creditprestatie gevuld worden in een declaratiebericht?
 
@@ -782,6 +812,7 @@ Een creditprestatie is **identiek aan de oorspronkelijke debetprestatie**, met u
 ## Belangrijk
 - Crediteren is **alleen mogelijk** nadat het declaratie-antwoordbericht is ontvangen waarin de oorspronkelijke prestatie is **toegekend** (zie IV085).
 
+---
 
 # IV092 Hoe moet een Verzoek om Wijziging (VOW bericht) gevuld worden?
 
@@ -859,6 +890,7 @@ Een creditprestatie is **identiek aan de oorspronkelijke debetprestatie**, met u
 - TeWijzigenProduct: 789, GewensteIngangsdatum 1 november 2025, 5 uur/week, einddatum 1 juli 2026
 - NieuwProduct: C1, GewensteIngangsdatum 1 januari 2026, 2 dagdelen/maand, einddatum 1 juli 2026
 
+---
 
 # IV093 Hoe wordt een Toewijzingbericht gevuld na aanleiding van een Verzoek om Wijziging (VOW) bericht?
 
@@ -954,6 +986,7 @@ Afhankelijk van type toewijzing:
 - X: eind 07-05-2026  
 - Y: ingangsdatum 15-05-2026
 
+---
 
 # IV094 Hoe wordt een toewijzingbericht gevuld naar aanleiding van een VOT-bericht?
 
@@ -974,6 +1007,7 @@ Wanneer een toewijzingbericht wordt verstuurd als gevolg van de **honorering van
 - Alle andere **actuele toegewezen producten** voor deze cliënt bij deze aanbieder worden ook opgenomen in het toewijzingbericht.
 - Voor deze producten is de **ReferentieAanbieder leeg**, zodat voldaan wordt aan **OP087**.
 
+---
 
 # IV095 Hoe moet de juiste gemeente worden gevuld?
 
@@ -986,6 +1020,7 @@ Wanneer een gemeente in het **antwoordbericht** aangeeft dat zij **niet de veran
 ### Overige gevallen
 - Bij **alle andere waarden** van `RedenAfwijzingVerzoek` **mag de klasse Woonplaatsbeginsel niet** worden opgenomen.
 
+---
 
 # IV096 Hoe wordt de sleutel van een start-/stopbericht gevuld?
 
@@ -1000,6 +1035,7 @@ De manier waarop de sleutel van een **start- of stopbericht** wordt gevuld, hang
   - `Product`
   - `Begindatum`
 
+---
 
 # IV097 Hoe wordt ReferentieAanbieder gevuld in een ToegewezenProduct
 
@@ -1011,8 +1047,6 @@ De manier waarop de sleutel van een **start- of stopbericht** wordt gevuld, hang
 - **Initiatief van gemeente**
   - Als de gemeente een nieuwe of gewijzigde toewijzing verstuurt **zonder verzoek**, blijft **ReferentieAanbieder leeg**, ook als een eerder bericht dit wel had.
 
----
-
 ## Regels per type verzoek
 
 ### 1. Verzoek om Toewijzing (VOT)
@@ -1022,8 +1056,6 @@ De manier waarop de sleutel van een **start- of stopbericht** wordt gevuld, hang
 ### 2. Verzoek om Wijziging (VOW)
 - Alle wijzigingen en/of extra producten vormen **één samenhangend geheel**.
 - Alle ToegewezenProducten in het toewijzingbericht krijgen **dezelfde ReferentieAanbieder** uit het VOW.
-
----
 
 ## Voorbeeld VOW
 
@@ -1043,12 +1075,12 @@ De manier waarop de sleutel van een **start- of stopbericht** wordt gevuld, hang
 | 345001          | A       | 01-01-2025    | 31-12-2025    | 667788            |
 | 345002          | B       | 01-01-2025    | 30-06-2026    | 667788            |
 
----
-
 ## Samengevat
 - **ReferentieAanbieder volgt het verzoek** (VOT of VOW).
 - **Niet** gevuld bij gemeentelijk initiatief.
 - Bij VOW geldt **één ReferentieAanbieder voor alle wijzigingen/extra producten**.
+
+---
 
 # IV099 Wanneer moet `RedenWijziging` worden gevuld?
 
@@ -1059,3 +1091,6 @@ De manier waarop de sleutel van een **start- of stopbericht** wordt gevuld, hang
 - Als het toegewezen product **niet is gewijzigd** ten opzichte van de laatste verzonden toewijzing, blijft `RedenWijziging` **leeg**.
 - Als er **wel een wijziging** heeft plaatsgevonden, wordt `RedenWijziging` gevuld met de **code die past bij de wijziging**.
 - Bij de **initiële toewijzing** van een product (nieuw `ToewijzingNummer`) is `RedenWijziging` **altijd leeg**.
+
+---
+
