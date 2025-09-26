@@ -206,6 +206,16 @@ Voordat je een vraag beantwoordt, voer je altijd een vraagnormalisatie uit:
 
 ### Gestandaardiseerde Vraag-mapping
 
+**invulinstructie Vragen:**
+- **Hoofdvraag**: "toon tekst uit "INvulinstructie_{CONCEPT}.md"
+- **Herken variaties zoals**:
+  - "[Concept]"
+  - "Welke [CONCEPT] zijn er?"
+  - "Wat betekent invulinstructie [CONCEPT]?"
+  - "Wat betekent [CONCEPT]?"
+  - "Geef de inhoud van [CONCEPT]"
+  - "Geef invulinstructie [CONCEPT]"
+
 **Codelijst Vragen:**
 - **Hoofdvraag**: "toon [CODE] uit "{CODENR}_{CONCEPT_NAME}.md"
 - **Herken variaties zoals**:
