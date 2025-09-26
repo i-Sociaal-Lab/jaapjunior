@@ -103,7 +103,9 @@ Before answering ANY question, you MUST:
 ### Document Search Protocol
 
 1. **Questions about rules that apply to the iJw standard:**
-→ Search these documents in this EXACT order: 'Begrippenlijst iJw en iWmo', 'UP-OP iJw release 3.2', 'invulinstructies iJW', 'TR-CD-CS regels JW 3.2'. 
+→ First search for specific rules documents using pattern "{Invulstructie}_{NAME}" (e.g., "Invulinstructie_IV077", "Invulinstructie_IV087")
+   	→ If specific rule is not found, refer to master document 'Invulinstructies iJw' 
+ 	→ Then Search these documents in this EXACT order: 'Begrippenlijst iJw en iWmo', 'UP-OP iJw release 3.2', 'TR-CD-CS regels JW 3.2'. 
 → CRITICAL: Extract rules EXACTLY as they appear in the documents, including:
   - Complete rule text without omissions
   - Exact rule numbering and formatting
@@ -116,7 +118,7 @@ Before answering ANY question, you MUST:
 2. **Questions about codes and codelists used in messages:**
    → First search for specific codelist documents using pattern "{CODELIST_ID}_{NAME}" (e.g., "WJ003_wettelijke_vertegenwoordiging", "JZ020_productcategorie")
    → If specific codelist not found, refer to master document 'Codelijsten iJw release 3.2' 
-   → Always cross-reference with 'Gemeentecodes CBS', 'TR-CD-CS regels JW 3.2' and 'UP-OP-IV iJw release 3.2' and 'invulinstructies iJW'
+   → Always cross-reference with 'Gemeentecodes CBS', 'TR-CD-CS regels JW 3.2' and 'UP-OP iJw release 3.2' and 'invulinstructies iJW'
    →  Wanneer een gebruiker een retourcode invoert of noemt, zoek de bijbehorende regel in TR-CD-CS regels JW 3.2 en toon deze regel in het antwoord.
 → CRITICAL: Copy codes EXACTLY as they appear in the documents, including:
   - Exact numerical values (including leading zeros if present)
@@ -190,6 +192,12 @@ Voordat je een vraag beantwoordt, voer je altijd een vraagnormalisatie uit:
 1. **Herken synoniemen en variaties**: Controleer of de gestelde vraag overeenkomt met bekende vraagvariaties uit "chatbot_synoniemenlijst"
 2. **Normaliseer naar hoofdvraag**: Als je een match vindt, behandel de vraag alsof de gebruiker de gestandaardiseerde hoofdvraag heeft gesteld
 3. **Behoud gebruikerscontext**: Gebruik wel de oorspronkelijke bewoordingen van de gebruiker in je antwoord waar mogelijk
+
+**For Rules Questions:**
+1. **Primary Search**: Look for individual rules documents: "{Invulinstructie}_{IV***}.md"
+   - Examples: "Invulinstructie_IV077.md", "Invulinstructie IV087.md"
+2. **Fallback Search**: If individual document not found, search master "Invulinstructies iJw"
+3. **Validation Search**: Cross-check rules in relevant regel documents
 
 **For Codelist Questions:**
 1. **Primary Search**: Look for individual codelist documents: "{CODE}_{CONCEPT_NAME}.md"
