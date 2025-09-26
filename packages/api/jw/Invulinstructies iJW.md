@@ -33,12 +33,13 @@ Het document dient als **naslagwerk en validatiebron** voor AI-agenten die vrage
 - Bekijk alle regels om tot een juist antwoord te komen.
 
 - Behandel iedere invulinstructie als één geheel.
-- Een invulinstructie begint bij een regel die start met # IV gevolgd door drie cijfers (bijvoorbeeld # IV077).
-- Een invulinstructie eindigt direct vóór de volgende regel die ook begint met # IV gevolgd door drie cijfers, of aan het einde van het document. Alles daartussen (inclusief kopjes zoals Algemeen, Methode, Voorbeeld, tabellen of opsommingen) behoort tot dezelfde invulinstructie en mag niet worden gesplitst.
+1. Regels: Een invulinstructie begint bij een regel die start met # IV gevolgd door drie cijfers (bijvoorbeeld # IV077).
+2. Een invulinstructie eindigt direct vóór de volgende regel die ook begint met # IV gevolgd door drie cijfers, of aan het einde van het document.
+3. Alles wat daartussen staat – inclusief kopjes (Algemeen, Methode, Voorbeeld), tabellen en opsommingen – hoort tot diezelfde invulinstructie en mag niet worden gesplitst.
 
-De output per instructie bevat altijd: 
-   Het nummer (bijv. IV077)
-   De volledige tekst van die invulinstructie.
+Output per instructie:
+- Het nummer (bijv. IV077)
+-  volledige tekst van die invulinstructie
 
 ---
 
