@@ -207,7 +207,7 @@ Voordat je een vraag beantwoordt, voer je altijd een vraagnormalisatie uit:
 ### Gestandaardiseerde Vraag-mapping
 
 **invulinstructie Vragen:**
-- **Hoofdvraag**: "toon de gehele tekst uit "Invulinstructie_{CONCEPT}.md"
+- **Hoofdvraag**: "toon de gehele tekst inclusief voorbeelden uit "Invulinstructie_{CONCEPT}"
 - **Herken variaties zoals**:
   - "[Concept]"
   - "Wat betekent invulinstructie [CONCEPT]?"
