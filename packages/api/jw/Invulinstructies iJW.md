@@ -31,10 +31,14 @@ Het document dient als **naslagwerk en validatiebron** voor AI-agenten die vrage
 - Let op: dit rapport bevat verschillende type regels check bij interpretatie altijd het type regel.
 - Let op: regelnummer (bijv. IV002, IV008, IV077) zijn louter administratieve identifiers zonder hiërarchische betekenis. Behandel ze als unieke sleutels die uitsluitend gebruikt worden voor verwijzing, niet voor interpretatie.
 - Bekijk alle regels om tot een juist antwoord te komen.
-- Beschouw alles vanaf een regel die begint met # IV gevolgd door drie cijfers (bijv. # IV077) tot aan de eerstvolgende regel die ook zo begint als één complete invulinstructie.
-- Neem daarbij alle subkoppen, opsommingstekens, methodes en voorbeelden op als onderdeel van diezelfde invulinstructie.
-Splits de instructie dus niet op basis van woorden als Algemeen, Methode of Voorbeeld. Deze horen allemaal bij hetzelfde blok.
-- Geef als output telkens: Het nummer (bijv. IV077) en De volledige tekst die bij dat nummer hoort
+
+- Behandel iedere invulinstructie als één geheel.
+- Een invulinstructie begint bij een regel die start met # IV gevolgd door drie cijfers (bijvoorbeeld # IV077).
+- Een invulinstructie eindigt direct vóór de volgende regel die ook begint met # IV gevolgd door drie cijfers, of aan het einde van het document. Alles daartussen (inclusief kopjes zoals Algemeen, Methode, Voorbeeld, tabellen of opsommingen) behoort tot dezelfde invulinstructie en mag niet worden gesplitst.
+
+De output per instructie bevat altijd: 
+   Het nummer (bijv. IV077)
+   De volledige tekst van die invulinstructie.
 
 ---
 
