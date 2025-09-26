@@ -40,6 +40,7 @@ De tekst van elke invulinstructie kent een begin en een einde aangegeven door <I
 . De exacte en volledige tekst hiertussen dient altijd te worden teruggegeven.
 
 <IV002>
+  
 **IV002**
 
 *Hoe om te gaan met de adressering indien er sprake is van een organisatie?*
@@ -48,7 +49,8 @@ Alleen vullen indien cliënt en/of relatie cliënt in instelling verblijft.
 </IV002>
 
 <IV007>
-**IV007**
+
+  **IV007**
 
 *Hoe wordt de naam van een cliënt of relatie vastgelegd?*
 
@@ -62,8 +64,8 @@ Van een cliënt of relatie worden de achternaam, voorvoegsel en voornamen en/of 
 </IV002>
 
 <IV008>
-**IV008**
 
+  **IV008**
 *Hoe moet worden omgegaan met correcties van de regieberichten?*
 
 Een correctie van een regiebericht, kan alleen indien het te corrigeren regiebericht is goedgekeurd door de gemeente.
@@ -306,7 +308,8 @@ Welke productcodes gebruikt mogen worden in het berichtenverkeer is afhankelijk 
 </IV075>
 
 <IV076>
-**IV076**
+
+  **IV076**
 
 *Hoe moet het volume in de prestatie gevuld worden, wanneer de toewijzing de frequentie week heeft?*
 
@@ -387,7 +390,8 @@ Over september wordt er geen declaratie meer ingediend. De laatste week, die ged
 </IV076>
 
 <IV077>
-**IV077**
+
+  **IV077**
 
 *Hoe moet het maximaal te declareren volume berekend worden over de productperiode bij gebruik van de frequentie per week in de toewijzing?*
 
@@ -450,7 +454,8 @@ Maximaal volume per productperiode: Het aantal zondagen vermenigvuldigd met het 
 </IV077>
 
 <IV078>
-**IV078**
+
+  **IV078**
 
 *Wat mag gedeclareerd worden wanneer een onvolledige periode is toegewezen?*
 
