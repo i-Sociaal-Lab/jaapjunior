@@ -3,7 +3,7 @@
 Versie: 1.0
 Status: Productie
 Auteur: Zorginstituut
-Bron-link: https://www.istandaarden.nl/ijw/releases/release-ijw-3.2
+Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/invulinstructie/
 Publicatiedatum: 29 september 2022
 AI-agent: Jw-agent
 
