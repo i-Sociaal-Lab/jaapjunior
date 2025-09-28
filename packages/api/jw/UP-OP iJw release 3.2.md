@@ -24,11 +24,10 @@ Het document dient als **naslagwerk en validatiebron** voor AI-agenten die vrage
 - Iedere regel is voorzien van een unieke code (zoals UP001, OP001, IV002), een titel en een toelichting.
 - Uitgangspunten hebben een code die begint met UP
 - Bedrijfsregels hebben een code die begint met OP
-- Invulinstructies hebben een code die begint met IV
 - De regels vormen de basis voor correcte administratieve verwerking, gegevensuitwisseling en procesondersteuning binnen iJw.
 - Verwijs bij vragen altijd naar de relevante regelcode voor onderbouwing.
 - Geef bij het beantwoorden van vragen over regels uit het document ‘Regels op berichten iJw release 3.2’ altijd de volledige, letterlijke tekst van de gevraagde regel weer. Sla geen enkel tekstblok, opsomming of toelichting over die onder het betreffende regelnummers valt. Stop pas bij het volgende regelnummers of het einde van het document."
-- Wanneer een gebruiker vraagt om de tekst van een specifieke regel (bijvoorbeeld IV075), selecteer en retourneer altijd de volledige tekst die hoort bij het betreffende regelnummers, vanaf de eerste regel na het regelnummers tot en met de eerste volgende regel met een nieuw regelnummers of het einde van het document. Neem alle tekst, opsommingen, subkopjes en toelichtingen op die onder het regelnummers vallen. Geef geen interpretatie in dit geval.
+- Wanneer een gebruiker vraagt om de tekst van een specifieke regel (bijvoorbeeld OP001), selecteer en retourneer altijd de volledige tekst die hoort bij het betreffende regelnummers, vanaf de eerste regel na het regelnummers tot en met de eerste volgende regel met een nieuw regelnummers of het einde van het document. Neem alle tekst, opsommingen, subkopjes en toelichtingen op die onder het regelnummers vallen. Geef geen interpretatie in dit geval.
 - Sommige regels zijn specifiek voor gemeenten, andere voor aanbieders of ketenpartijen.
 - Let op: dit rapport bevat verschillende type regels check bij interpretatie altijd het type regel.
 - Let op: regelnummer (bijv. OP001, OP047, IV008) zijn louter administratieve identifiers zonder hiërarchische betekenis. Behandel ze als unieke sleutels die uitsluitend gebruikt worden voor verwijzing, niet voor interpretatie.
@@ -314,13 +313,13 @@ De gemeente geeft iedere beschikking binnen het Jw-domein een uniek nummer.
 - Aanbieder declareert in een eenheid die aansluit bij de **toewijzing**.
 
 ## OP270 – Regieberichten
-- Begin- en einddatums afgestemd tussen **gemeente en aanbieder**.  
+- Afspraken over begin- en einddatums tussen **gemeente en aanbieder**.  
 - Verplicht bij uitvoeringsvarianten: **inspannings- en outputgericht**.  
-- Per product kan afwijken, maar dit heeft **niet de voorkeur**.
+- Afspraken over begin- en eindatum per product kan afwijken, maar dit heeft **niet de voorkeur**.
 
 ## OP271 – Startbericht
 - Aanbieder verzendt binnen **5 werkdagen** na daadwerkelijke start.  
-- Terugwerkend toegewezen ondersteuning → binnen 5 werkdagen na ontvangst toewijzingbericht.
+- Indien ondersteuning met terugwerkende kracht is toegewezen → binnen 5 werkdagen na ontvangst toewijzingbericht.
 
 ## OP272 – Stopbericht
 - Aanbieder verzendt binnen **5 werkdagen** na daadwerkelijke stop.  
@@ -376,8 +375,8 @@ De gemeente geeft iedere beschikking binnen het Jw-domein een uniek nummer.
 - Toewijzing kan **generiek**, **aspecifiek**, of **specifiek** zijn.
 
 ## OP295 – Verplichting regieberichten
-- Gebruik van regieberichten verplicht bij **inspannings- en outputgericht**.  
-- Stopbericht mag alleen als er een **Startbericht** is.  
+- Gebruik van regieberichten is verplicht bij **inspannings- en outputgericht**.  
+- Stopbericht mag alleen gestuurd worden als er een **Startbericht** is.  
 - Bij oudere leveringen (iWmo/iJw release 2.4) zonder Startbericht → Stopbericht mag niet.
 
 ## OP296 – Verzoek om Toewijzing
@@ -385,7 +384,7 @@ De gemeente geeft iedere beschikking binnen het Jw-domein een uniek nummer.
 
 ## OP297 – Zorgverlenercode
 - Indien bekend, moet de **ZorgverlenerCode (AGB)** van verwijzer worden meegegeven.  
-- Ontbreekt de code → naam van de verwijzer volstaat.
+- Ontbreekt de AGB-code → naam van de verwijzer volstaat.
 
 ## OP298 – Verlagen volume
 - Alleen toegestaan **na overleg en instemming** van de aanbieder bij frequentie “totaal binnen geldigheidsduur”.
