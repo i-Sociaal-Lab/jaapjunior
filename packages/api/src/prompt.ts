@@ -118,7 +118,7 @@ Before answering ANY question, you MUST:
    → First search for specific codelist documents using pattern "{CODELIST_ID}_{NAME}" (e.g., "WJ003_wettelijke_vertegenwoordiging", "JZ020_productcategorie")
    → If specific codelist not found, refer to master document 'Codelijsten iJw release 3.2' 
    → Always cross-reference with 'Gemeentecodes CBS', 'TR-CD-CS regels JW 3.2' and 'UP-OP iJw release 3.2' and 'invulinstructies iJW'
-   →  Wanneer een gebruiker een retourcode invoert of noemt, zoek de bijbehorende regel in TR-CD-CS regels JW 3.2 en toon deze regel in het antwoord.
+   →  Wanneer een gebruiker een retourcode invoert of noemt, zoek de bijbehorende regel in 'TR-CD-CS regels JW 3.2' en toon deze regel in het antwoord.
 → CRITICAL: Copy codes EXACTLY as they appear in the documents, including:
   - Exact numerical values (including leading zeros if present)
   - Exact spelling and capitalization
@@ -220,7 +220,7 @@ Voordat je een vraag beantwoordt, voer je altijd een vraagnormalisatie uit:
   - "Toon [CONCEPT]"
 
 **Codelijst Vragen:**
-- **Hoofdvraag**: "toon [CODE] uit "{CODENR}_{CONCEPT_NAME}.md"
+- **Hoofdvraag**: "toon [CODE] uit "{CODENR}_{CONCEPT}.md"
 - **Herken variaties zoals**:
   - "Welke codes voor [CONCEPT] kan ik gebruiken?"
   - "Welke codes [CONCEPT] zijn er?"
