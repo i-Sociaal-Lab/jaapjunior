@@ -61,7 +61,7 @@ Van een cliënt of relatie worden de achternaam, voorvoegsel en voornamen en/of 
 - Voornamen kunnen worden vastgelegd, gescheiden door spaties
 - Voorletters kunnen worden vastgelegd, aaneengesloten, zonder punten of spaties
 - NaamGebruik geeft de gewenste aanspreekvorm aan. Hiermee wordt bij correspondentie de volgorde bepaald in het gebruik van de geslachtsnaam en de naam van de partner. Het vullen van NaamGebruik hangt dus af van hoe de cliënt of relatie zijn/haar naam hanteert.
-</IV002>
+</IV007>
 
 <IV008>
 
@@ -88,6 +88,8 @@ Of de vervangende berichtklasse kan worden aangeleverd in hetzelfde bericht of d
 Uiteraard moet worden voorkomen dat een nieuwe aanlevering eerder wordt verwerkt dan de correctie (verwijdering). Het is daarom te adviseren om waar mogelijk de correctie (verwijdering) en nieuwe aanlevering in hetzelfde bericht op te nemen.
 </IV008>
 
+<IV009>
+  
 **IV009**
 
 *Hoe moet worden omgegaan met een geboortedatum?*
@@ -107,13 +109,19 @@ Voorbeelden:
 Om vast te kunnen stellen welke toewijzing het recentst is, zijn Toewijzingsdatum en Toewijzingstijd in het toewijzingbericht opgenomen. De gemeente vult deze velden met de datum en de tijd waarop de toewijzing definitief is vastgesteld. Het gaat hier om het moment waarop de gemeente de toewijzing vaststelt en niet om het moment van verzending van het bericht. De toewijzing met de meest recente Toewijzingsdatum en Toewijzingstijd is de actuele toewijzing.
 Als een aanbieder de gemeente verzoekt om een bestaande toewijzing nog een keer te versturen, blijft de inhoud van Toewijzingsdatum en Toewijzingstijd onveranderd.
 Een aanpassing van het volume of de einddatum in de toewijzing moet beschouwd worden als een gewijzigde toewijzing. De gemeente vult Toewijzingsdatum en Toewijzingstijd met de datum en tijd waarop de gemeente de aanpassing vaststelt.
+</IV009>
+
+<IV024>
 
 **IV024**
 
 *Hoe moeten bedragen worden gevuld?*
 
 Bedragen worden in 1/100 van de gehanteerde valuta opgenomen. Als er sprake is van de euro (EUR), dan is als voorbeeld 10000 gelijk aan tienduizend eurocent oftewel 100 euro.
+</IV024>
 
+<IV028>
+  
 **IV028**
 
 *Hoe wordt een retourbericht opgesteld?*
@@ -151,6 +159,9 @@ In het retourbericht worden in deze situatie de volgende retourcodes gevuld:
 - Header: Retourcode 0200 (Geen opmerkingen over deze berichtklasse)
 - Cliënt: Retourcode 0200 (Geen opmerkingen over deze berichtklasse)
 - StartProduct: Retourcode 9063 (Het bericht kan niet verwerkt worden omdat geen eerder bericht ontvangen is)
+</IV028>
+
+<IV032>
 
 **IV032**
 
@@ -183,12 +194,18 @@ Het bericht wordt gecontroleerd op alle technische regels waarvoor informatie no
 - Bilaterale afspraken tussen ketenpartijen, zoals contractafspraken die opgenomen zijn in een regel binnen de iStandaarden.
 
 Deze regels hebben een eigen retourcode die gevuld wordt in het retourbericht bij de berichtklasse waarin de fout geconstateerd is. Indien een fout geconstateerd is, leidt dit tot volledige afkeur van het bericht.
+</IV032>
+
+<IV033>
 
 **IV033**
 
 *Hoe moet XsltVersie gevuld worden?*
 
 Wanneer de ontvanger fouten constateert in een bericht op basis van de ter beschikking gestelde XSLTs, wordt in het retourbericht aangegeven welke XSLT-versie gebruikt is voor de controle. Dit versienummer is opgenomen in de output van de XSLTs en dient overgenomen te worden in het retourbericht.
+</IV033>
+
+<IV034>
 
 **IV034**
 
@@ -197,6 +214,9 @@ Wanneer de ontvanger fouten constateert in een bericht op basis van de ter besch
 De waarde voor de elementen BasisschemaXsdVersie en BerichtXsdVersie in het datatype CDT_XsdVersie moeten overgenomen worden uit de schemadefinitie (XSD) waarop het bericht gecreëerd/gebaseerd is. Deze waarden staan in de schemadefinitie respectievelijk in /xs:schema/xs:annotation/xs:appinfo/<namespace>:BasisschemaXsdVersie en /xs:schema/xs:annotation/xs:appinfo/<namespace>:BerichtXsdVersie.
 Voor "<namespace>" wordt de namespace van de desbetreffende iStandaard ingevuld, bijv. 'iJw', 'iWmo', enz.
 Bijv: <jw301:Bericht xmlns:ijw="http://www.istandaarden.nl/ijw/3_2/basisschema/schema" xmlns:jw301="http://www.istandaarden.nl/ijw/3_2/jw301/schema">
+</IV034>
+
+<IV042>
 
 **IV042**
 
@@ -233,6 +253,7 @@ Voorbeeld 2B:
 In een declaratie wordt aangegeven dat in de afgelopen productperiode ondersteuning is geleverd volgens het vaste, afgesproken maandbedrag van 200 euro. Dit wordt als volgt aangegeven in het declaratiebericht:
 GeleverdVolume: 20000
 Eenheid: 83 (Euro's)
+</IV042>
 
 **IV045**
 
@@ -281,6 +302,7 @@ Indien de omvang bij andere frequenties dan Totaal binnen geldigheidsduur toewij
 De iStandaarden ondersteunen een aantal verschillende uitvoeringsvarianten: inspanningsgericht, outputgericht en taakgericht. De specifieke eigenschappen van deze uitvoeringsvarianten zijn beschreven in het document Handreiking uitvoeringsvarianten, deze is beschikbaar via [www.istandaarden.nl/ibieb/handreiking-uitvoeringsvarianten-iwmo-en-ijw](http://www.istandaarden.nl/ibieb/handreiking-uitvoeringsvarianten-iwmo-en-ijw).
 
 <IV075>
+
 **IV075**
 
 *Hoe moeten productgegevens gevuld worden?*
@@ -586,7 +608,7 @@ Het declaratie-antwoordbericht dient niet:
 - Voor het opvragen van (extra) informatie door de gemeente.
 - Voor het doorgeven van correcties op declaratiegegevens aan de aanbieder.
 NB: Een bericht kan informatie over meerdere cliënten bevatten. Cliënten waarin geen fouten zijn geconstateerd, worden niet opgenomen in het declaratie-antwoordbericht.
-</IV075>
+</IV087>
 
 <IV088>
 **IV088**
