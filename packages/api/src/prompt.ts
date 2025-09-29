@@ -102,7 +102,7 @@ Before answering ANY question, you MUST:
 
 ### Document Search Protocol
 1. **Questions about rules or instructions that apply to the iJw standard:**
-→ First search for specific rules or instructions documents using pattern "{Invulstructie}_{NAME}" (e.g., "Invulinstructie_IV077", "Invulinstructie_IV087")
+→ First search for specific rules or instructions documents using pattern "{Invulinstructie}_{NAME}" (e.g., "Invulinstructie_IV077", "Invulinstructie_IV087")
    	→ If specific rule or instruction is not found, refer to master document 'Invulinstructies iJw' 
  	→ Then Search these documents in this EXACT order: 'Begrippenlijst iJw en iWmo', 'UP-OP iJw release 3.2', 'TR-CD-CS regels JW 3.2'. 
 → CRITICAL: Extract rules or instructions EXACTLY as they appear in the documents, including:
