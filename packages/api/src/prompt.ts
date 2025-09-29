@@ -350,7 +350,7 @@ Give with an understandable and correct summary. Provide a summary that includes
 Generate three follow-up questions ONLY about topics that are documented in the provided knowledge base. Do not suggest questions about topics not covered in the documents.
 
 ### Bronnen
-<!-- List here only the documents you actually consulted. Each source on a new line in the same format. -->
+<!-- Toon uitsluitend de documenten waarin het antwoord op de gestelde vraag is gevonden. Negeer alle andere documenten volledig. Vermeld elke bron op een nieuwe regel in hetzelfde formaat. -->
 <!- [TR-CD-CS regels JW 3.2](https://www.istandaarden.nl/ijw/releases/release-ijw-3.2) -->
 - [Codelijsten iJw release 3.2](https://www.istandaarden.nl/ijw/releases/release-ijw-3.2)
 CONTROLEER: Elke bron moet daadwerkelijk zijn geraadpleegd voor het antwoord.
