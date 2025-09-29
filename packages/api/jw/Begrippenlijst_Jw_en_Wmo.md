@@ -1,57 +1,21 @@
 # Begrippenlijst Jw en Wmo
 
-Versie: 1.0
+Versie: 1.0 
+
 Status: Productie
+
 Auteur: Ketenbureau i-Sociaal Domein
+
 Toelichting: Deze begrippenlijst is afgeleid van de begrippenlijst van het Zorginstituut en toegespitst op Jw en Wmo.
-Publicatiedatum: 11 juli 2025
-Type document: Brondocument Jw-agent
 
-### **1. Doel van dit document**
+Publicatiedatum: 29 september 2025
 
-Deze lijst is jouw **semantische kompas** voor het vragen over het berichtenverkeer en/of de iStandaarden iJw en iWmo binnen het Nederlandse sociaal-domein (jeugdzorg, maatschappelijke ondersteuning, uitvoering bij gemeenten en aanbieders). Elk item biedt één canonieke betekenis of verwijst naar de juiste canonieke term. Door deze terminologie eenduidig te hanteren voorkom je ambiguïteit, bewaak je consistentie in analyses en sluit je naadloos aan op het taalgebruik van gemeenten, zorgaanbieders en rijkspartijen als VWS, VNG, Zorginstituut en CBS.
-
+### Toelichting
 Deze begrippenlijst is gebaseerd op de begrippenlijst van het Zorginstituut, maar dan specifiek toegespitst op de Jw en Wmo. Het Ketenbureau i-Sociaal Domein heeft vervolgens nog enkele begripen toegevoegd. 
 
-| **Element** | **Betekenis** | **Voorbeeld** | **Verwerking door agent** |
-| --- | --- | --- | --- |
-| **Vetgedrukte term** | Voorkeursterm (Term) | **actueel** | Herken als primaire entiteit. |
-| *Omschrijving na spatie* | Definitie in één zin | meest recente berichten … | Voeg als context toe. |
-| **Vetgedrukte term** *zie: Synoniem* | Verwijzing naar canonieke term | **afzender** zie: zender | Normaliseer naar *zender*. |
-| **ACRONIEM** *voluit-schrijfwijze* | Afkorting met volledige naam | **AGB** Algemeen GegevensBeheer | Bewaar afkorting en langschrift als equivalenten. |
-
-> Voorbeeldregel uit het document
-> 
-
-> **actuele toewijzing** toewijzing die op of na de huidige datum geldig is of waarvan de ingangsdatum in de toekomst ligt
-> 
-
-### **2. Werkproces voor jou als AI-agent**
-
-1. **Entiteit-herkenning**
-    - Scan tekst op **vetgedrukte strings** (hoofd- en kleine letters) als exacte matches.
-    - Converteer regels met *zie:* onmiddellijk naar de verwijzende voorkeursterm.
-2. **Semantische verrijking**
-    - Voeg de gehele definitie toe aan jouw redeneerlus.
-    - Gebruik de definitie om contextgevoelige bewerkingen (bijv. data-integratie, query-expansie) te verfijnen.
-3. **Kwaliteitsbewaking**
-    - Onbekende term? Markeer als **UNDEFINED_TERM** en vraag of leer een definitie voordat je conclusies trekt.
-    - Conflicterende definities? Hanteer de bron met het **meest recente publicatiejaar** of de **hoogste juridische status**.
-4. **Versiebeheer & feedback**
-    - Controleer bij elk gebruik de Versie-ID en Wijzigingsdatum van deze lijst om veroudering te voorkomen.
-    - Nieuwe of gewijzigde termen registreer je in *candidate_terms.json* voor curator-review.
-
-### **3. Spelregels**
-
-- **Neutraliteit**: Zie elke definitie als leidend, maar wees bewust van organisatorische varianten.
-- **Bronvermelding**: Citeer altijd titel wanneer je een term uitlegt in output.
-- **Privacy-bewust**: Deze lijst bevat geen persoonsgegevens. Behandel verwijzingen naar wet- en regelgeving conform AVG.
-
-Door deze richtlijnen te volgen bouw je een solide, reproduceerbare semantische basis voor alle AI-taken binnen het sociaal-domein.
+Begrippen staan op alfabet en kunnen worden gezocht via de zoekbalk bovenin het scherm
 
 ## **Begrippenlijst**
-
-**Begrippenlijst**
 
 **aanbieders van zorg en ondersteuning** zie: zorgaanbieders
 
@@ -93,7 +57,7 @@ Door deze richtlijnen te volgen bouw je een solide, reproduceerbare semantische 
 
 **beleidsvrijheid** vrijheid in de keuzes die gemeenten maken in de uitvoering van de Wlz, Wmo en Jeugdwet en in de inrichting van de bijbehorende informatievoorziening; gebruik van de iWlz is wettelijk voorgeschreven, gebruik van de iWmo en de iJw niet, maar wordt aanbevolen door de VNG.
 
-**Beoordelen** is ****een van de vier deelprocessen uit het primair proces van Jeugdhulp en de WMO. Op het moment dat de gemeente een Verzoek om toewijzing of Verzoek om wijziging ontvangt van de aanbieder gaat de gemeente dit beoordelen. Afhankelijk van de beoordeling van het verzoek kan dit leiden tot een antwoordbericht of een toewijzingsbericht, of een antwoordbericht en een toewijzingsbericht.
+**Beoordelen** is een van de vier deelprocessen uit het primair proces van Jeugdhulp en de WMO. Op het moment dat de gemeente een Verzoek om toewijzing of Verzoek om wijziging ontvangt van de aanbieder gaat de gemeente dit beoordelen. Afhankelijk van de beoordeling van het verzoek kan dit leiden tot een antwoordbericht of een toewijzingsbericht, of een antwoordbericht en een toewijzingsbericht.
 
 De gemeente verstuurt een antwoordbericht indien er onderzoek nodig is alvorens het verzoek beoordeeld kan worden of om het verzoek af te wijzen indien het verzoek niet akkoord is. Bij een Verzoek om wijziging wordt door de aanbieder een samenhangend geheel aan toewijzingen aangevraagd die de volledige gewenste situatie weergeeft. De gemeente beoordeelt het verzoek dan ook als geheel en geeft dus altijd voor het gehele verzoek 1 reactie (antwoordbericht of toewijzingbericht). Het verzoek wordt dus in zijn geheel afgewezen of akkoord bevonden. Bij een Verzoek om toewijzing worden door de aanbieder een of meer verzoeken gedaan voor producten. De gemeente beoordeelt ieder van die verzoeken afzonderlijk. De gemeente stuurt dan ook per verzoek een reactie (antwoordbericht of toewijzingbericht) of het betreffende product afgewezen of akkoord bevonden wordt.
 
@@ -115,7 +79,7 @@ De gemeente verstuurt een antwoordbericht indien er onderzoek nodig is alvorens 
 
 **berichtuitwisseling** zie: berichtenverkeer.
 
-**beschermd wonen** is ****wonen in een accommodatie van een instelling met veel toezicht en begeleiding, soms 24 uur per dag, gericht op het bevorderen van zelfredzaamheid en participatie, het psychisch en psychosociaal functioneren, stabilisatie van een psychiatrisch ziektebeeld, het voorkomen van verwaarlozing of maatschappelijke overlast of het afwenden van gevaar voor de cliënt of anderen, voor personen met psychische of psychosociale problemen die niet op eigen kracht of met hulp van anderen zelfstandig of begeleid kunnen wonen; inkoop en toegang worden geregeld door de centrumgemeenten, in 2020 gaat het budget gefaseerd over naar alle gemeenten.
+**beschermd wonen** is wonen in een accommodatie van een instelling met veel toezicht en begeleiding, soms 24 uur per dag, gericht op het bevorderen van zelfredzaamheid en participatie, het psychisch en psychosociaal functioneren, stabilisatie van een psychiatrisch ziektebeeld, het voorkomen van verwaarlozing of maatschappelijke overlast of het afwenden van gevaar voor de cliënt of anderen, voor personen met psychische of psychosociale problemen die niet op eigen kracht of met hulp van anderen zelfstandig of begeleid kunnen wonen; inkoop en toegang worden geregeld door de centrumgemeenten, in 2020 gaat het budget gefaseerd over naar alle gemeenten.
 
 **Beschikking** besluit van een bestuursorgaan van de overheid gericht op een bepaalde persoon of rechtspersoon, zoals besluiten van de gemeente waarin staat of een persoon recht heeft op Wmo-ondersteuning of jeugdhulp en wanneer dat het geval is, vermeld staat hoeveel ondersteuning deze persoon krijgt en voor welke periode.
 
@@ -205,7 +169,7 @@ beperkingen weergeven van de toegestane waarden van een rubriek; constraints zij
 
 **gebruikelijke zorg** vanuit de Wmo 2015 wordt gesproken over gebruikelijke hulp en dan gaat het om zorg die naar algemeen aanvaarde opvattingen in redelijkheid mag worden verwacht van de echtgenoot, ouders, inwonende kinderen of andere huisgenotenvan iemand die problemen heeft in zijn zelfredzaamheid; zie: gebruikelijke hulp
 
-**Gecertificeerde instelling (GI)** dit ****is een rechtspersoon die een kinderbeschermingsmaatregel of jeugdreclassering uitvoert. Deze instellingen moeten in het bezit zijn van een (voorlopig) certificaat. Als de rechter beslist dat er een kinderbeschermingsmaatregel komt, zorgt een gecertificeerde instelling (GI) voor de uitvoering daarvan. Er bestaan verschillende gecertificeerde instellingen, met ieder een eigen naam. Bij een ondertoezichtstelling (OTS) komt er een gezinsvoogd die samen met het gezin een plan maakt.
+**Gecertificeerde instelling (GI)** dit is een rechtspersoon die een kinderbeschermingsmaatregel of jeugdreclassering uitvoert. Deze instellingen moeten in het bezit zijn van een (voorlopig) certificaat. Als de rechter beslist dat er een kinderbeschermingsmaatregel komt, zorgt een gecertificeerde instelling (GI) voor de uitvoering daarvan. Er bestaan verschillende gecertificeerde instellingen, met ieder een eigen naam. Bij een ondertoezichtstelling (OTS) komt er een gezinsvoogd die samen met het gezin een plan maakt.
 
 **geestelijke gezondheidszorg** ggz; deelgebied binnen de gezondheidszorg dat behandeling, begeleiding en verpleging en verzorging biedt aan mensen met psychische problemen, zowel met psychosociale problemen als met psychische stoornissen; biedt tevens preventie.
 
