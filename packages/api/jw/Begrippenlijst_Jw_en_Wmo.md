@@ -15,7 +15,7 @@ Deze begrippenlijst is gebaseerd op de begrippenlijst van het Zorginstituut, maa
 
 Begrippen staan op alfabet en kunnen worden gezocht via de zoekbalk bovenin het scherm
 
-## **Begrippenlijst**
+## Begrippen 
 
 **aanbieders van zorg en ondersteuning** zie: zorgaanbieders
 
