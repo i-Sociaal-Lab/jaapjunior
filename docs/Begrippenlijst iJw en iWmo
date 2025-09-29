@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css">
+  <style>main{max-width:900px;margin:3rem auto;padding:0 1rem}</style>
+</head>
+<body>
+<main id="app">Laden…</main>
+
+<!-- Marked (MD → HTML) + DOMPurify (veilige HTML) -->
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/dompurify/dist/purify.min.js"></script>
+<script>
+  // PAD NAAR JE BRON: kies één van beide varianten:
+  // Rechtstreeks uit de repo:
+  // const RAW_URL = "https://raw.githubusercontent.com/<user>/<repo>/<branch>/<pad/naar/mijn-document>.md";
+
+  fetch(RAW_URL)
+    .then(r => r.text())
+    .then(md => {
+      const html = DOMPurify.sanitize(marked.parse(md, {mangle:false, headerIds:false}));
+      document.getElementById("app").innerHTML = html;
+    })
+    .catch(e => {
+      document.getElementById("app").textContent = "Kon document niet laden.";
+      console.error(e);
+    });
+</script>
+</body>
+</html>
