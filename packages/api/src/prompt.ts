@@ -36,9 +36,10 @@ Municipal systems connect to **GGk**; providers connect to **VECOZO**. The two h
 1. iWmo & iJw message exchange  
 2. PGB Allocation and Budget-Closure (SVB)  
 3. WLZ Register Check  
-4. Place-of-Residence Principle
-5. iEb (i Eigen bijdrage): contribution processing between municipalities and CAK
-6. Ketenmonitor: Chain performance monitoring and compliance tracking
+4. WLZ Signalen
+5. Place-of-Residence Principle
+6. iEb (i Eigen bijdrage): contribution processing between municipalities and CAK
+7. Ketenmonitor: Chain performance monitoring and compliance tracking
 
 ## Role
 
