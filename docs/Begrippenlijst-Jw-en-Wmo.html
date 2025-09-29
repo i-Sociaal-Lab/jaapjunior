@@ -8,25 +8,38 @@
   <style>main{max-width:900px;margin:3rem auto;padding:0 1rem}</style>
 </head>
 <body>
+<header>
+  <input type="search" id="searchBox" placeholder="Zoeken in dit document…" style="width:100%;padding:0.5rem;margin-bottom:1rem;">
+</header>
+
 <main id="app">Laden…</main>
 
-<!-- Marked (MD → HTML) + DOMPurify (veilige HTML) -->
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/dompurify/dist/purify.min.js"></script>
 <script>
-  // PAD NAAR JE BRON: kies één van beide varianten:
-  // Rechtstreeks uit de repo:
-  // const RAW_URL = "https://raw.githubusercontent.com/<user>/<repo>/<branch>/<pad/naar/mijn-document>.md";
-const RAW_URL = "https://raw.githubusercontent.com/i-Sociaal-Lab/jaapjunior/main/packages/api/jw/Begrippenlijst_Jw_en_Wmo.md";
+  const RAW_URL = "https://raw.githubusercontent.com/i-Sociaal-Lab/jaapjunior/main/packages/api/jw/Begrippenlijst_Jw_en_Wmo.md";
+
   fetch(RAW_URL)
     .then(r => r.text())
     .then(md => {
+      // Render de MD naar HTML
       const html = DOMPurify.sanitize(marked.parse(md, {mangle:false, headerIds:false}));
       document.getElementById("app").innerHTML = html;
-    })
-    .catch(e => {
-      document.getElementById("app").textContent = "Kon document niet laden.";
-      console.error(e);
+
+      // Zoekfunctie toevoegen
+      const searchBox = document.getElementById('searchBox');
+      searchBox.addEventListener('input', () => {
+        const q = searchBox.value.toLowerCase();
+        const container = document.getElementById('app');
+        // highlight match (optioneel) of scrollen naar match
+        [...container.querySelectorAll('p,li,td')].forEach(el => {
+          if (!q) {
+            el.style.display = '';
+          } else {
+            el.style.display = el.textContent.toLowerCase().includes(q) ? '' : 'none';
+          }
+        });
+      });
     });
 </script>
 </body>
