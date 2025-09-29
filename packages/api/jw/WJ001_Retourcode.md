@@ -22,7 +22,7 @@ Melding in een retourbericht. Het betreft een code die in een retourbericht het 
 | 9019 | Het regiebericht kan niet gekoppeld worden aan een toewijzing. | TR019 |
 | 9056 | Identificatie moet per berichtsoort uniek zijn voor de verzendende partij. | TR056 |
 | 9063 | Het bericht kan niet verwerkt worden omdat geen eerder bericht ontvangen is. | TR063 |
-| 9069 | Er is geen actueel startbericht met dezelfde sleutel. | TR069 |
+| 9069 | Er is geen actueel startbericht met dezelfde sleutel. | TR382 |
 | 9071 | Het eerdere startbericht kan niet verwijderd worden omdat de zorg al beëindigd is. | TR071 |
 | 9074 | Er is al een eerder bericht ontvangen met dezelfde sleutel. | TR074 |
 | 9307 | Begindatum prestatie ligt niet tussen de ingangsdatum en einddatum toewijzing | TR307 |
