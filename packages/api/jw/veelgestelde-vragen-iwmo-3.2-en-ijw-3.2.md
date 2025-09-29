@@ -89,7 +89,7 @@ Op basis van een generieke toewijzing kan de aanbieder meerdere zorgtrajecten st
 
 Een Verzoek om Toewijzing (VOT) moet gebruikt worden wanneer de cliënt zich bij de aanbieder meldt met een wettelijke verwijzing of met een open beschikking.
 
-Een Verzoek om Wijziging (VOW) moet gebruikt worden indien er sprake is een gewijzigde zorgsituatie bij een al lopende zorglevering, waardoor aanpassing van de actuele toewijzingen gewenst is.
+Een Verzoek om Wijziging (VOW) moet gebruikt worden indien er sprake is van een gewijzigde zorgsituatie bij een al lopende zorglevering, waardoor aanpassing van de actuele toewijzing(en) gewenst is (en er geen sprake is van een nieuwe wettelijke verwijzing). Daarnaast moeten gemeente en aanbieder afgesproken hebben dat de aanbieder een rol heeft in het doorgeven van de wijziging.
 
 Om de juiste afweging te maken welk bericht gebruikt moet worden, is een stroomschema opgesteld: ‘Wanneer wordt VOT of VOW gebruikt?’. Dit schema is als [infographic](https://www.istandaarden.nl/iwmo/ondersteuning-bij-de-releases/vow-informatiepunt)te vinden op de ondersteuningspagina’s voor release 3.2.
 
@@ -461,6 +461,7 @@ Via de validatiemodule op istandaarden.nl kunt u de berichten valideren. De beri
 Via de Testvoorziening iStandaarden (TiS) van Zorginstituut Nederland kunnen softwareleveranciers hun producten testen in de rol van elke partij die deelneemt aan het iStandaarden-berichtenverkeer, en zo nodig verbeteren.
 
 Voor meer informatie of het aanvragen van een account kunt u contact opnemen met Zorginstituut Nederland (<info@istandaarden.nl>).
+
 
 
 
