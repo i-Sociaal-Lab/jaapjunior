@@ -17,8 +17,7 @@
   // PAD NAAR JE BRON: kies één van beide varianten:
   // Rechtstreeks uit de repo:
   // const RAW_URL = "https://raw.githubusercontent.com/<user>/<repo>/<branch>/<pad/naar/mijn-document>.md";
-const RAW_URL = ""https://raw.githubusercontent.com/i-Sociaal-Lab/jaapjunior/main/packages/api/jw/Begrippenlijst_Jw_en_Wmo.md""
-
+const RAW_URL = "https://raw.githubusercontent.com/i-Sociaal-Lab/jaapjunior/main/packages/api/jw/Begrippenlijst_Jw_en_Wmo.md";
   fetch(RAW_URL)
     .then(r => r.text())
     .then(md => {
