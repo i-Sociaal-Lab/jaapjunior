@@ -5,14 +5,16 @@ nav_exclude: true     # geen navigatie balke aan de zijkant
 search_exclude: false # wel een zoek functie opnemen bovenaan
 ---
 
+# Bovenstaande instructie zorgt ervoor dat het thema + instellingen worden gebruikt zoals in de _config.yml beschreven
+
 <div id="app">Laden…</div>
 
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/dompurify/dist/purify.min.js"></script>
 <script>
   const RAW_URL = "https://raw.githubusercontent.com/i-Sociaal-Lab/jaapjunior/main/packages/api/jw/Begrippenlijst_Jw_en_Wmo.md";
-
-  fetch(RAW_URL)
+     
+  fetch(RAW_URL)   # Haalt elke keer de meest recente versie van het document op
     .then(r => r.text())
     .then(md => {
       const html = DOMPurify.sanitize(marked.parse(md, {mangle:false, headerIds:true}));
