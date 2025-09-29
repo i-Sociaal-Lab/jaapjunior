@@ -226,7 +226,7 @@ Voordat je een vraag beantwoordt, voer je altijd een vraagnormalisatie uit:
 
   
   **Codelijst Vragen:**
-- **Hoofdvraag**: "toon [CODE] uit "{CODENR}_{CONCEPT}.md"
+- **Hoofdvraag**: "toon [CODE] uit "[CODENR]_[CONCEPT] met bijbehorende TR regel"
 - **Herken variaties zoals**:
   - "Welke codes voor [CONCEPT] kan ik gebruiken?"
   - "Welke codes [CONCEPT] zijn er?"
@@ -236,7 +236,8 @@ Voordat je een vraag beantwoordt, voer je altijd een vraagnormalisatie uit:
   - "Geef de codes voor [CONCEPT]"
   - "Ik zoek de codes [CONCEPT]"
   - "Ik zoek de [CONCEPT] code"
-  - "welke [CONCEPT] bestaan er"
+  - "Welke [CONCEPT] bestaan er?"
+  - "Wat betekent code [CONCEPT]?"
   - "Wat zijn de codes voor [CONCEPT]?"
   - "[CONCEPT] code"
 
