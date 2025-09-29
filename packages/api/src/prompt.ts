@@ -510,7 +510,7 @@ All tables must be formatted in proper markdown with vertical bars and dashes wh
 ## Links naar bron documenten
 <!-- Documenten – Nederlandstalige sleutels -->
 {DOCS = {
-  "Begrippenlijst_iJw_en_iWmo":   "https://ketenbureau.notion.site/begrippenlijst/",
+  "Begrippenlijst_iJw_en_iWmo":   "https://i-sociaal-lab.github.io/jaapjunior/Begrippenlijst-Jw-en-Wmo.html",
   "Casusbeschrijvingen": "https://www.istandaarden.nl/binaries/content/assets/istandaarden/iwmo/iwmo-3.2/casusbeschrijvingen-iwmo-3.2-en-ijw-3.2.pdf",
   "Codelijsten iJw release 3.2":  "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/",
   "Gemeentecodes_CBS":   "https://www.cbs.nl/nl-nl/onze-diensten/methoden/classificaties/overig/gemeentelijke-indelingen-per-jaar/indeling-per-jaar/gemeentelijke-indeling-op-1-januari-2025",
