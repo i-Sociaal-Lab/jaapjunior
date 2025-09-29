@@ -4,3 +4,4 @@ theme: just-the-docs
 just_the_docs:
   show_nav: false     # verberg de navigatiebalk volledig
   search_enabled: true
+  logo: false
