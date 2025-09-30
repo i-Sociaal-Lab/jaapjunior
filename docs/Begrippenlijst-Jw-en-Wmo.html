@@ -5,18 +5,36 @@ nav_exclude: true
 search_exclude: false
 ---
 
+<style>
+  .side-bar{display:none!important;}
+  .main{margin-left:0!important;}
+</style>
+
 <div id="app">Laden…</div>
+<pre id="err" style="display:none;background:#fee;padding:.75rem;border-radius:.5rem;overflow:auto"></pre>
 
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/dompurify/dist/purify.min.js"></script>
 <script>
-  const RAW_URL = "https://raw.githubusercontent.com/i-Sociaal-Lab/jaapjunior/main/packages/api/jw/Begrippenlijst_Jw_en_Wmo.md";
-  const BUST = `?v=${Date.now()}`;
-  fetch(RAW_URL + BUST)
-    .then(r => r.text())
-    .then(md => {
-      const html = DOMPurify.sanitize(marked.parse(md, {mangle:false, headerIds:true}));
-      document.getElementById('app').innerHTML = html;
-    })
-    .catch(e => { document.getElementById('app').textContent = "Kon document niet laden."; console.error(e); });
+  document.addEventListener('DOMContentLoaded', () => {
+    const RAW_URL = "https://raw.githubusercontent.com/i-Sociaal-Lab/jaapjunior/main/packages/api/jw/Begrippenlijst_Jw_en_Wmo.md";
+    const BUST = `?v=${Date.now()}`;
+
+    fetch(RAW_URL + BUST, { cache: "no-store" })
+      .then(r => {
+        if (!r.ok) throw new Error(`HTTP ${r.status} ${r.statusText}`);
+        return r.text();
+      })
+      .then(md => {
+        const html = DOMPurify.sanitize(marked.parse(md, { mangle:false, headerIds:true }));
+        document.getElementById('app').innerHTML = html;
+      })
+      .catch(e => {
+        document.getElementById('app').textContent = "Kon document niet laden.";
+        const box = document.getElementById('err');
+        box.style.display = "block";
+        box.textContent = String(e);
+        console.error(e);
+      });
+  });
 </script>
