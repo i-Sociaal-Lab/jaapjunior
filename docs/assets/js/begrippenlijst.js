@@ -2,68 +2,79 @@ document.addEventListener("DOMContentLoaded", () => {
   console.log("📄 Begrippenlijst script gestart");
 
   const RAW_URL = "https://raw.githubusercontent.com/i-Sociaal-Lab/jaapjunior/main/packages/api/jw/Begrippenlijst_Jw_en_Wmo.md";
-  const BUST = "?v=" + Date.now();
-
-  const app = document.getElementById("app");
+  const app   = document.getElementById("app");
   const input = document.getElementById("q");
 
-  fetch(RAW_URL + BUST, { cache: "no-store" })
+  if (!app)  { console.error("❌ #app niet gevonden"); return; }
+  if (!input){ console.error("❌ #q (zoekveld) niet gevonden"); return; }
+
+  const bust = "?v=" + Date.now();
+
+  fetch(RAW_URL + bust, { cache: "no-store" })
     .then(r => {
       console.log("Fetch status:", r.status, r.statusText);
       if (!r.ok) throw new Error("HTTP " + r.status + " " + r.statusText);
       return r.text();
     })
     .then(md => {
-      // Markdown -> HTML
+      // Markdown → HTML (veilig)
       const html = DOMPurify.sanitize(marked.parse(md, { mangle:false, headerIds:true }));
-      app.innerHTML = html;
 
-      // 1) groepeer alle inhoud per H3 (kop = begrip)
-      const sections = [];
-      let current = null;
+      // Stop de HTML eerst in een tijdelijke container
+      const tmp = document.createElement("div");
+      tmp.innerHTML = html;
 
-      // we lopen over alle directe kinderen van #app
-      const kids = Array.from(app.childNodes);
-      kids.forEach(node => {
+      // Bouw een nieuw documentfragment met sections per H3
+      const frag = document.createDocumentFragment();
+      let currentSection = null;
+
+      // We lopen over de kinderen van tmp en verplaatsen ze naar frag
+      Array.from(tmp.childNodes).forEach(node => {
         if (node.nodeType === Node.ELEMENT_NODE && node.tagName === "H3") {
-          // start nieuwe section
-          current = document.createElement("div");
-          current.className = "glossary-section";
-          current.appendChild(node); // h3 zelf erin
-          app.appendChild(current);  // append aan eind; we gaan daarna rest verplaatsen
-          sections.push(current);
-        } else if (current) {
-          // hang deze node bij de lopende section
-          current.appendChild(node);
+          currentSection = document.createElement("section");
+          currentSection.className = "glossary-section";
+          currentSection.appendChild(node);      // H3 in de nieuwe section
+          frag.appendChild(currentSection);      // section in fragment
+        } else {
+          // Alles na een H3 hoort bij die section; als er nog geen H3 was, maken we er één "algemeen"
+          if (!currentSection) {
+            currentSection = document.createElement("section");
+            currentSection.className = "glossary-section";
+            frag.appendChild(currentSection);
+          }
+          currentSection.appendChild(node);
         }
       });
 
-      // NB: als er geen H3's zijn, is er niets te groeperen en zoeken we in hele app
-      const searchable = sections.length ? sections : [app];
+      // Vervang de inhoud van #app schoon
+      app.innerHTML = "";
+      app.appendChild(frag);
 
-      // 2) lokale zoekfunctie (alleen in deze pagina)
+      // Zoekfunctie: filter alleen de sections (H3 + bijbehorende tekst)
+      const sections = Array.from(app.querySelectorAll(".glossary-section"));
+
       const norm = s => (s || "").toLowerCase();
+      let t = null;
 
-      const handleSearch = () => {
+      const doFilter = () => {
         const q = norm(input.value);
         if (!q) {
-          searchable.forEach(sec => sec.style.display = "");
+          sections.forEach(sec => sec.style.display = "");
           return;
         }
-        searchable.forEach(sec => {
-          const hay = norm(sec.textContent);
-          sec.style.display = hay.includes(q) ? "" : "none";
+        sections.forEach(sec => {
+          // Zoek op de totale tekst van de section (kop + inhoud)
+          const hit = norm(sec.textContent).includes(q);
+          sec.style.display = hit ? "" : "none";
         });
       };
 
-      // kleine debounce zodat we niet op elke toetsaanslag alles herrekenen
-      let t;
       input.addEventListener("input", () => {
         clearTimeout(t);
-        t = setTimeout(handleSearch, 120);
+        t = setTimeout(doFilter, 120); // kleine debounce
       });
 
-      console.log("✅ Begrippenlijst gerenderd (sections:", searchable.length, ")");
+      console.log("✅ Begrippenlijst gerenderd — sections:", sections.length);
     })
     .catch(e => {
       app.textContent = "Kon document niet laden.";
