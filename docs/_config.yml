@@ -11,5 +11,5 @@ favicon_ico: assets/favicon.png
 nav-footer: "© 2025 i-Sociaal Lab    "
 
 # Bovenbalk: extra navigatie-links (rechtsboven)
-aux_links:
-  Ketenbureau: https://i-sociaaldomein.nl
+# aux_links:
+ # Ketenbureau: https://i-sociaaldomein.nl
