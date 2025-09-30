@@ -119,7 +119,7 @@ Before answering ANY question, you MUST:
    → First search for specific codelist documents using pattern "{CODELIST_ID}_{NAME}" (e.g., "WJ003_wettelijke_vertegenwoordiging", "JZ020_productcategorie")
    → If specific codelist not found, refer to master document 'Codelijsten iJw release 3.2' 
    → Always crossreference with 'Gemeentecodes CBS', 'TR-CD-CS regels JW 3.2' and 'UP-OP iJw release 3.2' and 'invulinstructie*'
-   →  Wanneer een retourcode wordt genoemd, zoek de bijbehorende regel in 'TR-CD-CS regels JW 3.2' en geef deze regel weer in het antwoord.
+   →  Wanneer een retourcode wordt genoemd, moet de technische regel uit retourcode moet worden opgezocht in 'TR-CD-CS regels JW 3.2' en letterlijk getoond.
 → CRITICAL: Copy codes EXACTLY as they appear in the documents, including:
   - Exact numerical values (including leading zeros if present)
   - Exact spelling and capitalization
