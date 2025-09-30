@@ -1,8 +1,7 @@
-# _config.yml kies hier je thema voor de lay-out van webpages
-remote_theme: just-the-docs/just-the-docs
-plugins: [jekyll-remote-theme]
-title: ""           # zodat er geen repo-naam bovenin komt
+title: ""
 url: "https://i-sociaal-lab.github.io"
 baseurl: "/jaapjunior"
+remote_theme: just-the-docs/just-the-docs
+plugins: [jekyll-remote-theme]
 just_the_docs:
   search_enabled: true
