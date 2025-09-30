@@ -5,31 +5,18 @@ nav_exclude: true
 search_exclude: false
 ---
 
-<!-- zoekveld komt al van Just the Docs bovenaan -->
-<!-- hier alleen je eigen container en script -->
-<main id="app" style="max-width:900px;margin:3rem auto;padding:0 1rem;">
-  <p>Laden…</p>
-</main>
+<div id="app">Laden…</div>
 
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/dompurify/dist/purify.min.js"></script>
 <script>
-  // Altijd live uit je repo
   const RAW_URL = "https://raw.githubusercontent.com/i-Sociaal-Lab/jaapjunior/main/packages/api/jw/Begrippenlijst_Jw_en_Wmo.md";
-  const CACHE_BUSTER = `?v=${Date.now()}`; // gegarandeerd laatste versie
-
-  fetch(RAW_URL + CACHE_BUSTER)
-    .then(r => {
-      if (!r.ok) throw new Error(r.statusText);
-      return r.text();
-    })
+  const BUST = `?v=${Date.now()}`;
+  fetch(RAW_URL + BUST)
+    .then(r => r.text())
     .then(md => {
-      // Markdown → HTML
-      const html = DOMPurify.sanitize(marked.parse(md, { mangle:false, headerIds:true }));
-      document.getElementById("app").innerHTML = html;
+      const html = DOMPurify.sanitize(marked.parse(md, {mangle:false, headerIds:true}));
+      document.getElementById('app').innerHTML = html;
     })
-    .catch(e => {
-      document.getElementById("app").textContent = "Kon document niet laden.";
-      console.error(e);
-    });
+    .catch(e => { document.getElementById('app').textContent = "Kon document niet laden."; console.error(e); });
 </script>
