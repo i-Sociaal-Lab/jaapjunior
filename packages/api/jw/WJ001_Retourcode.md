@@ -1,7 +1,7 @@
 # WJ001: Retourcode
 
 **Definitie:**  
-Melding in een retourbericht. Het betreft een code die in een retourbericht het resultaat van de beoordeling van een (deel van een) ontvangen bericht weergeeft.
+Melding in een retourbericht. Het betreft een code die in een retourbericht het resultaat van de beoordeling van een (deel van een) ontvangen bericht weergeeft. Let op, indien een heenbericht volledig technisch wordt goedgekeurd, wordt alleen de header opgenomen in het retourbericht, zonder retourcode.
 
 ---
 
