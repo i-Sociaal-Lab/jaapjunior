@@ -1,25 +1,10 @@
-title: ""  # geen titel in header laten staan
+title: ""
 url: "https://i-sociaal-lab.github.io"
 baseurl: "/jaapjunior"
 
-remote_theme: "mmistakes/minimal-mistakes"
+remote_theme: just-the-docs/just-the-docs
 plugins:
   - jekyll-remote-theme
-  - jekyll-include-cache
 
-# Globale MM-instellingen
-minimal_mistakes_skin: "default"  # of "air", "dirt", etc.
-search: true                      # client-side Lunr search
-locale: nl
-
-# Navigatie uit (geen global nav)
-include: [".htaccess"]  # standaard, kan blijven leeg
-defaults:
-  # Standaard geen sidebar
-  - scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: single
-      sidebar: false
-      toc: false
+just_the_docs:
+  search_enabled: true
