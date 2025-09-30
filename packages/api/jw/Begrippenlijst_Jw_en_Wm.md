@@ -16,17 +16,22 @@ Deze begrippenlijst is gebaseerd op de begrippenlijst van het Zorginstituut, maa
 
 Begrippen staan op alfabet en kunnen worden gezocht via de zoekbalk bovenin het scherm
 
-### Begrippen 
+##Begrippen 
 
-**aanbieders van zorg en ondersteuning** zie: zorgaanbieders
+###aanbieders van zorg en ondersteuning
+zie: zorgaanbieders
 
-**actueel** meest recente berichten in het berichtenverkeer die bepalen wat de situatie van dat moment is
+###actueel
+meest recente berichten in het berichtenverkeer die bepalen wat de situatie van dat moment is
 
-**actuele toewijzing** toewijzing die op of na de huidige datum geldig is of waarvan de ingangsdatum in de toekomst ligt
+###actuele toewijzing
+toewijzing die op of na de huidige datum geldig is of waarvan de ingangsdatum in de toekomst ligt
 
-**acute zorg** zie: spoedzorg
+###acute zorg
+zie: spoedzorg
 
-**afzender** zie: zender
+**afzender
+zie: zender
 
 **AGB** afkorting van Algemeen GegevensBeheer, uitgevoerd door Vektis
 
