@@ -6,10 +6,17 @@ search_exclude: false
 ---
 
 <style>
-  .side-bar { display:none !important; }
-  .main { margin-left:0 !important; }
+  .side-bar{display:none!important;}
+  .main{margin-left:0!important;}
+  /* verberg globale JTD-zoekbalk */
+  .main-header .search{display:none!important;}
 </style>
 
+<div id="page-search" style="max-width:720px;margin:1rem 0;">
+  <input id="q" type="search" placeholder="Zoek in deze pagina…" style="width:100%;padding:.5rem;">
+</div>
+
+<div id="app">Laden…</div>
 <div id="app">Laden…</div>
 
 <!-- externe libraries -->
