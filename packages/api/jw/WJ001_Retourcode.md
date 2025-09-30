@@ -3,7 +3,6 @@
 **Definitie:**  
 Melding in een retourbericht. Het betreft een code die in een retourbericht het resultaat van de beoordeling van een (deel van een) ontvangen bericht weergeeft.
 
-- Zoek de regel die hoort bij de retourcode op in 'TR-CD-CS regels JW 3.2' en toon de tekst van de regel in het antwoord.
 ---
 
 ## Codelijst
