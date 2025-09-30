@@ -24,6 +24,7 @@ search_exclude: false
 
 <!-- De begrippen, build-time ingevoegd door de Action -->
 {% include begrippen.md %}
-
+<!-- Hier tonen we matches; je originele content blijft intact -->
+<div id="glossary-results" style="display:none"></div>
 <!-- Laad de lokale filterlogica (extern JS; geen Liquid/Markdown interferentie) -->
 <script src="{{ '/assets/js/glossary-local-search.js' | relative_url }}"></script>
