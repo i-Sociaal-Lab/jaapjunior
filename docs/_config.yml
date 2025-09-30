@@ -4,12 +4,12 @@ title: ""                 # leeg = geen titel in header
 # baseurl: "/jaapjunior"    # belangrijk voor assets/links
 
 remote_theme: just-the-docs/just-the-docs
-plugins:
-  - jekyll-remote-theme
 
-just_the_docs:
-  search_enabled: true
-  show_nav: false
+# Zoekbalk in de topbar:
+search_enabled: true
+
+# Navigatie is niet zichtbaar 
+show_nav: false
 
 # Bovenbalk: extra navigatie-links (rechtsboven)
 # aux_links:
