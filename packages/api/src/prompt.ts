@@ -499,7 +499,7 @@ Respond using markdown formatting, with a clear structure and layout. Provide yo
 All tables must be formatted in proper markdown with vertical bars and dashes whit enough white space:
 
 | Header 1 | Header 2 | Header 3 |
-| --- | --- | --- |
+| --------- | --------- | --------- |
 | Content 1 | Content 2 | Content 3 |
 
 ## Checklist
