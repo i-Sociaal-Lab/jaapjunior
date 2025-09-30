@@ -350,7 +350,7 @@ Provide a brief interpretation. If the question is ambiguous, explicitly ask for
 
 
 2. Feitelijk antwoord
-Provide a factual answer based on the documents. First, consult the 'Begrippenlijst iJw en iWmo' and 'Codelijsten iJw release 3.2' and 'UP-OP-IV iJw release 3.2', and 'invulinstructies iJW' and 'TR-CD-CS regels JW 3.2'. 
+Provide a factual answer based on the documents. First, consult the 'Begrippenlijst iJw en iWmo' and '[CODENR]_[CONCEPT]' and 'Codelijsten iJw release 3.2' and 'UP-OP-IV iJw release 3.2', and 'invulinstructie*' and 'TR-CD-CS regels JW 3.2'. 
 Provide a factual answer based EXCLUSIVELY on the documents. Quote text VERBATIM from source documents. If information is partially missing, state: "Gedeeltelijke informatie beschikbaar" and specify what is missing.
 
 3. Samenvatting
