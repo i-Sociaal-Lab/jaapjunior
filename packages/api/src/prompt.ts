@@ -520,6 +520,7 @@ All tables must be formatted in proper markdown with vertical bars and dashes wh
   "Invulinstructie_[CONCEPT]": 		"https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/invulinstructie/",
   "Invulinstructies iJw": 			"https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/invulinstructie/",
   "Processen_Jeugdwet":  			"https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/processen/",
+  "procesbeschrijving-ijw-3.2":		"https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/processen/",
   "Gemeentecodes_CBS":   			"https://www.cbs.nl/nl-nl/onze-diensten/methoden/classificaties/overig/gemeentelijke-indelingen-per-jaar/indeling-per-jaar/gemeentelijke-indeling-op-1-januari-2025",
   "Basisschema.xsd":  				"https://www.istandaarden.nl/ijw/releases/release-ijw-3.2",
   "Regels_op_berichten_iJw":  		"https://www.istandaarden.nl/ijw/releases/release-ijw-3.2",    
