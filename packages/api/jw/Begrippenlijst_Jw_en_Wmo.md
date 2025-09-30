@@ -10,12 +10,12 @@ Toelichting: Deze begrippenlijst is afgeleid van de begrippenlijst van het Zorgi
 
 Publicatiedatum: 29 september 2025
 
-### Toelichting
+**Toelichting** 
 Deze begrippenlijst is gebaseerd op de begrippenlijst van het Zorginstituut, maar dan specifiek toegespitst op de Jw en Wmo. Het Ketenbureau i-Sociaal Domein heeft vervolgens nog enkele begripen toegevoegd. 
 
 Begrippen staan op alfabet en kunnen worden gezocht via de zoekbalk bovenin het scherm
 
-## Begrippen 
+### Begrippen 
 
 **aanbieders van zorg en ondersteuning** zie: zorgaanbieders
 
