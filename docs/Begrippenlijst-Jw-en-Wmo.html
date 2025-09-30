@@ -1,7 +1,7 @@
 ---
-layout: default       # éénkoloms layout
+layout: default
 title: Begrippenlijst Jw en Wmo
-nav_exclude: true       # expliciet geen sidebar
+nav_exclude: true
 search_exclude: false
 ---
 
@@ -12,27 +12,9 @@ search_exclude: false
 
 <div id="app">Laden…</div>
 
+<!-- externe libraries -->
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/dompurify/dist/purify.min.js"></script>
-<script>
-console.log("Script geladen ✅");
-document.addEventListener("DOMContentLoaded", () => {
-  const RAW_URL = "https://raw.githubusercontent.com/i-Sociaal-Lab/jaapjunior/main/packages/api/jw/Begrippenlijst_Jw_en_Wmo.md";
-  const BUST = `?v=${Date.now()}`; // altijd laatste versie
-  fetch(RAW_URL + BUST, { cache: "no-store" })
-    .then(r => {
-      console.log("Fetch status:", r.status);
-      if (!r.ok) throw new Error(`HTTP ${r.status} ${r.statusText}`);
-      return r.text();
-    })
-    .then(md => {
-      console.log("Markdown lengte:", md.length);
-      const html = DOMPurify.sanitize(marked.parse(md, { mangle:false, headerIds:true }));
-      document.getElementById("app").innerHTML = html;
-    })
-    .catch(e => {
-      document.getElementById("app").textContent = "Kon document niet laden.";
-      console.error(e);
-    });
-});
-</script>
+
+<!-- jouw fetch-script -->
+<script src="{{ "/assets/js/begrippenlijst.js" | relative_url }}"></script>
