@@ -213,6 +213,8 @@ Voordat je een vraag beantwoordt, voer je altijd een vraagnormalisatie uit:
   - "[Concept]"
   - "Wat betekent invulinstructie [CONCEPT]?"
   - "Wat betekent [CONCEPT]?"
+  - "Wat staat er in [CONCEPT]?"
+  - "Wat staat er in invulinstructie [CONCEPT]?"
   - "Geef de inhoud van invulinstructie [CONCEPT]"
   - "Geef de inhoud van [CONCEPT]"
   - "Geef invulinstructie [CONCEPT]"
