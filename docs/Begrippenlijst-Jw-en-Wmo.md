@@ -13,8 +13,6 @@ search_exclude: false
   /* .main-header .search { display:none !important; } */
 </style>
 
-# Begrippenlijst Jw en Wmo
-
 {% comment %}
 De Action zet tijdens de build de meest recente MD in _includes/begrippen.md.
 Daardoor staat de inhoud nu "build-time" in de site en wordt die door
@@ -24,76 +22,69 @@ Just the Docs in de zoekindex opgenomen.
 
 {% raw %}
 <script>
-document.addEventListener("DOMContentLoaded", () => {
-  // 1) Elementen
-  const input = document.querySelector("#search-input");   // JTD header-zoek
-  const content = document.querySelector("#main-content") || document.querySelector(".main-content") || document.body;
+document.addEventListener('DOMContentLoaded', function () {
+  // Pak de JTD-zoekbalk en de hoofdcontent
+  const input = document.querySelector('#search-input');           // JTD header search
+  const main  = document.querySelector('#main-content main') || document.querySelector('main');
+  if (!main) return;
 
-  if (!input || !content) return;
+  // Vind alle begrippen als H3-koppen (jouw include moet ### Term gebruiken)
+  const h3s = Array.from(main.querySelectorAll('h3'));
+  if (h3s.length === 0) return; // niets te groeperen
 
-  // 2) Maak secties per H3 (begrip = <h3> ... definitie = alles erna tot volgende H3)
-  //    Als er geen H3's zijn, valt hij terug op de hele content.
-  let sections = [];
-  (function buildSections(){
-    const kids = Array.from(content.querySelectorAll("main > *"));
-    let current = null;
-    kids.forEach(node => {
-      if (node.tagName === "H3") {
-        current = document.createElement("section");
-        current.className = "glossary-section";
-        node.parentNode.insertBefore(current, node);
-        current.appendChild(node);
-        sections.push(current);
-      } else if (current) {
-        current.appendChild(node);
+  // Helper: alle nodes vanaf een H3 tot net vóór de volgende H3
+  function nodesOfSection(startH3) {
+    const nodes = [startH3];
+    let n = startH3.nextSibling;
+    while (n && !(n.nodeType === 1 && n.tagName === 'H3')) {
+      nodes.push(n);
+      n = n.nextSibling;
+    }
+    return nodes;
+  }
+
+  // Bouw een index van sections: [ { nodes: Node[], text: '...' } ]
+  const sections = h3s.map(h3 => {
+    const nodes = nodesOfSection(h3);
+    const text  = nodes.map(n => (n.textContent || '')).join(' ').toLowerCase();
+    return { nodes, text };
+  });
+
+  // Toon alles
+  function showAll() {
+    sections.forEach(s => s.nodes.forEach(n => { if (n.style) n.style.display = ''; }));
+  }
+
+  // Filter op query (in kop én definitie)
+  function filterTo(q) {
+    const qq = (q || '').trim().toLowerCase();
+    if (!qq) { showAll(); return; }
+    sections.forEach(s => {
+      const match = s.text.includes(qq);
+      s.nodes.forEach(n => { if (n.style) n.style.display = match ? '' : 'none'; });
+    });
+  }
+
+  // ENTER = filter deze pagina, ESC = reset
+  if (input) {
+    input.addEventListener('keydown', e => {
+      if (e.key === 'Enter') {
+        e.preventDefault();                // voorkom JTD-navigatie
+        filterTo(input.value);
+        const panel = document.getElementById('search-results');
+        if (panel) panel.innerHTML = '';   // resultatenpaneel leegmaken
+      } else if (e.key === 'Escape') {
+        showAll();
+        input.value = '';
+        const panel = document.getElementById('search-results');
+        if (panel) panel.innerHTML = '';
       }
     });
-    if (!sections.length) sections = [content.querySelector("main") || content];
-  })();
 
-  // 3) Filterfunctie
-  const normalize = s => (s || "").toLowerCase();
-  const showAll = () => sections.forEach(s => s.style.display = "");
-  const filterTo = q => {
-    const qn = normalize(q);
-    if (!qn) return showAll();
-    sections.forEach(sec => {
-      sec.style.display = normalize(sec.textContent).includes(qn) ? "" : "none";
+    // Als het veld leeg raakt, toon weer alles
+    input.addEventListener('input', () => {
+      if (!input.value) showAll();
     });
-  };
-
-  // 4) Enter = filter deze pagina, Esc = reset
-  input.addEventListener("keydown", e => {
-    if (e.key === "Enter") {
-      e.preventDefault();           // voorkom dat JTD naar een resultaat navigeert
-      const q = input.value.trim();
-      filterTo(q);
-      // optie: resultatenpaneel verbergen
-      const panel = document.getElementById("search-results");
-      if (panel) panel.innerHTML = "";
-    } else if (e.key === "Escape") {
-      showAll();
-      input.value = "";
-      const panel = document.getElementById("search-results");
-      if (panel) panel.innerHTML = "";
-    }
-  });
-
-  // 5) Als je het veld leegmaakt met de muis, toon weer alles
-  input.addEventListener("input", () => {
-    if (!input.value) showAll();
-  });
-
-  // 6) Kleine helperknop “Alles tonen” rechts van het zoekveld (optioneel)
-  const wrap = document.querySelector(".search-input-wrap");
-  if (wrap && !wrap.querySelector(".clear-local-filter")) {
-    const btn = document.createElement("button");
-    btn.type = "button";
-    btn.className = "clear-local-filter";
-    btn.style = "margin-left:.5rem";
-    btn.textContent = "Alles tonen";
-    btn.addEventListener("click", () => { input.value = ""; showAll(); });
-    wrap.appendChild(btn);
   }
 });
 </script>
