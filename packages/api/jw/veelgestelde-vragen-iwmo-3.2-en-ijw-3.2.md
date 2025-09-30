@@ -6,7 +6,7 @@ Het is niet mogelijk om via het berichtenverkeer van iJW/iWmo bijlagen mee te st
 
 ## Kan ik nieuwe wensen indienen ten aanzien van iWmo 3.2 en iJw 3.2?
 
-Voor alle iStandaarden (iWlz, iWmo, iJw, iPgb en iEb) is het mogelijk om nieuwe wensen in te dienen. Dit kunt u doen door een mail te sturen naar <info@istandaarden.nl>, via de link: https://www.istandaarden.nl/contact. Geeft u daarbij zo goed mogelijk aan wat het probleem is dat u opgelost wilt zien. Geef ook uw contactgegevens door, zodat wij extra uitleg bij uw wens kunnen vragen om deze goed in behandeling te nemen.
+Voor alle iStandaarden (iWlz, iWmo, iJw, iPgb en iEb) is het mogelijk om nieuwe wensen of wijzigingen in te dienen. Dit kan u doen door een mail te sturen naar <info@istandaarden.nl>, via de link: https://www.istandaarden.nl/contact. Geeft u daarbij zo goed mogelijk aan wat het probleem is dat u opgelost wilt zien. Geef ook uw contactgegevens door, zodat wij extra uitleg bij uw wens kunnen vragen om deze goed in behandeling te nemen.
 
 ## Een partij waar ik gegevens mee uitwissel houdt zich niet aan de standaarden. Wat moet ik doen?
 
@@ -461,6 +461,7 @@ Via de validatiemodule op istandaarden.nl kunt u de berichten valideren. De beri
 Via de Testvoorziening iStandaarden (TiS) van Zorginstituut Nederland kunnen softwareleveranciers hun producten testen in de rol van elke partij die deelneemt aan het iStandaarden-berichtenverkeer, en zo nodig verbeteren.
 
 Voor meer informatie of het aanvragen van een account kunt u contact opnemen met Zorginstituut Nederland (<info@istandaarden.nl>).
+
 
 
 
