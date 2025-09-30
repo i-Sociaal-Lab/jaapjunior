@@ -10,26 +10,31 @@ search_exclude: false
   .side-bar { display:none !important; }
   .main { margin-left:0 !important; }
 
-  /* verberg de globale Just-the-Docs zoekbalk */
+  /* verberg de globale Just-the-Docs zoekbalk – we gebruiken een lokale */
   .main-header .search { display:none !important; }
 
   /* optioneel: wat lucht tussen blokken */
-  .glossary-section, [data-section] { margin-bottom: 1rem; }
+  .glossary-section { margin-bottom: 1rem; }
 
-  /* resultatenvak wat extra ruimte geven */
+  /* wanneer gefilterd: verberg alleen de originele begrippen-sectie */
+  body.glossary-filtering #glossary-source { display: none !important; }
+
+  /* resultatenvak */
   #glossary-results { margin-top: 1rem; }
 </style>
 
-<!-- LOKALE ZOEK (alleen deze pagina) -->
+<!-- LOKALE ZOEKBALK (alleen deze pagina) -->
 <div id="page-search" style="max-width:720px;margin:1rem 0;">
   <input id="local-q" type="search" placeholder="Zoek in deze pagina…" style="width:100%;padding:.5rem;">
 </div>
 
-<!-- hier komen de gefilterde matches -->
+<!-- RESULTATENKADER: matches komen hier -->
 <div id="glossary-results" style="display:none"></div>
 
-<!-- De begrippen, build-time ingevoegd door de Action -->
+<!-- BRON: de build-time ingevoegde begrippen, in een duidelijke container -->
+<div id="glossary-source">
 {% include begrippen.md %}
+</div>
 
 <!-- laad het script -->
 <script src="{{ '/assets/js/glossary-local-search.js' | relative_url }}"></script>
