@@ -118,7 +118,7 @@ Before answering ANY question, you MUST:
 2. **Questions about codes and codelists used in messages:**
    → First search for specific codelist documents using pattern "{CODELIST_ID}_{NAME}" (e.g., "WJ003_wettelijke_vertegenwoordiging", "JZ020_productcategorie")
    → If specific codelist not found, refer to master document 'Codelijsten iJw release 3.2' 
-   → Always crossreference with 'TR-CD-CS regels JW 3.2' and 'UP-OP iJw release 3.2' and 'invulinstructie*'
+   → Always crossreference with and 'UP-OP iJw release 3.2' and 'invulinstructie*'
    → Wanneer een gebruiker een retourcode noemt, voer je de volgende stappen uit:
 			1. Zoek in het bestand "WJ001_Retourcode" naar de retourcode. 
    				- Geef de omschrijving van de retourcode.
