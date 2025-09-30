@@ -513,17 +513,18 @@ All tables must be formatted in proper markdown with vertical bars and dashes wh
 ## Links naar bron documenten
 <!-- Documenten – Nederlandstalige sleutels -->
 {DOCS = {
-  "Begrippenlijst_iJw_en_iWmo":   "https://i-sociaal-lab.github.io/jaapjunior/Begrippenlijst-Jw-en-Wmo.html",
-  "Casusbeschrijvingen": "https://www.istandaarden.nl/binaries/content/assets/istandaarden/iwmo/iwmo-3.2/casusbeschrijvingen-iwmo-3.2-en-ijw-3.2.pdf",
-  "Codelijsten iJw release 3.2":  "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/",
-  "[CODENR]_[CONCEPT]": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/",
-  "Invulinstructie_[CONCEPT]": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/invulinstructie/",
-  "Invulinstructies iJw": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/invulinstructie/",
-  "Gemeentecodes_CBS":   "https://www.cbs.nl/nl-nl/onze-diensten/methoden/classificaties/overig/gemeentelijke-indelingen-per-jaar/indeling-per-jaar/gemeentelijke-indeling-op-1-januari-2025",
-  "Jeugdwet":            "https://wetten.overheid.nl/BWBR0034925/2025-01-01",
-  "Basisschema.xsd":      "https://www.istandaarden.nl/ijw/releases/release-ijw-3.2",
-  "Ministeriële_Regeling": "https://zoek.officielebekendmakingen.nl/stcrt-2019-41519.html",
-  "Processen_Jeugdwet":  "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/processen/",
-  "Regeling_Jeugdwet":   "https://wetten.overheid.nl/BWBR0036007/2025-01-01",
-  "Regels_op_berichten_iJw":       "https://www.istandaarden.nl/ijw/releases/release-ijw-3.2"           
+  "Begrippenlijst_iJw_en_iWmo":   	"https://i-sociaal-lab.github.io/jaapjunior/Begrippenlijst-Jw-en-Wmo.html",
+  "Casusbeschrijvingen": 			"https://www.istandaarden.nl/binaries/content/assets/istandaarden/iwmo/iwmo-3.2/casusbeschrijvingen-iwmo-3.2-en-ijw-3.2.pdf",
+  "Codelijsten iJw release 3.2":  	"https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/",
+  "[CODENR]_[CONCEPT]": 			"https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/",
+  "Invulinstructie_[CONCEPT]": 		"https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/invulinstructie/",
+  "Invulinstructies iJw": 			"https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/invulinstructie/",
+  "Gemeentecodes_CBS":   			"https://www.cbs.nl/nl-nl/onze-diensten/methoden/classificaties/overig/gemeentelijke-indelingen-per-jaar/indeling-per-jaar/gemeentelijke-indeling-op-1-januari-2025",
+  "Basisschema.xsd":  				"https://www.istandaarden.nl/ijw/releases/release-ijw-3.2",
+  "Regels_op_berichten_iJw":  		"https://www.istandaarden.nl/ijw/releases/release-ijw-3.2"    
+  "Jeugdwet":            			"https://wetten.overheid.nl/BWBR0034925/2025-01-01",
+  "Ministeriële_Regeling": 			"https://zoek.officielebekendmakingen.nl/stcrt-2019-41519.html",
+  "Processen_Jeugdwet":  			"https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/processen/",
+  "Regeling_Jeugdwet":   			"https://wetten.overheid.nl/BWBR0036007/2025-01-01",
+       
 }}`;
