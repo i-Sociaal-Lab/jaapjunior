@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Begrippenlijst Jw en Wmo</title>
+
+  <!-- Klein, neutraal stijltje -->
+  <style>
+    :root { --max: 960px; }
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; line-height: 1.5; }
+    header, main { max-width: var(--max); margin: 1.5rem auto; padding: 0 1rem; }
+    #q { width: 100%; font-size: 1rem; padding: .6rem .75rem; border: 1px solid #ccc; border-radius: .5rem; }
+    .muted { color:#666; font-size:.9rem; }
+    .hitmark { background: #ffea88; }
+  </style>
+
+  <!-- Marked (MD→HTML) + DOMPurify (veilige HTML) -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dompurify/dist/purify.min.js"></script>
+</head>
+<body>
+
+<header>
+  <h1 style="margin:.25rem 0 1rem">Begrippenlijst Jw en Wmo</h1>
+  <input id="q" type="search" placeholder="Zoek in deze pagina…" aria-label="Zoek in deze pagina">
+  <div id="meta" class="muted" style="margin-top:.5rem"></div>
+</header>
+
+<main id="app">Laden…</main>
+
+<script>
+(function () {
+  // ✏️ VUL JOUW RAW URL IN (laat de cache-buster staan):
+  const RAW_URL = "https://raw.githubusercontent.com/i-Sociaal-Lab/jaapjunior/main/packages/api/jw/Begrippenlijst_Jw_en_Wmo.md";
+  const CACHE_BUST = `?v=${Date.now()}`;
+
+  const app  = document.getElementById('app');
+  const q    = document.getElementById('q');
+  const meta = document.getElementById('meta');
+
+  // 1) Haal MD op en render
+  fetch(RAW_URL + CACHE_BUST, { cache: "no-store" })
+    .then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.text(); })
+    .then(md => {
+      const html = DOMPurify.sanitize(marked.parse(md, { mangle:false, headerIds:true }));
+      app.innerHTML = html;
+      meta.textContent = "↑ Typ om te filteren. Enter: volgende hit, Esc: reset.";
+      prepareFiltering();
+    })
+    .catch(err => {
+      console.error(err);
+      app.textContent = "Kon document niet laden.";
+      meta.textContent = "";
+    });
+
+  // 2) Filterlogica (simpel & robuust)
+  function prepareFiltering() {
+    // Zoek of er kopjes zijn (h2/h3), anders val terug op algemene blokken
+    let headings = app.querySelectorAll('h2, h3');
+    let sections = [];
+
+    if (headings.length) {
+      // Maak secties: kopje + alle volgende siblings tot volgend kopje
+      const kids = Array.from(app.children);
+      let i = 0;
+      while (i < kids.length) {
+        const el = kids[i];
+        if (el.matches('h2,h3')) {
+          const group = [el];
+          i++;
+          while (i < kids.length && !kids[i].matches('h2,h3')) { group.push(kids[i]); i++; }
+          sections.push(group);
+        } else {
+          i++;
+        }
+      }
+    } else {
+      // Geen kopjes; filter per blok (p, li, table, etc.)
+      const blocks = app.querySelectorAll('h1,h4,h5,h6,p,li,table,pre,blockquote,div');
+      sections = Array.from(blocks).map(el => [el]);
+    }
+
+    // Bewaar platte tekst per sectie voor snelle match
+    const text = sections.map(group => group.map(n => n.textContent || '').join(' ').toLowerCase());
+
+    // Helper om tonen/verbergen
+    function showAll() {
+      sections.forEach(group => group.forEach(n => n.style.display = ''));
+      clearHighlights();
+      meta.textContent = "↑ Typ om te filteren. Enter: volgende hit, Esc: reset.";
+      currentHit = -1; hitPositions = [];
+    }
+
+    // Highlight helpers
+    function clearHighlights() {
+      app.querySelectorAll('.hitmark').forEach(el => {
+        el.replaceWith(document.createTextNode(el.textContent));
+      });
+    }
+    function highlightInNode(node, query) {
+      // Alleen in tekstnodes highlighten, simpel & veilig
+      const walker = document.createTreeWalker(node, NodeFilter.SHOW_TEXT, null);
+      const qs = query.toLowerCase();
+      let tn;
+      const toWrap = [];
+      while ((tn = walker.nextNode())) {
+        if (!tn.nodeValue.trim()) continue;
+        const idx = tn.nodeValue.toLowerCase().indexOf(qs);
+        if (idx !== -1) toWrap.push({ tn, idx, len: qs.length });
+      }
+      toWrap.reverse().forEach(({tn, idx, len}) => {
+        const text = tn.nodeValue;
+        const before = document.createTextNode(text.slice(0, idx));
+        const mark   = document.createElement('span'); mark.className = 'hitmark'; mark.textContent = text.slice(idx, idx+len);
+        const after  = document.createTextNode(text.slice(idx+len));
+        const parent = tn.parentNode;
+        parent.replaceChild(after, tn);
+        parent.insertBefore(mark, after);
+        parent.insertBefore(before, mark);
+      });
+    }
+
+    let currentHit = -1;
+    let hitPositions = []; // lijst van {el, top}
+
+    function filter(query) {
+      clearHighlights();
+      const ql = (query || '').trim().toLowerCase();
+      if (!ql) { showAll(); return; }
+
+      let visible = 0;
+      sections.forEach((group, i) => {
+        const match = text[i].includes(ql);
+        group.forEach(n => n.style.display = match ? '' : 'none');
+        if (match) {
+          // markeer in de zichtbaar gemaakte nodes
+          group.forEach(n => highlightInNode(n, ql));
+          visible++;
+        }
+      });
+
+      // Bouw navigatie naar hits (top posities)
+      hitPositions = [];
+      app.querySelectorAll('.hitmark').forEach(m => {
+        const el = m.closest('h1,h2,h3,h4,h5,h6,p,li,div,table,pre,blockquote') || m;
+        hitPositions.push({ el, top: el.getBoundingClientRect().top + window.scrollY });
+      });
+      currentHit = -1;
+
+      meta.textContent = visible
+        ? `Matches: ${visible} sectie(s). Enter = spring naar volgende hit, Esc = reset.`
+        : `Geen resultaten voor “${query}”. Esc = reset.`;
+    }
+
+    function jumpNext() {
+      if (!hitPositions.length) return;
+      currentHit = (currentHit + 1) % hitPositions.length;
+      window.scrollTo({ top: hitPositions[currentHit].top - 80, behavior: 'smooth' });
+    }
+
+    // Events
+    let t;
+    q.addEventListener('input', () => {
+      clearTimeout(t);
+      t = setTimeout(() => filter(q.value), 120);
+    });
+    q.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') { e.preventDefault(); jumpNext(); }
+      if (e.key === 'Escape') { q.value=''; showAll(); }
+    });
+  }
+})();
+</script>
+
+</body>
+</html>
