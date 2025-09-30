@@ -1,7 +1,3 @@
-# Naamloos
-
-Status: Te doen
-
 # Begrippenlijst Jw en Wmo
 
 Versie: 1.0
