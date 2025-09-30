@@ -5,11 +5,6 @@ just_the_docs:
   show_nav: false     # verberg de navigatiebalk volledig
   search_enabled: true # laat de zoekbalk bovenin zien
 
-# Favicon met logo 
-favicon_ico: assets/favicon.png
-
-nav-footer: "© 2025 i-Sociaal Lab    "
-
 # Bovenbalk: extra navigatie-links (rechtsboven)
 # aux_links:
  # Ketenbureau: https://i-sociaaldomein.nl
