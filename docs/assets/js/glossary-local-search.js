@@ -4,120 +4,94 @@ document.addEventListener('DOMContentLoaded', function () {
   const results = document.getElementById('glossary-results');
   if (!input || !root || !results) return;
 
-  // 1) Vind het hoofdcontainer-element met je content
+  // Vind de echte contentcontainer
   const main = root.querySelector('main') || root;
 
-  // 2) Bepaal welk heading-niveau jouw begrippen gebruiken
-  let headingSel = 'h3';
-  if (main.querySelectorAll('h3').length === 0) {
-    if      (main.querySelectorAll('h2').length) headingSel = 'h2';
-    else if (main.querySelectorAll('h4').length) headingSel = 'h4';
-    else { console.warn('[Glossary] Geen H3/H2/H4 gevonden.'); return; }
-  }
-
-  // 3) Verzamel alle blokken (section = heading + alle volgende siblings t/m volgende heading)
-  const blocks = [];
-  (function collectSections() {
-    // We nemen ALLE directe kinderen van <main> als referentie
-    const kids = Array.from(main.children);
-    let i = 0;
-    while (i < kids.length) {
-      const el = kids[i];
-      if (el.matches(headingSel)) {
-        const sectionNodes = [el];
-        i++;
-        while (i < kids.length && !kids[i].matches(headingSel)) {
-          sectionNodes.push(kids[i]);
-          i++;
-        }
-        // Maak een "bevroren" kopie van dit blok (HTML-string) voor rendering in resultaten
-        const wrapper = document.createElement('section');
-        sectionNodes.forEach(n => wrapper.appendChild(n.cloneNode(true)));
-        const html = wrapper.innerHTML;
-        const text = wrapper.textContent.toLowerCase();
-        blocks.push({ html, text });
-      } else {
-        i++;
-      }
-    }
-  })();
-
-  if (!blocks.length) {
-    console.warn('[Glossary] Geen blokken gedetecteerd op basis van headings.');
+  // Welke kopjes gebruik je? (voorkeur H3, anders H2/H4)
+  let headings = main.querySelectorAll('h3');
+  if (headings.length === 0) headings = main.querySelectorAll('h2');
+  if (headings.length === 0) headings = main.querySelectorAll('h4');
+  if (headings.length === 0) {
+    console.warn('[Glossary] Geen H3/H2/H4 gevonden. Zorg dat elk begrip een kopje is.');
     return;
   }
 
-  // 4) Hulpfuncties om te wisselen tussen "alles" en "matches"
+  const headingTag = headings[0].tagName.toLowerCase();
+  const firstHeading = headings[0];
+
+  // CSS: alles verbergen vánaf het eerste kopje (inleiding blijft)
+  addOnceStyle(`
+    .glossary-hide-start, .glossary-hide-start ~ * { display: none !important; }
+    #glossary-results { margin-top: 1rem; }
+  `);
+
+  // Verzamel blokken met Range, wrapper-onafhankelijk
+  const blocks = [];
+  for (let i = 0; i < headings.length; i++) {
+    const start = headings[i];
+    const end   = headings[i+1] || null;
+
+    const range = document.createRange();
+    range.setStartBefore(start);
+    if (end) range.setEndBefore(end);
+    else     range.setEndAfter(main.lastElementChild || main.lastChild);
+
+    const frag = range.cloneContents();            // “bevroren” kopie van dit begrip
+    const html = nodeToHTML(frag);
+    const text = frag.textContent.toLowerCase();
+    blocks.push({ html, text });
+  }
+
+  // Helper: DocumentFragment -> HTML string
+  function nodeToHTML(node) {
+    const div = document.createElement('div');
+    div.appendChild(node);
+    return div.innerHTML;
+  }
+
   function showAll() {
+    // originele content terug tonen
+    firstHeading.classList.remove('glossary-hide-start');
     results.style.display = 'none';
     results.innerHTML = '';
-    // originele content blijft gewoon staan
   }
 
   function showMatches(q) {
     const qq = (q || '').toLowerCase().trim();
     if (!qq) { showAll(); return; }
     const hits = blocks.filter(b => b.text.includes(qq));
-    // Render alleen de HITS in het resultatenvak
-    results.innerHTML = hits.map(b => `<section class="glossary-section">${b.html}</section>`).join('') ||
-                        `<p>Geen resultaten voor <em>${escapeHtml(q)}</em>.</p>`;
+    results.innerHTML = hits.length
+      ? hits.map(b => `<section class="glossary-section">${b.html}</section>`).join('')
+      : `<p>Geen resultaten voor <em>${escapeHtml(q)}</em>.</p>`;
     results.style.display = '';
-    // (Originele content laten we staan; visueel wil je meestal alleen de matches tonen)
-    // Verberg originele content (alleen de secties) door CSS class toe te voegen aan main:
-    main.classList.add('glossary-hidden');
+    // verberg alleen de inhoud vanaf het eerste kopje; zoekveld + inleiding blijven zichtbaar
+    firstHeading.classList.add('glossary-hide-start');
+
+    // focus in de input houden zodat je kunt door-typen (bijv. "WLZ signalering")
+    input.focus();
+    const v = input.value;
+    input.setSelectionRange(v.length, v.length);
   }
 
-  // 5) Stijltje om originele content te verbergen zodra er gefilterd wordt
-  addOnceStyle(`
-    .glossary-hidden > ${headingSel},
-    .glossary-hidden > ${headingSel} ~ * { display: none; }
-    /* maar het resultatenvak blijft zichtbaar */
-    #glossary-results { margin-top: 1rem; }
-  `);
-
-  // 6) Event handlers: live filter + Enter/Escape
+  // Events: live en Enter/Escape
   let t = null;
   input.addEventListener('input', () => {
     clearTimeout(t);
     t = setTimeout(() => {
-      if (!input.value.trim()) {
-        main.classList.remove('glossary-hidden');
-        showAll();
-      } else {
-        showMatches(input.value);
-      }
+      if (!input.value.trim()) showAll();
+      else showMatches(input.value);
     }, 120);
   });
-
   input.addEventListener('keydown', e => {
-    if (e.key === 'Enter') {
-      e.preventDefault();
-      if (!input.value.trim()) {
-        main.classList.remove('glossary-hidden');
-        showAll();
-      } else {
-        showMatches(input.value);
-      }
-    } else if (e.key === 'Escape') {
-      input.value = '';
-      main.classList.remove('glossary-hidden');
-      showAll();
-    }
+    if (e.key === 'Enter')  { e.preventDefault(); input.value.trim() ? showMatches(input.value) : showAll(); }
+    if (e.key === 'Escape') { input.value = ''; showAll(); }
   });
 
-  // 7) Helper: veilige HTML-escape voor de "geen resultaten" boodschap
-  function escapeHtml(s) {
-    return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-  }
-
-  // 8) Helper: éénmalig style-tag toevoegen
-  function addOnceStyle(css) {
+  function escapeHtml(s){return String(s).replace(/[&<>"']/g,c=>({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[c]));}
+  function addOnceStyle(css){
     if (document.getElementById('glossary-inline-style')) return;
-    const tag = document.createElement('style');
-    tag.id = 'glossary-inline-style';
-    tag.textContent = css;
-    document.head.appendChild(tag);
+    const tag = document.createElement('style'); tag.id='glossary-inline-style'; tag.textContent = css; document.head.appendChild(tag);
   }
 
-  console.log(`[Glossary] ${blocks.length} secties gedetecteerd met headings: ${headingSel.toUpperCase()}`);
+  console.log(`[Glossary] Blokken: ${blocks.length}, heading tag: ${headingTag.toUpperCase()}`);
 });
