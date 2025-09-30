@@ -15,6 +15,9 @@ search_exclude: false
 
   /* optioneel: wat lucht tussen blokken */
   .glossary-section, [data-section] { margin-bottom: 1rem; }
+
+  /* resultatenvak wat extra ruimte geven */
+  #glossary-results { margin-top: 1rem; }
 </style>
 
 <!-- LOKALE ZOEK (alleen deze pagina) -->
@@ -22,10 +25,11 @@ search_exclude: false
   <input id="local-q" type="search" placeholder="Zoek in deze pagina…" style="width:100%;padding:.5rem;">
 </div>
 
-<!-- De begrippen, build-time ingevoegd door de Action -->
-{% include begrippen.md %}
 <!-- hier komen de gefilterde matches -->
 <div id="glossary-results" style="display:none"></div>
+
+<!-- De begrippen, build-time ingevoegd door de Action -->
+{% include begrippen.md %}
 
 <!-- laad het script -->
 <script src="{{ '/assets/js/glossary-local-search.js' | relative_url }}"></script>
