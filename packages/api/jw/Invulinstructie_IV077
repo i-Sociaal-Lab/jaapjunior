@@ -22,16 +22,13 @@ Het maximale volume van de productperiode wordt bepaald op basis van het aantal 
 Voorbeeld bij inspanningsgerichte toewijzing:
 Cliënt heeft een toewijzing voor 3 uur per week met ingangsdatum 7-10-2025 en einddatum 30-12-2025
 Bepaal het aantal kalenderweken in de productperiode.
-
 - Oktober : 4 (week 41 t/m 44)
 - November: 5 (week 44 t/m 48)
 - December: 5 (week 48 t/m 52,01)
-  
 Maximaal volume per productperiode: Vermenigvuldig het aantal kalenderweken per productperiode met het toegewezen volume per week:
 - Oktober : 12 uur (4 weken x 3 uur)
 - November: 15 uur (5 weken x 3 uur)
 - December: 15 uur (5 weken x 3 uur)
-
 Maximaal volume over de toewijzingsperiode: tel het aantal weken (eventueel gebroken) binnen de toewijzing en vermenigvuldig dit met het volume uit de toewijzing:
 - 07-10-2025 t/m 30-12-2025 = week 41 t/m week 52 + 1 = 13 weken,  13 weken x 3 uur (volume uit de toewijzing) = 39 uur
 Het maximale volume over de toewijzingsperiode is 39 uur
