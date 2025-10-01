@@ -6,8 +6,6 @@ Status: Productie
 
 Auteur: Ketenbureau i-Sociaal Domein
 
-Toelichting: Deze begrippenlijst is afgeleid van de begrippenlijst van het Zorginstituut en toegespitst op Jw en Wmo.
-
 Publicatiedatum: 29 september 2025
 
 **Toelichting**
