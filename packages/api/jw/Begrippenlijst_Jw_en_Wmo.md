@@ -12,7 +12,7 @@ Publicatiedatum: 29 september 2025
 
 **Toelichting**
 
-Deze begrippenlijst is gebaseerd op de begrippenlijst van het Zorginstituut, maar dan specifiek toegespitst op de Jw en Wmo. Het Ketenbureau i-Sociaal Domein heeft vervolgens nog enkele begripen toegevoegd.
+Deze begrippenlijst is gebaseerd op de begrippenlijst van het Zorginstituut, maar dan specifiek toegespitst op de Jw en Wmo. Het Ketenbureau i-Sociaal Domein heeft vervolgens nog enkele begrippen toegevoegd.
 
 Begrippen staan op alfabet en kunnen worden gezocht via de zoekbalk bovenin het scherm
 
