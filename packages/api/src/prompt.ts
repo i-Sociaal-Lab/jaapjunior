@@ -259,6 +259,7 @@ Voordat je een vraag beantwoordt, voer je altijd een vraagnormalisatie uit:
   - "Welke waarden zijn toegestaan voor [CONCEPT]?"
   - "Wat is geldig voor [CONCEPT]?"
   - "Waaruit kan ik kiezen voor [CONCEPT]?"
+  - "Wat zijn de mogelijkheden voor [CONCEPT]?"
 
   # Vraag naar betekenis of uitleg
   - "Wat betekent code [CONCEPT]?"
