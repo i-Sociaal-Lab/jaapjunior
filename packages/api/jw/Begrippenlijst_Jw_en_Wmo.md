@@ -73,8 +73,13 @@ zie: Algemene Verordening Gegevensbescherming.
 zie: gegevenselementen.
 
 ### bedrijfsregels
-
-ook wel operationele (bedrijfs)regels; een van de typen regels uit de informatiemodellen van de iStandaarden die in algemene zin beschrijven wat de afspraken zijn in de keten, hoe er gehandeld dient te worden en op welke wijze informatie geïnterpreteerd moet worden; operationele regels beginnen met OP gevolgd door een getal, bijv. OP004.
+	
+Een bedrijfsregel (ook wel operationele bedrijfsregel genoemd) is een regel die in algemene zin beschrijft wat de afspraken zijn in de keten, hoe er gehandeld dient te worden en op welke wijze informatie geinterpreteerd moet worden.
+- Een bedrijfsregel is een uitwerking van een uitgangspunt.
+- Een bedrijfsregel kan zijn uitgewerkt in een technisch te controleren regel.
+- Op een bedrijfsregel kan een uitzondering beschreven zijn.
+- Een bedrijfsregel is van toepassing op een bericht of register.
+Bedrijfsregels beginnen met OP gevolgd door een getal, bijvoorbeeld OP011 De aanbieder meldt de begindatum van de levering nadat de ondersteuning daadwerkelijk is aangevangen.
 
 ### begeleiding
 
@@ -455,8 +460,10 @@ zorg die verleend wordt aan mensen die langer dan 24 uur in een instelling verbl
 wijziging van een bestaande zorgtoewijzing waarbij de einddatum wordt aangepast zodat deze dichter bij de ingangsdatum komt te liggen.
 
 ### invulinstructies
-
-een van de typen regels uit de informatiemodellen van de iStandaarden waarbij het instructies betreft over de manier waarop gegevens moeten worden ingevuld, bijvoorbeeld wanneer iets moet worden ingevuld en op welke wijze; invulinstructies beginnen met IV gevolgd door een getal, bijvoorbeeld IV032 Welke retourcode moet gevuld worden in het retourbericht?
+	
+Een invulinstructie verduidelijkt de bedoelde invulling van gegevens in een bericht voor specifieke situaties.
+Een invulinstructie is van toepassing op een bericht of register of op een element daarbinnen. 
+Invulinstructies beginnen met IV gevolgd door een getal, bijvoorbeeld IV032 Welke retourcode moet gevuld worden in het retourbericht?
 
 ### iPgb
 
