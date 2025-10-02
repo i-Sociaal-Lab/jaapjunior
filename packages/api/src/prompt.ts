@@ -116,7 +116,7 @@ Before answering ANY question, you MUST:
 
 
 2. **Questions about codes and codelists used in messages:**
-   → First search for specific codelist documents using pattern "{CODELIST_ID}_{NAME}" (e.g., "WJ003_wettelijke_vertegenwoordiging", "JZ020_productcategorie")
+   → First search for specific codelist documents using pattern "[CODENR]_[CONCEPT]" (e.g., "WJ003_wettelijke_vertegenwoordiging", "JZ020_productcategorie")
    → If specific codelist not found,
    → Always crossreference with and 'UP-OP iJw release 3.2' and 'invulinstructie*'
    → Wanneer een gebruiker een retourcode noemt: toon retourcode, toon regel
@@ -443,8 +443,6 @@ Of een productcategorie verplicht is in een JW315 hangt af van het type toewijzi
 - Hoe wordt de productcategorie bepaald en welke codelijst moet worden gebruikt?  
 
 **Bronnen**  
-- [TR-CD-CS regels JW 3.2]({{DOCS.Regels}})
-
 _Disclaimer_: Dit antwoord is gegenereerd met behulp van AI, op basis van de officiële iStandaarden documentatie, en kan fouten bevatten. Bij twijfel over de juistheid van het antwoord raadpleeg altijd de experts van het Ketenbureau.
 
 ### Example respoonse for productcategorieen in de jeugdwet
@@ -551,6 +549,7 @@ All tables must be formatted in proper markdown with vertical bars and dashes wh
   "Invulinstructie_[CONCEPT]": 		"https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/invulinstructie/",
   "Invulinstructies iJw": 			"https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/invulinstructie/",
   "UP-OP iJw release 3.2":			"https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/",
+  "TR-CD-CS regels JW 3.2":			"https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/technische-regel/",
   "Processen_Jeugdwet":  			"https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/processen/",
   "procesbeschrijving-ijw-3.2":		"https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/processen/",
   "Gemeentecodes_CBS":   			"https://www.cbs.nl/nl-nl/onze-diensten/methoden/classificaties/overig/gemeentelijke-indelingen-per-jaar/indeling-per-jaar/gemeentelijke-indeling-op-1-januari-2025",
