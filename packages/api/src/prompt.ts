@@ -228,21 +228,57 @@ Voordat je een vraag beantwoordt, voer je altijd een vraagnormalisatie uit:
   - "Laat invulinstructie [CONCEPT] zien."
 
   
-  **Codelijst Vragen:**
-- **Hoofdvraag**: "toon [CODE] uit "[CODENR]_[CONCEPT]"
-- **Herken variaties zoals**:
+- Intenties:
+  - naam: "CodelijstVragen"
+    canonical: "toon [CODE] uit '[CODENR]_[CONCEPT]'"
+    parameters:
+      - naam: "CONCEPT"
+        type: "codelijst"
+        beschrijving: "Naam van de iJw-codelijst (bv. Prestatie, Zorgvorm, Woonplaats, Leveringsvorm)"
+      - naam: "CODE"
+        type: "string"
+        beschrijving: "Optioneel: specifieke code"
+      - naam: "CODENR"
+        type: "identifier"
+        beschrijving: "Technische sleutel van de codelijst"
+ variaties:
+ # Algemene vraag naar de lijst
   - "Welke codes voor [CONCEPT] kan ik gebruiken?"
   - "Welke codes [CONCEPT] zijn er?"
+  - "Geef de inhoud van codelijst [CONCEPT]"
+  - "Wat zijn de codes voor [CONCEPT]?"
+  - "Welke waarden heeft [CONCEPT]?"
+  - "Wat zit er in de lijst [CONCEPT]?"
+  - "Toon de codelijst [CONCEPT]"
+  - "Lijst van [CONCEPT] codes"
+
+  # Vraag naar invulmogelijkheden
   - "Wat kan ik invullen voor code [CONCEPT]?"
-  - "Welke codes voor [CONCEPT] zijn geldig?"
-  - "Welke codes voor [CONCEPT] kan ik gebruiken?"
-  - "Geef de codes voor [CONCEPT]"
+  - "Welke opties zijn er voor [CONCEPT]?"
+  - "Wat mag ik kiezen bij [CONCEPT]?"
+  - "Welke waarden zijn toegestaan voor [CONCEPT]?"
+  - "Wat is geldig voor [CONCEPT]?"
+  - "Waaruit kan ik kiezen voor [CONCEPT]?"
+
+  # Vraag naar betekenis of uitleg
+  - "Wat betekent code [CONCEPT]?"
+  - "Wat houdt [CONCEPT] code in?"
+  - "Geef de uitleg van code [CONCEPT]"
+  - "Wat is de omschrijving van [CONCEPT] code?"
+  - "Hoe moet ik [CONCEPT] invullen?"
+
+  # Zoekvragen / korte varianten
   - "Ik zoek de codes [CONCEPT]"
   - "Ik zoek de [CONCEPT] code"
-  - "Welke [CONCEPT] bestaan er?"
-  - "Wat betekent code [CONCEPT]?"
-  - "Wat zijn de codes voor [CONCEPT]?"
   - "[CONCEPT] code"
+  - "Codes voor [CONCEPT]"
+  - "Codelijst [CONCEPT]"
+
+  # Controlevragen
+  - "Bestaan er codes voor [CONCEPT]?"
+  - "Kun je de codes van [CONCEPT] tonen?"
+  - "Zijn er opties voor [CONCEPT]?"
+  - "Welke [CONCEPT] bestaan er?"
 
 **Specifieke Mappings:**
 - **Wettelijke vertegenwoordiging** → WJ003_Wettelijke vertegenwoordiging
