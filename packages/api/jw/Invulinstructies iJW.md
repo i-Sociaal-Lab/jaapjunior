@@ -101,7 +101,10 @@ Voorbeelden:
 - Een volledig onbekende geboortedatum wordt 01-01-1900
 - Is alleen bekend dat de geboorte in 1953 was, dan wordt de geboortedatum 01-01-1953
 - Is alleen bekend dat de geboorte in september 1949 was, dan wordt de geboortedatum 01-09-1949
+</IV009>
 
+<IV013>
+  
 **IV013**
 
 *Welke toewijzing is het meest recent?*
@@ -109,7 +112,7 @@ Voorbeelden:
 Om vast te kunnen stellen welke toewijzing het recentst is, zijn Toewijzingsdatum en Toewijzingstijd in het toewijzingbericht opgenomen. De gemeente vult deze velden met de datum en de tijd waarop de toewijzing definitief is vastgesteld. Het gaat hier om het moment waarop de gemeente de toewijzing vaststelt en niet om het moment van verzending van het bericht. De toewijzing met de meest recente Toewijzingsdatum en Toewijzingstijd is de actuele toewijzing.
 Als een aanbieder de gemeente verzoekt om een bestaande toewijzing nog een keer te versturen, blijft de inhoud van Toewijzingsdatum en Toewijzingstijd onveranderd.
 Een aanpassing van het volume of de einddatum in de toewijzing moet beschouwd worden als een gewijzigde toewijzing. De gemeente vult Toewijzingsdatum en Toewijzingstijd met de datum en tijd waarop de gemeente de aanpassing vaststelt.
-</IV009>
+</IV013>
 
 <IV024>
 
@@ -255,31 +258,45 @@ GeleverdVolume: 20000
 Eenheid: 83 (Euro's)
 </IV042>
 
+<IV045>
+
 **IV045**
 
 *Hoe wordt de voogd vastgelegd indien dit een organisatie betreft?*
 
 Indien de voogdij voor een cliënt bij een organisatie ligt, wordt in de Relatie de organisatienaam opgenomen als Geslachtsnaam, aangeduid met NaamGebruik 6 (niet-natuurlijk persoon).
+</IV045>
 
+<IV046>
+  
 **IV046**
 
 *Welke gemeentecode moet gevuld worden?*
 
 In de header van de berichten wordt de gemeente opgenomen die volgens de wet verantwoordelijk is voor zorg of ondersteuning aan de cliënt. Voor aanduiding van de gemeente wordt de CBS codelijst gehanteerd.
+</IV046>
 
+<IV047>
+  
 **IV047**
 
 *Hoe om te gaan met de adressering van een cliënt indien alleen een briefadres bekend is?*
 
 Van een cliënt wordt in de toewijzing altijd het GBA adres of verblijfadres meegegeven in de Contactgegevens. Dit is alleen niet mogelijk indien een cliënt in de basisregistratie personen (BRP) is ingeschreven met alleen een briefadres. Voor die situaties kan bij een Cliënt een Adres met Soort Correspondentie-adres worden meegegeven.
+</IV047>
 
+<IV052>
+  
 **IV052**
 
 *Hoe om te gaan met Beschikkingnummer in Verzoek om toewijzing?*
 
 De aanbieder dient het beschikkingnummer mee te geven in het Verzoek om Toewijzing bericht indien de cliënt van haar gemeente een beschikking heeft gekregen.
 De gemeente kan op basis van het beschikkingnummmer eenvoudig de bestaande beschikking koppelen aan de informatie uit het Verzoek Om Toewijzing bericht.
+</IV052>
 
+<IV066>
+  
 **IV066**
 
 *Wanneer krijgt een toewijzing een nieuw ToewijzingNummer?*
@@ -294,12 +311,16 @@ Let op: wijzigen van een toewijzing is slechts beperkt toegestaan (Zie ook OP33x
 - het budget kan worden aangepast
 - de omvang kan worden aangepast indien de frequentie de waarde 6 (Totaal binnen geldigheidsduur toewijzing) heeft.
 Indien de omvang bij andere frequenties dan Totaal binnen geldigheidsduur toewijzing gewijzigd wordt, betekent dat dat de bestaande toewijzing wordt ingetrokken en een nieuwe toewijzing wordt verzonden met als Ingangsdatum de datum waarop de gewijzigde omvang ingaat. Dit betreft dan een nieuwe initiele toekenning met een nieuw ToewijzingNummer.
+</IV066>
 
+<IV074>
+  
 **IV074**
 
 *Wat is het verschil tussen de verschillende uitvoeringsvarianten?*
 
 De iStandaarden ondersteunen een aantal verschillende uitvoeringsvarianten: inspanningsgericht, outputgericht en taakgericht. De specifieke eigenschappen van deze uitvoeringsvarianten zijn beschreven in het document Handreiking uitvoeringsvarianten, deze is beschikbaar via [www.istandaarden.nl/ibieb/handreiking-uitvoeringsvarianten-iwmo-en-ijw](http://www.istandaarden.nl/ibieb/handreiking-uitvoeringsvarianten-iwmo-en-ijw).
+</IV074>
 
 <IV075>
 
@@ -355,7 +376,6 @@ Declaratieperiode augustus
 Declaratieperiode: 01-08-2025 t/m 31-08-2025
 Productperiode: 01-08-2025 t/m 31-08-2025
 Volume: 10 (4 leveringen x 2,5 uur = 10 uur)
-
 Controle maximaal volume 15 (5 weken x 3 uur= 15 uur)
 
 Declaratieperiode september
@@ -376,7 +396,7 @@ Indien een toewijzing niet op een zondag eindigt wordt het te declareren volume 
 
 Beide situaties worden met een voorbeeld toegelicht:
 
-Voorbeeld 1 (toewijzing eindigt op een zondag):
+Voorbeeld 1: (toewijzing eindigt op een zondag):
 Toewijzing: 07-07-2025 t/m 07-09-2025 voor 300 euro per week
 
 Declaratieperiode juli
@@ -391,7 +411,7 @@ Volume: Aantal zondagen in de productperiode * 300 euro (1500 euro)
 
 Declaratieperiode september
 Declaratieperiode: 01-09-2025 t/m 30-09-2025
-Productperiode: 01-09-2025 t/m 04-09-2025
+Productperiode: 01-09-2025 t/m 07-09-2025
 Volume: Aantal zondagen in de productperiode * 300 euro (300 euro)
 
 Voorbeeld 2 (toewijzing eindigt niet op een zondag):
@@ -500,8 +520,10 @@ Frequentie in ToegewezenProduct = maand
 Toewijzing voor 15 uur per maand met ingangsdatum 14-10-2025 en einddatum 13-12-2025
 
 Voor de productperiode 14-10-2025 t/m 31-10-2025 mag maximaal 15 uur gedeclareerd worden, indien deze uren ook daadwerkelijk geleverd zijn. Ondanks dat de ingangsdatum 14-10-2025 is en er dus geen hele kalendermaand is toegewezen, mag (mits geleverd) de volledige 15 uur gedeclareerd worden.
-<IV078>
+</IV078>
 
+<IV079>
+  
 **IV079**
 
 *Hoe moet het volume in de prestatie gevuld worden wanneer de eenheid in de prestatie uren is en de geleverde prestatie niet uit volledige uren bestaat?*
@@ -512,7 +534,10 @@ Geleverde zorg per prestatie behorend bij een toewijzing wordt gesommeerd over d
 
 Dus indien er wekelijks 95 minuten worden geleverd en de prestatieperiode bevat 4 weken, dan wordt eerst het totaal over de prestatieperiode bepaald = 4 weken x 95 minuten = 380 minuten.
 Er wordt gedeclareerd in uren: 380 / 60 = 6 uur en 20 minuten. Afgerond is dit 6 uur. In het volume van de prestatie wordt 6 uur gevuld.
+</IV079>
 
+<IV081>
+  
 **IV081**
 
 *Hoe moet het ProductTarief gevuld worden?*
@@ -523,6 +548,9 @@ Alleen voor uren en minuten is er een uitzondering mogelijk. Gemeente en aanbied
 
 Dit (afgeronde) tarief wordt in de Prestatie bij ProductTarief opgenomen, maar niet gebruikt voor de berekening van IngediendBedrag.
 Het IngediendBedrag wordt als volgt bepaald: (contractuele uurtarief * aantal minuten) / 60. Dit bedrag wordt vervolgens afgerond op 2 decimalen.(TR346)
+</IV081>
+
+<IV084>
 
 **IV084**
 
@@ -541,7 +569,10 @@ In onderstaand voorbeeld wordt uitgegaan van de volgende situatie:
 Er worden nu 2 Prestaties ingediend met de volgende ProductPeriodes:
 ProductPeriode Prestatie 1: 01-03-2025 t/m 09-03-2025
 ProductPeriode Prestatie 2: 23-03-2025 t/m 31-03-2025
+</IV084>
 
+<IV085>
+  
 **IV085**
 
 *Wanneer kan een creditering van een declaratie verzonden worden?*
@@ -550,7 +581,10 @@ Wanneer een eerder ingediende prestatie door de aanbieder onjuist is bevonden, k
 Dit kan alleen nadat er een declaratie-antwoordbericht op de debet prestatie is ontvangen en de prestatie daarin niet is afgekeurd. Een door de gemeente afgekeurde prestatie wordt nooit gecrediteerd.
 
 NB: een creditering is een eenzijdige handeling van de aanbieder, die niet bestreden kan worden door een gemeente. De gemeente kan een ingediende credit prestatie dus niet afkeuren, tenzij het technische afkeur betreft. Zie hiervoor invulinstructies IV088 en IV087).
+</IV085>
 
+<IV086>
+  
 **IV086**
 
 *Hoe moet worden omgegaan met debet en credit prestaties in een declaratiebericht?*
@@ -563,6 +597,7 @@ Debet en credit prestaties kunnen in 1 declaratiebericht worden aangeleverd. Hie
 Totaal declaratiebedrag
 
 Het totale declaratiebedrag van alle debet en credit prestaties in het declaratiebericht wordt ingevuld in TotaalIngediendBedrag in de header van het bericht. Hierbij worden debetbedragen opgeteld en creditbedragen afgetrokken.
+</IV086>
 
 <IV087>
 **IV087**
@@ -689,6 +724,8 @@ Cliënt ontvangt outputgerichte hulp vanaf het begin tot het eind van toegewezen
 - Juni: 01-06-2025 t/m 17-06-2025
 </IV089>
 
+<IV090>
+
 **IV090**
 
 *Hoe moet het declaratiebericht gevuld worden indien achteraf gedeclareerd wordt?*
@@ -722,6 +759,10 @@ In juni blijkt dat (ononderbroken) geleverde ondersteuning aan een cliënt tusse
 - ProductPeriode Prestatie 1: 15-02-2025 t/m 28-02-2025
 - ProductPeriode Prestatie 2: 01-03-2025 t/m 31-03-2025
 - ProductPeriode Prestatie 3: 01-04-2025 t/m 30-04-2025
+</IV090>
+
+<IV091>
+
 
 **IV091**
 
@@ -738,6 +779,9 @@ Een creditprestatie is identiek aan de oorspronkelijke debetprestatie, met uitzo
 - DebetCredit in IngediendBedrag wordt gevuld met C (Credit)
 
 Crediteren is alleen mogelijk na ontvangst van het declaratie-antwoordbericht waarin de te crediteren prestatie is toegekend (zie IV085).
+</IV091>
+
+<IV092>
 
 **IV092**
 
@@ -821,7 +865,9 @@ VOW bericht bevat:
 - OngewijzigdProduct: ToewijzingNummer 910
 - TeWijzigenProduct: ToewijzingNummer 789, GewensteIngangsdatum 1 november 2025, 5 uur per week, einddatum 1 juli 2026
 - NieuwProduct: Product C1 GewensteIngangsdatum 1 januari 2026, 2 dagdelen per maand, einddatum 1 juli 2026
+</IV092>
 
+<IV093>
 **IV093**
 
 *Hoe wordt een Toewijzingbericht gevuld naar aanleiding van een verzoek om wijziging (VOW) bericht?*
@@ -959,6 +1005,9 @@ Dan kan worden afgesproken dat de toewijzing wordt gestuurd zonder terugwerkende
 
 - Product X blijft ongewijzigd met einddatum 7 mei 2026
 - Product Y krijgt een toegewezen ingangsdatum 15 mei 2026
+</IV093>
+
+<IV094>
 
 **IV094**
 
@@ -972,6 +1021,9 @@ In het geval dat er een aspecifiek product met budget of een generieke toewijzin
 Elk toegewezen product krijgt de ReferentieAanbieder van de betreffende productaanvraag in het VOT bericht.
 
 Alle andere actuele toegewezen producten voor deze cliënt bij deze aanbieder worden ook in het toewijzingbericht opgenomen zodat voldaan wordt aan OP087, de ReferentieAanbieder is hierbij leeg.
+</IV094>
+
+<IV095>
 
 **IV095**
 
@@ -982,6 +1034,9 @@ Indien de gemeente in het antwoordbericht aangeeft dat zij niet de verantwoordel
 In dat geval moet de gemeente in Gemeente de gemeentecode meegeven die volgens haar wel de verantwoordelijke gemeente is. De aanbieder weet dan bij welke gemeente het verzoek om toewijzing moet worden ingediend.
 
 Bij alle andere waarden van RedenAfwijzingVerzoek dient de klasse Woonplaatsbeginsel niet te worden opgenomen.
+</IV095>
+
+<IV096>
 
 **IV096**
 
@@ -990,7 +1045,9 @@ Bij alle andere waarden van RedenAfwijzingVerzoek dient de klasse Woonplaatsbegi
 Indien sprake is van inspanningsgericht of outputgerichte uitvoeringsvariant, zal ToewijzingNummer gebruikt worden als sleutel tussen het start-/stopbericht en de toewijzing.
 
 Bij een taakgerichte uitvoeringsvariant, is geen sprake van een toewijzing, daarom zal de sleutel bestaan uit Product en Begindatum.
+</IV096>
 
+<IV097>
 **IV097**
 
 *Hoe wordt ReferentieAanbieder gevuld in een ToegewezenProduct?*
@@ -1021,17 +1078,17 @@ Als de gemeente dit verzoek honoreert dan wordt een toewijzing gestuurd met beid
 
 - ToewijzingNummer 345001, Product A, Ingangsdatum 1 januari 2025, einddatum 31 december 2025, Referentieaanbieder 667788
 - ToewijzingNummer 345002, Product B, Ingangsdatum 1 januari 2025, einddatum 30 juni 2026, Referentieaanbieder 667788
+</IV097>
+
+<IV099>
 
 **IV099**
 
 *Wanneer moet RedenWijziging worden gevuld?*
 
 RedenWijziging geeft aan of ToegewezenProduct in een toewijzingsbericht is gewijzigd ten opzichte van de laatste keer dat deze (met hetzelfde ToewijzingNummer) is verstuurd.
-
 Indien het toegewezen product met hetzelfde toewijzingsnummer ongewijzigd is ten opzichte van de laatst verzonden toewijzing, dan is RedenWijziging leeg.
-
 Op het moment dat er wel een wijziging heeft plaatsgevonden, wordt RedenWijziging gevuld met de code die past bij de wijziging die is doorgevoerd.
-
 Bij de initiële toewijzing van een product (een nieuwe toewijzing met een nieuw toewijzingsnummer) is RedenWijziging altijd leeg.
+</IV099>
 
----
