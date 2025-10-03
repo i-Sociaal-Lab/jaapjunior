@@ -22,16 +22,15 @@ Declaratieperiode augustus
 Declaratieperiode: 01-08-2025 t/m 31-08-2025
 Productperiode: 01-08-2025 t/m 31-08-2025
 Volume: 10 (4 leveringen x 2,5 uur = 10 uur)
-
-Controle maximaal volume 15 (5 weken x 3 uur= 15 uur)
+Controle maximaal volume 15 (5 weken x 3 uur = 15 uur)
 
 Declaratieperiode september
 Declaratieperiode: 01-09-2025 t/m 30-09-2025
 Productperiode: 01-09-2025 t/m 07-09-2025
 Volume: 2,5 (1 leveringen x 2,5 uur = 2,5 uur)
-Controle maximaal volume 3 (1 week x 3 uur= 3 uur)
+Controle maximaal volume 3 (1 week x 3 uur = 3 uur)
 
-Controle maximaal volume over toewijzingsperiode 24 uur
+Controle maximaal volume over toewijzingsperiode is 27 uur
 07-07-2025 t/m 07-09-2025 = 9 weken
 9 weken x 3 uur = 27 uur
 
@@ -43,7 +42,7 @@ Indien een toewijzing niet op een zondag eindigt wordt het te declareren volume 
 
 Beide situaties worden met een voorbeeld toegelicht:
 
-Voorbeeld 1 (toewijzing eindigt op een zondag):
+Voorbeeld 1: (toewijzing eindigt op een zondag):
 Toewijzing: 07-07-2025 t/m 07-09-2025 voor 300 euro per week
 
 Declaratieperiode juli
@@ -58,10 +57,10 @@ Volume: Aantal zondagen in de productperiode * 300 euro (1500 euro)
 
 Declaratieperiode september
 Declaratieperiode: 01-09-2025 t/m 30-09-2025
-Productperiode: 01-09-2025 t/m 04-09-2025
+Productperiode: 01-09-2025 t/m 07-09-2025
 Volume: Aantal zondagen in de productperiode * 300 euro (300 euro)
 
-Voorbeeld 2 (toewijzing eindigt niet op een zondag):
+Voorbeeld 2: (toewijzing eindigt niet op een zondag):
 Toewijzing: 07-07-2025 t/m 06-09-2025 voor 300 euro per week
 
 Declaratieperiode juli
