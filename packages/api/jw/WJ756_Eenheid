@@ -1,19 +1,38 @@
-# WJ756: Eenheid
-
-**Definitie:**  
-Gecodeerde aanduiding van de mate van zorg betreffende een product, uitgedrukt in een eenheid.
-
----
-
-## Codelijst
-
-| Code | Omschrijving |
-|------|--------------|
-| 01 | Minuut |
-| 04 | Uur |
-| 14 | Etmaal |
-| 16 | Dagdeel (4 uur) |
-| 82 | Stuks (output) |
-| 83 | Euro's |
-| 84 | Stuks (inspanning) |
-
+{
+  "codelijst": {
+    "id": "WJ756",
+    "naam": "Eenheid",
+    "definitie": "Gecodeerde aanduiding van de mate van zorg betreffende een product, uitgedrukt in een eenheid.",
+    "bronUrl": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/wj756",
+    "codes": [
+      {
+        "code": "01",
+        "omschrijving": "Minuut"
+      },
+      {
+        "code": "04",
+        "omschrijving": "Uur"
+      },
+      {
+        "code": "14",
+        "omschrijving": "Etmaal"
+      },
+      {
+        "code": "16",
+        "omschrijving": "Dagdeel (4 uur)"
+      },
+      {
+        "code": "82",
+        "omschrijving": "Stuks (output)"
+      },
+      {
+        "code": "83",
+        "omschrijving": "Euro's"
+      },
+      {
+        "code": "84",
+        "omschrijving": "Stuks (inspanning)"
+      }
+    ]
+  }
+}
