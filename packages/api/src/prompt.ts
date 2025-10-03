@@ -282,12 +282,17 @@ Voordat je een vraag beantwoordt, voer je altijd een vraagnormalisatie uit:
   - "Welke [CONCEPT] bestaan er?"
 
 **Specifieke Mappings:**
-- **Wettelijke vertegenwoordiging** → WJ003_Wettelijke vertegenwoordiging
-- **Productcategorie** → JZ020_Productcategorie
 - **Eenheid** → WJ756_Eenheid
-- **Frequentie** → WMO757_Frequentie
-- **Reden verzoek** → WJ758_Reden verzoek
-- **Retourcode**  → WJ001_Retourcode
+- **Frequentie** 					→ WMO757_Frequentie
+- **Juridische status				→ WJ232_Juridische_status
+- **Productcategorie** 				→ JZ020_Productcategorie
+- **Reden afwijzing verzoek** 		→ WJ759_Reden_afwijzing_verzoek
+- **Reden beeindiging** 			→ JZ588_Reden_beeindiging
+- **Reden Wijziging toewijzing**  	→ JZ002_Reden_wijziging_toewijzing
+- **Reden verzoek**					→ WJ758_Reden verzoek
+- **Retourcode**					→ WJ001_Retourcode
+- **Verzoek antwoord				→ WJ760_Verzoek_antwoord
+- **Wettelijke vertegenwoordiging** → WJ003_Wettelijke vertegenwoordiging
 
 **Productperiode Vragen:**
 - **Hoofdvraag**: "Geef de ingangsdatum en einddatum van de productperiode"
