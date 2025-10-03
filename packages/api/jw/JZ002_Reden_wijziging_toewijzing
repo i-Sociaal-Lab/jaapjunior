@@ -7,19 +7,19 @@ De reden waarom een toewijzing wordt gewijzigd.
 
 ## Codelijst
 
-| Code | Omschrijving |
-|------|--------------|
-| 01 | Administratieve correctie (vervallen) |
-| 02 | Cliënt overleden |
-| 03 | Contractwijziging |
-| 04 | Herbeoordeling: verlenging toewijzing |
-| 05 | Herbeoordeling: verkorting toewijzing |
-| 06 | Uitstroom naar ander domein |
-| 07 | Verhuizing naar een andere gemeente |
-| 08 | Wijziging leveringsvorm |
-| 09 | Overstap naar andere aanbieder |
-| 10 | Overgang naar nieuwe bekostigingssystematiek |
-| 11 | Gemeentelijke herindeling |
-| 12 | Geïnitieerd door de aanbieder |
-| 13 | Verwijderd |
-| 14 | Administratieve correctie |
+| Code | Omschrijving | Toelichting |
+|------|--------------|-------------|
+| 01 | Administratieve correctie (vervallen) | Niet gebruiken |
+| 02 | Cliënt overleden | De toewijzing moet worden gestopt, omdat de client is overleden. Over het algemeen zal dan worden gevuld: einddatum toewijzing = overlijdensdatum client. |
+| 03 | Contractwijziging | Gemeente maakt een nieuwe contractafspraak met aanbieder, waardoor het nodig is om een andere toewijzing te sturen met  bijvoorbeeld andere productcodes. NB: niet elke contractwijziging zal leiden tot een nieuwe toewijzing. |
+| 04 | Herbeoordeling: verlenging toewijzing | Als gevolg van een herbeoordeling door de gemeente kan een toewijzing verlengd worden. Als de zorg verlengd wordt en er wordt een nieuwe toewijzing met nieuw toewijzingsnummer gestuurd, dient de aanbieder de oude toewijzing te beëindigen, met reden beëindiging 36. |
+| 05 | Herbeoordeling: verkorting toewijzing | In verschillende situaties zal de huidige toewijzing ingetrokken moeten worden: - Client moet ander product toegewezen krijgen. - Client moet korter zorg krijgen. - Client moet andere omvang krijgen, bijvoorbeeld meer uren per week, tenzij het een toewijzing in budget of totaal per toewijzing periode betreft. De beoordeling vindt plaats door gemeente op basis van client contact. |
+| 06 | Uitstroom naar ander domein | Client gaat over naar ander domein, bijvoorbeeld naar Wlz, en daarom eindigt de Jw toewijzing. |
+| 07 | Verhuizing naar een andere gemeente | De gemeente kan een afgegeven Toewijzing niet zomaar intrekken bij verhuizing naar een andere gemeente. De gemeente die de toewijzing heeft verstrekt, blijft verantwoordelijk voor de cliënt tot het moment dat de cliënt is overgedragen aan de gemeente die volgens het woonplaatsbeginsel verantwoordelijk is voor de cliënt. Dit betekent dat een toewijzing door de oude gemeente niet kan worden afgesloten voordat er zekerheid is dat de nieuwe gemeente een aansluitende toewijzing verzendt. |
+| 08 | Wijziging leveringsvorm | Client gaat gebruik maken van pgb of Wlz |
+| 09 | Overstap naar andere aanbieder | Client gaat naar een andere aanbieder, dus de toewijzing bij de huidige aanbieder moet beëindigd worden. |
+| 10 | Overgang naar nieuwe bekostigingssystematiek | De toewijzing is ingetrokken, omdat de client is overgegaan naar een andere regeling/bekostiging. Bijvoorbeeld: een inspanningsgerichte toewijzing, wordt vervangen door een outputgerichte toewijzing. |
+| 11 | Gemeentelijke herindeling | Volgens protocol gemeentelijke herindeling, wordt de bestaande toewijzing (oude gemeente) beëindigd, een nieuwe toewijzing wordt gestart met de nieuwe gemeentecode.  De oude toewijzing krijgt reden wijziging toewijzing 11, de nieuwe toewijzing krijgt geen reden wijziging toewijzing. |
+| 12 | Geïnitieerd door de aanbieder | Indien een toewijzing wijzigt als gevolg van een verzoek om wijziging, of een verzoek via een ander kanaal, kan dit door de gemeente worden aangegeven middels deze code. Het is dan voor de aanbieder duidelijk op basis waarvan de wijziging is doorgevoerd. Ook indien een aanbieder een definitief stopbericht stuurt en de gemeente beslist om de toewijzing in te trekken, dan wordt deze code gebruikt. |
+| 13 | Verwijderd | Als een toewijzing ten onrechte is verstuurd en de gemeente dit ongedaan wil maken. Hierbij wordt de einddatum gelijk gesteld aan de ingangsdatum. De toewijzing moet als niet verzonden beschouwd worden. |
+| 14 | Administratieve correctie | Als de gemeente een (invoer)fout heeft gemaakt die hersteld moet worden. De velden die gewijzigd mogen worden, zijn beschreven in OP033X1. |
