@@ -53,7 +53,7 @@
       {
         "code": "10",
         "omschrijving": "Overgang naar nieuwe bekostigingssystematiek",
-        "toelichting": "De toewijzing is ingetrokken, omdat de cliënt is overgegaan naar een andere regeling/bekostiging. Bijvoorbeeld: een inspanningsgerichte toewijzing wordt vervangen door een outputgerichte toewijzing."
+        "toelichting": De toewijzing is ingetrokken, omdat de client is overgegaan naar een andere regeling/bekostiging. Bijvoorbeeld: een inspanningsgerichte toewijzing, wordt vervangen door een outputgerichte toewijzing. Deze code is toegevoegd vanwege de beëindiging van DBC-systematiek op 31 december 2017."
       },
       {
         "code": "11",
