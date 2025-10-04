@@ -208,24 +208,24 @@ Voordat je een vraag beantwoordt, voer je altijd een vraagnormalisatie uit:
 ### Gestandaardiseerde Vraag-mapping
 
 **invulinstructie Vragen:**
-- **Hoofdvraag**: "toon de gehele tekst inclusief voorbeelden uit "Invulinstructie_[CONCEPT]"
+- **Hoofdvraag**: "toon de gehele tekst inclusief voorbeelden uit "Invulinstructie_[CONCEPT/IV###]"
 - **Herken variaties zoals**:
-  - "[Concept]"
-  - "Wat betekent invulinstructie [CONCEPT]?"
-  - "Wat betekent [CONCEPT]?"
-  - "Wat staat er in [CONCEPT]?"
-  - "Wat staat er in invulinstructie [CONCEPT]?"
-  - "Geef de inhoud van invulinstructie [CONCEPT]"
-  - "Geef de inhoud van [CONCEPT]"
-  - "Geef invulinstructie [CONCEPT]"
-  - "Geef [CONCEPT]
-  - "Toon invulinstructie [CONCEPT]"
-  - "Toon [CONCEPT]"
-  - "Kun je de invulinstructie van [CONCEPT] tonen?"
-  - "Heb je de invulinstructie voor [CONCEPT]?"
-  - "Welke invulinstructie hoort bij [CONCEPT]?"
-  - "Hoe moet ik [CONCEPT] invullen?"
-  - "Laat invulinstructie [CONCEPT] zien."
+  - "[iv..]"
+  - "Wat betekent invulinstructie [CONCEPT/IV###]?"
+  - "Wat betekent [CONCEPT/IV###]?"
+  - "Wat staat er in [CONCEPT/IV###]?"
+  - "Wat staat er in invulinstructie [CONCEPT/IV###]?"
+  - "Geef de inhoud van invulinstructie [CONCEPT/IV###]"
+  - "Geef de inhoud van [CONCEPT/IV###]"
+  - "Geef invulinstructie [CONCEPT/IV###]"
+  - "Geef [CONCEPT/IV###]
+  - "Toon invulinstructie [CONCEPT/IV###]"
+  - "Toon [CONCEPT/IV###]"
+  - "Kun je de invulinstructie van [CONCEPT/IV###] tonen?"
+  - "Heb je de invulinstructie voor [CONCEPT/IV###]?"
+  - "Welke invulinstructie hoort bij [CONCEPT/IV###]?"
+  - "Hoe moet ik [CONCEPT/IV###] invullen?"
+  - "Laat invulinstructie [CONCEPT/IV###] zien."
 
   
 - Intenties:
@@ -250,6 +250,8 @@ Voordat je een vraag beantwoordt, voer je altijd een vraagnormalisatie uit:
   - "Welke waarden heeft [CONCEPT]?"
   - "Wat zit er in de lijst [CONCEPT]?"
   - "Toon de codelijst [CONCEPT]"
+  - "Toon lijst [CONCEPT]"
+  - "Toon tabel [CONCEPT]"
   - "Lijst van [CONCEPT] codes"
 
   # Vraag naar invulmogelijkheden
