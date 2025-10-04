@@ -204,11 +204,11 @@ Een beschikking is een document tussen de gemeente en de burger. Het afgeven van
 ## Moet bij een VOW een onderbouwing worden ingediend?
 
 Via het berichtenverkeer is hier geen mogelijkheid voor. Wel dient er een reden voor het verzoek te worden opgegeven bij het indienen van een VOW. Binnen release 3.2 zijn de volgende redenen mogelijk:
-
 - Verandering cliëntsituatie
 - Wijziging zorgplan
-
 Indien de gemeente tevens een onderbouwing vraagt voor een ingediend VOW, dient dit buiten het berichtenverkeer om aangeleverd te worden.
+
+----
 
 ## Kan ik nieuwe producten toevoegen en zorg verzwaren zonder dat er een keukentafelgesprek is geweest/het vastligt in een beschikking?
 
@@ -249,6 +249,7 @@ Het is op dit moment niet mogelijk om een VOW-bericht in te trekken. Mocht je er
 Als reactie op een verstuurd VOW en VOT zijn er drie mogelijkheden. De gemeente kan het verzoek honoreren door een toewijzingsbericht (301) te sturen. Ook kan de gemeente het verzoek afwijzen met het antwoordbericht (319). De derde mogelijkheid is dat de gemeente het verzoek nader gaat onderzoeken en dit meldt met het antwoordbericht (319).
 
 Nadat de gemeente dit onderzoek heeft afgerond zal deze het verzoek alsnog honoreren met een toewijzingsbericht of afwijzen met een antwoordbericht.
+---
 
 ## Mag ik als aanbieder starten met het leveren van de gewenste zorg indien de gemeente een VOW in onderzoek neemt?
 
@@ -267,6 +268,7 @@ Als een aanbieder bij een gemeente hierin geen rol speelt maar toch een VOW beri
 De gemeente stuurt een 318-retourbericht en vervolgens een afwijzing van het VOW middels een 319-bericht. Hierbij wordt RedenAfwijzingVerzoek gevuld met de waarde 4 (“Past niet binnen contract”). De aanbieder stuurt na ontvangst van het 319-bericht het 320-retourbericht.
 
 Het is namelijk noodzakelijk om ook in deze situatie het VOW bericht af te handelen, aangezien het niet is toegestaan een verzoek om wijziging of verzoek om toewijzing te sturen als een eerder verzoek nog niet is afgehandeld (OP350).
+---
 
 ## Hoe te handelen als gemeente wanneer een aanbieder een VOT verstuurt, maar geen contract heeft voor het leveren van zorg bij betreffende gemeente.
 
@@ -461,6 +463,7 @@ Via de validatiemodule op istandaarden.nl kunt u de berichten valideren. De beri
 Via de Testvoorziening iStandaarden (TiS) van Zorginstituut Nederland kunnen softwareleveranciers hun producten testen in de rol van elke partij die deelneemt aan het iStandaarden-berichtenverkeer, en zo nodig verbeteren.
 
 Voor meer informatie of het aanvragen van een account kunt u contact opnemen met Zorginstituut Nederland (<info@istandaarden.nl>).
+
 
 
 
