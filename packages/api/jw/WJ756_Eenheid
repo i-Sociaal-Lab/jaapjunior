@@ -1,7 +1,7 @@
 {
-"standaard": "iJw",
-"versie": "3.2",  
-"codelijst": {
+  "standaard": "iJw",
+  "versie": "3.2",
+  "codelijst": {
     "id": "WJ756",
     "naam": "Eenheid",
     "definitie": "Gecodeerde aanduiding van de mate van zorg betreffende een product, uitgedrukt in een eenheid.",
@@ -41,4 +41,5 @@
     "laatstBijgewerkt": "2025-10-04",
     "tabeltype": "Referentielijst",
     "toepassing": "Eenheid binnen Jw-toewijzingen, VOT, VOW en declaratie"
+  }
 }
