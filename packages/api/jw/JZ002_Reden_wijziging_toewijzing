@@ -1,4 +1,6 @@
 {
+  "standaard": "iJw",
+  "versie": "3.2",
   "codelijst": {
     "id": "JZ002",
     "naam": "Reden wijziging toewijzing",
@@ -76,5 +78,9 @@
         "toelichting": "Als de gemeente een (invoer)fout heeft gemaakt die hersteld moet worden. De velden die gewijzigd mogen worden, zijn beschreven in OP033X1. Ook indien een aanbieder een definitief stopbericht stuurt en de gemeente beslist om de toewijzing in te trekken, dan wordt deze code gebruikt."
       }
     ]
-  }
+  },
+  "metadata": {
+    "laatstBijgewerkt": "4-10-2025",
+    "tabeltype": "Referentielijst",
+    "toepassing": "RedenWijziging binnen Jw-toewijzingen"
 }
