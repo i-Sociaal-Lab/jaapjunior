@@ -1,13 +1,25 @@
-# WJ758: Reden verzoek
-
-**Definitie:**  
-Gecodeerde aanduiding voor de reden van een verzoek. Deze code wordt gebruikt in het VOW-bericht
-
----
-
-## Codelijst
-
-| Code | Omschrijving |
-|------|--------------|
-| 1 | Verandering clientsituatie |
-| 2 | Wijziging zorgplan |
+{
+  "standaard": "iJw",
+  "versie": "3.2",
+  "codelijst": {
+    "id": "WJ758",
+    "naam": "Reden verzoek",
+    "definitie": "Gecodeerde aanduiding voor de reden van een verzoek. Deze code wordt gebruikt in het VOW-bericht.",
+    "bronUrl": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/wj758",
+    "codes": [
+      {
+        "code": "1",
+        "omschrijving": "Verandering clientsituatie"
+      },
+      {
+        "code": "2",
+        "omschrijving": "Wijziging zorgplan"
+      }
+    ]
+  },
+  "metadata": {
+    "laatstBijgewerkt": "04-10-2025",
+    "tabeltype": "Referentielijst",
+    "toepassing": "Reden van een verzoek binnen het VOW-bericht in het iJw-berichtenverkeer"
+  }
+}
