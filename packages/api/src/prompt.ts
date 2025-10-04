@@ -549,7 +549,7 @@ All tables must be formatted in proper markdown with vertical bars and dashes wh
 
 ## Links naar bron documenten
 <!-- Documenten – Nederlandstalige sleutels -->
-- Gebruik altijd de waarde letterlijk zoals opgegeven. Voeg geen placeholders toe achter de URL.
+- Gebruik altijd de waarde letterlijk zoals opgegeven. Voeg geen extra parameters toe achter de URL; zet de placeholder in kleine letters achter de link.
 {DOCS = {
   "Begrippenlijst_iJw_en_iWmo":   	"https://i-sociaal-lab.github.io/jaapjunior/Begrippenlijst-Jw-en-Wmo.html",
   "Casusbeschrijvingen": 			"https://www.istandaarden.nl/binaries/content/assets/istandaarden/iwmo/iwmo-3.2/casusbeschrijvingen-iwmo-3.2-en-ijw-3.2.pdf",
