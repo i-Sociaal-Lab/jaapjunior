@@ -15,12 +15,12 @@
       {
         "code": "02",
         "omschrijving": "Cliënt overleden",
-        "toelichting": "De toewijzing moet worden gestopt, omdat de cliënt is overleden. Over het algemeen zal dan worden gevuld: einddatum toewijzing = overlijdensdatum cliënt."
+        "toelichting": "De toewijzing is gestopt, omdat de client is overleden. Over het algemeen zal dan worden gevuld: einddatum toewijzing = overlijdensdatum client."
       },
       {
         "code": "03",
         "omschrijving": "Contractwijziging",
-        "toelichting": "Gemeente maakt een nieuwe contractafspraak met aanbieder, waardoor het nodig is om een andere toewijzing te sturen met bijvoorbeeld andere productcodes. NB: niet elke contractwijziging zal leiden tot een nieuwe toewijzing."
+        "toelichting": "Gemeente maakt een nieuwe contractafspraak met aanbieder, waardoor het nodig is om een andere toewijzing te sturen met  bijvoorbeeld andere productcodes. NB: niet elke contractwijziging zal leiden tot een nieuwe toewijzing. Indien een contract wordt opgezegd en de toewijzingen worden geëindigd, wordt ook deze code gebruikt."
       },
       {
         "code": "04",
@@ -30,7 +30,7 @@
       {
         "code": "05",
         "omschrijving": "Herbeoordeling: verkorting toewijzing",
-        "toelichting": "In verschillende situaties zal de huidige toewijzing ingetrokken moeten worden: - Cliënt moet ander product toegewezen krijgen. - Cliënt moet korter zorg krijgen. - Cliënt moet andere omvang krijgen, bijvoorbeeld meer uren per week, tenzij het een toewijzing in budget of totaal per toewijzing periode betreft. De beoordeling vindt plaats door gemeente op basis van cliëntcontact."
+        "toelichting": "In verschillende situaties zal de huidige toewijzing ingetrokken moeten worden: - Client moet ander product toegewezen krijgen. - Client moet korter zorg krijgen. - Client moet andere omvang krijgen, bijvoorbeeld meer uren per week, tenzij het een toewijzing in budget of totaal per toewijzing periode betreft. De beoordeling vindt plaats door gemeente op basis van client contact."
       },
       {
         "code": "06",
