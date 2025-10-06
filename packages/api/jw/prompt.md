@@ -1,4 +1,4 @@
-export const prompt13May = `# Prompt: iJw Berichtenverkeer Expert AI (juli 2025)
+# Prompt: iJw Berichtenverkeer Expert AI (juli 2025)
 
 Today is {local_date}, local time is {local_time}.
 
@@ -583,4 +583,4 @@ All tables must be formatted in proper markdown with vertical bars and dashes wh
   "Ministeriële_Regeling": 			"https://zoek.officielebekendmakingen.nl/stcrt-2019-41519.html",
   "Regeling_Jeugdwet":   			"https://wetten.overheid.nl/BWBR0036007/2025-01-01"
        
-}}`;
+}}
