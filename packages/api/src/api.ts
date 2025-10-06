@@ -9,7 +9,7 @@ import * as jose from "jose";
 import type { ChatMessage } from "llamaindex";
 import { nanoid } from "nanoid";
 import * as v from "valibot";
-import { llms, prompts, query } from "./agent.js";
+import { agents, llms } from "./agent.js";
 import { getEnvOrThrow } from "./get-env.js";
 import { getRandomItem } from "./random.js";
 
@@ -180,7 +180,7 @@ export const api = new Hono<{ Variables: Variables }>()
 	.post("question", vValidator("json", oneOffMessageSchema), async (c) => {
 		const { q } = c.req.valid("json");
 
-		const response = await query(q, [], db);
+		const response = await agents.jw.query(q, [], db);
 
 		return c.json({ response: response.message.content });
 	})
@@ -231,36 +231,26 @@ export const api = new Hono<{ Variables: Variables }>()
 				if (selectedModel === "rate") {
 					let modelFirst: keyof typeof llms;
 					let modelSecond: keyof typeof llms;
-					let promptFirst: keyof typeof prompts;
-					let promptSecond: keyof typeof prompts;
 
 					const availableModels = Object.keys(llms) as (keyof typeof llms)[];
-					const availablePrompts = Object.keys(
-						prompts,
-					) as (keyof typeof prompts)[];
 
 					do {
 						modelFirst = getRandomItem(availableModels);
 						modelSecond = getRandomItem(availableModels);
-
-						promptFirst = getRandomItem(availablePrompts);
-						promptSecond = getRandomItem(availablePrompts);
-					} while (modelFirst === modelSecond && promptFirst === promptSecond);
+					} while (modelFirst === modelSecond);
 
 					const [responseFirst, responseSecond] = await Promise.all([
-						query(
+						agents.jw.query(
 							inputText,
 							conversation.messages as ChatMessage[],
 							db,
 							modelFirst,
-							promptFirst,
 						),
-						query(
+						agents.jw.query(
 							inputText,
 							conversation.messages as ChatMessage[],
 							db,
 							modelSecond,
-							promptSecond,
 						),
 					]);
 
@@ -272,7 +262,7 @@ export const api = new Hono<{ Variables: Variables }>()
 					return c.json([responseFirst.message, responseSecond.message]);
 				}
 
-				const response = await query(
+				const response = await agents.jw.query(
 					inputText,
 					conversation.messages as ChatMessage[],
 					db,
