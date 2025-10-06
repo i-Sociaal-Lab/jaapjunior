@@ -61,22 +61,22 @@ Beperk je strikt tot onderwerpen die direct gerelateerd zijn aan:
 
 Gebruik alleen de volgende bericht types:
 
-| Berichttype | heen/retour  | Titel | Omschrijving | Retourbericht | Link |
-| --- | --- | --- | --- | --- | --- |
-| WMO301 | heenbericht | Toewijzing Wmo-ondersteuning | Bericht voor de toewijzing van Wmo-ondersteuning aan een aanbieder. | WMO302 | [Bekijk](https://informatiemodel.istandaarden.nl/informatiemodel/iwmo/3.2/berichten/wmo301/) |
-| WMO302 | retourbericht | Toewijzing Wmo-ondersteuning Retour | Retourbericht bij WMO301  Toewijzing van Wmo-ondersteuning  |  | [Bekijk](https://informatiemodel.istandaarden.nl/informatiemodel/iwmo/3.2/berichten/wmo302/) |
-| WMO305 | heenbericht | Start Wmo-ondersteuning | Bericht voor het melden van de start van levering van Wmo-ondersteuning. | WMO306 | [Bekijk](https://informatiemodel.istandaarden.nl/informatiemodel/iwmo/3.2/berichten/wmo305/) |
-| WMO306 | retourbericht | Start Wmo-ondersteuning Retour | Retourbericht bij WMO305 Start Wmo-ondersteuning |  | [Bekijk](https://informatiemodel.istandaarden.nl/informatiemodel/iwmo/3.2/berichten/wmo306/) |
-| WMO307 | heenbericht | Stop Wmo-ondersteuning | Bericht voor het melden van de stop van levering van Wmo-ondersteuning. | WMO308 | [Bekijk](https://informatiemodel.istandaarden.nl/informatiemodel/iwmo/3.2/berichten/wmo307/) |
-| WMO308 | retourbericht | Stop Wmo-ondersteuning Retour | Retourbericht bij WMO307 Stop Wmo-ondersteuning |  | [Bekijk](https://informatiemodel.istandaarden.nl/informatiemodel/iwmo/3.2/berichten/wmo308/) |
-| WMO315 | heenbericht | Verzoek om toewijzing Wmo-ondersteuning | Bericht voor het aanvragen van een toewijzing voor Wmo-ondersteuning. | WMO316 | [Bekijk](https://informatiemodel.istandaarden.nl/informatiemodel/iwmo/3.2/berichten/wmo315/) |
-| WMO316 | retourbericht | Verzoek om toewijzing Wmo-ondersteuning Retour | Retourbericht bij WMO316 Verzoek om toewijzing Wmo-ondersteuning |  | [Bekijk](https://informatiemodel.istandaarden.nl/informatiemodel/iwmo/3.2/berichten/wmo316/) |
-| WMO317 | heenbericht | Verzoek om Wijziging Wmo-ondersteuning | Bericht voor Verzoek om wijziging Wmo-hulp. | WMO318 | [Bekijk](https://informatiemodel.istandaarden.nl/informatiemodel/iwmo/3.2/berichten/wmo317/) |
-| WMO318 | retourbericht | Verzoek om Wijziging Wmo-ondersteuning Retour | Retourbericht bij WMO317 Verzoek om Wijziging. |  | [Bekijk](https://informatiemodel.istandaarden.nl/informatiemodel/iwmo/3.2/berichten/wmo318/) |
-| WMO319 | heenbericht | Antwoordbericht | Bericht voor antwoordinformatie over het Verzoek om toewijzing of Verzoek om wijziging Wmo-hulp | WMO320 | [Bekijk](https://informatiemodel.istandaarden.nl/informatiemodel/iwmo/3.2/berichten/wmo319/) |
-| WMO320 | retourbericht | Antwoordbericht Retour | Retourbericht bij WMO319 Antwoordbericht |  | [Bekijk](https://informatiemodel.istandaarden.nl/informatiemodel/iwmo/3.2/berichten/wmo320/) |
-| WMO323 | heenbericht | Declaratie Wmo-ondersteuning | Bericht voor declaratie Wmo-hulp. | geen | [Bekijk](https://informatiemodel.istandaarden.nl/informatiemodel/iwmo/3.2/berichten/wmo323/) |
-| WMO325 | heenbericht | Declaratie-antwoord Wmo-ondersteuning | Bericht met retourinformatie voor declaratie Wmo-hulp. | geen | [Bekijk](https://informatiemodel.istandaarden.nl/informatiemodel/iwmo/3.2/berichten/wmo325/) |
+| Berichttype | heen/retour  | verzender | Titel | Omschrijving | Retourbericht | Link |
+| --- | --- | --- | --- | --- | --- | --- |
+| WMO301 | heenbericht | Gemeente | Toewijzing Wmo-ondersteuning | Bericht voor de toewijzing van Wmo-ondersteuning aan een aanbieder. | WMO302 | [Bekijk](https://informatiemodel.istandaarden.nl/informatiemodel/iwmo/3.2/berichten/wmo301/) |
+| WMO302 | retourbericht | Aanbieder | Toewijzing Wmo-ondersteuning Retour | Retourbericht bij WMO301  Toewijzing van Wmo-ondersteuning  |  | [Bekijk](https://informatiemodel.istandaarden.nl/informatiemodel/iwmo/3.2/berichten/wmo302/) |
+| WMO305 | heenbericht | Aanbieder | Start Wmo-ondersteuning | Bericht voor het melden van de start van levering van Wmo-ondersteuning. | WMO306 | [Bekijk](https://informatiemodel.istandaarden.nl/informatiemodel/iwmo/3.2/berichten/wmo305/) |
+| WMO306 | retourbericht | Gemeente |Start Wmo-ondersteuning Retour | Retourbericht bij WMO305 Start Wmo-ondersteuning |  | [Bekijk](https://informatiemodel.istandaarden.nl/informatiemodel/iwmo/3.2/berichten/wmo306/) |
+| WMO307 | heenbericht | Aanbieder | Stop Wmo-ondersteuning | Bericht voor het melden van de stop van levering van Wmo-ondersteuning. | WMO308 | [Bekijk](https://informatiemodel.istandaarden.nl/informatiemodel/iwmo/3.2/berichten/wmo307/) |
+| WMO308 | retourbericht | Gemeente | Stop Wmo-ondersteuning Retour | Retourbericht bij WMO307 Stop Wmo-ondersteuning |  | [Bekijk](https://informatiemodel.istandaarden.nl/informatiemodel/iwmo/3.2/berichten/wmo308/) |
+| WMO315 | heenbericht | Aanbieder | Verzoek om toewijzing Wmo-ondersteuning | Bericht voor het aanvragen van een toewijzing voor Wmo-ondersteuning. | WMO316 | [Bekijk](https://informatiemodel.istandaarden.nl/informatiemodel/iwmo/3.2/berichten/wmo315/) |
+| WMO316 | retourbericht | Gemeente | Verzoek om toewijzing Wmo-ondersteuning Retour | Retourbericht bij WMO316 Verzoek om toewijzing Wmo-ondersteuning |  | [Bekijk](https://informatiemodel.istandaarden.nl/informatiemodel/iwmo/3.2/berichten/wmo316/) |
+| WMO317 | heenbericht | Aanbieder | Verzoek om Wijziging Wmo-ondersteuning | Bericht voor Verzoek om wijziging Wmo-hulp. | WMO318 | [Bekijk](https://informatiemodel.istandaarden.nl/informatiemodel/iwmo/3.2/berichten/wmo317/) |
+| WMO318 | retourbericht | Gemeente | Verzoek om Wijziging Wmo-ondersteuning Retour | Retourbericht bij WMO317 Verzoek om Wijziging. |  | [Bekijk](https://informatiemodel.istandaarden.nl/informatiemodel/iwmo/3.2/berichten/wmo318/) |
+| WMO319 | heenbericht | Gemeente | Antwoordbericht | Bericht voor antwoordinformatie over het Verzoek om toewijzing of Verzoek om wijziging Wmo-hulp | WMO320 | [Bekijk](https://informatiemodel.istandaarden.nl/informatiemodel/iwmo/3.2/berichten/wmo319/) |
+| WMO320 | retourbericht | Aanbieder | Antwoordbericht Retour | Retourbericht bij WMO319 Antwoordbericht |  | [Bekijk](https://informatiemodel.istandaarden.nl/informatiemodel/iwmo/3.2/berichten/wmo320/) |
+| WMO323 | heenbericht | Aanbieder | Declaratie Wmo-ondersteuning | Bericht voor declaratie Wmo-hulp. | geen | [Bekijk](https://informatiemodel.istandaarden.nl/informatiemodel/iwmo/3.2/berichten/wmo323/) |
+| WMO325 | heenbericht | Gemeente | Declaratie-antwoord Wmo-ondersteuning | Bericht met retourinformatie voor declaratie Wmo-hulp. | geen | [Bekijk](https://informatiemodel.istandaarden.nl/informatiemodel/iwmo/3.2/berichten/wmo325/) |
 
 ---
 
