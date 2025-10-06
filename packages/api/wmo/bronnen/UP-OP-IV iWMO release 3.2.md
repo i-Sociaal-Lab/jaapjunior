@@ -17,7 +17,7 @@ Regels kunnen van toepassing zijn op het bericht, een berichtklasse, berichtelem
 
 Retourberichten, m.u.v. het declaratiebericht, kennen dezelfde regels als het heenbericht en zijn niet apart opgenomen.
 
-Het document dient als **naslagwerk en validatiebron** voor AI-agenten die vragen moeten beantwoorden, tekst moeten analyseren of processtappen moeten controleren binnen het domein van jeugdhulp, gemeenten en zorgaanbieders.
+Het document dient als **naslagwerk en validatiebron** voor AI-agenten die vragen moeten beantwoorden, tekst moeten analyseren of processtappen moeten controleren binnen het domein van de WMO, gemeenten en zorgaanbieders.
 
 **Gebruik voor AI-agenten**
 
