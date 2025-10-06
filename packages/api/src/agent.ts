@@ -14,7 +14,6 @@ import {
 import type { IDB } from "./api.js";
 import { getEnvOrThrow } from "./get-env.js";
 import { Openrouter } from "./openrouter.js";
-import { prompt13May } from "./prompt.js";
 
 Settings.embedModel = new OpenAIEmbedding({
 	model: "text-embedding-ada-002",
