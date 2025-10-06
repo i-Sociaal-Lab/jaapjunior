@@ -35,7 +35,7 @@
       {
         "code": "06",
         "omschrijving": "Uitstroom naar ander domein",
-        "toelichting": "Cliënt gaat over naar ander domein, bijvoorbeeld naar Wlz, en daarom eindigt de Jw toewijzing."
+        "toelichting": "Client gaat over naar ander domein, de Wlz, en daarom eindigt de Jw toewijzing."
       },
       {
         "code": "07",
@@ -45,7 +45,7 @@
       {
         "code": "08",
         "omschrijving": "Wijziging leveringsvorm",
-        "toelichting": "Cliënt gaat gebruik maken van pgb of Wlz."
+        "toelichting": "Client gaat gebruik maken van PGB. PGB is onderdeel van het JW-domein. Het domein wijzigt niet."
       },
       {
         "code": "09",
