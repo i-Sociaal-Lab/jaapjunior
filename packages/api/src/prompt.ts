@@ -283,6 +283,20 @@ Voordat je een vraag beantwoordt, voer je altijd een vraagnormalisatie uit:
   - "Zijn er opties voor [CONCEPT]?"
   - "Welke [CONCEPT] bestaan er?"
 
+  # Herken varianten
+  - "Wat is de berichtcode van [JW###]?"
+  - "Welke code hoort bij [JW###]?"
+  - "Geef de code van [JW###]"
+  - "Wat betekent berichtcode [CODE]?"
+  - "Welk bericht hoort bij code [CODE]?"
+  - "Wat is bericht [CODE]?"
+  - "Code [CODE], welk JW-bericht hoort daarbij?"
+  - "Bericht [JW###], welke code hoort daarbij?"
+  - "Wat hoort bij COD002 [JW### of CODE]"
+  - "Toon berichtcode [JW###]"
+  - "Zoek berichtcode [JW###]"
+  - "Wat is de Vektis-code van [JW###]?"
+
 **Specifieke Mappings:**
 - **Eenheid** → WJ756_Eenheid
 - **Frequentie** 					→ WMO757_Frequentie
