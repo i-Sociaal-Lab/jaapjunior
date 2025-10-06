@@ -1,15 +1,21 @@
-# COD467: Status aanlevering
-
-**Definitie:**  
-Indicatie over de status van de informatie in de berichtklasse.
-
----
-
-## Codelijst
-
-| Code | Omschrijving |
-|------|--------------|
-| 1 | Eerste aanlevering |
-| 2 | Gewijzigde aanlevering |
-| 3 | Verwijderen aanlevering |
-| 9 | Niet van toepassing (ongewijzigd) |
+{
+  "standaard": "iJw",
+  "versie": "3.2",
+  "codelijst": {
+    "id": "COD467",
+    "naam": "Status aanlevering",
+    "definitie": "Indicatie over de status van de informatie in de berichtklasse.",
+    "bronUrl": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/cod467",
+    "codes": [
+      { "code": "1", "omschrijving": "Eerste aanlevering" },
+      { "code": "2", "omschrijving": "Gewijzigde aanlevering" },
+      { "code": "3", "omschrijving": "Verwijderen aanlevering" },
+      { "code": "9", "omschrijving": "Niet van toepassing (ongewijzigd)" }
+    ]
+  },
+  "metadata": {
+    "laatstBijgewerkt": "04-10-2025",
+    "tabeltype": "Referentielijst",
+    "toepassing": "Geeft de status van aanlevering aan binnen bertichtklassen StartProduct (JW305) en StopProduct (JW307) "
+  }
+}
