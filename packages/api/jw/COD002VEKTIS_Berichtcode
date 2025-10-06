@@ -1,26 +1,31 @@
-# COD002-VEKTIS: Berichtcode
-
-**Definitie:**  
-LDT_Berichtcode is een data-element uit de **Header** van een bericht en dient conform de codelijst van Vektis ingevuld te worden.  
-Bijvoorbeeld: de Berichtcode van een **JW318** bericht is **487**.
-
----
-
-## Codelijst
-
-| Bericht | Code |
-|---------|------|
-| JW301 | 436 |
-| JW302 | 437 |
-| JW305 | 438 |
-| JW306 | 439 |
-| JW307 | 440 |
-| JW308 | 441 |
-| JW315 | 446 |
-| JW316 | 447 |
-| JW317 | 486 |
-| JW318 | 487 |
-| JW319 | 488 |
-| JW320 | 489 |
-| JW323 | 490 |
-| JW325 | 491 |
+{
+  "standaard": "iJw",
+  "versie": "3.2",
+  "codelijst": {
+    "id": "COD002-VEKTIS",
+    "naam": "Berichtcode",
+    "definitie": "LDT_Berichtcode is een data-element uit de Header van een bericht en dient conform de codelijst van Vektis ingevuld te worden. Bijvoorbeeld: de Berichtcode van een JW318 bericht is 487.",
+    "bronUrl": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/cod002-vektis",
+    "codes": [
+      { "bericht": "JW301", "code": "436" },
+      { "bericht": "JW302", "code": "437" },
+      { "bericht": "JW305", "code": "438" },
+      { "bericht": "JW306", "code": "439" },
+      { "bericht": "JW307", "code": "440" },
+      { "bericht": "JW308", "code": "441" },
+      { "bericht": "JW315", "code": "446" },
+      { "bericht": "JW316", "code": "447" },
+      { "bericht": "JW317", "code": "486" },
+      { "bericht": "JW318", "code": "487" },
+      { "bericht": "JW319", "code": "488" },
+      { "bericht": "JW320", "code": "489" },
+      { "bericht": "JW323", "code": "490" },
+      { "bericht": "JW325", "code": "491" }
+    ]
+  },
+  "metadata": {
+    "laatstBijgewerkt": "04-10-2025",
+    "tabeltype": "Referentielijst",
+    "toepassing": "Verplicht veld in de berichtheader conform Vektis-standaard"
+  }
+}
