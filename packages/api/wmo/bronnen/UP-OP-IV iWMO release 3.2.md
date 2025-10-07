@@ -890,6 +890,8 @@ Welke productcodes gebruikt mogen worden in het berichtenverkeer is afhankelijk 
 - Aspecifieke toewijzing. Indien in ToegewezenProduct alleen een productcategorie is gevuld, wordt deze productcategorie overgenomen en wordt een bij de toegewezen productcategorie behorende productcode (volgens de productcodelijst die gebruikt moet worden) gevuld. Dit betekent dat op 1 to wijzingsnummer, toegewezen categorie meerdere prestaties voor dezelfde periode kunnen volgen indien meerdere producten van dezelfde productcategorie zijn geleverd.
 - Generieke toewijzing met maximaal budget. Indien in ToegewezenProduct de productcategorie en productcode niet gevuld zijn dan wordt de productcategorie en productcode gevuld behorend bij de levering (gebaseerd op de productcodelijst die gebruikt moet worden). Dit betekent dat op 1 toewijzingsnummer meerdere prestatieregels voor dezelfde periode kunnen volgen indien meerdere producten uit dezelfde of verschillende productcategorieën zijn geleverd.
 
+<IV076>
+ 
 **IV076**
 
 *Hoe moet het volume in de prestatie gevuld worden, wanneer de toewijzing de frequentie week heeft?*
@@ -970,6 +972,10 @@ Volume :		Aantal zondagen in de productperiode + 1 * 300 euro (1500 euro)
 Declaratieperiode september
 Over september wordt er geen declaratie meer ingediend. De laatste week, die gedeeltelijk in september valt, is al meegenomen in de declaratie over augustus.
 
+</IV076>
+
+<IV077>
+ 
 **IV077**
 
 *Hoe moet het maximaal te declareren volume berekend worden over de productperiode bij gebruik van de frequentie per week in de toewijzing?*
@@ -1031,7 +1037,9 @@ Het aantal zondagen in de productperiodes:
 Maximaal volume per productperiode: Het aantal zondagen vermenigvuldigd met het volume uit de toewijzing (evt. vermeerderd met een extra weekvolume):
 - Juli 3 zondagen : 3 x weekvolume (300 euro) = 900 euro
 - Augustus 5 zondagen + 1 weekvolume: 6 x weekvolumes (300 euro) = 1800 euro
+</IV077>
 
+<IV078>
 **IV078**
 
 *Wat mag gedeclareerd worden wanneer een onvolledige periode is toegewezen?*
@@ -1055,6 +1063,8 @@ Frequentie in ToegewezenProduct = maand
 Toewijzing voor 15 uur per maand met ingangsdatum 14-10-2025 en einddatum 13-12-2025
 
 Voor de productperiode 14-10-2025 t/m 31-10-2025 mag maximaal 15 uur gedeclareerd worden, indien deze uren ook daadwerkelijk geleverd zijn. Ondanks dat de ingangsdatum 14-10-2025 is en er dus geen hele kalendermaand is toegewezen, mag (mits geleverd) de volledige 15 uur gedeclareerd worden.
+
+</IV078>
 
 **IV079**
 
