@@ -35,7 +35,7 @@
       {
         "code": "06",
         "omschrijving": "Uitstroom naar ander domein",
-        "toelichting": "Client gaat over naar ander domein, de Wmo, Wlz of Zvw, en daarom eindigt de Jw toewijzing."
+        "toelichting": "Een toewijzing wordt ingetrokken omdat een cliënt zorg gaat ontvangen vanuit de Wmo, Zvw of Wlz."
       },
       {
         "code": "07",
