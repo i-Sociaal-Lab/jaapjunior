@@ -541,6 +541,8 @@ De startberichten en stopberichten zijn regieberichten en mogen niet voorwaardel
 
 Indien er gebruik gemaakt wordt van de startberichten en stopberichten maar niet van het toewijzingsbericht, dan wordt Startproduct in het startbericht en StopProduct in het stopbericht niet gerelateerd aan het ToewijzingNummer uit het toewijzingsbericht. Wanneer de aanbieder vaststelt dat de zorgvraag van de client tijdens de zorglevering gewijzigd is en de toewijzing niet meer aansluit bij de zorgbehoefte, meldt de aanbieder dit bij de gemeente. De aanbieder stuurt hiervoor naar afspraak met de gemeente een verzoek om wijziging-bericht met daarin een samenhangend geheel aan gewenste toewijzingen die de volledige gewenste situatie weergeeft. De gewenste situatie wordt als 1 verzoek ingediend en beoordeeld.
 
+### **leveringsvorm** Dit zijn: zorg in natura (ZIN) en persoonsgebonden budget (pgb)
+
 ### **logische datatypen**
 
 enkelvoudige datatypen die functionele betekenis geven aan primitieve datatypen, bijvoorbeeld LDT_Plaatsnaam is de door de gemeente vastgestelde naam van een woonplaats, dit wordt vastgelegd als een string datatype van maximaal 80 posities; bij een logisch datatype wordt ook vastgelegd of, en zo ja welke, codelijst gebruikt wordt.
@@ -892,6 +894,9 @@ zie: Algemene Verordening Gegevensbescherming
 ### Wet gebruik BSN in de zorg
 
 zie: Wbsn-z
+
+### Wettelijke domeinen
+de Wettelijke domeinen zijn Wmo/JW/Wlz/Zvw, Wet maatschappelijke ondersteuning, Jeugdwet, Wet landurige zorg, Zorgverzekeringswet.
 
 ### Wet verplichte geestelijke gezondheidszorg (Wvggz)
 
