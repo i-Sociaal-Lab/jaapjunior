@@ -1,22 +1,105 @@
-# JZ588: Reden beëindiging
-
-**Definitie:**  
-De reden van beëindiging van de jeugdhulp bij een cliënt.
-
----
-
-## Codelijst
-
-| Code | Omschrijving |
-|------|--------------|
-| 02 | Overlijden |
-| 20 | Levering is tijdelijk beëindigd |
-| 31 | Levering is volgens plan beëindigd |
-| 32 | Voortijdig afgesloten: eenzijdig door de cliënt |
-| 33 | Voortijdig afgesloten: eenzijdig door de aanbieder |
-| 34 | Voortijdig afgesloten: in overeenstemming |
-| 35 | Voortijdig afgesloten: wegens externe omstandigheden |
-| 36 | Geïnitieerd door de gemeente |
-| 37 | In verband met wijzigingsverzoek |
-| 38 | Overstap naar andere aanbieder |
-| 39 | Uitstroom naar ander domein |
+{
+  "standaard": "iJw",
+  "versie": "3.2",
+  "codelijst": {
+    "id": "JZ588",
+    "naam": "Reden beëindiging",
+    "definitie": "De reden van beëindiging van de jeugdhulp bij een cliënt.",
+    "bronUrl": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/jz588",
+    "codes": [
+      { 
+        "code": "02", 
+        "omschrijving": "Overlijden", 
+        "mutatiedatum": "01-01-2025", 
+        "ingangsdatum": "01-01-2015", 
+        "Reden_Wijz_Toew": "02", 
+        "initiatief_Aanbieder": "02" 
+      },
+      { 
+        "code": "20", 
+        "omschrijving": "Levering is tijdelijk beëindigd", 
+        "mutatiedatum": "01-01-2025", 
+        "ingangsdatum": "01-01-2015", 
+        "Reden_Wijz_Toew": "nvt", 
+        "initiatief_Aanbieder": "ja" 
+      },
+      { 
+        "code": "31", 
+        "omschrijving": "Levering is volgens plan beëindigd", 
+        "mutatiedatum": "01-01-2025", 
+        "ingangsdatum": "01-01-2015", 
+        "Reden_Wijz_Toew": "nvt", 
+        "initiatief_Aanbieder": "ja" 
+      },
+      { 
+        "code": "32", 
+        "omschrijving": "Voortijdig afgesloten: eenzijdig door de cliënt", 
+        "mutatiedatum": "01-01-2025", 
+        "ingangsdatum": "01-01-2015", 
+        "Reden_Wijz_Toew": "nvt", 
+        "initiatief_Aanbieder": "ja" 
+      },
+      { 
+        "code": "33", 
+        "omschrijving": "Voortijdig afgesloten: eenzijdig door de aanbieder", 
+        "mutatiedatum": "01-01-2025", 
+        "ingangsdatum": "01-01-2015", 
+        "Reden_Wijz_Toew": "nvt", 
+        "initiatief_Aanbieder": "ja" 
+      },
+      { 
+        "code": "34", 
+        "omschrijving": "Voortijdig afgesloten: in overeenstemming", 
+        "mutatiedatum": "01-01-2025", 
+        "ingangsdatum": "01-01-2015", 
+        "Reden_Wijz_Toew": "nvt", 
+        "initiatief_Aanbieder": "ja" 
+      },
+      { 
+        "code": "35", 
+        "omschrijving": "Voortijdig afgesloten: wegens externe omstandigheden", 
+        "mutatiedatum": "01-01-2025", 
+        "ingangsdatum": "01-01-2015", 
+        "Reden_Wijz_Toew": "07", 
+        "initiatief_Aanbieder": "ja" 
+      },
+      { 
+        "code": "36", 
+        "omschrijving": "Geïnitieerd door de gemeente", 
+        "mutatiedatum": "01-04-2020", 
+        "ingangsdatum": "01-01-2021", 
+        "Reden_Wijz_Toew": "03;04;05;08;10;11", 
+        "initiatief_Aanbieder": "nvt" 
+      },
+      { 
+        "code": "37", 
+        "omschrijving": "In verband met wijzigingsverzoek", 
+        "mutatiedatum": "01-04-2020", 
+        "ingangsdatum": "01-01-2021", 
+        "Reden_Wijz_Toew": "12", 
+        "initiatief_Aanbieder": "nvt" 
+      },
+      { 
+        "code": "38", 
+        "omschrijving": "Overstap naar andere aanbieder", 
+        "mutatiedatum": "30-09-2021", 
+        "ingangsdatum": "01-01-2015", 
+        "Reden_Wijz_Toew": "09", 
+        "initiatief_Aanbieder": "nvt" 
+      },
+      { 
+        "code": "39", 
+        "omschrijving": "Uitstroom naar ander domein", 
+        "mutatiedatum": "30-09-2021", 
+        "ingangsdatum": "01-04-2022", 
+        "Reden_Wijz_Toew": "06", 
+        "initiatief_Aanbieder": "nvt" 
+      }
+    ]
+  },
+  "metadata": {
+    "laatstBijgewerkt": "01-04-2022",
+    "tabeltype": "Referentielijst",
+    "toepassing": "Wordt gebruikt om de reden van beëindiging van een jeugdhulptraject aan te geven, inclusief koppeling met reden wijziging toewijzing en initiatiefnemer."
+  }
+}
