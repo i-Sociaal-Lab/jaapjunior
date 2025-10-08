@@ -10,7 +10,7 @@
       { 
         "code": "02", 
         "omschrijving": "Overlijden", 
-        "mutatiedatum": "01-01-2025", 
+        "mutatiedatum": "niet gespecificeerd", 
         "ingangsdatum": "01-01-2015", 
         "Reden_Wijz_Toew": "02", 
         "initiatief_Aanbieder": "02" 
@@ -18,7 +18,7 @@
       { 
         "code": "20", 
         "omschrijving": "Levering is tijdelijk beëindigd", 
-        "mutatiedatum": "01-01-2025", 
+        "mutatiedatum": "niet gespecificeerd", 
         "ingangsdatum": "01-01-2015", 
         "Reden_Wijz_Toew": "nvt", 
         "initiatief_Aanbieder": "ja" 
@@ -26,7 +26,7 @@
       { 
         "code": "31", 
         "omschrijving": "Levering is volgens plan beëindigd", 
-        "mutatiedatum": "01-01-2025", 
+        "mutatiedatum": "niet gespecificeerd", 
         "ingangsdatum": "01-01-2015", 
         "Reden_Wijz_Toew": "nvt", 
         "initiatief_Aanbieder": "ja" 
@@ -34,7 +34,7 @@
       { 
         "code": "32", 
         "omschrijving": "Voortijdig afgesloten: eenzijdig door de cliënt", 
-        "mutatiedatum": "01-01-2025", 
+        "mutatiedatum": "niet gespecificeerd", 
         "ingangsdatum": "01-01-2015", 
         "Reden_Wijz_Toew": "nvt", 
         "initiatief_Aanbieder": "ja" 
@@ -42,7 +42,7 @@
       { 
         "code": "33", 
         "omschrijving": "Voortijdig afgesloten: eenzijdig door de aanbieder", 
-        "mutatiedatum": "01-01-2025", 
+        "mutatiedatum": "niet gespecificeerd", 
         "ingangsdatum": "01-01-2015", 
         "Reden_Wijz_Toew": "nvt", 
         "initiatief_Aanbieder": "ja" 
@@ -50,7 +50,7 @@
       { 
         "code": "34", 
         "omschrijving": "Voortijdig afgesloten: in overeenstemming", 
-        "mutatiedatum": "01-01-2025", 
+        "mutatiedatum": "niet gespecificeerd", 
         "ingangsdatum": "01-01-2015", 
         "Reden_Wijz_Toew": "nvt", 
         "initiatief_Aanbieder": "ja" 
@@ -58,7 +58,7 @@
       { 
         "code": "35", 
         "omschrijving": "Voortijdig afgesloten: wegens externe omstandigheden", 
-        "mutatiedatum": "01-01-2025", 
+        "mutatiedatum": "niet gespecificeerd", 
         "ingangsdatum": "01-01-2015", 
         "Reden_Wijz_Toew": "07", 
         "initiatief_Aanbieder": "ja" 
