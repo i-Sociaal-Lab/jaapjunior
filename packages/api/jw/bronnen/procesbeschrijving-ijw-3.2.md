@@ -307,20 +307,20 @@ toegelicht. Zie voor meer informatie de casuistiek.
  
 ## JZ002: Reden wijziging toewijzing
 
-* Client overleden
+* Client overleden (02)
 De toewijzing moet worden gestopt, omdat de client is overleden.
 Over het algemeen zal dan worden gevuld: einddatum toewijzing = overlijdensdatum client.   
  
-* Contractwijziging  
+* Contractwijziging (03)
 Gemeente maakt een nieuwe contractafspraak met aanbieder, waardoor toewijzing nodig is 
 met ander bijvoorbeeld andere productcodes. NB: niet elke contractwijziging zal leiden tot een 
 nieuwe toewijzing.  
  
-* Herbeoordeling: verlenging toewijzing 
+* Herbeoordeling: verlenging toewijzing (04)
 Als gevolg van een herbeoordeling kan een toewijzing verlengd worden. Als de zorg verlengd 
 wordt, dan kan eventueel gebruik gemaakt worden van dezelfde toewijzing.
  
-* Herbeoordeling: verkorting toewijzing 
+* Herbeoordeling: verkorting toewijzing (05)
 In verschillende situaties zal de huidige toewijzing ingetrokken moeten worden:
 
 - Client moet ander product toegewezen krijgen.
@@ -328,11 +328,11 @@ In verschillende situaties zal de huidige toewijzing ingetrokken moeten worden:
 - Client moet andere omvang krijgen, bijvoorbeeld meer uren per week, tenzij het een 
 toewijzing in budget of totaal per toewijzing periode betreft.
 
-* Uitstroom naar ander domein 
+* Uitstroom naar ander domein (06)
 Client gaat over naar ander domein, bijvoorbeeld naar Wlz, en daarom eindigt de Jw 
 toewijzing.  
  
-* Verhuizing naar een andere gemeente  
+* Verhuizing naar een andere gemeente (07)
 De gemeente kan een afgegeven Toewijzing niet zomaar intrekken bij verhuizing naar een 
 andere gemeente. De gemeente die de toewijzing heeft verstrekt, blijft verantwoordelijk voor 
 de cliënt tot het moment dat de cliënt is overgedragen aan de gemeente die volgens het 
@@ -340,31 +340,31 @@ woonplaatsbeginsel verantwoordelijk is voor de cliënt. Dit betekent dat een toe
 oude gemeente niet kan worden afgesloten voordat er zekerheid is dat de nieuwe gemeente 
 een aansluitende toewijzing verzendt.  
  
-* Wijziging leveringsvorm  
+* Wijziging leveringsvorm (08)
 Client gaat gebruik maken van pgb.  
  
-* Overstap naar andere aanbieder  
+* Overstap naar andere aanbieder (09)  
 Client gaat naar een andere aanbieder, dus de toewijzing bij deze aanbieder moet beeindigd 
 worden.  
  
-* Overgang naar nieuwe bekostigingssystematiek  
+* Overgang naar nieuwe bekostigingssystematiek (10)
 De toewijzing is ingetrokken, omdat de client is overgegaan naar een andere 
 regeling/bekostiging.  
  
-* Gemeentelijke herindeling  
+* Gemeentelijke herindeling (11)
 Volgens protocol gemeentelijke herindeling is deze toewijzing niet meer geldig. 
  
-* Geinitieerd door de aanbieder 
+* Geinitieerd door de aanbieder (12)
 Indien een toewijzing wijzigt als gevolg van een verzoek om wijziging, kan dit door de 
 gemeente worden aangegeven middels deze code. Het is dan voor de aanbieder duidelijk op 
 basis waarvan de wijziging is doorgevoerd.
 
-* Verwijderd 
+* Verwijderd (13)
 Als een toewijzing ten onrechte is verstuurd en de gemeente dit ongedaan wil maken. Hierbij 
 wordt de einddatum gelijk gesteld aan de ingangsdatum. De toewijzing moet als niet 
 verzonden beschouwd worden. 
  
-* Administratieve correctie 
+* Administratieve correctie (14)
 Als de gemeente een (invoer)fout heeft gemaakt die hersteld moet worden. De velden die 
 gewijzigd mogen worden, zijn beschreven in OP033X1
 
