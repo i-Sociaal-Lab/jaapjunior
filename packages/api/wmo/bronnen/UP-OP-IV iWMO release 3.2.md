@@ -859,11 +859,16 @@ Let op: wijzigen van een toewijzing is slechts beperkt toegestaan (Zie ook OP33x
 
 Indien de omvang bij andere frequenties dan Totaal binnen geldigheidsduur toewijzing gewijzigd wordt, betekent dat dat de bestaande toewijzing wordt ingetrokken en een nieuwe toewijzing wordt verzonden met als Ingangsdatum de datum waarop de gewijzigde omvang ingaat. Dit betreft dan een nieuwe initiele toekenning met een nieuw ToewijzingNummer.
 
+<IV074>
+
 **IV074**
 
 *Wat is het verschil tussen de verschillende uitvoeringsvarianten?*
 
 De iStandaarden ondersteunen een aantal verschillende uitvoeringsvarianten: inspanningsgericht, outputgericht en taakgericht. De specifieke eigenschappen van deze uitvoeringsvarianten zijn beschreven in het document Handreiking uitvoeringsvarianten, deze is beschikbaar via [www.istandaarden.nl/ibieb/handreiking-uitvoeringsvarianten-iwmo-en-ijw](http://www.istandaarden.nl/ibieb/handreiking-uitvoeringsvarianten-iwmo-en-ijw).
+</IV074>
+
+<IV075>
 
 **IV075**
 
@@ -889,6 +894,7 @@ Welke productcodes gebruikt mogen worden in het berichtenverkeer is afhankelijk 
 
 - Aspecifieke toewijzing. Indien in ToegewezenProduct alleen een productcategorie is gevuld, wordt deze productcategorie overgenomen en wordt een bij de toegewezen productcategorie behorende productcode (volgens de productcodelijst die gebruikt moet worden) gevuld. Dit betekent dat op 1 to wijzingsnummer, toegewezen categorie meerdere prestaties voor dezelfde periode kunnen volgen indien meerdere producten van dezelfde productcategorie zijn geleverd.
 - Generieke toewijzing met maximaal budget. Indien in ToegewezenProduct de productcategorie en productcode niet gevuld zijn dan wordt de productcategorie en productcode gevuld behorend bij de levering (gebaseerd op de productcodelijst die gebruikt moet worden). Dit betekent dat op 1 toewijzingsnummer meerdere prestatieregels voor dezelfde periode kunnen volgen indien meerdere producten uit dezelfde of verschillende productcategorieën zijn geleverd.
+</IV075>
 
 <IV076>
  
@@ -1066,6 +1072,8 @@ Voor de productperiode 14-10-2025 t/m 31-10-2025 mag maximaal 15 uur gedeclareer
 
 </IV078>
 
+<IV079>
+ 
 **IV079**
 
 *Hoe moet het volume in de prestatie gevuld worden wanneer de eenheid in de prestatie uren is en de geleverde prestatie niet uit volledige uren bestaat?*
@@ -1076,7 +1084,10 @@ Geleverde zorg per prestatie behorend bij een toewijzing wordt gesommeerd over d
 
 Dus indien er wekelijks 95 minuten worden geleverd en de prestatieperiode bevat 4 weken, dan wordt eerst het totaal over de prestatieperiode bepaald = 4 weken x 95 minuten =380 minuten.
 Er wordt gedeclareerd in uren: 380 / 60 = 6 uur en 20 minuten. Afgerond is dit 6 uur. In het volume van de prestatie wordt 6 uur gevuld.
+</IV079>
 
+<IV081>
+ 
 **IV081**
 
 *Hoe moet het ProductTarief gevuld worden?*
@@ -1087,6 +1098,9 @@ Alleen voor uren en minuten is er een uitzondering mogelijk. Gemeente en aanbied
 
 Dit (afgeronde) tarief wordt in de Prestatie bij ProductTarief opgenomen, maar niet gebruikt voor de berekening van IngediendBedrag.
 Het IngediendBedrag wordt als volgt bepaald: (contractuele uurtarief * aantal minuten) / 60. Dit bedrag wordt vervolgens afgerond op 2 decimalen.(TR346)
+</IV081>
+
+<IV084>
 
 **IV084**
 
@@ -1107,7 +1121,9 @@ In onderstaand voorbeeld wordt uitgegaan van de volgende situatie:
 Er worden nu 2 Prestaties ingediend met de volgende ProductPeriodes:
 ProductPeriode Prestatie 1: 01-03-2025 t/m 09-03-2025
 ProductPeriode Prestatie 2: 23-03-2025 t/m 31-03-2025
+</IV084>
 
+<IV085>
 **IV085**
 
 *Wanneer kan een creditering van een declaratie verzonden worden?*
@@ -1116,7 +1132,10 @@ Wanneer een eerder ingediende prestatie door de aanbieder onjuist is bevonden, k
 Dit kan alleen nadat er een declaratie-antwoordbericht op de debet prestatie is ontvangen en de prestatie daarin niet is afgekeurd. Een door de gemeente afgekeurde prestatie wordt nooit gecrediteerd.
 
 NB: een creditering is een eenzijdige handeling van de aanbieder, die niet bestreden kan worden door een gemeente. De gemeente kan een ingediende credit prestatie dus niet afkeuren, tenzij het technische afkeur betreft. Zie hiervoor invulinstructies IV088 en IV087).
+</IV085>
 
+<IV086>
+ 
 **IV086**
 
 *Hoe moet worden omgegaan met debet en credit prestaties in een declaratiebericht?*
@@ -1129,7 +1148,10 @@ Debet en credit prestaties kunnen in 1 declaratiebericht worden aangeleverd. Hie
 Totaal declaratiebedrag
 
 Het totale declaratiebedrag van alle debet en credit prestaties in het declaratiebericht wordt ingevuld in TotaalIngediendBedrag in de header van het bericht. Hierbij worden debetbedragen opgeteld en creditbedragen afgetrokken.
+</IV086>
 
+<IV087>
+ 
 **IV087**
 
 *Hoe wordt een declaratie-antwoordbericht opgesteld?*
@@ -1173,7 +1195,9 @@ Het declaratie-antwoordbericht dient niet:
 - Voor het opvragen van (extra) informatie door de gemeente.
 - Voor het doorgeven van correcties op declaratiegegevens aan de aanbieder.
 NB: Een bericht kan informatie over meerdere cliënten bevatten. Cliënten waarin geen fouten zijn geconstateerd, worden niet opgenomen in het declaratie-antwoordbericht.
+</IV087>
 
+<IV088>
 **IV088**
 
 *Welke retourcode moet gevuld worden in het declaratie-antwoordbericht?*
@@ -1204,7 +1228,9 @@ Het declaratiebericht wordt gecontroleerd op alle technisch controleerbare regel
 - Bilaterale afspraken tussen ketenpartijen, zoals contractafspraken die opgenomen zijn in een regel binnen de iStandaarden.
 
 Deze regels hebben een eigen retourcode die gevuld wordt in het declaratie-antwoordbericht bij de berichtklasse waarin de fout geconstateerd is.
+</IV088>
 
+<IV089>
 **IV089**
 
 *Hoe moet ProductPeriode gevuld worden?*
@@ -1248,6 +1274,9 @@ Afspraak is dat op het eind van het traject de declaratie mag worden ingediend.
 Cliënt ontvangt outputgerichte hulp vanaf het begin tot het eind van toegewezen periode (08-04-2021 t/m 17-06-2021). Pas op 17-06-2021 kan het resultaat van de outputgerichte hulp worden vastgesteld. In de maanden April en Mei wordt er geen declaratie ingediend voor deze cliënt. Er volgt in de maand juni 1 Prestatie met de volgende ProductPeriode:
 
 - Juni: 01-06-2021 t/m 17-06-2021
+</IV089>
+
+<IV090>
 
 **IV090**
 
@@ -1282,6 +1311,9 @@ In juni blijkt dat (ononderbroken) geleverde ondersteuning aan een cliënt tusse
 - ProductPeriode Prestatie 1: 15-02-2021 t/m 28-02-2021
 - ProductPeriode Prestatie 2: 01-03-2021 t/m 31-03-2021
 - ProductPeriode Prestatie 3: 01-04-2021 t/m 30-04-2021
+</IV090>
+
+<IV091>
 
 **IV091**
 
@@ -1298,6 +1330,9 @@ Een creditprestatie is identiek aan de oorspronkelijke debetprestatie, met uitzo
 - DebetCredit in IngediendBedrag wordt gevuld met C (Credit)
 
 Crediteren is alleen mogelijk na ontvangst van het declaratie-antwoordbericht waarin de te crediteren prestatie is toegekend (zie IV085).
+</IV091>
+
+<IV092>
 
 **IV092**
 
@@ -1381,6 +1416,9 @@ VOW bericht bevat:
 - OngewijzigdProduct: ToewijzingNummer 910
 - TeWijzigenProduct: ToewijzingNummer 789, GewensteIngangsdatum 1 november 2021, 5 uur per week, einddatum 1 juli 2022
 - NieuwProduct: Product C1 GewensteIngangsdatum 1 januari 2022, 2 dagdelen per maand, einddatum 1 juli 2022
+</IV092>
+
+<IV093>
 
 **IV093**
 
@@ -1523,8 +1561,10 @@ Dan kan worden afgesproken dat de toewijzing wordt gestuurd zonder terugwerkende
 
 - Product X blijft ongewijzigd met einddatum 7 mei 2023
 - Product Y krijgt een toegewezen ingangsdatum 15 mei 2023
+</IV093>
 
 ---
+<IV094>
 
 **IV094**
 
@@ -1538,7 +1578,9 @@ In het geval dat er een aspecifiek product met budget of een generieke toewijzin
 Elk toegewezen product krijgt de ReferentieAanbieder van de betreffende productaanvraag in het VOT bericht.
 
 Alle andere actuele toegewezen producten voor deze cliënt bij deze aanbieder worden ook in het toewijzingbericht opgenomen zodat voldaan wordt aan OP087, de ReferentieAanbieder is hierbij leeg.
+</IV094>
 
+<IV096>
 **IV096**
 
 *Hoe wordt de sleutel van een startbericht/stopbericht gevuld?*
@@ -1546,6 +1588,9 @@ Alle andere actuele toegewezen producten voor deze cliënt bij deze aanbieder wo
 Indien sprake is van inspanningsgericht of outputgerichte uitvoeringsvariant, zal ToewijzingNummer gebruikt worden als sleutel tussen het start-/stopbericht en de toewijzing.
 
 Bij een taakgerichte uitvoeringsvariant, is geen sprake van een toewijzing, daarom zal de sleutel bestaan uit Product en Begindatum.
+</IV096>
+
+<IV097>
 
 **IV097**
 
@@ -1577,6 +1622,9 @@ Als de gemeente dit verzoek honoreert dan wordt een toewijzing gestuurd met beid
 
 - ToewijzingNummer 345001, Product A, Ingangsdatum 1 januari 2020, einddatum 31 december 2020, Referentieaanbieder 667788
 - ToewijzingNummer 345002, Product B, Ingangsdatum 1 januari 2020, einddatum 30 juni 2021, Referentieaanbieder 667788
+</IV097>
+
+<IV099>
 
 **IV099**
 
@@ -1589,5 +1637,6 @@ Indien het toegewezen product met hetzelfde toewijzingsnummer ongewijzigd is ten
 Op het moment dat er wel een wijziging heeft plaatsgevonden, wordt RedenWijziging gevuld met de code die past bij de wijziging die is doorgevoerd.
 
 Bij de initiële toewijzing van een product (een nieuwe toewijzing met een nieuw toewijzingsnummer) is RedenWijziging altijd leeg.
+</IV099>
 
 ---
