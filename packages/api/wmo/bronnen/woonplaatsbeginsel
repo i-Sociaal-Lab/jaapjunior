@@ -1,0 +1,116 @@
+{
+  "id": "wpb_jeugd_start",
+  "vraag": "Gaat het om een nieuwe aanvraag voor jeugdzorg?",
+  "opties": [
+    {
+      "antwoord": "Ja",
+      "volgende": {
+        "vraag": "Ontvangt de jeugdige nu al jeugdzorg?",
+        "opties": [
+          {
+            "antwoord": "Ja",
+            "volgende": {
+              "vraag": "Ontvangt de jeugdige uitsluitend ambulante jeugdzorg?",
+              "opties": [
+                {
+                  "antwoord": "Ja",
+                  "actie": "Verantwoordelijke gemeente = gemeente waar de jeugdige nu staat ingeschreven."
+                },
+                {
+                  "antwoord": "Nee",
+                  "volgende": {
+                    "vraag": "Verhuist de jeugdige naar een andere gemeente?",
+                    "opties": [
+                      {
+                        "antwoord": "Ja",
+                        "actie": "Verantwoordelijke gemeente = gemeente waar de jeugdige staat ingeschreven na verhuizing."
+                      },
+                      {
+                        "antwoord": "Nee",
+                        "actie": "Verantwoordelijke gemeente = gemeente die de huidige jeugdzorg bekostigt."
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "antwoord": "Nee",
+            "actie": "Ga naar schema B"
+          }
+        ]
+      }
+    },
+    {
+      "antwoord": "Nee",
+      "actie": "Ga naar schema B"
+    }
+  ],
+
+  "schema_B": {
+    "id": "wpb_jeugd_schema_B",
+    "vraag": "Stond de jeugdige altijd in dezelfde gemeente ingeschreven?",
+    "opties": [
+      {
+        "antwoord": "Ja",
+        "actie": "Verantwoordelijke gemeente = huidige gemeente van inschrijving."
+      },
+      {
+        "antwoord": "Nee",
+        "volgende": {
+          "vraag": "Heeft de huidige gemeente nu jeugdzorg toegewezen?",
+          "opties": [
+            {
+              "antwoord": "Ja",
+              "actie": "Verantwoordelijke gemeente = huidige gemeente."
+            },
+            {
+              "antwoord": "Nee",
+              "volgende": {
+                "vraag": "Heeft een voormalige gemeente jeugdzorg met verblijf toegewezen?",
+                "opties": [
+                  {
+                    "antwoord": "Ja",
+                    "volgende": {
+                      "vraag": "Wordt deze verblijfszorg verlengd of uitgebreid met ambulante zorg?",
+                      "opties": [
+                        {
+                          "antwoord": "Ja",
+                          "actie": "Verantwoordelijke gemeente = voormalige gemeente."
+                        },
+                        {
+                          "antwoord": "Nee",
+                          "actie": "Verantwoordelijke gemeente = huidige gemeente."
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "antwoord": "Nee",
+                    "actie": "Ga naar schema C"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "schema_C": {
+    "id": "wpb_jeugd_schema_C",
+    "vraag": "Is bekend waar de moeder stond ingeschreven bij de geboorte van de jeugdige?",
+    "opties": [
+      {
+        "antwoord": "Ja",
+        "actie": "Verantwoordelijke gemeente = gemeente waar de moeder stond ingeschreven volgens BRP."
+      },
+      {
+        "antwoord": "Nee",
+        "actie": "Verantwoordelijke gemeente = gemeente waar de jeugdige verbleef toen de zorgvraag ontstond."
+      }
+    ]
+  }
+}
