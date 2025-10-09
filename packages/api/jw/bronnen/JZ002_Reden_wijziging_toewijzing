@@ -10,72 +10,86 @@
       {
         "code": "01",
         "omschrijving": "Administratieve correctie (vervallen)",
-        "toelichting": "Niet gebruiken"
+        "toelichting": "Niet gebruiken",
+        "Reden beeindiging": "nvt"
       },
       {
         "code": "02",
         "omschrijving": "Cliënt overleden",
-        "toelichting": "De toewijzing is gestopt, omdat de client is overleden. Over het algemeen zal dan worden gevuld: einddatum toewijzing = overlijdensdatum client."
+        "toelichting": "De toewijzing is gestopt, omdat de client is overleden. Over het algemeen zal dan worden gevuld: einddatum toewijzing = overlijdensdatum client.",
+        "Reden beeindiging": "02"
       },
       {
         "code": "03",
         "omschrijving": "Contractwijziging",
-        "toelichting": "Gemeente maakt een nieuwe contractafspraak met aanbieder, waardoor het nodig is om een andere toewijzing te sturen met  bijvoorbeeld andere productcodes. NB: niet elke contractwijziging zal leiden tot een nieuwe toewijzing. Indien een contract wordt opgezegd en de toewijzingen worden geëindigd, wordt ook deze code gebruikt."
+        "toelichting": "Gemeente maakt een nieuwe contractafspraak met aanbieder, waardoor het nodig is om een andere toewijzing te sturen met  bijvoorbeeld andere productcodes. NB: niet elke contractwijziging zal leiden tot een nieuwe toewijzing. Indien een contract wordt opgezegd en de toewijzingen worden geëindigd, wordt ook deze code gebruikt.",
+        "Reden beeindiging": "36"
       },
       {
         "code": "04",
         "omschrijving": "Herbeoordeling: verlenging toewijzing",
-        "toelichting": "Als gevolg van een herbeoordeling door de gemeente kan een toewijzing verlengd worden. Als de zorg verlengd wordt en er wordt een nieuwe toewijzing met nieuw toewijzingsnummer gestuurd, dient de aanbieder de oude toewijzing te beëindigen, met reden beëindiging 36."
+        "toelichting": "Als gevolg van een herbeoordeling door de gemeente kan een toewijzing verlengd worden. Als de zorg verlengd wordt en er wordt een nieuwe toewijzing met nieuw toewijzingsnummer gestuurd, dient de aanbieder de oude toewijzing te beëindigen, met reden beëindiging 36.",
+        "Reden beeindiging": "36"
       },
       {
         "code": "05",
         "omschrijving": "Herbeoordeling: verkorting toewijzing",
-        "toelichting": "In verschillende situaties zal de huidige toewijzing ingetrokken moeten worden: - Client moet ander product toegewezen krijgen. - Client moet korter zorg krijgen. - Client moet andere omvang krijgen, bijvoorbeeld meer uren per week, tenzij het een toewijzing in budget of totaal per toewijzing periode betreft. De beoordeling vindt plaats door gemeente op basis van client contact."
+        "toelichting": "In verschillende situaties zal de huidige toewijzing ingetrokken moeten worden: - Client moet ander product toegewezen krijgen. - Client moet korter zorg krijgen. - Client moet andere omvang krijgen, bijvoorbeeld meer uren per week, tenzij het een toewijzing in budget of totaal per toewijzing periode betreft. De beoordeling vindt plaats door gemeente op basis van client contact.",
+        "Reden beeindiging": "36"
       },
       {
         "code": "06",
         "omschrijving": "Uitstroom naar ander domein",
-        "toelichting": "Een toewijzing wordt ingetrokken omdat een cliënt zorg gaat ontvangen vanuit de Wmo, Zvw of Wlz."
+        "toelichting": "Een toewijzing wordt ingetrokken omdat een cliënt zorg gaat ontvangen vanuit de Wmo, Zvw of Wlz.",
+        "Reden beeindiging": "39"
       },
       {
         "code": "07",
         "omschrijving": "Verhuizing naar een andere gemeente",
-        "toelichting": "De gemeente kan een afgegeven Toewijzing niet zomaar intrekken bij verhuizing naar een andere gemeente. De gemeente die de toewijzing heeft verstrekt, blijft verantwoordelijk voor de cliënt tot overdracht aan de nieuwe gemeente. De oude toewijzing kan pas afgesloten worden nadat de nieuwe gemeente een aansluitende toewijzing verzendt."
+        "toelichting": "De gemeente kan een afgegeven Toewijzing niet zomaar intrekken bij verhuizing naar een andere gemeente. De gemeente die de toewijzing heeft verstrekt, blijft verantwoordelijk voor de cliënt tot overdracht aan de nieuwe gemeente. De oude toewijzing kan pas afgesloten worden nadat de nieuwe gemeente een aansluitende toewijzing verzendt.",
+        "Reden beeindiging": "35"
       },
       {
         "code": "08",
         "omschrijving": "Wijziging leveringsvorm",
-        "toelichting": "Toewijzinjg wordt beeindigd, omdat client eerst zorg in natura (ZIN) kreeg 'overstapt' en op basis van pgb zorg gaat ontvangen"
+        "toelichting": "Toewijzinjg wordt beeindigd, omdat client eerst zorg in natura (ZIN) kreeg 'overstapt' en op basis van pgb zorg gaat ontvangen",
+        "Reden beeindiging": "36"
       },
       {
         "code": "09",
         "omschrijving": "Overstap naar andere aanbieder",
-        "toelichting": "Cliënt gaat naar een andere aanbieder, dus de toewijzing bij de huidige aanbieder moet beëindigd worden."
+        "toelichting": "Cliënt gaat naar een andere aanbieder, dus de toewijzing bij de huidige aanbieder moet beëindigd worden.",
+        "Reden beeindiging": "38"
       },
       {
         "code": "10",
         "omschrijving": "Overgang naar nieuwe bekostigingssystematiek",
-        "toelichting": De toewijzing is ingetrokken, omdat de client is overgegaan naar een andere regeling/bekostiging. Bijvoorbeeld: een inspanningsgerichte toewijzing, wordt vervangen door een outputgerichte toewijzing. Deze code is toegevoegd vanwege de beëindiging van DBC-systematiek op 31 december 2017."
+        "toelichting": De toewijzing is ingetrokken, omdat de client is overgegaan naar een andere regeling/bekostiging. Bijvoorbeeld: een inspanningsgerichte toewijzing, wordt vervangen door een outputgerichte toewijzing. Deze code is toegevoegd vanwege de beëindiging van DBC-systematiek op 31 december 2017.",
+        "Reden beeindiging": "36"
       },
       {
         "code": "11",
         "omschrijving": "Gemeentelijke herindeling",
-        "toelichting": "Volgens protocol gemeentelijke herindeling: de bestaande toewijzing (oude gemeente) wordt beëindigd, een nieuwe toewijzing wordt gestart met de nieuwe gemeentecode. De oude toewijzing krijgt reden wijziging toewijzing 11, de nieuwe toewijzing krijgt geen reden wijziging toewijzing."
+        "toelichting": "Volgens protocol gemeentelijke herindeling: de bestaande toewijzing (oude gemeente) wordt beëindigd, een nieuwe toewijzing wordt gestart met de nieuwe gemeentecode. De oude toewijzing krijgt reden wijziging toewijzing 11, de nieuwe toewijzing krijgt geen reden wijziging toewijzing.",
+        "Reden beeindiging": "36"
       },
       {
         "code": "12",
         "omschrijving": "Geïnitieerd door de aanbieder",
-        "toelichting": "Indien een toewijzing wijzigt als gevolg van een verzoek om wijziging, of een verzoek via een ander kanaal, kan dit door de gemeente worden aangegeven middels deze code. Het is dan voor de aanbieder duidelijk op basis waarvan de wijziging is doorgevoerd."
+        "toelichting": "Indien een toewijzing wijzigt als gevolg van een verzoek om wijziging, of een verzoek via een ander kanaal, kan dit door de gemeente worden aangegeven middels deze code. Het is dan voor de aanbieder duidelijk op basis waarvan de wijziging is doorgevoerd.",
+        "Reden beeindiging": "37"
       },
       {
         "code": "13",
         "omschrijving": "Verwijderd",
-        "toelichting": "Als een toewijzing ten onrechte is verstuurd en de gemeente dit ongedaan wil maken. Hierbij wordt de einddatum gelijk gesteld aan de ingangsdatum. De toewijzing moet als niet verzonden beschouwd worden."
+        "toelichting": "Als een toewijzing ten onrechte is verstuurd en de gemeente dit ongedaan wil maken. Hierbij wordt de einddatum gelijk gesteld aan de ingangsdatum. De toewijzing moet als niet verzonden beschouwd worden.",
+        "Reden beeindiging": "36"
       },
       {
         "code": "14",
         "omschrijving": "Administratieve correctie",
-        "toelichting": "Als de gemeente een (invoer)fout heeft gemaakt die hersteld moet worden. De velden die gewijzigd mogen worden, zijn beschreven in OP033X1. Ook indien een aanbieder een definitief stopbericht stuurt en de gemeente beslist om de toewijzing in te trekken, dan wordt deze code gebruikt."
+        "toelichting": "Als de gemeente een (invoer)fout heeft gemaakt die hersteld moet worden. De velden die gewijzigd mogen worden, zijn beschreven in OP033X1. Ook indien een aanbieder een definitief stopbericht stuurt en de gemeente beslist om de toewijzing in te trekken, dan wordt deze code gebruikt.",
+        "Reden beeindiging": "36"
       }
     ]
   },
