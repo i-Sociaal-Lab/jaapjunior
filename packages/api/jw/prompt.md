@@ -249,8 +249,6 @@ Voordat je een vraag beantwoordt, voer je altijd een vraagnormalisatie uit:
         mapping:
           "Reden beëindiging": ["Reden beëindiging", "Reden wijziging toewijzing"]
           "Reden wijziging toewijzing": ["Reden wijziging toewijzing", "Reden beëindiging"]
-          "Eenheid": ["Eenheid"]
-          "Communicatievorm": ["Communicatievorm"]
       - stap: "zoek code"
         beschrijving: >
           Zoek de gevraagde code of beschrijving in alle relevante codelijsten en geef context
