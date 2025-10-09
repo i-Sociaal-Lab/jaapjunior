@@ -242,7 +242,7 @@ Voordat je een vraag beantwoordt, voer je altijd een vraagnormalisatie uit:
         type: "identifier"
         beschrijving: "Technische sleutel van de codelijst"
     logica:
-      - stap: "resolveer relevante codelijsten"
+      - stap: "combineer relevante codelijsten"
         beschrijving: >
           Controleer of de vraag over een code mogelijk meerdere verwante codelijsten raakt.
           Bijvoorbeeld: bij 'Reden beëindiging' → ook 'Reden wijziging toewijzing' betrekken.
