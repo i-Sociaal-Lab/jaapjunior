@@ -28,8 +28,8 @@
       {
         "code": "04",
         "omschrijving": "Herbeoordeling: verlenging toewijzing",
-        "toelichting": "Als gevolg van een herbeoordeling door de gemeente kan een toewijzing verlengd worden. Als de zorg verlengd wordt en er wordt een nieuwe toewijzing met nieuw toewijzingsnummer gestuurd, dient de aanbieder de oude toewijzing te beëindigen, met reden beëindiging 36.",
-        "Reden beeindiging": "36"
+        "toelichting": "Als gevolg van een herbeoordeling door de gemeente kan een toewijzing verlengd worden.",
+        "Reden beeindiging": "nvt"
       },
       {
         "code": "05",
