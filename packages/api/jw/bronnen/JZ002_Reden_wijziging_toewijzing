@@ -71,7 +71,7 @@
         "code": "11",
         "omschrijving": "Gemeentelijke herindeling",
         "toelichting": "Volgens protocol gemeentelijke herindeling: de bestaande toewijzing (oude gemeente) wordt beëindigd, een nieuwe toewijzing wordt gestart met de nieuwe gemeentecode. De oude toewijzing krijgt reden wijziging toewijzing 11, de nieuwe toewijzing krijgt geen reden wijziging toewijzing.",
-        "Reden beeindiging": "nvt"
+        "Reden beeindiging": "36"
       },
       {
         "code": "12",
@@ -83,7 +83,7 @@
         "code": "13",
         "omschrijving": "Verwijderd",
         "toelichting": "Als een toewijzing ten onrechte is verstuurd en de gemeente dit ongedaan wil maken. Hierbij wordt de einddatum gelijk gesteld aan de ingangsdatum. De toewijzing moet als niet verzonden beschouwd worden.",
-        "Reden beeindiging": "36"
+        "Reden beeindiging": "nvt"
       },
       {
         "code": "14",
