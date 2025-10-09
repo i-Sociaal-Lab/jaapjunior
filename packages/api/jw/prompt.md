@@ -249,6 +249,8 @@ Voordat je een vraag beantwoordt, voer je altijd een vraagnormalisatie uit:
         mapping:
           "Reden beëindiging": ["Reden beëindiging", "Reden wijziging toewijzing"]
           "Reden wijziging toewijzing": ["Reden wijziging toewijzing", "Reden beëindiging"]
+          "Retourcode": ["Regel", "Regelcode"]
+		  "TR-CD-CS regels JW 3.2": ["Relcode", "Regel"]
       - stap: "zoek code"
         beschrijving: >
           Zoek de gevraagde code of beschrijving in alle relevante codelijsten en geef context
