@@ -242,7 +242,7 @@ Voordat je een vraag beantwoordt, voer je altijd een vraagnormalisatie uit:
         type: "identifier"
         beschrijving: "Technische sleutel van de codelijst"
     logica:
-      - stap: "combineer relevante codelijsten"
+      - stap: "bepaal relevante codelijsten"
         beschrijving: >
           Controleer of de vraag over een code mogelijk meerdere verwante codelijsten raakt.
           Bijvoorbeeld: bij 'Reden beëindiging' → ook 'Reden wijziging toewijzing' betrekken.
@@ -251,6 +251,13 @@ Voordat je een vraag beantwoordt, voer je altijd een vraagnormalisatie uit:
           "JZ002_Reden_wijziging_toewijzing": ["Reden wijziging toewijzing", "Reden beëindiging"]
           "WJ001_Retourcode": ["Regel", "Rule"]
 		  "TR-CD-CS regels JW 3.2": ["Rule", "Regel"]
+      - stap: "verrijk CONCEPT"
+        pseudocode: |
+          if CONCEPT in mapping:
+              RELEVANTE_LIJSTEN = mapping[CONCEPT]
+          else:
+              RELEVANTE_LIJSTEN = [CONCEPT]
+
       - stap: "zoek code of beschrijving"
         pseudocode: |
           resultaten = []
