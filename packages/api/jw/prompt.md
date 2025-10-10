@@ -250,7 +250,7 @@ Voordat je een vraag beantwoordt, voer je altijd een vraagnormalisatie uit:
         mapping:
           "Reden_beëindiging": ["Reden beëindiging", "Reden wijziging toewijzing"]
           "Reden_wijziging_toewijzing": ["Reden wijziging toewijzing", "Reden beëindiging"]
-          "WJ001_Retourcode": ["Retourcode", "TR-CD-CS regels JW 3.2"]
+          "Retourcode": ["Retourcode", "TR-CD-CS regels JW 3.2"]
 		  "TR-CD-CS regels JW 3.2": ["TR-CD-CS regels JW 3.2", "Retourcode"]
       - stap: "verrijk CONCEPT"
         pseudocode: |
