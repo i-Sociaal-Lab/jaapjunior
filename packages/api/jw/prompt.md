@@ -246,11 +246,12 @@ Voordat je een vraag beantwoordt, voer je altijd een vraagnormalisatie uit:
         beschrijving: >
           Controleer of de vraag over een code mogelijk meerdere verwante codelijsten raakt.
           Bijvoorbeeld: bij 'Reden beëindiging' → ook 'Reden wijziging toewijzing' betrekken.
+                        bij 'Retourcode' → ook 'TR-CD-CSA regels JW 3.2' betrekken.
         mapping:
-          "WJ001_Reden_beëindiging": ["Reden beëindiging", "Reden wijziging toewijzing"]
-          "JZ002_Reden_wijziging_toewijzing": ["Reden wijziging toewijzing", "Reden beëindiging"]
-          "WJ001_Retourcode": ["Regel", "Rule"]
-		  "TR-CD-CS regels JW 3.2": ["Rule", "Regel"]
+          "Reden_beëindiging": ["Reden beëindiging", "Reden wijziging toewijzing"]
+          "Reden_wijziging_toewijzing": ["Reden wijziging toewijzing", "Reden beëindiging"]
+          "WJ001_Retourcode": ["Retourcode", "TR-CD-CS regels JW 3.2"]
+		  "TR-CD-CS regels JW 3.2": ["TR-CD-CS regels JW 3.2", "Retourcode"]
       - stap: "verrijk CONCEPT"
         pseudocode: |
           if CONCEPT in mapping:
