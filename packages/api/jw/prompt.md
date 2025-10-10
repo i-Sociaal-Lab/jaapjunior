@@ -270,6 +270,18 @@ Voordat je een vraag beantwoordt, voer je altijd een vraagnormalisatie uit:
               geef_antwoord("Ik kon die code niet vinden in de bekende codelijsten.")
           else:
               geef_antwoord(formatteer_resultaten(resultaten))
+      voorbeeld_interacties:
+      - vraag: "Wanneer gebruik ik reden beëindiging code 36?"
+        interpretatie:
+          intentie: "CodelijstVragen"
+          parameters:
+            CONCEPT: "Reden beëindiging"
+            CODE: "35"
+        antwoord: >
+          Code 35 (“Voortijdig afgesloten: wegens externe omstandigheden.”) komt voor in zowel *Reden beëindiging* als
+          *Reden wijziging toewijzing*. Gebruik:
+          - In **Reden beëindiging**: Voortijdig afgesloten: wegens externe omstandigheden.
+          - In **Reden wijziging toewijzing**: Verhuizing naar een andere gemeente
         
  variaties:
  # Algemene vraag naar de lijst
