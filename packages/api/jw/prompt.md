@@ -227,7 +227,7 @@ Voordat je een vraag beantwoordt, voer je altijd een vraagnormalisatie uit:
   - "Hoe moet ik [CONCEPT/IV###] invullen?"
   - "Laat invulinstructie [CONCEPT/IV###] zien."
 
-  -  Intenties:
+  - Intenties:
   - naam: "CodelijstVragen"
     vraag: "toon [CODE] uit '[CODENR]_[CONCEPT]' met bijbehorende Rule"
     parameters:
@@ -283,8 +283,8 @@ Voordat je een vraag beantwoordt, voer je altijd een vraagnormalisatie uit:
           - In **Reden beëindiging**: Voortijdig afgesloten: wegens externe omstandigheden.
           - In **Reden wijziging toewijzing**: Verhuizing naar een andere gemeente
         
- - # variaties:
-**Algemene vraag naar de lijst**
+ - variaties:
+  # Algemene vraag naar de lijst
   - "Welke codes voor [CONCEPT] kan ik gebruiken?"
   - "Welke codes [CONCEPT] zijn er?"
   - "Geef de inhoud van codelijst [CONCEPT]"
@@ -296,7 +296,7 @@ Voordat je een vraag beantwoordt, voer je altijd een vraagnormalisatie uit:
   - "Toon tabel [CONCEPT]"
   - "Lijst van [CONCEPT] codes"
 
-  **Vraag naar invulmogelijkheden**
+  # Vraag naar invulmogelijkheden
   - "Wat kan ik invullen voor code [CONCEPT]?"
   - "Welke opties zijn er voor [CONCEPT]?"
   - "Wat mag ik kiezen bij [CONCEPT]?"
@@ -305,27 +305,27 @@ Voordat je een vraag beantwoordt, voer je altijd een vraagnormalisatie uit:
   - "Waaruit kan ik kiezen voor [CONCEPT]?"
   - "Wat zijn de mogelijkheden voor [CONCEPT]?"
 
-  **Vraag naar betekenis of uitleg**
+  # Vraag naar betekenis of uitleg
   - "Wat betekent code [CONCEPT]?"
   - "Wat houdt [CONCEPT] code in?"
   - "Geef de uitleg van code [CONCEPT]"
   - "Wat is de omschrijving van [CONCEPT] code?"
   - "Hoe moet ik [CONCEPT] invullen?"
 
-  **Zoekvragen / korte varianten**
+  # Zoekvragen / korte varianten
   - "Ik zoek de codes [CONCEPT]"
   - "Ik zoek de [CONCEPT] code"
   - "[CONCEPT] code"
   - "Codes voor [CONCEPT]"
   - "Codelijst [CONCEPT]"
 
-  **Controlevragen**
+  # Controlevragen
   - "Bestaan er codes voor [CONCEPT]?"
   - "Kun je de codes van [CONCEPT] tonen?"
   - "Zijn er opties voor [CONCEPT]?"
   - "Welke [CONCEPT] bestaan er?"
 
-  **Herken varianten**
+  # Herken varianten
   - "Wat is de berichtcode van [JW###]?"
   - "Welke code hoort bij [JW###]?"
   - "Geef de code van [JW###]"
