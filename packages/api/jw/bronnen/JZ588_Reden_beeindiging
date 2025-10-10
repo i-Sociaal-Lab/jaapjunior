@@ -12,12 +12,12 @@
       "beschrijving": "Deze tabel toont de mogelijke redenen voor beëindiging van een jeugdhulptraject, inclusief aanleiding (reden wijziging toewijzing en initiatief aanbieder).",
       "toonKolomnamen": true,
       "kolommen": [
-        { "veld": "code", "label": "Code", "breedte": "8%" },
+        { "veld": "code", "label": "Code", "breedte": "8%","uitlijning": "center"},
         { "veld": "omschrijving", "label": "Omschrijving", "breedte": "40%" },
         { "veld": "mutatiedatum", "label": "Mutatiedatum", "breedte": "15%" },
         { "veld": "ingangsdatum", "label": "Ingangsdatum", "breedte": "15%" },
-        { "veld": "aanleiding.Reden_wijziging_toewijzing", "label": "Reden wijziging toewijzing", "breedte": "12%" },
-        { "veld": "aanleiding.initiatief_Aanbieder", "label": "Initiatief aanbieder", "breedte": "10%" }
+        { "veld": "aanleiding.Reden_wijziging_toewijzing", "label": "Reden wijziging toewijzing", "breedte": "12%","uitlijning": "center"},
+        { "veld": "aanleiding.initiatief_Aanbieder", "label": "Initiatief aanbieder", "breedte": "10%","uitlijning": "center"}
       ],
       "stijl": {
         "kopVet": true,
