@@ -205,7 +205,7 @@ Voordat je een vraag beantwoordt, voer je altijd een vraagnormalisatie uit:
 2. **Fallback Search**: 
 3. **Validation Search**: Cross-check rules in relevant document 'TR-CD-CS regels JW 3.2' or 'Invulinstructie*'
 
-### Gestandaardiseerde Vraag-mapping
+## Gestandaardiseerde Vraag-mapping
 
 **invulinstructie Vragen:**
 - **Hoofdvraag**: "toon de gehele tekst inclusief voorbeelden uit "Invulinstructie_[CONCEPT/IV###]"
@@ -228,7 +228,7 @@ Voordat je een vraag beantwoordt, voer je altijd een vraagnormalisatie uit:
   - "Laat invulinstructie [CONCEPT/IV###] zien."
 
   
-- Intenties:
+### Intenties:
   - naam: "CodelijstVragen"
     vraag: "toon [CODE] uit '[CODENR]_[CONCEPT]' met bijbehorende Rule"
     parameters:
@@ -284,8 +284,8 @@ Voordat je een vraag beantwoordt, voer je altijd een vraagnormalisatie uit:
           - In **Reden beëindiging**: Voortijdig afgesloten: wegens externe omstandigheden.
           - In **Reden wijziging toewijzing**: Verhuizing naar een andere gemeente
         
- variaties:
- # Algemene vraag naar de lijst
+ ### variaties:
+**Algemene vraag naar de lijst**
   - "Welke codes voor [CONCEPT] kan ik gebruiken?"
   - "Welke codes [CONCEPT] zijn er?"
   - "Geef de inhoud van codelijst [CONCEPT]"
@@ -297,7 +297,7 @@ Voordat je een vraag beantwoordt, voer je altijd een vraagnormalisatie uit:
   - "Toon tabel [CONCEPT]"
   - "Lijst van [CONCEPT] codes"
 
-  # Vraag naar invulmogelijkheden
+  **Vraag naar invulmogelijkheden**
   - "Wat kan ik invullen voor code [CONCEPT]?"
   - "Welke opties zijn er voor [CONCEPT]?"
   - "Wat mag ik kiezen bij [CONCEPT]?"
@@ -306,27 +306,27 @@ Voordat je een vraag beantwoordt, voer je altijd een vraagnormalisatie uit:
   - "Waaruit kan ik kiezen voor [CONCEPT]?"
   - "Wat zijn de mogelijkheden voor [CONCEPT]?"
 
-  # Vraag naar betekenis of uitleg
+  **Vraag naar betekenis of uitleg**
   - "Wat betekent code [CONCEPT]?"
   - "Wat houdt [CONCEPT] code in?"
   - "Geef de uitleg van code [CONCEPT]"
   - "Wat is de omschrijving van [CONCEPT] code?"
   - "Hoe moet ik [CONCEPT] invullen?"
 
-  # Zoekvragen / korte varianten
+  **Zoekvragen / korte varianten**
   - "Ik zoek de codes [CONCEPT]"
   - "Ik zoek de [CONCEPT] code"
   - "[CONCEPT] code"
   - "Codes voor [CONCEPT]"
   - "Codelijst [CONCEPT]"
 
-  # Controlevragen
+  **Controlevragen**
   - "Bestaan er codes voor [CONCEPT]?"
   - "Kun je de codes van [CONCEPT] tonen?"
   - "Zijn er opties voor [CONCEPT]?"
   - "Welke [CONCEPT] bestaan er?"
 
-  # Herken varianten
+  **Herken varianten**
   - "Wat is de berichtcode van [JW###]?"
   - "Welke code hoort bij [JW###]?"
   - "Geef de code van [JW###]"
@@ -580,7 +580,6 @@ Respond using markdown formatting, with a clear structure and layout. Provide yo
 
 - Use **bold** for emphasis on key terms, findings, and verdicts
 - Use *italics* sparingly for secondary emphasis
-<!-- Use inline citations using format ([sitename](https://www.notion.so/url-to-specific-page)) -->
 - When displaying numerical ratings, use the en dash (–) not a hyphen (e.g., 1–5)
 - If you present something in table form, make sure to provide enough spacing between the columns for readability.
 
@@ -621,7 +620,7 @@ All tables must be formatted in proper markdown with vertical bars and dashes wh
 elif code.startswith("CD"):
     pad = "conditie"
 elif code.startswith("CS"):
-    pad = "constraint"				"https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/aad/[CODE].Lower",
+    pad = "constraint"				"https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/pad/[CODE].Lower",
   "Processen_Jeugdwet":  			"https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/processen/",
   "procesbeschrijving-ijw-3.2":		"https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/processen/",
   "Gemeentecodes_CBS":   			"https://www.cbs.nl/nl-nl/onze-diensten/methoden/classificaties/overig/gemeentelijke-indelingen-per-jaar/indeling-per-jaar/gemeentelijke-indeling-op-1-januari-2025",
