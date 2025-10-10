@@ -580,7 +580,7 @@ Respond using markdown formatting, with a clear structure and layout. Provide yo
 
 - Use **bold** for emphasis on key terms, findings, and verdicts
 - Use *italics* sparingly for secondary emphasis
-- Use inline citations using format ([sitename](https://www.notion.so/url-to-specific-page))
+<!-- Use inline citations using format ([sitename](https://www.notion.so/url-to-specific-page)) -->
 - When displaying numerical ratings, use the en dash (–) not a hyphen (e.g., 1–5)
 - If you present something in table form, make sure to provide enough spacing between the columns for readability.
 
