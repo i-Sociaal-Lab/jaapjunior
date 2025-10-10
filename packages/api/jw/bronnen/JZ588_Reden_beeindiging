@@ -6,114 +6,152 @@
     "naam": "Reden beëindiging",
     "definitie": "De reden van beëindiging van de jeugdhulp bij een cliënt.",
     "bronUrl": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/jz588",
+    "presentatie": {
+      "type": "tabel",
+      "titel": "Codelijst – Reden beëindiging (iJw 3.2)",
+      "beschrijving": "Deze tabel toont de mogelijke redenen voor beëindiging van een jeugdhulptraject, inclusief aanleiding (reden wijziging toewijzing en initiatief aanbieder).",
+      "toonKolomnamen": true,
+      "kolommen": [
+        { "veld": "code", "label": "Code", "breedte": "8%" },
+        { "veld": "omschrijving", "label": "Omschrijving", "breedte": "40%" },
+        { "veld": "mutatiedatum", "label": "Mutatiedatum", "breedte": "15%" },
+        { "veld": "ingangsdatum", "label": "Ingangsdatum", "breedte": "15%" },
+        { "veld": "aanleiding.Reden_wijziging_toewijzing", "label": "Reden wijziging toewijzing", "breedte": "12%" },
+        { "veld": "aanleiding.initiatief_Aanbieder", "label": "Initiatief aanbieder", "breedte": "10%" }
+      ],
+      "stijl": {
+        "kopVet": true,
+        "rand": true,
+        "uitlijning": "links",
+        "toonLegeWaarden": false
+      },
+      "alternatieven": [
+        {
+          "type": "lijst",
+          "titel": "Redenen beëindiging (beknopt overzicht)",
+          "eigenschappen": ["code", "omschrijving"]
+        },
+        {
+          "type": "kaart",
+          "titel": "Detailweergave reden beëindiging",
+          "eigenschappen": [
+            "omschrijving",
+            "mutatiedatum",
+            "ingangsdatum",
+            "aanleiding.Reden_wijziging_toewijzing",
+            "aanleiding.initiatief_Aanbieder"
+          ]
+        }
+      ]
+    },
     "codes": [
-      { 
-        "code": "02", 
-        "omschrijving": "Overlijden", 
-        "mutatiedatum": "niet gespecificeerd", 
-        "ingangsdatum": "01-01-2015", 
-        "aanleiding": {
-          "Reden_wijziging_toewijzing": "02", 
-          "initiatief_Aanbieder": "ja"
-        }
-      },
-      { 
-        "code": "20", 
-        "omschrijving": "Levering is tijdelijk beëindigd", 
-        "mutatiedatum": "12-07-2017", 
+      {
+        "code": "02",
+        "omschrijving": "Overlijden",
+        "mutatiedatum": "niet gespecificeerd",
         "ingangsdatum": "01-01-2015",
         "aanleiding": {
-          "Reden_wijziging_toewijzing": "nvt", 
+          "Reden_wijziging_toewijzing": "02",
           "initiatief_Aanbieder": "ja"
         }
       },
-      { 
-        "code": "31", 
-        "omschrijving": "Levering is volgens plan beëindigd", 
-        "mutatiedatum": "12-07-2017", 
+      {
+        "code": "20",
+        "omschrijving": "Levering is tijdelijk beëindigd",
+        "mutatiedatum": "12-07-2017",
         "ingangsdatum": "01-01-2015",
         "aanleiding": {
-          "Reden_wijziging_toewijzing": "nvt", 
+          "Reden_wijziging_toewijzing": "nvt",
           "initiatief_Aanbieder": "ja"
         }
       },
-      { 
-        "code": "32", 
-        "omschrijving": "Voortijdig afgesloten: eenzijdig door de cliënt", 
-        "mutatiedatum": "12-07-2017", 
+      {
+        "code": "31",
+        "omschrijving": "Levering is volgens plan beëindigd",
+        "mutatiedatum": "12-07-2017",
         "ingangsdatum": "01-01-2015",
         "aanleiding": {
-          "Reden_wijziging_toewijzing": "nvt", 
+          "Reden_wijziging_toewijzing": "nvt",
           "initiatief_Aanbieder": "ja"
         }
       },
-      { 
-        "code": "33", 
-        "omschrijving": "Voortijdig afgesloten: eenzijdig door de aanbieder", 
-        "mutatiedatum": "12-07-2017", 
+      {
+        "code": "32",
+        "omschrijving": "Voortijdig afgesloten: eenzijdig door de cliënt",
+        "mutatiedatum": "12-07-2017",
         "ingangsdatum": "01-01-2015",
         "aanleiding": {
-          "Reden_wijziging_toewijzing": "nvt", 
+          "Reden_wijziging_toewijzing": "nvt",
           "initiatief_Aanbieder": "ja"
         }
       },
-      { 
-        "code": "34", 
-        "omschrijving": "Voortijdig afgesloten: in overeenstemming", 
-        "mutatiedatum": "12-07-2017", 
+      {
+        "code": "33",
+        "omschrijving": "Voortijdig afgesloten: eenzijdig door de aanbieder",
+        "mutatiedatum": "12-07-2017",
         "ingangsdatum": "01-01-2015",
         "aanleiding": {
-          "Reden_wijziging_toewijzing": "nvt", 
+          "Reden_wijziging_toewijzing": "nvt",
           "initiatief_Aanbieder": "ja"
         }
       },
-      { 
-        "code": "35", 
-        "omschrijving": "Voortijdig afgesloten: wegens externe omstandigheden", 
-        "mutatiedatum": "12-07-2017", 
+      {
+        "code": "34",
+        "omschrijving": "Voortijdig afgesloten: in overeenstemming",
+        "mutatiedatum": "12-07-2017",
         "ingangsdatum": "01-01-2015",
         "aanleiding": {
-          "Reden_wijziging_toewijzing": "07", 
+          "Reden_wijziging_toewijzing": "nvt",
           "initiatief_Aanbieder": "ja"
         }
       },
-      { 
-        "code": "36", 
-        "omschrijving": "Geïnitieerd door de gemeente", 
-        "mutatiedatum": "01-04-2020", 
+      {
+        "code": "35",
+        "omschrijving": "Voortijdig afgesloten: wegens externe omstandigheden",
+        "mutatiedatum": "12-07-2017",
+        "ingangsdatum": "01-01-2015",
+        "aanleiding": {
+          "Reden_wijziging_toewijzing": "07",
+          "initiatief_Aanbieder": "ja"
+        }
+      },
+      {
+        "code": "36",
+        "omschrijving": "Geïnitieerd door de gemeente",
+        "mutatiedatum": "01-04-2020",
         "ingangsdatum": "01-01-2021",
         "aanleiding": {
-          "Reden_wijziging_toewijzing": "03;05;08;10;11;14", 
+          "Reden_wijziging_toewijzing": "03;05;08;10;11;14",
           "initiatief_Aanbieder": "nvt"
         }
       },
-      { 
-        "code": "37", 
-        "omschrijving": "In verband met wijzigingsverzoek", 
-        "mutatiedatum": "01-04-2020", 
+      {
+        "code": "37",
+        "omschrijving": "In verband met wijzigingsverzoek",
+        "mutatiedatum": "01-04-2020",
         "ingangsdatum": "01-01-2021",
         "aanleiding": {
-          "Reden_wijziging_toewijzing": "12", 
+          "Reden_wijziging_toewijzing": "12",
           "initiatief_Aanbieder": "nvt"
         }
       },
-      { 
-        "code": "38", 
-        "omschrijving": "Overstap naar andere aanbieder", 
-        "mutatiedatum": "30-09-2021", 
+      {
+        "code": "38",
+        "omschrijving": "Overstap naar andere aanbieder",
+        "mutatiedatum": "30-09-2021",
         "ingangsdatum": "01-04-2022",
         "aanleiding": {
-          "Reden_wijziging_toewijzing": "09", 
+          "Reden_wijziging_toewijzing": "09",
           "initiatief_Aanbieder": "nvt"
         }
       },
-      { 
-        "code": "39", 
-        "omschrijving": "Uitstroom naar ander domein", 
-        "mutatiedatum": "30-09-2021", 
+      {
+        "code": "39",
+        "omschrijving": "Uitstroom naar ander domein",
+        "mutatiedatum": "30-09-2021",
         "ingangsdatum": "01-04-2022",
         "aanleiding": {
-          "Reden_wijziging_toewijzing": "06", 
+          "Reden_wijziging_toewijzing": "06",
           "initiatief_Aanbieder": "nvt"
         }
       }
