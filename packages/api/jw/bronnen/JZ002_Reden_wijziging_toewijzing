@@ -6,6 +6,41 @@
     "naam": "Reden wijziging toewijzing",
     "definitie": "De reden waarom een toewijzing wordt gewijzigd.",
     "bronUrl": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/jz002",
+    "presentatie": {
+      "type": "tabel",
+      "titel": "Codelijst – Reden beëindiging (iJw 3.2)",
+      "beschrijving": "Deze tabel toont de mogelijke redenen voor beëindiging van een jeugdhulptraject, inclusief aanleiding (reden wijziging toewijzing en initiatief aanbieder).",
+      "toonKolomnamen": true,
+      "kolommen": [
+        { "veld": "code", "label": "Code", "breedte": "8%" },
+        { "veld": "omschrijving", "label": "Omschrijving", "breedte": "40%" },
+        { "veld": "toelichting", "label": "toelichting", "breedte": "40%" },
+        { "veld": "Reden beeindiging", "label": "Reden beeindiging", "breedte": "12%" },
+      ],
+      "stijl": {
+        "kopVet": true,
+        "rand": true,
+        "uitlijning": "links",
+        "toonLegeWaarden": false
+      },
+      "alternatieven": [
+        {
+          "type": "lijst",
+          "titel": "Redenen wijziging toewijzing (beknopt overzicht)",
+          "eigenschappen": ["code", "omschrijving"]
+        },
+        {
+          "type": "kaart",
+          "titel": "Detailweergave reden beëindiging",
+          "eigenschappen": [
+            "code"
+            "omschrijving",
+            "toelichting",
+           "Reden beeindiging"
+          ]
+        }
+      ]
+    },
     "codes": [
       {
         "code": "01",
