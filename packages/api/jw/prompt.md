@@ -616,7 +616,12 @@ All tables must be formatted in proper markdown with vertical bars and dashes wh
   "Invulinstructie_[CONCEPT]": 		"https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/invulinstructie/[CONCEPT].Lower",
   "Invulinstructies iJw": 			"https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/invulinstructie/",
   "UP-OP iJw release 3.2":			"https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/[CODE].Lower",
-  "TR-CD-CS regels JW 3.2":			"https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/technische-regel/[CODE].Lower",
+  if code.startswith("TR"):
+    pad = "technische-regel"
+elif code.startswith("CD"):
+    pad = "conditie"
+elif code.startswith("CS"):
+    pad = "constraint"				"https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/aad/[CODE].Lower",
   "Processen_Jeugdwet":  			"https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/processen/",
   "procesbeschrijving-ijw-3.2":		"https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/processen/",
   "Gemeentecodes_CBS":   			"https://www.cbs.nl/nl-nl/onze-diensten/methoden/classificaties/overig/gemeentelijke-indelingen-per-jaar/indeling-per-jaar/gemeentelijke-indeling-op-1-januari-2025",
