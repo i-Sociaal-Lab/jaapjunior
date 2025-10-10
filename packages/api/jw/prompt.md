@@ -230,7 +230,7 @@ Voordat je een vraag beantwoordt, voer je altijd een vraagnormalisatie uit:
   
 - Intenties:
   - naam: "CodelijstVragen"
-    canonical: "toon [CODE] uit '[CODENR]_[CONCEPT]' met bijbehorende Rule"
+    vraag: "toon [CODE] uit '[CODENR]_[CONCEPT]' met bijbehorende Rule"
     parameters:
       - naam: "CONCEPT"
         type: "codelijst"
@@ -247,9 +247,9 @@ Voordat je een vraag beantwoordt, voer je altijd een vraagnormalisatie uit:
           Controleer of de vraag over een code mogelijk meerdere verwante codelijsten raakt.
           Bijvoorbeeld: bij 'Reden beëindiging' → ook 'Reden wijziging toewijzing' betrekken.
         mapping:
-          "Reden beëindiging": ["Reden beëindiging", "Reden wijziging toewijzing"]
-          "Reden wijziging toewijzing": ["Reden wijziging toewijzing", "Reden beëindiging"]
-          "Retourcode": ["Regel", "Rule"]
+          "WJ001_Reden_beëindiging": ["Reden beëindiging", "Reden wijziging toewijzing"]
+          "JZ002_Reden_wijziging_toewijzing": ["Reden wijziging toewijzing", "Reden beëindiging"]
+          "WJ001_Retourcode": ["Regel", "Rule"]
 		  "TR-CD-CS regels JW 3.2": ["Rule", "Regel"]
       - stap: "zoek code"
         beschrijving: >
