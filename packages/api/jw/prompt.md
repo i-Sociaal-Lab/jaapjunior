@@ -251,9 +251,19 @@ Voordat je een vraag beantwoordt, voer je altijd een vraagnormalisatie uit:
           "JZ002_Reden_wijziging_toewijzing": ["Reden wijziging toewijzing", "Reden beëindiging"]
           "WJ001_Retourcode": ["Regel", "Rule"]
 		  "TR-CD-CS regels JW 3.2": ["Rule", "Regel"]
-      - stap: "zoek code"
-        beschrijving: >
-          Zoek de gevraagde code of beschrijving in alle relevante codelijsten en geef context
+      - stap: "zoek code of beschrijving"
+        pseudocode: |
+          resultaten = []
+          for lijst in RELEVANTE_LIJSTEN:
+              resultaat = zoek_in_codelijst(lijst, CODE)
+              if resultaat:
+                  resultaten.append(resultaat)
+
+          if resultaten is leeg:
+              geef_antwoord("Ik kon die code niet vinden in de bekende codelijsten.")
+          else:
+              geef_antwoord(formatteer_resultaten(resultaten))
+        
  variaties:
  # Algemene vraag naar de lijst
   - "Welke codes voor [CONCEPT] kan ik gebruiken?"
