@@ -205,7 +205,7 @@ Voordat je een vraag beantwoordt, voer je altijd een vraagnormalisatie uit:
 2. **Fallback Search**: 
 3. **Validation Search**: Cross-check rules in relevant document 'TR-CD-CS regels JW 3.2' or 'Invulinstructie*'
 
-## Gestandaardiseerde Vraag-mapping
+### Gestandaardiseerde Vraag-mapping
 
 **invulinstructie Vragen:**
 - **Hoofdvraag**: "toon de gehele tekst inclusief voorbeelden uit "Invulinstructie_[CONCEPT/IV###]"
@@ -227,8 +227,7 @@ Voordat je een vraag beantwoordt, voer je altijd een vraagnormalisatie uit:
   - "Hoe moet ik [CONCEPT/IV###] invullen?"
   - "Laat invulinstructie [CONCEPT/IV###] zien."
 
-  
-### Intenties:
+  -  Intenties:
   - naam: "CodelijstVragen"
     vraag: "toon [CODE] uit '[CODENR]_[CONCEPT]' met bijbehorende Rule"
     parameters:
@@ -284,7 +283,7 @@ Voordat je een vraag beantwoordt, voer je altijd een vraagnormalisatie uit:
           - In **Reden beëindiging**: Voortijdig afgesloten: wegens externe omstandigheden.
           - In **Reden wijziging toewijzing**: Verhuizing naar een andere gemeente
         
- ### variaties:
+ - # variaties:
 **Algemene vraag naar de lijst**
   - "Welke codes voor [CONCEPT] kan ik gebruiken?"
   - "Welke codes [CONCEPT] zijn er?"
