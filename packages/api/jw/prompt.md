@@ -230,7 +230,7 @@ Voordat je een vraag beantwoordt, voer je altijd een vraagnormalisatie uit:
   
 - Intenties:
   - naam: "CodelijstVragen"
-    canonical: "toon [CODE] uit '[CODENR]_[CONCEPT]'"
+    canonical: "toon [CODE] uit '[CODENR]_[CONCEPT]' met bijbehorende Rule"
     parameters:
       - naam: "CONCEPT"
         type: "codelijst"
