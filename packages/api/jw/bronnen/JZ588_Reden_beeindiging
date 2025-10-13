@@ -48,7 +48,7 @@
       {
         "code": "02",
         "omschrijving": "Overlijden",
-        "mutatiedatum": "niet gespecificeerd",
+        "mutatiedatum": "",
         "ingangsdatum": "01-01-2015",
         "aanleiding": {
           "Reden_wijziging_toewijzing": "02",
