@@ -208,7 +208,6 @@ Voordat je een vraag beantwoordt, voer je altijd een vraagnormalisatie uit:
 ### Gestandaardiseerde Vraag-mapping
 
 Intents:
-
   - naam: InvulinstructieVragen
     hoofvraag: "Toon de gehele tekst inclusief voorbeelden uit Invulinstructie_[CONCEPT/IV###]"
     herken_variaties:
