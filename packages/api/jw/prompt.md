@@ -207,50 +207,44 @@ Voordat je een vraag beantwoordt, voer je altijd een vraagnormalisatie uit:
 
 ### Gestandaardiseerde Vraag-mapping
 
-**invulinstructie Vragen:**
-- **Hoofdvraag**: "toon de gehele tekst inclusief voorbeelden uit "Invulinstructie_[CONCEPT/IV###]"
-- **Herken variaties zoals**:
-  - "[iv..]"
-  - "Wat betekent invulinstructie [CONCEPT/IV###]?"
-  - "Wat betekent [CONCEPT/IV###]?"
-  - "Wat staat er in [CONCEPT/IV###]?"
-  - "Wat staat er in invulinstructie [CONCEPT/IV###]?"
-  - "Geef de inhoud van invulinstructie [CONCEPT/IV###]"
-  - "Geef de inhoud van [CONCEPT/IV###]"
-  - "Geef invulinstructie [CONCEPT/IV###]"
-  - "Geef [CONCEPT/IV###]
-  - "Toon invulinstructie [CONCEPT/IV###]"
-  - "Toon [CONCEPT/IV###]"
-  - "Kun je de invulinstructie van [CONCEPT/IV###] tonen?"
-  - "Heb je de invulinstructie voor [CONCEPT/IV###]?"
-  - "Welke invulinstructie hoort bij [CONCEPT/IV###]?"
-  - "Hoe moet ik [CONCEPT/IV###] invullen?"
-  - "Laat invulinstructie [CONCEPT/IV###] zien."
+Intents:
 
-  - Intenties:
-  - naam: "CodelijstVragen"
-    vraag: "toon [CODE] uit '[CODENR]_[CONCEPT]' met bijbehorende Rule"
+  - naam: InvulinstructieVragen
+    hoofvraag: "Toon de gehele tekst inclusief voorbeelden uit Invulinstructie_[CONCEPT/IV###]"
+    herken_variaties:
+      - "toon (invulinstructie )?[CONCEPT/IV###]"
+      - "wat betekent (invulinstructie )?[CONCEPT/IV###]"
+      - "wat staat er in (invulinstructie )?[CONCEPT/IV###]"
+      - "geef( de inhoud van)?( invulinstructie)? [CONCEPT/IV###]"
+      - "laat( invulinstructie)? [CONCEPT/IV###] zien"
+      - "kun je de invulinstructie van [CONCEPT/IV###] tonen"
+      - "heb je de invulinstructie voor [CONCEPT/IV###]"
+      - "welke invulinstructie hoort bij [CONCEPT/IV###]"
+      - "hoe moet ik [CONCEPT/IV###] invullen"
+
+  - naam: CodelijstVragen
+    hoofvraag: "Toon [CODE] uit '[CODENR]_[CONCEPT]' met bijbehorende Rule"
     parameters:
-      - naam: "CONCEPT"
-        type: "codelijst"
+      - naam: CONCEPT
+        type: codelijst
         beschrijving: "Naam van de iJw-codelijst (bv. Eenheid, Frequentie, Reden beëindiging, Communicatievorm)"
-      - naam: "CODE"
-        type: "string"
+      - naam: CODE
+        type: string
         beschrijving: "Optioneel: specifieke code"
-      - naam: "CODENR"
-        type: "identifier"
+      - naam: CODENR
+        type: identifier
         beschrijving: "Technische sleutel van de codelijst"
+
     logica:
       - stap: "bepaal relevante codelijsten"
         beschrijving: >
-          Controleer of de vraag over een code mogelijk meerdere verwante codelijsten raakt.
-          Bijvoorbeeld: bij 'Reden beëindiging' → ook 'Reden wijziging toewijzing' betrekken.
-                        bij 'Retourcode' → ook 'TR-CD-CSA regels JW 3.2' betrekken.
+          Controleer of de vraag over een code meerdere verwante codelijsten raakt.
         mapping:
-          "Reden_beëindiging": ["Reden beëindiging", "Reden wijziging toewijzing"]
-          "Reden_wijziging_toewijzing": ["Reden wijziging toewijzing", "Reden beëindiging"]
-          "Retourcode": ["Retourcode", "TR-CD-CS regels JW 3.2"]
-		  "TR-CD-CS regels JW 3.2": ["TR-CD-CS regels JW 3.2", "Retourcode"]
+          Reden_beëindiging: ["Reden beëindiging", "Reden wijziging toewijzing"]
+          Reden_wijziging_toewijzing: ["Reden wijziging toewijzing", "Reden beëindiging"]
+          Retourcode: ["Retourcode", "TR-CD-CS regels JW 3.2"]
+          TR-CD-CS regels JW 3.2: ["TR-CD-CS regels JW 3.2", "Retourcode"]
+
       - stap: "verrijk CONCEPT"
         pseudocode: |
           if CONCEPT in mapping:
@@ -270,7 +264,8 @@ Voordat je een vraag beantwoordt, voer je altijd een vraagnormalisatie uit:
               geef_antwoord("Ik kon die code niet vinden in de bekende codelijsten.")
           else:
               geef_antwoord(formatteer_resultaten(resultaten))
-      voorbeeld_interacties:
+
+    voorbeeld_interacties:
       - vraag: "Wanneer gebruik ik reden beëindiging code 36?"
         interpretatie:
           intentie: "CodelijstVragen"
@@ -278,87 +273,80 @@ Voordat je een vraag beantwoordt, voer je altijd een vraagnormalisatie uit:
             CONCEPT: "Reden beëindiging"
             CODE: "35"
         antwoord: >
-          Code 35 (“Voortijdig afgesloten: wegens externe omstandigheden.”) komt voor in zowel *Reden beëindiging* als
-          *Reden wijziging toewijzing*. Gebruik:
+          Code 35 (“Voortijdig afgesloten: wegens externe omstandigheden.”) komt voor in zowel
+          *Reden beëindiging* als *Reden wijziging toewijzing*.
+          Gebruik:
           - In **Reden beëindiging**: Voortijdig afgesloten: wegens externe omstandigheden.
-          - In **Reden wijziging toewijzing**: Verhuizing naar een andere gemeente
-        
- - variaties:
-  # Algemene vraag naar de lijst
-  - "Welke codes voor [CONCEPT] kan ik gebruiken?"
-  - "Welke codes [CONCEPT] zijn er?"
-  - "Geef de inhoud van codelijst [CONCEPT]"
-  - "Wat zijn de codes voor [CONCEPT]?"
-  - "Welke waarden heeft [CONCEPT]?"
-  - "Wat zit er in de lijst [CONCEPT]?"
-  - "Toon de codelijst [CONCEPT]"
-  - "Toon lijst [CONCEPT]"
-  - "Toon tabel [CONCEPT]"
-  - "Lijst van [CONCEPT] codes"
+          - In **Reden wijziging toewijzing**: Verhuizing naar een andere gemeente.
 
-  # Vraag naar invulmogelijkheden
-  - "Wat kan ik invullen voor code [CONCEPT]?"
-  - "Welke opties zijn er voor [CONCEPT]?"
-  - "Wat mag ik kiezen bij [CONCEPT]?"
-  - "Welke waarden zijn toegestaan voor [CONCEPT]?"
-  - "Wat is geldig voor [CONCEPT]?"
-  - "Waaruit kan ik kiezen voor [CONCEPT]?"
-  - "Wat zijn de mogelijkheden voor [CONCEPT]?"
+### Herkenbare Vraagpatronen
 
-  # Vraag naar betekenis of uitleg
-  - "Wat betekent code [CONCEPT]?"
-  - "Wat houdt [CONCEPT] code in?"
-  - "Geef de uitleg van code [CONCEPT]"
-  - "Wat is de omschrijving van [CONCEPT] code?"
-  - "Hoe moet ik [CONCEPT] invullen?"
+Variaties:
 
-  # Zoekvragen / korte varianten
-  - "Ik zoek de codes [CONCEPT]"
-  - "Ik zoek de [CONCEPT] code"
-  - "[CONCEPT] code"
-  - "Codes voor [CONCEPT]"
-  - "Codelijst [CONCEPT]"
+  Algemene_lijstvragen:
+    - "Welke codes voor [CONCEPT] kan ik gebruiken"
+    - "Welke codes [CONCEPT] zijn er"
+    - "Wat zijn de codes of waarden voor [CONCEPT]"
+    - "Geef of toon (de) codelijst of tabel [CONCEPT]"
+    - "Welke [CONCEPT]-codes bestaan er"
 
-  # Controlevragen
-  - "Bestaan er codes voor [CONCEPT]?"
-  - "Kun je de codes van [CONCEPT] tonen?"
-  - "Zijn er opties voor [CONCEPT]?"
-  - "Welke [CONCEPT] bestaan er?"
+  Invulopties:
+    - "Wat kan ik invullen voor [CONCEPT]"
+    - "Welke opties of mogelijkheden zijn er voor [CONCEPT]"
+    - "Wat mag ik kiezen of invullen bij [CONCEPT]"
+    - "Welke waarden zijn toegestaan voor [CONCEPT]"
 
-  # Herken varianten
-  - "Wat is de berichtcode van [JW###]?"
-  - "Welke code hoort bij [JW###]?"
-  - "Geef de code van [JW###]"
-  - "Wat betekent berichtcode [CODE]?"
-  - "Welk bericht hoort bij code [CODE]?"
-  - "Wat is bericht [CODE]?"
-  - "Code [CODE], welk JW-bericht hoort daarbij?"
-  - "Bericht [JW###], welke code hoort daarbij?"
-  - "Wat hoort bij COD002 [JW### of CODE]"
-  - "Toon berichtcode [JW###]"
-  - "Zoek berichtcode [JW###]"
-  - "Wat is de Vektis-code van [JW###]?"
+  Betekenis_uitleg:
+    - "Wat betekent code [CONCEPT]"
+    - "Wat houdt [CONCEPT]-code in"
+    - "Geef de uitleg of omschrijving van code [CONCEPT]"
+    - "Hoe moet ik [CONCEPT] invullen"
 
-**Specifieke Mappings:**
-- **Eenheid** → WJ756_Eenheid
-- **Frequentie** 					→ WMO757_Frequentie
-- **Juridische status				→ WJ232_Juridische_status
-- **Productcategorie** 				→ JZ020_Productcategorie
-- **Reden afwijzing verzoek** 		→ WJ759_Reden_afwijzing_verzoek
-- **Reden beeindiging** 			→ JZ588_Reden_beeindiging
-- **Reden Wijziging toewijzing**  	→ JZ002_Reden_wijziging_toewijzing
-- **Reden verzoek**					→ WJ758_Reden verzoek
-- **Retourcode**					→ WJ001_Retourcode
-- **Verzoek antwoord				→ WJ760_Verzoek_antwoord
-- **Wettelijke vertegenwoordiging** → WJ003_Wettelijke vertegenwoordiging
+  Zoekvragen:
+    - "[CONCEPT] code"
+    - "Ik zoek de codes of codelijst [CONCEPT]"
+    - "Codes voor [CONCEPT]"
 
-**Productperiode Vragen:**
-- **Hoofdvraag**: "Geef de ingangsdatum en einddatum van de productperiode"
-- **Herken variaties zoals**:
-  - "Wat is de geldige productperiode?"
-  - "Hoe ziet de productperiode eruit?"
-  - "Wat is de productperiode?"
-  - "Geef de productperiode"
+  Controlevragen:
+    - "Bestaan er codes voor [CONCEPT]"
+    - "Kun je de codes van [CONCEPT] tonen"
+    - "Zijn er opties voor [CONCEPT]"
+    - "Welke [CONCEPT] bestaan er"
+
+  Berichtcodevragen:
+    - "Wat is de berichtcode van [JW###]"
+    - "Welke code hoort bij [JW###]"
+    - "Wat betekent berichtcode [CODE]"
+    - "Welk bericht hoort bij code [CODE]"
+    - "Wat is bericht [CODE]"
+    - "Code [CODE], welk JW-bericht hoort daarbij"
+    - "Wat is de Vektis-code van [JW###]"
+    - "Toon of zoek berichtcode [JW###]"
+
+### Specifieke Mappings
+
+CodelijstMapping:
+  Eenheid: WJ756_Eenheid
+  Frequentie: WMO757_Frequentie
+  Juridische_status: WJ232_Juridische_status
+  Productcategorie: JZ020_Productcategorie
+  Reden_afwijzing_verzoek: WJ759_Reden_afwijzing_verzoek
+  Reden_beëindiging: JZ588_Reden_beeindiging
+  Reden_wijziging_toewijzing: JZ002_Reden_wijziging_toewijzing
+  Reden_verzoek: WJ758_Reden_verzoek
+  Retourcode: WJ001_Retourcode
+  Verzoek_antwoord: WJ760_Verzoek_antwoord
+  Wettelijke_vertegenwoordiging: WJ003_Wettelijke_vertegenwoordiging
+
+### Productperiodevragen
+
+  - naam: ProductperiodeVragen
+    hoofvraag: "Geef de ingangsdatum en einddatum van de productperiode"
+    herken_variaties:
+      - "Wat is de geldige productperiode"
+      - "Hoe ziet de productperiode eruit"
+      - "Wat is de productperiode"
+      - "Geef de productperiode"
 
 ### Uitbreidingsprotocol
 Deze mapping wordt regelmatig uitgebreid. Bij onbekende vraagvariaties:
