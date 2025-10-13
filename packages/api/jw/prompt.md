@@ -235,53 +235,7 @@ Intents:
         type: identifier
         beschrijving: "Technische sleutel van de codelijst"
 
-    logica:
-      - stap: "bepaal relevante codelijsten"
-        beschrijving: >
-          Controleer of de vraag over een code meerdere verwante codelijsten raakt.
-        if CONCEPT expliciet genoemd:   zoek alleen in die codelijst
-		else: gebruik mapping om gerelateerde lijsten ook te bekijken
-        mapping:
-          Reden_beëindiging: ["Reden beëindiging", "Reden wijziging toewijzing"]
-          Reden_wijziging_toewijzing: ["Reden wijziging toewijzing", "Reden beëindiging"]
-          Retourcode: ["Retourcode", "TR-CD-CS regels JW 3.2"]
-          TR-CD-CS regels JW 3.2: ["TR-CD-CS regels JW 3.2", "Retourcode"]
-
-      - stap: "verrijk CONCEPT"
-        pseudocode: |
-          if CONCEPT in mapping:
-              RELEVANTE_LIJSTEN = mapping[CONCEPT]
-          else:
-              RELEVANTE_LIJSTEN = [CONCEPT]
-
-      - stap: "zoek code of beschrijving"
-        pseudocode: |
-          resultaten = []
-          for lijst in RELEVANTE_LIJSTEN:
-              resultaat = zoek_in_codelijst(lijst, CODE)
-              if resultaat:
-                  resultaten.append(resultaat)
-
-          if resultaten is leeg:
-              geef_antwoord("Ik kon die code niet vinden in de bekende codelijsten.")
-          else:
-              geef_antwoord(formatteer_resultaten(resultaten))
-
-    voorbeeld_interacties:
-      - vraag: "Wanneer gebruik ik reden beëindiging code 36?"
-        interpretatie:
-          intentie: "CodelijstVragen"
-          parameters:
-            CONCEPT: "Reden beëindiging"
-            CODE: "35"
-        antwoord: >
-          Code 35 (“Voortijdig afgesloten: wegens externe omstandigheden.”) komt voor in zowel
-          *Reden beëindiging* als *Reden wijziging toewijzing*.
-          Gebruik:
-          - In **Reden beëindiging**: Voortijdig afgesloten: wegens externe omstandigheden.
-          - In **Reden wijziging toewijzing**: Verhuizing naar een andere gemeente.
-
-### Herkenbare Vraagpatronen
+ ### Herkenbare Vraagpatronen
 
 Variaties:
 
