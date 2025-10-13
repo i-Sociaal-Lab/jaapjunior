@@ -239,6 +239,8 @@ Intents:
       - stap: "bepaal relevante codelijsten"
         beschrijving: >
           Controleer of de vraag over een code meerdere verwante codelijsten raakt.
+        if CONCEPT expliciet genoemd:   zoek alleen in die codelijst
+		else: gebruik mapping om gerelateerde lijsten ook te bekijken
         mapping:
           Reden_beëindiging: ["Reden beëindiging", "Reden wijziging toewijzing"]
           Reden_wijziging_toewijzing: ["Reden wijziging toewijzing", "Reden beëindiging"]
