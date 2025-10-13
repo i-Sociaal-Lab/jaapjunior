@@ -77,7 +77,7 @@
       },
       {
         "code": "32",
-        "omschrijving": "Voortijdig afgesloten: eenzijdig door de cliënt",
+        "omschrijving": "Voortijdig afgesloten, eenzijdig door de cliënt",
         "mutatiedatum": "12-07-2017",
         "ingangsdatum": "01-01-2015",
         "aanleiding": {
@@ -87,7 +87,7 @@
       },
       {
         "code": "33",
-        "omschrijving": "Voortijdig afgesloten: eenzijdig door de aanbieder",
+        "omschrijving": "Voortijdig afgesloten, eenzijdig door de aanbieder",
         "mutatiedatum": "12-07-2017",
         "ingangsdatum": "01-01-2015",
         "aanleiding": {
@@ -97,7 +97,7 @@
       },
       {
         "code": "34",
-        "omschrijving": "Voortijdig afgesloten: in overeenstemming",
+        "omschrijving": "Voortijdig afgesloten, in overeenstemming",
         "mutatiedatum": "12-07-2017",
         "ingangsdatum": "01-01-2015",
         "aanleiding": {
@@ -107,7 +107,7 @@
       },
       {
         "code": "35",
-        "omschrijving": "Voortijdig afgesloten: wegens externe omstandigheden",
+        "omschrijving": "Voortijdig afgesloten, wegens externe omstandigheden",
         "mutatiedatum": "12-07-2017",
         "ingangsdatum": "01-01-2015",
         "aanleiding": {
