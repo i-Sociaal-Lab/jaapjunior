@@ -46,7 +46,7 @@
       { "code": "9360", "omschrijving": "Er is al een antwoordbericht met deze ReferentieAanbieder, terwijl het antwoordbericht 'aanvraag in onderzoek' heeft.", "regel": "TR360" },
       { "code": "9361", "omschrijving": "Het product komt vaker voor met overlappende zorgperiodes.", "regel": "TR361" },
       { "code": "9365", "omschrijving": "Er is al een antwoordbericht met dezelfde ReferentieAanbieder waar VerzoekAntwoord niet 'aanvraag in onderzoek' is.", "regel": "TR365" },
-      { "code": "9366", "omschrijving": "ProductReferentie komt niet voor in een Declaratiebericht.", "regel": "TR365" },
+      { "code": "9366", "omschrijving": "ProductReferentie komt niet voor in een Declaratiebericht.", "regel": "TR366" },
       { "code": "9367", "omschrijving": "De waarde komt niet overeen met de waarde uit het heenbericht met gelijke ProductReferentie.", "regel": "TR367" },
       { "code": "9369", "omschrijving": "Budget is meegegeven, maar de geleverde volumes passen niet binnen het toegewezen budget.", "regel": "TR369" },
       { "code": "9373", "omschrijving": "Budget is gewijzigd, maar GewensteIngangsdatum is niet gelijk aan die in de actuele toewijzing.", "regel": "TR373" },
