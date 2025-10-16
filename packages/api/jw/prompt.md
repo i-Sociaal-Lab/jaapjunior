@@ -223,6 +223,7 @@ Intents:
 
   - naam: CodelijstVragen
     hoofvraag: "Toon [CODE] uit '[CODENR]_[CONCEPT]' met bijbehorende Rule"
+    geef de letterlijk waarden uit de codelijst
     parameters:
       - naam: CONCEPT
         type: codelijst
