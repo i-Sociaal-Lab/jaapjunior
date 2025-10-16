@@ -13,7 +13,7 @@
       "toonKolomnamen": true,
       "kolommen": [
         { "veld": "code", "label": "Code", "breedte": "8%", "uitlijning": "center" },
-        { "veld": "omschrijving", "label": "Omschrijving", "breedte": "40%" },
+        { "veld": "documentatie", "label": "omschrijving", "breedte": "40%" },
         { "veld": "mutatiedatum", "label": "Mutatiedatum", "breedte": "15%" },
         { "veld": "ingangsdatum", "label": "Ingangsdatum", "breedte": "15%" },
         { "veld": "aanleiding.Reden_wijziging_toewijzing", "label": "Reden wijziging toewijzing", "breedte": "12%", "uitlijning": "center" },
@@ -35,7 +35,7 @@
           "type": "kaart",
           "titel": "Detailweergave reden beëindiging",
           "eigenschappen": [
-            "omschrijving",
+            "documentatie",
             "mutatiedatum",
             "ingangsdatum",
             "aanleiding.Reden_wijziging_toewijzing",
@@ -47,7 +47,7 @@
     "codes": [
       {
         "code": "02",
-        "omschrijving": "Overlijden",
+        "documentatie": "Overlijden",
         "mutatiedatum": "",
         "ingangsdatum": "01-01-2015",
         "aanleiding": {
@@ -57,7 +57,7 @@
       },
       {
         "code": "20",
-        "omschrijving": "Levering is tijdelijk beëindigd",
+        "documentatie": "Levering is tijdelijk beëindigd",
         "mutatiedatum": "12-07-2017",
         "ingangsdatum": "01-01-2015",
         "aanleiding": {
@@ -67,7 +67,7 @@
       },
       {
         "code": "31",
-        "omschrijving": "Levering is volgens plan beëindigd",
+        "documentatie": "Levering is volgens plan beëindigd",
         "mutatiedatum": "12-07-2017",
         "ingangsdatum": "01-01-2015",
         "aanleiding": {
@@ -77,7 +77,7 @@
       },
       {
         "code": "32",
-        "omschrijving": "Voortijdig afgesloten, eenzijdig door de cliënt",
+        "documentatie": "Voortijdig afgesloten, eenzijdig door de cliënt",
         "mutatiedatum": "12-07-2017",
         "ingangsdatum": "01-01-2015",
         "aanleiding": {
@@ -87,7 +87,7 @@
       },
       {
         "code": "33",
-        "omschrijving": "Voortijdig afgesloten, eenzijdig door de aanbieder",
+        "documentatie": "Voortijdig afgesloten, eenzijdig door de aanbieder",
         "mutatiedatum": "12-07-2017",
         "ingangsdatum": "01-01-2015",
         "aanleiding": {
@@ -97,7 +97,7 @@
       },
       {
         "code": "34",
-        "omschrijving": "Voortijdig afgesloten, in overeenstemming",
+        "documentatie": "Voortijdig afgesloten, in overeenstemming",
         "mutatiedatum": "12-07-2017",
         "ingangsdatum": "01-01-2015",
         "aanleiding": {
@@ -107,7 +107,7 @@
       },
       {
         "code": "35",
-        "omschrijving": "Voortijdig afgesloten, wegens externe omstandigheden",
+        "documentatie": "Voortijdig afgesloten, wegens externe omstandigheden",
         "mutatiedatum": "12-07-2017",
         "ingangsdatum": "01-01-2015",
         "aanleiding": {
@@ -117,7 +117,7 @@
       },
       {
         "code": "36",
-        "omschrijving": "Geïnitieerd door de gemeente",
+        "documentatie": "Geïnitieerd door de gemeente",
         "mutatiedatum": "01-04-2020",
         "ingangsdatum": "01-01-2021",
         "aanleiding": {
@@ -127,7 +127,7 @@
       },
       {
         "code": "37",
-        "omschrijving": "In verband met wijzigingsverzoek",
+        "documentatie": "In verband met wijzigingsverzoek",
         "mutatiedatum": "01-04-2020",
         "ingangsdatum": "01-01-2021",
         "aanleiding": {
@@ -137,7 +137,7 @@
       },
       {
         "code": "38",
-        "omschrijving": "Overstap naar andere aanbieder",
+        "documentatie": "Overstap naar andere aanbieder",
         "mutatiedatum": "30-09-2021",
         "ingangsdatum": "01-04-2022",
         "aanleiding": {
@@ -147,7 +147,7 @@
       },
       {
         "code": "39",
-        "omschrijving": "Uitstroom naar ander domein",
+        "documentatie": "Uitstroom naar ander domein",
         "mutatiedatum": "30-09-2021",
         "ingangsdatum": "01-04-2022",
         "aanleiding": {
