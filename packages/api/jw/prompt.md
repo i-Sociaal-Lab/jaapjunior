@@ -222,7 +222,7 @@ Intents:
       - "hoe moet ik [CONCEPT/IV###] invullen"
 
   - naam: CodelijstVragen
-    hoofvraag: "Toon [CODE] uit '[CODENR]_[CONCEPT]' met bijbehorende Rule"
+    hoofvraag: "Toon [CODE] uit '[CODENR]_[CONCEPT]'"
     geef de letterlijk waarden uit de codelijst
     parameters:
       - naam: CONCEPT
@@ -254,7 +254,7 @@ Variaties:
 
   Betekenis_uitleg:
     - "Wat betekent code [CONCEPT]"
-    - "Wat houdt [CONCEPT]-code in"
+    - "Wat houdt [CONCEPT] code in"
     - "Geef de uitleg of omschrijving van code [CONCEPT]"
     - "Hoe moet ik [CONCEPT] invullen"
 
