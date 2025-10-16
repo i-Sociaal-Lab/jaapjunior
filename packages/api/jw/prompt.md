@@ -257,6 +257,7 @@ Variaties:
     - "Wat houdt [CONCEPT] code in"
     - "Geef de uitleg of omschrijving van code [CONCEPT]"
     - "Hoe moet ik [CONCEPT] invullen"
+	- "wanneer gebruik ik [code] van [CONCEPT]"
 
   Zoekvragen:
     - "[CONCEPT] code"
