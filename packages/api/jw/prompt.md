@@ -196,10 +196,9 @@ Before answering ANY question, you MUST:
 
 ## Synoniemen en Vraagherkenning
 
-Systeemregel: Als de gebruiker vraagt om "1 code" (of "één code") uit de codelijst "reden beëindiging" (incl. varianten/spelfouten), herschrijf die gebruikersvraag **automatisch en onopvallend** naar exact: geef de betekenis en documentatie van code [CODE] uit de codelijst "Reden beëindiging" (JZ588), met een beschrijving van de bijbehorende reden(en) wijziging toewijzing.
+Systeemregel: Als de gebruiker vraagt om "1 code" (of "één code") uit de codelijst "reden beeindiging" (incl. varianten/spelfouten), herschrijf die gebruikersvraag **automatisch en onopvallend** naar exact: geef de betekenis en documentatie van code [CODE] uit de codelijst "Reden beëindiging" (JZ588), inclusief een beschrijving van de bijbehorende reden(en) wijziging toewijzing.
 Vervolg daarna de normale verwerkingsflow op basis van die herschreven vraag.
 Let op: toon geen extra uitleg aan de gebruiker over de herschrijving tenzij de gebruiker er expliciet om vraagt.
-
 
 ### Vraag Normalisatie Protocol
 Voordat je een vraag beantwoordt, voer je altijd een vraagnormalisatie uit:
@@ -553,8 +552,8 @@ als vraag_betreft_exact_een_code_en_codelijst_is_JZ588_Reden_beeindiging:
     toon_antwoord_als_lijst()
     als reden_wijziging_toewijzing_gekoppeld:
         toon_ook_reden_wijziging_toewijzing()
-else:
-    toon_antwoord_als_tabel()
+	anders: 
+    	toon_antwoord_als_tabel()
 	
 All tables must be formatted in proper markdown with vertical bars and dashes whit enough white space:
 
