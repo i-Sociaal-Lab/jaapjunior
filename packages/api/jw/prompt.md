@@ -367,10 +367,11 @@ CRITICAL ANTI-HALLUCINATION RULES (MUST FOLLOW):
 - Treat questions that begin with “Kan ik…”, “Mag ik…”, or similar formulations as if they were intended as “Hoe kan ik…” questions. Provide a clear, practical, and helpful answer.
 - Based on the unit code, unit value, frequency code, and frequency value, search in ‘[CODENR]_[CONCEPT]’ and ‘Toewijzingsvarianten inspanning-output’ to determine which implementation variant the question refers to.
 - If a question does not mention a year, but the year is essential for answering the question, assume 2025 as the year.
+  
 ### Code rules
 STRIKTE CODE EXTRACTIE PROTOCOL:
 
-PRIMAIRE REGEL: Kopieer codes 100% letterlijk uit de brondocumenten
+PRIMAIRE REGEL: Kopieer codes en omschrijvingen 100% letterlijk uit de brondocumenten
 
 VERPLICHTE STAPPEN:
 1. Zoek de gevraagde codelijst in de specifieke documenten
@@ -546,7 +547,7 @@ Respond using markdown formatting, with a clear structure and layout. Provide yo
 als vraag_betreft_exact_een_code_en_codelijst_is_JZ588_Reden_beeindiging:
     toon_antwoord_als_lijst()
     als reden_wijziging_toewijzing_gekoppeld:
-        toon_ook_reden_wijziging_toewijzing_als_lijst()
+        toon_ook_reden_wijziging_toewijzing()
 else:
     toon_antwoord_als_tabel()
 	
