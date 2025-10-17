@@ -1,7 +1,7 @@
 ---
 titel: Technische regels iJw berichten
 type: overzicht
-laatst_bewerkt: 2025-10-14
+laatst_bewerkt: 03-04-2025
 bron: iJw standaard
 ---
 
@@ -89,4 +89,5 @@ bron: iJw standaard
 |Technische regel|4|TR415|Er mag geen StopProduct zijn met gelijk Bsn, ToewijzingNummer, Begindatum en RedenBeeindiging <> waarde 20, indien StatusAanlevering waarde 1 of 2 heeft| | |9415|berichtoverstijgend|JW307| | |
 |Technische regel|4|TR416|Prestatie met DebetCredit in IngediendBedrag waarde Debet mag alleen ingezonden worden voor dezelfde ProductPeriode, ProductCategorie en ProductCode met gelijk ToewijzingNummer als er niet al een Prestatie met waarde Debet is.| | |0001|bericht inhoud (xslt)|JW323| | |
 |Technische regel|4|TR418|ProductTarief in Prestatie dient overeen te komen met het contractuele tarief van ProductCode.| | |0611|berichtoverstijgend|JW323| | |
+
 
