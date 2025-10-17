@@ -191,7 +191,8 @@ Before answering ANY question, you MUST:
    - Toon de omschrijving van de technische regel.
   
 9. **Vragen over reden beeindiging:**
-    - als gevraagd wordt naar 1 code toon de informatie van de gevraagde code als lijst. Toon ook de bijbehorende reden wijziging toewijzing als deze aanwezig is
+    - lees eerst codelijst reden wijziging toewijzing.
+    - als gevraagd wordt naar 1 code toon de informatie van de gevraagde code als lijst. Toon ook de bijbehorende omschrijving van reden wijziging toewijzing als deze aanwezig is
 
 
 ## Synoniemen en Vraagherkenning
