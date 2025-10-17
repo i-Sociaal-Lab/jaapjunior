@@ -48,6 +48,7 @@
       {
         "code": "02",
         "documentatie": "Overlijden",
+        "gebruik": "Indien een client is overleden",
         "mutatiedatum": "",
         "ingangsdatum": "01-01-2015",
         "aanleiding": {
@@ -58,6 +59,7 @@
       {
         "code": "20",
         "documentatie": "Levering is tijdelijk beëindigd",
+        "gebruik": "Indien een client tijdelijk geen zorg kan ontvangen, maar de verwachting is dat deze zorg binnen redelijke termijn wel kan worden vervolgd. Bv. Client is opgenomen in een ziekenhuis.",
         "mutatiedatum": "12-07-2017",
         "ingangsdatum": "01-01-2015",
         "aanleiding": {
@@ -68,6 +70,7 @@
       {
         "code": "31",
         "documentatie": "Levering is volgens plan beëindigd",
+        "gebruik": "Enige wijzigingen in het plan zijn normaal. Het is niet wenselijk om te rigide vast te houden aan een vooropgesteld plan. Als je met elkaar, zoals gepland, het traject doorloopt en niet voortijdig stopt, is het traject volgens plan afgesloten. Ook als de jongere de leeftijd van 18 jaar bereikt en de jeugdhulp wordt beëindigd óf wordt voortgezet onder een andere wet (Zvw, Wmo,Wlz) dan dient als reden beëindiging te worden gekozen voor ‘Levering volgens plan beëindigd’.",
         "mutatiedatum": "12-07-2017",
         "ingangsdatum": "01-01-2015",
         "aanleiding": {
@@ -78,6 +81,7 @@
       {
         "code": "32",
         "documentatie": "Voortijdig afgesloten, eenzijdig door de cliënt",
+        "gebruik": "Indien een client is overleden",
         "mutatiedatum": "12-07-2017",
         "ingangsdatum": "01-01-2015",
         "aanleiding": {
@@ -88,6 +92,7 @@
       {
         "code": "33",
         "documentatie": "Voortijdig afgesloten, eenzijdig door de aanbieder",
+        "gebruik": "Indien een client is overleden",
         "mutatiedatum": "12-07-2017",
         "ingangsdatum": "01-01-2015",
         "aanleiding": {
@@ -98,6 +103,7 @@
       {
         "code": "34",
         "documentatie": "Voortijdig afgesloten, in overeenstemming",
+        "gebruik": "Indien een client is overleden",
         "mutatiedatum": "12-07-2017",
         "ingangsdatum": "01-01-2015",
         "aanleiding": {
@@ -108,6 +114,7 @@
       {
         "code": "35",
         "documentatie": "Voortijdig afgesloten, wegens externe omstandigheden",
+        "gebruik": "Indien een client is overleden",
         "mutatiedatum": "12-07-2017",
         "ingangsdatum": "01-01-2015",
         "aanleiding": {
@@ -118,6 +125,7 @@
       {
         "code": "36",
         "documentatie": "Geïnitieerd door de gemeente",
+        "gebruik": "Indien een client is overleden",
         "mutatiedatum": "01-04-2020",
         "ingangsdatum": "01-01-2021",
         "aanleiding": {
@@ -128,6 +136,7 @@
       {
         "code": "37",
         "documentatie": "In verband met wijzigingsverzoek",
+        "gebruik": "Indien een client is overleden",
         "mutatiedatum": "01-04-2020",
         "ingangsdatum": "01-01-2021",
         "aanleiding": {
@@ -138,6 +147,7 @@
       {
         "code": "38",
         "documentatie": "Overstap naar andere aanbieder",
+        "gebruik": "Indien een client is overleden",
         "mutatiedatum": "30-09-2021",
         "ingangsdatum": "01-04-2022",
         "aanleiding": {
@@ -148,6 +158,7 @@
       {
         "code": "39",
         "documentatie": "Uitstroom naar ander domein",
+        "gebruik": "Indien een client is overleden",
         "mutatiedatum": "30-09-2021",
         "ingangsdatum": "01-04-2022",
         "aanleiding": {
