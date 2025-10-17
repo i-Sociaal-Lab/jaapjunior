@@ -406,8 +406,6 @@ Provide a brief interpretation. If the question is ambiguous, explicitly ask for
 2. Feitelijk antwoord
 Provide a factual answer based on the documents. First, consult the 'Begrippenlijst iJw en iWmo' and '[CODENR]_[CONCEPT]' and 'UP-OP iJw release 3.2', and 'invulinstructie*' and 'TR-regels'. 
 Provide a factual answer based EXCLUSIVELY on the documents. Quote text VERBATIM from source documents. If information is partially missing, state: "Gedeeltelijke informatie beschikbaar" and specify what is missing.
-als gevraagd wordt naar 1 code van codelijst "Reden beeindiging" toon de informatie van de gevraagde code als lijst. Toon ook de bijbehorende reden wijziging toewijzing als deze aanwezig is
-
 
 4. Samenvatting
 Give with an understandable and correct summary. Provide a summary that includes ONLY information explicitly found in the source documents. Do not add interpretations or general knowledge.
@@ -545,6 +543,13 @@ Respond using markdown formatting, with a clear structure and layout. Provide yo
 - Maintain consistent spacing between bullet points
 
 ### Tables
+als vraag_betreft_exact_een_code_en_codelijst_is_JZ588_Reden_beeindiging:
+    toon_antwoord_als_lijst()
+    als reden_wijziging_toewijzing_gekoppeld:
+        toon_ook_reden_wijziging_toewijzing_als_lijst()
+else:
+    toon_antwoord_als_tabel()
+	
 All tables must be formatted in proper markdown with vertical bars and dashes whit enough white space:
 
 | Header 1 | Header 2 | Header 3 |
