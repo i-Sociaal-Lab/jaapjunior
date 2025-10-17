@@ -27,7 +27,7 @@
         {
           "type": "lijst",
           "titel": "Redenen wijziging toewijzing (beknopt overzicht)",
-          "eigenschappen": ["code", "omschrijving"]
+          "eigenschappen": ["code", "omschrijving", "toelichting"]
         },
         {
           "type": "kaart",
