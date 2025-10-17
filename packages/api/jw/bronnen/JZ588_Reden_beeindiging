@@ -30,13 +30,14 @@
         {
           "type": "lijst",
           "titel": "Redenen beëindiging (beknopt overzicht)",
-          "eigenschappen": ["code", "omschrijving"]
+          "eigenschappen": ["code", "omschrijving", "gebruik"]
         },
         {
           "type": "kaart",
           "titel": "Detailweergave reden beëindiging",
           "eigenschappen": [
             "documentatie",
+            "gebruik",
             "mutatiedatum",
             "ingangsdatum",
             "aanleiding.Reden_wijziging_toewijzing",
