@@ -184,6 +184,11 @@ Before answering ANY question, you MUST:
 → If a legal provision is not found, state: "Bepaling [X] is niet gevonden in [wetgevingsdocument]"
 → When citing law, include ALL relevant articles and subsections without omission
 
+8. **Vragen over retourcodes:**
+   - Toon als antwoord de code, omschrijving, reden wijziging toewijzing.
+   - Zoek de technische regel die behoort bij de retourcode.
+   - Toon de omschrijving van de technische regel.
+
 ## Synoniemen en Vraagherkenning
 
 ### Vraag Normalisatie Protocol
