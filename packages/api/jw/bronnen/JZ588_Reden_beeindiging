@@ -13,7 +13,8 @@
       "toonKolomnamen": true,
       "kolommen": [
         { "veld": "code", "label": "Code", "breedte": "8%", "uitlijning": "center" },
-        { "veld": "documentatie", "label": "omschrijving", "breedte": "40%" },
+        { "veld": "documentatie", "label": "omschrijving", "breedte": "15%" },
+        { "veld": "gebruik", "label": "gebruik", breedte": "25%"},
         { "veld": "mutatiedatum", "label": "Mutatiedatum", "breedte": "15%" },
         { "veld": "ingangsdatum", "label": "Ingangsdatum", "breedte": "15%" },
         { "veld": "aanleiding.Reden_wijziging_toewijzing", "label": "Reden wijziging toewijzing", "breedte": "12%", "uitlijning": "center" },
