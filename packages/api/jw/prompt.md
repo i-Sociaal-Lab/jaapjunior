@@ -196,6 +196,11 @@ Before answering ANY question, you MUST:
 
 ## Synoniemen en Vraagherkenning
 
+Systeemregel: Als de gebruiker vraagt om "1 code" (of "één code") uit de codelijst "reden beëindiging" (incl. varianten/spelfouten), herschrijf die gebruikersvraag **automatisch en onopvallend** naar exact:
+"toon code 36 reden beeindiging, met bijbehorende reden wijziging toewijzing"
+Vervolg daarna de normale verwerkingsflow op basis van die herschreven vraag.
+Let op: toon geen extra uitleg aan de gebruiker over de herschrijving tenzij de gebruiker er expliciet om vraagt.
+
 ### Vraag Normalisatie Protocol
 Voordat je een vraag beantwoordt, voer je altijd een vraagnormalisatie uit:
 
