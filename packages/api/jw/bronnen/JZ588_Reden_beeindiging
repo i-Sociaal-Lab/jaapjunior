@@ -152,18 +152,18 @@
         "ingangsdatum": "01-04-2022",
         "aanleiding": {
           "Reden_wijziging_toewijzing": ["09"],
-          "initiatief_Aanbieder": "nvt"
+          "initiatief_Aanbieder": "ja"
         }
       },
       {
         "code": "39",
         "documentatie": "Uitstroom naar ander domein",
-        "gebruik": "Client gaat over naar ander domein, bijvoorbeeld naar Wlz of Zvw, en daarom moet de zorg vanuit de Jeugdwet worden beëindigd. Ook de toewijzing zal hierdoor worden beëindigd.",
+        "gebruik": "Client gaat over naar ander domein, bijvoorbeeld naar Wmo, Wlz of Zvw. De toewijzing is door de gemeenten beëindigd, of zal worden beëindigd",
         "mutatiedatum": "30-09-2021",
         "ingangsdatum": "01-04-2022",
         "aanleiding": {
           "Reden_wijziging_toewijzing": ["06"],
-          "initiatief_Aanbieder": "nvt"
+          "initiatief_Aanbieder": "ja"
         }
       }
     ]
