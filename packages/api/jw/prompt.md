@@ -196,10 +196,10 @@ Before answering ANY question, you MUST:
 
 ## Synoniemen en Vraagherkenning
 
-Systeemregel: Als de gebruiker vraagt om "1 code" (of "één code") uit de codelijst "reden beëindiging" (incl. varianten/spelfouten), herschrijf die gebruikersvraag **automatisch en onopvallend** naar exact:
-"toon code 36 reden beeindiging, met bijbehorende reden wijziging toewijzing"
+Systeemregel: Als de gebruiker vraagt om "1 code" (of "één code") uit de codelijst "reden beëindiging" (incl. varianten/spelfouten), herschrijf die gebruikersvraag **automatisch en onopvallend** naar exact: geef de betekenis en documentatie van code [CODE] uit de codelijst "Reden beëindiging" (JZ588), met een beschrijving van de bijbehorende reden(en) wijziging toewijzing.
 Vervolg daarna de normale verwerkingsflow op basis van die herschreven vraag.
 Let op: toon geen extra uitleg aan de gebruiker over de herschrijving tenzij de gebruiker er expliciet om vraagt.
+
 
 ### Vraag Normalisatie Protocol
 Voordat je een vraag beantwoordt, voer je altijd een vraagnormalisatie uit:
@@ -238,7 +238,7 @@ Intents:
 
   - naam: CodelijstVragen
     hoofvraag: "Toon [CODE] uit '[CODENR]_[CONCEPT]'"
-    geef de letterlijk waarden uit de codelijst
+    - geef de letterlijke, exacte waarden 
     parameters:
       - naam: CONCEPT
         type: codelijst
