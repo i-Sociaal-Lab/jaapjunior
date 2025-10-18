@@ -57,7 +57,7 @@
       {
         "code": "03",
         "omschrijving": "Contractwijziging",
-        "toelichting": "Gemeente maakt een nieuwe contractafspraak met aanbieder, waardoor het nodig is om een andere toewijzing te sturen met  bijvoorbeeld andere productcodes. NB niet elke contractwijziging zal leiden tot een nieuwe toewijzing. Indien een contract wordt opgezegd en de toewijzingen worden geëindigd, wordt ook deze code gebruikt.",
+        "toelichting": "Gemeente maakt een nieuwe contractafspraak met aanbieder, waardoor het nodig is om een andere toewijzing te sturen met bijvoorbeeld andere productcodes. NB niet elke contractwijziging zal leiden tot een nieuwe toewijzing. Indien een contract wordt opgezegd en de toewijzingen worden geëindigd, wordt ook deze code gebruikt.",
         "Reden beeindiging": "36"
       },
       {
