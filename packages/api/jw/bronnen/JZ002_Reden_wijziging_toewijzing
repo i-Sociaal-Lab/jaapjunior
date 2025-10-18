@@ -62,13 +62,13 @@
       },
       {
         "code": "04",
-        "omschrijving": "Herbeoordeling: verlenging toewijzing",
+        "omschrijving": "Herbeoordeling verlenging toewijzing",
         "toelichting": "Als gevolg van een herbeoordeling door de gemeente kan een toewijzing verlengd worden.",
         "Reden beeindiging": "nvt"
       },
       {
         "code": "05",
-        "omschrijving": "Herbeoordeling: verkorting toewijzing",
+        "omschrijving": "Herbeoordeling verkorting toewijzing",
         "toelichting": "In verschillende situaties zal de huidige toewijzing ingetrokken moeten worden - Client moet ander product toegewezen krijgen. - Client moet korter zorg krijgen. - Client moet andere omvang krijgen, bijvoorbeeld meer uren per week, tenzij het een toewijzing in budget of totaal per toewijzing periode betreft. De beoordeling vindt plaats door gemeente op basis van client contact.",
         "Reden beeindiging": "36"
       },
