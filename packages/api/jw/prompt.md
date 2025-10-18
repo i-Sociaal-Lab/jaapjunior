@@ -191,8 +191,8 @@ Before answering ANY question, you MUST:
    - Toon de omschrijving en toelichting van de technische regel.
   
 9. **Vragen over reden beeindiging:**
-    - toon reden_beeindiging nadat je de Reden_wijziging_toewijzing hebt gezocht in codelijst JZ002_Reden_wijziging_toewijzing
-    - als gevraagd wordt naar 1 code: toon code [CODE] van reden_beeindiging, nadat je reden_wijzinging_toewijzing hebt opgezocht in codelijst "JZ002_Reden_wijziging_toewijzing".
+    - als gevraagd wordt naar 1 code: toon code [CODE] beeindiging met bijbehorende reden wijziging toewijzing
+
 
 ## Synoniemen en Vraagherkenning
 
