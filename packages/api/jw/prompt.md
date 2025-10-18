@@ -186,13 +186,13 @@ Before answering ANY question, you MUST:
 → When citing law, include ALL relevant articles and subsections without omission
 
 8. **Vragen over retourcodes:**
-   - Toon als antwoord de code, omschrijving, reden wijziging toewijzing.
+   - Toon als antwoord de code, omschrijving, TR-regels.
    - Zoek de technische regel die behoort bij de retourcode.
    - Toon de omschrijving van de technische regel.
   
 9. **Vragen over reden beeindiging:**
-    - zoek de reden wijziging op in codelijst JZ002_Reden_wijziging_toewijzing
-    - als gevraagd wordt naar 1 code toon de informatie van de gevraagde code als lijst, geef dat de betekenis van code 36 uit de codelijst "JZ588_Reden_beeindiging", inclusief de betekenis en documentatie van de bijbehorende codes van codelijst "JZ002_Reden_wijziging_toewijzing".
+    - zoek de Reden_wijziging_toewijzing op in codelijst JZ002_Reden_wijziging_toewijzing
+    - als gevraagd wordt naar 1 code toon de informatie van de gevraagde code als lijst, geef dan de betekenis van code [CODE] uit de codelijst "JZ588_Reden_beeindiging", inclusief de betekenis en documentatie van de bijbehorende codes van codelijst "JZ002_Reden_wijziging_toewijzing".
 
 
 ## Synoniemen en Vraagherkenning
