@@ -15,7 +15,7 @@
         { "veld": "code", "label": "Code", "breedte": "8%" },
         { "veld": "omschrijving", "label": "Omschrijving", "breedte": "40%" },
         { "veld": "toelichting", "label": "toelichting", "breedte": "40%" },
-        { "veld": "Reden beeindiging", "label": "Reden beeindiging", "breedte": "12%" },
+        { "veld": "Reden beeindiging", "label": "Reden beeindiging", "breedte": "12%" }
       ],
       "stijl": {
         "kopVet": true,
@@ -33,10 +33,10 @@
           "type": "kaart",
           "titel": "Detailweergave reden beëindiging",
           "eigenschappen": [
-            "code"
+            "code",
             "omschrijving",
             "toelichting",
-           "Reden beeindiging"
+            "Reden beeindiging"
           ]
         }
       ]
@@ -87,7 +87,7 @@
       {
         "code": "08",
         "omschrijving": "Wijziging leveringsvorm",
-        "toelichting": "Toewijzinjg wordt beeindigd, omdat client eerst zorg in natura (ZIN) kreeg 'overstapt' en op basis van pgb zorg gaat ontvangen",
+        "toelichting": "Toewijzing wordt beeindigd, omdat client eerst zorg in natura (ZIN) kreeg 'overstapt' en op basis van pgb zorg gaat ontvangen",
         "Reden beeindiging": "36"
       },
       {
@@ -99,7 +99,7 @@
       {
         "code": "10",
         "omschrijving": "Overgang naar nieuwe bekostigingssystematiek",
-        "toelichting": De toewijzing is ingetrokken, omdat de client is overgegaan naar een andere regeling/bekostiging. Bijvoorbeeld een inspanningsgerichte toewijzing, wordt vervangen door een outputgerichte toewijzing. Deze code is toegevoegd vanwege de beëindiging van DBC-systematiek op 31 december 2017.",
+        "toelichting": "De toewijzing is ingetrokken, omdat de client is overgegaan naar een andere regeling/bekostiging. Bijvoorbeeld een inspanningsgerichte toewijzing, wordt vervangen door een outputgerichte toewijzing. Deze code is toegevoegd vanwege de beëindiging van DBC-systematiek op 31 december 2017.",
         "Reden beeindiging": "36"
       },
       {
@@ -132,4 +132,5 @@
     "laatstBijgewerkt": "01-04-2022",
     "tabeltype": "Referentielijst",
     "toepassing": "RedenWijziging binnen Jw-toewijzingen"
+  }
 }
