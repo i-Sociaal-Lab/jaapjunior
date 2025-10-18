@@ -192,8 +192,7 @@ Before answering ANY question, you MUST:
   
 9. **Vragen over reden beeindiging:**
     - zoek de Reden_wijziging_toewijzing op in codelijst JZ002_Reden_wijziging_toewijzing
-    - als gevraagd wordt naar 1 code toon de informatie van de gevraagde code als lijst, geef dan de betekenis van code [CODE] uit de codelijst "JZ588_Reden_beeindiging", inclusief de betekenis en documentatie van de bijbehorende codes van codelijst "JZ002_Reden_wijziging_toewijzing".
-
+    - als gevraagd wordt naar 1 code, toon code [CODE] van reden_beeindiging, zoek reden_wijzinging_toewijzing op in codelijst "JZ588_Reden_beeindiging".
 
 ## Synoniemen en Vraagherkenning
 
