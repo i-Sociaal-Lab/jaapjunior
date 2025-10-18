@@ -119,7 +119,7 @@ Before answering ANY question, you MUST:
    → First search for specific codelist documents using pattern "[CODENR]_[CONCEPT]" (e.g., "WJ003_wettelijke_vertegenwoordiging", "JZ020_productcategorie")
    → If specific codelist not found,
    → Always crossreference with and 'UP-OP iJw release 3.2' and 'invulinstructie*'
-   → Wanneer een gebruiker een retourcode noemt: toon retourcode, toon regel
+   → Wanneer een gebruiker een retourcode noemt: toon retourcode, toon omschrijving en toelichting van tr-regel
 → CRITICAL: Copy codes EXACTLY as they appear in the documents, including:
   - Exact numerical values (including leading zeros if present)
   - Exact spelling and capitalization
@@ -186,7 +186,7 @@ Before answering ANY question, you MUST:
 → When citing law, include ALL relevant articles and subsections without omission
 
 8. **Vragen over retourcodes:**
-   - Toon als antwoord de code, omschrijving, TR-regel
+   - Toon als antwoord de code, omschrijving,
    - Zoek de technische regel die behoort bij de retourcode.
    - Toon de omschrijving en toelichting van de technische regel.
   
