@@ -191,7 +191,7 @@ Before answering ANY question, you MUST:
    - Toon de omschrijving van de technische regel.
   
 9. **Vragen over reden beeindiging:**
-    - lees eerst codelijst reden wijziging toewijzing.
+    - zoek de reden wijziging op in codelijst JZ002_Reden_wijziging_toewijzing
     - als gevraagd wordt naar 1 code toon de informatie van de gevraagde code als lijst, geef dat de betekenis van code 36 uit de codelijst "JZ588_Reden_beeindiging", inclusief de betekenis en documentatie van de bijbehorende codes van codelijst "JZ002_Reden_wijziging_toewijzing".
 
 
