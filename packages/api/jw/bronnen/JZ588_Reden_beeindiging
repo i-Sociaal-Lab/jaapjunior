@@ -14,7 +14,7 @@
       "kolommen": [
         { "veld": "code", "label": "Code", "breedte": "8%", "uitlijning": "center" },
         { "veld": "documentatie", "label": "omschrijving", "breedte": "15%" },
-        { "veld": "gebruik", "label": "gebruik", breedte": "25%"},
+        { "veld": "gebruik", "label": "gebruik", "breedte": "25%" },
         { "veld": "mutatiedatum", "label": "Mutatiedatum", "breedte": "15%" },
         { "veld": "ingangsdatum", "label": "Ingangsdatum", "breedte": "15%" },
         { "veld": "aanleiding.Reden_wijziging_toewijzing", "label": "Reden wijziging toewijzing", "breedte": "12%", "uitlijning": "center" },
@@ -83,7 +83,7 @@
       {
         "code": "32",
         "documentatie": "Voortijdig afgesloten, eenzijdig door de cliënt",
-        "gebruik": "Het traject wordt voortijdig afgesloten, bijvoorbeeld omdat: • de cliënt ontevreden is over de zorg • de cliënt vindt dat de zorg niet (meer) nodig is • de cliënt geen hulp accepteert. Dit kan gaan om cliënten die ineens niet meer op afspraken verschijnen maar ook in een overleg aangeven te willen stoppen. Als de aanbieder nog wel mogelijkheden ziet om de client te helpen, is de afsluiting eenzijdig door de cliënt. ",
+        "gebruik": "Het traject wordt voortijdig afgesloten, bijvoorbeeld omdat: • de cliënt ontevreden is over de zorg • de cliënt vindt dat de zorg niet (meer) nodig is • de cliënt geen hulp accepteert. Dit kan gaan om cliënten die ineens niet meer op afspraken verschijnen maar ook in een overleg aangeven te willen stoppen. Als de aanbieder nog wel mogelijkheden ziet om de client te helpen, is de afsluiting eenzijdig door de cliënt.",
         "mutatiedatum": "12-07-2017",
         "ingangsdatum": "01-01-2015",
         "aanleiding": {
@@ -116,7 +116,7 @@
       {
         "code": "35",
         "documentatie": "Voortijdig afgesloten, wegens externe omstandigheden",
-        "gebruik": "Indien er externe omstandigheden zijn die noodzaken dat de zorg moet worden gestopt, wordt deze code gebruikt. • een verhuizing • langdurige vermissing of ontvoering van het kind. ",
+        "gebruik": "Indien er externe omstandigheden zijn die noodzaken dat de zorg moet worden gestopt, wordt deze code gebruikt. • een verhuizing • langdurige vermissing of ontvoering van het kind.",
         "mutatiedatum": "12-07-2017",
         "ingangsdatum": "01-01-2015",
         "aanleiding": {
@@ -131,7 +131,7 @@
         "mutatiedatum": "01-04-2020",
         "ingangsdatum": "01-01-2021",
         "aanleiding": {
-          "Reden_wijziging_toewijzing": [03, 05, 08, 10, 11],
+          "Reden_wijziging_toewijzing": ["03", "05", "08", "10", "11"],
           "initiatief_Aanbieder": "nvt"
         }
       },
