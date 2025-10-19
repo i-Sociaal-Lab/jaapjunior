@@ -24,7 +24,7 @@
 		<jw323:DeclaratieDagtekening>2023-05-06</jw323:DeclaratieDagtekening>
 		<jw323:TotaalIngediendBedrag>
 			<ijw:TotaalBedrag>58000</ijw:TotaalBedrag>
-			<ijw:DebetCredit>C</ijw:DebetCredit>
+			<ijw:DebetCredit>D</ijw:DebetCredit>
 		</jw323:TotaalIngediendBedrag>
 		<jw323:Clienten>
 			<jw323:Client>
@@ -33,7 +33,6 @@
 					<jw323:Prestatie>
 						<jw323:ProductReferentie>
 							<ijw:ReferentieNummer>RN001</ijw:ReferentieNummer>
-							<ijw:VorigReferentieNummer>RN000</ijw:VorigReferentieNummer>
 						</jw323:ProductReferentie>
 						<jw323:ToewijzingNummer>10072</jw323:ToewijzingNummer>
 						<jw323:ProductCategorie>45</jw323:ProductCategorie>
@@ -47,13 +46,12 @@
 						<jw323:ProductTarief>1250</jw323:ProductTarief>
 						<jw323:IngediendBedrag>
 							<ijw:Bedrag>5000</ijw:Bedrag>
-							<ijw:DebetCredit>C</ijw:DebetCredit>
+							<ijw:DebetCredit>D</ijw:DebetCredit>
 						</jw323:IngediendBedrag>
 					</jw323:Prestatie>
 					<jw323:Prestatie>
 						<jw323:ProductReferentie>
 							<ijw:ReferentieNummer>RN002</ijw:ReferentieNummer>
-							<ijw:VorigReferentieNummer>RN005</ijw:VorigReferentieNummer>
 						</jw323:ProductReferentie>
 						<jw323:ToewijzingNummer>10073</jw323:ToewijzingNummer>
 						<jw323:ProductCategorie>45</jw323:ProductCategorie>
@@ -67,7 +65,7 @@
 						<jw323:ProductTarief>1500</jw323:ProductTarief>
 						<jw323:IngediendBedrag>
 							<ijw:Bedrag>24000</ijw:Bedrag>
-							<ijw:DebetCredit>C</ijw:DebetCredit>
+							<ijw:DebetCredit>D</ijw:DebetCredit>
 						</jw323:IngediendBedrag>
 					</jw323:Prestatie>
 				</jw323:Prestaties>
@@ -78,7 +76,6 @@
 					<jw323:Prestatie>
 						<jw323:ProductReferentie>
 							<ijw:ReferentieNummer>RN003</ijw:ReferentieNummer>
-							<ijw:VorigReferentieNummer>RN006</ijw:VorigReferentieNummer>
 						</jw323:ProductReferentie>
 						<jw323:ToewijzingNummer>10074</jw323:ToewijzingNummer>
 						<jw323:ProductCategorie>45</jw323:ProductCategorie>
@@ -92,13 +89,12 @@
 						<jw323:ProductTarief>1250</jw323:ProductTarief>
 						<jw323:IngediendBedrag>
 							<ijw:Bedrag>5000</ijw:Bedrag>
-							<ijw:DebetCredit>C</ijw:DebetCredit>
+							<ijw:DebetCredit>D</ijw:DebetCredit>
 						</jw323:IngediendBedrag>
 					</jw323:Prestatie>
 					<jw323:Prestatie>
 						<jw323:ProductReferentie>
 							<ijw:ReferentieNummer>RN004</ijw:ReferentieNummer>
-							<ijw:VorigReferentieNummer>RN007</ijw:VorigReferentieNummer>
 						</jw323:ProductReferentie>
 						<jw323:ToewijzingNummer>10073</jw323:ToewijzingNummer>
 						<jw323:ProductCategorie>45</jw323:ProductCategorie>
@@ -112,7 +108,7 @@
 						<jw323:ProductTarief>1500</jw323:ProductTarief>
 						<jw323:IngediendBedrag>
 							<ijw:Bedrag>24000</ijw:Bedrag>
-							<ijw:DebetCredit>C</ijw:DebetCredit>
+							<ijw:DebetCredit>D</ijw:DebetCredit>
 						</jw323:IngediendBedrag>
 					</jw323:Prestatie>
 				</jw323:Prestaties>
@@ -120,3 +116,4 @@
 		</jw323:Clienten>
 	</jw323:Declaratie>
 </jw323:Bericht>
+
