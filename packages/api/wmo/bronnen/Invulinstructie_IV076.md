@@ -1,7 +1,7 @@
 # 🧾 IV076 – Volume bij frequentie **week**
 
 ## 📘 Vraag
-**Hoe moet het volume in de prestatie gevuld worden wanneer de toewijzing de frequentie ‘per week’ heeft?**
+**Hoe moet het volume in de prestatie gevuld worden wanneer de toewijzing de frequentie ‘per week’ heeft? of Hoeveel mag ik declareren?**
 
 De productperiode binnen een declaratieperiode is **maximaal één kalendermaand**.  
 Wanneer een *ToegewezenProduct* een frequentie **per week** heeft, kan een week verdeeld zijn over twee productperiodes (bijvoorbeeld als een week over twee maanden loopt).
@@ -26,7 +26,7 @@ De **datum van levering** bepaalt in welke productperiode de levering wordt opge
 
 ---
 
-### 🧮 Voorbeeld
+### 🧮 Voorbeeld inspanningsgericht
 
 **Toewijzing:** 07-07-2025 t/m 07-09-2025, *3 uur per week*  
 **Levering:** elke donderdag 2,5 uur
