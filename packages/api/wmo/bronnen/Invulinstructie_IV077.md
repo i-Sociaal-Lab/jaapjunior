@@ -39,7 +39,7 @@ Na berekening moet ook worden gecontroleerd dat het totaal van alle declaraties 
 
 ```pseudo
 function berekenMaxVolumeInspanningsgericht(productperiode, toewijzing):
-    if toewijzing.productcategorie == "Wmo01":
+    if toewijzing.productcategorie == "01":
         maxVolume = 6 * toewijzing.weekVolume
     else:
         aantalWeken = telKalenderweken(productperiode binnen toewijzing)
@@ -95,7 +95,7 @@ function berekenMaxVolumeOutputgericht(productperiode, toewijzing):
 ### 📘 Voorbeeld 1 — Outputgericht
 
 Toewijzing:  
-- Periode: **01-10-2025 t/m 31-12-2025**  
+- Periode: **06-10-2025 t/m 31-12-2025**  
 - Frequentie: **300 euro per week**
 
 | Maand | Zondagen in productperiode | Extra weekvolume? | Max. volume |
