@@ -997,7 +997,7 @@ Stap 4: bereken of alles wat gedeclareerd is ook is toegestaan binnen de toewijz
 Rekenmethode inspanningsgerichte bij toewijzing met frequentie per week.
 Het maximale te declareren volume wordt bepaald op basis van het aantal (eventueel gebroken) kalenderweken dat binnen de productperiode ligt, binnen de toewijzing. Dit aantal wordt vermenigvuldigd met het volume uit de toewijzing. Voor het bepalen van het aantal kalenderweken, worden de weeknummers geteld van de productperiode.
 Dit resulteert bij een productperiode van een volledige maand in 4, 5 of 6 maal het weekvolume.
-Echter indien de toewijzing een Product uit de Wmo Productcategorie 01 (huishoudelijkhulp) betreft, dan wordt het maximale volume bepaald door standaard 6 maal het weekvolume uit de toewijzing te nemen.
+Echter indien de toewijzing een Product uit de Wmo Productcategorie 01 (Hulp bij het huishouden/huishoudelijke hulp) betreft, dan wordt het maximale volume bepaald door standaard 6 maal het weekvolume uit de toewijzing te nemen.
 
 Om te voorkomen dat deze rekenmethode resulteert in meer ruimte dan totaal toegewezen is, moet het totaal volume over alle ingediende prestatieregels ook gecontroleerd worden tegen het maximale volume over de toewijzingsperiode.
 
