@@ -86,7 +86,7 @@ Bepaal na interpretatie van de vraag in welk document het antwoord te vinden is:
 
 1. **Vragen over regels die van toepassing zijn op de iWmo standaard:**
     
-    → Raadpleeg het document “**Regels op berichten iWmo release 3.2**”
+    → Raadpleeg het document “**TR-CD-CS regels WMO 3.2**”
     
 2. **Vragen over codes die in berichten worden gebruikt:**
     
@@ -242,22 +242,22 @@ Alle tabellen moeten worden opgemaakt in de juiste markdown met verticale balken
   "[CODENR]_[CONCEPT]": 			"https://informatiemodel.istandaarden.nl/informatiemodel/iwmo/3.2/codelijsten/[CODENR].lower",
   "Invulinstructie_[CONCEPT]": 		"https://informatiemodel.istandaarden.nl/informatiemodel/iwmo/3.2/regels/invulinstructie/[CONCEPT].Lower",
   "Invulinstructies iwmo": 			"https://informatiemodel.istandaarden.nl/informatiemodel/iwmo/3.2/regels/invulinstructie/",
-  "UP-OP iwmo release 3.2":			"https://informatiemodel.istandaarden.nl/informatiemodel/iwmo/3.2/regels/[CODE].Lower",
+  "UP-OP-IV iwmo release 3.2":			"https://informatiemodel.istandaarden.nl/informatiemodel/iwmo/3.2/regels/[CODE].Lower",
   if code.startswith("TR"):
     pad = "technische-regel"
 elif code.startswith("CD"):
     pad = "conditie"
 elif code.startswith("CS"):
     pad = "constraint"				"https://informatiemodel.istandaarden.nl/informatiemodel/iwmo/3.2/regels/pad/[CODE].Lower",
-  "Processen_Jeugdwet":  			"https://informatiemodel.istandaarden.nl/informatiemodel/iwmo/3.2/processen/",
-  "procesbeschrijving-iwmo-3.2":		"https://informatiemodel.istandaarden.nl/informatiemodel/iwmo/3.2/processen/",
+  "Processen_WMO":  			    "https://informatiemodel.istandaarden.nl/informatiemodel/iwmo/3.2/processen/",
+  "procesbeschrijving-iwmo-3.2": 	"https://informatiemodel.istandaarden.nl/informatiemodel/iwmo/3.2/processen/",
   "Gemeentecodes_CBS":   			"https://www.cbs.nl/nl-nl/onze-diensten/methoden/classificaties/overig/gemeentelijke-indelingen-per-jaar/indeling-per-jaar/gemeentelijke-indeling-op-1-januari-2025",
   "Basisschema.xsd":  				"https://www.istandaarden.nl/iwmo/releases/release-iwmo-3.2",
   "Regels_op_berichten_iwmo":  		"https://www.istandaarden.nl/iwmo/releases/release-iwmo-3.2",    
-  "Jeugdwet":            			"https://wetten.overheid.nl/BWBR0034925/2025-01-01",
+  "Wet WMO":            			"https://wetten.overheid.nl/BWBR0034925/2025-01-01",
   "Ministeriële_Regeling": 			"https://zoek.officielebekendmakingen.nl/stcrt-2019-41519.html",
-  "Regeling_WMO":   			"https://wetten.overheid.nl/BWBR0036007/2025-01-01"
-       
+  "Uitvoeringsregeling Wmo 2015":    "https://wetten.overheid.nl/BWBR0036096/2025-03-20"  
 "Wmo_2015":           [https://wetten.overheid.nl/BWBR0035362/2025-07-01](https://wetten.overheid.nl/BWBR0035362/2025-07-01),
-"Master_Overview_iWmo_XSD":         [https://informatiemodel.istandaarden.nl/informatiemodel/iwmo/3.2/](https://informatiemodel.istandaarden.nl/informatiemodel/iwmo/3.2/), "Ministeriële_Regeling":["https://zoek.officielebekendmakingen.nl/stcrt-2019-41519.html"](https://zoek.officielebekendmakingen.nl/stcrt-2019-41519.html), "Processen_Wmo": [https://informatiemodel.istandaarden.nl/informatiemodel/iwmo/3.2/](https://informatiemodel.istandaarden.nl/informatiemodel/iwmo/3.2/), "Regeling_Wmo":  ["https://wetten.overheid.nl/BWBR0036007/2025-01-01"](https://wetten.overheid.nl/BWBR0036096/2025-03-20),
-"Regels_op_berichten_iWmo":             [https://informatiemodel.istandaarden.nl/informatiemodel/iwmo/3.2/](https://informatiemodel.istandaarden.nl/informatiemodel/iwmo/3.2/)}}`;
+"Master_Overview_iWmo_XSD":         [https://informatiemodel.istandaarden.nl/informatiemodel/iwmo/3.2/](https://informatiemodel.istandaarden.nl/informatiemodel/iwmo/3.2/),
+"Processen_Wmo":                     "https://informatiemodel.istandaarden.nl/informatiemodel/iwmo/3.2/",
+"Regels_op_berichten_iWmo":          "https://informatiemodel.istandaarden.nl/informatiemodel/iwmo/3.2/";
