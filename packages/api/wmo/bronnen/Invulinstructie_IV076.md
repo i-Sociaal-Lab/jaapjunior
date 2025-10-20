@@ -115,7 +115,7 @@ if toegewezenProduct.frequentie == "week":
         if not eindigtOpZondag(toewijzing.einddatum):
             laatsteZondag = bepaalLaatsteZondag(toewijzing.einddatum)
             periode = bepaalProductPeriode(laatsteZondag)
-            volumePerPeriode[periode] += toegewezenProduct.weekVolume + 1
+            volumePerPeriode[periode] += toegewezenProduct.weekVolume
 ```
 
 
