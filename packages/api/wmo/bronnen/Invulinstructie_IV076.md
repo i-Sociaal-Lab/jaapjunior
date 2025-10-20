@@ -115,29 +115,7 @@ if toegewezenProduct.frequentie == "week":
         if not eindigtOpZondag(toewijzing.einddatum):
             laatsteZondag = bepaalLaatsteZondag(toewijzing.einddatum)
             periode = bepaalProductPeriode(laatsteZondag)
-            volumePerPeriode[periode] += toegewezenProduct.weekVolume
+            volumePerPeriode[periode] += toegewezenProduct.weekVolume + 1
 ```
 
----
 
-### 🧩 JSON-regelset
-
-```json
-{
-  "IV076": {
-    "frequentie": "week",
-    "regels": {
-      "inspanningsgericht": {
-        "principe": "Datum van levering bepaalt de productperiode.",
-        "berekening": "Som van geleverde eenheden binnen de maand.",
-        "controle": "Volume <= aantal_weken * weekvolume"
-      },
-      "outputgericht": {
-        "principe": "Zondag bepaalt bij welke productperiode een week hoort.",
-        "uitzondering": "Als de toewijzing niet eindigt op een zondag, valt de laatste gebroken week in de periode met de laatste zondag.",
-        "berekening": "Aantal zondagen × weekvolume"
-      }
-    }
-  }
-}
-```
