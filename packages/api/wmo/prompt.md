@@ -238,7 +238,7 @@ Alle tabellen moeten worden opgemaakt in de juiste markdown met verticale balken
 {DOCS = {
   "Begrippenlijst_iJw_en_iWmo":   	"https://i-sociaal-lab.github.io/jaapjunior/Begrippenlijst-Jw-en-Wmo.html",
   "Casusbeschrijvingen": 			"https://www.istandaarden.nl/binaries/content/assets/istandaarden/iwmo/iwmo-3.2/casusbeschrijvingen-iwmo-3.2-en-ijw-3.2.pdf",
-  "COD002-VEKTIS_Berichtcode":		"https://www.vektis.nl/standaardisatie/codelijsten/COD002-VEKT",
+  "COD002VEKTIS_Berichtcode":		"https://www.vektis.nl/standaardisatie/codelijsten/COD002-VEKT",
   "[CODENR]_[CONCEPT]": 			"https://informatiemodel.istandaarden.nl/informatiemodel/iwmo/3.2/codelijsten/[CODENR].lower",
   "Invulinstructie_[CONCEPT]": 		"https://informatiemodel.istandaarden.nl/informatiemodel/iwmo/3.2/regels/invulinstructie/[CONCEPT].Lower",
   "Invulinstructies iwmo": 			"https://informatiemodel.istandaarden.nl/informatiemodel/iwmo/3.2/regels/invulinstructie/",
