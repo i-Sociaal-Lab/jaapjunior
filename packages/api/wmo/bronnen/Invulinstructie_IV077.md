@@ -70,8 +70,8 @@ Week 41 t/m 52 + 1 = 13 weken × 3 uur = **39 uur**
 
 ## 🔹 Outputgerichte toewijzing
 
-Het maximale volume per productperiode is gebaseerd op het aantal **zondagen** binnen de productperiode.  
-Indien de **einddatum van de toewijzing niet op een zondag valt**, wordt **één extra weekvolume** toegevoegd aan de laatste productperiode waarin de **laatste zondag** van de toewijzing valt.
+Het maximale volume per productperiode is gebaseerd op het aantal zondagen binnen de productperiode.  
+Indien de einddatum van de toewijzing niet op een zondag valt, wordt één extra weekvolume toegevoegd aan de laatste productperiode waarin de laatste zondag van de toewijzing valt.
 
 ---
 
