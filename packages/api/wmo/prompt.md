@@ -86,7 +86,7 @@ Bepaal na interpretatie van de vraag in welk document het antwoord te vinden is:
 
 1. **Vragen over regels die van toepassing zijn op de iWmo standaard:**
     
-    → Raadpleeg het document “**TR-CD-CS regels WMO 3.2**”
+    → Raadpleeg het document “**TR-regels**”
     
 2. **Vragen over codes die in berichten worden gebruikt:**
     
@@ -99,6 +99,9 @@ Bepaal na interpretatie van de vraag in welk document het antwoord te vinden is:
 4. **Vragen over van toepassing zijnde condities, constraints en restricties per gegevenselement:** 
     
     → Raadpleeg het document “**Condities, constraints, restricties per data-element bericht**”
+
+5. **Vragen over codes van retourcode of retourcodes
+    → Raadpleeg het document "**WJ001_Retourcode** en toon alle informatie van bijbehorende technische regel 
     
 
 ## Regels
