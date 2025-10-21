@@ -55,12 +55,6 @@
         "Reden beeindiging": "02"
       },
       {
-        "code": "03",
-        "omschrijving": "Contractwijziging",
-        "toelichting": "Gemeente maakt een nieuwe contractafspraak met aanbieder, waardoor het nodig is om een andere toewijzing te sturen met bijvoorbeeld andere productcodes. NB niet elke contractwijziging zal leiden tot een nieuwe toewijzing. Indien een contract wordt opgezegd en de toewijzingen worden geëindigd, wordt ook deze code gebruikt.",
-        "Reden beeindiging": "36"
-      },
-      {
         "code": "04",
         "omschrijving": "Herbeoordeling verlenging toewijzing",
         "toelichting": "Als gevolg van een herbeoordeling door de gemeente kan een toewijzing verlengd worden.",
@@ -70,6 +64,12 @@
         "code": "05",
         "omschrijving": "Herbeoordeling verkorting toewijzing",
         "toelichting": "In verschillende situaties zal de huidige toewijzing ingetrokken moeten worden - Client moet ander product toegewezen krijgen. - Client moet korter zorg krijgen. - Client moet andere omvang krijgen, bijvoorbeeld meer uren per week, tenzij het een toewijzing in budget of totaal per toewijzing periode betreft. De beoordeling vindt plaats door gemeente op basis van client contact.",
+        "Reden beeindiging": "36"
+      },
+      {
+        "code": "03",
+        "omschrijving": "Contractwijziging",
+        "toelichting": "Gemeente maakt een nieuwe contractafspraak met aanbieder, waardoor het nodig is om een andere toewijzing te sturen met bijvoorbeeld andere productcodes. NB niet elke contractwijziging zal leiden tot een nieuwe toewijzing. Indien een contract wordt opgezegd en de toewijzingen worden geëindigd, wordt ook deze code gebruikt.",
         "Reden beeindiging": "36"
       },
       {
