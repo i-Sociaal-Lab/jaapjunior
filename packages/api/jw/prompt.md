@@ -250,6 +250,31 @@ Intents:
         type: identifier
         beschrijving: "Technische sleutel van de codelijst"
 
+    logica:
+  - stap: "bepaal relevante codelijsten"
+  beschrijving: >
+    Controleer of de vraag over een code meerdere verwante codelijsten raakt.
+  mapping:
+    Reden_beëindiging:
+      - Reden beëindiging
+      - Reden wijziging toewijzing
+    Reden_wijziging_toewijzing:
+      - Reden wijziging toewijzing
+      - Reden beëindiging
+    Retourcode:
+      - Retourcode
+      - TR-regels
+    TR-regels
+      - TR-regels
+      - Retourcode
+- stap: "verrijk CONCEPT"
+  pseudocode: |
+    if CONCEPT in mapping:
+        RELEVANTE_LIJSTEN = mapping[CONCEPT]
+    else:
+        RELEVANTE_LIJSTEN = [CONCEPT]
+
+
  ### Herkenbare Vraagpatronen
 
 Variaties:
