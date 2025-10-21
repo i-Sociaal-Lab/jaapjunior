@@ -273,6 +273,7 @@ Intents:
         RELEVANTE_LIJSTEN = mapping[CONCEPT]
     else:
         RELEVANTE_LIJSTEN = [CONCEPT]
+ - De officiële omschrijving van code 03 in de codelijst JZ002_Reden_wijziging_toewijzing is "Contractwijziging". Om uw mapping te verbeteren, dient u altijd deze exacte omschrijving en toelichting te gebruiken zoals opgenomen in de codelijst. Afwijkingen of alternatieve teksten zijn niet toegestaan volgens de iJw-standaard.
 
 
  ### Herkenbare Vraagpatronen
