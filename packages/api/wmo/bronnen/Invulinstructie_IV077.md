@@ -123,5 +123,5 @@ Toewijzing:
 
 | Uitvoeringsvariant | Rekenbasis | Bijzonderheden |
 |--------------------|-------------|----------------|
-| Inspanningsgericht | Aantal kalenderweken | Wmo01 = altijd 6 × weekvolume |
+| Inspanningsgericht | Aantal kalenderweken | Productcategorie 01 = altijd 6 × weekvolume |
 | Outputgericht | Aantal zondagen + evt. 1 extra weekvolume | Extra week bij einddatum ≠ zondag |
