@@ -71,7 +71,7 @@ Volume: Aantal zondagen in de productperiode * 300 euro (900 euro)
 Declaratieperiode augustus
 Declaratieperiode 01-08-2025 t/m 31-08-2025
 Productperiode 01-08-2025 t/m 31-08-2025
-Volume Aantal zondagen in de productperiode + 1 * 300 euro (1800 euro)
+Volume: (Aantal zondagen in de productperiode + 1) * 300 euro (1800 euro)
 
 Declaratieperiode september
 Over september wordt er geen declaratie meer ingediend. De laatste week, die gedeeltelijk in september valt, is al meegenomen in de declaratie over augustus.
