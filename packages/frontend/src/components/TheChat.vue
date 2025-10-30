@@ -81,8 +81,8 @@ const hasToPickMessage = computed(() => {
 	return Array.isArray(lastMessage);
 });
 
-const canSelectAgent = import.meta.env.VITE_TEST_ENV === "true";
-const selectedAgent = ref<"jw" | "wmo" | undefined>("jw");
+const canSelectAgent = true; // Always enabled for testing
+const selectedAgent = ref<"jw" | "wmo" | "cs-wmo" | undefined>("jw");
 
 // Computed property to determine if send button should be disabled
 const isSendDisabled = computed(() => {
@@ -202,13 +202,25 @@ async function sendMessage() {
 		}
 
 		const model = selectedMode.value === "rate" ? "rate" : selectedModel.value;
+		
+		// Only include model if explicitly chosen (not undefined)
+		const json: {
+			inputText: string;
+			agent?: "jw" | "wmo" | "cs-wmo";
+			model?: string;
+		} = {
+			inputText: messageText,
+			agent: selectedAgent.value,
+		};
+		
+		// Only add model if it's defined (allows agent defaults to be used)
+		if (model) {
+			json.model = model;
+		}
+		
 		const response = await api.conversations[":id"].$post({
 			param: { id: conversationId.value },
-			json: {
-				inputText: messageText,
-				agent: selectedAgent.value,
-				model,
-			},
+			json,
 		});
 
 		if (!response.ok) {

@@ -163,6 +163,30 @@ Alleen de **daadwerkelijk geraadpleegde** documenten opnemen, elk op een **nieuw
 
 ---
 
+## Deployment 🚀
+
+Jaap Junior kan op verschillende platforms gedeployd worden:
+
+### Lokaal Development
+```bash
+# Met Bun (recommended)
+bun install
+bun dev
+
+# Of met Docker
+docker-compose up
+```
+
+### Production Deployment
+
+**Docker (Aanbevolen)**
+- ✅ Werkt op Azure, Hetzner VPS, AWS, etc.
+- ✅ Volledige controle
+- ✅ Geoptimaliseerd voor monorepo
+- 📖 Zie [README.Docker.md](./README.Docker.md)
+
+---
+
 ### Appendix A – Voorbeeld van antwoord (format‑demonstratie) 🧪
 
 > Let op: dit is een formatvoorbeeld. In echte antwoorden moeten citaten letterlijk uit de officiële documenten komen en de Bronnen moeten geldige URL’s bevatten naar de daadwerkelijk geraadpleegde documenten.

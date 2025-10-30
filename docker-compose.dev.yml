@@ -1,0 +1,19 @@
+# Development overrides voor docker-compose
+# Gebruik: docker-compose -f docker-compose.yml -f docker-compose.dev.yml up
+
+services:
+  api:
+    # Development volume mounts voor hot reload
+    volumes:
+      # Source code voor development hot reload
+      - ./packages/api/src:/app/src:ro
+      - ./packages/api/jw:/app/jw:ro
+      - ./packages/api/wmo:/app/wmo:ro
+      - ./packages/api/cs-wmo:/app/cs-wmo:ro
+      # SQLite database persistent (deze blijft altijd)
+      - api_data:/app/data
+    environment:
+      - NODE_ENV=development
+
+
+
