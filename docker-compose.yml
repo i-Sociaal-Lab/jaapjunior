@@ -1,0 +1,96 @@
+services:
+  # ChromaDB vector database
+  chromadb:
+    image: chromadb/chroma:latest
+    container_name: jaapjunior-chromadb
+    ports:
+      - "${CHROMA_PORT:-8000}:8000"
+    volumes:
+      - chroma_data:/chroma/chroma
+    environment:
+      - IS_PERSISTENT=TRUE
+    networks:
+      - jaapjunior
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "timeout 2 bash -c '</dev/tcp/localhost/8000' || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+
+  # API backend
+  api:
+    build:
+      context: .
+      dockerfile: ./packages/api/Dockerfile
+    container_name: jaapjunior-api
+    ports:
+      - "${API_PORT:-3000}:3000"
+    volumes:
+      # SQLite database persistent
+      - api_data:/app/data
+    environment:
+      # API Keys (van .env of omgeving)
+      - OPENAI_API_KEY=${OPENAI_API_KEY:?OPENAI_API_KEY is required}
+      - JINAAI_API_KEY=${JINAAI_API_KEY:?JINAAI_API_KEY is required}
+      - OPENROUTER_API_KEY=${OPENROUTER_API_KEY:-}
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY:-}
+      # Security
+      - JWT_SECRET=${JWT_SECRET:?JWT_SECRET is required}
+      - API_TOKEN=${API_TOKEN:-default-api-token}
+      - SHARED_PASSWORD=${SHARED_PASSWORD:-password}
+      # Database
+      - CHROMA_URI=http://chromadb:8000
+      - DB_PATH=/app/data/storage.sqlite
+      - CHROMA_COLLECTION=${CHROMA_COLLECTION:-jaapjunior}
+      # Runtime
+      - NODE_ENV=${NODE_ENV:-production}
+      - PORT=3000
+    depends_on:
+      chromadb:
+        condition: service_healthy
+    networks:
+      - jaapjunior
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000/api/v1"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # Frontend
+  frontend:
+    build:
+      context: .
+      dockerfile: ./packages/frontend/Dockerfile
+      args:
+        VITE_API_URL: ${VITE_API_URL:-http://localhost:3000}
+        VITE_TEST_ENV: ${VITE_TEST_ENV:-false}
+    container_name: jaapjunior-frontend
+    ports:
+      - "${FRONTEND_PORT:-5173}:80"
+    environment:
+      - VITE_API_URL=${VITE_API_URL:-http://localhost:3000}
+      - VITE_TEST_ENV=${VITE_TEST_ENV:-false}
+    depends_on:
+      - api
+    networks:
+      - jaapjunior
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:80"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+networks:
+  jaapjunior:
+    driver: bridge
+
+volumes:
+  chroma_data:
+    driver: local
+  api_data:
+    driver: local
+

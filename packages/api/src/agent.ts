@@ -1,3 +1,4 @@
+import { Anthropic } from "@llamaindex/anthropic";
 import { ChromaVectorStore } from "@llamaindex/chroma";
 import { OpenAI, OpenAIEmbedding } from "@llamaindex/openai";
 import { SimpleDirectoryReader } from "@llamaindex/readers/directory";
@@ -33,8 +34,15 @@ async function createIndex(collectionName: string, dataDir = "./jw") {
 		embeddingModel: Settings.embedModel,
 	});
 
-	const existingDocs = await vectorStore.getCollection().then((c) => c.get());
-	const existingDocIds = new Set(existingDocs.metadatas?.map((m) => m?.doc_id));
+	// Get existing docs if collection exists
+	let existingDocIds = new Set<string>();
+	try {
+		const collection = await vectorStore.getCollection();
+		const existingDocs = await collection.get();
+		existingDocIds = new Set(existingDocs.metadatas?.map((m) => m?.doc_id).filter((id): id is string => !!id));
+	} catch (error) {
+		console.log("Collection doesn't exist yet, will be created on first document insert");
+	}
 
 	console.log("Loading documents...");
 	const reader = new SimpleDirectoryReader();
@@ -49,9 +57,10 @@ async function createIndex(collectionName: string, dataDir = "./jw") {
 	const docsToDelete = existingDocIds.difference(newDocIds);
 	const docsToAdd = newDocIds.difference(existingDocIds);
 
-	const col = await vectorStore.getCollection();
-
-	for (const doc of docsToDelete) {
+	// Only delete docs if collection exists
+	if (existingDocIds.size > 0) {
+		const col = await vectorStore.getCollection();
+		for (const doc of docsToDelete) {
 		if (!doc) continue;
 
 		const { ids } = await col.get({ where: { doc_id: doc } });
@@ -72,6 +81,7 @@ async function createIndex(collectionName: string, dataDir = "./jw") {
 					console.error(err);
 				}
 			}
+		}
 		}
 	}
 
@@ -100,6 +110,11 @@ export const llms = {
 				},
 			},
 		}),
+	"haiku-4.5": () =>
+		new Anthropic({
+			model: "claude-haiku-4-5-20251001",
+			temperature: 0.2,
+		}),
 } satisfies Record<string, () => LLM>;
 
 interface AgentConfig {
@@ -126,14 +141,17 @@ class Agent {
 		q: string,
 		chatHistory: ChatMessage[],
 		db: IDB,
-		model: keyof typeof llms = this.model,
+		model?: keyof typeof llms,
 	) {
+		// Use provided model or fall back to agent's default
+		const actualModel = model || this.model;
+		
 		console.log("Creating chat engine...");
 		const retriever = this.index.asRetriever({
 			similarityTopK: 100,
 		});
 
-		const llm = llms[model]();
+		const llm = llms[actualModel]();
 
 		const chatEngine = new ContextChatEngine({
 			retriever,
@@ -159,17 +177,17 @@ class Agent {
 
 		const responseTime = endTime - startTime;
 
-		console.log("Model responded", model, responseTime);
+		console.log("Model responded", actualModel, responseTime);
 		db.prepare(
 			"INSERT INTO model_responses (model, response_time) VALUES ($1, $2)",
 		).run({
-			$1: model,
+			$1: actualModel,
 			$2: responseTime,
 		});
 
 		response.message.options ??= {};
 		// @ts-expect-error
-		response.message.options.model = model;
+		response.message.options.model = actualModel;
 		// @ts-expect-error
 		response.message.options.prompt = this.prompt;
 
@@ -177,17 +195,42 @@ class Agent {
 	}
 }
 
-export const agents = {
-	jw: await Agent.fromConfig({
+// Agent configurations
+const agentConfigs = {
+	jw: {
 		collectionName: "jaapjunior",
 		dataPath: "./jw/bronnen",
 		promptPath: "./jw/prompt.md",
-		model: "4.1",
-	}),
-	wmo: await Agent.fromConfig({
+		model: "4.1" as keyof typeof llms,
+	},
+	wmo: {
 		collectionName: "wmo",
 		dataPath: "./wmo/bronnen",
 		promptPath: "./wmo/prompt.md",
-		model: "4.1",
-	}),
-} satisfies Record<string, Agent>;
+		model: "4.1" as keyof typeof llms,
+	},
+	"cs-wmo": {
+		collectionName: "cs-wmo",
+		dataPath: "./cs-wmo/bronnen",
+		promptPath: "./cs-wmo/prompt.md",
+		model: "haiku-4.5" as keyof typeof llms,
+	},
+} satisfies Record<string, AgentConfig>;
+
+const agentCache: Partial<Record<keyof typeof agentConfigs, Promise<Agent>>> = {};
+
+// Lazy-load function to get agents on-demand
+async function getAgent(name: keyof typeof agentConfigs): Promise<Agent> {
+	if (!agentCache[name]) {
+		console.log(`🚀 Initializing ${name.toUpperCase()} agent...`);
+		agentCache[name] = Agent.fromConfig(agentConfigs[name]);
+	}
+	return agentCache[name]!;
+}
+
+// Export agents as callable functions for lazy initialization
+export const agents = {
+	jw: () => getAgent("jw"),
+	wmo: () => getAgent("wmo"),
+	"cs-wmo": () => getAgent("cs-wmo"),
+};

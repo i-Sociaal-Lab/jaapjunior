@@ -8,12 +8,27 @@ defineProps<{
 }>();
 
 // Helper function to render markdown safely
-function renderMarkdown(text: string): string {
+function renderMarkdown(text: string | unknown): string {
+	// Handle different content formats (string, or Anthropic's content blocks array)
+	let textString: string;
+	
+	if (typeof text === 'string') {
+		textString = text;
+	} else if (Array.isArray(text)) {
+		// Anthropic format: [{type: "text", text: "..."}]
+		textString = text
+			.filter((block: any) => block.type === 'text')
+			.map((block: any) => block.text)
+			.join('\n\n'); // Use double newline to preserve paragraph breaks
+	} else {
+		textString = String(text || '');
+	}
+	
 	// Remove all content between <think> and </think> tags
 	const regex = /<think>[\s\S]*?<\/think>/g;
-	const sanitizedText = text.replace(regex, "");
+	const sanitizedText = textString.replace(regex, "");
 
-	// Custom renderer to wrap tables in divs
+	// Custom renderer to wrap tables in divs and handle links
 	const renderer = new Renderer();
 	renderer.table = (token: Tokens.Table) => {
 		const header = token.header.map((cell) => `<th>${cell.text}</th>`).join("");
@@ -26,7 +41,14 @@ function renderMarkdown(text: string): string {
 		return `<div class="table-wrapper"><table><thead><tr>${header}</tr></thead><tbody>${body}</tbody></table></div>`;
 	};
 
-	const html = marked(sanitizedText, { renderer, async: false });
+	// Ensure links are properly rendered
+	const html = marked(sanitizedText, { 
+		renderer, 
+		async: false,
+		breaks: true, // Convert \n to <br>
+		gfm: true, // GitHub Flavored Markdown
+	});
+	
 	DOMPurify.addHook("beforeSanitizeElements", (node) => {
 		if (node instanceof HTMLAnchorElement) {
 			node.setAttribute("target", "_blank");
