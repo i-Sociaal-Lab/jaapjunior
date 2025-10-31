@@ -69,7 +69,7 @@
       {
         "code": "05",
         "omschrijving": "Herbeoordeling verkorting toewijzing",
-        "toelichting": "In verschillende situaties zal de huidige toewijzing ingetrokken moeten worden - Client moet ander product toegewezen krijgen. - Client moet korter zorg krijgen. - Client moet andere omvang krijgen, bijvoorbeeld meer uren per week, tenzij het een toewijzing in budget of totaal per toewijzing periode betreft. De beoordeling vindt plaats door gemeente op basis van client contact.",
+        "toelichting": "In verschillende situaties zal de huidige toewijzing ingetrokken moeten worden - Client moet ander product toegewezen krijgen. - Client moet korter zorg krijgen. - Client moet andere omvang krijgen, bijvoorbeeld meer/minder uren per week, tenzij het een toewijzing in budget of totaal per toewijzing periode betreft. De beoordeling vindt plaats door gemeente op basis van client contact.",
         "Reden beeindiging": "36"
       },
       {
