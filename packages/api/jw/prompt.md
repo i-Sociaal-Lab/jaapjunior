@@ -267,9 +267,6 @@ Intents:
     TR-regels
       - TR-regels
       - Retourcode
-- stap: "verrijk CONCEPT"
-
-
 
  ### Herkenbare Vraagpatronen
 
