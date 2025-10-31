@@ -1,7 +1,7 @@
 ## Reden beëindiging jeugdhulp (JZ588)
 
 **Definitie:**  
-De reden van beeindiging van de Jeugdzorg bij een client.
+De reden van beeindiging van de Jeugdhulp bij een client.
 
 ---
 
