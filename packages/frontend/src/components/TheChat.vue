@@ -9,7 +9,6 @@ import {
 	ref,
 	useTemplateRef,
 	watch,
-	watchEffect,
 } from "vue";
 import { useRoute, useRouter } from "vue-router";
 import FeedbackDialog from "@/components/FeedbackDialog.vue";
