@@ -9,6 +9,7 @@ defineProps<{
 	loading: boolean;
 	disabled: boolean;
 	canSelectAgent: boolean;
+	agents: { label: string; id: "jw" | "wmo" | "cs-wmo" }[];
 	autofocus?: boolean;
 }>();
 
@@ -36,11 +37,6 @@ const models = ref([
 ] satisfies SelectMenuItem[]);
 const selectedModel = defineModel<string>("selected-model");
 
-const agents = ref([
-	{ label: "JW", id: "jw" },
-	{ label: "WMO", id: "wmo" },
-	{ label: "CS-WMO", id: "cs-wmo" },
-] satisfies SelectMenuItem[]);
 const selectedAgent = defineModel<"jw" | "wmo" | "cs-wmo">("selected-agent");
 
 const modes = ref([
@@ -66,8 +62,12 @@ const emit = defineEmits<{
 	feedback: [];
 }>();
 
+defineExpose({ focus });
+
 function focus() {
-	inputEl.value?.focus();
+    nextTick(() => {
+        inputEl.value?.focus();
+    });
 }
 
 function handleKeydown(event: KeyboardEvent) {
@@ -76,16 +76,20 @@ function handleKeydown(event: KeyboardEvent) {
 			return;
 		} else {
 			event.preventDefault();
-			emit("submit");
+            emit("submit");
+            focus();
 		}
 	}
 }
 
-const canUseSelector = ref(true); // Always enabled for testing
+const canUseSelector = ref(import.meta.env.VITE_ENABLE_MODEL_CONTROLS === "true");
+const enableFeedback = ref(import.meta.env.VITE_ENABLE_FEEDBACK !== "false");
 
 // Initialize without a default model - let agents use their own defaults
-mode.value = "pick";
-selectedModel.value = undefined;
+if (!canUseSelector.value) {
+    mode.value = "pick";
+    selectedModel.value = undefined;
+}
 
 const resetItems = ref<DropdownMenuItem[]>([
 	{
@@ -159,17 +163,18 @@ const resetItems = ref<DropdownMenuItem[]>([
                     size="xs"
 					:content="{ align: 'end' }"
 				/>
-			<UButton
-				@click="emit('feedback')"
-				class="rounded-full"
-				variant="outline"
-				icon="i-lucide-message-square"
-				size="xs"
-			>
-				{{ feedbackButton }}
-			</UButton>
-			<UButton 
-				@click="emit('submit')" 
+            <UButton
+                v-if="enableFeedback"
+                @click="emit('feedback')"
+                class="rounded-full"
+                variant="outline"
+                icon="i-lucide-message-square"
+                size="xs"
+            >
+                {{ feedbackButton }}
+            </UButton>
+            <UButton 
+                @click="() => { emit('submit'); focus(); }" 
 				class="rounded-full" 
 				size="xs"
 				:disabled

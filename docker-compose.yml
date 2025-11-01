@@ -67,12 +67,18 @@ services:
       args:
         VITE_API_URL: ${VITE_API_URL:-http://localhost:3000}
         VITE_TEST_ENV: ${VITE_TEST_ENV:-false}
+        VITE_ENABLE_MODEL_CONTROLS: ${VITE_ENABLE_MODEL_CONTROLS:-false}
+        VITE_ENABLED_AGENTS: ${VITE_ENABLED_AGENTS:-cs-wmo}
+        VITE_ENABLE_FEEDBACK: ${VITE_ENABLE_FEEDBACK:-true}
     container_name: jaapjunior-frontend
     ports:
       - "${FRONTEND_PORT:-5173}:80"
     environment:
       - VITE_API_URL=${VITE_API_URL:-http://localhost:3000}
       - VITE_TEST_ENV=${VITE_TEST_ENV:-false}
+      - VITE_ENABLE_MODEL_CONTROLS=${VITE_ENABLE_MODEL_CONTROLS:-false}
+      - VITE_ENABLED_AGENTS=${VITE_ENABLED_AGENTS:-cs-wmo}
+      - VITE_ENABLE_FEEDBACK=${VITE_ENABLE_FEEDBACK:-true}
     depends_on:
       - api
     networks:
