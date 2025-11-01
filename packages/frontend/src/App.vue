@@ -15,8 +15,8 @@ onMounted(async () => {
 		const controller = new AbortController();
 		const timeoutId = setTimeout(() => controller.abort(), 5000);
 
-		// Use VITE_API_URL if set, otherwise use window.location.origin (for nginx proxy)
-		const apiBaseUrl = import.meta.env.VITE_API_URL || window.location.origin;
+		// Use window.location.origin so request goes through nginx proxy
+		const apiBaseUrl = window.location.origin;
 
 		const res = await fetch(`${apiBaseUrl}/api/v1/authenticated`, {
 			signal: controller.signal,
