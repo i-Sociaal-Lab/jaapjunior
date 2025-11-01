@@ -5,8 +5,9 @@ import { useAuthStore } from "@/store/useAuth";
 export function useApi() {
 	const authStore = useAuthStore();
 
-	// Use VITE_API_URL if set, otherwise use window.location.origin (for nginx proxy)
-	const apiBaseUrl = import.meta.env.VITE_API_URL || window.location.origin;
+	// Always use window.location.origin so requests go through nginx proxy
+	// The nginx proxy forwards /api/ requests to the internal API service
+	const apiBaseUrl = window.location.origin;
 
 	const {
 		api: { v1: api },
