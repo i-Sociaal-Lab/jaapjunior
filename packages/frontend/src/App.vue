@@ -10,12 +10,26 @@ const authStore = useAuthStore();
 const showLoginModal = ref<boolean | null>(null);
 const loginError = ref<string>("");
 onMounted(async () => {
-	const res = await api.authenticated.$get();
+	try {
+		// Add timeout to prevent hanging
+		const controller = new AbortController();
+		const timeoutId = setTimeout(() => controller.abort(), 5000);
 
-	if (!res.ok) {
+		const res = await fetch(`${window.location.origin}/api/v1/authenticated`, {
+			signal: controller.signal,
+		});
+
+		clearTimeout(timeoutId);
+
+		if (!res.ok) {
+			showLoginModal.value = true;
+		} else {
+			showLoginModal.value = false;
+		}
+	} catch (error) {
+		// If API call fails, show login modal
+		console.error("Failed to check authentication:", error);
 		showLoginModal.value = true;
-	} else {
-		showLoginModal.value = false;
 	}
 });
 
