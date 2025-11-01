@@ -126,8 +126,11 @@ onMounted(async () => {
 	}
 	
 	// Focus input after mount (especially important after login)
+	// Delay to ensure login modal (if present) has closed
 	await nextTick();
-	chatInput.value?.focus?.();
+	setTimeout(() => {
+		chatInput.value?.focus?.();
+	}, 300);
 });
 
 onUnmounted(() => {

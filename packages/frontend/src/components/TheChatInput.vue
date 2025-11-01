@@ -71,12 +71,19 @@ function focus() {
 }
 
 // Focus on mount if autofocus is enabled
+// Use longer delay to avoid conflict with login modal focus
 onMounted(() => {
 	if (props.autofocus) {
-		// Delay slightly to ensure element is fully rendered and visible
+		// Longer delay to ensure login modal (if present) has closed first
+		// Try multiple times to ensure it works even if modal takes longer to close
 		setTimeout(() => {
 			focus();
-		}, 100);
+		}, 300);
+		
+		// Also try again after a bit longer, in case modal was still closing
+		setTimeout(() => {
+			focus();
+		}, 1000);
 	}
 });
 
