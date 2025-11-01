@@ -9,6 +9,7 @@ import {
 	ref,
 	useTemplateRef,
 	watch,
+	watchEffect,
 } from "vue";
 import { useRoute, useRouter } from "vue-router";
 import FeedbackDialog from "@/components/FeedbackDialog.vue";
@@ -124,6 +125,10 @@ onMounted(async () => {
 	if (id) {
 		await loadConversation(id);
 	}
+	
+	// Focus input after mount (especially important after login)
+	await nextTick();
+	chatInput.value?.focus?.();
 });
 
 onUnmounted(() => {
