@@ -5,8 +5,8 @@ import { useAuthStore } from "@/store/useAuth";
 export function useApi() {
 	const authStore = useAuthStore();
 
-	// Use VITE_API_URL if set (for Railway public API), otherwise use window.location.origin (for nginx proxy)
-	const apiBaseUrl = import.meta.env.VITE_API_URL || window.location.origin;
+	// Always use window.location.origin - nginx proxy forwards /api/ to public Railway API
+	const apiBaseUrl = window.location.origin;
 
 	const {
 		api: { v1: api },
