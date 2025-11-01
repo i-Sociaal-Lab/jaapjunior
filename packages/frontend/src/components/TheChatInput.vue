@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import type { DropdownMenuItem, SelectMenuItem } from "@nuxt/ui";
-import { nextTick, ref, useTemplateRef, watch } from "vue";
+import { nextTick, onMounted, ref, useTemplateRef, watch } from "vue";
 
-defineProps<{
+const props = defineProps<{
 	placeholder: string;
 	sendButton: string;
 	feedbackButton: string;
@@ -69,6 +69,16 @@ function focus() {
         inputEl.value?.focus();
     });
 }
+
+// Focus on mount if autofocus is enabled
+onMounted(() => {
+	if (props.autofocus) {
+		// Delay slightly to ensure element is fully rendered and visible
+		setTimeout(() => {
+			focus();
+		}, 100);
+	}
+});
 
 function handleKeydown(event: KeyboardEvent) {
 	if (event.key === "Enter") {
