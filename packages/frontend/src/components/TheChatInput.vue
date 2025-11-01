@@ -127,7 +127,6 @@ const resetItems = ref<DropdownMenuItem[]>([
 			class="message-input"
 			@keydown="handleKeydown"
 			@input="autoResize"
-			:autofocus
 			:placeholder
 			:disabled="loading"
 			rows="1"
