@@ -1,7 +1,7 @@
 # Foutcodelijst Berichtenverkeer
 
 | Foutcode | Omschrijving foutcode                                                                     | Verzender    | Informatie                                                                                  |
-|-------|---------------|------------------------------------------------------------------------------|--------------|---------------------------------------------------------------------------------------------|
+|-------|----------------------------------------------------------------------------------------------|--------------|---------------------------------------------------------------------------------------------|
 | IB001 | Bericht voldoet niet aan XSD.                                                                | BIDN/CAK/VWS | BIDN controleert niet op de Payload maar wel de Envelop. CAK en VWS controleren de Payload. |
 | IB002 | De verzendende organisatie is niet geautoriseerd om gebruik te maken van het GGK.            | BIDN         | Neem contact op met de servicedesk                                                          |
 | IB003 | Het ontvangen bericht overschrijdt de maximaal toegestane bestandsgrootte van 25mb.          | BIDN         | Verdeel de berichten over meerdere bestanden/aanleveringen.                                 |
@@ -30,5 +30,6 @@
 | IB903 | ZIP-bestand bevat wachtwoordbeveiliging.                                                     | VECOZO       |                                                                                             |
 | IB904 | Bestand in ZIP-bestand is groter dan toegestaan (max 25MB).                                  | VECOZO       |                                                                                             |
 | IB905 | ZIP-bestand bevat minder bestanden dan toegestaan.                                           | VECOZO       | Zip-bestand mag niet leeg zijn.                                                             |
+
 
 
