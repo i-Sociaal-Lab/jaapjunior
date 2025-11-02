@@ -40,90 +40,95 @@ Het document dient als **naslagwerk en validatiebron** voor AI-agenten die vrage
 
 ## Uitgangspunten (UP-regels)
 
-**UP001**
+### UP001
+**Ondersteuning WNI berichtenfamilie**  
+De Wmo berichtenfamilie ondersteunt het toewijzen, leveren en declareren van maatwerkvoorzieningen in het kader van de Wmo die geleverd worden als zorg in natura (ZIN).
 
-* De Wmo berichtenfamilie ondersteunt het toewijzen, leveren en declareren van maatwerkvoorzieningen in het kader van de Wmo die geleverd worden als zorg in natura (ZIN).*
+### UP003
+**Privacy cliënt** 
+De privacy van de client is in de iWmo geborgd doordat aangesloten ketenpartijen zich conformeren aan de Algemene Verordening Gegevensbescherming (AVG).
 
-**UP003**
+### UP004
+**Coördinatie door gemeente** 
+De gemeente waar de client is ingeschreven in de BRP coordineert de inzet van Wmo ondersteuning voor de client door middel van toewijzingen (inspannings- en outputgericht).
 
-*De privacy van de client is in de iWmo geborgd doordat aangesloten ketenpartijen zich conformeren aan de Algemene Verordening Gegevensbescherming (AVG).*
+### UP006
+**Identificatie cliënt**  
+De client wordt in de informatievoorziening Wmo geidentificeerd met zijn BSN
 
-**UP004**
+### UP007
+**Beschikking gemeente**  
+De gemeente legt in een beschikking vast of een client recht heeft op ondersteuning vanuit de Wmo (inspannings- en outputgericht).
 
-*De gemeente waar de client is ingeschreven in de BRP coordineert de inzet van Wmo ondersteuning voor de client door middel van toewijzingen (inspannings- en outputgericht).*
+### UP016
+**WMO-producten**  
+Wmo-ondersteuning wordt uitgedrukt in Wmo-producten.
 
-**UP006**
+### UP017
+**Gestandaardiseerde uitwisseling**  
+De informatieuitwisseling in de Wmo is gebaseerd op gestandaardiseerd berichtenverkeer.
 
-*De client wordt in de informatievoorziening Wmo geidentificeerd met zijn BSN*
+### UP019
+**Cliënt centraal**  
+De cliënt staat centraal.
 
-**UP007**
+### UP023
+**Eenmalige informatievraag**  
+Informatie wordt eenmalig bij de cliënt uitgevraagd.
 
-*De gemeente legt in een beschikking vast of een client recht heeft op ondersteuning vanuit de Wmo (inspannings- en outputgericht).*
+### UP024
+**Wet- en regelgeving**  
+De informatievoorziening Wmo conformeert zich aan de wet- en regelgeving die voortvloeit uit de Wmo 2015.
 
-**UP016**
+### UP025
+**Declaratie op cliëntniveau**
+De geleverde ondersteuning wordt gedeclareerd op clientniveau (inspannings- en outputgericht).
 
-*Wmo-ondersteuning wordt uitgedrukt in Wmo-producten.*
+### UP026
+**Uitvoeringsvarianten** 
+De Wmo berichtenfamilie ondersteunt drie uitvoeringsvarianten:  
+- Outputgericht  
+- Inspanningsgericht  
+- Taakgericht
 
-**UP017**
+### UP027
+**Declaratie binnen contract**
+De declaratie moet passen binnen de contractafspraken en binnen de toewijzing (inspannings- en outputgericht).
 
-*De informatieuitwisseling in de Wmo is gebaseerd op gestandaardiseerd berichtenverkeer.*
+### UP028
+**Contractafspraken**
+Gemeente en aanbieder leggen een uitvoeringsvariant en een financieringsvorm voor de te verlenen Wmo-ondersteuning in een contract vast.
 
-**UP019**
+### UP031
+**Geen verlies rechtmatigheid**
+De gemeente doet geen aanpassingen in toewijzingen die bij de zorgaanbieder tot verlies van rechtmatigheid van geleverde en/of gedeclareerde zorg leiden.
 
-*De cliënt staat centraal.*
+### UP032
+**Melden zorgvraag**
+De zorgaanbieder stelt de gemeente op de hoogte van (veranderingen in) zorgvraag door middel van een Verzoek om toewijzing of een Verzoek om wijziging.
 
-**UP023**
-
-*Informatie wordt eenmalig bij de cliënt uitgevraagd.*
-
-**UP024**
-
-*De informatievoorziening Wmo conformeert zich aan de wet- en regelgeving die voortvloeit uit de Wmo 2015.*
-
-**UP025**
-
-*De geleverde ondersteuning wordt gedeclareerd op clientniveau (inspannings- en outputgericht).*
-
-**UP026**
-
-*De Wmo berichtenfamilie ondersteunt drie verschillende uitvoeringsvarianten: inspanningsgericht, outputgericht en taakgericht.*
-
-**UP027**
-
-*De declaratie moet passen binnen de contractafspraken en binnen de toewijzing (inspannings- en outputgericht).*
-
-**UP028**
-
-*Gemeente en aanbieder leggen een uitvoeringsvariant en een financieringsvorm voor de te verlenen Wmo-ondersteuning in een contract vast.*
-
-**UP031**
-
-*De gemeente doet geen aanpassingen in toewijzingen die bij de zorgaanbieder tot verlies van rechtmatigheid van geleverde en/of gedeclareerde zorg leiden.*
-
-**UP032**
-
-*De zorgaanbieder stelt de gemeente op de hoogte van (veranderingen in) zorgvraag door middel van een Verzoek om toewijzing of een Verzoek om wijziging.*
-
-**UP037**
-
-*De gemeente geeft iedere beschikking binnen het Wmo domein een uniek nummer.*
+### UP037
+**Uniek nummer beschikking** 
+De gemeente geeft iedere beschikking binnen het Wmo domein een uniek nummer.
 
 ---
 
-# Bedrijfsregels (OP-regels)
+## Bedrijfsregels (OP-regels)
 
-**OP003**
+### OP003 – Uitzondering standaard berichtenverkeer
+- Het gestandaardiseerd berichtenverkeer wordt niet gebruikt indien, naar oordeel van een (zorg)professional, de overdracht van clientgegevens ernstige risico's met zich meebrengt voor de veiligheid van de client.
+- Dit kan bijvoorbeeld gelden voor cliënten die opgenomen zijn of worden in een “blijf-van-mijn-lijf” huis.
 
-*Het gestandaardiseerd berichtenverkeer wordt niet gebruikt indien, naar oordeel van een (zorg)professional, de overdracht van cliëntgegevens ernstige risico's met zich meebrengt voor de veiligheid van de cliënt. Dit kan bijvoorbeeld gelden voor cliënten die opgenomen zijn of worden in een "blijf-van-mijn-lijf" huis.*
 
-**OP033**
+### OP033 – Wijzigingen en status aanlevering
+- Voor wijzigingen, verwijderingen en correcties op een eerder verzonden regiebericht wordt de **status aanlevering** gebruikt:
+- Correcties op een melding start product zijn uitsluitend toegestaan voor het geleverde product. Als de ondersteuning beeindigd is, kan de aanvang niet meer op deze manier gecorrigeerd worden.
+- Met de status aanlevering van een berichtklasse kan worden aangegeven of:
+  - **1** – berichtklasse nieuw  
+  - **2** – berichtklasse gewijzigd (niet toegestaan in iJw/iWmo)  
+  - **3** – berichtklasse verwijderd  
 
-*Voor het doorgeven van wijzigingen, verwijderingen en correcties op een eerder verzonden regiebericht, moet gebruik gemaakt worden van de systematiek van status aanlevering. Correcties op een melding start product zijn uitsluitend toegestaan voor het geleverde product. Als de ondersteuning beëindigd is, kan de aanvang niet meer op deze manier gecorrigeerd worden. Met de status aanlevering van een berichtklasse kan worden aangegeven of:*
-- *een berichtklasse nieuw is (waarde 1)*
-- *een berichtklasse gewijzigd is (waarde 2); een wijziging betekent dat de actuele aanlevering met dezelfde sleutel vervangen wordt. Deze waarde mag niet gebruikt worden in de iWmo/iWmo.*
-- *een berichtklasse verwijderd moet worden (waarde 3). Een verwijdering betekent dat de vorige aanlevering(en) met dezelfde sleutel als niet verzonden beschouwd moet worden.*
-
-**OP033x1**
+### OP033x1 – Wijzigingen in toewijzing
 
 *Een afgegeven toewijzing mag gewijzigd worden waarbij de wijziging met een nieuw bericht moet worden doorgegeven.*
 
@@ -143,21 +148,19 @@ Het document dient als **naslagwerk en validatiebron** voor AI-agenten die vrage
 
 *De meest recente toewijzing op toewijzingsdatum en -tijd is bepalend voor de inhoud van de toewijzing.*
 
-**OP033x2**
+### OP033x2
+- Gebruik van status aanlevering waarde **2** (berichtklasse gewijzigd) is niet toegestaan.
 
-*Het gebruik van status aanlevering met waarde 2 (een berichtklasse is gewijzigd) is niet toegestaan.*
+### OP039 – Cliëntgegevens in berichten
+- Ketenpartijen mogen cliëntgegevens doorgeven zoals geregistreerd in hun administratie, mits deze geen logische sleutel vormen.  
+- Het is toegestaan gewijzigde gegevens over te nemen in de administratie.
 
-**OP039**
+### OP043 – PGB en toewijzing
+- Als een cliënt een PGB heeft, mag voor hetzelfde product geen toewijzing zijn afgegeven.  
+- Een toewijzing eindigt uiterlijk op de dag vóór ingangsdatum PGB.
 
-*In het berichtenverkeer mogen ketenpartijen cliëntgegevens doorgeven zoals deze in de administratie van de betreffende ketenpartij voorkomen, mits deze gegevens geen onderdeel zijn van een logische sleutel. Het staat ketenpartijen vrij om gewijzigde gegevens uit het berichtenverkeer over te nemen in hun administratie.*
-
-**OP043**
-
-*Indien aan een cliënt een PGB is toegekend is, mag op hetzelfde moment voor hetzelfde product geen toewijzing zijn afgegeven. Een toewijzing eindigt (uiterlijk) op de dag voorafgaand aan de ingangsdatum van het PGB.*
-
-**OP047**
-
-*Als een bericht niet aan de geldende standaard voldoet, mag het bericht afgekeurd worden.*
+### OP047 – Afkeuren niet-standaard berichten
+- Berichten die niet voldoen aan de geldende standaard mogen worden afgekeurd.
 
 **OP065**
 
