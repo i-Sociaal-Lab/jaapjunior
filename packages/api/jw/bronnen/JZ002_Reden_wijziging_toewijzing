@@ -81,7 +81,7 @@
       {
         "code": "07",
         "omschrijving": "Verhuizing naar een andere gemeente",
-        "toelichting": "De gemeente kan een afgegeven Toewijzing niet zomaar intrekken bij verhuizing naar een andere gemeente. De gemeente die de toewijzing heeft verstrekt, blijft verantwoordelijk voor de cliënt tot overdracht aan de nieuwe gemeente. De oude toewijzing kan pas afgesloten worden nadat de nieuwe gemeente een aansluitende toewijzing verzendt.",
+        "toelichting": "De gemeente zal een afgegeven toewijzing intrekken bij verhuizing van een client naar een andere gemeente. Als einddatum wordt meestal genomen de inschrijfdatum van de client in de nieuwe gemeente -1 dag. In de Wmo geldt de eigen verantwoordelijkheid van de inwoner. Een overdracht is niet nodig. De inwoner moet zich melden bij de Wmo van zijn nieuwe gemeente en daar wordt gekeken wat men daar indiceert.",
         "Reden beeindiging": "35"
       },
       {
@@ -123,7 +123,7 @@
       {
         "code": "14",
         "omschrijving": "Administratieve correctie",
-        "toelichting": "Als de gemeente een (invoer)fout heeft gemaakt die hersteld moet worden. De velden die gewijzigd mogen worden, zijn beschreven in OP033X1. Ook indien een aanbieder een definitief stopbericht stuurt en de gemeente beslist om de toewijzing in te trekken, dan wordt deze code gebruikt.",
+        "toelichting": "Als de gemeente een (invoer)fout heeft gemaakt die hersteld moet worden. De velden die gewijzigd mogen worden, zijn beschreven in OP033X1. Ook indien een aanbieder een definitief stopbericht stuurt en de gemeente beslist om de toewijzing in te trekken, wordt deze code gebruikt.",
         "Reden beeindiging": "nvt"
       }
     ]
