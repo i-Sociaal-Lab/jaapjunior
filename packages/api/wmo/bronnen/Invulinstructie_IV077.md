@@ -100,9 +100,9 @@ Toewijzing:
 
 | Maand | Zondagen in productperiode | Extra weekvolume? | Max. volume |
 |--------|------------------------------|--------------------|--------------|
-| Oktober | 3 | Nee | 3 × 300 = **900 €** |
-| November | 5 | Nee | 5 × 300 = **1500 €** |
-| December | 4 | Ja | (4+1) × 300 = **1500 €** |
+| Oktober | 3 | Nee | 3 × 300 = **€ 900** |
+| November | 5 | Nee | 5 × 300 = **€ 1500** |
+| December | 4 | Ja | (4+1) × 300 = **€ 1500** |
 
 ---
 
@@ -114,8 +114,8 @@ Toewijzing:
 
 | Maand | Zondagen in productperiode | Extra weekvolume? | Max. volume |
 |--------|------------------------------|--------------------|--------------|
-| Juli | 3 | Nee | 3 × 300 = **900 €** |
-| Augustus | 5 | Ja | (5+1) × 300 = **1800 €** |
+| Juli | 3 | Nee | 3 × 300 = **€ 900** |
+| Augustus | 5 | Ja | (5+1) × 300 = **€ 1800** |
 
 ---
 
