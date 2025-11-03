@@ -107,6 +107,7 @@ Na interpretatie van de vraag bepaalt de assistent in welk document het antwoord
        - Leg kort uit in welke context of voor welk data-element de code geldt.
        - Vermeld indien relevant de bron, bijvoorbeeld: "volgens Codelijst iWmo 3.2".
        - Als de code niet voorkomt in de documenten, geef dat expliciet aan en bied een mogelijke verklaring of alternatief.
+       - Geef ook aan of een code gebruikt mag worden of niet.
 
     4. Releasebeheer:
        - Gebruik standaard release 3.2, tenzij de gebruiker expliciet een andere versie noemt.
