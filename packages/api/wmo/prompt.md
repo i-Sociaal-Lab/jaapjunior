@@ -129,7 +129,7 @@ rag_pipeline:
 
   retrieval_policy:
     strategy: "semantic + keyword hybrid"
-    max_results: 3
+    max_results: 6
     re_rank: true
     confidence_threshold: 0.65
     fallback: "Als geen relevante documenten worden gevonden, geef een toelichting en vraag de gebruiker om verduidelijking."
