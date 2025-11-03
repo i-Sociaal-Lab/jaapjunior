@@ -8,7 +8,7 @@
 		<wmo307:Ontvanger>0363</wmo307:Ontvanger>
 		<wmo307:BerichtIdentificatie>
 			<iwmo:Identificatie>123456789014</iwmo:Identificatie>
-			<iwmo:Dagtekening>2023-07-20</iwmo:Dagtekening>
+			<iwmo:Dagtekening>2025-07-21</iwmo:Dagtekening>
 		</wmo307:BerichtIdentificatie>
 		<wmo307:XsdVersie>
 			<iwmo:BasisschemaXsdVersie>1.0.0</iwmo:BasisschemaXsdVersie>
@@ -36,10 +36,10 @@
 					<iwmo:Categorie>01</iwmo:Categorie>
 					<iwmo:Code>01A11</iwmo:Code>
 				</wmo307:Product>
-				<wmo307:ToewijzingIngangsdatum>2023-04-01</wmo307:ToewijzingIngangsdatum>
-				<wmo307:Begindatum>2023-04-03</wmo307:Begindatum>
+				<wmo307:ToewijzingIngangsdatum>2025-04-01</wmo307:ToewijzingIngangsdatum>
+				<wmo307:Begindatum>2025-04-03</wmo307:Begindatum>
 				<wmo307:RedenBeeindiging>31</wmo307:RedenBeeindiging>
-				<wmo307:Einddatum>2023-07-19</wmo307:Einddatum>
+				<wmo307:Einddatum>2025-07-18</wmo307:Einddatum>
 				<wmo307:StatusAanlevering>1</wmo307:StatusAanlevering>
 			</wmo307:StopProduct>
 			<wmo307:StopProduct>
@@ -48,12 +48,13 @@
 					<iwmo:Categorie>01</iwmo:Categorie>
 					<iwmo:Code>01A12</iwmo:Code>
 				</wmo307:Product>
-				<wmo307:ToewijzingIngangsdatum>2023-04-01</wmo307:ToewijzingIngangsdatum>
-				<wmo307:Begindatum>2023-04-15</wmo307:Begindatum>
+				<wmo307:ToewijzingIngangsdatum>2025-04-01</wmo307:ToewijzingIngangsdatum>
+				<wmo307:Begindatum>2025-04-15</wmo307:Begindatum>
 				<wmo307:RedenBeeindiging>31</wmo307:RedenBeeindiging>
-				<wmo307:Einddatum>2023-07-19</wmo307:Einddatum>
+				<wmo307:Einddatum>2025-07-18</wmo307:Einddatum>
 				<wmo307:StatusAanlevering>1</wmo307:StatusAanlevering>
 			</wmo307:StopProduct>
 		</wmo307:StopProducten>
 	</wmo307:Client>
 </wmo307:Bericht>
+
