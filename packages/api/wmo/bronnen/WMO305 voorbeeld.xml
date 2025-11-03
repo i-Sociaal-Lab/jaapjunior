@@ -8,7 +8,7 @@
 		<wmo305:Ontvanger>0363</wmo305:Ontvanger>
 		<wmo305:BerichtIdentificatie>
 			<iwmo:Identificatie>123456789013</iwmo:Identificatie>
-			<iwmo:Dagtekening>2025-03-04</iwmo:Dagtekening>
+			<iwmo:Dagtekening>2025-04-04</iwmo:Dagtekening>
 		</wmo305:BerichtIdentificatie>
 		<wmo305:XsdVersie>
 			<iwmo:BasisschemaXsdVersie>1.0.0</iwmo:BasisschemaXsdVersie>
@@ -53,6 +53,7 @@
 		</wmo305:StartProducten>
 	</wmo305:Client>
 </wmo305:Bericht>
+
 
 
 
