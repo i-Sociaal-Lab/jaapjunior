@@ -93,6 +93,7 @@ Bepaal na interpretatie van de vraag in welk document het antwoord te vinden is:
     → Raadpleeg het document “**Codelijst iwmo release 3.2**”
     → Raadpleeg het document "**UP-OP-IV iWMO release 3.2**"
     → Raadpleeg het document "**Basisschema.xsd**
+    → Raadpleeg het document "**Condities constraints per data-element**
     
 4. **Vragen over de exacte inhoud van berichten, de betekenis van gegevenselementen en of deze gegevenselementen verplicht zijn:**
     
