@@ -5,7 +5,7 @@ Status: In behandeling
 Auteur: Ketenbureau i-Sociaal Domein
 Type document: Brondocument Wmo-agent
 Domain: Professional
-Project: Jaapjunior (https://www.notion.so/Jaapjunior-20ae42d05b9980cb943bf9d1ff47d41b?pvs=21)
+Project: Jaapjunior
 
 ## Doel
 
