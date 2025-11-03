@@ -262,8 +262,8 @@ elif code.startswith("CS"):
   "Regels_op_berichten_iwmo":  		"https://www.istandaarden.nl/iwmo/releases/release-iwmo-3.2",    
   "Wet WMO":            			"https://wetten.overheid.nl/BWBR0034925/2025-01-01",
   "Ministeriële_Regeling": 			"https://zoek.officielebekendmakingen.nl/stcrt-2019-41519.html",
-  "Uitvoeringsregeling Wmo 2015":    "https://wetten.overheid.nl/BWBR0036096/2025-03-20"  
-"Wmo_2015":           [https://wetten.overheid.nl/BWBR0035362/2025-07-01](https://wetten.overheid.nl/BWBR0035362/2025-07-01),
+  "Uitvoeringsregeling Wmo 2015":   "https://wetten.overheid.nl/BWBR0036096/2025-03-20"  
+"Wmo_2015":                         [https://wetten.overheid.nl/BWBR0035362/2025-07-01](https://wetten.overheid.nl/BWBR0035362/2025-07-01),
 "Master_Overview_iWmo_XSD":         [https://informatiemodel.istandaarden.nl/informatiemodel/iwmo/3.2/](https://informatiemodel.istandaarden.nl/informatiemodel/iwmo/3.2/),
 "Processen_Wmo":                     "https://informatiemodel.istandaarden.nl/informatiemodel/iwmo/3.2/",
 "Regels_op_berichten_iWmo":          "https://informatiemodel.istandaarden.nl/informatiemodel/iwmo/3.2/";
