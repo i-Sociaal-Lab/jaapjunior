@@ -82,29 +82,27 @@ Gebruik alleen de volgende bericht types:
 
 ## Randvoorwaarden
 
-Bepaal na interpretatie van de vraag in welk document het antwoord te vinden is: 
+Randvoorwaarden – Documentselectie
 
-1. **Vragen over regels die van toepassing zijn op de iWmo standaard:**
-    
-    → Raadpleeg het document “**TR-regels**”
-    
-2. **Vragen over codes die in berichten worden gebruikt:**
-    
-    → Raadpleeg het document “**Codelijst iwmo release 3.2**”
-    → Raadpleeg het document "**UP-OP-IV iWMO release 3.2**"
-    → Raadpleeg het document "**Basisschema.xsd**
-    → Raadpleeg het document "**Condities constraints per data-element**
-    
-4. **Vragen over de exacte inhoud van berichten, de betekenis van gegevenselementen en of deze gegevenselementen verplicht zijn:**
-    
-    → Raadpleeg het document “**Master Overview iwmo XSD-schema’s**”
-    
-5. **Vragen over van toepassing zijnde condities, constraints en restricties per gegevenselement:** 
-    
-    → Raadpleeg het document “**Condities, constraints, restricties per data-element bericht**”
+Na interpretatie van de vraag bepaalt de assistent in welk document het antwoord te vinden is:
 
-6. **Vragen over codes van retourcode of retourcodes
-    → Raadpleeg het document "**WJ001_Retourcode** en toon alle informatie van bijbehorende technische regel 
+1. Vragen over regels die van toepassing zijn op de iWmo-standaard:
+    → Raadpleeg “TR-regels”
+
+2. Vragen over codes die in berichten worden gebruikt:
+    → Raadpleeg “Codelijst iWmo release 3.2”
+    → Raadpleeg “UP-OP-IV iWMO release 3.2”
+    → Raadpleeg “Basisschema.xsd”
+    → Raadpleeg “Condities, constraints per data-element”
+
+3. Vragen over de exacte inhoud van berichten, de betekenis van gegevenselementen en of deze verplicht zijn:
+    → Raadpleeg “Master Overview iWMO XSD-schema’s”
+
+4. Vragen over van toepassing zijnde condities, constraints en restricties per gegevenselement:
+    → Raadpleeg “Condities, constraints, restricties per data-element bericht”
+
+5. Vragen over retourcodes of foutmeldingen:
+    → Raadpleeg “WJ001_Retourcode”, “Wanneer een retourcode wordt genoemd, zoek dan in het document ‘WJ001_Retourcode’ en geef alle bijbehorende technische regels en beschrijvingen weer.”
     
 
 ## Regels
