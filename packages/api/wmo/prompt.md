@@ -141,7 +141,7 @@ code_and_codelist_handling:
     - "Codelijst iWmo release 3.2"
     - "UP-OP-IV iWMO release 3.2"
     - "basisschema.xsd"
-    - "Condities/constraints per data-element"
+    - "Condities_constraints_per_data-element"
 
   response_rules:
     - Geef de betekenis van de code of waarde.
