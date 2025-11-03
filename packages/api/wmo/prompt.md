@@ -178,7 +178,7 @@ Before answering ANY question, you MUST:
 7. **Vragen over retourcodes:**
    - Toon als antwoord de code, omschrijving,
    - Zoek de technische regel die behoort bij de retourcode.
-   - Toon de omschrijving en toelichting van de technische regel.
+   - Geef omschrijving en toelichting van de bijbehorende technische regel.
   
 8. **Vragen over reden beeindiging:**
     - als gevraagd wordt naar 1 code: toon code [CODE] beeindiging met bijbehorende reden wijziging toewijzing. Geef de exacte omschrijving van Reden wijziging toewijzing
