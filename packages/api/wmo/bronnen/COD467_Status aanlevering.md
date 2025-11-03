@@ -7,9 +7,9 @@ Indicatie over de status van de informatie in de berichtklasse.
 
 ## Codelijst
 
-| Code | Omschrijving |
-|------|--------------|
-| 1 | Eerste aanlevering |
-| 2 | Gewijzigde aanlevering |
-| 3 | Verwijderen aanlevering |
-| 9 | Niet van toepassing (ongewijzigd) |
+| Code | Omschrijving | regel |
+|------|--------------|-------|
+| 1 | Eerste aanlevering | OP033 |
+| 2 | Gewijzigde aanlevering | OP033x2 |
+| 3 | Verwijderen aanlevering | OP033 |
+| 9 | Niet van toepassing (ongewijzigd) | CS058 |
