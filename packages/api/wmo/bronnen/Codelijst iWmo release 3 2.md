@@ -606,18 +606,6 @@ COD327: Code verwijzer - Aanduiding van de aard van de (zelf)verwijzer.
 
 08 - Rechter, Officier van Justitie, functionaris Justitiële jeugdinrichting
 
-## COD467: Status aanlevering
-
-COD467: Status aanlevering - Indicatie over de status van de informatie in de berichtklasse.
-
-1 - Eerste aanlevering
-
-2 - Gewijzigde aanlevering
-
-3 - Verwijderen aanlevering
-
-9 - Niet van toepassing (ongewijzigd)
-
 ## COD472: Soort relatie
 
 COD472: Soort relatie - De soort relatie die een persoon ten opzichte van de client heeft.
