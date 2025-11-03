@@ -187,9 +187,7 @@ Before answering ANY question, you MUST:
 → When citing law, include ALL relevant articles and subsections without omission
 
 8. **Vragen over retourcodes:**
-   - Toon als antwoord de code, omschrijving,
-   - Zoek de technische regel die behoort bij de retourcode.
-   - Geef omschrijving en toelichting van de bijbehorende technische regel.
+ - toon retourcode [CODE] met bijbehorende technische regel, toon omschrijving en toelichting van technische regel
   
 9. **Vragen over reden beeindiging:**
     - als gevraagd wordt naar 1 code: toon code [CODE] beeindiging met bijbehorende reden wijziging toewijzing. Geef de exacte omschrijving van Reden wijziging toewijzing
