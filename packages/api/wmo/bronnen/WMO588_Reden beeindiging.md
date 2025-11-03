@@ -3,6 +3,10 @@
 **Definitie:**  
 De reden van beeindiging van de Wmo-ondersteuning bij een client.
 
+- Als Reden wijzing toewijzing <> nvt dat wordt de code gebruikt nav een redenwijziging toewijzing
+- Als Initiatief aanbieder = ja, dan kan de code op initiatief van de aanbieder worden gebruikt.
+- Bijvoorbeeld : code 02, kan na ontvangst een gewijzigde toewijzing met reden wijziging toewijzing 02 gebruikt worden, maar ook als de aanbieder zelf constateert dat de client is overleden.
+
 ---
 
 ## Codelijst
