@@ -901,6 +901,7 @@ Welke productcodes gebruikt mogen worden in het berichtenverkeer is afhankelijk 
 
 
 <IV078>
+  
 **IV078**
 
 *Wat mag gedeclareerd worden wanneer een onvolledige periode is toegewezen?*
