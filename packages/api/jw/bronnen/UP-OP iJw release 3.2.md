@@ -164,46 +164,46 @@ De gemeente geeft iedere beschikking binnen het Jw-domein een uniek nummer.
 ### OP033x2
 - Gebruik van status aanlevering waarde **2** (berichtklasse gewijzigd) is niet toegestaan.
 
-### o039 – Cliëntgegevens in berichten
+### OP039 – Cliëntgegevens in berichten
 - Ketenpartijen mogen cliëntgegevens doorgeven zoals geregistreerd in hun administratie, mits deze geen logische sleutel vormen.  
 - Het is toegestaan gewijzigde gegevens over te nemen in de administratie.
 
-### o043 – PGB en toewijzing
+### OP043 – PGB en toewijzing
 - Als een cliënt een PGB heeft, mag voor hetzelfde product geen toewijzing zijn afgegeven.  
 - Een toewijzing eindigt uiterlijk op de dag vóór ingangsdatum PGB.
 
-### o047 – Afkeuren niet-standaard berichten
+### OP047 – Afkeuren niet-standaard berichten
 - Berichten die niet voldoen aan de geldende standaard mogen worden afgekeurd.
 
-### o065 – Retourberichten
+### OP065 – Retourberichten
 - Retourbericht bevat alleen informatie over afgekeurde berichtklassen.  
 - Cliënten met volledig goedgekeurde berichtklassen worden niet mee teruggestuurd.  
 - Berichtklasse **Client** inclusief alle afgekeurde onderliggende berichtklassen wordt voorzien van retourcodes.
 
-### o071 – Uniek relatie-nummer
+### OP071 – Uniek relatie-nummer
 - Elke relatie krijgt een uniek nummer per gemeente per cliënt.  
 - Dit nummer mag niet gewijzigd worden.
 
-### o072 – Beëindigen ondersteuning
+### OP072 – Beëindigen ondersteuning
 - Beëindigen mag pas na melding start ondersteuning.  
 - Stopbericht moet verwijzen naar de start van de levering.
 
-### o076 – Contactpersonen
+### OP076 – Contactpersonen
 - Voor iedere contactpersoon moet de relatie tot de cliënt worden opgegeven.  
 - Gegevens mogen alleen worden opgenomen indien noodzakelijk voor communicatie met de cliënt.
 
-### o079 – Gebruik BSN
+### OP079 – Gebruik BSN
 - Het gebruik van het BSN van de cliënt is verplicht in de onderlinge uitwisseling van gegevens.
 
-### o080 – Volgorde berichten
+### OP080 – Volgorde berichten
 - Volgorde en tijdstip van ontvangen/ verwerken berichten zijn niet bepalend.  
 - Terugwerkende berichten kunnen noodzakelijk zijn (bijv. bezwaarprocedures).  
 - Ontvang retourberichten afwachten om afkeur van vervolgberichten te voorkomen.
 
-### o086 – Toewijzing ondersteuningsproducten
+### OP086 – Toewijzing ondersteuningsproducten
 - Ondersteuningsproducten met een **inspannings- of outputgerichte uitvoering** worden altijd door de gemeente toegewezen via een toewijzingsbericht.
 
-### o087 – Inhoud toewijzingsbericht
+### OP087 – Inhoud toewijzingsbericht
 - Voor één cliënt bevat een toewijzingsbericht altijd:  
   - Alle toewijzingen voor één aanbieder die **geldig zijn op of na de aanmaakdatum** van het bericht.  
   - Alle toewijzingen die **gewijzigd zijn sinds het vorige toewijzingsbericht** (bijv. intrekkingen).  
@@ -214,11 +214,11 @@ De gemeente geeft iedere beschikking binnen het Jw-domein een uniek nummer.
 
 **Belangrijk:** Voor iedere cliënt waarbij een toewijzing verandert, wordt een toewijzingsbericht gestuurd met alle actuele toewijzingen voor die aanbieder.
 
-### o090 – Retourberichten heenberichten
+### OP090 – Retourberichten heenberichten
 - Voor ieder ontvangen heenbericht wordt **binnen 3 werkdagen** een retourbericht verzonden.  
 - De verzender is verantwoordelijk voor het signaleren van ontbrekende retourberichten en moet actie ondernemen.
 
-### o090x2
+### OP090x2
 - Als er geen retourbericht kan worden gemaakt, meldt de ontvangende partij dit **buiten het berichtenverkeer om** aan de verzender.
 
 ### OP090x4 – Declaratie-antwoordbericht
