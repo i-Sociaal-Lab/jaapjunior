@@ -2,12 +2,13 @@
 
 **Definitie:**  
 De reden van beeindiging van de Jeugdhulp bij een client.
-
+**Element**
+LDT_RedenBeeindiging
 ---
 
 ## Codelijst
 | Code | Omschrijving | Gebruik | Reden wijziging toewijzing | Initiatief aanbieder | Mutatiedatum | Ingangsdatum |
-|------|--------------|---------|----------------------------|----------------------|--------------|--------------|
+|:-----:|--------------|---------|:-------------------------:|:--------------------:|--------------|--------------|
 | 02 | Overlijden | Indien een cliënt is overleden | 02 | ja | 01-01-2015 | 01-01-2015 |
 | 20 | Levering is tijdelijk beëindigd | Cliënt kan tijdelijk geen zorg ontvangen, maar hervatting wordt verwacht (bv. ziekenhuisopname) | nvt | ja | 12-07-2017 | 01-01-2015 |
 | 31 | Levering is volgens plan beëindigd | Traject is zoals gepland doorlopen en niet voortijdig gestopt | nvt | ja | 12-07-2017 | 01-01-2015 |
