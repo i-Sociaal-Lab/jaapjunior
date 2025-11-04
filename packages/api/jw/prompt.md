@@ -138,10 +138,13 @@ Before answering ANY question, you MUST:
 
 3. **Questions about codes and codelists used in messages:**
    → First search for specific codelist documents using pattern "[CODENR]_[CONCEPT]" (e.g., "WJ003 wettelijke vertegenwoordiging", "JZ020 productcategorie")
-   → verwijder alle spaties uit het [CONCEPT]
-   → Always crossreference [CONCEPT] with 'UP-OP iJw release 3.2',
-   → Always crossreference [CONCEPT] with 'Condities constraints per data-element',
-   → Always crossreference [CONCEPT] with 'invulinstructie*' 
+   → verwijder alle spaties uit het [CONCEPT] en noem dit [CONCEPT2]
+   Voorbeeld:
+- "Status aanlevering" → "statusaanlevering"
+- "Reden beeindiging" → "Redenbeindiging"
+   → Always crossreference [CONCEPT] and [CONCEPT2] with 'UP-OP iJw release 3.2',
+   → Always crossreference [CONCEPT2] with 'Condities constraints per data-element',
+   → Always crossreference [CONCEPT]  and [CONCEPT2]with 'invulinstructie*' 
    → Wanneer een gebruiker vraagt naar een specifieke code uit een codelijst (zoals JZ002 Reden wijziging_toewijzing), geef UITSLUITEND de exacte, letterlijke omschrijving ("Omschrijving") zoals opgenomen in de codelijst. Gebruik NOOIT een alternatieve, samengevatte of geïnterpreteerde omschrijving. Controleer altijd dat de getoonde tekst 100% overeenkomt met de codelijst. Bij afwijking: geef geen omschrijving en meld "Omschrijving voor code [X] niet gevonden in codelijst [naam]"
 → CRITICAL: Copy codes EXACTLY as they appear in the documents, including:
   - Exact numerical values (including leading zeros if present)
