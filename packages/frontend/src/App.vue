@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { onMounted, ref } from "vue";
+import { nextTick, onMounted, ref, watch } from "vue";
 import { RouterView } from "vue-router";
 import TheAuthDialog from "@/components/TheAuthDialog.vue";
 import { useApi } from "@/composables/useApi";
@@ -9,6 +9,16 @@ const api = useApi();
 const authStore = useAuthStore();
 const showLoginModal = ref<boolean | null>(null);
 const loginError = ref<string>("");
+
+// Dispatch event when login modal closes so chat component can focus
+watch(showLoginModal, (newValue, oldValue) => {
+	if (oldValue === true && newValue === false) {
+		// Modal just closed - dispatch event for focus
+		nextTick(() => {
+			window.dispatchEvent(new CustomEvent('loginModalClosed'));
+		});
+	}
+});
 onMounted(async () => {
 	try {
 		// Add timeout to prevent hanging

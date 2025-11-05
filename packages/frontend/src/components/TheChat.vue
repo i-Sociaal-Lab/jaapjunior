@@ -125,18 +125,25 @@ onMounted(async () => {
 		await loadConversation(id);
 	}
 	
-	// Focus input after mount (especially important after login)
-	// Delay to ensure login modal (if present) has closed
+	// Focus input after mount
 	await nextTick();
-	setTimeout(() => {
-		chatInput.value?.focus?.();
-	}, 300);
-});
-
-onUnmounted(() => {
-	if (interval) {
-		window.clearInterval(interval);
-	}
+	chatInput.value?.focus?.();
+	
+	// Also listen for login modal close event
+	const handleLoginModalClosed = () => {
+		nextTick(() => {
+			chatInput.value?.focus?.();
+		});
+	};
+	
+	window.addEventListener('loginModalClosed', handleLoginModalClosed);
+	
+	onUnmounted(() => {
+		if (interval) {
+			window.clearInterval(interval);
+		}
+		window.removeEventListener('loginModalClosed', handleLoginModalClosed);
+	});
 });
 
 // Watch for changes to the conversation ID and update the URL
