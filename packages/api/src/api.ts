@@ -54,6 +54,7 @@ type Variables = JwtVariables;
 const availableModels = [
 	{ label: "GPT-4.1", value: "4.1" },
 	{ label: "Qwen 3", value: "qwen3" },
+	{ label: "Claude Haiku 4.5", value: "haiku-4.5" },
 ] as const satisfies ReadonlyArray<{
 	label: string;
 	value: keyof typeof llms;
@@ -206,7 +207,8 @@ export const api = new Hono<{ Variables: Variables }>()
 	.post("question", vValidator("json", oneOffMessageSchema), async (c) => {
 		const { q, agent = "jw" } = c.req.valid("json");
 
-		const response = await agents[agent].query(q, [], db);
+		const agentInstance = await agents[agent]();
+		const response = await agentInstance.query(q, [], db);
 
 		return c.json({ response: response.message.content });
 	})
@@ -258,6 +260,8 @@ export const api = new Hono<{ Variables: Variables }>()
 					return c.json({ error: "Conversation not found" }, 404);
 				}
 
+				const agentInstance = await agents[agent]();
+				
 				if (selectedModel === "rate") {
 					let modelFirst: keyof typeof llms;
 					let modelSecond: keyof typeof llms;
@@ -270,13 +274,13 @@ export const api = new Hono<{ Variables: Variables }>()
 					} while (modelFirst === modelSecond);
 
 					const [responseFirst, responseSecond] = await Promise.all([
-						agents[agent].query(
+						agentInstance.query(
 							inputText,
 							conversation.messages as ChatMessage[],
 							db,
 							modelFirst,
 						),
-						agents[agent].query(
+						agentInstance.query(
 							inputText,
 							conversation.messages as ChatMessage[],
 							db,
@@ -292,7 +296,7 @@ export const api = new Hono<{ Variables: Variables }>()
 					return c.json([responseFirst.message, responseSecond.message]);
 				}
 
-				const response = await agents[agent].query(
+				const response = await agentInstance.query(
 					inputText,
 					conversation.messages as ChatMessage[],
 					db,

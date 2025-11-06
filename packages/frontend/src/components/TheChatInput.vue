@@ -1,14 +1,15 @@
 <script setup lang="ts">
 import type { DropdownMenuItem, SelectMenuItem } from "@nuxt/ui";
-import { nextTick, ref, useTemplateRef, watch } from "vue";
+import { nextTick, onMounted, ref, useTemplateRef, watch } from "vue";
 
-defineProps<{
+const props = defineProps<{
 	placeholder: string;
 	sendButton: string;
 	feedbackButton: string;
 	loading: boolean;
 	disabled: boolean;
 	canSelectAgent: boolean;
+	agents: { label: string; id: "jw" | "wmo" | "cs-wmo" }[];
 	autofocus?: boolean;
 }>();
 
@@ -31,17 +32,12 @@ nextTick(() => {
 
 const models = ref([
 	{ label: "GPT 4.1", id: "4.1" },
-	{ label: "Gemini 2.5 pro", id: "2.5-pro" },
-	{ label: "Llama 4 Maverick", id: "llama-4" },
-	{ label: "Mistral Medium", id: "mistral-medium" },
+	{ label: "Qwen 3", id: "qwen3" },
+	{ label: "Claude Haiku 4.5", id: "haiku-4.5" },
 ] satisfies SelectMenuItem[]);
 const selectedModel = defineModel<string>("selected-model");
 
-const agents = ref([
-	{ label: "JW", id: "jw" },
-	{ label: "WMO", id: "wmo" },
-] satisfies SelectMenuItem[]);
-const selectedAgent = defineModel<"jw" | "wmo">("selected-agent");
+const selectedAgent = defineModel<"jw" | "wmo" | "cs-wmo">("selected-agent");
 
 const modes = ref([
 	{ label: "Modellen beoordelen", value: "rate" },
@@ -52,11 +48,11 @@ const mode = defineModel<"rate" | "pick">("mode");
 watch(
 	mode,
 	(newMode) => {
-		if (newMode === "pick") {
-			selectedModel.value = models.value[0]?.id;
-		} else {
+		// Don't auto-select a model - let users choose or use agent defaults
+		if (newMode === "rate") {
 			selectedModel.value = undefined;
 		}
+		// If "pick" mode, keep selectedModel as is (undefined or user's choice)
 	},
 	{ immediate: true },
 );
@@ -66,9 +62,30 @@ const emit = defineEmits<{
 	feedback: [];
 }>();
 
+defineExpose({ focus });
+
 function focus() {
-	inputEl.value?.focus();
+    nextTick(() => {
+        inputEl.value?.focus();
+    });
 }
+
+// Focus on mount if autofocus is enabled
+// Use longer delay to avoid conflict with login modal focus
+onMounted(() => {
+	if (props.autofocus) {
+		// Longer delay to ensure login modal (if present) has closed first
+		// Try multiple times to ensure it works even if modal takes longer to close
+		setTimeout(() => {
+			focus();
+		}, 300);
+		
+		// Also try again after a bit longer, in case modal was still closing
+		setTimeout(() => {
+			focus();
+		}, 1000);
+	}
+});
 
 function handleKeydown(event: KeyboardEvent) {
 	if (event.key === "Enter") {
@@ -76,22 +93,20 @@ function handleKeydown(event: KeyboardEvent) {
 			return;
 		} else {
 			event.preventDefault();
-			emit("submit");
+            emit("submit");
+            focus();
 		}
 	}
 }
 
-const canUseSelector = ref(false);
-watch(
-	canUseSelector,
-	(value) => {
-		if (!value) {
-			mode.value = "pick";
-			selectedModel.value = "4.1";
-		}
-	},
-	{ immediate: true },
-);
+const canUseSelector = ref(import.meta.env.VITE_ENABLE_MODEL_CONTROLS === "true");
+const enableFeedback = ref(import.meta.env.VITE_ENABLE_FEEDBACK !== "false");
+
+// Initialize without a default model - let agents use their own defaults
+if (!canUseSelector.value) {
+    mode.value = "pick";
+    selectedModel.value = undefined;
+}
 
 const resetItems = ref<DropdownMenuItem[]>([
 	{
@@ -112,7 +127,6 @@ const resetItems = ref<DropdownMenuItem[]>([
 			class="message-input"
 			@keydown="handleKeydown"
 			@input="autoResize"
-			:autofocus
 			:placeholder
 			:disabled="loading"
 			rows="1"
@@ -165,18 +179,24 @@ const resetItems = ref<DropdownMenuItem[]>([
                     size="xs"
 					:content="{ align: 'end' }"
 				/>
-				<UButton
-					@click="emit('feedback')"
-					class="rounded-full"
-					variant="outline"
-					icon="i-lucide-message-square"
-					size="sm"
-				>
-					{{ feedbackButton }}
-				</UButton>
-				<UButton @click="emit('submit')" class="rounded-full" :disabled>
-					{{ sendButton }}
-				</UButton>
+            <UButton
+                v-if="enableFeedback"
+                @click="emit('feedback')"
+                class="rounded-full"
+                variant="outline"
+                icon="i-lucide-message-square"
+                size="xs"
+            >
+                {{ feedbackButton }}
+            </UButton>
+            <UButton 
+                @click="() => { emit('submit'); focus(); }" 
+				class="rounded-full" 
+				size="xs"
+				:disabled
+			>
+				{{ sendButton }}
+			</UButton>
 			</div>
 		</div>
 	</div>

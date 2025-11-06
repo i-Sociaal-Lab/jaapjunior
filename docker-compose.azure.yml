@@ -1,0 +1,44 @@
+# Azure Container Apps productie configuratie
+# Dit bestand wordt gebruikt door azure-deploy.sh
+
+services:
+  chromadb:
+    image: chromadb/chroma:latest
+    environment:
+      - IS_PERSISTENT=TRUE
+      - ANONYMIZED_TELEMETRY=FALSE
+    # Geen publieke poorten - alleen intern bereikbaar
+    expose:
+      - "8000"
+    restart: unless-stopped
+
+  api:
+    # Image wordt gebouwd en gepusht door azure-deploy.sh
+    build:
+      context: .
+      dockerfile: ./packages/api/Dockerfile
+    environment:
+      # Secrets worden via Azure Container Apps secrets ingesteld
+      - NODE_ENV=production
+      - PORT=3000
+      - DB_PATH=/app/data/storage.sqlite
+      - CHROMA_COLLECTION=jaapjunior
+      # CHROMA_URI, OPENAI_API_KEY, etc. worden via Azure ingesteld
+    # Geen publieke poorten - alleen intern bereikbaar
+    expose:
+      - "3000"
+    restart: unless-stopped
+
+  frontend:
+    # Image wordt gebouwd en gepusht door azure-deploy.sh
+    build:
+      context: .
+      dockerfile: ./packages/frontend/Dockerfile
+    # Alleen frontend is publiek toegankelijk
+    ports:
+      - "80:80"
+    restart: unless-stopped
+
+
+
+

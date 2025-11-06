@@ -44,7 +44,7 @@ __Fout of twijfel?__ Neem contact op met het __Ketenbureau i-Sociaal Domein__.`,
 		sendButton: "Versturen",
 		sendButtonHasToPick: "Kies eerst welk bericht je voorkeur heeft",
 		languageToggle: "Switch to English",
-		loading: "Bezig met laden",
+		loading: "Bezig met de vraag te beantwoorden",
 		error: "Er is een fout opgetreden. Probeer het opnieuw.",
 		feedbackButton: "Feedback geven",
 	},
@@ -69,20 +69,36 @@ const router = useRouter();
 
 const messageInput = ref("");
 const messages = ref<(ChatMessage | ChatMessage[])[]>([]);
-const selectedMode = ref<Modes>("rate");
+const selectedMode = ref<Modes>("pick");
 const selectedModel = ref<Exclude<AllowedModels, "rate"> | undefined>();
 const isReceivingMessage = ref(false);
 const error = ref<string | null>(null);
 const showFeedbackDialog = ref(false);
 const messagesContainer = useTemplateRef("messagesContainer");
+const chatInput = useTemplateRef("chatInput");
 
 const hasToPickMessage = computed(() => {
 	const lastMessage = messages.value[messages.value.length - 1];
 	return Array.isArray(lastMessage);
 });
 
-const canSelectAgent = import.meta.env.VITE_TEST_ENV === "true";
-const selectedAgent = ref<"jw" | "wmo" | undefined>("jw");
+const enabledAgentsEnv = import.meta.env.VITE_ENABLED_AGENTS
+    ?.split(",")
+    .map((a) => a.trim())
+    .filter(Boolean) as ("jw" | "wmo" | "cs-wmo")[] | undefined;
+
+const allAgents = [
+    { label: "JW", id: "jw" as const },
+    { label: "WMO", id: "wmo" as const },
+    { label: "CS-WMO", id: "cs-wmo" as const },
+];
+
+const visibleAgents = (enabledAgentsEnv && enabledAgentsEnv.length
+    ? allAgents.filter((a) => enabledAgentsEnv.includes(a.id))
+    : allAgents);
+
+const canSelectAgent = visibleAgents.length > 1;
+const selectedAgent = ref<"jw" | "wmo" | "cs-wmo" | undefined>(visibleAgents[0]?.id);
 
 // Computed property to determine if send button should be disabled
 const isSendDisabled = computed(() => {
@@ -108,12 +124,26 @@ onMounted(async () => {
 	if (id) {
 		await loadConversation(id);
 	}
-});
-
-onUnmounted(() => {
-	if (interval) {
-		window.clearInterval(interval);
-	}
+	
+	// Focus input after mount
+	await nextTick();
+	chatInput.value?.focus?.();
+	
+	// Also listen for login modal close event
+	const handleLoginModalClosed = () => {
+		nextTick(() => {
+			chatInput.value?.focus?.();
+		});
+	};
+	
+	window.addEventListener('loginModalClosed', handleLoginModalClosed);
+	
+	onUnmounted(() => {
+		if (interval) {
+			window.clearInterval(interval);
+		}
+		window.removeEventListener('loginModalClosed', handleLoginModalClosed);
+	});
 });
 
 // Watch for changes to the conversation ID and update the URL
@@ -191,6 +221,10 @@ async function sendMessage() {
 	isReceivingMessage.value = true;
 	error.value = null;
 
+  // Direct weer focus op invoerveld na render (ook bij Enter/klik)
+  await nextTick();
+  chatInput.value?.focus?.();
+
 	try {
 		// Prepare request body based on whether we have an existing conversation
 		if (!conversationId.value) {
@@ -202,13 +236,25 @@ async function sendMessage() {
 		}
 
 		const model = selectedMode.value === "rate" ? "rate" : selectedModel.value;
+		
+		// Only include model if explicitly chosen (not undefined)
+		const json: {
+			inputText: string;
+			agent?: "jw" | "wmo" | "cs-wmo";
+			model?: string;
+		} = {
+			inputText: messageText,
+			agent: selectedAgent.value,
+		};
+		
+		// Only add model if it's defined (allows agent defaults to be used)
+		if (model) {
+			json.model = model;
+		}
+		
 		const response = await api.conversations[":id"].$post({
 			param: { id: conversationId.value },
-			json: {
-				inputText: messageText,
-				agent: selectedAgent.value,
-				model,
-			},
+			json,
 		});
 
 		if (!response.ok) {
@@ -228,6 +274,9 @@ async function sendMessage() {
 	} finally {
 		// Reset receiving state
 		isReceivingMessage.value = false;
+    // Refocus input ná re-render (disabled -> enabled)
+    await nextTick();
+    chatInput.value?.focus?.();
 	}
 }
 
@@ -286,7 +335,10 @@ watch(
 					class="logo ketenbureau-logo w-48"
 				/>
 
-                <span v-html="marked(config.emptyState, { async: false })"></span>
+				<span v-html="marked(config.emptyState, { async: false })"></span>
+				<span v-if="visibleAgents.length === 1" class="text-sm text-muted-foreground">
+					Deze omgeving is geconfigureerd met één agent: <strong>{{ visibleAgents[0].label }}</strong>.
+				</span>
 			</div>
 
 			<template v-for="(messageOrMessagePair, index) in messages" :key="index">
@@ -328,12 +380,14 @@ watch(
 			</div>
 		</div>
 
-		<TheChatInput
+        <TheChatInput
+            ref="chatInput"
 			v-model="messageInput"
 			v-model:mode="selectedMode"
 			v-model:selected-model="selectedModel"
 			v-model:selected-agent="selectedAgent"
             :can-select-agent="canSelectAgent"
+			:agents="visibleAgents"
 			@submit="sendMessage"
 			@feedback="showFeedbackDialog = true"
 			autofocus

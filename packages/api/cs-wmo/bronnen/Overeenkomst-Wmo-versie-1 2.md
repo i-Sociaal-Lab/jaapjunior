@@ -770,10 +770,6 @@ d. de partij ontvangt een strafrechtelijke veroordeling.
 
 Opdrachtgever kan aan de melding rechtsgevolgen verbinden.
 
-## 
-
-## 
-
 ## **Hoofdstuk 3: iWmo**
 
 ### Artikel 3.11 – iWmo
@@ -804,7 +800,6 @@ Opdrachtgever betaalt voor de maatschappelijke ondersteuning volgens de afsprake
 
 Opdrachtgever betaalt alleen voor ondersteuning die Opdrachtnemer echt en goed heeft geleverd, zoals afgesproken in deze overeenkomst.
 
-## 
 
 ## **Hoofdstuk 5: Fraude en integriteit**
 
@@ -859,21 +854,15 @@ Als Opdrachtnemer zijn afspraken niet nakomt, dan mag Opdrachtgever maatregelen 
 *(Bij inspanningsgerichte en outputgerichte uitvoering:)* Opdrachtgever kan:
 
 – prestaties en tarieven tijdelijk aanpassen
-
 – onterecht betaalde bedragen terugvorderen of verrekenen
-
 – tijdelijk 5% korting geven op het tarief
-
 – de overeenkomst opzeggen
 
 *(Bij taakgerichte uitvoering:)* Opdrachtgever kan:
 
 – prestaties en budget tijdelijk aanpassen
-
 – onterecht besteed budget terugvorderen of verrekenen
-
 – tijdelijk 5% korting geven op het budget
-
 – de overeenkomst opzeggen
 
 3.19.2

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref } from "vue";
+import { nextTick, ref, watch } from "vue";
 import { Button } from "@/components/ui/button";
 import {
 	Dialog,
@@ -19,11 +19,26 @@ const emit = defineEmits<{
 	login: [password: string];
 	clearError: [];
 }>();
+
 const password = ref<string>("");
+const open = defineModel<boolean>("open", { default: false });
+
+// Focus password field when modal opens
+watch(open, (isOpen) => {
+	if (isOpen) {
+		// Use nextTick and small delay to ensure modal animation completes
+		nextTick(() => {
+			setTimeout(() => {
+				const passwordInput = document.getElementById("password") as HTMLInputElement;
+				passwordInput?.focus();
+			}, 100);
+		});
+	}
+});
 </script>
 
 <template>
-	<Dialog>
+	<Dialog v-model:open="open">
 		<DialogContent
 			class="sm:max-w-[425px]"
 			:closeable="false"
