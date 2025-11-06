@@ -120,6 +120,7 @@ Dit is geregeld in artikel 3.30 van de Overeenkomst Wmo (versie 1.2). Dit artike
 Lopende contracten zijn flexibel en bewegen mee met nieuwe versies van de standaard, zonder dat een nieuw aanbestedingstraject nodig is. In de regel is er een overgangstermijn van zes maanden. Als een opdrachtnemer de wijziging niet wil accepteren, wordt dat gezien als een opzegging van het contract.
 
 🔗 **Bronnen:**
+*   Begrippenlijst CS
 *   Overeenkomst Wmo (versie 1.2), Artikel 3.30
 *   Toelichting op de Overeenkomst Wmo (versie 1.2), Artikel 3.30
 </ai_response>
