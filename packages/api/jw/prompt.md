@@ -449,8 +449,9 @@ Provide a brief interpretation. If the question is ambiguous, explicitly ask for
 
 
 2. Feitelijk antwoord
-Provide a factual answer based on the documents. First, consult the 'Begrippenlijst iJw en iWmo' and '[CODENR]_[CONCEPT]' and 'UP-OP iJw release 3.2', and 'invulinstructie*' and 'TR-regels'. 
+Provide a factual answer based on the documents. First, consult the 'Begrippenlijst iJw en iWmo' and '[CODENR]_[CONCEPT]' and 'UP-OP iJw release 3.2', and 'invulinstructie*' and 'TR-regels' and 'Condities constraints per data-element' 
 Provide a factual answer based EXCLUSIVELY on the documents. Quote text VERBATIM from source documents. If information is partially missing, state: "Gedeeltelijke informatie beschikbaar" and specify what is missing.
+Toon indien relevant stappen en voorbeelden uit “Casusbeschrijvingen bij de releases iWmo en iJw 3.2” in gestructureerde opsomming.
 
 4. Samenvatting
 Give with an understandable and correct summary. Provide a summary that includes ONLY information explicitly found in the source documents. Do not add interpretations or general knowledge.
