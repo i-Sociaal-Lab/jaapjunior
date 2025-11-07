@@ -242,7 +242,7 @@ Als na 2 weken blijkt dat de cliënt niet meer naar huis komt, en de levering va
 *2.1.2 Relevante bedrijfsregels en invulinstructies*
 
 | **Nr** | **Omschrijving** |
-| --- | --- |
+|:------:|:--- |
 | OP072 | Pas na een melding start ondersteuning mag een aanbieder melden dat de levering beëindigd is. |
 | OP155 | Een (tijdelijke) beëindiging van levering, bevat een verwijzing naar de laatste melding van de start van de levering. |
 | OP272 | De aanbieder verzendt een stopbericht binnen vijf werkdagen na de datum waarop de levering van de daadwerkelijk toegewezen ondersteuning echt beëindigd is. |
@@ -254,7 +254,7 @@ Als na 2 weken blijkt dat de cliënt niet meer naar huis komt, en de levering va
 De stappen in de tabel worden doorlopen.
 
 | **Stap** | **Omschrijving** | **Berichten** |
-| --- | --- | --- |
+|:---:| --- | --- |
 | 1 | De gemeente stuurt een initieel toewijzingsbericht naar de aanbieder | WMO301 |
 | 2 | De aanbieder verwerkt de toewijzing, start met de daadwerkelijke zorglevering en stuurt een startbericht naar de gemeente | WMO305 |
 | 3 | De aanbieder stuurt een stopbericht om de tijdelijke stop door te geven | WMO307 |
@@ -364,7 +364,7 @@ Client maakt sinds 2020 gebruik van dagbesteding. In juni 2023 wordt cliënt opg
 *3.1.2 Relevante bedrijfsregels en invulinstructies*
 
 | **Nr** | **Omschrijving** |
-| --- | --- |
+|:---:| --- |
 | OP072 | Pas na een melding start ondersteuning mag een aanbieder melden dat de levering beëindigd is. |
 | OP155 | Een (tijdelijke) beëindiging van levering, bevat een verwijzing naar de laatste melding van de start van de levering. |
 | OP272 | De aanbieder verzendt een stopbericht binnen vijf werkdagen na de datum waarop de levering van de daadwerkelijk toegewezen ondersteuning echt beëindigd is. |
@@ -376,7 +376,7 @@ Client maakt sinds 2020 gebruik van dagbesteding. In juni 2023 wordt cliënt opg
 De stappen in de tabel worden doorlopen.
 
 | **Stap** | **Omschrijving** | **Berichten** |
-| --- | --- | --- |
+|:---:| --- | --- |
 | 1 | De aanbieder stuurt een stopbericht om de tijdelijke stop door te geven | WMO307 |
 | 2 | De aanbieder stuurt een stopbericht om de definitieve stop door te geven, met einddatum ongelijk aan einddatum tijdelijke stop | WMO307 |
 
@@ -454,7 +454,7 @@ De aanbieder corrigeert het eerder verstuurde stopbericht door deze aanlevering 
 De stappen in de tabel worden doorlopen.
 
 | **Stap** | **Omschrijving** | **Berichten** |
-| --- | --- | --- |
+|:---:| --- | --- |
 | 1 | De gemeente stuurt een initieel toewijzingsbericht naar de aanbieder | JW301 |
 | 2 | De aanbieder verwerkt de toewijzing, start met de daadwerkelijke zorglevering en stuurt een startbericht naar de gemeente | JW305 |
 | 3 | De aanbieder stuurt een stopbericht | JW307 |
