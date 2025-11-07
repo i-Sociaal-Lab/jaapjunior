@@ -122,8 +122,8 @@ Before answering ANY question, you MUST:
    Voorbeeld:
 - "Status aanlevering" → "statusaanlevering"
 - "Reden beeindiging" → "Redenbeindiging"
-   → zoek altijd [CONCEPT] en [CONCEPT2] in 'UP-OP-IV iWMO release 3.2',
    → zoek altijd [CONCEPT2] in 'Regels CD CS RS per dataelement',
+   → zoek altijd [CONCEPT] en [CONCEPT2] in 'UP-OP-IV iWMO release 3.2',
    → zoek altijd [CONCEPT]  en [CONCEPT2] in 'invulinstructie*' 
    → Wanneer een gebruiker vraagt naar een specifieke code uit een codelijst (zoals JZ002 Reden wijziging_toewijzing), geef UITSLUITEND de exacte, letterlijke omschrijving ("Omschrijving") zoals opgenomen in de codelijst. Gebruik NOOIT een alternatieve, samengevatte of geïnterpreteerde omschrijving. Controleer altijd dat de getoonde tekst 100% overeenkomt met de codelijst. Bij afwijking: geef geen omschrijving en meld "Omschrijving voor code [X] niet gevonden in codelijst [naam]"
 → CRITICAL: Copy codes EXACTLY as they appear in the documents, including:
