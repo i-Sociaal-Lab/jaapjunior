@@ -6,7 +6,7 @@ De reden waarom een toewijzing wordt gewijzigd.
 ---
 
 ## Codelijst
-| Reden Wijziging toewijzing | Waarde | Omschrijving gebruik | Reden beeindiging (WMO307) |
+| Reden Wijziging | Waarde | Omschrijving gebruik | Reden beeindiging (WMO307) |
 |:--------------------------:|:-------|:---------------------|:---------------------------|
 | 01 | Administratieve correctie (vervallen) | Niet gebruiken                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          | nvt                         |
 | 02 | Cliënt overleden                      | De toewijzing moet worden gestopt, omdat de client is overleden. Over het algemeen zal dan worden gevuld: einddatum toewijzing = overlijdensdatum client.                                                                                                                                                                                                                                                                                                                                               | 02                          |
