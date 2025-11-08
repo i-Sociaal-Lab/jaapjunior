@@ -72,7 +72,7 @@ In elk hoofdstuk is een casus uitgewerkt. Daarbij is deze indeling gehanteerd:
 In de berichtvoorbeelden zijn de veldnamen en veldwaarden op een functionele manier gebruikt, zodat de voorbeelden voor iedereen leesbaar en te begrijpen zijn. De daadwerkelijke veldwaarden in de berichten dienen op de technisch juiste wijze te worden gevuld. In de tabel staan de belangrijkste veldwaarden die in dit document anders worden gebruikt dan in de werkelijkheid.
 
 | **Soort veld** | **Functionele vulling document** | **Technische vulling in bericht** |
-| --- | --- | --- |
+| --- |:---:|:---:|
 | Datumveld | dd-mm-eejj 21-10-2025 | eejjmmdd 20251021 |
 | Codevelden | Code + omschrijving 04 (uur) | Code 04 |
 | Bedragen | Bedrag in euro's 1234,00 | Bedrag in eurocenten 123400 |
@@ -139,7 +139,7 @@ De gemeente gaat akkoord met de vraag om de zorg te verlengen. Hiervoor stuurt d
 De stappen in de tabel worden doorlopen.
 
 | **Stap** | **Omschrijving** | **Berichten** |
-| --- | --- | --- |
+|:---:| --- |:---:|
 | 1 | De gemeente stuurt een initieel toewijzingsbericht naar de aanbieder | JW301 |
 | 2 | De aanbieder verwerkt de toewijzing, start met de daadwerkelijke zorglevering en stuurt een startbericht naar de gemeente | JW305 |
 | 3 | De wettelijke vertegenwoordiger heeft contact met de gemeente en geeft aan dat de zorglevering ook na 30 juni 2023 nog wenselijk is. | Geen |
@@ -160,7 +160,7 @@ Cliënt: BSN 999900006
 **Toegewezen Product**
 
 | Toewijzingnummer | 667899 |
-| --- | --- |
+| --- |:---:|
 | Referentie aanbieder |  |
 | Productcategorie | 45 |
 | Productcode | 45A04 |
@@ -187,7 +187,7 @@ BSN 999900006
 **StartProduct**
 
 | Toewijzingnummer | 667899 |
-| --- | --- |
+| --- |:---:|
 | Productcategorie | 45 |
 | Productcode | 45A04 |
 | Ingangsdatum toegewezen product | 01-01-2025 |
@@ -215,7 +215,7 @@ Cliënt: BSN 999900006
 **ToegewezenProduct**
 
 | Toewijzingnummer | 667899 |
-| --- | --- |
+| --- |:---:|
 | Referentie aanbieder |  |
 | Productcategorie | 45 |
 | Productcode | 45A04 |
@@ -273,7 +273,7 @@ Header
 Cliënt: BSN 999996770
 
 | **ToegewezenProduct** |  |
-| --- | --- |
+| --- |:---:|
 | Toewijzingnummer | 668877 |
 | Referentie aanbieder |  |
 | Productcategorie | 07 |
@@ -297,7 +297,7 @@ Header
 Cliënt: BSN 999996770
 
 | **StartProduct** |  |
-| --- | --- |
+| --- |:---:|
 | Toewijzingnummer | 668877 |
 | Productcategorie | 07 |
 | Productcode | 07A12 |
@@ -316,7 +316,7 @@ Header
 Cliënt: BSN 999996770
 
 | **StopProduct** |  |
-| --- | --- |
+| --- |:---:|
 | Toewijzingnummer | 668877 |
 | Productcategorie | 07 |
 | Productcode | 07A12 |
@@ -341,7 +341,7 @@ Cliënt
 BSN 999996770
 
 | **StopProduct** |  |
-| --- | --- |
+| --- |:---:|
 | Toewijzingnummer | 668877 |
 | Productcategorie | 07 |
 | Productcode | 07A12 |
@@ -393,7 +393,7 @@ Header
 Cliënt: BSN 999996782
 
 | **StopProduct** |  |
-| --- | --- |
+| --- |:---:|
 | Toewijzingnummer | 12563 |
 | Productcategorie | 07 |
 | Productcode | 07A01 |
@@ -416,7 +416,7 @@ Header
 Cliënt: BSN 999996782
 
 | **StopProduct** |  |
-| --- | --- |
+| --- |:---:|
 | Toewijzingnummer | 12563 |
 | Productcategorie | 07 |
 | Productcode | 07A01 |
@@ -471,7 +471,7 @@ Header
 Cliënt: BSN 999900006
 
 | **ToegewezenProduct** |  |
-| --- | --- |
+| --- |:---:|
 | Toewijzingnummer | 667899 |
 | Referentie aanbieder |  |
 | Productcategorie | 45 |
@@ -495,7 +495,7 @@ Header
 Cliënt: BSN 999900006
 
 | **StartProduct** |  |
-| --- | --- |
+| --- |:---:|
 | Toewijzingnummer | 667899 |
 | Productcategorie | 45 |
 | Productcode | 45A04 |
@@ -516,7 +516,7 @@ Cliënt
 BSN 999900006
 
 | **StopProduct** |  |
-| --- | --- |
+| --- |:---:|
 | Toewijzingnummer | 667899 |
 | Productcategorie | 45 |
 | Productcode | 45A04 |
@@ -540,7 +540,7 @@ Header
 Cliënt: BSN 999900006
 
 | **StopProduct** |  |
-| --- | --- |
+| --- |:---:|
 | Toewijzingnummer | 667899 |
 | Productcategorie | 45 |
 | Productcode | 45A04 |
@@ -551,7 +551,7 @@ Cliënt: BSN 999900006
 | Status aanlevering stop product | 3 (Verwijdere aanlevering) |
 
 | **StopProduct** |  |
-| --- | --- |
+| --- |:---:|
 | Toewijzingnummer | 667899 |
 | Productcategorie | 45 |
 | Productcode | 45A04 |
