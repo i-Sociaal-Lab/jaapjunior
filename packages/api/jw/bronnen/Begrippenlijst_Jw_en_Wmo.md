@@ -575,7 +575,8 @@ bericht waarmee de zorgaanbieder het begin van de zorglevering meldt bij het zor
 
 jaarlijkse, nieuwe versies van een informatiestandaard waarin veranderingen en uitbreidingen zijn opgenomen op basis van nieuwe ontwikkelingen op het gebied van functionele en technische specificaties, bijvoorbeeld vanwege beleidswijzigingen; de nummering van de versie gaat dan bijvoorbeeld van versie 3.1 naar 3.2.
 
-### Mockingbird Nederland: Een project dat pleegzorg gezinnen met elkaar verbindt om elkaar wederzijdse ondersteuning te bieden en een sterk netwerk rond het pleegkind op te bouwen.
+### Mockingbird: 
+Een project dat pleegzorg gezinnen met elkaar verbindt om elkaar wederzijdse ondersteuning te bieden en een sterk netwerk rond het pleegkind op te bouwen. Het betreft hier over het algemeen zes tot tien pleeggezinnen.
 Doel: Het doel is om pleegzorgplaatsingen te stabiliseren door een gemeenschap van liefdevolle volwassenen te creëren. 
 
 ### modellen
