@@ -578,7 +578,7 @@ jaarlijkse, nieuwe versies van een informatiestandaard waarin veranderingen en u
 ### Mockingbird
 Een project dat pleegzorg gezinnen met elkaar verbindt om elkaar wederzijdse ondersteuning te bieden en een sterk netwerk rond het pleegkind op te bouwen. Het betreft hier over het algemeen zes tot tien pleeggezinnen.
 Doel: Het doel is om pleegzorgplaatsingen te stabiliseren door een gemeenschap van liefdevolle volwassenen te creëren.
-Herkomst naam: De mockingbird (spotlijster) is een vogel die bekendstaat om zijn vermogen om de geluiden van andere vogels na te bootsen. Daat staat symbool voor aanpassing, verbinding en ondersteuning binnen een netwerk - precies wat het model beoogt voor pleeggezinnen
+Herkomst naam: De mockingbird (spotlijster) is een vogel die bekendstaat om zijn vermogen om de geluiden van andere vogels na te bootsen. Dat staat symbool voor aanpassing, verbinding en ondersteuning binnen een netwerk - precies wat het model beoogt voor pleeggezinnen.
 
 ### modellen
 
