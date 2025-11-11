@@ -463,6 +463,8 @@ Via de validatiemodule op istandaarden.nl kunt u de berichten valideren. De beri
 Via de Testvoorziening iStandaarden (TiS) van Zorginstituut Nederland kunnen softwareleveranciers hun producten testen in de rol van elke partij die deelneemt aan het iStandaarden-berichtenverkeer, en zo nodig verbeteren.
 
 Voor meer informatie of het aanvragen van een account kunt u contact opnemen met Zorginstituut Nederland (<info@istandaarden.nl>).
+Het Ketenbureau i-sociaaldomein stelt een Keten Test Omgeving (KTO) beschikbaar voor de domeinen, iWmo iJw iEb en iPgb. Deze omgevingen zijn gelijk aan de Standaarden versie die op dit moment actueel zijn, tenzij er een nieuwe release op handen is. Dan staat de nieuwe versie van de iStandaarden in de KTO. Gemeenten, aanbieders, CAK, VWS, SVB gegevens uitwisselen/testen met een tegenpartij.
+
 
 
 
