@@ -353,7 +353,7 @@ viercijferige coderingen waarmee iedere gemeente uniek geïdentificeerd kan word
 
 ### Gemeentelijk Gegevensknooppunt of GGk
 
-is een online infrastructuur waarover berichtenverkeer in het kader van de uitvoering van de Wmo en de Jeugdwet mogelijk is tussen gemeenten en aanbieders van zorg en ondersteuning; het GGk wordt beheerd door het BIDN.
+Is een online infrastructuur waarover berichtenverkeer in het kader van de uitvoering van de Wmo en de Jeugdwet mogelijk is tussen gemeenten en aanbieders van zorg en ondersteuning; het GGk wordt beheerd door het BIDN.
 
 ### GGk
 
@@ -369,19 +369,19 @@ zie: geestelijke gezondheidszorg
 
 ### ggz-instellingen
 
-instellingen voor geestelijke gezondheidszorg waarbij mensen met psychische problemen terechtkunnen voor specialistische hulpverlening zoals psychiatrische ziekenhuizen en RIBW's; veelal zijn deze gefuseerd tot een grote ggz-instelling
+Instellingen voor geestelijke gezondheidszorg waarbij mensen met psychische problemen terechtkunnen voor specialistische hulpverlening zoals psychiatrische ziekenhuizen en RIBW's; veelal zijn deze gefuseerd tot een grote ggz-instelling.
 
 ### Groene Vink
 
-erkenning voor softwareleveranciers dat hun software berichten genereert die voldoen aan de iStandaarden; wordt jaarlijks door het Zorginstituut Nederland uitgereikt aan softwareleveranciers en aan partijen in het werkveld
+Erkenning voor softwareleveranciers dat hun software berichten genereert die voldoen aan de iStandaarden; wordt jaarlijks door het Zorginstituut Nederland uitgereikt aan softwareleveranciers en aan partijen in het werkveld.
 
 ### heenberichten
 
-berichten van een zender aan een ontvangende partij die de informatie of melding bevatten die moet worden doorgegeven, zoals het eerste bericht voor bijvoorbeeld de aanvraag zorg of een declaratie; heenberichten moeten door de ontvangende partij worden beantwoord met retourberichten.
+Berichten van een zender aan een ontvangende partij die de informatie of melding bevatten die moet worden doorgegeven, zoals het eerste bericht voor bijvoorbeeld de aanvraag zorg of een declaratie; heenberichten moeten door de ontvangende partij worden beantwoord met retourberichten.
 
 ### hulpperiode
 
-periode waarbinnen hetzelfde zorgproduct iedere dag geleverd is aan een cliënt.
+Periode waarbinnen hetzelfde zorgproduct iedere dag geleverd is aan een cliënt.
 
 ### hulpvraag
 
@@ -389,11 +389,11 @@ zie: zorgvraag
 
 ### IB
 
-afkorting voor Inlichtingenbureau, sinds juni 2025 BIDN
+Afkorting voor Inlichtingenbureau, sinds juni 2025 BIDN.
 
 ### ICD-10
 
-International Statistical Classification of Diseases and Related Health Problems; internationale classificatie van ziekten, versie 10
+International Statistical Classification of Diseases and Related Health Problems; internationale classificatie van ziekten, versie 10.
 
 ### ICF
 
@@ -401,7 +401,7 @@ International Classification of Functioning, Disability and Health; internationa
 
 ### identificatie
 
-proces waarbij de identiteit van een persoon of een zaak vastgesteld wordt, bijvoorbeeld in het berichtenverkeer de identificatie van een cliënt door zijn BSN of van een bestand door het unieke nummer.
+Proces waarbij de identiteit van een persoon of een zaak vastgesteld wordt, bijvoorbeeld in het berichtenverkeer de identificatie van een cliënt door zijn BSN of van een bestand door het unieke nummer.
 
 ### iEb
 
@@ -409,7 +409,7 @@ proces waarbij de identiteit van een persoon of een zaak vastgesteld wordt, bijv
 
 ### iJw
 
-landelijk vastgestelde informatiestandaard voor berichtenverkeer in de uitvoering van de Jeugdwet (Jw).
+Landelijk vastgestelde informatiestandaard voor berichtenverkeer in de uitvoering van de Jeugdwet (Jw).
 
 ### IGJ
 
@@ -417,7 +417,7 @@ Inspectie Gezondheidszorg en Jeugd. Iedereen moet in Nederland op goede en veili
 
 ### informatiemodellen
 
-modellen die horen bij een informatiestandaard en die de processen, bedrijfsregels, gegevenselementen en berichtspecificaties van de informatiestandaard inzichtelijk maken en aan elkaar relateren.
+Modellen die horen bij een informatiestandaard en die de processen, bedrijfsregels, gegevenselementen en berichtspecificaties van de informatiestandaard inzichtelijk maken en aan elkaar relateren.
 
 ### informatie-overdracht
 
@@ -425,7 +425,7 @@ zie: informatie-uitwisseling.
 
 ### informatiestandaarden
 
-verzamelingen afspraken die ervoor moeten zorgen dat partijen in de zorg informatie over de verleende zorg de Wmo 2015 en de Jeugdwet met de juiste kwaliteit betrouwbaar en tijdig kunnen vastleggen, opvragen, uitwisselen en overdragen; er staat in ieder geval in welke gegevens zorgverleners in het primaire proces vastleggen en welke zorgaanbieders welke informatie uitwisselen; richtlijnen en zorgstandaarden worden bij de ontwikkeling als uitgangspunt gehanteerd; bestaan uit use cases, datasets, terminologie- en codestelsels en communicatiestandaarden.
+Verzamelingen afspraken die ervoor moeten zorgen dat partijen in de zorg informatie over de verleende zorg de Wmo 2015 en de Jeugdwet met de juiste kwaliteit betrouwbaar en tijdig kunnen vastleggen, opvragen, uitwisselen en overdragen; er staat in ieder geval in welke gegevens zorgverleners in het primaire proces vastleggen en welke zorgaanbieders welke informatie uitwisselen; richtlijnen en zorgstandaarden worden bij de ontwikkeling als uitgangspunt gehanteerd; bestaan uit use cases, datasets, terminologie- en codestelsels en communicatiestandaarden.
 
 ### informatiestromen
 
@@ -433,7 +433,7 @@ zie: informatie-uitwisseling.
 
 ### informatie-uitwisseling
 
-het uitwisselen van informatie, veelal digitaal; in het bijzonder het elektronisch uitwisselen van informatie tussen de verschillende ketenpartners in de uitvoering van de Wmo en Jeugdwet.
+Het uitwisselen van informatie, veelal digitaal; in het bijzonder het elektronisch uitwisselen van informatie tussen de verschillende ketenpartners in de uitvoering van de Wmo en Jeugdwet.
 
 ### Informatievoorziening Knooppuntdiensten
 
@@ -441,7 +441,7 @@ zie: Gemeentelijk Gegevensknooppunt of GGk.
 
 ### infrastructuur
 
-het geheel van diensten en voorzieningen in het algemeen; in het bijzonder het geheel van technische voorzieningen in een bepaald geografisch gebied, zoals (spoor)wegen, kanalen, vliegvelden, elektriciteits- en drinkwatervoorzieningen, riolering enz. en digitale voorzieningen.
+Het geheel van diensten en voorzieningen in het algemeen; in het bijzonder het geheel van technische voorzieningen in een bepaald geografisch gebied, zoals (spoor)wegen, kanalen, vliegvelden, elektriciteits- en drinkwatervoorzieningen, riolering enz. en digitale voorzieningen.
 
 ### Inlichtingenbureau
 
@@ -449,15 +449,15 @@ zie: BIDN
 
 ### inspanningsgerichte uitvoeringsvariant
 
-uitvoering van zorg en/of ondersteuning waarbij er een duidelijke afspraak tussen gemeente en zorgaanbieder is gemaakt over de levering van een specifiek product of dienst in een afgesproken tijdseenheid; gemeenten stellen voor de individuele voorzieningen een vooraf gedefinieerde set van producten en diensten op en bepalen op welke vorm van zorg of ondersteuning een cliënt recht heeft en sturen een toewijzing naar de zorgaanbieder; een van de drie uitvoeringsvarianten waaruit gemeenten kunnen kiezen bij de inrichting van hun Wmo- en Jw-processen.
+Uitvoering van zorg en/of ondersteuning waarbij er een duidelijke afspraak tussen gemeente en zorgaanbieder is gemaakt over de levering van een specifiek product of dienst in een afgesproken tijdseenheid; gemeenten stellen voor de individuele voorzieningen een vooraf gedefinieerde set van producten en diensten op en bepalen op welke vorm van zorg of ondersteuning een cliënt recht heeft en sturen een toewijzing naar de zorgaanbieder; een van de drie uitvoeringsvarianten waaruit gemeenten kunnen kiezen bij de inrichting van hun Wmo- en Jw-processen.
 
 ### intramurale zorg
 
-zorg die verleend wordt aan mensen die langer dan 24 uur in een instelling verblijven zoals een verpleeghuis of verzorgingshuis, ziekenhuis of een instelling voor mensen met een verstandelijke beperking.
+Zorg die verleend wordt aan mensen die langer dan 24 uur in een instelling verblijven zoals een verpleeghuis of verzorgingshuis, ziekenhuis of een instelling voor mensen met een verstandelijke beperking.
 
 ### intrekking
 
-wijziging van een bestaande zorgtoewijzing waarbij de einddatum wordt aangepast zodat deze dichter bij de ingangsdatum komt te liggen.
+Wijziging van een bestaande zorgtoewijzing waarbij de einddatum wordt aangepast zodat deze dichter bij de ingangsdatum komt te liggen.
 
 ### invulinstructies
 	
@@ -471,23 +471,23 @@ iStandaard die inzicht geeft in de gegevensuitwisseling op het gebied van het tr
 
 ### iStandaarden
 
-benaming voor de informatiestandaarden die in beheer zijn bij Zorginstituut Nederland, namelijk iWlz, iWmo, iJw, iEb en iPgb.
+Benaming voor de informatiestandaarden die in beheer zijn bij Zorginstituut Nederland, namelijk iWlz, iWmo, iJw, iEb en iPgb.
 
 ### iWlz
 
-landelijk vastgestelde informatiestandaard voor berichtenverkeer in de uitvoering van de Wet langdurige zorg (Wlz).
+Landelijk vastgestelde informatiestandaard voor berichtenverkeer in de uitvoering van de Wet langdurige zorg (Wlz).
 
 ### iWmo
 
-landelijk vastgestelde informatiestandaard voor berichtenverkeer in de uitvoering van de Wet maatschappelijke ondersteuning (Wmo 2015).
+Landelijk vastgestelde informatiestandaard voor berichtenverkeer in de uitvoering van de Wet maatschappelijke ondersteuning (Wmo 2015).
 
 ### jeugd-ggz
 
-deelgebied binnen de geestelijke gezondheidszorg dat behandeling, begeleiding en verpleging en verzorging biedt aan kinderen en jongeren met een psychische aandoening die zo ernstig is, dat zij hierdoor in hun ontwikkeling worden bedreigd; per 1 januari 2015 geregeld in de Jeugdwet.
+Deelgebied binnen de geestelijke gezondheidszorg dat behandeling, begeleiding en verpleging en verzorging biedt aan kinderen en jongeren met een psychische aandoening die zo ernstig is, dat zij hierdoor in hun ontwikkeling worden bedreigd; per 1 januari 2015 geregeld in de Jeugdwet.
 
 ### Jeugdwet
 
-wet die de gemeentelijke verantwoordelijkheid regelt voor het voorkomen van, de ondersteuning, hulp en zorg aan jeugdigen en ouders bij opgroei- en opvoedingsproblemen, psychische problemen en stoornissen en voor de uitvoering van de kinderbeschermingsmaatregelen en de jeugdreclassering; inwerkingtreding 1 januari 2015.
+Wet die de gemeentelijke verantwoordelijkheid regelt voor het voorkomen van, de ondersteuning, hulp en zorg aan jeugdigen en ouders bij opgroei- en opvoedingsproblemen, psychische problemen en stoornissen en voor de uitvoering van de kinderbeschermingsmaatregelen en de jeugdreclassering; inwerkingtreding 1 januari 2015.
 
 ### Jeugdzorg
 
@@ -505,11 +505,11 @@ Jeugdzorgregio's zijn geen deelnemers in het berichtenverkeer iJw.
 
 ### kadernotities
 
-notities die Zorginstituut Nederland aan het begin van het jaarlijkse releaseproces voor nieuwe versies van de iStandaarden opstelt en waarin de uitgangspunten staan voor de nieuwe releases.
+Notities die Zorginstituut Nederland aan het begin van het jaarlijkse releaseproces voor nieuwe versies van de iStandaarden opstelt en waarin de uitgangspunten staan voor de nieuwe releases.
 
 ### ketenpartners
 
-instellingen en/of organisaties die deel uitmaken van een keten waarin zij met elkaar samenwerken, zoals een zorgnetwerk of binnen het passend onderwijs of het berichtenverkeer in de zorg en ondersteuning.
+Instellingen en/of organisaties die deel uitmaken van een keten waarin zij met elkaar samenwerken, zoals een zorgnetwerk of binnen het passend onderwijs of het berichtenverkeer in de zorg en ondersteuning.
 
 ### Ketenbureau i-Sociaaldomein
 
@@ -517,7 +517,7 @@ Het Ketenbureau i-Sociaal Domein is dé plek waar gemeenten en zorgaanbieders sa
 
 ### klantprofielen
 
-beschrijvingen van kenmerken van klanten die in de communicatie of in relatie met de klant van belang zijn, bijvoorbeeld leeftijdskenmerken, geslacht, opleidingsniveau, competenties, zorgbehoefte of zorgaanbod dat iemand ontvangt; binnen de zorg en ondersteuning: beschrijvingen van kenmerken, problemen en achtergronden van de problemen van doelgroepen van een interventie of voorziening, met als doel passende zorg voor die betreffende doelgroep(en) te ontwikkelen en om met ketenpartners, financiers, gemeenten enz. goed onderbouwd te kunnen communiceren over doelgroep, aanbod en financiering.
+Beschrijvingen van kenmerken van klanten die in de communicatie of in relatie met de klant van belang zijn, bijvoorbeeld leeftijdskenmerken, geslacht, opleidingsniveau, competenties, zorgbehoefte of zorgaanbod dat iemand ontvangt; binnen de zorg en ondersteuning: beschrijvingen van kenmerken, problemen en achtergronden van de problemen van doelgroepen van een interventie of voorziening, met als doel passende zorg voor die betreffende doelgroep(en) te ontwikkelen en om met ketenpartners, financiers, gemeenten enz. goed onderbouwd te kunnen communiceren over doelgroep, aanbod en financiering.
 
 ### Knooppuntdiensten
 
@@ -525,7 +525,7 @@ zie: Gemeentelijk Gegevensknooppunt of GGk
 
 ### **KTO**
 
-in het i-Sociaal Domein staat voor **K**eten**t**est**o**mgeving. Dit is een testomgeving waar gemeenten en zorgaanbieders, samen met andere betrokken partijen zoals de gemeente, het Centraal Administratie Orgaan Jeugdzorg (CAK) het ministerie van Volksgezondheid, Welzijn en Sport (VWS), SVB en hun softwareleveranciers, samenwerken aan de ontwikkeling en uitrol van digitale systemen voor het i-Sociaal Domein. De KTO faciliteert het testen van digitale systemen die gebruikt worden in het i-Sociaal Domein, zoals voor de uitvoering van de Wmo (Wet maatschappelijke ondersteuning) en de Jeugdwet de Eigen Bijdrage WMO en PGB.
+In het i-Sociaal Domein staat voor **K**eten**t**est**o**mgeving. Dit is een testomgeving waar gemeenten en zorgaanbieders, samen met andere betrokken partijen zoals de gemeente, het Centraal Administratie Orgaan Jeugdzorg (CAK) het ministerie van Volksgezondheid, Welzijn en Sport (VWS), SVB en hun softwareleveranciers, samenwerken aan de ontwikkeling en uitrol van digitale systemen voor het i-Sociaal Domein. De KTO faciliteert het testen van digitale systemen die gebruikt worden in het i-Sociaal Domein, zoals voor de uitvoering van de Wmo (Wet maatschappelijke ondersteuning) en de Jeugdwet de Eigen Bijdrage WMO en PGB.
 
 ### **LDT**
 
@@ -533,7 +533,7 @@ zie: logische datatypen.
 
 ### **leveren of levering**
 
-een van de vier deelprocessen uit het primair proces van iJw/iWmo waarbij de aanbieder aan de gemeente meldt wanneer de zorg van start is gegaan. In de iJw maken Aanbieder en gemeente onderling afspraken over welke datums gehanteerd moeten worden om de start en stop van de levering door te geven. De aanbieder meldt op basis daarvan de startzorg aan de gemeente. De aanbieder stuurt hiervoor een startbericht naar de gemeente. In dit startbericht vult de aanbieder de begindatum met de startdatum zoals overeengekomen met de gemeente.
+Een van de vier deelprocessen uit het primair proces van iJw/iWmo waarbij de aanbieder aan de gemeente meldt wanneer de zorg van start is gegaan. In de iJw maken Aanbieder en gemeente onderling afspraken over welke datums gehanteerd moeten worden om de start en stop van de levering door te geven. De aanbieder meldt op basis daarvan de startzorg aan de gemeente. De aanbieder stuurt hiervoor een startbericht naar de gemeente. In dit startbericht vult de aanbieder de begindatum met de startdatum zoals overeengekomen met de gemeente.
 
 Op het moment dat de levering van de zorg (tijdelijk) gestopt wordt, geeft de aanbieder dit door aan de gemeente. De aanbieder stuurt hiervoor een stopbericht en vult de einddatum met de stopdatum van de levering van de zorg zoals afgesproken. Zowel zorg die tijdelijk, als zorg die definitief gestopt is, kan herstart worden. De aanbieder stuurt dan opnieuw een startbericht naar de gemeente. Zodra blijkt dat de zorg niet meer gestart wordt na een tijdelijke stop, stuurt de aanbieder een definitieve stop.
 
@@ -545,23 +545,23 @@ Indien er gebruik gemaakt wordt van de startberichten en stopberichten maar niet
 
 ### **logische datatypen**
 
-enkelvoudige datatypen die functionele betekenis geven aan primitieve datatypen, bijvoorbeeld LDT_Plaatsnaam is de door de gemeente vastgestelde naam van een woonplaats, dit wordt vastgelegd als een string datatype van maximaal 80 posities; bij een logisch datatype wordt ook vastgelegd of, en zo ja welke, codelijst gebruikt wordt.
+Enkelvoudige datatypen die functionele betekenis geven aan primitieve datatypen, bijvoorbeeld LDT_Plaatsnaam is de door de gemeente vastgestelde naam van een woonplaats, dit wordt vastgelegd als een string datatype van maximaal 80 posities; bij een logisch datatype wordt ook vastgelegd of, en zo ja welke, codelijst gebruikt wordt.
 
 ### **logische sleutel**
 
-unieke identificatie van een (bericht)klasse; hierbij geldt dat niet iedere klasse een unieke identificatie nodig heeft; door middel van deze identificatie kunnen gegevens gekoppeld worden.
+Unieke identificatie van een (bericht)klasse; hierbij geldt dat niet iedere klasse een unieke identificatie nodig heeft; door middel van deze identificatie kunnen gegevens gekoppeld worden.
 
 ### **major releases**
 
-nieuwe versies van een informatiestandaard waarbij er naast de reguliere verbeteringen sprake is van grote veranderingen en uitbreidingen t.o.v. de eerdere versie, wat leidt tot een aanzienlijke impact op de uitvoeringsprocessen; de nummering van de versie zou dan bijvoorbeeld gaan van versie 2.0 naar 3.0.
+Nieuwe versies van een informatiestandaard waarbij er naast de reguliere verbeteringen sprake is van grote veranderingen en uitbreidingen t.o.v. de eerdere versie, wat leidt tot een aanzienlijke impact op de uitvoeringsprocessen; de nummering van de versie zou dan bijvoorbeeld gaan van versie 2.0 naar 3.0.
 
 ### mantelzorg
 
-zorg die mensen vrijwillig en onbetaald op structurele basis verlenen aan mensen met fysieke, verstandelijke of psychische beperkingen in hun familie, huishouden of sociale netwerk; het gaat om zorg die meer is dan in een persoonlijke relatie gebruikelijk is.
+Zorg die mensen vrijwillig en onbetaald op structurele basis verlenen aan mensen met fysieke, verstandelijke of psychische beperkingen in hun familie, huishouden of sociale netwerk; het gaat om zorg die meer is dan in een persoonlijke relatie gebruikelijk is.
 
 ### mantelzorgers
 
-mensen die mantelzorg verlenen.
+Mensen die mantelzorg verlenen.
 
 ### meeverhuizende partner
 
@@ -569,11 +569,11 @@ zie: partneropname.
 
 ### melding aanvang zorg
 
-bericht waarmee de zorgaanbieder het begin van de zorglevering meldt bij het zorgkantoor.
+Bericht waarmee de zorgaanbieder het begin van de zorglevering meldt bij het zorgkantoor.
 
 ### minor releases
 
-jaarlijkse, nieuwe versies van een informatiestandaard waarin veranderingen en uitbreidingen zijn opgenomen op basis van nieuwe ontwikkelingen op het gebied van functionele en technische specificaties, bijvoorbeeld vanwege beleidswijzigingen; de nummering van de versie gaat dan bijvoorbeeld van versie 3.1 naar 3.2.
+Jaarlijkse, nieuwe versies van een informatiestandaard waarin veranderingen en uitbreidingen zijn opgenomen op basis van nieuwe ontwikkelingen op het gebied van functionele en technische specificaties, bijvoorbeeld vanwege beleidswijzigingen; de nummering van de versie gaat dan bijvoorbeeld van versie 3.1 naar 3.2.
 
 ### Mockingbird
 Een project dat pleegzorg gezinnen met elkaar verbindt om elkaar wederzijdse ondersteuning te bieden en een sterk netwerk rond het pleegkind op te bouwen. Het betreft hier over het algemeen zes tot tien pleeggezinnen.
@@ -582,15 +582,15 @@ Herkomst naam: De mockingbird (spotlijster) is een vogel die bekendstaat om zijn
 
 ### modellen
 
-weergaven van de werkelijkheid, bijvoorbeeld een schematische weergave van bepaalde processen of een miniatuurweergave van een object.
+Weergaven van de werkelijkheid, bijvoorbeeld een schematische weergave van bepaalde processen of een miniatuurweergave van een object.
 
 ### modules
 
-afgeronde eenheden die samen een groter geheel vormen en afzonderlijk aangeboden kunnen worden; binnen de iStandaarden: softwarepakketten die hulp bieden bij het gebruik, de inrichting en de doorontwikkeling van iStandaarden; softwareleveranciers kunnen bijvoorbeeld hun producten testen en administratief medewerkers kunnen hun Excel-bestanden omzetten naar informatie-uitwisseling die landelijk in gebruik is.
+Afgeronde eenheden die samen een groter geheel vormen en afzonderlijk aangeboden kunnen worden; binnen de iStandaarden: softwarepakketten die hulp bieden bij het gebruik, de inrichting en de doorontwikkeling van iStandaarden; softwareleveranciers kunnen bijvoorbeeld hun producten testen en administratief medewerkers kunnen hun Excel-bestanden omzetten naar informatie-uitwisseling die landelijk in gebruik is.
 
 ### mpt
 
-modulair pakket thuis. Leveringsvorm voor mensen met een Wlz-indicatie die de zorg thuis willen ontvangen in plaats van in een zorginstelling; mogelijk indien iemand niet het volledige pakket aan zorg nodig heeft (VPT) en/of waarbij iemand verschillende zorgaanbieders wil inschakelen en/of via een combinatie van zorg in natura en een persoonsgebonden budget.
+Modulair pakket thuis. Leveringsvorm voor mensen met een Wlz-indicatie die de zorg thuis willen ontvangen in plaats van in een zorginstelling; mogelijk indien iemand niet het volledige pakket aan zorg nodig heeft (VPT) en/of waarbij iemand verschillende zorgaanbieders wil inschakelen en/of via een combinatie van zorg in natura en een persoonsgebonden budget.
 
 ### Nederlandse Zorgautoriteit
 
@@ -610,27 +610,27 @@ zie: bedrijfsregels.
 
 ### opplussen
 
-het sturen van een aanvullende declaratieregel omdat het volume van de vorige declaratieregel te laag was. Bijvoorbeeld: eerst is in een periode 10 uur gedeclareerd terwijl dit 12 uur had moeten zijn. Opplussen is sinds release 3.1 niet meer toegestaan.
+Het sturen van een aanvullende declaratieregel omdat het volume van de vorige declaratieregel te laag was. Bijvoorbeeld: eerst is in een periode 10 uur gedeclareerd terwijl dit 12 uur had moeten zijn. Opplussen is sinds release 3.1 niet meer toegestaan.
 
 ### ouderbijdrage
 
-eigen bijdrage die ouders moeten betalen, bijvoorbeeld voor studiekosten (in het kader van de studiefinanciering); de eigen bijdrage in de kosten van jeugdhulp voor ouders van een kind dat buiten het gezin hulp met verblijf ontvangt, wordt per 1 januari 2016 niet meer geïnd.
+Eigen bijdrage die ouders moeten betalen, bijvoorbeeld voor studiekosten (in het kader van de studiefinanciering); de eigen bijdrage in de kosten van jeugdhulp voor ouders van een kind dat buiten het gezin hulp met verblijf ontvangt, wordt per 1 januari 2016 niet meer geïnd.
 
 ### outputgerichte uitvoeringsvariant
 
-uitvoering van zorg en/of ondersteuning waarbij er een duidelijke afspraak tussen gemeente en zorgaanbieder is over de te behalen output; de manier waarop deze output wordt behaald, is niet vastgelegd; een van de drie uitvoeringsvarianten waaruit gemeenten kunnen kiezen bij de inrichting van hun Wmo- en Jw-processen.
+Uitvoering van zorg en/of ondersteuning waarbij er een duidelijke afspraak tussen gemeente en zorgaanbieder is over de te behalen output; de manier waarop deze output wordt behaald, is niet vastgelegd; een van de drie uitvoeringsvarianten waaruit gemeenten kunnen kiezen bij de inrichting van hun Wmo- en Jw-processen.
 
 ### overbruggingszorg
 
-tijdelijke zorg voor mensen die op de wachtlijst staan voor verblijfszorg die nog niet geleverd kan worden; het gaat om inzet van zorg anders dan geïndiceerd of bij een andere aanbieder dan de voorkeuraanbieder van de cliënt.
+Tijdelijke zorg voor mensen die op de wachtlijst staan voor verblijfszorg die nog niet geleverd kan worden; het gaat om inzet van zorg anders dan geïndiceerd of bij een andere aanbieder dan de voorkeuraanbieder van de cliënt.
 
 ### passende zorg
 
-zorg die aansluit bij de urgentie van de situatie en past binnen de indicatie van de cliënt.
+Zorg die aansluit bij de urgentie van de situatie en past binnen de indicatie van de cliënt.
 
 ### persoonlijke verzorging
 
-het ondersteunen bij of het overnemen van activiteiten op het gebied van lichaamsgebonden zorg, zoals wassen, aankleden, hulp bij eten en drinken of bij toiletgebruik voor mensen die hierin niet zelfredzaam zijn; gefinancierd vanuit de Zvw door de zorgverzekeraars, behalve indien de persoonlijke verzorging alleen samenhangt met extramurale begeleiding en niet met verpleging en verzorging, financiering dan door gemeenten vanuit de Wmo 2015; persoonlijke verzorging van iemand met een Wlz-indicatie wordt gefinancierd vanuit de Wlz.
+Het ondersteunen bij of het overnemen van activiteiten op het gebied van lichaamsgebonden zorg, zoals wassen, aankleden, hulp bij eten en drinken of bij toiletgebruik voor mensen die hierin niet zelfredzaam zijn; gefinancierd vanuit de Zvw door de zorgverzekeraars, behalve indien de persoonlijke verzorging alleen samenhangt met extramurale begeleiding en niet met verpleging en verzorging, financiering dan door gemeenten vanuit de Wmo 2015; persoonlijke verzorging van iemand met een Wlz-indicatie wordt gefinancierd vanuit de Wlz.
 
 ### prestaties
 
@@ -638,19 +638,19 @@ het ondersteunen bij of het overnemen van activiteiten op het gebied van lichaam
 
 ### primair proces
 
-beroepsactiviteiten die nodig zijn voor het bereiken van het doel en de missie van een organisatie; binnen de iStandaarden zijn deelprocessen van het primair proces beschreven waarbij de verschillende ketenpartijen betrokken zijn rond de uitvoering van de Wlz, Wmo en Jeugdwet en die ondersteund worden door de iStandaarden.
+Beroepsactiviteiten die nodig zijn voor het bereiken van het doel en de missie van een organisatie; binnen de iStandaarden zijn deelprocessen van het primair proces beschreven waarbij de verschillende ketenpartijen betrokken zijn rond de uitvoering van de Wlz, Wmo en Jeugdwet en die ondersteund worden door de iStandaarden.
 
 ### primitieve datatypen
 
-basale datatypen die bepalen welke waarden vastgelegd kunnen worden, bijvoorbeeld in een integer kunnen alleen hele getallen worden vastgelegd.
+Basale datatypen die bepalen welke waarden vastgelegd kunnen worden, bijvoorbeeld in een integer kunnen alleen hele getallen worden vastgelegd.
 
 ### processen
 
-activiteiten binnen een organisatie die nodig zijn voor het bereiken van het doel en de missie van de organisatie (primaire processen) en de werkzaamheden die deze activiteiten ondersteunen; De procesbeschrijvingen in de iStandaarden beschrijven het administratieve proces wanneer een cliënt zorg of ondersteuning nodig heeft. In de processen is beschreven welke partijen welke gegevens uitwisselen of delen, en op welk moment dit plaatsvindt. De processen die iStandaarden beschrijft zijn Beoordelen, Toeleiden, Leveren, declareren en declaratie beantwoorden.
+Activiteiten binnen een organisatie die nodig zijn voor het bereiken van het doel en de missie van de organisatie (primaire processen) en de werkzaamheden die deze activiteiten ondersteunen; De procesbeschrijvingen in de iStandaarden beschrijven het administratieve proces wanneer een cliënt zorg of ondersteuning nodig heeft. In de processen is beschreven welke partijen welke gegevens uitwisselen of delen, en op welk moment dit plaatsvindt. De processen die iStandaarden beschrijft zijn Beoordelen, Toeleiden, Leveren, declareren en declaratie beantwoorden.
 
 ### productcodes
 
-omschrijvingen van producten en diensten zoals aanbieders van zorg en ondersteuning vanuit de Wmo en de Jeugdwet en gemeenten met elkaar afspreken.
+Omschrijvingen van producten en diensten zoals aanbieders van zorg en ondersteuning vanuit de Wmo en de Jeugdwet en gemeenten met elkaar afspreken.
 
 ### rechtmatigheidsbericht
 
@@ -664,35 +664,35 @@ De reden beëindiging wordt vastgelegd met een standaardcode in het veld RedenEi
 
 ### referentiegroepen
 
-bijeenkomsten van vertegenwoordigers van alle partijen die werken met de iStandaarden (zorgaanbieders, gemeenten, softwareleveranciers, brancheverenigingen, CAK, VNG, Vektis, VWS, het Ketenbureau i-Sociaaldomein en Zorginstituut Nederland) ter voorbereiding op nieuwe releases; zie functionele, integrale en technische referentiegroepen.
+Bijeenkomsten van vertegenwoordigers van alle partijen die werken met de iStandaarden (zorgaanbieders, gemeenten, softwareleveranciers, brancheverenigingen, CAK, VNG, Vektis, VWS, het Ketenbureau i-Sociaaldomein en Zorginstituut Nederland) ter voorbereiding op nieuwe releases; zie functionele, integrale en technische referentiegroepen.
 
 ### Referentiemodel Zorg en Ondersteuning
 
-model dat gebruikers van de iStandaarden inzicht geeft in gegevens die gelijk zijn in de verschillende informatiestandaarden (iWlz, iWmo, iJw, iEb en iPgb); het model maakt duidelijk welke informatie (processen, regels en gegevenselementen) in de standaarden deels of geheel gelijk is (ofwel referent is) in alle domeinen; een voorbeeld van een referent gegevenselement is Geboortedatum, deze moet qua structuur in alle domeinen gelijk blijven.
+Model dat gebruikers van de iStandaarden inzicht geeft in gegevens die gelijk zijn in de verschillende informatiestandaarden (iWlz, iWmo, iJw, iEb en iPgb); het model maakt duidelijk welke informatie (processen, regels en gegevenselementen) in de standaarden deels of geheel gelijk is (ofwel referent is) in alle domeinen; een voorbeeld van een referent gegevenselement is Geboortedatum, deze moet qua structuur in alle domeinen gelijk blijven.
 
 ### regels
 
-afspraken en voorwaarden in de informatiemodellen van de iStandaarden waaraan het berichtenverkeer moet voldoen, te onderscheiden in uitgangspunten, bedrijfsregels en uitzonderingen daarop, technische regels, invulinstructies, constraints en condities.
+Afspraken en voorwaarden in de informatiemodellen van de iStandaarden waaraan het berichtenverkeer moet voldoen, te onderscheiden in uitgangspunten, bedrijfsregels en uitzonderingen daarop, technische regels, invulinstructies, constraints en condities.
 
 ### regieberichten
 
-startberichten en stopberichten zijn regieberichten
+Startberichten en stopberichten zijn regieberichten
 
 ### relatie
 
-de partner of een contactpersoon van de cliënt die in de context van de zorgvraag van de cliënt te benaderen is; de partner hoeft in die zin niet per definitie ook de contactpersoon te zijn.
+De partner of een contactpersoon van de cliënt die in de context van de zorgvraag van de cliënt te benaderen is; de partner hoeft in die zin niet per definitie ook de contactpersoon te zijn.
 
 ### releases
 
-nieuwe versies van een informatiestandaard die worden uitgebracht.
+Nieuwe versies van een informatiestandaard die worden uitgebracht.
 
 ### retourberichten
 
-berichten die de ontvangende partij van een heenbericht terug moeten sturen naar de zender daarvan en die aangeven of het ontvangen bericht in orde was of dat het technische of inhoudelijke fouten bevat en welke dat zijn.
+Berichten die de ontvangende partij van een heenbericht terug moeten sturen naar de zender daarvan en die aangeven of het ontvangen bericht in orde was of dat het technische of inhoudelijke fouten bevat en welke dat zijn.
 
 ### revisiereleases
 
-nieuwe versies van een informatiestandaard die een herziening vormen van de lopende release en die plaatsvinden binnen die jaarlijkse release; het gaat om kleine wijzigingen naar aanleiding van beleidsveranderingen of ter herstel van fouten, die minimale of geen impact hebben op de software en de informatieprocessen; de nummering van de versie gaat dan bijvoorbeeld van versie 1.0 naar 1.0.1.
+Nieuwe versies van een informatiestandaard die een herziening vormen van de lopende release en die plaatsvinden binnen die jaarlijkse release; het gaat om kleine wijzigingen naar aanleiding van beleidsveranderingen of ter herstel van fouten, die minimale of geen impact hebben op de software en de informatieprocessen; de nummering van de versie gaat dan bijvoorbeeld van versie 1.0 naar 1.0.1.
 
 ### RIBW
 
@@ -701,10 +701,6 @@ Regionale Instelling voor Beschermd en Begeleid Wonen. In Nederland bestaan onge
 ### samengestelde datatypen
 
 zie: complexe datatypen.
-
-### sleuteldatum
-
-datum waarop de cliënt de sleutel van zijn toekomstige kamer ontvangt; vanaf die datum is eigen bijdrage verschuldigd.
 
 ### SLO
 
@@ -716,7 +712,7 @@ zie: SVB.
 
 ### softwareleveranciers
 
-commerciële organisaties die software ontwikkelen en verkopen aan hun klanten; (binnen de iStandaarden) grote of kleine onafhankelijke en commerciële partijen die software ontwikkelen voor gemeenten en aanbieders van zorg en ondersteuning en die hun software moeten aanpassen aan de iStandaarden zodat de berichtuitwisseling in de Wlz, Wmo en Jeugdwet mogelijk is.
+Commerciële organisaties die software ontwikkelen en verkopen aan hun klanten; (binnen de iStandaarden) grote of kleine onafhankelijke en commerciële partijen die software ontwikkelen voor gemeenten en aanbieders van zorg en ondersteuning en die hun software moeten aanpassen aan de iStandaarden zodat de berichtuitwisseling in de Wlz, Wmo en Jeugdwet mogelijk is.
 
 ### softwareleveranciersoverleg
 
@@ -724,29 +720,31 @@ SLO; landelijk overleg dat Ketenbureau i-sociaaldomein samen met Zorginstituut N
 
 ### Specifieke toewijzing
 
-een toewijzing waarbij zowel de productcategorie als de productcode is gevuld. Het betreft een toewijzing van een specifiek product. De aanbieder levert dit product.
+Een toewijzing waarbij zowel de productcategorie als de productcode is gevuld. Het betreft een toewijzing van een specifiek product. De aanbieder levert dit product.
 
 ### spoedzorg
 
-spoedeisende zorg, geleverd door onder meer afdelingen spoedeisende hulp, ambulancezorg, huisartsenzorg en crisisopvang, waarbij de zorgvrager een dringend beroep doet op de zorgaanbieder(s), of de zorgvraag nu bewezen acuut is of niet.
+Spoedeisende zorg, geleverd door onder meer afdelingen spoedeisende hulp, ambulancezorg, huisartsenzorg en crisisopvang, waarbij de zorgvrager een dringend beroep doet op de zorgaanbieder(s), of de zorgvraag nu bewezen acuut is of niet.
 
 ### standaardelementen
 
-gegevenselementen die altijd rondom een cliënt worden vastgelegd in een bericht, zoals naam, geslacht, BSN en geboortedatum.
+Gegevenselementen die altijd rondom een cliënt worden vastgelegd in een bericht, zoals naam, geslacht, BSN en geboortedatum.
 
 ### standaardisatie
 
-het met elkaar in overeenstemming brengen en zo veel mogelijk gelijk maken of gebruiken van procedures, gegevens, afmetingen en bijvoorbeeld computertalen, waardoor een zo groot mogelijke uniformiteit wordt verkregen.
+Het met elkaar in overeenstemming brengen en zo veel mogelijk gelijk maken of gebruiken van procedures, gegevens, afmetingen en bijvoorbeeld computertalen, waardoor een zo groot mogelijke uniformiteit wordt verkregen.
 
 ### standaardproductcodelijst
 
-tandaardlijst van productcodes die door de meeste gemeenten en aanbieders van zorg en ondersteuning worden gebruikt met het oog op standaardisatie en vermindering van administratieve lasten; afwijkingen op deze lijst zijn mogelijk maar moeten gemeenten zelf beheren en delen met de zorgaanbieders### Stapelen of Stapeling
+Standaardlijst van productcodes die door de meeste gemeenten en aanbieders van zorg en ondersteuning worden gebruikt met het oog op standaardisatie en vermindering van administratieve lasten; afwijkingen op deze lijst zijn mogelijk maar moeten gemeenten zelf beheren en delen met de zorgaanbieders
 
-betekent dat voor een client hetzelfde zorgproduct of ondersteuningsproduct meerdere keren wordt aangevraagd door dezelfde aanbieder voor (gedeeltelijk) dezelfde periode.
+### Stapelen of Stapeling
+
+Betekent dat voor een client hetzelfde zorgproduct of ondersteuningsproduct meerdere keren wordt aangevraagd door dezelfde aanbieder voor (gedeeltelijk) dezelfde periode.
 
 ### Startdatum
 
-synoniem voor begindatum in startbericht
+Synoniem voor begindatum in startbericht
 
 ### Start Jeugdhulp
 
@@ -754,7 +752,7 @@ Bericht voor het melden van de start van levering van Jeugdhulp. Dit bericht wor
 
 ### Stopdatum
 
-synoniem voor einddatum in stopbericht
+Synoniem voor einddatum in stopbericht
 
 ### Stop Jeugdhulp
 
@@ -762,7 +760,7 @@ Bericht voor het melden van de stop van levering van Jeugdhulp. Dit bericht word
 
 ### De StUF-standaarden
 
-worden gebruik voor het elektronisch uitwisselen van data tussen applicaties van overheidsorganisaties. Bijvoorbeeld voor het uitwisselen van zaakgegevens en data uit basisregistraties. StUF-standaarden zijn gebaseerd op het Standaard Uitwisseling Formaat (StUF). StUF bevat zelf geen berichten maar de bouwstenen en richtlijnen waarmee berichtstandaarden zijn te maken. StUF is beschreven in XML en gebaseerd op geaccepteerde internetstandaarden. In het sociaaldomein waar berichtenverkeer plaatsvindt tussen gemeenten en aanbieders wordt en StUF-envelop gebruikt.
+Worden gebruik voor het elektronisch uitwisselen van data tussen applicaties van overheidsorganisaties. Bijvoorbeeld voor het uitwisselen van zaakgegevens en data uit basisregistraties. StUF-standaarden zijn gebaseerd op het Standaard Uitwisseling Formaat (StUF). StUF bevat zelf geen berichten maar de bouwstenen en richtlijnen waarmee berichtstandaarden zijn te maken. StUF is beschreven in XML en gebaseerd op geaccepteerde internetstandaarden. In het sociaaldomein waar berichtenverkeer plaatsvindt tussen gemeenten en aanbieders wordt en StUF-envelop gebruikt.
 
 ### SVB
 
@@ -770,19 +768,19 @@ Sociale Verzekeringsbank; voert onder meer de volksverzekeringen AOW, Anw en AKW
 
 ### taakgerichte uitvoeringsvariant
 
-uitvoering van zorg en/of ondersteuning waarbij de gemeente een taak voor een (deel)populatie heeft gegeven aan een zorgaanbieder en deze aanbieder de vrijheid heeft om de invulling van deze taak vorm te geven; een van de drie uitvoeringsvarianten waaruit gemeenten kunnen kiezen bij de inrichting van hun Wmo en Jw processen.
+Uitvoering van zorg en/of ondersteuning waarbij de gemeente een taak voor een (deel)populatie heeft gegeven aan een zorgaanbieder en deze aanbieder de vrijheid heeft om de invulling van deze taak vorm te geven; een van de drie uitvoeringsvarianten waaruit gemeenten kunnen kiezen bij de inrichting van hun Wmo en Jw processen.
 
 ### technische referentiegroepen
 
-referentiegroepen die de resultaten uit de functionele referentiegroepen vertalen naar de technische specificaties.
+Referentiegroepen die de resultaten uit de functionele referentiegroepen vertalen naar de technische specificaties.
 
 ### technische regels
 
-ook wel technische bedrijfsregels; een van de typen regels uit de informatiemodellen van de iStandaarden die een vertaling vormen van een operationele bedrijfsregel in termen van een bepaalde klasse en een element die daarmee technisch te valideren is; deze regels kunnen berichtklasse - of berichtoverstijgend zijn; technische regels beginnen met TR gevolgd door een getal, bijvoorbeeld TR002 Geboortedatum mag niet meer dan 120 jaar voor de Dagtekening liggen.
+Ook wel technische bedrijfsregels; een van de typen regels uit de informatiemodellen van de iStandaarden die een vertaling vormen van een operationele bedrijfsregel in termen van een bepaalde klasse en een element die daarmee technisch te valideren is; deze regels kunnen berichtklasse - of berichtoverstijgend zijn; technische regels beginnen met TR gevolgd door een getal, bijvoorbeeld TR002 Geboortedatum mag niet meer dan 120 jaar voor de Dagtekening liggen.
 
 ### Testvoorziening iStandaarden
 
-online-simulatieomgeving waarmee softwareleveranciers hun producten kunnen testen in de rol van elke partij die deelneemt aan het berichtenverkeer iStandaarden, ter ondersteuning van de implementatie van nieuwe releases.
+Online-simulatieomgeving waarmee softwareleveranciers hun producten kunnen testen in de rol van elke partij die deelneemt aan het berichtenverkeer iStandaarden, ter ondersteuning van de implementatie van nieuwe releases.
 
 ### TiS
 
@@ -798,39 +796,39 @@ synoniem voor Toewijzing Jeugdhulp, JW301.
 
 ### treeknormen
 
-door zorgaanbieders en zorgverzekeraars opgestelde streefnormen voor wachttijden in de in acute zorg.
+Door zorgaanbieders en zorgverzekeraars opgestelde streefnormen voor wachttijden in de in acute zorg.
 
 ### uitgangspunten
 
-vaststaande gegevens waarop de iStandaarden steunen.
+Vaststaande gegevens waarop de iStandaarden steunen.
 
 ### uitvoeringsvarianten
 
-drie verschillende werkwijzen waaruit gemeenten kunnen kiezen bij de inrichting van hun Wmo- en Jw-processen (outputgericht, inspanningsgericht of taakgericht) die ervoor zorgen dat er zo min mogelijk verschil ontstaat in de manier waarop de iStandaarden worden geïmplementeerd; uitvoeringsvarianten helpen om structuur aan te brengen in het administratieve proces en leggen een verbinding tussen zorginkoop, zorgadministratie en de iStandaarden.
+Drie verschillende werkwijzen waaruit gemeenten kunnen kiezen bij de inrichting van hun Wmo- en Jw-processen (outputgericht, inspanningsgericht of taakgericht) die ervoor zorgen dat er zo min mogelijk verschil ontstaat in de manier waarop de iStandaarden worden geïmplementeerd; uitvoeringsvarianten helpen om structuur aan te brengen in het administratieve proces en leggen een verbinding tussen zorginkoop, zorgadministratie en de iStandaarden.
 
 ### uitzonderingen
 
-speciale bedrijfsregels die gezien moeten worden in het verlengde van operationele bedrijfsregels, met als doel de (enkele) uitzondering op die betreffende regel te beschrijven.
+Speciale bedrijfsregels die gezien moeten worden in het verlengde van operationele bedrijfsregels, met als doel de (enkele) uitzondering op die betreffende regel te beschrijven.
 
 ### Validatiemodule
 
-module die het mogelijk maakt om berichten te testen op inhoudelijke en technische juistheid; kan zowel EI-berichten als XML-berichten controleren; bedoeld voor gemeenten, aanbieders van zorg en ondersteuning, zorgkantoren, softwareleveranciers, het CAK en het CIZ. [https://modules.istandaarden.nl/validatiemodule/](https://modules.istandaarden.nl/validatiemodule/)
+Module die het mogelijk maakt om berichten te testen op inhoudelijke en technische juistheid; kan zowel EI-berichten als XML-berichten controleren; bedoeld voor gemeenten, aanbieders van zorg en ondersteuning, zorgkantoren, softwareleveranciers, het CAK en het CIZ. [https://modules.istandaarden.nl/validatiemodule/](https://modules.istandaarden.nl/validatiemodule/)
 
 ### VECOZO
 
-organisatie die een veilige en kwalitatief hoogwaardige digitale omgeving biedt waarin ketenpartijen uit de zorg administratieve gegevens kunnen uitwisselen; biedt  onder meer een portaal waarmee zorgaanbieders kunnen nagaan bij welke zorgverzekeraar een verzekerde is ingeschreven, een declaratieportaal voor het declaratieverkeer tussen zorgaanbieders en gemeenten voor de Wmo en de Jeugdwet, tussen zorgaanbieders en zorgkantoren voor de Wlz en tussen zorgaanbieders en zorgverzekeraars voor de Zorgverzekeringswet en een berichtenservice voor berichtenverkeer tussen de ketenpartijen in de uitvoering van de Wmo, Jeugdwet en Wlz. Zie ook VECOZO-schakelpunt.
+Organisatie die een veilige en kwalitatief hoogwaardige digitale omgeving biedt waarin ketenpartijen uit de zorg administratieve gegevens kunnen uitwisselen; biedt  onder meer een portaal waarmee zorgaanbieders kunnen nagaan bij welke zorgverzekeraar een verzekerde is ingeschreven, een declaratieportaal voor het declaratieverkeer tussen zorgaanbieders en gemeenten voor de Wmo en de Jeugdwet, tussen zorgaanbieders en zorgkantoren voor de Wlz en tussen zorgaanbieders en zorgverzekeraars voor de Zorgverzekeringswet en een berichtenservice voor berichtenverkeer tussen de ketenpartijen in de uitvoering van de Wmo, Jeugdwet en Wlz. Zie ook VECOZO-schakelpunt.
 
 ### VECOZO-schakelpunt
 
-online beschikbaar gegevensknooppunt dat wordt beheerd door VECOZO en waarmee zorgkantoren, zorgverzekeraars, gemeenten en zorgaanbieders berichten kunnen uitwisselen.
+Online beschikbaar gegevensknooppunt dat wordt beheerd door VECOZO en waarmee zorgkantoren, zorgverzekeraars, gemeenten en zorgaanbieders berichten kunnen uitwisselen.
 
 ### Vektis
 
-landelijk informatiecentrum van zorgverzekeraars dat standaarden ontwikkelt voor elektronische communicatie tussen o.a. zorgverzekeraars, zorgkantoren en zorgaanbieders en dat onder meer de AGB-codes en het UZOVI-register beheert en declaratiegegevens van zorgverzekeraars verzamelt, controleert, verwerkt en beschikbaar stelt.
+Landelijk informatiecentrum van zorgverzekeraars dat standaarden ontwikkelt voor elektronische communicatie tussen o.a. zorgverzekeraars, zorgkantoren en zorgaanbieders en dat onder meer de AGB-codes en het UZOVI-register beheert en declaratiegegevens van zorgverzekeraars verzamelt, controleert, verwerkt en beschikbaar stelt.
 
 ### verblijf
 
-het tijdelijk of permanent wonen in een instelling voor mensen die vanwege een aandoening of beperking niet (meer) thuis kunnen wonen.
+Het tijdelijk of permanent wonen in een instelling voor mensen die vanwege een aandoening of beperking niet (meer) thuis kunnen wonen.
 
 ### Verlengde Jeugdwet
 
@@ -842,7 +840,7 @@ van een toewijzing is het oprekken van de einddatum
 
 ### Verwijsindex Productcodes Wmo en Jeugdwet
 
-overzicht per gemeente van de productcodes voor de Wmo en de productcodes voor de Jeugdwet die tot 1 januari 2016 bij gemeenten in gebruik waren; de module is omgezet naar Excel-bestanden en per 1 januari 2016 is de standaardproductcodelijst  beschikbaar. Deze heten Productcodelijst JW en voor de Productcodelijst WMO.
+Overzicht per gemeente van de productcodes voor de Wmo en de productcodes voor de Jeugdwet die tot 1 januari 2016 bij gemeenten in gebruik waren; de module is omgezet naar Excel-bestanden en per 1 januari 2016 is de standaardproductcodelijst  beschikbaar. Deze heten Productcodelijst JW en voor de Productcodelijst WMO.
 
 ### Verzoek om toewijzing
 
@@ -854,7 +852,7 @@ dit is een bericht voor het aanvragen van een toewijzing voor Jeugdhulp. Dit ber
 
 ### Verzoek om wijziging Jeugdhulp
 
-dit is een bericht voor Verzoek om wijziging Jeugdhulp. Dit bericht wordt ook wel VOW of wijzigingsbericht genoemd. Een aanbieder stuurt dit bericht naar een gemeente om een wijziging in de toekomstige zorgvraag van een client door te geven. Het bericht dat hiervoor wordt gebruikt is JW317. Een gemeente keurt dit bericht af met een JW319 antwoordbericht of neemt het verzoek in onderzoek door een JW319 antwoordbericht te sturen of keurt het verzoek in zijn geheel goed door een gewijzigd toewijzingsbericht te sturen.
+Dit is een bericht voor Verzoek om wijziging Jeugdhulp. Dit bericht wordt ook wel VOW of wijzigingsbericht genoemd. Een aanbieder stuurt dit bericht naar een gemeente om een wijziging in de toekomstige zorgvraag van een client door te geven. Het bericht dat hiervoor wordt gebruikt is JW317. Een gemeente keurt dit bericht af met een JW319 antwoordbericht of neemt het verzoek in onderzoek door een JW319 antwoordbericht te sturen of keurt het verzoek in zijn geheel goed door een gewijzigd toewijzingsbericht te sturen.
 
 ### VOT
 
@@ -866,23 +864,23 @@ Vereniging van Nederlandse Gemeenten; vereniging waar alle gemeenten vrijwillig 
 
 ### VPT
 
-volledig pakket thuis. Leveringsvorm voor mensen met een Wlz-indicatie die de zorg thuis willen ontvangen in plaats van in een zorginstelling waarbij één zorgaanbieder het totale pakket aan benodigde zorg in natura aan huis levert
+Volledig pakket thuis. Leveringsvorm voor mensen met een Wlz-indicatie die de zorg thuis willen ontvangen in plaats van in een zorginstelling waarbij één zorgaanbieder het totale pakket aan benodigde zorg in natura aan huis levert
 
 ### waardeketen
 
-schematische weergave van activiteiten die de strategisch relevante processen van een organisatie met elkaar in verband brengt en waarin primaire processen en ondersteunende processen worden onderscheiden.
+Schematische weergave van activiteiten die de strategisch relevante processen van een organisatie met elkaar in verband brengt en waarin primaire processen en ondersteunende processen worden onderscheiden.
 
 ### wachtlijsten
 
-lijsten waarop mensen die zorg nodig hebben worden geplaatst, omdat de zorg nog niet kan worden gegeven.
+Lijsten waarop mensen die zorg nodig hebben worden geplaatst, omdat de zorg nog niet kan worden gegeven.
 
 ### wachttijden
 
-periodes die iemand ergens op moet wachten, bijvoorbeeld de tijd die zit tussen het ontstaan van de zorgvraag en de start van levering van de zorg; overzichten van wachttijden worden vastgelegd in wachtlijsten.
+Periodes die iemand ergens op moet wachten, bijvoorbeeld de tijd die zit tussen het ontstaan van de zorgvraag en de start van levering van de zorg; overzichten van wachttijden worden vastgelegd in wachtlijsten.
 
 ### Wbp
 
-Wet bescherming persoonsgegevens; per 25 mei 2018 opgegaan in de Algemene Verordening Gegevensbescherming; zie: Algemene Verordening Gegevensbescherming.
+Wet bescherming persoonsgegevens; per 25 mei 2018 opgegaan in de Algemene Verordening Gegevensbescherming; zie: Algemene Verordening Gegevensbescherming (AVG).
 
 ### Wbsn-z
 
@@ -901,15 +899,16 @@ zie: Algemene Verordening Gegevensbescherming
 zie: Wbsn-z
 
 ### Wettelijke domeinen
-de Wettelijke domeinen zijn Wmo/JW/Wlz/Zvw, Wet maatschappelijke ondersteuning, Jeugdwet, Wet landurige zorg, Zorgverzekeringswet.
+
+De Wettelijke domeinen zijn Wmo/JW/Wlz/Zvw, Wet maatschappelijke ondersteuning, Jeugdwet, Wet landurige zorg, Zorgverzekeringswet.
 
 ### Wet verplichte geestelijke gezondheidszorg (Wvggz)
 
-regelt gedwongen zorg van mensen met psychische aandoeningen die een gevaar voor zichzelf of anderen veroorzaken; dwang (verplichte zorg) is ook mogelijk in de thuissituatie; opvolger van de Wet Bopz; inwerkingtreding 1 januari 2020
+Regelt gedwongen zorg van mensen met psychische aandoeningen die een gevaar voor zichzelf of anderen veroorzaken; dwang (verplichte zorg) is ook mogelijk in de thuissituatie; opvolger van de Wet Bopz; inwerkingtreding 1 januari 2020.
 
 ### Wlz-zorg in een Wlz-instelling
 
-verblijf met of zonder behandeling.
+Verblijf met of zonder behandeling.
 
 ### Wlz-zorg thuis
 
@@ -921,11 +920,11 @@ Gemeenten zijn verantwoordelijk voor passende zorg aan inwoners, maar krijgen so
 
 ### Wlz-registertoets
 
-informatiedienst BIDN: De Wlz-registertoets is een handige controletool waarmee gemeenten kunnen nagaan of een inwoner een Wlz-indicatie heeft. Dit voorkomt dat iemand die recht heeft op Wlz-zorg onterecht een Wmo-voorziening krijgt. Deze snelle check op basis van het BSN voorkomt dat iemand per ongeluk de verkeerde zorg ontvangt. De toets is beschikbaar via het portaal van BIDN of als automatische koppeling in het systeem van de gemeente.
+Informatiedienst BIDN: De Wlz-registertoets is een handige controletool waarmee gemeenten kunnen nagaan of een inwoner een Wlz-indicatie heeft. Dit voorkomt dat iemand die recht heeft op Wlz-zorg onterecht een Wmo-voorziening krijgt. Deze snelle check op basis van het BSN voorkomt dat iemand per ongeluk de verkeerde zorg ontvangt. De toets is beschikbaar via het portaal van BIDN of als automatische koppeling in het systeem van de gemeente.
 
 ### Wlz-signalen
 
-informatiedienst BIDN: Als tijdens het gebruik van een Wmo-voorziening blijkt dat een inwoner een Wlz-indicatie heeft gekregen, ontvangt de gemeente automatisch een seintje. BIDN checkt dagelijks het overzicht inwoners met een Wmo-voorziening van de gemeente met het Wlz-register van het CIZ.
+Informatiedienst BIDN: Als tijdens het gebruik van een Wmo-voorziening blijkt dat een inwoner een Wlz-indicatie heeft gekregen, ontvangt de gemeente automatisch een seintje. BIDN checkt dagelijks het overzicht inwoners met een Wmo-voorziening van de gemeente met het Wlz-register van het CIZ.
 
 ### Wmo
 
@@ -993,7 +992,7 @@ zie: zorgverlening
 
 ### zorgplannen
 
-schriftelijke vastlegging door zorgpersoneel in samenspraak met de cliënt en/of diens cliëntsysteem, van de gestelde doelen, de verwachte tijdsduur, de te verrichte taken, het tijdstip van zorgverlening, de omvang van de te verlenen hulp, de wensen van de cliënt t.a.v. de zorg en ondersteuning, de in te zetten deskundigheid, het tijdstip van de evaluatie en de zorgverleners van andere organisaties waarmee samengewerkt wordt; het gaat om individuele afspraken over de zorg en diensten die iemand krijgt; in de praktijk worden allerlei benamingen gebruikt zoals leefplannen, begeleidingsplannen, ondersteuningsplannen, zorgleefplannen, afhankelijk van de soort organisatie of van het aspect waarop zo'n organisatie nadruk wil leggen; onderdeel van het zorgdossier.
+Schriftelijke vastlegging door zorgpersoneel in samenspraak met de cliënt en/of diens cliëntsysteem, van de gestelde doelen, de verwachte tijdsduur, de te verrichte taken, het tijdstip van zorgverlening, de omvang van de te verlenen hulp, de wensen van de cliënt t.a.v. de zorg en ondersteuning, de in te zetten deskundigheid, het tijdstip van de evaluatie en de zorgverleners van andere organisaties waarmee samengewerkt wordt; het gaat om individuele afspraken over de zorg en diensten die iemand krijgt; in de praktijk worden allerlei benamingen gebruikt zoals leefplannen, begeleidingsplannen, ondersteuningsplannen, zorgleefplannen, afhankelijk van de soort organisatie of van het aspect waarop zo'n organisatie nadruk wil leggen; onderdeel van het zorgdossier.
 
 ### zorgprestaties
 
@@ -1001,19 +1000,19 @@ zie: prestaties
 
 ### zorgproducten
 
-producten in de vorm van activiteiten, diensten en/of verrichtingen binnen de zorg; ook producten die in de zorg gebruikt worden zoals hulpmiddelen.
+Producten in de vorm van activiteiten, diensten en/of verrichtingen binnen de zorg; ook producten die in de zorg gebruikt worden zoals hulpmiddelen.
 
 ### zorgprofielen
 
-beschrijvingen van kenmerken, problemen en achtergronden van de problemen van doelgroepen van een interventie of voorziening, met als doel passende zorg voor die betreffende doelgroep(en) te ontwikkelen en om met ketenpartners, financiers, gemeenten enz. goed onderbouwd te kunnen communiceren over doelgroep, aanbod en financiering; binnen de Wlz: beschrijvingen van de aard, inhoud en globale omvang van de zorg die iemand nodig heeft; in het indicatiebesluit van het CIZ wordt het zorgprofiel aangegeven waartoe de cliënt behoort, zoals VG (sector verstandelijk gehandicapt) Wonen met begeleiding en intensieve zorg; afspraken over de precieze invulling van de benodigde zorg maakt de cliënt met de zorgaanbieder in het zorgplan; zie: klantprofielen.
+Beschrijvingen van kenmerken, problemen en achtergronden van de problemen van doelgroepen van een interventie of voorziening, met als doel passende zorg voor die betreffende doelgroep(en) te ontwikkelen en om met ketenpartners, financiers, gemeenten enz. goed onderbouwd te kunnen communiceren over doelgroep, aanbod en financiering; binnen de Wlz: beschrijvingen van de aard, inhoud en globale omvang van de zorg die iemand nodig heeft; in het indicatiebesluit van het CIZ wordt het zorgprofiel aangegeven waartoe de cliënt behoort, zoals VG (sector verstandelijk gehandicapt) Wonen met begeleiding en intensieve zorg; afspraken over de precieze invulling van de benodigde zorg maakt de cliënt met de zorgaanbieder in het zorgplan; zie: klantprofielen.
 
 ### toewijzing Jeugdhulp
 
-opdracht van een gemeente aan een zorgaanbieder om voor een bepaalde periode bepaalde zorg te leveren aan een cliënt. Dit bericht is een rechtmatigheidsbericht dat de aanbieder het recht geeft zorg te leveren en deze zorg te declareren bij de gemeente. JW301.
+Opdracht van een gemeente aan een zorgaanbieder om voor een bepaalde periode bepaalde zorg te leveren aan een cliënt. Dit bericht is een rechtmatigheidsbericht dat de aanbieder het recht geeft zorg te leveren en deze zorg te declareren bij de gemeente. JW301.
 
 ### toewijzing WMO
 
-opdracht van een gemeente aan een zorgaanbieder om voor een bepaalde periode bepaalde zorg te leveren aan een cliënt. Dit bericht is een rechtmatigheidsbericht dat de aanbieder het recht geeft zorg te leveren en deze zorg te declareren bij de gemeente. WMO301.
+Opdracht van een gemeente aan een zorgaanbieder om voor een bepaalde periode bepaalde zorg te leveren aan een cliënt. Dit bericht is een rechtmatigheidsbericht dat de aanbieder het recht geeft zorg te leveren en deze zorg te declareren bij de gemeente. WMO301.
 
 ### toewijzingsbericht
 
