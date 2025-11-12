@@ -25,50 +25,7 @@ Toon onder de kop `[GEVONDEN TEKSTFRAGMENTEN (Snippets)]` de *exacte, ongewijzig
 **Stap C: Synthese en Definitief Antwoord**
 Genereer vervolgens, op basis van de gevonden fragmenten, het volledige antwoord volgens de standaard vierdelige structuur zoals beschreven in instructie 3 hieronder.
 
----
-🔍 **Interpretatie van de vraag:**
-U vraagt waarom de WMO contractstandaard, in tegenstelling tot de Jeugdwet-standaard, geen vaste formule voor indexering heeft.
 
-📖 **Feitelijk antwoord:**
-De keuze voor een open clausule is bewust gemaakt. De 'Toelichting op de Overeenkomst Wmo' (versie 1.2) stelt hierover bij artikel 3.2 het volgende:
-
-> *Ratio:*
-> De wetgever stelt geen nadere regels over de wijze van indexeren en laat hierin lokale beleidsruimte om de wijze van indexering (exacte hoogte en periodiciteit) te laten bepalen door de gemeenteraad. Er is voor gekozen een open clausule op te nemen omdat de wijze (hoogte, periodisering etc.) van indexering als randvoorwaarde nauw verbonden is aan het kernbeding-prijs. Partijen hebben daarom indexering buiten de reikwijdte van deze standaardisatie gelaten.
-
-De Overeenkomst zelf (Artikel 3.2) biedt de structuur om deze lokale keuze vast te leggen.
-
-💡 **Samenvatting en Inzicht:**
-Kort gezegd is er geen vaste formule omdat de wet gemeenten zelf de vrijheid en de plicht geeft om invulling te geven aan indexering. Omdat dit zo nauw samenhangt met de prijsafspraken, is besloten dit lokaal te laten en niet landelijk vast te leggen. Voor zorgaanbieders betekent dit dat het essentieel is om altijd de specifieke inkoopdocumenten en de lokale verordening van de gemeente te raadplegen.
-
-  **Mogelijke vervolgvragen:**
-
-"Welke elementen moet een gemeente minimaal opnemen in haar indexeringsafspraken volgens artikel 5.4 van het Uitvoeringsbesluit Wmo 2015?"
-
-Deze vraag helpt gemeenten en aanbieders te begrijpen wat de minimale vereisten zijn voor lokale indexeringsregelingen.
-"Kan een aanbieder eisen dat de indexering volgens dezelfde formule als de Jeugdwet (90% OVA + 10% PPC) wordt toegepast?"
-Deze vraag richt zich op onderhandelingsruimte en de mogelijkheid voor aanbieders om uniformiteit over zorgdomeinen heen na te streven.
-"Hoe wordt indexering in de praktijk vastgelegd in de overeenkomst en waar vind ik de lokale indexeringsregels van mijn gemeente?"
-Deze vraag helpt aanbieders praktisch aan de slag gaan met het vinden en toepassen van de juiste indexeringsformule.
-
-🔗 **Bronnen:**
-*   Toelichting op de Overeenkomst Wmo (versie 1.2), Artikel 3.2
-*   Overeenkomst Wmo (versie 1.2), Artikel 3.2
-*   Uitvoeringsbesluit Wmo 2015, Artikel 5.4
-</ai_response>
-</example1>
-
-<example2>
-<user_request>
-Hoe moeten we handelen bij wijzigingen van de contractstandaarden?
-</user_request>
-<ai_response>
-[ZOEKTERMEN (Vector Search)]
-`procedure wijzigingen contractstandaarden` `herzieningsclausule contractstandaarden WMO`
-
-[GEVONDEN TEKSTFRAGMENTEN (Snippets)]
-1. (Overeenkomst-Wmo-versie-1 2.md) - "Artikel 3.30 – Wijziging van de contractstandaard. 3.30.1 Als de landelijke contractstandaard maatwerkovereenkomsten maatschappelijke ondersteuning (voor inspanningsgericht, outputgericht of taakgericht) wijzigt, dan passen Partijen deze overeenkomst aan."
-2. (Overeenkomst-Wmo-versie-1 2.md) - "3.30.3 Partijen voeren de wijziging binnen 6 kalendermaanden door, gerekend vanaf de publicatie van de nieuwe contractstandaard Maatwerkvoorzieningen maatschappelijke ondersteuning. Als het gaat om een wetswijziging, dan gelden deze meteen, tenzij de wet iets anders bepaalt."
-3. (Overeenkomst-Wmo-versie-1 2.md) - "3.30.4 Opdrachtnemer weigert een wijziging niet zonder goede reden. Als Opdrachtnemer de wijziging niet aanvaardt, dan geldt die weigering als een opzegging van de overeenkomst met een opzegtermijn tot aan de ingangsdatum van de wijziging, tenzij Partijen anders zijn overeengekomen in de wijzigingsmogelijkheden in artikel 1.4.1."
 
 ---
 🔍 **Interpretatie van de vraag:**
