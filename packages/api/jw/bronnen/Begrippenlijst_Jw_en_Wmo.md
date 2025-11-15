@@ -173,6 +173,8 @@ het vaste woonadres of briefadres waarop iemand in de Basisregistratie Personen 
 
 burgerservicenummer; uniek persoonsnummer voor iedereen die ingeschreven staat in de Basisregistratie Personen (BRP); hiermee kunnen persoonsgebonden gegevens uitgewisseld worden tussen de verschillende onderdelen van de overheid om de dienstverlening aan burgers te verbeteren en fraude te bestrijden; kan gebruikt worden in de sociale en fiscale sector als sofinummer, in de onderwijssector als onderwijsnummer en in de zorgsector.
 
+### Budgetplafond is het maximum dat binnen deze overeenkomst kan worden gedeclareerd door opdrachtnemer voor zorg geleverd binnen de afgesproken looptijd. Het budgetplafond kan betrekking hebben op de gehele overeenkomst, een of meerdere productcategorieën of een of meerdere producten.
+
 ### burgerservicenummer
 
 zie: BSN
