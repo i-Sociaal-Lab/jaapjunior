@@ -706,6 +706,10 @@ Regionale Instelling voor Beschermd en Begeleid Wonen. In Nederland bestaan onge
 
 zie: complexe datatypen.
 
+### Samenloop
+
+Van samenloop is sprake wanneer een cliënt (eventueel systeem van de cliënt) meerdere zorgproducten op basis van verschillende productcodes ontvangt in een overlappende/gelijktijdige periode. Het controleren van samenloop wordt gebruikt voor de afstemming van de zorgverlening van de cliënt (eventueel inclusief het systeem).
+
 ### SLO
 
 zie: softwareleveranciersoverleg.
