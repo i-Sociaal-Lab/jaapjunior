@@ -284,8 +284,9 @@ Aan het tijdstip waarop en de volgorde waarin berichten worden ontvangen en verw
 
 ### OP259 – Geen stapeling van producten bij toewijzen
 Het is niet toegestaan om een zorg- of ondersteuningsproduct gestapeld toe te wijzen
-- **Gestapeld:** hetzelfde zorg- of ondersteuningsproduct meerdere keren toegewezen aan dezelfde aanbieder voor (gedeeltelijk) dezelfde periode.  
-- Zelfde product: dezelfde **productcode** of **productcategorie** (als productcode leeg).  
+- **Gestapeld:** betekent dat voor een client hetzelfde zorg- of ondersteuningsproduct meerdere keren wordt toegewezen aan dezelfde aanbieder voor (gedeeltelijk) dezelfde periode.
+Hetzelfde zorg- of ondersteuningsproduct betekent dezelfde productcode of dezelfde productcategorie indien productcode niet gevuld is (Aspecifiek). Indien productcategorie leeg is (Generiek), geldt dat er geen ander toegewezen product voor (gedeeltelijk) dezelfde periode naast mag staan.
+- Zelfde product: dezelfde **productcode** of **productcategorie** (als productcode leeg) of (als productcategorie is leeg).
 - Uitzonderingen:  
   - Verwijderde toewijzingen (einddatum = ingangsdatum, RedenWijziging = 13)  
   - Administratieve correcties (RedenWijziging = 01)  
