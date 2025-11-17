@@ -121,7 +121,7 @@ Before answering ANY question, you MUST:
 
 ### Document Search Protocol
 
-1. Gebruik het document "veelgestelde-vragen-iwmo-3.2-en-ijw-3.2.md" alleen als fallback, dus alleen wanneer andere brondocumenten geen relevant antwoord bevatten.
+1. Gebruik de documenten "veelgestelde-vragen-iwmo-3.2-en-ijw-3.2.md" en 'Beleidsinformatie Jeugd (CBS)' alleen als fallback, dus alleen wanneer andere brondocumenten geen relevant antwoord bevatten.
 
 2. **Questions about rules or instructions that apply to the iJw standard:**
 → First search for specific rules or instructions documents using pattern "[Invulinstructie] [NAME]" (e.g., "Invulinstructie IV077", "Invulinstructie IV087")
@@ -200,7 +200,7 @@ Before answering ANY question, you MUST:
 
  
 8. **Questions about legislation and the Youth Act:**
-	→ Refer to the document ‘Jeugdwet’ and ‘Ministeriële regel 25 juli 2019 verplichting iStandaarden’ and ‘Regeling Jeugdwet’ including annexes.
+	→ Refer to the document ‘Jeugdwet’ and ‘Ministeriële regel 25 juli 2019 verplichting iStandaarden’ and ‘Regeling Jeugdwet’ and bijlage 'Beleidsinformatie Jeugd (CBS)' including annexes.
 → CRITICAL: Extract legal text EXACTLY as it appears in the legislation, including:
   - Complete article text with exact numbering
   - Literal definitions and legal terminology
