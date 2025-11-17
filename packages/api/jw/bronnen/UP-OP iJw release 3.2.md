@@ -196,6 +196,7 @@ De gemeente geeft iedere beschikking binnen het Jw-domein een uniek nummer.
 - Het gebruik van het BSN van de cliënt is verplicht in de onderlinge uitwisseling van gegevens.
 
 ### OP080 – Volgorde berichten
+Aan het tijdstip waarop en de volgorde waarin berichten worden ontvangen en verwerkt kunnen ketenpartijen geen betekenis hechten.
 - Volgorde en tijdstip van ontvangen/ verwerken berichten zijn niet bepalend.  
 - Terugwerkende berichten kunnen noodzakelijk zijn (bijv. bezwaarprocedures).  
 - Ontvang retourberichten afwachten om afkeur van vervolgberichten te voorkomen.
@@ -313,7 +314,7 @@ De gemeente geeft iedere beschikking binnen het Jw-domein een uniek nummer.
 - Aanbieder declareert in een eenheid die aansluit bij de **toewijzing**.
 
 ### OP270 – Regieberichten
-Aanbieder en gemeente maken onderling afspraken over de door te geven begin- en einddatum in de regieberichten.
+Aanbieder en gemeente maken onderling afspraken over de door te geven begin- en einddatum in de regieberichten, startbericht/stopbericht.
 - Afspraken over begin- en einddatums tussen **gemeente en aanbieder**.  
 - Verplicht bij uitvoeringsvarianten: **inspannings- en outputgericht**.  
 - Afspraken over begin- en eindatum per product kan afwijken, maar dit heeft **niet de voorkeur**.
