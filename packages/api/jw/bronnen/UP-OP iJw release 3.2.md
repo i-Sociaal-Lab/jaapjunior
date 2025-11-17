@@ -282,7 +282,8 @@ Aan het tijdstip waarop en de volgorde waarin berichten worden ontvangen en verw
 ### OP258 – Beëindiging toewijzing
 - Bij beëindiging van een toewijzing wordt de aanbieder geïnformeerd via een **toewijzingsbericht**.
 
-### OP259 – Geen stapeling van producten
+### OP259 – Geen stapeling van producten bij toewijzen
+Het is niet toegestaan om een zorg- of ondersteuningsproduct gestapeld toe te wijzen
 - **Gestapeld:** hetzelfde zorg- of ondersteuningsproduct meerdere keren toegewezen aan dezelfde aanbieder voor (gedeeltelijk) dezelfde periode.  
 - Zelfde product: dezelfde **productcode** of **productcategorie** (als productcode leeg).  
 - Uitzonderingen:  
@@ -446,7 +447,8 @@ Aanbieder en gemeente maken onderling afspraken over de door te geven begin- en 
 - Binnen **5 werkdagen** toewijzing- of antwoordbericht.  
 - Indien waarde 2 ("Aanvraag in onderzoek") → binnen **8 weken** na dagtekening van het verzoek en definitieve toewijzing of afwijzing (waarde 1).
 
-### OP347 – Geen stapeling
+### OP347 – Geen stapeling bij aanvragen
+Het is niet toegestaan om een zorg- of ondersteuningsproduct gestapeld aan te vragen
 - **Stapeling** = zelfde product meerdere keren voor dezelfde periode door dezelfde aanbieder.  
 - Hetzelfde zorg- of ondersteuningsproduct betekent dezelfde productcode of dezelfde productcategorie indien productcode niet gevuld is. Indien productcategorie leeg is, geldt dat er geen ander aangevraagd product voor (gedeeltelijk) dezelfde periode naast mag staan. 
 - Verwijderde toewijzingen (waarvan de einddatum gelijk is aan de ingangsdatum en de reden wijziging is gevuld met 13 (Verwijderd)) maken geen onderdeel uit van de bepaling of er sprake is van stapeling. Deze toewijzingen worden niet gezien als actuele toewijzing.
