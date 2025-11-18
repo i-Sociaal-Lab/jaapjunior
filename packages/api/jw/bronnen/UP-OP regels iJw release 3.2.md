@@ -146,9 +146,9 @@ De gemeente geeft iedere beschikking binnen het Jw-domein een uniek nummer.
 ### OP033x1 – Wijzigingen in toewijzing
 - Toewijzing kan gewijzigd worden via een nieuw bericht.  
 - **Einddatum wijzigingen toegestaan:**  
-  - Intrekken: einddatum korter maken (overleg aanbieder)  
-  - Oprekken: einddatum verlengen (overleg aanbieder)  
-  - Verwijderen: einddatum = ingangsdatum, RedenWijziging = 13 (Verwijderd)  
+  - Intrekken: aanpassen van de gewenste einddatum toewijzing zodat de periode korter wordt (NB dit is alleen toegestaan in overleg met de aanbieder).
+  - Oprekken: aanpassen van de gewenste einddatum toewijzing zodat de periode langer wordt (NB dit is alleen toegestaan in overleg met de aanbieder).
+  - Verwijderen: de einddatum van de toewijzing wordt gewijzigd zodat deze gelijk is aan de ingangsdatum van de toewijzing. Daarbij wordt RedenWijziging gevuld met 13 (Verwijderd). Een verwijdering betekent dat de toewijzing als niet verzonden beschouwd moet worden.
 
 - **Volume wijzigingen:**  
   - Frequentie = "Totaal binnen geldigheidsduur toewijzing": volume mag aangepast worden  
