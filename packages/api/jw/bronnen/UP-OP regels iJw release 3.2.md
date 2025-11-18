@@ -315,8 +315,8 @@ Hetzelfde zorg- of ondersteuningsproduct betekent dezelfde productcode (Specifie
 ### OP267 – Declaratie-eenheid
 - Aanbieder declareert in een eenheid die aansluit bij de **toewijzing**.
 
-### OP270 – Regieberichten
-Aanbieder en gemeente maken onderling afspraken over de door te geven begin- en einddatum in de regieberichten, startbericht/stopbericht.
+### OP270 – Afspraken over Regieberichten
+Aanbieder en gemeente maken onderling afspraken over de door te geven begin- en einddatum in de regieberichten, (lees startbericht, stopbericht).
 - Afspraken over begin- en einddatums tussen **gemeente en aanbieder**.  
 - Verplicht bij uitvoeringsvarianten: **inspannings- en outputgericht**.  
 - Afspraken over begin- en eindatum per product kan afwijken, maar dit heeft **niet de voorkeur**.
