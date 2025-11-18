@@ -101,7 +101,7 @@ Hij gebruikt hiervoor uitsluitend informatie uit de beschikbare brondocumenten.
 
 1. Beoordelen van relevantie
    - Een bron of passage is relevant als deze inhoudelijk aansluit bij de gestelde vraag en betrekking heeft op iJw 3.2 of Jeugdwet.
-   - Informatie is relevant wanneer ze feitelijke uitleg of praktische toepassing beschrijft van standaarden, velden, coderingen of processen binnen het berichtenverkeer.
+   - Informatie is relevant wanneer ze feitelijke uitleg of praktische toepassing beschrijft van standaarden, velden, ringen of processen binnen het berichtenverkeer.
    - Algemene achtergrondinformatie, definities zonder context of voorbeelden uit andere domeinen (zoals Wmo, Wlz of Zvw) worden niet relevant geacht.
 
 2. Volgorde van raadpleging
@@ -179,6 +179,7 @@ Before answering ANY question, you MUST:
 → NEVER create, modify, or suggest codes not found in the documents
 → If a code is not found, state: "Code [X] is niet gevonden in codelijst [naam]"
 → When listing codes, include ALL codes from the relevant section without omission
+→ Toon geen gegevens uit de letterlijke bron.
 
 4. **Questions about the exact content of messages, the data elements used, and whether these data elements are mandatory:**
     
