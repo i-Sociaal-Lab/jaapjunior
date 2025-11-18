@@ -12,7 +12,7 @@ Publicatiedatum: 29 september 2025
 
 Deze begrippenlijst is gebaseerd op de begrippenlijst van het Zorginstituut, maar dan specifiek toegespitst op de Jw en Wmo. Het Ketenbureau i-Sociaal Domein heeft vervolgens nog enkele begrippen toegevoegd.
 
-Begrippen staan op alfabet en kunnen worden gezocht via de zoekbalk bovenin het scherm
+Begrippen staan op alfabet en kunnen worden gezocht via de zoekbalk boven aan het scherm
 
 ## Begrippen
 
@@ -301,7 +301,7 @@ formele, financieel-administratieve documenten die aan bepaalde wettelijke eisen
 
 ### financiering
 
-een van de processen in de iStandaarden, naast de primaire processen en het proces sturing en controle (iJW en iWmo). Voor iWmo en iJw gaat het om het declareren van de ondersteuning door de aanbieder van zorg of ondersteuning bij de gemeente en voor iWmo gaat het daarbij nog om het aanleveren van geleverde ondersteuning aan het CAK door gemeenten en zorgaanbieders i.v.m. het vaststellen en opleggen van de eigen bijdrage.
+een van de processen in de iStandaarden, naast de primaire processen en het proces sturing en controle (iJw en iWmo). Voor iWmo en iJw gaat het om het declareren van de ondersteuning door de aanbieder van zorg of ondersteuning bij de gemeente en voor iWmo gaat het daarbij nog om het aanleveren van geleverde ondersteuning aan het CAK door gemeenten en zorgaanbieders i.v.m. het vaststellen en opleggen van de eigen bijdrage.
 
 ### GBA
 
@@ -313,7 +313,7 @@ Gemeentelijke Basisadministratie; basisregistratie met alle persoonsgegevens van
 
 ### gebruikelijke zorg
 
-vanuit de Wmo 2015 wordt gesproken over gebruikelijke hulp en dan gaat het om zorg die naar algemeen aanvaarde opvattingen in redelijkheid mag worden verwacht van de echtgenoot, ouders, inwonende kinderen of andere huisgenotenvan iemand die problemen heeft in zijn zelfredzaamheid; zie: gebruikelijke hulp
+vanuit de Wmo 2015 wordt gesproken over gebruikelijke hulp en dan gaat het om zorg die naar algemeen aanvaarde opvattingen in redelijkheid mag worden verwacht van de echtgenoot, ouders, inwonende kinderen of andere huisgenoten van iemand die problemen heeft in zijn zelfredzaamheid; zie: gebruikelijke hulp
 
 ### Gecertificeerde instelling (GI)
 
