@@ -10,4 +10,3 @@ Ja of nee - Codering voor ja of nee.
 |:----:|:-------------|
 | 1 | Ja |
 | 2 | Nee |
-
