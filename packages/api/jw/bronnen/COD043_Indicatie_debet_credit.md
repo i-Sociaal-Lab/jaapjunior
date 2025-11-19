@@ -7,7 +7,6 @@ Indicatie debet/credit - Gecodeerde aanduiding voor debet of credit in JW323
 ## Codelijst
 
 | Code | Omschrijving |
-|------|--------------|
+|:----:|:-------------|
 | C | Creditbedrag en aantal |
 | D | Debetbedrag en aantal |
-
