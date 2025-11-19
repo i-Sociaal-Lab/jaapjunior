@@ -8,7 +8,7 @@ De soort relatie die een persoon ten opzichte van de cliënt heeft.
 ## Codelijst
 
 | Code | Omschrijving |
-|------|--------------|
+|:----:|:-------------|
 | 03 | Curator (juridisch) |
 | 04 | Financieel (gemachtigd) |
 | 05 | Financieel (toetsing) |
