@@ -6,7 +6,7 @@ Gebruik deze lijst als naslagwerk bij het analyseren van retourmeldingen.
 ---
 
 | Foutcode | Omschrijving foutcode                                                             | Verzender   | Informatie / Toelichting |
-|:--------:|:----------------------------------------------------------------------------------|:------------|:------------------------|
+|:--------:|:----------------------------------------------------------------------------------|:------------|:-------------------------|
 | IB001 | Bericht voldoet niet aan XSD. | BIDN / CAK / VWS | BIDN controleert niet op de Payload maar wel op de Envelop. CAK en VWS controleren de Payload. |
 | IB002 | De verzendende organisatie is niet geautoriseerd om gebruik te maken van het GGK. | BIDN | Neem contact op met de servicedesk. |
 | IB003 | Het ontvangen bericht overschrijdt de maximaal toegestane bestandsgrootte van 25MB. | BIDN | Verdeel de berichten over meerdere bestanden/aanleveringen. |
@@ -47,4 +47,5 @@ Gebruik deze lijst als naslagwerk bij het analyseren van retourmeldingen.
 ---
 
 Laatste update: november 2025  
+
 
