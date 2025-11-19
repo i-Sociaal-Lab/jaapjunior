@@ -7,6 +7,7 @@ Ja of nee - Codering voor ja of nee.
 ## Codelijst
 
 | Code | Omschrijving |
-|------|--------------|
+|:----:|:-------------|
 | 1 | Ja |
 | 2 | Nee |
+
