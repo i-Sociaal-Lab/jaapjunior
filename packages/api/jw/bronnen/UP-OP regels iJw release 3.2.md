@@ -424,15 +424,18 @@ Aanbieder en gemeente maken onderling afspraken over de door te geven begin- en 
 - Kan niet gebruikt worden zonder actuele toewijzing.
 
 ### OP307 – Verzoek om toewijzing (VOT)
-- Wordt gebruikt bij **(wettelijke) verwijzing of open beschikking**.  
-- Alleen indien er nog **geen actuele toewijzing** is voor het product en periode.  
+Een verzoek om toewijzing bericht wordt alleen gebruikt indien een cliënt zich met een (wettelijke) verwijzing of een open beschikking meldt bij de zorgaanbieder
+- Wordt altijd gebruikt bij **(wettelijke) verwijzing of open beschikking**.
+- Alleen indien er nog **geen actuele toewijzing** is voor het product en periode.
 - Kan niet gebruikt worden als er al een actuele toewijzing bestaat.
 
 ### OP308 – VOW als samenhangend geheel
-- VOW bevat **complete nieuwe situatie** bij verandering van zorg.  
+Een aanbieder vraagt met een verzoek om wijziging bericht (VOW) een samenhangend geheel aan toewijzingen aan met daarin de volledige gewenste situatie.
+- VOW bevat **complete nieuwe situatie** bij verandering van de zorgsituatie van de client.  
 - Inclusief ongewijzigde, gewijzigde en nieuwe producten/productcategorieën.
 
 ### OP343 – Tijdige indiening VOW
+Een verzoek om wijziging moet tijdig ingediend worden.
 - Gemeente moet redelijkerwijs kunnen **reageren vóór de gewenste ingangsdatum**.
 
 ### OP344 – Reactie gemeente
