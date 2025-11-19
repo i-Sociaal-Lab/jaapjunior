@@ -1,7 +1,6 @@
 # Gemeentecodes CBS
 
 ---
-## Codelijst
 
 Status: Productie
 Auteur: CBS
@@ -37,8 +36,10 @@ Gebruik deze lijst dus als dé standaardreferentie voor gemeentecodes bij beantw
 
 Op 1 januari 2025 is het aantal gemeenten gelijk gebleven aan 2024. Het aantal gemeenten in Nederland blijft dan ook 342 op deze datum.Het volledige overzicht van de gemeentelijke indeling op 1 januari 2025 is hieronder opgenomen. Het overzicht geeft de gemeentenamen in alfabetische volgorde met vermelding van de gemeentecode, de provincienaam en de provinciecode.
 
+## Codelijst
+
 |Gemeentecode|Gemeentenaam|Provincienaam|
-|----|-----|--------|
+|:--:|:-----|:--------|
 |1680|Aa en Hunze|Drenthe|
 |0358|Aalsmeer|Noord-Holland|
 |0197|Aalten|Gelderland|
