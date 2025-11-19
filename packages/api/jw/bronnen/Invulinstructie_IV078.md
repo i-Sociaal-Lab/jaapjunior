@@ -21,3 +21,4 @@ Frequentie in ToegewezenProduct = maand
 Toewijzing voor 15 uur per maand met ingangsdatum 14-10-2025 en einddatum 13-12-2025
 
 Voor de productperiode 14-10-2025 t/m 31-10-2025 mag maximaal 15 uur gedeclareerd worden, indien deze uren ook daadwerkelijk geleverd zijn. Ondanks dat de ingangsdatum 14-10-2025 is en er dus geen hele kalendermaand is toegewezen, mag (mits geleverd) de volledige 15 uur gedeclareerd worden.
+
