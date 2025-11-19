@@ -8,7 +8,7 @@ Aanduiding van de aard van de (zelf)verwijzer.
 ## Codelijst
 
 | Code | Omschrijving |
-|------|--------------|
+|:----:|:-------------|
 | 01 | Gemeente |
 | 02 | Huisarts |
 | 03 | Jeugdarts |
