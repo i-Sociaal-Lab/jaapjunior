@@ -178,15 +178,17 @@ Constraints (CS-regels): https://informatiemodel.istandaarden.nl/informatiemodel
 | JW301 | ToegewezenProduct | Omvang |  |  |  |  | CD041 | Indien Code in Product gevuld is, verplicht vullen. | Conditie | 0001 |
 | JW301 | ToegewezenProduct | Omvang |  |  |  |  | CD077 | Indien Budget gevuld is, dan leeg laten | Conditie | 0001 |
 | JW301 | ToegewezenProduct | Omvang |  |  |  |  | CD080 | Indien Code in Product leeg is en Einddatum van het ToegewezenProduct groter dan 31-12-2020 of leeg is, dan leeg laten | Conditie | 0001 |
-| JW301 | ToegewezenProduct | Omvang |  |  |  |  | CS338 | Indien eenheid de waarde 14, 16, 83 of 84 heeft en Einddatum groter dan 31-12-2020 of leeg is, dan Frequentie vullen met de waarde 2 , 4 of 6 | Constraint | 0001 |
-| JW301 | ToegewezenProduct | Omvang_Omvang | Volume_Volume |  |  |  | RS001 | Minimale waarde 0 | Restrictie |  |
-| JW301 | ToegewezenProduct | Omvang_Omvang | Volume_Volume |  |  |  | RS005 | Maximale waarde 99999999 (8*9) | Restrictie |  |
-| JW301 | ToegewezenProduct | Omvang_Omvang | Eenheid_Eenheid |  |  | WJ756 | RS009 | Maximale lengte 2 posities | Restrictie |  |
-| JW301 | ToegewezenProduct | Omvang_Omvang | Frequentie_Frequentie |  |  | WMO757 | RS008 | Maximale lengte 1 positie | Restrictie |  |
-| JW301 | ToegewezenProduct | Commentaar_Commentaar |  |  |  |  | RS031 | Commentaarvelden niet leeg. | Restrictie |  |
+| JW301 | ToegewezenProduct | Omvang | Volume |  |  |  | CS338 | Indien eenheid de waarde 14, 16, 83 of 84 heeft en Einddatum groter dan 31-12-2020 of leeg is, dan Frequentie vullen met de waarde 2 , 4 of 6 | Constraint | 0001 |
+| JW301 | ToegewezenProduct | Omvang | Eenheid |  |  |  | CS338 | Indien eenheid de waarde 14, 16, 83 of 84 heeft en Einddatum groter dan 31-12-2020 of leeg is, dan Frequentie vullen met de waarde 2 , 4 of 6 | Constraint | 0001 |
+| JW301 | ToegewezenProduct | Omvang | Frequentie |  |  |  | CS338 | Indien eenheid de waarde 14, 16, 83 of 84 heeft en Einddatum groter dan 31-12-2020 of leeg is, dan Frequentie vullen met de waarde 2 , 4 of 6 | Constraint | 0001 |
+| JW301 | ToegewezenProduct | Omvang | Volume |  |  |  | RS001 | Minimale waarde 0 | Restrictie |  |
+| JW301 | ToegewezenProduct | Omvang | Volume|  |  |  | RS005 | Maximale waarde 99999999 (8*9) | Restrictie |  |
+| JW301 | ToegewezenProduct | Omvang | Eenheid|  |  | WJ756 | RS009 | Maximale lengte 2 posities | Restrictie |  |
+| JW301 | ToegewezenProduct | Omvang| Frequentie|  |  | WMO757 | RS008 | Maximale lengte 1 positie | Restrictie |  |
+| JW301 | ToegewezenProduct | Commentaar |  |  |  |  | RS031 | Commentaarvelden niet leeg. | Restrictie |  |
 | JW301 | ToegewezenProduct | Budget |  |  |  |  | CD078 | Indien Omvang gevuld is, dan leeg laten | Conditie | 0001 |
-| JW301 | ToegewezenProduct | Budget_Budget |  |  |  |  | RS001 | Minimale waarde 0 | Restrictie |  |
-| JW301 | ToegewezenProduct | Budget_Budget |  |  |  |  | RS005 | Maximale waarde 99999999 (8*9) | Restrictie |  |
+| JW301 | ToegewezenProduct | Budget |  |  |  |  | RS001 | Minimale waarde 0 | Restrictie |  |
+| JW301 | ToegewezenProduct | Budget |  |  |  |  | RS005 | Maximale waarde 99999999 (8*9) | Restrictie |  |
 | JW305 | Client | Bsn_BurgerServicenummer |  |  | ja |  | CS002 | De waarde moet voldoen aan de 11-proef. | Constraint | 0001 |
 | JW305 | Client | Bsn_BurgerServicenummer |  |  | ja |  | RS015 | Maximale lengte 9 posities | Restrictie |  |
 | JW305 | Client | Bsn_BurgerServicenummer |  |  | ja |  | RS037 | Vullen met 9 cijfers. | Restrictie |  |
@@ -284,14 +286,14 @@ Constraints (CS-regels): https://informatiemodel.istandaarden.nl/informatiemodel
 | JW315 | AangevraagdProduct | Omvang |  |  |  |  | CD077 | Indien Budget gevuld is, dan leeg laten | Conditie | 0001 |
 | JW315 | AangevraagdProduct | Omvang |  |  |  |  | CD095 | Indien Code in AangevraagdProduct leeg is en ToewijzingEinddatum van het AangevraagdProduct groter dan 31-12-2020 of leeg is, dan leeg laten | Conditie | 0001 |
 | JW315 | AangevraagdProduct | Omvang |  |  |  |  | CS343 | Indien eenheid de waarde 14, 16, 83 of 84 heeft en ToewijzingEinddatum is groter dan 31-12-2020 of leeg, dan Frequentie vullen met waarde 2, 4 of 6 | Constraint | 0001 |
-| JW315 | AangevraagdProduct | Omvang_Omvang | Volume_Volume |  |  |  | RS001 | Minimale waarde 0 | Restrictie |  |
-| JW315 | AangevraagdProduct | Omvang_Omvang | Volume_Volume |  |  |  | RS005 | Maximale waarde 99999999 (8*9) | Restrictie |  |
-| JW315 | AangevraagdProduct | Omvang_Omvang | Eenheid_Eenheid |  |  | WJ756 | RS009 | Maximale lengte 2 posities | Restrictie |  |
-| JW315 | AangevraagdProduct | Omvang_Omvang | Frequentie_Frequentie |  |  | WMO757 | RS008 | Maximale lengte 1 positie | Restrictie |  |
-| JW315 | AangevraagdProduct | ReferentieAanbieder_Referentie |  |  | ja |  | RS024 | Maximale lengte 36 posities | Restrictie |  |
-| JW315 | AangevraagdProduct | ReferentieAanbieder_Referentie |  |  | ja |  | RS033 | Geen lege elementen in XML. | Restrictie |  |
+| JW315 | AangevraagdProduct | Omvang | Volume |  |  |  | RS001 | Minimale waarde 0 | Restrictie |  |
+| JW315 | AangevraagdProduct | Omvang | Volume|  |  |  | RS005 | Maximale waarde 99999999 (8*9) | Restrictie |  |
+| JW315 | AangevraagdProduct | Omvang | Eenheid|  |  | WJ756 | RS009 | Maximale lengte 2 posities | Restrictie |  |
+| JW315 | AangevraagdProduct | Omvang | Frequentie |  |  | WMO757 | RS008 | Maximale lengte 1 positie | Restrictie |  |
+| JW315 | AangevraagdProduct | ReferentieAanbieder |  |  | ja |  | RS024 | Maximale lengte 36 posities | Restrictie |  |
+| JW315 | AangevraagdProduct | ReferentieAanbieder |  |  | ja |  | RS033 | Geen lege elementen in XML. | Restrictie |  |
 | JW315 | AangevraagdProduct | BeschikkingIngangsdatum |  |  |  |  | CD043 | Indien Beschikkingnummer gevuld is, verplicht vullen, anders leeg laten. | Conditie | 0001 |
-| JW315 | AangevraagdProduct | BeschikkingIngangsdatum_Datum |  |  |  |  | RS032 | Datum vullen zonder tijdzone. | Restrictie |  |
+| JW315 | AangevraagdProduct | BeschikkingIngangsdatum |  |  |  |  | RS032 | Datum vullen zonder tijdzone. | Restrictie |  |
 | JW315 | AangevraagdProduct | Verwijzer_Verwijzer | Type_TypeVerwijzer |  |  | COD327 | RS009 | Maximale lengte 2 posities | Restrictie |  |
 | JW315 | AangevraagdProduct | Verwijzer_Verwijzer | Naam |  |  |  | CD066 | Als type verwijzer gelijk is aan 02, 03, 04 of 05 en ZorgverlenerCode is gevuld, dan is Naamverwijzer leeg. | Conditie | 0001 |
 | JW315 | AangevraagdProduct | Verwijzer_Verwijzer | Naam |  |  |  | CD067 | Als type verwijzer gelijk is aan 02, 03, 04 of 05 en ZorgverlenerCode is leeg, dan is Naamverwijzer gevuld. | Conditie | 0001 |
@@ -370,10 +372,10 @@ Constraints (CS-regels): https://informatiemodel.istandaarden.nl/informatiemodel
 | JW317 | NieuwProduct | Omvang |  |  |  |  | CD077 | Indien Budget gevuld is, dan leeg laten | Conditie | 0001 |
 | JW317 | NieuwProduct | Omvang |  |  |  |  | CD096 | Indien Code in NieuwProduct leeg is en Einddatum groter dan 31-12-2020 of leeg is, dan leeg laten | Conditie | 0001 |
 | JW317 | NieuwProduct | Omvang |  |  |  |  | CS338 | Indien eenheid de waarde 14, 16, 83 of 84 heeft en Einddatum groter dan 31-12-2020 of leeg is, dan Frequentie vullen met de waarde 2 , 4 of 6 | Constraint | 0001 |
-| JW317 | NieuwProduct | Omvang_Omvang | Volume_Volume |  |  |  | RS001 | Minimale waarde 0 | Restrictie |  |
-| JW317 | NieuwProduct | Omvang_Omvang | Volume_Volume |  |  |  | RS005 | Maximale waarde 99999999 (8*9) | Restrictie |  |
-| JW317 | NieuwProduct | Omvang_Omvang | Eenheid_Eenheid |  |  | WJ756 | RS009 | Maximale lengte 2 posities | Restrictie |  |
-| JW317 | NieuwProduct | Omvang_Omvang | Frequentie_Frequentie |  |  | WMO757 | RS008 | Maximale lengte 1 positie | Restrictie |  |
+| JW317 | NieuwProduct | Omvang | Volume |  |  |  | RS001 | Minimale waarde 0 | Restrictie |  |
+| JW317 | NieuwProduct | Omvang | Volume |  |  |  | RS005 | Maximale waarde 99999999 (8*9) | Restrictie |  |
+| JW317 | NieuwProduct | Omvang | Eenheid |  |  | WJ756 | RS009 | Maximale lengte 2 posities | Restrictie |  |
+| JW317 | NieuwProduct | Omvang |  Frequentie |  |  | WMO757 | RS008 | Maximale lengte 1 positie | Restrictie |  |
 | JW317 | NieuwProduct | Budget |  |  |  |  | CD078 | Indien Omvang gevuld is, dan leeg laten | Conditie | 0001 |
 | JW317 | NieuwProduct | Budget_Budget |  |  |  |  | RS001 | Minimale waarde 0 | Restrictie |  |
 | JW317 | NieuwProduct | Budget_Budget |  |  |  |  | RS005 | Maximale waarde 99999999 (8*9) | Restrictie |  |
@@ -386,10 +388,10 @@ Constraints (CS-regels): https://informatiemodel.istandaarden.nl/informatiemodel
 | JW317 | TeWijzigenProduct | Einddatum_Datum |  |  |  |  | RS032 | Datum vullen zonder tijdzone. | Restrictie |  |
 | JW317 | TeWijzigenProduct | Omvang |  |  |  |  | CD077 | Indien Budget gevuld is, dan leeg laten | Conditie | 0001 |
 | JW317 | TeWijzigenProduct | Omvang |  |  |  |  | CS338 | Indien eenheid de waarde 14, 16, 83 of 84 heeft en Einddatum groter dan 31-12-2020 of leeg is, dan Frequentie vullen met de waarde 2 , 4 of 6 | Constraint | 0001 |
-| JW317 | TeWijzigenProduct | Omvang_Omvang | Volume_Volume |  |  |  | RS001 | Minimale waarde 0 | Restrictie |  |
-| JW317 | TeWijzigenProduct | Omvang_Omvang | Volume_Volume |  |  |  | RS005 | Maximale waarde 99999999 (8*9) | Restrictie |  |
-| JW317 | TeWijzigenProduct | Omvang_Omvang | Eenheid_Eenheid |  |  | WJ756 | RS009 | Maximale lengte 2 posities | Restrictie |  |
-| JW317 | TeWijzigenProduct | Omvang_Omvang | Frequentie_Frequentie |  |  | WMO757 | RS008 | Maximale lengte 1 positie | Restrictie |  |
+| JW317 | TeWijzigenProduct | Omvang | Volume |  |  |  | RS001 | Minimale waarde 0 | Restrictie |  |
+| JW317 | TeWijzigenProduct | Omvang | Volume |  |  |  | RS005 | Maximale waarde 99999999 (8*9) | Restrictie |  |
+| JW317 | TeWijzigenProduct | Omvang | Eenheid |  |  | WJ756 | RS009 | Maximale lengte 2 posities | Restrictie |  |
+| JW317 | TeWijzigenProduct | Omvang |  Frequentie |  |  | WMO757 | RS008 | Maximale lengte 1 positie | Restrictie |  |
 | JW317 | TeWijzigenProduct | ToewijzingNummer_Nummer |  |  | ja |  | RS001 | Minimale waarde 0 | Restrictie |  |
 | JW317 | TeWijzigenProduct | ToewijzingNummer_Nummer |  |  | ja |  | RS006 | Maximale waarde 999999999 (9*9) | Restrictie |  |
 | JW317 | TeWijzigenProduct | Budget |  |  |  |  | CD078 | Indien Omvang gevuld is, dan leeg laten | Conditie | 0001 |
@@ -463,9 +465,9 @@ Constraints (CS-regels): https://informatiemodel.istandaarden.nl/informatiemodel
 | JW323 | Prestatie | ProductPeriode |  |  |  |  | CS337 | Einddatum in de ProductPeriode vullen met een datum die valt in dezelfde kalendermaand en jaar als de Begindatum van de ProductPeriode | Constraint | 0001 |
 | JW323 | Prestatie | ProductPeriode_GeslotenPeriode | Begindatum_Datum |  |  |  | RS032 | Datum vullen zonder tijdzone. | Restrictie |  |
 | JW323 | Prestatie | ProductPeriode_GeslotenPeriode | Einddatum_Datum |  |  |  | RS032 | Datum vullen zonder tijdzone. | Restrictie |  |
-| JW323 | Prestatie | GeleverdVolume_Volume |  |  |  |  | RS001 | Minimale waarde 0 | Restrictie |  |
-| JW323 | Prestatie | GeleverdVolume_Volume |  |  |  |  | RS005 | Maximale waarde 99999999 (8*9) | Restrictie |  |
-| JW323 | Prestatie | Eenheid_Eenheid |  |  |  | WJ756 | RS009 | Maximale lengte 2 posities | Restrictie |  |
+| JW323 | Prestatie | GeleverdVolume |  |  |  |  | RS001 | Minimale waarde 0 | Restrictie |  |
+| JW323 | Prestatie | GeleverdVolume |  |  |  |  | RS005 | Maximale waarde 99999999 (8*9) | Restrictie |  |
+| JW323 | Prestatie | Eenheid |  |  |  | WJ756 | RS009 | Maximale lengte 2 posities | Restrictie |  |
 | JW323 | Prestatie | ProductTarief |  |  |  |  | CD087 | Als eenheid ongelijk is aan 83 (euro’s) dan verplicht vullen, anders leeg laten. | Conditie | 0001 |
 | JW323 | Prestatie | ProductTarief_Bedrag |  |  |  |  | RS001 | Minimale waarde 0 | Restrictie |  |
 | JW323 | Prestatie | ProductTarief_Bedrag |  |  |  |  | RS005 | Maximale waarde 99999999 (8*9) | Restrictie |  |
@@ -518,9 +520,9 @@ Constraints (CS-regels): https://informatiemodel.istandaarden.nl/informatiemodel
 | JW325 | Prestatie | ProductCode_ProductCode |  |  |  |  | RS033 | Geen lege elementen in XML. | Restrictie |  |
 | JW325 | Prestatie | ProductPeriode_GeslotenPeriode | Begindatum_Datum |  |  |  | RS032 | Datum vullen zonder tijdzone. | Restrictie |  |
 | JW325 | Prestatie | ProductPeriode_GeslotenPeriode | Einddatum_Datum |  |  |  | RS032 | Datum vullen zonder tijdzone. | Restrictie |  |
-| JW325 | Prestatie | GeleverdVolume_Volume |  |  |  |  | RS001 | Minimale waarde 0 | Restrictie |  |
-| JW325 | Prestatie | GeleverdVolume_Volume |  |  |  |  | RS005 | Maximale waarde 99999999 (8*9) | Restrictie |  |
-| JW325 | Prestatie | Eenheid_Eenheid |  |  |  | WJ756 | RS009 | Maximale lengte 2 posities | Restrictie |  |
+| JW325 | Prestatie | GeleverdVolume |  |  |  |  | RS001 | Minimale waarde 0 | Restrictie |  |
+| JW325 | Prestatie | GeleverdVolume |  |  |  |  | RS005 | Maximale waarde 99999999 (8*9) | Restrictie |  |
+| JW325 | Prestatie | Eenheid |  |  |  | WJ756 | RS009 | Maximale lengte 2 posities | Restrictie |  |
 | JW325 | Prestatie | ProductTarief_Bedrag |  |  |  |  | RS001 | Minimale waarde 0 | Restrictie |  |
 | JW325 | Prestatie | ProductTarief_Bedrag |  |  |  |  | RS005 | Maximale waarde 99999999 (8*9) | Restrictie |  |
 | JW325 | Prestatie | IngediendBedrag_BedragMetDC | Bedrag_Bedrag |  |  |  | RS001 | Minimale waarde 0 | Restrictie |  |
