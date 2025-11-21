@@ -141,7 +141,9 @@ De gemeente geeft iedere beschikking binnen het Jw-domein een uniek nummer.
 - Met de status aanlevering van een berichtklasse kan worden aangegeven of:
   - **1** – berichtklasse nieuw  
   - **2** – berichtklasse gewijzigd (niet toegestaan in iJw/iWmo)  
-  - **3** – berichtklasse verwijderd  
+  - **3** – berichtklasse verwijderd
+Toelichting
+De uitwerking van deze bedrijfsregel is vastgelegd in de volgende regels: IV008, IV074, OP033x1, OP033x2, TR071 en TR074.
 
 ### OP033x1 – Wijzigingen in toewijzing
 - Toewijzing kan gewijzigd worden via een nieuw bericht.  
@@ -160,6 +162,8 @@ De gemeente geeft iedere beschikking binnen het Jw-domein een uniek nummer.
   - Initiatief gemeente = overleg en instemming van aanbieder vereist  
 
 - **Belangrijk:** meest recente toewijzing op toewijzingsdatum/-tijd is bepalend.
+Toelichting
+De uitwerking van deze bedrijfsregel is vastgelegd in de volgende regel: IV066.
 
 ### OP033x2
 - Gebruik van status aanlevering waarde **2** (berichtklasse gewijzigd) is niet toegestaan.
@@ -167,6 +171,8 @@ De gemeente geeft iedere beschikking binnen het Jw-domein een uniek nummer.
 ### OP039 – Cliëntgegevens in berichten
 - Ketenpartijen mogen cliëntgegevens doorgeven zoals geregistreerd in hun administratie, mits deze geen logische sleutel vormen.  
 - Het is toegestaan gewijzigde gegevens over te nemen in de administratie.
+Toelichting
+De uitwerking van deze bedrijfsregel is vastgelegd in de volgende regels: IV002, IV007, IV045, IV047.
 
 ### OP043 – PGB en toewijzing
 - Als een cliënt een PGB heeft, mag voor hetzelfde product geen toewijzing zijn afgegeven.  
