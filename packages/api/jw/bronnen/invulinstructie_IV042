@@ -26,10 +26,10 @@ Frequentie: 4 (Per maand)
 
 Voorbeeld 1B:
 In een declaratie wordt aangegeven dat in de afgelopen productperiode in totaal 20 dagdelen ondersteuning is geleverd. Dit wordt als volgt aangegeven in het declaratiebericht:
-Geleverd Volume: 20
+GeleverdVolume: 20
 Eenheid: 16 (Dagdeel (4 uur))
 
 Voorbeeld 2B:
 In een declaratie wordt aangegeven dat in de afgelopen productperiode ondersteuning is geleverd volgens het vaste, afgesproken maandbedrag van 200 euro. Dit wordt als volgt aangegeven in het declaratiebericht:
-Geleverd Volume: 20000
+GeleverdVolume: 20000
 Eenheid: 83 (Euro's)
