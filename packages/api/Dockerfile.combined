@@ -1,0 +1,117 @@
+# Build stage voor API
+FROM oven/bun:1.2.22-alpine AS builder
+
+WORKDIR /app
+
+# Install build dependencies voor native modules (better-sqlite3) + git voor document fetch
+RUN apk add --no-cache python3 make g++ git
+
+# Stap 1: Kopieer workspace files
+COPY package.json bun.lock ./
+COPY packages/api ./packages/api
+
+# Stap 2: Install (werkt nu native op Azure AMD64)
+RUN bun install --no-optional || bun install
+
+# Stap 3: Fetch documenten van i-Sociaal-Lab/jaapjunior:main
+# Dit zorgt ervoor dat we altijd de laatste productie documenten gebruiken
+RUN echo "Fetching documents from i-Sociaal-Lab/jaapjunior:main..." && \
+    git clone --depth 1 --filter=blob:none --sparse https://github.com/i-Sociaal-Lab/jaapjunior.git /tmp/jaapjunior && \
+    cd /tmp/jaapjunior && \
+    git sparse-checkout set packages/api/jw/bronnen packages/api/wmo/bronnen packages/api/cs-wmo/bronnen && \
+    echo "Copying documents to build..." && \
+    rm -rf /app/packages/api/jw/bronnen/* && \
+    rm -rf /app/packages/api/wmo/bronnen/* && \
+    rm -rf /app/packages/api/cs-wmo/bronnen/* && \
+    cp -r /tmp/jaapjunior/packages/api/jw/bronnen/* /app/packages/api/jw/bronnen/ 2>/dev/null || true && \
+    cp -r /tmp/jaapjunior/packages/api/wmo/bronnen/* /app/packages/api/wmo/bronnen/ 2>/dev/null || true && \
+    cp -r /tmp/jaapjunior/packages/api/cs-wmo/bronnen/* /app/packages/api/cs-wmo/bronnen/ 2>/dev/null || true && \
+    echo "Document count:" && \
+    ls -1 /app/packages/api/jw/bronnen/ | wc -l && \
+    ls -1 /app/packages/api/wmo/bronnen/ | wc -l && \
+    ls -1 /app/packages/api/cs-wmo/bronnen/ | wc -l && \
+    rm -rf /tmp/jaapjunior && \
+    echo "Documents fetched successfully!"
+
+# Stap 4: Build API
+WORKDIR /app/packages/api
+RUN bun run build
+
+# Production stage met Qdrant + API
+FROM oven/bun:1.2.22-alpine
+
+WORKDIR /app
+
+# Install runtime dependencies
+RUN apk add --no-cache curl bash
+
+# Download en install Qdrant binary
+RUN wget https://github.com/qdrant/qdrant/releases/download/v1.11.3/qdrant-x86_64-unknown-linux-musl.tar.gz && \
+    tar -xzf qdrant-x86_64-unknown-linux-musl.tar.gz && \
+    mv qdrant /usr/local/bin/ && \
+    rm qdrant-x86_64-unknown-linux-musl.tar.gz
+
+# Kopieer built artifacts + runtime files + node_modules
+COPY --from=builder /app/packages/api/dist ./dist
+COPY --from=builder /app/packages/api/jw ./jw
+COPY --from=builder /app/packages/api/wmo ./wmo
+COPY --from=builder /app/packages/api/cs-wmo ./cs-wmo
+COPY --from=builder /app/node_modules ./node_modules
+
+# Runtime setup
+RUN mkdir -p /app/data /app/qdrant_storage
+
+# Create Qdrant config
+RUN echo 'storage:' > /app/qdrant-config.yaml && \
+    echo '  storage_path: /app/qdrant_storage' >> /app/qdrant-config.yaml && \
+    echo 'service:' >> /app/qdrant-config.yaml && \
+    echo '  http_port: 6333' >> /app/qdrant-config.yaml
+
+# Create startup script
+RUN echo '#!/bin/sh' > /app/start.sh && \
+    echo 'set -e' >> /app/start.sh && \
+    echo '' >> /app/start.sh && \
+    echo 'echo "=== Starting Jaap Junior API + Qdrant ==="' >> /app/start.sh && \
+    echo 'echo ""' >> /app/start.sh && \
+    echo 'echo "→ Starting Qdrant vector database..."' >> /app/start.sh && \
+    echo 'qdrant --config-path /app/qdrant-config.yaml > /tmp/qdrant.log 2>&1 &' >> /app/start.sh && \
+    echo 'QDRANT_PID=$!' >> /app/start.sh && \
+    echo '' >> /app/start.sh && \
+    echo 'echo "→ Waiting for Qdrant to be ready..."' >> /app/start.sh && \
+    echo 'for i in 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30; do' >> /app/start.sh && \
+    echo '  if curl -s http://localhost:6333/healthz > /dev/null 2>&1; then' >> /app/start.sh && \
+    echo '    echo "✓ Qdrant is ready!"' >> /app/start.sh && \
+    echo '    break' >> /app/start.sh && \
+    echo '  fi' >> /app/start.sh && \
+    echo '  echo "  Waiting... ($i/30)"' >> /app/start.sh && \
+    echo '  sleep 2' >> /app/start.sh && \
+    echo 'done' >> /app/start.sh && \
+    echo '' >> /app/start.sh && \
+    echo 'if ! curl -s http://localhost:6333/healthz > /dev/null 2>&1; then' >> /app/start.sh && \
+    echo '  echo "✗ ERROR: Qdrant failed to start"' >> /app/start.sh && \
+    echo '  echo "Qdrant logs:"' >> /app/start.sh && \
+    echo '  cat /tmp/qdrant.log' >> /app/start.sh && \
+    echo '  exit 1' >> /app/start.sh && \
+    echo 'fi' >> /app/start.sh && \
+    echo '' >> /app/start.sh && \
+    echo 'echo ""' >> /app/start.sh && \
+    echo 'echo "→ Starting API server..."' >> /app/start.sh && \
+    echo 'echo "✓ API starting on port 3000"' >> /app/start.sh && \
+    echo 'echo ""' >> /app/start.sh && \
+    echo 'exec bun run dist/index.js' >> /app/start.sh && \
+    chmod +x /app/start.sh
+
+# Set environment
+ENV NODE_ENV=production
+ENV PORT=3000
+ENV QDRANT_URI=http://localhost:6333
+
+# Expose port
+EXPOSE 3000
+
+# Health check (alleen API, Qdrant is internal)
+HEALTHCHECK --interval=30s --timeout=10s --retries=3 \
+  CMD curl -f http://localhost:3000/api/v1 || exit 1
+
+# Start both services
+CMD ["/app/start.sh"]
