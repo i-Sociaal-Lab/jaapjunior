@@ -31,7 +31,7 @@ Het document dient als **naslagwerk en validatiebron** voor AI-agenten die vrage
 - Wanneer een gebruiker vraagt om de tekst van een specifieke regel (bijvoorbeeld IV999), selecteer en retourneer altijd de volledige tekst die hoort bij het betreffende regelnummers, vanaf de eerste regel na het regelnummers tot en met de eerste volgende regel met een nieuw regelnummers of het einde van het document. Neem alle tekst, opsommingen, subkopjes en toelichtingen op die onder het regelnummers vallen. Geef geen interpretatie in dit geval.
 - Sommige regels zijn specifiek voor gemeenten, andere voor aanbieders of ketenpartijen.
 - Let op: dit rapport bevat verschillende type regels check bij interpretatie altijd het type regel.
-- Let op: regelnummer (bijv. OP001, OP047, IV008) zijn louter administratieve identifiers zonder hiërarchische betekenis. Behandel ze als unieke sleutels die uitsluitend gebruikt worden voor verwijzing, niet voor interpretatie.
+- Let op: regelnummer (bijv. OP001, OP047, IV007) zijn louter administratieve identifiers zonder hiërarchische betekenis. Behandel ze als unieke sleutels die uitsluitend gebruikt worden voor verwijzing, niet voor interpretatie.
 - Bekijk alle regels om tot een juist antwoord te komen.
 ---
 
