@@ -6,6 +6,7 @@ versie: 3.2
 **Definitie:**  
 Melding in een retourbericht. Het betreft een code die in een retourbericht het resultaat van de beoordeling van een (deel van een) ontvangen bericht weergeeft.
 
+**Bron:** https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/wj001
 ---
 
 ## Codelijst
