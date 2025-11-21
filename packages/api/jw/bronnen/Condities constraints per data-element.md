@@ -57,9 +57,9 @@ Constraints (CS-regels): https://informatiemodel.istandaarden.nl/informatiemodel
 | JW301 | Client | Bsn_BurgerServicenummer |  |  | ja |  | CS002 | De waarde moet voldoen aan de 11-proef. | Constraint | 0001 |
 | JW301 | Client | Bsn_BurgerServicenummer |  |  | ja |  | RS015 | Maximale lengte 9 posities | Restrictie |  |
 | JW301 | Client | Bsn_BurgerServicenummer |  |  | ja |  | RS037 | Vullen met 9 cijfers. | Restrictie |  |
-| JW301 | Client | Geboortedatum_Geboortedatum | Datum_Datum |  |  |  | RS032 | Datum vullen zonder tijdzone. | Restrictie |  |
-| JW301 | Client | Geboortedatum_Geboortedatum | DatumGebruik |  |  |  | CS139 | Voor Geboortedatum geldt dat DatumGebruik en Datum met elkaar in overeenstemming moeten zijn. | Constraint | 0001 |
-| JW301 | Client | Geboortedatum_Geboortedatum | DatumGebruik_DatumGebruik |  |  | COD170 | RS008 | Maximale lengte 1 positie | Restrictie |  |
+| JW301 | Client | Geboortedatum | Datum_Datum |  |  |  | RS032 | Datum vullen zonder tijdzone. | Restrictie |  |
+| JW301 | Client | Geboortedatum | DatumGebruik |  |  |  | CS139 | Voor Geboortedatum geldt dat DatumGebruik en Datum met elkaar in overeenstemming moeten zijn. | Constraint | 0001 |
+| JW301 | Client | Geboortedatum | DatumGebruik_DatumGebruik |  |  | COD170 | RS008 | Maximale lengte 1 positie | Restrictie |  |
 | JW301 | Client | Geslacht_Geslacht |  |  |  | COD046 | RS008 | Maximale lengte 1 positie | Restrictie |  |
 | JW301 | Client | Naam |  |  |  |  | CS318 | NaamGebruik 6 (Niet-natuurlijk persoon) niet vullen. | Constraint | 0001 |
 | JW301 | Client | Naam_VolledigeNaam | Geslachtsnaam_Achternaam | Achternaam_Naam |  |  | RS028 | Maximale lengte 200 posities | Restrictie |  |
@@ -124,14 +124,14 @@ Constraints (CS-regels): https://informatiemodel.istandaarden.nl/informatiemodel
 | JW301 | Header | BerichtIdentificatie_BerichtIdentificatie | Identificatie_IdentificatieBericht |  |  |  | RS017 | Maximale lengte 12 posities | Restrictie |  |
 | JW301 | Header | BerichtIdentificatie_BerichtIdentificatie | Identificatie_IdentificatieBericht |  |  |  | RS033 | Geen lege elementen in XML. | Restrictie |  |
 | JW301 | Header | BerichtIdentificatie_BerichtIdentificatie | Dagtekening_Datum |  |  |  | RS032 | Datum vullen zonder tijdzone. | Restrictie |  |
-| JW301 | Header | BerichtCode_BerichtCode |  |  |  |  | RS010 | Maximale lengte 3 posities | Restrictie |  |
-| JW301 | Header | BerichtCode_BerichtCode |  |  |  |  | RS047 | Vullen met BerichtCode volgens de specificatie | Restrictie |  |
+| JW301 | Header | BerichtCode |  |  |  |  | RS010 | Maximale lengte 3 posities | Restrictie |  |
+| JW301 | Header | BerichtCode |  |  |  |  | RS047 | Vullen met BerichtCode volgens de specificatie | Restrictie |  |
 | JW301 | Header | BerichtVersie |  |  |  |  | CS025 | BerichtVersie vullen met 3. | Constraint |  |
 | JW301 | Header | BerichtVersie_BerichtVersie |  |  |  |  | RS001 | Minimale waarde 0 | Restrictie |  |
 | JW301 | Header | BerichtVersie_BerichtVersie |  |  |  |  | RS002 | Maximale waarde 99 | Restrictie |  |
 | JW301 | Header | BerichtSubversie |  |  |  |  | CS015 | BerichtSubversie vullen met 2. | Constraint |  |
-| JW301 | Header | BerichtSubversie_BerichtSubversie |  |  |  |  | RS001 | Minimale waarde 0 | Restrictie |  |
-| JW301 | Header | BerichtSubversie_BerichtSubversie |  |  |  |  | RS002 | Maximale waarde 99 | Restrictie |  |
+| JW301 | Header | BerichtSubversie |  |  |  |  | RS001 | Minimale waarde 0 | Restrictie |  |
+| JW301 | Header | BerichtSubversie |  |  |  |  | RS002 | Maximale waarde 99 | Restrictie |  |
 | JW301 | Header | XsdVersie_XsdVersie | BerichtXsdVersie_Versie |  |  |  | RS048 | Vullen met een versienummer bestaande uit drie gehele getallen, gescheiden met punten. | Restrictie |  |
 | JW301 | Header | XsdVersie_XsdVersie | BasisschemaXsdVersie_Versie |  |  |  | RS048 | Vullen met een versienummer bestaande uit drie gehele getallen, gescheiden met punten. | Restrictie |  |
 | JW301 | Relatie | Nummer_Persoonsid |  |  | ja |  | RS019 | Maximale lengte 20 posities | Restrictie |  |
@@ -139,9 +139,9 @@ Constraints (CS-regels): https://informatiemodel.istandaarden.nl/informatiemodel
 | JW301 | Relatie | Volgorde_RelatieVolgorde |  |  |  |  | RS001 | Minimale waarde 0 | Restrictie |  |
 | JW301 | Relatie | Volgorde_RelatieVolgorde |  |  |  |  | RS002 | Maximale waarde 99 | Restrictie |  |
 | JW301 | Relatie | Soort_SoortRelatie |  |  |  | COD472 | RS009 | Maximale lengte 2 posities | Restrictie |  |
-| JW301 | Relatie | Geboortedatum_Geboortedatum | Datum_Datum |  |  |  | RS032 | Datum vullen zonder tijdzone. | Restrictie |  |
-| JW301 | Relatie | Geboortedatum_Geboortedatum | DatumGebruik |  |  |  | CS139 | Voor Geboortedatum geldt dat DatumGebruik en Datum met elkaar in overeenstemming moeten zijn. | Constraint | 0001 |
-| JW301 | Relatie | Geboortedatum_Geboortedatum | DatumGebruik_DatumGebruik |  |  | COD170 | RS008 | Maximale lengte 1 positie | Restrictie |  |
+| JW301 | Relatie | Geboortedatum | Datum_Datum |  |  |  | RS032 | Datum vullen zonder tijdzone. | Restrictie |  |
+| JW301 | Relatie | Geboortedatum | DatumGebruik |  |  |  | CS139 | Voor Geboortedatum geldt dat DatumGebruik en Datum met elkaar in overeenstemming moeten zijn. | Constraint | 0001 |
+| JW301 | Relatie | Geboortedatum | DatumGebruik_DatumGebruik |  |  | COD170 | RS008 | Maximale lengte 1 positie | Restrictie |  |
 | JW301 | Relatie | Geslacht_Geslacht |  |  |  | COD046 | RS008 | Maximale lengte 1 positie | Restrictie |  |
 | JW301 | Relatie | Naam_VolledigeNaam | Geslachtsnaam_Achternaam | Achternaam_Naam |  |  | RS028 | Maximale lengte 200 posities | Restrictie |  |
 | JW301 | Relatie | Naam_VolledigeNaam | Geslachtsnaam_Achternaam | Achternaam_Naam |  |  | RS033 | Geen lege elementen in XML. | Restrictie |  |
@@ -192,9 +192,9 @@ Constraints (CS-regels): https://informatiemodel.istandaarden.nl/informatiemodel
 | JW305 | Client | Bsn_BurgerServicenummer |  |  | ja |  | CS002 | De waarde moet voldoen aan de 11-proef. | Constraint | 0001 |
 | JW305 | Client | Bsn_BurgerServicenummer |  |  | ja |  | RS015 | Maximale lengte 9 posities | Restrictie |  |
 | JW305 | Client | Bsn_BurgerServicenummer |  |  | ja |  | RS037 | Vullen met 9 cijfers. | Restrictie |  |
-| JW305 | Client | Geboortedatum_Geboortedatum | Datum_Datum |  |  |  | RS032 | Datum vullen zonder tijdzone. | Restrictie |  |
-| JW305 | Client | Geboortedatum_Geboortedatum | DatumGebruik |  |  |  | CS139 | Voor Geboortedatum geldt dat DatumGebruik en Datum met elkaar in overeenstemming moeten zijn. | Constraint | 0001 |
-| JW305 | Client | Geboortedatum_Geboortedatum | DatumGebruik_DatumGebruik |  |  | COD170 | RS008 | Maximale lengte 1 positie | Restrictie |  |
+| JW305 | Client | Geboortedatum | Datum_Datum |  |  |  | RS032 | Datum vullen zonder tijdzone. | Restrictie |  |
+| JW305 | Client | Geboortedatum | DatumGebruik |  |  |  | CS139 | Voor Geboortedatum geldt dat DatumGebruik en Datum met elkaar in overeenstemming moeten zijn. | Constraint | 0001 |
+| JW305 | Client | Geboortedatum | DatumGebruik_DatumGebruik |  |  | COD170 | RS008 | Maximale lengte 1 positie | Restrictie |  |
 | JW305 | Client | Geslacht_Geslacht |  |  |  | COD046 | RS008 | Maximale lengte 1 positie | Restrictie |  |
 | JW305 | Client | Naam_VerkorteNaam | Geslachtsnaam_Achternaam | Achternaam_Naam |  |  | RS028 | Maximale lengte 200 posities | Restrictie |  |
 | JW305 | Client | Naam_VerkorteNaam | Geslachtsnaam_Achternaam | Achternaam_Naam |  |  | RS033 | Geen lege elementen in XML. | Restrictie |  |
@@ -210,14 +210,14 @@ Constraints (CS-regels): https://informatiemodel.istandaarden.nl/informatiemodel
 | JW305 | Header | BerichtIdentificatie_BerichtIdentificatie | Identificatie_IdentificatieBericht |  |  |  | RS017 | Maximale lengte 12 posities | Restrictie |  |
 | JW305 | Header | BerichtIdentificatie_BerichtIdentificatie | Identificatie_IdentificatieBericht |  |  |  | RS033 | Geen lege elementen in XML. | Restrictie |  |
 | JW305 | Header | BerichtIdentificatie_BerichtIdentificatie | Dagtekening_Datum |  |  |  | RS032 | Datum vullen zonder tijdzone. | Restrictie |  |
-| JW305 | Header | BerichtCode_BerichtCode |  |  |  |  | RS010 | Maximale lengte 3 posities | Restrictie |  |
-| JW305 | Header | BerichtCode_BerichtCode |  |  |  |  | RS047 | Vullen met BerichtCode volgens de specificatie | Restrictie |  |
+| JW305 | Header | BerichtCode |  |  |  |  | RS010 | Maximale lengte 3 posities | Restrictie |  |
+| JW305 | Header | BerichtCode |  |  |  |  | RS047 | Vullen met BerichtCode volgens de specificatie | Restrictie |  |
 | JW305 | Header | BerichtVersie |  |  |  |  | CS025 | BerichtVersie vullen met 3. | Constraint |  |
 | JW305 | Header | BerichtVersie_BerichtVersie |  |  |  |  | RS001 | Minimale waarde 0 | Restrictie |  |
 | JW305 | Header | BerichtVersie_BerichtVersie |  |  |  |  | RS002 | Maximale waarde 99 | Restrictie |  |
 | JW305 | Header | BerichtSubversie |  |  |  |  | CS015 | BerichtSubversie vullen met 2. | Constraint |  |
-| JW305 | Header | BerichtSubversie_BerichtSubversie |  |  |  |  | RS001 | Minimale waarde 0 | Restrictie |  |
-| JW305 | Header | BerichtSubversie_BerichtSubversie |  |  |  |  | RS002 | Maximale waarde 99 | Restrictie |  |
+| JW305 | Header | BerichtSubversie |  |  |  |  | RS001 | Minimale waarde 0 | Restrictie |  |
+| JW305 | Header | BerichtSubversie |  |  |  |  | RS002 | Maximale waarde 99 | Restrictie |  |
 | JW305 | Header | XsdVersie_XsdVersie | BerichtXsdVersie_Versie |  |  |  | RS048 | Vullen met een versienummer bestaande uit drie gehele getallen, gescheiden met punten. | Restrictie |  |
 | JW305 | Header | XsdVersie_XsdVersie | BasisschemaXsdVersie_Versie |  |  |  | RS048 | Vullen met een versienummer bestaande uit drie gehele getallen, gescheiden met punten. | Restrictie |  |
 | JW305 | StartProduct | ToewijzingNummer_Nummer |  |  | ja |  | RS001 | Minimale waarde 0 | Restrictie |  |
@@ -232,9 +232,9 @@ Constraints (CS-regels): https://informatiemodel.istandaarden.nl/informatiemodel
 | JW307 | Client | Bsn_BurgerServicenummer |  |  | ja |  | CS002 | De waarde moet voldoen aan de 11-proef. | Constraint | 0001 |
 | JW307 | Client | Bsn_BurgerServicenummer |  |  | ja |  | RS015 | Maximale lengte 9 posities | Restrictie |  |
 | JW307 | Client | Bsn_BurgerServicenummer |  |  | ja |  | RS037 | Vullen met 9 cijfers. | Restrictie |  |
-| JW307 | Client | Geboortedatum_Geboortedatum | Datum_Datum |  |  |  | RS032 | Datum vullen zonder tijdzone. | Restrictie |  |
-| JW307 | Client | Geboortedatum_Geboortedatum | DatumGebruik |  |  |  | CS139 | Voor Geboortedatum geldt dat DatumGebruik en Datum met elkaar in overeenstemming moeten zijn. | Constraint | 0001 |
-| JW307 | Client | Geboortedatum_Geboortedatum | DatumGebruik_DatumGebruik |  |  | COD170 | RS008 | Maximale lengte 1 positie | Restrictie |  |
+| JW307 | Client | Geboortedatum | Datum_Datum |  |  |  | RS032 | Datum vullen zonder tijdzone. | Restrictie |  |
+| JW307 | Client | Geboortedatum | DatumGebruik |  |  |  | CS139 | Voor Geboortedatum geldt dat DatumGebruik en Datum met elkaar in overeenstemming moeten zijn. | Constraint | 0001 |
+| JW307 | Client | Geboortedatum | DatumGebruik_DatumGebruik |  |  | COD170 | RS008 | Maximale lengte 1 positie | Restrictie |  |
 | JW307 | Client | Geslacht_Geslacht |  |  |  | COD046 | RS008 | Maximale lengte 1 positie | Restrictie |  |
 | JW307 | Client | Naam_VerkorteNaam | Geslachtsnaam_Achternaam | Achternaam_Naam |  |  | RS028 | Maximale lengte 200 posities | Restrictie |  |
 | JW307 | Client | Naam_VerkorteNaam | Geslachtsnaam_Achternaam | Achternaam_Naam |  |  | RS033 | Geen lege elementen in XML. | Restrictie |  |
@@ -250,14 +250,14 @@ Constraints (CS-regels): https://informatiemodel.istandaarden.nl/informatiemodel
 | JW307 | Header | BerichtIdentificatie_BerichtIdentificatie | Identificatie_IdentificatieBericht |  |  |  | RS017 | Maximale lengte 12 posities | Restrictie |  |
 | JW307 | Header | BerichtIdentificatie_BerichtIdentificatie | Identificatie_IdentificatieBericht |  |  |  | RS033 | Geen lege elementen in XML. | Restrictie |  |
 | JW307 | Header | BerichtIdentificatie_BerichtIdentificatie | Dagtekening_Datum |  |  |  | RS032 | Datum vullen zonder tijdzone. | Restrictie |  |
-| JW307 | Header | BerichtCode_BerichtCode |  |  |  |  | RS010 | Maximale lengte 3 posities | Restrictie |  |
-| JW307 | Header | BerichtCode_BerichtCode |  |  |  |  | RS047 | Vullen met BerichtCode volgens de specificatie | Restrictie |  |
+| JW307 | Header | BerichtCode |  |  |  |  | RS010 | Maximale lengte 3 posities | Restrictie |  |
+| JW307 | Header | BerichtCode |  |  |  |  | RS047 | Vullen met BerichtCode volgens de specificatie | Restrictie |  |
 | JW307 | Header | BerichtVersie |  |  |  |  | CS025 | BerichtVersie vullen met 3. | Constraint |  |
 | JW307 | Header | BerichtVersie_BerichtVersie |  |  |  |  | RS001 | Minimale waarde 0 | Restrictie |  |
 | JW307 | Header | BerichtVersie_BerichtVersie |  |  |  |  | RS002 | Maximale waarde 99 | Restrictie |  |
 | JW307 | Header | BerichtSubversie |  |  |  |  | CS015 | BerichtSubversie vullen met 2. | Constraint |  |
-| JW307 | Header | BerichtSubversie_BerichtSubversie |  |  |  |  | RS001 | Minimale waarde 0 | Restrictie |  |
-| JW307 | Header | BerichtSubversie_BerichtSubversie |  |  |  |  | RS002 | Maximale waarde 99 | Restrictie |  |
+| JW307 | Header | BerichtSubversie |  |  |  |  | RS001 | Minimale waarde 0 | Restrictie |  |
+| JW307 | Header | BerichtSubversie |  |  |  |  | RS002 | Maximale waarde 99 | Restrictie |  |
 | JW307 | Header | XsdVersie_XsdVersie | BerichtXsdVersie_Versie |  |  |  | RS048 | Vullen met een versienummer bestaande uit drie gehele getallen, gescheiden met punten. | Restrictie |  |
 | JW307 | Header | XsdVersie_XsdVersie | BasisschemaXsdVersie_Versie |  |  |  | RS048 | Vullen met een versienummer bestaande uit drie gehele getallen, gescheiden met punten. | Restrictie |  |
 | JW307 | StopProduct | ToewijzingNummer_Nummer |  |  | ja |  | RS001 | Minimale waarde 0 | Restrictie |  |
@@ -310,9 +310,9 @@ Constraints (CS-regels): https://informatiemodel.istandaarden.nl/informatiemodel
 | JW315 | Client | Bsn_BurgerServicenummer |  |  | ja |  | CS002 | De waarde moet voldoen aan de 11-proef. | Constraint | 0001 |
 | JW315 | Client | Bsn_BurgerServicenummer |  |  | ja |  | RS015 | Maximale lengte 9 posities | Restrictie |  |
 | JW315 | Client | Bsn_BurgerServicenummer |  |  | ja |  | RS037 | Vullen met 9 cijfers. | Restrictie |  |
-| JW315 | Client | Geboortedatum_Geboortedatum | Datum_Datum |  |  |  | RS032 | Datum vullen zonder tijdzone. | Restrictie |  |
-| JW315 | Client | Geboortedatum_Geboortedatum | DatumGebruik |  |  |  | CS139 | Voor Geboortedatum geldt dat DatumGebruik en Datum met elkaar in overeenstemming moeten zijn. | Constraint | 0001 |
-| JW315 | Client | Geboortedatum_Geboortedatum | DatumGebruik_DatumGebruik |  |  | COD170 | RS008 | Maximale lengte 1 positie | Restrictie |  |
+| JW315 | Client | Geboortedatum | Datum_Datum |  |  |  | RS032 | Datum vullen zonder tijdzone. | Restrictie |  |
+| JW315 | Client | Geboortedatum | DatumGebruik |  |  |  | CS139 | Voor Geboortedatum geldt dat DatumGebruik en Datum met elkaar in overeenstemming moeten zijn. | Constraint | 0001 |
+| JW315 | Client | Geboortedatum | DatumGebruik_DatumGebruik |  |  | COD170 | RS008 | Maximale lengte 1 positie | Restrictie |  |
 | JW315 | Client | Geslacht_Geslacht |  |  |  | COD046 | RS008 | Maximale lengte 1 positie | Restrictie |  |
 | JW315 | Client | Naam_VerkorteNaam | Geslachtsnaam_Achternaam | Achternaam_Naam |  |  | RS028 | Maximale lengte 200 posities | Restrictie |  |
 | JW315 | Client | Naam_VerkorteNaam | Geslachtsnaam_Achternaam | Achternaam_Naam |  |  | RS033 | Geen lege elementen in XML. | Restrictie |  |
@@ -330,14 +330,14 @@ Constraints (CS-regels): https://informatiemodel.istandaarden.nl/informatiemodel
 | JW315 | Header | BerichtIdentificatie_BerichtIdentificatie | Identificatie_IdentificatieBericht |  |  |  | RS017 | Maximale lengte 12 posities | Restrictie |  |
 | JW315 | Header | BerichtIdentificatie_BerichtIdentificatie | Identificatie_IdentificatieBericht |  |  |  | RS033 | Geen lege elementen in XML. | Restrictie |  |
 | JW315 | Header | BerichtIdentificatie_BerichtIdentificatie | Dagtekening_Datum |  |  |  | RS032 | Datum vullen zonder tijdzone. | Restrictie |  |
-| JW315 | Header | BerichtCode_BerichtCode |  |  |  |  | RS010 | Maximale lengte 3 posities | Restrictie |  |
-| JW315 | Header | BerichtCode_BerichtCode |  |  |  |  | RS047 | Vullen met BerichtCode volgens de specificatie | Restrictie |  |
+| JW315 | Header | BerichtCode |  |  |  |  | RS010 | Maximale lengte 3 posities | Restrictie |  |
+| JW315 | Header | BerichtCode |  |  |  |  | RS047 | Vullen met BerichtCode volgens de specificatie | Restrictie |  |
 | JW315 | Header | BerichtVersie |  |  |  |  | CS025 | BerichtVersie vullen met 3. | Constraint |  |
 | JW315 | Header | BerichtVersie_BerichtVersie |  |  |  |  | RS001 | Minimale waarde 0 | Restrictie |  |
 | JW315 | Header | BerichtVersie_BerichtVersie |  |  |  |  | RS002 | Maximale waarde 99 | Restrictie |  |
 | JW315 | Header | BerichtSubversie |  |  |  |  | CS015 | BerichtSubversie vullen met 2. | Constraint |  |
-| JW315 | Header | BerichtSubversie_BerichtSubversie |  |  |  |  | RS001 | Minimale waarde 0 | Restrictie |  |
-| JW315 | Header | BerichtSubversie_BerichtSubversie |  |  |  |  | RS002 | Maximale waarde 99 | Restrictie |  |
+| JW315 | Header | BerichtSubversie |  |  |  |  | RS001 | Minimale waarde 0 | Restrictie |  |
+| JW315 | Header | BerichtSubversie |  |  |  |  | RS002 | Maximale waarde 99 | Restrictie |  |
 | JW315 | Header | XsdVersie_XsdVersie | BerichtXsdVersie_Versie |  |  |  | RS048 | Vullen met een versienummer bestaande uit drie gehele getallen, gescheiden met punten. | Restrictie |  |
 | JW315 | Header | XsdVersie_XsdVersie | BasisschemaXsdVersie_Versie |  |  |  | RS048 | Vullen met een versienummer bestaande uit drie gehele getallen, gescheiden met punten. | Restrictie |  |
 | JW317 | Client | Bsn_BurgerServicenummer |  |  | ja |  | CS002 | De waarde moet voldoen aan de 11-proef. | Constraint | 0001 |
@@ -349,14 +349,14 @@ Constraints (CS-regels): https://informatiemodel.istandaarden.nl/informatiemodel
 | JW317 | Header | BerichtIdentificatie_BerichtIdentificatie | Identificatie_IdentificatieBericht |  |  |  | RS017 | Maximale lengte 12 posities | Restrictie |  |
 | JW317 | Header | BerichtIdentificatie_BerichtIdentificatie | Identificatie_IdentificatieBericht |  |  |  | RS033 | Geen lege elementen in XML. | Restrictie |  |
 | JW317 | Header | BerichtIdentificatie_BerichtIdentificatie | Dagtekening_Datum |  |  |  | RS032 | Datum vullen zonder tijdzone. | Restrictie |  |
-| JW317 | Header | BerichtCode_BerichtCode |  |  |  |  | RS010 | Maximale lengte 3 posities | Restrictie |  |
-| JW317 | Header | BerichtCode_BerichtCode |  |  |  |  | RS047 | Vullen met BerichtCode volgens de specificatie | Restrictie |  |
+| JW317 | Header | BerichtCode |  |  |  |  | RS010 | Maximale lengte 3 posities | Restrictie |  |
+| JW317 | Header | BerichtCode |  |  |  |  | RS047 | Vullen met BerichtCode volgens de specificatie | Restrictie |  |
 | JW317 | Header | BerichtVersie |  |  |  |  | CS025 | BerichtVersie vullen met 3. | Constraint |  |
 | JW317 | Header | BerichtVersie_BerichtVersie |  |  |  |  | RS001 | Minimale waarde 0 | Restrictie |  |
 | JW317 | Header | BerichtVersie_BerichtVersie |  |  |  |  | RS002 | Maximale waarde 99 | Restrictie |  |
 | JW317 | Header | BerichtSubversie |  |  |  |  | CS015 | BerichtSubversie vullen met 2. | Constraint |  |
-| JW317 | Header | BerichtSubversie_BerichtSubversie |  |  |  |  | RS001 | Minimale waarde 0 | Restrictie |  |
-| JW317 | Header | BerichtSubversie_BerichtSubversie |  |  |  |  | RS002 | Maximale waarde 99 | Restrictie |  |
+| JW317 | Header | BerichtSubversie |  |  |  |  | RS001 | Minimale waarde 0 | Restrictie |  |
+| JW317 | Header | BerichtSubversie |  |  |  |  | RS002 | Maximale waarde 99 | Restrictie |  |
 | JW317 | Header | XsdVersie_XsdVersie | BerichtXsdVersie_Versie |  |  |  | RS048 | Vullen met een versienummer bestaande uit drie gehele getallen, gescheiden met punten. | Restrictie |  |
 | JW317 | Header | XsdVersie_XsdVersie | BasisschemaXsdVersie_Versie |  |  |  | RS048 | Vullen met een versienummer bestaande uit drie gehele getallen, gescheiden met punten. | Restrictie |  |
 | JW317 | NieuwProduct | Product |  |  | ja |  | CD079 | Indien Budget leeg is, dan verplicht vullen | Conditie | 0001 |
@@ -371,11 +371,13 @@ Constraints (CS-regels): https://informatiemodel.istandaarden.nl/informatiemodel
 | JW317 | NieuwProduct | Omvang |  |  |  |  | CD041 | Indien Code in Product gevuld is, verplicht vullen. | Conditie | 0001 |
 | JW317 | NieuwProduct | Omvang |  |  |  |  | CD077 | Indien Budget gevuld is, dan leeg laten | Conditie | 0001 |
 | JW317 | NieuwProduct | Omvang |  |  |  |  | CD096 | Indien Code in NieuwProduct leeg is en Einddatum groter dan 31-12-2020 of leeg is, dan leeg laten | Conditie | 0001 |
-| JW317 | NieuwProduct | Omvang |  |  |  |  | CS338 | Indien eenheid de waarde 14, 16, 83 of 84 heeft en Einddatum groter dan 31-12-2020 of leeg is, dan Frequentie vullen met de waarde 2 , 4 of 6 | Constraint | 0001 |
+| JW317 | NieuwProduct | Omvang | Volume |  |  |  | CS338 | Indien eenheid de waarde 14, 16, 83 of 84 heeft en Einddatum groter dan 31-12-2020 of leeg is, dan Frequentie vullen met de waarde 2 , 4 of 6 | Constraint | 0001 |
+| JW317 | NieuwProduct | Omvang | Eenheid |  |  |  | CS338 | Indien eenheid de waarde 14, 16, 83 of 84 heeft en Einddatum groter dan 31-12-2020 of leeg is, dan Frequentie vullen met de waarde 2 , 4 of 6 | Constraint | 0001 |
+| JW317 | NieuwProduct | Omvang | Frequenit |  |  |  | CS338 | Indien eenheid de waarde 14, 16, 83 of 84 heeft en Einddatum groter dan 31-12-2020 of leeg is, dan Frequentie vullen met de waarde 2 , 4 of 6 | Constraint | 0001 |
 | JW317 | NieuwProduct | Omvang | Volume |  |  |  | RS001 | Minimale waarde 0 | Restrictie |  |
 | JW317 | NieuwProduct | Omvang | Volume |  |  |  | RS005 | Maximale waarde 99999999 (8*9) | Restrictie |  |
 | JW317 | NieuwProduct | Omvang | Eenheid |  |  | WJ756 | RS009 | Maximale lengte 2 posities | Restrictie |  |
-| JW317 | NieuwProduct | Omvang |  Frequentie |  |  | WMO757 | RS008 | Maximale lengte 1 positie | Restrictie |  |
+| JW317 | NieuwProduct | Omvang | Frequentie |  |  | WMO757 | RS008 | Maximale lengte 1 positie | Restrictie |  |
 | JW317 | NieuwProduct | Budget |  |  |  |  | CD078 | Indien Omvang gevuld is, dan leeg laten | Conditie | 0001 |
 | JW317 | NieuwProduct | Budget_Budget |  |  |  |  | RS001 | Minimale waarde 0 | Restrictie |  |
 | JW317 | NieuwProduct | Budget_Budget |  |  |  |  | RS005 | Maximale waarde 99999999 (8*9) | Restrictie |  |
@@ -387,11 +389,13 @@ Constraints (CS-regels): https://informatiemodel.istandaarden.nl/informatiemodel
 | JW317 | TeWijzigenProduct | Einddatum |  |  |  |  | CS003 | Indien van toepassing vullen met een waarde die groter is dan, of gelijk is aan de Begindatum (of Ingangsdatum) van de aangeduide periode. | Constraint | 0001 |
 | JW317 | TeWijzigenProduct | Einddatum_Datum |  |  |  |  | RS032 | Datum vullen zonder tijdzone. | Restrictie |  |
 | JW317 | TeWijzigenProduct | Omvang |  |  |  |  | CD077 | Indien Budget gevuld is, dan leeg laten | Conditie | 0001 |
-| JW317 | TeWijzigenProduct | Omvang |  |  |  |  | CS338 | Indien eenheid de waarde 14, 16, 83 of 84 heeft en Einddatum groter dan 31-12-2020 of leeg is, dan Frequentie vullen met de waarde 2 , 4 of 6 | Constraint | 0001 |
+| JW317 | TeWijzigenProduct | Omvang | Volume |  |  |  | CS338 | Indien eenheid de waarde 14, 16, 83 of 84 heeft en Einddatum groter dan 31-12-2020 of leeg is, dan Frequentie vullen met de waarde 2 , 4 of 6 | Constraint | 0001 |
+| JW317 | TeWijzigenProduct | Omvang | Eenheid |  |  |  | CS338 | Indien eenheid de waarde 14, 16, 83 of 84 heeft en Einddatum groter dan 31-12-2020 of leeg is, dan Frequentie vullen met de waarde 2 , 4 of 6 | Constraint | 0001 |
+| JW317 | TeWijzigenProduct | Omvang | Frequentie |  |  |  | CS338 | Indien eenheid de waarde 14, 16, 83 of 84 heeft en Einddatum groter dan 31-12-2020 of leeg is, dan Frequentie vullen met de waarde 2 , 4 of 6 | Constraint | 0001 |
 | JW317 | TeWijzigenProduct | Omvang | Volume |  |  |  | RS001 | Minimale waarde 0 | Restrictie |  |
 | JW317 | TeWijzigenProduct | Omvang | Volume |  |  |  | RS005 | Maximale waarde 99999999 (8*9) | Restrictie |  |
 | JW317 | TeWijzigenProduct | Omvang | Eenheid |  |  | WJ756 | RS009 | Maximale lengte 2 posities | Restrictie |  |
-| JW317 | TeWijzigenProduct | Omvang |  Frequentie |  |  | WMO757 | RS008 | Maximale lengte 1 positie | Restrictie |  |
+| JW317 | TeWijzigenProduct | Omvang | Frequentie |  |  | WMO757 | RS008 | Maximale lengte 1 positie | Restrictie |  |
 | JW317 | TeWijzigenProduct | ToewijzingNummer_Nummer |  |  | ja |  | RS001 | Minimale waarde 0 | Restrictie |  |
 | JW317 | TeWijzigenProduct | ToewijzingNummer_Nummer |  |  | ja |  | RS006 | Maximale waarde 999999999 (9*9) | Restrictie |  |
 | JW317 | TeWijzigenProduct | Budget |  |  |  |  | CD078 | Indien Omvang gevuld is, dan leeg laten | Conditie | 0001 |
@@ -412,14 +416,14 @@ Constraints (CS-regels): https://informatiemodel.istandaarden.nl/informatiemodel
 | JW319 | Header | BerichtIdentificatie_BerichtIdentificatie | Identificatie_IdentificatieBericht |  |  |  | RS017 | Maximale lengte 12 posities | Restrictie |  |
 | JW319 | Header | BerichtIdentificatie_BerichtIdentificatie | Identificatie_IdentificatieBericht |  |  |  | RS033 | Geen lege elementen in XML. | Restrictie |  |
 | JW319 | Header | BerichtIdentificatie_BerichtIdentificatie | Dagtekening_Datum |  |  |  | RS032 | Datum vullen zonder tijdzone. | Restrictie |  |
-| JW319 | Header | BerichtCode_BerichtCode |  |  |  |  | RS010 | Maximale lengte 3 posities | Restrictie |  |
-| JW319 | Header | BerichtCode_BerichtCode |  |  |  |  | RS047 | Vullen met BerichtCode volgens de specificatie | Restrictie |  |
+| JW319 | Header | BerichtCode |  |  |  |  | RS010 | Maximale lengte 3 posities | Restrictie |  |
+| JW319 | Header | BerichtCode |  |  |  |  | RS047 | Vullen met BerichtCode volgens de specificatie | Restrictie |  |
 | JW319 | Header | BerichtVersie |  |  |  |  | CS025 | BerichtVersie vullen met 3. | Constraint |  |
 | JW319 | Header | BerichtVersie_BerichtVersie |  |  |  |  | RS001 | Minimale waarde 0 | Restrictie |  |
 | JW319 | Header | BerichtVersie_BerichtVersie |  |  |  |  | RS002 | Maximale waarde 99 | Restrictie |  |
 | JW319 | Header | BerichtSubversie |  |  |  |  | CS015 | BerichtSubversie vullen met 2. | Constraint |  |
-| JW319 | Header | BerichtSubversie_BerichtSubversie |  |  |  |  | RS001 | Minimale waarde 0 | Restrictie |  |
-| JW319 | Header | BerichtSubversie_BerichtSubversie |  |  |  |  | RS002 | Maximale waarde 99 | Restrictie |  |
+| JW319 | Header | BerichtSubversie |  |  |  |  | RS001 | Minimale waarde 0 | Restrictie |  |
+| JW319 | Header | BerichtSubversie |  |  |  |  | RS002 | Maximale waarde 99 | Restrictie |  |
 | JW319 | Header | XsdVersie_XsdVersie | BerichtXsdVersie_Versie |  |  |  | RS048 | Vullen met een versienummer bestaande uit drie gehele getallen, gescheiden met punten. | Restrictie |  |
 | JW319 | Header | XsdVersie_XsdVersie | BasisschemaXsdVersie_Versie |  |  |  | RS048 | Vullen met een versienummer bestaande uit drie gehele getallen, gescheiden met punten. | Restrictie |  |
 | JW319 | Woonplaatsbeginsel | Gemeente_Gemeente |  |  | ja |  | RS035 | Vullen met 4 cijfers. | Restrictie |  |
@@ -443,14 +447,14 @@ Constraints (CS-regels): https://informatiemodel.istandaarden.nl/informatiemodel
 | JW323 | Header | BerichtIdentificatie_BerichtIdentificatie | Identificatie_IdentificatieBericht |  |  |  | RS017 | Maximale lengte 12 posities | Restrictie |  |
 | JW323 | Header | BerichtIdentificatie_BerichtIdentificatie | Identificatie_IdentificatieBericht |  |  |  | RS033 | Geen lege elementen in XML. | Restrictie |  |
 | JW323 | Header | BerichtIdentificatie_BerichtIdentificatie | Dagtekening_Datum |  |  |  | RS032 | Datum vullen zonder tijdzone. | Restrictie |  |
-| JW323 | Header | BerichtCode_BerichtCode |  |  |  |  | RS010 | Maximale lengte 3 posities | Restrictie |  |
-| JW323 | Header | BerichtCode_BerichtCode |  |  |  |  | RS047 | Vullen met BerichtCode volgens de specificatie | Restrictie |  |
+| JW323 | Header | BerichtCode |  |  |  |  | RS010 | Maximale lengte 3 posities | Restrictie |  |
+| JW323 | Header | BerichtCode |  |  |  |  | RS047 | Vullen met BerichtCode volgens de specificatie | Restrictie |  |
 | JW323 | Header | BerichtVersie |  |  |  |  | CS025 | BerichtVersie vullen met 3. | Constraint |  |
 | JW323 | Header | BerichtVersie_BerichtVersie |  |  |  |  | RS001 | Minimale waarde 0 | Restrictie |  |
 | JW323 | Header | BerichtVersie_BerichtVersie |  |  |  |  | RS002 | Maximale waarde 99 | Restrictie |  |
 | JW323 | Header | BerichtSubversie |  |  |  |  | CS015 | BerichtSubversie vullen met 2. | Constraint |  |
-| JW323 | Header | BerichtSubversie_BerichtSubversie |  |  |  |  | RS001 | Minimale waarde 0 | Restrictie |  |
-| JW323 | Header | BerichtSubversie_BerichtSubversie |  |  |  |  | RS002 | Maximale waarde 99 | Restrictie |  |
+| JW323 | Header | BerichtSubversie |  |  |  |  | RS001 | Minimale waarde 0 | Restrictie |  |
+| JW323 | Header | BerichtSubversie |  |  |  |  | RS002 | Maximale waarde 99 | Restrictie |  |
 | JW323 | Header | XsdVersie_XsdVersie | BerichtXsdVersie_Versie |  |  |  | RS048 | Vullen met een versienummer bestaande uit drie gehele getallen, gescheiden met punten. | Restrictie |  |
 | JW323 | Header | XsdVersie_XsdVersie | BasisschemaXsdVersie_Versie |  |  |  | RS048 | Vullen met een versienummer bestaande uit drie gehele getallen, gescheiden met punten. | Restrictie |  |
 | JW323 | Prestatie | ProductReferentie_Referentie | ReferentieNummer_ReferentieNummer |  | ja |  | RS019 | Maximale lengte 20 posities | Restrictie |  |
@@ -494,14 +498,14 @@ Constraints (CS-regels): https://informatiemodel.istandaarden.nl/informatiemodel
 | JW325 | Header | BerichtIdentificatie_BerichtIdentificatie | Identificatie_IdentificatieBericht |  |  |  | RS017 | Maximale lengte 12 posities | Restrictie |  |
 | JW325 | Header | BerichtIdentificatie_BerichtIdentificatie | Identificatie_IdentificatieBericht |  |  |  | RS033 | Geen lege elementen in XML. | Restrictie |  |
 | JW325 | Header | BerichtIdentificatie_BerichtIdentificatie | Dagtekening_Datum |  |  |  | RS032 | Datum vullen zonder tijdzone. | Restrictie |  |
-| JW325 | Header | BerichtCode_BerichtCode |  |  |  |  | RS010 | Maximale lengte 3 posities | Restrictie |  |
-| JW325 | Header | BerichtCode_BerichtCode |  |  |  |  | RS047 | Vullen met BerichtCode volgens de specificatie | Restrictie |  |
+| JW325 | Header | BerichtCode |  |  |  |  | RS010 | Maximale lengte 3 posities | Restrictie |  |
+| JW325 | Header | BerichtCode |  |  |  |  | RS047 | Vullen met BerichtCode volgens de specificatie | Restrictie |  |
 | JW325 | Header | BerichtVersie |  |  |  |  | CS025 | BerichtVersie vullen met 3. | Constraint |  |
 | JW325 | Header | BerichtVersie_BerichtVersie |  |  |  |  | RS001 | Minimale waarde 0 | Restrictie |  |
 | JW325 | Header | BerichtVersie_BerichtVersie |  |  |  |  | RS002 | Maximale waarde 99 | Restrictie |  |
 | JW325 | Header | BerichtSubversie |  |  |  |  | CS015 | BerichtSubversie vullen met 2. | Constraint |  |
-| JW325 | Header | BerichtSubversie_BerichtSubversie |  |  |  |  | RS001 | Minimale waarde 0 | Restrictie |  |
-| JW325 | Header | BerichtSubversie_BerichtSubversie |  |  |  |  | RS002 | Maximale waarde 99 | Restrictie |  |
+| JW325 | Header | BerichtSubversie |  |  |  |  | RS001 | Minimale waarde 0 | Restrictie |  |
+| JW325 | Header | BerichtSubversie |  |  |  |  | RS002 | Maximale waarde 99 | Restrictie |  |
 | JW325 | Header | XsdVersie_XsdVersie | BerichtXsdVersie_Versie |  |  |  | RS048 | Vullen met een versienummer bestaande uit drie gehele getallen, gescheiden met punten. | Restrictie |  |
 | JW325 | Header | XsdVersie_XsdVersie | BasisschemaXsdVersie_Versie |  |  |  | RS048 | Vullen met een versienummer bestaande uit drie gehele getallen, gescheiden met punten. | Restrictie |  |
 | JW325 | Header | DeclaratieIdentificatie_BerichtIdentificatie | Identificatie_IdentificatieBericht |  |  |  | RS017 | Maximale lengte 12 posities | Restrictie |  |
