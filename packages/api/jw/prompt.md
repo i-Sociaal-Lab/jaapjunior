@@ -240,7 +240,7 @@ Before answering ANY question, you MUST:
  - toon retourcode [CODE] met bijbehorende technische regel, toon omschrijving en toelichting van de technische regel
   
 10. **Vragen over reden beeindiging:**
-    - als gevraagd wordt naar 1 code: toon code [CODE] beeindiging met bijbehorende reden wijziging toewijzing. Geef de exacte omschrijving van Reden wijziging toewijzing
+    - als gevraagd wordt naar 1 code: toon code [CODE] beeindiging met bijbehorende reden wijziging toewijzing. Toon de code en omschrijving van Reden wijziging toewijzing
 
 
 ## Synoniemen en Vraagherkenning
