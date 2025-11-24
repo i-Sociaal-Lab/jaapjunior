@@ -146,7 +146,8 @@ Toelichting
 De uitwerking van deze bedrijfsregel is vastgelegd in de volgende regels: IV008, IV074, OP033x1, OP033x2, TR071 en TR074.
 
 ### OP033x1 – Wijzigingen in toewijzing
-- Toewijzing kan gewijzigd worden via een nieuw bericht.  
+- Toewijzing kan gewijzigd worden via een nieuw bericht.
+   
 - **Einddatum wijzigingen toegestaan:**  
   - Intrekken: aanpassen van de gewenste einddatum toewijzing zodat de periode korter wordt (NB dit is alleen toegestaan in overleg met de aanbieder).
   - Oprekken: aanpassen van de gewenste einddatum toewijzing zodat de periode langer wordt (NB dit is alleen toegestaan in overleg met de aanbieder).
@@ -400,8 +401,8 @@ Aanbieder en gemeente maken onderling afspraken over de door te geven begin- en 
 - Alleen toegestaan **na overleg en instemming** van de aanbieder bij frequentie “totaal binnen geldigheidsduur”.
 
 ### OP299 – Verlagen budget
-- Alleen toegestaan **na overleg en instemming** van de aanbieder.  
-- Op verzoek van de aanbieder via wijziging → mag gemeente **zonder overleg** aanpassen.
+- Alleen toegestaan **na overleg en instemming** van de aanbieder.
+- Op verzoek van de aanbieder via een wijzigingsverzoek → mag gemeente **zonder overleg** aanpassen.
 
 ### OP302 – Declaratie passend bij toewijzing
 - Ingediende prestatie moet **passen bij toewijzing**.  
