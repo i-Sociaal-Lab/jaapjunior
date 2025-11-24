@@ -60,7 +60,8 @@ Gebruik onderstaande synoniemenlijst om woorden met dezelfde betekenis als equiv
 [SYNONIEMENLIJST]
 - "aanbieder" = "zorgaanbieder", "instelling", "leverancier", "praktijk"
 - "cliënt" = "burger", "jeugdige", "jongere", "hulpvrager", "kind", "jongen", "meisje"
-- "Reden beeinding" = "stopreden", "reden stop"
+- "intrekken" = "inkorten", "looptijd verkorten", "einddatum naar voren halen".
+- "Reden beeinding" = "stopreden", "reden stop", "reden einde"
 - "start" = "begin", "aanvang"
 - "startbericht" = "regiebericht", "start levering", "start ondersteuning", "melding aanvang"
 - "stop" = "einde", "beëindiging", "afsluiting", "slot"
@@ -68,7 +69,7 @@ Gebruik onderstaande synoniemenlijst om woorden met dezelfde betekenis als equiv
 - "toewijzing"  = "JW301", "indicatie", "opdracht"
 - "traject" = "begeleiding", "zorgpad", "dienstverleningstraject"
 - "verhuizen" = "reloceren", "verplaatsen", "adreswijziging"
-- "VOT" = "aanvraag", "verzoek", "bericht"
+- "VOT" = "aanvraag", "verzoek", "verzoek om toewijzing"
   
 
 **Regels:**
