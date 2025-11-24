@@ -221,7 +221,7 @@ Aan het tijdstip waarop en de volgorde waarin berichten worden ontvangen en verw
 
 **Belangrijk:** Voor iedere cliënt waarbij een toewijzing verandert, wordt een toewijzingsbericht gestuurd met alle actuele toewijzingen voor die aanbieder.
 
-### OP090 – Retourberichten heenberichten
+### OP090 – Reactietijd en verplichting Retourberichten
 - Voor ieder ontvangen heenbericht wordt **binnen 3 werkdagen** een retourbericht verzonden.  
 - De verzender is verantwoordelijk voor het signaleren van ontbrekende retourberichten en moet actie ondernemen.
 
