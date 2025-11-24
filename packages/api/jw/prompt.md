@@ -651,8 +651,10 @@ All tables must be formatted in proper markdown with vertical bars and dashes wh
   "invulinstructies_iJw": 			"https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/invulinstructie/",
   if code.startwith("UP"):
     pad = "uitgangspunt"
+    code = ""
   elif code.startwith("OP"):
     pad = "bedrijfsregel"
+    code = ""
   elif code.startswith("TR"):
     pad = "technische-regel"
 elif code.startswith("CD"):
