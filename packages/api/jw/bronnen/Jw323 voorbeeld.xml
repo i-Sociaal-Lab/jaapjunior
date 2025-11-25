@@ -23,7 +23,7 @@
 		</jw323:DeclaratiePeriode>
 		<jw323:DeclaratieDagtekening>2025-05-06</jw323:DeclaratieDagtekening>
 		<jw323:TotaalIngediendBedrag>
-			<ijw:TotaalBedrag>58000</ijw:TotaalBedrag>
+			<ijw:TotaalBedrag>79000</ijw:TotaalBedrag>
 			<ijw:DebetCredit>D</ijw:DebetCredit>
 		</jw323:TotaalIngediendBedrag>
 		<jw323:Clienten>
@@ -135,5 +135,6 @@
 		</jw323:Clienten>
 	</jw323:Declaratie>
 </jw323:Bericht>
+
 
 
