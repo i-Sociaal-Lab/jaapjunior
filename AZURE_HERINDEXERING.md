@@ -36,15 +36,23 @@ Of via het menu:
 
 ### Stap 3: Herstart de container
 
-1. In het jaapjunior-api scherm, klik op **Restart** bovenaan
-2. Bevestig door op **Yes** te klikken
-3. Wacht 1-2 minuten tot de status weer **Running** is
+⚠️ **Belangrijk:** Herstart altijd via **Revisions**, niet via de Stop knop!
+
+1. Klik op **Revision management** in het linker menu (onder "Application" sectie)
+2. Je ziet een lijst met revisies. Klik op de actieve revisie (heeft een groen vinkje en 100% traffic)
+3. Klik op **Restart** bovenaan de revision details pagina
+4. Bevestig door op **Yes** te klikken
+5. Wacht 1-2 minuten tot de status weer **Running** is
+
+**Let op:** Gebruik NIET de "Stop" knop in het hoofdscherm van de Container App - dit stopt alle containers en ze starten niet automatisch weer!
 
 ### Stap 4: Controleer de status
 
-1. Klik op **Revisions and replicas** in het linker menu
-2. Controleer dat de status **Running** is (groen vinkje)
-3. Klik op **Metrics** om te zien of er verkeer binnenkomt
+1. In het **Revision management** scherm, controleer dat:
+   - De status **Running** is (groen vinkje)
+   - Het **Replica count** = 1 is
+   - **Traffic weight** = 100% is
+2. Klik op **Metrics** in het linker menu om te zien of er verkeer binnenkomt
 
 ### Stap 5: Test de chatbot
 
@@ -372,10 +380,14 @@ Je moet dit zien:
 **Via Azure Portal:**
 
 1. Ga naar **jaapjunior-api** in Azure Portal
-2. Klik op **Revisions and replicas** in het linker menu
-3. Zie je meerdere revisies? Klik op een eerdere werkende revisie
-4. Klik bovenaan op **Activate**
-5. Zet traffic naar 100% voor deze revisie
+2. Klik op **Revision management** in het linker menu
+3. Zie je meerdere revisies? Zoek een eerdere werkende revisie (oudere datum)
+4. Klik op de oude werkende revisie
+5. Klik bovenaan op **Activate** (als deze inactief is)
+6. Ga terug naar **Revision management** overzicht
+7. Klik op **Choose revision mode** en selecteer **Single**
+8. Selecteer de werkende revisie en klik **Apply**
+9. Dit zet 100% traffic naar de werkende revisie
 
 **Via Azure CLI:**
 
@@ -400,9 +412,10 @@ az containerapp revision activate \
 **Oplossing 1 - Hard Restart via Portal:**
 
 1. Ga naar **jaapjunior-api** in Azure Portal
-2. Klik op **Revisions and replicas**
-3. Klik op de actieve revisie
-4. Klik op **Restart** bij elke replica
+2. Klik op **Revision management** in het linker menu
+3. Klik op de actieve revisie (groen vinkje, 100% traffic)
+4. Klik op **Restart** bovenaan
+5. Bevestig met **Yes**
 
 **Oplossing 2 - Nieuwe Revisie via Portal:**
 
