@@ -38,8 +38,10 @@ Of via het menu:
 
 ⚠️ **Belangrijk:** Herstart altijd via **Revisions**, niet via de Stop knop!
 
-1. Klik op **Revision management** in het linker menu (onder "Application" sectie)
-2. Je ziet een lijst met revisies. Klik op de actieve revisie (heeft een groen vinkje en 100% traffic)
+1. Klik in het linker menu op:
+   - **Revision management** (nieuwere Azure Portal), OF
+   - **Revisions and replicas** (oudere Azure Portal)
+2. Je ziet een lijst met revisies. Klik op de actieve revisie (heeft een groen vinkje ✓ en 100% traffic)
 3. Klik op **Restart** bovenaan de revision details pagina
 4. Bevestig door op **Yes** te klikken
 5. Wacht 1-2 minuten tot de status weer **Running** is
@@ -48,8 +50,8 @@ Of via het menu:
 
 ### Stap 4: Controleer de status
 
-1. In het **Revision management** scherm, controleer dat:
-   - De status **Running** is (groen vinkje)
+1. In het **Revision management** (of **Revisions and replicas**) scherm, controleer dat:
+   - De status **Running** is (groen vinkje ✓)
    - Het **Replica count** = 1 is
    - **Traffic weight** = 100% is
 2. Klik op **Metrics** in het linker menu om te zien of er verkeer binnenkomt
@@ -380,11 +382,11 @@ Je moet dit zien:
 **Via Azure Portal:**
 
 1. Ga naar **jaapjunior-api** in Azure Portal
-2. Klik op **Revision management** in het linker menu
+2. Klik in het linker menu op **Revision management** of **Revisions and replicas**
 3. Zie je meerdere revisies? Zoek een eerdere werkende revisie (oudere datum)
 4. Klik op de oude werkende revisie
 5. Klik bovenaan op **Activate** (als deze inactief is)
-6. Ga terug naar **Revision management** overzicht
+6. Ga terug naar het overzicht
 7. Klik op **Choose revision mode** en selecteer **Single**
 8. Selecteer de werkende revisie en klik **Apply**
 9. Dit zet 100% traffic naar de werkende revisie
@@ -412,16 +414,16 @@ az containerapp revision activate \
 **Oplossing 1 - Hard Restart via Portal:**
 
 1. Ga naar **jaapjunior-api** in Azure Portal
-2. Klik op **Revision management** in het linker menu
-3. Klik op de actieve revisie (groen vinkje, 100% traffic)
+2. Klik in het linker menu op **Revision management** of **Revisions and replicas**
+3. Klik op de actieve revisie (groen vinkje ✓, 100% traffic)
 4. Klik op **Restart** bovenaan
 5. Bevestig met **Yes**
 
 **Oplossing 2 - Nieuwe Revisie via Portal:**
 
 1. Ga naar **jaapjunior-api** in Azure Portal
-2. Klik op **Revision management** in het linker menu
-3. Klik op **Create new revision**
+2. Klik in het linker menu op **Revision management** of **Revisions and replicas**
+3. Klik op **Create new revision** (of **Create and deploy new revision**)
 4. Klik op **Create** (zonder iets te wijzigen)
 5. Dit forceert een volledig nieuwe deployment
 
