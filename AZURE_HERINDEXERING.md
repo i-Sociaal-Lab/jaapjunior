@@ -142,6 +142,174 @@ az containerapp update \
 
 ---
 
+## ⚙️ Environment Variables Aanpassen
+
+**Gebruik deze sectie als:** Je de configuratie van de chatbot wilt wijzigen (welke agents beschikbaar zijn, welke standaard is, etc.)
+
+### Via Azure Portal (Aanbevolen)
+
+#### Stap 1: Ga naar de Container App
+
+1. Log in bij https://portal.azure.com
+2. Zoek **jaapjunior-api** (Container App)
+3. Klik erop om de details te openen
+
+#### Stap 2: Open Environment Variables
+
+1. Klik op **Containers** in het linker menu (onder "Application" sectie)
+2. Je ziet de container **jaapjunior-api** in de lijst
+3. Klik op **Edit and deploy** bovenaan
+4. Klik op de **jaapjunior-api** container in de lijst
+5. Scroll naar beneden naar de sectie **Environment variables**
+
+#### Stap 3: Voeg toe of wijzig variables
+
+Je kunt hier environment variables toevoegen of wijzigen:
+
+**Belangrijke variables voor de chatbot:**
+
+| Variable | Waarde | Uitleg |
+|----------|--------|---------|
+| `ENABLED_AGENTS` | `jw,wmo,cs-wmo` | Welke agents beschikbaar zijn (komma-gescheiden) |
+| `DEFAULT_AGENT` | `cs-wmo` | Welke agent standaard geselecteerd is |
+| `QDRANT_URI` | `http://localhost:6333` | Verbinding met Qdrant vector database |
+| `NODE_ENV` | `production` | Runtime environment (production/development) |
+
+**Secrets (gevoelige data):**
+
+Voor gevoelige data zoals API keys, gebruik **Secrets** in plaats van gewone environment variables:
+
+| Secret | Uitleg |
+|--------|---------|
+| `OPENAI_API_KEY` | OpenAI API key voor embeddings |
+| `ANTHROPIC_API_KEY` | Anthropic API key voor Claude |
+| `JINAAI_API_KEY` | Jina AI API key voor document processing |
+| `SHARED_PASSWORD` | Gedeeld wachtwoord voor authenticatie |
+| `JWT_SECRET` | Secret voor JWT token signing |
+| `API_TOKEN` | API token voor authenticatie |
+
+#### Stap 4: Wijzig een variable
+
+1. Zoek de variable die je wilt wijzigen (bijv. `DEFAULT_AGENT`)
+2. Klik op het **potlood icoon** (✏️) naast de variable
+3. Wijzig de **Value**
+4. Klik op **Save**
+
+#### Stap 5: Voeg een nieuwe variable toe
+
+1. Scroll naar beneden in de Environment variables sectie
+2. Klik op **+ Add**
+3. Vul in:
+   - **Name:** Naam van de variable (bijv. `DEFAULT_AGENT`)
+   - **Source:** Kies **Manual entry** (voor gewone waarden) of **Reference a secret** (voor gevoelige data)
+   - **Value:** De waarde (bijv. `cs-wmo`)
+4. Klik op **Save**
+
+#### Stap 6: Deploy de wijzigingen
+
+1. Scroll helemaal naar boven
+2. Klik op **Create** onderaan de pagina
+3. Wacht 2-3 minuten terwijl een nieuwe revisie wordt aangemaakt
+4. De container herstart automatisch met de nieuwe configuratie
+
+### Secrets beheren (voor API keys)
+
+#### Stap 1: Ga naar Secrets
+
+1. In het **jaapjunior-api** scherm
+2. Klik op **Secrets** in het linker menu (onder "Settings" sectie)
+
+#### Stap 2: Voeg een secret toe
+
+1. Klik op **+ Add**
+2. Vul in:
+   - **Key:** Naam van het secret (bijv. `openai-api-key`)
+   - **Value:** De gevoelige waarde (bijv. je API key)
+3. Klik op **Add**
+
+#### Stap 3: Gebruik het secret in environment variables
+
+1. Ga terug naar **Containers**
+2. Klik op **Edit and deploy**
+3. Selecteer de container
+4. Scroll naar **Environment variables**
+5. Klik op **+ Add**
+6. Vul in:
+   - **Name:** `OPENAI_API_KEY`
+   - **Source:** Selecteer **Reference a secret**
+   - **Value:** Selecteer `openai-api-key` uit de dropdown
+7. Klik op **Save** en dan **Create**
+
+### Via Azure CLI
+
+```bash
+# Login
+az login
+
+# Bekijk huidige environment variables
+az containerapp show \
+  --name jaapjunior-api \
+  --resource-group chatbot_jaapjunior_rg \
+  --query "properties.template.containers[0].env" \
+  --output table
+
+# Voeg een environment variable toe
+az containerapp update \
+  --name jaapjunior-api \
+  --resource-group chatbot_jaapjunior_rg \
+  --set-env-vars "DEFAULT_AGENT=cs-wmo" "ENABLED_AGENTS=jw,wmo,cs-wmo"
+
+# Voeg een secret toe
+az containerapp secret set \
+  --name jaapjunior-api \
+  --resource-group chatbot_jaapjunior_rg \
+  --secrets "openai-api-key=sk-xxxxx"
+
+# Gebruik een secret in een environment variable
+az containerapp update \
+  --name jaapjunior-api \
+  --resource-group chatbot_jaapjunior_rg \
+  --set-env-vars "OPENAI_API_KEY=secretref:openai-api-key"
+```
+
+### Veelvoorkomende configuraties
+
+#### Alleen JW agent beschikbaar maken
+
+```
+ENABLED_AGENTS=jw
+DEFAULT_AGENT=jw
+```
+
+#### Alle agents beschikbaar, WMO als standaard
+
+```
+ENABLED_AGENTS=jw,wmo,cs-wmo
+DEFAULT_AGENT=wmo
+```
+
+#### CS-WMO als enige agent
+
+```
+ENABLED_AGENTS=cs-wmo
+DEFAULT_AGENT=cs-wmo
+```
+
+### Let op!
+
+⚠️ **Na het wijzigen van environment variables:**
+1. De container herstart automatisch (bij "Create" klikken)
+2. Wacht 2-3 minuten tot de nieuwe revisie actief is
+3. Test de chatbot om te controleren of de wijzigingen zijn doorgevoerd
+4. Bij problemen: Rollback naar vorige revisie (zie "Problemen Oplossen")
+
+⚠️ **Secrets vs Environment Variables:**
+- Gebruik **Secrets** voor: API keys, passwords, tokens
+- Gebruik **Environment Variables** voor: Configuratie, feature flags, URLs
+- Secrets zijn encrypted at rest, environment variables niet
+
+---
+
 ## 🔍 Status Controleren
 
 ### Via Azure Portal
