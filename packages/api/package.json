@@ -28,7 +28,7 @@
 		"hono-openapi": "1.0.8",
 		"jose": "6.1.0",
 		"llamaindex": "0.12.0",
-		"valibot": "1.1.0"
+		"valibot": "^1.2.0"
 	},
 	"devDependencies": {
 		"@types/better-sqlite3": "7.6.13",
