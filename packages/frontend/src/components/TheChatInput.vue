@@ -9,6 +9,7 @@ defineProps<{
 	loading: boolean;
 	disabled: boolean;
 	canSelectAgent: boolean;
+	availableAgents: Array<{ id: string; label: string }>;
 	autofocus?: boolean;
 }>();
 
@@ -37,12 +38,7 @@ const models = ref([
 ] satisfies SelectMenuItem[]);
 const selectedModel = defineModel<string>("selected-model");
 
-const agents = ref([
-	{ label: "JW", id: "jw" },
-	{ label: "WMO", id: "wmo" },
-	{ label: "CS-WMO", id: "cs-wmo" },
-] satisfies SelectMenuItem[]);
-const selectedAgent = defineModel<"jw" | "wmo" | "cs-wmo">("selected-agent");
+const selectedAgent = defineModel<string>("selected-agent");
 
 const modes = ref([
 	{ label: "Modellen beoordelen", value: "rate" },
@@ -154,16 +150,16 @@ const resetItems = ref<DropdownMenuItem[]>([
 					:content="{ align: 'end' }"
 				/>
 				<URadioGroup
-					v-if="canSelectAgent"
+					v-if="canSelectAgent && availableAgents.length > 0"
 					v-model="selectedAgent"
 					value-key="id"
-					:items="agents"
+					:items="availableAgents"
 					class="text-end"
 					:search-input="false"
-                    orientation="horizontal"
+					orientation="horizontal"
 					variant="table"
-                    indicator="hidden"
-                    size="xs"
+					indicator="hidden"
+					size="xs"
 					:content="{ align: 'end' }"
 				/>
 				<UButton

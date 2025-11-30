@@ -82,7 +82,8 @@ const hasToPickMessage = computed(() => {
 });
 
 const canSelectAgent = import.meta.env.VITE_TEST_ENV === "true";
-const selectedAgent = ref<"jw" | "wmo" | undefined>("jw");
+const availableAgents = ref<Array<{ id: string; label: string }>>([]);
+const selectedAgent = ref<string | undefined>();
 
 // Computed property to determine if send button should be disabled
 const isSendDisabled = computed(() => {
@@ -103,6 +104,20 @@ onMounted(async () => {
 		count = (count + 1) % 4;
 		dots.value = ".".repeat(count);
 	}, 500);
+
+	// Fetch available agents and default agent
+	if (canSelectAgent) {
+		try {
+			const response = await api.agents.$get();
+			if (response.ok) {
+				const data = await response.json();
+				availableAgents.value = data.agents;
+				selectedAgent.value = data.defaultAgent;
+			}
+		} catch (e) {
+			console.error("Failed to fetch agents:", e);
+		}
+	}
 
 	const id = route.params.id as string;
 	if (id) {
@@ -333,7 +348,8 @@ watch(
 			v-model:mode="selectedMode"
 			v-model:selected-model="selectedModel"
 			v-model:selected-agent="selectedAgent"
-            :can-select-agent="canSelectAgent"
+			:can-select-agent="canSelectAgent"
+			:available-agents="availableAgents"
 			@submit="sendMessage"
 			@feedback="showFeedbackDialog = true"
 			autofocus
