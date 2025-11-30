@@ -13,7 +13,7 @@ RUN bun install --no-optional || bun install
 
 # Stap 3: Build frontend
 WORKDIR /app/packages/frontend
-ARG VITE_TEST_ENV=false
+ARG VITE_TEST_ENV=true
 ARG VITE_ENABLE_MODEL_CONTROLS=false
 ARG VITE_ENABLED_AGENTS=cs-wmo
 ARG VITE_ENABLE_FEEDBACK=true
