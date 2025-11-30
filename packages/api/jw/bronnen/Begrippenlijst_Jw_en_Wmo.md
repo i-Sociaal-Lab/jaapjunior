@@ -12,7 +12,7 @@ Publicatiedatum: 29 september 2025
 
 Deze begrippenlijst is gebaseerd op de begrippenlijst van het Zorginstituut, maar dan specifiek toegespitst op de Jw en Wmo. Het Ketenbureau i-Sociaal Domein heeft vervolgens nog enkele begrippen toegevoegd.
 
-Begrippen staan op alfabet en kunnen worden gezocht via de zoekbalk bovenin het scherm
+Begrippen staan op alfabet en kunnen worden gezocht via de zoekbalk boven aan het scherm
 
 ## Begrippen
 
@@ -173,6 +173,10 @@ het vaste woonadres of briefadres waarop iemand in de Basisregistratie Personen 
 
 burgerservicenummer; uniek persoonsnummer voor iedereen die ingeschreven staat in de Basisregistratie Personen (BRP); hiermee kunnen persoonsgebonden gegevens uitgewisseld worden tussen de verschillende onderdelen van de overheid om de dienstverlening aan burgers te verbeteren en fraude te bestrijden; kan gebruikt worden in de sociale en fiscale sector als sofinummer, in de onderwijssector als onderwijsnummer en in de zorgsector.
 
+### Budgetplafond
+
+Een budgetplafond is het maximum dat binnen deze overeenkomst kan worden gedeclareerd door opdrachtnemer voor zorg geleverd binnen de afgesproken looptijd. Het budgetplafond kan betrekking hebben op de gehele overeenkomst, een of meerdere productcategorieën of een of meerdere producten.
+
 ### burgerservicenummer
 
 zie: BSN
@@ -297,7 +301,7 @@ formele, financieel-administratieve documenten die aan bepaalde wettelijke eisen
 
 ### financiering
 
-een van de processen in de iStandaarden, naast de primaire processen en het proces sturing en controle (iJW en iWmo). Voor iWmo en iJw gaat het om het declareren van de ondersteuning door de aanbieder van zorg of ondersteuning bij de gemeente en voor iWmo gaat het daarbij nog om het aanleveren van geleverde ondersteuning aan het CAK door gemeenten en zorgaanbieders i.v.m. het vaststellen en opleggen van de eigen bijdrage.
+een van de processen in de iStandaarden, naast de primaire processen en het proces sturing en controle (iJw en iWmo). Voor iWmo en iJw gaat het om het declareren van de ondersteuning door de aanbieder van zorg of ondersteuning bij de gemeente en voor iWmo gaat het daarbij nog om het aanleveren van geleverde ondersteuning aan het CAK door gemeenten en zorgaanbieders i.v.m. het vaststellen en opleggen van de eigen bijdrage.
 
 ### GBA
 
@@ -309,7 +313,7 @@ Gemeentelijke Basisadministratie; basisregistratie met alle persoonsgegevens van
 
 ### gebruikelijke zorg
 
-vanuit de Wmo 2015 wordt gesproken over gebruikelijke hulp en dan gaat het om zorg die naar algemeen aanvaarde opvattingen in redelijkheid mag worden verwacht van de echtgenoot, ouders, inwonende kinderen of andere huisgenotenvan iemand die problemen heeft in zijn zelfredzaamheid; zie: gebruikelijke hulp
+vanuit de Wmo 2015 wordt gesproken over gebruikelijke hulp en dan gaat het om zorg die naar algemeen aanvaarde opvattingen in redelijkheid mag worden verwacht van de echtgenoot, ouders, inwonende kinderen of andere huisgenoten van iemand die problemen heeft in zijn zelfredzaamheid; zie: gebruikelijke hulp
 
 ### Gecertificeerde instelling (GI)
 
@@ -660,7 +664,7 @@ Berichten die rechtmatigheid verschaffen of gebruikt kunnen worden omdat rechtma
 
 of einde levering verwijst naar de reden waarom de levering van jeugdhulp wordt beëindigd. Dit begrip wordt gebruikt in het JW307 Stop Jeugdhulp-bericht, waarmee een aanbieder aan de gemeente meldt dat de levering van een toegewezen product (jeugdhulp) wordt gestopt. In het bericht moet worden aangegeven waarom de levering stopt. De codes die hiervoor worden gebruikt staan in codelijst JZ588: Reden beëindiging.
 
-De reden beëindiging wordt vastgelegd met een standaardcode in het veld RedenEindeLevering (of vergelijkbare benaming, afhankelijk van de technische uitwerking). Deze code geeft aan of de beëindiging bijvoorbeeld het gevolg is van een levering die volgens plan is beëindigd.
+De reden beëindiging wordt vastgelegd met een standaardcode in het veld RedenBeeindigingk (of vergelijkbare benaming, afhankelijk van de technische uitwerking). Deze code geeft aan of de beëindiging bijvoorbeeld het gevolg is van een levering die volgens plan is beëindigd.
 
 ### referentiegroepen
 
@@ -701,6 +705,10 @@ Regionale Instelling voor Beschermd en Begeleid Wonen. In Nederland bestaan onge
 ### samengestelde datatypen
 
 zie: complexe datatypen.
+
+### Samenloop
+
+Van samenloop is sprake wanneer een cliënt (eventueel systeem van de cliënt) meerdere zorgproducten op basis van verschillende productcodes ontvangt in een overlappende/gelijktijdige periode. Het controleren van samenloop wordt gebruikt voor de afstemming van de zorgverlening van de cliënt (eventueel inclusief het systeem).
 
 ### SLO
 

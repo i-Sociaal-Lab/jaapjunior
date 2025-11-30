@@ -8,7 +8,7 @@
 		<jw307:Ontvanger>0363</jw307:Ontvanger>
 		<jw307:BerichtIdentificatie>
 			<ijw:Identificatie>123456789012</ijw:Identificatie>
-			<ijw:Dagtekening>2023-07-20</ijw:Dagtekening>
+			<ijw:Dagtekening>2025-07-20</ijw:Dagtekening>
 		</jw307:BerichtIdentificatie>
 		<jw307:XsdVersie>
 			<ijw:BasisschemaXsdVersie>1.0.0</ijw:BasisschemaXsdVersie>
@@ -36,10 +36,10 @@
 					<ijw:Categorie>55</ijw:Categorie>
 					<ijw:Code>55A11</ijw:Code>
 				</jw307:Product>
-				<jw307:ToewijzingIngangsdatum>2023-04-01</jw307:ToewijzingIngangsdatum>
-				<jw307:Begindatum>2023-04-03</jw307:Begindatum>
+				<jw307:ToewijzingIngangsdatum>2025-04-01</jw307:ToewijzingIngangsdatum>
+				<jw307:Begindatum>2025-04-03</jw307:Begindatum>
 				<jw307:RedenBeeindiging>31</jw307:RedenBeeindiging>
-				<jw307:Einddatum>2023-07-19</jw307:Einddatum>
+				<jw307:Einddatum>2025-07-19</jw307:Einddatum>
 				<jw307:StatusAanlevering>1</jw307:StatusAanlevering>
 			</jw307:StopProduct>
 			<jw307:StopProduct>
@@ -48,12 +48,13 @@
 					<ijw:Categorie>55</ijw:Categorie>
 					<ijw:Code>55A12</ijw:Code>
 				</jw307:Product>
-				<jw307:ToewijzingIngangsdatum>2023-04-01</jw307:ToewijzingIngangsdatum>
-				<jw307:Begindatum>2023-04-15</jw307:Begindatum>
+				<jw307:ToewijzingIngangsdatum>2025-04-01</jw307:ToewijzingIngangsdatum>
+				<jw307:Begindatum>2025-04-15</jw307:Begindatum>
 				<jw307:RedenBeeindiging>31</jw307:RedenBeeindiging>
-				<jw307:Einddatum>2023-07-19</jw307:Einddatum>
+				<jw307:Einddatum>2025-07-19</jw307:Einddatum>
 				<jw307:StatusAanlevering>1</jw307:StatusAanlevering>
 			</jw307:StopProduct>
 		</jw307:StopProducten>
 	</jw307:Client>
 </jw307:Bericht>
+

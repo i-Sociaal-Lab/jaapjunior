@@ -22,6 +22,7 @@ Er lopen twee toegewezen producten:
 
 - ToewijzingNummer 345001, Product A, Ingangsdatum 1 januari 2025, einddatum 31 december 2025
 - ToewijzingNummer 345002, Product B, Ingangsdatum 1 januari 2025, einddatum 31 december 2025
+
 Er wordt een verzoek om wijziging gestuurd om de toewijzing van Product B te verlengen met een half jaar t/m 30 juni 2026, met ReferentieAanbieder 667788 (NB: beide producten moeten opgenomen worden in het verzoek om wijziging.)
 
 Als de gemeente dit verzoek honoreert dan wordt een toewijzing gestuurd met beide ToegewezenProducten (conform regel OP087) met beiden dezelfde ReferentieAanbieder:

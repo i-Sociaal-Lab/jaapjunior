@@ -8,7 +8,7 @@ Aanduiding naamgebruik (gecodeerd).
 ## Codelijst
 
 | Code | Omschrijving |
-|------|--------------|
+|:----:|:-------------|
 | 1 | Eigen naam |
 | 2 | Naam echtgenoot of geregistreerd partner of alternatieve naam |
 | 3 | Naam echtgenoot of geregistreerd partner gevolgd door eigen naam |

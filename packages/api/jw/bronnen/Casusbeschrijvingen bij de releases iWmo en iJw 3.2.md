@@ -436,7 +436,7 @@ De gemeente stuurt een toewijzingsbericht naar de aanbieder voor ambulante Jeugd
 
 De zorglevering wordt volgens plan beëindigd en de aanbieder stuurt een stopzorg aan de gemeente. Enkele dagen later signaleert de aanbieder dat per abuis de verkeerde reden beëindiging is doorgegeven.
 
-De aanbieder corrigeert het eerder verstuurde stopbericht door deze aanlevering te verwijderen (status aanlevering 3 (verwijderen aanlevering)) en een nieuwe aanlevering te versturen. Door een technisch aanpassing is het nu het toegestaan voor deze correctie de verwijderde berichtklasse en de nieuwe vervangende berichtklasse in één stopbericht te sturen.
+De aanbieder corrigeert het eerder verstuurde stopbericht door deze aanlevering te verwijderen (status aanlevering 3 (verwijderen aanlevering)) en een nieuwe aanlevering te versturen. Het is toegestaan voor deze correctie de verwijderde berichtklasse en de nieuwe vervangende berichtklasse in één stopbericht te sturen.
 
 *4.1.2 Relevante bedrijfsregels en invulinstructies*
 
@@ -522,16 +522,16 @@ BSN 999900006
 | Productcode | 45A04 |
 | Ingangsdatum toegewezen product | 01-01-2025 |
 | Begindatum levering | 06-01-2025 |
-| Reden beëindiging | 22 (Levering is eenzijdig door aanbieder beëindigd) |
+| Reden beëindiging | 33 (Levering is eenzijdig door aanbieder beëindigd) |
 | Einddatum levering | 17-06-2025 |
 | Status aanlevering stop product | 1 (Eerste aanlevering) |
 
 *Stap 4: De aanbieder stuurt een stopbericht*
 
-Enkele dagen nadat het stopbericht verstuurt is door de aanbieder, constateert deze dat per ongeluk de verkeerde reden beëindiging is doorgeven.
-De administratie heeft reden beëindiging 22 (levering is eenzijdig door aanbieder beëindigd) gevuld maar dit had reden 19 (levering volgens plan beëindigd) moeten zijn.
+Enkele dagen nadat het stopbericht verstuurd is door de aanbieder, constateert deze dat per ongeluk de verkeerde reden beëindiging is doorgegeven.
+De administratie heeft reden beëindiging 33 (levering is eenzijdig door aanbieder beëindigd) gevuld maar dit had reden 19 (levering volgens plan beëindigd) moeten zijn.
 Om dit te corrigeren stuurt de aanbieder een nieuw stopbericht met hierin zowel de intrekking van de eerder verstuurde stop, als de nieuwe vervangende stop.
-Door een technisch aanpassing is het nu het toegestaan voor deze correctie de verwijderde berichtklasse en de nieuwe vervangende berichtklasse in één stopbericht te sturen.
+Door een technisch aanpassing is het toegestaan voor deze correctie de verwijderde berichtklasse en de nieuwe vervangende berichtklasse in één stopbericht te sturen.
 
 **Stop (307):**
 
@@ -546,9 +546,9 @@ Cliënt: BSN 999900006
 | Productcode | 45A04 |
 | Ingangsdatum toegewezen product | 01-01-2025 |
 | Begindatum levering | 06-01-2025 |
-| Reden beëindiging | 22 (Levering is eenzijdig door aanbieder beëindigd) |
+| Reden beëindiging | 33 (Levering is eenzijdig door aanbieder beëindigd) |
 | Einddatum levering | 17-06-2025 |
-| Status aanlevering stop product | 3 (Verwijdere aanlevering) |
+| Status aanlevering stop product | 3 (Verwijderen aanlevering) |
 
 | **StopProduct** |  |
 | --- |:---:|

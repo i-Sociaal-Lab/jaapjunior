@@ -1,5 +1,7 @@
 # Gemeentecodes CBS
 
+---
+
 Status: Productie
 Auteur: CBS
 Bron-link: https://www.cbs.nl/nl-nl/onze-diensten/methoden/classificaties/overig/gemeentelijke-indelingen-per-jaar/indeling-per-jaar/gemeentelijke-indeling-op-1-januari-2025
@@ -26,7 +28,7 @@ Deze kennisbron bevat de meest recente **gemeentecodelijst van het CBS**. Deze l
 
 ### **Over de bron**
 
-Deze bron is de officiële gemeentecodelijst van het CBS en wordt periodiek geactualiseerd. De lijst vormt het uitgangspunt voor correcte identificatie en verwerking van gemeentelijke gegevens in het berichtenverkeer en de landelijke standaarden van het sociaal domein.
+Deze bron is de officiële gemeente van het CBS en wordt periodiek geactualiseerd. De lijst vormt het uitgangspunt voor correcte identificatie en verwerking van gemeentelijke gegevens in het berichtenverkeer en de landelijke standaarden van het sociaal domein.
 
 Gebruik deze lijst dus als dé standaardreferentie voor gemeentecodes bij beantwoording van vragen over gegevensuitwisseling in het sociaal domein, met nadruk op eenduidigheid en actualiteit.
 
@@ -34,8 +36,10 @@ Gebruik deze lijst dus als dé standaardreferentie voor gemeentecodes bij beantw
 
 Op 1 januari 2025 is het aantal gemeenten gelijk gebleven aan 2024. Het aantal gemeenten in Nederland blijft dan ook 342 op deze datum.Het volledige overzicht van de gemeentelijke indeling op 1 januari 2025 is hieronder opgenomen. Het overzicht geeft de gemeentenamen in alfabetische volgorde met vermelding van de gemeentecode, de provincienaam en de provinciecode.
 
+## Codelijst
+
 |Gemeentecode|Gemeentenaam|Provincienaam|
-|----|-----|--------|
+|:--:|:-----|:--------|
 |1680|Aa en Hunze|Drenthe|
 |0358|Aalsmeer|Noord-Holland|
 |0197|Aalten|Gelderland|

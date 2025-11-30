@@ -8,7 +8,7 @@ Nadere typering van het adres. Deze code wordt gebruikt in het toewijzingbericht
 ## Codelijst
 
 | Code | Omschrijving |
-|------|--------------|
+|:----:|:-------------|
 | 01 | BRP-adres |
 | 02 | Correspondentie-adres |
 | 03 | Verblijfadres |

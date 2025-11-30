@@ -141,14 +141,17 @@ De gemeente geeft iedere beschikking binnen het Jw-domein een uniek nummer.
 - Met de status aanlevering van een berichtklasse kan worden aangegeven of:
   - **1** – berichtklasse nieuw  
   - **2** – berichtklasse gewijzigd (niet toegestaan in iJw/iWmo)  
-  - **3** – berichtklasse verwijderd  
+  - **3** – berichtklasse verwijderd
+Toelichting
+De uitwerking van deze bedrijfsregel is vastgelegd in de volgende regels: IV008, IV074, OP033x1, OP033x2, TR071 en TR074.
 
 ### OP033x1 – Wijzigingen in toewijzing
-- Toewijzing kan gewijzigd worden via een nieuw bericht.  
+- Toewijzing kan gewijzigd worden via een nieuw bericht.
+   
 - **Einddatum wijzigingen toegestaan:**  
-  - Intrekken: einddatum korter maken (overleg aanbieder)  
-  - Oprekken: einddatum verlengen (overleg aanbieder)  
-  - Verwijderen: einddatum = ingangsdatum, RedenWijziging = 13 (Verwijderd)  
+  - Intrekken: aanpassen van de gewenste einddatum toewijzing zodat de periode korter wordt (NB dit is alleen toegestaan in overleg met de aanbieder).
+  - Oprekken: aanpassen van de gewenste einddatum toewijzing zodat de periode langer wordt (NB dit is alleen toegestaan in overleg met de aanbieder).
+  - Verwijderen: de einddatum van de toewijzing wordt gewijzigd zodat deze gelijk is aan de ingangsdatum van de toewijzing. Daarbij wordt RedenWijziging gevuld met 13 (Verwijderd). Een verwijdering betekent dat de toewijzing als niet verzonden beschouwd moet worden.
 
 - **Volume wijzigingen:**  
   - Frequentie = "Totaal binnen geldigheidsduur toewijzing": volume mag aangepast worden  
@@ -160,6 +163,8 @@ De gemeente geeft iedere beschikking binnen het Jw-domein een uniek nummer.
   - Initiatief gemeente = overleg en instemming van aanbieder vereist  
 
 - **Belangrijk:** meest recente toewijzing op toewijzingsdatum/-tijd is bepalend.
+Toelichting
+De uitwerking van deze bedrijfsregel is vastgelegd in de volgende regel: IV066.
 
 ### OP033x2
 - Gebruik van status aanlevering waarde **2** (berichtklasse gewijzigd) is niet toegestaan.
@@ -167,6 +172,8 @@ De gemeente geeft iedere beschikking binnen het Jw-domein een uniek nummer.
 ### OP039 – Cliëntgegevens in berichten
 - Ketenpartijen mogen cliëntgegevens doorgeven zoals geregistreerd in hun administratie, mits deze geen logische sleutel vormen.  
 - Het is toegestaan gewijzigde gegevens over te nemen in de administratie.
+Toelichting
+De uitwerking van deze bedrijfsregel is vastgelegd in de volgende regels: IV002, IV007, IV045, IV047.
 
 ### OP043 – PGB en toewijzing
 - Als een cliënt een PGB heeft, mag voor hetzelfde product geen toewijzing zijn afgegeven.  
@@ -196,6 +203,7 @@ De gemeente geeft iedere beschikking binnen het Jw-domein een uniek nummer.
 - Het gebruik van het BSN van de cliënt is verplicht in de onderlinge uitwisseling van gegevens.
 
 ### OP080 – Volgorde berichten
+Aan het tijdstip waarop en de volgorde waarin berichten worden ontvangen en verwerkt kunnen ketenpartijen geen betekenis hechten.
 - Volgorde en tijdstip van ontvangen/ verwerken berichten zijn niet bepalend.  
 - Terugwerkende berichten kunnen noodzakelijk zijn (bijv. bezwaarprocedures).  
 - Ontvang retourberichten afwachten om afkeur van vervolgberichten te voorkomen.
@@ -214,7 +222,7 @@ De gemeente geeft iedere beschikking binnen het Jw-domein een uniek nummer.
 
 **Belangrijk:** Voor iedere cliënt waarbij een toewijzing verandert, wordt een toewijzingsbericht gestuurd met alle actuele toewijzingen voor die aanbieder.
 
-### OP090 – Retourberichten heenberichten
+### OP090 – Reactietijd en verplichting Retourberichten
 - Voor ieder ontvangen heenbericht wordt **binnen 3 werkdagen** een retourbericht verzonden.  
 - De verzender is verantwoordelijk voor het signaleren van ontbrekende retourberichten en moet actie ondernemen.
 
@@ -281,9 +289,11 @@ De gemeente geeft iedere beschikking binnen het Jw-domein een uniek nummer.
 ### OP258 – Beëindiging toewijzing
 - Bij beëindiging van een toewijzing wordt de aanbieder geïnformeerd via een **toewijzingsbericht**.
 
-### OP259 – Geen stapeling van producten
-- **Gestapeld:** hetzelfde zorg- of ondersteuningsproduct meerdere keren toegewezen aan dezelfde aanbieder voor (gedeeltelijk) dezelfde periode.  
-- Zelfde product: dezelfde **productcode** of **productcategorie** (als productcode leeg).  
+### OP259 – Geen stapeling van producten bij toewijzen
+Het is niet toegestaan om een zorg- of ondersteuningsproduct gestapeld toe te wijzen
+- **Gestapeld:** betekent dat voor een client hetzelfde zorg- of ondersteuningsproduct meerdere keren wordt toegewezen aan dezelfde aanbieder voor (gedeeltelijk) dezelfde periode.
+Hetzelfde zorg- of ondersteuningsproduct betekent dezelfde productcode (Specifiek) of dezelfde productcategorie indien productcode niet gevuld is (Aspecifiek). Indien productcategorie leeg is (Generiek), geldt dat er geen ander toegewezen product voor (gedeeltelijk) dezelfde periode naast mag staan.
+- Zelfde product: dezelfde **productcode** of **productcategorie** (als productcode leeg) of (als productcategorie is leeg).
 - Uitzonderingen:  
   - Verwijderde toewijzingen (einddatum = ingangsdatum, RedenWijziging = 13)  
   - Administratieve correcties (RedenWijziging = 01)  
@@ -312,7 +322,8 @@ De gemeente geeft iedere beschikking binnen het Jw-domein een uniek nummer.
 ### OP267 – Declaratie-eenheid
 - Aanbieder declareert in een eenheid die aansluit bij de **toewijzing**.
 
-### OP270 – Regieberichten
+### OP270 – Afspraken over Regieberichten
+Aanbieder en gemeente maken onderling afspraken over de door te geven begin- en einddatum in de regieberichten, (lees startbericht, stopbericht).
 - Afspraken over begin- en einddatums tussen **gemeente en aanbieder**.  
 - Verplicht bij uitvoeringsvarianten: **inspannings- en outputgericht**.  
 - Afspraken over begin- en eindatum per product kan afwijken, maar dit heeft **niet de voorkeur**.
@@ -390,8 +401,8 @@ De gemeente geeft iedere beschikking binnen het Jw-domein een uniek nummer.
 - Alleen toegestaan **na overleg en instemming** van de aanbieder bij frequentie “totaal binnen geldigheidsduur”.
 
 ### OP299 – Verlagen budget
-- Alleen toegestaan **na overleg en instemming** van de aanbieder.  
-- Op verzoek van de aanbieder via wijziging → mag gemeente **zonder overleg** aanpassen.
+- Alleen toegestaan **na overleg en instemming** van de aanbieder.
+- Op verzoek van de aanbieder via een wijzigingsverzoek → mag gemeente **zonder overleg** aanpassen.
 
 ### OP302 – Declaratie passend bij toewijzing
 - Ingediende prestatie moet **passen bij toewijzing**.  
@@ -420,15 +431,18 @@ De gemeente geeft iedere beschikking binnen het Jw-domein een uniek nummer.
 - Kan niet gebruikt worden zonder actuele toewijzing.
 
 ### OP307 – Verzoek om toewijzing (VOT)
-- Wordt gebruikt bij **(wettelijke) verwijzing of open beschikking**.  
-- Alleen indien er nog **geen actuele toewijzing** is voor het product en periode.  
+Een verzoek om toewijzing bericht wordt alleen gebruikt indien een cliënt zich met een (wettelijke) verwijzing of een open beschikking meldt bij de zorgaanbieder
+- Wordt altijd gebruikt bij **(wettelijke) verwijzing of open beschikking**.
+- Alleen indien er nog **geen actuele toewijzing** is voor het product en periode.
 - Kan niet gebruikt worden als er al een actuele toewijzing bestaat.
 
 ### OP308 – VOW als samenhangend geheel
-- VOW bevat **complete nieuwe situatie** bij verandering van zorg.  
+Een aanbieder vraagt met een verzoek om wijziging bericht (VOW) een samenhangend geheel aan toewijzingen aan met daarin de volledige gewenste situatie.
+- VOW bevat **complete nieuwe situatie** bij verandering van de zorgsituatie van de client.  
 - Inclusief ongewijzigde, gewijzigde en nieuwe producten/productcategorieën.
 
 ### OP343 – Tijdige indiening VOW
+Een verzoek om wijziging moet tijdig ingediend worden.
 - Gemeente moet redelijkerwijs kunnen **reageren vóór de gewenste ingangsdatum**.
 
 ### OP344 – Reactie gemeente
@@ -444,9 +458,10 @@ De gemeente geeft iedere beschikking binnen het Jw-domein een uniek nummer.
 - Binnen **5 werkdagen** toewijzing- of antwoordbericht.  
 - Indien waarde 2 ("Aanvraag in onderzoek") → binnen **8 weken** na dagtekening van het verzoek en definitieve toewijzing of afwijzing (waarde 1).
 
-### OP347 – Geen stapeling
+### OP347 – Geen stapeling bij aanvragen
+Het is niet toegestaan om een zorg- of ondersteuningsproduct gestapeld aan te vragen
 - **Stapeling** = zelfde product meerdere keren voor dezelfde periode door dezelfde aanbieder.  
-- Hetzelfde zorg- of ondersteuningsproduct betekent dezelfde productcode of dezelfde productcategorie indien productcode niet gevuld is. Indien productcategorie leeg is, geldt dat er geen ander aangevraagd product voor (gedeeltelijk) dezelfde periode naast mag staan. 
+- Hetzelfde zorg- of ondersteuningsproduct betekent dezelfde productcode (Specifiek) of dezelfde productcategorie indien productcode niet gevuld is (Aspecifiek). Indien productcategorie leeg is (Generiek), geldt dat er geen ander aangevraagd product voor (gedeeltelijk) dezelfde periode naast mag staan. 
 - Verwijderde toewijzingen (waarvan de einddatum gelijk is aan de ingangsdatum en de reden wijziging is gevuld met 13 (Verwijderd)) maken geen onderdeel uit van de bepaling of er sprake is van stapeling. Deze toewijzingen worden niet gezien als actuele toewijzing.
 - Hetzelfde geldt voor toewijzingen met reden wijziging 01 (Administratieve correctie (vervallen)) en einddatum gelijk aan ingangsdatum.
 

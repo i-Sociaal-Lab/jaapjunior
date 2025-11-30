@@ -35,4 +35,3 @@ In het retourbericht worden in deze situatie de volgende retourcodes gevuld:
 - Header: Retourcode 0200 (Geen opmerkingen over deze berichtklasse)
 - Cliënt: Retourcode 0200 (Geen opmerkingen over deze berichtklasse)
 - StartProduct: Retourcode 9063 (Het bericht kan niet verwerkt worden omdat geen eerder bericht ontvangen is)
-
