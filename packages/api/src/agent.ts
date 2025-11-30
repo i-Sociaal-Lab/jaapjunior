@@ -1,4 +1,5 @@
-import { ChromaVectorStore } from "@llamaindex/chroma";
+import { Anthropic } from "@llamaindex/anthropic";
+import { QdrantVectorStore } from "@llamaindex/qdrant";
 import { OpenAI, OpenAIEmbedding } from "@llamaindex/openai";
 import { SimpleDirectoryReader } from "@llamaindex/readers/directory";
 import {
@@ -20,70 +21,51 @@ Settings.embedModel = new OpenAIEmbedding({
 });
 Settings.chunkOverlap = 100;
 
-const chromaUri = getEnvOrThrow("CHROMA_URI");
+const qdrantUri = getEnvOrThrow("QDRANT_URI");
+
+// Qdrant URL configuration for different environments
+function getQdrantConfig(uri: string) {
+	// For localhost, use full URI with port (combined container setup)
+	if (uri.includes('localhost') || uri.includes('127.0.0.1')) {
+		return { url: uri };
+	}
+
+	// For Azure internal ingress, strip port (ingress doesn't support explicit ports)
+	const urlWithoutPort = uri.replace(/:6333$/, '');
+	if (uri.includes('.internal.') || uri.includes('.azurecontainerapps.io')) {
+		return { url: urlWithoutPort };
+	}
+
+	// For other URLs, use as-is
+	return { url: uri };
+}
 
 async function createIndex(collectionName: string, dataDir = "./jw") {
 	console.log(
 		`Creating index. collectionName: ${collectionName}, dataDir: ${dataDir}`,
 	);
 
-	const vectorStore = new ChromaVectorStore({
+	const qdrantConfig = getQdrantConfig(qdrantUri);
+	console.log(`Qdrant config:`, qdrantConfig);
+
+	const vectorStore = new QdrantVectorStore({
 		collectionName,
-		chromaClientParams: { path: chromaUri },
-		embeddingModel: Settings.embedModel,
+		...qdrantConfig,
 	});
 
-	const existingDocs = await vectorStore.getCollection().then((c) => c.get());
-	const existingDocIds = new Set(existingDocs.metadatas?.map((m) => m?.doc_id));
+	console.log("Initializing storage context...");
+	const storageContext = await storageContextFromDefaults({ vectorStore });
 
 	console.log("Loading documents...");
 	const reader = new SimpleDirectoryReader();
-	const newDocs = await reader.loadData(dataDir).then((docs) =>
-		docs.map((d) => {
-			d.id_ = `${d.id_}__${d.generateHash()}`;
-			return d;
-		}),
-	);
-	const newDocIds = new Set(newDocs.map((d) => d.id_));
+	const docs = await reader.loadData(dataDir);
 
-	const docsToDelete = existingDocIds.difference(newDocIds);
-	const docsToAdd = newDocIds.difference(existingDocIds);
-
-	const col = await vectorStore.getCollection();
-
-	for (const doc of docsToDelete) {
-		if (!doc) continue;
-
-		const { ids } = await col.get({ where: { doc_id: doc } });
-		if (ids.length) {
-			const batches = ids.reduce((acc, id, i) => {
-				if (i % 100 === 0) {
-					acc.push([id]);
-				} else {
-					acc[acc.length - 1].push(id);
-				}
-				return acc;
-			}, [] as string[][]);
-
-			for (const batch of batches) {
-				try {
-					await col.delete({ ids: batch });
-				} catch (err) {
-					console.error(err);
-				}
-			}
-		}
-	}
-
-	const newDocsToAdd = newDocs.filter((d) => docsToAdd.has(d.id_));
-
-	console.log("Creating vector store...");
-	const storageContext = await storageContextFromDefaults({ vectorStore });
-	const index = await VectorStoreIndex.fromDocuments(newDocsToAdd, {
-		docStoreStrategy: DocStoreStrategy.UPSERTS,
+	console.log(`Creating vector store index with ${docs.length} documents...`);
+	const index = await VectorStoreIndex.fromDocuments(docs, {
 		storageContext,
 	});
 
+	console.log("Index created successfully");
 	return index;
 }
 
@@ -99,6 +81,11 @@ export const llms = {
 					sort: "throughput",
 				},
 			},
+		}),
+	"haiku-4.5": () =>
+		new Anthropic({
+			model: "claude-haiku-4-5-20251001",
+			temperature: 0.2,
 		}),
 } satisfies Record<string, () => LLM>;
 
@@ -126,14 +113,17 @@ class Agent {
 		q: string,
 		chatHistory: ChatMessage[],
 		db: IDB,
-		model: keyof typeof llms = this.model,
+		model?: keyof typeof llms,
 	) {
+		// Use provided model or fall back to agent's default
+		const actualModel = model || this.model;
+		
 		console.log("Creating chat engine...");
 		const retriever = this.index.asRetriever({
 			similarityTopK: 100,
 		});
 
-		const llm = llms[model]();
+		const llm = llms[actualModel]();
 
 		const chatEngine = new ContextChatEngine({
 			retriever,
@@ -159,17 +149,17 @@ class Agent {
 
 		const responseTime = endTime - startTime;
 
-		console.log("Model responded", model, responseTime);
+		console.log("Model responded", actualModel, responseTime);
 		db.prepare(
 			"INSERT INTO model_responses (model, response_time) VALUES ($1, $2)",
 		).run({
-			$1: model,
+			$1: actualModel,
 			$2: responseTime,
 		});
 
 		response.message.options ??= {};
 		// @ts-expect-error
-		response.message.options.model = model;
+		response.message.options.model = actualModel;
 		// @ts-expect-error
 		response.message.options.prompt = this.prompt;
 
@@ -177,17 +167,42 @@ class Agent {
 	}
 }
 
-export const agents = {
-	jw: await Agent.fromConfig({
+// Agent configurations
+const agentConfigs = {
+	jw: {
 		collectionName: "jaapjunior",
 		dataPath: "./jw/bronnen",
 		promptPath: "./jw/prompt.md",
-		model: "4.1",
-	}),
-	wmo: await Agent.fromConfig({
+		model: "4.1" as keyof typeof llms,
+	},
+	wmo: {
 		collectionName: "wmo",
 		dataPath: "./wmo/bronnen",
 		promptPath: "./wmo/prompt.md",
-		model: "4.1",
-	}),
-} satisfies Record<string, Agent>;
+		model: "4.1" as keyof typeof llms,
+	},
+	"cs-wmo": {
+		collectionName: "cs-wmo",
+		dataPath: "./cs-wmo/bronnen",
+		promptPath: "./cs-wmo/prompt.md",
+		model: "haiku-4.5" as keyof typeof llms,
+	},
+} satisfies Record<string, AgentConfig>;
+
+const agentCache: Partial<Record<keyof typeof agentConfigs, Promise<Agent>>> = {};
+
+// Lazy-load function to get agents on-demand
+async function getAgent(name: keyof typeof agentConfigs): Promise<Agent> {
+	if (!agentCache[name]) {
+		console.log(`🚀 Initializing ${name.toUpperCase()} agent...`);
+		agentCache[name] = Agent.fromConfig(agentConfigs[name]);
+	}
+	return agentCache[name]!;
+}
+
+// Export agents as callable functions for lazy initialization
+export const agents = {
+	jw: () => getAgent("jw"),
+	wmo: () => getAgent("wmo"),
+	"cs-wmo": () => getAgent("cs-wmo"),
+};
