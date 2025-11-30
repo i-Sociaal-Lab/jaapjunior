@@ -40,8 +40,9 @@ const selectedModel = defineModel<string>("selected-model");
 const agents = ref([
 	{ label: "JW", id: "jw" },
 	{ label: "WMO", id: "wmo" },
+	{ label: "CS-WMO", id: "cs-wmo" },
 ] satisfies SelectMenuItem[]);
-const selectedAgent = defineModel<"jw" | "wmo">("selected-agent");
+const selectedAgent = defineModel<"jw" | "wmo" | "cs-wmo">("selected-agent");
 
 const modes = ref([
 	{ label: "Modellen beoordelen", value: "rate" },
