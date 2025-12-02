@@ -8,6 +8,7 @@ defineProps<{
 	feedbackButton: string;
 	loading: boolean;
 	disabled: boolean;
+	canSelectAgent: boolean;
 	autofocus?: boolean;
 }>();
 
@@ -35,6 +36,12 @@ const models = ref([
 	{ label: "Mistral Medium", id: "mistral-medium" },
 ] satisfies SelectMenuItem[]);
 const selectedModel = defineModel<string>("selected-model");
+
+const agents = ref([
+	{ label: "JW", id: "jw" },
+	{ label: "WMO", id: "wmo" },
+] satisfies SelectMenuItem[]);
+const selectedAgent = defineModel<"jw" | "wmo">("selected-agent");
 
 const modes = ref([
 	{ label: "Modellen beoordelen", value: "rate" },
@@ -143,6 +150,19 @@ const resetItems = ref<DropdownMenuItem[]>([
 					:search-input="false"
 					variant="none"
 					:ui="{ content: 'w-48' }"
+					:content="{ align: 'end' }"
+				/>
+				<URadioGroup
+					v-if="canSelectAgent"
+					v-model="selectedAgent"
+					value-key="id"
+					:items="agents"
+					class="text-end"
+					:search-input="false"
+                    orientation="horizontal"
+					variant="table"
+                    indicator="hidden"
+                    size="xs"
 					:content="{ align: 'end' }"
 				/>
 				<UButton

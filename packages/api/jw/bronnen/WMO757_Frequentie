@@ -1,0 +1,30 @@
+# iJw Codelijst – Frequentie
+
+**Standaard:** iJw  
+**Versie:** 3.2  
+
+---
+
+## Codelijst: Frequentie
+
+**ID:** WMO757  
+**Naam:** Frequentie  
+**Definitie:** Frequentie van de te leveren of geleverde ondersteuning.  
+**Bron:** https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/wmo757  
+
+### Codes
+
+| Code | Omschrijving                                   |
+|------|------------------------------------------------|
+| 1    | Per dag                                        |
+| 2    | Per week                                       |
+| 4    | Per maand                                      |
+| 6    | Totaal binnen geldigheidsduur toewijzing       |
+
+---
+
+## Metadata
+
+- **Laatst bijgewerkt:** 16-07-2018  
+- **Tabeltype:** Referentielijst  
+- **Toepassing:** Ondersteuningsfrequentie binnen Jw-toewijzingen  
