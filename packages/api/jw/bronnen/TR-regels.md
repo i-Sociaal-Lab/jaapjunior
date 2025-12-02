@@ -89,5 +89,3 @@ bron: iJw standaard
 |TR415|Er mag geen StopProduct zijn met gelijk Bsn, ToewijzingNummer, Begindatum en RedenBeeindiging <> waarde 20, indien StatusAanlevering waarde 1 of 2 heeft| |9415|berichtoverstijgend|JW307|
 |TR416|Prestatie met DebetCredit in IngediendBedrag waarde Debet mag alleen ingezonden worden voor dezelfde ProductPeriode, ProductCategorie en ProductCode met gelijk ToewijzingNummer als er niet al een Prestatie met waarde Debet is.| |0001|bericht inhoud (xslt)|JW323|
 |TR418|ProductTarief in Prestatie dient overeen te komen met het contractuele tarief van ProductCode.| |0611|berichtoverstijgend|JW323|
-<img width="2813" height="2379" alt="image" src="https://github.com/user-attachments/assets/24940781-3452-412f-aab4-dcf0a2b0a0bb" />
-
