@@ -20,7 +20,6 @@
 | 82   | Stuks (output)           |
 | 83   | Euro's                   |
 | 84   | Stuks (inspanning)       |
-| 85   | KM                       |
 
 ## Metadata
 - **Laatst bijgewerkt:** 01-01-2021  
