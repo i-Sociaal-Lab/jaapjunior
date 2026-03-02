@@ -1,0 +1,31 @@
+{
+  "standaard": "iJw",
+  "versie": "3.2",
+  "codelijst": {
+    "id": "COD002-VEKTIS",
+    "naam": "Berichtcode",
+    "definitie": "LDT_Berichtcode is een data-element uit de Header van een bericht en dient conform de codelijst van Vektis ingevuld te worden. Bijvoorbeeld: de Berichtcode van een JW318 bericht is 487.",
+    "bronUrl": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/cod002-vektis",
+    "codes": [
+      { "bericht": "JW301", "berichtcode": "436" },
+      { "bericht": "JW302", "Berichtcode": "437" },
+      { "bericht": "JW305", "Berichtcode": "438" },
+      { "bericht": "JW306", "Berichtcode": "439" },
+      { "bericht": "JW307", "Berichtcode": "440" },
+      { "bericht": "JW308", "Berichtcode": "441" },
+      { "bericht": "JW315", "Berichtcode": "446" },
+      { "bericht": "JW316", "Berichtcode": "447" },
+      { "bericht": "JW317", "Berichtcode": "486" },
+      { "bericht": "JW318", "Berichtcode": "487" },
+      { "bericht": "JW319", "Berichtcode": "488" },
+      { "bericht": "JW320", "Berichtcode": "489" },
+      { "bericht": "JW323", "Berichtcode": "490" },
+      { "bericht": "JW325", "Berichtcode": "491" }
+    ]
+  },
+  "metadata": {
+    "laatstBijgewerkt": "01-01-2021",
+    "tabeltype": "Referentielijst",
+    "toepassing": "Verplicht veld in de berichtheader conform Vektis-standaard"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standaard": "iJw",
+  "versie": "3.2",
+  "codelijst": {
+    "id": "JZ020",
+    "naam": "Productcategorie",
+    "definitie": "Gecodeerde aanduiding van een (reeks van) productcategorie(en) in functionele termen die losgekoppeld is van een bepaalde leverancier, waarbij wordt beschreven wat de inhoud en aard van de productcategorie is in termen van hulpverlening (wonen, zorg en welzijn).",
+    "bronUrl": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/jz020",
+    "codes": [
+      { "code": "31", "omschrijving": "(2015) Zonder verblijf: uitgevoerd door wijk- of buurtteam" },
+      { "code": "32", "omschrijving": "(2015) Zonder verblijf: ambulante jeugdhulp op locatie van de aanbieder" },
+      { "code": "33", "omschrijving": "(2015) Zonder verblijf: daghulp op locatie van de aanbieder" },
+      { "code": "34", "omschrijving": "(2015) Zonder verblijf: jeugdhulp in het netwerk van de jeugdige" },
+      { "code": "35", "omschrijving": "(2015) Met verblijf: pleegzorg" },
+      { "code": "36", "omschrijving": "(2015) Met verblijf: gezinsgericht" },
+      { "code": "37", "omschrijving": "(2015) Met verblijf: gesloten plaatsing" },
+      { "code": "38", "omschrijving": "(2015) Met verblijf: overig residentieel" },
+      { "code": "40", "omschrijving": "Persoonlijke verzorging" },
+      { "code": "41", "omschrijving": "Dagbehandeling" },
+      { "code": "42", "omschrijving": "Vervoerdiensten" },
+      { "code": "43", "omschrijving": "Jeugdhulp verblijf (incl. behandeling)" },
+      { "code": "44", "omschrijving": "Jeugdhulp verblijf (excl. behandeling)" },
+      { "code": "45", "omschrijving": "Jeugdhulp ambulant" },
+      { "code": "46", "omschrijving": "Jeugdhulp crisis" },
+      { "code": "47", "omschrijving": "Jeugdreclassering" },
+      { "code": "48", "omschrijving": "Jeugdbescherming" },
+      { "code": "49", "omschrijving": "Activiteiten in het preventief justitieel kader" },
+      { "code": "50", "omschrijving": "Maatwerkarrangementen jeugd" },
+      { "code": "51", "omschrijving": "Generalistische basis-ggz" },
+      { "code": "52", "omschrijving": "Specialistische ggz" },
+      { "code": "53", "omschrijving": "Kindergeneeskunde" },
+      { "code": "54", "omschrijving": "Jeugd-ggz" },
+      { "code": "55", "omschrijving": "Landelijk ingekochte zorg" }
+    ]
+  },
+  "metadata": {
+    "laatstBijgewerkt": "01-10-2017",
+    "tabeltype": "Referentielijst",
+    "toepassing": "Productcategorie binnen Jw-toewijzingen, VOT, VOW en declaratie"
+  }
+}

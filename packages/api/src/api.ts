@@ -9,7 +9,7 @@ import * as jose from "jose";
 import type { ChatMessage } from "llamaindex";
 import { nanoid } from "nanoid";
 import * as v from "valibot";
-import { llms, prompts, query } from "./agent.js";
+import { agents, llms } from "./agent.js";
 import { getEnvOrThrow } from "./get-env.js";
 import { getRandomItem } from "./random.js";
 
@@ -25,6 +25,22 @@ type ValuesTuple<Arr extends Readonly<unknown[]>> = {
 type WrapTupleElements<TTuple extends Readonly<v.Literal[]>> = {
 	[P in keyof TTuple]: v.LiteralSchema<TTuple[P], undefined>;
 };
+
+type ToLiteralSchema<T> = T extends v.Literal
+	? v.LiteralSchema<T, undefined>
+	: never;
+
+type UnionToIntersection<U> = (U extends any ? (k: U) => void : never) extends (
+	k: infer I,
+) => void
+	? I
+	: never;
+
+type UnionToTuple<T> = UnionToIntersection<
+	T extends any ? () => T : never
+> extends () => infer R
+	? [...UnionToTuple<Exclude<T, R>>, R]
+	: [];
 
 interface Conversation {
 	id: string;
@@ -43,20 +59,30 @@ const availableModels = [
 	value: keyof typeof llms;
 }>;
 
+const agentsSchema = v.union(
+	Object.keys(agents).map((model) =>
+		v.literal(model),
+	) as unknown as UnionToTuple<ToLiteralSchema<keyof typeof agents>>,
+);
+
 const oneOffMessageSchema = v.object({
 	q: v.string(),
+	agent: v.optional(agentsSchema),
 });
 
 const sendMessageSchema = v.object({
 	inputText: v.string(),
-	model: v.union([
-		v.union(
-			availableModels.map((model) =>
-				v.literal(model.value),
-			) as unknown as WrapTupleElements<ValuesTuple<typeof availableModels>>,
-		),
-		v.literal("rate"),
-	]),
+	agent: v.optional(agentsSchema),
+	model: v.optional(
+		v.union([
+			v.union(
+				availableModels.map((model) =>
+					v.literal(model.value),
+				) as unknown as WrapTupleElements<ValuesTuple<typeof availableModels>>,
+			),
+			v.literal("rate"),
+		]),
+	),
 });
 
 const feedbackSchema = v.object({
@@ -178,9 +204,9 @@ export const api = new Hono<{ Variables: Variables }>()
 
 	// Send one-off question
 	.post("question", vValidator("json", oneOffMessageSchema), async (c) => {
-		const { q } = c.req.valid("json");
+		const { q, agent = "jw" } = c.req.valid("json");
 
-		const response = await query(q, [], db);
+		const response = await agents[agent].query(q, [], db);
 
 		return c.json({ response: response.message.content });
 	})
@@ -221,7 +247,11 @@ export const api = new Hono<{ Variables: Variables }>()
 		async (c) => {
 			try {
 				const conversationId = c.req.param("id");
-				const { inputText, model: selectedModel } = c.req.valid("json");
+				const {
+					inputText,
+					model: selectedModel,
+					agent = "jw",
+				} = c.req.valid("json");
 
 				const conversation = conversations.get(conversationId);
 				if (!conversation) {
@@ -231,36 +261,26 @@ export const api = new Hono<{ Variables: Variables }>()
 				if (selectedModel === "rate") {
 					let modelFirst: keyof typeof llms;
 					let modelSecond: keyof typeof llms;
-					let promptFirst: keyof typeof prompts;
-					let promptSecond: keyof typeof prompts;
 
 					const availableModels = Object.keys(llms) as (keyof typeof llms)[];
-					const availablePrompts = Object.keys(
-						prompts,
-					) as (keyof typeof prompts)[];
 
 					do {
 						modelFirst = getRandomItem(availableModels);
 						modelSecond = getRandomItem(availableModels);
-
-						promptFirst = getRandomItem(availablePrompts);
-						promptSecond = getRandomItem(availablePrompts);
-					} while (modelFirst === modelSecond && promptFirst === promptSecond);
+					} while (modelFirst === modelSecond);
 
 					const [responseFirst, responseSecond] = await Promise.all([
-						query(
+						agents[agent].query(
 							inputText,
 							conversation.messages as ChatMessage[],
 							db,
 							modelFirst,
-							promptFirst,
 						),
-						query(
+						agents[agent].query(
 							inputText,
 							conversation.messages as ChatMessage[],
 							db,
 							modelSecond,
-							promptSecond,
 						),
 					]);
 
@@ -272,10 +292,11 @@ export const api = new Hono<{ Variables: Variables }>()
 					return c.json([responseFirst.message, responseSecond.message]);
 				}
 
-				const response = await query(
+				const response = await agents[agent].query(
 					inputText,
 					conversation.messages as ChatMessage[],
 					db,
+					selectedModel,
 				);
 
 				conversation.messages.push({

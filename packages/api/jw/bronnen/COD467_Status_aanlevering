@@ -1,0 +1,30 @@
+# iJw Codelijst – Status aanlevering
+
+**Standaard:** iJw  
+**Versie:** 3.2  
+
+---
+
+## Codelijst: Status aanlevering
+
+**ID:** COD467  
+**Naam:** Status aanlevering  
+**Definitie:** Indicatie over de status van de informatie in de berichtklasse.  
+**Bron:** https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/cod467  
+
+### Codes
+
+| Code | Omschrijving                     |
+|------|----------------------------------|
+| 1    | Eerste aanlevering               |
+| 2    | Gewijzigde aanlevering           |
+| 3    | Verwijderen aanlevering          |
+| 9    | Niet van toepassing (ongewijzigd) |
+
+---
+
+## Metadata
+
+- **Laatst bijgewerkt:** 01-01-2015  
+- **Tabeltype:** Referentielijst  
+- **Toepassing:** Geeft de status van aanlevering aan binnen berichtklassen *StartProduct (JW305)* en *StopProduct (JW307)*  

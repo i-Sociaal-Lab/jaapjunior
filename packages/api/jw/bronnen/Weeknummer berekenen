@@ -1,0 +1,9 @@
+**Weeknummer paling**
+
+*Hoe wordt het weeknummer bepaald, voor het berekenen van het aantal weken in een productperiode*
+*In Nederland (en vrijwel heel Europa) gebruiken we de ISO-8601 standaard om weeknummers te bepalen.* 
+
+De berekening van het weeknummer is:
+
+1. Een week begint op maandag. De eerste dag van de week is maandag en de laatste dag is zondag.
+2. Week 1 is de week met de eerste donderdag van het jaar, of anders gezegd de week waarin 4 januari valt, is altijd week 1.

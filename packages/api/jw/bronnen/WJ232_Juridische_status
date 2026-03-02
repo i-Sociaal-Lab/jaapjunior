@@ -1,0 +1,45 @@
+{
+  "standaard": "iJw",
+  "versie": "3.2",
+  "codelijst": {
+    "id": "WJ232",
+    "naam": "Juridische status",
+    "definitie": "Juridische situatie die voor de cliënt van toepassing is op het moment van beoordeling.",
+    "bronUrl": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/wj232",
+    "codes": [
+      {
+        "code": "01",
+        "omschrijving": "Rechterlijke machtiging (rm) voorlopig / voortgezette machtiging"
+      },
+      {
+        "code": "02",
+        "omschrijving": "RM op eigen verzoek"
+      },
+      {
+        "code": "03",
+        "omschrijving": "RM met voorwaardelijk ontslag"
+      },
+      {
+        "code": "04",
+        "omschrijving": "Onder toezichtstelling (ots)"
+      },
+      {
+        "code": "05",
+        "omschrijving": "In bewaring stelling (ibs)"
+      },
+      {
+        "code": "11",
+        "omschrijving": "Strafrechterlijke justitiële contacten (tbs)"
+      },
+      {
+        "code": "12",
+        "omschrijving": "Strafrechterlijke justitiële contacten (overig)"
+      }
+    ]
+  },
+  "metadata": {
+    "laatstBijgewerkt": "01-01-2015",
+    "tabeltype": "Referentielijst",
+    "toepassing": "Juridische situatie die voor de client van toepassing is op het moment van indicatiestelling."
+  }
+}

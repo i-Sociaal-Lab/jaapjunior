@@ -1,0 +1,14 @@
+# COD046: Geslacht
+
+**Definitie:**
+Geslacht - Unieke aanduiding van de sexe van een persoon.
+
+---
+## Codelijst
+
+| Code | Omschrijving |
+|:----:|:-------------|
+| 0 | Onbekend |
+| 1 | Mannelijk |
+| 2 | Vrouwelijk |
+
