@@ -22,13 +22,13 @@ Het maximale volume van de productperiode wordt bepaald op basis van het aantal 
 Voorbeeld bij inspanningsgerichte toewijzing:
 Cliënt heeft een toewijzing voor 3 uur per week met ingangsdatum 7-10-2025 en einddatum 30-12-2025
 Bepaal het aantal kalenderweken in de productperiode.
-- Oktober : 4 (week 41 t/m 44)
-- November: 5 (week 44 t/m 48)
-- December: 5 (week 48 t/m 52,01)
+- Oktober  2025 : 4 (week 41 t/m 44)
+- November 2025: 5 (week 44 t/m 48)
+- December 2025: 5 (week 48 t/m 52,01)
 Maximaal volume per productperiode: Vermenigvuldig het aantal kalenderweken per productperiode met het toegewezen volume per week:
-- Oktober : 12 uur (4 weken x 3 uur)
-- November: 15 uur (5 weken x 3 uur)
-- December: 15 uur (5 weken x 3 uur)
+- Oktober  2025: 12 uur (4 weken x 3 uur)
+- November 2025: 15 uur (5 weken x 3 uur)
+- December 2025: 15 uur (5 weken x 3 uur)
 Maximaal volume over de toewijzingsperiode: tel het aantal weken (eventueel gebroken) binnen de toewijzing en vermenigvuldig dit met het volume uit de toewijzing:
 - 07-10-2025 t/m 30-12-2025 = week 41 t/m week 52 + 1 = 13 weken,  13 weken x 3 uur (volume uit de toewijzing) = 39 uur
 Het maximale volume over de toewijzingsperiode is 39 uur
@@ -36,13 +36,13 @@ Het maximale volume over de toewijzingsperiode is 39 uur
 Voorbeeld 1 bij Outputgerichte toewijzing:
 Cliënt heeft een toewijzing voor 300 euro per week met ingangsdatum 01-10-2025 en einddatum 31-12-2025
 Het aantal zondagen in de productperiodes:
-- Oktober : 07-10 t/m 31-10 -> telt 3 zondagen
-- November: 1-11 t/m 30-11 -> telt 5 zondagen
-- December: 1-12 t/m 31-12 -> telt 4 zondagen. Daar wordt een weekvolume bijgeteld, omdat de einddatum van de toewijzing niet op zondag is.
+- Oktober  2025: 07-10 t/m 31-10 -> telt 3 zondagen
+- November 2025: 1-11 t/m 30-11 -> telt 5 zondagen
+- December 2025: 1-12 t/m 31-12 -> telt 4 zondagen. Daar wordt een weekvolume bijgeteld, omdat de einddatum van de toewijzing niet op zondag is.
 Maximaal volume per productperiode: Het aantal zondagen vermenigvuldigd met het volume uit de toewijzing (evt. vermeerderd met een extra weekvolume):
-- Oktober 3 zondagen : 3 x weekvolume (300 euro) = 900 euro
-- November 4 zondagen: 5 x weekvolume (300 euro) = 1500 euro
-- December 4 zondagen + 1 weekvolume: 5 x weekvolumes (300 euro) = 1500 euro
+- Oktober  2025: 3 zondagen : 3 x weekvolume (300 euro) = 900 euro
+- November 2025: 4 zondagen: 5 x weekvolume (300 euro) = 1500 euro
+- December 2025: 4 zondagen + 1 weekvolume: 5 x weekvolumes (300 euro) = 1500 euro
 
 Voorbeeld 2 bij Outputgerichte toewijzing:
 Cliënt heeft een toewijzing voor 300 euro per week met ingangsdatum 07-07-2025 en einddatum 05-09-2025
