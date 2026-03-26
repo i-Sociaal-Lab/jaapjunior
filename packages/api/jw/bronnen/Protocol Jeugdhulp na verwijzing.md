@@ -97,9 +97,7 @@ De betrokken partijen maken onderling, in samenspraak met de jeugdige en/of de o
 
 Ook kan het zijn dat de jeugdhulpaanbieder tot de conclusie komt dat hij de gewenste zorg niet kan leveren, maar dat de gewenste jeugdhulp wel door een andere jeugdhulpaanbieder kan worden geleverd. De jeugdhulpaanbieder wendt zich in dit geval tot de verwijzer. De verwijzing dient zo nodig te worden aangepast en de jeugdige en/of ouders nemen contact op met de andere jeugdhulpaanbieder.
 
-d. onderzoek of en in hoeverre er mogelijkheden zijn om, geheel dan wel gedeeltelijk:
-
-op eigen kracht, met gebruikelijke hulp of algemeen gebruikelijke voorzieningen een oplossing voor de hulpvraag te vinden;
+d. onderzoek of en in hoeverre er mogelijkheden zijn om, geheel dan wel gedeeltelijk: op eigen kracht, met gebruikelijke hulp of algemeen gebruikelijke voorzieningen een oplossing voor de hulpvraag te vinden;
 
 2. met mantelzorg of hulp van andere personen uit zijn sociaal netwerk te komen tot een oplossing voor de hulpvraag (noot 5: zie ook artikel 4.1.2. Jeugdwet. De wetgever heeft bepaald dat de jeugdhulpaanbieder een familiegroepsplan maakt. De letterlijke opmaak van een afzonderlijk familiegroepsplan achten de gemeenten niet nodig. De gemeente acht het wel van belang dat jeugdhulpaanbieders bij de beoordeling van de inzet van jeugdhulp de essentie van artikel 4.1.2. Jeugdwet bezien. Dit komt tot uitdrukking in d. onder 1 en 2);
 
@@ -157,34 +155,16 @@ Een controle kan bijvoorbeeld ook inhouden dat gedurende een periode stelselmati
 
 Controles vinden in ieder geval plaats met inachtneming van de beginselen van proportionaliteit en subsidiariteit.
 
-Algemeen gebruikelijke voorziening:
+Algemeen gebruikelijke voorziening: voorziening die niet speciaal is bedoeld voor de jeugdige of ouders met een ondersteuningsvraag of behoefte ingevolge de wet en die algemeen verkrijgbaar is, niet of niet veel duurder is dan vergelijkbare diensten die algemeen gebruikelijk worden geacht en voor de jeugdige of de ouders ook daadwerkelijk beschikbaar is, financieel gedragen kan worden en passende compensatie biedt.
 
-voorziening die niet speciaal is bedoeld voor de jeugdige of ouders met een ondersteuningsvraag of behoefte ingevolge de wet en die algemeen verkrijgbaar is, niet of niet veel duurder is dan vergelijkbare diensten die algemeen gebruikelijk worden geacht en voor de jeugdige of de ouders ook daadwerkelijk beschikbaar is, financieel gedragen kan worden en passende compensatie biedt.
+Algemene voorziening: aanbod van diensten of activiteiten dat, zonder voorafgaand onderzoek naar de behoeften, persoonskenmerken en mogelijkheden van gebruikers, vrij toegankelijk is en waarmee aan de hulpvraag van de jeugdige of de ouders wordt tegemoet gekomen.
 
-Algemene voorziening:
+Gebruikelijke hulp: hulp die naar algemeen aanvaarde opvattingen in redelijkheid mag worden verwacht van de echtgenoot, ouders, inwonende kinderen of andere huisgenoten. Dat betekent dat voor de vraag of van een huisgenoot in redelijkheid kan worden verwacht of hij / zij gebruikelijke hulp biedt de specifieke situatie van de jeugdige, de ouders en eventuele andere huisgenoten bepalend is: maatwerk.
 
-aanbod van diensten of activiteiten dat, zonder voorafgaand onderzoek naar de behoeften,
+Mantelzorg: hulp ten behoeve van zelfredzaamheid, participatie, beschermd wonen, pvoeden en opgroeien van jeugdigen en zorg en overige diensten als bedoeld in de , die rechtstreeks voortvloeit uit een tussen personen bestaande sociale relatie en die niet wordt verleend in het kader van een hulpverlenend beroep.
 
-persoonskenmerken en mogelijkheden van gebruikers, vrij toegankelijk is en waarmee aan de hulpvraag van de jeugdige of de ouders wordt tegemoet gekomen.
+Sociaal netwerk: personen uit de huiselijke kring of andere personen met wie de jeugdige of de ouders een sociale relatie onderhouden.
 
-Gebruikelijke hulp:
+Voorliggende voorziening: een voorziening ontleend aan een andere wettelijke regeling dan de Jeugdwet waarmee aan de hulpvraag van de jeugdige of de ouder(s) wordt tegemoetgekomen.
 
-hulp die naar algemeen aanvaarde opvattingen in redelijkheid mag worden verwacht van de echtgenoot, ouders, inwonende kinderen of andere huisgenoten. Dat betekent dat voor de vraag of van een huisgenoot in redelijkheid kan worden verwacht of hij / zij gebruikelijke hulp biedt de specifieke situatie van de jeugdige, de ouders en eventuele andere huisgenoten bepalend is: maatwerk.
 
-Mantelzorg:
-
-hulp ten behoeve van zelfredzaamheid, participatie, beschermd wonen, pvoeden en opgroeien van jeugdigen en zorg en overige diensten als bedoeld in de , die rechtstreeks voortvloeit uit een tussen personen bestaande sociale relatie en die niet wordt verleend in het kader van een hulpverlenend beroep.
-
-Sociaal netwerk:
-
-personen uit de huiselijke kring of andere personen met wie de jeugdige of de ouders een sociale relatie onderhouden.
-
-Voorliggende voorziening:
-
-een voorziening ontleend aan een andere wettelijke regeling dan de Jeugdwet waarmee aan de hulpvraag van de jeugdige of de ouder(s) wordt tegemoetgekomen.
-
-**Ondertekening**
-
-**Bijlage: begrippenlijst**
-
-https://lokaleregelgeving.overheid.nl/CVDR624325 
