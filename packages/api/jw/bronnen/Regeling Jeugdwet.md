@@ -2,7 +2,7 @@
 
 Status: Productie
 Auteur: Ministerie van VWS
-Bron-link: https://wetten.overheid.nl/BWBR0036007/2025-01-01
+Bron-link: https://wetten.overheid.nl/BWBR0036007/2026-01-01
 Publicatiedatum: 1 januari 2026
 AI-agent: Jw-agent
 
