@@ -2,7 +2,7 @@
 
 Status: actueel
 
-Bron: https://lokaleregelgeving.overheid.nl/CVDR624325
+Bron-link: https://wetten.overheid.nl/BWBR0036007/2026-01-01 https://lokaleregelgeving.overheid.nl/CVDR624325
 
 # **Protocol “Jeugdhulp na verwijzing door huisarts, medisch specialist en jeugdarts”**
 
