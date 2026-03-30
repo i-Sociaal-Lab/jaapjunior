@@ -2,8 +2,8 @@
 
 Status: Productie
 Auteur: Ministerie van VWS
-Bron-link: https://wetten.overheid.nl/BWBR0034925/2025-01-01
-Publicatiedatum: 1 januari 2025
+Bron-link: https://wetten.overheid.nl/BWBR0034925/2026-01-01
+Publicatiedatum: 1 januari 2026
 AI-agent: Jw-agent
 
 ## **Instructie voor de AI-agent: Gebruik van de Jeugdwet voor Vragen over Berichtenverkeer en iStandaarden**
@@ -52,6 +52,9 @@ In deze wet en de daarop berustende bepalingen wordt verstaan onder:
 - −	*college:* college van burgemeester en wethouders;
 - −	*dossier:* geheel van schriftelijk of elektronisch vastgelegde gegevens met betrekking tot de verlening van jeugdhulp aan een jeugdige of ouder of de uitvoering van een kinderbeschermingsmaatregel of jeugdreclassering;
 - −	*familiegroepsplan:* hulpverleningsplan of plan van aanpak opgesteld door de ouders, samen met bloedverwanten, aanverwanten of anderen die tot de sociale omgeving van de jeugdige behoren;
+- - *financiële derivaten:*
+    1°.financiële contracten waarvan de waarde is afgeleid van een onderliggende waarde of een referentieprijs;
+    2°.onderdelen van financiële contracten die, op zichzelf beschouwd, financiële contracten als bedoeld onder 1° zijn;
 - −	*gecertificeerde instelling:* rechtspersoon die in het bezit is van een certificaat of voorlopig certificaat als bedoeld in artikel 3.4 en die een kinderbeschermingsmaatregel of jeugdreclassering uitvoert;
 - −	*gekwalificeerde gedragswetenschapper:* gedragswetenschapper behorende tot een bij regeling van Onze Ministers aangewezen categorie;
 - −	*gesloten accommodatie:* bouwkundige voorziening of deel van een bouwkundige voorziening met het daarbij behorende terrein, waar gesloten jeugdhulp wordt verleend;
@@ -71,10 +74,11 @@ In deze wet en de daarop berustende bepalingen wordt verstaan onder:
 3°.	het ondersteunen bij of het overnemen van activiteiten op het gebied van de persoonlijke verzorging gericht op het opheffen van een tekort aan zelfredzaamheid bij jeugdigen met een verstandelijke, lichamelijke of zintuiglijke beperking of een somatische of psychiatrische aandoening of beperking, die de leeftijd van achttien jaar nog niet hebben bereikt,
 
 met dien verstande dat de leeftijdgrens van achttien jaar niet geldt voor jeugdhulp in het kader van jeugdstrafrecht;
+- - *jeugdhulp met verblijf: jeugdhulp die verblijf van een jeugdige of ouder in een accommodatie gedurende ten minste een etmaal met zich brengt;*
 
 - −	*jeugdhulpaanbieder:*
 
-1°.	natuurlijke persoon die, het verband van natuurlijke personen dat of de rechtspersoon die bedrijfsmatig jeugdhulp doet verlenen onder verantwoordelijkheid van het college;
+1°.	natuurlijke persoon die bedrijfsmatig jeugdhulp doet verlenen, het verband van natuurlijke personen dat of de rechtspersoon die bedrijfsmatig jeugdhulp verleent of doet verlenen onder verantwoordelijkheid       van het college;
 
 2°.	solistisch werkende jeugdhulpverlener onder verantwoordelijkheid van het college;
 
@@ -105,7 +109,7 @@ met dien verstande dat de leeftijdgrens van achttien jaar niet geldt voor jeugdh
 - −	*kindermishandeling: elke vorm van voor een minderjarige bedreigende of gewelddadige interactie van fysieke, psychische of seksuele aard, die de ouders of andere personen ten opzichte van wie de minderjarige in een relatie van afhankelijkheid of van onvrijheid staat, actief of passief opdringen, waardoor ernstige schade wordt berokkend of dreigt te worden berokkend aan de minderjarige in de vorm van fysiek of psychisch letsel;*
 - −	*maatschappelijke ondersteuning: maatschappelijke ondersteuning als bedoeld in artikel 1.1.1 van de Wet maatschappelijke ondersteuning 2015;*
 - −	*medisch specialist:* geneeskundig specialist die als specialist is ingeschreven in een door het College Geneeskundig Specialismen van de Koninklijke Nederlandsche Maatschappij ter bevordering van de Geneeskunst ingestelde register als bedoeld in artikel 14 van de Wet op de beroepen in de individuele gezondheidszorg;
-- −	*Onze Ministers: Onze Minister van Volksgezondheid, Welzijn en Sport en Onze Minister van Veiligheid en Justitie tezamen;*
+- −	*Onze Ministers: Onze Minister van Volksgezondheid, Welzijn en Sport en Onze Minister van Justitie en Veiligheid tezamen;*
 - −	*opgroei- en opvoedingsproblemen, psychische problemen en stoornissen:*
 
 1°.	psychische problemen en stoornissen, psychosociale problemen, gedragsproblemen of een verstandelijke beperking van de jeugdige, opvoedingsproblemen van de ouders of adoptiegerelateerde problemen;
@@ -123,6 +127,15 @@ met dien verstande dat de leeftijdgrens van achttien jaar niet geldt voor jeugdh
 - −	*pleegzorg:* vorm van jeugdhulp waarbij een pleegouder een jeugdige als behorende tot zijn gezin verzorgt en opvoedt;
 - −	*pleegzorgaanbieder:* jeugdhulpaanbieder die pleegzorg biedt;
 - −	*preventie:* op preventie gerichte ondersteuning van jeugdigen met of jeugdigen met een risico op psychische problemen en stoornissen, psychosociale problemen, gedragsproblemen of een verstandelijke beperking of van de ouders met of met een risico op opvoedingsproblemen;
+- - *regio:* regio als bedoeld in artikel 2.17;
+
+– - *regionaal expertteam:* voor een of meer regio’s werkzaam team van jeugdhulpverleners dat, zo nodig in samenwerking met jeugdhulpverleners die zijn betrokken bij de toegang tot jeugdhulp en onderwijs, desgevraagd adviseert over passende jeugdhulp voor jeugdigen met complexe problemen;
+
+– - *regiovisie:* gemeentelijke visie op hoe de gemeente met inachtneming van de op grond van paragraaf 2.2 geldende verplichtingen met andere gemeenten samenwerkt teneinde te bevorderen dat er een toereikend aanbod is van:
+
+1°.vormen van jeugdhulp als bedoeld in artikel 2.19, eerste lid, onderdeel a, onder 1°, om aan de taken, bedoeld in de artikelen 2.3 en 2.4, tweede lid, onderdeel b, te kunnen voldoen, en
+
+2°.gecertificeerde instellingen voor de uitvoering van kinderbeschermingsmaatregelen en jeugdreclassering;
 - −	*strafrechtelijke beslissing:* beslissing van de officier van justitie of van de rechter met toepassing van titel VIII A van het Eerste Boek van het Wetboek van Strafrecht, met toepassing van de vijfde titel van Hoofdstuk 2 of de vijfde titel van Hoofdstuk 6 van Boek 6 van het Wetboek van Strafvordering, of een beslissing als bedoeld in artikel 493 van het Wetboek van Strafvordering;
 - −	*Veilig Thuis:* Veilig Thuis-organisatie als bedoeld in artikel 4.1.1 van de Wet maatschappelijke ondersteuning 2015;
 - −	*vertrouwenspersoon:*
@@ -142,7 +155,9 @@ met dien verstande dat de leeftijdgrens van achttien jaar niet geldt voor jeugdh
 
 3°.	ingeval de woonplaats niet op grond van de onderdelen 1° en 2° kan worden vastgesteld of ingeval bij het in de basisregistratie personen opgenomen woonadres een aantekening is geplaatst als bedoeld in artikel 2.26 van de Wet basisregistratie personen: de gemeente waar de moeder van de jeugdige ten tijde van diens geboorte als ingezetene was ingeschreven in de basisregistratie personen, of, indien dit niet kan worden vastgesteld, de gemeente waar de jeugdige werkelijk verblijft op het moment van de hulpvraag;
 
-4°.	ingeval de woonplaats buiten Nederland is: de gemeente waar de jeugdige werkelijk verblijft op het moment van de hulpvraag.
+4°.	ingeval de woonplaats buiten Nederland is: de gemeente waar de jeugdige werkelijk verblijft op het moment van de hulpvraag;
+
+– - *zorgautoriteit:* Nederlandse Zorgautoriteit, genoemd in artikel 3, eerste lid, van de Wet marktordening gezondheidszorg.
 
 **Artikel 1.2**
 
@@ -207,6 +222,9 @@ b.	de bereikbaarheid te verbeteren.
 **3.**	De organisatie die de taken, bedoeld in artikel 1a.1, onderdeel a, uitvoert is slechts bevoegd informatie uit een elektronisch gesprek, waarin mogelijk persoonsgegevens, waaronder gegevens over gezondheid, andere bijzondere categorieën van persoonsgegevens en persoonsgegevens van strafrechtelijke aard, zijn opgenomen verder te verwerken als daarop pseudonimisering als bedoeld in artikel 4, onderdeel 5, van de Algemene Verordening gegevensbescherming is toegepast en vervolgens onafgebroken wordt gecontinueerd en voor zover dat noodzakelijk is voor een doelmatige en doeltreffende uitvoering van deze taken.
 
 **4.**	Bij het in behandeling nemen van klachten kunnen persoonsgegevens, waaronder gegevens over gezondheid, andere bijzondere categorieën van persoonsgegevens en persoonsgegevens van strafrechtelijke aard van de jeugdige die een telefonisch of elektronisch gesprek heeft gevoerd als bedoeld in artikel 1a.1, onderdeel a, worden verwerkt.
+
+**Artikel 1a.4**
+Onze Ministers plegen geregeld overleg met de daarvoor in aanmerking komende belangenorganisaties van jeugdigen over aangelegenheden van algemeen belang voor jeugdigen.
 
 **Hoofdstuk 2. Gemeente**
 
@@ -314,7 +332,7 @@ d.	wordt voorzien in maatregelen om kindermishandeling te bestrijden, en
 
 e.	jeugdhulp ook toegankelijk is na verwijzing door de huisarts, de medisch specialist en de jeugdarts, onverminderd de daarbij te hanteren professionele standaard als bedoeld in artikel 453 van Boek 7 van het Burgerlijk Wetboek.
 
-**2.**	Hetgeen in artikel 4.1.6, eerste, tweede, derde lid en vijfde lid, is bepaald ten aanzien van de jeugdhulpaanbieder is van overeenkomstige toepassing op het college, voor zover het betreft personen die onder verantwoordelijkheid van het college werkzaamheden verrichten met betrekking tot de toeleiding naar, advisering over, de bepaling en het inzetten van de aangewezen voorziening.
+**2.**	Hetgeen in artikel 4.1.6, eerste, tweede, vierde en vijfde lid, is bepaald ten aanzien van de jeugdhulpaanbieder is van overeenkomstige toepassing op het college, voor zover het betreft personen die onder verantwoordelijkheid van het college werkzaamheden verrichten met betrekking tot de toeleiding naar, advisering over, de bepaling en het inzetten van de aangewezen voorziening.
 
 **Artikel 2.7**
 
@@ -337,14 +355,7 @@ e.	jeugdhulp ook toegankelijk is na verwijzing door de huisarts, de medisch spec
 **3.**	Indien geen verzoek als bedoeld in het eerste lid is gedaan, treft het college van de gemeente waar de jeugdige zijn nieuwe woonplaats heeft ten behoeve van die jeugdige voorzieningen voor jeugdhulp die gelijkwaardig zijn aan de voorzieningen die het college van de gemeente waar zijn vorige woonplaats was, had getroffen tot ten hoogste een jaar, te rekenen vanaf de datum van wijziging van zijn woonplaats.
 
 **Artikel 2.8**
-
-**1.**	De colleges werken met elkaar samen, indien dat voor een doeltreffende en doelmatige uitvoering van deze wet aangewezen is.
-
-**2.**	Bij algemene maatregel van bestuur kunnen gebieden worden aangewezen waarbinnen colleges met het oog op de samenhangende uitvoering van de aan de colleges en de gemeenteraden bij of krachtens deze wet en andere wetten opgedragen taken samenwerken, uitsluitend indien de noodzakelijke samenwerking in deze gebieden ontbreekt en nadat Onze Ministers op overeenstemming gericht overleg hebben gevoerd met de betrokken colleges. Bij die maatregel kunnen regels worden gesteld over de vorm van samenwerking.
-
-**3.**	De voordracht voor een krachtens het tweede lid vast te stellen algemene maatregel van bestuur wordt gedaan door Onze Ministers in overeenstemming met Onze Minister van Binnenlandse Zaken en Koninkrijksrelaties.
-
-**4.**	De voordracht voor een krachtens het tweede lid vast te stellen algemene maatregel van bestuur wordt niet gedaan dan nadat het ontwerp in de Staatscourant is bekendgemaakt en aan een ieder de gelegenheid is geboden om binnen vier weken na de dag waarop de bekendmaking is geschied, wensen en bedenkingen ter kennis van Onze Ministers te brengen. Gelijktijdig met de bekendmaking wordt het ontwerp aan de beide kamers der Staten-Generaal overgelegd.
+Vervallen
 
 **Artikel 2.9**
 
@@ -450,13 +461,13 @@ De raad voor de kinderbescherming en de gecertificeerde instelling zijn verplich
 
 **Artikel 3.4**
 
-**1.**	Onze Minister van Veiligheid en Justitie wijst de certificerende instelling aan.
+**1.**	Onze Minister van Justitie en Veiligheid wijst de certificerende instelling aan.
 
 **2.**	De certificerende instelling, bedoeld in het eerste lid, beslist op aanvraag over de afgifte van een certificaat en een voorlopig certificaat en is bevoegd een afgegeven certificaat in te trekken of te schorsen.
 
 **3.**	Een certificaat of een voorlopig certificaat wordt afgegeven als de aanvrager voldoet aan de in deze wet gestelde voorschriften.
 
-**4.**	Onze Minister van Veiligheid en Justitie stelt een normenkader vast, waaraan de aanvrager moet voldoen om een certificaat te verkrijgen. Daarin worden in ieder geval eisen opgenomen omtrent:
+**4.**	Onze Minister van Justitie en Veiligheid stelt een normenkader vast, waaraan de aanvrager moet voldoen om een certificaat te verkrijgen. Daarin worden in ieder geval eisen opgenomen omtrent:
 
 a.	de deskundigheid van de medewerker van de gecertificeerde instelling;
 
@@ -470,7 +481,7 @@ d.	de samenwerking met andere organisaties.
 
 **6.**	Bij of krachtens algemene maatregel van bestuur worden nadere regels gesteld over:
 
-a.	de eisen waaraan de certificerende instelling, bedoeld in het eerste lid, moet voldoen en het toezicht door Onze Minister van Veiligheid en Justitie op deze instelling;
+a.	de eisen waaraan de certificerende instelling, bedoeld in het eerste lid, moet voldoen en het toezicht door Onze Minister van Justitie en Veiligheid op deze instelling;
 
 b.	de wijze waarop de aanvraag voor een certificaat of een voorlopig certificaat wordt gedaan en de gegevens die de aanvrager daarbij verstrekt;
 
@@ -568,9 +579,9 @@ c.	het op basis van de uitkomst van de toetsing, bedoeld onder b, zo nodig veran
 
 **2.**	Een verklaring als bedoeld in het eerste lid is niet eerder afgegeven dan drie maanden voor het tijdstip waarop betrokkene voor de jeugdhulpaanbieder of gecertificeerde instelling ging werken.
 
-**3.**	Indien de jeugdhulpaanbieder, de gecertificeerde instelling of een ingevolge artikel 9.2 met het toezicht belaste ambtenaar redelijkerwijs mag vermoeden dat een persoon niet langer voldoet aan de eisen voor het afgeven van een verklaring als bedoeld in het eerste lid, verlangt deze dat die persoon zo spoedig mogelijk opnieuw een verklaring als bedoeld in het eerste lid overlegt, die niet ouder is dan drie maanden.
+**3.**	Een jeugdhulpaanbieder als bedoeld onder 2° in artikel 1.1 met het toezicht belaste ambtenaar redelijkerwijs mag vermoeden dat een persoon niet langer voldoet aan de eisen voor het afgeven van een verklaring omtrent het gedrag of een jeugdhulpaanbieder of gecertificeerde instelling dit ten aanzien van een voor hem werkzame persoon redelijkerwijs mag vermoeden, verlangt deze ambtenaar of rechtspersoon dat de persoon zo spoedig mogelijk doch uiterlijk binnen 10 weken opnieuw een verklaring omtrent het gedrag overlegt, die niet ouder is dan drie maanden.
 
-**4.**	De jeugdhulpaanbieder als bedoeld onder 2° in artikel 1.1 is in het bezit van een verklaring als bedoeld in het eerste lid van zichzelf, die niet ouder is dan drie jaar.
+**4.**	Indien een ingevolge 9.2 is in het bezit van een verklaring als bedoeld in het eerste lid van zichzelf, die niet ouder is dan drie jaar.
 
 **5.**	Bij algemene maatregel van bestuur kan, ten behoeve van de waarborging van verantwoorde hulp alsmede ten behoeve van het toezicht op en de handhaving van de bij of krachtens deze wet gestelde regels, een register worden ingesteld van jeugdhulpaanbieders, gecertificeerde instellingen en van personen als bedoeld in het eerste lid. Bij of krachtens die maatregel kunnen nadere regels worden gesteld over dat register. Deze regels hebben in ieder geval betrekking op:
 
@@ -690,7 +701,7 @@ De artikelen 4.2.1 en 4.2.2 zijn niet van toepassing op klachten ten aanzien van
 
 **2.**	De ingevolge het eerste lid in te stellen cliëntenraden dienen zowel de belangen van de jeugdigen als die van hun ouders te behartigen.
 
-**3.**	Het eerste lid geldt niet voor een gecertificeerde instelling die tevens een door Onze Minister van Veiligheid en Justitie aanvaarde rechtspersoon is als bedoeld in de artikelen 256, eerste lid, en 302, tweede lid, van Boek 1 van het Burgerlijk Wetboek.
+**3.**	Het eerste lid geldt niet voor een gecertificeerde instelling die tevens een door Onze Minister van Justitie en Veiligheid aanvaarde rechtspersoon is als bedoeld in de artikelen 256, eerste lid, en 302, tweede lid, van Boek 1 van het Burgerlijk Wetboek.
 
 **Artikel 4.2.5**
 
@@ -775,6 +786,47 @@ d.	de klachtenregeling, bedoeld in artikel 4.2.1, eerste lid, en andere voor jeu
 **4.**	Voor het op verzoek verstrekken van afschriften kan een tarief in rekening worden gebracht, ten hoogste gelijk aan de kostprijs, tenzij ten aanzien van de jeugdhulpaanbieder of de gecertificeerde instelling de Wet open overheid van toepassing is.
 
 **5.**	De jeugdhulpaanbieder en de gecertificeerde instelling zenden het verslag voor 1 juni van het jaar van vaststelling aan Onze Ministers en aan de ingevolge artikel 9.2 met het toezicht belaste ambtenaar, alsmede aan organisaties die in de regio de belangen van de jeugdigen, ouders of pleegouders in algemene zin behartigen.
+
+**§ 4.4. Bestuursstructuur**
+**Artikel 4.1.1**
+
+1 De jeugdhulpaanbieder die met meer dan tien jeugdhulpverleners jeugdhulp met verblijf verleent of doet verlenen, de jeugdhulpaanbieder die met meer dan vijfentwintig jeugdhulpverleners jeugdhulp verleent of doet verlenen en de gecertificeerde instelling voldoen aan de volgende eisen omtrent de bestuursstructuur:
+
+a. er is een interne toezichthouder die toezicht houdt op het beleid van de dagelijkse of algemene leiding van de jeugdhulpaanbieder of gecertificeerde instelling en de algemene gang van zaken binnen de jeugdhulpaanbieder of gecertificeerde instelling en die de dagelijkse of algemene leiding van de jeugdhulpaanbieder of gecertificeerde instelling met raad ter zijde staat;
+
+b. een persoon maakt niet tegelijk deel uit van de interne toezichthouder en de dagelijkse of algemene leiding van een jeugdhulpaanbieder of gecertificeerde instelling;
+
+c. Een lid van de interne toezichthouder is niet tevens burgemeester of wethouder die verantwoordelijk is voor het beleid betreffende jeugdhulp en de uitvoering van kinderbeschermingsmaatregelen en jeugdreclassering;
+
+d. de jeugdhulpaanbieder en de gecertificeerde instelling bevorderen dat ten minste één van de leden van de interne toezichthouder:
+
+1°. een persoon is aan wie jeugdhulp is verleend dan wel ten aanzien van wie een kinderbeschermingsmaatregel of jeugdreclassering is uitgevoerd;
+
+2°. de ouder is van een persoon aan wie jeugdhulp is verleend dan wel ten aanzien van wie een kinderbeschermingsmaatregel of jeugdreclassering is uitgevoerd; of
+
+3°. werkzaam is of is geweest als jeugdarts, jeugdhulpverlener of medewerker van een gecertificeerde instelling;
+
+e. de interne toezichthouder is zodanig samengesteld dat de leden ten opzichte van elkaar, de dagelijkse of algemene leiding van de jeugdhulpaanbieder of gecertificeerde instelling en welk deelbelang dan ook onafhankelijk en kritisch kunnen opereren, en
+
+f. de jeugdhulpaanbieder en de gecertificeerde instelling leggen op inzichtelijke wijze de verantwoordelijkheidsverdeling tussen de interne toezichthouder en de dagelijkse of algemene leiding vast, alsmede de wijze waarop interne conflicten tussen de interne toezichthouder en de dagelijkse of algemene leiding worden geregeld.
+
+2 Bij algemene maatregel van bestuur worden nadere eisen gesteld betreffende de bestuursstructuur waaraan de jeugdhulpaanbieder en de gecertificeerde instelling moeten voldoen. Deze nadere eisen kunnen per categorie van jeugdhulpaanbieders of gecertificeerde instellingen verschillen en hebben in ieder geval betrekking op:
+
+a. de waarborging van de onafhankelijke taakvervulling door de interne toezichthouder;
+
+b. de samenstelling van de interne toezichthouder;
+
+c. de verstrekking van inlichtingen en gegevens aan de interne toezichthouder, en
+
+d. de taken of bevoegdheden van de interne toezichthouder.
+
+3 De jeugdhulpaanbieder en de gecertificeerde instelling leggen schriftelijk vast op welke wijze zij voldoen aan het bepaalde bij of krachtens het eerste en tweede lid. Hierover kunnen bij ministeriële regeling nadere regels worden gesteld die per categorie van jeugdhulpaanbieders of gecertificeerde instellingen kunnen verschillen.
+
+4 Een jeugdhulpaanbieder zorgt er binnen zes maanden nadat het aantal jeugdhulpverleners, bedoeld in het eerste lid, meer dan tien is gaan bedragen, voor dat hij aan de bij en krachtens dit artikel gestelde eisen voldoet.
+
+5 Indien de jeugdhulpaanbieder tevens een instelling is als bedoeld in de Wet toetreding zorgaanbieders, worden voor die instelling werkende zorgverleners voor de toepassing van het eerste en vierde lid beschouwd als jeugdhulpverleners.
+
+6 Bij algemene maatregel van bestuur worden categorieën van jeugdhulpaanbieders aangewezen waarop dit artikel niet van toepassing is.
 
 **Hoofdstuk 5. Pleegzorg**
 
@@ -1824,7 +1876,7 @@ c.	het toezicht op het functioneren van de autorisatielijst.
 
 **Artikel 7.2.9**
 
-Ten behoeve van de verantwoordelijkheid, bedoeld in de artikelen 2.1 en 2.4, tweede lid, kan Onze Minister van Veiligheid en Justitie aan een door het college aangewezen ambtenaar of aan een door het college aangewezen en onder zijn verantwoordelijkheid werkzame functionaris het burgerservicenummer verstrekken van een jeugdige ten aanzien van wie in het kader van een strafrechtelijke beslissing is bepaald dat hij in aanmerking komt voor een vorm van jeugdhulp of jeugdreclassering.
+Ten behoeve van de verantwoordelijkheid, bedoeld in de artikelen 2.1 en 2.4, tweede lid, kan Onze Minister van Justitie en Veiligheid aan een door het college aangewezen ambtenaar of aan een door het college aangewezen en onder zijn verantwoordelijkheid werkzame functionaris het burgerservicenummer verstrekken van een jeugdige ten aanzien van wie in het kader van een strafrechtelijke beslissing is bepaald dat hij in aanmerking komt voor een vorm van jeugdhulp of jeugdreclassering.
 
 **§ 7.3. Toestemming, dossier en privacy**
 
@@ -2272,7 +2324,7 @@ f.	de inrichtingen, bedoeld in artikel 1, onderdeel b, van de Beginselenwet just
 
 **1.**	Onze Ministers zijn beiden bevoegd tot oplegging van een last onder bestuursdwang ter handhaving van de artikelen 8.3.1 en 8.3.2 en van een krachtens artikel 9.3 gegeven aanwijzing of bevel en tot overeenkomstige toepassing van artikel 5:20, derde lid, van de Algemene wet bestuursrecht ten aanzien van de in artikel 9.1, eerste lid, bedoelde taak.
 
-**2.**	Onze Ministers zijn beiden bevoegd tot oplegging van een last onder dwangsom ter handhaving van het bepaalde bij of krachtens artikel 4.2.1, eerste, tweede, derde en vijfde lid.
+**2.**	Onze Ministers zijn beiden bevoegd tot oplegging van een last onder dwangsom ter handhaving van het bepaalde bij of krachtens de artikelen 4.2.1, eerste, tweede, derde en vijfde lid, en 4.4.1.
 
 **Artikel 9.6**
 
@@ -2362,6 +2414,84 @@ Bij of krachtens algemene maatregel van bestuur wordt bepaald dat de inspectie, 
 
 De voordracht voor een algemene maatregel van bestuur waarbij voor de eerste maal toepassing wordt gegeven aan artikel 9.7 of 9.8, wordt niet eerder gedaan dan vier weken nadat het ontwerp aan beide kamers der Staten-Generaal is overgelegd.
 
+**Hoofdstuk 9a. Stelselonderzoek, vroegsignalering en toezicht door de zorgautoriteit**
+**Artikel 9a.1**
+1 De zorgautoriteit onderzoekt in algemene zin of het aanbod van jeugdhulp aansluit op de vraag, het aanbod van gecertificeerde instellingen aansluit op de uit te voeren kinderbeschermingsmaatregelen en jeugdreclassering en in welke mate de colleges, Jeugdregio’s, jeugdhulpaanbieders en gecertificeerde instellingen erin slagen jeugdigen en hun ouders de noodzakelijke jeugdhulp, kinderbeschermingsmaatregelen en jeugdreclassering te verschaffen.
+
+2 Het onderzoek kan zich onder meer richten op:
+
+a. het aanbod van jeugdhulp en gecertificeerde instellingen, alsmede de te verwachten ontwikkelingen daarin;
+
+b. de vraag naar jeugdhulp en de uit te voeren kinderbeschermingsmaatregelen en jeugdreclassering, alsmede de te verwachten ontwikkelingen daarin;
+
+c. de mate waarin het aanbod van jeugdhulp aansluit of naar verwachting zal aansluiten op de vraag naar jeugdhulp, alsmede de risicofactoren voor een goede aansluiting;
+
+d. de mate waarin het aanbod van gecertificeerde instellingen aansluit of naar verwachting zal aansluiten op de uit te voeren kinderbeschermingsmaatregelen en jeugdreclassering, alsmede de risicofactoren voor een goede aansluiting;
+
+e. de wijze van totstandkoming van overeenkomsten tussen colleges of Jeugdregio’s enerzijds en jeugdhulpaanbieders en gecertificeerde instellingen anderzijds en de in die overeenkomsten opgenomen prestaties, de prijzen daarvoor en overige voorwaarden, alsmede de totstandkoming van door colleges of Jeugdregio’s aan jeugdhulpaanbieders en gecertificeerde instellingen verstrekte subsidies en de subsidievoorwaarden;
+
+f. de wijze van totstandkoming van overeenkomsten van opdracht waarmee jeugdhulpaanbieders of gecertificeerde instellingen andere jeugdhulpaanbieders of gecertificeerde instellingen bij de verlening van jeugdhulp of het uitvoeren van kinderbeschermingsmaatregelen of jeugdreclassering inschakelen, de daarin opgenomen prestaties, de prijzen daarvoor en overige voorwaarden;
+
+g. de ontwikkeling van de kosten voor jeugdhulp en de uitvoering van kinderbeschermingsmaatregelen en jeugdreclassering;
+
+h. de invloed van de inrichting van de toegang tot de jeugdhulp, kinderbeschermingsmaatregelen of jeugdreclassering op de snelheid waarmee benodigde hulp of maatregelen kunnen worden ingezet, en
+
+i. de wijze waarop en de mate waarin de continuïteit van jeugdhulp, kinderbeschermingsmaatregelen of jeugdreclassering voor jeugdigen of hun ouders wordt gewaarborgd indien nieuwe jeugdhulpaanbieders of gecertificeerde instellingen oude opvolgen.
+
+**Artikel 9a.2**
+1 De zorgautoriteit heeft tot taak zo vroeg mogelijk te signaleren dat er:
+
+a. risico’s zijn die ertoe kunnen leiden dat colleges niet kunnen voorzien in een toereikend aanbod van:
+
+1°. vormen van jeugdhulp als bedoeld in artikel 2.19, eerste lid, onderdeel a, onder 1°, om aan de taken, bedoeld in de artikelen 2.3 en 2.4, tweede lid, onderdeel b, te kunnen voldoen;
+
+2°. gecertificeerde instellingen voor de uitvoering van kinderbeschermingsmaatregelen en jeugdreclassering, en
+
+3°. in geval toepassing is gegeven aan artikel 2.21, eerste lid, vormen van jeugdhulp als bedoeld in dat lid, om aan de taken, bedoeld in de artikelen 2.3 en 2.4, tweede lid, onderdeel b, te kunnen voldoen;
+
+b. sprake is van een ontoereikend aanbod van de vormen van jeugdhulp, bedoeld in onderdeel a, of gecertificeerde instellingen.
+
+2 Ter uitvoering van het eerste lid:
+
+a. zorgt de zorgautoriteit ervoor dat eenieder aan haar ontwikkelingen bij gemeenten, Jeugdregio’s, jeugdhulpaanbieders en gecertificeerde instellingen kan melden die de aanwezigheid van een toereikend aanbod van jeugdhulp en gecertificeerde instellingen in gevaar kunnen brengen of meldingen over een ontoereikend aanbod kan doen;
+
+b. analyseert de zorgautoriteit in ieder geval:
+
+1°. de meldingen, bedoeld in onderdeel a;
+
+2°. gegevens en inlichtingen van de inspecties, bedoeld in artikel 9.1, eerste en tweede lid, die kunnen duiden op een risico als bedoeld in het eerste lid, onderdeel a;
+
+3°. bij haar op grond van artikel 71b van de Wet marktordening gezondheidszorg aan te leveren gegevens met betrekking tot de in het eerste lid bedoelde jeugdhulp, kinderbeschermingsmaatregelen en jeugdreclassering, alsmede met betrekking tot de jeugdhulpaanbieders en gecertificeerde instellingen die deze diensten leveren;
+
+4°. informatie die tot haar beschikking is gekomen in het kader van het onderzoek, bedoeld in artikel 9a.1;
+
+5°. informatie die tot haar beschikking is gekomen bij de uitvoering van haar in de Wet marktordening gezondheidszorg geregelde taken; en
+
+6°. openbare informatie.
+
+3 De zorgautoriteit verstrekt colleges en Jeugdregio’s bij ministeriële regeling te bepalen gegevens om zelf zo vroeg mogelijk een risico of ontoereikend aanbod als bedoeld in het eerste lid in hun eigen gemeente of regio te kunnen signaleren.
+
+4 Jeugdhulpaanbieders die vormen van jeugdhulp als bedoeld in het eerste lid verlenen of doen verlenen, gecertificeerde instellingen, colleges, Jeugdregio’s en, voor zover het om landelijk gecontracteerde of te contracteren jeugdhulp gaat, de door gemeenten gezamenlijk in stand gehouden landelijk werkende organisatie belast met de contractering:
+
+a. leveren de zorgautoriteit desgevraagd de aanvullende informatie die zij nodig heeft om te kunnen bepalen of sprake is van een risico of ontoereikend aanbod als bedoeld in het eerste lid;
+
+b. doen een melding aan de zorgautoriteit zodra zij voorzien dat de diensten, bedoeld in het eerste lid, op afzienbare termijn niet meer geleverd zullen kunnen worden en zodra deze daadwerkelijk niet meer geleverd worden.
+
+5 Zodra de zorgautoriteit tot de overtuiging is gekomen dat een risico of ontoereikend aanbod als bedoeld in het eerste lid bestaat, waarschuwt zij de betrokken jeugdhulpaanbieders, gecertificeerde instellingen, colleges, Jeugdregio’s en, indien het om landelijk gecontracteerde of te contracteren jeugdhulp gaat, de door gemeenten gezamenlijk in stand gehouden landelijk werkende organisatie belast met de contractering.
+
+**Artikel 9a.3**
+1 De zorgautoriteit bevordert dat partijen waaraan zij een signaal als bedoeld in artikel 9a.2, vijfde lid, heeft afgegeven, voldoende maatregelen treffen om een toereikend aanbod van de in haar signaal genoemde jeugdhulp of een toereikend aanbod van gecertificeerde instellingen zoveel mogelijk te waarborgen.
+
+2 Partijen betrekken de zorgautoriteit zowel op eigen initiatief als op haar verzoek bij hun planning om te komen tot maatregelen als bedoeld in het eerste lid, alsmede bij de inhoud van die maatregelen en bij de invoering ervan.
+
+3 De zorgautoriteit adviseert partijen over de onderwerpen, bedoeld in het tweede lid, en kan hen ook voor het overige met raad terzijde staan om het doel, bedoeld in het eerste lid, te bereiken.
+
+4 De zorgautoriteit informeert Onze Minister van Volksgezondheid, Welzijn en Sport of Onze Minister van Justitie en Veiligheid indien:
+
+a. de diensten als bedoeld in artikel 9a.2, eerste lid, niet meer geleverd worden of de zorgautoriteit voorziet dat zij op afzienbare termijn niet meer geleverd zullen kunnen worden; of
+
+b. zij van mening is dat een of meer colleges of Jeugdregio’s onvoldoende inspanningen verrichten om het door haar gesignaleerde risico af te wenden.
+
 **Hoofdstuk 10. Overgangsrecht**
 
 **Artikel 10.0**
@@ -2393,8 +2523,13 @@ De voordracht voor een algemene maatregel van bestuur waarbij voor de eerste maa
 [Vervallen per 01-01-2022]
 
 **Artikel 10.3**
+1. Gedurende de periode waarin de met artikel I, onderdeel G, van de Wet verbetering beschikbaarheid jeugdzorg voorziene artikelen 2.19, eerste lid, onderdeel a, en 2.21 van de Jeugdwet nog niet in werking zijn getreden heeft de taak van de zorgautoriteit, bedoeld in artikel 9a.2, eerste lid, betrekking op het zo vroeg mogelijk signaleren van risico’s die ertoe kunnen leiden dat colleges niet kunnen voorzien in een toereikend aanbod van of het signaleren van een ontoereikend aanbod van:
 
-[Vervallen per 01-01-2022]
+a. bij algemene maatregel van bestuur te bepalen vormen van jeugdhulp, en
+
+b. gecertificeerde instellingen voor de uitvoering van kinderbeschermingsmaatregelen en jeugdreclassering.
+
+2 Dit artikel vervalt op een bij koninklijk besluit te bepalen tijdstip.
 
 **Artikel 10.4**
 
