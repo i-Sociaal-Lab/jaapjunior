@@ -3,7 +3,7 @@
 Status: Productie
 Auteur: Ministerie van VWS
 Bron-link: https://wetten.overheid.nl/BWBR0036007/2025-01-01
-Publicatiedatum: 1 januari 2025
+Publicatiedatum: 1 januari 2026
 AI-agent: Jw-agent
 
 ## **Instructie voor de AI-agent: Gebruik van de Regeling Jeugdwet voor Vragen over Berichtenverkeer en iStandaarden**
@@ -235,6 +235,7 @@ Jaarverantwoording Jeugd over de verslagjaren 2019 of 2020 worden ingediend vó�
 Een jeugdhulpaanbieder die moet voldoen aan artikel 4.4.1, eerste lid, van de wet en een gecertificeerde instelling legt op de volgende wijze vast hoe hij voldoet aan het bepaalde bij en krachtens artikel 4.4.1, eerste en tweede lid, van de wet:
 a. een jeugdhulpaanbieder die een rechtspersoon is en een gecertificeerde instelling legt dit in zijn statuten vast;
 b.een jeugdhulpaanbieder die geen rechtspersoon is ligt dit anderszins schriftelijk vast.
+
 
 **§ 5. Basisbedragen en toeslagen pleegvergoeding**
 
