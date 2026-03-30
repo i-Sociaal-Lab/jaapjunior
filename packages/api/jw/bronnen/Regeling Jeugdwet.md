@@ -68,6 +68,8 @@ d. overeenkomt met daartoe door of namens het college gemaakte afspraken of subs
 
 − *gegevens over gezondheid:* gegevens over gezondheid, als bedoeld in artikel 4, onderdeel 15 van de Algemene verordening gegevensbescherming;
 
+- *identificerende persoonsgegevens:* naam en contactgegevens en, voor zover het een jeugdhulpaanbieder of gecertificeerde instelling betreft, AGB-code van de onderneming, AGB-code van de vestiging of AGB-code van de zorgverlener;
+
 − *iJw:* door het Zorginstituut beheerde standaarden als bedoeld in artikel 2.15, derde lid, van de Jeugdwet bestaande uit bedrijfsregels, berichtenstandaarden en
 
 berichtspecificaties;
@@ -227,6 +229,13 @@ b. het jaardocument, bedoeld in artikel 4.3;
 
 Jaarverantwoording Jeugd over de verslagjaren 2019 of 2020 worden ingediend vóór 15 juli 2020, respectievelijk 15 juli 2021.
 
+**§ 4.b Bestuursstructuur**
+**Artikel 4.5**
+
+Een jeugdhulpaanbieder die moet voldoen aan artikel 4.4.1, eerste lid, van de wet en een gecertificeerde instelling legt op de volgende wijze vast hoe hij voldoet aan het bepaalde bij en krachtens artikel 4.4.1, eerste en tweede lid, van de wet:
+a. een jeugdhulpaanbieder die een rechtspersoon is en een gecertificeerde instelling legt dit in zijn statuten vast;
+b.een jeugdhulpaanbieder die geen rechtspersoon is ligt dit anderszins schriftelijk vast.
+
 **§ 5. Basisbedragen en toeslagen pleegvergoeding**
 
 **Artikel 5.1**
@@ -252,7 +261,7 @@ c. daarvoor geen uitkering op grond van een andere regeling kan worden verstrekt
 
 **Artikel 5.3**
 
-De pleegzorgaanbieder verstrekt een door de pleegzorgaanbieder vast te stellen vergoeding voor bijzondere kosten voor het pleegkind ingeval sprake is van een pleegoudervoogd dan wel een pleegouder die een pleegkind opvangt in het kader van een kinderbeschermingsmaatregel, voor zover:
+De pleegzorgaanbieder verstrekt een door de pleegzorgaanbieder vast te stellen vergoeding voor bijzondere kosten voor het pleegkind voor zover:
 
 a. deze kosten naar het oordeel van de pleegzorgaanbieder redelijkerwijs noodzakelijk worden geacht en niet kunnen worden voldaan uit het basisbedrag, bedoeld in artikel 5.1, dan wel uit de toeslagen, bedoeld in artikel 5.2;
 
@@ -311,9 +320,9 @@ De beveiliging van de gegevensverwerking, bedoeld in de artikelen 7.2.1 en 7.2.4
 a. gegevens ter identificatie van de aanbieder, te weten van die aanbieder:
 
 1°. naam en adres,
-2°. instellingscode,
-3°. praktijkcode, of
-4°. zorgverlenerscode;
+2°. AGB-code van de onderneming,
+3°. AGB-code van de vestiging, of
+4°. AGB-code van de zorgverlener;
 
 b. het in rekening gebrachte bedrag alsmede de wijze waarop en de termijn waarbinnen de rekening dient te worden voldaan;
 
@@ -655,11 +664,7 @@ b. indien een declaratie niet voldoet aan de voorwaarden van de beschikking, bed
 
 onderdeel b;
 
-c. wegens strijd met het recht, waaronder het recht dat van toepassing is op de
-
-arbeidsovereenkomst of overeenkomst van opdracht, of het belang van de uitvoerbaarheid van het verrichten van de betalingen uit het persoonsgebonden budget door de Sociale
-
-verzekeringsbank;
+c. wegens strijd met het recht, waaronder het recht dat van toepassing is op de arbeidsovereenkomst of overeenkomst van opdracht, of het belang van de uitvoerbaarheid van het verrichten van de betalingen uit het persoonsgebonden budget door de Sociale verzekeringsbank;
 
 d. indien de derde een declaratie niet binnen zes weken na de maand waarin de prestatie is verleend, heeft ingediend bij de persoon aan wie het persoonsgebonden budget is verstrekt; e. indien de Sociale verzekeringsbank een declaratie niet heeft ontvangen binnen vier weken nadat de persoon aan wie het persoonsgebonden budget is verstrekt, deze heeft ontvangen; f. indien de Sociale verzekeringsbank een verzoek als bedoeld in het vierde lid, niet heeft ontvangen binnen tien weken na de kalendermaand waarop een verzoek betrekking heeft; indien het college bij de toepassing van de bij verordening gestelde regels, bedoeld in artikel g.
 
@@ -711,6 +716,148 @@ verzekeringsbank op verzoek of onverwijld uit eigen beweging mededeling van gege
 
 **2.** De Sociale verzekeringsbank en het college werken samen aan de digitalisering en standaardisering van de uitvoering van het persoonsgebonden budget.
 
+**§ 8a. Verwerking gegevens ten behoeve van stelselonderzoek, vroegsignalering en wettelijke taken andere instanties**
+**Artikel 8f**
+
+1. Voor de uitvoering van artikel 9a.1 van de wet worden persoonsgegevens van jeugdigen als bedoeld in de wet verwerkt indien en voor zover zij naar het oordeel van de zorgautoriteit voor die uitvoering noodzakelijk zijn, op de persoonsgegevens pseudonimisering is toegepast voor verstrekking aan de zorgautoriteit en voor zover het de hieronder vermelde gegevens betreft:
+
+a. gegevens met betrekking tot de jeugdhulpaanbieder of gecertificeerde instelling: de AGB-code van de onderneming, de AGB-code van de vestiging of de AGB-code van de zorgverlener;
+
+b. gegevens met betrekking tot de jeugdige en de verleende jeugdhulp of uitgevoerde kinderbeschermingsmaatregel of jeugdreclassering:
+
+1. burgerservicenummer,
+
+2. gemeentecode van de woonplaats van de jeugdige,
+
+3. geboortejaar,
+
+4. type verwijzer naar jeugdhulp,
+
+5. jeugdhulpvorm, type kinderbeschermingsmaatregel of type jeugdreclassering,
+
+6. toewijzingsdatum,
+
+7. beoogde datum aanvang jeugdhulp, kinderbeschermingsmaatregel of jeugdreclassering,
+
+8. daadwerkelijke datum aanvang jeugdhulp, kinderbeschermingsmaatregel of jeugdreclassering,
+
+9. datum einde jeugdhulp, kinderbeschermingsmaatregel of jeugdreclassering,
+
+10. reden einde jeugdhulp, kinderbeschermingsmaatregel of jeugdreclassering,
+
+11. in rekening gebracht bedrag, en
+
+12. geleverd volume.
+
+2 De Stichting Inlichtingenbureau bewaart de gegevens, bedoeld in het eerste lid, ten behoeve van de verstrekking aan de zorgautoriteit gedurende vier jaar, te rekenen vanaf het tijdstip van registratie van de gegevens in het elektronische berichtenverkeer tussen gemeenten en jeugdhulpaanbieders of gecertificeerde instellingen. De zorgautoriteit bewaart de gegevens, bedoeld in het eerste lid, ten behoeve van de uitvoering van artikel 9a.1 van de wet gedurende tien jaren, te rekenen vanaf het tijdstip waarop zij de gegevens van de Stichting Inlichtingenbureau heeft ontvangen.
+
+**Artikel 8g** 
+1. De periodieke verstrekking van gegevens en inlichtingen aan de zorgautoriteit ter uitvoering van haar taak, bedoeld in artikel 9a.2 van de wet, door Jeugdregio's, en indien het om landelijk gecontracteerde of te contracteren jeugdhulp gaat, de door gemeenten gezamenlijk in stand gehouden landelijk werkende organisatie belast met de contractering, betreft het jaarlijks aan de zorgautoriteit verstrekken van:
+
+a.de namen en nummers van inschrijving bij de Kamer van Koophandel van de door de Jeugdregio of landelijke werkende organisatie gecontracteerde of gesubsidieerde jeugdhulpaanbieders en gecertificeerde instellingen; en
+
+b.van die jeugdhulpaanbieders en gecertificeerde instellingen per aanbieder of instelling een overzicht van de vormen van jeugdhulp, bedoeld in artikel 2.2.3 van het Besluit Jeugdwet, respectievelijk de typen kinderbeschermingsmaatregelen of jeugdreclassering waarop de contractering of subsidiëring betrekking heeft.
+
+2. De periodieke verstrekking van gegevens en inlichtingen aan de zorgautoriteit ter uitvoering van haar taak, bedoeld in artikel 9a.2 van de wet, door jeugdhulpaanbieders die een vorm van jeugdhulp als bedoeld in artikel 2.2.3 van het Besluit Jeugdwet aanbieden en gecertificeerde instellingen, betreft:
+
+a.het jaarlijks aan de zorgautoriteit verstrekken van de volgende onderdelen van de jaarprognose:
+
+1°.het begrote bedrijfsresultaat,
+
+2°.de begrote som der bedrijfsopbrengsten,
+
+3°.de begrote overige bedrijfskosten,
+
+4°.het begrote subtotaal aan kosten personeel in loondienst,
+
+5°.het begrote subtotaal aan kosten personeel niet in loondienst, en
+
+6°.de begrote opbrengsten Jeugdwet; en
+
+b. het per kwartaal aan de zorgautoriteit verstrekken van:
+
+1°.naam, nummer van inschrijving bij de Kamer van Koophandel en instellingscode, praktijkcode of zorgverlenerscode,
+
+2°.de contactgegevens voor de zorgautoriteit,
+
+3°.een overzicht van de vormen van jeugdhulp, bedoeld in artikel 2.2.3 van het Besluit Jeugdwet, respectievelijk de typen kinderbeschermingsmaatregelen of jeugdreclassering die de jeugdhulpaanbieder of gecertificeerde instelling aanbiedt,
+
+4°.het bedrijfsresultaat,
+
+5°.de som der bedrijfsopbrengsten,
+
+6°.de liquiditeit,
+
+7°.de overige bedrijfskosten,
+
+8°.het werkkapitaal,
+
+9°.het subtotaal aan kosten personeel in loondienst,
+
+10°.het subtotaal aan kosten personeel niet in loondienst,
+
+11°.de opbrengsten Jeugdwet,
+
+12°.de ingeschatte niet-declarabele productie,
+
+13°.de ingeschatte wachttijden en het aantal jeugdigen of ouders op de wachtlijst, van de vormen van jeugdhulp als bedoeld in artikel 2.2.3 van het Besluit Jeugdwet uitgesplitst naar vorm van jeugdhulp en per regio waarbinnen de jeugdhulpaanbieder de betreffende jeugdhulp aanbiedt,
+
+14°.de wachttijd en het aantal jeugdigen op de wachtlijst voor de uitvoering van kinderbeschermingsmaatregelen of jeugdreclassering uitgesplitst naar type kinderbeschermingsmaatregel of jeugdreclassering en per regio waarbinnen de gecertificeerde instelling werkzaam is,
+
+15°.een antwoord op de vraag of in het afgelopen kwartaal, het huidige kwartaal of het komende kwartaal risico’s voor de financiële continuïteit van de jeugdhulpaanbieder of gecertificeerde instelling dan wel belangrijke strategische risico’s aan de orde zijn of zijn geweest, en
+
+16°.indien van toepassing, een overzicht van de jeugdhulpaanbieders of gecertificeerde instellingen die de jeugdhulpaanbieder of gecertificeerde instelling op grond van een overeenkomst van opdracht heeft ingeschakeld bij de verlening van vormen van jeugdhulp als bedoeld in artikel 2.2.3 van het Besluit Jeugdwet of het uitvoeren van kinderbeschermingsmaatregelen of jeugdreclassering, alsmede de nummers van inschrijving bij de Kamer van Koophandel van de ingeschakelde jeugdhulpaanbieders of gecertificeerde instellingen.
+
+3 Het tweede lid geldt niet voor:
+
+a.solistisch werkende jeugdhulpverleners;
+
+b.jeugdhulpaanbieders en gecertificeerde instellingen als bedoeld in artikel 4 van de Regeling openbare jaarverantwoording Jeugdwet.
+
+**Artikel 8h**
+
+De zorgautoriteit verstrekt colleges en Jeugdregio’s om zelf zo vroeg mogelijk een risico voor de aanwezigheid van een toereikend aanbod of ontoereikend aanbod als bedoeld in artikel 9a.2, eerste lid, van de wet in hun eigen gemeente of regio te kunnen signaleren de volgende gegevens, met dien verstande dat de zorgautoriteit geen bedrijfsgevoelige informatie van jeugdhulpaanbieders en gecertificeerde instellingen verstrekt:
+
+a.gegevens met betrekking tot een door de zorgautoriteit ontvangen melding als bedoeld in artikel 9a.2, tweede lid, onderdeel a, van de wet, indien daaruit voor die gemeente of regio een mogelijk risico voor de aanwezigheid van een toereikend aanbod of een bestaand ontoereikend aanbod als bedoeld in artikel 9a.2, eerste lid, van de wet volgt, te weten:
+
+1°.de dagtekening van de melding,
+
+2°.de vormen van jeugdhulp of typen kinderbeschermingsmaatregelen of jeugdreclassering waar de melding betrekking op heeft,
+
+3°.of de melding betrekking heeft op een mogelijk risico of bestaand ontoereikend aanbod,
+
+4°.de ontwikkelingen waarop de melding betrekking heeft, en
+
+5°.voor zover van toepassing, de naam en instellingscode, praktijkcode of zorgverlenerscode van de jeugdhulpverlener of gecertificeerde instelling die bij de melding is genoemd;
+
+b.indien uit de informatie die de zorgautoriteit op grond van artikel 9a.2, tweede lid, onderdeel b, onder 2° tot en met 6°, van de wet analyseert volgens de zorgautoriteit voor die gemeente of regio een mogelijk risico voor de aanwezigheid van een toereikend aanbod of een bestaand ontoereikend aanbod als bedoeld in artikel 9a.2, eerste lid, van de wet volgt:
+
+1°.de vormen van jeugdhulp of typen kinderbeschermingsmaatregelen of jeugdreclassering waarbij sprake is van een mogelijk risico of ontoereikend aanbod,
+
+2°.of sprake is van een mogelijk risico of bestaand ontoereikend aanbod,
+
+3°.de ontwikkelingen die hebben geleid tot de inschatting van de zorgautoriteit dat sprake is van een mogelijk risico of bestaand ontoereikend aanbod, en
+
+4°.voor zover van toepassing, de naam en instellingscode, praktijkcode of zorgverlenerscode van de jeugdhulpverlener of gecertificeerde instelling waarop de ontwikkelingen betrekking hebben.
+
+Artikel 8i	Druk de vergelijking van het onderdeel af
+De zorgautoriteit verstrekt aan de in artikel 71f van de Wet marktordening gezondheidszorg genoemde instanties persoonsgegevens indien en voor zover verwerking van die gegevens voor de uitoefening van hun taken en bevoegdheden noodzakelijk is en voor zover die gegevens behoren tot de hieronder bij die instanties vermelde categorieën van persoonsgegevens:
+
+a.de Inspectie gezondheidszorg en jeugd, de Inspectie Justitie en Veiligheid, de Nederlandse Arbeidsinspectie en de FIOD-ECD: identificerende persoonsgegevens en persoonsgegevens van strafrechtelijke aard betreffende jeugdhulpaanbieders en bestuurders of medewerkers van jeugdhulpaanbieders en gecertificeerde instellingen;
+
+b.het Bureau bevordering integriteitsbeoordelingen door het openbaar bestuur: identificerende persoonsgegevens en persoonsgegevens van strafrechtelijke aard betreffende jeugdhulpaanbieders en bestuurders of medewerkers van jeugdhulpaanbieders en gecertificeerde instellingen;
+
+c.het Centraal Bureau voor de Statistiek, het Centraal Planbureau, de Gezondheidsraad, de Raad voor de Volksgezondheid en Samenleving, het Rijksinstituut voor de volksgezondheid en milieu en het Sociaal Cultureel Planbureau: identificerende persoonsgegevens betreffende jeugdhulpaanbieders.
+
+**Artikel 8i** 
+De zorgautoriteit verstrekt aan de in artikel 71f van de Wet marktordening gezondheidszorg genoemde instanties persoonsgegevens indien en voor zover verwerking van die gegevens voor de uitoefening van hun taken en bevoegdheden noodzakelijk is en voor zover die gegevens behoren tot de hieronder bij die instanties vermelde categorieën van persoonsgegevens:
+
+a. de Inspectie gezondheidszorg en jeugd, de Inspectie Justitie en Veiligheid, de Nederlandse Arbeidsinspectie en de FIOD-ECD: identificerende persoonsgegevens en persoonsgegevens van strafrechtelijke aard betreffende jeugdhulpaanbieders en bestuurders of medewerkers van jeugdhulpaanbieders en gecertificeerde instellingen;
+
+b.het Bureau bevordering integriteitsbeoordelingen door het openbaar bestuur: identificerende persoonsgegevens en persoonsgegevens van strafrechtelijke aard betreffende jeugdhulpaanbieders en bestuurders of medewerkers van jeugdhulpaanbieders en gecertificeerde instellingen;
+
+c. het Centraal Bureau voor de Statistiek, het Centraal Planbureau, de Gezondheidsraad, de Raad voor de Volksgezondheid en Samenleving, het Rijksinstituut voor de volksgezondheid en milieu en het Sociaal Cultureel Planbureau: identificerende persoonsgegevens betreffende jeugdhulpaanbieders.
+
 **§ 9. Slotbepalingen**
 
 **Artikel 9.1**
@@ -755,19 +902,19 @@ F. Teeven
 
 | Leeftijd pleegkind | Bedrag per maand | Bedrag per dag |
 | --- | --- | --- |
-| 0 t/m 8 jaar | € 736,00 | € 24,18 |
-| 9 t/m 11 jaar | € 745,00 | € 24,50 |
-| 12 t/m 15 jaar | € 812,00 | € 26,68 |
-| 16 en 17 jaar | € 896,00 | € 29,46 |
-| 18 jaar en ouder | € 905,00 | € 29,76 |
+| 0 t/m 8 jaar | € 757,00 | € 24,88 |
+| 9 t/m 11 jaar | € 767,00 | € 25,21 |
+| 12 t/m 15 jaar | € 835,00 | € 27,45 |
+| 16 en 17 jaar | € 922,00 | € 30,31 |
+| 18 jaar en ouder | € 931,00 | € 30,62 |
 
 *b.* *Toeslag, bedoeld in artikel 5.2, eerste lid*
 
-*De in artikel 5.2, eerste lid, bedoelde toeslag bedraagt € 4,82 per dag.*
+*De in artikel 5.2, eerste lid, bedoelde toeslag bedraagt € 4,96 per dag.*
 
 *c.* *Toeslag, bedoeld in artikel 5.2, tweede lid*
 
-*De in artikel 5.2, tweede lid, bedoelde toeslag bedraagt ten hoogste € 4,82 per dag.*
+*De in artikel 5.2, tweede lid, bedoelde toeslag bedraagt ten hoogste € 4,96 per dag.*
 
 *d.* *Indexering, bedoeld in artikel 5.4*
 
