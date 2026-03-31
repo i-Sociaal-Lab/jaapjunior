@@ -213,5 +213,7 @@ Om een tijdige verwerking te kunnen garanderen, kunnen gemeenten en zorgaanbiede
 
 Op www.istandaarden.nl verschijnt na 1 oktober het verslag over de bijgewerkte standaardproductcodelijsten. Daarin staan de binnengekomen suggesties, de bijbehorende overweging en het besluit van de redactieraad. 
 
+
+
 <!-- 8 / 8 -->
 
