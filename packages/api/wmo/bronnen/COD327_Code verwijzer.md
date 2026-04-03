@@ -3,6 +3,10 @@
 ## Definitie:  
 Aanduiding van de aard van de verwijzer.
 
+## Metadata
+
+- **ID:** COD327
+- **Naam:** Code verwijzer
 - **Status:** Productie
 - **Standaard:** iWmo 3.2
 - **Element:** LDT_TypeVerwijzer
