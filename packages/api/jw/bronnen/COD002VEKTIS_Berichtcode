@@ -5,7 +5,7 @@
     "id": "COD002-VEKTIS",
     "naam": "Berichtcode",
     "definitie": "LDT_Berichtcode is een data-element uit de Header van een bericht en dient conform de codelijst van Vektis ingevuld te worden. Bijvoorbeeld: de Berichtcode van een JW318 bericht is 487.",
-    "bronUrl": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/cod002-vektis",
+    "bronUrl": "https://www.vektis.nl/standaardisatie/codelijsten/COD002-VEKT",
     "codes": [
       { "bericht": "JW301", "berichtcode": "436" },
       { "bericht": "JW302", "Berichtcode": "437" },
