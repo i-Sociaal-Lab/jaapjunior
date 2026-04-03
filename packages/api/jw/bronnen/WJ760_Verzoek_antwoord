@@ -1,8 +1,11 @@
 # WJ760: Verzoek antwoord
 
-**Definitie:**  
-Gecodeerde aanduiding voor het antwoord op een verzoek. Deze code wordt gebruikt in het JW319 (Antwoordbericht), na ontvangst van een VOT of VOW.
-
+- **Definitie:** Gecodeerde aanduiding voor het antwoord op een verzoek. Deze code wordt gebruikt in het JW319 (Antwoordbericht), na ontvangst van een VOT of VOW.
+- **Status:** Productie
+- **Standaard:** iJw 3.2
+- **Auteur:** Zorginstituut Nederland 
+- **Bron:** https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/wj760/  
+- **AI-agent:** Jw-agent  
 ---
 
 ## Codelijst
