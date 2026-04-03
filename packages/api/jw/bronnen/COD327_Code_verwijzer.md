@@ -3,10 +3,18 @@
 ## Definitie:  
 Aanduiding van de aard van de (zelf)verwijzer.
 
-- **Status:** Productie  
-- **Auteur:** Zorginstituut NL  
+- **Status:** Productie
+- **Standaard:** iJw 3.2
+- **Element:** LDT_TypeVerwijzer
+- **Type bestand:** Codelijst
+- **Auteur:** Zorginstituut Nederland 
 - **Bron:** https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/cod327/  
-- **AI-agent:** Jw-agent  
+- **AI-agent:** Jw-agent
+
+## Gebruik in berichten
+- JW315  
+- JW316
+
 ---
 
 ## Codelijst
