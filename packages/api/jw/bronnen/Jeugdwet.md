@@ -1,10 +1,10 @@
 # Jeugdwet
 
-Status: Productie
-Auteur: Ministerie van VWS
-Bron-link: https://wetten.overheid.nl/BWBR0034925/2026-01-01
-Publicatiedatum: 1 januari 2026
-AI-agent: Jw-agent
+- **Status:** Productie
+- **Publicatiedatum:** 1 januari 2026
+- **Auteur:** Ministerie van VWS
+- **Bron:** https://wetten.overheid.nl/BWBR0034925/2026-01-01
+- **AI-agent:** Jw-agent  
 
 ## **Instructie voor de AI-agent: Gebruik van de Jeugdwet voor Vragen over Berichtenverkeer en iStandaarden**
 
