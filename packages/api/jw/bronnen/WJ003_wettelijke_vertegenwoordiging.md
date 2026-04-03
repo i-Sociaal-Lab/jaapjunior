@@ -7,7 +7,10 @@ Wettelijke vertegenwoordiging die voor de cliënt van toepassing is op het momen
 
 ## ℹ️ Metadata
 - **Status:** Productie  
-- **Auteur:** Zorginstituut NL  
+- **Auteur:** Zorginstituut Nederland
+- **Element:** LDT_WettelijkeVertegenwoordiging
+- **Standaard:** iJw 3.2
+- **Type bestand:** Codelijst 
 - **Bron:** https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/wj003/  
 - **AI-agent:** Jw-agent  
 
