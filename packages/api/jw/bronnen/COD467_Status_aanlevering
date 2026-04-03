@@ -6,7 +6,6 @@ Indicatie over de status van de informatie in de berichtklasse.
 ## Metadata
 - **ID:** COD467  
 - **Naam:** Status aanlevering 
-- **Element:** LDT_Geslacht  
 - **Status:** Productie
 - **ELement:** LDT_StatusAanlevering
 - **Type bestand:**: Codelijst
