@@ -1,9 +1,22 @@
-standaard: "iJw"
-versie: "3.2"
-naam: "Reden wijziging toewijzing",
-Element: "RedenWijzing".
-definitie: "De reden waarom een toewijzing wordt gewijzigd.",
-bronUrl": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/jz002/",
+## JZ002 Reden wijziging toewijzing
+
+## Definitie  
+De reden waarom een toewijzing wordt gewijzigd.
+
+## Metadata
+- **ID:** JZ002
+- **Naam:** Reden wijziging toewijzing
+- **Status:** Productie
+- **ELement:**  LDT_RedenWijziging
+- **Type bestand:**: Codelijst
+- **Auteur:** Zorginstituut Nederland  
+- **Standaard:** iJw 3.2  
+- **Bron:** https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/jz002/  
+- **AI-agent:** Jw-agent  
+
+## Gebruik in berichten
+- JW301
+- JW302
 
 beschrijving: "Deze tabel toont de mogelijke redenen voor beëindiging van een jeugdhulptraject, inclusief aanleiding (reden wijziging toewijzing en initiatief aanbieder)."
 
