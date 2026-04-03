@@ -8,7 +8,7 @@ Nadere typering van het adres. Deze code wordt gebruikt in het toewijzingbericht
 - **Naam:** Soort adres 
 - **Status:** Productie
 - **ELement:** LDT_AdresSoort
-- **Type bestand:**: Codelijst
+- **Type bestand:** Codelijst
 - **Auteur:** Zorginstituut Nederland  
 - **Standaard:** iJw 3.2  
 - **Bron:** https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/cod757/  
