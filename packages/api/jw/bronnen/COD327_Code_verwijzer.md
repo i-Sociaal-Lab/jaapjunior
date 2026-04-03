@@ -1,8 +1,12 @@
 # COD327: Code verwijzer
 
-**Definitie:**  
+## Definitie:  
 Aanduiding van de aard van de (zelf)verwijzer.
 
+- **Status:** Productie  
+- **Auteur:** Zorginstituut NL  
+- **Bron:** https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/cod327/  
+- **AI-agent:** Jw-agent  
 ---
 
 ## Codelijst
