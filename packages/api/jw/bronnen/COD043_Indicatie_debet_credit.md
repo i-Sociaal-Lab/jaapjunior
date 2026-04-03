@@ -1,7 +1,7 @@
 # COD043: Indicatie debet/credit
 
 ## Definitie
-**Indicatie debet/credit** – Gecodeerde aanduiding voor debet of credit in JW323 en JW325
+**Indicatie debet/credit** – Gecodeerde aanduiding voor debet of credit
 
 - **Element:** LDT_DebetCredit
 - **Status:** Productie
