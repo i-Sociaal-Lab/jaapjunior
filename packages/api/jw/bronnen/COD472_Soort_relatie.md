@@ -8,7 +8,7 @@ De soort relatie die een persoon ten opzichte van de cliënt heeft.
 - **Naam:** Soort relatie
 - **Status:** Productie
 - **ELement:** LDT_SoortRelatie
-- **Type bestand:**: Codelijst
+- **Type bestand:** Codelijst
 - **Auteur:** Zorginstituut Nederland  
 - **Standaard:** iJw 3.2  
 - **Bron:** https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/cod472/  
