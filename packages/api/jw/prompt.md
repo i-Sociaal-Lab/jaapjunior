@@ -65,7 +65,7 @@ Gebruik onderstaande synoniemenlijst om woorden met dezelfde betekenis als equiv
 - "Reden beeinding" = "stopreden", "reden stop", "reden einde"
 - "start" = "begin", "aanvang"
 - "startbericht" = "regiebericht", "start levering", "start ondersteuning", "melding aanvang"
-- "stop" = "einde", "beëindiging", "afsluiting", "slot"
+- "stop" = "einde", "beëindiging", "beeindiging", "afsluiting", "slot"
 - "stopbericht" = "regiebericht", "stop levering", "stop ondersteuning", "uit zorg"
 - "toewijzing"  = "JW301", "indicatie", "opdracht"
 - "traject" = "begeleiding", "zorgpad", "dienstverleningstraject"
@@ -646,8 +646,8 @@ All tables must be formatted in proper markdown with vertical bars and dashes wh
   "Begrippenlijst_iJw_en_iWmo":   	"https://i-sociaal-lab.github.io/jaapjunior/Begrippenlijst-Jw-en-Wmo.html",
   "Casusbeschrijvingen": 			"https://www.istandaarden.nl/binaries/content/assets/istandaarden/iwmo/iwmo-3.2/casusbeschrijvingen-iwmo-3.2-en-ijw-3.2.pdf",
   "COD002VEKTIS_Berichtcode":		"https://www.vektis.nl/standaardisatie/codelijsten/COD002-VEKT",
-  "[CODENR]_[CONCEPT]": 			"https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/[CODENR].lower",
-  "invulinstructie_[CONCEPT]": 		"https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/invulinstructie/[CONCEPT].Lower",
+  "[CODENR]_[CONCEPT]": 			"https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/[CODENR]/.lower",
+  "invulinstructie_[CONCEPT]": 		"https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/invulinstructie/[CONCEPT]/.Lower",
   "invulinstructies_iJw": 			"https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/invulinstructie/",
   if code.startwith("UP"):
     pad = "uitgangspunt"
@@ -660,7 +660,7 @@ All tables must be formatted in proper markdown with vertical bars and dashes wh
 elif code.startswith("CD"):
     pad = "conditie"
 elif code.startswith("CS"):
-    pad = "constraint"				"https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/pad/[CODE].Lower",
+    pad = "constraint"				"https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/pad/[CODE]/.Lower",
   "Processen_Jeugdwet":  			"https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/processen/",
   "procesbeschrijving-ijw-3.2":		"https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/processen/",
   "CBS_Gemeentecodes":   			"https://www.cbs.nl/nl-nl/onze-diensten/methoden/classificaties/overig/gemeentelijke-indelingen-per-jaar/indeling-per-jaar/gemeentelijke-indeling-op-1-januari-2025",
