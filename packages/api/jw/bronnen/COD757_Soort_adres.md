@@ -10,7 +10,7 @@ Nadere typering van het adres. Deze code wordt gebruikt in het toewijzingbericht
 - **ELement:** LDT_AdresSoort
 - **Type bestand:**: Codelijst
 - **Auteur:** Zorginstituut Nederland  
-- **Standaard:** iJW 3.2  
+- **Standaard:** iJw 3.2  
 - **Bron:** https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/cod757/  
 - **AI-agent:** Jw-agent  
 
