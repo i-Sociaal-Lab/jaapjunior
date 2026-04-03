@@ -3,10 +3,20 @@
 **Definitie**  
 De soort relatie die een persoon ten opzichte van de cliënt heeft.
 
-- **Status:** Productie  
-- **Auteur:** Zorginstituut NL  
+## Metadata
+- **ID:** CO472  
+- **Naam:** Soort relatie
+- **Status:** Productie
+- **ELement:** LDT_SoortRelatie
+- **Type bestand:**: Codelijst
+- **Auteur:** Zorginstituut Nederland  
+- **Standaard:** iJw 3.2  
 - **Bron:** https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/cod472/  
 - **AI-agent:** Jw-agent  
+
+## Gebruik in berichten
+- JW301
+- JW302
 
 ---
 
