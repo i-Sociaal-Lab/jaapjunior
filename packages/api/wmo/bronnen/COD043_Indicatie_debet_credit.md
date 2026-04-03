@@ -3,6 +3,8 @@
 ## Definitie
 **Indicatie debet/credit** – Gecodeerde aanduiding voor debet of credit.
 
+- **ID:** COD043
+- **Naam:** Indicatie debet/credit
 - **Element:** LDT_DebetCredit
 - **Status:** Productie
 - **Standaard:** iWmo 3.2  
