@@ -1,12 +1,31 @@
 # WJ001: Retourcode
 
-**Definitie:**  
+## Definitie 
 Melding in een retourbericht. Het betreft een code die in een retourbericht het resultaat van de beoordeling van een (deel van een) ontvangen bericht weergeeft.
 
-- **Status:** Productie  
-- **Auteur:** Zorginstituut NL  
-- **Bron:** https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/wj001/  
+## Definitie  
+De reden waarom een toewijzing wordt gewijzigd.
+
+## Metadata
+- **ID:** WJ001
+- **Naam:** Retourcode
+- **Status:** Productie
+- **ELement:**  LDT_RetourCode
+- **Type bestand:**: Codelijst
+- **Auteur:** Zorginstituut Nederland  
+- **Standaard:** iJw 3.2  
+- **Bron:** https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/wj001/
 - **AI-agent:** Jw-agent  
+
+## Gebruik in berichten
+
+- JW302
+- JW306
+- JW308
+- JW316
+- JW318
+- JW320
+- JW325
 
 ---
 
