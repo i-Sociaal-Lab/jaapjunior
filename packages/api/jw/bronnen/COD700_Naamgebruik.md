@@ -8,7 +8,7 @@ Aanduiding naamgebruik (gecodeerd).
 - **Naam:** Naamgebruik
 - **Status:** Productie
 - **ELement:** LDT_NaamGebruik
-- **Type bestand:**: Codelijst
+- **Type bestand:** Codelijst
 - **Auteur:** Zorginstituut Nederland  
 - **Standaard:** iJw 3.2  
 - **Bron:** https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/cod700/  
