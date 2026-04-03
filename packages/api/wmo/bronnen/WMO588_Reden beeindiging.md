@@ -14,7 +14,7 @@ De reden van beeindiging van de Wmo-ondersteuning bij een client.
 - **Type bestand:**: Codelijst
 - **Auteur:** Zorginstituut Nederland  
 - **Standaard:** iWmo 3.2  
-- **Bron:** https://informatiemodel.istandaarden.nl/informatiemodel/iwmo/3.2/codelijsten/WMO588/  
+- **Bron:** https://informatiemodel.istandaarden.nl/informatiemodel/iwmo/3.2/codelijsten/wmo588/  
 - **AI-agent:** Wmo-agent  
 
 ## Gebruik in berichten
@@ -25,7 +25,7 @@ De reden van beeindiging van de Wmo-ondersteuning bij een client.
 ## Codelijst
 
 | Code | Omschrijving                                        | Gebruik  | Reden wijziging toewijzing   | Initiatief aanbieder   |
-|:-----:|:----------------------------------------------------|:---------|:-----------------------------|:-----------------------|
+|:-----:|:---------------------------------------------------|:---------|:-----------------------------|:-----------------------|
 | 02 | Overlijden                                          | Indien een client is overleden, zal deze code Reden Beeindiging worden gebruikt. | 02 | ja |
 | 19 | Levering volgens plan beeindigd                     | Enige wijzigingen in het plan zijn normaal. Het is niet wenselijk om te rigide vast te houden aan een vooropgesteld plan. Als je met elkaar, zoals gepland, het traject doorloopt en niet voortijdig stopt, is het traject volgens plan afgesloten. | nvt | ja |
 | 20 | Levering is tijdelijk beeindigd                     | Indien een client tijdelijk geen zorg kan ontvangen, maar de verwachting is dat deze zorg binnen redelijke termijn wel kan worden vervolgd. Bv. Client is opgenomen in een ziekenhuis. | nvt | ja |
