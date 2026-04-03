@@ -1,9 +1,11 @@
 # COD260: Ja of nee
 
 **Definitie:**
-Ja of nee - Indicator of de aanbieder voor de te leveren ondersteuning beroep doet op een landelijk raamcontract (Landelijke inkoop VNG)
+Codering voor Ja of nee - Indicator of de aanbieder voor de te leveren ondersteuning beroep doet op een landelijk raamcontract (Landelijke inkoop VNG)
 
 ## Metadata
+- **ID:** COD260
+- **Naam:** Ja of nee
 - **Status:** Productie
 - **Standaard:** iWmo 3.2
 - **Type bestand:** Codelijst
