@@ -3,6 +3,10 @@
 **Definitie:**
 COD170: Datumgebruik - Codering om aan te geven welk deel van een datum onbekend is.
 
+- **Status:** Productie  
+- **Auteur:** Zorginstituut NL  
+- **Bron:** https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/cod170/  
+- **AI-agent:** Jw-agent  
 ---
 ## Codelijst
 
