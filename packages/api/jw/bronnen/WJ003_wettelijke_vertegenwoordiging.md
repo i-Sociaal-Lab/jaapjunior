@@ -6,6 +6,8 @@ Wettelijke vertegenwoordiging die voor de cliënt van toepassing is op het momen
 ---
 
 ## ℹ️ Metadata
+- **Id:** WJ033
+- **Naam:** Wettelijke vertegenwoordiging
 - **Status:** Productie  
 - **Auteur:** Zorginstituut Nederland
 - **Element:** LDT_WettelijkeVertegenwoordiging
