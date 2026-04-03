@@ -4,6 +4,30 @@
 LDT_Berichtcode is een data-element uit de **Header** van een bericht en dient conform de codelijst van Vektis ingevuld te worden.  
 Bijvoorbeeld: de Berichtcode van een **WMO318** bericht is **481**.
 
+## Metadata
+- **Element:** LDT_BerichtCode 
+- **Status:** Productie  
+- **Auteur:** CBS
+- **Standaard:** iWmo 3.2  
+- **Bron:** https://www.vektis.nl/standaardisatie/codelijsten/COD002-VEKT
+- **AI-agent:** Wmo-agent  
+
+## Gebruik in berichten
+- WMO301  
+- WMO302
+- WMO305
+- WMO306
+- WMO307
+- WMO308
+- WMO315
+- WMO316
+- WMO317
+- WMO318
+- WMO319
+- WMO320
+- WMO323
+- WMO325
+
 ---
 
 ## Codelijst
