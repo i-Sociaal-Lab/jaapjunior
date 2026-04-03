@@ -5,7 +5,7 @@
     "id": "JZ020",
     "naam": "Productcategorie",
     "definitie": "Gecodeerde aanduiding van een (reeks van) productcategorie(en) in functionele termen die losgekoppeld is van een bepaalde leverancier, waarbij wordt beschreven wat de inhoud en aard van de productcategorie is in termen van hulpverlening (wonen, zorg en welzijn).",
-    "bronUrl": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/jz020",
+    "bronUrl": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/jz020/",
     "codes": [
       { "code": "31", "omschrijving": "(2015) Zonder verblijf: uitgevoerd door wijk- of buurtteam" },
       { "code": "32", "omschrijving": "(2015) Zonder verblijf: ambulante jeugdhulp op locatie van de aanbieder" },
