@@ -3,6 +3,10 @@
 **Definitie:**  
 Aanduiding naamgebruik (gecodeerd).
 
+- **Status:** Productie  
+- **Auteur:** Zorginstituut NL  
+- **Bron:** https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/cod700/  
+- **AI-agent:** Jw-agent  
 ---
 
 ## Codelijst
