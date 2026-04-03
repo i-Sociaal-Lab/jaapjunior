@@ -5,7 +5,7 @@
     "id": "COD032",
     "naam": "Land",
     "definitie": "Land – Identificatie van een (historisch/actueel) land of gebiedsdeel.",
-    "bronUrl": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/cod032",
+    "Bron-link": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/cod032/",
     "codes": [
       { "code": "AD", "omschrijving": "ANDORRA" },
       { "code": "AE", "omschrijving": "VERENIGDE ARABISCHE EMIRATEN" },
