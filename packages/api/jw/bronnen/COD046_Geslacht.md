@@ -4,8 +4,10 @@
 Unieke aanduiding van het geslacht van een persoon.
 
 ## Metadata
-- **Element:** LDT_Geslacht  
+- **ID:** COD046
+- **Naam:** Geslacht
 - **Status:** Productie
+- **Element:** LDT_Geslacht  
 - **Type bestand:** Codelijst 
 - **Auteur:** Zorginstituut NL  
 - **Standaard:** iJw 3.2  
