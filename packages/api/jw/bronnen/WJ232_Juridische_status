@@ -5,7 +5,7 @@
     "id": "WJ232",
     "naam": "Juridische status",
     "definitie": "Juridische situatie die voor de cliënt van toepassing is op het moment van beoordeling.",
-    "bronUrl": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/wj232",
+    "bronUrl": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/wj232/",
     "codes": [
       {
         "code": "01",
