@@ -1,12 +1,16 @@
 # Gemeentecodes CBS
 
----
+## Metadata
+- **Element:** LDT_LandCode 
+- **Status:** Productie  
+- **Auteur:** CBS
+- **Standaard:** iJw 3.2  
+- **Bron:** https://www.cbs.nl/nl-nl/onze-diensten/methoden/classificaties/overig/gemeentelijke-indelingen-per-jaar/indeling-per-jaar/gemeentelijke-indeling-op-1-januari-2025
+- **AI-agent:** Jw-agent  
 
-Status: Productie
-Auteur: CBS
-Bron-link: https://www.cbs.nl/nl-nl/onze-diensten/methoden/classificaties/overig/gemeentelijke-indelingen-per-jaar/indeling-per-jaar/gemeentelijke-indeling-op-1-januari-2025
-Publicatiedatum: 1 januari 2025
-AI-agent: Jw-agent, Wmo-agent
+## Gebruik in berichten
+- JW301  
+- JW302  
 
 ## **Instructie voor de AI-agent: Gebruik van de CBS Gemeentecodelijst als Kennisbron**
 
