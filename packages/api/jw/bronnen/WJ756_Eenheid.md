@@ -1,4 +1,4 @@
-# iJw Codelijst – Eenheid (versie 3.2)
+# iJw Codelijst – Eenheid
 
 ## Codelijst
 **ID:** WJ756  
