@@ -8,7 +8,7 @@ Indicatie over de status van de informatie in de berichtklasse.
 - **Naam:** Status aanlevering 
 - **Status:** Productie
 - **ELement:** LDT_StatusAanlevering
-- **Type bestand:**: Codelijst
+- **Type bestand:** Codelijst
 - **Auteur:** Zorginstituut Nederland  
 - **Standaard:** iWmo 3.2  
 - **Bron:** https://informatiemodel.istandaarden.nl/informatiemodel/iwmo/3.2/codelijsten/cod467/  
