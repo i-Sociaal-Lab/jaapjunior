@@ -5,7 +5,7 @@
     "id": "WJ758",
     "naam": "Reden verzoek",
     "definitie": "Gecodeerde aanduiding voor de reden van een verzoek. Deze code wordt gebruikt in het VOW-bericht.",
-    "bronUrl": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/wj758",
+    "bronUrl": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/wj758/",
     "codes": [
       {
         "code": "1",
