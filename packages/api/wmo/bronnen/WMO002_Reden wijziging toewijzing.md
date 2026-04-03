@@ -1,8 +1,22 @@
-# WMO002: Reden wijziging toewijzing
+## WMO002 Reden wijziging toewijzing
 
-**Definitie:**  
+## Definitie  
 De reden waarom een toewijzing wordt gewijzigd.
 
+## Metadata
+- **ID:** WMO002
+- **Naam:** Reden wijziging toewijzing
+- **Status:** Productie
+- **ELement:**  LDT_RedenWijziging
+- **Type bestand:**: Codelijst
+- **Auteur:** Zorginstituut Nederland  
+- **Standaard:** iWno 3.2  
+- **Bron:** https://informatiemodel.istandaarden.nl/informatiemodel/iwmo/3.2/codelijsten/wmo002/  
+- **AI-agent:** Wmo-agent  
+
+## Gebruik in berichten
+- WMO301
+- WMO302
 ---
 
 ## Codelijst
