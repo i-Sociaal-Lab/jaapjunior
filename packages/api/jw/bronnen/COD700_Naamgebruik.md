@@ -3,10 +3,20 @@
 **Definitie:**  
 Aanduiding naamgebruik (gecodeerd).
 
-- **Status:** Productie  
-- **Auteur:** Zorginstituut NL  
+## Metadata
+- **ID:** COD700  
+- **Naam:** Naamgebruik
+- **Status:** Productie
+- **ELement:** LDT_NaamGebruik
+- **Type bestand:**: Codelijst
+- **Auteur:** Zorginstituut Nederland  
+- **Standaard:** iJw 3.2  
 - **Bron:** https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/cod700/  
 - **AI-agent:** Jw-agent  
+
+## Gebruik in berichten
+- JW301
+- JW302
 ---
 
 ## Codelijst
