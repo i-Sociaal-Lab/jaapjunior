@@ -4,6 +4,8 @@
 COD170: Datumgebruik - Codering om aan te geven welk deel van een geboortedatum onbekend is.
 
 ## Metadata
+- **ID:** COD170
+- **Naam:** Datumgebruik
 - **Status:** Productie
 - **Standaard:** iWmo 3.2
 - **Type bestand:** Codelijst
