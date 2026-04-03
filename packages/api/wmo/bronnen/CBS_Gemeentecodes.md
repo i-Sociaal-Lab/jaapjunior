@@ -1,7 +1,7 @@
 # Gemeentecodes CBS
 
 ## Metadata
-- **Element:** LDT_Geslacht  
+- **Element:** LDT_LandCode  
 - **Status:** Productie  
 - **Auteur:** CBS
 - **Standaard:** iWmo 3.2  
