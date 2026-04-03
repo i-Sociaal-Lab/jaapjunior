@@ -1,13 +1,22 @@
 ## Reden beëindiging jeugdhulp (JZ588)
 
-**Definitie:**  
+##Definitie  
 De reden van beeindiging van de Jeugdhulp bij een client.
 
-- **Status:** Productie  
-- **Auteur:** Zorginstituut NL
-- **Element:** LDT_RedenBeeindiging  
-- **Bron:** https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/jz588/  
-- **AI-agent:** Jw-agent 
+## Metadata
+- **ID:** JZ588 
+- **Naam:** Reden beeindiging
+- **Status:** Productie
+- **ELement:** LDT_RedenBeeindiging
+- **Type bestand:**: Codelijst
+- **Auteur:** Zorginstituut Nederland  
+- **Standaard:** iWmo 3.2  
+- **Bron:** https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/JZ588/  
+- **AI-agent:** Jw-agent  
+
+## Gebruik in berichten
+- JW307
+- JW308
 ---
 
 ## Codelijst
