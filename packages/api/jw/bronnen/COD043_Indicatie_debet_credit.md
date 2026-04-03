@@ -5,14 +5,14 @@
 
 - **Element:** LDT_DebetCredit
 - **Status:** Productie  
-- **Auteur:** Zorginstituut NL  
+- **Auteur:** Zorginstituut Nederland  
 - **Bron:** https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/cod043/  
 - **AI-agent:** Jw-agent  
 
 ---
 ## Gebruik in berichten
 - JW323  
-- JW323 
+- JW325 
 
 ## Codelijst
 
