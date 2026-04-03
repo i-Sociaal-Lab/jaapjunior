@@ -4,6 +4,8 @@
 Indicatie over de status van de informatie in de berichtklasse.
 
 ## Metadata
+- **ID:** COD467  
+- **Naam:** Status aanlevering 
 - **Element:** LDT_Geslacht  
 - **Status:** Productie
 - **ELement:** LDT_StatusAanlevering
@@ -20,14 +22,7 @@ Indicatie over de status van de informatie in de berichtklasse.
 - JW308  
 ---
 
-## Codelijst: Status aanlevering
-
-**ID:** COD467  
-**Naam:** Status aanlevering  
-**Definitie:** Indicatie over de status van de informatie in de berichtklasse.  
-**Bron:** https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/cod467/ 
-
-### Codes
+## Codelijst
 
 | Code | Omschrijving                     |
 |------|----------------------------------|
