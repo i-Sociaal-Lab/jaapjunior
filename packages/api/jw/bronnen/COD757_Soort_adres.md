@@ -3,6 +3,10 @@
 **Definitie:**  
 Nadere typering van het adres. Deze code wordt gebruikt in het toewijzingbericht JW301.
 
+- **Status:** Productie  
+- **Auteur:** Zorginstituut NL  
+- **Bron:** https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/cod757/  
+- **AI-agent:** Jw-agent  
 ---
 
 ## Codelijst
