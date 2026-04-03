@@ -11,7 +11,7 @@
 - **Type bestand:** Codelijst
 - **Auteur:** Zorginstituut Nederland  
 - **Standaard:** iWmo 3.2  
-- **Bron:** https://informatiemodel.istandaarden.nl/informatiemodel/iwmo/3.2/codelijsten/NUM061/  
+- **Bron:** https://informatiemodel.istandaarden.nl/informatiemodel/iwmo/3.2/codelijsten/num061/  
 - **AI-agent:** Wmo-agent
 
 ## Gebruik in berichten
