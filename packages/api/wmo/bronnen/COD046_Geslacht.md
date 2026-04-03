@@ -6,7 +6,7 @@ Unieke aanduiding van het geslacht van een persoon.
 ## Metadata
 - **Element:** LDT_Geslacht  
 - **Status:** Productie  
-- **Auteur:** Zorginstituut NL  
+- **Auteur:** Zorginstituut Nederland  
 - **Standaard:** iWmo 3.2  
 - **Bron:** https://informatiemodel.istandaarden.nl/informatiemodel/iwmo/3.2/codelijsten/cod046/  
 - **AI-agent:** Wmo-agent  
