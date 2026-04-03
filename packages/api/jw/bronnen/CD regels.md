@@ -1,7 +1,7 @@
 ---
 titel: Conditieregels iJw berichten
 type: overzicht
-laatst_bewerkt: 2025-10-14
+laatst_bewerkt: 14-10-2025
 bron: iJw standaard 3.2
 ---
 
