@@ -1,28 +1,33 @@
-# iJw Codelijst – Frequentie
+# WMO757: Frequentie
 
-- **ID:** WMO757  
-- **Naam:** Frequentie 
-- **Definitie:** Frequentie van de te leveren of geleverde ondersteuning.  
-- **Status:** Productie
-- **Standaard:** iJw 3.2
-- **Auteur:** Zorginstituut Nederland 
-- **Bron:** https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/wmo757/  
-- **AI-agent:** Jw-agent  
----
-
-### Codes
-
-| Code | Omschrijving                                   |
-|------|------------------------------------------------|
-| 1    | Per dag                                        |
-| 2    | Per week                                       |
-| 4    | Per maand                                      |
-| 6    | Totaal binnen geldigheidsduur toewijzing       |
-
----
+## Definitie
+Frequentie van de te leveren of geleverde ondersteuning.
 
 ## Metadata
+- **ID:** WMO757
+- **Naam:** Frequentie
+- **Element:** LDT_Frequentie
+- **Status:** Productie  
+- **Auteur:** Zorginstituut Nederland  
+- **Standaard:** iJw 3.2  
+- **Bron:** https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/wmo757/  
+- **AI-agent:** Jw-agent  
 
-- **Laatst bijgewerkt:** 16-07-2018  
-- **Tabeltype:** Referentielijst  
-- **Toepassing:** Ondersteuningsfrequentie binnen Jw-toewijzingen  
+## Gebruik in berichten
+- JW301
+- JW302
+- JW315
+- JW316
+- JW317
+- JW318
+
+---
+
+## Codelijst
+
+| Code | Omschrijving |
+|:------:|:--------------:|
+| 1 | Per dag |
+| 2 | Per week |
+| 4 | Per maand |
+| 6 | Totaal binnen geldigheidsduur toewijzing |
