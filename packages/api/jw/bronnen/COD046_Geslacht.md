@@ -5,7 +5,8 @@ Unieke aanduiding van het geslacht van een persoon.
 
 ## Metadata
 - **Element:** LDT_Geslacht  
-- **Status:** Productie  
+- **Status:** Productie
+- **Type bestand:** Codelijst 
 - **Auteur:** Zorginstituut NL  
 - **Standaard:** iJw 3.2  
 - **Bron:** https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/cod046/  
