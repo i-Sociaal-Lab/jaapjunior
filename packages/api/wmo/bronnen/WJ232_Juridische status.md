@@ -1,7 +1,21 @@
 # WJ232: Juridische status
 
-**Definitie:**  
+## Definitie
 Juridische situatie die voor de cliënt van toepassing is op het moment van beoordeling.
+
+## Metadata
+- **ID:** WJ232
+- **Naam:** Juridische status
+- **Element:** LDT_JuridischeStatus 
+- **Status:** Productie  
+- **Auteur:** Zorginstituut Nederland  
+- **Standaard:** iWmo 3.2  
+- **Bron:** https://informatiemodel.istandaarden.nl/informatiemodel/iwmo/3.2/codelijsten/wj232/  
+- **AI-agent:** Wmo-agent  
+
+## Gebruik in berichten
+- WMO301
+- WNo302
 
 ---
 
