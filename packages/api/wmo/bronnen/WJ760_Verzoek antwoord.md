@@ -1,7 +1,7 @@
 # WJ760: Verzoek antwoord
 
 ## Definitie
-Gecodeerde aanduiding voor het antwoord op een verzoek. Deze code wordt gebruikt in het JW319 (Antwoordbericht), na ontvangst van een VOT of VOW.
+Gecodeerde aanduiding voor het antwoord op een verzoek. Deze code wordt gebruikt in het WMO319 (Antwoordbericht), na ontvangst van een VOT of VOW.
 
 ## Metadata
 - **ID:** WJ760
