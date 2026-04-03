@@ -8,7 +8,7 @@
 - **Naam:** Aanduiding woonadres
 - **Status:** Productie
 - **ELement:** LDT_AanduidingWoonadres
-- **Type bestand:**: Codelijst
+- **Type bestand:** Codelijst
 - **Auteur:** Zorginstituut Nederland  
 - **Standaard:** iWmo 3.2  
 - **Bron:** https://informatiemodel.istandaarden.nl/informatiemodel/iwmo/3.2/codelijsten/NUM061/  
