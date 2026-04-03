@@ -4,7 +4,8 @@
 **Indicatie debet/credit** – Gecodeerde aanduiding voor debet of credit in WMO323 en WMO325.
 
 - **Element:** LDT_DebetCredit
-- **Status:** Productie  
+- **Status:** Productie
+- **Standaard:** iWmo 3.2  
 - **Auteur:** Zorginstituut Nederland  
 - **Bron:** https://informatiemodel.istandaarden.nl/informatiemodel/iwmo/3.2/codelijsten/cod043/  
 - **AI-agent:** Wmo-agent  
