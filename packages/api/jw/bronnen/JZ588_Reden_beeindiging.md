@@ -1,6 +1,6 @@
-## Reden beëindiging jeugdhulp (JZ588)
+## JZ588 Reden beeindiging
 
-##Definitie  
+## Definitie  
 De reden van beeindiging van de Jeugdhulp bij een client.
 
 ## Metadata
