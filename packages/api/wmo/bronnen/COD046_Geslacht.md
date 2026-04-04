@@ -1,7 +1,7 @@
 # COD046: Geslacht
 
 ## Definitie
-Unieke aanduiding van het geslacht van een persoon.
+De sekse van een persoon, zoals bij geboorte formeel vastgesteld of nadien formeel gewijzigd.
 
 ## Metadata
 - **ID:** COD046
