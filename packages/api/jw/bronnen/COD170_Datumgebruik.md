@@ -4,9 +4,11 @@
 COD170: Datumgebruik - Codering om aan te geven welk deel van een geboortedatum onbekend is.
 
 ## Metadata
+- **ID:** COD170
+- **Naam:** Datumgebruik
 - **Status:** Productie
-- **Standaard:** iJw 3.2
-- **Type bestand:** Codelijst
+- **Element:** LDT_Geslacht  
+- **Type bestand:** Codelijst 
 - **Element:** LDT_DatumGebruik
 - **Auteur:** Zorginstituut Nederland 
 - **Bron:** https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/cod170/  
