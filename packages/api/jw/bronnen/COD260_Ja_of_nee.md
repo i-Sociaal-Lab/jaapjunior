@@ -4,9 +4,12 @@
 Ja of nee - Indicator of de aanbieder voor de te leveren ondersteuning beroep doet op een landelijk raamcontract (Landelijke inkoop VNG)
 
 ## Metadata
+- **ID:** COD260
+- **Naam:** Ja of Nee
 - **Status:** Productie
+- **Element:** LDT_Geslacht  
+- **Type bestand:** Codelijst 
 - **Standaard:** iJw 3.2
-- **Type bestand:** Codelijst
 - **Element:** LDT_JaNee
 - **Auteur:** Zorginstituut Nederland 
 - **Bron:** https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/cod260/  
