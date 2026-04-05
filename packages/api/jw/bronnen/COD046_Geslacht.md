@@ -9,7 +9,7 @@ De sekse van een persoon, zoals bij geboorte formeel vastgesteld of nadien forme
 - **Status:** Productie
 - **Element:** LDT_Geslacht  
 - **Type bestand:** Codelijst 
-- **Auteur:** Zorginstituut NL  
+- **Auteur:** Zorginstituut Nederland 
 - **Standaard:** iJw 3.2  
 - **Bron:** https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/cod046/  
 - **AI-agent:** Jw-agent  
