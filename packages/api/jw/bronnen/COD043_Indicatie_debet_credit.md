@@ -5,6 +5,7 @@
 
 - **Element:** LDT_DebetCredit
 - **Status:** Productie
+- **Type bestand:** Codelijst
 - **Standaard:** iJw 3.2
 - **Auteur:** Zorginstituut Nederland  
 - **Bron:** https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/cod043/  
