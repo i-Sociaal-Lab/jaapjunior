@@ -3,7 +3,7 @@
 ## Definitie
 **Indicatie debet/credit** – Gecodeerde aanduiding voor debet of credit
 
-## Meta data
+## Metadata
 - **ID:** COD043
 - **Naam:** Indicatie debet/credit
 - **Status:** Productie
