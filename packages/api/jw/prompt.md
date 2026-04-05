@@ -73,6 +73,7 @@ Gebruik onderstaande synoniemenlijst om woorden met dezelfde betekenis als equiv
 - "traject" = "begeleiding", "zorgpad", "dienstverleningstraject"
 - "verhuizen" = "reloceren", "verplaatsen", "adreswijziging"
 - "VOT" = "aanvraag", "verzoek", "verzoek om toewijzing"
+- "weeknummer" = "kalenderweek"
   
 
 **Regels:**
