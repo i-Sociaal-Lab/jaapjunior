@@ -3,9 +3,13 @@
 ## Definitie
 **Indicatie debet/credit** – Gecodeerde aanduiding voor debet of credit
 
-- **Element:** LDT_DebetCredit
+## Meta data
+- **ID:** COD043
+- **Naam:** Indicatie debet/credit
 - **Status:** Productie
-- **Type bestand:** Codelijst
+- **Element:** LDT_Geslacht  
+- **Type bestand:** Codelijst 
+- **Element:** LDT_DebetCredit
 - **Standaard:** iJw 3.2
 - **Auteur:** Zorginstituut Nederland  
 - **Bron:** https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/cod043/  
