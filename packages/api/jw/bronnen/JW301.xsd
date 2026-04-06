@@ -1,3 +1,5 @@
+## JW301.xsd
+
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ijw="http://www.istandaarden.nl/ijw/3_2/basisschema/schema" xmlns:jw301="http://www.istandaarden.nl/ijw/3_2/jw301/schema" targetNamespace="http://www.istandaarden.nl/ijw/3_2/jw301/schema" elementFormDefault="qualified">
 	<xs:import namespace="http://www.istandaarden.nl/ijw/3_2/basisschema/schema" schemaLocation="basisschema.xsd"></xs:import>
