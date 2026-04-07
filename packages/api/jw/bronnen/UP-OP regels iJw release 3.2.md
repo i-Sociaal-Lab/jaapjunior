@@ -3,7 +3,7 @@
 Versie: 1.0
 Status: Productie
 Auteur: Zorginstituut
-Bron-link: https://www.istandaarden.nl/ijw/releases/release-ijw-3.2
+Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/
 Publicatiedatum: 29 september 2022
 AI-agent: Jw-agent
 
@@ -114,6 +114,7 @@ De gemeente geeft iedere beschikking binnen het Jw-domein een uniek nummer.
 ---
 
 ## Bedrijfsregels (OP-regels)
+- Bron 
 
 ### OP001 – Gezagsdrager
 - Van een cliënt wordt vastgelegd wie de gezagsdrager is.  
@@ -146,6 +147,8 @@ Toelichting
 De uitwerking van deze bedrijfsregel is vastgelegd in de volgende regels: IV008, IV074, OP033x1, OP033x2, TR071 en TR074.
 
 ### OP033x1 – Wijzigingen in toewijzing
+Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/op033x1
+ 
 - Toewijzing kan gewijzigd worden via een nieuw bericht.
    
 - **Einddatum wijzigingen toegestaan:**  
@@ -167,51 +170,75 @@ Toelichting
 De uitwerking van deze bedrijfsregel is vastgelegd in de volgende regel: IV066.
 
 ### OP033x2
+Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/op033x2
+
 - Gebruik van status aanlevering waarde **2** (berichtklasse gewijzigd) is niet toegestaan.
 
 ### OP039 – Cliëntgegevens in berichten
+Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/op039
+
 - Ketenpartijen mogen cliëntgegevens doorgeven zoals geregistreerd in hun administratie, mits deze geen logische sleutel vormen.  
 - Het is toegestaan gewijzigde gegevens over te nemen in de administratie.
 Toelichting
 De uitwerking van deze bedrijfsregel is vastgelegd in de volgende regels: IV002, IV007, IV045, IV047.
 
 ### OP043 – PGB en toewijzing
+Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/op043
+
 - Als een cliënt een PGB heeft, mag voor hetzelfde product geen toewijzing zijn afgegeven.  
 - Een toewijzing eindigt uiterlijk op de dag vóór ingangsdatum PGB.
 
 ### OP047 – Afkeuren niet-standaard berichten
+Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/op047
+
 - Berichten die niet voldoen aan de geldende standaard mogen worden afgekeurd.
 
 ### OP065 – Retourberichten
+Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/op065
+
 - Retourbericht bevat alleen informatie over afgekeurde berichtklassen.  
 - Cliënten met volledig goedgekeurde berichtklassen worden niet mee teruggestuurd.  
 - Berichtklasse **Client** inclusief alle afgekeurde onderliggende berichtklassen wordt voorzien van retourcodes.
 
 ### OP071 – Uniek relatie-nummer
+Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/op071
+
 - Elke relatie krijgt een uniek nummer per gemeente per cliënt.  
 - Dit nummer mag niet gewijzigd worden.
 
 ### OP072 – Beëindigen ondersteuning
+Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/op072
+
 - Beëindigen mag pas na melding start ondersteuning.  
 - Stopbericht moet verwijzen naar de start van de levering.
 
 ### OP076 – Contactpersonen
+Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/op076
+
 - Voor iedere contactpersoon moet de relatie tot de cliënt worden opgegeven.  
 - Gegevens mogen alleen worden opgenomen indien noodzakelijk voor communicatie met de cliënt.
 
 ### OP079 – Gebruik BSN
+Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/op079
+
 - Het gebruik van het BSN van de cliënt is verplicht in de onderlinge uitwisseling van gegevens.
 
 ### OP080 – Volgorde berichten
+Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/op080
+
 Aan het tijdstip waarop en de volgorde waarin berichten worden ontvangen en verwerkt kunnen ketenpartijen geen betekenis hechten.
 - Volgorde en tijdstip van ontvangen/ verwerken berichten zijn niet bepalend.  
 - Terugwerkende berichten kunnen noodzakelijk zijn (bijv. bezwaarprocedures).  
 - Ontvang retourberichten afwachten om afkeur van vervolgberichten te voorkomen.
 
 ### OP086 – Toewijzing ondersteuningsproducten
+Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/op086
+
 - Ondersteuningsproducten met een **inspannings- of outputgerichte uitvoering** worden altijd door de gemeente toegewezen via een toewijzingsbericht.
 
 ### OP087 – Inhoud toewijzingsbericht
+Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/op087
+
 - Voor één cliënt bevat een toewijzingsbericht altijd:  
   - Alle toewijzingen voor één aanbieder die **geldig zijn op of na de aanmaakdatum** van het bericht.  
   - Alle toewijzingen die **gewijzigd zijn sinds het vorige toewijzingsbericht** (bijv. intrekkingen).  
@@ -223,18 +250,26 @@ Aan het tijdstip waarop en de volgorde waarin berichten worden ontvangen en verw
 **Belangrijk:** Voor iedere cliënt waarbij een toewijzing verandert, wordt een toewijzingsbericht gestuurd met alle actuele toewijzingen voor die aanbieder.
 
 ### OP090 – Reactietijd en verplichting Retourberichten
+Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/op090
+
 - Voor ieder ontvangen heenbericht wordt **binnen 3 werkdagen** een retourbericht verzonden.  
 - De verzender is verantwoordelijk voor het signaleren van ontbrekende retourberichten en moet actie ondernemen.
 
 ### OP090x2
+Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/op090x2
+
 - Als er geen retourbericht kan worden gemaakt, meldt de ontvangende partij dit **buiten het berichtenverkeer om** aan de verzender.
 
 ### OP090x4 – Declaratie-antwoordbericht
+Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/op090x4
+
 - Voor ieder ontvangen declaratiebericht wordt **binnen 10 werkdagen** een declaratie-antwoordbericht verzonden.  
 - Als dit niet lukt, neemt de gemeente buiten het berichtenverkeer contact op met de aanbieder.  
 - De aanbieder is verantwoordelijk voor het signaleren van het ontbreken van het antwoordbericht en dient actie te ondernemen.
 
 ### OP091 – Contactgegevens cliënt
+Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/op091
+
 - Aanvullende contactgegevens mogen worden vastgelegd.  
 - Het soort adres moet altijd worden geregistreerd.
 
