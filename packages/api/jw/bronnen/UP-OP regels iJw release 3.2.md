@@ -114,7 +114,6 @@ De gemeente geeft iedere beschikking binnen het Jw-domein een uniek nummer.
 ---
 
 ## Bedrijfsregels (OP-regels)
-- Bron 
 
 ### OP001 – Gezagsdrager
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op001
