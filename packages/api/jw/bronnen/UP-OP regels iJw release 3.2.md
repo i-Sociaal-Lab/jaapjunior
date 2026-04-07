@@ -1,11 +1,11 @@
 # Regels op berichten iJw release 3.2
 
-Versie: 1.0
-Status: Productie
-Auteur: Zorginstituut
-Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/
-Publicatiedatum: 29 september 2022
-AI-agent: Jw-agent
+- Versie: 1.0
+- Status: Productie
+- Auteur: Zorginstituut
+- Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/
+- Publicatiedatum: 29 september 2022
+- AI-agent: Jw-agent
 
 # Regels op berichten iJw 3.2.0 (Jaap dd 8-06-2025)
 
