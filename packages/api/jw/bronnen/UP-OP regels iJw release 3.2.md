@@ -117,26 +117,40 @@ De gemeente geeft iedere beschikking binnen het Jw-domein een uniek nummer.
 - Bron 
 
 ### OP001 – Gezagsdrager
+Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op001
+
 - Van een cliënt wordt vastgelegd wie de gezagsdrager is.  
 - Voor cliënten van 16 jaar of ouder kan het gezag bij de cliënt zelf liggen.
 
 ### OP002 – Gegevens gezagsdrager in toewijzing
+Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op002
+
 - De gemeente stuurt in de toewijzing de gegevens van de gezagsdrager mee.  
 - De gezagsdrager wordt opgenomen als relatie van de cliënt.
 
 ### OP002x1
+Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op002x1
+
 - Als een aanbieder in een Verzoek om Toewijzing (VOT) heeft aangegeven dat de gezagsdrager bekend is, hoeft deze niet opnieuw in de toewijzing te worden opgenomen.
 
 ### OP002x2
+Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op002x2
+
 - Als het gezag bij de jeugdige zelf ligt, wordt deze niet als relatie opgenomen in de toewijzing.
 
 ### OP003 – Uitzondering standaard berichtenverkeer
+Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op003
+
 - Gestandaardiseerd berichtenverkeer wordt niet gebruikt als een (zorg)professional oordeelt dat overdracht ernstige risico's voor de veiligheid van de cliënt oplevert (bijv. verblijf in "blijf-van-mijn-lijf" huis).
 
 ### OP011 – Startdatum levering
+Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op011
+
 - De aanbieder meldt de begindatum van de levering nadat de ondersteuning daadwerkelijk is gestart.
 
 ### OP033 – Wijzigingen en status aanlevering
+Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op033/
+
 - Voor wijzigingen, verwijderingen en correcties op een eerder verzonden regiebericht wordt de **status aanlevering** gebruikt:
 - Correcties op een melding start product zijn uitsluitend toegestaan voor het geleverde product. Als de ondersteuning beeindigd is, kan de aanvang niet meer op deze manier gecorrigeerd worden.
 - Met de status aanlevering van een berichtklasse kan worden aangegeven of:
@@ -147,7 +161,7 @@ Toelichting
 De uitwerking van deze bedrijfsregel is vastgelegd in de volgende regels: IV008, IV074, OP033x1, OP033x2, TR071 en TR074.
 
 ### OP033x1 – Wijzigingen in toewijzing
-Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op033x1
+Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op033x1/
  
 - Toewijzing kan gewijzigd worden via een nieuw bericht.
    
@@ -170,12 +184,12 @@ Toelichting
 De uitwerking van deze bedrijfsregel is vastgelegd in de volgende regel: IV066.
 
 ### OP033x2
-Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op033x2
+Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op033x2/
 
 - Gebruik van status aanlevering waarde **2** (berichtklasse gewijzigd) is niet toegestaan.
 
 ### OP039 – Cliëntgegevens in berichten
-Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op039
+Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op039/
 
 - Ketenpartijen mogen cliëntgegevens doorgeven zoals geregistreerd in hun administratie, mits deze geen logische sleutel vormen.  
 - Het is toegestaan gewijzigde gegevens over te nemen in de administratie.
@@ -183,7 +197,7 @@ Toelichting
 De uitwerking van deze bedrijfsregel is vastgelegd in de volgende regels: IV002, IV007, IV045, IV047.
 
 ### OP043 – PGB en toewijzing
-Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op043
+Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op043/
 
 - Als een cliënt een PGB heeft, mag voor hetzelfde product geen toewijzing zijn afgegeven.  
 - Een toewijzing eindigt uiterlijk op de dag vóór ingangsdatum PGB.
