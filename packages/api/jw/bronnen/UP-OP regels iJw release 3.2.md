@@ -1,5 +1,7 @@
-# Regels op berichten
+## Regels op berichten iJw
 
+
+## Meta Data
 - Versie: 1.0
 - Status: Productie
 - Auteur: Zorginstituut Nederland
@@ -7,8 +9,8 @@
 - Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/
 - Publicatiedatum: 29 september 2022
 - AI-agent: Jw-agent
-
-# Regels op berichten iJw 3.2.0 (Jaap dd 8-06-2025)
+  
+----------
 
 ## Inleiding voor AI-agent
 
@@ -22,7 +24,7 @@ Het document dient als **naslagwerk en validatiebron** voor AI-agenten die vrage
 
 **Gebruik voor AI-agenten**
 
-- Iedere regel is voorzien van een unieke code (zoals UP001, OP001, IV002), een titel en een toelichting.
+- Iedere regel is voorzien van een unieke code (zoals UP001, OP001, OP033, OP295), een titel en een toelichting.
 - Uitgangspunten hebben een code die begint met UP
 - Bedrijfsregels hebben een code die begint met OP
 - De regels vormen de basis voor correcte administratieve verwerking, gegevensuitwisseling en procesondersteuning binnen iJw.
@@ -31,11 +33,11 @@ Het document dient als **naslagwerk en validatiebron** voor AI-agenten die vrage
 - Wanneer een gebruiker vraagt om de tekst van een specifieke regel (bijvoorbeeld OP001), selecteer en retourneer altijd de volledige tekst die hoort bij het betreffende regels, vanaf de eerste regel na het regelnummers tot en met de eerste volgende regel met een nieuw regelnummers of het einde van het document. Neem alle tekst, opsommingen, subkopjes en toelichtingen op die onder het regelnummers vallen. Geef geen interpretatie in dit geval.
 - Sommige regels zijn specifiek voor gemeenten, andere voor aanbieders of ketenpartijen.
 - Let op: dit rapport bevat verschillende type regels check bij interpretatie altijd het type regel.
-- Let op: regelnummer (bijv. OP001, OP047, IV008) zijn louter administratieve identifiers zonder hiërarchische betekenis. Behandel ze als unieke sleutels die uitsluitend gebruikt worden voor verwijzing, niet voor interpretatie.
+- Let op: regelnummer (bijv. OP001, OP047) zijn louter administratieve identifiers zonder hiërarchische betekenis. Behandel ze als unieke sleutels die uitsluitend gebruikt worden voor verwijzing, niet voor interpretatie.
 - Bekijk alle regels om tot een juist antwoord te komen.
 ---
 
-# iJw 3.2.0 – Uitgangspunten, Bedrijfsregels en Invulinstructies
+# iJw 3.2.0 – Uitgangspunten, Bedrijfsregels
 
 ## Uitgangspunten (UP-regels)
 
