@@ -8,7 +8,7 @@
 		<jw315:Ontvanger>0384</jw315:Ontvanger>
 		<jw315:BerichtIdentificatie>
 			<ijw:Identificatie>123456789012</ijw:Identificatie>
-			<ijw:Dagtekening>2023-07-15</ijw:Dagtekening>
+			<ijw:Dagtekening>2026-04-01</ijw:Dagtekening>
 		</jw315:BerichtIdentificatie>
 		<jw315:XsdVersie>
 			<ijw:BasisschemaXsdVersie>1.0.0</ijw:BasisschemaXsdVersie>
@@ -39,9 +39,9 @@
 					<ijw:Categorie>55</ijw:Categorie>
 					<ijw:Code>55A11</ijw:Code>
 				</jw315:Product>
-				<jw315:BeschikkingIngangsdatum>2023-07-15</jw315:BeschikkingIngangsdatum>
-				<jw315:ToewijzingIngangsdatum>2023-04-01</jw315:ToewijzingIngangsdatum>
-				<jw315:ToewijzingEinddatum>2024-07-19</jw315:ToewijzingEinddatum>
+				<jw315:BeschikkingIngangsdatum>2026-03-15</jw315:BeschikkingIngangsdatum>
+				<jw315:ToewijzingIngangsdatum>2026-04-01</jw315:ToewijzingIngangsdatum>
+				<jw315:ToewijzingEinddatum>2027-06-31</jw315:ToewijzingEinddatum>
 				<jw315:Omvang>
 					<ijw:Volume>2</ijw:Volume>
 					<ijw:Eenheid>16</ijw:Eenheid>
@@ -61,9 +61,9 @@
 					<ijw:Categorie>55</ijw:Categorie>
 					<ijw:Code>55A12</ijw:Code>
 				</jw315:Product>
-				<jw315:BeschikkingIngangsdatum>2023-07-15</jw315:BeschikkingIngangsdatum>
-				<jw315:ToewijzingIngangsdatum>2023-04-01</jw315:ToewijzingIngangsdatum>
-				<jw315:ToewijzingEinddatum>2024-07-19</jw315:ToewijzingEinddatum>
+				<jw315:BeschikkingIngangsdatum>2026-03-15</jw315:BeschikkingIngangsdatum>
+				<jw315:ToewijzingIngangsdatum>2026-04-01</jw315:ToewijzingIngangsdatum>
+				<jw315:ToewijzingEinddatum>2027-06-31</jw315:ToewijzingEinddatum>
 				<jw315:Omvang>
 					<ijw:Volume>2</ijw:Volume>
 					<ijw:Eenheid>16</ijw:Eenheid>
