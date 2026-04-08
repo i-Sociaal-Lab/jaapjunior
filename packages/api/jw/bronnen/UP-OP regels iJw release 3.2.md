@@ -1,9 +1,9 @@
-# Regels op berichten iJw release 3.2
+# Regels op berichten
 
 - Versie: 1.0
 - Status: Productie
 - Auteur: Zorginstituut Nederland
-- 
+- Versie: iJw 3.2
 - Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/
 - Publicatiedatum: 29 september 2022
 - AI-agent: Jw-agent
@@ -530,7 +530,7 @@ Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regel
   - Het betreft een correctie van het eerdere Startbericht.  
 - Toewijzing kan **generiek**, **aspecifiek**, of **specifiek** zijn.
 
-### OP295 – Verplichting regieberichten (start/stopberichten)
+### OP295 – Gebruik van regeieberichten (start-/stopberichten) is verplicht
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op295
 
 - Gebruik van regieberichten is verplicht bij **inspannings- en outputgericht**.  
