@@ -48,11 +48,15 @@ Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regel
 - Beëindigen van een toewijzing in het verleden mag alleen in **overeenstemming met de aanbieder**.  
 - Toepassing: situaties waarin de aanbieder niet had kunnen weten dat ondersteuning niet geleverd mocht worden.
 
+-----
+
 ### OP191 – Ongestructureerde informatie
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op191
 
 - Gebruik van ongestructureerde informatie moet minimaal zijn.  
 - **Commentaar mag** in het bericht ter toelichting, mits geen persoonsgegevens zonder toestemming.
+
+-----
 
 ### OP192 – Technische eisen berichten
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op192
@@ -63,15 +67,21 @@ Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regel
 - Einderegel: **CR/LF**  
 - Bestandsextensie: `.xml`
 
+-----
+
 ### OP252 – Onbekende geboortedatum
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op252
 
 - Bij een (gedeeltelijk) onbekende geboortedatum moet worden aangegeven welk deel **betrouwbaar** is.
 
+-----
+
 ### OP254 – AGB-codes
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op254
 
 - iJw-berichten gebruiken **AGB-codes** voor routering en identificatie van de aanbieder.
+
+-----
 
 ### OP257 – Wijziging zorgvraag
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op257
@@ -88,11 +98,17 @@ Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regel
   - Volume wijzigt bij frequentie “totaal binnen geldigheidsduur”  
   - Maximaal budget wordt gewijzigd
 
+-----
+
 ### OP258 – Beëindiging toewijzing
+Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op258
+
 - Bij beëindiging van een toewijzing wordt de aanbieder geïnformeerd via een **toewijzingsbericht**.
 
+-----
+
 ### OP259 – Geen stapeling van producten bij toewijzen
-Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op258
+Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op259/
 
 Het is niet toegestaan om een zorg- of ondersteuningsproduct gestapeld toe te wijzen
 - **Gestapeld:** betekent dat voor een client hetzelfde zorg- of ondersteuningsproduct meerdere keren wordt toegewezen aan dezelfde aanbieder voor (gedeeltelijk) dezelfde periode.
