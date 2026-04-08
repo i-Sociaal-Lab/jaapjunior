@@ -473,19 +473,21 @@ Aanbieder en gemeente maken onderling afspraken over de door te geven begin- en 
 - Producten in **stuks** (inspanning) moeten toegewezen worden met **eenheid 84**.
 
 ### OP306 – Verzoek om wijziging (VOW)
+- Het verzoek om wijziging bericht wordt gebruikt als tijdens levering van zorg en/of ondersteuning blijkt dat een ander pakket van toegewezen producten nodig is
+- Een verzoek om wijziging bericht wordt altijd verstuurd vanuit een situatie waarbij er al geleverd wordt op basis van een of meer actuele toewijzingen.
 - Wordt gebruikt bij veranderingen in de zorgsituatie van een cliënt.  
 - Verstuurd vanuit **actuele toewijzingen**.  
 - Bevat de **complete gewenste situatie** (ongewijzigd, gewijzigd en nieuw).  
 - Kan niet gebruikt worden zonder actuele toewijzing.
 
 ### OP307 – Verzoek om toewijzing (VOT)
-Een verzoek om toewijzing bericht wordt alleen gebruikt indien een cliënt zich met een (wettelijke) verwijzing of een open beschikking meldt bij de zorgaanbieder
+- Een verzoek om toewijzing bericht wordt alleen gebruikt indien een cliënt zich met een (wettelijke) verwijzing of een open beschikking meldt bij de zorgaanbieder
 - Wordt altijd gebruikt bij **(wettelijke) verwijzing of open beschikking**.
 - Alleen indien er nog **geen actuele toewijzing** is voor het product en periode.
 - Kan niet gebruikt worden als er al een actuele toewijzing bestaat.
 
 ### OP308 – VOW als samenhangend geheel
-Een aanbieder vraagt met een verzoek om wijziging bericht (VOW) een samenhangend geheel aan toewijzingen aan met daarin de volledige gewenste situatie.
+- Een aanbieder vraagt met een verzoek om wijziging bericht (VOW) een samenhangend geheel aan toewijzingen aan met daarin de volledige gewenste situatie.
 - VOW bevat **complete nieuwe situatie** bij verandering van de zorgsituatie van de client.  
 - Inclusief ongewijzigde, gewijzigde en nieuwe producten/productcategorieën.
 
@@ -532,8 +534,8 @@ Het is niet toegestaan om een zorg- of ondersteuningsproduct gestapeld aan te vr
 - Altijd gerelateerd aan **eerder ontvangen declaratiebericht**.  
 - Koppeling kan op bericht- of declaratieniveau.
 
-### OP359 – Afwijzing woonplaatsbeginsel
-- Afwijzen binnen **2 weken** en financieel verantwoordelijke gemeente teruggeven.
+### OP359 – Afwijzing VOT vanwege woonplaatsbeginsel
+- Indien een verzoek om toewijzing wordt afgewezen op basis van het woonplaatsbeginsel, dient de gemeente dit binnen de wettelijke termijn van 2 weken af te wijzen en de financieel verantwoordelijke gemeente terug te geven aan de aanbieder
 
 ### OP360 – Crediteren van prestaties
 - Prestatie mag **alleen gecrediteerd worden als deze nog niet eerder gecrediteerd is**.
@@ -552,7 +554,7 @@ Het is niet toegestaan om een zorg- of ondersteuningsproduct gestapeld aan te vr
 - Een Prestatie in een declaratiebericht kan **niet afgekeurd** worden op basis van start/stopdatum regiebericht of ontbrekende start- stopberichten.
 
 ### OP365 – Declaratie passend bij toewijzing
-- Declaratie moet aansluiten bij **toewijzing en/of contractafspraken**.
+- De aanbieder declareert een zorg- of ondersteuningsproduct met een omvang die aansluit bij de toewijzing en/of gecontracteerde afspraken.
 
 ### OP366 – Crediteren voor correctie
 - Prestatieregel eerst volledig crediteren **voor correctie**.  
@@ -561,11 +563,12 @@ Het is niet toegestaan om een zorg- of ondersteuningsproduct gestapeld aan te vr
 ### OP367 – Productperiode
 - Valt altijd binnen **kalendermaand**.
 
-### OP368 – Geldigheidsperiode
-- Valt altijd binnen **geldigheidsperiode van toewijzing**.
+### OP368 – Productperiode
+- Een productperiode valt altijd binnen de **geldigheidsperiode** van een toewijzing
 
 ### OP377 – Tijdelijke stop gevolgd door definitieve stop
-- Stop volgt op **startbericht**.  
+- Alleen een tijdelijke stop mag zonder tussenkomst van een startbericht gevolgd worden door een definitieve stop.
+- Een Stopbericht volgt op **startbericht**.  
 - Uitzondering: definitieve stop kan volgen op start of tijdelijke stop.
 
 ### OP378 – Definitieve stop zonder start
@@ -574,7 +577,7 @@ Het is niet toegestaan om een zorg- of ondersteuningsproduct gestapeld aan te vr
 ### OP379 – Start na stop
 - Na tijdelijke of definitieve stop is het toegestaan een **startbericht** te sturen.
 
-### OP380 – Verplaatsen einddatum toewijzing in de toekomst
+### OP380 – Verplaatsen einddatum toewijzing in de toekomst (verlengen)
 - Deze werkwijze is verplicht indien de toewijzing aan alle onderstaande voorwaarden voldoet:
   - Volume blijft gelijk of is leeg.  
   - Frequentie is leeg of ongelijk aan totaal binnen geldigheidsduur toewijzing en blijft gelijk.  
