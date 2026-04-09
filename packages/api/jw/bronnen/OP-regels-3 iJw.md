@@ -39,8 +39,97 @@ Het document dient als **naslagwerk en validatiebron** voor AI-agenten die vrage
 
 # iJw 3.2.0 – Bedrijfsregels
 
-
 ## Bedrijfsregels (OP-regels)
+
+### OP298 – Verlagen volume toewijzing
+Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op298/
+
+- Dit is alleen toegestaan **na overleg met en instemming van** de aanbieder bij frequentie “totaal binnen geldigheidsduur”.
+
+-----
+
+### OP299 – Verlagen budget
+Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op299/
+
+- Dit is alleen toegestaan **na overleg met en instemming van** de aanbieder.
+- Op verzoek van de aanbieder via een wijzigingsverzoek → mag gemeente **zonder overleg** aanpassen.
+
+-----
+
+### OP302 – Declaratie passend bij toewijzing
+Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op302/
+
+- De aanbieder declareert een zorg- of ondersteuningsproduct dat aansluit bij de toewijzing
+- Soorten toewijzing:  
+  - **Specifiek**: productcategorie + productcode beide gevuld → zelfde combinatie declareren.  
+  - **Aspecifiek**: alleen productcategorie gevuld → aanbieder declareert 1 of meer productcodes die volgens de gehanteerde productcodelijst horen bij die productcategorie.
+  - **Generiek**: alleen budget gevuld → 1, productcategorie + productode zijn leeg. De aanbieder declareert 1 of meer productcategorieën + bijbehorende productcodes die zijn afgesproken tussen aanbieder een gemeente.
+
+-----
+
+### OP303 – Declaratie-antwoordbericht
+Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op303/
+
+- Bevat alle informatie om een declaratie administratief te verwerken.  
+- Alleen **afgekeurde prestaties** worden meegestuurd met een **retourcode**.  
+- Toegekende prestaties worden niet apart vermeld, alleen de som van de ingediende bedragen en van de toegekende prestaties bedragen wordt opgenomen in `DeclaratieAntwoord`.
+
+-----
+
+### OP304 – Detailinformatie retourbericht
+Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op304/
+
+- Retourbericht bevat alleen cliënten met **afgekeurde berichtklassen**.  
+- Cliënten met volledig goedgekeurde berichtklassen worden niet teruggestuurd.  
+- Berichtklasse `Cliënt` inclusief alle afgekeurde prestaties en retourcodes wordt geretourneerd.
+
+-----
+
+### OP305 – Producten op basis van inspanningsgericht stuks
+Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op305/
+
+- Producten in **stuks** (inspanning) moeten toegewezen worden met code **eenheid 84**.
+
+-----
+
+### OP306 – wanneer wordt het Verzoek om wijziging (VOW) gebruikt?
+Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op306/
+
+- Het verzoek om wijziging bericht wordt gebruikt als tijdens levering van zorg en/of ondersteuning blijkt dat een ander pakket van toegewezen producten nodig is
+- Een verzoek om wijziging bericht wordt altijd verstuurd vanuit een situatie waarbij er al geleverd wordt op basis van een of meer actuele toewijzingen.
+- Wordt gebruikt bij veranderingen in de zorgsituatie van een cliënt.  
+- Verstuurd vanuit **actuele toewijzingen**.  
+- Bevat de **complete gewenste situatie** (ongewijzigd, gewijzigd en nieuw).  
+- Kan niet gebruikt worden zonder actuele toewijzing.
+
+-----
+
+### OP307 – wanneer wordt het Verzoek om toewijzing (VOT) gebruikt?
+Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op307/
+
+- Een verzoek om toewijzing bericht wordt alleen gebruikt indien een cliënt zich met een (wettelijke) verwijzing of een open beschikking meldt bij de zorgaanbieder
+- Wordt altijd gebruikt bij **(wettelijke) verwijzing of open beschikking**.
+- Alleen indien er nog **geen actuele toewijzing** is voor het product en periode.
+- Kan niet gebruikt worden als er al een actuele toewijzing bestaat.
+
+-----
+
+### OP308 – VOW als samenhangend geheel
+Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op308/
+
+- Een aanbieder vraagt met een verzoek om wijziging bericht (VOW) een samenhangend geheel aan toewijzingen aan met daarin de volledige gewenste situatie.
+- VOW bevat **complete nieuwe situatie** bij verandering van de zorgsituatie van de client.  
+- Inclusief ongewijzigde, gewijzigde en nieuwe producten/productcategorieën.
+
+-----
+
+### OP343 – Tijdige indiening VOW
+Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op343/
+
+Een verzoek om wijziging moet tijdig ingediend worden.
+- Gemeente moet redelijkerwijs kunnen **reageren vóór de gewenste ingangsdatum**. Let hierbij op een mogelijk 8 weken onderzoekstermijn.
+
+-----
 
 ### OP344 – Reactie gemeente op VOT of VOW
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op344
@@ -55,7 +144,7 @@ Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regel
 ### OP345 – Wijziging met terugwerkende kracht
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op345
 
-- Nieuwe omvang of budget mag **niet leiden tot onrechtmatigheid** van al geleverde of gedeclareerde zorg.
+- Als de gewenste ingangsdatum van een te wijzigen product uit een verzoek om wijziging in het verleden ligt, dan mag de nieuwe omvang of het nieuwe budget **niet leiden tot onrechtmatigheid** voor al gedeclareerde en of geleverde zorg.
 
 -----
 
@@ -90,7 +179,7 @@ Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regel
 ### OP349 – Uniek declaratienummer
  Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op349
  
-- Iedere declaratie krijgt een **uniek nummer per aanbieder en wettelijk domein**.
+- Iedere declaratie krijgt een **uniek declaratienummer per aanbieder en wettelijk domein**.
 
 -----
 
@@ -98,7 +187,7 @@ Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regel
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op350
 
 - Het is niet toegestaan een verzoek om wijziging of verzoek om toewijzing te sturen als een eerder verzoek nog niet is afgehandeld. 
-- In behandeling = tot afkeur of toewijzing → geen nieuw verzoek voor dezelfde cliënt.
+- In onderzoek, nog niet afgekeurd, of nog geen toewijzing → geen nieuw verzoek voor dezelfde cliënt.
 
 -----
 
@@ -128,6 +217,7 @@ Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regel
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op360
 
 - Een prestatie mag **alleen gecrediteerd worden als deze nog niet eerder gecrediteerd is**.
+- Een prestatie mag **alleen gecrediteerd worden als deze prestatie eerder is goedgekeurd**.
 
 -----
 
@@ -141,7 +231,7 @@ Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regel
 ### OP362 – Verwijderen toewijzing
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op362
 
-- Alleen toegestaan als **rechtmatigheid van geleverde/declaratie zorg** niet verloren gaat.
+- Het verwijderen van toewijzingen is alleen toegestaan als **rechtmatigheid van geleverde/gedeclareerde zorg** niet verloren gaat.
 
 -----
 
@@ -182,7 +272,7 @@ Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regel
 
 -----
 
-### OP368 – Productperiode
+### OP368 – Productperiode begin- en eindatum
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op368
 
 - Een productperiode valt altijd binnen de **geldigheidsperiode** van een toewijzing
@@ -205,10 +295,10 @@ Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regel
 
 - Zonder tussenkomst van een startbericht is na een tijdelijke stop alleen een definitieve stop toegestaan.
 
-### OP379 – Start na stop
+### OP379 – is een start na stop toegestaan?
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op379
 
-- Na tijdelijke of definitieve stop is het toegestaan een **startbericht** te sturen.
+- Na een tijdelijke of definitieve stop is het toegestaan om een **startbericht** te sturen.
 
 -----
 
@@ -219,9 +309,5 @@ Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regel
   - Volume blijft gelijk of is leeg.  
   - Frequentie is leeg of ongelijk aan totaal binnen geldigheidsduur toewijzing en blijft gelijk.  
   - Einddatum bestaande toewijzing **niet verstreken** op moment van verlengen en versturen.
-- Soorten toewijzing:  
-  - **Specifiek**: productcategorie + productcode beide gevuld → zelfde combinatie declareren.  
-  - **Aspecifiek**: alleen productcategorie gevuld → aanbieder declareert 1 of meer productcodes die volgens de gehanteerde productcodelijst horen bij die productcategorie.
-  - **Generiek**: alleen budget gevuld → 1, productcategorie + productode zijn leeg. De aanbieder declareert 1 of meer productcategorieën + bijbehorende productcodes die zijn afgesproken tussen aanbieder een gemeente.
 
 -----
