@@ -42,11 +42,11 @@ Het document dient als **naslagwerk en validatiebron** voor AI-agenten die vrage
 
 ## Bedrijfsregels (OP-regels)
 
-### OP001 – Gezagsdrager
+### OP001 – Gezagsdrager van client
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op001
 
 - Van een cliënt wordt vastgelegd wie de gezagsdrager is.  
-- Voor cliënten van 16 jaar of ouder kan het gezag bij de cliënt zelf liggen.
+- Indien het een client betreft die 16 jaar of ouder is kan het gezag over de jeugdige ook bij de client zelf liggen.
 
 -----
 
@@ -58,14 +58,14 @@ Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regel
 
 -----
 
-### OP002x1
+### OP002x1 Gezagsdrager bekend
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op002x1
 
-- Als een aanbieder in een Verzoek om Toewijzing (VOT) heeft aangegeven dat de gezagsdrager bekend is, hoeft deze niet opnieuw in de toewijzing te worden opgenomen.
+- Als een aanbieder in een Verzoek om Toewijzing (VOT) heeft aangegeven dat de gezagsdrager bekend is, hoeft in de daaropvolgende toewijzing de gezagsdrager niet meegegeven te worden.
 
 -----
 
-### OP002x2
+### OP002x2 Gezag ligt bij jeugdige zelf
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op002x2
 
 - Als het gezag bij de jeugdige zelf ligt, wordt deze niet als relatie opgenomen in de toewijzing.
@@ -79,10 +79,11 @@ Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regel
 
 -----
 
-### OP011 – Startdatum levering
+### OP011 – Startdatum / Begindatum levering melden
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op011
 
 - De aanbieder meldt de begindatum van de levering nadat de ondersteuning daadwerkelijk is gestart.
+- Dit wordt gedaan door het sturen van een startbericht.
 
 -----
 
@@ -125,7 +126,7 @@ De uitwerking van deze bedrijfsregel is vastgelegd in de volgende regel: IV066.
 
 -----
 
-### OP033x2
+### OP033x2 Status aanlevering 2 is niet toegestaan.
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op033x2/
 
 - Gebruik van status aanlevering waarde **2** (berichtklasse gewijzigd) is niet toegestaan.
@@ -135,10 +136,10 @@ Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regel
 ### OP039 – Cliëntgegevens in berichten
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op039/
 
-- Ketenpartijen mogen cliëntgegevens doorgeven zoals geregistreerd in hun administratie, mits deze geen logische sleutel vormen.  
+- Ketenpartijen mogen cliëntgegevens doorgeven in het berichtenverkeer zoals geregistreerd in hun administratie, mits deze geen logische sleutel vormen.  
 - Het is toegestaan gewijzigde gegevens over te nemen in de administratie.
 Toelichting
-De uitwerking van deze bedrijfsregel is vastgelegd in de volgende regels: IV002, IV007, IV045, IV047.
+De uitwerking van deze bedrijfsregel is vastgelegd in de volgende regels: UP023, IV002, IV007, IV045, IV047.
 
 -----
 
@@ -177,7 +178,7 @@ Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regel
 ### OP072 – Beëindigen ondersteuning
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op072
 
-- Beëindigen mag pas na melding start ondersteuning.  
+- Beëindigen mag pas nadat er eerst een melding start ondersteuning is gestuurd.  
 - Stopbericht moet verwijzen naar de start van de levering.
 
 -----
@@ -202,18 +203,18 @@ Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regel
 
 Aan het tijdstip waarop en de volgorde waarin berichten worden ontvangen en verwerkt kunnen ketenpartijen geen betekenis hechten.
 - Volgorde en tijdstip van ontvangen/ verwerken berichten zijn niet bepalend.  
-- Terugwerkende berichten kunnen noodzakelijk zijn (bijv. bezwaarprocedures).  
-- Ontvang retourberichten afwachten om afkeur van vervolgberichten te voorkomen.
+- Terugwerkende berichten kunnen noodzakelijk zijn (bijv. bij bezwaarprocedures).  
+- Het afkeuren en corrigeren van berichten kan er toe leiden dat berichten in een andere volgorde worden verwerkt dan bedoeld. In deze situatie is het te adviseren om de ontvangst van retourberichten af te wachten om afkeur op een vervolgbericht te voorkomen.
 
 -----
 
-### OP086 – Toewijzing ondersteuningsproducten
-Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op086
+### OP086 – Toewijzing ondersteuningsproducten inspannings- of outputgericht
+Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op086/
 
 - Ondersteuningsproducten met een **inspannings- of outputgerichte uitvoering** worden altijd door de gemeente toegewezen via een toewijzingsbericht.
 
 ### OP087 – Inhoud toewijzingsbericht
-Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op087
+Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op087/
 
 - Voor één cliënt bevat een toewijzingsbericht altijd:  
   - Alle toewijzingen voor één aanbieder die **geldig zijn op of na de aanmaakdatum** van het bericht.  
@@ -228,22 +229,22 @@ Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regel
 -----
 
 ### OP090 – Reactietijd en verplichting Retourberichten
-Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op090
+Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op090/
 
 - Voor ieder ontvangen heenbericht wordt **binnen 3 werkdagen** een retourbericht verzonden.  
 - De verzender is verantwoordelijk voor het signaleren van ontbrekende retourberichten en moet actie ondernemen.
 
 -----
 
-### OP090x2
-Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op090x2
+### OP090x2 Het retoubericht kan niet worden aangemaakt.
+Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op090x2/
 
 - Als er geen retourbericht kan worden gemaakt, meldt de ontvangende partij dit **buiten het berichtenverkeer om** aan de verzender.
 
 -----
 
-### OP090x4 – Declaratie-antwoordbericht
-Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op090x4
+### OP090x4 – Declaratie-antwoordbericht 
+Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op090x4/
 
 - Voor ieder ontvangen declaratiebericht wordt **binnen 10 werkdagen** een declaratie-antwoordbericht verzonden.  
 - Als dit niet lukt, neemt de gemeente buiten het berichtenverkeer contact op met de aanbieder.  
@@ -252,10 +253,10 @@ Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regel
 -----
 
 ### OP091 – Contactgegevens cliënt
-Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op091
+Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op091/
 
 - Aanvullende contactgegevens mogen worden vastgelegd.  
-- Het soort adres moet altijd worden geregistreerd.
+- Het soort adres moet altijd worden vastgelegd.
 
 -----
 
@@ -284,8 +285,9 @@ Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regel
 
 - Maximale bestandsgrootte voor verzending is **25 MB**.  
 - Uitzonderingen zijn toegestaan indien grotere bestanden verwerkt kunnen worden.
+- Doel: Daar waar de grootte van bestanden tot problemen in de verwerking leidt, is deze regel bedoeld om duidelijk te maken dat de verzender de bestandsgrootte moet aanpassen.
   
 -----
 
-- Doel: verzender attenderen op aanpassing bij problemen in verwerking.
+
 
