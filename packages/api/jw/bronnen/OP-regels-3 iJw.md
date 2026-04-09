@@ -224,4 +224,4 @@ Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regel
   - **Aspecifiek**: alleen productcategorie gevuld → aanbieder declareert 1 of meer productcodes die volgens de gehanteerde productcodelijst horen bij die productcategorie.
   - **Generiek**: alleen budget gevuld → 1, productcategorie + productode zijn leeg. De aanbieder declareert 1 of meer productcategorieën + bijbehorende productcodes die zijn afgesproken tussen aanbieder een gemeente.
 
-
+-----
