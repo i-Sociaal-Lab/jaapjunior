@@ -42,7 +42,7 @@ Het document dient als **naslagwerk en validatiebron** voor AI-agenten die vrage
 
 ## Bedrijfsregels (OP-regels)
 
-### OP186 – stoppen van toewijzing in het verleden
+### `OP186` | stoppen van toewijzing in het verleden
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op186/
 
 - Beëindigen van een toewijzing in het verleden mag alleen in **overeenstemming met de aanbieder**.  
@@ -50,7 +50,7 @@ Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regel
 
 -----
 
-### OP191 – Ongestructureerde informatie
+### `OP191` | Ongestructureerde informatie
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op191/
 
 - Gebruik van ongestructureerde informatie moet minimaal zijn.  
@@ -59,7 +59,7 @@ Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regel
 
 -----
 
-### OP192 – Technische eisen verzonden berichten
+### `OP192` | Technische eisen verzonden berichten
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op192/
 
 - Formaat: **XML**  
@@ -70,21 +70,21 @@ Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regel
 
 -----
 
-### OP252 – Onbekende geboortedatum
+### `OP252` | Onbekende geboortedatum
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op252/
 
 - Bij een (gedeeltelijk) onbekende geboortedatum moet worden aangegeven welk deel **betrouwbaar** is.
 
 -----
 
-### OP254 – AGB-codes
+### `OP254` | AGB-codes
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op254/
 
 - iJw-berichten gebruiken **AGB-codes** voor routering en identificatie van de aanbieder.
 
 -----
 
-### OP257 – Wijziging zorgvraag wordt nieuwe toewijzing afgegeven
+### `OP257` | Wijziging zorgvraag wordt nieuwe toewijzing afgegeven
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op257/
 
 - Bij een wijziging van de zorgvraag wordt voor het betreffende product een nieuwe toewijzing afgegeven of voor het betreffende product wordt een gewijzigde toewijzing gestuurd.
@@ -101,14 +101,14 @@ Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regel
 
 -----
 
-### OP258 – Beëindiging toewijzing
+### `OP258` | Beëindiging toewijzing
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op258/
 
 - Bij beëindiging van een toewijzing wordt de aanbieder geïnformeerd via een **toewijzingsbericht**.
 
 -----
 
-### OP259 – Geen stapeling van producten bij toewijzen
+### `OP259` | Geen stapeling van producten bij toewijzen
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op259/
 
 Het is niet toegestaan om een zorg- of ondersteuningsproduct gestapeld toe te wijzen
@@ -122,21 +122,21 @@ Hetzelfde zorg- of ondersteuningsproduct betekent dezelfde productcode (Specifie
 
 -----
 
-### OP260 – Hoe wordt een ondersteuningsproduct omschreven?
+### `OP260` | Hoe wordt een ondersteuningsproduct omschreven?
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op260/
 
 - Een ondersteuningsproduct wordt omschreven als een **Productcategorie** en kan nader worden gespecificeerd met een **Productcode**.
 
 -----
 
-### OP261 – Uitvoeringsvariant per product
+### `OP261` | Uitvoeringsvariant per product
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op261/
 
 - Per ondersteuningsproduct wordt vastgelegd of de uitvoering **inspanningsgericht**, **outputgericht** of **taakgericht** is.
 
 -----
 
-### OP262 – Tarieven inspanningsgericht
+### `OP262` | Tarieven inspanningsgericht
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op262/
 
 - Er wordt een tarief per tijdseenheid afgesproken.  
@@ -144,7 +144,7 @@ Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regel
 
 -----
 
-### OP263 – Tarieven outputgericht
+### `OP263` | Tarieven outputgericht
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op263/
 
 - Er wordt een tarief per stuk of een bedrag in euro’s afgesproken over een vastgestelde periode.  
@@ -152,7 +152,7 @@ Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regel
 
 -----
 
-### OP264 – Declaratiemoment outputgerichte ondersteuningsproducten
+### `OP264` | Declaratiemoment outputgerichte ondersteuningsproducten
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op264/
 
 - Vaststelling van het declaratiemoment, bijvoorbeeld:  
@@ -162,14 +162,14 @@ Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regel
 
 -----
 
-### OP267 – Declaratie-eenheid
+### `OP267` | Declaratie-eenheid
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op267/
 
 - Aanbieder declareert in een eenheid die aansluit bij de **toewijzing**.
 
 -----
 
-### OP270 – Afspraken over begin- en einddatum Regieberichten
+### `OP270` | Afspraken over begin- en einddatum Regieberichten
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op270/
 
 Aanbieder en gemeente maken onderling afspraken over de door te geven begin- en einddatum in de regieberichten, (lees startbericht, stopbericht).
@@ -179,7 +179,7 @@ Aanbieder en gemeente maken onderling afspraken over de door te geven begin- en 
 
 -----
 
-### OP271 – moment versturen Startbericht
+### `OP271` | moment versturen Startbericht
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op271/
 
 - Aanbieder verzendt binnen **5 werkdagen** na daadwerkelijke start.  
@@ -187,7 +187,7 @@ Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regel
 
 -----
 
-### OP272 – moment versturen Stopbericht
+### `OP272` | moment versturen Stopbericht
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op272/
 
 - Aanbieder verzendt binnen **5 werkdagen** na daadwerkelijke stop.  
@@ -195,7 +195,7 @@ Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regel
 
 -----
 
-### OP274 – moment versturen toewijzingsbericht of antwoordbericht na VOT 
+### `OP274` | moment versturen toewijzingsbericht of antwoordbericht na VOT 
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op274/
 
 - Gemeente stuurt **binnen 5 werkdagen** per aangevraagd product:  
@@ -208,28 +208,28 @@ Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regel
 
 -----
 
-### OP275 – Uniek toewijzingsnummer
+### `OP275` | Uniek toewijzingsnummer
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op275/
 
 - Iedere toewijzing binnen een gemeente heeft een **uniek nummer per wettelijk domein**.
 
 -----
 
-### OP276 – Declareren indien toewijzing is ontvangen
+### `OP276` | Declareren indien toewijzing is ontvangen
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op276/
 
 - Aanbieder declareert voor cliënten waarvoor een **toewijzing ontvangen** is.
 
 -----
 
-### OP279 – Declaratie binnen toegewezen periode
+### `OP279` | Declaratie binnen toegewezen periode
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op279/
 
 - Declaratie vindt plaats **binnen de geldigheid** van de toewijzing of anders gezegd, binnen te toegewezen periode
 
 -----
 
-### OP280 – Declaratiebeircht en declaratieperiode 
+### `OP280` | Declaratiebeircht en declaratieperiode 
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op280/
 
 - Declaratiebericht heeft betrekking op **één declaratieperiode**.  
@@ -237,21 +237,21 @@ Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regel
 
 -----
 
-### OP281 – Declaratiebericht met één of meerdere cliënten
+### `OP281` | Declaratiebericht met één of meerdere cliënten
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op281/
 
 - Een declaratiebericht kan prestaties bevatten van **één of meer cliënten**.
 
 -----
 
-### OP283 – Uniek prestatie-nummer
+### `OP283` | Uniek prestatie-nummer
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op283/
 
 - Iedere prestatie/declaratieregel krijgt een **uniek nummer (ProductReferentie)** per aanbieder per wettelijk domein.
 
 -----
 
-### OP284 – Aansluitende declaratieperioden
+### `OP284` | Aansluitende declaratieperioden
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op284/
 
 - Als iedere declaratieperiode zorg is geleverd, moeten declaratieperioden **aansluitend** zijn in opvolgende berichten.  
@@ -261,7 +261,7 @@ Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regel
 
 -----
 
-### OP286 – Technische fouten heenbericht
+### `OP286` | Technische fouten heenbericht
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op286/
 
 - Bij technische fouten keurt ontvanger **het hele bericht af**.  
@@ -269,7 +269,7 @@ Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regel
 
 -----
 
-### OP288 – Stopbericht na Startbericht
+### `OP288` | Stopbericht na Startbericht
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op288/
 
 - Als een Startbericht is gestuurd, wordt de beëindiging altijd doorgegeven met een **Stopbericht**.  
@@ -277,7 +277,7 @@ Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regel
 
 -----
 
-### OP289 – Eén actueel Startbericht bij toegewezen product
+### `OP289` | Eén actueel Startbericht bij toegewezen product
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op289/
 
 - Per toegewezen product kan slechts **één startdatum** actueel zijn.  
@@ -288,7 +288,7 @@ Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regel
 
 -----
 
-### OP295 – Gebruik van regeieberichten (start-/stopberichten) is verplicht
+### `OP295` | Gebruik van regeieberichten (start-/stopberichten) is verplicht
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op295/
 
 - Gebruik van regieberichten is verplicht bij **inspannings- en outputgericht**.  
@@ -297,27 +297,27 @@ Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regel
 
 -----
 
-### OP296 – Verzoek om Toewijzing moet passend zijn
+### `OP296` | Verzoek om Toewijzing moet passend zijn
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op296/
 - Moet passen binnen de **contractafspraken** tussen gemeente en aanbieder.
 
 -----
 
-### OP297 – Zorgverlenercode van verwijzer bekend?
+### `OP297` | Zorgverlenercode van verwijzer bekend?
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op297/
 - Indien deze bekend is, moet de **ZorgverlenerCode (AGB)** van verwijzer worden meegegeven.  
 - Ontbreekt de AGB-code → naam van de verwijzer volstaat.
 
 -----
 
-### OP298 – Verlagen volume
+### `OP298` | Verlagen volume
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op298/
 
 - Dit is alleen toegestaan **na overleg met en instemming van** de aanbieder bij frequentie “totaal binnen geldigheidsduur”.
 
 -----
 
-### OP299 – Verlagen budget
+### `OP299` | Verlagen budget
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op299/
 
 - Dit is alleen toegestaan **na overleg met en instemming van** de aanbieder.
@@ -325,7 +325,7 @@ Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regel
 
 -----
 
-### OP302 – Declaratie passend bij toewijzing
+### `OP302` | Declaratie passend bij toewijzing
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op302/
 
 - De aanbieder declareert een zorg- of ondersteuningsproduct dat aansluit bij de toewijzing
@@ -336,7 +336,7 @@ Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regel
 
 -----
 
-### OP303 – Declaratie-antwoordbericht
+### `OP303` | Declaratie-antwoordbericht
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op303/
 
 - Bevat alle informatie om een declaratie administratief te verwerken.  
@@ -345,7 +345,7 @@ Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regel
 
 -----
 
-### OP304 – Detailinformatie retourbericht
+### `OP304` | Detailinformatie retourbericht
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op304/
 
 - Retourbericht bevat alleen cliënten met **afgekeurde berichtklassen**.  
@@ -354,14 +354,14 @@ Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regel
 
 -----
 
-### OP305 – Producten op basis van inspanningsgericht
+### `OP305` | Producten op basis van inspanningsgericht
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op305/
 
 - Producten in **stuks** (inspanning) moeten toegewezen worden met **eenheid 84**.
 
 -----
 
-### OP306 – Verzoek om wijziging (VOW)
+### `OP306` | Verzoek om wijziging (VOW)
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op306/
 
 - Het verzoek om wijziging bericht wordt gebruikt als tijdens levering van zorg en/of ondersteuning blijkt dat een ander pakket van toegewezen producten nodig is
@@ -373,7 +373,7 @@ Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regel
 
 -----
 
-### OP307 – Verzoek om toewijzing (VOT)
+### `OP307` | Verzoek om toewijzing (VOT)
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op307/
 
 - Een verzoek om toewijzing bericht wordt alleen gebruikt indien een cliënt zich met een (wettelijke) verwijzing of een open beschikking meldt bij de zorgaanbieder
@@ -383,7 +383,7 @@ Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regel
 
 -----
 
-### OP308 – VOW als samenhangend geheel
+### `OP308` | VOW als samenhangend geheel
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op308/
 
 - Een aanbieder vraagt met een verzoek om wijziging bericht (VOW) een samenhangend geheel aan toewijzingen aan met daarin de volledige gewenste situatie.
@@ -392,7 +392,7 @@ Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regel
 
 -----
 
-### OP343 – Tijdige indiening VOW
+### `OP343` | Tijdige indiening VOW
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op343/
 
 Een verzoek om wijziging moet tijdig ingediend worden.
