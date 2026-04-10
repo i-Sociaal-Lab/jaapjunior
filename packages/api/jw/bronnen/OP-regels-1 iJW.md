@@ -51,8 +51,7 @@ Type: bedrijfsregel
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op002x2/
 Tekst: Als het gezag bij de jeugdige zelf ligt, wordt deze niet als relatie opgenomen in de toewijzing.
 Tekst_raw:
- -Als het gezag bij de jeugdige zelf ligt, wordt deze niet als relatie opgenomen in de toewijzing.
-
+ - Als het gezag bij de jeugdige zelf ligt, wordt deze niet als relatie opgenomen in de toewijzing.
 ---
 
 ---
@@ -108,6 +107,8 @@ Versie: iJw 3.2
 Domein: Jeugdwet
 Auteur: Zorginstituut Nederland
 Type: bedrijfsregel
+Bericht: toewijzing
+onderwerp: wijzigen
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op033x1/
 Tekst: Een afgegeven toewijzing mag gewijzigd worden waarbij de wijziging met een nieuw bericht moet worden doorgegeven. De volgende wijzigingen in de einddatum zijn toegestaan:
 Intrekken: aanpassen van de gewenste einddatum toewijzing zodat de periode korter wordt (NB dit is alleen toegestaan in overleg met de aanbieder). 
@@ -186,6 +187,8 @@ Versie: iJw 3.2
 Domein: Jeugdwet
 Auteur: Zorginstituut Nederland
 Type: bedrijfsregel
+Bericht: Alle berichten, retourbericht
+onderwerp: afkeur, retourbericht, retourcode
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op047/
 Tekst: Berichten die niet voldoen aan de geldende standaard mogen worden afgekeurd.
 Tekst_raw:
@@ -285,11 +288,11 @@ Titel: inspannings- of outputgericht
 Versie: iJw 3.2
 Domein: Jeugdwet
 Auteur: Zorginstituut Nederland
-Type: bedrijfsregel
+onderwerp: uitvoeringsvariant, inspanningsgericht, outputgericht
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op086/
-Tekst: Ondersteuningsproducten met een **inspannings- of outputgerichte uitvoering** worden altijd door de gemeente toegewezen via een toewijzingsbericht.
+Tekst: Ondersteuningsproducten met een inspannings- of outputgerichte uitvoering worden altijd door de gemeente toegewezen via een toewijzingsbericht.
 Tekst_raw:
- - Ondersteuningsproducten met een **inspannings- of outputgerichte uitvoering** worden altijd door de gemeente toegewezen via een toewijzingsbericht.
+ - Ondersteuningsproducten met een inspannings- of outputgerichte uitvoering worden altijd door de gemeente toegewezen via een toewijzingsbericht.
 ---
 
 ---
@@ -326,7 +329,7 @@ Tekst_raw:
 
 ---
 ID: OP090x2
-Titel: Retoubericht kan niet worden aangemaakt
+Titel: Retourbericht kan niet worden aangemaakt
 Versie: iJw 3.2
 Domein: Jeugdwet
 Auteur: Zorginstituut Nederland
@@ -359,6 +362,8 @@ Versie: iJw 3.2
 Domein: Jeugdwet
 Auteur: Zorginstituut Nederland
 Type: bedrijfsregel
+Bericht: toewijzinge
+onderwerp: contactgegevens
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op091/
 Tekst: Van een client mogen aanvullende contactgegevens vastgelegd worden; er moet dan wel vastgelegd worden wat voor soort adres het betreft.
 Tekst_raw:
@@ -372,7 +377,7 @@ Titel: Afkeuren berichten
 Versie: iJw 3.2
 Domein: Jeugdwet
 Auteur: Zorginstituut Nederland
-Type: bedrijfsregel
+Type: bedrijfsregel 
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op095/
 Tekst: Een bericht mag niet worden afgekeurd op basis van informatie waartoe de verzendende partij geen toegang heeft.
 Tekst_raw:
