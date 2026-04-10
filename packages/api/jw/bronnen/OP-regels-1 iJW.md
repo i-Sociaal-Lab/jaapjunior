@@ -50,7 +50,7 @@ Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regel
 
 -----
 
-### OP002` | Gegevens gezagsdrager in toewijzing
+### `OP002` | Gegevens gezagsdrager in toewijzing
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op002
 
 - De gemeente stuurt in de toewijzing de gegevens van de gezagsdrager mee.  
@@ -58,7 +58,7 @@ Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regel
 
 -----
 
-### OP002x1 Gezagsdrager bekend
+### `OP002x1 Gezagsdrager bekend
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op002x1
 
 - Als een aanbieder in een Verzoek om Toewijzing (VOT) heeft aangegeven dat de gezagsdrager bekend is, hoeft in de daaropvolgende toewijzing de gezagsdrager niet meegegeven te worden.
