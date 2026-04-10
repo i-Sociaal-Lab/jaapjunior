@@ -13,6 +13,7 @@
 
 ## Inleiding voor AI-agent
 
+## SYSTEM_INSTRUCTIONS (NIET INDEXEREN)
 Dit regelrapport beschrijft de Uitgangspunten die gelden binnen het berichtenverkeer van de Jeugdwet (iJw), release 3.2.0. 
 
 Regels kunnen van toepassing zijn op het bericht, een berichtklasse, berichtelement of een datatype.
@@ -50,77 +51,77 @@ Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regel
 -----
 
 ### `UP003`| Privacy cliënt  
-Bon-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/uitgangspunt/up003/
+Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/uitgangspunt/up003/
 
 - De privacy van de cliënt is geborgd doordat aangesloten ketenpartijen zich conformeren aan de Algemene Verordening Gegevensbescherming (AVG).
 
 -----
 
 ### `UP004`| Coördinatie door gemeente
-Bon-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/uitgangspunt/up004/
+Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/uitgangspunt/up004/
 
 - De volgens de wet verantwoordelijke gemeente coördineert de inzet van Jeugdhulp voor de cliënt via toewijzingen (inspannings- en outputgericht).
 
 -----
 
 ### `UP006`| Identificatie cliënt  
-Bon-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/uitgangspunt/up006/
+Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/uitgangspunt/up006/
 
 - De cliënt wordt in de informatievoorziening Jw geïdentificeerd met zijn BSN.
 
 -----
 
 ### `UP007`| Beschikking gemeente  
-Bon-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/uitgangspunt/up007/
+Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/uitgangspunt/up007/
 
 - De gemeente legt in een beschikking vast of een cliënt recht heeft op ondersteuning vanuit de Jeugdwet (inspannings- en outputgericht).
 
 -----
 
 ### `UP016`| Jeugdhulp-producten  
-Bon-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/uitgangspunt/up016/
+Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/uitgangspunt/up016/
 
 - Jeugdhulp wordt uitgedrukt in jeugdhulp-producten.
 
 -----
 
 ### `UP017`| Gestandaardiseerde uitwisseling  
-Bon-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/uitgangspunt/up017/
+Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/uitgangspunt/up017/
 
 - De informatie-uitwisseling in de Jeugdwet is gebaseerd op gestandaardiseerd berichtenverkeer.
 
 -----
 
 ### `UP019`| Cliënt centraal  
-Bon-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/uitgangspunt/up019/
+Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/uitgangspunt/up019/
 
 - De cliënt staat centraal in alle processen.
 
 -----
 
 ### `UP023`| Eenmalige informatievraag  
-Bon-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/uitgangspunt/up023/
+Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/uitgangspunt/up023/
 
 Informatie wordt eenmalig bij de cliënt uitgevraagd.
 
 -----
 
 ### `UP024`| Wet- en regelgeving  
-Bon-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/uitgangspunt/up024/
+Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/uitgangspunt/up024/
 
 - De informatievoorziening Jw conformeert zich aan de wet- en regelgeving voortvloeiend uit de Jeugdwet.
 
 -----
 
 ### `UP025`| Declaratie op cliëntniveau  
-Bon-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/uitgangspunt/up0125/
+Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/uitgangspunt/up025/
 
 - De geleverde Jeugdhulp wordt gedeclareerd op cliëntniveau (inspannings- en outputgericht).
 
 -----
 
 ### `UP026`| Uitvoeringsvarianten  
-Bon-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/uitgangspunt/up026
+Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/uitgangspunt/up026
 
 - De Jw berichtenfamilie ondersteunt drie uitvoeringsvarianten:  
   - Outputgericht  
@@ -130,35 +131,35 @@ Bon-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels
 -----
 
 ### `UP027`| Declaratie binnen contract  
-Bon-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/uitgangspunt/up027
+Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/uitgangspunt/up027
 
 - De declaratie moet passen binnen de contractafspraken en binnen de toewijzing (inspannings- en outputgericht).
 
 -----
 
 ### `UP028`| Contractafspraken  
-Bon-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/uitgangspunt/up028/
+Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/uitgangspunt/up028/
 
 - Gemeente en aanbieder leggen een uitvoeringsvariant en een financieringsvorm voor de te verlenen jeugdhulp in een contract vast.
 
 -----
 
 ### `UP031`| Geen verlies rechtmatigheid  
-Bon-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/uitgangspunt/up031/
+Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/uitgangspunt/up031/
 
 - De gemeente doet geen aanpassingen in toewijzingen die bij de zorgaanbieder tot verlies van rechtmatigheid van geleverde en/of gedeclareerde zorg leiden.
 
 -----
 
 ### `UP032`| Melden zorgvraag  
-Bon-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/uitgangspunt/up032/
+Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/uitgangspunt/up032/
 
 - De zorgaanbieder stelt de gemeente op de hoogte van (veranderingen in) zorgvraag via een Verzoek om Toewijzing of een Verzoek om Wijziging.
 
 -----
 
 ### `UP037`| Uniek nummer beschikking  
-Bon-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/uitgangspunt/up037/
+Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/uitgangspunt/up037/
 
 - De gemeente geeft iedere beschikking binnen het Jw-domein een uniek nummer.
 
