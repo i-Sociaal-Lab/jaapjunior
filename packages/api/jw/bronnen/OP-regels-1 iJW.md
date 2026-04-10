@@ -42,7 +42,7 @@ Het document dient als **naslagwerk en validatiebron** voor AI-agenten die vrage
 
 ## Bedrijfsregels (OP-regels)
 
-### OP001 – Gezagsdrager van client
+### `OP001` | Gezagsdrager van client
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op001
 
 - Van een cliënt wordt vastgelegd wie de gezagsdrager is.  
@@ -50,7 +50,7 @@ Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regel
 
 -----
 
-### OP002 – Gegevens gezagsdrager in toewijzing
+### OP002` | Gegevens gezagsdrager in toewijzing
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op002
 
 - De gemeente stuurt in de toewijzing de gegevens van de gezagsdrager mee.  
@@ -65,21 +65,21 @@ Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regel
 
 -----
 
-### OP002x2 Gezag ligt bij jeugdige zelf
+### `OP002x2` |  Gezag ligt bij jeugdige zelf
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op002x2
 
 - Als het gezag bij de jeugdige zelf ligt, wordt deze niet als relatie opgenomen in de toewijzing.
 
 -----
 
-### OP003 – Uitzondering standaard berichtenverkeer
+### `OP003` | Uitzondering standaard berichtenverkeer
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op003
 
 - Gestandaardiseerd berichtenverkeer wordt niet gebruikt als een (zorg)professional oordeelt dat overdracht ernstige risico's voor de veiligheid van de cliënt oplevert (bijv. verblijf in "blijf-van-mijn-lijf" huis).
 
 -----
 
-### OP011 – Startdatum / Begindatum levering melden
+### `OP011` | Startdatum / Begindatum levering melden
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op011
 
 - De aanbieder meldt de begindatum van de levering nadat de ondersteuning daadwerkelijk is gestart.
@@ -87,7 +87,7 @@ Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regel
 
 -----
 
-### OP033 – Wijzigingen en status aanlevering
+### `OP033` | Wijzigingen en status aanlevering
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op033/
 
 - Voor wijzigingen, verwijderingen en correcties op een eerder verzonden regiebericht wordt de **status aanlevering** gebruikt:
@@ -101,7 +101,7 @@ De uitwerking van deze bedrijfsregel is vastgelegd in de volgende regels: IV008,
 
 -----
 
-### OP033x1 – Wijzigingen in toewijzing
+### `OP033x1` | Wijzigingen in toewijzing
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op033x1/
  
 - Toewijzing kan gewijzigd worden via een nieuw bericht.
@@ -126,14 +126,14 @@ De uitwerking van deze bedrijfsregel is vastgelegd in de volgende regel: IV066.
 
 -----
 
-### OP033x2 Status aanlevering 2 is niet toegestaan.
+### `OP033x2` | Status aanlevering 2 is niet toegestaan.
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op033x2/
 
 - Gebruik van status aanlevering waarde **2** (berichtklasse gewijzigd) is niet toegestaan.
 
 -----
 
-### OP039 – Cliëntgegevens in berichten
+### `OP039` | Cliëntgegevens in berichten
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op039/
 
 - Ketenpartijen mogen cliëntgegevens doorgeven in het berichtenverkeer zoals geregistreerd in hun administratie, mits deze geen logische sleutel vormen.  
@@ -143,7 +143,7 @@ De uitwerking van deze bedrijfsregel is vastgelegd in de volgende regels: UP023,
 
 -----
 
-### OP043 – PGB en toewijzing
+### `OP043` | PGB en toewijzing
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op043/
 
 - Als een cliënt een PGB heeft, mag voor hetzelfde product geen toewijzing zijn afgegeven.  
@@ -151,14 +151,14 @@ Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regel
 
 -----
 
-### OP047 – Afkeuren niet-standaard berichten
+### `OP047` | Afkeuren niet-standaard berichten
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op047
 
 - Berichten die niet voldoen aan de geldende standaard mogen worden afgekeurd.
 
 -----
 
-### OP065 – Retourberichten
+### `OP065` | Retourberichten
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op065
 
 - Retourbericht bevat alleen informatie over afgekeurde berichtklassen.  
@@ -167,7 +167,7 @@ Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regel
 
 -----
 
-### OP071 – Uniek relatie-nummer
+### `OP071` | Uniek relatie-nummer
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op071
 
 - Elke relatie krijgt een uniek nummer per gemeente per cliënt.  
@@ -175,7 +175,7 @@ Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regel
 
 -----
 
-### OP072 – Beëindigen ondersteuning
+### `OP072` | Beëindigen ondersteuning
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op072
 
 - Beëindigen mag pas nadat er eerst een melding start ondersteuning is gestuurd.  
@@ -183,7 +183,7 @@ Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regel
 
 -----
 
-### OP076 – Contactpersonen
+### `OP076` | Contactpersonen
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op076
 
 - Voor iedere contactpersoon moet de relatie tot de cliënt worden opgegeven.  
@@ -191,14 +191,14 @@ Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regel
 
 -----
 
-### OP079 – Gebruik BSN
+### `OP079` | Gebruik BSN
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op079
 
 - Het gebruik van het BSN van de cliënt is verplicht in de onderlinge uitwisseling van gegevens.
 
 -----
 
-### OP080 – Volgorde berichten
+### `OP080` | Volgorde berichten
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op080
 
 Aan het tijdstip waarop en de volgorde waarin berichten worden ontvangen en verwerkt kunnen ketenpartijen geen betekenis hechten.
@@ -208,12 +208,12 @@ Aan het tijdstip waarop en de volgorde waarin berichten worden ontvangen en verw
 
 -----
 
-### OP086 – Toewijzing ondersteuningsproducten inspannings- of outputgericht
+### `OP086` | Toewijzing ondersteuningsproducten inspannings- of outputgericht
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op086/
 
 - Ondersteuningsproducten met een **inspannings- of outputgerichte uitvoering** worden altijd door de gemeente toegewezen via een toewijzingsbericht.
 
-### OP087 – Inhoud toewijzingsbericht
+### `OP087` | Inhoud toewijzingsbericht
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op087/
 
 - Voor één cliënt bevat een toewijzingsbericht altijd:  
@@ -228,7 +228,7 @@ Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regel
 
 -----
 
-### OP090 – Reactietijd en verplichting Retourberichten
+### `OP090` | Reactietijd en verplichting Retourberichten
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op090/
 
 - Voor ieder ontvangen heenbericht wordt **binnen 3 werkdagen** een retourbericht verzonden.  
@@ -236,14 +236,14 @@ Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regel
 
 -----
 
-### OP090x2 Het retoubericht kan niet worden aangemaakt.
+### `OP090x2` | Het retoubericht kan niet worden aangemaakt.
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op090x2/
 
 - Als er geen retourbericht kan worden gemaakt, meldt de ontvangende partij dit **buiten het berichtenverkeer om** aan de verzender.
 
 -----
 
-### OP090x4 – Declaratie-antwoordbericht 
+### `OP090x4` | Declaratie-antwoordbericht 
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op090x4/
 
 - Voor ieder ontvangen declaratiebericht wordt **binnen 10 werkdagen** een declaratie-antwoordbericht verzonden.  
@@ -252,7 +252,7 @@ Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regel
 
 -----
 
-### OP091 – Contactgegevens cliënt
+### `OP091` | Contactgegevens cliënt
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op091/
 
 - Aanvullende contactgegevens mogen worden vastgelegd.  
@@ -260,27 +260,27 @@ Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regel
 
 -----
 
-### OP095 – Afkeuren berichten
+### `OP095` | Afkeuren berichten
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op095
 
 - Een bericht mag niet afgekeurd worden op basis van informatie waartoe de verzender **geen toegang heeft**.
 
 -----
 
-### OP130 – Welke Relatiegegevens moeten verplicht gevuld worden?
+### `OP130` | Welke Relatiegegevens moeten verplicht gevuld worden?
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op130
 - Van een relatie moet altijd een **naam** worden vastgelegd, aangevuld met een **volledig adres** en/of **telefoonnummer**.
 
 -----
 
-### OP155 – Tijdelijke stop levering
+### `OP155` | Tijdelijke stop levering
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op155
 
 - Een (tijdelijke) beëindiging van levering bevat een verwijzing naar de **laatste melding van de start** van de levering.
 
 -----
 
-### OP179 – Bestandsgrootte
+### `OP179` | Bestandsgrootte
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op179
 
 - Maximale bestandsgrootte voor verzending is **25 MB**.  
