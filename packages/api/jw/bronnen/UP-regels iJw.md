@@ -9,8 +9,8 @@ Versie: iJw 3.2
 Domein: Jeugdwet
 Type: uitgangspunt
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/uitgangspunt/up001/
-Tekst: De Jw berichtenfamilie ondersteunt het toewijzen, leveren en declareren van Jeugdhulp in het kader van de Jeugdwet, geleverd als zorg in natura (ZIN).
-Tekst_raw: 
+Text: De Jw berichtenfamilie ondersteunt het toewijzen, leveren en declareren van Jeugdhulp in het kader van de Jeugdwet, geleverd als zorg in natura (ZIN).
+Text_raw: 
 - De Jw berichtenfamilie ondersteunt het:
   - toewijzen
   - leveren
@@ -25,8 +25,8 @@ Versie: iJw 3.2
 Domein: Jeugdwet
 Type: uitgangspunt
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/uitgangspunt/up003/
-Tekst: De privacy van de cliënt is geborgd doordat aangesloten ketenpartijen zich conformeren aan de Algemene Verordening Gegevensbescherming (AVG).
-Tekst_raw: 
+Text: De privacy van de cliënt is geborgd doordat aangesloten ketenpartijen zich conformeren aan de Algemene Verordening Gegevensbescherming (AVG).
+Text_raw: 
 - De privacy van de cliënt is geborgd doordat aangesloten ketenpartijen zich conformeren aan de Algemene Verordening Gegevensbescherming (AVG).
 ---
 
@@ -37,8 +37,8 @@ Versie: iJw 3.2
 Domein: Jeugdwet
 Type: uitgangspunt
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/uitgangspunt/up004/
-Tekst: De volgens de wet verantwoordelijke gemeente coördineert de inzet van Jeugdhulp voor de cliënt via toewijzingen (inspannings- en outputgericht).
-Tekst_raw:
+Text: De volgens de wet verantwoordelijke gemeente coördineert de inzet van Jeugdhulp voor de cliënt via toewijzingen (inspannings- en outputgericht).
+Text_raw:
 - De volgens de wet verantwoordelijke gemeente coördineert de inzet van Jeugdhulp voor de cliënt via toewijzingen (inspannings- en outputgericht).
 ---
 
@@ -49,8 +49,8 @@ Versie: iJw 3.2
 Domein: Jeugdwet
 Type: uitgangspunt
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/uitgangspunt/up006/
-Tekst: De cliënt wordt in de informatievoorziening Jw geïdentificeerd met zijn BSN.
-Tekst_raw:
+Text: De cliënt wordt in de informatievoorziening Jw geïdentificeerd met zijn BSN.
+Text_raw:
 - De cliënt wordt in de informatievoorziening Jw geïdentificeerd met zijn BSN.
 ---
 
@@ -61,8 +61,8 @@ Versie: iJw 3.2
 Domein: Jeugdwet
 Type: uitgangspunt
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/uitgangspunt/up007/
-Tekst: De gemeente legt in een beschikking vast of een cliënt recht heeft op ondersteuning vanuit de Jeugdwet (inspannings- en outputgericht).
-Tekst_raw:
+Text: De gemeente legt in een beschikking vast of een cliënt recht heeft op ondersteuning vanuit de Jeugdwet (inspannings- en outputgericht).
+Text_raw:
 - De gemeente legt in een beschikking vast of een cliënt recht heeft op ondersteuning vanuit de Jeugdwet (inspannings- en outputgericht).
 ---
 
@@ -73,8 +73,8 @@ Versie: iJw 3.2
 Domein: Jeugdwet
 Type: uitgangspunt
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/uitgangspunt/up016/
-Tekst: Jeugdhulp wordt uitgedrukt in jeugdhulp-producten.
-Tekst_raw:
+Text: Jeugdhulp wordt uitgedrukt in jeugdhulp-producten.
+Text_raw:
 - Jeugdhulp wordt uitgedrukt in jeugdhulp-producten.
 ---
 
@@ -85,8 +85,8 @@ Versie: iJw 3.2
 Domein: Jeugdwet
 Type: uitgangspunt
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/uitgangspunt/up017/
-Tekst: De informatie-uitwisseling in de Jeugdwet is gebaseerd op gestandaardiseerd berichtenverkeer.
-Tekst_raw:
+Text: De informatie-uitwisseling in de Jeugdwet is gebaseerd op gestandaardiseerd berichtenverkeer.
+Text_raw:
 - De informatie-uitwisseling in de Jeugdwet is gebaseerd op gestandaardiseerd berichtenverkeer.
 ---
 
@@ -97,8 +97,8 @@ Versie: iJw 3.2
 Domein: Jeugdwet
 Type: uitgangspunt
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/uitgangspunt/up019/
-Tekst: De cliënt staat centraal in alle processen.
-Tekst_raw:
+Text: De cliënt staat centraal in alle processen.
+Text_raw:
 - De cliënt staat centraal in alle processen.
 ---
 
@@ -109,8 +109,8 @@ Versie: iJw 3.2
 Domein: Jeugdwet
 Type: uitgangspunt
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/uitgangspunt/up023/
-Tekst: Informatie wordt eenmalig bij de cliënt uitgevraagd.
-Tekst_raw:
+Text: Informatie wordt eenmalig bij de cliënt uitgevraagd.
+Text_raw:
 - Informatie wordt eenmalig bij de cliënt uitgevraagd.
 ---
 
@@ -121,8 +121,8 @@ Versie: iJw 3.2
 Domein: Jeugdwet
 Type: uitgangspunt
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/uitgangspunt/up024/
-Tekst: De informatievoorziening Jw conformeert zich aan de wet- en regelgeving voortvloeiend uit de Jeugdwet.
-Tekst_raw:
+Text: De informatievoorziening Jw conformeert zich aan de wet- en regelgeving voortvloeiend uit de Jeugdwet.
+Text_raw:
 - De informatievoorziening Jw conformeert zich aan de wet- en regelgeving voortvloeiend uit de Jeugdwet.
 ---
 
@@ -133,8 +133,8 @@ Versie: iJw 3.2
 Domein: Jeugdwet
 Type: uitgangspunt
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/uitgangspunt/up025/
-Tekst: De geleverde Jeugdhulp wordt gedeclareerd op cliëntniveau (inspannings- en outputgericht).
-Tekst_raw:
+Text: De geleverde Jeugdhulp wordt gedeclareerd op cliëntniveau (inspannings- en outputgericht).
+Text_raw:
 - De geleverde Jeugdhulp wordt gedeclareerd op cliëntniveau (inspannings- en outputgericht).
 ---
 
@@ -145,8 +145,8 @@ Versie: iJw 3.2
 Domein: Jeugdwet
 Type: uitgangspunt
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/uitgangspunt/up026/
-Tekst: De Jw berichtenfamilie ondersteunt drie uitvoeringsvarianten: Inspanningsgericht, Outputgericht, Taakgericht.
-Tekst_raw:
+Text: De Jw berichtenfamilie ondersteunt drie uitvoeringsvarianten: Inspanningsgericht, Outputgericht, Taakgericht.
+Text_raw:
 - De Jw berichtenfamilie ondersteunt drie uitvoeringsvarianten:
   - Inspanningsgericht
   - Outputgericht
@@ -160,8 +160,8 @@ Versie: iJw 3.2
 Domein: Jeugdwet
 Type: uitgangspunt
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/uitgangspunt/up027/
-Tekst: De declaratie moet passen binnen de contractafspraken en binnen de toewijzing (inspannings- en outputgericht).
-Tekst_raw:
+Text: De declaratie moet passen binnen de contractafspraken en binnen de toewijzing (inspannings- en outputgericht).
+Text_raw:
 - De declaratie moet passen binnen de contractafspraken en binnen de toewijzing (inspannings- en outputgericht).
 ---
 
@@ -172,8 +172,8 @@ Versie: iJw 3.2
 Domein: Jeugdwet
 Type: uitgangspunt
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/uitgangspunt/up028/
-Tekst: Gemeente en aanbieder leggen een uitvoeringsvariant en een financieringsvorm voor de te verlenen jeugdhulp in een contract vast.
-Tekst_raw:
+Text: Gemeente en aanbieder leggen een uitvoeringsvariant en een financieringsvorm voor de te verlenen jeugdhulp in een contract vast.
+Text_raw:
 - Gemeente en aanbieder leggen een uitvoeringsvariant en een financieringsvorm voor de te verlenen jeugdhulp in een contract vast.
 ---
 
@@ -184,8 +184,8 @@ Versie: iJw 3.2
 Domein: Jeugdwet
 Type: uitgangspunt
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/uitgangspunt/up031/
-Tekst: De gemeente doet geen aanpassingen in toewijzingen die bij de zorgaanbieder tot verlies van rechtmatigheid van geleverde en/of gedeclareerde zorg leiden.
-Tekst_raw:
+Text: De gemeente doet geen aanpassingen in toewijzingen die bij de zorgaanbieder tot verlies van rechtmatigheid van geleverde en/of gedeclareerde zorg leiden.
+Text_raw:
 - De gemeente doet geen aanpassingen in toewijzingen die bij de zorgaanbieder tot verlies van rechtmatigheid van geleverde en/of gedeclareerde zorg leiden.
 ---
 
@@ -196,8 +196,8 @@ Versie: iJw 3.2
 Domein: Jeugdwet
 Type: uitgangspunt
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/uitgangspunt/up032/
-Tekst: De zorgaanbieder stelt de gemeente op de hoogte van (veranderingen in) zorgvraag via een Verzoek om Toewijzing of een Verzoek om Wijziging.
-Tekst_raw:
+Text: De zorgaanbieder stelt de gemeente op de hoogte van (veranderingen in) zorgvraag via een Verzoek om Toewijzing of een Verzoek om Wijziging.
+Text_raw:
 - De zorgaanbieder stelt de gemeente op de hoogte van (veranderingen in) zorgvraag via een Verzoek om Toewijzing of een Verzoek om Wijziging.
 ---
 
@@ -208,7 +208,7 @@ Versie: iJw 3.2
 Domein: Jeugdwet
 Type: uitgangspunt
 Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/uitgangspunt/up037/
-Tekst: De gemeente geeft iedere beschikking binnen het Jw-domein een uniek nummer.
-Tekst_raw:
+Text: De gemeente geeft iedere beschikking binnen het Jw-domein een uniek nummer.
+Text_raw:
 - De gemeente geeft iedere beschikking binnen het Jw-domein een uniek nummer.
 ---
