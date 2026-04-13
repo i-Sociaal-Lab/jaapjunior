@@ -13,7 +13,9 @@
     "samenvatting": "De Jw berichtenfamilie ondersteunt het toewijzen, leveren en declareren van Jeugdhulp in het kader van de Jeugdwet, geleverd als zorg in natura (ZIN).",
     "details": ["toewijzen", "leveren", "declareren", "zorg in natura (ZIN)"],
     "tags": ["jeugdhulp", "toewijzing", "levering", "declaratie", "ZIN"],
-    "uitleg": "Dit uitgangspunt beschrijft de kernfunctionaliteit van het berichtenverkeer binnen de Jeugdwet."
+    "uitleg": "Dit uitgangspunt beschrijft de kernfunctionaliteit van het berichtenverkeer binnen de Jeugdwet.",
+    "gerelateerde_bedrijfsregels": ["OP086", "OP295", "OP296", "OP297"],
+    "relaties_uitleg": "Dit uitgangspunt wordt concreet uitgewerkt in de bedrijfsregels OP086, OP295, OP296, OP297."
   },
   {
     "id": "UP003",
@@ -29,7 +31,9 @@
     "samenvatting": "De privacy van de client is in de iJw geborgd doordat aangesloten ketenpartijen zich conformeren aan de Algemene Verordening Gegevensbescherming (AVG).",
     "details": ["conformeren aan AVG"],
     "tags": ["privacy", "AVG", "cliënt"],
-    "uitleg": "Alle betrokken partijen moeten voldoen aan privacywetgeving."
+    "uitleg": "Alle betrokken partijen moeten voldoen aan privacywetgeving.",
+    "gerelateerde_bedrijfsregels": ["OP003", "OP087", "OP191"],
+    "relaties_uitleg": "Dit uitgangspunt wordt concreet uitgewerkt in de bedrijfsregels OP003, OP087, OP191."
   },
   {
     "id": "UP004",
@@ -45,7 +49,9 @@
     "samenvatting": "De volgens de wet verantwoordelijke gemeente coordineert de inzet van Jeugdhulp voor de client door middel van toewijzingen (inspannings- en outputgericht).",
     "details": ["toewijzingen", "inspanningsgericht", "outputgericht"],
     "tags": ["gemeente", "coördinatie"],
-    "uitleg": "De gemeente heeft de regierol in de zorg."
+    "uitleg": "De gemeente heeft de regierol in de zorg.",
+    "gerelateerde_bedrijfsregels": ["OP001", "OP002", "OP043", "OP086", "OP087", "OP186", "OP274", "OP275", "OP359"],
+    "relaties_uitleg": "Dit uitgangspunt wordt concreet uitgewerkt in de bedrijfsregels OP001, OP002, OP043, OP086, OP087, OP186, OP274, OP275, OP359."
   },
   {
     "id": "UP006",
@@ -61,7 +67,9 @@
     "samenvatting": "De client wordt in de informatievoorziening Jw geidentificeerd met zijn BSN.",
     "details": ["BSN"],
     "tags": ["identificatie", "BSN"],
-    "uitleg": "Het BSN zorgt voor eenduidige identificatie."
+    "uitleg": "Het BSN zorgt voor eenduidige identificatie.",
+    "gerelateerde_bedrijfsregels": ["OP079"],
+    "relaties_uitleg": "Dit uitgangspunt wordt concreet uitgewerkt in de bedrijfsregels OP079."
   },
   {
     "id": "UP007",
@@ -77,7 +85,9 @@
     "samenvatting": "De gemeente legt in een beschikking vast of een client recht heeft op ondersteuning vanuit de Jeugdwet (inspannings- en outputgericht).",
     "details": ["beschikking", "recht"],
     "tags": ["gemeente", "beschikking"],
-    "uitleg": "Formeel besluit over recht op zorg."
+    "uitleg": "Formeel besluit over recht op zorg.",
+    "gerelateerde_bedrijfsregels": ["OP257", "OP258", "OP259"],
+    "relaties_uitleg": "Dit uitgangspunt wordt concreet uitgewerkt in de bedrijfsregels OP257, OP258, OP259."
   },
   {
     "id": "UP016",
@@ -93,7 +103,9 @@
     "samenvatting": "Jeugdhulp wordt uitgedrukt in jeugdhulp-producten.",
     "details": ["producten"],
     "tags": ["producten"],
-    "uitleg": "Uniforme beschrijving van zorg."
+    "uitleg": "Uniforme beschrijving van zorg.",
+    "gerelateerde_bedrijfsregels": ["OP260"],
+    "relaties_uitleg": "Dit uitgangspunt wordt concreet uitgewerkt in de bedrijfsregels OP260."
   },
   {
     "id": "UP017",
@@ -109,7 +121,9 @@
     "samenvatting": "De informatie-uitwisseling is gebaseerd op gestandaardiseerd berichtenverkeer.",
     "details": ["standaardisatie"],
     "tags": ["berichtenverkeer"],
-    "uitleg": "Zorgt voor interoperabiliteit."
+    "uitleg": "Zorgt voor interoperabiliteit.",
+    "gerelateerde_bedrijfsregels": ["OP033", "OP047", "OP065", "OP071", "OP072", "OP076", "OP080", "OP090", "OP095", "OP155", "OP179", "OP186", "OP191", "OP192", "OP252", "OP254", "OP270", "OP271", "OP272", "OP284", "OP286", "OP288", "OP289", "OP295", "OP296", "OP297", "OP355", "OP360", "OP361", "OP363", "OP366", "OP367", "OP368", "OP377", "OP378", "OP379", "OP380"],
+    "relaties_uitleg": "Dit uitgangspunt wordt concreet uitgewerkt in de bedrijfsregels OP033, OP047, OP065, OP071, OP072, OP076, OP080, OP090, OP095, OP155, OP179, OP186, OP191, OP192, OP252, OP254, OP270, OP271, OP272, OP284, OP286, OP288, OP289, OP295, OP296, OP297, OP355, OP360, OP361, OP363, OP366, OP367, OP368, OP377, OP378, OP379, OP380."
   },
   {
     "id": "UP019",
@@ -125,7 +139,9 @@
     "samenvatting": "De cliënt staat centraal.",
     "details": ["cliënt centraal"],
     "tags": ["cliënt"],
-    "uitleg": "Alle processen zijn gericht op de cliënt."
+    "uitleg": "Alle processen zijn gericht op de cliënt.",
+    "gerelateerde_bedrijfsregels": [],
+    "relaties_uitleg": "Dat de cliënt centraal staat is iets waarvan alle betrokkenen in de keten zich bewust moeten zijn. Dit wordt niet verder uitgewerkt in andere regels."
   },
   {
     "id": "UP023",
@@ -141,7 +157,9 @@
     "samenvatting": "Informatie wordt eenmalig bij de cliënt uitgevraagd.",
     "details": ["eenmalig"],
     "tags": ["efficiëntie"],
-    "uitleg": "Voorkomt dubbele uitvraag."
+    "uitleg": "Voorkomt dubbele uitvraag.",
+    "gerelateerde_bedrijfsregels": ["OP039", "OP076", "OP091", "OP130"],
+    "relaties_uitleg": "Het principe van eenmalige uitvraag bij de client wordt concreet uitgewerkt in de bedrijfsregels OP039, OP076, OP091 en OP130."
   },
   {
     "id": "UP024",
@@ -157,7 +175,9 @@
     "samenvatting": "De informatievoorziening Jw conformeert zich aan de wet- en regelgeving die voortvloeit uit de Jeugdwet.",
     "details": ["wetgeving"],
     "tags": ["compliance"],
-    "uitleg": "Systemen moeten voldoen aan wetgeving."
+    "uitleg": "Systemen moeten voldoen aan wetgeving.",
+    "gerelateerde_bedrijfsregels": ["OP076", "OP079", "OP297"],
+    "relaties_uitleg": "Dat de informatievoorziening Jw zich aan de wet- en regelgeving Jeugdwet conformeert wordt concreet uitgewerkt in de bedrijfsregels OP076, OP079, OP297."
   },
   {
     "id": "UP025",
@@ -173,7 +193,9 @@
     "samenvatting": "De geleverde Jeugdhulp wordt gedeclareerd op clientniveau (inspannings- en outputgericht)",
     "details": ["cliëntniveau"],
     "tags": ["declaratie"],
-    "uitleg": "Declaraties per cliënt."
+    "uitleg": "Declaraties per cliënt.",
+    "gerelateerde_bedrijfsregels": ["OP280", "OP281", "OP283", "OP349", "OP354"],
+    "relaties_uitleg": "Dit uitgangspunt wordt concreet uitgewerkt in de bedrijfsregels OP280, OP281, OP283, OP349, OP354."
   },
   {
     "id": "UP026",
@@ -189,7 +211,9 @@
     "samenvatting": "De Jw berichtenfamilie ondersteunt drie uitvoeringsvarianten.",
     "details": ["inspanningsgericht", "outputgericht", "taakgericht"],
     "tags": ["varianten"],
-    "uitleg": "Verschillende manieren van uitvoering."
+    "uitleg": "Verschillende manieren van uitvoering.",
+    "gerelateerde_bedrijfsregels": ["OP011", "OP086", "OP261", "OP262", "OP264", "OP270", "OP363"],
+    "relaties_uitleg": "Dit uitgangspunt wordt concreet uitgewerkt in de bedrijfsregels OP011, OP086, OP261, OP262, OP264, OP270, OP363."
   },
   {
     "id": "UP027",
@@ -205,7 +229,9 @@
     "samenvatting": "De declaratie moet passen binnen de contractafspraken en binnen de toewijzing (inspannings- en outputgericht).",
     "details": ["contract", "toewijzing"],
     "tags": ["controle"],
-    "uitleg": "Validatie van declaraties."
+    "uitleg": "Validatie van declaraties.",
+    "gerelateerde_bedrijfsregels": ["OP267", "OP276", "OP279", "OP302", "OP303", "OP304", "OP364", "OP365"],
+    "relaties_uitleg": "Dit uitgangspunt wordt concreet uitgewerkt in de bedrijfsregels OP267, OP276, OP279, OP302, OP303, OP304, OP364, OP365."
   },
   {
     "id": "UP028",
@@ -221,7 +247,9 @@
     "samenvatting": "Gemeente en aanbieder leggen een uitvoeringsvariant en een financieringsvorm voor de te verlenen jeugdhulp in een contract vast.",
     "details": ["contract", "financiering"],
     "tags": ["afspraken"],
-    "uitleg": "Formalisering samenwerking."
+    "uitleg": "Formalisering samenwerking.",
+    "gerelateerde_bedrijfsregels": ["OP262", "OP263", "OP264", "OP296", "OP305"],
+    "relaties_uitleg": "Dit uitgangspunt wordt concreet uitgewerkt in de bedrijfsregels OP262, OP263, OP264, OP296, OP305."
   },
   {
     "id": "UP031",
@@ -237,7 +265,9 @@
     "samenvatting": "Aanpassingen mogen niet leiden tot verlies van rechtmatigheid.",
     "details": ["rechtmatigheid"],
     "tags": ["recht"],
-    "uitleg": "De gemeente doet geen aanpassingen in toewijzingen die bij de zorgaanbieder tot verlies van rechtmatigheid van geleverde en/of gedeclareerde zorg leiden."
+    "uitleg": "De gemeente doet geen aanpassingen in toewijzingen die bij de zorgaanbieder tot verlies van rechtmatigheid van geleverde en/of gedeclareerde zorg leiden.",
+    "gerelateerde_bedrijfsregels": ["OP298", "OP299", "OP345", "OP362"],
+    "relaties_uitleg": "Dit uitgangspunt wordt concreet uitgewerkt in de bedrijfsregels OP298, OP299, OP345, OP362."
   },
   {
     "id": "UP032",
@@ -253,28 +283,9 @@
     "samenvatting": "De zorgaanbieder stelt de gemeente op de hoogte van (veranderingen in) zorgvraag door middel van een Verzoek om toewijzing of een Verzoek om wijziging.",
     "details": ["verzoek", "wijziging"],
     "tags": ["zorgvraag"],
-    "uitleg": "Communicatie richting gemeente."
-  },
-  {
-    "id": "UP037",
-    "afkorting": "UP",
-    "categorie": "Uitgangspunten",
-    "document_type": "iJw uitgangspunten",
-    "versie_volledig": "iJw 3.2.0",
-    "titel": "Uniek nummer beschikking",
-    "versie": "iJw 3.2",
-    "domein": "Jeugdwet",
-    "type": "uitgangspunt",
-    "bron": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/uitgangspunt/up037/",
-    "samenvatting": "Elke beschikking krijgt een uniek nummer.",
-    "details": ["uniek nummer"],
-    "tags": ["identificatie"],
-    "uitleg": "Unieke identificatie van beschikkingen."
-  }
-]",
-    "details": ["verzoek", "wijziging"],
-    "tags": ["zorgvraag"],
-    "uitleg": "Communicatie richting gemeente."
+    "uitleg": "Communicatie richting gemeente.",
+    "gerelateerde_bedrijfsregels": ["OP306", "OP307", "OP308", "OP343", "OP344", "OP346", "OP347", "OP348", "OP350", "OP359"],
+    "relaties_uitleg": "Dit uitgangspunt wordt concreet uitgewerkt in de bedrijfsregels OP306, OP307, OP308, OP343, OP344, OP346, OP347, OP348, OP350, OP359."
   },
   {
     "id": "UP037",
@@ -290,6 +301,8 @@
     "samenvatting": "De gemeente geeft iedere beschikking binnen het Jw domein een uniek nummer.",
     "details": ["uniek nummer"],
     "tags": ["identificatie"],
-    "uitleg": "Unieke identificatie van beschikkingen."
+    "uitleg": "Unieke identificatie van beschikkingen.",
+    "gerelateerde_bedrijfsregels": [],
+    "relaties_uitleg": "Dit uitgangspunt wordt niet concreet uitgewerkt in bedrijfsregels."
   }
 ]
