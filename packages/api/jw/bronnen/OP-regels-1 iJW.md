@@ -1,26 +1,29 @@
 ## Bedrijfsregels (OP-regels)
 
----
-ID: OP001 
-Titel: Gezagsdrager van client
-versie_volledig: "iJw 3.2.0",
-Domein: Jeugdwet
-Auteur: Zorginstituut Nederland
-"categorie": "Bedrijfsregels"
-"document_type": "iJw bedrijfsregels"
-Type: bedrijfsregel
-Bron: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op001/
-Samenvatting: Van een cliënt wordt vastgelegd wie de gezagsdrager is. Indien het een client betreft die 16 jaar of ouder is kan het gezag over de jeugdige ook bij de client zelf liggen.
-Details: ["gezagsdager","client", "16 jaar en ouder"]
-Uitleg:
- - Van een cliënt wordt vastgelegd wie de gezagsdrager is.
- - Indien het een client betreft die 16 jaar of ouder is kan het gezag over de jeugdige ook bij de client zelf liggen.
-"gerelateerde_bedrijfsregels": [],
-"gerelateerde_invulinstructies": [],
-"gerelateerde_technischeregels": [],
-"gerelateerde_condities": [],
-"gerelateerde_contraints": [],
-"gerelateerde_uitgangspunten": ["UP004"]
+[
+ {
+  "id": "OP001",
+  "afkorting": "OP",
+  "categorie": "Bedrijfsregels",
+  "document_type": "iJw bedrijfsregels",
+"versie_volledig": "iJw 3.2.0",
+"titel": "Gezagsdrager van client",
+"versie": "iJw 3.2",
+"domein": "Jeugdwet",
+"type": "bedrijfsregel",
+"bron": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op001/",
+"samenvatting": "Van een cliënt wordt vastgelegd wie de gezagsdrager is. Indien het een client betreft die 16 jaar of ouder is kan het gezag over de jeugdige ook bij de client zelf liggen.",
+"details": ["gezagsdager", "client", "16 jaar en ouder"],
+"tags": ["gezagsdrager", "client", "16 jaar en ouder"],
+"uitleg": ["Van een cliënt wordt vastgelegd wie de gezagsdrager is.",
+         "Indien het een client betreft die 16 jaar of ouder is kan het gezag over de jeugdige ook bij de client zelf liggen."],
+  "gerelateerde_bedrijfsregels": [],
+  "gerelateerde_invulinstructies": [],
+  "gerelateerde_technischeregels": [],
+  "gerelateerde_condities": [],
+  "gerelateerde_constraints": [],
+  "gerelateerde_uitgangspunten": ["UP004"],
+  "relaties_uitleg": "Dit uitgangspunt wordt concreet uitgewerkt in de gerelateerde regels."
 ---
 
 ---
