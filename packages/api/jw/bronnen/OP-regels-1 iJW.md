@@ -1,5 +1,3 @@
-## Bedrijfsregels (OP-regels)
-
 [
  {
   "id": "OP001",
