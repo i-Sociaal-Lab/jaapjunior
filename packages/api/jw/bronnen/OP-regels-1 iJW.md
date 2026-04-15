@@ -74,10 +74,10 @@
   "domein": "Jeugdwet",
   "type": "bedrijfsregel",
 "bron": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op003/",
-"samenvatting": "Gestandaardiseerd berichtenverkeer wordt niet gebruikt als een (zorg)professional oordeelt dat overdracht ernstige risico's voor de veiligheid van de cliënt oplevert (bijv. verblijf in "blijf-van-mijn-lijf" huis).
+"samenvatting": "Gestandaardiseerd berichtenverkeer wordt niet gebruikt als een (zorg)professional oordeelt dat overdracht ernstige risico's voor de veiligheid van de cliënt oplevert (bijv. verblijf in \"blijf-van-mijn-lijf\" huis).
 "uitleg": "
  - Gestandaardiseerd berichtenverkeer wordt niet gebruikt als een (zorg)professional oordeelt dat overdracht ernstige risico's voor de veiligheid van de cliënt oplevert.
- - (bijv. verblijf in blijf-van-mijn-lijf huis)."
+ - (bijv. verblijf in \"blijf-van-mijn-lijf\" huis)."
   },
   {
 "id": "OP011",
@@ -121,8 +121,8 @@ Met de status aanlevering van een berichtklasse kan worden aangegeven of:
 "Titel": "Wijzigingen in toewijzing",
   "domein": "Jeugdwet",
   "type": "bedrijfsregel",
-Bericht: toewijzing,
-onderwerp: wijzigen,
+"Bericht": "toewijzing",
+"onderwerp": "wijzigen",
 "bron": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op033x1/",
 "samenvatting": "Een afgegeven toewijzing mag gewijzigd worden waarbij de wijziging met een nieuw bericht moet worden doorgegeven. De volgende wijzigingen in de einddatum zijn toegestaan:
 Intrekken: aanpassen van de gewenste einddatum toewijzing zodat de periode korter wordt (NB dit is alleen toegestaan in overleg met de aanbieder). 
@@ -205,8 +205,8 @@ De meest recente toewijzing op toewijzingsdatum en -tijd is bepalend voor de inh
 "Titel": "Afkeuren berichten",
   "domein": "Jeugdwet",
   "type": "bedrijfsregel",
-Bericht: Alle berichten, retourbericht
-onderwerp: afkeur, retourbericht, retourcode
+"Bericht": "Alle berichten, retourbericht",
+"onderwerp": "afkeur, retourbericht, retourcode",
 "bron": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op047/",
  "samenvatting": "Berichten die niet voldoen aan de geldende standaard mogen worden afgekeurd.",
 "uitleg": "
@@ -313,7 +313,7 @@ onderwerp: afkeur, retourbericht, retourcode
 "Titel": "inspannings- of outputgericht",
   "domein": "Jeugdwet",
   "type": "bedrijfsregel",
-onderwerp: uitvoeringsvariant, inspanningsgericht, outputgericht,
+"onderwerp": "uitvoeringsvariant, inspanningsgericht, outputgericht",
 "bron": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op086/",
  "samenvatting": "Ondersteuningsproducten met een inspannings- of outputgerichte uitvoering worden altijd door de gemeente toegewezen via een toewijzingsbericht.",
 "uitleg": "
@@ -389,7 +389,7 @@ Toewijzingen met einddatum gelijk aan ingangsdatum en RedenWijziging gevuld met 
 "Titel": "Contactgegevens cliënt",
   "domein": "Jeugdwet",
   "type": "bedrijfsregel",
-onderwerp: contactgegevens
+"onderwerp": "contactgegevens",
 "bron": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op091/",
  "samenvatting": "Van een client mogen aanvullende contactgegevens vastgelegd worden; er moet dan wel vastgelegd worden wat voor soort adres het betreft.",
 "uitleg": "- Van een client mogen aanvullende contactgegevens vastgelegd worden;
