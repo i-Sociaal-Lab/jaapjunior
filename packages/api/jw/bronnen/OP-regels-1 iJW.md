@@ -27,7 +27,7 @@
   "categorie": "Bedrijfsregels",
   "document_type": "iJw bedrijfsregels",
   "versie_volledig": "iJw 3.2.0",
-  "Titel": "Gegevens gezagsdrager in toewijzing",
+  "titel": "Gegevens gezagsdrager in toewijzing",
   "domein": "Jeugdwet",
   "type": "bedrijfsregel",
   "bron": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op002/",
@@ -42,11 +42,11 @@
   "categorie": "Bedrijfsregels",
   "document_type": "iJw bedrijfsregels",
   "versie_volledig": "iJw 3.2.0",
-"Titel": "Gezagsdrager bekend",
+"titel": "Gezagsdrager bekend",
   "domein": "Jeugdwet",
   "type": "bedrijfsregel",
 "bron": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op002x1/",
-"samenvatting": "Indien een aanbieder in een Verzoek om toewijzing (VOT) heeft aangegeven dat de gezagsdrager bekend is, hoeft in de daaropvolgende toewijzing de gezagsdrager niet meegegeven te worden."
+"samenvatting": "Indien een aanbieder in een Verzoek om toewijzing (VOT) heeft aangegeven dat de gezagsdrager bekend is, hoeft in de daaropvolgende toewijzing de gezagsdrager niet meegegeven te worden.",
 "uitleg": "
  - Indien een aanbieder in een Verzoek om Toewijzing (VOT) heeft aangegeven dat de gezagsdrager bekend is, hoeft in de daaropvolgende toewijzing de gezagsdrager niet meegegeven te worden."
   },
@@ -56,7 +56,7 @@
     "categorie": "Bedrijfsregels",
   "document_type": "iJw bedrijfsregels",
   "versie_volledig": "iJw 3.2.0",
-"Titel": " Gezag bij jeugdige",
+"titel": " Gezag bij jeugdige",
   "domein": "Jeugdwet",
   "type": "bedrijfsregel",
 "bron": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op002x2/",
@@ -66,15 +66,15 @@
   },
   {
 "id": "OP003",
-  "afkorting": "OP",
-    "categorie": "Bedrijfsregels",
-  "document_type": "iJw bedrijfsregels",
-  "versie_volledig": "iJw 3.2.0",
-"Titel": "Uitzondering standaard berichtenverkeer",
-  "domein": "Jeugdwet",
-  "type": "bedrijfsregel",
+"afkorting": "OP",
+"categorie": "Bedrijfsregels",
+"document_type": "iJw bedrijfsregels",
+"versie_volledig": "iJw 3.2.0",
+"titel": "Uitzondering standaard berichtenverkeer",
+"domein": "Jeugdwet",
+"type": "bedrijfsregel",
 "bron": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op003/",
-"samenvatting": "Gestandaardiseerd berichtenverkeer wordt niet gebruikt als een (zorg)professional oordeelt dat overdracht ernstige risico's voor de veiligheid van de cliënt oplevert (bijv. verblijf in \"blijf-van-mijn-lijf\" huis).
+"samenvatting": "Gestandaardiseerd berichtenverkeer wordt niet gebruikt als een (zorg)professional oordeelt dat overdracht ernstige risico's voor de veiligheid van de cliënt oplevert (bijv. verblijf in \"blijf-van-mijn-lijf\" huis).",
 "uitleg": "
  - Gestandaardiseerd berichtenverkeer wordt niet gebruikt als een (zorg)professional oordeelt dat overdracht ernstige risico's voor de veiligheid van de cliënt oplevert.
  - (bijv. verblijf in \"blijf-van-mijn-lijf\" huis)."
@@ -85,7 +85,7 @@
       "categorie": "Bedrijfsregels",
   "document_type": "iJw bedrijfsregels",
   "versie_volledig": "iJw 3.2.0",
-"Titel": "Begindatum levering melden",
+"titel": "Begindatum levering melden",
   "domein": "Jeugdwet",
   "type": "bedrijfsregel",
 "bron": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op011/",
@@ -95,21 +95,21 @@
   },
   {
 "id": "OP033",
-  "afkorting": "OP",
-      "categorie": "Bedrijfsregels",
-  "document_type": "iJw bedrijfsregels",
-  "versie_volledig": "iJw 3.2.0",
-"Titel": "Wijzigingen met gebruik status aanlevering",
-  "domein": "Jeugdwet",
-  "type": "bedrijfsregel",
+"afkorting": "OP",
+"categorie": "Bedrijfsregels",
+"document_type": "iJw bedrijfsregels",
+"versie_volledig": "iJw 3.2.0",
+"titel": "Wijzigingen met gebruik status aanlevering",
+"domein": "Jeugdwet",
+"type": "bedrijfsregel",
 "bron": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op033/",
 "samenvatting": "Voor wijzigingen, verwijderingen en correcties op een eerder verzonden regiebericht wordt de status aanlevering gebruikt Wijzigingen op een melding start product zijn uitsluitend toegestaan voor het geleverde product. Als de ondersteuning beeindigd is, kan de aanvang niet meer op deze manier gecorrigeerd worden.
-Met de status aanlevering van een berichtklasse kan worden aangegeven of: een berichtklasse nieuw is (waarde 1) of een berichtklasse verwijderd is (waarde 3).
-"Toelichting": "De uitwerking van deze bedrijfsregel is vastgelegd in de volgende regels: IV008, IV074, OP033x1, OP033x2, TR071 en TR074.
+Met de status aanlevering van een berichtklasse kan worden aangegeven of: een berichtklasse nieuw is (waarde 1) of een berichtklasse verwijderd is (waarde 3).",
+"Toelichting": "De uitwerking van deze bedrijfsregel is vastgelegd in de volgende regels: IV008, IV074, OP033x1, OP033x2, TR071 en TR074.",
 "uitleg": "Voor wijzigingen, verwijderingen en correcties op een eerder verzonden regiebericht wordt de status aanlevering gebruikt Wijzigingen op een melding start product zijn uitsluitend toegestaan voor het geleverde product. Als de ondersteuning beeindigd is, kan de aanvang niet meer op deze manier gecorrigeerd worden.
 Met de status aanlevering van een berichtklasse kan worden aangegeven of: 
- - een berichtklasse nieuw is (waarde 1)
- - berichtklasse verwijderd is (waarde 3).",
+   een berichtklasse nieuw is (waarde 1)
+   berichtklasse verwijderd is (waarde 3).",
 "Toelichting": "De uitwerking van deze bedrijfsregel is vastgelegd in de volgende regels: IV008, IV074, OP033x1, OP033x2, TR071 en TR074."
   },
   {
@@ -118,7 +118,7 @@ Met de status aanlevering van een berichtklasse kan worden aangegeven of:
       "categorie": "Bedrijfsregels",
   "document_type": "iJw bedrijfsregels",
   "versie_volledig": "iJw 3.2.0",
-"Titel": "Wijzigingen in toewijzing",
+"titel": "Wijzigingen in toewijzing",
   "domein": "Jeugdwet",
   "type": "bedrijfsregel",
 "Bericht": "toewijzing",
@@ -134,7 +134,7 @@ Indien dit op verzoek van de aanbieder (via een verzoek om wijziging) is, mag di
 Indien de gemeente het initiatief tot aanpassing van het volume neemt, mag dit alleen in overleg met en na instemming van de aanbieder worden aangepast.
 Budget wijzigen: Als Budget op verzoek van de aanbieder (via een verzoek om wijziging) wordt gewijzigd, mag dit zonder overleg worden aangepast door de gemeente.
 Indien de gemeente het initiatief tot aanpassing van het maximale budget neemt, mag dit alleen in overleg met en na instemming van de aanbieder worden aangepast.
-De meest recente toewijzing op toewijzingsdatum en -tijd is bepalend voor de inhoud van de toewijzing
+De meest recente toewijzing op toewijzingsdatum en -tijd is bepalend voor de inhoud van de toewijzing",
 "uitleg": "
  - Een afgegeven toewijzing mag gewijzigd worden waarbij de wijziging met een nieuw bericht moet worden doorgegeven. 
 - Einddatum wijzigingen toegestaan:  
@@ -157,11 +157,11 @@ De meest recente toewijzing op toewijzingsdatum en -tijd is bepalend voor de inh
       "categorie": "Bedrijfsregels",
   "document_type": "iJw bedrijfsregels",
   "versie_volledig": "iJw 3.2.0",
-"Titel": "Status aanlevering 2 is niet toegestaan.",
+"titel": "Status aanlevering 2 is niet toegestaan.",
   "domein": "Jeugdwet",
   "type": "bedrijfsregel",
 "bron": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op033x2/",
-"samenvatting": "Gebruik van status aanlevering waarde **2** (berichtklasse gewijzigd) is niet toegestaan.
+"samenvatting": "Gebruik van status aanlevering waarde **2** (berichtklasse gewijzigd) is niet toegestaan.",
 "uitleg": "
  - Gebruik van status aanlevering waarde **2** (berichtklasse gewijzigd) is niet toegestaan."
   },
@@ -171,7 +171,7 @@ De meest recente toewijzing op toewijzingsdatum en -tijd is bepalend voor de inh
       "categorie": "Bedrijfsregels",
   "document_type": "iJw bedrijfsregels",
   "versie_volledig": "iJw 3.2.0",
-"Titel": "Cliëntgegevens in berichten",
+"titel": "Cliëntgegevens in berichten",
   "domein": "Jeugdwet",
   "type": "bedrijfsregel",
 "bron": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op039/",
@@ -183,15 +183,15 @@ De meest recente toewijzing op toewijzingsdatum en -tijd is bepalend voor de inh
   },
   {
 "id": "OP043",
-  "afkorting": "OP",
-      "categorie": "Bedrijfsregels",
-  "document_type": "iJw bedrijfsregels",
-  "versie_volledig": "iJw 3.2.0",
-"Titel": "PGB en toewijzing",
-  "domein": "Jeugdwet",
-  "type": "bedrijfsregel",
+"afkorting": "OP",
+"categorie": "Bedrijfsregels",
+"document_type": "iJw bedrijfsregels",
+"versie_volledig": "iJw 3.2.0",
+"titel": "PGB en toewijzing",
+"domein": "Jeugdwet",
+"type": "bedrijfsregel",
 "bron": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op043/",
- "samenvatting": "Als een cliënt een PGB heeft, mag voor hetzelfde product geen toewijzing zijn afgegeven. Een toewijzing eindigt uiterlijk op de dag vóór ingangsdatum PGB.",
+"samenvatting": "Als een cliënt een PGB heeft, mag voor hetzelfde product geen toewijzing zijn afgegeven. Een toewijzing eindigt uiterlijk op de dag vóór ingangsdatum PGB.",
 "uitleg": "
  - Als een cliënt een PGB heeft, mag voor hetzelfde product geen toewijzing zijn afgegeven.  
  - Een toewijzing eindigt uiterlijk op de dag vóór ingangsdatum PGB."
@@ -202,7 +202,7 @@ De meest recente toewijzing op toewijzingsdatum en -tijd is bepalend voor de inh
       "categorie": "Bedrijfsregels",
   "document_type": "iJw bedrijfsregels",
   "versie_volledig": "iJw 3.2.0",
-"Titel": "Afkeuren berichten",
+"titel": "Afkeuren berichten",
   "domein": "Jeugdwet",
   "type": "bedrijfsregel",
 "Bericht": "Alle berichten, retourbericht",
@@ -218,7 +218,7 @@ De meest recente toewijzing op toewijzingsdatum en -tijd is bepalend voor de inh
       "categorie": "Bedrijfsregels",
   "document_type": "iJw bedrijfsregels",
   "versie_volledig": "iJw 3.2.0",
-"Titel": "Clienten in Retourberichten",
+"titel": "Clienten in Retourberichten",
   "domein": "Jeugdwet",
   "type": "bedrijfsregel",
 "bron": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op065/",
@@ -234,12 +234,12 @@ De meest recente toewijzing op toewijzingsdatum en -tijd is bepalend voor de inh
       "categorie": "Bedrijfsregels",
   "document_type": "iJw bedrijfsregels",
   "versie_volledig": "iJw 3.2.0",
-"Titel": "Uniek relatie-nummer",
+"titel": "Uniek relatie-nummer",
   "domein": "Jeugdwet",
   "type": "bedrijfsregel",
 "bron": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op071/",
  "samenvatting": "Elke relatie krijgt een uniek nummer per gemeente per client. Dit nummer mag niet gewijzigd worden.",
- "Tekst_raw": "
+ "uitleg": "
  - Elke relatie krijgt een uniek nummer per gemeente per cliënt.  
  - Dit nummer mag niet gewijzigd worden.",
   },
@@ -249,7 +249,7 @@ De meest recente toewijzing op toewijzingsdatum en -tijd is bepalend voor de inh
       "categorie": "Bedrijfsregels",
   "document_type": "iJw bedrijfsregels",
   "versie_volledig": "iJw 3.2.0",
-"Titel": "Beëindigen ondersteuning",
+"titel": "Beëindigen ondersteuning",
   "domein": "Jeugdwet",
   "type": "bedrijfsregel",
 "bron": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op072/",
@@ -264,7 +264,7 @@ De meest recente toewijzing op toewijzingsdatum en -tijd is bepalend voor de inh
       "categorie": "Bedrijfsregels",
   "document_type": "iJw bedrijfsregels",
   "versie_volledig": "iJw 3.2.0",
-"Titel": "Contactpersonen (relatie),
+"titel": "Contactpersonen (relatie)",
   "domein": "Jeugdwet",
   "type": "bedrijfsregel",
 "bron": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op076/",
@@ -279,7 +279,7 @@ De meest recente toewijzing op toewijzingsdatum en -tijd is bepalend voor de inh
       "categorie": "Bedrijfsregels",
   "document_type": "iJw bedrijfsregels",
   "versie_volledig": "iJw 3.2.0",
-"Titel": "Gebruik BSN",
+"titel": "Gebruik BSN",
   "domein": "Jeugdwet",
   "type": "bedrijfsregel",
 "bron": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op079/",
@@ -293,7 +293,7 @@ De meest recente toewijzing op toewijzingsdatum en -tijd is bepalend voor de inh
       "categorie": "Bedrijfsregels",
   "document_type": "iJw bedrijfsregels",
   "versie_volledig": "iJw 3.2.0",
-"Titel": "Volgorde berichten",
+"titel": "Volgorde berichten",
   "domein": "Jeugdwet",
   "type": "bedrijfsregel",
 "bron": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op080/",
@@ -310,7 +310,7 @@ De meest recente toewijzing op toewijzingsdatum en -tijd is bepalend voor de inh
       "categorie": "Bedrijfsregels",
   "document_type": "iJw bedrijfsregels",
   "versie_volledig": "iJw 3.2.0",
-"Titel": "inspannings- of outputgericht",
+"titel": "inspannings- of outputgericht",
   "domein": "Jeugdwet",
   "type": "bedrijfsregel",
 "onderwerp": "uitvoeringsvariant, inspanningsgericht, outputgericht",
@@ -325,7 +325,7 @@ De meest recente toewijzing op toewijzingsdatum en -tijd is bepalend voor de inh
       "categorie": "Bedrijfsregels",
   "document_type": "iJw bedrijfsregels",
   "versie_volledig": "iJw 3.2.0",
-"Titel": "Inhoud toewijzingsbericht",
+"titel": "Inhoud toewijzingsbericht",
   "domein": "Jeugdwet",
   "type": "bedrijfsregel",
 "bron": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op087/",
@@ -344,26 +344,26 @@ Toewijzingen met einddatum gelijk aan ingangsdatum en RedenWijziging gevuld met 
       "categorie": "Bedrijfsregels",
   "document_type": "iJw bedrijfsregels",
   "versie_volledig": "iJw 3.2.0",
-"Titel": "Reactietijd en verplichting Retourberichten",
+"titel": "Reactietijd en verplichting Retourberichten",
   "domein": "Jeugdwet",
   "type": "bedrijfsregel",
 "bron": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op090/",
  "samenvatting": "Voor ieder ontvangen bericht wordt binnen 3 werkdagen na ontvangst een retourbericht verzonden. De verzender is verantwoordelijk voor het signaleren van ontbrekende retourberichten en moet actie ondernemen.",
-"uitleg": "- Voor ieder ontvangen bericht wordt binnen 3 werkdagen na ontvangst een retourbericht verzonden.
+"uitleg": "Voor ieder ontvangen bericht wordt binnen 3 werkdagen na ontvangst een retourbericht verzonden.
  - De verzender is verantwoordelijk voor het signaleren van ontbrekende retourberichten en moet actie ondernemen."
   },
   {
 "id": "OP090x2",
-  "afkorting": "OP",
-      "categorie": "Bedrijfsregels",
-  "document_type": "iJw bedrijfsregels",
-  "versie_volledig": "iJw 3.2.0",,
-"Titel": "Retourbericht kan niet worden aangemaakt"
-  "domein": "Jeugdwet",
-  "type": "bedrijfsregel",
+"afkorting": "OP",
+"categorie": "Bedrijfsregels",
+"document_type": "iJw bedrijfsregels",
+"versie_volledig": "iJw 3.2.0",
+"titel": "Retourbericht kan niet worden aangemaakt",
+"domein": "Jeugdwet",
+"type": "bedrijfsregel",
 "bron": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op090x2/",
- "samenvatting": "Als er geen retourbericht kan worden gemaakt, meldt de ontvangende partij dit buiten het berichtenverkeer om aan de verzender.",
-"uitleg": "- Als er geen retourbericht kan worden gemaakt, meldt de ontvangende partij dit buiten het berichtenverkeer om aan de verzender."
+"samenvatting": "Als er geen retourbericht kan worden gemaakt, meldt de ontvangende partij dit buiten het berichtenverkeer om aan de verzender.",
+"uitleg": "Als er geen retourbericht kan worden gemaakt, meldt de ontvangende partij dit buiten het berichtenverkeer om aan de verzender."
   },
   {
 "id": "OP090x4",
@@ -371,14 +371,14 @@ Toewijzingen met einddatum gelijk aan ingangsdatum en RedenWijziging gevuld met 
       "categorie": "Bedrijfsregels",
   "document_type": "iJw bedrijfsregels",
   "versie_volledig": "iJw 3.2.0",
-"Titel": "Declaratie-antwoordbericht",
+"titel": "Declaratie-antwoordbericht",
   "domein": "Jeugdwet",
   "type": "bedrijfsregel",
 "bron": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op090x4/",
  "samenvatting": "Voor ieder ontvangen declaratiebericht wordt binnen 10 werkdagen na ontvangst een declaratie-antwoordbericht verzonden. Indien de gemeente niet binnen 10 werkdagen een declaratie-antwoordbericht kan versturen, neemt de gemeente buiten het berichtenverkeer om contact op met de aanbieder. De aanbieder is verantwoordelijk voor het signaleren van het ontbreken van een declaratie-antwoordbericht en dient, indien er nog geen contact geweest is met de gemeente, actie te ondernemen.",
-"uitleg": "- Voor ieder ontvangen declaratiebericht wordt binnen 10 werkdagen na ontvangst een declaratie-antwoordbericht verzonden.
- - Indien de gemeente niet binnen 10 werkdagen een declaratie-antwoordbericht kan versturen, neemt de gemeente buiten het berichtenverkeer om contact op met de aanbieder.
- - De aanbieder is verantwoordelijk voor het signaleren van het ontbreken van een declaratie-antwoordbericht en dient, indien er nog geen contact geweest is met de gemeente, actie te ondernemen."
+"uitleg": "Voor ieder ontvangen declaratiebericht wordt binnen 10 werkdagen na ontvangst een declaratie-antwoordbericht verzonden.
+   Indien de gemeente niet binnen 10 werkdagen een declaratie-antwoordbericht kan versturen, neemt de gemeente buiten het berichtenverkeer om contact op met de aanbieder.
+   De aanbieder is verantwoordelijk voor het signaleren van het ontbreken van een declaratie-antwoordbericht en dient, indien er nog geen contact geweest is met de gemeente, actie te ondernemen."
   },
   {
 "id": "OP091",
@@ -386,14 +386,14 @@ Toewijzingen met einddatum gelijk aan ingangsdatum en RedenWijziging gevuld met 
       "categorie": "Bedrijfsregels",
   "document_type": "iJw bedrijfsregels",
   "versie_volledig": "iJw 3.2.0",
-"Titel": "Contactgegevens cliënt",
+"titel": "Contactgegevens cliënt",
   "domein": "Jeugdwet",
   "type": "bedrijfsregel",
 "onderwerp": "contactgegevens",
 "bron": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op091/",
  "samenvatting": "Van een client mogen aanvullende contactgegevens vastgelegd worden; er moet dan wel vastgelegd worden wat voor soort adres het betreft.",
-"uitleg": "- Van een client mogen aanvullende contactgegevens vastgelegd worden;
- - er moet dan wel vastgelegd worden wat voor soort adres het betreft."
+"uitleg": "Van een client mogen aanvullende contactgegevens vastgelegd worden;
+   er moet dan wel vastgelegd worden wat voor soort adres het betreft."
   },
   {
 "id": "OP095",
@@ -401,12 +401,12 @@ Toewijzingen met einddatum gelijk aan ingangsdatum en RedenWijziging gevuld met 
       "categorie": "Bedrijfsregels",
   "document_type": "iJw bedrijfsregels",
   "versie_volledig": "iJw 3.2.0",
-"Titel": "Afkeuren berichten",
+"titel": "Afkeuren berichten",
   "domein": "Jeugdwet",
   "type": "bedrijfsregel",
 "bron": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op095/",
  "samenvatting": "Een bericht mag niet worden afgekeurd op basis van informatie waartoe de verzendende partij geen toegang heeft.",
-"uitleg": "- Een bericht mag niet worden afgekeurd op basis van informatie waartoe de verzendende partij geen toegang heeft."
+"uitleg": "Een bericht mag niet worden afgekeurd op basis van informatie waartoe de verzendende partij geen toegang heeft."
   },
   {
 "id": "OP130",
@@ -414,7 +414,7 @@ Toewijzingen met einddatum gelijk aan ingangsdatum en RedenWijziging gevuld met 
       "categorie": "Bedrijfsregels",
   "document_type": "iJw bedrijfsregels",
   "versie_volledig": "iJw 3.2.0",
-"Titel": "Welke Relatiegegevens moeten verplicht gevuld worden?",
+"titel": "Welke Relatiegegevens moeten verplicht gevuld worden?",
   "domein": "Jeugdwet",
   "type": "bedrijfsregel",
 "bron": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op130/",
@@ -428,7 +428,7 @@ Toewijzingen met einddatum gelijk aan ingangsdatum en RedenWijziging gevuld met 
   "categorie": "Bedrijfsregels",
   "document_type": "iJw bedrijfsregels",
   "versie_volledig": "iJw 3.2.0",
-"Titel": "Tijdelijke stop levering",
+"titel": "Tijdelijke stop levering",
   "domein": "Jeugdwet",
   "type": "bedrijfsregel",
 "bron": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op155/",
@@ -441,15 +441,14 @@ Toewijzingen met einddatum gelijk aan ingangsdatum en RedenWijziging gevuld met 
       "categorie": "Bedrijfsregels",
   "document_type": "iJw bedrijfsregels",
   "versie_volledig": "iJw 3.2.0",
-"Titel": "Bestandsgrootte",
+"titel": "Bestandsgrootte",
   "domein": "Jeugdwet",
   "type": "bedrijfsregel",
 "bron": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op179/",
- "samenvatting": "De grootte van verzonden bestanden mag niet meer zijn dan 25 Mb. Deze regel wordt niet naar de techniek vertaald; daar waar grotere bestanden verwerkt kunnen worden is dat uiteraard toegestaan.",
-Daar waar de grootte van bestanden tot problemen in de verwerking leidt, is deze regel bedoeld om duidelijk te maken dat de verzender de bestandsgrootte moet aanpassen.",
+ "samenvatting": "De grootte van verzonden bestanden mag niet meer zijn dan 25 Mb. Deze regel wordt niet naar de techniek vertaald; daar waar grotere bestanden verwerkt kunnen worden is dat uiteraard toegestaan. Daar waar de grootte van bestanden tot problemen in de verwerking leidt, is deze regel bedoeld om duidelijk te maken dat de verzender de bestandsgrootte moet aanpassen.",
 "uitleg": "
  - De grootte van verzonden bestanden mag niet meer zijn dan 25 Mb. Deze regel wordt niet naar de techniek vertaald;
- - daar waar grotere bestanden verwerkt kunnen worden is dat uiteraard toegestaan.
+ - Daar waar grotere bestanden verwerkt kunnen worden is dat uiteraard toegestaan.
  - Daar waar de grootte van bestanden tot problemen in de verwerking leidt, is deze regel bedoeld om duidelijk te maken dat de verzender de bestandsgrootte moet aanpassen."
   }
 ]
