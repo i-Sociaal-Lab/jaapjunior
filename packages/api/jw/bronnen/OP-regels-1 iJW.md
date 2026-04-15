@@ -22,7 +22,7 @@
   "relaties_uitleg": "Dit uitgangspunt wordt concreet uitgewerkt in de gerelateerde regels."
   },
   {
-  "ID": "OP002",
+  "id": "OP002",
   "afkorting": "OP",
   "categorie": "Bedrijfsregels",
   "document_type": "iJw bedrijfsregels",
@@ -30,14 +30,14 @@
   "Titel": "Gegevens gezagsdrager in toewijzing",
   "domein": "Jeugdwet",
   "type": "bedrijfsregel",
-  "bron": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op002/"
+  "bron": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op002/",
  "samenvatting": "De gemeente stuurt in de toewijzing gegevens van de gezagsdrager van de client mee. De gezagsdrager wordt opgenomen als relatie van de cliënt.",
 "uitleg": "
  - De gemeente stuurt in de toewijzing de gegevens van de gezagsdrager mee.  
- - De gezagsdrager wordt opgenomen als relatie van de cliënt.",
+ - De gezagsdrager wordt opgenomen als relatie van de cliënt."
   },
   {
-"ID": "OP002x1",
+"id": "OP002x1",
   "afkorting": "OP",
   "categorie": "Bedrijfsregels",
   "document_type": "iJw bedrijfsregels",
@@ -45,13 +45,13 @@
 "Titel": "Gezagsdrager bekend",
   "domein": "Jeugdwet",
   "type": "bedrijfsregel",
-"bron": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op002x1/"
-"samenvatting": "Indien een aanbieder in een Verzoek om toewijzing (VOT) heeft aangegeven dat de gezagsdrager bekend is, hoeft in de daaropvolgende toewijzing de gezagsdrager niet meegegeven te worden.
+"bron": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op002x1/",
+"samenvatting": "Indien een aanbieder in een Verzoek om toewijzing (VOT) heeft aangegeven dat de gezagsdrager bekend is, hoeft in de daaropvolgende toewijzing de gezagsdrager niet meegegeven te worden."
 "uitleg": "
- - Indien een aanbieder in een Verzoek om Toewijzing (VOT) heeft aangegeven dat de gezagsdrager bekend is, hoeft in de daaropvolgende toewijzing de gezagsdrager niet meegegeven te worden.",
+ - Indien een aanbieder in een Verzoek om Toewijzing (VOT) heeft aangegeven dat de gezagsdrager bekend is, hoeft in de daaropvolgende toewijzing de gezagsdrager niet meegegeven te worden."
   },
   {
-"ID": "OP002x2",
+"id": "OP002x2",
   "afkorting": "OP",
     "categorie": "Bedrijfsregels",
   "document_type": "iJw bedrijfsregels",
@@ -59,13 +59,13 @@
 "Titel": " Gezag bij jeugdige",
   "domein": "Jeugdwet",
   "type": "bedrijfsregel",
-"bron": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op002x2/"
+"bron": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op002x2/",
  "samenvatting": "Als het gezag bij de jeugdige zelf ligt, wordt deze niet als relatie opgenomen in de toewijzing.",
 "uitleg": "
  - Als het gezag bij de jeugdige zelf ligt, wordt deze niet als relatie opgenomen in de toewijzing.",
   },
   {
-"ID": "OP003",
+"id": "OP003",
   "afkorting": "OP",
     "categorie": "Bedrijfsregels",
   "document_type": "iJw bedrijfsregels",
@@ -73,14 +73,14 @@
 "Titel": "Uitzondering standaard berichtenverkeer",
   "domein": "Jeugdwet",
   "type": "bedrijfsregel",
-"bron": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op003/"
+"bron": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op003/",
 "samenvatting": "Gestandaardiseerd berichtenverkeer wordt niet gebruikt als een (zorg)professional oordeelt dat overdracht ernstige risico's voor de veiligheid van de cliënt oplevert (bijv. verblijf in "blijf-van-mijn-lijf" huis).
 "uitleg": "
  - Gestandaardiseerd berichtenverkeer wordt niet gebruikt als een (zorg)professional oordeelt dat overdracht ernstige risico's voor de veiligheid van de cliënt oplevert.
- - (bijv. verblijf in "blijf-van-mijn-lijf" huis).",
+ - (bijv. verblijf in blijf-van-mijn-lijf huis)."
   },
   {
-"ID": "OP011",
+"id": "OP011",
   "afkorting": "OP",
       "categorie": "Bedrijfsregels",
   "document_type": "iJw bedrijfsregels",
@@ -88,13 +88,13 @@
 "Titel": "Begindatum levering melden",
   "domein": "Jeugdwet",
   "type": "bedrijfsregel",
-"bron": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op011/"
+"bron": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op011/",
  "samenvatting": "De aanbieder meldt de begindatum van de levering nadat de ondersteuning daadwerkelijk is gestart.",
 "uitleg": "
- - De aanbieder meldt de begindatum van de levering nadat de ondersteuning daadwerkelijk is gestart.",
+ - De aanbieder meldt de begindatum van de levering nadat de ondersteuning daadwerkelijk is gestart."
   },
   {
-"ID": "OP033",
+"id": "OP033",
   "afkorting": "OP",
       "categorie": "Bedrijfsregels",
   "document_type": "iJw bedrijfsregels",
@@ -105,24 +105,24 @@
 "bron": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op033/",
 "samenvatting": "Voor wijzigingen, verwijderingen en correcties op een eerder verzonden regiebericht wordt de status aanlevering gebruikt Wijzigingen op een melding start product zijn uitsluitend toegestaan voor het geleverde product. Als de ondersteuning beeindigd is, kan de aanvang niet meer op deze manier gecorrigeerd worden.
 Met de status aanlevering van een berichtklasse kan worden aangegeven of: een berichtklasse nieuw is (waarde 1) of een berichtklasse verwijderd is (waarde 3).
-Toelichting : De uitwerking van deze bedrijfsregel is vastgelegd in de volgende regels: IV008, IV074, OP033x1, OP033x2, TR071 en TR074.
+"Toelichting": "De uitwerking van deze bedrijfsregel is vastgelegd in de volgende regels: IV008, IV074, OP033x1, OP033x2, TR071 en TR074.
 "uitleg": "Voor wijzigingen, verwijderingen en correcties op een eerder verzonden regiebericht wordt de status aanlevering gebruikt Wijzigingen op een melding start product zijn uitsluitend toegestaan voor het geleverde product. Als de ondersteuning beeindigd is, kan de aanvang niet meer op deze manier gecorrigeerd worden.
 Met de status aanlevering van een berichtklasse kan worden aangegeven of: 
  - een berichtklasse nieuw is (waarde 1)
  - berichtklasse verwijderd is (waarde 3).",
-Toelichting : De uitwerking van deze bedrijfsregel is vastgelegd in de volgende regels: IV008, IV074, OP033x1, OP033x2, TR071 en TR074.
+"Toelichting": "De uitwerking van deze bedrijfsregel is vastgelegd in de volgende regels: IV008, IV074, OP033x1, OP033x2, TR071 en TR074."
   },
   {
-"ID": "OP033x1",
+"id": "OP033x1",
   "afkorting": "OP",
       "categorie": "Bedrijfsregels",
   "document_type": "iJw bedrijfsregels",
   "versie_volledig": "iJw 3.2.0",
 "Titel": "Wijzigingen in toewijzing",
   "domein": "Jeugdwet",
-  "type": "bedrijfsregel",l
-Bericht: toewijzing
-onderwerp: wijzigen
+  "type": "bedrijfsregel",
+Bericht: toewijzing,
+onderwerp: wijzigen,
 "bron": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op033x1/",
 "samenvatting": "Een afgegeven toewijzing mag gewijzigd worden waarbij de wijziging met een nieuw bericht moet worden doorgegeven. De volgende wijzigingen in de einddatum zijn toegestaan:
 Intrekken: aanpassen van de gewenste einddatum toewijzing zodat de periode korter wordt (NB dit is alleen toegestaan in overleg met de aanbieder). 
@@ -149,10 +149,10 @@ De meest recente toewijzing op toewijzingsdatum en -tijd is bepalend voor de inh
   - Aanvraag aanbieder = mag zonder overleg door gemeente worden aangepast  
   - Initiatief gemeente = overleg en instemming van aanbieder vereist  
 - Belangrijk: meest recente toewijzing op toewijzingsdatum/-tijd is bepalend.",
-Toelichting: De uitwerking van deze bedrijfsregel is vastgelegd in de volgende regel: IV066.
+"Toelichting": "De uitwerking van deze bedrijfsregel is vastgelegd in de volgende regel: IV066."
   },
   {
-"ID": "OP033x2",
+"id": "OP033x2",
   "afkorting": "OP",
       "categorie": "Bedrijfsregels",
   "document_type": "iJw bedrijfsregels",
@@ -163,10 +163,10 @@ Toelichting: De uitwerking van deze bedrijfsregel is vastgelegd in de volgende r
 "bron": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op033x2/",
 "samenvatting": "Gebruik van status aanlevering waarde **2** (berichtklasse gewijzigd) is niet toegestaan.
 "uitleg": "
- - Gebruik van status aanlevering waarde **2** (berichtklasse gewijzigd) is niet toegestaan.",
+ - Gebruik van status aanlevering waarde **2** (berichtklasse gewijzigd) is niet toegestaan."
   },
   {
-"ID": "OP039",
+"id": "OP039",
   "afkorting": "OP",
       "categorie": "Bedrijfsregels",
   "document_type": "iJw bedrijfsregels",
@@ -179,10 +179,10 @@ Toelichting: De uitwerking van deze bedrijfsregel is vastgelegd in de volgende r
 "uitleg": "
  - Ketenpartijen mogen cliëntgegevens doorgeven in het berichtenverkeer zoals geregistreerd in hun administratie, mits deze geen logische sleutel vormen.  
  - Het is toegestaan gewijzigde gegevens over te nemen in de administratie.",
-Toelichting : De uitwerking van deze bedrijfsregel is vastgelegd in de volgende regels: UP023, IV002, IV007, IV045, IV047.,
+"Toelichting": "De uitwerking van deze bedrijfsregel is vastgelegd in de volgende regels: UP023, IV002, IV007, IV045, IV047."
   },
   {
-"ID": "OP043",
+"id": "OP043",
   "afkorting": "OP",
       "categorie": "Bedrijfsregels",
   "document_type": "iJw bedrijfsregels",
@@ -194,10 +194,10 @@ Toelichting : De uitwerking van deze bedrijfsregel is vastgelegd in de volgende 
  "samenvatting": "Als een cliënt een PGB heeft, mag voor hetzelfde product geen toewijzing zijn afgegeven. Een toewijzing eindigt uiterlijk op de dag vóór ingangsdatum PGB.",
 "uitleg": "
  - Als een cliënt een PGB heeft, mag voor hetzelfde product geen toewijzing zijn afgegeven.  
- - Een toewijzing eindigt uiterlijk op de dag vóór ingangsdatum PGB.",
+ - Een toewijzing eindigt uiterlijk op de dag vóór ingangsdatum PGB."
   },
   {
-"ID": "OP047",
+"id": "OP047",
   "afkorting": "OP",
       "categorie": "Bedrijfsregels",
   "document_type": "iJw bedrijfsregels",
@@ -210,10 +210,10 @@ onderwerp: afkeur, retourbericht, retourcode
 "bron": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op047/",
  "samenvatting": "Berichten die niet voldoen aan de geldende standaard mogen worden afgekeurd.",
 "uitleg": "
- - Berichten die niet voldoen aan de geldende standaard mogen worden afgekeurd.",
+ - Berichten die niet voldoen aan de geldende standaard mogen worden afgekeurd."
   },
   {
-"ID": "OP065",
+"id": "OP065",
   "afkorting": "OP",
       "categorie": "Bedrijfsregels",
   "document_type": "iJw bedrijfsregels",
@@ -226,10 +226,10 @@ onderwerp: afkeur, retourbericht, retourcode
 "uitleg": "
  - Een retourbericht bevat alleen informatie over clienten waarvan berichtklassen zijn afgekeurd.
  - Clienten waarvan alle berichtklassen volledig zijn goedgekeurd worden dus niet mee teruggestuurd in het retourbericht.
- - Het retourbericht bevat alleen clienten waarvan in één of meer berichtklassen, over of behorend bij die client, fouten zijn geconstateerd. In dat geval wordt de berichtklasse Client inclusief alle onderliggende berichtklassen retour gezonden, voorzien van retourcodes.",
+ - Het retourbericht bevat alleen clienten waarvan in één of meer berichtklassen, over of behorend bij die client, fouten zijn geconstateerd. In dat geval wordt de berichtklasse Client inclusief alle onderliggende berichtklassen retour gezonden, voorzien van retourcodes."
   },
   {
-"ID": "OP071",
+"id": "OP071",
   "afkorting": "OP",
       "categorie": "Bedrijfsregels",
   "document_type": "iJw bedrijfsregels",
@@ -244,7 +244,7 @@ onderwerp: afkeur, retourbericht, retourcode
  - Dit nummer mag niet gewijzigd worden.",
   },
   {
-"ID": "OP072",
+"id": "OP072",
   "afkorting": "OP",
       "categorie": "Bedrijfsregels",
   "document_type": "iJw bedrijfsregels",
@@ -256,10 +256,10 @@ onderwerp: afkeur, retourbericht, retourcode
  "samenvatting": "Pas na een melding start ondersteuning mag een aanbieder melden dat de levering beeindigd is. In het bericht moet gerefereerd worden aan de start van de levering.",
 "uitleg": "
  - Pas na een melding start ondersteuning mag een aanbieder melden dat de levering beeindigd is.
- - In het bericht moet gerefereerd worden aan de start van de levering.",
+ - In het bericht moet gerefereerd worden aan de start van de levering."
   },
   {
-"ID": "OP076",
+"id": "OP076",
   "afkorting": "OP",
       "categorie": "Bedrijfsregels",
   "document_type": "iJw bedrijfsregels",
@@ -267,14 +267,14 @@ onderwerp: afkeur, retourbericht, retourcode
 "Titel": "Contactpersonen (relatie),
   "domein": "Jeugdwet",
   "type": "bedrijfsregel",
-"bron": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op076/,
+"bron": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op076/",
  "samenvatting": "Van iedere contactpersoon (relatie) moet worden opgegeven in welke relatie deze tot de client staat. Gegevens over een contactpersoon mogen alleen worden opgenomen indien noodzakelijk voor communicatie met de client.",
 "uitleg": " 
  - Van iedere contactpersoon (relatie) moet worden opgegeven in welke relatie deze tot de client staat.
- - Gegevens over een contactpersoon mogen alleen worden opgenomen indien noodzakelijk voor communicatie met de client.",
+ - Gegevens over een contactpersoon mogen alleen worden opgenomen indien noodzakelijk voor communicatie met de client."
   },
   {
-"ID": "OP079",
+"id": "OP079",
   "afkorting": "OP",
       "categorie": "Bedrijfsregels",
   "document_type": "iJw bedrijfsregels",
@@ -285,10 +285,10 @@ onderwerp: afkeur, retourbericht, retourcode
 "bron": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op079/",
  "samenvatting": "Het is verplicht om gebruik te maken van het BSN van de client in de onderlinge uitwisseling van gegevens.",
 "uitleg": "
- - Het is verplicht om gebruik te maken van het BSN van de client in de onderlinge uitwisseling van gegevens.",
+ - Het is verplicht om gebruik te maken van het BSN van de client in de onderlinge uitwisseling van gegevens."
   },
   {
-"ID": "OP080",
+"id": "OP080",
   "afkorting": "OP",
       "categorie": "Bedrijfsregels",
   "document_type": "iJw bedrijfsregels",
@@ -305,7 +305,7 @@ onderwerp: afkeur, retourbericht, retourcode
  - Daarnaast kan ook het afkeuren en corrigeren van berichten er toe leiden dat berichten in een andere volgorde worden verwerkt dan bedoeld. In deze situatie is het te adviseren om de ontvangst van retourberichten af te wachten om afkeur op een vervolgbericht te voorkomen.",
   },
   {
-"ID": "OP086",
+"id": "OP086",
   "afkorting": "OP",
       "categorie": "Bedrijfsregels",
   "document_type": "iJw bedrijfsregels",
@@ -317,10 +317,10 @@ onderwerp: uitvoeringsvariant, inspanningsgericht, outputgericht,
 "bron": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op086/",
  "samenvatting": "Ondersteuningsproducten met een inspannings- of outputgerichte uitvoering worden altijd door de gemeente toegewezen via een toewijzingsbericht.",
 "uitleg": "
- - Ondersteuningsproducten met een inspannings- of outputgerichte uitvoering worden altijd door de gemeente toegewezen via een toewijzingsbericht.",
+ - Ondersteuningsproducten met een inspannings- of outputgerichte uitvoering worden altijd door de gemeente toegewezen via een toewijzingsbericht."
   },
   {
-"ID": "OP087",
+"id": "OP087",
   "afkorting": "OP",
       "categorie": "Bedrijfsregels",
   "document_type": "iJw bedrijfsregels",
@@ -336,10 +336,10 @@ Toewijzingen met einddatum gelijk aan ingangsdatum en RedenWijziging gevuld met 
  - Deze regel is van toepassing indien voor 1 client meerdere producten toegewezen zijn. Alle geldige toewijzingen voor 1 client, voor 1 aanbieder worden in 1 toewijzingsbericht geplaatst en naar de betreffende aanbieder gestuurd inclusief de toewijzingen die gewijzigd zijn sinds het laatst verstuurde toewijzingsbericht voor deze client en aanbieder.
  - Denk hierbij aan intrekkingen die zijn gedaan en waar de aanbieder nog niet van op de hoogte is.
  - Toewijzingen met einddatum gelijk aan ingangsdatum en RedenWijziging gevuld met 13 (Verwijderd) worden niet gezien als actuele toewijzing.
- - Ook toewijzingen met einddatum gelijk aan ingangsdatum en RedenWijziging gevuld met 01 (Administratieve correctie (vervallen)) worden niet gezien als actuele toewijzing.",
+ - Ook toewijzingen met einddatum gelijk aan ingangsdatum en RedenWijziging gevuld met 01 (Administratieve correctie (vervallen)) worden niet gezien als actuele toewijzing."
   },
   {
-"ID": "OP090",
+"id": "OP090",
   "afkorting": "OP",
       "categorie": "Bedrijfsregels",
   "document_type": "iJw bedrijfsregels",
@@ -350,10 +350,10 @@ Toewijzingen met einddatum gelijk aan ingangsdatum en RedenWijziging gevuld met 
 "bron": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op090/",
  "samenvatting": "Voor ieder ontvangen bericht wordt binnen 3 werkdagen na ontvangst een retourbericht verzonden. De verzender is verantwoordelijk voor het signaleren van ontbrekende retourberichten en moet actie ondernemen.",
 "uitleg": "- Voor ieder ontvangen bericht wordt binnen 3 werkdagen na ontvangst een retourbericht verzonden.
- - De verzender is verantwoordelijk voor het signaleren van ontbrekende retourberichten en moet actie ondernemen.",
+ - De verzender is verantwoordelijk voor het signaleren van ontbrekende retourberichten en moet actie ondernemen."
   },
   {
-"ID": "OP090x2",
+"id": "OP090x2",
   "afkorting": "OP",
       "categorie": "Bedrijfsregels",
   "document_type": "iJw bedrijfsregels",
@@ -363,10 +363,10 @@ Toewijzingen met einddatum gelijk aan ingangsdatum en RedenWijziging gevuld met 
   "type": "bedrijfsregel",
 "bron": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op090x2/",
  "samenvatting": "Als er geen retourbericht kan worden gemaakt, meldt de ontvangende partij dit buiten het berichtenverkeer om aan de verzender.",
-"uitleg": "- Als er geen retourbericht kan worden gemaakt, meldt de ontvangende partij dit buiten het berichtenverkeer om aan de verzender.",
+"uitleg": "- Als er geen retourbericht kan worden gemaakt, meldt de ontvangende partij dit buiten het berichtenverkeer om aan de verzender."
   },
   {
-"ID": "OP090x4",
+"id": "OP090x4",
   "afkorting": "OP",
       "categorie": "Bedrijfsregels",
   "document_type": "iJw bedrijfsregels",
@@ -378,10 +378,10 @@ Toewijzingen met einddatum gelijk aan ingangsdatum en RedenWijziging gevuld met 
  "samenvatting": "Voor ieder ontvangen declaratiebericht wordt binnen 10 werkdagen na ontvangst een declaratie-antwoordbericht verzonden. Indien de gemeente niet binnen 10 werkdagen een declaratie-antwoordbericht kan versturen, neemt de gemeente buiten het berichtenverkeer om contact op met de aanbieder. De aanbieder is verantwoordelijk voor het signaleren van het ontbreken van een declaratie-antwoordbericht en dient, indien er nog geen contact geweest is met de gemeente, actie te ondernemen.",
 "uitleg": "- Voor ieder ontvangen declaratiebericht wordt binnen 10 werkdagen na ontvangst een declaratie-antwoordbericht verzonden.
  - Indien de gemeente niet binnen 10 werkdagen een declaratie-antwoordbericht kan versturen, neemt de gemeente buiten het berichtenverkeer om contact op met de aanbieder.
- - De aanbieder is verantwoordelijk voor het signaleren van het ontbreken van een declaratie-antwoordbericht en dient, indien er nog geen contact geweest is met de gemeente, actie te ondernemen.",
+ - De aanbieder is verantwoordelijk voor het signaleren van het ontbreken van een declaratie-antwoordbericht en dient, indien er nog geen contact geweest is met de gemeente, actie te ondernemen."
   },
   {
-"ID": "OP091",
+"id": "OP091",
   "afkorting": "OP",
       "categorie": "Bedrijfsregels",
   "document_type": "iJw bedrijfsregels",
@@ -393,10 +393,10 @@ onderwerp: contactgegevens
 "bron": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op091/",
  "samenvatting": "Van een client mogen aanvullende contactgegevens vastgelegd worden; er moet dan wel vastgelegd worden wat voor soort adres het betreft.",
 "uitleg": "- Van een client mogen aanvullende contactgegevens vastgelegd worden;
- - er moet dan wel vastgelegd worden wat voor soort adres het betreft.",
+ - er moet dan wel vastgelegd worden wat voor soort adres het betreft."
   },
   {
-"ID": "OP095",
+"id": "OP095",
   "afkorting": "OP",
       "categorie": "Bedrijfsregels",
   "document_type": "iJw bedrijfsregels",
@@ -406,10 +406,10 @@ onderwerp: contactgegevens
   "type": "bedrijfsregel",
 "bron": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op095/",
  "samenvatting": "Een bericht mag niet worden afgekeurd op basis van informatie waartoe de verzendende partij geen toegang heeft.",
-"uitleg": "- Een bericht mag niet worden afgekeurd op basis van informatie waartoe de verzendende partij geen toegang heeft.",
+"uitleg": "- Een bericht mag niet worden afgekeurd op basis van informatie waartoe de verzendende partij geen toegang heeft."
   },
   {
-"ID": "OP130,
+"id": "OP130",
   "afkorting": "OP",
       "categorie": "Bedrijfsregels",
   "document_type": "iJw bedrijfsregels",
@@ -420,10 +420,10 @@ onderwerp: contactgegevens
 "bron": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op130/",
  "samenvatting": "Van de relatie moet altijd een naam worden vastgelegd, aangevuld met een volledig adres en/of een telefoonnummer.",
 "uitleg": " - Van de relatie moet altijd een naam worden vastgelegd.
- - Aangevuld met een volledig adres en/of een telefoonnummer.",
+ - Aangevuld met een volledig adres en/of een telefoonnummer."
   },
   {
-"ID": "OP155",
+"id": "OP155",
   "afkorting": "OP",
   "categorie": "Bedrijfsregels",
   "document_type": "iJw bedrijfsregels",
@@ -433,10 +433,10 @@ onderwerp: contactgegevens
   "type": "bedrijfsregel",
 "bron": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op155/",
  "samenvatting": "Een (tijdelijke) beeindiging van levering, bevat een verwijzing naar de laatste melding van de start van de levering.",
-"uitleg": "Een (tijdelijke) beeindiging van levering, bevat een verwijzing naar de laatste melding van de start van de levering.",
+"uitleg": "Een (tijdelijke) beeindiging van levering, bevat een verwijzing naar de laatste melding van de start van de levering."
   },
   {
-"ID": "OP179",
+"id": "OP179",
   "afkorting": "OP",
       "categorie": "Bedrijfsregels",
   "document_type": "iJw bedrijfsregels",
