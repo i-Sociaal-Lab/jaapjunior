@@ -61,12 +61,12 @@
     "bron": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op002x1/",
     "samenvatting": "Indien een aanbieder in een Verzoek om toewijzing (VOT) heeft aangegeven dat de gezagsdrager bekend is, hoeft in de daaropvolgende toewijzing de gezagsdrager niet meegegeven te worden.",
     "uitleg": "- Indien een aanbieder in een Verzoek om Toewijzing (VOT) heeft aangegeven dat de gezagsdrager bekend is, hoeft in de daaropvolgende toewijzing de gezagsdrager niet meegegeven te worden.",
-	"gerelateerde_bedrijfsregels": [],
+	"gerelateerde_bedrijfsregels": ["OP002"],
     "gerelateerde_invulinstructies": [],
     "gerelateerde_technischeregels": [],
     "gerelateerde_condities": [],
     "gerelateerde_constraints": [],
-    "gerelateerde_uitgangspunten": ["OP002"],
+    "gerelateerde_uitgangspunten": [],
     "relaties_uitleg": "Dit uitgangspunt wordt concreet uitgewerkt in de gerelateerde regels."
   },
   {
@@ -81,13 +81,13 @@
     "bron": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op002x2/",
     "samenvatting": "Als het gezag bij de jeugdige zelf ligt, wordt deze niet als relatie opgenomen in de toewijzing.",
     "uitleg": "- Als het gezag bij de jeugdige zelf ligt, wordt deze niet als relatie opgenomen in de toewijzing.",
-	"gerelateerde_bedrijfsregels": [],
+	"gerelateerde_bedrijfsregels": ["OP002"],
     "gerelateerde_invulinstructies": [],
     "gerelateerde_technischeregels": [],
     "gerelateerde_condities": [],
     "gerelateerde_constraints": [],
-    "gerelateerde_uitgangspunten": ["OP002"],
-    "relaties_uitleg": "Dit uitgangspunt wordt concreet uitgewerkt in de gerelateerde regel"
+    "gerelateerde_uitgangspunten": [],
+    "relaties_uitleg": "Dit uitgangspunt wordt concreet uitgewerkt in de gerelateerde regel."
   },
   {
     "id": "OP003",
