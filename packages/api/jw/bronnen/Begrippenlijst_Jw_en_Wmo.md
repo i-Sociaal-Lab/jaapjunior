@@ -808,7 +808,7 @@ Door zorgaanbieders en zorgverzekeraars opgestelde streefnormen voor wachttijden
 
 ### uitgangspunten
 
-Vaststaande gegevens waarop de iStandaarden steunen.
+Een uitgangspunt is een vaststaand gegeven waar de iStandaard op steunt.
 
 ### uitvoeringsvarianten
 
