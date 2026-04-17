@@ -1,5 +1,5 @@
-## berekening elfproef
-# Formule: (9⋅d_1+8⋅d_2+7⋅d_3+6⋅d_4+5⋅d_5+4⋅d_6+3⋅d_7+2⋅d_8-1⋅d_9) mod 11 = 0
+##berekening elfproef
+#Formule: (9⋅d_1+8⋅d_2+7⋅d_3+6⋅d_4+5⋅d_5+4⋅d_6+3⋅d_7+2⋅d_8-1⋅d_9) mod 11 = 0
 Neem een BSN van 9 cijfers: d₁ d₂ ... d₉
 Vermenigvuldig elk cijfer met een gewicht:
 9 t/m 2 voor de eerste 8 cijfers
