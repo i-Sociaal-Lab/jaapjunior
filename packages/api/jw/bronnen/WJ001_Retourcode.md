@@ -11,7 +11,7 @@ De reden waarom een toewijzing wordt gewijzigd.
 - **Naam:** Retourcode
 - **Status:** Productie
 - **ELement:**  LDT_RetourCode
-- **Type bestand:**: Codelijst
+- **Type bestand:** Codelijst
 - **Auteur:** Zorginstituut Nederland  
 - **Standaard:** iJw 3.2  
 - **Bron:** https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/wj001/
