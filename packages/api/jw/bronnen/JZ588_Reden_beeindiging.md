@@ -8,7 +8,7 @@ De reden van beeindiging van de Jeugdhulp bij een client.
 - **Naam:** Reden beeindiging
 - **Status:** Productie
 - **ELement:** LDT_RedenBeeindiging
-- **Type bestand:**: Codelijst
+- **Type bestand:** Codelijst
 - **Auteur:** Zorginstituut Nederland  
 - **Standaard:** iJw 3.2  
 - **Bron:** https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/jz588/  
