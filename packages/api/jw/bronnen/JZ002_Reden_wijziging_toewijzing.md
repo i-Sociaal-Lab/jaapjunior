@@ -8,7 +8,7 @@ De reden waarom een toewijzing wordt gewijzigd.
 - **Naam:** Reden wijziging toewijzing
 - **Status:** Productie
 - **ELement:**  LDT_RedenWijziging
-- **Type bestand:**: Codelijst
+- **Type bestand:** Codelijst
 - **Auteur:** Zorginstituut Nederland  
 - **Standaard:** iJw 3.2  
 - **Bron:** https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/jz002/  
