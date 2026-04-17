@@ -802,6 +802,18 @@ een van de vier deelprocessen uit het primair proces van de iStandaarden; Voor W
 
 synoniem voor Toewijzing Jeugdhulp, JW301.
 
+### toewijzing Jeugdhulp
+
+Opdracht van een gemeente aan een zorgaanbieder om voor een bepaalde periode bepaalde zorg te leveren aan een cliënt. Dit bericht is een rechtmatigheidsbericht dat de aanbieder het recht geeft zorg te leveren en deze zorg te declareren bij de gemeente. JW301.
+
+### toewijzing WMO
+
+Opdracht van een gemeente aan een zorgaanbieder om voor een bepaalde periode bepaalde zorg te leveren aan een cliënt. Dit bericht is een rechtmatigheidsbericht dat de aanbieder het recht geeft zorg te leveren en deze zorg te declareren bij de gemeente. WMO301.
+
+### toewijzingsbericht
+
+zie toewijzing Jeugdhulp zie toewijzing WMO, heenbericht dat een gemeente toestuurt aan zorgaanbieder.
+
 ### treeknormen
 
 Door zorgaanbieders en zorgverzekeraars opgestelde streefnormen voor wachttijden in de in acute zorg.
@@ -1013,18 +1025,6 @@ Producten in de vorm van activiteiten, diensten en/of verrichtingen binnen de zo
 ### zorgprofielen
 
 Beschrijvingen van kenmerken, problemen en achtergronden van de problemen van doelgroepen van een interventie of voorziening, met als doel passende zorg voor die betreffende doelgroep(en) te ontwikkelen en om met ketenpartners, financiers, gemeenten enz. goed onderbouwd te kunnen communiceren over doelgroep, aanbod en financiering; binnen de Wlz: beschrijvingen van de aard, inhoud en globale omvang van de zorg die iemand nodig heeft; in het indicatiebesluit van het CIZ wordt het zorgprofiel aangegeven waartoe de cliënt behoort, zoals VG (sector verstandelijk gehandicapt) Wonen met begeleiding en intensieve zorg; afspraken over de precieze invulling van de benodigde zorg maakt de cliënt met de zorgaanbieder in het zorgplan; zie: klantprofielen.
-
-### toewijzing Jeugdhulp
-
-Opdracht van een gemeente aan een zorgaanbieder om voor een bepaalde periode bepaalde zorg te leveren aan een cliënt. Dit bericht is een rechtmatigheidsbericht dat de aanbieder het recht geeft zorg te leveren en deze zorg te declareren bij de gemeente. JW301.
-
-### toewijzing WMO
-
-Opdracht van een gemeente aan een zorgaanbieder om voor een bepaalde periode bepaalde zorg te leveren aan een cliënt. Dit bericht is een rechtmatigheidsbericht dat de aanbieder het recht geeft zorg te leveren en deze zorg te declareren bij de gemeente. WMO301.
-
-### toewijzingsbericht
-
-zie toewijzing Jeugdhulp zie toewijzing WMO, heenbericht dat een gemeente toestuurt aan zorgaanbieder.
 
 ### zorgverleners
 
