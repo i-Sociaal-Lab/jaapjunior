@@ -646,7 +646,8 @@ treeknormen
 Door zorgaanbieders en zorgverzekeraars opgestelde streefnormen voor wachttijden in de in acute zorg.
 
 uitgangspunten
-Vaststaande gegevens waarop de iStandaarden steunen.
+
+Een uitgangspunt is een vaststaand gegeven waar de iStandaard op steunt.
 
 uitvoeringsvarianten
 Drie verschillende werkwijzen waaruit gemeenten kunnen kiezen bij de inrichting van hun Wmo- en Jw-processen (outputgericht, inspanningsgericht of taakgericht) die ervoor zorgen dat er zo min mogelijk verschil ontstaat in de manier waarop de iStandaarden worden geïmplementeerd; uitvoeringsvarianten helpen om structuur aan te brengen in het administratieve proces en leggen een verbinding tussen zorginkoop, zorgadministratie en de iStandaarden.
