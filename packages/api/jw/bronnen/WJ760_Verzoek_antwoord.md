@@ -6,7 +6,8 @@ Gecodeerde aanduiding voor het antwoord op een verzoek. Deze code wordt gebruikt
 ## Metadata
 - **ID:** WJ760
 - **Naam:** Verzoek antwoord
-- **Element:**  LDT_VerzoekAntwoord  
+- **Element:**  LDT_VerzoekAntwoord
+- **Type bestand:** Codelijst
 - **Status:** Productie  
 - **Auteur:** Zorginstituut Nederland  
 - **Standaard:** iJw 3.2  
