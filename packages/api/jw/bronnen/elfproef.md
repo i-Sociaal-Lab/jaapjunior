@@ -8,7 +8,6 @@ De uitkomst moet deelbaar zijn door 11
 Als dat zo is: het nummer voldoet aan de elfproef
 - Uitzondering op de controle van BSN's zijn BSN's die aan de elfproef voldoen zijn test-BSN’s (999900006 t/m 999999990)
 
-
 Voorbeeld: BSN: 123456782
 Berekening: 1×9 + 2×8 + 3×7 + 4×6 + 5×5 + 6×4 + 7×3 + 8×2 − 2×1
 Uitkomst: = 9 + 16 + 21 + 24 + 25 + 24 + 21 + 16 − 2 = 154
