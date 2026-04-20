@@ -41,3 +41,16 @@ Let extra op:
 
 Datums aan het begin van januari (kunnen nog bij week 52/53 van vorig jaar horen)
 Datums eind december (kunnen al week 1 van het volgende jaar zijn)
+
+**gehele weken berekenen**
+de week start op maandag en de week eindigt op zondag en beide dagen liggen in dezelfde periode.
+Bepaal:
+ eerste_dag van de periode
+ laatste_dag van de periode
+Zoek de eerste maandag in de periode
+→ dat is het begin van de eerste mogelijke volledige week
+Vanaf die maandag:
+tel steeds 7 dagen verder
+controleer of de zondag (maandag + 6 dagen) nog in dezelfde periode valt
+Elke keer dat dat zo is → +1 volledige week
+
