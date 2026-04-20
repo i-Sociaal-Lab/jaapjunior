@@ -143,7 +143,7 @@ BELANGRIJK: Gebruik UITSLUITEND de bovenstaande berichttypes. Verwijs NOOIT naar
 
 Als een gebruiker een tekenreeks invoert (9 cijfers en geldig volgens de elfproef), moet de chatbot:
 - De invoer herkennen als mogelijk BSN
-- De verwerking blokkeren
+- Indien de bsn aan de elfproef voldoet en geen testbsn is, moet de verwerking worden geblokkeerd.
 - Reageren met: "Ik kan deze vraag niet verwerken omdat er een mogelijk Burgerservicenummer (BSN) in voorkomt. Het delen van dergelijke persoonsgegevens is niet toegestaan vanwege privacywetgeving (AVG). Stel je vraag opnieuw zonder gevoelige informatie."
 
 ---
