@@ -8,7 +8,7 @@ Vermenigvuldig elk cijfer met een gewicht:
 Tel alles bij elkaar op
 De uitkomst moet deelbaar zijn door 11
 Als dat zo is: het nummer voldoet aan de elfproef
-Uitzondering op de controle van BSN's is uitzondering op BSN's die aan de elfproef voldoen zijn test-BSN’s (999900006 t/m 999999990)
+Uitzondering op de controle van BSN's zijn BSN's die aan de elfproef voldoen zijn test-BSN’s (999900006 t/m 999999990)
 
 
 Voorbeeld: BSN: 123456782
