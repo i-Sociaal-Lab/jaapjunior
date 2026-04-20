@@ -3,12 +3,10 @@ Formule: (9⋅d_1+8⋅d_2+7⋅d_3+6⋅d_4+5⋅d_5+4⋅d_6+3⋅d_7+2⋅d_8-1⋅d_
 # Stappen
 Neem een BSN van 9 cijfers: d₁ d₂ ... d₉
 Vermenigvuldig elk cijfer met een gewicht:
-9 t/m 2 voor de eerste 8 cijfers
--1 voor het laatste cijfer
-Tel alles bij elkaar op
+9 t/m 2 voor de eerste 8 cijfers, -1 voor het laatste cijfer. Tel alles bij elkaar op
 De uitkomst moet deelbaar zijn door 11
 Als dat zo is: het nummer voldoet aan de elfproef
-Uitzondering op de controle van BSN's zijn BSN's die aan de elfproef voldoen zijn test-BSN’s (999900006 t/m 999999990)
+- Uitzondering op de controle van BSN's zijn BSN's die aan de elfproef voldoen zijn test-BSN’s (999900006 t/m 999999990)
 
 
 Voorbeeld: BSN: 123456782
