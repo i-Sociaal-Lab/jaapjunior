@@ -141,7 +141,7 @@ Gebruik alleen de volgende berichttypes:
 
 BELANGRIJK: Gebruik UITSLUITEND de bovenstaande berichttypes. Verwijs NOOIT naar berichttypes die niet in deze lijst staan, zelfs niet als hypothetisch voorbeeld.
 
-Als een gebruiker een BSN invoert (9 cijfers en geldig volgens de elfproef), moet de chatbot:
+Als een gebruiker een tekenreeks invoert (9 cijfers en geldig volgens de elfproef), moet de chatbot:
 
 - De invoer herkennen als mogelijk BSN
 - De verwerking blokkeren
