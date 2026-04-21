@@ -4,7 +4,7 @@
 De soort relatie die een persoon ten opzichte van de cliënt heeft.
 
 ## Metadata
-- **ID:** CO472  
+- **ID:** COD472  
 - **Naam:** Soort relatie
 - **Status:** Productie
 - **ELement:** LDT_SoortRelatie
