@@ -159,7 +159,7 @@ Before answering ANY question, you MUST:
 - Herken codes case-insensitive (bijv. jw301, Jw301, JW301 → JW301)
 - Pas ook toe op:
   - Berichttypes (JW***)
-  - Codelijsten (JZ***, WJ***, etc.)
+  - Codelijsten (JZ***, WJ***, COD***, WMO***, etc.)
   - Regelcodes (OP***, TR***, IV***,UP***,CS***,CD***)
 
 ### Document Search Protocol
