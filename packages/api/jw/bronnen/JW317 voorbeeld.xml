@@ -8,7 +8,7 @@
 		<jw317:Ontvanger>0384</jw317:Ontvanger>
 		<jw317:BerichtIdentificatie>
 			<ijw:Identificatie>987654321</ijw:Identificatie>
-			<ijw:Dagtekening>2023-01-02</ijw:Dagtekening>
+			<ijw:Dagtekening>2026-01-02</ijw:Dagtekening>
 		</jw317:BerichtIdentificatie>
 		<jw317:XsdVersie>
 			<ijw:BasisschemaXsdVersie>1.0.0</ijw:BasisschemaXsdVersie>
@@ -31,7 +31,7 @@
 						<ijw:Categorie>45</ijw:Categorie>
 						<ijw:Code>45A03</ijw:Code>
 					</jw317:Product>
-					<jw317:GewensteIngangsdatum>2023-11-01</jw317:GewensteIngangsdatum>
+					<jw317:GewensteIngangsdatum>2026-11-01</jw317:GewensteIngangsdatum>
 					<jw317:Einddatum>2024-02-28</jw317:Einddatum>
 					<jw317:Omvang>
 						<ijw:Volume>4</ijw:Volume>
