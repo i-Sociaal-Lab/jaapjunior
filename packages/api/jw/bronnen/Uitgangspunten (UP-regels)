@@ -247,7 +247,7 @@
     "samenvatting": "Gemeente en aanbieder leggen een uitvoeringsvariant en een financieringsvorm voor de te verlenen jeugdhulp in een contract vast.",
     "details": ["contract", "financiering"],
     "tags": ["afspraken"],
-    "uitleg": "Formalisering samenwerking.",
+    "uitleg": "Door het vastleggen van afspraken weet de aanbieder hoe afgesproken producten moeten worden gedeclareerd.",
     "gerelateerde_bedrijfsregels": ["OP262", "OP263", "OP264", "OP296", "OP305"],
     "relaties_uitleg": "Dit uitgangspunt wordt concreet uitgewerkt in de bedrijfsregels OP262, OP263, OP264, OP296, OP305."
   },
@@ -299,10 +299,10 @@
     "type": "uitgangspunt",
     "bron": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/uitgangspunt/up037/",
     "samenvatting": "De gemeente geeft iedere beschikking binnen het Jw domein een uniek nummer.",
-    "details": ["uniek nummer"],
-    "tags": ["identificatie"],
-    "uitleg": "Unieke identificatie van beschikkingen.",
+    "details": ["uniek nummer","Beschikking"],
+    "tags": ["identificatie", "beschikking", "uniek]],
+    "uitleg": "De gemeente geeft iedere beschikking binnen het Jw domein een uniek nummer.",
     "gerelateerde_bedrijfsregels": [],
-    "relaties_uitleg": "Dit uitgangspunt wordt niet concreet uitgewerkt in bedrijfsregels."
+    "relaties_uitleg": "Dit uitgangspunt wordt niet concreet uitgewerkt in de backoffice van de gemeente"
   }
 ]
