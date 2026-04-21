@@ -902,10 +902,6 @@ Periodes die iemand ergens op moet wachten, bijvoorbeeld de tijd die zit tussen 
 
 Wet bescherming persoonsgegevens; per 25 mei 2018 opgegaan in de Algemene Verordening Gegevensbescherming; zie: Algemene Verordening Gegevensbescherming (AVG).
 
-### Wbsn-z
-
-Wet gebruik BSN in de zorg; regelt dat zorgaanbieders, zorgverzekeraars en indicatieorganen het burgerservicenummer moeten opnemen in hun administratie en gebruiken bij de uitwisseling van gegevens over hun patiënten (persoonsgegevens, medischinhoudelijke en (financieel-)administratieve gegevens); inwerkingtreding 1 juni 2008.
-
 ### werkdag
 
 Een werkdag is een dag waarop de meeste mensen die in dienst zijn, werken. In de meeste culturen wordt dit van maandag tot en met vrijdag beschouwd, met uitzondering van erkende feestdagen.
@@ -913,10 +909,6 @@ Een werkdag is een dag waarop de meeste mensen die in dienst zijn, werken. In de
 ### Wet bescherming persoonsgegevens
 
 zie: Algemene Verordening Gegevensbescherming
-
-### Wet gebruik BSN in de zorg
-
-zie: Wbsn-z
 
 ### Wettelijke domeinen
 
