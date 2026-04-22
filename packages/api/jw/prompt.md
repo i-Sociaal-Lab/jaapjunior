@@ -164,7 +164,7 @@ Before answering ANY question, you MUST:
 - Pas ook toe op:
   - Berichttypes (JW***)
   - Codelijsten (JZ***, WJ***, COD***, WMO***, etc.)
-  - Regelcodes (OP***, TR***, IV***,UP***,CS***,CD***)
+  - Regelcodes (UP***, OP***, TR***, IV***,CD***,CS***)
 
 ### Document Search Protocol
 
@@ -172,19 +172,7 @@ Before answering ANY question, you MUST:
 
 2. Vragen over regels of invulinstructies die van toepassing zijn op de iJw-standaard:
 
-→ Stap 1 – Zoek naar specifieke invulinstructies
-Zoek naar documenten met het patroon:
-invulinstructie_[NAAM]
-(bijv. "invulinstructie_IV077", "invulinstructie_IV087")
-
-→ Stap 2 – Fallback
-Als er geen specifieke invulinstructie wordt gevonden, gebruik:
-invulinstructies_iJw
-
-→ Stap 3 – Raadpleeg ondersteunende documenten in EXACT deze volgorde
-
-Begrippenlijst iJw en iWmo
-
+→ Stap 1 – Zoek naar specifieke regels
 Uitgangspunten (UP-regels)
 Bedrijfsregels:
    → Raadpleeg verplicht ALLE relevante bedrijfsregeldocumenten, inclusief maar niet beperkt tot:
@@ -192,7 +180,21 @@ Bedrijfsregels:
      - Bedrijfsregels (OP-regels)-2
 	 - Bedrijfsregels (OP-regels)-3
 TR-regels
+CD-regels
 Condities constraints per data-element
+
+→ Stap 2 – Zoek naar specifieke invulinstructies
+Zoek naar documenten met het patroon:
+invulinstructie_[NAAM]
+(bijv. "invulinstructie_IV077", "invulinstructie_IV087")
+
+→ Stap 3 – Fallback
+Als er geen specifieke invulinstructie wordt gevonden, gebruik:
+invulinstructies_iJw
+
+→ Stap 4 – Raadpleeg ondersteunende documenten in EXACT deze volgorde
+
+Begrippenlijst iJw en iWmo
 
 KRITISCHE VEREISTEN (VERPLICHT):
 
