@@ -4,13 +4,19 @@
 
 Het is niet mogelijk om via het berichtenverkeer van iJW/iWmo bijlagen mee te sturen.
 
+---
+
 ## Kan ik nieuwe wensen indienen ten aanzien van iWmo 3.2 en iJw 3.2?
 
 Voor alle iStandaarden (iWlz, iWmo, iJw, iPgb en iEb) is het mogelijk om nieuwe wensen of wijzigingen in te dienen. Dit kan u doen door een mail te sturen naar <info@istandaarden.nl>, via de link: https://www.istandaarden.nl/contact. Geeft u daarbij zo goed mogelijk aan wat het probleem is dat u opgelost wilt zien. Geef ook uw contactgegevens door, zodat wij extra uitleg bij uw wens kunnen vragen om deze goed in behandeling te nemen.
 
+---
+
 ## Een partij waar ik gegevens mee uitwissel houdt zich niet aan de standaarden. Wat moet ik doen?
 
 Indien een partij zich niet aan de standaarden houdt, kunt u dit melden aan Zorginstituut via <info@istandaarden.nl>. Het Zorginstituut zal dan met u en de betreffende partij contact opnemen om het gebruik van de standaard uit te leggen. Gezamenlijk zorgen ze er dan voor dat de standaard wordt gevolgd.
+
+---
 
 # Vragen over Toewijzingen
 
@@ -18,9 +24,13 @@ Indien een partij zich niet aan de standaarden houdt, kunt u dit melden aan Zorg
 
 Een beschikking is een juridisch document tussen gemeente en cliënt. Een toewijzing daarentegen is de opdracht van de gemeente aan de aanbieder voor het leveren van zorg aan de cliënt. Er is geen directe relatie tussen beide onderdelen. Door de beschikking uit het bericht te halen kan een gemeente nu nieuwe beschikkingen afgeven zonder dat dit per definitie leidt tot nieuwe toewijzingen en bijbehorende start- en stopberichten. Dit vermindert de administratieve lasten.
 
+---
+
 ## Waarom is het toewijzingsnummer in de start- en stopberichten niet verplicht?
 
 Omdat de start- en stopberichten ook voor de taakgerichte variant gebruikt kunnen worden, is het toewijzingsnummer niet verplicht. In de taakgerichte uitvoeringsvariant wordt namelijk geen toewijzing op cliëntniveau afgegeven.
+
+---
 
 ## Welke toewijzingen moeten in het toewijzingsbericht opgenomen worden?
 
@@ -30,9 +40,13 @@ Doordat het niveau van de beschikking uit de toewijzing is verwijderd per 1-1-20
 
 Wat in een toewijzing gewijzigd mag/kan worden zonder een nieuwe toewijzing aan te maken is nader uitgewerkt in bedrijfsregel OP033x1. Onder het corrigeren van toewijzingen wordt verstaan, het inkorten, het oprekken van de einddatum van de en het verwijderen van een toewijzing. Ook kunnen omvang (volume, eenheid, frequentie) en budget worden gewijzigd.  (OP033x1, OP362)
 
+---
+
 ## Hoe kan ik een toewijzing verwijderen?
 
 Door de einddatum van de toewijzing te wijzigen zodat deze gelijk is aan de ingangsdatum van de toewijzing. Daarbij wordt RedenWijziging gevuld met 13 (Verwijderd). De gewijzigde toewijzing wordt verstuurd naar de aanbieder. Een verwijdering betekent dat de toewijzing als niet verzonden beschouwd moet worden. (OP033x1, OP362)
+
+---
 
 ## Wat is het verschil tussen code 01 en 14 in de lijst Reden wijziging toewijzing?
 
@@ -47,12 +61,16 @@ De volgende wijzigingen zijn toen doorgevoerd en waren van invloed op de migrati
 - Een nieuwe regel stelt dat een toewijzing alleen verwijderd mag worden indien dit niet leidt tot verlies van rechtmatigheid van geleverde en/of gedeclareerde zorg.
 - Een nieuwe regel stelt dat een toewijzing enkel de reden wijziging 13 ‘Verwijderd’ mag bevatten als de einddatum gelijk is aan de ingangsdatum.
 - Nieuwe regels stellen dat er niet gedeclareerd kan worden op verwijderde toewijzingen (met reden wijziging 13 ‘Verwijderd’).
+
+---
   
 ## Welke toewijzingen moeten in een toewijzingsbericht opgenomen worden, indien er maar één toewijzing wordt gewijzigd?
 
 Een toewijzingsbericht bevat **altijd** **alle** actuele toewijzingen plus de eventueel gewijzigde toewijzingen ten opzichte van het vorige toewijzingsbericht voor één gemeente, één aanbieder en één cliënt.
 
 Actuele toewijzingen zijn toewijzingen waarvan de einddatum leeg is of waarvoor geldt dat de einddatum op of na de huidige datum ligt.
+
+---
 
 ## Wat is het verschil tussen ‘Stuks (inspanning)’ en ‘Stuks (output)’?
 
@@ -61,6 +79,8 @@ Het verschil tussen ‘Stuks (inspanning)’ en ‘Stuks (output)’, is de uitv
 ‘Stuks (inspanning)’ wordt gebruikt binnen de inspanningsgerichte uitvoeringsvariant en houdt in dat alleen de daadwerkelijke levering / inspanning gedeclareerd mag worden.
 
 ‘Stuks (output)’ wordt gebruikt binnen de outputgerichte uitvoeringsvariant en voor declaratie is het leveren van de afgesproken output van belang. Het accent ligt daarbij niet op de inspanning die daarvoor geleverd is maar op de output die behaald moet worden.
+
+---
 
 ## Hoe kan ik van een reeds afgegeven toewijzing de ingangsdatum vervroegen?
 
@@ -71,6 +91,8 @@ Er wordt een extra toewijzing aangemaakt vanaf de gewenste ingangsdatum tot en m
 Optie 2
 
 De afgegeven toewijzing kan worden ingetrokken.
+
+---
 
 ## Kun je op basis van een generieke toewijzing meerdere zorgtrajecten starten?
 Ja, het is mogelijk om op basis van een generieke toewijzing meerdere zorgtrajecten te starten. Dit wordt ondersteund binnen de iJw-standaard. In het regelrapport wordt dit als volgt beschreven:
@@ -83,6 +105,8 @@ Deze zorgtrajecten worden niet afzonderlijk voorzien van een startbericht. Voor 
 Samenvatting
 Op basis van een generieke toewijzing kan de aanbieder meerdere zorgtrajecten starten en declareren. Elk zorgtraject moet bestaan uit productcategorieën en productcodes die passen binnen het afgesproken contract met de gemeente en binnen het toegewezen budget.
 
+---
+
 # Vragen over VOT & VOW (Verzoek Om Toewijzing & Verzoek Om Wijziging)
 
 ## Wanneer gebruik ik een Verzoek om Toewijzing (VOT) en wanneer een Verzoek om Wijziging (VOW)?
@@ -92,6 +116,8 @@ Een Verzoek om Toewijzing (VOT) moet gebruikt worden wanneer de cliënt zich bij
 Een Verzoek om Wijziging (VOW) moet gebruikt worden indien er sprake is van een gewijzigde zorgsituatie bij een al lopende zorglevering, waardoor aanpassing van de actuele toewijzing(en) gewenst is (en er geen sprake is van een nieuwe wettelijke verwijzing). Daarnaast moeten gemeente en aanbieder afgesproken hebben dat de aanbieder een rol heeft in het doorgeven van de wijziging.
 
 Om de juiste afweging te maken welk bericht gebruikt moet worden, is een stroomschema opgesteld: ‘Wanneer wordt VOT of VOW gebruikt?’. Dit schema is als [infographic](https://www.istandaarden.nl/iwmo/ondersteuning-bij-de-releases/vow-informatiepunt)te vinden op de ondersteuningspagina’s voor release 3.2.
+
+---
 
 ## welke regels zijn afgesproken in het berichtenverkeer mbt gezagsdrager?
 
@@ -113,11 +139,15 @@ Van iedere contactpersoon (relatie) moet worden opgegeven in welke relatie deze 
 OP130 :
 Van de relatie moet altijd een naam worden vastgelegd, aangevuld met een volledig adres en/of een telefoonnummer.
 
+---
+
 ## Wanneer gebruik ik in RedenAfwijzingVerzoek code 5 (Andere Gemeente) en wanneer code 8 (Woonplaatsbeginsel)?
 
 Code 8 (Woonplaatsbeginsel) mag alleen gebruikt worden als een Verzoek om Toewijzing afgewezen wordt in verband met het woonplaatsbeginsel. Deze reden is dus alleen van toepassing in het domein van de Jeugdwet (iJw).
 
 Code 5 (Andere gemeente) moet in alle andere gevallen gebruikt worden wanneer een Verzoek om Toewijzing of Verzoek om Wijziging aan de niet verantwoordelijke gemeente verstuurd is, of wanneer tijdens het beoordelingsproces blijkt dat de gemeente niet langer verantwoordelijk is voor de cliënt.
+
+---
 
 ## Wat wordt bedoeld met Raamcontract J/N?
 
@@ -125,14 +155,17 @@ Raamcontract J/N is een indicator of de aanbieder voor de te leveren ondersteuni
 De VNG maakt namens alle gemeenten afspraken met aanbieders die een essentiële, landelijke functie vervullen in het zorglandschap. Voor deze functies sluiten we (namens het collectief van gemeenten) raamovereenkomsten waarbinnen gemeenten naar gebruik afrekenen. Zij hebben hiervoor het mandaat gekregen in de algemene ledenvergadering.
 zie : https://vng.nl/artikelen/over-landelijke-inkoop-jeugdzorg-en-wmo-zg
 
+---
+
 ## Kan ik opmerkingen of vrije tekst toevoegen aan een VOT?
 
 In de context van het iJw-berichtenverkeer wordt hiermee doorgaans bedoeld: het toevoegen van een toelichting, motivatie of vrije tekst bij het verzoek. In het JW315-bericht (Verzoek om Toewijzing Jeugdhulp) is voor de klassen "client" en "aangevraagd product" een veld aanwezig met de naam Commentaar. Dit veld is optioneel. Het kan gebruikt worden als vrij tekstveld voor toelichting op het verzoek.
 Naast de beschikbaarheid van een commentaarvelden in het VOT bericht zijn in het toewijzingsbericht ook voor de klassen "client" en "toegewezen product" commmentaarvelden beschikbaar. 
 Er zit wel een beperking op het gebruik van dit veld. Het veld "Commentaar" mag gebruikt worden voor extra toelichting, maar alleen als deze toelichting niet elders in het bericht kan worden opgenomen.
 Het gebruik van ongestructureerde informatie (zoals vrije tekst in commentaar) moet tot een minimum worden beperkt.
-Er mogen geen tot een persoon herleidbare gegevens in het commentaarveld worden opgenomen zonder toestemming van die persoon.
-(zie OP191)
+Er mogen geen tot een persoon herleidbare gegevens in het commentaarveld worden opgenomen zonder toestemming van die persoon. (zie OP191)
+
+---
 
 ## Hoe wordt een VOW-bericht gevuld?
 
@@ -142,6 +175,8 @@ Het tweede deel van de infographic geeft een overzicht van alle functionele wijz
 
 Deze PowerPoint is te vinden op de ondersteuningspagina's voor release 3.2 : https://www.istandaarden.nl/iwmo/ondersteuning-bij-de-releases/vow-informatiepunt)
 
+---
+
 ## Hoe wordt het toewijzingsbericht gevuld na het honoreren van een VOW?
 
 Om het vullen van een toewijzingsbericht als gevolg van het honoreren van een VOW uniform te laten verlopen, is een tabel met uitgewerkte scenario’s gemaakt. Algemeen geldt : Een VOW wordt in zijn geheel goedgekeurd, of afgekeurd. Dat betekent dat hetgeen wordt aangevraagd in een VOW, niet mag worden gewijzigd door de gemeente.
@@ -150,9 +185,13 @@ De tabel beschrijft de situatie die in het VOW-bericht gevraagd wordt en verwijs
 
 De tabel en de uitgewerkte scenario’s zijn als te vinden op de ondersteuningspagina’s voor release 3.2. https://www.istandaarden.nl/iwmo/ondersteuning-bij-de-releases/vow-informatiepunt)
 
+---
+
 ## Voor Release 3.0 was het mogelijk om een inhoudelijke reactie op een Verzoek om Toewijzing (315) te geven met een retourbericht (316). Vervangt het antwoordbericht (319) deze inhoudelijke terugkoppeling?
 
 Ja, het antwoordbericht vervangt per 1-1-2021 deze inhoudelijke terugkoppeling in het 316-retourbericht. In versie 2.4 kon de gemeente in het retourbericht van het Verzoek om Toewijzing (316) een inhoudelijke reactie geven met een functionele retourcode. Dit had als doel om aan te geven waarom een verzoek niet gehonoreerd werd. Dit was in feite een tussenoplossing. Vanaf versie 3.0 is deze functionaliteit vervangen door het antwoordbericht (319). Vanaf versie 3.0 bevat het retourbericht van het Verzoek om Toewijzing (316) daarom geen functionele retourcodes meer.
+
+---
 
 ## Mijn Verzoek om Wijziging is afgewezen door de gemeente. Wat nu?
 
@@ -160,9 +199,13 @@ Een gemeente dient een VOW in zijn geheel af te wijzen of in zijn geheel te hono
 
 De actuele toewijzingen blijven na afwijzing van een VOW ongewijzigd. De aanbieder dient de zorg dan volgens die toewijzingen door te leveren.
 
+---
+
 ## Ontvang ik een nieuwe toewijzing nadat ik een Verzoek om Wijziging heb ingediend?
 
 Als een gemeente een Verzoek om Wijziging honoreert, zal deze een nieuw toewijzingsbericht sturen met daarin alle actuele toewijzingen en alle ten opzichte van het voorgaande toewijzingsbericht gewijzigde toewijzingen voor de betreffende cliënt. De toewijzingen in dit nieuwe toewijzingsbericht bevatten de complete nieuwe situatie voor de cliënt bij die aanbieder.
+
+---
 
 ## Wordt een Verzoek om Toewijzing (315) alleen gebruikt binnen iJw of kan deze ook binnen iWmo gebruikt worden?
 
@@ -170,6 +213,7 @@ Een Verzoek om Toewijzing (315) kan zowel binnen iJw (als gevolg van een wetteli
 
 Niet iedere gemeente werkt met open beschikkingen. Daarom zal niet iedere aanbieder gebruik kunnen maken van het 315-bericht binnen de iWmo. Dit is een afspraak tussen gemeenten en aanbieders.
 
+---
 
 ## Is het gebruik van het nieuwe VOW-bericht verplicht?
 
@@ -181,25 +225,35 @@ Voor deze situaties is in release 3.0 daarom het VOW-bericht gemaakt, zodat hier
 
 Er zijn ook gemeenten waar de aanbieder momenteel geen rol heeft in het doorgeven van wijzigingen in de cliëntsituatie. De gemeente zorgt in dit geval zelf voor het signaal voor wijzigingen en verlengingen of heeft dit bij een andere organisatie of bij de cliënt zelf belegd. In dat geval wordt er geen gebruik gemaakt van het VOW-bericht en zal de gemeente geen signaal vanuit de aanbieder ontvangen. De gemeente zorgt dan zelf voor eventuele wijzigingen in de toewijzingen en zorgt dat de aanbieder deze tijdig ontvangt om de juiste zorg aan de cliënt te kunnen leveren.
 
+---
+
 ## Moeten alle actuele toewijzingen van een cliënt in een VOW-bericht worden opgenomen?
 
 Ja. Een VOW-bericht bevat alle actuele toewijzingen met eventueel de gewenste wijzigingen op deze toewijzingen. Daarnaast bevat het VOW-bericht ook alle nieuwe gewenste producten.
 
 Een VOW geeft dus de complete nieuwe gewenste situatie van een cliënt weer. Zie voor een uitgebreidere toelichting op het vullen van een VOW-bericht IV092 in het informatiemodel alsmede de infographic https://www.istandaarden.nl/iwmo/ondersteuning-bij-de-releases/vow-informatiepunt)op de ondersteuningspagina van het Zorginstituut.
 
+---
+
 ## Welke voordelen heeft het gebruik van het VOW-bericht?
 
 Met de introductie van het VOW-bericht wordt er een uniforme werkwijze geïntroduceerd voor het doorgeven van wijzigingen in de zorgvraag van een cliënt vanuit de aanbieder, waarbij te allen tijde inzicht is in de status van het verzoek. Door de ongewenste diversiteit in werkwijzen te beperken, worden de administratieve lasten binnen het wijzigingsproces verminderd.
 
+---
+
 ## In welke situaties kan een VOW worden gebruikt?
 
 Een Verzoek om Wijziging wordt onder andere gebruikt voor die situaties, waar eerder in het informatiemodel stond “neem buiten het berichtenverkeer contact op met de gemeente” als er sprake is van een wijziging in de zorgvraag van de cliënt. Voorbeelden hiervan zijn opgenomen in de infographic https://www.istandaarden.nl/iwmo/ondersteuning-bij-de-releases/vow-informatiepunt) die te vinden is op de ondersteuningspagina voor release 3.2.
+
+---
 
 ## Moet de gemeente altijd een nieuwe beschikking sturen op het moment dat een VOW wordt gehonoreerd?
 
 Nee, dat is niet altijd nodig. Dit is afhankelijk van de inhoud van de beschikking en de toewijzing. Indien een gevraagde wijziging past binnen de afgegeven beschikking is het niet nodig om een nieuwe beschikking af te geven.
 
 Een beschikking is een document tussen de gemeente en de burger. Het afgeven van een beschikking is geen onderdeel van het berichtenverkeer. Een beschikking is niet hetzelfde als een toewijzing. Een toewijzing is de opdracht tot het leveren van zorg en/of ondersteuning vanuit de gemeente naar de aanbieder.
+
+---
 
 ## Moet bij een VOW een onderbouwing worden ingediend?
 
@@ -208,35 +262,49 @@ Via het berichtenverkeer is hier geen mogelijkheid voor. Wel dient er een reden 
 - Wijziging zorgplan
 Indien de gemeente tevens een onderbouwing vraagt voor een ingediend VOW, dient dit buiten het berichtenverkeer om aangeleverd te worden.
 
-----
+---
 
 ## Kan ik nieuwe producten toevoegen en zorg verzwaren zonder dat er een keukentafelgesprek is geweest/het vastligt in een beschikking?
 
 Of er een keukentafelgesprek moet plaatsvinden en/of een nieuwe beschikking moet worden afgegeven, ligt aan de situatie. Een VOW wordt gebruikt in die situaties waar er op dit moment buiten het berichtenverkeer om contact met de gemeente wordt opgenomen. Als in het huidig proces van de gemeente is vastgelegd dat een cliënt zelf contact moet opnemen met de gemeente voor een keukentafelgesprek, zal dit door het nieuwe bericht niet wijzigen.
 
+---
+
 ## Moet ik er bij het aanvragen van een wijziging rekening mee houden dat een toewijzing een nieuw toewijzingsnummer moet krijgen?
 
 Nee, bij het aanvragen van een wijziging hoef je geen rekening te houden met het uiteindelijke resultaat in de toewijzing. Ongewijzigde toewijzingen komen in de klasse OngewijzigdProduct, gewijzigde toewijzing in de klasse TeWijzigenProduct en nieuwe producten in de klasse NieuwProduct. Het kan zijn dat een wijziging van een bestaande toewijzing (bijvoorbeeld het wijzigen van volume, eenheid of frequentie) leidt tot het afsluiten van een bestaande toewijzing en het aanmaken van een nieuwe toewijzing. Voorbeelden hiervan zijn opgenomen in de infographic Hoe wordt toewijzingsbericht gevuld na VOW https://www.istandaarden.nl/iwmo/ondersteuning-bij-de-releases/vow-informatiepunt.
+
+---
 
 ## Kan de gemeente de aanbieder verplichten het VOW-bericht te gebruiken?
 
 Indien de gemeente het wijzigingsproces zo heeft ingeregeld dat de aanbieder een verzoek kan indienen om andere zorg te mogen leveren aan de cliënt, is zowel de aanbieder als ook de gemeente verplicht om hierbij gebruik te maken van het VOW-bericht en het bijbehorende proces.
 
+---
+
 ## Aanbieders sturen een Start zorg of Stop zorg weleens twee keer op. Wat moet ik als gemeente doen als het VOW-bericht dubbel naar mij wordt verzonden?
 
 Er kan op enig moment maar één VOW of één VOT in behandeling zijn voor een cliënt. Als één van deze berichten nog in behandeling is moet ieder ander VOW- of VOT-bericht worden afgekeurd.
+
+---
 
 ## Is het technisch verplicht om bij de ingangsdatum van een VOW een datum in de toekomst te vullen?
 
 De nieuwe situatie zoals gedefinieerd in het VOW bericht moet altijd een toekomstige situatie zijn. Wijzigingen mogen niet met terugwerkende kracht aangevraagd worden. Omdat het wel mogelijk is om bijvoorbeeld een volume over een totale looptijd, of een budget over een bepaalde periode te verhogen/verlagen, is het technisch wel toegestaan om het veld GewensteIngangdatum te vullen met een datum in het verleden.
 
+---
+
 ## Hoe ga ik om met een VOW met meerdere producten, waarvan de ene wordt goedgekeurd en de andere wordt afgekeurd?
 
 Een VOW dient altijd in zijn geheel te worden goedgekeurd dan wel in zijn geheel te worden afgekeurd. In tegenstelling tot een VOT is het bij een VOW niet toegestaan om per product goed te keuren dan wel af te keuren dan wel wijzigingen aan te brengen in de gewenste producten en volumes. De situatie in de vraag kan dus niet voorkomen.
 
+---
+
 ## Als op het moment van toewijzen de gewenste ingangsdatum uit de VOW verstreken is, mag de aangevraagde wijziging (bijvoorbeeld aanpassing van het volume) dan met terugwerkende kracht toegewezen worden?
 
 Dit mag alleen na overleg met en instemming van de aanbieder. Dit om te voorkomen dat de rechtmatigheid van reeds geleverde zorg in het gedrang komt.
+
+---
 
 ## Kan ik een VOW intrekken als ik er achter kom dat ik niet de juiste gewenste zorg heb verstuurd in het VOW-bericht?
 
@@ -244,20 +312,27 @@ Het is op dit moment niet mogelijk om een VOW-bericht in te trekken. Mocht je er
 
 **Let op:** Zolang het onjuiste VOW-bericht nog in behandeling is kan er geen ander VOW-bericht voor de betreffende cliënt worden ingediend (TR374).
 
+---
+
 ## Welke berichten kunnen volgen op een VOW- of een VOT-bericht?
 
 Als reactie op een verstuurd VOW en VOT zijn er drie mogelijkheden. De gemeente kan het verzoek honoreren door een toewijzingsbericht (301) te sturen. Ook kan de gemeente het verzoek afwijzen met het antwoordbericht (319). De derde mogelijkheid is dat de gemeente het verzoek nader gaat onderzoeken en dit meldt met het antwoordbericht (319).
 
 Nadat de gemeente dit onderzoek heeft afgerond zal deze het verzoek alsnog honoreren met een toewijzingsbericht of afwijzen met een antwoordbericht.
+
 ---
 
 ## Mag ik als aanbieder starten met het leveren van de gewenste zorg indien de gemeente een VOW in onderzoek neemt?
 
 De toewijzing gaat over de rechtmatigheid van de te leveren zorg. Zolang de aanbieder geen aangepaste toewijzing heeft ontvangen van de gemeente, blijft de eerdere toewijzing van toepassing. Indien een gewenste ingangsdatum uit een VOW verstrijkt voordat de gemeente het verzoek heeft gehonoreerd of afgewezen, kan de aanbieder buiten het berichtenverkeer om contact opnemen met de gemeente om af te spreken welke zorg geleverd mag worden.
 
+---
+
 ## Gaat een verzoek om toewijzing dat wordt afgewezen o.b.v. het woonplaatsbeginsel automatisch over naar de nieuwe gemeente?
 
 Het is aan de gemeenten onderling om afstemming te hebben over een verzoek waarvan de ontvangende gemeente vindt niet financieel verantwoordelijk te zijn. Pas na overeenstemming, zal de ontvangende gemeente het verzoek afkeuren met reden woonplaatsbeginsel (en voorzien van de juiste gemeente), en is het aan de aanbieder om het verzoek opnieuw in te dienen bij de aangegeven gemeente. Aangezien die gemeente op de hoogte is, kan de nieuwe gemeente het verzoek direct in behandeling nemen.
+
+---
 
 ## Hoe te handelen als gemeente wanneer een aanbieder toch een VOW verstuurt, maar geen rol heeft in het doorgeven van wijzigingen in de cliëntsituatie?
 
@@ -266,6 +341,8 @@ Er zijn gemeenten waar de aanbieder momenteel geen rol heeft in het doorgeven va
 Als een aanbieder bij een gemeente hierin geen rol speelt maar toch een VOW bericht verstuurt naar de gemeente dient dit VOW bericht wel afgehandeld te worden. De handelswijze hiervoor is als volgt:
 
 De gemeente stuurt een 318-retourbericht en vervolgens een afwijzing van het VOW middels een 319-bericht. Hierbij wordt RedenAfwijzingVerzoek gevuld met de waarde 4 (“Past niet binnen contract”). De aanbieder stuurt na ontvangst van het 319-bericht het 320-retourbericht.
+
+---
 
 Het is namelijk noodzakelijk om ook in deze situatie het VOW bericht af te handelen, aangezien het niet is toegestaan een verzoek om wijziging of verzoek om toewijzing te sturen als een eerder verzoek nog niet is afgehandeld (OP350).
 ---
@@ -276,6 +353,8 @@ De gemeente stuurt een 318-retourbericht en vervolgens een afwijzing van het VOW
 
 Het is namelijk noodzakelijk om ook in deze situatie het VOT bericht af te handelen, aangezien het niet is toegestaan een  verzoek om toewijzing te sturen als een eerder verzoek nog niet is afgehandeld (OP350).
 
+---
+
 # Vragen over Declareren
 
 ## In de header van het declaratie-antwoordbericht staan de elementen BerichtIdentificatie en DeclaratieIdentificatie. Wat is het verschil tussen deze twee elementen?
@@ -283,6 +362,8 @@ Het is namelijk noodzakelijk om ook in deze situatie het VOT bericht af te hande
 Het element BerichtIdentificatie is de identificatie en de dagtekening van het bericht. Dit element staat in de header van ieder iStandaarden bericht en is ter identificatie van het specifieke bericht. Bij het declaratie-antwoordbericht is dit dus de identificatie van dat betreffende declaratieantwoordbericht.
 
 Het element DeclaratieIdentificatie bevat de waarde van BerichtIdentificatie van het bijbehorende declaratiebericht. Hiermee is het declaratie-antwoordbericht altijd te koppelen aan het bijbehorende declaratiebericht. Dit is van belang indien afkeur op het gehele bericht plaatsvindt. In dat geval wordt de berichtklasse DeclaratieAntwoord niet opgenomen in het declaratieantwoordbericht en kan de koppeling dus niet via het DeclaratieNummer worden gelegd.
+
+---
 
 ## Hoe ga ik om met frequentie ‘Per week’ nu DeclaratiePeriode een kalendermaand is?
 
@@ -292,11 +373,15 @@ De frequentie ‘Per week’ sluit niet aan op de declaratieperiode maand. Een w
 
 Voor zowel de inspanningsgericht als outputgerichte uitvoeringsvariant is de werkwijze beschreven. Deze [werkwijzen](https://www.istandaarden.nl/ibieb/werkwijze-frequentie-per-week) zijn als aanvullende documentatie te vinden op de ondersteuningspagina voor release 3.2.
 
+---
+
 ## Is het mogelijk om binnen een declaratiebericht af te keuren op het niveau van prestatieregel?
 
 Ja, dit is ook binnen de huidige release nog steeds mogelijk. Indien een declaratiebericht meerdere prestatieregels bevat, is het mogelijk om een aantal prestatieregels af te keuren terwijl andere prestatieregels goedgekeurd worden.
 
 Het is niet mogelijk om een prestatieregel gedeeltelijk goed te keuren. Een prestatieregel wordt altijd helemaal goedgekeurd of helemaal afgekeurd.
+
+---
 
 ## Is het mogelijk om trajecten per maand te laten declareren?
 
@@ -318,6 +403,8 @@ GeleverdVolume: 20000
 Eenheid: 83 (Euro’s)
 IngediendBedrag: 20000
 
+---
+
 ## Kan door de werkwijze behorend bij frequentie per week het gedeclareerde volume het maximale volume behorend bij de toewijzing overstijgen?
 
 Nee dit is niet mogelijk. De werkwijze voor het berekenen van het maximaal te declareren volume bij de frequentie per week, bestaat uit 2 delen.
@@ -326,15 +413,21 @@ In het eerste deel wordt gecontroleerd of het te declareren volume past binnen h
 
 Deze [werkwijzen](https://www.istandaarden.nl/ibieb/werkwijze-frequentie-per-week) zijn als aanvullende documentatie te vinden op de ondersteuningspagina voor release 3.2.
 
+---
+
 ## Zijn er geen retourberichten op het 323 en 325 bericht?
 
 Het klopt dat er geen retourberichten gedefinieerd zijn op het declaratiebericht (323) en het declaratie-antwoordbericht (325).
 
 Het declaratie-antwoordbericht (325) bevat echter zowel de technische als de inhoudelijke terugkoppeling op het declaratiebericht en bevat alle informatie om het bericht administratief te verwerken.
 
+---
+
 ## Zijn er controles op het ingediende volume in een declaratie ten opzichte van het toegewezen volume of budget in de toewijzing?
 
 Ja deze controles zijn er in release 3.2 nog steeds. Naast de al bestaande technische regels (TR321 en TR322) is een technische regel (TR369) toegevoegd zodat het ingediende volume ook gecontroleerd wordt ten opzichte van het budget als dat in de toewijzing is meegegeven.
+
+---
 
 ## Het declaratie-antwoord bericht bevat niet de goedgekeurde regels. Hoe weet ik als aanbieder nu wat er is goedgekeurd?
 
@@ -342,17 +435,25 @@ Het klopt dat het declaratie-antwoordbericht geen goedgekeurde prestatieregels b
 
 In de berichtklasse DeclaratieAntwoord is het totaal ingediende bedrag en totaal toegekende bedrag opgenomen. Het verschil tussen het ingediende en toegekende bedrag is te verklaren door de afgekeurde prestatieregels. Zie voor een uitgebreide toelichting ook invulinstructie IV087.
 
+---
+
 ## Als alle ingediende prestaties zijn goedgekeurd, krijg ik als aanbieder dan geen declaratie-antwoordbericht?
 
 Voor ieder ingediend declaratiebericht (323) wordt binnen 10 werkdagen na ontvangst door de gemeente een declaratie-antwoordbericht (325) verzonden. Dit is opgenomen in de bedrijfsregels in het informatiemodel. Dus ook in de situatie dat alle ingediende prestatieregels goedgekeurd zijn, wordt er een declaratie-antwoordbericht verzonden. Deze bevat dan geen prestatieregels, aangezien die allemaal goedgekeurd zijn. In de berichtklasse DeclaratieAntwoord zal het totaal toegekende bedrag in dit geval gelijk zijn aan het totaal ingediende bedrag.
+
+---
 
 ## Is het toegestaan om in 1 declaratieperiode 2 prestatieregels voor de dezelfde productperiode op te nemen voor hetzelfde product en dezelfde toewijzing bij dezelfde cliënt?
 
 Nee dit is niet toegestaan. De declaratiemethode is die van som over declaratieperiode. Alle leveringen behorende bij 1 toewijzing die vallen binnen 1 productperiode moeten worden gesommeerd tot 1 prestatieregel.
 
+---
+
 ## Klopt het dat vanaf release 3.0 in het nieuwe declaratiebericht nog maar 1 declaratiemethode van toepassing is?
 
 Ja. In het 303-bericht waren er twee declaratiemethodes mogelijk: ‘werkelijke productperiodes’ en ‘som van declaratie/factuurperiode’ (zie IV063). In het 323-bericht is enkel de declaratiemethode ‘som van declaratieperiode’ mogelijk. In IV089 van het Informatiemodel wordt uitgelegd hoe de ProductPeriode gevuld dient te worden.
+
+---
 
 ## Mag een start (305) of stop (307) bericht voorwaardelijk zijn voor de goedkeur van een declaratie?
 
@@ -360,16 +461,22 @@ Nee, de regieberichten mogen niet voorwaardelijk worden gesteld voor de goedkeur
 
 Daarnaast is het niet toegestaan om de startdatum in het startbericht en de stopdatum in het stopbericht te controleren tegen de declaratieperiode. Een en ander is nader uitgewerkt in Invulinstructie IV089: Hoe moet ProductPeriode gevuld worden?
 
+---
+
 ## Heeft een start (305) of stop (307) bericht invloed op de begin- en/of einddatum van een productperiode?
 
 Nee, regieberichten hebben geen gevolgen voor de productperiode. 
 Voorbeeld: Toewijzing met ingangsdatum 1-1-2025, einddatum 5-09-2025. Er is een stopbericht gestuurd met einddatum 15-08-2025. Indien er zorg is geleverd in augustus 2025, dan geldt voor de productperiode augustus: ingangsdatum: 01-08-2025, einddatum 31-08-2025.
+
+---
 
 # Vragen over Start- Stopberichten 
 
 ## Mag ik een startbericht sturen, nadat ik een definitieve stop heb gestuurd?
 Ja, dat mag. Na een tijdelijke stop of na een definitieve stop is het toegestaan een startbericht te sturen.
 zie OP379.
+
+---
 
 # Vragen over Afsluiten zorg
 
@@ -381,14 +488,20 @@ Indien de intrekking een gevolg is van een door de aanbieder gestuurde (definiti
 
 In alle andere gevallen dient de aanbieder als reactie op een intrekking altijd een Stopzorg te sturen.
 
+---
+
 ## Hoe kan een Startzorg-bericht verwijderd worden?
 
 Een Startzorg kan verwijderd worden middels de status aanlevering. Zie hiervoor ook OP033 en IV008 in het informatiemodel.
+
+---
 
 ## Hoe kan een Stopzorg-bericht verwijderd worden?
 
 Een Stopzorg kan verwijderd worden middels de status aanlevering. Zie hiervoor ook OP033 en IV008 in het informatiemodel.
 Indien een Stopzorg-bericht is afgekeurd door de gemeente, kan een nieuw Stopzorg-bericht worden gestuurd. Het afgekeurde bericht kan als niet verzonden worden beschouwd.  
+
+---
 
 ## Welke codes Status aanlevering kan ik gebruiken?
 
@@ -402,6 +515,8 @@ Voor het veld status aanlevering in het iJw-berichtenverkeer mag u uitsluitend d
 1 = Eerste aanlevering
 3 = Verwijderen aanlevering
 Dit wordt middels regels afgedwongen. Zie OP033x2 en CS058
+
+---
 
 # Vragen over reactietijden van berichten
 
@@ -421,6 +536,8 @@ Dit wordt middels regels afgedwongen. Zie OP033x2 en CS058
 | 320 | Antwoordbericht retour | 3 werkdagen |
 | 323 | Declaratiebericht | Volgens afspraak tussen gemeente en aanbieder voor geleverde zorg |
 | 325 | Declaratie-antwoord bericht | 10 werkdagen na ontvangst van het 325-bericht, zie ook OP090x4 |
+
+---
 
 # Vragen over controles
 
@@ -443,6 +560,8 @@ De MR-Staatscourant juli 2019 regelt alleen de verplichting:
 
 De controle zelf wordt georganiseerd via de gemeentelijke en aanbiederspraktijk, niet vanuit de regeling.
 
+---
+
 ## Mag voor een jeugdige de WLZ-registertoets of WLZ-signalen gebruikt worden?
 
 Nee, het is niet toegestaan in de Jeugdwet om de WLZ-registertoets of WLZ-signalen te gebruiken. Dit is alleen toegestaan in de WMO2015. 02-10-2024 iss een wetsvoorstel ingediend om ook voor de jeugdwet deze tools beschikbaar te stellen.
@@ -453,6 +572,8 @@ Deze voorgestelde wetswijziging heeft als doel om een juridische grondslag in we
 1. Het Centrum Indicatiestelling Zorg (CIZ) zonder uitdrukkelijke toestemming van de cliënt en/of diens ouders aan gemeenten informatie kan verstrekken over een toewijzend Wlz-indicatiebesluit ten behoeve van de uitvoering van de Jeugdwet. Hierdoor worden gemeenten in staat gesteld om mogelijke samenloop te signaleren en mee te nemen in hun onderzoek naar de noodzaak tot het treffen van een jeugdhulpvoorziening;
 
 2. zorgkantoren zonder voorafgaande uitdrukkelijke toestemming van de cliënt informatie aan gemeenten kunnen verstrekken over de verzilvering van een Wlz-indicatie ten behoeve van de uitvoering van de Wmo 2015 en de Jeugdwet en over de leveringsvorm ten behoeve van de uitvoering van de Wmo 2015. Hierdoor zijn gemeenten beter in staat om te beoordelen of het verstrekken van een Wmo-maatwerkvoorziening of jeugdhulpvoorziening rechtmatig is. Daarnaast scheelt dit veel administratieve lasten en regeldruk bij gemeenten, zorgkantoren, zorgaanbieders en cliënten.
+
+---
 
 # Vragen over Modules, testvoorzieningen
 
@@ -465,10 +586,7 @@ Via de Testvoorziening iStandaarden (TiS) van Zorginstituut Nederland kunnen sof
 Voor meer informatie of het aanvragen van een account kunt u contact opnemen met Zorginstituut Nederland (<info@istandaarden.nl>).
 Het Ketenbureau i-sociaaldomein stelt een Keten Test Omgeving (KTO) beschikbaar voor de domeinen, iWmo iJw iEb en iPgb. Deze omgevingen zijn gelijk aan de Standaarden versie die op dit moment actueel zijn, tenzij er een nieuwe release op handen is. Dan staat de nieuwe versie van de iStandaarden in de KTO. Gemeenten, aanbieders, CAK, VWS, SVB gegevens uitwisselen/testen met een tegenpartij.
 
-
-
-
-
+---
 
 
 
