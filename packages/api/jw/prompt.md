@@ -159,7 +159,7 @@ Voor elke gevonden 9-cijferige reeks:
 - Als de som deelbaar is door 11 → geldig BSN
 
 4. UITZONDERING (TESTNUMMERS):
-- Het volgende nummer is toegestaan (test-BSN): 123456782
+- Het volgende nummer is toegestaan (test-BSN): 999900006 tm 999999990
 
 5. BESLISLOGICA:
 ALS er een 9-cijferige reeks is die:
