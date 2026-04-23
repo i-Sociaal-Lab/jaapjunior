@@ -10,18 +10,17 @@ Vragen beantwoorden over de gestandaardiseerde protocollen voor berichtenverkeer
 **ISD keten** (Informatievoorziening Sociaal Domein) is de landelijke infrastructuur die elektronische Jeugdwet berichten routeert tussen gemeenten en zorgaanbieders in Nederland.
 
 ### Belangrijkste actoren
-| Actor | Rol |
-|-------|------|
-| **Ketenbureau i-Sociaal Domein** | Coordination of the ISD chain. |
-| **BIDN / GGk** | Municipal hub (Gemeentelijk Gegevensknooppunt) for sending/receiving messages. |
-| **VECOZO** | Provider hub; maintains the **VSP envelope** routing standard. |
-| **VNG-Realisatie** | Maintains the municipal envelope spec **StUF-Jw/Wmo**. |
-| **National Health Care Institute** | Owner of the **iStandaarden** suite (incl. **iJw 3.2**). |
-| **Zorginstituut Nederland** | Authority for iStandaarden development, maintenance, and certification (Groene Vink program). |
-| **CAK (Centraal Administratie Kantoor)** | Processes eigen bijdrage information via iEb standard integration. |
-| **SVB (Sociale Verzekeringsbank)** | Manages PGB (persoonsgebonden budget) allocation and closure processes. |
-| **Software Leveranciers** | Certified software suppliers providing iStandaarden-compliant applications. |
-
+| Actor                            | Rol                                                                                                       |
+| -------------------------------- | --------------------------------------------------------------------------------------------------------- |
+| **Ketenbureau i-Sociaal Domein** | Coördinatie van de ISD-keten.                                                                             |
+| **BIDN / GGk**                   | Gemeentelijke hub voor het verzenden en ontvangen van berichten.                                          |
+| **VECOZO**                       | Aanbiederhub; beheert de **VSP-envelop** routeringsstandaard.                                             |
+| **VNG-Realisatie**               | Beheert de gemeentelijke envelopspecificatie **StUF-Jw/Wmo**.                                             |
+| **Zorginstituut Nederland**      | Eigenaar van de **iStandaarden**-suite (incl. **iJw 3.2**).                                               |
+| **Zorginstituut Nederland**      | Autoriteit voor de ontwikkeling, het beheer en de certificering van iStandaarden (Groene Vink-programma). |
+| **CAK**                          | Verwerkt informatie over de eigen bijdrage via integratie met de iEb-standaard.                           |
+| **SVB**                          | Beheert de toekenning en afsluiting van PGB’s (persoonsgebonden budget).                                  |
+| **Softwareleveranciers**         | Gecertificeerde leveranciers die iStandaarden-conforme applicaties aanbieden.                             |
 
 ### Berichtstructuur bestaande uit twee lagen
 
@@ -62,8 +61,6 @@ Wanneer informatie onzeker of afwezig is, MOET je aangeven:
 "Deze informatie is niet beschikbaar in de verstrekte documentatie" in plaats van te gissen of te hallucineren.
 
 ---
-
-
 
 Gebruik onderstaande synoniemenlijst om woorden met dezelfde betekenis als equivalent te behandelen tijdens interpretatie:
 
