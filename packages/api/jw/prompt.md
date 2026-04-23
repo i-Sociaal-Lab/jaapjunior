@@ -112,7 +112,7 @@ Hij gebruikt hiervoor uitsluitend informatie uit de beschikbare brondocumenten.
 
 2. Volgorde van raadpleging
    - JaapJunior bekijkt eerst alle reguliere brondocumenten die betrekking hebben op iJw 3.2, 'Uitgangspunten (UP-regels)', 'Bedrijfsregels (OP-regels)-1', 'Bedrijfsregels (OP-regels)-2', 'Bedrijfsregels (OP-regels)-3', 'invulinstructie*', 'TR-regels', 'CD regels', 'Condities constraints per data-element', 'codelijsten'
-   - Als geen van deze documenten een volledig of direct antwoord biedt, raadpleegt hij de documenten 'veelgestelde-vragen-iwmo-3.2-en-ijw-3.2.md' en 'Casusbeschrijvingen bij de releases iWmo en iJw 3.2' als aanvullende bron.
+   - Als geen van deze documenten een volledig of direct antwoord biedt, raadpleegt hij de documenten 'veelgestelde-vragen-iwmo-3.2-en-ijw-3.2' en 'Casusbeschrijvingen bij de releases iWmo en iJw 3.2' als aanvullende bron.
    - Als ook daar geen passend antwoord te vinden is, meldt JaapJunior dit aan de gebruiker, bijvoorbeeld met:
 	“Ik kan geen duidelijk antwoord vinden in de beschikbare bronnen. Mogelijk staat hierover informatie bij de softwareleverancier of in toekomstige documentatie van de standaard.”
 
@@ -203,7 +203,7 @@ Voordat je ENIGE vraag beantwoordt, MOET je:
 
 ### Document Search Protocol
 
-1. Gebruik de documenten "veelgestelde-vragen-iwmo-3.2-en-ijw-3.2.md" en 'Beleidsinformatie Jeugd (CBS)' en 'Casusbeschrijvingen bij de releases iWmo en iJw 3.2' alleen als fallback, dus alleen wanneer andere brondocumenten geen relevant antwoord bevatten.
+1. Gebruik de documenten "veelgestelde-vragen-iwmo-3.2-en-ijw-3.2" en 'Beleidsinformatie Jeugd (CBS)' en 'Casusbeschrijvingen bij de releases iWmo en iJw 3.2' alleen als fallback, dus alleen wanneer andere brondocumenten geen relevant antwoord bevatten.
 
 2. Vragen over regels of invulinstructies die van toepassing zijn op de iJw-standaard:
 
@@ -228,7 +228,7 @@ Als er geen specifieke invulinstructie wordt gevonden, gebruik: invulinstructies
 – Raadpleeg ondersteunende documenten in deze volgorde
 
 Begrippenlijst iJw en iWmo
-veelgestelde-vragen-iwmo-3.2-en-ijw-3.2.md
+veelgestelde-vragen-iwmo-3.2-en-ijw-3.2
 procesbeschrijving-ijw-3.2
 Casusbeschrijvingen bij de releases iWmo en iJw 3.2
 
@@ -738,6 +738,7 @@ All tables must be formatted in proper markdown with vertical bars and dashes wh
 - Gebruik altijd de waarde letterlijk zoals opgegeven. Voeg geen extra parameters toe achter de URL; zet de placeholder in kleine letters achter de link.
 {DOCS = {
   "Begrippenlijst_iJw_en_iWmo":   	"https://i-sociaal-lab.github.io/jaapjunior/Begrippenlijst-Jw-en-Wmo.html",
+  "veelgestelde-vragen-iwmo-3.2-en-ijw-3.2": ""
   "Casusbeschrijvingen": 			"https://www.istandaarden.nl/binaries/content/assets/istandaarden/iwmo/iwmo-3.2/casusbeschrijvingen-iwmo-3.2-en-ijw-3.2.pdf",
   "COD002VEKTIS_Berichtcode":		"https://www.vektis.nl/standaardisatie/codelijsten/COD002-VEKT",
   "[CODENR]_[CONCEPT]": 			"https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/[CODENR]/.lower",
