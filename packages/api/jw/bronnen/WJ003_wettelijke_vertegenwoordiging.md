@@ -20,13 +20,13 @@ Wettelijke vertegenwoordiging die voor de cliënt van toepassing is op het momen
 
 ## 📊 Codelijst
 
-| Code | Omschrijving                     | Toelichting                                      |
-|------|----------------------------------|--------------------------------------------------|
-| 06   | Voogdij                          | Vertegenwoordiging van een minderjarige door een voogd |
-| 07   | Bewindvoering                    | Beheer van financiële zaken                      |
-| 08   | Mentorschap                      | Beslissingen over zorg en welzijn                |
-| 09   | Onder curatele stelling          | Volledige vertegenwoordiging (handelingsonbekwaam) |
-| 10   | Zaakwaarneming                   | Tijdelijke/informele vertegenwoordiging          |
+| Code | Omschrijving          | Toelichting                                            |
+|------|-----------------------|--------------------------------------------------------|
+| 06 | Voogdij                 | Vertegenwoordiging van een minderjarige door een voogd |
+| 07 | Bewindvoering           | Beheer van financiële zaken                            |
+| 08 | Mentorschap             | Beslissingen over zorg en welzijn                      |
+| 09 | Onder curatele stelling | Volledige vertegenwoordiging (handelingsonbekwaam)     |
+| 10 | Zaakwaarneming          | Tijdelijke/informele vertegenwoordiging                |
 
 ---
 
