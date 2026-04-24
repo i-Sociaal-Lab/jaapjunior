@@ -23,6 +23,6 @@ Gecodeerde aanduiding voor het antwoord op een verzoek. Deze code wordt gebruikt
 ## Codelijst
 
 | Code | Omschrijving |
-|------|--------------|
+| ---- | ------------ |
 | 1 | Verzoek afgewezen |
 | 2 | Aanvraag in onderzoek |
