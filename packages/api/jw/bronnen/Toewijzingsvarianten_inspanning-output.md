@@ -26,7 +26,8 @@
 |Generiek|leeg|leeg|gevuld|leeg|Leeg|leeg|Verplicht|
 
 TBGT[1] = totaal binnen geldigheidsduur toewijzing
-
+Aspecifiek toewijzen met of zonder budget zijn toewijzingen die niet onder het Landelijk Transitie Arrangement (LTA) vallen, productcategorie <> 50
+---
 
 ## Outputgericht
 
@@ -40,12 +41,11 @@ TBGT[1] = totaal binnen geldigheidsduur toewijzing
 |Specifiek eenheid Euro's|gevuld|gevuld|leeg|gevuld|euro's (83)|Maand|Optioneel|
 |Specifiek eenheid Euro's|gevuld|gevuld|leeg|gevuld|euro's (83)|TBGT[1]|Optioneel|
 |Specifiek voor een traject|gevuld|gevuld|leeg|gevuld|euro’s (83)|TBGT[1]|Verplicht|
-|Aspecifiek met budget voor een traject[1]|gevuld|leeg|gevuld|leeg|leeg|Leeg|Optioneel|
-|Aspecifiek zonder budget voor een traject|gevuld|leeg|leeg|leeg|leeg|Leeg|Optioneel|
+|Aspecifiek met budget voor een traject[2]|gevuld|leeg|gevuld|leeg|leeg|Leeg|Optioneel|
+|Aspecifiek zonder budget voor een traject[2]|gevuld|leeg|leeg|leeg|leeg|Leeg|Optioneel|
 |Generiek|leeg|leeg|Gevuld|leeg|leeg|Leeg|Optioneel|
 
 TBGT[1] = totaal binnen geldigheidsduur toewijzing
-[2] Aspecifiek toewijzen met of zonder budget is voorbehouden aan trajecten die onder het Landelijk Transitie Arrangement (LTA) vallen.
+traject[2] Aspecifiek toewijzen met of zonder budget is voorbehouden voor trajecten die onder het Landelijk Transitie Arrangement (LTA) vallen, productcategorie 55
 
-
-
+---
