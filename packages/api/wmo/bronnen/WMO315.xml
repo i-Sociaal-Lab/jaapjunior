@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wmo315:Bericht xmlns:iwmo="http://www.istandaarden.nl/iwmo/3_2/basisschema/schema" xmlns:wmo315="http://www.istandaarden.nl/iwmo/3_2/wmo315/schema" >
+	<wmo315:Header>
+		<wmo315:BerichtCode>444</wmo315:BerichtCode>
+		<wmo315:BerichtVersie>3</wmo315:BerichtVersie>
+		<wmo315:BerichtSubversie>2</wmo315:BerichtSubversie>
+		<wmo315:Afzender>42420001</wmo315:Afzender>
+		<wmo315:Ontvanger>0384</wmo315:Ontvanger>
+		<wmo315:BerichtIdentificatie>
+			<iwmo:Identificatie>123456789012</iwmo:Identificatie>
+			<iwmo:Dagtekening>2023-07-15</iwmo:Dagtekening>
+		</wmo315:BerichtIdentificatie>
+		<wmo315:XsdVersie>
+			<iwmo:BasisschemaXsdVersie>1.0.0</iwmo:BasisschemaXsdVersie>
+			<iwmo:BerichtXsdVersie>1.0.0</iwmo:BerichtXsdVersie>
+		</wmo315:XsdVersie>
+	</wmo315:Header>
+	<wmo315:Client>
+		<wmo315:Bsn>999900006</wmo315:Bsn>
+		<wmo315:Geboortedatum>
+			<iwmo:Datum>1972-07-16</iwmo:Datum>
+		</wmo315:Geboortedatum>
+		<wmo315:Geslacht>1</wmo315:Geslacht>
+		<wmo315:Naam>
+			<iwmo:Geslachtsnaam>
+				<iwmo:Achternaam>Wit</iwmo:Achternaam>
+				<iwmo:Voorvoegsel>de</iwmo:Voorvoegsel>
+			</iwmo:Geslachtsnaam>
+			<iwmo:Voornamen>Tim</iwmo:Voornamen>
+			<iwmo:Voorletters>T</iwmo:Voorletters>
+		</wmo315:Naam>
+		<wmo315:Commentaar>Commentaar client</wmo315:Commentaar>
+		<wmo315:AangevraagdeProducten>
+			<wmo315:AangevraagdProduct>
+				<wmo315:ReferentieAanbieder>42420001</wmo315:ReferentieAanbieder>
+				<wmo315:BeschikkingNummer>1234</wmo315:BeschikkingNummer>
+				<wmo315:Product>
+					<iwmo:Categorie>01</iwmo:Categorie>
+					<iwmo:Code>ABCDE</iwmo:Code>
+				</wmo315:Product>
+				<wmo315:BeschikkingIngangsdatum>2023-06-01</wmo315:BeschikkingIngangsdatum>
+				<wmo315:ToewijzingIngangsdatum>2023-06-01</wmo315:ToewijzingIngangsdatum>
+				<wmo315:ToewijzingEinddatum>2023-06-30</wmo315:ToewijzingEinddatum>
+				<wmo315:Omvang>
+					<iwmo:Volume>4</iwmo:Volume>
+					<iwmo:Eenheid>14</iwmo:Eenheid>
+					<iwmo:Frequentie>4</iwmo:Frequentie>
+				</wmo315:Omvang>
+				<wmo315:Verwijzer>
+					<iwmo:Type>04</iwmo:Type>
+					<iwmo:Naam>Verwijzer Naam</iwmo:Naam>
+				</wmo315:Verwijzer>
+				<wmo315:Raamcontract>1</wmo315:Raamcontract>
+				<wmo315:Commentaar>Commentaar Aangevraagd Product</wmo315:Commentaar>
+			</wmo315:AangevraagdProduct>
+			<wmo315:AangevraagdProduct>
+				<wmo315:ReferentieAanbieder>42420002</wmo315:ReferentieAanbieder>
+				<wmo315:BeschikkingNummer>1234</wmo315:BeschikkingNummer>
+				<wmo315:Product>
+					<iwmo:Categorie>02</iwmo:Categorie>
+					<iwmo:Code>BCDEF</iwmo:Code>
+				</wmo315:Product>
+				<wmo315:BeschikkingIngangsdatum>2023-06-01</wmo315:BeschikkingIngangsdatum>
+				<wmo315:ToewijzingIngangsdatum>2023-06-01</wmo315:ToewijzingIngangsdatum>
+				<wmo315:ToewijzingEinddatum>2023-06-30</wmo315:ToewijzingEinddatum>
+				<wmo315:Omvang>
+					<iwmo:Volume>4</iwmo:Volume>
+					<iwmo:Eenheid>14</iwmo:Eenheid>
+					<iwmo:Frequentie>4</iwmo:Frequentie>
+				</wmo315:Omvang>
+				<wmo315:Verwijzer>
+					<iwmo:Type>04</iwmo:Type>
+					<iwmo:Naam>Verwijzer Naam</iwmo:Naam>
+				</wmo315:Verwijzer>
+				<wmo315:Raamcontract>1</wmo315:Raamcontract>
+				<wmo315:Commentaar>Commentaat Aangevraagd Product 2</wmo315:Commentaar>
+			</wmo315:AangevraagdProduct>
+		</wmo315:AangevraagdeProducten>
+	</wmo315:Client>
+</wmo315:Bericht>
