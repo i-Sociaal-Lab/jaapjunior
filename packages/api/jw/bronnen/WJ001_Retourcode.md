@@ -92,4 +92,4 @@ De reden waarom een toewijzing wordt gewijzigd.
 | 9415 | Er is al een StopProduct met dezelfde sleutel en RedenBeeindiging ≠ 20 terwijl StatusAanlevering = 1 of 2. | TR415 |
 | S300 | Gemeentecode komt niet voor in de lijst van CBS. | TR378 |
 | S329 | ProductCode hoort niet bij de ProductCategorie. | TR381 |
-
+---
