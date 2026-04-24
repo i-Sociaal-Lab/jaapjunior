@@ -1,0 +1,56 @@
+**Weeknummer berekenen**
+
+*Hoe wordt het weeknummer bepaald, voor het berekenen van het aantal weken in een productperiode*
+*In Nederland (en vrijwel heel Europa) gebruiken we de ISO-8601 standaard om weeknummers te bepalen.* 
+
+De berekening van het weeknummer is:
+
+1. Een week begint op maandag. De eerste dag van de week is maandag en de laatste dag is zondag.
+2. Week 1 is de week met de eerste donderdag van het jaar, of anders gezegd de week waarin 4 januari valt, is altijd week 1.
+
+Als je het aantal weeknummers binnen een periode (met begin- en einddatum) wilt bepalen volgens de ISO-8601 standaard, doorloop je deze stappen:
+
+🔹 Stap 1: Bepaal de weeknummers van beide datums 
+      Bereken het weeknummer van de begindatum
+      Bereken het weeknummer van de einddatum
+Let ook op het jaar van het weeknummer (belangrijk rond jaarwisselingen!)
+
+🔹 Stap 2: Controleer of de periode binnen hetzelfde jaar valt
+      Ja → eenvoudige berekening:
+    Aantal weken = eindweek − beginweek + 1
+      Nee → periode loopt over een jaargrens, dan moet je splitsen
+
+🔹 Stap 3: Bij jaarovergang (belangrijk!)
+
+Splits de periode in delen:
+
+Van begindatum → einde van dat jaar
+Volledige tussenliggende jaren (indien van toepassing)
+Van begin van eindjaar → einddatum
+
+👉 Houd er rekening mee dat een jaar:
+
+52 weken heeft, of 53 weken (komt voor als het jaar begint op donderdag of een schrikkeljaar is dat op woensdag begint)
+🔹 Stap 4: Tel het totaal aantal weken.
+      Tel de weken uit alle delen bij elkaar op
+      Vergeet niet: inclusief tellen (de beginweek telt mee)
+
+🔹 Stap 5: Controleer randgevallen
+
+Let extra op:
+
+Datums aan het begin van januari (kunnen nog bij week 52/53 van vorig jaar horen)
+Datums eind december (kunnen al week 1 van het volgende jaar zijn)
+
+**gehele weken berekenen**
+de week start op maandag en de week eindigt op zondag en beide dagen liggen in dezelfde periode.
+Bepaal:
+ eerste_dag van de periode
+ laatste_dag van de periode
+Zoek de eerste maandag in de periode
+→ dat is het begin van de eerste mogelijke volledige week
+Vanaf die maandag:
+tel steeds 7 dagen verder
+controleer of de zondag (maandag + 6 dagen) nog in dezelfde periode valt
+Elke keer dat dat zo is → +1 volledige week
+
