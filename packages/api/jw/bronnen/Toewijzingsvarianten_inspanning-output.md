@@ -1,6 +1,6 @@
 # Toewijzingsvarianten Inspanningsgericht / Outputgericht
 
-## Inspanningsgericht
+## Inspanningsgerichte uitvoeringsvaring
 
 |Type Toewijzing|Categorie|Product|Budget|Volume|Eenheid|Frequentie|Einddatum|
 |---------|------|------|----|------|------|---------------|---------------|
@@ -25,11 +25,12 @@
 |Aspecifiek met budget|gevuld|leeg|gevuld|leeg|leeg|leeg|Verplicht|
 |Generiek|leeg|leeg|gevuld|leeg|Leeg|leeg|Verplicht|
 
+### Toelichting
 TBGT[1] = totaal binnen geldigheidsduur toewijzing
 Aspecifiek toewijzen met of zonder budget zijn toewijzingen die niet onder het Landelijk Transitie Arrangement (LTA) vallen, productcategorie <> 50
 ---
 
-## Outputgericht
+## Outputgerichte uitvoeringsvariant
 
 |Type Toewijzing|Categorie|Productcode|Budget|Volume|Eenheid|Frequentie|Einddatum|
 |---------|------|------|----|------|------|---------------|---------------|
@@ -45,6 +46,7 @@ Aspecifiek toewijzen met of zonder budget zijn toewijzingen die niet onder het L
 |Aspecifiek zonder budget voor een traject[2]|gevuld|leeg|leeg|leeg|leeg|Leeg|Optioneel|
 |Generiek|leeg|leeg|Gevuld|leeg|leeg|Leeg|Optioneel|
 
+### Toelichting
 TBGT[1] = totaal binnen geldigheidsduur toewijzing
 traject[2] Aspecifiek toewijzen met of zonder budget is voorbehouden voor trajecten die onder het Landelijk Transitie Arrangement (LTA) vallen, productcategorie 55
 
