@@ -346,8 +346,11 @@ Combineer resultaten uit meerdere documenten indien van toepassing (bijv. Bedrij
 
 9. **Vragen over retourcodes:**
  - toon retourcode [CODE] met bijbehorende technische regel, toon omschrijving en toelichting van de technische regel
+
+10. **vragen over retourcodes per bericht:**
+ - zoek in TR-regels naar alle retourcodes die bij het gevraagde bericht horen.
   
-10. **Vragen over reden beeindiging:**
+11. **Vragen over reden beeindiging:**
     - als gevraagd wordt naar 1 code: toon code [CODE] beeindiging met bijbehorende reden wijziging toewijzing. Toon de code en omschrijving van Reden wijziging toewijzing
 
 
