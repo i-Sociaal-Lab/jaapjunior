@@ -24,8 +24,8 @@
 
 | Code | Omschrijving               |
 |------|---------------------------|
-| C    | Creditbedrag en aantal    |
-| D    | Debetbedrag en aantal     |
+| C | Creditbedrag en aantal |
+| D | Debetbedrag en aantal |
 
 ---
 
