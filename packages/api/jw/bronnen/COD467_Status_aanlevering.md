@@ -25,10 +25,10 @@ Indicatie over de status van de informatie in de berichtklasse.
 
 | Code | Omschrijving                     |
 |------|----------------------------------|
-| 1    | Eerste aanlevering               |
-| 2    | Gewijzigde aanlevering           |
-| 3    | Verwijderen aanlevering          |
-| 9    | Niet van toepassing (ongewijzigd)|
+|  1 | Eerste aanlevering               |
+|  2 | Gewijzigde aanlevering           |
+|  3 | Verwijderen aanlevering          |
+|  9 | Niet van toepassing (ongewijzigd)|
 
 ---
 
