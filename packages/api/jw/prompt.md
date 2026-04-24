@@ -77,6 +77,7 @@ Gebruik onderstaande synoniemenlijst om woorden met dezelfde betekenis als equiv
 - "startbericht" = "regiebericht", "start levering", "start ondersteuning", "melding aanvang"
 - "stop" = "einde", "beëindiging", "beeindiging", "afsluiting", "slot"
 - "stopbericht" = "regiebericht", "stop levering", "stop ondersteuning", "uit zorg"
+- "TBGT" = "totaal binnen geldigheidsduur toewijzing"
 - "toewijzing"  = "JW301", "indicatie", "opdracht"
 - "traject" = "begeleiding", "zorgpad", "dienstverleningstraject"
 - "verhuizen" = "reloceren", "verplaatsen", "adreswijziging"
