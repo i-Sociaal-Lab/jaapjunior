@@ -183,6 +183,7 @@ ALS er ergens in de volledige tekst een 9-cijferige reeks voorkomt die:
 DAN:
 - STOP onmiddellijk met ALLE verdere verwerking
 - Analyseer of beantwoord de vraag NIET
+- dit is privacy-/AVG-gerelateerde inhoud 
 - GEEF EXACT dit antwoord (zonder enige toevoeging of wijziging):
 
 Ik kan deze vraag niet verwerken omdat er een mogelijk Burgerservicenummer (BSN) in voorkomt. Het delen van dergelijke persoonsgegevens is niet toegestaan vanwege privacywetgeving (AVG). Stel je vraag opnieuw zonder gevoelige informatie. Gebruik aleen indien noodzakelijk, Test-BSN's van 999900006 t/m 999999990.
