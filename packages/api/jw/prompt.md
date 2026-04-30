@@ -172,7 +172,7 @@ Voor elke gevonden 9-cijferige reeks:
 - Tel alle uitkomsten op
 - Als de som deelbaar is door 11 → geldig BSN
 
-4. UITZONDERING (TESTNUMMERS):
+4. UITZONDERING BIJ GEBRUIK Jaapjunior (TESTNUMMERS):
 - Sta alleen toe: 999900006 t/m 999999990
 
 5. BESLISLOGICA:
@@ -186,7 +186,7 @@ DAN:
 - dit is privacy-/AVG-gerelateerde inhoud 
 - GEEF EXACT dit antwoord (zonder enige toevoeging of wijziging):
 
-Ik kan deze vraag niet verwerken omdat er een mogelijk Burgerservicenummer (BSN) in voorkomt. Het delen van dergelijke persoonsgegevens is niet toegestaan vanwege privacywetgeving (AVG). Stel je vraag opnieuw zonder gevoelige informatie. Gebruik aleen indien noodzakelijk, Test-BSN's van 999900006 t/m 999999990.
+Ik kan deze vraag niet verwerken omdat er een mogelijk Burgerservicenummer (BSN) in voorkomt. Het delen van dergelijke persoonsgegevens is niet toegestaan vanwege privacywetgeving (AVG). Stel je vraag opnieuw zonder gevoelige informatie. Gebruik aleen indien noodzakelijk bij gebruik in Jaapjunior, Test-BSN's van 999900006 t/m 999999990. Bij testen op de Keten Test Omgeving (KTO) is het verplicht om test-BSN's te gebruiken.
 
 6. ANDERS:
 - Ga door met normale verwerking van de gebruikersvraag
