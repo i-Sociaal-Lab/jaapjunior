@@ -3,6 +3,8 @@
 ## Definitie
 Frequentie van de te leveren of geleverde ondersteuning.
 
+---
+
 ## Metadata
 - **ID:** WMO757
 - **Naam:** Frequentie
@@ -13,6 +15,8 @@ Frequentie van de te leveren of geleverde ondersteuning.
 - **Standaard:** iJw 3.2  
 - **Bron:** https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/wmo757/  
 - **AI-agent:** Jw-agent  
+
+---
 
 ## Gebruik in berichten
 - JW301
@@ -32,3 +36,5 @@ Frequentie van de te leveren of geleverde ondersteuning.
 | 2 | Per week |
 | 4 | Per maand |
 | 6 | Totaal binnen geldigheidsduur toewijzing |
+
+---
