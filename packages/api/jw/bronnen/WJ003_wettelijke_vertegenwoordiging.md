@@ -61,3 +61,5 @@ Een informele en vaak tijdelijke situatie waarin iemand handelt namens de cliën
 
 ## 🏥 Toepassing
 Deze codelijst wordt gebruikt binnen de iJW-standaard (jeugdzorg) om vast te leggen wie bevoegd is om beslissingen te nemen namens een cliënt.
+
+---
