@@ -26,7 +26,7 @@ meest recente berichten in het berichtenverkeer die bepalen wat de situatie van 
 
 ### actuele toewijzing
 
-toewijzing die op of na de huidige datum geldig is of waarvan de ingangsdatum in de toekomst ligt
+Actuele toewijzingen zijn toewijzingen waarvan de einddatum leeg is of waarvoor geldt dat de einddatum op of na de huidige datum ligt.
 
 ### acute zorg
 
