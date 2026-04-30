@@ -441,6 +441,7 @@ Variaties:
     - "Wat zijn de codes of waarden voor [CONCEPT]"
     - "Geef of toon (de) codelijst of tabel [CONCEPT]"
     - "Welke [CONCEPT]-codes bestaan er"
+	- "toon [CONCEPT]"
 
   Invulopties:
     - "Wat kan ik invullen voor [CONCEPT]"
