@@ -41,13 +41,6 @@ Het document dient als **naslagwerk en validatiebron** voor AI-agenten die vrage
 
 ## Bedrijfsregels (OP-regels)
 
-### `OP298` | Verlagen volume toewijzing
-Bron: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op298/
-
-- Dit is alleen toegestaan **na overleg met en instemming van** de aanbieder bij frequentie “totaal binnen geldigheidsduur”.
-
------
-
 ### `OP299` | Verlagen budget
 Bron: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op299/
 
@@ -104,7 +97,6 @@ Bron: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bed
 -----
 
 ### `OP307` | Een verzoek om toewijzing bericht wordt alleen gebruikt indien een cliënt zich met een (wettelijke) verwijzing of een open beschikking meldt bij de zorgaanbieder?
-Bron: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op307/
 
 - Wordt altijd gebruikt bij **(wettelijke) verwijzing of open beschikking**.
 - Alleen indien er nog **geen actuele toewijzing** is voor het product en periode.
