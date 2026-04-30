@@ -4,6 +4,8 @@
 
 Melding in een retourbericht. Het betreft een code die in een retourbericht het resultaat van de beoordeling van een (deel van een) ontvangen bericht weergeeft.
 
+---
+
 ## Metadata
 
 * **ID:** WJ001
