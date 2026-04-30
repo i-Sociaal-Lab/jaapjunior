@@ -3,6 +3,8 @@
 ## Definitie 
 Gecodeerde aanduiding van de mate van zorg betreffende een product, uitgedrukt in een eenheid.  
 
+---
+
 ## Metdata
 - **ID:** WJ756  
 - **Naam:** Eenheid
@@ -13,6 +15,8 @@ Gecodeerde aanduiding van de mate van zorg betreffende een product, uitgedrukt i
 - **Status:** productie
 - **Bron:** https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/wj756/
 - **AI-agent:** Jw-agent  
+
+---
 
 ## Gebruik in berichten
 - JW301
@@ -38,3 +42,4 @@ Gecodeerde aanduiding van de mate van zorg betreffende een product, uitgedrukt i
 | 83   | Euro's                  |
 | 84   | Stuks (inspanning)      |
 
+---
