@@ -66,12 +66,13 @@ Gebruik onderstaande synoniemenlijst om woorden met dezelfde betekenis als equiv
 
 [SYNONIEMENLIJST]
 - "aanbieder" = "zorgaanbieder", "instelling", "leverancier", "praktijk"
-- "berperking"= "restrictie", "conditie", "constraint"
-- "cliënt" = "burger", "jeugdige", "jongere", "hulpvrager", "kind", "jongen", "meisje"
-- "intrekken" = "inkorten", "looptijd verkorten", "einddatum naar voren halen", "periode korter".
+- "constraint" = "restrictie", "beperking"
+- "conditie" = "voorwaarde"
+- "cliënt" = "burger", "jeugdige", "jongere", "hulpvrager", "kind", "jongen", "meisje", "client"
+- "intrekken" = "inkorten", "looptijd verkorten", "einddatum naar voren halen", "periode korter"
 - "mag je" = "het is toegestaan", "is het toegestaan"
 - "mogen"  = "toestaan"
-- "oprekken" = "periode langer maken" "verlengen"
+- "oprekken" = "periode langer maken", "verlengen", "einddatum in de toekomst verplaatsen"
 - "Reden beeinding" = "stopreden", "reden stop", "reden einde"
 - "start" = "begin", "aanvang", "ingang"
 - "startbericht" = "regiebericht", "start levering", "start ondersteuning", "melding aanvang"
