@@ -92,10 +92,9 @@ Bron: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bed
 
 -----
 
-### `OP306` | wanneer wordt het Verzoek om wijziging (VOW) gebruikt?
+### `OP306` | Het verzoek om wijziging bericht wordt gebruikt als tijdens levering van zorg en/of ondersteuning blijkt dat een ander pakket van toegewezen producten nodig is?
 Bron: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op306/
 
-- Het verzoek om wijziging bericht wordt gebruikt als tijdens levering van zorg en/of ondersteuning blijkt dat een ander pakket van toegewezen producten nodig is
 - Een verzoek om wijziging bericht wordt altijd verstuurd vanuit een situatie waarbij er al geleverd wordt op basis van een of meer actuele toewijzingen.
 - Wordt gebruikt bij veranderingen in de zorgsituatie van een cliënt.  
 - Verstuurd vanuit **actuele toewijzingen**.  
@@ -104,10 +103,9 @@ Bron: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bed
 
 -----
 
-### `OP307` | wanneer wordt het Verzoek om toewijzing (VOT) gebruikt?
+### `OP307` | Een verzoek om toewijzing bericht wordt alleen gebruikt indien een cliënt zich met een (wettelijke) verwijzing of een open beschikking meldt bij de zorgaanbieder?
 Bron: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op307/
 
-- Een verzoek om toewijzing bericht wordt alleen gebruikt indien een cliënt zich met een (wettelijke) verwijzing of een open beschikking meldt bij de zorgaanbieder
 - Wordt altijd gebruikt bij **(wettelijke) verwijzing of open beschikking**.
 - Alleen indien er nog **geen actuele toewijzing** is voor het product en periode.
 - Kan niet gebruikt worden als er al een actuele toewijzing bestaat.
