@@ -42,15 +42,8 @@ Het document dient als **naslagwerk en validatiebron** voor AI-agenten die vrage
 
 ## Bedrijfsregels (OP-regels)
 
-## `OP186` | stoppen van toewijzing in het verleden
-Bron: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op186/
-
-- Beëindigen van een toewijzing in het verleden mag alleen in overeenstemming met de aanbieder.  
-- Toepassing: situaties waarin de aanbieder niet had kunnen weten dat ondersteuning niet geleverd mocht worden.
-
----
 ## OP186 - Stoppen van toewijzing in het verleden
-- Berichttype: [JW3010]
+- Berichttype: [JW301]
 - gerelateerd_aan: [UP004, UP017]
 
 ## Regel
