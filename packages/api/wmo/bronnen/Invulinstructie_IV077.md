@@ -28,7 +28,7 @@ Afhankelijk van de **uitvoeringsvariant** (inspanningsgericht of outputgericht) 
 Het maximale volume wordt bepaald op basis van het aantal (eventueel gebroken) kalenderweken binnen de productperiode.  
 Dit aantal wordt vermenigvuldigd met het **weekvolume** uit de toewijzing.
 
-Bij producten uit **Wmo Productcategorie 01** (Hulp bij het huishouden) geldt een vaste rekenregel:  
+Bij producten uit **Wmo Productcategorie 01** (Hulp bij het huishouden,HH) geldt een vaste rekenregel:  
 > Het maximale volume = 6 × weekvolume.
 
 Na berekening moet ook worden gecontroleerd dat het totaal van alle declaraties niet hoger is dan het totale toegewezen volume over de toewijzingsperiode.
