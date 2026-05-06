@@ -1,26 +1,28 @@
-# WJ001: Retourcode (uitgebreid)
+# WJ001 - Retourcode (uitgebreid)
 
 ## Definitie
-
 Melding in een retourbericht. Het betreft een code die in een retourbericht het resultaat van de beoordeling van een (deel van een) ontvangen bericht weergeeft.
 
 ---
 
 ## Metadata
 
-* **ID:** WJ001
-* **Naam:** Retourcode
-* **Status:** Productie
-* **Element:** LDT_RetourCode
-* **Type bestand:** Codelijst
-* **Standaard:** iJw 3.2
+| Veld | Waarde |
+|---|---|
+| ID | WJ001 |
+| Naam | Retourcode |
+| Element | LDT_RetourCode |
+| Type | Codelijst |
+| Standaard | iJw 3.2 |
+| Status | Productie |
+| Auteur | Zorginstituut Nederland |
 
 ---
 
-## 📊 Codelijst
+## Codes
 
-| Code | Omschrijving                                                        | Regel | Berichttypen                                           |
-| ---- | ------------------------------------------------------------------- | ----- | ------------------------------------------------------ |
+| Code | Betekenis | TR-Regel | Berichttypen |
+|---|---|---|---|
 | 0001 | Bericht is afgekeurd om technische redenen.                         |       | JW301, JW305, JW307, JW315, JW317, JW319, JW323        |
 | 0200 | Geen opmerking over deze berichtklasse.                             |       | JW301, JW305, JW307, JW315, JW317, JW319, JW323        |
 | 0233 | Berichtklasse is niet beoordeeld.                                   |       | JW301, JW305, JW307, JW315, JW317, JW319, JW323        |
@@ -86,3 +88,9 @@ Melding in een retourbericht. Het betreft een code die in een retourbericht het 
 ## Toelichting
 
 De kolom *Berichttypen* is afgeleid uit de technische regels (TR-regels). Hierdoor is direct zichtbaar op welke berichttypen een retourcode van toepassing is.
+
+## AI-context
+
+Dit betreft een codelijst (enumeratie) voor `LDT_RetourCode` binnen iJw 3.2.
+De retourcode beschrijft het resultaat van de technische of inhoudelijke beoordeling van een ontvangen bericht of berichtonderdeel.
+De TR-regel verwijst naar de validatieregel waarop de retourmelding gebaseerd is.
