@@ -19,7 +19,7 @@ Gecodeerde aanduiding voor de reden van afwijzing van een verzoek.
 - JW320
 ---
 
-## Codelijst
+## 📊 Codelijst
 
 | Code | Omschrijving |
 |------|--------------|
