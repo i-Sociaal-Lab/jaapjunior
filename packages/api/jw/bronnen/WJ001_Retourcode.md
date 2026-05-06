@@ -17,7 +17,7 @@ Melding in een retourbericht. Het betreft een code die in een retourbericht het 
 
 ---
 
-## Codelijst (uitgebreid met berichttypen)
+## 📊 Codelijst
 
 | Code | Omschrijving                                                        | Regel | Berichttypen                                           |
 | ---- | ------------------------------------------------------------------- | ----- | ------------------------------------------------------ |
