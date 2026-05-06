@@ -24,7 +24,7 @@ Gecodeerde aanduiding van de mate van zorg betreffende een product, uitgedrukt i
 - JW315
 - JW316
 - JW317
-- JW317
+- JW318
 - JW323
 - JW325
 
