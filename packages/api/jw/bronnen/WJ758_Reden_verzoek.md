@@ -22,7 +22,7 @@ Deze code wordt gebruikt in het VOW-bericht.
 
 ---
 
-## Gebruik in berichten
+## Gebruikt in berichten
 
 - JW317
 - JW318
