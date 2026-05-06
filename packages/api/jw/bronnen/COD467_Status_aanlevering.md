@@ -1,0 +1,39 @@
+# COD467 Status aanlevering
+
+## Definitie
+Indicatie over de status van de informatie in de berichtklasse.
+
+## Metadata
+- **ID:** COD467  
+- **Naam:** Status aanlevering 
+- **Status:** Productie
+- **ELement:** LDT_StatusAanlevering
+- **Type bestand:** Codelijst
+- **Auteur:** Zorginstituut Nederland  
+- **Standaard:** iJw 3.2  
+- **Bron:** https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/cod467/  
+- **AI-agent:** Wmo-agent  
+
+## Gebruik in berichten
+- JW305
+- JW306
+- JW307
+- JW308  
+---
+
+## Codelijst
+
+| Code | Omschrijving                     |
+|------|----------------------------------|
+|  1 | Eerste aanlevering               |
+|  2 | Gewijzigde aanlevering           |
+|  3 | Verwijderen aanlevering          |
+|  9 | Niet van toepassing (ongewijzigd)|
+
+---
+
+## Toelichting
+
+- **Laatst bijgewerkt:** 01-01-2015  
+- **Tabeltype:** Referentielijst  
+- **Toepassing:** Geeft de status van aanlevering aan binnen berichtklassen *StartProduct (JW305)* en *StopProduct (JW307)*  

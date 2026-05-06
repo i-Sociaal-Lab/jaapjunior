@@ -1,0 +1,47 @@
+# WJ232 — Juridische status
+
+## Definitie
+Juridische situatie die voor de cliënt van toepassing is op het moment van beoordeling.
+
+---
+
+## Metadata
+
+| Veld | Waarde |
+|---|---|
+| ID | WJ232 |
+| Naam | Juridische status |
+| Element | LDT_JuridischeStatus |
+| Type | Codelijst |
+| Standaard | iJw 3.2 |
+| Status | Productie |
+| Auteur | Zorginstituut Nederland |
+| Bron | https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/wj232/ |
+| AI-agent | Jw-agent |
+
+---
+
+## Gebruikt in berichten
+- JW301
+- JW302
+
+---
+
+## Codes
+
+| Code | Betekenis |
+|---|---|
+| 01 | Rechterlijke machtiging (rm) voorlopig / voortgezette machtiging |
+| 02 | RM op eigen verzoek |
+| 03 | RM met voorwaardelijk ontslag |
+| 04 | Onder toezichtstelling (ots) |
+| 05 | In bewaring stelling (ibs) |
+| 11 | Strafrechterlijke justitiële contacten (tbs) |
+| 12 | Strafrechterlijke justitiële contacten (overig) |
+
+---
+
+## AI-context
+
+Dit betreft een codelijst (enumeratie) voor `LDT_JuridischeStatus` binnen iJw 3.2.  
+De code beschrijft de juridische status of juridische maatregel die van toepassing is op de cliënt ten tijde van de beoordeling.

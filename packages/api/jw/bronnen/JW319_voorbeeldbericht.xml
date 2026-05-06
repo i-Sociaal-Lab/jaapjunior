@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jw319:Bericht xmlns:ijw="http://www.istandaarden.nl/ijw/3_2/basisschema/schema" xmlns:jw319="http://www.istandaarden.nl/ijw/3_2/jw319/schema" >
+	<jw319:Header>
+		<jw319:BerichtCode>488</jw319:BerichtCode>
+		<jw319:BerichtVersie>3</jw319:BerichtVersie>
+		<jw319:BerichtSubversie>2</jw319:BerichtSubversie>
+		<jw319:Afzender>0384</jw319:Afzender>
+		<jw319:Ontvanger>65656055</jw319:Ontvanger>
+		<jw319:BerichtIdentificatie>
+			<ijw:Identificatie>876543219</ijw:Identificatie>
+			<ijw:Dagtekening>2026-04-01</ijw:Dagtekening>
+		</jw319:BerichtIdentificatie>
+		<jw319:XsdVersie>
+			<ijw:BasisschemaXsdVersie>1.0.0</ijw:BasisschemaXsdVersie>
+			<ijw:BerichtXsdVersie>1.0.0</ijw:BerichtXsdVersie>
+		</jw319:XsdVersie>
+	</jw319:Header>
+	<jw319:Antwoord>
+		<jw319:ReferentieAanbieder>9003</jw319:ReferentieAanbieder>
+		<jw319:VerzoekAntwoord>1</jw319:VerzoekAntwoord>
+		<jw319:RedenAfwijzingVerzoek>8</jw319:RedenAfwijzingVerzoek>
+		<jw319:Woonplaatsbeginsel>
+			<jw319:Gemeente>1916</jw319:Gemeente>
+		</jw319:Woonplaatsbeginsel>
+	</jw319:Antwoord>
+</jw319:Bericht>
