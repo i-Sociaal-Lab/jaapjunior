@@ -1,25 +1,34 @@
-{
-  "standaard": "iJw",
-  "versie": "3.2",
-  "codelijst": {
-    "id": "WJ758",
-    "naam": "Reden verzoek",
-    "definitie": "Gecodeerde aanduiding voor de reden van een verzoek. Deze code wordt gebruikt in het VOW-bericht.",
-    "bronUrl": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/wj758/",
-    "codes": [
-      {
-        "code": "1",
-        "omschrijving": "Verandering clientsituatie"
-      },
-      {
-        "code": "2",
-        "omschrijving": "Wijziging zorgplan"
-      }
-    ]
-  },
-  "metadata": {
-    "laatstBijgewerkt": "01-01-2021",
-    "tabeltype": "Referentielijst",
-    "toepassing": "Reden van een verzoek binnen het VOW-bericht in het iJw-berichtenverkeer"
-  }
-}
+# WJ758: Reden verzoek
+
+## Definitie 
+Gecodeerde aanduiding voor de reden van een verzoek. Deze code wordt gebruikt in het VOW-bericht.
+
+---
+
+## Metadata
+- **ID:** WJ758  
+- **Naam:** Reden verzoek
+- **Element:** LDT_RedenVerzoek
+- **Tabeltype:** Codelijst 
+- **Standaard:** iJw 3.2
+- **Auteur:** Zorginstituut Nederland
+- **Status:** productie
+- **Bron:** https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/wj758/
+- **AI-agent:** Jw-agent  
+
+---
+
+## Gebruik in berichten
+- JW317
+- JW318
+
+---
+
+### Codelijst
+
+| Code | Omschrijving              |
+|------|---------------------------|
+| 1   | Verandering clientsituatie |
+| 2   | Wijziging zorgplan         |
+
+---
