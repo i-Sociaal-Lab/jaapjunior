@@ -1,4 +1,4 @@
-# WMO757: Frequentie
+# WMO757 — Frequentie
 
 ## Definitie
 Frequentie van de te leveren of geleverde ondersteuning.
@@ -6,19 +6,23 @@ Frequentie van de te leveren of geleverde ondersteuning.
 ---
 
 ## Metadata
-- **ID:** WMO757
-- **Naam:** Frequentie
-- **Element:** LDT_Frequentie
-- **Type bestand:** Codelijst
-- **Status:** Productie  
-- **Auteur:** Zorginstituut Nederland  
-- **Standaard:** iJw 3.2  
-- **Bron:** https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/wmo757/  
-- **AI-agent:** Jw-agent  
+
+| Veld | Waarde |
+|---|---|
+| ID | WMO757 |
+| Naam | Frequentie |
+| Element | LDT_Frequentie |
+| Type | Codelijst |
+| Standaard | iJw 3.2 |
+| Status | Productie |
+| Auteur | Zorginstituut Nederland |
+| Bron | https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/wmo757/ |
+| AI-agent | Jw-agent |
 
 ---
 
-## Gebruik in berichten
+## Gebruikt in berichten
+
 - JW301
 - JW302
 - JW315
@@ -28,13 +32,18 @@ Frequentie van de te leveren of geleverde ondersteuning.
 
 ---
 
-### Codelijst
+## Codes
 
-| Code | Omschrijving |
-|:------:|:--------------:|
+| Code | Betekenis |
+|---|---|
 | 1 | Per dag |
 | 2 | Per week |
 | 4 | Per maand |
 | 6 | Totaal binnen geldigheidsduur toewijzing |
 
 ---
+
+## AI-context
+
+Dit betreft een codelijst (enumeratie) voor `LDT_Frequentie` binnen iJw 3.2.  
+De code geeft aan met welke frequentie ondersteuning wordt geleverd of toegewezen.
