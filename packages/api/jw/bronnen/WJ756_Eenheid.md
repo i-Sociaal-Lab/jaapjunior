@@ -21,7 +21,7 @@ Gecodeerde aanduiding van de mate van zorg betreffende een product, uitgedrukt i
 
 ---
 
-## Gebruik in berichten
+## Gebruikt in berichten
 
 - JW301
 - JW302
