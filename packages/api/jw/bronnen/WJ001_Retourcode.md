@@ -15,6 +15,7 @@ Melding in een retourbericht. Het betreft een code die in een retourbericht het 
 | Type | Codelijst |
 | Standaard | iJw 3.2 |
 | Status | Productie |
+| Bron | Bron	https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/wj001/ |
 | Auteur | Zorginstituut Nederland |
 
 ---
