@@ -1,5 +1,7 @@
 # WJ759: Reden afwijzing verzoek
-- **Definitie:** Gecodeerde aanduiding voor de reden van afwijzing van een verzoek.
+
+## Definitie
+Gecodeerde aanduiding voor de reden van afwijzing van een verzoek.
 
 ## Metadata
 - **ID:** WJ759
@@ -30,3 +32,5 @@
 | 7 | Zorginhoudelijke afkeur |
 | 8 | Woonplaatsbeginsel |
 | 9 | Leeftijdsgrens is bereikt |
+
+---
