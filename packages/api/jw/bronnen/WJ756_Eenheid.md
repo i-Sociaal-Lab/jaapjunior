@@ -5,7 +5,7 @@ Gecodeerde aanduiding van de mate van zorg betreffende een product, uitgedrukt i
 
 ---
 
-## Metdata
+## Metadata
 - **ID:** WJ756  
 - **Naam:** Eenheid
 - **Element:** LDT_Eenheid
