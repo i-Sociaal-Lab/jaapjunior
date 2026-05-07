@@ -22,7 +22,7 @@ Aanduiding van de aard van de (zelf)verwijzer.
 
 ---
 
-## Gebruik in berichten
+## Gebruikt in berichten
 
 - JW315
 - JW316
