@@ -1,91 +1,116 @@
-# COD472: Soort relatie
+# COD472 — Soort relatie
 
-**Definitie**  
+## Definitie
+
 De soort relatie die een persoon ten opzichte van de cliënt heeft.
 
-## Metadata
-- **ID:** COD472  
-- **Naam:** Soort relatie
-- **Status:** Productie
-- **ELement:** LDT_SoortRelatie
-- **Type bestand:** Codelijst
-- **Auteur:** Zorginstituut Nederland  
-- **Standaard:** iJw 3.2  
-- **Bron:** https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/cod472/  
-- **AI-agent:** Jw-agent  
+---
 
-## Gebruik in berichten
+## Metadata
+
+| Veld | Waarde |
+|---|---|
+| ID | COD472 |
+| Naam | Soort relatie |
+| Element | LDT_SoortRelatie |
+| Type | Codelijst |
+| Standaard | iJw 3.2 |
+| Status | Productie |
+| Auteur | Zorginstituut Nederland |
+| Bron | https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/cod472/ |
+| AI-agent | Jw-agent |
+
+---
+
+## Gebruikt in berichten
+
 - JW301
 - JW302
 
 ---
 
-## 📋 Codelijst
+## Codes
 
-| Code | Omschrijving |
-|------|--------------|
-| 03 | Curator (juridisch)  |
+| Code | Betekenis |
+|---|---|
+| 03 | Curator (juridisch) |
 | 04 | Financieel (gemachtigd) |
 | 05 | Financieel (toetsing) |
-| 06 | Leefeenheid          |
-| 07 | Hulpverlener         |
-| 08 | Specialist           |
-| 09 | Anders               |
-| 10 | Ouder                |
-| 11 | Voogd                |
+| 06 | Leefeenheid |
+| 07 | Hulpverlener |
+| 08 | Specialist |
+| 09 | Anders |
+| 10 | Ouder |
+| 11 | Voogd |
 | 12 | Partner/echtgeno(o)t(e) |
-| 13 | Pleegouder           |
-| 14 | Bewindvoerder        |
-| 15 | Mentor               |
-| 16 | Zoon/dochter         |
-| 17 | Familielid           |
-| 18 | Gezinslid            |
-| 19 | Buur                 |
-| 20 | Vriend(in)/kennis    |
-| 21 | Cliëntondersteuner   |
-| 22 | Huisarts             |
-| 23 | Erven van            |
-| 24 | Werkgever            |
-| 25 | Wijkcoach            |
+| 13 | Pleegouder |
+| 14 | Bewindvoerder |
+| 15 | Mentor |
+| 16 | Zoon/dochter |
+| 17 | Familielid |
+| 18 | Gezinslid |
+| 19 | Buur |
+| 20 | Vriend(in)/kennis |
+| 21 | Cliëntondersteuner |
+| 22 | Huisarts |
+| 23 | Erven van |
+| 24 | Werkgever |
+| 25 | Wijkcoach |
 
 ---
 
-## 🧩 Logische groepering
+## Logische groepering
 
-### 👨‍👩‍👧 Familie & sociale relaties
-- **10** – Ouder  
-- **12** – Partner/echtgeno(o)t(e)  
-- **13** – Pleegouder  
-- **16** – Zoon/dochter  
-- **17** – Familielid  
-- **18** – Gezinslid  
-- **19** – Buur  
-- **20** – Vriend(in)/kennis  
+### Familie en sociale relaties
 
-### ⚖️ Juridische vertegenwoordiging
-- **03** – Curator (juridisch)  
-- **11** – Voogd  
-- **14** – Bewindvoerder  
-- **15** – Mentor  
-- **23** – Erven van  
+- 10 — Ouder
+- 12 — Partner/echtgeno(o)t(e)
+- 13 — Pleegouder
+- 16 — Zoon/dochter
+- 17 — Familielid
+- 18 — Gezinslid
+- 19 — Buur
+- 20 — Vriend(in)/kennis
 
-### 💼 Financieel & werk
-- **04** – Financieel (gemachtigd)  
-- **05** – Financieel (toetsing)  
-- **24** – Werkgever  
+### Juridische vertegenwoordiging
 
-### 🏥 Zorg & ondersteuning
-- **07** – Hulpverlener  
-- **08** – Specialist  
-- **21** – Cliëntondersteuner  
-- **22** – Huisarts  
-- **25** – Wijkcoach  
+- 03 — Curator (juridisch)
+- 11 — Voogd
+- 14 — Bewindvoerder
+- 15 — Mentor
+- 23 — Erven van
 
-### 📦 Overig
-- **06** – Leefeenheid  
-- **09** – Anders  
+### Financieel en werk
+
+- 04 — Financieel (gemachtigd)
+- 05 — Financieel (toetsing)
+- 24 — Werkgever
+
+### Zorg en ondersteuning
+
+- 07 — Hulpverlener
+- 08 — Specialist
+- 21 — Cliëntondersteuner
+- 22 — Huisarts
+- 25 — Wijkcoach
+
+### Overig
+
+- 06 — Leefeenheid
+- 09 — Anders
 
 ---
 
-## 💡 Toelichting
-Deze codelijst wordt gebruikt binnen het iJW-informatiemodel om relaties eenduidig vast te leggen. Dit voorkomt interpretatieverschillen en ondersteunt correcte gegevensuitwisseling tussen zorgorganisaties en gemeenten.
+## Toelichting
+
+Deze codelijst wordt gebruikt binnen het iJw-informatiemodel om relaties eenduidig vast te leggen.
+
+Dit voorkomt interpretatieverschillen en ondersteunt correcte gegevensuitwisseling tussen zorgorganisaties en gemeenten.
+
+---
+
+## AI-context
+
+Dit betreft een codelijst (enumeratie) voor `LDT_SoortRelatie` binnen iJw 3.2.
+
+De code beschrijft de aard van de relatie tussen een persoon en de cliënt, bijvoorbeeld juridisch, familiair, financieel of zorginhoudelijk.
