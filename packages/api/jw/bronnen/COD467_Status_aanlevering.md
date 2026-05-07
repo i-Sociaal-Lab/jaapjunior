@@ -1,39 +1,58 @@
-# COD467 Status aanlevering
+# COD467 — Status aanlevering
 
 ## Definitie
+
 Indicatie over de status van de informatie in de berichtklasse.
 
-## Metadata
-- **ID:** COD467  
-- **Naam:** Status aanlevering 
-- **Status:** Productie
-- **ELement:** LDT_StatusAanlevering
-- **Type bestand:** Codelijst
-- **Auteur:** Zorginstituut Nederland  
-- **Standaard:** iJw 3.2  
-- **Bron:** https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/cod467/  
-- **AI-agent:** Wmo-agent  
+---
 
-## Gebruik in berichten
+## Metadata
+
+| Veld | Waarde |
+|---|---|
+| ID | COD467 |
+| Naam | Status aanlevering |
+| Element | LDT_StatusAanlevering |
+| Type | Referentielijst |
+| Standaard | iJw 3.2 |
+| Status | Productie |
+| Auteur | Zorginstituut Nederland |
+| Laatst bijgewerkt | 01-01-2015 |
+| Bron | https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/cod467/ |
+| AI-agent | Wmo-agent |
+
+---
+
+## Gebruikt in berichten
+
 - JW305
 - JW306
 - JW307
-- JW308  
+- JW308
+
 ---
 
-## Codelijst
+## Codes
 
-| Code | Omschrijving                     |
-|------|----------------------------------|
-|  1 | Eerste aanlevering               |
-|  2 | Gewijzigde aanlevering           |
-|  3 | Verwijderen aanlevering          |
-|  9 | Niet van toepassing (ongewijzigd)|
+| Code | Betekenis |
+|---|---|
+| 1 | Eerste aanlevering |
+| 2 | Gewijzigde aanlevering |
+| 3 | Verwijderen aanlevering |
+| 9 | Niet van toepassing (ongewijzigd) |
 
 ---
 
 ## Toelichting
 
-- **Laatst bijgewerkt:** 01-01-2015  
-- **Tabeltype:** Referentielijst  
-- **Toepassing:** Geeft de status van aanlevering aan binnen berichtklassen *StartProduct (JW305)* en *StopProduct (JW307)*  
+Deze referentielijst geeft de status van aanlevering aan binnen berichtklassen zoals:
+- `StartProduct (JW305)`
+- `StopProduct (JW307)`
+
+---
+
+## AI-context
+
+Dit betreft een referentielijst voor `LDT_StatusAanlevering` binnen iJw 3.2.
+
+De code beschrijft de status van een aanlevering of wijziging binnen een berichtklasse.
