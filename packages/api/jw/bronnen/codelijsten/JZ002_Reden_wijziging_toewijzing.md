@@ -1,4 +1,4 @@
-# JZ002 Reden wijziging toewijzing
+# JZ002 - Reden wijziging toewijzing
 
 ## Definitie
 
