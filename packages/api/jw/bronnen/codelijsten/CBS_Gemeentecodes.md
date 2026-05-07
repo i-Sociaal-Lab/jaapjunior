@@ -11,7 +11,7 @@ De lijst bevat gemeentecodes, gemeentenamen en provincies zoals gebruikt binnen 
 ## Metadata
 
 | Veld             | Waarde                                                                                                                                                                                                                                                                                                                                   |
-| ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ------------ | ----------------------------- | ------------- | ------------------------ |
 | Naam             | CBS Gemeentecodes                                                                                                                                                                                                                                                                                                                        |
 | Element          | LDT_GemeenteCode                                                                                                                                                                                                                                                                                                                         |
 | Type             | Referentielijst                                                                                                                                                                                                                                                                                                                          |
@@ -72,7 +72,7 @@ De codes hebben geen hiërarchische of inhoudelijke betekenis.
 ## Codes
 
 | Gemeentecode | Gemeentenaam | Provincienaam | Jeugdzorgregio |
-|------------|------------|-------------|---------------|
+| ------------ | ------------ | ------------- | ------------------------ |
 | 1680 | Aa en Hunze | Drenthe | Drenthe |
 | 0358 | Aalsmeer | Noord-Holland | Amsterdam-Amstelland |
 | 0197 | Aalten | Gelderland | Achterhoek |
@@ -178,243 +178,243 @@ De codes hebben geen hiërarchische of inhoudelijke betekenis.
 | 0513 | Gouda | Zuid-Holland | Midden Holland |
 | 0518 | 's-Gravenhage | Zuid-Holland | Haaglanden |
 | 0014 | Groningen | Groningen | Groningen |
-| 1729 | Gulpen-Wittem | Limburg |  |
-| 0158 | Haaksbergen | Overijssel |  |
-| 0392 | Haarlem | Noord-Holland |  |
-| 0394 | Haarlemmermeer | Noord-Holland |  |
-| 1655 | Halderberge | Noord-Brabant |  |
-| 0160 | Hardenberg | Overijssel |  |
-| 0243 | Harderwijk | Gelderland |  |
-| 0523 | Hardinxveld-Giessendam | Zuid-Holland |  |
-| 0072 | Harlingen | Fryslân |  |
-| 0244 | Hattem | Gelderland |  |
-| 0396 | Heemskerk | Noord-Holland |  |
-| 0397 | Heemstede | Noord-Holland |  |
-| 0246 | Heerde | Gelderland |  |
-| 0074 | Heerenveen | Fryslân |  |
-| 0917 | Heerlen | Limburg |  |
-| 1658 | Heeze-Leende | Noord-Brabant |  |
-| 0399 | Heiloo | Noord-Holland |  |
-| 0400 | Den Helder | Noord-Holland |  |
-| 0163 | Hellendoorn | Overijssel |  |
-| 0794 | Helmond | Noord-Brabant |  |
-| 0531 | Hendrik-Ido-Ambacht | Zuid-Holland |  |
-| 0164 | Hengelo (O.) | Overijssel |  |
-| 0796 | 's-Hertogenbosch | Noord-Brabant |  |
-| 0252 | Heumen | Gelderland |  |
-| 0797 | Heusden | Noord-Brabant |  |
-| 0534 | Hillegom | Zuid-Holland |  |
-| 0798 | Hilvarenbeek | Noord-Brabant |  |
-| 0402 | Hilversum | Noord-Holland |  |
-| 1963 | Hoeksche Waard | Zuid-Holland |  |
-| 1735 | Hof van Twente | Overijssel |  |
-| 1966 | Het Hogeland | Groningen |  |
-| 1911 | Hollands Kroon | Noord-Holland |  |
-| 0118 | Hoogeveen | Drenthe |  |
-| 0405 | Hoorn | Noord-Holland |  |
-| 1507 | Horst aan de Maas | Limburg |  |
-| 0321 | Houten | Utrecht |  |
-| 0406 | Huizen | Noord-Holland |  |
-| 0677 | Hulst | Zeeland |  |
-| 0353 | IJsselstein | Utrecht |  |
-| 1884 | Kaag en Braassem | Zuid-Holland |  |
-| 0166 | Kampen | Overijssel |  |
-| 0678 | Kapelle | Zeeland |  |
-| 0537 | Katwijk | Zuid-Holland |  |
-| 0928 | Kerkrade | Limburg |  |
-| 1598 | Koggenland | Noord-Holland |  |
-| 0542 | Krimpen aan den IJssel | Zuid-Holland |  |
-| 1931 | Krimpenerwaard | Zuid-Holland |  |
-| 1659 | Laarbeek | Noord-Brabant |  |
-| 1982 | Land van Cuijk | Noord-Brabant |  |
-| 0882 | Landgraaf | Limburg |  |
-| 0415 | Landsmeer | Noord-Holland |  |
-| 1621 | Lansingerland | Zuid-Holland |  |
-| 0417 | Laren (NH.) | Noord-Holland |  |
-| 0080 | Leeuwarden | Fryslân |  |
-| 0546 | Leiden | Zuid-Holland |  |
-| 0547 | Leiderdorp | Zuid-Holland |  |
-| 1916 | Leidschendam-Voorburg | Zuid-Holland |  |
-| 0995 | Lelystad | Flevoland |  |
-| 1640 | Leudal | Limburg |  |
-| 0327 | Leusden | Utrecht |  |
-| 1705 | Lingewaard | Gelderland |  |
-| 0553 | Lisse | Zuid-Holland |  |
-| 0262 | Lochem | Gelderland |  |
-| 0809 | Loon op Zand | Noord-Brabant |  |
-| 0331 | Lopik | Utrecht |  |
-| 0168 | Losser | Overijssel |  |
-| 0263 | Maasdriel | Gelderland |  |
-| 1641 | Maasgouw | Limburg |  |
-| 1991 | Maashorst | Noord-Brabant |  |
-| 0556 | Maassluis | Zuid-Holland |  |
-| 0935 | Maastricht | Limburg |  |
-| 0420 | Medemblik | Noord-Holland |  |
-| 0938 | Meerssen | Limburg |  |
-| 1948 | Meierijstad | Noord-Brabant |  |
-| 0119 | Meppel | Drenthe |  |
-| 0687 | Middelburg (Z.) | Zeeland |  |
-| 1842 | Midden-Delfland | Zuid-Holland |  |
-| 1731 | Midden-Drenthe | Drenthe |  |
-| 1952 | Midden-Groningen | Groningen |  |
-| 1709 | Moerdijk | Noord-Brabant |  |
-| 1978 | Molenlanden | Zuid-Holland |  |
-| 1955 | Montferland | Gelderland |  |
-| 0335 | Montfoort | Utrecht |  |
-| 0944 | Mook en Middelaar | Limburg |  |
-| 1740 | Neder-Betuwe | Gelderland |  |
-| 0946 | Nederweert | Limburg |  |
-| 0356 | Nieuwegein | Utrecht |  |
-| 0569 | Nieuwkoop | Zuid-Holland |  |
-| 0267 | Nijkerk | Gelderland |  |
-| 0268 | Nijmegen | Gelderland |  |
-| 1930 | Nissewaard | Zuid-Holland |  |
-| 1970 | Noardeast-Fryslân | Fryslân |  |
-| 1695 | Noord-Beveland | Zeeland |  |
-| 1699 | Noordenveld | Drenthe |  |
-| 0171 | Noordoostpolder | Flevoland |  |
-| 0575 | Noordwijk | Zuid-Holland |  |
-| 0820 | Nuenen, Gerwen en Nederwetten | Noord-Brabant |  |
-| 0302 | Nunspeet | Gelderland |  |
-| 0579 | Oegstgeest | Zuid-Holland |  |
-| 0823 | Oirschot | Noord-Brabant |  |
-| 0824 | Oisterwijk | Noord-Brabant |  |
-| 1895 | Oldambt | Groningen |  |
-| 0269 | Oldebroek | Gelderland |  |
-| 0173 | Oldenzaal | Overijssel |  |
-| 1773 | Olst-Wijhe | Overijssel |  |
-| 0175 | Ommen | Overijssel |  |
-| 1586 | Oost Gelre | Gelderland |  |
-| 0826 | Oosterhout | Noord-Brabant |  |
-| 0085 | Ooststellingwerf | Fryslân |  |
-| 0431 | Oostzaan | Noord-Holland |  |
-| 0432 | Opmeer | Noord-Holland |  |
-| 0086 | Opsterland | Fryslân |  |
-| 0828 | Oss | Noord-Brabant |  |
-| 1509 | Oude IJsselstreek | Gelderland |  |
-| 0437 | Ouder-Amstel | Noord-Holland |  |
-| 0589 | Oudewater | Utrecht |  |
-| 1734 | Overbetuwe | Gelderland |  |
-| 0590 | Papendrecht | Zuid-Holland |  |
-| 1894 | Peel en Maas | Limburg |  |
-| 0765 | Pekela | Groningen |  |
-| 1926 | Pijnacker-Nootdorp | Zuid-Holland |  |
-| 0439 | Purmerend | Noord-Holland |  |
-| 0273 | Putten | Gelderland |  |
-| 0177 | Raalte | Overijssel |  |
-| 0703 | Reimerswaal | Zeeland |  |
-| 0274 | Renkum | Gelderland |  |
-| 0339 | Renswoude | Utrecht |  |
-| 1667 | Reusel-De Mierden | Noord-Brabant |  |
-| 0275 | Rheden | Gelderland |  |
-| 0340 | Rhenen | Utrecht |  |
-| 0597 | Ridderkerk | Zuid-Holland |  |
-| 1742 | Rijssen-Holten | Overijssel |  |
-| 0603 | Rijswijk (ZH.) | Zuid-Holland |  |
-| 1669 | Roerdalen | Limburg |  |
-| 0957 | Roermond | Limburg |  |
-| 0736 | De Ronde Venen | Utrecht |  |
-| 1674 | Roosendaal | Noord-Brabant |  |
-| 0599 | Rotterdam | Zuid-Holland |  |
-| 0277 | Rozendaal | Gelderland |  |
-| 0840 | Rucphen | Noord-Brabant |  |
-| 0441 | Schagen | Noord-Holland |  |
-| 0279 | Scherpenzeel | Gelderland |  |
-| 0606 | Schiedam | Zuid-Holland |  |
-| 0088 | Schiermonnikoog | Fryslân |  |
-| 1676 | Schouwen-Duiveland | Zeeland |  |
-| 0965 | Simpelveld | Limburg |  |
-| 0845 | Sint-Michielsgestel | Noord-Brabant |  |
-| 1883 | Sittard-Geleen | Limburg |  |
-| 0610 | Sliedrecht | Zuid-Holland |  |
-| 1714 | Sluis | Zeeland |  |
-| 0090 | Smallingerland | Fryslân |  |
-| 0342 | Soest | Utrecht |  |
-| 0847 | Someren | Noord-Brabant |  |
-| 0848 | Son en Breugel | Noord-Brabant |  |
-| 0037 | Stadskanaal | Groningen |  |
-| 0180 | Staphorst | Overijssel |  |
-| 0532 | Stede Broec | Noord-Holland |  |
-| 0851 | Steenbergen | Noord-Brabant |  |
-| 1708 | Steenwijkerland | Overijssel |  |
-| 0971 | Stein (L.) | Limburg |  |
-| 1904 | Stichtse Vecht | Utrecht |  |
-| 1900 | Súdwest-Fryslân | Fryslân |  |
-| 0715 | Terneuzen | Zeeland |  |
-| 0093 | Terschelling | Fryslân |  |
-| 0448 | Texel | Noord-Holland |  |
-| 1525 | Teylingen | Zuid-Holland |  |
-| 0716 | Tholen | Zeeland |  |
-| 0281 | Tiel | Gelderland |  |
-| 0855 | Tilburg | Noord-Brabant |  |
-| 0183 | Tubbergen | Overijssel |  |
-| 1700 | Twenterand | Overijssel |  |
-| 1730 | Tynaarlo | Drenthe |  |
-| 0737 | Tytsjerksteradiel | Fryslân |  |
-| 0450 | Uitgeest | Noord-Holland |  |
-| 0451 | Uithoorn | Noord-Holland |  |
-| 0184 | Urk | Flevoland |  |
-| 0344 | Utrecht | Utrecht |  |
-| 1581 | Utrechtse Heuvelrug | Utrecht |  |
-| 0981 | Vaals | Limburg |  |
-| 0994 | Valkenburg aan de Geul | Limburg |  |
-| 0858 | Valkenswaard | Noord-Brabant |  |
-| 0047 | Veendam | Groningen |  |
-| 0345 | Veenendaal | Utrecht |  |
-| 0717 | Veere | Zeeland |  |
-| 0861 | Veldhoven | Noord-Brabant |  |
-| 0453 | Velsen | Noord-Holland |  |
-| 0983 | Venlo | Limburg |  |
-| 0984 | Venray | Limburg |  |
-| 1961 | Vijfheerenlanden | Utrecht |  |
-| 0622 | Vlaardingen | Zuid-Holland |  |
-| 0096 | Vlieland | Fryslân |  |
-| 0718 | Vlissingen | Zeeland |  |
-| 0986 | Voerendaal | Limburg |  |
-| 1992 | Voorne aan Zee | Zuid-Holland |  |
-| 0626 | Voorschoten | Zuid-Holland |  |
-| 0285 | Voorst | Gelderland |  |
-| 0865 | Vught | Noord-Brabant |  |
-| 1949 | Waadhoeke | Fryslân |  |
-| 0866 | Waalre | Noord-Brabant |  |
-| 0867 | Waalwijk | Noord-Brabant |  |
-| 0627 | Waddinxveen | Zuid-Holland |  |
-| 0289 | Wageningen | Gelderland |  |
-| 0629 | Wassenaar | Zuid-Holland |  |
-| 0852 | Waterland | Noord-Holland |  |
-| 0988 | Weert | Limburg |  |
-| 1960 | West Betuwe | Gelderland |  |
-| 0668 | West Maas en Waal | Gelderland |  |
-| 1969 | Westerkwartier | Groningen |  |
-| 1701 | Westerveld | Drenthe |  |
-| 0293 | Westervoort | Gelderland |  |
-| 1950 | Westerwolde | Groningen |  |
-| 1783 | Westland | Zuid-Holland |  |
-| 0098 | Weststellingwerf | Fryslân |  |
-| 0189 | Wierden | Overijssel |  |
-| 0296 | Wijchen | Gelderland |  |
-| 1696 | Wijdemeren | Noord-Holland |  |
-| 0352 | Wijk bij Duurstede | Utrecht |  |
-| 0294 | Winterswijk | Gelderland |  |
-| 0873 | Woensdrecht | Noord-Brabant |  |
-| 0632 | Woerden | Utrecht |  |
-| 1690 | De Wolden | Drenthe |  |
-| 0880 | Wormerland | Noord-Holland |  |
-| 0351 | Woudenberg | Utrecht |  |
-| 0479 | Zaanstad | Noord-Holland |  |
-| 0297 | Zaltbommel | Gelderland |  |
-| 0473 | Zandvoort | Noord-Holland |  |
-| 0050 | Zeewolde | Flevoland |  |
-| 0355 | Zeist | Utrecht |  |
-| 0299 | Zevenaar | Gelderland |  |
-| 0637 | Zoetermeer | Zuid-Holland |  |
-| 0638 | Zoeterwoude | Zuid-Holland |  |
-| 1892 | Zuidplas | Zuid-Holland |  |
-| 0879 | Zundert | Noord-Brabant |  |
-| 0301 | Zutphen | Gelderland |  |
-| 1896 | Zwartewaterland | Overijssel |  |
-| 0642 | Zwijndrecht | Zuid-Holland |  |
-| 0193 | Zwolle | Overijssel |  |
+| 1729 | Gulpen-Wittem | Limburg | Zuid-Limburg |
+| 0158 | Haaksbergen | Overijssel | Twente |
+| 0392 | Haarlem | Noord-Holland | Zuid-Kennemerland |
+| 0394 | Haarlemmermeer | Noord-Holland | Haarlemmermeer |
+| 1655 | Halderberge | Noord-Brabant | West-Brabant-West |
+| 0160 | Hardenberg | Overijssel | IJsselland |
+| 0243 | Harderwijk | Gelderland | Noord Veluwe |
+| 0523 | Hardinxveld-Giessendam | Zuid-Holland | Zuid-Holland Zuid |
+| 0072 | Harlingen | Fryslân | Friesland |
+| 0244 | Hattem | Gelderland | Midden IJssel-Oost Veluwe |
+| 0396 | Heemskerk | Noord-Holland | Midden Kennemerland |
+| 0397 | Heemstede | Noord-Holland | Zuid-Kennemerland |
+| 0246 | Heerde | Gelderland | Midden IJssel-Oost Veluwe |
+| 0074 | Heerenveen | Fryslân | Friesland |
+| 0917 | Heerlen | Limburg | Zuid-Limburg |
+| 1658 | Heeze-Leende | Noord-Brabant | Zuid-Oost Brabant |
+| 0399 | Heiloo | Noord-Holland | Noord-Kennemerland |
+| 0400 | Den Helder | Noord-Holland | Kop van Noord-Holland |
+| 0163 | Hellendoorn | Overijssel | Twente |
+| 0794 | Helmond | Noord-Brabant | Zuid-Oost Brabant |
+| 0531 | Hendrik-Ido-Ambacht | Zuid-Holland | Zuid-Holland Zuid |
+| 0164 | Hengelo (O.) | Overijssel | Twente |
+| 0796 | 's-Hertogenbosch | Noord-Brabant | Noord-Oost Brabant |
+| 0252 | Heumen | Gelderland | Rijk van Nijmegen |
+| 0797 | Heusden | Noord-Brabant | Midden Brabant |
+| 0534 | Hillegom | Zuid-Holland | Holland-Rijnland |
+| 0798 | Hilvarenbeek | Noord-Brabant | Midden Brabant |
+| 0402 | Hilversum | Noord-Holland | Gooi-en Vechtstreek |
+| 1963 | Hoeksche Waard | Zuid-Holland | Zuid-Holland Zuid |
+| 1735 | Hof van Twente | Overijssel | Twente |
+| 1966 | Het Hogeland | Groningen | Groningen |
+| 1911 | Hollands Kroon | Noord-Holland | Kop van Noord-Holland |
+| 0118 | Hoogeveen | Drenthe | Drenthe |
+| 0405 | Hoorn | Noord-Holland | West-Friesland |
+| 1507 | Horst aan de Maas | Limburg | Noord Limburg |
+| 0321 | Houten | Utrecht | Lekstroom |
+| 0406 | Huizen | Noord-Holland | Gooi-en Vechtstreek |
+| 0677 | Hulst | Zeeland | Zeeland |
+| 0353 | IJsselstein | Utrecht | Lekstroom |
+| 1884 | Kaag en Braassem | Zuid-Holland | Holland-Rijnland |
+| 0166 | Kampen | Overijssel | IJsselland |
+| 0678 | Kapelle | Zeeland | Zeeland |
+| 0537 | Katwijk | Zuid-Holland | Holland-Rijnland |
+| 0928 | Kerkrade | Limburg | Zuid-Limburg |
+| 1598 | Koggenland | Noord-Holland | West-Friesland |
+| 0542 | Krimpen aan den IJssel | Zuid-Holland | Rijnmond |
+| 1931 | Krimpenerwaard | Zuid-Holland | Midden Holland |
+| 1659 | Laarbeek | Noord-Brabant | Zuid-Oost Brabant |
+| 1982 | Land van Cuijk | Noord-Brabant | Noord-Oost Brabant |
+| 0882 | Landgraaf | Limburg | Zuid-Limburg |
+| 0415 | Landsmeer | Noord-Holland | Zaanstreek-Waterland |
+| 1621 | Lansingerland | Zuid-Holland | Rijnmond |
+| 0417 | Laren (NH.) | Noord-Holland | Gooi-en Vechtstreek |
+| 0080 | Leeuwarden | Fryslân | Friesland |
+| 0546 | Leiden | Zuid-Holland | Holland-Rijnland |
+| 0547 | Leiderdorp | Zuid-Holland | Holland-Rijnland |
+| 1916 | Leidschendam-Voorburg | Zuid-Holland | Haaglanden |
+| 0995 | Lelystad | Flevoland | Flevoland |
+| 1640 | Leudal | Limburg | Midden Limburg West |
+| 0327 | Leusden | Utrecht | Eemland |
+| 1705 | Lingewaard | Gelderland | Arnhem |
+| 0553 | Lisse | Zuid-Holland | Holland-Rijnland |
+| 0262 | Lochem | Gelderland | Midden IJssel-Oost Veluwe |
+| 0809 | Loon op Zand | Noord-Brabant | Midden Brabant |
+| 0331 | Lopik | Utrecht | Lekstroom |
+| 0168 | Losser | Overijssel | Twente |
+| 0263 | Maasdriel | Gelderland | Rivierenland |
+| 1641 | Maasgouw | Limburg | Midden Limburg Oost |
+| 1991 | Maashorst | Noord-Brabant | Noord-Oost Brabant |
+| 0556 | Maassluis | Zuid-Holland | Rijnmond |
+| 0935 | Maastricht | Limburg | Zuid-Limburg |
+| 0420 | Medemblik | Noord-Holland | West-Friesland |
+| 0938 | Meerssen | Limburg | Zuid-Limburg |
+| 1948 | Meierijstad | Noord-Brabant | Noord-Oost Brabant |
+| 0119 | Meppel | Drenthe | Drenthe |
+| 0687 | Middelburg (Z.) | Zeeland | Zeeland |
+| 1842 | Midden-Delfland | Zuid-Holland | Haaglanden |
+| 1731 | Midden-Drenthe | Drenthe | Drenthe |
+| 1952 | Midden-Groningen | Groningen | Groningen |
+| 1709 | Moerdijk | Noord-Brabant | West-Brabant-West |
+| 1978 | Molenlanden | Zuid-Holland | Zuid-Holland Zuid |
+| 1955 | Montferland | Gelderland | Achterhoek |
+| 0335 | Montfoort | Utrecht | Utrecht-West |
+| 0944 | Mook en Middelaar | Limburg | Rijk van Nijmegen |
+| 1740 | Neder-Betuwe | Gelderland | Rivierenland |
+| 0946 | Nederweert | Limburg | Midden Limburg West |
+| 0356 | Nieuwegein | Utrecht | Lekstroom |
+| 0569 | Nieuwkoop | Zuid-Holland | Holland-Rijnland |
+| 0267 | Nijkerk | Gelderland | Food Valley |
+| 0268 | Nijmegen | Gelderland | Rijk van Nijmegen |
+| 1930 | Nissewaard | Zuid-Holland | Rijnmond |
+| 1970 | Noardeast-Fryslân | Fryslân | Friesland |
+| 1695 | Noord-Beveland | Zeeland | Zeeland |
+| 1699 | Noordenveld | Drenthe | Drenthe |
+| 0171 | Noordoostpolder | Flevoland | Flevoland |
+| 0575 | Noordwijk | Zuid-Holland | Holland-Rijnland |
+| 0820 | Nuenen, Gerwen en Nederwetten | Noord-Brabant | Zuid-Oost Brabant |
+| 0302 | Nunspeet | Gelderland | Noord Veluwe |
+| 0579 | Oegstgeest | Zuid-Holland | Holland-Rijnland |
+| 0823 | Oirschot | Noord-Brabant | Zuid-Oost Brabant |
+| 0824 | Oisterwijk | Noord-Brabant | Midden Brabant |
+| 1895 | Oldambt | Groningen | Groningen |
+| 0269 | Oldebroek | Gelderland | Noord Veluwe |
+| 0173 | Oldenzaal | Overijssel | Twente |
+| 1773 | Olst-Wijhe | Overijssel | IJsselland |
+| 0175 | Ommen | Overijssel | IJsselland |
+| 1586 | Oost Gelre | Gelderland | Achterhoek |
+| 0826 | Oosterhout | Noord-Brabant | West-Brabant-Oost |
+| 0085 | Ooststellingwerf | Fryslân | Friesland |
+| 0431 | Oostzaan | Noord-Holland | Zaanstreek-Waterland |
+| 0432 | Opmeer | Noord-Holland | West-Friesland |
+| 0086 | Opsterland | Fryslân | Friesland |
+| 0828 | Oss | Noord-Brabant | Noord-Oost Brabant |
+| 1509 | Oude IJsselstreek | Gelderland | Achterhoek |
+| 0437 | Ouder-Amstel | Noord-Holland | Amsterdam-Amstelland |
+| 0589 | Oudewater | Utrecht | Utrecht-West |
+| 1734 | Overbetuwe | Gelderland | Arnhem |
+| 0590 | Papendrecht | Zuid-Holland | Zuid-Holland Zuid |
+| 1894 | Peel en Maas | Limburg | Noord Limburg |
+| 0765 | Pekela | Groningen | Groningen |
+| 1926 | Pijnacker-Nootdorp | Zuid-Holland | Haaglanden |
+| 0439 | Purmerend | Noord-Holland | Zaanstreek-Waterland |
+| 0273 | Putten | Gelderland | Noord Veluwe |
+| 0177 | Raalte | Overijssel | IJsselland |
+| 0703 | Reimerswaal | Zeeland | Zeeland |
+| 0274 | Renkum | Gelderland | Arnhem |
+| 0339 | Renswoude | Utrecht | Food Valley |
+| 1667 | Reusel-De Mierden | Noord-Brabant | Zuid-Oost Brabant |
+| 0275 | Rheden | Gelderland | Arnhem |
+| 0340 | Rhenen | Utrecht | Food Valley |
+| 0597 | Ridderkerk | Zuid-Holland | Rijnmond |
+| 1742 | Rijssen-Holten | Overijssel | Twente |
+| 0603 | Rijswijk (ZH.) | Zuid-Holland | Haaglanden |
+| 1669 | Roerdalen | Limburg | Midden Limburg Oost |
+| 0957 | Roermond | Limburg | Midden Limburg Oost |
+| 0736 | De Ronde Venen | Utrecht | Utrecht-West |
+| 1674 | Roosendaal | Noord-Brabant | West-Brabant-West |
+| 0599 | Rotterdam | Zuid-Holland | Rijnmond |
+| 0277 | Rozendaal | Gelderland | Arnhem |
+| 0840 | Rucphen | Noord-Brabant | West-Brabant-West |
+| 0441 | Schagen | Noord-Holland | Kop van Noord-Holland |
+| 0279 | Scherpenzeel | Gelderland | Food Valley |
+| 0606 | Schiedam | Zuid-Holland | Rijnmond |
+| 0088 | Schiermonnikoog | Fryslân | Friesland |
+| 1676 | Schouwen-Duiveland | Zeeland | Zeeland |
+| 0965 | Simpelveld | Limburg | Zuid-Limburg |
+| 0845 | Sint-Michielsgestel | Noord-Brabant | Noord-Oost Brabant |
+| 1883 | Sittard-Geleen | Limburg | Zuid-Limburg |
+| 0610 | Sliedrecht | Zuid-Holland | Zuid-Holland Zuid |
+| 1714 | Sluis | Zeeland | Zeeland |
+| 0090 | Smallingerland | Fryslân | Friesland |
+| 0342 | Soest | Utrecht | Eemland |
+| 0847 | Someren | Noord-Brabant | Zuid-Oost Brabant |
+| 0848 | Son en Breugel | Noord-Brabant | Zuid-Oost Brabant |
+| 0037 | Stadskanaal | Groningen | Groningen |
+| 0180 | Staphorst | Overijssel | IJsselland |
+| 0532 | Stede Broec | Noord-Holland | West-Friesland |
+| 0851 | Steenbergen | Noord-Brabant | West-Brabant-West |
+| 1708 | Steenwijkerland | Overijssel | IJsselland |
+| 0971 | Stein (L.) | Limburg | Zuid-Limburg |
+| 1904 | Stichtse Vecht | Utrecht | Utrecht-West |
+| 1900 | Súdwest-Fryslân | Fryslân | Friesland |
+| 0715 | Terneuzen | Zeeland | Zeeland |
+| 0093 | Terschelling | Fryslân | Friesland |
+| 0448 | Texel | Noord-Holland | Kop van Noord-Holland |
+| 1525 | Teylingen | Zuid-Holland | Holland-Rijnland |
+| 0716 | Tholen | Zeeland | Zeeland |
+| 0281 | Tiel | Gelderland | Rivierenland |
+| 0855 | Tilburg | Noord-Brabant | Midden Brabant |
+| 0183 | Tubbergen | Overijssel | Twente |
+| 1700 | Twenterand | Overijssel | Twente |
+| 1730 | Tynaarlo | Drenthe | Drenthe |
+| 0737 | Tytsjerksteradiel | Fryslân | Friesland |
+| 0450 | Uitgeest | Noord-Holland | Noord-Kennemerland |
+| 0451 | Uithoorn | Noord-Holland | Amsterdam-Amstelland |
+| 0184 | Urk | Flevoland | Flevoland |
+| 0344 | Utrecht | Utrecht | Utrecht stad |
+| 1581 | Utrechtse Heuvelrug | Utrecht | Zuid-Oost Utrecht |
+| 0981 | Vaals | Limburg | Zuid-Limburg |
+| 0994 | Valkenburg aan de Geul | Limburg | Zuid-Limburg |
+| 0858 | Valkenswaard | Noord-Brabant | Zuid-Oost Brabant |
+| 0047 | Veendam | Groningen | Groningen |
+| 0345 | Veenendaal | Utrecht | Food Valley |
+| 0717 | Veere | Zeeland | Zeeland |
+| 0861 | Veldhoven | Noord-Brabant | Zuid-Oost Brabant |
+| 0453 | Velsen | Noord-Holland | Midden Kennemerland |
+| 0983 | Venlo | Limburg | Noord Limburg |
+| 0984 | Venray | Limburg | Noord Limburg |
+| 1961 | Vijfheerenlanden | Utrecht | Lekstroom |
+| 0622 | Vlaardingen | Zuid-Holland | Rijnmond |
+| 0096 | Vlieland | Fryslân | Friesland |
+| 0718 | Vlissingen | Zeeland | Zeeland |
+| 0986 | Voerendaal | Limburg | Zuid-Limburg |
+| 1992 | Voorne aan Zee | Zuid-Holland | Rijnmond |
+| 0626 | Voorschoten | Zuid-Holland | Haaglanden |
+| 0285 | Voorst | Gelderland | Midden IJssel-Oost Veluwe |
+| 0865 | Vught | Noord-Brabant | Noord-Oost Brabant |
+| 1949 | Waadhoeke | Fryslân | Friesland |
+| 0866 | Waalre | Noord-Brabant | Zuid-Oost Brabant |
+| 0867 | Waalwijk | Noord-Brabant | Midden Brabant |
+| 0627 | Waddinxveen | Zuid-Holland | Midden Holland |
+| 0289 | Wageningen | Gelderland | Arnhem |
+| 0629 | Wassenaar | Zuid-Holland | Haaglanden |
+| 0852 | Waterland | Noord-Holland | Zaanstreek-Waterland |
+| 0988 | Weert | Limburg | Midden Limburg West |
+| 1960 | West Betuwe | Gelderland | Rivierenland |
+| 0668 | West Maas en Waal | Gelderland | Rivierenland |
+| 1969 | Westerkwartier | Groningen | Groningen |
+| 1701 | Westerveld | Drenthe | Drenthe |
+| 0293 | Westervoort | Gelderland | Arnhem |
+| 1950 | Westerwolde | Groningen | Groningen |
+| 1783 | Westland | Zuid-Holland | Haaglanden |
+| 0098 | Weststellingwerf | Fryslân | Friesland |
+| 0189 | Wierden | Overijssel | Twente |
+| 0296 | Wijchen | Gelderland | Rijk van Nijmegen |
+| 1696 | Wijdemeren | Noord-Holland | Utrecht-West |
+| 0352 | Wijk bij Duurstede | Utrecht | Zuid-Oost Utrecht |
+| 0294 | Winterswijk | Gelderland | Achterhoek |
+| 0873 | Woensdrecht | Noord-Brabant | West-Brabant-West |
+| 0632 | Woerden | Utrecht | Utrecht-West |
+| 1690 | De Wolden | Drenthe | Drenthe |
+| 0880 | Wormerland | Noord-Holland | Zaanstreek-Waterland |
+| 0351 | Woudenberg | Utrecht | Eemland |
+| 0479 | Zaanstad | Noord-Holland | Zaanstreek-Waterland |
+| 0297 | Zaltbommel | Gelderland | Rivierenland |
+| 0473 | Zandvoort | Noord-Holland | Zuid-Kennemerland |
+| 0050 | Zeewolde | Flevoland | Flevoland |
+| 0355 | Zeist | Utrecht | Zuid-Oost Utrecht |
+| 0299 | Zevenaar | Gelderland | Arnhem |
+| 0637 | Zoetermeer | Zuid-Holland | Haaglanden |
+| 0638 | Zoeterwoude | Zuid-Holland | Holland-Rijnland |
+| 1892 | Zuidplas | Zuid-Holland | Midden Holland |
+| 0879 | Zundert | Noord-Brabant | West-Brabant-West |
+| 0301 | Zutphen | Gelderland | Midden IJssel-Oost Veluwe |
+| 1896 | Zwartewaterland | Overijssel | IJsselland |
+| 0642 | Zwijndrecht | Zuid-Holland | Zuid-Holland Zuid |
+| 0193 | Zwolle | Overijssel | IJsselland |
 
 ---
 
