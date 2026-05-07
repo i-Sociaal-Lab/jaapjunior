@@ -22,7 +22,7 @@ Gecodeerde aanduiding van de bijzondere vorm van communicatie die gebruikt dient
 
 ---
 
-## Gebruik in berichten
+## Gebruikt in berichten
 
 - JW301
 - JW302
