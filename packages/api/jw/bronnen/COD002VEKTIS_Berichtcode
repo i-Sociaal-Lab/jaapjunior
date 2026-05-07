@@ -1,31 +1,56 @@
-{
-  "standaard": "iJw",
-  "versie": "3.2",
-  "codelijst": {
-    "id": "COD002-VEKTIS",
-    "naam": "Berichtcode",
-    "definitie": "LDT_Berichtcode is een data-element uit de Header van een bericht en dient conform de codelijst van Vektis ingevuld te worden. Bijvoorbeeld: de Berichtcode van een JW318 bericht is 487.",
-    "bronUrl": "https://www.vektis.nl/standaardisatie/codelijsten/COD002-VEKT",
-    "codes": [
-      { "bericht": "JW301", "berichtcode": "436" },
-      { "bericht": "JW302", "Berichtcode": "437" },
-      { "bericht": "JW305", "Berichtcode": "438" },
-      { "bericht": "JW306", "Berichtcode": "439" },
-      { "bericht": "JW307", "Berichtcode": "440" },
-      { "bericht": "JW308", "Berichtcode": "441" },
-      { "bericht": "JW315", "Berichtcode": "446" },
-      { "bericht": "JW316", "Berichtcode": "447" },
-      { "bericht": "JW317", "Berichtcode": "486" },
-      { "bericht": "JW318", "Berichtcode": "487" },
-      { "bericht": "JW319", "Berichtcode": "488" },
-      { "bericht": "JW320", "Berichtcode": "489" },
-      { "bericht": "JW323", "Berichtcode": "490" },
-      { "bericht": "JW325", "Berichtcode": "491" }
-    ]
-  },
-  "metadata": {
-    "laatstBijgewerkt": "01-01-2021",
-    "tabeltype": "Referentielijst",
-    "toepassing": "Verplicht veld in de berichtheader conform Vektis-standaard"
-  }
-}
+# COD002-VEKTIS — Berichtcode
+
+## Definitie
+
+`LDT_Berichtcode` is een data-element uit de header van een iJw-bericht en moet conform de Vektis-codelijst worden gevuld.
+
+Voorbeeld:
+De berichtcode van een `JW318`-bericht is `487`.
+
+---
+
+## Metadata
+
+| Veld | Waarde |
+|---|---|
+| ID | COD002-VEKTIS |
+| Naam | Berichtcode |
+| Element | LDT_Berichtcode |
+| Type | Referentielijst |
+| Standaard | iJw 3.2 |
+| Status | Productie |
+| Auteur | Vektis |
+| Laatst bijgewerkt | 01-01-2021 |
+| Toepassing | Verplicht veld in de berichtheader conform Vektis-standaard |
+| Bron | https://www.vektis.nl/standaardisatie/codelijsten/COD002-VEKT |
+
+---
+
+## Codes
+
+| Berichttype | Berichtcode |
+|---|---|
+| JW301 | 436 |
+| JW302 | 437 |
+| JW305 | 438 |
+| JW306 | 439 |
+| JW307 | 440 |
+| JW308 | 441 |
+| JW315 | 446 |
+| JW316 | 447 |
+| JW317 | 486 |
+| JW318 | 487 |
+| JW319 | 488 |
+| JW320 | 489 |
+| JW323 | 490 |
+| JW325 | 491 |
+
+---
+
+## AI-context
+
+Dit betreft een referentielijst voor `LDT_Berichtcode` binnen iJw 3.2.
+
+De berichtcode identificeert het type iJw-bericht in de technische berichtheader conform de Vektis-standaard.
+
+Elke berichtsoort (`JW301`, `JW317`, `JW323`, etc.) heeft een unieke numerieke berichtcode.
