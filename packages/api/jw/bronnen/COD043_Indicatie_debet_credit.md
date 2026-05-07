@@ -22,7 +22,7 @@ Gecodeerde aanduiding voor debet of credit.
 
 ---
 
-## Gebruik in berichten
+## Gebruikt in berichten
 
 - JW323
 - JW325
