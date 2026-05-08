@@ -36,6 +36,7 @@ Deze codelijst bevat redenen waarom een verzoek om toewijzing (VOT) of verzoek o
 #### VOT-gerelateerde vragen
 
 - met welke reden kan een vot worden afgewezen?
+- wat zijn de redenen waarom een vot kan worden afgewezen?
 - waarom wordt een vot afgekeurd?
 - welke afwijsredenen bestaan er voor een vot?
 - reden afwijzing vot
@@ -49,6 +50,7 @@ Deze codelijst bevat redenen waarom een verzoek om toewijzing (VOT) of verzoek o
 #### VOW-gerelateerde vragen
 
 - met welke reden kan een vow worden afgewezen?
+- wat zijn de redenen waarom een vow kan worden afgewezen?
 - waarom wordt een vow afgekeurd?
 - welke afwijsredenen bestaan er voor een vow?
 - reden afwijzing vow
