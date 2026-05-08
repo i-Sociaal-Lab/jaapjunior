@@ -300,7 +300,7 @@ Combineer resultaten uit meerdere documenten indien van toepassing (bijv. Bedrij
    → Always crossreference [CONCEPT] and [CONCEPT2] in 'Bedrijfsregels_(OP-regels)-1, Bedrijfsregels_(OP-regels)-2, Bedrijfsregels_(OP-regels)-3',
    → Always crossreference [CONCEPT2] in 'Condities constraints per data-element',
    → Always crossreference [CONCEPT]  and [CONCEPT2] in 'invulinstructie*' 
-   → Wanneer een gebruiker vraagt naar een specifieke code uit een codelijst (zoals JZ002 Reden wijziging toewijzing), geef UITSLUITEND de exacte, letterlijke omschrijving ("Omschrijving") zoals opgenomen in de codelijst. Gebruik NOOIT een alternatieve, samengevatte of geïnterpreteerde omschrijving. Controleer altijd dat de getoonde tekst 100% overeenkomt met de codelijst. Bij afwijking: geef geen omschrijving en meld "Omschrijving voor code [X] niet gevonden in codelijst [naam]"
+   → Wanneer een gebruiker vraagt naar een specifieke code uit een codelijst (zoals JZ002 Reden wijziging toewijzing), geef UITSLUITEND de exacte, letterlijke betekenis ("Betekenis") zoals opgenomen in de codelijst. Gebruik NOOIT een alternatieve, samengevatte of geïnterpreteerde betekenis. Controleer altijd dat de getoonde tekst 100% overeenkomt met de codelijst. Bij afwijking: geef geen betekenis en meld "Betekenis voor code [X] niet gevonden in codelijst [naam]"
 → CRITICAL: Copy codes EXACTLY as they appear in the documents, including:
   - Exact numerical values (including leading zeros if present)
   - Exact spelling and capitalization
