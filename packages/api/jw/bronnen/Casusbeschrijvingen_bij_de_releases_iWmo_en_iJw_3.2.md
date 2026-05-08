@@ -154,8 +154,12 @@ De gemeente stuurt op 01-01-2025 een initieel toewijzingsbericht voor (45A04) Je
 **Toewijzing (301):**
 
 Header
+    ..
+Header
 
-Cliënt: BSN 999900006
+Cliënt
+    BSN 999900006
+Client
 
 **Toegewezen Product**
 
@@ -179,10 +183,12 @@ De aanbieder verwerkt de ontvangen toewijzing, start met de daadwerkelijke zorgl
 **Start (305):**
 
 Header
+    ..
+Header
 
 Cliënt
-
-BSN 999900006
+    BSN 999900006
+Client
 
 **StartProduct**
 
@@ -209,8 +215,12 @@ De gemeente oordeelt dat de zorg inderdaad verlengd moet worden. Omdat de toewij
 **Toewijzing (301):**
 
 Header
+    ..
+Header
 
-Cliënt: BSN 999900006
+Cliënt
+    BSN 999996770
+Client
 
 **ToegewezenProduct**
 
@@ -269,8 +279,12 @@ De gemeente stuurt op 09-05-2025 een initieel toewijzingsbericht voor dagbestedi
 **Toewijzing (301):**
 
 Header
+    ..
+Header
 
-Cliënt: BSN 999996770
+Cliënt
+    BSN 999996770
+Client
 
 | **ToegewezenProduct** |  |
 | --- |:---:|
@@ -293,8 +307,12 @@ De aanbieder verwerkt de ontvangen toewijzing, start met de daadwerkelijke zorgl
 **Start (305):**
 
 Header
+    ..
+Header
 
-Cliënt: BSN 999996770
+Cliënt
+    BSN 999996770
+Client
 
 | **StartProduct** |  |
 | --- |:---:|
@@ -312,8 +330,12 @@ De aanbieder krijgt bericht dat de cliënt is opgenomen in het ziekenhuis en dus
 **Stop (307):**
 
 Header
+..
+Header
 
-Cliënt: BSN 999996770
+Cliënt
+    BSN 999996770
+Client
 
 | **StopProduct** |  |
 | --- |:---:|
@@ -335,10 +357,12 @@ De einddatum levering moet gevuld worden met een datum die groter dan of gelijk 
 **Stop (307):**
 
 Header
+    ..
+Header
 
 Cliënt
-
-BSN 999996770
+    BSN 999996770
+Client
 
 | **StopProduct** |  |
 | --- |:---:|
@@ -389,8 +413,12 @@ In juni 2025 wordt de cliënt opgenomen in het ziekenhuis. De aanbieder meldt de
 **Stop (307):**
 
 Header
+    ..
+Header
 
-Cliënt: BSN 999996782
+Cliënt
+    BSN 99996782
+Client
 
 | **StopProduct** |  |
 | --- |:---:|
@@ -412,8 +440,12 @@ De einddatum levering moet gevuld worden met een datum die groter dan of gelijk 
 **Stop (307):**
 
 Header
+    ..
+Header
 
-Cliënt: BSN 999996782
+Cliënt
+    BSN 99996782
+Client
 
 | **StopProduct** |  |
 | --- |:---:|
@@ -467,8 +499,12 @@ De gemeente stuurt op 01-01-2025 een initieel toewijzingsbericht voor (45A04) Je
 **Toewijzing (301):**
 
 Header
+    ..
+Header
 
-Cliënt: BSN 999900006
+Cliënt
+    BSN 999900006
+Client
 
 | **ToegewezenProduct** |  |
 | --- |:---:|
@@ -491,8 +527,12 @@ De aanbieder verwerkt de ontvangen toewijzing, start met de daadwerkelijke zorgl
 **Start (305):**
 
 Header
+    ..
+Header
 
-Cliënt: BSN 999900006
+Cliënt
+    BSN 999900006
+Client
 
 | **StartProduct** |  |
 | --- |:---:|
@@ -510,10 +550,12 @@ De zorglevering wordt beëindigd, de aanbieder meldt dit met een stopbericht aan
 **Stop (307):**
 
 Header
+    ..
+Header
 
 Cliënt
-
-BSN 999900006
+    BSN 999900006
+Client
 
 | **StopProduct** |  |
 | --- |:---:|
@@ -536,8 +578,12 @@ Door een technisch aanpassing is het toegestaan voor deze correctie de verwijder
 **Stop (307):**
 
 Header
+    ..
+Header
 
-Cliënt: BSN 999900006
+Cliënt
+    BSN 999900006
+Client
 
 | **StopProduct** |  |
 | --- |:---:|
