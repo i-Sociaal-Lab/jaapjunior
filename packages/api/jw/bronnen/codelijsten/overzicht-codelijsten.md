@@ -16,6 +16,7 @@ Deze codelijsten worden gebruikt voor validatie, codering, retourmeldingen en fu
 | Gebruik | AI-chatbot / RAG / documentatie |
 | Formaat | Markdown / JSON |
 | Doel | Semantische zoekbaarheid en functionele ondersteuning |
+| Bron | https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/ |
 
 ---
 
