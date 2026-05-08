@@ -55,11 +55,14 @@ Deze codelijsten worden gebruikt voor validatie, codering, retourmeldingen en fu
 
 Deze codelijsten worden gebruikt binnen:
 - iJw-berichtenverkeer
-- iWmo-berichtenverkeer
-- retourberichten
 - validaties
 - verzoek- en antwoordberichten
 - toewijzingen
+- startberichten
+- stopberichten
+- verzoek om toewijzing
+- verzoek om wijziging
+- antwoordbericht
 - declaraties
 - administratieve controles
 - AI-chatbots en RAG-oplossingen
