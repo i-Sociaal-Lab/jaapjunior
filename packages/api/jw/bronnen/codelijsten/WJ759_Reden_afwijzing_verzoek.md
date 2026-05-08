@@ -1,7 +1,7 @@
 # WJ759 — Reden afwijzing verzoek
 
 ## Definitie
-Gecodeerde aanduiding voor de reden van afwijzing van een verzoek.
+Reden van afwijzen van een verzoek om toewijzing of een verzoek om wijziging.
 
 ---
 
@@ -28,6 +28,54 @@ Gecodeerde aanduiding voor de reden van afwijzing van een verzoek.
 
 ---
 
+## Vraagvarianten / zoektermen
+
+Deze codelijst bevat redenen waarom een verzoek om toewijzing (VOT) of verzoek om wijziging (VOW) kan worden afgewezen.
+
+### Mogelijke vraagvarianten
+
+#### VOT-gerelateerde vragen
+
+- met welke reden kan een vot worden afgewezen?
+- waarom wordt een vot afgekeurd?
+- welke afwijsredenen bestaan er voor een vot?
+- reden afwijzing vot
+- afwijsreden vot
+- afgekeurde vot
+- vot afwijscode
+- vot retourcode afwijzing
+- afkeur reden verzoek om toewijzing
+- waarom is een verzoek om toewijzing afgewezen?
+
+#### VOW-gerelateerde vragen
+
+- met welke reden kan een vow worden afgewezen?
+- waarom wordt een vow afgekeurd?
+- welke afwijsredenen bestaan er voor een vow?
+- reden afwijzing vow
+- afwijsreden vow
+- afgekeurde vow
+- vow afwijscode
+- vow retourcode afwijzing
+- afkeur reden verzoek om wijziging
+- waarom is een verzoek om wijziging afgewezen?
+
+#### Algemene vraagvarianten
+
+- welke redenen voor afwijzing van een verzoek zijn er?
+- welke codes horen bij afwijzing van een verzoek?
+- waarom is mijn verzoek afgewezen?
+- welke reden van afwijzing moet ik gebruiken?
+- welke afkeurcodes bestaan er binnen iJw?
+- reden afwijzing verzoek
+- reden retourbericht jw319
+- reden retourbericht jw320
+- welke code gebruik ik bij afwijzing?
+- afwijzing verzoek toewijzing
+- afwijzing verzoek wijziging
+
+---
+
 ## Codes
 
 | Code | Betekenis |
@@ -46,5 +94,13 @@ Gecodeerde aanduiding voor de reden van afwijzing van een verzoek.
 
 ## AI-context
 
-Dit betreft een codelijst (enumeratie) voor `LDT_RedenAfwijzingVerzoek` binnen iJw 3.2.  
+Dit betreft een codelijst (enumeratie) voor `LDT_RedenAfwijzingVerzoek` binnen iJw 3.2.
+
 De code beschrijft de reden waarom een verzoek in een JW319- of JW320-bericht is afgewezen.
+
+Functionele context:
+- afwijzing verzoek om toewijzing (VOT)
+- afwijzing verzoek om wijziging (VOW)
+- retourberichten vanuit gemeenten
+- afkeurcodes binnen het berichtenverkeer
+- redenen waarom een aanvraag niet wordt geaccepteerd
