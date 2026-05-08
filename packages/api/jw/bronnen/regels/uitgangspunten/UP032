@@ -1,5 +1,9 @@
 # UP032 Melden zorgvraag
 
+## Uitgangspunt
+
+De zorgaanbieder stelt de gemeente op de hoogte van (veranderingen in) zorgvraag door middel van een Verzoek om toewijzing of een Verzoek om wijziging.
+
 ## Metadata
 
 | Eigenschap | Waarde |
@@ -26,4 +30,3 @@
 - OP348
 - OP350
 - OP359
-
