@@ -119,7 +119,9 @@ Er bestaat geen aparte afwijscodelijst voor VOW.
 
 ### Zoektermen voor AI / RAG retrieval
 
-- afkeurcodes jw319
+- afkeurcodes JW319
+- afkeurreden VOT
+- afkeurreden VOW
 - afwijsredenen verzoek
 - redenen afgewezen verzoek
 - redenen afgekeurde aanvraag
