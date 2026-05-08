@@ -76,7 +76,7 @@ Deze codelijst bevat redenen waarom een verzoek om toewijzing (VOT) of verzoek o
 ---
 ## Toepassing van de codes
 
-Alle onderstaande afwijsredenen mogen gebruikt worden voor:
+Alle onderstaande afwijsredenen mogen gebruikt worden voor de afwijzing van:
 
 - verzoek om toewijzing (VOT)
 - verzoek om wijziging (VOW)
