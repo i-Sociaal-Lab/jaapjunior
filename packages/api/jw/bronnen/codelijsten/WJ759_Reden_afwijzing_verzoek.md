@@ -24,7 +24,6 @@ Reden van afwijzen van een verzoek om toewijzing of een verzoek om wijziging.
 ## Gebruikt in berichten
 
 - JW319
-- JW320
 
 ---
 
@@ -56,23 +55,82 @@ Deze codelijst bevat redenen waarom een verzoek om toewijzing (VOT) of verzoek o
 - afwijsreden vow
 - afgekeurde vow
 - vow afwijscode
-- vow retourcode afwijzing
+- vow reden afwijzing
 - afkeur reden verzoek om wijziging
 - waarom is een verzoek om wijziging afgewezen?
 
 #### Algemene vraagvarianten
 
-- welke redenen voor afwijzing van een verzoek zijn er?
+- welke redenen voor afwijzing van een verzoek om toewijzing zijn er?
+- welke redenen voor afwijzing van een verzoek om wijziging zijn er?
 - welke codes horen bij afwijzing van een verzoek?
 - waarom is mijn verzoek afgewezen?
 - welke reden van afwijzing moet ik gebruiken?
-- welke afkeurcodes bestaan er binnen iJw?
+- welke afkeurcodes bestaan er binnen iJw voor en VOT of VOW?
 - reden afwijzing verzoek
-- reden retourbericht jw319
-- reden retourbericht jw320
-- welke code gebruik ik bij afwijzing?
+- reden amtwoordbericht jw319
+- welke code gebruik ik bij afwijzing VOT of VOW?
 - afwijzing verzoek toewijzing
 - afwijzing verzoek wijziging
+
+---
+## Toepassing van de codes
+
+Alle onderstaande afwijsredenen mogen gebruikt worden voor:
+
+- verzoek om toewijzing (VOT)
+- verzoek om wijziging (VOW)
+
+Dezelfde codelijst geldt voor zowel VOT als VOW.
+Er bestaat geen aparte afwijscodelijst voor VOW.
+
+---
+## Synoniemen
+
+### Functionele synoniemen
+
+| Term | Synoniemen / alternatieve formuleringen |
+|---|---|
+| Afwijzing | Afkeur, weigering, niet accepteren |
+| Afwijzen | Afkeuren, weigeren, retourneren |
+| Reden afwijzing | Afwijsreden, afkeurreden, foutreden, retourreden |
+| Afwijscode | Retourcode, foutcode, afkeurcode, redencode |
+| Verzoek | Aanvraag, verzoekbericht |
+| Antwoordbericht | Retourbericht, reactiebericht, responsbericht |
+| Gemeente wijst af | Gemeente retourneert, gemeente keurt af |
+| Niet geaccepteerd | Afgekeurd, geweigerd, afgewezen |
+| Bericht afgewezen | Bericht afgekeurd, bericht geretourneerd |
+| Toewijzingsverzoek | VOT, verzoek om toewijzing |
+| Wijzigingsverzoek | VOW, verzoek om wijziging |
+
+---
+
+### Technische synoniemen
+
+| Technische term | Alternatieve zoektermen |
+|---|---|
+| JW319 | antwoordbericht, retourbericht, gemeentelijk antwoordbericht |
+| LDT_RedenAfwijzingVerzoek | afwijscodelijst, reden afwijzing verzoek |
+| WJ759 | afwijsredenen iJw, codelijst afwijzing verzoek |
+
+---
+
+### Zoektermen voor AI / RAG retrieval
+
+- afkeurcodes jw319
+- afwijsredenen verzoek
+- redenen afgewezen verzoek
+- redenen afgekeurde aanvraag
+- waarom wijst gemeente verzoek af?
+- code afgewezen verzoek
+- code afgekeurde vot
+- code afgekeurde vow
+- afwijsbericht gemeente
+- verzoek niet geaccepteerd
+- verzoek geweigerd
+- aanvraag afgewezen gemeente
+- afwijzing zorgverzoek
+- afkeur verzoekbericht
 
 ---
 
@@ -96,11 +154,11 @@ Deze codelijst bevat redenen waarom een verzoek om toewijzing (VOT) of verzoek o
 
 Dit betreft een codelijst (enumeratie) voor `LDT_RedenAfwijzingVerzoek` binnen iJw 3.2.
 
-De code beschrijft de reden waarom een verzoek in een JW319- of JW320-bericht is afgewezen.
+De code beschrijft de reden waarom een verzoek om toewijzing of een verzoek om wijziging in een JW319-bericht is afgewezen.
 
 Functionele context:
 - afwijzing verzoek om toewijzing (VOT)
 - afwijzing verzoek om wijziging (VOW)
-- retourberichten vanuit gemeenten
+- antwoordbericht vanuit gemeenten
 - afkeurcodes binnen het berichtenverkeer
-- redenen waarom een aanvraag niet wordt geaccepteerd
+- redenen waarom een verzoek niet wordt geaccepteerd
