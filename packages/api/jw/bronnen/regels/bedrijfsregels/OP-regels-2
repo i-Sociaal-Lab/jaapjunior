@@ -43,7 +43,8 @@ Het document dient als **naslagwerk en validatiebron** voor AI-agenten die vrage
 ## Bedrijfsregels (OP-regels)
 
 ## OP186 - Het beeindigen van een toewijzing op een datum die in het verleden ligt kan alleen in overeenstemming met de betreffende aanbieder
-- Berichttype: [JW301]
+### Berichttype: - JW301
+
 
 ### Gerelateerde uitgangspunten
 - UP004, UP017
@@ -51,7 +52,9 @@ Het document dient als **naslagwerk en validatiebron** voor AI-agenten die vrage
 ---
 
 ## OP191 - Het gebruik van ongestructureerde informatie dient tot een minimum beperkt te worden.
-- Berichttype: [JW301, JW315]
+### Berichttype: 
+- JW301 
+- JW315
 - gerelateerd_aan: [UP003, UP017]
 
 ### Regel
@@ -76,7 +79,6 @@ Commentaar mag geen tot een persoon herleidbare gegevens bevatten zonder toestem
 
 - type: bedrijfsregel
 - berichttypen: [JW301, JW305, JW307, JW315, JW317, JW319, JW323, JW325]
-- gerelateerd_aan: [UP017]
 
 Verzonden berichten moeten voldoen aan de volgende technische eisen.
 
