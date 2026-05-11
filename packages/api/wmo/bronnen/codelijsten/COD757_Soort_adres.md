@@ -16,7 +16,7 @@ Nadere typering van het adres. Deze code wordt gebruikt in het toewijzingbericht
 
 ## Gebruik in berichten
 - WMO301
-- WMO301
+- WMO302
 ---
 
 ## Codelijst
