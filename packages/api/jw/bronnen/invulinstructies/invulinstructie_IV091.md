@@ -7,7 +7,7 @@ In de IngediendBedrag-regel van een Prestatie wordt met DebetCredit aangegeven o
 Crediteren declaratie:
 Een creditprestatie is identiek aan de oorspronkelijke debetprestatie, met uitzondering van:
 
-ReferentieNummer: de creditprestatie krijgt een nieuw ReferentieNummer.
-VorigReferentieNummer wordt gevuld met het ReferentieNummer van de oorspronkelijke debetprestatie.
-DebetCredit in IngediendBedrag wordt gevuld met C (Credit)
-Crediteren is alleen mogelijk na ontvangst van het declaratie-antwoordbericht waarin de te crediteren prestatie is toegekend (zie IV085).
+- ReferentieNummer: de creditprestatie krijgt een nieuw ReferentieNummer.
+- VorigReferentieNummer wordt gevuld met het ReferentieNummer van de oorspronkelijke debetprestatie.
+- DebetCredit in IngediendBedrag wordt gevuld met C (Credit)
+- Crediteren is alleen mogelijk na ontvangst van het declaratie-antwoordbericht waarin de te crediteren prestatie is toegekend (zie IV085).
