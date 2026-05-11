@@ -1,4 +1,4 @@
-# 📘 Foutcodelijst Berichtenverkeer
+# Foutcodelijst Berichtenverkeer
 
 Deze lijst bevat de foutcodes die kunnen optreden binnen het iJw/iWmo berichtenverkeer via het GGK, BIDN, VECOZO, CAK en VWS.  
 Gebruik deze lijst als naslagwerk bij het analyseren van retourmeldingen.
@@ -38,7 +38,7 @@ Gebruik deze lijst als naslagwerk bij het analyseren van retourmeldingen.
 
 ---
 
-📎 **Toelichting:**
+**Toelichting:**
 - *BIDN* = Berichtenverkeer i-Domein Nederland  
 - *CAK* = Centraal Administratie Kantoor  
 - *VWS* = Ministerie van Volksgezondheid, Welzijn en Sport  
