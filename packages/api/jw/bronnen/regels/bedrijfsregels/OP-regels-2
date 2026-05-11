@@ -121,7 +121,8 @@ Bron: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bed
 - JW319
 - JW323
 - JW325
-- iJw-berichten gebruiken **AGB-codes** voor routering en identificatie van de aanbieder.
+
+iJw-berichten gebruiken **AGB-codes** voor routering en identificatie van de aanbieder.
 
 ### Gerelateerde bedrijfsregels
 - OP033
