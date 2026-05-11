@@ -55,7 +55,6 @@ Het document dient als **naslagwerk en validatiebron** voor AI-agenten die vrage
 ### Berichttype: 
 - JW301 
 - JW315
-- gerelateerd_aan: [UP003, UP017]
 
 ### Regel
 Het gebruik van ongestructureerde informatie dient tot een minimum beperkt te worden.
@@ -98,6 +97,12 @@ Verzonden berichten moeten voldoen aan de volgende technische eisen.
 ## OP252 – Bij een (deels) onbekende geboortedatum moet aangegeven worden welk deel van de geboortedatum betrouwbaar is.
 Bron: [OP252](https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op252/)
 
+## Berichttype
+- JW301
+- JW305
+- JW307
+- JW315
+
 - Bij een (gedeeltelijk) onbekende geboortedatum moet worden aangegeven welk deel betrouwbaar is.
 
 ### Gerelateerde uitgangspunten
@@ -107,11 +112,19 @@ Bron: [OP252](https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/re
 ## OP254 -  In de iJw berichten worden AGB-codes gebruikt voor routering van de berichten en voor identificatie van de aanbieder.
 Bron: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op254/
 
+## Berichttype
+- JW301
+- JW305
+- JW307
+- JW315
+- JW317
+- JW319
+- JW323
+- JW325
 - iJw-berichten gebruiken **AGB-codes** voor routering en identificatie van de aanbieder.
 
 ### Gerelateerde bedrijfsregels
 - OP033
-
 
 ### Gerelateerde uitgangspunten
 - UP017
@@ -121,6 +134,9 @@ Bron: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bed
 ## OP257 — Bij een wijziging van de zorgvraag wordt voor het betreffende product een nieuwe toewijzing afgegeven.
 
 **Bron:** https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op257/
+
+## Berichttype
+- JW301
 
 #### Hoofdregel
 Bij een wijziging van de zorgvraag:
@@ -143,6 +159,7 @@ Pas de bestaande toewijzing aan indien:
 
 ### Gerelateerde uitgangspunten
 - UP007
+
 ---
 
 ## OP258 - Bij een beeindiging van een toewijzing wordt de aanbieder hiervan op de hoogte gebracht met een toewijzingbericht.
