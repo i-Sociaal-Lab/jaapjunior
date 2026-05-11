@@ -42,7 +42,7 @@ Het document dient als **naslagwerk en validatiebron** voor AI-agenten die vrage
 
 ## Bedrijfsregels (OP-regels)
 
-## OP186 - Stoppen van toewijzing in het verleden
+## OP186 - Het beeindigen van een toewijzing op een datum die in het verleden ligt kan alleen in overeenstemming met de betreffende aanbieder
 - Berichttype: [JW301]
 - gerelateerd_aan: [UP004, UP017]
 
@@ -54,12 +54,12 @@ Van toepassing in situaties waarin de aanbieder niet had kunnen weten dat onders
 
 ---
 
-## `OP191` | Ongestructureerde informatie
+## OP191 - Het gebruik van ongestructureerde informatie dient tot een minimum beperkt te worden.
 - Berichttype: [JW301, JW315]
 - gerelateerd_aan: [UP003, UP017]
 
 ### Regel
-Gebruik van ongestructureerde informatie moet minimaal zijn.
+Het gebruik van ongestructureerde informatie dient tot een minimum beperkt te worden.
 
 ### Toelichting
 - Commentaar mag gebruikt worden om extra informatie op te nemen.
@@ -73,7 +73,7 @@ Commentaar mag geen tot een persoon herleidbare gegevens bevatten zonder toestem
 
 ---
 
-## OP192 - Technische eisen verzonden berichten
+## OP192 - Verzonden berichten moeten voldoen aan de technische eisen.
 
 - type: bedrijfsregel
 - berichttypen: [JW301, JW305, JW307, JW315, JW317, JW319, JW323, JW325]
@@ -93,7 +93,7 @@ Verzonden berichten moeten voldoen aan de volgende technische eisen.
 
 ---
 
-### OP252 – Onbekende geboortedatum  
+## OP252 – Bij een (deels) onbekende geboortedatum moet aangegeven worden welk deel van de geboortedatum betrouwbaar is.
 Bron: [OP252](https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op252/)
 
 - Bij een (gedeeltelijk) onbekende geboortedatum moet worden aangegeven welk deel betrouwbaar is.
@@ -101,15 +101,31 @@ Bron: [OP252](https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/re
 **Uitwerking van regel:** `UP017`
 
 --
-### `OP254` | AGB-codes
+## OP254 -  In de iJw berichten worden AGB-codes gebruikt voor routering van de berichten en voor identificatie van de aanbieder.
 Bron: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op254/
 
 - iJw-berichten gebruiken **AGB-codes** voor routering en identificatie van de aanbieder.
 
-**Uitwerking van regel:** `UP017`
+ Gerelateerde bedrijfsregels
+- OP033
+
+### Gerelateerde invulinstructies
+-
+### Gerelateerde technischeregels
+-
+
+### Gerelateerde condities
+-
+
+### Gerelateerde constraints
+-
+
+### Gerelateerde uitgangspunten
+- UP017
+
 ---
 
-### OP257 — Wijziging zorgvraag → nieuwe of aangepaste toewijzing
+## OP257 — Bij een wijziging van de zorgvraag wordt voor het betreffende product een nieuwe toewijzing afgegeven.
 
 **Bron:** https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op257/
 
@@ -129,18 +145,52 @@ Pas de bestaande toewijzing aan indien:
 - het **volume wijzigt** bij frequentie *“totaal binnen geldigheidsduur”*
 - het **maximaal budget wijzigt**
 
-#### Uitwerking van regel
-- `UP007`
+ Gerelateerde bedrijfsregels
+- 
+
+### Gerelateerde invulinstructies
+- IV093
+
+### Gerelateerde technischeregels
+-
+
+### Gerelateerde condities
+-
+
+### Gerelateerde constraints
+-
+
+### Gerelateerde uitgangspunten
+- UP007
 ---
 
-### `OP258` | Beëindiging toewijzing
+## OP258 - Bij een beeindiging van een toewijzing wordt de aanbieder hiervan op de hoogte gebracht met een toewijzingbericht.
 Bron: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op258/
 
-- Bij beëindiging van een toewijzing wordt de aanbieder geïnformeerd via een **toewijzingsbericht**.
+- Bij beëindiging van een toewijzing wordt de aanbieder geïnformeerd met een toewijzingbericht.
+
+### Gerelateerde bedrijfsregels
+- 
+
+### Gerelateerde invulinstructies
+- 
+
+### Gerelateerde technischeregels
+-
+
+### Gerelateerde condities
+-
+
+### Gerelateerde constraints
+-
+
+### Gerelateerde uitgangspunten
+- UP007
+
 
 ---
 
-### `OP259` | Geen stapeling van producten bij toewijzen
+## OP259 - Het is niet toegestaan om een zorg- of ondersteuningsproduct gestapeld toe te wijzen
 Bron: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op259/
 
 Het is niet toegestaan om een zorg- of ondersteuningsproduct gestapeld toe te wijzen
@@ -152,39 +202,128 @@ Hetzelfde zorg- of ondersteuningsproduct betekent dezelfde productcode (Specifie
   - Administratieve correcties (RedenWijziging = 01)  
   - Deze worden **niet als actuele toewijzing** gezien.
 
+### Gerelateerde bedrijfsregels
+- 
+### Gerelateerde invulinstructies
+- 
+
+### Gerelateerde technischeregels
+- TR302
+
+### Gerelateerde condities
+-
+
+### Gerelateerde constraints
+-
+
+### Gerelateerde uitgangspunten
+- UP007
+
 ---
 
-### `OP260` | Hoe wordt een ondersteuningsproduct omschreven?
+## OP260 - Een ondersteuningsproduct wordt omschreven als een Productcategorie en kan nader gespecificeerd worden met een Productcode.
 Bron: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op260/
 
 - Een ondersteuningsproduct wordt omschreven als een **Productcategorie** en kan nader worden gespecificeerd met een **Productcode**.
 
+### Gerelateerde bedrijfsregels
+- 
+
+### Gerelateerde invulinstructies
+- 
+
+### Gerelateerde technischeregels
+-
+
+### Gerelateerde condities
+-
+
+### Gerelateerde constraints
+-
+
+### Gerelateerde uitgangspunten
+- UP016
 ---
 
-### `OP261` | Uitvoeringsvariant per product
+## OP261 - Per ondersteuningsproduct wordt vastgelegd of de uitvoering inspanningsgericht, outputgericht of taakgericht is.
 Bron: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op261/
 
 - Per ondersteuningsproduct wordt vastgelegd of de uitvoering **inspanningsgericht**, **outputgericht** of **taakgericht** is.
 
+
+### Gerelateerde bedrijfsregels
+- 
+
+### Gerelateerde invulinstructies
+- IV074
+
+### Gerelateerde technischeregels
+-
+
+### Gerelateerde condities
+-
+
+### Gerelateerde constraints
+-
+
+### Gerelateerde uitgangspunten
+- UP026
 ---
 
-### `OP262` | Tarieven inspanningsgericht
+## OP262 - Voor ondersteuningsproducten met een inspanningsgerichte uitvoering wordt een tarief per tijdseenheid afgesproken behalve voor ondersteuningsproducten met de eenheid stuks (inspanning) daar wordt een tarief per stuk afgesproken.
 Bron: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op262/
 
 - Er wordt een tarief per tijdseenheid afgesproken.  
 - Uitzondering: eenheid = stuks (inspanning) → tarief per stuk.
 
+
+### Gerelateerde bedrijfsregels
+- 
+
+### Gerelateerde invulinstructies
+- IV042, IV074
+
+### Gerelateerde technischeregels
+- TR418
+
+### Gerelateerde condities
+-
+
+### Gerelateerde constraints
+-
+
+### Gerelateerde uitgangspunten
+- UP026, UP028
+
 ---
 
-### `OP263` | Tarieven outputgericht
+## OP263 - Voor ondersteuningsproducten met een outputgerichte werkwijze wordt een tarief per stuk afgesproken of wordt afgesproken dat een bedrag in euro's over een vastgestelde periode wordt vastgesteld.
 Bron: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op263/
 
 - Er wordt een tarief per stuk of een bedrag in euro’s afgesproken over een vastgestelde periode.  
 - Gemeente en aanbieder maken duidelijke afspraken over de **definitie van output** en **vaststellen hoe kan worden vastgesteld dat behaalde output is behaald**.
 
+### Gerelateerde bedrijfsregels
+- 
+
+### Gerelateerde invulinstructies
+- IV042, IV074
+
+### Gerelateerde technischeregels
+-
+
+### Gerelateerde condities
+-
+
+### Gerelateerde constraints
+-
+
+### Gerelateerde uitgangspunten
+- UP028
+
 ---
 
-### `OP264` | Declaratiemoment outputgerichte ondersteuningsproducten
+## OP264 - Voor ondersteuningsproducten met een outputgerichte werkwijze wordt vastgesteld op welk moment gedeclareerd wordt.
 Bron: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op264/
 
 - Vaststelling van het declaratiemoment, bijvoorbeeld:  
@@ -192,16 +331,53 @@ Bron: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bed
   - Per behaalde mijlpaal  
   - Periodiek vast bedrag
 
+
+### Gerelateerde bedrijfsregels
+- 
+
+### Gerelateerde invulinstructies
+- IV074
+
+### Gerelateerde technischeregels
+-
+
+### Gerelateerde condities
+-
+
+### Gerelateerde constraints
+-
+
+### Gerelateerde uitgangspunten
+- UP026, UP028
+
 ---
 
-### `OP267` | Declaratie-eenheid
+## OP267 - De aanbieder declareert in een eenheid die aansluit bij de toewijzing.
 Bron: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op267/
 
 - Aanbieder declareert in een eenheid die aansluit bij de **toewijzing**.
 
+### Gerelateerde bedrijfsregels
+- 
+
+### Gerelateerde invulinstructies
+- IV081
+
+### Gerelateerde technischeregels
+-  TR341, TR346, TR358
+
+### Gerelateerde condities
+-
+
+### Gerelateerde constraints
+- CS339
+
+### Gerelateerde uitgangspunten
+- UP027
+
 ---
 
-### `OP270` | Afspraken over begin- en einddatum Regieberichten
+## OP270 - Aanbieder en gemeente maken onderling afspraken over de door te geven begin- en einddatum in de regieberichten.
 Bron: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op270/
 
 Aanbieder en gemeente maken onderling afspraken over de door te geven begin- en einddatum in de regieberichten, (lees startbericht, stopbericht).
@@ -209,25 +385,77 @@ Aanbieder en gemeente maken onderling afspraken over de door te geven begin- en 
 - Verplicht bij uitvoeringsvarianten: **inspannings- en outputgericht**.  
 - Afspraken over begin- en eindatum per product kan afwijken, maar dit heeft **niet de voorkeur**.
 
+### Gerelateerde bedrijfsregels
+- 
+
+### Gerelateerde invulinstructies
+- 
+
+### Gerelateerde technischeregels
+-
+
+### Gerelateerde condities
+-
+
+### Gerelateerde constraints
+-
+
+### Gerelateerde uitgangspunten
+- UP017, UP026
+
 ---
 
-### `OP271` | moment versturen Startbericht
+## OP271 - De aanbieder verzendt een startbericht binnen vijf werkdagen na de daadwerkelijke datum waarop de ondersteuning gestart is
 Bron: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op271/
 
 - Aanbieder verzendt binnen **5 werkdagen** na daadwerkelijke start.  
 - Indien ondersteuning met terugwerkende kracht is toegewezen → binnen 5 werkdagen na ontvangst toewijzingbericht.
 
+### Gerelateerde bedrijfsregels
+- 
+
+### Gerelateerde invulinstructies
+- 
+
+### Gerelateerde technischeregels
+-
+
+### Gerelateerde condities
+-
+
+### Gerelateerde constraints
+-
+
+### Gerelateerde uitgangspunten
+- UP017
 ---
 
-### `OP272` | moment versturen Stopbericht
+## OP272 - De aanbieder verzendt een stopbericht binnen vijf werkdagen na de daadwerkelijke datum waarop de ondersteuning beeindigd is.
 Bron: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op272/
 
 - Aanbieder verzendt binnen **5 werkdagen** na daadwerkelijke stop.  
 - Definitieve stop volgend op tijdelijke stop → binnen 5 werkdagen nadat bekend is dat levering **definitief gestopt** is.
 
+### Gerelateerde bedrijfsregels
+- 
+
+### Gerelateerde invulinstructies
+- 
+
+### Gerelateerde technischeregels
+-
+
+### Gerelateerde condities
+-
+
+### Gerelateerde constraints
+-
+
+### Gerelateerde uitgangspunten
+- UP017
 ---
 
-### `OP274` | moment versturen toewijzingsbericht of antwoordbericht na VOT 
+## OP274 - Na ontvangst van een verzoek om toewijzing stuurt de gemeente per aangevraagd product binnen 5 werkdagen ofwel een toewijzingbericht ofwel een antwoordbericht aan de aanbieder.
 Bron: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op274/
 
 - Gemeente stuurt **binnen 5 werkdagen** per aangevraagd product:  
@@ -238,52 +466,175 @@ Bron: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bed
   - Binnen 8 weken → toewijzingsbericht of antwoordbericht met **VerzoekAntwoord = 1 (Afgewezen)**.  
   - Elk product uit het VOT moet uiteindelijk **toewijzing of afwijzing** hebben.
 
+### Gerelateerde bedrijfsregels
+- 
+
+### Gerelateerde invulinstructies
+- 
+
+### Gerelateerde technischeregels
+- TR379
+
+### Gerelateerde condities
+-
+
+### Gerelateerde constraints
+-
+
+### Gerelateerde uitgangspunten
+- UP004
 ---
 
-### `OP275` | Uniek toewijzingsnummer
+## OP275 - Iedere toewijzing binnen één gemeente heeft een uniek nummer per wettelijk domein.
+
 Bron: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op275/
 
 - Iedere toewijzing binnen een gemeente heeft een **uniek nummer per wettelijk domein**.
 
+### Gerelateerde bedrijfsregels
+- 
+
+### Gerelateerde invulinstructies
+- IV046, IV066
+
+### Gerelateerde technischeregels
+- TR332
+
+### Gerelateerde condities
+-
+
+### Gerelateerde constraints
+-
+
+### Gerelateerde uitgangspunten
+- UP004
 ---
 
-### `OP276` | Declareren indien toewijzing is ontvangen
+## OP276 - De aanbieder declareert voor een client waarvoor de aanbieder een toewijzing ontvangen heeft.
 Bron: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op276/
 
 - Aanbieder declareert voor cliënten waarvoor een **toewijzing ontvangen** is.
 
+### Gerelateerde bedrijfsregels
+- 
+
+### Gerelateerde invulinstructies
+- 
+
+### Gerelateerde technischeregels
+- TR304, TR384
+
+### Gerelateerde condities
+-
+
+### Gerelateerde constraints
+-
+
+### Gerelateerde uitgangspunten
+- UP027
+
 ---
 
-### `OP279` | Declaratie binnen toegewezen periode
+## OP279 - De aanbieder declareert een product binnen de toegewezen periode.
 Bron: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op279/
 
 - Declaratie vindt plaats **binnen de geldigheid** van de toewijzing of anders gezegd, binnen te toegewezen periode
 
+### Gerelateerde bedrijfsregels
+- 
+
+### Gerelateerde invulinstructies
+- IV084
+
+### Gerelateerde technischeregels
+- TR307, TR308
+
+### Gerelateerde condities
+-
+
+### Gerelateerde constraints
+-
+
+### Gerelateerde uitgangspunten
+- UP017
+
 ---
 
-### `OP280` | Declaratiebeircht en declaratieperiode 
+## OP280 - Een declaratiebericht heeft betrekking op één declaratieperiode.
 Bron: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op280/
 
 - Declaratiebericht heeft betrekking op **één declaratieperiode**.  
 - Kan prestaties bevatten uit **eerder verlopen declaratieperioden**.
 
+### Gerelateerde bedrijfsregels
+- 
+
+### Gerelateerde invulinstructies
+- IV084, IV089, IV090
+
+### Gerelateerde technischeregels
+- TR319
+
+### Gerelateerde condities
+-
+
+### Gerelateerde constraints
+- CS340
+
+### Gerelateerde uitgangspunten
+- UP025
 ---
 
-### `OP281` | Declaratiebericht met één of meerdere cliënten
+## OP281 - Een declaratiebericht kan prestaties van één of meer clienten bevatten.
 Bron: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op281/
 
 - Een declaratiebericht kan prestaties bevatten van **één of meer cliënten**.
 
+### Gerelateerde bedrijfsregels
+- 
+
+### Gerelateerde invulinstructies
+- 
+
+### Gerelateerde technischeregels
+- 
+
+### Gerelateerde condities
+-
+
+### Gerelateerde constraints
+-
+
+### Gerelateerde uitgangspunten
+- UP025
+
 ---
 
-### `OP283` | Uniek prestatie-nummer
+## OP283 - Iedere prestatie krijgt een uniek nummer per aanbieder per wettelijk domein.
 Bron: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op283/
 
 - Iedere prestatie/declaratieregel krijgt een **uniek nummer (ProductReferentie)** per aanbieder per wettelijk domein.
 
+### Gerelateerde bedrijfsregels
+- 
+
+### Gerelateerde invulinstructies
+- 
+
+### Gerelateerde technischeregels
+- TR314, TR315, TR316, TR323
+
+### Gerelateerde condities
+-
+
+### Gerelateerde constraints
+-
+
+### Gerelateerde uitgangspunten
+- UP025
 ---
 
-### `OP284` | Aansluitende declaratieperioden
+## OP284 - Indien iedere declaratieperiode zorg is geleverd door de aanbieder, moeten de declaratieperioden aansluitend zijn in opvolgende declaratieberichten.
 Bron: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op284/
 
 - Als iedere declaratieperiode zorg is geleverd, moeten declaratieperioden **aansluitend** zijn in opvolgende berichten.  
@@ -291,25 +642,79 @@ Bron: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bed
 - Hiaten in declaratieperioden zijn toegestaan (duur = 1 of meer kalendermaanden).  
 - Overlap van declaratieperioden voor correcties is toegestaan op de laatst ingediende periode.
 
+### Gerelateerde bedrijfsregels
+- 
+
+### Gerelateerde invulinstructies
+-
+
+### Gerelateerde technischeregels
+- TR318
+
+### Gerelateerde condities
+-
+
+### Gerelateerde constraints
+-
+
+### Gerelateerde uitgangspunten
+- UP017
+
 ---
 
-### `OP286` | Technische fouten heenbericht
+## OP286 - Als de ontvanger een technische fout constateert, keurt deze het bericht in zijn geheel af en laat hij dit weten aan de verzender. Het bericht moet daarmee functioneel als niet-verzonden worden beschouwd
 Bron: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op286/
 
 - Bij technische fouten keurt ontvanger **het hele bericht af**.  
 - Bericht wordt **functioneel als niet-verzonden** beschouwd en verzender geïnformeerd via een retourbericht.
 
+### Gerelateerde bedrijfsregels
+- 
+
+### Gerelateerde invulinstructies
+- IV032
+
+### Gerelateerde technischeregels
+- 
+
+### Gerelateerde condities
+-
+
+### Gerelateerde constraints
+-
+
+### Gerelateerde uitgangspunten
+- UP017
+
 ---
 
-### `OP288` | Stopbericht na Startbericht
+## OP288 - ndien de start van de levering gemeld is met een Startbericht, wordt de beeindiging van die levering altijd doorgegeven met een Stopbericht.
 Bron: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op288/
 
 - Als een Startbericht is gestuurd, wordt de beëindiging altijd doorgegeven met een **Stopbericht**.  
 - Dit geldt ook bij levering volgens plan of op einddatum van de toewijzing.
 
+### Gerelateerde bedrijfsregels
+- 
+
+### Gerelateerde invulinstructies
+-
+
+### Gerelateerde technischeregels
+- TR382
+
+### Gerelateerde condities
+-
+
+### Gerelateerde constraints
+-
+
+### Gerelateerde uitgangspunten
+- UP017
+
 ---
 
-### `OP289` | Eén actueel Startbericht bij toegewezen product
+## OP289 - Bij een toegewezen product kan slechts één Startbericht actueel zijn.
 Bron: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op289/
 
 - Per toegewezen product kan slechts **één startdatum** actueel zijn.  
@@ -318,34 +723,125 @@ Bron: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bed
   - Het betreft een correctie van het eerdere Startbericht.  
 - let op een startbericht kan **generiek**, **aspecifiek**, of **specifiek** zijn.
 
+### Gerelateerde bedrijfsregels
+- 
+
+### Gerelateerde invulinstructies
+- IV008
+
+### Gerelateerde technischeregels
+- TR326
+
+### Gerelateerde condities
+-
+
+### Gerelateerde constraints
+-
+
+### Gerelateerde uitgangspunten
+- UP017
+
 ---
 
-### `OP295` | Gebruik van regeieberichten (start-/stopberichten) is verplicht
+## OP295 - Gebruik van regeieberichten (start-/stopberichten) is verplicht
 Bron: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op295/
 
 - Gebruik van regieberichten is verplicht bij **inspannings- en outputgericht**.  
 - Stopbericht mag alleen gestuurd worden als er een **Startbericht** is.  
 - Bij oudere leveringen (iWmo/iJw release 2.4, voor 2021) zonder Startbericht → Stopbericht mag niet.
 
+### Gerelateerde bedrijfsregels
+- 
+
+### Gerelateerde invulinstructies
+-
+
+### Gerelateerde technischeregels
+-
+
+### Gerelateerde condities
+-
+
+### Gerelateerde constraints
+-
+
+### Gerelateerde uitgangspunten
+- UP001, UP017
+
+
 ---
 
-### `OP296` | Verzoek om Toewijzing moet passend zijn
+## OP296 - Het ingediende Verzoek om Toewijzing dient te passen binnen de gemaakte contractafspraken tussen gemeente en aanbieder.
 Bron: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op296/
 - Moet passen binnen de **contractafspraken** tussen gemeente en aanbieder.
 
+### Gerelateerde bedrijfsregels
+- 
+
+### Gerelateerde invulinstructies
+-
+
+### Gerelateerde technischeregels
+-
+
+### Gerelateerde condities
+-
+
+### Gerelateerde constraints
+-
+
+### Gerelateerde uitgangspunten
+- UP001, UP017, UP028
+
 ---
 
-### `OP297` | Zorgverlenercode van verwijzer bekend?
+## OP297 -  Indien de zorgverlenercode van de verwijzer bekend is, dient de aanbieder deze mee te geven in het verzoek om toewijzing.
 Bron: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op297/
 - Indien deze bekend is, moet de **ZorgverlenerCode (AGB)** van verwijzer worden meegegeven.  
 - Ontbreekt de AGB-code → naam van de verwijzer volstaat.
 
+### Gerelateerde bedrijfsregels
+- 
+
+### Gerelateerde invulinstructies
+-
+
+### Gerelateerde technischeregels
+- 
+
+### Gerelateerde condities
+- CD066, CD067, CD068
+
+### Gerelateerde constraints
+-
+
+### Gerelateerde uitgangspunten
+- UP001, UP017, UP024
+
+
 ---
 
-### `OP298` | Verlagen volume
+## OP298 - Het verlagen van het Volume bij de frequentie totaal binnen geldigheid toewijzing is alleen toegestaan na overleg met en instemming van de betreffende aanbieder.
 Bron: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op298/
 
 - Dit is alleen toegestaan **na overleg met en instemming van** de aanbieder bij frequentie “totaal binnen geldigheidsduur”.
+
+### Gerelateerde bedrijfsregels
+- 
+
+### Gerelateerde invulinstructies
+-
+
+### Gerelateerde technischeregels
+- 
+### Gerelateerde condities
+-
+
+### Gerelateerde constraints
+-
+
+### Gerelateerde uitgangspunten
+- UP031
 
 ---
 
