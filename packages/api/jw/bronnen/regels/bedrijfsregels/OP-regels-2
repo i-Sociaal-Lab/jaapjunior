@@ -44,13 +44,9 @@ Het document dient als **naslagwerk en validatiebron** voor AI-agenten die vrage
 
 ## OP186 - Het beeindigen van een toewijzing op een datum die in het verleden ligt kan alleen in overeenstemming met de betreffende aanbieder
 - Berichttype: [JW301]
-- gerelateerd_aan: [UP004, UP017]
 
-## Regel
-Beëindigen van een toewijzing in het verleden mag alleen in overeenstemming met de aanbieder.
-
-### Toelichting
-Van toepassing in situaties waarin de aanbieder niet had kunnen weten dat ondersteuning niet geleverd mocht worden.
+### Gerelateerde uitgangspunten
+- UP004, UP017
 
 ---
 
@@ -71,6 +67,9 @@ Het gebruik van ongestructureerde informatie dient tot een minimum beperkt te wo
 ### Privacybeperking
 Commentaar mag geen tot een persoon herleidbare gegevens bevatten zonder toestemming van die persoon.
 
+### Gerelateerde uitgangspunten
+- UP003, UP017
+
 ---
 
 ## OP192 - Verzonden berichten moeten voldoen aan de technische eisen.
@@ -78,8 +77,6 @@ Commentaar mag geen tot een persoon herleidbare gegevens bevatten zonder toestem
 - type: bedrijfsregel
 - berichttypen: [JW301, JW305, JW307, JW315, JW317, JW319, JW323, JW325]
 - gerelateerd_aan: [UP017]
-
-### Regel
 
 Verzonden berichten moeten voldoen aan de volgende technische eisen.
 
@@ -91,6 +88,9 @@ Verzonden berichten moeten voldoen aan de volgende technische eisen.
 * einderegel: CR/LF
 * bestandsextensie: .xml
 
+### Gerelateerde uitgangspunten
+- UP017
+
 ---
 
 ## OP252 – Bij een (deels) onbekende geboortedatum moet aangegeven worden welk deel van de geboortedatum betrouwbaar is.
@@ -98,7 +98,8 @@ Bron: [OP252](https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/re
 
 - Bij een (gedeeltelijk) onbekende geboortedatum moet worden aangegeven welk deel betrouwbaar is.
 
-**Uitwerking van regel:** `UP017`
+### Gerelateerde uitgangspunten
+- UP017
 
 --
 ## OP254 -  In de iJw berichten worden AGB-codes gebruikt voor routering van de berichten en voor identificatie van de aanbieder.
@@ -106,19 +107,9 @@ Bron: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bed
 
 - iJw-berichten gebruiken **AGB-codes** voor routering en identificatie van de aanbieder.
 
- Gerelateerde bedrijfsregels
+### Gerelateerde bedrijfsregels
 - OP033
 
-### Gerelateerde invulinstructies
--
-### Gerelateerde technischeregels
--
-
-### Gerelateerde condities
--
-
-### Gerelateerde constraints
--
 
 ### Gerelateerde uitgangspunten
 - UP017
@@ -145,20 +136,8 @@ Pas de bestaande toewijzing aan indien:
 - het **volume wijzigt** bij frequentie *“totaal binnen geldigheidsduur”*
 - het **maximaal budget wijzigt**
 
- Gerelateerde bedrijfsregels
-- 
-
 ### Gerelateerde invulinstructies
 - IV093
-
-### Gerelateerde technischeregels
--
-
-### Gerelateerde condities
--
-
-### Gerelateerde constraints
--
 
 ### Gerelateerde uitgangspunten
 - UP007
@@ -169,24 +148,8 @@ Bron: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bed
 
 - Bij beëindiging van een toewijzing wordt de aanbieder geïnformeerd met een toewijzingbericht.
 
-### Gerelateerde bedrijfsregels
-- 
-
-### Gerelateerde invulinstructies
-- 
-
-### Gerelateerde technischeregels
--
-
-### Gerelateerde condities
--
-
-### Gerelateerde constraints
--
-
 ### Gerelateerde uitgangspunten
 - UP007
-
 
 ---
 
@@ -202,19 +165,8 @@ Hetzelfde zorg- of ondersteuningsproduct betekent dezelfde productcode (Specifie
   - Administratieve correcties (RedenWijziging = 01)  
   - Deze worden **niet als actuele toewijzing** gezien.
 
-### Gerelateerde bedrijfsregels
-- 
-### Gerelateerde invulinstructies
-- 
-
 ### Gerelateerde technischeregels
 - TR302
-
-### Gerelateerde condities
--
-
-### Gerelateerde constraints
--
 
 ### Gerelateerde uitgangspunten
 - UP007
@@ -226,21 +178,6 @@ Bron: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bed
 
 - Een ondersteuningsproduct wordt omschreven als een **Productcategorie** en kan nader worden gespecificeerd met een **Productcode**.
 
-### Gerelateerde bedrijfsregels
-- 
-
-### Gerelateerde invulinstructies
-- 
-
-### Gerelateerde technischeregels
--
-
-### Gerelateerde condities
--
-
-### Gerelateerde constraints
--
-
 ### Gerelateerde uitgangspunten
 - UP016
 ---
@@ -251,20 +188,8 @@ Bron: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bed
 - Per ondersteuningsproduct wordt vastgelegd of de uitvoering **inspanningsgericht**, **outputgericht** of **taakgericht** is.
 
 
-### Gerelateerde bedrijfsregels
-- 
-
 ### Gerelateerde invulinstructies
 - IV074
-
-### Gerelateerde technischeregels
--
-
-### Gerelateerde condities
--
-
-### Gerelateerde constraints
--
 
 ### Gerelateerde uitgangspunten
 - UP026
@@ -277,20 +202,11 @@ Bron: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bed
 - Uitzondering: eenheid = stuks (inspanning) → tarief per stuk.
 
 
-### Gerelateerde bedrijfsregels
-- 
-
 ### Gerelateerde invulinstructies
 - IV042, IV074
 
 ### Gerelateerde technischeregels
 - TR418
-
-### Gerelateerde condities
--
-
-### Gerelateerde constraints
--
 
 ### Gerelateerde uitgangspunten
 - UP026, UP028
@@ -303,20 +219,8 @@ Bron: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bed
 - Er wordt een tarief per stuk of een bedrag in euro’s afgesproken over een vastgestelde periode.  
 - Gemeente en aanbieder maken duidelijke afspraken over de **definitie van output** en **vaststellen hoe kan worden vastgesteld dat behaalde output is behaald**.
 
-### Gerelateerde bedrijfsregels
-- 
-
 ### Gerelateerde invulinstructies
 - IV042, IV074
-
-### Gerelateerde technischeregels
--
-
-### Gerelateerde condities
--
-
-### Gerelateerde constraints
--
 
 ### Gerelateerde uitgangspunten
 - UP028
@@ -332,20 +236,8 @@ Bron: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bed
   - Periodiek vast bedrag
 
 
-### Gerelateerde bedrijfsregels
-- 
-
 ### Gerelateerde invulinstructies
 - IV074
-
-### Gerelateerde technischeregels
--
-
-### Gerelateerde condities
--
-
-### Gerelateerde constraints
--
 
 ### Gerelateerde uitgangspunten
 - UP026, UP028
@@ -357,17 +249,11 @@ Bron: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bed
 
 - Aanbieder declareert in een eenheid die aansluit bij de **toewijzing**.
 
-### Gerelateerde bedrijfsregels
-- 
-
 ### Gerelateerde invulinstructies
 - IV081
 
 ### Gerelateerde technischeregels
 -  TR341, TR346, TR358
-
-### Gerelateerde condities
--
 
 ### Gerelateerde constraints
 - CS339
@@ -385,21 +271,6 @@ Aanbieder en gemeente maken onderling afspraken over de door te geven begin- en 
 - Verplicht bij uitvoeringsvarianten: **inspannings- en outputgericht**.  
 - Afspraken over begin- en eindatum per product kan afwijken, maar dit heeft **niet de voorkeur**.
 
-### Gerelateerde bedrijfsregels
-- 
-
-### Gerelateerde invulinstructies
-- 
-
-### Gerelateerde technischeregels
--
-
-### Gerelateerde condities
--
-
-### Gerelateerde constraints
--
-
 ### Gerelateerde uitgangspunten
 - UP017, UP026
 
@@ -411,21 +282,6 @@ Bron: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bed
 - Aanbieder verzendt binnen **5 werkdagen** na daadwerkelijke start.  
 - Indien ondersteuning met terugwerkende kracht is toegewezen → binnen 5 werkdagen na ontvangst toewijzingbericht.
 
-### Gerelateerde bedrijfsregels
-- 
-
-### Gerelateerde invulinstructies
-- 
-
-### Gerelateerde technischeregels
--
-
-### Gerelateerde condities
--
-
-### Gerelateerde constraints
--
-
 ### Gerelateerde uitgangspunten
 - UP017
 ---
@@ -435,21 +291,6 @@ Bron: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bed
 
 - Aanbieder verzendt binnen **5 werkdagen** na daadwerkelijke stop.  
 - Definitieve stop volgend op tijdelijke stop → binnen 5 werkdagen nadat bekend is dat levering **definitief gestopt** is.
-
-### Gerelateerde bedrijfsregels
-- 
-
-### Gerelateerde invulinstructies
-- 
-
-### Gerelateerde technischeregels
--
-
-### Gerelateerde condities
--
-
-### Gerelateerde constraints
--
 
 ### Gerelateerde uitgangspunten
 - UP017
@@ -466,20 +307,8 @@ Bron: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bed
   - Binnen 8 weken → toewijzingsbericht of antwoordbericht met **VerzoekAntwoord = 1 (Afgewezen)**.  
   - Elk product uit het VOT moet uiteindelijk **toewijzing of afwijzing** hebben.
 
-### Gerelateerde bedrijfsregels
-- 
-
-### Gerelateerde invulinstructies
-- 
-
 ### Gerelateerde technischeregels
 - TR379
-
-### Gerelateerde condities
--
-
-### Gerelateerde constraints
--
 
 ### Gerelateerde uitgangspunten
 - UP004
@@ -500,12 +329,6 @@ Bron: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bed
 ### Gerelateerde technischeregels
 - TR332
 
-### Gerelateerde condities
--
-
-### Gerelateerde constraints
--
-
 ### Gerelateerde uitgangspunten
 - UP004
 ---
@@ -515,20 +338,8 @@ Bron: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bed
 
 - Aanbieder declareert voor cliënten waarvoor een **toewijzing ontvangen** is.
 
-### Gerelateerde bedrijfsregels
-- 
-
-### Gerelateerde invulinstructies
-- 
-
 ### Gerelateerde technischeregels
 - TR304, TR384
-
-### Gerelateerde condities
--
-
-### Gerelateerde constraints
--
 
 ### Gerelateerde uitgangspunten
 - UP027
@@ -540,20 +351,11 @@ Bron: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bed
 
 - Declaratie vindt plaats **binnen de geldigheid** van de toewijzing of anders gezegd, binnen te toegewezen periode
 
-### Gerelateerde bedrijfsregels
-- 
-
 ### Gerelateerde invulinstructies
 - IV084
 
 ### Gerelateerde technischeregels
 - TR307, TR308
-
-### Gerelateerde condities
--
-
-### Gerelateerde constraints
--
 
 ### Gerelateerde uitgangspunten
 - UP017
@@ -566,17 +368,11 @@ Bron: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bed
 - Declaratiebericht heeft betrekking op **één declaratieperiode**.  
 - Kan prestaties bevatten uit **eerder verlopen declaratieperioden**.
 
-### Gerelateerde bedrijfsregels
-- 
-
 ### Gerelateerde invulinstructies
 - IV084, IV089, IV090
 
 ### Gerelateerde technischeregels
 - TR319
-
-### Gerelateerde condities
--
 
 ### Gerelateerde constraints
 - CS340
@@ -590,21 +386,6 @@ Bron: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bed
 
 - Een declaratiebericht kan prestaties bevatten van **één of meer cliënten**.
 
-### Gerelateerde bedrijfsregels
-- 
-
-### Gerelateerde invulinstructies
-- 
-
-### Gerelateerde technischeregels
-- 
-
-### Gerelateerde condities
--
-
-### Gerelateerde constraints
--
-
 ### Gerelateerde uitgangspunten
 - UP025
 
@@ -615,20 +396,8 @@ Bron: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bed
 
 - Iedere prestatie/declaratieregel krijgt een **uniek nummer (ProductReferentie)** per aanbieder per wettelijk domein.
 
-### Gerelateerde bedrijfsregels
-- 
-
-### Gerelateerde invulinstructies
-- 
-
 ### Gerelateerde technischeregels
 - TR314, TR315, TR316, TR323
-
-### Gerelateerde condities
--
-
-### Gerelateerde constraints
--
 
 ### Gerelateerde uitgangspunten
 - UP025
@@ -642,20 +411,8 @@ Bron: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bed
 - Hiaten in declaratieperioden zijn toegestaan (duur = 1 of meer kalendermaanden).  
 - Overlap van declaratieperioden voor correcties is toegestaan op de laatst ingediende periode.
 
-### Gerelateerde bedrijfsregels
-- 
-
-### Gerelateerde invulinstructies
--
-
 ### Gerelateerde technischeregels
 - TR318
-
-### Gerelateerde condities
--
-
-### Gerelateerde constraints
--
 
 ### Gerelateerde uitgangspunten
 - UP017
@@ -668,20 +425,8 @@ Bron: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bed
 - Bij technische fouten keurt ontvanger **het hele bericht af**.  
 - Bericht wordt **functioneel als niet-verzonden** beschouwd en verzender geïnformeerd via een retourbericht.
 
-### Gerelateerde bedrijfsregels
-- 
-
 ### Gerelateerde invulinstructies
 - IV032
-
-### Gerelateerde technischeregels
-- 
-
-### Gerelateerde condities
--
-
-### Gerelateerde constraints
--
 
 ### Gerelateerde uitgangspunten
 - UP017
@@ -694,20 +439,8 @@ Bron: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bed
 - Als een Startbericht is gestuurd, wordt de beëindiging altijd doorgegeven met een **Stopbericht**.  
 - Dit geldt ook bij levering volgens plan of op einddatum van de toewijzing.
 
-### Gerelateerde bedrijfsregels
-- 
-
-### Gerelateerde invulinstructies
--
-
 ### Gerelateerde technischeregels
 - TR382
-
-### Gerelateerde condities
--
-
-### Gerelateerde constraints
--
 
 ### Gerelateerde uitgangspunten
 - UP017
@@ -723,20 +456,11 @@ Bron: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bed
   - Het betreft een correctie van het eerdere Startbericht.  
 - let op een startbericht kan **generiek**, **aspecifiek**, of **specifiek** zijn.
 
-### Gerelateerde bedrijfsregels
-- 
-
 ### Gerelateerde invulinstructies
 - IV008
 
 ### Gerelateerde technischeregels
 - TR326
-
-### Gerelateerde condities
--
-
-### Gerelateerde constraints
--
 
 ### Gerelateerde uitgangspunten
 - UP017
@@ -750,45 +474,14 @@ Bron: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bed
 - Stopbericht mag alleen gestuurd worden als er een **Startbericht** is.  
 - Bij oudere leveringen (iWmo/iJw release 2.4, voor 2021) zonder Startbericht → Stopbericht mag niet.
 
-### Gerelateerde bedrijfsregels
-- 
-
-### Gerelateerde invulinstructies
--
-
-### Gerelateerde technischeregels
--
-
-### Gerelateerde condities
--
-
-### Gerelateerde constraints
--
-
 ### Gerelateerde uitgangspunten
 - UP001, UP017
-
 
 ---
 
 ## OP296 - Het ingediende Verzoek om Toewijzing dient te passen binnen de gemaakte contractafspraken tussen gemeente en aanbieder.
 Bron: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op296/
 - Moet passen binnen de **contractafspraken** tussen gemeente en aanbieder.
-
-### Gerelateerde bedrijfsregels
-- 
-
-### Gerelateerde invulinstructies
--
-
-### Gerelateerde technischeregels
--
-
-### Gerelateerde condities
--
-
-### Gerelateerde constraints
--
 
 ### Gerelateerde uitgangspunten
 - UP001, UP017, UP028
@@ -800,20 +493,8 @@ Bron: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bed
 - Indien deze bekend is, moet de **ZorgverlenerCode (AGB)** van verwijzer worden meegegeven.  
 - Ontbreekt de AGB-code → naam van de verwijzer volstaat.
 
-### Gerelateerde bedrijfsregels
-- 
-
-### Gerelateerde invulinstructies
--
-
-### Gerelateerde technischeregels
-- 
-
 ### Gerelateerde condities
 - CD066, CD067, CD068
-
-### Gerelateerde constraints
--
 
 ### Gerelateerde uitgangspunten
 - UP001, UP017, UP024
@@ -825,20 +506,6 @@ Bron: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bed
 Bron: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op298/
 
 - Dit is alleen toegestaan **na overleg met en instemming van** de aanbieder bij frequentie “totaal binnen geldigheidsduur”.
-
-### Gerelateerde bedrijfsregels
-- 
-
-### Gerelateerde invulinstructies
--
-
-### Gerelateerde technischeregels
-- 
-### Gerelateerde condities
--
-
-### Gerelateerde constraints
--
 
 ### Gerelateerde uitgangspunten
 - UP031
