@@ -1,29 +1,46 @@
-# COD747: Communicatievorm
+# COD747 — Communicatievorm
 
-**Definitie:**  
+## Definitie
+
 Gecodeerde aanduiding van de bijzondere vorm van communicatie die gebruikt dient te worden.
 
-## Metadata
-- **ID:** COD747  
-- **Naam:** Communicatievorm 
-- **Status:** Productie
-- **ELement:** LDT_Communicatievorm
-- **Type bestand:** Codelijst
-- **Auteur:** Zorginstituut Nederland  
-- **Standaard:** iWmo 3.2  
-- **Bron:** https://informatiemodel.istandaarden.nl/informatiemodel/iwmo/3.2/codelijsten/cod747/
-- **AI-agent:** Wmo-agent  
+---
 
-## Gebruik in berichten
+## Metadata
+
+| Veld | Waarde |
+|---|---|
+| ID | COD747 |
+| Naam | Communicatievorm |
+| Element | LDT_Communicatievorm |
+| Type | Codelijst |
+| Standaard | iWmo 3.2 |
+| Status | Productie |
+| Auteur | Zorginstituut Nederland |
+| Bron | https://informatiemodel.istandaarden.nl/informatiemodel/iwmo/3.2/codelijsten/cod747/ |
+| AI-agent | WMO-agent |
+
+---
+
+## Gebruikt in berichten
+
 - WMO301
 - WMO302
 
 ---
 
-## Codelijst
+## Codes
 
-| Code | Omschrijving |
-|:----:|:-------------|
+| Code | Betekenis |
+|---|---|
 | 1 | Tolk taal |
 | 2 | Doventolk |
 | 3 | Doofblindentolk |
+
+---
+
+## AI-context
+
+Dit betreft een codelijst (enumeratie) voor `LDT_Communicatievorm` binnen iWmo 3.2.
+
+De code beschrijft welke bijzondere communicatievorm of tolkvoorziening gebruikt dient te worden voor de cliënt.
