@@ -1,28 +1,36 @@
-# WJ232: Juridische status
+# WJ232 - Juridische status
 
 ## Definitie
 Juridische situatie die voor de cliënt van toepassing is op het moment van beoordeling.
 
-## Metadata
-- **ID:** WJ232
-- **Naam:** Juridische status
-- **Element:** LDT_JuridischeStatus 
-- **Status:** Productie  
-- **Auteur:** Zorginstituut Nederland  
-- **Standaard:** iWmo 3.2  
-- **Bron:** https://informatiemodel.istandaarden.nl/informatiemodel/iwmo/3.2/codelijsten/wj232/  
-- **AI-agent:** Wmo-agent  
+---
 
-## Gebruik in berichten
-- WMO301
-- WNo302
+## Metadata
+
+| Veld | Waarde |
+|---|---|
+| ID | WJ232 |
+| Naam | Juridische status |
+| Element | LDT_JuridischeStatus |
+| Type | Codelijst |
+| Standaard | iWmo 3.2 |
+| Status | Productie |
+| Auteur | Zorginstituut Nederland |
+| Bron | https://informatiemodel.istandaarden.nl/informatiemodel/iwmo/3.2/codelijsten/wj232/ |
+| AI-agent | Wmo-agent |
 
 ---
 
-## Codelijst
+## Gebruikt in berichten
+- WMO301
+- WMO302
 
-| Code | Omschrijving |
-|------|--------------|
+---
+
+## Codes
+
+| Code | Betekenis |
+|---|---|
 | 01 | Rechterlijke machtiging (rm) voorlopig / voortgezette machtiging |
 | 02 | RM op eigen verzoek |
 | 03 | RM met voorwaardelijk ontslag |
@@ -31,3 +39,9 @@ Juridische situatie die voor de cliënt van toepassing is op het moment van beoo
 | 11 | Strafrechterlijke justitiële contacten (tbs) |
 | 12 | Strafrechterlijke justitiële contacten (overig) |
 
+---
+
+## AI-context
+
+Dit betreft een codelijst (enumeratie) voor `LDT_JuridischeStatus` binnen iWmo 3.2.  
+De code beschrijft de juridische status of juridische maatregel die van toepassing is op de cliënt ten tijde van de beoordeling.
