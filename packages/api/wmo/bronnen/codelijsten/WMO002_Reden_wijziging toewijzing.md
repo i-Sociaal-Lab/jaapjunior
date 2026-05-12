@@ -1,25 +1,41 @@
-## WMO002 Reden wijziging toewijzing
+## WMO002 - Reden wijziging toewijzing
 
-## Definitie  
+## Definitie
+
 De reden waarom een toewijzing wordt gewijzigd.
 
-## Metadata
-- **ID:** WMO002
-- **Naam:** Reden wijziging toewijzing
-- **Status:** Productie
-- **ELement:**  LDT_RedenWijziging
-- **Type bestand:**: Codelijst
-- **Auteur:** Zorginstituut Nederland  
-- **Standaard:** iWno 3.2  
-- **Bron:** https://informatiemodel.istandaarden.nl/informatiemodel/iwmo/3.2/codelijsten/wmo002/  
-- **AI-agent:** Wmo-agent  
-
-## Gebruik in berichten
-- WMO301
-- WMO302
 ---
 
-## Codelijst
+## Metadata
+
+| Eigenschap   | Waarde                                                                                |
+| ------------ | ------------------------------------------------------------------------------------- |
+| ID           | WM002                                                                                 |
+| Naam         | Reden wijziging toewijzing                                                            | 
+| Status       | Productie                                                                             |
+| Element      | LDT_RedenWijziging                                                                    |
+| Type bestand | Codelijst                                                                             |
+| Auteur       | Zorginstituut Nederland                                                               |
+| Standaard    | iWmo 3.2                                                                              |
+| Bron         | (https://informatiemodel.istandaarden.nl/informatiemodel/iwmo/3.2/codelijsten/wmo002/ |
+| AI-agent     | Jw-agent                                                                              |
+
+---
+
+## Gebruikt in berichten
+
+- WMO301
+- WMO302
+
+---
+
+## Beschrijving
+
+Deze tabel toont de mogelijke redenen voor beëindiging van een jeugdhulptraject, inclusief aanleiding (reden wijziging toewijzing en initiatief aanbieder).
+---
+
+## Codes
+
 | Reden Wijziging | Waarde | Omschrijving gebruik | Reden beeindiging (WMO307) |
 |:---------------:|:-------|:---------------------|:--------------------------:|
 | 01 | Administratieve correctie (vervallen) | Niet gebruiken | nvt  |
