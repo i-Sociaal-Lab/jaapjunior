@@ -1,4 +1,4 @@
-#20220105-indeling-categorien-hulpmiddelen-iWmo
+# 20220105-indeling-categorien-hulpmiddelen-iWmo
 
 Codering: 11 X 00
 
@@ -17,6 +17,8 @@ Hoofdgroep (0 t/m Z ):
 Volgnummer: (0 t/m Z ):
 - Detail indeling binnen de hoofdgroep
 - Volgnummer 0 gereserveerd voor een ‘niet-specifieke’ opdracht aan de leverancier
+
+## Codes
 
  | Productcode | Omschrijving_Categorie | Hoofdgroep beschrijving | Omschrijving/indeling 2022 |
  | ----------- | ---------------------- | ----------------------- | -------------------------- | 
