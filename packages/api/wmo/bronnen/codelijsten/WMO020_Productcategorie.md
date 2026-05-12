@@ -1,17 +1,21 @@
-# WMO020: Productcategorie
+# WMO020 - Productcategorie
 
-**Definitie:**  
+## Definitie
+
 Gecodeerde aanduiding van een (reeks van) productcategorie(en) in functionele termen die losgekoppeld is van een bepaalde leverancier, waarbij wordt beschreven wat de inhoud en aard van de productcategorie is in termen van hulpverlening (wonen, zorg en welzijn).
 
 ## Metadata
-- **ID:** WMO020
-- **Naam:** Productcategorie
-- **Element:** LDT_ProductCategorie  
-- **Status:** Productie  
-- **Auteur:** Zorginstituut Nederland  
-- **Standaard:** iWmo 3.2  
-- **Bron:** https://informatiemodel.istandaarden.nl/informatiemodel/iwmo/3.2/codelijsten/wmo020/  
-- **AI-agent:** Wmo-agent  
+
+| Eigenschap        | Waarde                                                                                                                                                                   |
+| ----------------- | ------------------------------------------------------------------------------------- |
+| Standaard         | iJw                                                                                   |
+| Versie            | 3.2                                                                                   |
+| Codelijst ID      | WMO020                                                                                |
+| Naam              | Productcategorie                                                                      |
+| Tabeltype         | Referentielijst                                                                       |
+| Laatst bijgewerkt | 01-10-2017                                                                            |
+| Toepassing        | Productcategorie binnen Ww-toewijzingen, VOT, VOW en declaratie                       |
+| Bron              | https://informatiemodel.istandaarden.nl/informatiemodel/iwmo/3.2/codelijsten/wmo020/) |
 
 ## Gebruik in berichten
 - WMO301  
