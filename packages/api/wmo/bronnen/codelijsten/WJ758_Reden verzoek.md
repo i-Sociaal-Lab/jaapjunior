@@ -1,27 +1,44 @@
-# WJ758: Reden verzoek
+# WJ758 — Reden verzoek
 
 ## Definitie
-Gecodeerde aanduiding voor de reden van een verzoek. Deze code wordt gebruikt in het VOW-bericht
+Gecodeerde aanduiding voor de reden van een verzoek.  
+Deze code wordt gebruikt in het VOW-bericht.
 
-## Metadata
-- **ID:** WJ758
-- **Naam:** Reden verzoek
-- **Element:** LDT_RedenVerzoek  
-- **Status:** Productie  
-- **Auteur:** Zorginstituut Nederland  
-- **Standaard:** iWmo 3.2  
-- **Bron:** https://informatiemodel.istandaarden.nl/informatiemodel/iwmo/3.2/codelijsten/wj758/  
-- **AI-agent:** Wmo-agent  
-
-## Gebruik in berichten
-- WMO317
-- WMO318
-  
 ---
 
-## Codelijst
+## Metadata
 
-| Code | Omschrijving |
-|------|--------------|
+| Veld | Waarde |
+|---|---|
+| ID | WJ758 |
+| Naam | Reden verzoek |
+| Element | LDT_RedenVerzoek |
+| Type | Codelijst |
+| Standaard | iWmo 3.2 |
+| Status | Productie |
+| Auteur | Zorginstituut Nederland |
+| Bron | https://informatiemodel.istandaarden.nl/informatiemodel/iwmo/3.2/codelijsten/wj758/ |
+| AI-agent | Wmo-agent |
+
+---
+
+## Gebruikt in berichten
+
+- WMO317
+- WMO318
+
+---
+
+## Codes
+
+| Code | Betekenis |
+|---|---|
 | 1 | Verandering clientsituatie |
 | 2 | Wijziging zorgplan |
+
+---
+
+## AI-context
+
+Dit betreft een codelijst (enumeratie) voor `LDT_RedenVerzoek` binnen iWmo 3.2.  
+De code geeft de aanleiding of reden van het verzoek in een VOW-bericht aan.
