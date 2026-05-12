@@ -8,7 +8,7 @@ Gecodeerde aanduiding van een (reeks van) productcategorie(en) in functionele te
 
 | Eigenschap        | Waarde                                                                                                                                                                   |
 | ----------------- | ------------------------------------------------------------------------------------- |
-| Standaard         | iJw                                                                                   |
+| Standaard         | iWmo                                                                                  |
 | Versie            | 3.2                                                                                   |
 | Codelijst ID      | WMO020                                                                                |
 | Naam              | Productcategorie                                                                      |
