@@ -9,16 +9,16 @@ De reden van beëindiging van de Jeugdhulp bij een cliënt.
 ## Metadata
 
 | Eigenschap   | Waarde                                                                                                                                                                   |
-| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| ID           | JZ588                                                                                                                                                                    |
-| Naam         | Reden beëindiging                                                                                                                                                        |
-| Status       | Productie                                                                                                                                                                |
-| Element      | LDT_RedenBeeindiging                                                                                                                                                     |
-| Type bestand | Codelijst                                                                                                                                                                |
-| Auteur       | Zorginstituut Nederland                                                                                                                                                  |
-| Standaard    | iJw 3.2                                                                                                                                                                  |
-| Bron         | [https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/jz588/](https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/jz588/) |
-| AI-agent     | Jw-agent                                                                                                                                                                 |
+| ------------ | ---------------------------------------------------------------------------------- |
+| ID           | JZ588                                                                              |
+| Naam         | Reden beëindiging                                                                  |
+| Status       | Productie                                                                          |
+| Element      | LDT_RedenBeeindiging                                                               |
+| Type bestand | Codelijst                                                                          |
+| Auteur       | Zorginstituut Nederland                                                            |
+| Standaard    | iJw 3.2                                                                            |
+| Bron         | https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/jz588/ |
+| AI-agent     | Jw-agent                                                                           |
 
 ---
 
