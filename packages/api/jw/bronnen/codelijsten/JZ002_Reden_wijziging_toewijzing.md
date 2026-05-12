@@ -8,17 +8,17 @@ De reden waarom een toewijzing wordt gewijzigd.
 
 ## Metadata
 
-| Eigenschap   | Waarde                                                                                                                                                                   |
-| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| ID           | JZ002                                                                                                                                                                    |
-| Naam         | Reden wijziging toewijzing                                                                                                                                               |
-| Status       | Productie                                                                                                                                                                |
-| Element      | LDT_RedenWijziging                                                                                                                                                       |
-| Type bestand | Codelijst                                                                                                                                                                |
-| Auteur       | Zorginstituut Nederland                                                                                                                                                  |
-| Standaard    | iJw 3.2                                                                                                                                                                  |
-| Bron         | [https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/jz002/](https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/jz002/) |
-| AI-agent     | Jw-agent                                                                                                                                                                 |
+| Eigenschap   | Waarde                                                                              |
+| ------------ | ----------------------------------------------------------------------------------- |
+| ID           | JZ002                                                                               |
+| Naam         | Reden wijziging toewijzing                                                          |
+| Status       | Productie                                                                           |
+| Element      | LDT_RedenWijziging                                                                  |
+| Type bestand | Codelijst                                                                           |
+| Auteur       | Zorginstituut Nederland                                                             |
+| Standaard    | iJw 3.2                                                                             |
+| Bron         | (https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/jz002/ |
+| AI-agent     | Jw-agent                                                                            |
 
 ---
 
