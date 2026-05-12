@@ -1,19 +1,28 @@
-# WJ756: Eenheid
+# WJ756 — Eenheid
 
 ## Definitie
 Gecodeerde aanduiding van de mate van zorg betreffende een product, uitgedrukt in een eenheid.
 
-## Metadata
-- **ID:** WJ756
-- **Naam:** Eenheid
-- **Element:** LDT_Eenheid  
-- **Status:** Productie  
-- **Auteur:** Zorginstituut Nederland  
-- **Standaard:** iWmo 3.2  
-- **Bron:** https://informatiemodel.istandaarden.nl/informatiemodel/iwmo/3.2/codelijsten/wj756/  
-- **AI-agent:** Wmo-agent  
+---
 
-## Gebruik in berichten
+## Metadata
+
+| Veld | Waarde |
+|---|---|
+| ID | WJ756 |
+| Naam | Eenheid |
+| Element | LDT_Eenheid |
+| Type | Codelijst |
+| Standaard | iWmo 3.2 |
+| Status | Productie |
+| Auteur | Zorginstituut Nederland |
+| Bron | https://informatiemodel.istandaarden.nl/informatiemodel/iwmo/3.2/codelijsten/wj756/ |
+| AI-agent | Wmo-agent |
+
+---
+
+## Gebruikt in berichten
+
 - WMO301
 - WMO302
 - WMO315
@@ -22,13 +31,13 @@ Gecodeerde aanduiding van de mate van zorg betreffende een product, uitgedrukt i
 - WMO318
 - WMO323
 - WMO325
-   
+
 ---
 
-## Codelijst
+## Codes
 
-| Code | Omschrijving |
-|------|--------------|
+| Code | Betekenis |
+|---|---|
 | 01 | Minuut |
 | 04 | Uur |
 | 14 | Etmaal |
@@ -36,3 +45,10 @@ Gecodeerde aanduiding van de mate van zorg betreffende een product, uitgedrukt i
 | 82 | Stuks (output) |
 | 83 | Euro's |
 | 84 | Stuks (inspanning) |
+
+---
+
+## AI-context
+
+Dit betreft een codelijst (enumeratie) voor `LDT_Eenheid` binnen iWmo 3.2.  
+De code bepaalt in welke eenheid de omvang van zorg of prestatie wordt uitgedrukt.
