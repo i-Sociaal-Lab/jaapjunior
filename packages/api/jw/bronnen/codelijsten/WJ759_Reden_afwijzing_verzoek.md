@@ -24,6 +24,7 @@ Reden van afwijzen van een verzoek om toewijzing of een verzoek om wijziging.
 ## Gebruikt in berichten
 
 - JW319
+- JW320
 
 ---
 
