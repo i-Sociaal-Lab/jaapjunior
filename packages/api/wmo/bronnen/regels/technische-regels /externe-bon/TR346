@@ -14,7 +14,7 @@ TR346: Indien Eenheid ongelijk is aan waarde 83 (Euro’s), moet IngediendBedrag
 | Type | Technische regel |
 | Controleniveau | externe bron |
 | Retourcode | 9346 |
-| Bron | iJw standaard |
+| Bron | iWmo standaard |
 | Bestandstype | Technische regel |
 
 ---
@@ -27,7 +27,7 @@ Indien tarief per uur is afgesproken en de declaratie in minuten wordt gedaan, v
 
 ## Gebruik in berichten
 
-- JW323
+- WMO323
 
 
 ---
