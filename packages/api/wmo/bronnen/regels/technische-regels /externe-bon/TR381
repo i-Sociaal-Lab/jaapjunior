@@ -14,7 +14,7 @@ TR381: ProductCode vullen met een code die, volgens de gehanteerde productcodeli
 | Type | Technische regel |
 | Controleniveau | externe bron |
 | Retourcode | S329 |
-| Bron | iJw standaard |
+| Bron | iWmo standaard |
 | Bestandstype | Technische regel |
 
 ---
@@ -27,12 +27,12 @@ Geen aanvullende toelichting beschikbaar.
 
 ## Gebruik in berichten
 
-- JW301
-- JW305
-- JW307
-- JW315
-- JW317
-- JW323
+- WMO301
+- WMO305
+- WMO307
+- WMO315
+- WMO317
+- WMO323
 
 
 ---
