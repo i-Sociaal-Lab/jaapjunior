@@ -1,45 +1,74 @@
-# Gemeentecodes CBS
+# CBS Gemeentecodes — Gemeentelijke indeling 2025
+
+## Definitie
+
+Officiële referentielijst van Nederlandse gemeenten conform de gemeentelijke indeling van het CBS per 1 januari 2025.
+
+De lijst bevat gemeentecodes, gemeentenamen en provincies zoals gebruikt binnen het berichtenverkeer en de iStandaarden in het sociaal domein.
+
+---
 
 ## Metadata
-- **Element:** LDT_LandCode  
-- **Status:** Productie  
-- **Auteur:** CBS
-- **Standaard:** iWmo 3.2  
-- **Bron:** https://www.cbs.nl/nl-nl/onze-diensten/methoden/classificaties/overig/gemeentelijke-indelingen-per-jaar/indeling-per-jaar/gemeentelijke-indeling-op-1-januari-2025
-- **AI-agent:** Wmo-agent  
 
-## Gebruik in berichten
-- WMO301  
-- WMO302  
+| Veld             | Waarde                                                                                                                                                                                                                                                                                                                                   |
+| ------------ | ----------------------------- | ------------- | ------------------------ |
+| Naam             | CBS Gemeentecodes                                                                                                                                                                                                                                                                                                                        |
+| Element          | LDT_GemeenteCode                                                                                                                                                                                                                                                                                                                         |
+| Type             | Referentielijst                                                                                                                                                                                                                                                                                                                          |
+| Standaard        | iWMO 3.2                                                                                                                                                                                                                                                                                                                                  |
+| Status           | Productie                                                                                                                                                                                                                                                                                                                                |
+| Auteur           | CBS                                                                                                                                                                                                                                                                                                                                      |
+| Peildatum        | 01-01-2025                                                                                                                                                                                                                                                                                                                               |
+| Aantal gemeenten | 342                                                                                                                                                                                                                                                                                                                                      |
+| Bron             | [https://www.cbs.nl/nl-nl/onze-diensten/methoden/classificaties/overig/gemeentelijke-indelingen-per-jaar/indeling-per-jaar/gemeentelijke-indeling-op-1-januari-2025](https://www.cbs.nl/nl-nl/onze-diensten/methoden/classificaties/overig/gemeentelijke-indelingen-per-jaar/indeling-per-jaar/gemeentelijke-indeling-op-1-januari-2025) |
+| AI-agent         | Wmo-agent                                                                                                                                                                                                                                                                                                                                 |
 
-## **Instructie voor de AI-agent: Gebruik van de CBS Gemeentecodelijst als Kennisbron**
+---
 
-Deze kennisbron bevat de meest recente **gemeentecodelijst van het CBS**. Deze lijst is een gestandaardiseerd overzicht waarin alle Nederlandse gemeenten zijn opgenomen, elk met een unieke gemeentecode, gemeentenaam en bijbehorende metadata zoals fusies en historische wijzigingen.
+## Gebruikt in berichten
 
-### **Doel en gebruik in het berichtenverkeer en iStandaarden**
+- WMO301
+- WMO302
+- WMO305
+- WMO307
+- WMO308
+- WMO315
+- WMO316
+- WMO317
+- WMO318
+- WMO319
+- WMO320
+- WMO323
+- WMO325
 
-- De gemeentecodelijst wordt als standaardreferentie gebruikt in het **berichtenverkeer** en bij toepassing van de **iStandaarden** in het sociaal domein (zoals Jeugdwet en Wmo).
-- De lijst zorgt voor eenduidigheid bij het uitwisselen van gegevens tussen gemeenten, aanbieders, softwareleveranciers en landelijke partijen.
-- Gemeentecodes worden onder meer gebruikt in berichten, rapportages, analyses en koppelvlakken om gemeenten te identificeren.
+---
 
-### **Uitgangspunten voor het beantwoorden van vragen:**
+## Functioneel gebruik
 
-- **Gemeentecode als sleutelbegrip**: Leg uit dat de gemeentecode het officiële identificerende gegeven is voor gemeenten in alle landelijke standaarden en berichten.
-- **Bron en actualiteit**: Benadruk dat de CBS-lijst de enige door het Rijk en ketenpartners erkende bron is voor gemeentecodes, en geef de peildatum of actualiteit aan als daar vragen over zijn.
-- **Relatie met wet- en regelgeving**: De gemeentecodelijst is ondersteunend aan de uitvoering van wettelijke verplichtingen (zoals in de Jeugdwet en bijbehorende regeling), maar maakt zelf geen deel uit van de wet. Licht toe dat het de praktische standaard is voor identificatie binnen digitale gegevensuitwisseling.
-- **Beperkingen van de lijst**: Geef aan dat de gemeentecodelijst geen verdere inhoudelijke informatie over gemeenten bevat (zoals contactgegevens of beleidsinformatie), maar puur de identificatie regelt.
+De CBS-gemeentecodelijst wordt gebruikt als standaardreferentie binnen:
 
-### **Over de bron**
+* berichtenverkeer in het sociaal domein
+* iStandaarden
+* gegevensuitwisseling tussen gemeenten en aanbieders
+* rapportages en analyses
+* validatie van gemeentelijke identificatie
 
-Deze bron is de officiële gemeentecodelijst van het CBS en wordt periodiek geactualiseerd. De lijst vormt het uitgangspunt voor correcte identificatie en verwerking van gemeentelijke gegevens in het berichtenverkeer en de landelijke standaarden van het sociaal domein.
+Gemeentecodes fungeren uitsluitend als administratieve identificatiesleutels.
 
-Gebruik deze lijst dus als dé standaardreferentie voor gemeentecodes bij beantwoording van vragen over gegevensuitwisseling in het sociaal domein, met nadruk op eenduidigheid en actualiteit.
+De codes hebben geen hiërarchische of inhoudelijke betekenis.
 
-### **Gemeentelijke indeling op 1 januari 2025**
+---
 
-Op 1 januari 2025 is het aantal gemeenten gelijk gebleven aan 2024. Het aantal gemeenten in Nederland blijft dan ook 342 op deze datum.Het volledige overzicht van de gemeentelijke indeling op 1 januari 2025 is hieronder opgenomen. Het overzicht geeft de gemeentenamen in alfabetische volgorde met vermelding van de gemeentecode, de provincienaam en de provinciecode.
+## Richtlijnen voor AI-verwerking
 
-| **Gemeentecode** | **Gemeentenaam** | **Provincienaam** |
+* Gebruik gemeentecodes als unieke identificatiesleutels.
+* Gebruik de CBS-lijst als primaire bron voor gemeentecodes.
+* Interpreteer gemeentecodes niet inhoudelijk.
+* Gebruik gemeentecodes uitsluitend voor identificatie en verwijzing.
+* Verwijs bij vragen over actualiteit naar de peildatum van de lijst.
+## Codes
+
+| Gemeentecode | Gemeentenaam | Provincienaam |
 | --- | --- | --- |
 | 1680 | Aa en Hunze | Drenthe |
 | 0358 | Aalsmeer | Noord-Holland |
@@ -383,3 +412,11 @@ Op 1 januari 2025 is het aantal gemeenten gelijk gebleven aan 2024. Het aantal g
 | 1896 | Zwartewaterland | Overijssel |
 | 0642 | Zwijndrecht | Zuid-Holland |
 | 0193 | Zwolle | Overijssel |
+
+## AI-context
+
+Dit betreft een referentielijst voor `LDT_GemeenteCode` binnen iWmo 3.2.
+
+De gemeentecode is de officiële identificatiesleutel voor Nederlandse gemeenten binnen het berichtenverkeer van het sociaal domein.
+
+De CBS-gemeentelijst geldt als de primaire en gezaghebbende bron voor gemeentecodes binnen de iStandaarden.
