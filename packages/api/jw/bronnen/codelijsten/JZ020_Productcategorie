@@ -7,15 +7,15 @@ Gecodeerde aanduiding van een (reeks van) productcategorie(en) in functionele te
 ## Metadata
 
 | Eigenschap        | Waarde                                                                                                                                                                   |
-| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Standaard         | iJw                                                                                                                                                                      |
-| Versie            | 3.2                                                                                                                                                                      |
-| Codelijst ID      | JZ020                                                                                                                                                                    |
-| Naam              | Productcategorie                                                                                                                                                         |
-| Tabeltype         | Referentielijst                                                                                                                                                          |
-| Laatst bijgewerkt | 01-10-2017                                                                                                                                                               |
-| Toepassing        | Productcategorie binnen Jw-toewijzingen, VOT, VOW en declaratie                                                                                                          |
-| Bron              | [https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/jz020/](https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/jz020/) |
+| ----------------- | ----------------------------------------------------------------------------------- |
+| Standaard         | iJw                                                                                 |
+| Versie            | 3.2                                                                                 |
+| Codelijst ID      | JZ020                                                                               |
+| Naam              | Productcategorie                                                                    |
+| Tabeltype         | Referentielijst                                                                     |
+| Laatst bijgewerkt | 01-10-2017                                                                          |
+| Toepassing        | Productcategorie binnen Jw-toewijzingen, VOT, VOW en declaratie                     |
+| Bron              | https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/jz020/  |
 
 ## Wordt gebruikt in
 
