@@ -19,7 +19,7 @@ Indicatie over de status van de informatie in de berichtklasse.
 | Auteur | Zorginstituut Nederland |
 | Laatst bijgewerkt | 01-01-2015 |
 | Bron | https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/cod467/ |
-| AI-agent | Wmo-agent |
+| AI-agent | Jw-agent |
 
 ---
 
