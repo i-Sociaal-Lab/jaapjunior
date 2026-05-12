@@ -6,20 +6,29 @@ De reden van beeindiging van de Wmo-ondersteuning bij een client.
 - Als Initiatief aanbieder = ja, dan kan de code op initiatief van de aanbieder worden gebruikt.
 - Bijvoorbeeld : code 02, kan na ontvangst een gewijzigde toewijzing met reden wijziging toewijzing 02 gebruikt worden, maar ook als de aanbieder zelf constateert dat de client is overleden.
 
-## Metadata
-- **ID:** WMO588 
-- **Naam:** Reden beeindiging 
-- **Status:** Productie
-- **ELement:** LDT_RedenBeeindiging
-- **Type bestand:**: Codelijst
-- **Auteur:** Zorginstituut Nederland  
-- **Standaard:** iWmo 3.2  
-- **Bron:** https://informatiemodel.istandaarden.nl/informatiemodel/iwmo/3.2/codelijsten/wmo588/  
-- **AI-agent:** Wmo-agent  
+---
 
-## Gebruik in berichten
-- WMO307
-- WMO308
+## Metadata
+
+| Eigenschap   | Waarde                                                                                                                                                                   |
+| ------------ | ------------------------------------------------------------------------------------ |
+| ID           | WMO588                                                                               |
+| Naam         | Reden beëindiging                                                                    |
+| Status       | Productie                                                                            |
+| Element      | LDT_RedenBeeindiging                                                                 |
+| Type bestand | Codelijst                                                                            |
+| Auteur       | Zorginstituut Nederland                                                              |
+| Standaard    | iWmo 3.2                                                                             |
+| Bron         | https://informatiemodel.istandaarden.nl/informatiemodel/iwmo/3.2/codelijsten/wmo588/ |
+| AI-agent     | Jw-agent                                                                             |
+
+---
+
+## Gebruikt in berichten
+
+* WMO307
+* WMO308
+
 ---
 
 ## Codelijst
