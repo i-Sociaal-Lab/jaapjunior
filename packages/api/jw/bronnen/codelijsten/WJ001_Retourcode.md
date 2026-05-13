@@ -35,13 +35,13 @@ Melding in een retourbericht. Het betreft een code die in een retourbericht het 
 
 ---
 
-## Validaties op gemeenten, producten en tarieven
+## Validaties op gemeenten, producten
 
 | Code | Betekenis | TR-regel | Berichttypen |
 |---|---|---|---|
-| S300 | Gemeentecode ongeldig. | TR378 | JW301, JW305, JW307, JW315, JW317, JW319, JW323, JW325 |
-| S329 | ProductCode ongeldig. | TR381 | JW301, JW305, JW307, JW315, JW317, JW323 |
-| 0611 | Het ingediende tarief komt niet overeen met het contractuele tarief | TR418 | JW323 |
+| S300 | Gemeentecode ongeldig. | TR378 | JW301, JW305, JW307, JW315, JW317, JW319 |
+| S329 | ProductCode ongeldig. | TR381 | JW301, JW305, JW307, JW315, JW317 |
+
 
 ---
 
@@ -65,7 +65,10 @@ Melding in een retourbericht. Het betreft een code die in een retourbericht het 
 
 | Code | Betekenis | TR-regel | Berichttypen |
 |---|---|---|---|
+| S300 | Gemeentecode ongeldig. | TR378 | JW323, JW325 |
+| S329 | ProductCode ongeldig. | TR381 | JW323 |
 | 8001 | Declaratie is volledig toegewezen. | — | JW323 |
+| 0611 | Het ingediende tarief komt niet overeen met het contractuele tarief. | TR418 | JW323 |
 | 8017 | Van deze credit prestatie is geen debet prestatie bekend. | TR323 | JW323 |
 | 8021 | Referentienummer prestatie is reeds aangeleverd. | TR314 | JW323 |
 | 8214 | DeclaratiePeriode is niet de kalendermaand die volgt op voorgaande DeclaratiePeriode terwijl iedere declaratieperiode zorg geleverd is. | TR318 | JW323 |
