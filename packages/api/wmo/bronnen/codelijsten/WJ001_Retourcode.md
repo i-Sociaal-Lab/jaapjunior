@@ -35,7 +35,7 @@ Melding in een retourbericht. Het betreft een code die in een retourbericht het 
 
 ---
 
-## Validaties op gemeenten, producten en tarieven
+## Retourcodes op gemeenten, producten en tarieven
 
 | Code | Betekenis | TR-regel | Berichttypen |
 |---|---|---|---|
