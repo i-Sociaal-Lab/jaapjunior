@@ -35,13 +35,13 @@ Melding in een retourbericht. Het betreft een code die in een retourbericht het 
 
 ---
 
-## Retourcodes op gemeenten, producten en tarieven
+## Retourcodes op gemeenten, producten
 
 | Code | Betekenis | TR-regel | Berichttypen |
 |---|---|---|---|
 | S300 | Gemeentecode ongeldig. | TR378 | WMO301, WMO305, WMO307, WMO315, WMO317, WMO319, WMO323, WMO325 |
 | S329 | ProductCode ongeldig. | TR381 | WMO301, WMO305, WMO307, WMO315, WMO317, WMO323 |
-| 0611 | Het ingediende tarief komt niet overeen met het contractuele tarief | TR418 | WMO323 |
+
 
 ---
 
@@ -65,9 +65,11 @@ Melding in een retourbericht. Het betreft een code die in een retourbericht het 
 
 | Code | Betekenis | TR-regel | Berichttypen |
 |---|---|---|---|
+| 0611 | Het ingediende tarief komt niet overeen met het contractuele tarief | TR418 | WMO323 |
 | 8001 | Declaratie is volledig toegewezen. | — | WMO323 |
 | 8017 | Van deze credit prestatie is geen debet prestatie bekend. | TR323 | WMO323 |
 | 8021 | Referentienummer prestatie is reeds aangeleverd. | TR314 | WMO323 |
+| 8187 | De prestatie hoort niet bij deze cliënt. | TR304 | WMO323 |
 | 8214 | DeclaratiePeriode is niet de kalendermaand die volgt op voorgaande DeclaratiePeriode terwijl iedere declaratieperiode zorg geleverd is. | TR318 | WMO323 |
 | 9307 | Begindatum prestatie ligt niet tussen de ingangsdatum en einddatum toewijzing. | TR307 | WMO323 |
 | 9308 | Einddatum prestatie ligt niet tussen de ingangsdatum en einddatum toewijzing. | TR308 | WMO323 |
@@ -89,11 +91,11 @@ Melding in een retourbericht. Het betreft een code die in een retourbericht het 
 
 ---
 
-## Retourcodes voor toewijzingen en wijzigingen
+## Retourcodes voor toewijzingen, verzoek om toewijzing, verzoek om wijziging en antwoordberichten
 
 | Code | Betekenis | TR-regel | Berichttypen |
 |---|---|---|---|
-| 8187 | De prestatie hoort niet bij deze cliënt. | TR304 | WMO317, WMO323, WMO325 |
+| 8187 | De prestatie hoort niet bij deze cliënt. | TR304 | WMO317 |
 | 9332 | Toewijzing heeft geen uniek nummer binnen wettelijk domein. | TR332 | WMO301 |
 | 9347 | ReferentieAanbieder is niet uniek voor de aanbieder binnen het wettelijk domein. | TR347 | WMO315, WMO317 |
 | 9349 | Het VOW bericht bevat niet alle actuele toegewezen producten van de cliënt, hetzij in OngewijzigdProduct, hetzij in TeWijzigenProduct. | TR349 | WMO317 |
@@ -118,6 +120,7 @@ Melding in een retourbericht. Het betreft een code die in een retourbericht het 
 
 | Code | Betekenis | TR-regel | Berichttypen |
 |---|---|---|---|
+| 8187 | De prestatie hoort niet bij deze cliënt. | TR304 | WMO325 |
 | 9366 | ProductReferentie komt niet voor in een Declaratiebericht. | TR366 | WMO325 |
 | 9367 | De waarde komt niet overeen met de waarde uit heenbericht met gelijke ProductReferentie. | TR367 | WMO325 |
 
