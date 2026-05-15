@@ -1,0 +1,112 @@
+# OP378 — Zonder tussenkomst van een startbericht is na een tijdelijke stop alleen een definitieve stop toegestaan
+
+## Definitie
+Na een tijdelijke stop is zonder tussenkomst van een nieuw Startbericht alleen een definitieve stop toegestaan.
+
+---
+
+## Samenvatting
+Deze bedrijfsregel bepaalt welke vervolgstatus toegestaan is nadat een tijdelijke stop van ondersteuning is geregistreerd.
+
+Wanneer na een tijdelijke stop:
+- geen nieuw Startbericht wordt verstuurd
+
+dan:
+- mag uitsluitend een definitieve stop volgen
+
+De regel ondersteunt consistente statusovergangen binnen regieberichten en voorkomt ongeldige opvolging van ondersteuningsstatussen binnen de iJw-standaard.
+
+---
+
+## Regel
+Zonder tussenkomst van een Startbericht is na een tijdelijke stop alleen een definitieve stop toegestaan.
+
+---
+
+## Toelichting
+
+### Tijdelijke stop
+Een tijdelijke stop betekent:
+- dat ondersteuning tijdelijk onderbroken is
+- maar administratief nog niet definitief beëindigd is
+
+### Geen nieuw Startbericht
+Wanneer na de tijdelijke stop:
+- geen nieuw Startbericht wordt verstuurd
+
+dan:
+- kan de ondersteuning alleen definitief worden beëindigd
+
+### Definitieve stop
+De enige toegestane vervolgactie zonder nieuw Startbericht is:
+- een definitief Stopbericht
+
+### Doel
+De regel ondersteunt:
+- consistente verwerking van regieberichten
+- correcte statusovergangen
+- betrouwbare registratie van ondersteuning
+
+---
+
+## Kernbegrippen
+- tijdelijke stop
+- definitieve stop
+- Startbericht
+- Stopbericht
+- regiebericht
+- statusovergang
+- ondersteuning onderbreken
+- ondersteuning beëindigen
+
+---
+
+## Metadata
+
+| Eigenschap | Waarde |
+|---|---|
+| Regelcode | OP378 |
+| Titel | Zonder tussenkomst van een startbericht is na een tijdelijke stop alleen een definitieve stop toegestaan |
+| Afkorting | OP |
+| Type | Bedrijfsregel |
+| Domein | Jeugdwet (iJw) |
+| Standaardversie | iJw 3.2.0 |
+| Berichttype | JW307 |
+| Documenttype | iJw bedrijfsregels |
+| Bron | https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op378 |
+
+---
+
+## Toepassing
+Deze regel is relevant bij:
+- verwerking van Stopberichten
+- tijdelijke onderbreking van ondersteuning
+- definitieve beëindiging van ondersteuning
+- verwerking van JW307-berichten
+- regieberichten
+- statusbeheer van ondersteuning
+
+---
+
+## Zoektermen
+tijdelijke stop, definitieve stop, Startbericht, Stopbericht, regiebericht, statusovergang, ondersteuning onderbreken, ondersteuning beëindigen, JW307, iJw, jeugdwet
+
+---
+
+## Verwante concepten
+- regieberichten
+- ondersteuning stoppen
+- tijdelijke onderbreking
+- administratieve status
+- ondersteuning hervatten
+- leveringsregistratie
+
+---
+
+## Gerelateerde technische regels
+- TR413
+
+---
+
+## Gerelateerde uitgangspunten
+- UP017
