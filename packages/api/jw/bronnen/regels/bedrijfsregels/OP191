@@ -1,0 +1,95 @@
+# OP191 — Het gebruik van ongestructureerde informatie dient tot een minimum beperkt te worden
+
+## Definitie
+Het gebruik van ongestructureerde informatie binnen berichten moet zoveel mogelijk worden beperkt.
+
+---
+
+## Samenvatting
+Deze bedrijfsregel bepaalt dat vrije tekstvelden alleen gebruikt mogen worden wanneer informatie niet op een gestructureerde manier binnen het bericht kan worden vastgelegd.
+
+Commentaarvelden mogen uitsluitend aanvullende informatie bevatten die niet elders in het bericht past.
+
+Daarnaast mogen commentaarvelden geen tot een persoon herleidbare gegevens bevatten zonder toestemming van die persoon.
+
+---
+
+## Regel
+Het gebruik van ongestructureerde informatie dient tot een minimum beperkt te worden.
+
+---
+
+## Toelichting
+Commentaar mag gebruikt worden om aanvullende informatie op te nemen.
+
+Dit geldt voor:
+- AangevraagdProduct
+- ToegewezenProduct
+
+Alleen informatie opnemen die niet elders in het bericht past.
+
+---
+
+## Privacybeperking
+Commentaar mag geen tot een persoon herleidbare gegevens bevatten zonder toestemming van die persoon.
+
+---
+
+## Kernbegrippen
+- ongestructureerde informatie
+- commentaar
+- vrije tekst
+- persoonsgegevens
+- privacy
+- aanvullende informatie
+- AangevraagdProduct
+- ToegewezenProduct
+
+---
+
+## Metadata
+
+| Eigenschap | Waarde |
+|---|---|
+| Regelcode | OP191 |
+| Titel | Het gebruik van ongestructureerde informatie dient tot een minimum beperkt te worden |
+| Afkorting | OP |
+| Type | Bedrijfsregel |
+| Domein | Jeugdwet (iJw) |
+| Standaardversie | iJw 3.2.0 |
+| Berichttype | JW301, JW315 |
+| Documenttype | iJw bedrijfsregels |
+| Bron | https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op191/ |
+
+---
+
+## Toepassing
+Deze regel is relevant bij:
+- gebruik van commentaarvelden
+- verwerking van vrije tekst
+- validatie van berichtinhoud
+- privacycontrole
+- verwerking van JW301-berichten
+- verwerking van JW315-berichten
+- gestructureerde gegevensuitwisseling
+
+---
+
+## Zoektermen
+ongestructureerde informatie, vrije tekst, commentaar, persoonsgegevens, privacy, aanvullende informatie, AangevraagdProduct, ToegewezenProduct, JW301, JW315, iJw, jeugdwet, tekstvelden, gegevensuitwisseling
+
+---
+
+## Verwante concepten
+- gestructureerde gegevens
+- privacybescherming
+- persoonsgegevens
+- commentaarvelden
+- gegevensminimalisatie
+- informatie-uitwisseling
+
+---
+
+## Gerelateerde uitgangspunten
+- UP003
+- UP017
