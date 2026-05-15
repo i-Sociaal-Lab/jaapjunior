@@ -1,0 +1,130 @@
+# OP284 — Indien iedere declaratieperiode zorg is geleverd door de aanbieder, moeten de declaratieperioden aansluitend zijn in opvolgende declaratieberichten
+
+## Definitie
+Wanneer in iedere declaratieperiode zorg is geleverd door de aanbieder, moeten declaratieperioden in opvolgende declaratieberichten op elkaar aansluiten.
+
+Hiaten tussen declaratieperioden zijn toegestaan wanneer:
+- geen zorg is geleverd
+- of wanneer geen declaratie nodig is
+
+Overlap van declaratieperioden is toegestaan voor correcties op de laatst ingediende periode.
+
+---
+
+## Samenvatting
+Deze bedrijfsregel bepaalt hoe declaratieperioden in opeenvolgende declaratieberichten op elkaar moeten aansluiten.
+
+Wanneer doorlopend zorg geleverd wordt:
+- moeten declaratieperioden opeenvolgend en aansluitend zijn
+
+Wanneer geen zorg geleverd wordt:
+- hoeft geen declaratie te worden verstuurd
+
+Daarnaast zijn:
+- hiaten toegestaan
+- overlap toegestaan bij correcties op de meest recente declaratieperiode
+
+De regel ondersteunt consistente verwerking van declaratieperioden binnen de iJw-standaard.
+
+---
+
+## Regel
+- Als iedere declaratieperiode zorg is geleverd, moeten declaratieperioden aansluitend zijn in opvolgende berichten.
+- Geen zorg geleverd:
+  - geen declaratie over die periode, tenzij correcties op eerdere declaraties nodig zijn.
+- Hiaten in declaratieperioden zijn toegestaan.
+- Overlap van declaratieperioden voor correcties is toegestaan op de laatst ingediende periode.
+
+---
+
+## Toelichting
+
+### Aansluitende declaratieperioden
+Wanneer ondersteuning doorlopend geleverd wordt:
+- moeten opvolgende declaratieperioden op elkaar aansluiten
+
+### Geen zorg geleverd
+Wanneer in een periode geen zorg geleverd wordt:
+- hoeft geen declaratiebericht te worden verzonden
+
+Uitzondering:
+- correcties op eerdere declaraties blijven toegestaan
+
+### Hiaten in declaratieperioden
+Hiaten zijn toegestaan:
+- met een duur van één of meer kalendermaanden
+
+### Overlap voor correcties
+Overlap van declaratieperioden is toegestaan:
+- wanneer correcties worden aangebracht
+- op de laatst ingediende declaratieperiode
+
+---
+
+## Kernbegrippen
+- declaratieperiode
+- opvolgend declaratiebericht
+- aansluitende perioden
+- overlap
+- hiaten
+- correctie
+- zorg geleverd
+- declaratiebericht
+
+---
+
+## Metadata
+
+| Eigenschap | Waarde |
+|---|---|
+| Regelcode | OP284 |
+| Titel | Indien iedere declaratieperiode zorg is geleverd door de aanbieder, moeten de declaratieperioden aansluitend zijn in opvolgende declaratieberichten |
+| Afkorting | OP |
+| Type | Bedrijfsregel |
+| Domein | Jeugdwet (iJw) |
+| Standaardversie | iJw 3.2.0 |
+| Berichttype | JW323 |
+| Documenttype | iJw bedrijfsregels |
+| Bron | https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op284/ |
+
+---
+
+## Toepassing
+Deze regel is relevant bij:
+- verwerking van declaratieperioden
+- opvolgende declaratieberichten
+- controle op aansluitende declaraties
+- correcties op declaraties
+- verwerking van JW323-berichten
+- financiële administratie
+- validatie van declaratiegegevens
+
+---
+
+## Zoektermen
+declaratieperiode, opvolgend declaratiebericht, aansluitende perioden, overlap, hiaten, correctie, JW323, iJw, jeugdwet, declaratieverwerking, zorg geleverd, declaratiecontrole
+
+---
+
+## Verwante concepten
+- declaratieverwerking
+- periodieke declaraties
+- correctieberichten
+- financiële administratie
+- declaratiecontrole
+- prestaties registreren
+
+---
+
+## Gerelateerde invulinstructies
+- IV090
+
+---
+
+## Gerelateerde technische regels
+- TR318
+
+---
+
+## Gerelateerde uitgangspunten
+- UP017
