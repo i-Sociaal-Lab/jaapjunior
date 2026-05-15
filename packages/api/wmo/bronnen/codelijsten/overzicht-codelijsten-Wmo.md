@@ -11,12 +11,12 @@ Deze codelijsten worden gebruikt voor validatie, codering, retourmeldingen en fu
 
 | Veld | Waarde |
 |---|---|
-| Domein | iJw |
+| Domein | iWmo |
 | Type | Overzicht codelijsten |
 | Gebruik | AI-chatbot / RAG / documentatie |
 | Formaat | Markdown / JSON |
 | Doel | Semantische zoekbaarheid en functionele ondersteuning |
-| Bron | https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/ |
+| Bron | https://informatiemodel.istandaarden.nl/informatiemodel/iwmo/3.2/codelijsten/ |
 
 ---
 
@@ -37,9 +37,9 @@ Deze codelijsten worden gebruikt voor validatie, codering, retourmeldingen en fu
 | COD700 | Naamgebruik | Aanduiding naamgebruik (gecodeerd). | `COD700_Naamgebruik.md` |
 | COD747 | Communicatievorm | Gecodeerde aanduiding van de bijzondere vorm van communicatie die gebruikt dient te worden. | `COD747_Communicatievorm.md` |
 | COD757 | Soort adres | Nadere typering van het adres. | `COD757_Soort_adres.md` |
-| JZ002 | Reden wijziging toewijzing | De reden waarom een toewijzing wordt gewijzigd. | `JZ002_Reden_wijziging_toewijzing.md` |
-| JZ020 | Productcategorie | Gecodeerde aanduiding van een (reeks van) productcategorie(en) in functionele termen die losgekoppeld is van een bepaalde leverancier, waarbij wordt beschreven wat de inhoud en aard van de productcategorie is in termen van hulpverlening (wonen, zorg en welzijn). | `JZ020_Productcategorie.md` |
-| JZ588 | Reden beëindiging | De reden van beëindiging van de Jeugdhulp bij een cliënt. | `JZ588_Reden_beeindiging.md` |
+| WMO002 | Reden wijziging toewijzing | De reden waarom een toewijzing wordt gewijzigd. | `JZ002_Reden_wijziging_toewijzing.md` |
+| WMO020 | Productcategorie | Gecodeerde aanduiding van een (reeks van) productcategorie(en) in functionele termen die losgekoppeld is van een bepaalde leverancier, waarbij wordt beschreven wat de inhoud en aard van de productcategorie is in termen van hulpverlening (wonen, zorg en welzijn). | `JZ020_Productcategorie.md` |
+| WMO588 | Reden beëindiging | De reden van beëindiging van de Jeugdhulp bij een cliënt. | `JZ588_Reden_beeindiging.md` |
 | NUM061 | Aanduiding woonadres | De aanduiding die wordt gebruikt voor adressen die niet zijn voorzien van de gebruikelijke straatnaam en huisnummeraanduidingen. | `NUM061_Aanduiding_woonadres.md` |
 | WJ001 | Retourcode | Melding in een retourbericht. Het betreft een code die in een retourbericht het resultaat van de beoordeling van een (deel van een) ontvangen bericht weergeeft. | `WJ001_Retourcode.md` |
 | WJ003 | Wettelijke vertegenwoordiging | Wettelijke vertegenwoordiging die voor de cliënt van toepassing is op het moment van beoordeling. | `WJ003_wettelijke_vertegenwoordiging.md` |
