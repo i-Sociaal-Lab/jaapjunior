@@ -1,0 +1,115 @@
+# OP286 — Als de ontvanger een technische fout constateert, keurt deze het bericht in zijn geheel af en laat hij dit weten aan de verzender. Het bericht moet daarmee functioneel als niet-verzonden worden beschouwd
+
+## Definitie
+Wanneer de ontvanger een technische fout constateert:
+- wordt het volledige bericht afgekeurd
+- wordt de verzender hierover geïnformeerd via een retourbericht
+
+Het afgekeurde bericht moet functioneel worden beschouwd als:
+- niet verzonden
+
+---
+
+## Samenvatting
+Deze bedrijfsregel bepaalt hoe technische fouten in iJw-berichten moeten worden afgehandeld.
+
+Bij technische fouten:
+- wordt het volledige bericht afgekeurd
+- vindt geen gedeeltelijke verwerking plaats
+- ontvangt de verzender een retourbericht
+
+Een technisch afgekeurd bericht geldt administratief en functioneel als niet verzonden.
+
+De regel ondersteunt betrouwbare en consistente verwerking van berichten binnen de iJw-standaard.
+
+---
+
+## Regel
+- Bij technische fouten keurt de ontvanger het volledige bericht af.
+- De verzender wordt geïnformeerd via een retourbericht.
+- Het bericht wordt functioneel beschouwd als niet verzonden.
+
+---
+
+## Toelichting
+
+### Technische fout
+Een technische fout betreft bijvoorbeeld:
+- een ongeldig XML-formaat
+- ontbrekende verplichte technische gegevens
+- ongeldige berichtstructuur
+- fouten in codering of validatie
+
+### Afkeuring volledig bericht
+Bij een technische fout:
+- wordt het gehele bericht afgekeurd
+- worden geen onderdelen van het bericht verwerkt
+
+### Functioneel niet verzonden
+Een technisch afgekeurd bericht:
+- geldt alsof het nooit succesvol verzonden is
+- moet opnieuw correct worden aangeleverd
+
+---
+
+## Kernbegrippen
+- technische fout
+- afkeuren bericht
+- retourbericht
+- niet verzonden
+- technische validatie
+- berichtverwerking
+- ontvanger
+- verzender
+
+---
+
+## Metadata
+
+| Eigenschap | Waarde |
+|---|---|
+| Regelcode | OP286 |
+| Titel | Als de ontvanger een technische fout constateert, keurt deze het bericht in zijn geheel af en laat hij dit weten aan de verzender. Het bericht moet daarmee functioneel als niet-verzonden worden beschouwd |
+| Afkorting | OP |
+| Type | Bedrijfsregel |
+| Domein | Jeugdwet (iJw) |
+| Standaardversie | iJw 3.2.0 |
+| Berichttypen | JW301, JW305, JW307, JW315, JW317, JW319, JW323 |
+| Documenttype | iJw bedrijfsregels |
+| Bron | https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op286/ |
+
+---
+
+## Toepassing
+Deze regel is relevant bij:
+- technische validatie van berichten
+- verwerking van retourberichten
+- foutafhandeling
+- XML-validatie
+- verwerking van JW301-, JW305-, JW307-, JW315-, JW317-, JW319- en JW323-berichten
+- communicatie tussen verzender en ontvanger
+
+---
+
+## Zoektermen
+technische fout, bericht afgekeurd, retourbericht, niet verzonden, technische validatie, berichtverwerking, XML-fout, JW301, JW305, JW307, JW315, JW317, JW319, JW323, iJw, jeugdwet
+
+---
+
+## Verwante concepten
+- technische validatie
+- retourcodes
+- foutafhandeling
+- XML-validatie
+- berichtuitwisseling
+- afkeuring berichten
+
+---
+
+## Gerelateerde invulinstructies
+- IV032
+
+---
+
+## Gerelateerde uitgangspunten
+- UP017
