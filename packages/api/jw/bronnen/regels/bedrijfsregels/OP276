@@ -1,4 +1,4 @@
-# OP279 — De aanbieder declareert voor een client waarvoor de aanbieder een toewijzing ontvangen heeft.
+# OP276 — De aanbieder declareert voor een client waarvoor de aanbieder een toewijzing ontvangen heeft.
 
 ## Definitie
 De aanbieder mag alleen clienten declareren waar hij een toewijzing voor heeft ontvangen.
