@@ -54,14 +54,14 @@ Daarnaast:
 
 ### Actieve toewijzing vereist
 De bestaande toewijzing:
-- mag nog niet verlopen zijn
-- op het moment dat de verlenging wordt verstuurd
+- mag nog niet verlopen zijn op het moment dat de verlenging wordt verstuurd
 
 ### Doel
 De regel ondersteunt:
 - consistente verlengingen
 - administratieve eenvoud
 - behoud van bestaande toewijzingen
+- het versturen van stop- startberichten is niet nodig is 
 
 ---
 
