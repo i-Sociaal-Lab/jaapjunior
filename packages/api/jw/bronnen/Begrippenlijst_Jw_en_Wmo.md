@@ -145,6 +145,55 @@ is wonen in een accommodatie van een instelling met veel toezicht en begeleiding
 
 besluit van een bestuursorgaan van de overheid gericht op een bepaalde persoon of rechtspersoon, zoals besluiten van de gemeente waarin staat of een persoon recht heeft op Wmo-ondersteuning of jeugdhulp en wanneer dat het geval is, vermeld staat hoeveel ondersteuning deze persoon krijgt en voor welke periode.
 
+Een verleningsbeschikking van een gemeente is een officieel besluit waarin de gemeente vastlegt dat iemand recht krijgt op een voorziening, ondersteuning, vergunning of subsidie.
+
+Het woord bestaat uit twee delen:
+
+* **Verlening** = iets wordt toegekend of toegestaan
+* **Beschikking** = een formeel bestuursrechtelijk besluit van een overheidsorganisatie
+
+Binnen het sociaal domein (zoals Wmo en Jeugdwet) betekent een verleningsbeschikking meestal dat de gemeente bepaalt:
+
+* welke ondersteuning iemand krijgt;
+* vanaf wanneer;
+* voor welke periode;
+* onder welke voorwaarden;
+* en soms hoeveel budget of uren beschikbaar zijn.
+
+### Voorbeelden
+
+Een gemeente kan een verleningsbeschikking afgeven voor:
+
+* huishoudelijke hulp via de Wmo;
+* begeleiding of dagbesteding;
+* een persoonsgebonden budget (pgb);
+* jeugdhulp;
+* een scootmobiel of woningaanpassing;
+* bijzondere bijstand;
+* subsidies of vergunningen.
+
+### Wat staat er meestal in?
+
+Een verleningsbeschikking bevat vaak:
+
+* persoonsgegevens van de inwoner;
+* het besluit van de gemeente;
+* de wettelijke grondslag;
+* de ingangsdatum en einddatum;
+* omvang van de voorziening;
+* motivatie van het besluit;
+* bezwaar- en beroepsmogelijkheden.
+
+### Verschil met andere begrippen
+
+* **Aanvraag** → verzoek van de inwoner
+* **Verleningsbeschikking** → gemeente kent iets toe
+* **Vaststellingsbeschikking** → definitieve afrekening of bevestiging achteraf
+* **Afwijzingsbeschikking** → aanvraag wordt geweigerd
+
+Binnen de iWmo/iJw-keten zie je het begrip vaak terug als juridische basis voor een toewijzing of zorginzet. Een zorgaanbieder ontvangt meestal niet de beschikking zelf, maar wel een afgeleid administratief bericht zoals een toewijzingsbericht.
+
+
 ### bestand
 
 (technisch) middel om een bericht uit te wisselen.
@@ -857,6 +906,9 @@ De Jeugdwet kent geen formele term "verlengde jeugdwet". Wel zijn er bepalingen 
 ### Verlengen of verlenging
 
 van een toewijzing is het oprekken van de einddatum
+
+### Verleningsbeschikking
+zie Beschikking
 
 ### Verwijsindex Productcodes Wmo en Jeugdwet
 
