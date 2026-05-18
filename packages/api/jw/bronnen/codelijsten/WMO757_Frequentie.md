@@ -1,4 +1,4 @@
-# WMO757 — Frequentie
+# WMO757 - Frequentie
 
 ## Definitie
 Frequentie van de te leveren of geleverde ondersteuning.
