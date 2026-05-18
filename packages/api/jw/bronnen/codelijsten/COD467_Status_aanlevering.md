@@ -49,6 +49,10 @@ Deze referentielijst geeft de status van aanlevering aan binnen berichtklassen z
 - `StartProduct (JW305)`
 - `StopProduct (JW307)`
 
+## Gerelateerde constraints
+
+* CS058
+
 ---
 
 ## AI-context
