@@ -1,4 +1,4 @@
-# COD700 — Naamgebruik
+# COD700 - Naamgebruik
 
 ## Definitie
 
