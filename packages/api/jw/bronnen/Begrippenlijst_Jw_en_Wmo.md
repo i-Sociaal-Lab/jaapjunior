@@ -817,7 +817,8 @@ Bericht voor het melden van de stop van levering van Jeugdhulp. Dit bericht word
 
 ### De StUF-standaarden
 
-Worden gebruik voor het elektronisch uitwisselen van data tussen applicaties van overheidsorganisaties. Bijvoorbeeld voor het uitwisselen van zaakgegevens en data uit basisregistraties. StUF-standaarden zijn gebaseerd op het Standaard Uitwisseling Formaat (StUF). StUF bevat zelf geen berichten maar de bouwstenen en richtlijnen waarmee berichtstandaarden zijn te maken. StUF is beschreven in XML en gebaseerd op geaccepteerde internetstandaarden. In het sociaaldomein waar berichtenverkeer plaatsvindt tussen gemeenten en aanbieders wordt en StUF-envelop gebruikt.
+Worden gebruik voor het elektronisch uitwisselen van data tussen applicaties van overheidsorganisaties. Bijvoorbeeld voor het uitwisselen van zaakgegevens en data uit basisregistraties. StUF-standaarden zijn gebaseerd op het Standaard Uitwisseling Formaat (StUF). StUF bevat zelf geen berichten maar de bouwstenen en richtlijnen waarmee berichtstandaarden zijn te maken. StUF is beschreven in XML en gebaseerd op geaccepteerde internetstandaarden. In het sociaaldomein waar berichtenverkeer plaatsvindt tussen gemeenten en aanbieders wordt de StUF-envelop gebruikt.
+bron: https://vng-realisatie.github.io/StUF-koppelvlak-iWmo-iJw/
 
 ### SVB
 
