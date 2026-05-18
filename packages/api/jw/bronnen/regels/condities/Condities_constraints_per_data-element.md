@@ -39,9 +39,9 @@ Het document dient als **naslagwerk en validatiebron** voor AI-agenten die vrage
 
 **Brondocumenten**
 
-Condities (CD-regels): https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/conditie/#regel
+Condities (CD-regels): https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/conditie/#regel/.Lower
 
-Constraints (CS-regels): https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/constraint/#regel
+Constraints (CS-regels): https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/constraint/#regel/.Lower
 
 ## Tabel condities, constraints, restricties per berichtelement
 
