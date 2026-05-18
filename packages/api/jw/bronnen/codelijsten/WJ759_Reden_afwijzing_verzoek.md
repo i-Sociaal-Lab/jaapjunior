@@ -1,4 +1,4 @@
-# WJ759 — Reden afwijzing verzoek
+# WJ759 - Reden afwijzing verzoek
 
 ## Definitie
 Reden van afwijzen van een verzoek om toewijzing of een verzoek om wijziging.
