@@ -1,4 +1,4 @@
-# COD747 — Communicatievorm
+# COD747 - Communicatievorm
 
 ## Definitie
 
