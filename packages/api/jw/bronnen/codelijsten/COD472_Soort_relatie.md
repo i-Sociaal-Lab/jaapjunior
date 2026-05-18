@@ -1,4 +1,4 @@
-# COD472 — Soort relatie
+# COD472 - Soort relatie
 
 ## Definitie
 
