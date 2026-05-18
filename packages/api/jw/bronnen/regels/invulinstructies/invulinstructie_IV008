@@ -1,20 +1,155 @@
-**IV008**
-*Hoe moet worden omgegaan met correcties van de regieberichten?*
+# IV008 - Hoe moet worden omgegaan met correcties van de regieberichten?
 
-Een correctie van een regiebericht, kan alleen indien het te corrigeren regiebericht is goedgekeurd door de gemeente.
-Indien een regiebericht is afgekeurd, moet het als niet verzonden worden beschouwd, en moet een nieuw regiebericht worden gestuurd.
+## Metadata
 
-Voor de regieberichten (startbericht en stopbericht) bestaat de mogelijkheid om eerder verstuurde berichtklassen te corrigeren. Hiervoor wordt eerst de betreffende berichtklasse verwijderd en wordt vervolgens (eventueel) een nieuwe berichtklasse verstuurd.
-Om aan te geven dat een berichtklasse dient te worden verwijderd wordt StatusAanlevering van de betreffende berichtklasse gevuld met de waarde 3 (verwijderen aanlevering). De te verwijderen berichtklasse wordt geidentificeerd door de logische sleutel van de klasse.
+| Veld | Waarde |
+|---|---|
+| ID | IV008 |
+| Type | Interpretatievraag |
+| Domein | iJw / iWmo |
+| Onderwerp | Regieberichten |
+| Thema | Correcties |
+| Status | Productie |
 
-Eventueel kan in hetzelfde bericht ook de vervangende berichtklasse worden aangeleverd. In deze berichtklasse wordt StatusAanlevering gevuld met de waarde 1 (eerste aanlevering).
+---
 
-Of de vervangende berichtklasse kan worden aangeleverd in hetzelfde bericht of dat een nieuw bericht nodig is, is afhankelijk van het berichtelement dat gecorrigeerd moet worden. Dat heeft te maken met de logische sleutels:
+## Vraag
 
-1. Startproduct heeft als logische sleutel: (ToewijzingNummer, Product, Begindatum)
-2. Stopproduct heeft als logische sleutel: (ToewijzingNummer, Product, Begindatum, RedenBeeindiging, Einddatum)
+Hoe moet worden omgegaan met correcties van de regieberichten?
 
-- Als het te corrigeren berichtelement onderdeel is van de logische sleutel: de correctie kan in hetzelfde bericht worden doorgegeven. Beide berichtklassen hebben een unieke sleutel.
-- Als het te corrigeren berichtelement geen onderdeel is van de logische sleutel: de correctie moet in een apart bericht worden doorgegeven. De gecorrigeerde en de originele berichtklasse hebben dezelfde logische sleutel. Binnen een (1) bericht wordt hierop afgekeurd omdat de software dit interpreteert als dat er twee keer dezelfde berichtklasse is opgenomen.
+---
 
-Uiteraard moet worden voorkomen dat een nieuwe aanlevering eerder wordt verwerkt dan de correctie (verwijdering). Het is daarom te adviseren om waar mogelijk de correctie (verwijdering) en nieuwe aanlevering in hetzelfde bericht op te nemen.
+## Antwoord
+
+Een correctie van een regiebericht kan alleen plaatsvinden indien het te corrigeren regiebericht is goedgekeurd door de gemeente.
+
+Indien een regiebericht is afgekeurd, moet dit als niet verzonden worden beschouwd en moet een nieuw regiebericht worden gestuurd.
+
+Voor regieberichten (`Startproduct` en `Stopproduct`) bestaat de mogelijkheid om eerder verstuurde berichtklassen te corrigeren. Hiervoor wordt eerst de betreffende berichtklasse verwijderd en vervolgens eventueel een nieuwe berichtklasse verstuurd.
+
+---
+
+## Correctieproces
+
+### Stap 1 - Verwijderen oorspronkelijke berichtklasse
+
+Om aan te geven dat een berichtklasse verwijderd moet worden:
+
+- `StatusAanlevering` wordt gevuld met waarde `3`
+- Betekenis: `verwijderen aanlevering`
+
+De te verwijderen berichtklasse wordt geïdentificeerd door de logische sleutel van de klasse.
+
+---
+
+### Stap 2 - Eventueel vervangen door nieuwe berichtklasse
+
+De vervangende berichtklasse kan:
+
+- in hetzelfde bericht worden meegestuurd
+- of in een nieuw bericht worden aangeleverd
+
+In de vervangende berichtklasse wordt:
+
+- `StatusAanlevering` gevuld met waarde `1`
+- Betekenis: `eerste aanlevering`
+
+---
+
+## Logische sleutels
+
+### Startproduct
+
+Logische sleutel:
+
+```text
+(ToewijzingNummer, Product, Begindatum)
+````
+
+### Stopproduct
+
+Logische sleutel:
+
+```text
+(ToewijzingNummer, Product, Begindatum, RedenBeeindiging, Einddatum)
+```
+
+---
+
+## Regels voor correcties
+
+### Correctie van een element dat onderdeel is van de logische sleutel
+
+De correctie mag in hetzelfde bericht worden doorgegeven.
+
+Reden:
+
+* Beide berichtklassen hebben een unieke logische sleutel.
+* Hierdoor ontstaan geen dubbele sleutels binnen hetzelfde bericht.
+
+---
+
+### Correctie van een element dat géén onderdeel is van de logische sleutel
+
+De correctie moet in een apart bericht worden doorgegeven.
+
+Reden:
+
+* De originele en gecorrigeerde berichtklasse hebben dezelfde logische sleutel.
+* Binnen één bericht wordt dit afgekeurd omdat de software dit interpreteert als dubbele berichtklassen.
+
+---
+
+## Verwerkingsvolgorde
+
+Voorkom dat een nieuwe aanlevering eerder wordt verwerkt dan de correctie (`verwijdering`).
+
+Daarom geldt het advies:
+
+* Neem waar mogelijk de correctie (`StatusAanlevering = 3`) en de nieuwe aanlevering (`StatusAanlevering = 1`) op in hetzelfde bericht.
+
+---
+
+## Structuur voor vector search / RAG
+
+### Kernbegrippen
+
+* Regiebericht
+* Correctie
+* Startproduct
+* Stopproduct
+* StatusAanlevering
+* Verwijderen aanlevering
+* Eerste aanlevering
+* Logische sleutel
+* ToewijzingNummer
+* Begindatum
+* RedenBeeindiging
+* Einddatum
+* Berichtklasse
+
+### Samenvatting
+
+Correcties op regieberichten zijn alleen toegestaan wanneer het oorspronkelijke bericht is goedgekeurd. Correcties verlopen door eerst de oorspronkelijke berichtklasse te verwijderen (`StatusAanlevering = 3`) en daarna eventueel een vervangende berichtklasse aan te leveren (`StatusAanlevering = 1`). Of dit in hetzelfde bericht kan, hangt af van de logische sleutel van de berichtklasse.
+
+### Belangrijke voorwaarden
+
+* Afgekeurde regieberichten gelden als niet verzonden.
+* Correcties zijn alleen toegestaan op goedgekeurde berichten.
+* Correcties op logische sleutelelementen mogen in hetzelfde bericht.
+* Correcties op niet-sleutelelementen vereisen een apart bericht.
+* Verwijdering moet vóór vervangende aanlevering verwerkt worden.
+
+### Zoektermen
+
+* correctie regiebericht
+* statusaanlevering 3
+* statusaanlevering 1
+* verwijderen aanlevering
+* eerste aanlevering
+* logische sleutel
+* startproduct corrigeren
+* stopproduct corrigeren
+* berichtklasse verwijderen
+* dubbele logische sleutel
+* regiebericht afgekeurd
