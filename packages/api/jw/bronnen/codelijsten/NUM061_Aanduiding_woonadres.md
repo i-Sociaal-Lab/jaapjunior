@@ -1,4 +1,4 @@
-# NUM061 — Aanduiding woonadres
+# NUM061 - Aanduiding woonadres
 
 ## Definitie
 
