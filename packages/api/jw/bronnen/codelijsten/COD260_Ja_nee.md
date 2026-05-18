@@ -1,4 +1,4 @@
-# COD260 — Ja of nee
+# COD260 - Ja of nee
 
 ## Definitie
 
