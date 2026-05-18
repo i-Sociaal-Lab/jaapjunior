@@ -1,4 +1,4 @@
-# WJ758 — Reden verzoek
+# WJ758 - Reden verzoek
 
 ## Definitie
 Gecodeerde aanduiding voor de reden van een verzoek.  
