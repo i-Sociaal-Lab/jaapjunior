@@ -1,4 +1,4 @@
-# WJ756 — Eenheid
+# WJ756 - Eenheid
 
 ## Definitie
 Gecodeerde aanduiding van de mate van zorg betreffende een product, uitgedrukt in een eenheid.
