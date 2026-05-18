@@ -1,4 +1,4 @@
-# WJ003 — Wettelijke vertegenwoordiging
+# WJ003 - Wettelijke vertegenwoordiging
 
 ## Definitie
 
