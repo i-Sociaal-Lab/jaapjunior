@@ -1,4 +1,4 @@
-# COD327 — Code verwijzer
+# COD327 - Code verwijzer
 
 ## Definitie
 
