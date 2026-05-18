@@ -1,4 +1,4 @@
-# COD043 — Indicatie debet/credit
+# COD043 - Indicatie debet/credit
 
 ## Definitie
 
