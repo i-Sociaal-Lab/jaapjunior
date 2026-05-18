@@ -1,4 +1,4 @@
-# COD467 — Status aanlevering
+# COD467 - Status aanlevering
 
 ## Definitie
 
