@@ -1,4 +1,4 @@
-# WJ001 — Retourcode *(uitgebreid)*
+# WJ001 - Retourcode *(uitgebreid)*
 
 ## Definitie
 
