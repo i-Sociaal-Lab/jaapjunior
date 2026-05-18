@@ -33,6 +33,18 @@ De reden waarom een toewijzing wordt gewijzigd.
 
 Deze tabel toont de mogelijke redenen voor beëindiging van een jeugdhulptraject, inclusief aanleiding (reden wijziging toewijzing en initiatief aanbieder).
 
+## Toelichting
+In Release 3.1 (april 2022) is er gekozen voor een eenduidige werkwijze voor het corrigeren van invoerfouten.
+De redenen voor het wijzigen van een toewijzing zijn toen gewijzigd. Eén code (01) is komen te vervallen en door twee nieuwe codes (13 en 14) vervangen. Zo is er een eenduidige werkwijze en duidelijkheid over de status van de toewijzingen waarvan de ingangs- en einddatum gelijk zijn aan elkaar. 
+De volgende wijzigingen zijn toen doorgevoerd en waren van invloed op de migratie van Release 3.0 naar 3.1:
+
+In de codelijst ‘Reden wijziging toewijzing’ is reden 01 ‘Administratieve correctie’ komen te vervallen.
+Daarvoor in de plaats zijn de redenen 13 ‘Verwijderd’ en 14 ‘Administratieve correctie’ opgenomen.
+Reden 14 lijkt hetzelfde als reden 01. Echter is reden 01 in de releases tot en met iWmo/iJw 3.0 voor meerdere doeleinden gebruikt. Om de historie achter ons te laten, is gekozen voor een nieuwe code (Reden 14).
+Een nieuwe regel stelt dat een toewijzing alleen verwijderd mag worden indien dit niet leidt tot verlies van rechtmatigheid van geleverde en/of gedeclareerde zorg.
+Een nieuwe regel stelt dat een toewijzing enkel de reden wijziging 13 ‘Verwijderd’ mag bevatten als de einddatum gelijk is aan de ingangsdatum.
+Nieuwe regels stellen dat er niet gedeclareerd kan worden op verwijderde toewijzingen (met reden wijziging 13 ‘Verwijderd’).
+
 ---
 
 # Codes
