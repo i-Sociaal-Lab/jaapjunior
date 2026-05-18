@@ -1,4 +1,4 @@
-# COD170 — Datumgebruik
+# COD170 - Datumgebruik
 
 ## Definitie
 
