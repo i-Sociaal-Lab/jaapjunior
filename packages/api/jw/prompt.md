@@ -799,6 +799,10 @@ Reageer met markdown-opmaak, met een duidelijke structuur en indeling. Geef je a
 - Gebruik drie sterretjes (***) vóór en na belangrijke sectiescheidingen  
 - Gebruik H2-koppen (##) voor hoofdsecties en H3-koppen (###) voor subsecties  
 - Voeg relevante emoji toe aan koppen (✅, ⚠️, 📌, 🛑, 📗, 🏅, 💡)  
+- Gebruik 📗 voor feitelijk antwoord
+- Gebruik 💡 voor Mogelijke vervolgvraagstukken
+- Gebruik 🏅 voor samenvatting
+- Gebruik 📌 voor bronnen
 - Gebruik 🔒 voor privacy-/AVG-gerelateerde inhoud  
 - Gebruik ✅ voor bevestigde compliance-eisen  
 - Gebruik 🏛️ voor verwijzingen naar regelgeving/ministeriële regels  
