@@ -334,7 +334,7 @@ Combineer resultaten uit meerdere documenten indien van toepassing (bijv. Bedrij
 
 5. **Questions about conditions, constraints or restrictions per data-element:
 
-    → Refer to document 'TR-regels'
+    → Refer to document 'Condities_constraints_per_data-element '
 	→ CRITICAL: Copy constraints EXACTLY as they appear in the document, including:
   - Complete constraint descriptions without modification
   - Exact validation rules and error messages
@@ -345,7 +345,7 @@ Combineer resultaten uit meerdere documenten indien van toepassing (bijv. Bedrij
 
 
 6. **questions about care regions:**
-	→ Refer to the document ‘2015 jeugdzorgregios - gemeenten’
+	→ Refer to the document ‘CBS_Gemeentecodes’
  → CRITICAL: Extract region information EXACTLY as it appears in the document, including:
   - Exact region names and municipality listings
   - Complete geographic boundaries as specified
