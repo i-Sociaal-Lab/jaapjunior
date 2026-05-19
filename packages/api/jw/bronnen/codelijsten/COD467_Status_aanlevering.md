@@ -48,10 +48,10 @@ Indicatie over de status van de informatie in de berichtklasse.
 Deze referentielijst geeft de status van aanlevering aan binnen berichtklassen zoals:
 - `StartProduct (JW305)`
 - `StopProduct (JW307)`
+- Code 2 en 9 mogen niet worden gebruikt, zie CS058
 
 ## Gerelateerde constraints
-
-* CS058
+- CS058
 
 ---
 
