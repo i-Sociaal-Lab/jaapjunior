@@ -29,7 +29,7 @@ Maximale lengte 12 posities
 - maximale
 - posities
 - restrictie
-- rs017
+- RS017
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij IdentificatieRetour_IdentificatieBericht?
@@ -68,7 +68,7 @@ Geen lege elementen in XML.
 - jw retour
 - lege
 - restrictie
-- rs033
+- RS033
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij IdentificatieRetour_IdentificatieBericht?
@@ -105,7 +105,7 @@ Datum vullen zonder tijdzone.
 - header
 - jw retour
 - restrictie
-- rs032
+- RS032
 - tijdzone
 - vullen
 - zonder
@@ -149,7 +149,7 @@ Vullen met een versienummer bestaande uit drie gehele getallen, gescheiden met p
 - jw retour
 - punten
 - restrictie
-- rs048
+- RS048
 - versienummer
 - vullen
 - xsltversie_versie
@@ -194,7 +194,7 @@ Vullen met een versienummer bestaande uit drie gehele getallen, gescheiden met p
 - jw retour
 - punten
 - restrictie
-- rs048
+- RS048
 - versienummer
 - vullen
 - xsdversieretour_xsdversie
@@ -239,7 +239,7 @@ Vullen met een versienummer bestaande uit drie gehele getallen, gescheiden met p
 - jw retour
 - punten
 - restrictie
-- rs048
+- RS048
 - versienummer
 - vullen
 - xsdversieretour_xsdversie
@@ -282,7 +282,7 @@ Maximale lengte 4 posities
 - restrictie
 - retourcode_retourcode
 - retourcodes
-- rs011
+- RS011
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij RetourCode_RetourCode?
@@ -321,7 +321,7 @@ De waarde moet voldoen aan de 11-proef.
 - client
 - constraint
 - CS002
-- jw301
+- JW301
 - moet
 - voldoen
 - waarde
@@ -359,12 +359,12 @@ Maximale lengte 9 posities
 ## Zoektermen
 - bsn_burgerservicenummer
 - client
-- jw301
+- JW301
 - lengte
 - maximale
 - posities
 - restrictie
-- rs015
+- RS015
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Bsn.LDT_BurgerServicenummer?
@@ -400,9 +400,9 @@ Vullen met 9 cijfers.
 - bsn_burgerservicenummer
 - cijfers
 - client
-- jw301
+- JW301
 - restrictie
-- rs037
+- RS037
 - vullen
 
 ## Veelgestelde vragen
@@ -439,9 +439,9 @@ Datum vullen zonder tijdzone.
 - client
 - datum
 - geboortedatum
-- jw301
+- JW301
 - restrictie
-- rs032
+- RS032
 - tijdzone
 - vullen
 - zonder
@@ -486,7 +486,7 @@ Voor Geboortedatum geldt dat DatumGebruik en Datum met elkaar in overeenstemming
 - elkaar
 - geboortedatum
 - geldt
-- jw301
+- JW301
 - moeten
 - overeenstemming
 - voor
@@ -526,12 +526,12 @@ Maximale lengte 1 positie
 ## Zoektermen
 - client
 - geboortedatum
-- jw301
+- JW301
 - lengte
 - maximale
 - positie
 - restrictie
-- rs008
+- RS008
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Geboortedatum?
@@ -566,12 +566,12 @@ Maximale lengte 1 positie
 ## Zoektermen
 - client
 - geslacht_geslacht
-- jw301
+- JW301
 - lengte
 - maximale
 - positie
 - restrictie
-- rs008
+- RS008
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Geslacht_Geslacht?
@@ -607,7 +607,7 @@ NaamGebruik 6 (Niet-natuurlijk persoon) niet vullen.
 - client
 - constraint
 - cs318
-- jw301
+- JW301
 - naam
 - naamgebruik
 - niet
@@ -648,13 +648,13 @@ Maximale lengte 200 posities
 
 ## Zoektermen
 - client
-- jw301
+- JW301
 - lengte
 - maximale
 - naam_volledigenaam
 - posities
 - restrictie
-- rs028
+- RS028
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Naam_VolledigeNaam?
@@ -691,11 +691,11 @@ Geen lege elementen in XML.
 - client
 - elementen
 - geen
-- jw301
+- JW301
 - lege
 - naam_volledigenaam
 - restrictie
-- rs033
+- RS033
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Naam_VolledigeNaam?
@@ -730,13 +730,13 @@ Maximale lengte 10 posities
 
 ## Zoektermen
 - client
-- jw301
+- JW301
 - lengte
 - maximale
 - naam_volledigenaam
 - posities
 - restrictie
-- rs016
+- RS016
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Naam_VolledigeNaam?
@@ -773,11 +773,11 @@ Geen lege elementen in XML.
 - client
 - elementen
 - geen
-- jw301
+- JW301
 - lege
 - naam_volledigenaam
 - restrictie
-- rs033
+- RS033
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Naam_VolledigeNaam?
@@ -812,13 +812,13 @@ Maximale lengte 200 posities
 
 ## Zoektermen
 - client
-- jw301
+- JW301
 - lengte
 - maximale
 - naam_volledigenaam
 - posities
 - restrictie
-- rs028
+- RS028
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Naam_VolledigeNaam?
@@ -855,11 +855,11 @@ Geen lege elementen in XML.
 - client
 - elementen
 - geen
-- jw301
+- JW301
 - lege
 - naam_volledigenaam
 - restrictie
-- rs033
+- RS033
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Naam_VolledigeNaam?
@@ -894,13 +894,13 @@ Maximale lengte 10 posities
 
 ## Zoektermen
 - client
-- jw301
+- JW301
 - lengte
 - maximale
 - naam_volledigenaam
 - posities
 - restrictie
-- rs016
+- RS016
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Naam_VolledigeNaam?
@@ -937,11 +937,11 @@ Geen lege elementen in XML.
 - client
 - elementen
 - geen
-- jw301
+- JW301
 - lege
 - naam_volledigenaam
 - restrictie
-- rs033
+- RS033
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Naam_VolledigeNaam?
@@ -975,13 +975,13 @@ Maximale lengte 200 posities
 
 ## Zoektermen
 - client
-- jw301
+- JW301
 - lengte
 - maximale
 - naam_volledigenaam
 - posities
 - restrictie
-- rs028
+- RS028
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Naam_VolledigeNaam?
@@ -1017,11 +1017,11 @@ Geen lege elementen in XML.
 - client
 - elementen
 - geen
-- jw301
+- JW301
 - lege
 - naam_volledigenaam
 - restrictie
-- rs033
+- RS033
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Naam_VolledigeNaam?
@@ -1055,13 +1055,13 @@ Maximale lengte 6 posities
 
 ## Zoektermen
 - client
-- jw301
+- JW301
 - lengte
 - maximale
 - naam_volledigenaam
 - posities
 - restrictie
-- rs013
+- RS013
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Naam_VolledigeNaam?
@@ -1096,11 +1096,11 @@ Aaneengesloten vullen (zonder punten of spaties).
 ## Zoektermen
 - aaneengesloten
 - client
-- jw301
+- JW301
 - naam_volledigenaam
 - punten
 - restrictie
-- rs045
+- RS045
 - spaties
 - vullen
 - zonder
@@ -1117,7 +1117,13 @@ JW301 binnen berichtklasse Client.
 
 ---
 
-# Regel CS050 - Naam_VolledigeNaam
+# Regel CS050 - Als Partnernaam gevuld, dan NaamGebruik vullen met waarde 1, 2, 3 of 4. Anders waarde 1 of 6 vullen
+
+## Uitleg
+Als Partnernaam gevuld is, wordt in NaamGebruik aangegeven hoe de persoon zijn naam wenst te gebruiken. 
+Hiervoor kunnen de volgende waarden gebruikt worden: 1 (eigen naam), 2 (naam echtgenoot of geregistreerd partner of alternatieve naam), 3 (naam echtgenoot of geregistreerd partner gevolgd door eigen naam) of 
+4 (eigen naam gevolgd door naam echtgenoot of geregistreerd partner). 
+Indien geen Partnernaam gevuld is, wordt 1 (eigen naam) gevuld voor een persoon of 6 (niet-natuurlijk persoon) indien het een organisatie betreft (zie ook IV045).
 
 ## Metadata
 - Regelcode: CS050
@@ -1142,7 +1148,7 @@ Als Partnernaam gevuld is, dan NaamGebruik vullen met waarde 1, 2, 3 of 4. Ander
 - constraint
 - CS050
 - gevuld
-- jw301
+- JW301
 - naam_volledigenaam
 - naamgebruik
 - partnernaam
@@ -1182,13 +1188,13 @@ Maximale lengte 1 positie
 
 ## Zoektermen
 - client
-- jw301
+- JW301
 - lengte
 - maximale
 - naam_volledigenaam
 - positie
 - restrictie
-- rs008
+- RS008
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Naam_VolledigeNaam?
@@ -1224,12 +1230,12 @@ Maximale lengte 1 positie
 ## Zoektermen
 - client
 - communicatie_communicatie
-- jw301
+- JW301
 - lengte
 - maximale
 - positie
 - restrictie
-- rs008
+- RS008
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Communicatie_Communicatie?
@@ -1270,7 +1276,7 @@ Als Communicatie / Vorm de waarde 1 (tolk taal) heeft, dan verplicht vullen, and
 - communicatie_communicatie
 - conditie
 - heeft
-- jw301
+- JW301
 - leeglaten
 - taal
 - tolk
@@ -1312,12 +1318,12 @@ Maximale lengte 25 posities
 ## Zoektermen
 - client
 - communicatie_communicatie
-- jw301
+- JW301
 - lengte
 - maximale
 - posities
 - restrictie
-- rs021
+- RS021
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Communicatie_Communicatie?
@@ -1354,10 +1360,10 @@ Geen lege elementen in XML.
 - communicatie_communicatie
 - elementen
 - geen
-- jw301
+- JW301
 - lege
 - restrictie
-- rs033
+- RS033
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Communicatie_Communicatie?
@@ -1392,12 +1398,12 @@ Maximale lengte 2 posities
 ## Zoektermen
 - client
 - juridischestatus_juridischestatus
-- jw301
+- JW301
 - lengte
 - maximale
 - posities
 - restrictie
-- rs009
+- RS009
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij JuridischeStatus_JuridischeStatus?
@@ -1431,12 +1437,12 @@ Maximale lengte 2 posities
 
 ## Zoektermen
 - client
-- jw301
+- JW301
 - lengte
 - maximale
 - posities
 - restrictie
-- rs009
+- RS009
 - wettelijkevertegenwoordiging_wettelijkevertegenwoordiging
 
 ## Veelgestelde vragen
@@ -1472,11 +1478,11 @@ Commentaarvelden niet leeg.
 - client
 - commentaar_commentaar
 - commentaarvelden
-- jw301
+- JW301
 - leeg
 - niet
 - restrictie
-- rs031
+- RS031
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Commentaar_Commentaar?
@@ -1511,12 +1517,12 @@ Maximale lengte 2 posities
 
 ## Zoektermen
 - contact
-- jw301
+- JW301
 - lengte
 - maximale
 - posities
 - restrictie
-- rs009
+- RS009
 - soort_adressoort
 
 ## Veelgestelde vragen
@@ -1557,7 +1563,7 @@ Als Adres / LandCode de waarde NL (Nederland) heeft, dan verplicht vullen.
 - conditie
 - contact
 - heeft
-- jw301
+- JW301
 - landcode
 - nederland
 - verplicht
@@ -1598,10 +1604,10 @@ Minimale waarde 0
 ## Zoektermen
 - adres_adres
 - contact
-- jw301
+- JW301
 - minimale
 - restrictie
-- rs001
+- RS001
 - waarde
 
 ## Veelgestelde vragen
@@ -1639,10 +1645,10 @@ Maximale waarde 99999 (5*9)
 - 99999
 - adres_adres
 - contact
-- jw301
+- JW301
 - maximale
 - restrictie
-- rs004
+- RS004
 - waarde
 
 ## Veelgestelde vragen
@@ -1679,12 +1685,12 @@ Maximale lengte 1 positie
 ## Zoektermen
 - adres_adres
 - contact
-- jw301
+- JW301
 - lengte
 - maximale
 - positie
 - restrictie
-- rs008
+- RS008
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Adres_Adres?
@@ -1722,10 +1728,10 @@ Geen lege elementen in XML.
 - contact
 - elementen
 - geen
-- jw301
+- JW301
 - lege
 - restrictie
-- rs033
+- RS033
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Adres_Adres?
@@ -1761,12 +1767,12 @@ Maximale lengte 4 posities
 ## Zoektermen
 - adres_adres
 - contact
-- jw301
+- JW301
 - lengte
 - maximale
 - posities
 - restrictie
-- rs011
+- RS011
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Adres_Adres?
@@ -1804,10 +1810,10 @@ Geen lege elementen in XML.
 - contact
 - elementen
 - geen
-- jw301
+- JW301
 - lege
 - restrictie
-- rs033
+- RS033
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Adres_Adres?
@@ -1844,12 +1850,12 @@ Maximale lengte 2 posities
 ## Zoektermen
 - adres_adres
 - contact
-- jw301
+- JW301
 - lengte
 - maximale
 - posities
 - restrictie
-- rs009
+- RS009
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Adres_Adres?
@@ -1890,7 +1896,7 @@ Als Soort adres de waarde 1 (BRP-adres) of 3 (verblijfadres) heeft, dan verplich
 - conditie
 - contact
 - heeft
-- jw301
+- JW301
 - soort
 - verblijfadres
 - verplicht
@@ -1909,8 +1915,10 @@ JW301 binnen berichtklasse Contact.
 
 ---
 
-# Regel CS089 - Adres_Adres
+# Regel CS089 - Postcode, Als LandCode de waarde NL (Nederland) heeft, dan moet het formaat overeenkomen met dat van een Nederlandse postcode.
 
+## Uitleg
+Concreet betekent dit dat de waarde moet voldoen aan de reguliere expressie: [1-9][0-9]{3}[a-zA-Z]{2}. Zie ook https://www.postcode.nl/.
 ## Metadata
 - Regelcode: CS089
 - Type: Constraint
@@ -1935,7 +1943,7 @@ Als LandCode de waarde NL (Nederland) heeft, dan moet het formaat overeenkomen m
 - CS089
 - formaat
 - heeft
-- jw301
+- JW301
 - landcode
 - moet
 - nederland
@@ -1977,12 +1985,12 @@ Maximale lengte 8 posities
 ## Zoektermen
 - adres_adres
 - contact
-- jw301
+- JW301
 - lengte
 - maximale
 - posities
 - restrictie
-- rs014
+- RS014
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Adres_Adres?
@@ -2019,10 +2027,10 @@ Geen lege elementen in XML.
 - contact
 - elementen
 - geen
-- jw301
+- JW301
 - lege
 - restrictie
-- rs033
+- RS033
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Adres_Adres?
@@ -2057,12 +2065,12 @@ Maximale lengte 24 posities
 ## Zoektermen
 - adres_adres
 - contact
-- jw301
+- JW301
 - lengte
 - maximale
 - posities
 - restrictie
-- rs020
+- RS020
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Adres_Adres?
@@ -2099,10 +2107,10 @@ Geen lege elementen in XML.
 - contact
 - elementen
 - geen
-- jw301
+- JW301
 - lege
 - restrictie
-- rs033
+- RS033
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Adres_Adres?
@@ -2137,12 +2145,12 @@ Maximale lengte 80 posities
 ## Zoektermen
 - adres_adres
 - contact
-- jw301
+- JW301
 - lengte
 - maximale
 - posities
 - restrictie
-- rs026
+- RS026
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Adres_Adres?
@@ -2179,10 +2187,10 @@ Geen lege elementen in XML.
 - contact
 - elementen
 - geen
-- jw301
+- JW301
 - lege
 - restrictie
-- rs033
+- RS033
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Adres_Adres?
@@ -2222,7 +2230,7 @@ Als Postcode gevuld is, dan verplicht vullen, anders leeg laten.
 - conditie
 - contact
 - gevuld
-- jw301
+- JW301
 - laten
 - leeg
 - postcode
@@ -2263,12 +2271,12 @@ Maximale lengte 2 posities
 ## Zoektermen
 - adres_adres
 - contact
-- jw301
+- JW301
 - lengte
 - maximale
 - posities
 - restrictie
-- rs009
+- RS009
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Adres_Adres?
@@ -2301,13 +2309,13 @@ Maximale lengte 35 posities
 
 ## Zoektermen
 - contact
-- jw301
+- JW301
 - lengte
 - maximale
 - organisatie_organisatienaam
 - posities
 - restrictie
-- rs023
+- RS023
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Organisatie_Organisatienaam?
@@ -2342,11 +2350,11 @@ Geen lege elementen in XML.
 - contact
 - elementen
 - geen
-- jw301
+- JW301
 - lege
 - organisatie_organisatienaam
 - restrictie
-- rs033
+- RS033
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Organisatie_Organisatienaam?
@@ -2381,12 +2389,12 @@ Maximale lengte 15 posities
 
 ## Zoektermen
 - contact
-- jw301
+- JW301
 - lengte
 - maximale
 - posities
 - restrictie
-- rs018
+- RS018
 - telefoon_telefoonnummers
 
 ## Veelgestelde vragen
@@ -2424,9 +2432,9 @@ Aaneengesloten vullen met cijfers.
 - aaneengesloten
 - cijfers
 - contact
-- jw301
+- JW301
 - restrictie
-- rs046
+- RS046
 - telefoon_telefoonnummers
 - vullen
 
@@ -2463,12 +2471,12 @@ Maximale lengte 4 posities
 
 ## Zoektermen
 - contact
-- jw301
+- JW301
 - lengte
 - maximale
 - posities
 - restrictie
-- rs011
+- RS011
 - telefoon_telefoonnummers
 
 ## Veelgestelde vragen
@@ -2506,10 +2514,10 @@ Geen lege elementen in XML.
 - contact
 - elementen
 - geen
-- jw301
+- JW301
 - lege
 - restrictie
-- rs033
+- RS033
 - telefoon_telefoonnummers
 
 ## Veelgestelde vragen
@@ -2545,12 +2553,12 @@ Maximale lengte 15 posities
 
 ## Zoektermen
 - contact
-- jw301
+- JW301
 - lengte
 - maximale
 - posities
 - restrictie
-- rs018
+- RS018
 - telefoon_telefoonnummers
 
 ## Veelgestelde vragen
@@ -2588,9 +2596,9 @@ Aaneengesloten vullen met cijfers.
 - aaneengesloten
 - cijfers
 - contact
-- jw301
+- JW301
 - restrictie
-- rs046
+- RS046
 - telefoon_telefoonnummers
 - vullen
 
@@ -2627,12 +2635,12 @@ Maximale lengte 4 posities
 
 ## Zoektermen
 - contact
-- jw301
+- JW301
 - lengte
 - maximale
 - posities
 - restrictie
-- rs011
+- RS011
 - telefoon_telefoonnummers
 
 ## Veelgestelde vragen
@@ -2670,10 +2678,10 @@ Geen lege elementen in XML.
 - contact
 - elementen
 - geen
-- jw301
+- JW301
 - lege
 - restrictie
-- rs033
+- RS033
 - telefoon_telefoonnummers
 
 ## Veelgestelde vragen
@@ -2708,12 +2716,12 @@ Maximale lengte 80 posities
 ## Zoektermen
 - contact
 - emailadres_emailadres
-- jw301
+- JW301
 - lengte
 - maximale
 - posities
 - restrictie
-- rs026
+- RS026
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Emailadres_Emailadres?
@@ -2749,10 +2757,10 @@ Geen lege elementen in XML.
 - elementen
 - emailadres_emailadres
 - geen
-- jw301
+- JW301
 - lege
 - restrictie
-- rs033
+- RS033
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Emailadres_Emailadres?
@@ -2791,7 +2799,7 @@ Alleen als Soort adres de waarde 04 (tijdelijk adres) heeft, is vullen toegestaa
 - conditie
 - contact
 - heeft
-- jw301
+- JW301
 - periode
 - soort
 - tijdelijk
@@ -2832,10 +2840,10 @@ Datum vullen zonder tijdzone.
 ## Zoektermen
 - contact
 - datum
-- jw301
+- JW301
 - periode_openperiode
 - restrictie
-- rs032
+- RS032
 - tijdzone
 - vullen
 - zonder
@@ -2881,7 +2889,7 @@ Indien van toepassing vullen met een waarde die groter is dan, of gelijk is aan 
 - groter
 - indien
 - ingangsdatum
-- jw301
+- JW301
 - periode
 - periode_openperiode
 - toepassing
@@ -2921,10 +2929,10 @@ Datum vullen zonder tijdzone.
 ## Zoektermen
 - contact
 - datum
-- jw301
+- JW301
 - periode_openperiode
 - restrictie
-- rs032
+- RS032
 - tijdzone
 - vullen
 - zonder
@@ -2962,9 +2970,9 @@ Vullen met 4 cijfers.
 - afzender_gemeente
 - cijfers
 - header
-- jw301
+- JW301
 - restrictie
-- rs035
+- RS035
 - vullen
 
 ## Veelgestelde vragen
@@ -2998,13 +3006,13 @@ Maximale lengte 8 posities
 
 ## Zoektermen
 - header
-- jw301
+- JW301
 - lengte
 - maximale
 - ontvanger_agbcode
 - posities
 - restrictie
-- rs014
+- RS014
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Ontvanger_AgbCode?
@@ -3038,10 +3046,10 @@ Vullen met 8 cijfers.
 ## Zoektermen
 - cijfers
 - header
-- jw301
+- JW301
 - ontvanger_agbcode
 - restrictie
-- rs036
+- RS036
 - vullen
 
 ## Veelgestelde vragen
@@ -3077,12 +3085,12 @@ Maximale lengte 12 posities
 ## Zoektermen
 - berichtidentificatie
 - header
-- jw301
+- JW301
 - lengte
 - maximale
 - posities
 - restrictie
-- rs017
+- RS017
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij BerichtIdentificatie?
@@ -3119,10 +3127,10 @@ Geen lege elementen in XML.
 - elementen
 - geen
 - header
-- jw301
+- JW301
 - lege
 - restrictie
-- rs033
+- RS033
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij BerichtIdentificatie?
@@ -3158,9 +3166,9 @@ Datum vullen zonder tijdzone.
 - berichtidentificatie
 - datum
 - header
-- jw301
+- JW301
 - restrictie
-- rs032
+- RS032
 - tijdzone
 - vullen
 - zonder
@@ -3197,12 +3205,12 @@ Maximale lengte 3 posities
 ## Zoektermen
 - berichtcode
 - header
-- jw301
+- JW301
 - lengte
 - maximale
 - posities
 - restrictie
-- rs010
+- RS010
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij BerichtCode?
@@ -3236,9 +3244,9 @@ Vullen met BerichtCode volgens de specificatie
 ## Zoektermen
 - berichtcode
 - header
-- jw301
+- JW301
 - restrictie
-- rs047
+- RS047
 - specificatie
 - volgens
 - vullen
@@ -3277,7 +3285,7 @@ BerichtVersie vullen met 3.
 - constraint
 - CS025
 - header
-- jw301
+- JW301
 - vullen
 
 ## Veelgestelde vragen
@@ -3312,10 +3320,10 @@ Minimale waarde 0
 ## Zoektermen
 - berichtversie_berichtversie
 - header
-- jw301
+- JW301
 - minimale
 - restrictie
-- rs001
+- RS001
 - waarde
 
 ## Veelgestelde vragen
@@ -3350,10 +3358,10 @@ Maximale waarde 99
 ## Zoektermen
 - berichtversie_berichtversie
 - header
-- jw301
+- JW301
 - maximale
 - restrictie
-- rs002
+- RS002
 - waarde
 
 ## Veelgestelde vragen
@@ -3390,7 +3398,7 @@ BerichtSubversie vullen met 2.
 - constraint
 - CS015
 - header
-- jw301
+- JW301
 - vullen
 
 ## Veelgestelde vragen
@@ -3425,10 +3433,10 @@ Minimale waarde 0
 ## Zoektermen
 - berichtsubversie
 - header
-- jw301
+- JW301
 - minimale
 - restrictie
-- rs001
+- RS001
 - waarde
 
 ## Veelgestelde vragen
@@ -3463,10 +3471,10 @@ Maximale waarde 99
 ## Zoektermen
 - berichtsubversie
 - header
-- jw301
+- JW301
 - maximale
 - restrictie
-- rs002
+- RS002
 - waarde
 
 ## Veelgestelde vragen
@@ -3506,10 +3514,10 @@ Vullen met een versienummer bestaande uit drie gehele getallen, gescheiden met p
 - gescheiden
 - getallen
 - header
-- jw301
+- JW301
 - punten
 - restrictie
-- rs048
+- RS048
 - versienummer
 - vullen
 - xsdversie_xsdversie
@@ -3551,10 +3559,10 @@ Vullen met een versienummer bestaande uit drie gehele getallen, gescheiden met p
 - gescheiden
 - getallen
 - header
-- jw301
+- JW301
 - punten
 - restrictie
-- rs048
+- RS048
 - versienummer
 - vullen
 - xsdversie_xsdversie
@@ -3590,14 +3598,14 @@ Maximale lengte 20 posities
 `JW301.Relatie.Nummer_Persoonsid`
 
 ## Zoektermen
-- jw301
+- JW301
 - lengte
 - maximale
 - nummer_persoonsid
 - posities
 - relatie
 - restrictie
-- rs019
+- RS019
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Nummer_Persoonsid?
@@ -3632,12 +3640,12 @@ Geen lege elementen in XML.
 ## Zoektermen
 - elementen
 - geen
-- jw301
+- JW301
 - lege
 - nummer_persoonsid
 - relatie
 - restrictie
-- rs033
+- RS033
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Nummer_Persoonsid?
@@ -3669,11 +3677,11 @@ Minimale waarde 0
 `JW301.Relatie.Volgorde_RelatieVolgorde`
 
 ## Zoektermen
-- jw301
+- JW301
 - minimale
 - relatie
 - restrictie
-- rs001
+- RS001
 - volgorde_relatievolgorde
 - waarde
 
@@ -3707,11 +3715,11 @@ Maximale waarde 99
 `JW301.Relatie.Volgorde_RelatieVolgorde`
 
 ## Zoektermen
-- jw301
+- JW301
 - maximale
 - relatie
 - restrictie
-- rs002
+- RS002
 - volgorde_relatievolgorde
 - waarde
 
@@ -3746,13 +3754,13 @@ Maximale lengte 2 posities
 `JW301.Relatie.Soort_SoortRelatie`
 
 ## Zoektermen
-- jw301
+- JW301
 - lengte
 - maximale
 - posities
 - relatie
 - restrictie
-- rs009
+- RS009
 - soort_soortrelatie
 
 ## Veelgestelde vragen
@@ -3788,10 +3796,10 @@ Datum vullen zonder tijdzone.
 ## Zoektermen
 - datum
 - geboortedatum
-- jw301
+- JW301
 - relatie
 - restrictie
-- rs032
+- RS032
 - tijdzone
 - vullen
 - zonder
@@ -3808,7 +3816,12 @@ JW301 binnen berichtklasse Relatie.
 
 ---
 
-# Regel CS139 - Geboortedatum
+# Regel CS139 - Voor Geboortedatum geldt dat DatumGebruik en Datum met elkaar in overeenstemming moeten zijn.
+
+## Uitleg
+- Concreet betekent dit dat: Als DatumGebruik de waarde 3 heeft, moet Datum 01-01-1900 zijn;
+- Als DatumGebruik de waarde 2 heeft, moet Datum 01-01-EEJJ zijn;
+- Als DatumGebruik de waarde 1 heeft, moet Datum 01-MM-EEJJ zijn.
 
 ## Metadata
 - Regelcode: CS139
@@ -3835,7 +3848,7 @@ Voor Geboortedatum geldt dat DatumGebruik en Datum met elkaar in overeenstemming
 - elkaar
 - geboortedatum
 - geldt
-- jw301
+- JW301
 - moeten
 - overeenstemming
 - relatie
@@ -3875,13 +3888,13 @@ Maximale lengte 1 positie
 
 ## Zoektermen
 - geboortedatum
-- jw301
+- JW301
 - lengte
 - maximale
 - positie
 - relatie
 - restrictie
-- rs008
+- RS008
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Geboortedatum?
@@ -3915,13 +3928,13 @@ Maximale lengte 1 positie
 
 ## Zoektermen
 - geslacht_geslacht
-- jw301
+- JW301
 - lengte
 - maximale
 - positie
 - relatie
 - restrictie
-- rs008
+- RS008
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Geslacht_Geslacht?
@@ -3955,14 +3968,14 @@ Maximale lengte 200 posities
 `JW301.Relatie.Naam_VolledigeNaam`
 
 ## Zoektermen
-- jw301
+- JW301
 - lengte
 - maximale
 - naam_volledigenaam
 - posities
 - relatie
 - restrictie
-- rs028
+- RS028
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Naam_VolledigeNaam?
@@ -3998,12 +4011,12 @@ Geen lege elementen in XML.
 ## Zoektermen
 - elementen
 - geen
-- jw301
+- JW301
 - lege
 - naam_volledigenaam
 - relatie
 - restrictie
-- rs033
+- RS033
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Naam_VolledigeNaam?
@@ -4037,14 +4050,14 @@ Maximale lengte 10 posities
 `JW301.Relatie.Naam_VolledigeNaam`
 
 ## Zoektermen
-- jw301
+- JW301
 - lengte
 - maximale
 - naam_volledigenaam
 - posities
 - relatie
 - restrictie
-- rs016
+- RS016
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Naam_VolledigeNaam?
@@ -4080,12 +4093,12 @@ Geen lege elementen in XML.
 ## Zoektermen
 - elementen
 - geen
-- jw301
+- JW301
 - lege
 - naam_volledigenaam
 - relatie
 - restrictie
-- rs033
+- RS033
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Naam_VolledigeNaam?
@@ -4119,14 +4132,14 @@ Maximale lengte 200 posities
 `JW301.Relatie.Naam_VolledigeNaam`
 
 ## Zoektermen
-- jw301
+- JW301
 - lengte
 - maximale
 - naam_volledigenaam
 - posities
 - relatie
 - restrictie
-- rs028
+- RS028
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Naam_VolledigeNaam?
@@ -4162,12 +4175,12 @@ Geen lege elementen in XML.
 ## Zoektermen
 - elementen
 - geen
-- jw301
+- JW301
 - lege
 - naam_volledigenaam
 - relatie
 - restrictie
-- rs033
+- RS033
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Naam_VolledigeNaam?
@@ -4201,14 +4214,14 @@ Maximale lengte 10 posities
 `JW301.Relatie.Naam_VolledigeNaam`
 
 ## Zoektermen
-- jw301
+- JW301
 - lengte
 - maximale
 - naam_volledigenaam
 - posities
 - relatie
 - restrictie
-- rs016
+- RS016
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Naam_VolledigeNaam?
@@ -4244,12 +4257,12 @@ Geen lege elementen in XML.
 ## Zoektermen
 - elementen
 - geen
-- jw301
+- JW301
 - lege
 - naam_volledigenaam
 - relatie
 - restrictie
-- rs033
+- RS033
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Naam_VolledigeNaam?
@@ -4282,14 +4295,14 @@ Maximale lengte 200 posities
 `JW301.Relatie.Naam_VolledigeNaam`
 
 ## Zoektermen
-- jw301
+- JW301
 - lengte
 - maximale
 - naam_volledigenaam
 - posities
 - relatie
 - restrictie
-- rs028
+- RS028
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Naam_VolledigeNaam?
@@ -4324,12 +4337,12 @@ Geen lege elementen in XML.
 ## Zoektermen
 - elementen
 - geen
-- jw301
+- JW301
 - lege
 - naam_volledigenaam
 - relatie
 - restrictie
-- rs033
+- RS033
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Naam_VolledigeNaam?
@@ -4362,14 +4375,14 @@ Maximale lengte 6 posities
 `JW301.Relatie.Naam_VolledigeNaam`
 
 ## Zoektermen
-- jw301
+- JW301
 - lengte
 - maximale
 - naam_volledigenaam
 - posities
 - relatie
 - restrictie
-- rs013
+- RS013
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Naam_VolledigeNaam?
@@ -4403,12 +4416,12 @@ Aaneengesloten vullen (zonder punten of spaties).
 
 ## Zoektermen
 - aaneengesloten
-- jw301
+- JW301
 - naam_volledigenaam
 - punten
 - relatie
 - restrictie
-- rs045
+- RS045
 - spaties
 - vullen
 - zonder
@@ -4449,7 +4462,7 @@ Als Partnernaam gevuld is, dan NaamGebruik vullen met waarde 1, 2, 3 of 4. Ander
 - constraint
 - CS050
 - gevuld
-- jw301
+- JW301
 - naam_volledigenaam
 - naamgebruik
 - partnernaam
@@ -4489,14 +4502,14 @@ Maximale lengte 1 positie
 `JW301.Relatie.Naam_VolledigeNaam`
 
 ## Zoektermen
-- jw301
+- JW301
 - lengte
 - maximale
 - naam_volledigenaam
 - positie
 - relatie
 - restrictie
-- rs008
+- RS008
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Naam_VolledigeNaam?
@@ -4529,10 +4542,10 @@ Minimale waarde 0
 `JW301.ToegewezenProduct.ToewijzingNummer_Nummer`
 
 ## Zoektermen
-- jw301
+- JW301
 - minimale
 - restrictie
-- rs001
+- RS001
 - toegewezenproduct
 - toewijzingnummer_nummer
 - waarde
@@ -4569,10 +4582,10 @@ Maximale waarde 999999999 (9*9)
 
 ## Zoektermen
 - 999999999
-- jw301
+- JW301
 - maximale
 - restrictie
-- rs006
+- RS006
 - toegewezenproduct
 - toewijzingnummer_nummer
 - waarde
@@ -4607,13 +4620,13 @@ Maximale lengte 36 posities
 `JW301.ToegewezenProduct.ReferentieAanbieder_Referentie`
 
 ## Zoektermen
-- jw301
+- JW301
 - lengte
 - maximale
 - posities
 - referentieaanbieder_referentie
 - restrictie
-- rs024
+- RS024
 - toegewezenproduct
 
 ## Veelgestelde vragen
@@ -4648,11 +4661,11 @@ Geen lege elementen in XML.
 ## Zoektermen
 - elementen
 - geen
-- jw301
+- JW301
 - lege
 - referentieaanbieder_referentie
 - restrictie
-- rs033
+- RS033
 - toegewezenproduct
 
 ## Veelgestelde vragen
@@ -4690,7 +4703,7 @@ Indien Budget leeg is, dan verplicht vullen
 - CD079
 - conditie
 - indien
-- jw301
+- JW301
 - leeg
 - product
 - toegewezenproduct
@@ -4729,13 +4742,13 @@ Maximale lengte 2 posities
 `JW301.ToegewezenProduct.Product_Product`
 
 ## Zoektermen
-- jw301
+- JW301
 - lengte
 - maximale
 - posities
 - product_product
 - restrictie
-- rs009
+- RS009
 - toegewezenproduct
 
 ## Veelgestelde vragen
@@ -4769,13 +4782,13 @@ Maximale lengte 5 posities
 `JW301.ToegewezenProduct.Product_Product`
 
 ## Zoektermen
-- jw301
+- JW301
 - lengte
 - maximale
 - posities
 - product_product
 - restrictie
-- rs012
+- RS012
 - toegewezenproduct
 
 ## Veelgestelde vragen
@@ -4811,11 +4824,11 @@ Geen lege elementen in XML.
 ## Zoektermen
 - elementen
 - geen
-- jw301
+- JW301
 - lege
 - product_product
 - restrictie
-- rs033
+- RS033
 - toegewezenproduct
 
 ## Veelgestelde vragen
@@ -4849,9 +4862,9 @@ Datum vullen zonder tijdzone.
 
 ## Zoektermen
 - datum
-- jw301
+- JW301
 - restrictie
-- rs032
+- RS032
 - tijdzone
 - toegewezenproduct
 - toewijzingsdatum_datum
@@ -4859,8 +4872,6 @@ Datum vullen zonder tijdzone.
 - zonder
 
 ## Veelgestelde vragen
-### Welke regel hoort bij Toewijzingsdatum_Datum?
-Dit is regel RS032.
 
 ### Wat zegt regel RS032?
 Datum vullen zonder tijdzone.
@@ -4870,7 +4881,10 @@ JW301 binnen berichtklasse ToegewezenProduct.
 
 ---
 
-# Regel RS034 - Toewijzingstijd_Tijd
+# Regel RS034 - Toewijzingstijd vullen zonder tijdzone
+
+## Uitleg
+Bij datatypen van het type time is het niet toegestaan om een tijdzone mee te geven. Alleen HH:MM:SS (en optioneel miliseconden .mmm) is toegestaan Bijvoorbeeld: 13:59:41 of 13.59.41.123 is toegestaan, 13.59.41+1 is niet toegestaan
 
 ## Metadata
 - Regelcode: RS034
@@ -4888,9 +4902,9 @@ Tijd vullen zonder tijdszone.
 `JW301.ToegewezenProduct.Toewijzingstijd_Tijd`
 
 ## Zoektermen
-- jw301
+- JW301
 - restrictie
-- rs034
+- RS034
 - tijd
 - tijdszone
 - toegewezenproduct
@@ -4910,7 +4924,10 @@ JW301 binnen berichtklasse ToegewezenProduct.
 
 ---
 
-# Regel RS032 - Ingangsdatum_Datum
+# Regel RS032 - Ingangsdatum_Datum zonder tijdzone
+
+## Uitleg
+Bij datatypen van het type date is het niet toegestaan een Tijdszone mee te geven. Bijvoorbeeld: 2026-08-30 is goed 2026-08-30Z is niet goed
 
 ## Metadata
 - Regelcode: RS032
@@ -4930,17 +4947,15 @@ Datum vullen zonder tijdzone.
 ## Zoektermen
 - datum
 - ingangsdatum_datum
-- jw301
+- JW301
 - restrictie
-- rs032
+- RS032
 - tijdzone
 - toegewezenproduct
 - vullen
 - zonder
 
 ## Veelgestelde vragen
-### Welke regel hoort bij Ingangsdatum_Datum?
-Dit is regel RS032.
 
 ### Wat zegt regel RS032?
 Datum vullen zonder tijdzone.
@@ -4975,7 +4990,7 @@ Verplicht vullen indien Budget gevuld is
 - einddatum
 - gevuld
 - indien
-- jw301
+- JW301
 - toegewezenproduct
 - verplicht
 - vullen
@@ -4992,7 +5007,10 @@ JW301 binnen berichtklasse ToegewezenProduct.
 
 ---
 
-# Regel CD076 - Einddatum
+# Regel CD076 - Verplicht vullen indien Frequentie waarde 2 (per week)
+
+## Regel
+Verplicht vullen indien Frequentie waarde 2 (per week)
 
 ## Metadata
 - Regelcode: CD076
@@ -5004,8 +5022,10 @@ JW301 binnen berichtklasse ToegewezenProduct.
 - Domein: Jeugdwet
 - Release: iJw 3.2.0
 
-## Regel
-Verplicht vullen indien Frequentie waarde 2 (per week)
+## Uitleg
+
+Om te kunnen berekenen of bij declaratie een prestatie binnen de totale omvang van de toewijzing valt is het van belang de einddatum van de toewijzing te hebben. Dit heeft dus te maken
+met de omrekening van wekelijks toewijzen naar maandelijks declareren en de controle op volume van de declaraties ten opzichte van de toewijzing.
 
 ## Technisch pad
 `JW301.ToegewezenProduct.Einddatum`
@@ -5016,7 +5036,7 @@ Verplicht vullen indien Frequentie waarde 2 (per week)
 - einddatum
 - frequentie
 - indien
-- jw301
+- JW301
 - toegewezenproduct
 - verplicht
 - vullen
@@ -5063,7 +5083,7 @@ Indien van toepassing vullen met een waarde die groter is dan, of gelijk is aan 
 - groter
 - indien
 - ingangsdatum
-- jw301
+- JW301
 - periode
 - toegewezenproduct
 - toepassing
@@ -5082,7 +5102,10 @@ JW301 binnen berichtklasse ToegewezenProduct.
 
 ---
 
-# Regel RS032 - Einddatum_Datum
+# Regel RS032 - Einddatum_Datum zonder tijdzone
+
+## Uitleg 
+Bij datatypen van het type date is het niet toegestaan een Tijdszone mee te geven. Bijvoorbeeld: 2026-08-30 is goed 2026-08-30Z is niet goed
 
 ## Metadata
 - Regelcode: RS032
@@ -5102,9 +5125,9 @@ Datum vullen zonder tijdzone.
 ## Zoektermen
 - datum
 - einddatum_datum
-- jw301
+- JW301
 - restrictie
-- rs032
+- RS032
 - tijdzone
 - toegewezenproduct
 - vullen
@@ -5149,7 +5172,7 @@ RedenWijziging 13 (verwijderd) mag alleen gebruikt worden indien de ingangsdatum
 - gelijk
 - indien
 - ingangsdatum
-- jw301
+- JW301
 - redenwijziging
 - toegewezenproduct
 - verwijderd
@@ -5191,7 +5214,7 @@ JW301 binnen berichtklasse ToegewezenProduct.
 - correctie
 - cs336
 - gebruiken
-- jw301
+- JW301
 - niet
 - redenwijziging
 - toegewezenproduct
@@ -5228,13 +5251,13 @@ Maximale lengte 2 posities
 `JW301.ToegewezenProduct.RedenWijziging_RedenWijziging`
 
 ## Zoektermen
-- jw301
+- JW301
 - lengte
 - maximale
 - posities
 - redenwijziging_redenwijziging
 - restrictie
-- rs009
+- RS009
 - toegewezenproduct
 
 ## Veelgestelde vragen
@@ -5273,7 +5296,7 @@ Indien Code in Product gevuld is, verplicht vullen.
 - conditie
 - gevuld
 - indien
-- jw301
+- JW301
 - omvang
 - product
 - toegewezenproduct
@@ -5316,7 +5339,7 @@ Indien Budget gevuld is, dan leeg laten
 - conditie
 - gevuld
 - indien
-- jw301
+- JW301
 - laten
 - leeg
 - omvang
@@ -5360,7 +5383,7 @@ Indien Code in Product leeg is en Einddatum van het ToegewezenProduct groter dan
 - einddatum
 - groter
 - indien
-- jw301
+- JW301
 - laten
 - leeg
 - omvang
@@ -5408,7 +5431,7 @@ Indien eenheid de waarde 14, 16, 83 of 84 heeft en Einddatum groter dan 31-12-20
 - groter
 - heeft
 - indien
-- jw301
+- JW301
 - leeg
 - omvang
 - toegewezenproduct
@@ -5456,7 +5479,7 @@ Indien eenheid de waarde 14, 16, 83 of 84 heeft en Einddatum groter dan 31-12-20
 - groter
 - heeft
 - indien
-- jw301
+- JW301
 - leeg
 - omvang
 - toegewezenproduct
@@ -5504,7 +5527,7 @@ Indien eenheid de waarde 14, 16, 83 of 84 heeft en Einddatum groter dan 31-12-20
 - groter
 - heeft
 - indien
-- jw301
+- JW301
 - leeg
 - omvang
 - toegewezenproduct
@@ -5542,11 +5565,11 @@ Minimale waarde 0
 `JW301.ToegewezenProduct.Omvang`
 
 ## Zoektermen
-- jw301
+- JW301
 - minimale
 - omvang
 - restrictie
-- rs001
+- RS001
 - toegewezenproduct
 - waarde
 
@@ -5582,11 +5605,11 @@ Maximale waarde 99999999 (8*9)
 
 ## Zoektermen
 - 99999999
-- jw301
+- JW301
 - maximale
 - omvang
 - restrictie
-- rs005
+- RS005
 - toegewezenproduct
 - waarde
 
@@ -5622,13 +5645,13 @@ Maximale lengte 2 posities
 `JW301.ToegewezenProduct.Omvang`
 
 ## Zoektermen
-- jw301
+- JW301
 - lengte
 - maximale
 - omvang
 - posities
 - restrictie
-- rs009
+- RS009
 - toegewezenproduct
 
 ## Veelgestelde vragen
@@ -5663,13 +5686,13 @@ Maximale lengte 1 positie
 `JW301.ToegewezenProduct.Omvang`
 
 ## Zoektermen
-- jw301
+- JW301
 - lengte
 - maximale
 - omvang
 - positie
 - restrictie
-- rs008
+- RS008
 - toegewezenproduct
 
 ## Veelgestelde vragen
@@ -5704,11 +5727,11 @@ Commentaarvelden niet leeg.
 ## Zoektermen
 - commentaar
 - commentaarvelden
-- jw301
+- JW301
 - leeg
 - niet
 - restrictie
-- rs031
+- RS031
 - toegewezenproduct
 
 ## Veelgestelde vragen
@@ -5747,7 +5770,7 @@ Indien Omvang gevuld is, dan leeg laten
 - conditie
 - gevuld
 - indien
-- jw301
+- JW301
 - laten
 - leeg
 - omvang
@@ -5784,10 +5807,10 @@ Minimale waarde 0
 
 ## Zoektermen
 - budget
-- jw301
+- JW301
 - minimale
 - restrictie
-- rs001
+- RS001
 - toegewezenproduct
 - waarde
 
@@ -5823,10 +5846,10 @@ Maximale waarde 99999999 (8*9)
 ## Zoektermen
 - 99999999
 - budget
-- jw301
+- JW301
 - maximale
 - restrictie
-- rs005
+- RS005
 - toegewezenproduct
 - waarde
 
@@ -5910,7 +5933,7 @@ Maximale lengte 9 posities
 - maximale
 - posities
 - restrictie
-- rs015
+- RS015
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Bsn.LDT_BurgerServicenummer?
@@ -5948,7 +5971,7 @@ Vullen met 9 cijfers.
 - client
 - JW305
 - restrictie
-- rs037
+- RS037
 - vullen
 
 ## Veelgestelde vragen
@@ -5963,7 +5986,10 @@ JW305 binnen berichtklasse Client.
 
 ---
 
-# Regel RS032 - Geboortedatum
+# Regel RS032 - Geboortedatum zonder tijdzone
+
+## Uitleg
+Bij datatypen van het type date is het niet toegestaan een Tijdszone mee te geven. Bijvoorbeeld: 2026-08-30 is goed 2026-08-30Z is niet goed
 
 ## Metadata
 - Regelcode: RS032
@@ -5987,7 +6013,7 @@ Datum vullen zonder tijdzone.
 - geboortedatum
 - JW305
 - restrictie
-- rs032
+- RS032
 - tijdzone
 - vullen
 - zonder
@@ -6077,7 +6103,7 @@ Maximale lengte 1 positie
 - maximale
 - positie
 - restrictie
-- rs008
+- RS008
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Geboortedatum?
@@ -6117,7 +6143,7 @@ Maximale lengte 1 positie
 - maximale
 - positie
 - restrictie
-- rs008
+- RS008
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Geslacht_Geslacht?
@@ -6158,7 +6184,7 @@ Maximale lengte 200 posities
 - naam_verkortenaam
 - posities
 - restrictie
-- rs028
+- RS028
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Naam_VerkorteNaam?
@@ -6199,7 +6225,7 @@ Geen lege elementen in XML.
 - lege
 - naam_verkortenaam
 - restrictie
-- rs033
+- RS033
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Naam_VerkorteNaam?
@@ -6240,7 +6266,7 @@ Maximale lengte 10 posities
 - naam_verkortenaam
 - posities
 - restrictie
-- rs016
+- RS016
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Naam_VerkorteNaam?
@@ -6281,7 +6307,7 @@ Geen lege elementen in XML.
 - lege
 - naam_verkortenaam
 - restrictie
-- rs033
+- RS033
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Naam_VerkorteNaam?
@@ -6321,7 +6347,7 @@ Maximale lengte 200 posities
 - naam_verkortenaam
 - posities
 - restrictie
-- rs028
+- RS028
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Naam_VerkorteNaam?
@@ -6361,7 +6387,7 @@ Geen lege elementen in XML.
 - lege
 - naam_verkortenaam
 - restrictie
-- rs033
+- RS033
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Naam_VerkorteNaam?
@@ -6401,7 +6427,7 @@ Maximale lengte 6 posities
 - naam_verkortenaam
 - posities
 - restrictie
-- rs013
+- RS013
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Naam_VerkorteNaam?
@@ -6440,7 +6466,7 @@ Aaneengesloten vullen (zonder punten of spaties).
 - naam_verkortenaam
 - punten
 - restrictie
-- rs045
+- RS045
 - spaties
 - vullen
 - zonder
@@ -6482,7 +6508,7 @@ Maximale lengte 8 posities
 - maximale
 - posities
 - restrictie
-- rs014
+- RS014
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Afzender_AgbCode?
@@ -6519,7 +6545,7 @@ Vullen met 8 cijfers.
 - header
 - JW305
 - restrictie
-- rs036
+- RS036
 - vullen
 
 ## Veelgestelde vragen
@@ -6557,7 +6583,7 @@ Vullen met 4 cijfers.
 - JW305
 - ontvanger_gemeente
 - restrictie
-- rs035
+- RS035
 - vullen
 
 ## Veelgestelde vragen
@@ -6598,7 +6624,7 @@ Maximale lengte 12 posities
 - maximale
 - posities
 - restrictie
-- rs017
+- RS017
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij BerichtIdentificatie?
@@ -6638,7 +6664,7 @@ Geen lege elementen in XML.
 - JW305
 - lege
 - restrictie
-- rs033
+- RS033
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij BerichtIdentificatie?
@@ -6676,7 +6702,7 @@ Datum vullen zonder tijdzone.
 - header
 - JW305
 - restrictie
-- rs032
+- RS032
 - tijdzone
 - vullen
 - zonder
@@ -6718,7 +6744,7 @@ Maximale lengte 3 posities
 - maximale
 - posities
 - restrictie
-- rs010
+- RS010
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij BerichtCode?
@@ -6754,7 +6780,7 @@ Vullen met BerichtCode volgens de specificatie
 - header
 - JW305
 - restrictie
-- rs047
+- RS047
 - specificatie
 - volgens
 - vullen
@@ -6831,7 +6857,7 @@ Minimale waarde 0
 - JW305
 - minimale
 - restrictie
-- rs001
+- RS001
 - waarde
 
 ## Veelgestelde vragen
@@ -6869,7 +6895,7 @@ Maximale waarde 99
 - JW305
 - maximale
 - restrictie
-- rs002
+- RS002
 - waarde
 
 ## Veelgestelde vragen
@@ -6944,7 +6970,7 @@ Minimale waarde 0
 - JW305
 - minimale
 - restrictie
-- rs001
+- RS001
 - waarde
 
 ## Veelgestelde vragen
@@ -6982,7 +7008,7 @@ Maximale waarde 99
 - JW305
 - maximale
 - restrictie
-- rs002
+- RS002
 - waarde
 
 ## Veelgestelde vragen
@@ -7025,7 +7051,7 @@ Vullen met een versienummer bestaande uit drie gehele getallen, gescheiden met p
 - JW305
 - punten
 - restrictie
-- rs048
+- RS048
 - versienummer
 - vullen
 - xsdversie_xsdversie
@@ -7070,7 +7096,7 @@ Vullen met een versienummer bestaande uit drie gehele getallen, gescheiden met p
 - JW305
 - punten
 - restrictie
-- rs048
+- RS048
 - versienummer
 - vullen
 - xsdversie_xsdversie
@@ -7109,7 +7135,7 @@ Minimale waarde 0
 - JW305
 - minimale
 - restrictie
-- rs001
+- RS001
 - startproduct
 - toewijzingnummer_nummer
 - waarde
@@ -7149,7 +7175,7 @@ Maximale waarde 999999999 (9*9)
 - JW305
 - maximale
 - restrictie
-- rs006
+- RS006
 - startproduct
 - toewijzingnummer_nummer
 - waarde
@@ -7193,7 +7219,7 @@ Maximale lengte 2 posities
 - posities
 - product_product
 - restrictie
-- rs009
+- RS009
 - startproduct
 
 ## Veelgestelde vragen
@@ -7234,7 +7260,7 @@ Maximale lengte 5 posities
 - posities
 - product_product
 - restrictie
-- rs012
+- RS012
 - startproduct
 
 ## Veelgestelde vragen
@@ -7275,7 +7301,7 @@ Geen lege elementen in XML.
 - lege
 - product_product
 - restrictie
-- rs033
+- RS033
 - startproduct
 
 ## Veelgestelde vragen
@@ -7311,7 +7337,7 @@ Datum vullen zonder tijdzone.
 - datum
 - JW305
 - restrictie
-- rs032
+- RS032
 - startproduct
 - tijdzone
 - toewijzingingangsdatum_datum
@@ -7353,7 +7379,7 @@ Datum vullen zonder tijdzone.
 - datum
 - JW305
 - restrictie
-- rs032
+- RS032
 - startproduct
 - tijdzone
 - vullen
@@ -7438,7 +7464,7 @@ Maximale lengte 1 positie
 - maximale
 - positie
 - restrictie
-- rs008
+- RS008
 - startproduct
 - statusaanlevering
 
@@ -7522,7 +7548,7 @@ Maximale lengte 9 posities
 - maximale
 - posities
 - restrictie
-- rs015
+- RS015
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Bsn.LDT_BurgerServicenummer?
@@ -7560,7 +7586,7 @@ Vullen met 9 cijfers.
 - client
 - JW307
 - restrictie
-- rs037
+- RS037
 - vullen
 
 ## Veelgestelde vragen
@@ -7599,7 +7625,7 @@ Datum vullen zonder tijdzone.
 - geboortedatum
 - JW307
 - restrictie
-- rs032
+- RS032
 - tijdzone
 - vullen
 - zonder
@@ -7689,7 +7715,7 @@ Maximale lengte 1 positie
 - maximale
 - positie
 - restrictie
-- rs008
+- RS008
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Geboortedatum?
@@ -7729,7 +7755,7 @@ Maximale lengte 1 positie
 - maximale
 - positie
 - restrictie
-- rs008
+- RS008
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Geslacht?
@@ -7770,7 +7796,7 @@ Maximale lengte 200 posities
 - naam_verkortenaam
 - posities
 - restrictie
-- rs028
+- RS028
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Naam_VerkorteNaam?
@@ -7811,7 +7837,7 @@ Geen lege elementen in XML.
 - lege
 - naam_verkortenaam
 - restrictie
-- rs033
+- RS033
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Naam_VerkorteNaam?
@@ -7852,7 +7878,7 @@ Maximale lengte 10 posities
 - naam_verkortenaam
 - posities
 - restrictie
-- rs016
+- RS016
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Naam_VerkorteNaam?
@@ -7893,7 +7919,7 @@ Geen lege elementen in XML.
 - lege
 - naam_verkortenaam
 - restrictie
-- rs033
+- RS033
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Naam_VerkorteNaam?
@@ -7933,7 +7959,7 @@ Maximale lengte 200 posities
 - naam_verkortenaam
 - posities
 - restrictie
-- rs028
+- RS028
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Naam_VerkorteNaam?
@@ -7973,7 +7999,7 @@ Geen lege elementen in XML.
 - lege
 - naam_verkortenaam
 - restrictie
-- rs033
+- RS033
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Naam_VerkorteNaam?
@@ -8013,7 +8039,7 @@ Maximale lengte 6 posities
 - naam_verkortenaam
 - posities
 - restrictie
-- rs013
+- RS013
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Naam_VerkorteNaam?
@@ -8052,7 +8078,7 @@ Aaneengesloten vullen (zonder punten of spaties).
 - naam_verkortenaam
 - punten
 - restrictie
-- rs045
+- RS045
 - spaties
 - vullen
 - zonder
@@ -8094,7 +8120,7 @@ Maximale lengte 8 posities
 - maximale
 - posities
 - restrictie
-- rs014
+- RS014
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Afzender_AgbCode?
@@ -8131,7 +8157,7 @@ Vullen met 8 cijfers.
 - header
 - JW307
 - restrictie
-- rs036
+- RS036
 - vullen
 
 ## Veelgestelde vragen
@@ -8169,7 +8195,7 @@ Vullen met 4 cijfers.
 - JW307
 - ontvanger_gemeente
 - restrictie
-- rs035
+- RS035
 - vullen
 
 ## Veelgestelde vragen
@@ -8210,7 +8236,7 @@ Maximale lengte 12 posities
 - maximale
 - posities
 - restrictie
-- rs017
+- RS017
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij BerichtIdentificatie?
@@ -8250,7 +8276,7 @@ Geen lege elementen in XML.
 - JW307
 - lege
 - restrictie
-- rs033
+- RS033
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij BerichtIdentificatie?
@@ -8288,7 +8314,7 @@ Datum vullen zonder tijdzone.
 - header
 - JW307
 - restrictie
-- rs032
+- RS032
 - tijdzone
 - vullen
 - zonder
@@ -8330,7 +8356,7 @@ Maximale lengte 3 posities
 - maximale
 - posities
 - restrictie
-- rs010
+- RS010
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij BerichtCode?
@@ -8366,7 +8392,7 @@ Vullen met BerichtCode volgens de specificatie
 - header
 - JW307
 - restrictie
-- rs047
+- RS047
 - specificatie
 - volgens
 - vullen
@@ -8443,7 +8469,7 @@ Minimale waarde 0
 - JW307
 - minimale
 - restrictie
-- rs001
+- RS001
 - waarde
 
 ## Veelgestelde vragen
@@ -8481,7 +8507,7 @@ Maximale waarde 99
 - JW307
 - maximale
 - restrictie
-- rs002
+- RS002
 - waarde
 
 ## Veelgestelde vragen
@@ -8556,7 +8582,7 @@ Minimale waarde 0
 - JW307
 - minimale
 - restrictie
-- rs001
+- RS001
 - waarde
 
 ## Veelgestelde vragen
@@ -8594,7 +8620,7 @@ Maximale waarde 99
 - JW307
 - maximale
 - restrictie
-- rs002
+- RS002
 - waarde
 
 ## Veelgestelde vragen
@@ -8637,7 +8663,7 @@ Vullen met een versienummer bestaande uit drie gehele getallen, gescheiden met p
 - JW307
 - punten
 - restrictie
-- rs048
+- RS048
 - versienummer
 - vullen
 - xsdversie
@@ -8682,7 +8708,7 @@ Vullen met een versienummer bestaande uit drie gehele getallen, gescheiden met p
 - JW307
 - punten
 - restrictie
-- rs048
+- RS048
 - versienummer
 - vullen
 - xsdversie_xsdversie
@@ -8721,7 +8747,7 @@ Minimale waarde 0
 - JW307
 - minimale
 - restrictie
-- rs001
+- RS001
 - stopproduct
 - toewijzingnummer_nummer
 - waarde
@@ -8761,7 +8787,7 @@ Maximale waarde 999999999 (9*9)
 - JW307
 - maximale
 - restrictie
-- rs006
+- RS006
 - stopproduct
 - toewijzingnummer_nummer
 - waarde
@@ -8805,7 +8831,7 @@ Maximale lengte 2 posities
 - posities
 - product_product
 - restrictie
-- rs009
+- RS009
 - stopproduct
 
 ## Veelgestelde vragen
@@ -8846,7 +8872,7 @@ Maximale lengte 5 posities
 - posities
 - product_product
 - restrictie
-- rs012
+- RS012
 - stopproduct
 
 ## Veelgestelde vragen
@@ -8887,7 +8913,7 @@ Geen lege elementen in XML.
 - lege
 - product_product
 - restrictie
-- rs033
+- RS033
 - stopproduct
 
 ## Veelgestelde vragen
@@ -8923,7 +8949,7 @@ Datum vullen zonder tijdzone.
 - datum
 - JW307
 - restrictie
-- rs032
+- RS032
 - stopproduct
 - tijdzone
 - toewijzingingangsdatum_datum
@@ -8965,7 +8991,7 @@ Datum vullen zonder tijdzone.
 - datum
 - JW307
 - restrictie
-- rs032
+- RS032
 - stopproduct
 - tijdzone
 - vullen
@@ -9048,7 +9074,7 @@ Maximale lengte 1 positie
 - maximale
 - positie
 - restrictie
-- rs008
+- RS008
 - statusaanlevering
 - stopproduct
 
@@ -9090,7 +9116,7 @@ Maximale lengte 2 posities
 - posities
 - redenbeeindiging_redenbeeindiging
 - restrictie
-- rs009
+- RS009
 - stopproduct
 
 ## Veelgestelde vragen
@@ -9128,7 +9154,7 @@ Datum vullen zonder tijdzone.
 - einddatum_datum
 - JW307
 - restrictie
-- rs032
+- RS032
 - stopproduct
 - tijdzone
 - vullen
@@ -9166,10 +9192,10 @@ Minimale waarde 0
 ## Zoektermen
 - aangevraagdproduct
 - beschikkingnummer_nummer
-- jw315
+- JW315
 - minimale
 - restrictie
-- rs001
+- RS001
 - waarde
 
 ## Veelgestelde vragen
@@ -9205,10 +9231,10 @@ Maximale waarde 999999999 (9*9)
 - 999999999
 - aangevraagdproduct
 - beschikkingnummer_nummer
-- jw315
+- JW315
 - maximale
 - restrictie
-- rs006
+- RS006
 - waarde
 
 ## Veelgestelde vragen
@@ -9247,7 +9273,7 @@ Indien Budget leeg is, dan verplicht vullen
 - CD079
 - conditie
 - indien
-- jw315
+- JW315
 - leeg
 - product
 - verplicht
@@ -9286,13 +9312,13 @@ Maximale lengte 2 posities
 
 ## Zoektermen
 - aangevraagdproduct
-- jw315
+- JW315
 - lengte
 - maximale
 - posities
 - product_product
 - restrictie
-- rs009
+- RS009
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Product_Product?
@@ -9326,13 +9352,13 @@ Maximale lengte 5 posities
 
 ## Zoektermen
 - aangevraagdproduct
-- jw315
+- JW315
 - lengte
 - maximale
 - posities
 - product_product
 - restrictie
-- rs012
+- RS012
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Product_Product?
@@ -9368,11 +9394,11 @@ Geen lege elementen in XML.
 - aangevraagdproduct
 - elementen
 - geen
-- jw315
+- JW315
 - lege
 - product_product
 - restrictie
-- rs033
+- RS033
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Product_Product?
@@ -9406,9 +9432,9 @@ Datum vullen zonder tijdzone.
 ## Zoektermen
 - aangevraagdproduct
 - datum
-- jw315
+- JW315
 - restrictie
-- rs032
+- RS032
 - tijdzone
 - toewijzingingangsdatum_datum
 - vullen
@@ -9451,7 +9477,7 @@ Verplicht vullen indien Budget gevuld is
 - conditie
 - gevuld
 - indien
-- jw315
+- JW315
 - toewijzingeinddatum
 - verplicht
 - vullen
@@ -9492,7 +9518,7 @@ Verplicht vullen indien Frequentie waarde 2 (per week)
 - conditie
 - frequentie
 - indien
-- jw315
+- JW315
 - toewijzingeinddatum
 - verplicht
 - vullen
@@ -9539,7 +9565,7 @@ Indien van toepassing vullen met een waarde die groter is dan, of gelijk is aan 
 - groter
 - indien
 - ingangsdatum
-- jw315
+- JW315
 - periode
 - toepassing
 - toewijzingeinddatum
@@ -9578,9 +9604,9 @@ Datum vullen zonder tijdzone.
 ## Zoektermen
 - aangevraagdproduct
 - datum
-- jw315
+- JW315
 - restrictie
-- rs032
+- RS032
 - tijdzone
 - toewijzingeinddatum_datum
 - vullen
@@ -9623,7 +9649,7 @@ Indien Code in Product gevuld is, verplicht vullen.
 - conditie
 - gevuld
 - indien
-- jw315
+- JW315
 - omvang
 - product
 - verplicht
@@ -9666,7 +9692,7 @@ Indien Budget gevuld is, dan leeg laten
 - conditie
 - gevuld
 - indien
-- jw315
+- JW315
 - laten
 - leeg
 - omvang
@@ -9709,7 +9735,7 @@ Indien Code in AangevraagdProduct leeg is en ToewijzingEinddatum van het Aangevr
 - conditie
 - groter
 - indien
-- jw315
+- JW315
 - laten
 - leeg
 - omvang
@@ -9727,7 +9753,10 @@ JW315 binnen berichtklasse AangevraagdProduct.
 
 ---
 
-# Regel CS343 - Omvang
+# Regel CS343 - Indien eenheid de waarde 14, 16, 83 of 84 heeft en ToewijzingEinddatum is groter dan 31-12-2020 of leeg, dan Frequentie vullen met waarde 2, 4 of 6
+
+## Uitleg
+Indien eenheid de waarde 14 (etmaal), 16 (dagdeel), 83 (euro’s) of 84 (stuks (inspanning)) heeft en ToewijzingEinddatum > 31-12-2020 of leeg is, dan Frequentie vullen met de waarde 2 (Per week), 4 (Per maand) of 6 (Totaal binnen geldigheidsduur toewijzing)RR
 
 ## Metadata
 - Regelcode: CS343
@@ -9755,7 +9784,7 @@ Indien eenheid de waarde 14, 16, 83 of 84 heeft en ToewijzingEinddatum is groter
 - groter
 - heeft
 - indien
-- jw315
+- JW315
 - leeg
 - omvang
 - toewijzingeinddatum
@@ -9794,11 +9823,11 @@ Minimale waarde 0
 
 ## Zoektermen
 - aangevraagdproduct
-- jw315
+- JW315
 - minimale
 - omvang
 - restrictie
-- rs001
+- RS001
 - waarde
 
 ## Veelgestelde vragen
@@ -9834,11 +9863,11 @@ Maximale waarde 99999999 (8*9)
 ## Zoektermen
 - 99999999
 - aangevraagdproduct
-- jw315
+- JW315
 - maximale
 - omvang
 - restrictie
-- rs005
+- RS005
 - waarde
 
 ## Veelgestelde vragen
@@ -9874,13 +9903,13 @@ Maximale lengte 2 posities
 
 ## Zoektermen
 - aangevraagdproduct
-- jw315
+- JW315
 - lengte
 - maximale
 - omvang
 - posities
 - restrictie
-- rs009
+- RS009
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Omvang?
@@ -9915,13 +9944,13 @@ Maximale lengte 1 positie
 
 ## Zoektermen
 - aangevraagdproduct
-- jw315
+- JW315
 - lengte
 - maximale
 - omvang
 - positie
 - restrictie
-- rs008
+- RS008
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Omvang?
@@ -9955,13 +9984,13 @@ Maximale lengte 36 posities
 
 ## Zoektermen
 - aangevraagdproduct
-- jw315
+- JW315
 - lengte
 - maximale
 - posities
 - referentieaanbieder
 - restrictie
-- rs024
+- RS024
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij ReferentieAanbieder?
@@ -9997,11 +10026,11 @@ Geen lege elementen in XML.
 - aangevraagdproduct
 - elementen
 - geen
-- jw315
+- JW315
 - lege
 - referentieaanbieder
 - restrictie
-- rs033
+- RS033
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij ReferentieAanbieder?
@@ -10042,7 +10071,7 @@ Indien Beschikkingnummer gevuld is, verplicht vullen, anders leeg laten.
 - conditie
 - gevuld
 - indien
-- jw315
+- JW315
 - laten
 - leeg
 - verplicht
@@ -10081,9 +10110,9 @@ Datum vullen zonder tijdzone.
 - aangevraagdproduct
 - beschikkingingangsdatum
 - datum
-- jw315
+- JW315
 - restrictie
-- rs032
+- RS032
 - tijdzone
 - vullen
 - zonder
@@ -10121,12 +10150,12 @@ Maximale lengte 2 posities
 
 ## Zoektermen
 - aangevraagdproduct
-- jw315
+- JW315
 - lengte
 - maximale
 - posities
 - restrictie
-- rs009
+- RS009
 - verwijzer_verwijzer
 
 ## Veelgestelde vragen
@@ -10166,7 +10195,7 @@ Als type verwijzer gelijk is aan 02, 03, 04 of 05 en ZorgverlenerCode is gevuld,
 - conditie
 - gelijk
 - gevuld
-- jw315
+- JW315
 - leeg
 - naamverwijzer
 - type
@@ -10211,7 +10240,7 @@ Als type verwijzer gelijk is aan 02, 03, 04 of 05 en ZorgverlenerCode is leeg, d
 - conditie
 - gelijk
 - gevuld
-- jw315
+- JW315
 - leeg
 - naamverwijzer
 - type
@@ -10251,12 +10280,12 @@ Maximale lengte 64 posities
 
 ## Zoektermen
 - aangevraagdproduct
-- jw315
+- JW315
 - lengte
 - maximale
 - posities
 - restrictie
-- rs025
+- RS025
 - verwijzer_verwijzer
 
 ## Veelgestelde vragen
@@ -10293,10 +10322,10 @@ Geen lege elementen in XML.
 - aangevraagdproduct
 - elementen
 - geen
-- jw315
+- JW315
 - lege
 - restrictie
-- rs033
+- RS033
 - verwijzer_verwijzer
 
 ## Veelgestelde vragen
@@ -10334,7 +10363,7 @@ Als type verwijzer ongelijk is aan 02, 03, 04 of 05, dan is ZorgverlenerCode lee
 - aangevraagdproduct
 - CD068
 - conditie
-- jw315
+- JW315
 - leeg
 - ongelijk
 - type
@@ -10374,12 +10403,12 @@ Maximale lengte 8 posities
 
 ## Zoektermen
 - aangevraagdproduct
-- jw315
+- JW315
 - lengte
 - maximale
 - posities
 - restrictie
-- rs014
+- RS014
 - verwijzer_verwijzer
 
 ## Veelgestelde vragen
@@ -10415,9 +10444,9 @@ Vullen met 8 cijfers.
 ## Zoektermen
 - aangevraagdproduct
 - cijfers
-- jw315
+- JW315
 - restrictie
-- rs036
+- RS036
 - verwijzer_verwijzer
 - vullen
 
@@ -10453,13 +10482,13 @@ Maximale lengte 1 positie
 
 ## Zoektermen
 - aangevraagdproduct
-- jw315
+- JW315
 - lengte
 - maximale
 - positie
 - raamcontract_janee
 - restrictie
-- rs008
+- RS008
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Raamcontract_JaNee?
@@ -10473,7 +10502,11 @@ JW315 binnen berichtklasse AangevraagdProduct.
 
 ---
 
-# Regel RS031 - Commentaar_Commentaar
+# Regel RS031 - Commentaar niet leeg
+
+## Uitleg
+Ten behoeve van het uitsluiten van empty elements in het xml-bericht.
+Bij optionele elementen van het type string is het in xml toegestaan om het element leeg op te nemen in een bericht. Doormiddel van het pattern is dit niet meer toegestaan en moet er altijd vulling zijn anders dan spaties.
 
 ## Metadata
 - Regelcode: RS031
@@ -10494,11 +10527,11 @@ Commentaarvelden niet leeg.
 - aangevraagdproduct
 - commentaar_commentaar
 - commentaarvelden
-- jw315
+- JW315
 - leeg
 - niet
 - restrictie
-- rs031
+- RS031
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Commentaar_Commentaar?
@@ -10537,7 +10570,7 @@ Indien Omvang gevuld is, dan leeg laten
 - conditie
 - gevuld
 - indien
-- jw315
+- JW315
 - laten
 - leeg
 - omvang
@@ -10574,10 +10607,10 @@ Minimale waarde 0
 ## Zoektermen
 - aangevraagdproduct
 - budget
-- jw315
+- JW315
 - minimale
 - restrictie
-- rs001
+- RS001
 - waarde
 
 ## Veelgestelde vragen
@@ -10613,10 +10646,10 @@ Maximale waarde 99999999 (8*9)
 - 99999999
 - aangevraagdproduct
 - budget
-- jw315
+- JW315
 - maximale
 - restrictie
-- rs005
+- RS005
 - waarde
 
 ## Veelgestelde vragen
@@ -10656,7 +10689,7 @@ De waarde moet voldoen aan de 11-proef.
 - client
 - constraint
 - CS002
-- jw315
+- JW315
 - moet
 - voldoen
 - waarde
@@ -10694,12 +10727,12 @@ Maximale lengte 9 posities
 ## Zoektermen
 - bsn_burgerservicenummer
 - client
-- jw315
+- JW315
 - lengte
 - maximale
 - posities
 - restrictie
-- rs015
+- RS015
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Bsn.LDT_BurgerServicenummer?
@@ -10735,9 +10768,9 @@ Vullen met 9 cijfers.
 - bsn_burgerservicenummer
 - cijfers
 - client
-- jw315
+- JW315
 - restrictie
-- rs037
+- RS037
 - vullen
 
 ## Veelgestelde vragen
@@ -10752,7 +10785,10 @@ JW315 binnen berichtklasse Client.
 
 ---
 
-# Regel RS032 - Geboortedatum
+# Regel RS032 - Geboortedatum zonder Tijdszone.
+
+## Uitleg
+Bij datatypen van het type date is het niet toegestaan een Tijdszone mee te geven. Bijvoorbeeld: 2026-08-30 is goed 2026-08-30Z is niet goed
 
 ## Metadata
 - Regelcode: RS032
@@ -10774,9 +10810,9 @@ Datum vullen zonder tijdzone.
 - client
 - datum
 - geboortedatum
-- jw315
+- JW315
 - restrictie
-- rs032
+- RS032
 - tijdzone
 - vullen
 - zonder
@@ -10821,7 +10857,7 @@ Voor Geboortedatum geldt dat DatumGebruik en Datum met elkaar in overeenstemming
 - elkaar
 - geboortedatum
 - geldt
-- jw315
+- JW315
 - moeten
 - overeenstemming
 - voor
@@ -10861,12 +10897,12 @@ Maximale lengte 1 positie
 ## Zoektermen
 - client
 - geboortedatum
-- jw315
+- JW315
 - lengte
 - maximale
 - positie
 - restrictie
-- rs008
+- RS008
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Geboortedatum?
@@ -10901,12 +10937,12 @@ Maximale lengte 1 positie
 ## Zoektermen
 - client
 - geslacht_geslacht
-- jw315
+- JW315
 - lengte
 - maximale
 - positie
 - restrictie
-- rs008
+- RS008
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Geslacht_Geslacht?
@@ -10941,13 +10977,13 @@ Maximale lengte 200 posities
 
 ## Zoektermen
 - client
-- jw315
+- JW315
 - lengte
 - maximale
 - naam_verkortenaam
 - posities
 - restrictie
-- rs028
+- RS028
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Naam_VerkorteNaam?
@@ -10984,11 +11020,11 @@ Geen lege elementen in XML.
 - client
 - elementen
 - geen
-- jw315
+- JW315
 - lege
 - naam_verkortenaam
 - restrictie
-- rs033
+- RS033
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Naam_VerkorteNaam?
@@ -11023,13 +11059,13 @@ Maximale lengte 10 posities
 
 ## Zoektermen
 - client
-- jw315
+- JW315
 - lengte
 - maximale
 - naam_verkortenaam
 - posities
 - restrictie
-- rs016
+- RS016
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Naam_VerkorteNaam?
@@ -11066,11 +11102,11 @@ Geen lege elementen in XML.
 - client
 - elementen
 - geen
-- jw315
+- JW315
 - lege
 - naam_verkortenaam
 - restrictie
-- rs033
+- RS033
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Naam_VerkorteNaam?
@@ -11104,13 +11140,13 @@ Maximale lengte 200 posities
 
 ## Zoektermen
 - client
-- jw315
+- JW315
 - lengte
 - maximale
 - naam_verkortenaam
 - posities
 - restrictie
-- rs028
+- RS028
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Naam_VerkorteNaam?
@@ -11146,11 +11182,11 @@ Geen lege elementen in XML.
 - client
 - elementen
 - geen
-- jw315
+- JW315
 - lege
 - naam_verkortenaam
 - restrictie
-- rs033
+- RS033
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Naam_VerkorteNaam?
@@ -11184,13 +11220,13 @@ Maximale lengte 6 posities
 
 ## Zoektermen
 - client
-- jw315
+- JW315
 - lengte
 - maximale
 - naam_verkortenaam
 - posities
 - restrictie
-- rs013
+- RS013
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Naam_VerkorteNaam?
@@ -11225,11 +11261,11 @@ Aaneengesloten vullen (zonder punten of spaties).
 ## Zoektermen
 - aaneengesloten
 - client
-- jw315
+- JW315
 - naam_verkortenaam
 - punten
 - restrictie
-- rs045
+- RS045
 - spaties
 - vullen
 - zonder
@@ -11267,12 +11303,12 @@ Maximale lengte 1 positie
 ## Zoektermen
 - client
 - gezagsdragerbekend_janee
-- jw315
+- JW315
 - lengte
 - maximale
 - positie
 - restrictie
-- rs008
+- RS008
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij GezagsdragerBekend_JaNee?
@@ -11307,11 +11343,11 @@ Commentaarvelden niet leeg.
 - client
 - commentaar_commentaar
 - commentaarvelden
-- jw315
+- JW315
 - leeg
 - niet
 - restrictie
-- rs031
+- RS031
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Commentaar_Commentaar?
@@ -11345,12 +11381,12 @@ Maximale lengte 8 posities
 ## Zoektermen
 - afzender_agbcode
 - header
-- jw315
+- JW315
 - lengte
 - maximale
 - posities
 - restrictie
-- rs014
+- RS014
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Afzender_AgbCode?
@@ -11385,9 +11421,9 @@ Vullen met 8 cijfers.
 - afzender_agbcode
 - cijfers
 - header
-- jw315
+- JW315
 - restrictie
-- rs036
+- RS036
 - vullen
 
 ## Veelgestelde vragen
@@ -11422,10 +11458,10 @@ Vullen met 4 cijfers.
 ## Zoektermen
 - cijfers
 - header
-- jw315
+- JW315
 - ontvanger_gemeente
 - restrictie
-- rs035
+- RS035
 - vullen
 
 ## Veelgestelde vragen
@@ -11461,12 +11497,12 @@ Maximale lengte 12 posities
 ## Zoektermen
 - berichtidentificatie
 - header
-- jw315
+- JW315
 - lengte
 - maximale
 - posities
 - restrictie
-- rs017
+- RS017
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij BerichtIdentificatie?
@@ -11503,10 +11539,10 @@ Geen lege elementen in XML.
 - elementen
 - geen
 - header
-- jw315
+- JW315
 - lege
 - restrictie
-- rs033
+- RS033
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij BerichtIdentificatie?
@@ -11542,9 +11578,9 @@ Datum vullen zonder tijdzone.
 - berichtidentificatie
 - datum
 - header
-- jw315
+- JW315
 - restrictie
-- rs032
+- RS032
 - tijdzone
 - vullen
 - zonder
@@ -11581,12 +11617,12 @@ Maximale lengte 3 posities
 ## Zoektermen
 - berichtcode
 - header
-- jw315
+- JW315
 - lengte
 - maximale
 - posities
 - restrictie
-- rs010
+- RS010
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij BerichtCode?
@@ -11620,9 +11656,9 @@ Vullen met BerichtCode volgens de specificatie
 ## Zoektermen
 - berichtcode
 - header
-- jw315
+- JW315
 - restrictie
-- rs047
+- RS047
 - specificatie
 - volgens
 - vullen
@@ -11661,7 +11697,7 @@ BerichtVersie vullen met 3.
 - constraint
 - CS025
 - header
-- jw315
+- JW315
 - vullen
 
 ## Veelgestelde vragen
@@ -11696,10 +11732,10 @@ Minimale waarde 0
 ## Zoektermen
 - berichtversie_berichtversie
 - header
-- jw315
+- JW315
 - minimale
 - restrictie
-- rs001
+- RS001
 - waarde
 
 ## Veelgestelde vragen
@@ -11734,10 +11770,10 @@ Maximale waarde 99
 ## Zoektermen
 - berichtversie_berichtversie
 - header
-- jw315
+- JW315
 - maximale
 - restrictie
-- rs002
+- RS002
 - waarde
 
 ## Veelgestelde vragen
@@ -11774,7 +11810,7 @@ BerichtSubversie vullen met 2.
 - constraint
 - CS015
 - header
-- jw315
+- JW315
 - vullen
 
 ## Veelgestelde vragen
@@ -11809,10 +11845,10 @@ Minimale waarde 0
 ## Zoektermen
 - berichtsubversie
 - header
-- jw315
+- JW315
 - minimale
 - restrictie
-- rs001
+- RS001
 - waarde
 
 ## Veelgestelde vragen
@@ -11847,10 +11883,10 @@ Maximale waarde 99
 ## Zoektermen
 - berichtsubversie
 - header
-- jw315
+- JW315
 - maximale
 - restrictie
-- rs002
+- RS002
 - waarde
 
 ## Veelgestelde vragen
@@ -11890,10 +11926,10 @@ Vullen met een versienummer bestaande uit drie gehele getallen, gescheiden met p
 - gescheiden
 - getallen
 - header
-- jw315
+- JW315
 - punten
 - restrictie
-- rs048
+- RS048
 - versienummer
 - vullen
 - xsdversie_xsdversie
@@ -11935,10 +11971,10 @@ Vullen met een versienummer bestaande uit drie gehele getallen, gescheiden met p
 - gescheiden
 - getallen
 - header
-- jw315
+- JW315
 - punten
 - restrictie
-- rs048
+- RS048
 - versienummer
 - vullen
 - xsdversie_xsdversie
@@ -11980,7 +12016,7 @@ De waarde moet voldoen aan de 11-proef.
 - client
 - constraint
 - CS002
-- jw317
+- JW317
 - moet
 - voldoen
 - waarde
@@ -12018,12 +12054,12 @@ Maximale lengte 9 posities
 ## Zoektermen
 - bsn_burgerservicenummer
 - client
-- jw317
+- JW317
 - lengte
 - maximale
 - posities
 - restrictie
-- rs015
+- RS015
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Bsn.LDT_BurgerServicenummer?
@@ -12059,9 +12095,9 @@ Vullen met 9 cijfers.
 - bsn_burgerservicenummer
 - cijfers
 - client
-- jw317
+- JW317
 - restrictie
-- rs037
+- RS037
 - vullen
 
 ## Veelgestelde vragen
@@ -12096,12 +12132,12 @@ Maximale lengte 8 posities
 ## Zoektermen
 - afzender_agbcode
 - header
-- jw317
+- JW317
 - lengte
 - maximale
 - posities
 - restrictie
-- rs014
+- RS014
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Afzender_AgbCode?
@@ -12136,9 +12172,9 @@ Vullen met 8 cijfers.
 - afzender_agbcode
 - cijfers
 - header
-- jw317
+- JW317
 - restrictie
-- rs036
+- RS036
 - vullen
 
 ## Veelgestelde vragen
@@ -12173,10 +12209,10 @@ Vullen met 4 cijfers.
 ## Zoektermen
 - cijfers
 - header
-- jw317
+- JW317
 - ontvanger_gemeente
 - restrictie
-- rs035
+- RS035
 - vullen
 
 ## Veelgestelde vragen
@@ -12212,12 +12248,12 @@ Maximale lengte 12 posities
 ## Zoektermen
 - berichtidentificatie
 - header
-- jw317
+- JW317
 - lengte
 - maximale
 - posities
 - restrictie
-- rs017
+- RS017
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij BerichtIdentificatie?
@@ -12254,10 +12290,10 @@ Geen lege elementen in XML.
 - elementen
 - geen
 - header
-- jw317
+- JW317
 - lege
 - restrictie
-- rs033
+- RS033
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij BerichtIdentificatie?
@@ -12293,9 +12329,9 @@ Datum vullen zonder tijdzone.
 - berichtidentificatie
 - datum
 - header
-- jw317
+- JW317
 - restrictie
-- rs032
+- RS032
 - tijdzone
 - vullen
 - zonder
@@ -12332,12 +12368,12 @@ Maximale lengte 3 posities
 ## Zoektermen
 - berichtcode
 - header
-- jw317
+- JW317
 - lengte
 - maximale
 - posities
 - restrictie
-- rs010
+- RS010
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij BerichtCode?
@@ -12371,9 +12407,9 @@ Vullen met BerichtCode volgens de specificatie
 ## Zoektermen
 - berichtcode
 - header
-- jw317
+- JW317
 - restrictie
-- rs047
+- RS047
 - specificatie
 - volgens
 - vullen
@@ -12412,7 +12448,7 @@ BerichtVersie vullen met 3.
 - constraint
 - CS025
 - header
-- jw317
+- JW317
 - vullen
 
 ## Veelgestelde vragen
@@ -12447,10 +12483,10 @@ Minimale waarde 0
 ## Zoektermen
 - berichtversie_berichtversie
 - header
-- jw317
+- JW317
 - minimale
 - restrictie
-- rs001
+- RS001
 - waarde
 
 ## Veelgestelde vragen
@@ -12485,10 +12521,10 @@ Maximale waarde 99
 ## Zoektermen
 - berichtversie_berichtversie
 - header
-- jw317
+- JW317
 - maximale
 - restrictie
-- rs002
+- RS002
 - waarde
 
 ## Veelgestelde vragen
@@ -12525,7 +12561,7 @@ BerichtSubversie vullen met 2.
 - constraint
 - CS015
 - header
-- jw317
+- JW317
 - vullen
 
 ## Veelgestelde vragen
@@ -12560,10 +12596,10 @@ Minimale waarde 0
 ## Zoektermen
 - berichtsubversie
 - header
-- jw317
+- JW317
 - minimale
 - restrictie
-- rs001
+- RS001
 - waarde
 
 ## Veelgestelde vragen
@@ -12598,10 +12634,10 @@ Maximale waarde 99
 ## Zoektermen
 - berichtsubversie
 - header
-- jw317
+- JW317
 - maximale
 - restrictie
-- rs002
+- RS002
 - waarde
 
 ## Veelgestelde vragen
@@ -12641,10 +12677,10 @@ Vullen met een versienummer bestaande uit drie gehele getallen, gescheiden met p
 - gescheiden
 - getallen
 - header
-- jw317
+- JW317
 - punten
 - restrictie
-- rs048
+- RS048
 - versienummer
 - vullen
 - xsdversie_xsdversie
@@ -12686,10 +12722,10 @@ Vullen met een versienummer bestaande uit drie gehele getallen, gescheiden met p
 - gescheiden
 - getallen
 - header
-- jw317
+- JW317
 - punten
 - restrictie
-- rs048
+- RS048
 - versienummer
 - vullen
 - xsdversie_xsdversie
@@ -12730,7 +12766,7 @@ Indien Budget leeg is, dan verplicht vullen
 - CD079
 - conditie
 - indien
-- jw317
+- JW317
 - leeg
 - nieuwproduct
 - product
@@ -12770,14 +12806,14 @@ Maximale lengte 2 posities
 `JW317.NieuwProduct.Product_Product`
 
 ## Zoektermen
-- jw317
+- JW317
 - lengte
 - maximale
 - nieuwproduct
 - posities
 - product_product
 - restrictie
-- rs009
+- RS009
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Product_Product?
@@ -12811,14 +12847,14 @@ Maximale lengte 5 posities
 `JW317.NieuwProduct.Product_Product`
 
 ## Zoektermen
-- jw317
+- JW317
 - lengte
 - maximale
 - nieuwproduct
 - posities
 - product_product
 - restrictie
-- rs012
+- RS012
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Product_Product?
@@ -12854,12 +12890,12 @@ Geen lege elementen in XML.
 ## Zoektermen
 - elementen
 - geen
-- jw317
+- JW317
 - lege
 - nieuwproduct
 - product_product
 - restrictie
-- rs033
+- RS033
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Product_Product?
@@ -12894,10 +12930,10 @@ Datum vullen zonder tijdzone.
 ## Zoektermen
 - datum
 - gewensteingangsdatum_datum
-- jw317
+- JW317
 - nieuwproduct
 - restrictie
-- rs032
+- RS032
 - tijdzone
 - vullen
 - zonder
@@ -12939,7 +12975,7 @@ Verplicht vullen indien Budget gevuld is
 - einddatum
 - gevuld
 - indien
-- jw317
+- JW317
 - nieuwproduct
 - verplicht
 - vullen
@@ -12980,7 +13016,7 @@ Verplicht vullen indien Frequentie waarde 2 (per week)
 - einddatum
 - frequentie
 - indien
-- jw317
+- JW317
 - nieuwproduct
 - verplicht
 - vullen
@@ -13027,7 +13063,7 @@ Indien van toepassing vullen met een waarde die groter is dan, of gelijk is aan 
 - groter
 - indien
 - ingangsdatum
-- jw317
+- JW317
 - nieuwproduct
 - periode
 - toepassing
@@ -13066,10 +13102,10 @@ Datum vullen zonder tijdzone.
 ## Zoektermen
 - datum
 - einddatum_datum
-- jw317
+- JW317
 - nieuwproduct
 - restrictie
-- rs032
+- RS032
 - tijdzone
 - vullen
 - zonder
@@ -13110,7 +13146,7 @@ Indien Code in Product gevuld is, verplicht vullen.
 - conditie
 - gevuld
 - indien
-- jw317
+- JW317
 - nieuwproduct
 - omvang
 - product
@@ -13153,7 +13189,7 @@ Indien Budget gevuld is, dan leeg laten
 - conditie
 - gevuld
 - indien
-- jw317
+- JW317
 - laten
 - leeg
 - nieuwproduct
@@ -13197,7 +13233,7 @@ Indien Code in NieuwProduct leeg is en Einddatum groter dan 31-12-2020 of leeg i
 - einddatum
 - groter
 - indien
-- jw317
+- JW317
 - laten
 - leeg
 - nieuwproduct
@@ -13244,7 +13280,7 @@ Indien eenheid de waarde 14, 16, 83 of 84 heeft en Einddatum groter dan 31-12-20
 - groter
 - heeft
 - indien
-- jw317
+- JW317
 - leeg
 - nieuwproduct
 - omvang
@@ -13292,7 +13328,7 @@ Indien eenheid de waarde 14, 16, 83 of 84 heeft en Einddatum groter dan 31-12-20
 - groter
 - heeft
 - indien
-- jw317
+- JW317
 - leeg
 - nieuwproduct
 - omvang
@@ -13340,7 +13376,7 @@ Indien eenheid de waarde 14, 16, 83 of 84 heeft en Einddatum groter dan 31-12-20
 - groter
 - heeft
 - indien
-- jw317
+- JW317
 - leeg
 - nieuwproduct
 - omvang
@@ -13378,12 +13414,12 @@ Minimale waarde 0
 `JW317.NieuwProduct.Omvang`
 
 ## Zoektermen
-- jw317
+- JW317
 - minimale
 - nieuwproduct
 - omvang
 - restrictie
-- rs001
+- RS001
 - waarde
 
 ## Veelgestelde vragen
@@ -13418,12 +13454,12 @@ Maximale waarde 99999999 (8*9)
 
 ## Zoektermen
 - 99999999
-- jw317
+- JW317
 - maximale
 - nieuwproduct
 - omvang
 - restrictie
-- rs005
+- RS005
 - waarde
 
 ## Veelgestelde vragen
@@ -13458,14 +13494,14 @@ Maximale lengte 2 posities
 `JW317.NieuwProduct.Omvang`
 
 ## Zoektermen
-- jw317
+- JW317
 - lengte
 - maximale
 - nieuwproduct
 - omvang
 - posities
 - restrictie
-- rs009
+- RS009
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Omvang?
@@ -13499,14 +13535,14 @@ Maximale lengte 1 positie
 `JW317.NieuwProduct.Omvang`
 
 ## Zoektermen
-- jw317
+- JW317
 - lengte
 - maximale
 - nieuwproduct
 - omvang
 - positie
 - restrictie
-- rs008
+- RS008
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Omvang?
@@ -13544,7 +13580,7 @@ Indien Omvang gevuld is, dan leeg laten
 - conditie
 - gevuld
 - indien
-- jw317
+- JW317
 - laten
 - leeg
 - nieuwproduct
@@ -13581,11 +13617,11 @@ Minimale waarde 0
 
 ## Zoektermen
 - budget
-- jw317
+- JW317
 - minimale
 - nieuwproduct
 - restrictie
-- rs001
+- RS001
 - waarde
 
 ## Veelgestelde vragen
@@ -13620,11 +13656,11 @@ Maximale waarde 99999999 (8*9)
 ## Zoektermen
 - 99999999
 - budget
-- jw317
+- JW317
 - maximale
 - nieuwproduct
 - restrictie
-- rs005
+- RS005
 - waarde
 
 ## Veelgestelde vragen
@@ -13658,11 +13694,11 @@ Minimale waarde 0
 `JW317.OngewijzigdProduct.ToewijzingNummer_Nummer`
 
 ## Zoektermen
-- jw317
+- JW317
 - minimale
 - ongewijzigdproduct
 - restrictie
-- rs001
+- RS001
 - toewijzingnummer_nummer
 - waarde
 
@@ -13698,11 +13734,11 @@ Maximale waarde 999999999 (9*9)
 
 ## Zoektermen
 - 999999999
-- jw317
+- JW317
 - maximale
 - ongewijzigdproduct
 - restrictie
-- rs006
+- RS006
 - toewijzingnummer_nummer
 - waarde
 
@@ -13738,9 +13774,9 @@ Datum vullen zonder tijdzone.
 ## Zoektermen
 - datum
 - gewensteingangsdatum_datum
-- jw317
+- JW317
 - restrictie
-- rs032
+- RS032
 - tewijzigenproduct
 - tijdzone
 - vullen
@@ -13783,7 +13819,7 @@ Verplicht vullen indien Budget gevuld is
 - einddatum
 - gevuld
 - indien
-- jw317
+- JW317
 - tewijzigenproduct
 - verplicht
 - vullen
@@ -13824,7 +13860,7 @@ Verplicht vullen indien Frequentie waarde 2 (per week)
 - einddatum
 - frequentie
 - indien
-- jw317
+- JW317
 - tewijzigenproduct
 - verplicht
 - vullen
@@ -13871,7 +13907,7 @@ Indien van toepassing vullen met een waarde die groter is dan, of gelijk is aan 
 - groter
 - indien
 - ingangsdatum
-- jw317
+- JW317
 - periode
 - tewijzigenproduct
 - toepassing
@@ -13910,9 +13946,9 @@ Datum vullen zonder tijdzone.
 ## Zoektermen
 - datum
 - einddatum_datum
-- jw317
+- JW317
 - restrictie
-- rs032
+- RS032
 - tewijzigenproduct
 - tijdzone
 - vullen
@@ -13954,7 +13990,7 @@ Indien Budget gevuld is, dan leeg laten
 - conditie
 - gevuld
 - indien
-- jw317
+- JW317
 - laten
 - leeg
 - omvang
@@ -14001,7 +14037,7 @@ Indien eenheid de waarde 14, 16, 83 of 84 heeft en Einddatum groter dan 31-12-20
 - groter
 - heeft
 - indien
-- jw317
+- JW317
 - leeg
 - omvang
 - tewijzigenproduct
@@ -14049,7 +14085,7 @@ Indien eenheid de waarde 14, 16, 83 of 84 heeft en Einddatum groter dan 31-12-20
 - groter
 - heeft
 - indien
-- jw317
+- JW317
 - leeg
 - omvang
 - tewijzigenproduct
@@ -14097,7 +14133,7 @@ Indien eenheid de waarde 14, 16, 83 of 84 heeft en Einddatum groter dan 31-12-20
 - groter
 - heeft
 - indien
-- jw317
+- JW317
 - leeg
 - omvang
 - tewijzigenproduct
@@ -14135,11 +14171,11 @@ Minimale waarde 0
 `JW317.TeWijzigenProduct.Omvang`
 
 ## Zoektermen
-- jw317
+- JW317
 - minimale
 - omvang
 - restrictie
-- rs001
+- RS001
 - tewijzigenproduct
 - waarde
 
@@ -14175,11 +14211,11 @@ Maximale waarde 99999999 (8*9)
 
 ## Zoektermen
 - 99999999
-- jw317
+- JW317
 - maximale
 - omvang
 - restrictie
-- rs005
+- RS005
 - tewijzigenproduct
 - waarde
 
@@ -14215,13 +14251,13 @@ Maximale lengte 2 posities
 `JW317.TeWijzigenProduct.Omvang`
 
 ## Zoektermen
-- jw317
+- JW317
 - lengte
 - maximale
 - omvang
 - posities
 - restrictie
-- rs009
+- RS009
 - tewijzigenproduct
 
 ## Veelgestelde vragen
@@ -14256,13 +14292,13 @@ Maximale lengte 1 positie
 `JW317.TeWijzigenProduct.Omvang`
 
 ## Zoektermen
-- jw317
+- JW317
 - lengte
 - maximale
 - omvang
 - positie
 - restrictie
-- rs008
+- RS008
 - tewijzigenproduct
 
 ## Veelgestelde vragen
@@ -14296,10 +14332,10 @@ Minimale waarde 0
 `JW317.TeWijzigenProduct.ToewijzingNummer_Nummer`
 
 ## Zoektermen
-- jw317
+- JW317
 - minimale
 - restrictie
-- rs001
+- RS001
 - tewijzigenproduct
 - toewijzingnummer_nummer
 - waarde
@@ -14336,10 +14372,10 @@ Maximale waarde 999999999 (9*9)
 
 ## Zoektermen
 - 999999999
-- jw317
+- JW317
 - maximale
 - restrictie
-- rs006
+- RS006
 - tewijzigenproduct
 - toewijzingnummer_nummer
 - waarde
@@ -14380,7 +14416,7 @@ Indien Omvang gevuld is, dan leeg laten
 - conditie
 - gevuld
 - indien
-- jw317
+- JW317
 - laten
 - leeg
 - omvang
@@ -14417,10 +14453,10 @@ Minimale waarde 0
 
 ## Zoektermen
 - budget
-- jw317
+- JW317
 - minimale
 - restrictie
-- rs001
+- RS001
 - tewijzigenproduct
 - waarde
 
@@ -14456,10 +14492,10 @@ Maximale waarde 99999999 (8*9)
 ## Zoektermen
 - 99999999
 - budget
-- jw317
+- JW317
 - maximale
 - restrictie
-- rs005
+- RS005
 - tewijzigenproduct
 - waarde
 
@@ -14494,13 +14530,13 @@ Maximale lengte 36 posities
 `JW317.Verzoek.ReferentieAanbieder_Referentie`
 
 ## Zoektermen
-- jw317
+- JW317
 - lengte
 - maximale
 - posities
 - referentieaanbieder_referentie
 - restrictie
-- rs024
+- RS024
 - verzoek
 
 ## Veelgestelde vragen
@@ -14536,11 +14572,11 @@ Geen lege elementen in XML.
 ## Zoektermen
 - elementen
 - geen
-- jw317
+- JW317
 - lege
 - referentieaanbieder_referentie
 - restrictie
-- rs033
+- RS033
 - verzoek
 
 ## Veelgestelde vragen
@@ -14574,13 +14610,13 @@ Maximale lengte 1 positie
 `JW317.Verzoek.RedenVerzoek_RedenVerzoek`
 
 ## Zoektermen
-- jw317
+- JW317
 - lengte
 - maximale
 - positie
 - redenverzoek_redenverzoek
 - restrictie
-- rs008
+- RS008
 - verzoek
 
 ## Veelgestelde vragen
@@ -14615,13 +14651,13 @@ Maximale lengte 36 posities
 
 ## Zoektermen
 - antwoord
-- jw319
+- JW319
 - lengte
 - maximale
 - posities
 - referentieaanbieder_referentie
 - restrictie
-- rs024
+- RS024
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij ReferentieAanbieder_Referentie?
@@ -14657,11 +14693,11 @@ Geen lege elementen in XML.
 - antwoord
 - elementen
 - geen
-- jw319
+- JW319
 - lege
 - referentieaanbieder_referentie
 - restrictie
-- rs033
+- RS033
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij ReferentieAanbieder_Referentie?
@@ -14696,12 +14732,12 @@ Maximale lengte 1 positie
 
 ## Zoektermen
 - antwoord
-- jw319
+- JW319
 - lengte
 - maximale
 - positie
 - restrictie
-- rs008
+- RS008
 - verzoekantwoord
 
 ## Veelgestelde vragen
@@ -14740,7 +14776,7 @@ Als VerzoekAntwoord de waarde 1 (Verzoek afgewezen) heeft, dan vullen
 - CD085
 - conditie
 - heeft
-- jw319
+- JW319
 - redenafwijzingverzoek
 - verzoek
 - verzoekantwoord
@@ -14783,7 +14819,7 @@ Als VerzoekAntwoord de waarde 2 (Aanvraag in onderzoek) heeft, dan leeg laten
 - CD086
 - conditie
 - heeft
-- jw319
+- JW319
 - laten
 - leeg
 - onderzoek
@@ -14823,13 +14859,13 @@ Maximale lengte 2 posities
 
 ## Zoektermen
 - antwoord
-- jw319
+- JW319
 - lengte
 - maximale
 - posities
 - redenafwijzingverzoek
 - restrictie
-- rs009
+- RS009
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij RedenAfwijzingVerzoek?
@@ -14864,9 +14900,9 @@ Vullen met 4 cijfers.
 - afzender_gemeente
 - cijfers
 - header
-- jw319
+- JW319
 - restrictie
-- rs035
+- RS035
 - vullen
 
 ## Veelgestelde vragen
@@ -14900,13 +14936,13 @@ Maximale lengte 8 posities
 
 ## Zoektermen
 - header
-- jw319
+- JW319
 - lengte
 - maximale
 - ontvanger_agbcode
 - posities
 - restrictie
-- rs014
+- RS014
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Ontvanger_AgbCode?
@@ -14940,10 +14976,10 @@ Vullen met 8 cijfers.
 ## Zoektermen
 - cijfers
 - header
-- jw319
+- JW319
 - ontvanger_agbcode
 - restrictie
-- rs036
+- RS036
 - vullen
 
 ## Veelgestelde vragen
@@ -14979,12 +15015,12 @@ Maximale lengte 12 posities
 ## Zoektermen
 - berichtidentificatie
 - header
-- jw319
+- JW319
 - lengte
 - maximale
 - posities
 - restrictie
-- rs017
+- RS017
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij BerichtIdentificatie?
@@ -15021,10 +15057,10 @@ Geen lege elementen in XML.
 - elementen
 - geen
 - header
-- jw319
+- JW319
 - lege
 - restrictie
-- rs033
+- RS033
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij BerichtIdentificatie?
@@ -15060,9 +15096,9 @@ Datum vullen zonder tijdzone.
 - berichtidentificatie
 - datum
 - header
-- jw319
+- JW319
 - restrictie
-- rs032
+- RS032
 - tijdzone
 - vullen
 - zonder
@@ -15099,12 +15135,12 @@ Maximale lengte 3 posities
 ## Zoektermen
 - berichtcode
 - header
-- jw319
+- JW319
 - lengte
 - maximale
 - posities
 - restrictie
-- rs010
+- RS010
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij BerichtCode?
@@ -15138,9 +15174,9 @@ Vullen met BerichtCode volgens de specificatie
 ## Zoektermen
 - berichtcode
 - header
-- jw319
+- JW319
 - restrictie
-- rs047
+- RS047
 - specificatie
 - volgens
 - vullen
@@ -15179,7 +15215,7 @@ BerichtVersie vullen met 3.
 - constraint
 - CS025
 - header
-- jw319
+- JW319
 - vullen
 
 ## Veelgestelde vragen
@@ -15214,10 +15250,10 @@ Minimale waarde 0
 ## Zoektermen
 - berichtversie_berichtversie
 - header
-- jw319
+- JW319
 - minimale
 - restrictie
-- rs001
+- RS001
 - waarde
 
 ## Veelgestelde vragen
@@ -15252,10 +15288,10 @@ Maximale waarde 99
 ## Zoektermen
 - berichtversie_berichtversie
 - header
-- jw319
+- JW319
 - maximale
 - restrictie
-- rs002
+- RS002
 - waarde
 
 ## Veelgestelde vragen
@@ -15292,7 +15328,7 @@ BerichtSubversie vullen met 2.
 - constraint
 - CS015
 - header
-- jw319
+- JW319
 - vullen
 
 ## Veelgestelde vragen
@@ -15327,10 +15363,10 @@ Minimale waarde 0
 ## Zoektermen
 - berichtsubversie
 - header
-- jw319
+- JW319
 - minimale
 - restrictie
-- rs001
+- RS001
 - waarde
 
 ## Veelgestelde vragen
@@ -15365,10 +15401,10 @@ Maximale waarde 99
 ## Zoektermen
 - berichtsubversie
 - header
-- jw319
+- JW319
 - maximale
 - restrictie
-- rs002
+- RS002
 - waarde
 
 ## Veelgestelde vragen
@@ -15408,10 +15444,10 @@ Vullen met een versienummer bestaande uit drie gehele getallen, gescheiden met p
 - gescheiden
 - getallen
 - header
-- jw319
+- JW319
 - punten
 - restrictie
-- rs048
+- RS048
 - versienummer
 - vullen
 - xsdversie_xsdversie
@@ -15453,10 +15489,10 @@ Vullen met een versienummer bestaande uit drie gehele getallen, gescheiden met p
 - gescheiden
 - getallen
 - header
-- jw319
+- JW319
 - punten
 - restrictie
-- rs048
+- RS048
 - versienummer
 - vullen
 - xsdversie_xsdversie
@@ -15494,9 +15530,9 @@ Vullen met 4 cijfers.
 ## Zoektermen
 - cijfers
 - gemeente_gemeente
-- jw319
+- JW319
 - restrictie
-- rs035
+- RS035
 - vullen
 - woonplaatsbeginsel
 
@@ -15537,7 +15573,7 @@ De waarde moet voldoen aan de 11-proef.
 - client
 - constraint
 - CS002
-- jw323
+- JW323
 - moet
 - voldoen
 - waarde
@@ -15575,12 +15611,12 @@ Maximale lengte 9 posities
 ## Zoektermen
 - bsn_burgerservicenummer
 - client
-- jw323
+- JW323
 - lengte
 - maximale
 - posities
 - restrictie
-- rs015
+- RS015
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Bsn.LDT_BurgerServicenummer?
@@ -15616,9 +15652,9 @@ Vullen met 9 cijfers.
 - bsn_burgerservicenummer
 - cijfers
 - client
-- jw323
+- JW323
 - restrictie
-- rs037
+- RS037
 - vullen
 
 ## Veelgestelde vragen
@@ -15658,7 +15694,7 @@ Aaneengesloten vullen met cijfers en/of letters
 - cs319
 - declaratie
 - declaratienummer
-- jw323
+- JW323
 - letters
 - vullen
 
@@ -15695,12 +15731,12 @@ Maximale lengte 12 posities
 ## Zoektermen
 - declaratie
 - declaratienummer_identificatiedeclaratie
-- jw323
+- JW323
 - lengte
 - maximale
 - posities
 - restrictie
-- rs017
+- RS017
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij DeclaratieNummer_IdentificatieDeclaratie?
@@ -15741,7 +15777,7 @@ Vullen met een datum die groter dan of gelijk is aan 01-01-2021
 - declaratieperiode
 - gelijk
 - groter
-- jw323
+- JW323
 - vullen
 
 ## Veelgestelde vragen
@@ -15782,7 +15818,7 @@ De periode is exact gelijk aan 1 hele kalendermaand
 - exact
 - gelijk
 - hele
-- jw323
+- JW323
 - kalendermaand
 - periode
 
@@ -15820,9 +15856,9 @@ Datum vullen zonder tijdzone.
 - datum
 - declaratie
 - declaratieperiode_geslotenperiode
-- jw323
+- JW323
 - restrictie
-- rs032
+- RS032
 - tijdzone
 - vullen
 - zonder
@@ -15861,9 +15897,9 @@ Datum vullen zonder tijdzone.
 - datum
 - declaratie
 - declaratieperiode_geslotenperiode
-- jw323
+- JW323
 - restrictie
-- rs032
+- RS032
 - tijdzone
 - vullen
 - zonder
@@ -15901,9 +15937,9 @@ Datum vullen zonder tijdzone.
 - datum
 - declaratie
 - declaratiedagtekening_datum
-- jw323
+- JW323
 - restrictie
-- rs032
+- RS032
 - tijdzone
 - vullen
 - zonder
@@ -15940,10 +15976,10 @@ Minimale waarde 0
 
 ## Zoektermen
 - declaratie
-- jw323
+- JW323
 - minimale
 - restrictie
-- rs001
+- RS001
 - totaalingediendbedrag_totaalbedragmetdc
 - waarde
 
@@ -15980,10 +16016,10 @@ Maximale waarde 999999999999 (12*9)
 ## Zoektermen
 - 999999999999
 - declaratie
-- jw323
+- JW323
 - maximale
 - restrictie
-- rs040
+- RS040
 - totaalingediendbedrag_totaalbedragmetdc
 - waarde
 
@@ -16027,7 +16063,7 @@ Indien (Totaal)Bedrag de waarde 0 heeft, dan DebetCredit vullen met D (Debet).
 - declaratie
 - heeft
 - indien
-- jw323
+- JW323
 - totaal
 - totaalingediendbedrag_totaalbedragmetdc
 - vullen
@@ -16066,12 +16102,12 @@ Maximale lengte 1 positie
 
 ## Zoektermen
 - declaratie
-- jw323
+- JW323
 - lengte
 - maximale
 - positie
 - restrictie
-- rs008
+- RS008
 - totaalingediendbedrag_totaalbedragmetdc
 
 ## Veelgestelde vragen
@@ -16106,12 +16142,12 @@ Maximale lengte 8 posities
 ## Zoektermen
 - afzender_agbcode
 - header
-- jw323
+- JW323
 - lengte
 - maximale
 - posities
 - restrictie
-- rs014
+- RS014
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Afzender_AgbCode?
@@ -16146,9 +16182,9 @@ Vullen met 8 cijfers.
 - afzender_agbcode
 - cijfers
 - header
-- jw323
+- JW323
 - restrictie
-- rs036
+- RS036
 - vullen
 
 ## Veelgestelde vragen
@@ -16183,10 +16219,10 @@ Vullen met 4 cijfers.
 ## Zoektermen
 - cijfers
 - header
-- jw323
+- JW323
 - ontvanger_gemeente
 - restrictie
-- rs035
+- RS035
 - vullen
 
 ## Veelgestelde vragen
@@ -16222,12 +16258,12 @@ Maximale lengte 12 posities
 ## Zoektermen
 - berichtidentificatie
 - header
-- jw323
+- JW323
 - lengte
 - maximale
 - posities
 - restrictie
-- rs017
+- RS017
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij BerichtIdentificatie?
@@ -16264,10 +16300,10 @@ Geen lege elementen in XML.
 - elementen
 - geen
 - header
-- jw323
+- JW323
 - lege
 - restrictie
-- rs033
+- RS033
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij BerichtIdentificatie?
@@ -16303,9 +16339,9 @@ Datum vullen zonder tijdzone.
 - berichtidentificatie
 - datum
 - header
-- jw323
+- JW323
 - restrictie
-- rs032
+- RS032
 - tijdzone
 - vullen
 - zonder
@@ -16342,12 +16378,12 @@ Maximale lengte 3 posities
 ## Zoektermen
 - berichtcode
 - header
-- jw323
+- JW323
 - lengte
 - maximale
 - posities
 - restrictie
-- rs010
+- RS010
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij BerichtCode?
@@ -16381,9 +16417,9 @@ Vullen met BerichtCode volgens de specificatie
 ## Zoektermen
 - berichtcode
 - header
-- jw323
+- JW323
 - restrictie
-- rs047
+- RS047
 - specificatie
 - volgens
 - vullen
@@ -16422,7 +16458,7 @@ BerichtVersie vullen met 3.
 - constraint
 - CS025
 - header
-- jw323
+- JW323
 - vullen
 
 ## Veelgestelde vragen
@@ -16457,10 +16493,10 @@ Minimale waarde 0
 ## Zoektermen
 - berichtversie_berichtversie
 - header
-- jw323
+- JW323
 - minimale
 - restrictie
-- rs001
+- RS001
 - waarde
 
 ## Veelgestelde vragen
@@ -16495,10 +16531,10 @@ Maximale waarde 99
 ## Zoektermen
 - berichtversie_berichtversie
 - header
-- jw323
+- JW323
 - maximale
 - restrictie
-- rs002
+- RS002
 - waarde
 
 ## Veelgestelde vragen
@@ -16535,7 +16571,7 @@ BerichtSubversie vullen met 2.
 - constraint
 - CS015
 - header
-- jw323
+- JW323
 - vullen
 
 ## Veelgestelde vragen
@@ -16570,10 +16606,10 @@ Minimale waarde 0
 ## Zoektermen
 - berichtsubversie
 - header
-- jw323
+- JW323
 - minimale
 - restrictie
-- rs001
+- RS001
 - waarde
 
 ## Veelgestelde vragen
@@ -16608,10 +16644,10 @@ Maximale waarde 99
 ## Zoektermen
 - berichtsubversie
 - header
-- jw323
+- JW323
 - maximale
 - restrictie
-- rs002
+- RS002
 - waarde
 
 ## Veelgestelde vragen
@@ -16651,10 +16687,10 @@ Vullen met een versienummer bestaande uit drie gehele getallen, gescheiden met p
 - gescheiden
 - getallen
 - header
-- jw323
+- JW323
 - punten
 - restrictie
-- rs048
+- RS048
 - versienummer
 - vullen
 - xsdversie_xsdversie
@@ -16696,10 +16732,10 @@ Vullen met een versienummer bestaande uit drie gehele getallen, gescheiden met p
 - gescheiden
 - getallen
 - header
-- jw323
+- JW323
 - punten
 - restrictie
-- rs048
+- RS048
 - versienummer
 - vullen
 - xsdversie_xsdversie
@@ -16736,14 +16772,14 @@ Maximale lengte 20 posities
 `JW323.Prestatie.ProductReferentie_Referentie`
 
 ## Zoektermen
-- jw323
+- JW323
 - lengte
 - maximale
 - posities
 - prestatie
 - productreferentie_referentie
 - restrictie
-- rs019
+- RS019
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij ProductReferentie_Referentie?
@@ -16787,7 +16823,7 @@ Verplicht vullen indien DebetCredit bij het ingediende bedrag de waarde C (credi
 - heeft
 - indien
 - ingediende
-- jw323
+- JW323
 - laten
 - leeg
 - prestatie
@@ -16828,14 +16864,14 @@ Maximale lengte 20 posities
 `JW323.Prestatie.ProductReferentie_Referentie`
 
 ## Zoektermen
-- jw323
+- JW323
 - lengte
 - maximale
 - posities
 - prestatie
 - productreferentie_referentie
 - restrictie
-- rs019
+- RS019
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij ProductReferentie_Referentie?
@@ -16867,11 +16903,11 @@ Minimale waarde 0
 `JW323.Prestatie.ToewijzingNummer_Nummer`
 
 ## Zoektermen
-- jw323
+- JW323
 - minimale
 - prestatie
 - restrictie
-- rs001
+- RS001
 - toewijzingnummer_nummer
 - waarde
 
@@ -16906,11 +16942,11 @@ Maximale waarde 999999999 (9*9)
 
 ## Zoektermen
 - 999999999
-- jw323
+- JW323
 - maximale
 - prestatie
 - restrictie
-- rs006
+- RS006
 - toewijzingnummer_nummer
 - waarde
 
@@ -16945,14 +16981,14 @@ Maximale lengte 2 posities
 `JW323.Prestatie.ProductCategorie_ProductCategorie`
 
 ## Zoektermen
-- jw323
+- JW323
 - lengte
 - maximale
 - posities
 - prestatie
 - productcategorie_productcategorie
 - restrictie
-- rs009
+- RS009
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij ProductCategorie_ProductCategorie?
@@ -16984,14 +17020,14 @@ Maximale lengte 5 posities
 `JW323.Prestatie.ProductCode_ProductCode`
 
 ## Zoektermen
-- jw323
+- JW323
 - lengte
 - maximale
 - posities
 - prestatie
 - productcode_productcode
 - restrictie
-- rs012
+- RS012
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij ProductCode_ProductCode?
@@ -17025,12 +17061,12 @@ Geen lege elementen in XML.
 ## Zoektermen
 - elementen
 - geen
-- jw323
+- JW323
 - lege
 - prestatie
 - productcode_productcode
 - restrictie
-- rs033
+- RS033
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij ProductCode_ProductCode?
@@ -17069,7 +17105,7 @@ Vullen met een datum die groter dan of gelijk is aan 01-01-2021
 - datum
 - gelijk
 - groter
-- jw323
+- JW323
 - prestatie
 - productperiode
 - vullen
@@ -17112,7 +17148,7 @@ Einddatum in de ProductPeriode vullen met een datum die valt in dezelfde kalende
 - dezelfde
 - einddatum
 - jaar
-- jw323
+- JW323
 - kalendermaand
 - prestatie
 - productperiode
@@ -17151,11 +17187,11 @@ Datum vullen zonder tijdzone.
 
 ## Zoektermen
 - datum
-- jw323
+- JW323
 - prestatie
 - productperiode_geslotenperiode
 - restrictie
-- rs032
+- RS032
 - tijdzone
 - vullen
 - zonder
@@ -17192,11 +17228,11 @@ Datum vullen zonder tijdzone.
 
 ## Zoektermen
 - datum
-- jw323
+- JW323
 - prestatie
 - productperiode_geslotenperiode
 - restrictie
-- rs032
+- RS032
 - tijdzone
 - vullen
 - zonder
@@ -17232,11 +17268,11 @@ Minimale waarde 0
 
 ## Zoektermen
 - geleverdvolume
-- jw323
+- JW323
 - minimale
 - prestatie
 - restrictie
-- rs001
+- RS001
 - waarde
 
 ## Veelgestelde vragen
@@ -17271,11 +17307,11 @@ Maximale waarde 99999999 (8*9)
 ## Zoektermen
 - 99999999
 - geleverdvolume
-- jw323
+- JW323
 - maximale
 - prestatie
 - restrictie
-- rs005
+- RS005
 - waarde
 
 ## Veelgestelde vragen
@@ -17310,13 +17346,13 @@ Maximale lengte 2 posities
 
 ## Zoektermen
 - eenheid
-- jw323
+- JW323
 - lengte
 - maximale
 - posities
 - prestatie
 - restrictie
-- rs009
+- RS009
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Eenheid?
@@ -17354,7 +17390,7 @@ Als eenheid ongelijk is aan 83 (euro’s) dan verplicht vullen, anders leeg late
 - conditie
 - eenheid
 - euro
-- jw323
+- JW323
 - laten
 - leeg
 - ongelijk
@@ -17393,12 +17429,12 @@ Minimale waarde 0
 `JW323.Prestatie.ProductTarief_Bedrag`
 
 ## Zoektermen
-- jw323
+- JW323
 - minimale
 - prestatie
 - producttarief_bedrag
 - restrictie
-- rs001
+- RS001
 - waarde
 
 ## Veelgestelde vragen
@@ -17432,12 +17468,12 @@ Maximale waarde 99999999 (8*9)
 
 ## Zoektermen
 - 99999999
-- jw323
+- JW323
 - maximale
 - prestatie
 - producttarief_bedrag
 - restrictie
-- rs005
+- RS005
 - waarde
 
 ## Veelgestelde vragen
@@ -17480,7 +17516,7 @@ Indien Eenheid de waarde 83 (euro’s) heeft, moet IngediendBedrag gelijk zijn a
 - heeft
 - indien
 - ingediendbedrag
-- jw323
+- JW323
 - moet
 - prestatie
 - waarde
@@ -17518,11 +17554,11 @@ Minimale waarde 0
 
 ## Zoektermen
 - ingediendbedrag_bedragmetdc
-- jw323
+- JW323
 - minimale
 - prestatie
 - restrictie
-- rs001
+- RS001
 - waarde
 
 ## Veelgestelde vragen
@@ -17558,11 +17594,11 @@ Maximale waarde 99999999 (8*9)
 ## Zoektermen
 - 99999999
 - ingediendbedrag_bedragmetdc
-- jw323
+- JW323
 - maximale
 - prestatie
 - restrictie
-- rs005
+- RS005
 - waarde
 
 ## Veelgestelde vragen
@@ -17605,7 +17641,7 @@ Indien (Totaal)Bedrag de waarde 0 heeft, dan DebetCredit vullen met D (Debet).
 - heeft
 - indien
 - ingediendbedrag_bedragmetdc
-- jw323
+- JW323
 - prestatie
 - totaal
 - vullen
@@ -17644,13 +17680,13 @@ Maximale lengte 1 positie
 
 ## Zoektermen
 - ingediendbedrag_bedragmetdc
-- jw323
+- JW323
 - lengte
 - maximale
 - positie
 - prestatie
 - restrictie
-- rs008
+- RS008
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij IngediendBedrag_BedragMetDC?
@@ -17689,7 +17725,7 @@ De waarde moet voldoen aan de 11-proef.
 - client
 - constraint
 - CS002
-- jw325
+- JW325
 - moet
 - voldoen
 - waarde
@@ -17727,12 +17763,12 @@ Maximale lengte 9 posities
 ## Zoektermen
 - bsn_burgerservicenummer
 - client
-- jw325
+- JW325
 - lengte
 - maximale
 - posities
 - restrictie
-- rs015
+- RS015
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Bsn.LDT_BurgerServicenummer?
@@ -17768,9 +17804,9 @@ Vullen met 9 cijfers.
 - bsn_burgerservicenummer
 - cijfers
 - client
-- jw325
+- JW325
 - restrictie
-- rs037
+- RS037
 - vullen
 
 ## Veelgestelde vragen
@@ -17806,12 +17842,12 @@ Maximale lengte 12 posities
 ## Zoektermen
 - declaratieantwoord
 - declaratienummer_identificatiedeclaratie
-- jw325
+- JW325
 - lengte
 - maximale
 - posities
 - restrictie
-- rs017
+- RS017
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij DeclaratieNummer_IdentificatieDeclaratie?
@@ -17845,10 +17881,10 @@ Minimale waarde 0
 
 ## Zoektermen
 - declaratieantwoord
-- jw325
+- JW325
 - minimale
 - restrictie
-- rs001
+- RS001
 - totaalingediendbedrag_totaalbedragmetdc
 - waarde
 
@@ -17885,10 +17921,10 @@ Maximale waarde 999999999999 (12*9)
 ## Zoektermen
 - 999999999999
 - declaratieantwoord
-- jw325
+- JW325
 - maximale
 - restrictie
-- rs040
+- RS040
 - totaalingediendbedrag_totaalbedragmetdc
 - waarde
 
@@ -17932,7 +17968,7 @@ Indien (Totaal)Bedrag de waarde 0 heeft, dan DebetCredit vullen met D (Debet).
 - declaratieantwoord
 - heeft
 - indien
-- jw325
+- JW325
 - totaal
 - totaalingediendbedrag_totaalbedragmetdc
 - vullen
@@ -17971,12 +18007,12 @@ Maximale lengte 1 positie
 
 ## Zoektermen
 - declaratieantwoord
-- jw325
+- JW325
 - lengte
 - maximale
 - positie
 - restrictie
-- rs008
+- RS008
 - totaalingediendbedrag_totaalbedragmetdc
 
 ## Veelgestelde vragen
@@ -18011,10 +18047,10 @@ Minimale waarde 0
 
 ## Zoektermen
 - declaratieantwoord
-- jw325
+- JW325
 - minimale
 - restrictie
-- rs001
+- RS001
 - totaaltoegekendbedrag_totaalbedragmetdc
 - waarde
 
@@ -18051,10 +18087,10 @@ Maximale waarde 999999999999 (12*9)
 ## Zoektermen
 - 999999999999
 - declaratieantwoord
-- jw325
+- JW325
 - maximale
 - restrictie
-- rs040
+- RS040
 - totaaltoegekendbedrag_totaalbedragmetdc
 - waarde
 
@@ -18098,7 +18134,7 @@ Indien (Totaal)Bedrag de waarde 0 heeft, dan DebetCredit vullen met D (Debet).
 - declaratieantwoord
 - heeft
 - indien
-- jw325
+- JW325
 - totaal
 - totaaltoegekendbedrag_totaalbedragmetdc
 - vullen
@@ -18137,12 +18173,12 @@ Maximale lengte 1 positie
 
 ## Zoektermen
 - declaratieantwoord
-- jw325
+- JW325
 - lengte
 - maximale
 - positie
 - restrictie
-- rs008
+- RS008
 - totaaltoegekendbedrag_totaalbedragmetdc
 
 ## Veelgestelde vragen
@@ -18178,9 +18214,9 @@ Vullen met 4 cijfers.
 - afzender_gemeente
 - cijfers
 - header
-- jw325
+- JW325
 - restrictie
-- rs035
+- RS035
 - vullen
 
 ## Veelgestelde vragen
@@ -18214,13 +18250,13 @@ Maximale lengte 8 posities
 
 ## Zoektermen
 - header
-- jw325
+- JW325
 - lengte
 - maximale
 - ontvanger_agbcode
 - posities
 - restrictie
-- rs014
+- RS014
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Ontvanger_AgbCode?
@@ -18254,10 +18290,10 @@ Vullen met 8 cijfers.
 ## Zoektermen
 - cijfers
 - header
-- jw325
+- JW325
 - ontvanger_agbcode
 - restrictie
-- rs036
+- RS036
 - vullen
 
 ## Veelgestelde vragen
@@ -18293,12 +18329,12 @@ Maximale lengte 12 posities
 ## Zoektermen
 - berichtidentificatie
 - header
-- jw325
+- JW325
 - lengte
 - maximale
 - posities
 - restrictie
-- rs017
+- RS017
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij BerichtIdentificatie?
@@ -18335,10 +18371,10 @@ Geen lege elementen in XML.
 - elementen
 - geen
 - header
-- jw325
+- JW325
 - lege
 - restrictie
-- rs033
+- RS033
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij BerichtIdentificatie?
@@ -18374,9 +18410,9 @@ Datum vullen zonder tijdzone.
 - berichtidentificatie
 - datum
 - header
-- jw325
+- JW325
 - restrictie
-- rs032
+- RS032
 - tijdzone
 - vullen
 - zonder
@@ -18413,12 +18449,12 @@ Maximale lengte 3 posities
 ## Zoektermen
 - berichtcode
 - header
-- jw325
+- JW325
 - lengte
 - maximale
 - posities
 - restrictie
-- rs010
+- RS010
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij BerichtCode?
@@ -18452,9 +18488,9 @@ Vullen met BerichtCode volgens de specificatie
 ## Zoektermen
 - berichtcode
 - header
-- jw325
+- JW325
 - restrictie
-- rs047
+- RS047
 - specificatie
 - volgens
 - vullen
@@ -18493,7 +18529,7 @@ BerichtVersie vullen met 3.
 - constraint
 - CS025
 - header
-- jw325
+- JW325
 - vullen
 
 ## Veelgestelde vragen
@@ -18528,10 +18564,10 @@ Minimale waarde 0
 ## Zoektermen
 - berichtversie_berichtversie
 - header
-- jw325
+- JW325
 - minimale
 - restrictie
-- rs001
+- RS001
 - waarde
 
 ## Veelgestelde vragen
@@ -18566,10 +18602,10 @@ Maximale waarde 99
 ## Zoektermen
 - berichtversie_berichtversie
 - header
-- jw325
+- JW325
 - maximale
 - restrictie
-- rs002
+- RS002
 - waarde
 
 ## Veelgestelde vragen
@@ -18606,7 +18642,7 @@ BerichtSubversie vullen met 2.
 - constraint
 - CS015
 - header
-- jw325
+- JW325
 - vullen
 
 ## Veelgestelde vragen
@@ -18641,10 +18677,10 @@ Minimale waarde 0
 ## Zoektermen
 - berichtsubversie
 - header
-- jw325
+- JW325
 - minimale
 - restrictie
-- rs001
+- RS001
 - waarde
 
 ## Veelgestelde vragen
@@ -18679,10 +18715,10 @@ Maximale waarde 99
 ## Zoektermen
 - berichtsubversie
 - header
-- jw325
+- JW325
 - maximale
 - restrictie
-- rs002
+- RS002
 - waarde
 
 ## Veelgestelde vragen
@@ -18722,10 +18758,10 @@ Vullen met een versienummer bestaande uit drie gehele getallen, gescheiden met p
 - gescheiden
 - getallen
 - header
-- jw325
+- JW325
 - punten
 - restrictie
-- rs048
+- RS048
 - versienummer
 - vullen
 - xsdversie_xsdversie
@@ -18767,10 +18803,10 @@ Vullen met een versienummer bestaande uit drie gehele getallen, gescheiden met p
 - gescheiden
 - getallen
 - header
-- jw325
+- JW325
 - punten
 - restrictie
-- rs048
+- RS048
 - versienummer
 - vullen
 - xsdversie_xsdversie
@@ -18808,12 +18844,12 @@ Maximale lengte 12 posities
 ## Zoektermen
 - declaratieidentificatie_berichtidentificatie
 - header
-- jw325
+- JW325
 - lengte
 - maximale
 - posities
 - restrictie
-- rs017
+- RS017
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij DeclaratieIdentificatie_BerichtIdentificatie?
@@ -18850,10 +18886,10 @@ Geen lege elementen in XML.
 - elementen
 - geen
 - header
-- jw325
+- JW325
 - lege
 - restrictie
-- rs033
+- RS033
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij DeclaratieIdentificatie_BerichtIdentificatie?
@@ -18889,9 +18925,9 @@ Datum vullen zonder tijdzone.
 - datum
 - declaratieidentificatie_berichtidentificatie
 - header
-- jw325
+- JW325
 - restrictie
-- rs032
+- RS032
 - tijdzone
 - vullen
 - zonder
@@ -18932,10 +18968,10 @@ Vullen met een versienummer bestaande uit drie gehele getallen, gescheiden met p
 - gescheiden
 - getallen
 - header
-- jw325
+- JW325
 - punten
 - restrictie
-- rs048
+- RS048
 - versienummer
 - vullen
 - xsltversie_versie
@@ -18977,10 +19013,10 @@ Vullen met een versienummer bestaande uit drie gehele getallen, gescheiden met p
 - gescheiden
 - getallen
 - header
-- jw325
+- JW325
 - punten
 - restrictie
-- rs048
+- RS048
 - versienummer
 - vullen
 - xsdversiedeclaratie_xsdversie
@@ -19022,10 +19058,10 @@ Vullen met een versienummer bestaande uit drie gehele getallen, gescheiden met p
 - gescheiden
 - getallen
 - header
-- jw325
+- JW325
 - punten
 - restrictie
-- rs048
+- RS048
 - versienummer
 - vullen
 - xsdversiedeclaratie_xsdversie
@@ -19062,14 +19098,14 @@ Maximale lengte 20 posities
 `JW325.Prestatie.ProductReferentie_Referentie`
 
 ## Zoektermen
-- jw325
+- JW325
 - lengte
 - maximale
 - posities
 - prestatie
 - productreferentie_referentie
 - restrictie
-- rs019
+- RS019
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij ProductReferentie_Referentie?
@@ -19113,7 +19149,7 @@ Verplicht vullen indien DebetCredit bij het ingediende bedrag de waarde C (credi
 - heeft
 - indien
 - ingediende
-- jw325
+- JW325
 - laten
 - leeg
 - prestatie
@@ -19154,14 +19190,14 @@ Maximale lengte 20 posities
 `JW325.Prestatie.ProductReferentie_Referentie`
 
 ## Zoektermen
-- jw325
+- JW325
 - lengte
 - maximale
 - posities
 - prestatie
 - productreferentie_referentie
 - restrictie
-- rs019
+- RS019
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij ProductReferentie_Referentie?
@@ -19193,11 +19229,11 @@ Minimale waarde 0
 `JW325.Prestatie.ToewijzingNummer_Nummer`
 
 ## Zoektermen
-- jw325
+- JW325
 - minimale
 - prestatie
 - restrictie
-- rs001
+- RS001
 - toewijzingnummer_nummer
 - waarde
 
@@ -19232,11 +19268,11 @@ Maximale waarde 999999999 (9*9)
 
 ## Zoektermen
 - 999999999
-- jw325
+- JW325
 - maximale
 - prestatie
 - restrictie
-- rs006
+- RS006
 - toewijzingnummer_nummer
 - waarde
 
@@ -19271,14 +19307,14 @@ Maximale lengte 2 posities
 `JW325.Prestatie.ProductCategorie_ProductCategorie`
 
 ## Zoektermen
-- jw325
+- JW325
 - lengte
 - maximale
 - posities
 - prestatie
 - productcategorie_productcategorie
 - restrictie
-- rs009
+- RS009
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij ProductCategorie_ProductCategorie?
@@ -19310,14 +19346,14 @@ Maximale lengte 5 posities
 `JW325.Prestatie.ProductCode_ProductCode`
 
 ## Zoektermen
-- jw325
+- JW325
 - lengte
 - maximale
 - posities
 - prestatie
 - productcode_productcode
 - restrictie
-- rs012
+- RS012
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij ProductCode_ProductCode?
@@ -19351,12 +19387,12 @@ Geen lege elementen in XML.
 ## Zoektermen
 - elementen
 - geen
-- jw325
+- JW325
 - lege
 - prestatie
 - productcode_productcode
 - restrictie
-- rs033
+- RS033
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij ProductCode_ProductCode?
@@ -19390,11 +19426,11 @@ Datum vullen zonder tijdzone.
 
 ## Zoektermen
 - datum
-- jw325
+- JW325
 - prestatie
 - productperiode_geslotenperiode
 - restrictie
-- rs032
+- RS032
 - tijdzone
 - vullen
 - zonder
@@ -19431,11 +19467,11 @@ Datum vullen zonder tijdzone.
 
 ## Zoektermen
 - datum
-- jw325
+- JW325
 - prestatie
 - productperiode_geslotenperiode
 - restrictie
-- rs032
+- RS032
 - tijdzone
 - vullen
 - zonder
@@ -19471,11 +19507,11 @@ Minimale waarde 0
 
 ## Zoektermen
 - geleverdvolume
-- jw325
+- JW325
 - minimale
 - prestatie
 - restrictie
-- rs001
+- RS001
 - waarde
 
 ## Veelgestelde vragen
@@ -19510,11 +19546,11 @@ Maximale waarde 99999999 (8*9)
 ## Zoektermen
 - 99999999
 - geleverdvolume
-- jw325
+- JW325
 - maximale
 - prestatie
 - restrictie
-- rs005
+- RS005
 - waarde
 
 ## Veelgestelde vragen
@@ -19549,13 +19585,13 @@ Maximale lengte 2 posities
 
 ## Zoektermen
 - eenheid
-- jw325
+- JW325
 - lengte
 - maximale
 - posities
 - prestatie
 - restrictie
-- rs009
+- RS009
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij Eenheid?
@@ -19587,12 +19623,12 @@ Minimale waarde 0
 `JW325.Prestatie.ProductTarief_Bedrag`
 
 ## Zoektermen
-- jw325
+- JW325
 - minimale
 - prestatie
 - producttarief_bedrag
 - restrictie
-- rs001
+- RS001
 - waarde
 
 ## Veelgestelde vragen
@@ -19626,12 +19662,12 @@ Maximale waarde 99999999 (8*9)
 
 ## Zoektermen
 - 99999999
-- jw325
+- JW325
 - maximale
 - prestatie
 - producttarief_bedrag
 - restrictie
-- rs005
+- RS005
 - waarde
 
 ## Veelgestelde vragen
@@ -19666,11 +19702,11 @@ Minimale waarde 0
 
 ## Zoektermen
 - ingediendbedrag_bedragmetdc
-- jw325
+- JW325
 - minimale
 - prestatie
 - restrictie
-- rs001
+- RS001
 - waarde
 
 ## Veelgestelde vragen
@@ -19706,11 +19742,11 @@ Maximale waarde 99999999 (8*9)
 ## Zoektermen
 - 99999999
 - ingediendbedrag_bedragmetdc
-- jw325
+- JW325
 - maximale
 - prestatie
 - restrictie
-- rs005
+- RS005
 - waarde
 
 ## Veelgestelde vragen
@@ -19753,7 +19789,7 @@ Indien (Totaal)Bedrag de waarde 0 heeft, dan DebetCredit vullen met D (Debet).
 - heeft
 - indien
 - ingediendbedrag_bedragmetdc
-- jw325
+- JW325
 - prestatie
 - totaal
 - vullen
@@ -19792,13 +19828,13 @@ Maximale lengte 1 positie
 
 ## Zoektermen
 - ingediendbedrag_bedragmetdc
-- jw325
+- JW325
 - lengte
 - maximale
 - positie
 - prestatie
 - restrictie
-- rs008
+- RS008
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij IngediendBedrag_BedragMetDC?
@@ -19831,14 +19867,14 @@ Maximale lengte 4 posities
 `JW325.RetourCodes.RetourCode_RetourCode`
 
 ## Zoektermen
-- jw325
+- JW325
 - lengte
 - maximale
 - posities
 - restrictie
 - retourcode_retourcode
 - retourcodes
-- rs011
+- RS011
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij RetourCode_RetourCode?
