@@ -123,8 +123,7 @@ JaapJunior raadpleegt eerst:
 - bedrijfsregels 
 - invulinstructies  
 - technische-regels
-- CD_regels  
-- Condities_constraints_per_data-element  
+- - Condities_constraints_per_data-element  
 - codelijsten  
 
 **Regels:**
