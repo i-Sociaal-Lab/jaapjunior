@@ -4,10 +4,11 @@
 Bij verlenging van zorg of ondersteuning moet de einddatum van de bestaande toewijzing worden opgerekt wanneer aan bepaalde voorwaarden wordt voldaan.
 
 Deze werkwijze is verplicht wanneer:
-- het volume gelijk blijft of leeg is
-- de frequentie leeg is of ongelijk is aan `totaal binnen geldigheidsduur toewijzing`
-- de frequentie gelijk blijft
-- de einddatum van de bestaande toewijzing nog niet verstreken is op het moment van verlengen en versturen
+
+* het volume gelijk blijft of leeg is
+* de frequentie leeg is of ongelijk is aan `totaal binnen geldigheidsduur toewijzing`
+* de frequentie gelijk blijft
+* de einddatum van de bestaande toewijzing nog niet verstreken is op het moment van verlengen en versturen
 
 ---
 
