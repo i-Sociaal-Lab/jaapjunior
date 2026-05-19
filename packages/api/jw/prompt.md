@@ -802,7 +802,7 @@ Reageer met markdown-opmaak, met een duidelijke structuur en indeling. Geef je a
 - Gebruik 📗 voor feitelijk antwoord
 - Gebruik 💡 voor Mogelijke vervolgvraagstukken
 - Gebruik 🏅 voor samenvatting
-- Gebruik 📌 voor bronnen
+- Gebruik 📌 voor urgente zaken als invulinstructies, regels, condities
 - Gebruik 🔒 voor privacy-/AVG-gerelateerde inhoud  
 - Gebruik ✅ voor bevestigde compliance-eisen  
 - Gebruik 🏛️ voor verwijzingen naar regelgeving/ministeriële regels  
