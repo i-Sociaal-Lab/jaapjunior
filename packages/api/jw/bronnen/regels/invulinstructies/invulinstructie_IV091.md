@@ -25,7 +25,7 @@ In de `IngediendBedrag`-regel van een `Prestatie` wordt met `DebetCredit` aangeg
 
 ### Crediteren declaratie
 
-Een creditprestatie is identiek aan de oorspronkelijke debetprestatie, met uitzondering van:
+Een creditprestatie is **identiek** aan de oorspronkelijke debetprestatie, met uitzondering van:
 
 - `ReferentieNummer`
   - De creditprestatie krijgt een nieuw `ReferentieNummer`.
