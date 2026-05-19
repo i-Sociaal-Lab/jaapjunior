@@ -296,14 +296,14 @@ JW Retour binnen berichtklasse RetourCodes.
 
 ---
 
-# Regel CS002 - Bsn_BurgerServicenummer
+# Regel CS002 - Bsn.LDT_BurgerServicenummer
 
 ## Metadata
 - Regelcode: CS002
 - Type: Constraint
 - Bericht: JW301
 - Berichtklasse: Client
-- Element: Bsn_BurgerServicenummer
+- Element: Bsn.LDT_BurgerServicenummer
 - Sleutelelement: ja
 - Retourcode: 0001
 - Domein: Jeugdwet
@@ -313,21 +313,21 @@ JW Retour binnen berichtklasse RetourCodes.
 De waarde moet voldoen aan de 11-proef.
 
 ## Technisch pad
-`JW301.Client.Bsn_BurgerServicenummer`
+`JW301.Client.Bsn.LDT_BurgerServicenummer`
 
 ## Zoektermen
 - 11-proef
 - bsn_burgerservicenummer
 - client
 - constraint
-- cs002
+- CS002
 - jw301
 - moet
 - voldoen
 - waarde
 
 ## Veelgestelde vragen
-### Welke regel hoort bij Bsn_BurgerServicenummer?
+### Welke regel hoort bij Bsn.LDT_BurgerServicenummer?
 Dit is regel CS002.
 
 ### Wat zegt regel CS002?
@@ -338,14 +338,14 @@ JW301 binnen berichtklasse Client.
 
 ---
 
-# Regel RS015 - Bsn_BurgerServicenummer
+# Regel RS015 - Bsn.LDT_BurgerServicenummer
 
 ## Metadata
 - Regelcode: RS015
 - Type: Restrictie
 - Bericht: JW301
 - Berichtklasse: Client
-- Element: Bsn_BurgerServicenummer
+- Element: Bsn.LDT_BurgerServicenummer
 - Sleutelelement: ja
 - Domein: Jeugdwet
 - Release: iJw 3.2.0
@@ -354,7 +354,7 @@ JW301 binnen berichtklasse Client.
 Maximale lengte 9 posities
 
 ## Technisch pad
-`JW301.Client.Bsn_BurgerServicenummer`
+`JW301.Client.Bsn.LDT_BurgerServicenummer`
 
 ## Zoektermen
 - bsn_burgerservicenummer
@@ -367,7 +367,7 @@ Maximale lengte 9 posities
 - rs015
 
 ## Veelgestelde vragen
-### Welke regel hoort bij Bsn_BurgerServicenummer?
+### Welke regel hoort bij Bsn.LDT_BurgerServicenummer?
 Dit is regel RS015.
 
 ### Wat zegt regel RS015?
@@ -378,14 +378,14 @@ JW301 binnen berichtklasse Client.
 
 ---
 
-# Regel RS037 - Bsn_BurgerServicenummer
+# Regel RS037 - Bsn.LDT_BurgerServicenummer
 
 ## Metadata
 - Regelcode: RS037
 - Type: Restrictie
 - Bericht: JW301
 - Berichtklasse: Client
-- Element: Bsn_BurgerServicenummer
+- Element: Bsn.LDT_BurgerServicenummer
 - Sleutelelement: ja
 - Domein: Jeugdwet
 - Release: iJw 3.2.0
@@ -394,7 +394,7 @@ JW301 binnen berichtklasse Client.
 Vullen met 9 cijfers.
 
 ## Technisch pad
-`JW301.Client.Bsn_BurgerServicenummer`
+`JW301.Client.Bsn.LDT_BurgerServicenummer`
 
 ## Zoektermen
 - bsn_burgerservicenummer
@@ -406,7 +406,7 @@ Vullen met 9 cijfers.
 - vullen
 
 ## Veelgestelde vragen
-### Welke regel hoort bij Bsn_BurgerServicenummer?
+### Welke regel hoort bij Bsn.LDT_BurgerServicenummer?
 Dit is regel RS037.
 
 ### Wat zegt regel RS037?
@@ -1140,7 +1140,7 @@ Als Partnernaam gevuld is, dan NaamGebruik vullen met waarde 1, 2, 3 of 4. Ander
 - anders
 - client
 - constraint
-- cs050
+- CS050
 - gevuld
 - jw301
 - naam_volledigenaam
@@ -1264,7 +1264,7 @@ Als Communicatie / Vorm de waarde 1 (tolk taal) heeft, dan verplicht vullen, and
 
 ## Zoektermen
 - anders
-- cd007
+- CD007
 - client
 - communicatie
 - communicatie_communicatie
@@ -1553,7 +1553,7 @@ Als Adres / LandCode de waarde NL (Nederland) heeft, dan verplicht vullen.
 ## Zoektermen
 - adres
 - adres_adres
-- cd025
+- CD025
 - conditie
 - contact
 - heeft
@@ -1886,7 +1886,7 @@ Als Soort adres de waarde 1 (BRP-adres) of 3 (verblijfadres) heeft, dan verplich
 - adres
 - adres_adres
 - brp-adres
-- cd034
+- CD034
 - conditie
 - contact
 - heeft
@@ -1932,7 +1932,7 @@ Als LandCode de waarde NL (Nederland) heeft, dan moet het formaat overeenkomen m
 - adres_adres
 - constraint
 - contact
-- cs089
+- CS089
 - formaat
 - heeft
 - jw301
@@ -2218,7 +2218,7 @@ Als Postcode gevuld is, dan verplicht vullen, anders leeg laten.
 ## Zoektermen
 - adres_adres
 - anders
-- cd005
+- CD005
 - conditie
 - contact
 - gevuld
@@ -2787,7 +2787,7 @@ Alleen als Soort adres de waarde 04 (tijdelijk adres) heeft, is vullen toegestaa
 ## Zoektermen
 - adres
 - alleen
-- cd009
+- CD009
 - conditie
 - contact
 - heeft
@@ -2876,7 +2876,7 @@ Indien van toepassing vullen met een waarde die groter is dan, of gelijk is aan 
 - begindatum
 - constraint
 - contact
-- cs003
+- CS003
 - gelijk
 - groter
 - indien
@@ -3275,7 +3275,7 @@ BerichtVersie vullen met 3.
 ## Zoektermen
 - berichtversie
 - constraint
-- cs025
+- CS025
 - header
 - jw301
 - vullen
@@ -3388,7 +3388,7 @@ BerichtSubversie vullen met 2.
 ## Zoektermen
 - berichtsubversie
 - constraint
-- cs015
+- CS015
 - header
 - jw301
 - vullen
@@ -4447,7 +4447,7 @@ Als Partnernaam gevuld is, dan NaamGebruik vullen met waarde 1, 2, 3 of 4. Ander
 ## Zoektermen
 - anders
 - constraint
-- cs050
+- CS050
 - gevuld
 - jw301
 - naam_volledigenaam
@@ -4687,7 +4687,7 @@ Indien Budget leeg is, dan verplicht vullen
 
 ## Zoektermen
 - budget
-- cd079
+- CD079
 - conditie
 - indien
 - jw301
@@ -4970,7 +4970,7 @@ Verplicht vullen indien Budget gevuld is
 
 ## Zoektermen
 - budget
-- cd075
+- CD075
 - conditie
 - einddatum
 - gevuld
@@ -5011,7 +5011,7 @@ Verplicht vullen indien Frequentie waarde 2 (per week)
 `JW301.ToegewezenProduct.Einddatum`
 
 ## Zoektermen
-- cd076
+- CD076
 - conditie
 - einddatum
 - frequentie
@@ -5057,7 +5057,7 @@ Indien van toepassing vullen met een waarde die groter is dan, of gelijk is aan 
 - aangeduide
 - begindatum
 - constraint
-- cs003
+- CS003
 - einddatum
 - gelijk
 - groter
@@ -5268,7 +5268,7 @@ Indien Code in Product gevuld is, verplicht vullen.
 `JW301.ToegewezenProduct.Omvang`
 
 ## Zoektermen
-- cd041
+- CD041
 - code
 - conditie
 - gevuld
@@ -5312,7 +5312,7 @@ Indien Budget gevuld is, dan leeg laten
 
 ## Zoektermen
 - budget
-- cd077
+- CD077
 - conditie
 - gevuld
 - indien
@@ -5354,7 +5354,7 @@ Indien Code in Product leeg is en Einddatum van het ToegewezenProduct groter dan
 
 ## Zoektermen
 - 31-12-2020
-- cd080
+- CD080
 - code
 - conditie
 - einddatum
@@ -5743,7 +5743,7 @@ Indien Omvang gevuld is, dan leeg laten
 
 ## Zoektermen
 - budget
-- cd078
+- CD078
 - conditie
 - gevuld
 - indien
@@ -5842,14 +5842,14 @@ JW301 binnen berichtklasse ToegewezenProduct.
 
 ---
 
-# Regel CS002 - Bsn_BurgerServicenummer
+# Regel CS002 - Bsn.LDT_BurgerServicenummer
 
 ## Metadata
 - Regelcode: CS002
 - Type: Constraint
 - Bericht: JW305
 - Berichtklasse: Client
-- Element: Bsn_BurgerServicenummer
+- Element: Bsn.LDT_BurgerServicenummer
 - Sleutelelement: ja
 - Retourcode: 0001
 - Domein: Jeugdwet
@@ -5859,21 +5859,21 @@ JW301 binnen berichtklasse ToegewezenProduct.
 De waarde moet voldoen aan de 11-proef.
 
 ## Technisch pad
-`JW305.Client.Bsn_BurgerServicenummer`
+`JW305.Client.Bsn.LDT_BurgerServicenummer`
 
 ## Zoektermen
 - 11-proef
 - bsn_burgerservicenummer
 - client
 - constraint
-- cs002
-- jw305
+- CS002
+- JW305
 - moet
 - voldoen
 - waarde
 
 ## Veelgestelde vragen
-### Welke regel hoort bij Bsn_BurgerServicenummer?
+### Welke regel hoort bij Bsn.LDT_BurgerServicenummer?
 Dit is regel CS002.
 
 ### Wat zegt regel CS002?
@@ -5884,14 +5884,14 @@ JW305 binnen berichtklasse Client.
 
 ---
 
-# Regel RS015 - Bsn_BurgerServicenummer
+# Regel RS015 - Bsn.LDT_BurgerServicenummer
 
 ## Metadata
 - Regelcode: RS015
 - Type: Restrictie
 - Bericht: JW305
 - Berichtklasse: Client
-- Element: Bsn_BurgerServicenummer
+- Element: Bsn.LDT_BurgerServicenummer
 - Sleutelelement: ja
 - Domein: Jeugdwet
 - Release: iJw 3.2.0
@@ -5900,12 +5900,12 @@ JW305 binnen berichtklasse Client.
 Maximale lengte 9 posities
 
 ## Technisch pad
-`JW305.Client.Bsn_BurgerServicenummer`
+`JW305.Client.Bsn.LDT_BurgerServicenummer`
 
 ## Zoektermen
 - bsn_burgerservicenummer
 - client
-- jw305
+- JW305
 - lengte
 - maximale
 - posities
@@ -5913,7 +5913,7 @@ Maximale lengte 9 posities
 - rs015
 
 ## Veelgestelde vragen
-### Welke regel hoort bij Bsn_BurgerServicenummer?
+### Welke regel hoort bij Bsn.LDT_BurgerServicenummer?
 Dit is regel RS015.
 
 ### Wat zegt regel RS015?
@@ -5924,14 +5924,14 @@ JW305 binnen berichtklasse Client.
 
 ---
 
-# Regel RS037 - Bsn_BurgerServicenummer
+# Regel RS037 - Bsn.LDT_BurgerServicenummer
 
 ## Metadata
 - Regelcode: RS037
 - Type: Restrictie
 - Bericht: JW305
 - Berichtklasse: Client
-- Element: Bsn_BurgerServicenummer
+- Element: Bsn.LDT_BurgerServicenummer
 - Sleutelelement: ja
 - Domein: Jeugdwet
 - Release: iJw 3.2.0
@@ -5940,19 +5940,19 @@ JW305 binnen berichtklasse Client.
 Vullen met 9 cijfers.
 
 ## Technisch pad
-`JW305.Client.Bsn_BurgerServicenummer`
+`JW305.Client.Bsn.LDT_BurgerServicenummer`
 
 ## Zoektermen
 - bsn_burgerservicenummer
 - cijfers
 - client
-- jw305
+- JW305
 - restrictie
 - rs037
 - vullen
 
 ## Veelgestelde vragen
-### Welke regel hoort bij Bsn_BurgerServicenummer?
+### Welke regel hoort bij Bsn.LDT_BurgerServicenummer?
 Dit is regel RS037.
 
 ### Wat zegt regel RS037?
@@ -5985,7 +5985,7 @@ Datum vullen zonder tijdzone.
 - client
 - datum
 - geboortedatum
-- jw305
+- JW305
 - restrictie
 - rs032
 - tijdzone
@@ -6032,7 +6032,7 @@ Voor Geboortedatum geldt dat DatumGebruik en Datum met elkaar in overeenstemming
 - elkaar
 - geboortedatum
 - geldt
-- jw305
+- JW305
 - moeten
 - overeenstemming
 - voor
@@ -6072,7 +6072,7 @@ Maximale lengte 1 positie
 ## Zoektermen
 - client
 - geboortedatum
-- jw305
+- JW305
 - lengte
 - maximale
 - positie
@@ -6112,7 +6112,7 @@ Maximale lengte 1 positie
 ## Zoektermen
 - client
 - geslacht_geslacht
-- jw305
+- JW305
 - lengte
 - maximale
 - positie
@@ -6152,7 +6152,7 @@ Maximale lengte 200 posities
 
 ## Zoektermen
 - client
-- jw305
+- JW305
 - lengte
 - maximale
 - naam_verkortenaam
@@ -6195,7 +6195,7 @@ Geen lege elementen in XML.
 - client
 - elementen
 - geen
-- jw305
+- JW305
 - lege
 - naam_verkortenaam
 - restrictie
@@ -6234,7 +6234,7 @@ Maximale lengte 10 posities
 
 ## Zoektermen
 - client
-- jw305
+- JW305
 - lengte
 - maximale
 - naam_verkortenaam
@@ -6277,7 +6277,7 @@ Geen lege elementen in XML.
 - client
 - elementen
 - geen
-- jw305
+- JW305
 - lege
 - naam_verkortenaam
 - restrictie
@@ -6315,7 +6315,7 @@ Maximale lengte 200 posities
 
 ## Zoektermen
 - client
-- jw305
+- JW305
 - lengte
 - maximale
 - naam_verkortenaam
@@ -6357,7 +6357,7 @@ Geen lege elementen in XML.
 - client
 - elementen
 - geen
-- jw305
+- JW305
 - lege
 - naam_verkortenaam
 - restrictie
@@ -6395,7 +6395,7 @@ Maximale lengte 6 posities
 
 ## Zoektermen
 - client
-- jw305
+- JW305
 - lengte
 - maximale
 - naam_verkortenaam
@@ -6436,7 +6436,7 @@ Aaneengesloten vullen (zonder punten of spaties).
 ## Zoektermen
 - aaneengesloten
 - client
-- jw305
+- JW305
 - naam_verkortenaam
 - punten
 - restrictie
@@ -6477,7 +6477,7 @@ Maximale lengte 8 posities
 ## Zoektermen
 - afzender_agbcode
 - header
-- jw305
+- JW305
 - lengte
 - maximale
 - posities
@@ -6517,7 +6517,7 @@ Vullen met 8 cijfers.
 - afzender_agbcode
 - cijfers
 - header
-- jw305
+- JW305
 - restrictie
 - rs036
 - vullen
@@ -6554,7 +6554,7 @@ Vullen met 4 cijfers.
 ## Zoektermen
 - cijfers
 - header
-- jw305
+- JW305
 - ontvanger_gemeente
 - restrictie
 - rs035
@@ -6593,7 +6593,7 @@ Maximale lengte 12 posities
 ## Zoektermen
 - berichtidentificatie
 - header
-- jw305
+- JW305
 - lengte
 - maximale
 - posities
@@ -6635,7 +6635,7 @@ Geen lege elementen in XML.
 - elementen
 - geen
 - header
-- jw305
+- JW305
 - lege
 - restrictie
 - rs033
@@ -6674,7 +6674,7 @@ Datum vullen zonder tijdzone.
 - berichtidentificatie
 - datum
 - header
-- jw305
+- JW305
 - restrictie
 - rs032
 - tijdzone
@@ -6713,7 +6713,7 @@ Maximale lengte 3 posities
 ## Zoektermen
 - berichtcode
 - header
-- jw305
+- JW305
 - lengte
 - maximale
 - posities
@@ -6752,7 +6752,7 @@ Vullen met BerichtCode volgens de specificatie
 ## Zoektermen
 - berichtcode
 - header
-- jw305
+- JW305
 - restrictie
 - rs047
 - specificatie
@@ -6791,9 +6791,9 @@ BerichtVersie vullen met 3.
 ## Zoektermen
 - berichtversie
 - constraint
-- cs025
+- CS025
 - header
-- jw305
+- JW305
 - vullen
 
 ## Veelgestelde vragen
@@ -6828,7 +6828,7 @@ Minimale waarde 0
 ## Zoektermen
 - berichtversie_berichtversie
 - header
-- jw305
+- JW305
 - minimale
 - restrictie
 - rs001
@@ -6866,7 +6866,7 @@ Maximale waarde 99
 ## Zoektermen
 - berichtversie_berichtversie
 - header
-- jw305
+- JW305
 - maximale
 - restrictie
 - rs002
@@ -6904,9 +6904,9 @@ BerichtSubversie vullen met 2.
 ## Zoektermen
 - berichtsubversie
 - constraint
-- cs015
+- CS015
 - header
-- jw305
+- JW305
 - vullen
 
 ## Veelgestelde vragen
@@ -6941,7 +6941,7 @@ Minimale waarde 0
 ## Zoektermen
 - berichtsubversie
 - header
-- jw305
+- JW305
 - minimale
 - restrictie
 - rs001
@@ -6979,7 +6979,7 @@ Maximale waarde 99
 ## Zoektermen
 - berichtsubversie
 - header
-- jw305
+- JW305
 - maximale
 - restrictie
 - rs002
@@ -7022,7 +7022,7 @@ Vullen met een versienummer bestaande uit drie gehele getallen, gescheiden met p
 - gescheiden
 - getallen
 - header
-- jw305
+- JW305
 - punten
 - restrictie
 - rs048
@@ -7067,7 +7067,7 @@ Vullen met een versienummer bestaande uit drie gehele getallen, gescheiden met p
 - gescheiden
 - getallen
 - header
-- jw305
+- JW305
 - punten
 - restrictie
 - rs048
@@ -7106,7 +7106,7 @@ Minimale waarde 0
 `JW305.StartProduct.ToewijzingNummer_Nummer`
 
 ## Zoektermen
-- jw305
+- JW305
 - minimale
 - restrictie
 - rs001
@@ -7146,7 +7146,7 @@ Maximale waarde 999999999 (9*9)
 
 ## Zoektermen
 - 999999999
-- jw305
+- JW305
 - maximale
 - restrictie
 - rs006
@@ -7187,7 +7187,7 @@ Maximale lengte 2 posities
 `JW305.StartProduct.Product_Product`
 
 ## Zoektermen
-- jw305
+- JW305
 - lengte
 - maximale
 - posities
@@ -7228,7 +7228,7 @@ Maximale lengte 5 posities
 `JW305.StartProduct.Product_Product`
 
 ## Zoektermen
-- jw305
+- JW305
 - lengte
 - maximale
 - posities
@@ -7271,7 +7271,7 @@ Geen lege elementen in XML.
 ## Zoektermen
 - elementen
 - geen
-- jw305
+- JW305
 - lege
 - product_product
 - restrictie
@@ -7309,7 +7309,7 @@ Datum vullen zonder tijdzone.
 
 ## Zoektermen
 - datum
-- jw305
+- JW305
 - restrictie
 - rs032
 - startproduct
@@ -7351,7 +7351,7 @@ Datum vullen zonder tijdzone.
 ## Zoektermen
 - begindatum_datum
 - datum
-- jw305
+- JW305
 - restrictie
 - rs032
 - startproduct
@@ -7371,14 +7371,14 @@ JW305 binnen berichtklasse StartProduct.
 
 ---
 
-# Regel CS058 - StatusAanlevering
+# Regel CS058 - 1 (eerste aanlevering) of 3 (verwijderen aanlevering) vullen.
 
 ## Metadata
 - Regelcode: CS058
 - Type: Constraint
 - Bericht: JW305
 - Berichtklasse: StartProduct
-- Element: StatusAanlevering
+- Element: LDT_StatusAanlevering
 - Retourcode: 0001
 - Domein: Jeugdwet
 - Release: iJw 3.2.0
@@ -7392,9 +7392,9 @@ JW305 binnen berichtklasse StartProduct.
 ## Zoektermen
 - aanlevering
 - constraint
-- cs058
+- CS058
 - eerste
-- jw305
+- JW305
 - startproduct
 - statusaanlevering
 - verwijderen
@@ -7410,16 +7410,18 @@ Dit is regel CS058.
 ### Op welk bericht is CS058 van toepassing?
 JW305 binnen berichtklasse StartProduct.
 
+## Technisch pad
+`JW305.StartProduct.StatusAanlevering`
+
 ---
 
-# Regel RS008 - StatusAanlevering_StatusAanlevering
-
+# Regel RS008 - Maximale lengte 1 positie
 ## Metadata
 - Regelcode: RS008
 - Type: Restrictie
 - Bericht: JW305
 - Berichtklasse: StartProduct
-- Element: StatusAanlevering_StatusAanlevering
+- Element: LDT_StatusAanlevering
 - Codelijst: COD467
 - Domein: Jeugdwet
 - Release: iJw 3.2.0
@@ -7428,17 +7430,17 @@ JW305 binnen berichtklasse StartProduct.
 Maximale lengte 1 positie
 
 ## Technisch pad
-`JW305.StartProduct.StatusAanlevering_StatusAanlevering`
+`JW305.StartProduct.StatusAanlevering`
 
 ## Zoektermen
-- jw305
+- JW305
 - lengte
 - maximale
 - positie
 - restrictie
 - rs008
 - startproduct
-- statusaanlevering_statusaanlevering
+- statusaanlevering
 
 ## Veelgestelde vragen
 ### Welke regel hoort bij StatusAanlevering_StatusAanlevering?
@@ -7452,14 +7454,14 @@ JW305 binnen berichtklasse StartProduct.
 
 ---
 
-# Regel CS002 - Bsn_BurgerServicenummer
+# Regel CS002 - Bsn.LDT_BurgerServicenummer
 
 ## Metadata
 - Regelcode: CS002
 - Type: Constraint
 - Bericht: JW307
 - Berichtklasse: Client
-- Element: Bsn_BurgerServicenummer
+- Element: Bsn.LDT_BurgerServicenummer
 - Sleutelelement: ja
 - Retourcode: 0001
 - Domein: Jeugdwet
@@ -7469,21 +7471,21 @@ JW305 binnen berichtklasse StartProduct.
 De waarde moet voldoen aan de 11-proef.
 
 ## Technisch pad
-`JW307.Client.Bsn_BurgerServicenummer`
+`JW307.Client.Bsn.LDT_BurgerServicenummer`
 
 ## Zoektermen
 - 11-proef
 - bsn_burgerservicenummer
 - client
 - constraint
-- cs002
-- jw307
+- CS002
+- JW307
 - moet
 - voldoen
 - waarde
 
 ## Veelgestelde vragen
-### Welke regel hoort bij Bsn_BurgerServicenummer?
+### Welke regel hoort bij Bsn.LDT_BurgerServicenummer?
 Dit is regel CS002.
 
 ### Wat zegt regel CS002?
@@ -7494,14 +7496,14 @@ JW307 binnen berichtklasse Client.
 
 ---
 
-# Regel RS015 - Bsn_BurgerServicenummer
+# Regel RS015 - Bsn.LDT_BurgerServicenummer
 
 ## Metadata
 - Regelcode: RS015
 - Type: Restrictie
 - Bericht: JW307
 - Berichtklasse: Client
-- Element: Bsn_BurgerServicenummer
+- Element: Bsn.LDT_BurgerServicenummer
 - Sleutelelement: ja
 - Domein: Jeugdwet
 - Release: iJw 3.2.0
@@ -7510,12 +7512,12 @@ JW307 binnen berichtklasse Client.
 Maximale lengte 9 posities
 
 ## Technisch pad
-`JW307.Client.Bsn_BurgerServicenummer`
+`JW307.Client.Bsn.LDT_BurgerServicenummer`
 
 ## Zoektermen
 - bsn_burgerservicenummer
 - client
-- jw307
+- JW307
 - lengte
 - maximale
 - posities
@@ -7523,7 +7525,7 @@ Maximale lengte 9 posities
 - rs015
 
 ## Veelgestelde vragen
-### Welke regel hoort bij Bsn_BurgerServicenummer?
+### Welke regel hoort bij Bsn.LDT_BurgerServicenummer?
 Dit is regel RS015.
 
 ### Wat zegt regel RS015?
@@ -7534,14 +7536,14 @@ JW307 binnen berichtklasse Client.
 
 ---
 
-# Regel RS037 - Bsn_BurgerServicenummer
+# Regel RS037 - Bsn.LDT_BurgerServicenummer
 
 ## Metadata
 - Regelcode: RS037
 - Type: Restrictie
 - Bericht: JW307
 - Berichtklasse: Client
-- Element: Bsn_BurgerServicenummer
+- Element: Bsn.LDT_BurgerServicenummer
 - Sleutelelement: ja
 - Domein: Jeugdwet
 - Release: iJw 3.2.0
@@ -7550,19 +7552,19 @@ JW307 binnen berichtklasse Client.
 Vullen met 9 cijfers.
 
 ## Technisch pad
-`JW307.Client.Bsn_BurgerServicenummer`
+`JW307.Client.Bsn.LDT_BurgerServicenummer`
 
 ## Zoektermen
 - bsn_burgerservicenummer
 - cijfers
 - client
-- jw307
+- JW307
 - restrictie
 - rs037
 - vullen
 
 ## Veelgestelde vragen
-### Welke regel hoort bij Bsn_BurgerServicenummer?
+### Welke regel hoort bij Bsn.LDT_BurgerServicenummer?
 Dit is regel RS037.
 
 ### Wat zegt regel RS037?
@@ -7581,7 +7583,7 @@ JW307 binnen berichtklasse Client.
 - Bericht: JW307
 - Berichtklasse: Client
 - Element: Geboortedatum
-- CDT-element: Datum_Datum
+- CDT-element: Datum
 - Domein: Jeugdwet
 - Release: iJw 3.2.0
 
@@ -7595,7 +7597,7 @@ Datum vullen zonder tijdzone.
 - client
 - datum
 - geboortedatum
-- jw307
+- JW307
 - restrictie
 - rs032
 - tijdzone
@@ -7642,7 +7644,7 @@ Voor Geboortedatum geldt dat DatumGebruik en Datum met elkaar in overeenstemming
 - elkaar
 - geboortedatum
 - geldt
-- jw307
+- JW307
 - moeten
 - overeenstemming
 - voor
@@ -7667,8 +7669,8 @@ JW307 binnen berichtklasse Client.
 - Type: Restrictie
 - Bericht: JW307
 - Berichtklasse: Client
-- Element: Geboortedatum
-- CDT-element: DatumGebruik_DatumGebruik
+- Element: Datumgebruik
+- CDT-element: CDT_Geboortedatum
 - Codelijst: COD170
 - Domein: Jeugdwet
 - Release: iJw 3.2.0
@@ -7682,7 +7684,7 @@ Maximale lengte 1 positie
 ## Zoektermen
 - client
 - geboortedatum
-- jw307
+- JW307
 - lengte
 - maximale
 - positie
@@ -7701,14 +7703,14 @@ JW307 binnen berichtklasse Client.
 
 ---
 
-# Regel RS008 - Geslacht_Geslacht
+# Regel RS008 - Geslacht
 
 ## Metadata
 - Regelcode: RS008
 - Type: Restrictie
 - Bericht: JW307
 - Berichtklasse: Client
-- Element: Geslacht_Geslacht
+- Element: LDT_Geslacht
 - Codelijst: COD046
 - Domein: Jeugdwet
 - Release: iJw 3.2.0
@@ -7717,12 +7719,12 @@ JW307 binnen berichtklasse Client.
 Maximale lengte 1 positie
 
 ## Technisch pad
-`JW307.Client.Geslacht_Geslacht`
+`JW307.Client.Geslacht`
 
 ## Zoektermen
 - client
-- geslacht_geslacht
-- jw307
+- geslacht
+- JW307
 - lengte
 - maximale
 - positie
@@ -7730,7 +7732,7 @@ Maximale lengte 1 positie
 - rs008
 
 ## Veelgestelde vragen
-### Welke regel hoort bij Geslacht_Geslacht?
+### Welke regel hoort bij Geslacht?
 Dit is regel RS008.
 
 ### Wat zegt regel RS008?
@@ -7762,7 +7764,7 @@ Maximale lengte 200 posities
 
 ## Zoektermen
 - client
-- jw307
+- JW307
 - lengte
 - maximale
 - naam_verkortenaam
@@ -7791,7 +7793,7 @@ JW307 binnen berichtklasse Client.
 - Berichtklasse: Client
 - Element: Naam_VerkorteNaam
 - CDT-element: Geslachtsnaam_Achternaam
-- Sub-element: Achternaam_Naam
+- Sub-element: Achternaam.LDT_Naam
 - Domein: Jeugdwet
 - Release: iJw 3.2.0
 
@@ -7805,7 +7807,7 @@ Geen lege elementen in XML.
 - client
 - elementen
 - geen
-- jw307
+- JW307
 - lege
 - naam_verkortenaam
 - restrictie
@@ -7844,7 +7846,7 @@ Maximale lengte 10 posities
 
 ## Zoektermen
 - client
-- jw307
+- JW307
 - lengte
 - maximale
 - naam_verkortenaam
@@ -7887,7 +7889,7 @@ Geen lege elementen in XML.
 - client
 - elementen
 - geen
-- jw307
+- JW307
 - lege
 - naam_verkortenaam
 - restrictie
@@ -7925,7 +7927,7 @@ Maximale lengte 200 posities
 
 ## Zoektermen
 - client
-- jw307
+- JW307
 - lengte
 - maximale
 - naam_verkortenaam
@@ -7967,7 +7969,7 @@ Geen lege elementen in XML.
 - client
 - elementen
 - geen
-- jw307
+- JW307
 - lege
 - naam_verkortenaam
 - restrictie
@@ -8005,7 +8007,7 @@ Maximale lengte 6 posities
 
 ## Zoektermen
 - client
-- jw307
+- JW307
 - lengte
 - maximale
 - naam_verkortenaam
@@ -8046,7 +8048,7 @@ Aaneengesloten vullen (zonder punten of spaties).
 ## Zoektermen
 - aaneengesloten
 - client
-- jw307
+- JW307
 - naam_verkortenaam
 - punten
 - restrictie
@@ -8087,7 +8089,7 @@ Maximale lengte 8 posities
 ## Zoektermen
 - afzender_agbcode
 - header
-- jw307
+- JW307
 - lengte
 - maximale
 - posities
@@ -8127,7 +8129,7 @@ Vullen met 8 cijfers.
 - afzender_agbcode
 - cijfers
 - header
-- jw307
+- JW307
 - restrictie
 - rs036
 - vullen
@@ -8164,7 +8166,7 @@ Vullen met 4 cijfers.
 ## Zoektermen
 - cijfers
 - header
-- jw307
+- JW307
 - ontvanger_gemeente
 - restrictie
 - rs035
@@ -8203,7 +8205,7 @@ Maximale lengte 12 posities
 ## Zoektermen
 - berichtidentificatie
 - header
-- jw307
+- JW307
 - lengte
 - maximale
 - posities
@@ -8245,7 +8247,7 @@ Geen lege elementen in XML.
 - elementen
 - geen
 - header
-- jw307
+- JW307
 - lege
 - restrictie
 - rs033
@@ -8284,7 +8286,7 @@ Datum vullen zonder tijdzone.
 - berichtidentificatie
 - datum
 - header
-- jw307
+- JW307
 - restrictie
 - rs032
 - tijdzone
@@ -8323,7 +8325,7 @@ Maximale lengte 3 posities
 ## Zoektermen
 - berichtcode
 - header
-- jw307
+- JW307
 - lengte
 - maximale
 - posities
@@ -8362,7 +8364,7 @@ Vullen met BerichtCode volgens de specificatie
 ## Zoektermen
 - berichtcode
 - header
-- jw307
+- JW307
 - restrictie
 - rs047
 - specificatie
@@ -8401,9 +8403,9 @@ BerichtVersie vullen met 3.
 ## Zoektermen
 - berichtversie
 - constraint
-- cs025
+- CS025
 - header
-- jw307
+- JW307
 - vullen
 
 ## Veelgestelde vragen
@@ -8425,7 +8427,7 @@ JW307 binnen berichtklasse Header.
 - Type: Restrictie
 - Bericht: JW307
 - Berichtklasse: Header
-- Element: BerichtVersie_BerichtVersie
+- Element: LDT_BerichtVersie
 - Domein: Jeugdwet
 - Release: iJw 3.2.0
 
@@ -8433,12 +8435,12 @@ JW307 binnen berichtklasse Header.
 Minimale waarde 0
 
 ## Technisch pad
-`JW307.Header.BerichtVersie_BerichtVersie`
+`JW307.Header.BerichtVersie.LDT_BerichtVersie`
 
 ## Zoektermen
 - berichtversie_berichtversie
 - header
-- jw307
+- JW307
 - minimale
 - restrictie
 - rs001
@@ -8476,7 +8478,7 @@ Maximale waarde 99
 ## Zoektermen
 - berichtversie_berichtversie
 - header
-- jw307
+- JW307
 - maximale
 - restrictie
 - rs002
@@ -8514,9 +8516,9 @@ BerichtSubversie vullen met 2.
 ## Zoektermen
 - berichtsubversie
 - constraint
-- cs015
+- CS015
 - header
-- jw307
+- JW307
 - vullen
 
 ## Veelgestelde vragen
@@ -8551,7 +8553,7 @@ Minimale waarde 0
 ## Zoektermen
 - berichtsubversie
 - header
-- jw307
+- JW307
 - minimale
 - restrictie
 - rs001
@@ -8589,7 +8591,7 @@ Maximale waarde 99
 ## Zoektermen
 - berichtsubversie
 - header
-- jw307
+- JW307
 - maximale
 - restrictie
 - rs002
@@ -8632,16 +8634,16 @@ Vullen met een versienummer bestaande uit drie gehele getallen, gescheiden met p
 - gescheiden
 - getallen
 - header
-- jw307
+- JW307
 - punten
 - restrictie
 - rs048
 - versienummer
 - vullen
-- xsdversie_xsdversie
+- xsdversie
 
 ## Veelgestelde vragen
-### Welke regel hoort bij XsdVersie_XsdVersie?
+### Welke regel hoort bij XsdVersie?
 Dit is regel RS048.
 
 ### Wat zegt regel RS048?
@@ -8652,14 +8654,14 @@ JW307 binnen berichtklasse Header.
 
 ---
 
-# Regel RS048 - XsdVersie_XsdVersie
+# Regel RS048 - XsdVersie
 
 ## Metadata
 - Regelcode: RS048
 - Type: Restrictie
 - Bericht: JW307
 - Berichtklasse: Header
-- Element: XsdVersie_XsdVersie
+- Element: BerichtVersie.LDT_BerichtVersie
 - CDT-element: BasisschemaXsdVersie_Versie
 - Domein: Jeugdwet
 - Release: iJw 3.2.0
@@ -8668,7 +8670,7 @@ JW307 binnen berichtklasse Header.
 Vullen met een versienummer bestaande uit drie gehele getallen, gescheiden met punten.
 
 ## Technisch pad
-`JW307.Header.XsdVersie_XsdVersie`
+`JW307.Header.BerichtVersie.LDT_BerichtVersie`
 
 ## Zoektermen
 - bestaande
@@ -8677,7 +8679,7 @@ Vullen met een versienummer bestaande uit drie gehele getallen, gescheiden met p
 - gescheiden
 - getallen
 - header
-- jw307
+- JW307
 - punten
 - restrictie
 - rs048
@@ -8716,7 +8718,7 @@ Minimale waarde 0
 `JW307.StopProduct.ToewijzingNummer_Nummer`
 
 ## Zoektermen
-- jw307
+- JW307
 - minimale
 - restrictie
 - rs001
@@ -8756,7 +8758,7 @@ Maximale waarde 999999999 (9*9)
 
 ## Zoektermen
 - 999999999
-- jw307
+- JW307
 - maximale
 - restrictie
 - rs006
@@ -8797,7 +8799,7 @@ Maximale lengte 2 posities
 `JW307.StopProduct.Product_Product`
 
 ## Zoektermen
-- jw307
+- JW307
 - lengte
 - maximale
 - posities
@@ -8838,7 +8840,7 @@ Maximale lengte 5 posities
 `JW307.StopProduct.Product_Product`
 
 ## Zoektermen
-- jw307
+- JW307
 - lengte
 - maximale
 - posities
@@ -8881,7 +8883,7 @@ Geen lege elementen in XML.
 ## Zoektermen
 - elementen
 - geen
-- jw307
+- JW307
 - lege
 - product_product
 - restrictie
@@ -8919,7 +8921,7 @@ Datum vullen zonder tijdzone.
 
 ## Zoektermen
 - datum
-- jw307
+- JW307
 - restrictie
 - rs032
 - stopproduct
@@ -8961,7 +8963,7 @@ Datum vullen zonder tijdzone.
 ## Zoektermen
 - begindatum_datum
 - datum
-- jw307
+- JW307
 - restrictie
 - rs032
 - stopproduct
@@ -8981,14 +8983,14 @@ JW307 binnen berichtklasse StopProduct.
 
 ---
 
-# Regel CS058 - StatusAanlevering
+# Regel CS058 - 1 (eerste aanlevering) of 3 (verwijderen aanlevering) vullen.
 
 ## Metadata
 - Regelcode: CS058
 - Type: Constraint
 - Bericht: JW307
 - Berichtklasse: StopProduct
-- Element: StatusAanlevering
+- Element: LDT_StatusAanlevering
 - Retourcode: 0001
 - Domein: Jeugdwet
 - Release: iJw 3.2.0
@@ -9002,9 +9004,9 @@ JW307 binnen berichtklasse StopProduct.
 ## Zoektermen
 - aanlevering
 - constraint
-- cs058
+- CS058
 - eerste
-- jw307
+- JW307
 - statusaanlevering
 - stopproduct
 - verwijderen
@@ -9041,13 +9043,13 @@ Maximale lengte 1 positie
 `JW307.StopProduct.StatusAanlevering_StatusAanlevering`
 
 ## Zoektermen
-- jw307
+- JW307
 - lengte
 - maximale
 - positie
 - restrictie
 - rs008
-- statusaanlevering_statusaanlevering
+- statusaanlevering
 - stopproduct
 
 ## Veelgestelde vragen
@@ -9082,7 +9084,7 @@ Maximale lengte 2 posities
 `JW307.StopProduct.RedenBeeindiging_RedenBeeindiging`
 
 ## Zoektermen
-- jw307
+- JW307
 - lengte
 - maximale
 - posities
@@ -9124,7 +9126,7 @@ Datum vullen zonder tijdzone.
 ## Zoektermen
 - datum
 - einddatum_datum
-- jw307
+- JW307
 - restrictie
 - rs032
 - stopproduct
@@ -9221,7 +9223,7 @@ JW315 binnen berichtklasse AangevraagdProduct.
 
 ---
 
-# Regel CD079 - Product
+# Regel CD079 - Indien Budget leeg is, dan verplicht vullen
 
 ## Metadata
 - Regelcode: CD079
@@ -9242,7 +9244,7 @@ Indien Budget leeg is, dan verplicht vullen
 ## Zoektermen
 - aangevraagdproduct
 - budget
-- cd079
+- CD079
 - conditie
 - indien
 - jw315
@@ -9263,7 +9265,7 @@ JW315 binnen berichtklasse AangevraagdProduct.
 
 ---
 
-# Regel RS009 - Product_Product
+# Regel RS009 - Maximale lengte 2 posities
 
 ## Metadata
 - Regelcode: RS009
@@ -9304,7 +9306,7 @@ JW315 binnen berichtklasse AangevraagdProduct.
 
 ---
 
-# Regel RS012 - Product_Product
+# Regel RS012 - Maximale lengte 5 posities
 
 ## Metadata
 - Regelcode: RS012
@@ -9344,7 +9346,7 @@ JW315 binnen berichtklasse AangevraagdProduct.
 
 ---
 
-# Regel RS033 - Product_Product
+# Regel RS033 - Geen lege elementen in XML.
 
 ## Metadata
 - Regelcode: RS033
@@ -9384,7 +9386,7 @@ JW315 binnen berichtklasse AangevraagdProduct.
 
 ---
 
-# Regel RS032 - ToewijzingIngangsdatum_Datum
+# Regel RS032 - Datum vullen zonder tijdzone.
 
 ## Metadata
 - Regelcode: RS032
@@ -9445,7 +9447,7 @@ Verplicht vullen indien Budget gevuld is
 ## Zoektermen
 - aangevraagdproduct
 - budget
-- cd075
+- CD075
 - conditie
 - gevuld
 - indien
@@ -9486,7 +9488,7 @@ Verplicht vullen indien Frequentie waarde 2 (per week)
 
 ## Zoektermen
 - aangevraagdproduct
-- cd076
+- CD076
 - conditie
 - frequentie
 - indien
@@ -9532,7 +9534,7 @@ Indien van toepassing vullen met een waarde die groter is dan, of gelijk is aan 
 - aangevraagdproduct
 - begindatum
 - constraint
-- cs003
+- CS003
 - gelijk
 - groter
 - indien
@@ -9616,7 +9618,7 @@ Indien Code in Product gevuld is, verplicht vullen.
 
 ## Zoektermen
 - aangevraagdproduct
-- cd041
+- CD041
 - code
 - conditie
 - gevuld
@@ -9660,7 +9662,7 @@ Indien Budget gevuld is, dan leeg laten
 ## Zoektermen
 - aangevraagdproduct
 - budget
-- cd077
+- CD077
 - conditie
 - gevuld
 - indien
@@ -9702,7 +9704,7 @@ Indien Code in AangevraagdProduct leeg is en ToewijzingEinddatum van het Aangevr
 ## Zoektermen
 - 31-12-2020
 - aangevraagdproduct
-- cd095
+- CD095
 - code
 - conditie
 - groter
@@ -10036,7 +10038,7 @@ Indien Beschikkingnummer gevuld is, verplicht vullen, anders leeg laten.
 - anders
 - beschikkingingangsdatum
 - beschikkingnummer
-- cd043
+- CD043
 - conditie
 - gevuld
 - indien
@@ -10160,7 +10162,7 @@ Als type verwijzer gelijk is aan 02, 03, 04 of 05 en ZorgverlenerCode is gevuld,
 
 ## Zoektermen
 - aangevraagdproduct
-- cd066
+- CD066
 - conditie
 - gelijk
 - gevuld
@@ -10205,7 +10207,7 @@ Als type verwijzer gelijk is aan 02, 03, 04 of 05 en ZorgverlenerCode is leeg, d
 
 ## Zoektermen
 - aangevraagdproduct
-- cd067
+- CD067
 - conditie
 - gelijk
 - gevuld
@@ -10330,7 +10332,7 @@ Als type verwijzer ongelijk is aan 02, 03, 04 of 05, dan is ZorgverlenerCode lee
 
 ## Zoektermen
 - aangevraagdproduct
-- cd068
+- CD068
 - conditie
 - jw315
 - leeg
@@ -10531,7 +10533,7 @@ Indien Omvang gevuld is, dan leeg laten
 ## Zoektermen
 - aangevraagdproduct
 - budget
-- cd078
+- CD078
 - conditie
 - gevuld
 - indien
@@ -10629,14 +10631,14 @@ JW315 binnen berichtklasse AangevraagdProduct.
 
 ---
 
-# Regel CS002 - Bsn_BurgerServicenummer
+# Regel CS002 - Bsn.LDT_BurgerServicenummer
 
 ## Metadata
 - Regelcode: CS002
 - Type: Constraint
 - Bericht: JW315
 - Berichtklasse: Client
-- Element: Bsn_BurgerServicenummer
+- Element: Bsn.LDT_BurgerServicenummer
 - Sleutelelement: ja
 - Retourcode: 0001
 - Domein: Jeugdwet
@@ -10646,21 +10648,21 @@ JW315 binnen berichtklasse AangevraagdProduct.
 De waarde moet voldoen aan de 11-proef.
 
 ## Technisch pad
-`JW315.Client.Bsn_BurgerServicenummer`
+`JW315.Client.Bsn.LDT_BurgerServicenummer`
 
 ## Zoektermen
 - 11-proef
 - bsn_burgerservicenummer
 - client
 - constraint
-- cs002
+- CS002
 - jw315
 - moet
 - voldoen
 - waarde
 
 ## Veelgestelde vragen
-### Welke regel hoort bij Bsn_BurgerServicenummer?
+### Welke regel hoort bij Bsn.LDT_BurgerServicenummer?
 Dit is regel CS002.
 
 ### Wat zegt regel CS002?
@@ -10671,14 +10673,14 @@ JW315 binnen berichtklasse Client.
 
 ---
 
-# Regel RS015 - Bsn_BurgerServicenummer
+# Regel RS015 - Bsn.LDT_BurgerServicenummer
 
 ## Metadata
 - Regelcode: RS015
 - Type: Restrictie
 - Bericht: JW315
 - Berichtklasse: Client
-- Element: Bsn_BurgerServicenummer
+- Element: Bsn.LDT_BurgerServicenummer
 - Sleutelelement: ja
 - Domein: Jeugdwet
 - Release: iJw 3.2.0
@@ -10687,7 +10689,7 @@ JW315 binnen berichtklasse Client.
 Maximale lengte 9 posities
 
 ## Technisch pad
-`JW315.Client.Bsn_BurgerServicenummer`
+`JW315.Client.Bsn.LDT_BurgerServicenummer`
 
 ## Zoektermen
 - bsn_burgerservicenummer
@@ -10700,7 +10702,7 @@ Maximale lengte 9 posities
 - rs015
 
 ## Veelgestelde vragen
-### Welke regel hoort bij Bsn_BurgerServicenummer?
+### Welke regel hoort bij Bsn.LDT_BurgerServicenummer?
 Dit is regel RS015.
 
 ### Wat zegt regel RS015?
@@ -10711,14 +10713,14 @@ JW315 binnen berichtklasse Client.
 
 ---
 
-# Regel RS037 - Bsn_BurgerServicenummer
+# Regel RS037 - Bsn.LDT_BurgerServicenummer
 
 ## Metadata
 - Regelcode: RS037
 - Type: Restrictie
 - Bericht: JW315
 - Berichtklasse: Client
-- Element: Bsn_BurgerServicenummer
+- Element: Bsn.LDT_BurgerServicenummer
 - Sleutelelement: ja
 - Domein: Jeugdwet
 - Release: iJw 3.2.0
@@ -10727,7 +10729,7 @@ JW315 binnen berichtklasse Client.
 Vullen met 9 cijfers.
 
 ## Technisch pad
-`JW315.Client.Bsn_BurgerServicenummer`
+`JW315.Client.Bsn.LDT_BurgerServicenummer`
 
 ## Zoektermen
 - bsn_burgerservicenummer
@@ -10739,7 +10741,7 @@ Vullen met 9 cijfers.
 - vullen
 
 ## Veelgestelde vragen
-### Welke regel hoort bij Bsn_BurgerServicenummer?
+### Welke regel hoort bij Bsn.LDT_BurgerServicenummer?
 Dit is regel RS037.
 
 ### Wat zegt regel RS037?
@@ -11657,7 +11659,7 @@ BerichtVersie vullen met 3.
 ## Zoektermen
 - berichtversie
 - constraint
-- cs025
+- CS025
 - header
 - jw315
 - vullen
@@ -11770,7 +11772,7 @@ BerichtSubversie vullen met 2.
 ## Zoektermen
 - berichtsubversie
 - constraint
-- cs015
+- CS015
 - header
 - jw315
 - vullen
@@ -11953,14 +11955,14 @@ JW315 binnen berichtklasse Header.
 
 ---
 
-# Regel CS002 - Bsn_BurgerServicenummer
+# Regel CS002 - Bsn.LDT_BurgerServicenummer
 
 ## Metadata
 - Regelcode: CS002
 - Type: Constraint
 - Bericht: JW317
 - Berichtklasse: Client
-- Element: Bsn_BurgerServicenummer
+- Element: Bsn.LDT_BurgerServicenummer
 - Sleutelelement: ja
 - Retourcode: 0001
 - Domein: Jeugdwet
@@ -11970,21 +11972,21 @@ JW315 binnen berichtklasse Header.
 De waarde moet voldoen aan de 11-proef.
 
 ## Technisch pad
-`JW317.Client.Bsn_BurgerServicenummer`
+`JW317.Client.Bsn.LDT_BurgerServicenummer`
 
 ## Zoektermen
 - 11-proef
 - bsn_burgerservicenummer
 - client
 - constraint
-- cs002
+- CS002
 - jw317
 - moet
 - voldoen
 - waarde
 
 ## Veelgestelde vragen
-### Welke regel hoort bij Bsn_BurgerServicenummer?
+### Welke regel hoort bij Bsn.LDT_BurgerServicenummer?
 Dit is regel CS002.
 
 ### Wat zegt regel CS002?
@@ -11995,14 +11997,14 @@ JW317 binnen berichtklasse Client.
 
 ---
 
-# Regel RS015 - Bsn_BurgerServicenummer
+# Regel RS015 - Bsn.LDT_BurgerServicenummer
 
 ## Metadata
 - Regelcode: RS015
 - Type: Restrictie
 - Bericht: JW317
 - Berichtklasse: Client
-- Element: Bsn_BurgerServicenummer
+- Element: Bsn.LDT_BurgerServicenummer
 - Sleutelelement: ja
 - Domein: Jeugdwet
 - Release: iJw 3.2.0
@@ -12011,7 +12013,7 @@ JW317 binnen berichtklasse Client.
 Maximale lengte 9 posities
 
 ## Technisch pad
-`JW317.Client.Bsn_BurgerServicenummer`
+`JW317.Client.Bsn.LDT_BurgerServicenummer`
 
 ## Zoektermen
 - bsn_burgerservicenummer
@@ -12024,7 +12026,7 @@ Maximale lengte 9 posities
 - rs015
 
 ## Veelgestelde vragen
-### Welke regel hoort bij Bsn_BurgerServicenummer?
+### Welke regel hoort bij Bsn.LDT_BurgerServicenummer?
 Dit is regel RS015.
 
 ### Wat zegt regel RS015?
@@ -12035,14 +12037,14 @@ JW317 binnen berichtklasse Client.
 
 ---
 
-# Regel RS037 - Bsn_BurgerServicenummer
+# Regel RS037 - Bsn.LDT_BurgerServicenummer
 
 ## Metadata
 - Regelcode: RS037
 - Type: Restrictie
 - Bericht: JW317
 - Berichtklasse: Client
-- Element: Bsn_BurgerServicenummer
+- Element: Bsn.LDT_BurgerServicenummer
 - Sleutelelement: ja
 - Domein: Jeugdwet
 - Release: iJw 3.2.0
@@ -12051,7 +12053,7 @@ JW317 binnen berichtklasse Client.
 Vullen met 9 cijfers.
 
 ## Technisch pad
-`JW317.Client.Bsn_BurgerServicenummer`
+`JW317.Client.Bsn.LDT_BurgerServicenummer`
 
 ## Zoektermen
 - bsn_burgerservicenummer
@@ -12063,7 +12065,7 @@ Vullen met 9 cijfers.
 - vullen
 
 ## Veelgestelde vragen
-### Welke regel hoort bij Bsn_BurgerServicenummer?
+### Welke regel hoort bij Bsn.LDT_BurgerServicenummer?
 Dit is regel RS037.
 
 ### Wat zegt regel RS037?
@@ -12408,7 +12410,7 @@ BerichtVersie vullen met 3.
 ## Zoektermen
 - berichtversie
 - constraint
-- cs025
+- CS025
 - header
 - jw317
 - vullen
@@ -12521,7 +12523,7 @@ BerichtSubversie vullen met 2.
 ## Zoektermen
 - berichtsubversie
 - constraint
-- cs015
+- CS015
 - header
 - jw317
 - vullen
@@ -12725,7 +12727,7 @@ Indien Budget leeg is, dan verplicht vullen
 
 ## Zoektermen
 - budget
-- cd079
+- CD079
 - conditie
 - indien
 - jw317
@@ -12932,7 +12934,7 @@ Verplicht vullen indien Budget gevuld is
 
 ## Zoektermen
 - budget
-- cd075
+- CD075
 - conditie
 - einddatum
 - gevuld
@@ -12973,7 +12975,7 @@ Verplicht vullen indien Frequentie waarde 2 (per week)
 `JW317.NieuwProduct.Einddatum`
 
 ## Zoektermen
-- cd076
+- CD076
 - conditie
 - einddatum
 - frequentie
@@ -13019,7 +13021,7 @@ Indien van toepassing vullen met een waarde die groter is dan, of gelijk is aan 
 - aangeduide
 - begindatum
 - constraint
-- cs003
+- CS003
 - einddatum
 - gelijk
 - groter
@@ -13103,7 +13105,7 @@ Indien Code in Product gevuld is, verplicht vullen.
 `JW317.NieuwProduct.Omvang`
 
 ## Zoektermen
-- cd041
+- CD041
 - code
 - conditie
 - gevuld
@@ -13147,7 +13149,7 @@ Indien Budget gevuld is, dan leeg laten
 
 ## Zoektermen
 - budget
-- cd077
+- CD077
 - conditie
 - gevuld
 - indien
@@ -13189,7 +13191,7 @@ Indien Code in NieuwProduct leeg is en Einddatum groter dan 31-12-2020 of leeg i
 
 ## Zoektermen
 - 31-12-2020
-- cd096
+- CD096
 - code
 - conditie
 - einddatum
@@ -13538,7 +13540,7 @@ Indien Omvang gevuld is, dan leeg laten
 
 ## Zoektermen
 - budget
-- cd078
+- CD078
 - conditie
 - gevuld
 - indien
@@ -13776,7 +13778,7 @@ Verplicht vullen indien Budget gevuld is
 
 ## Zoektermen
 - budget
-- cd075
+- CD075
 - conditie
 - einddatum
 - gevuld
@@ -13817,7 +13819,7 @@ Verplicht vullen indien Frequentie waarde 2 (per week)
 `JW317.TeWijzigenProduct.Einddatum`
 
 ## Zoektermen
-- cd076
+- CD076
 - conditie
 - einddatum
 - frequentie
@@ -13863,7 +13865,7 @@ Indien van toepassing vullen met een waarde die groter is dan, of gelijk is aan 
 - aangeduide
 - begindatum
 - constraint
-- cs003
+- CS003
 - einddatum
 - gelijk
 - groter
@@ -13948,7 +13950,7 @@ Indien Budget gevuld is, dan leeg laten
 
 ## Zoektermen
 - budget
-- cd077
+- CD077
 - conditie
 - gevuld
 - indien
@@ -14374,7 +14376,7 @@ Indien Omvang gevuld is, dan leeg laten
 
 ## Zoektermen
 - budget
-- cd078
+- CD078
 - conditie
 - gevuld
 - indien
@@ -14735,7 +14737,7 @@ Als VerzoekAntwoord de waarde 1 (Verzoek afgewezen) heeft, dan vullen
 ## Zoektermen
 - afgewezen
 - antwoord
-- cd085
+- CD085
 - conditie
 - heeft
 - jw319
@@ -14778,7 +14780,7 @@ Als VerzoekAntwoord de waarde 2 (Aanvraag in onderzoek) heeft, dan leeg laten
 ## Zoektermen
 - aanvraag
 - antwoord
-- cd086
+- CD086
 - conditie
 - heeft
 - jw319
@@ -15175,7 +15177,7 @@ BerichtVersie vullen met 3.
 ## Zoektermen
 - berichtversie
 - constraint
-- cs025
+- CS025
 - header
 - jw319
 - vullen
@@ -15288,7 +15290,7 @@ BerichtSubversie vullen met 2.
 ## Zoektermen
 - berichtsubversie
 - constraint
-- cs015
+- CS015
 - header
 - jw319
 - vullen
@@ -15510,14 +15512,14 @@ JW319 binnen berichtklasse Woonplaatsbeginsel.
 
 ---
 
-# Regel CS002 - Bsn_BurgerServicenummer
+# Regel CS002 - Bsn.LDT_BurgerServicenummer
 
 ## Metadata
 - Regelcode: CS002
 - Type: Constraint
 - Bericht: JW323
 - Berichtklasse: Client
-- Element: Bsn_BurgerServicenummer
+- Element: Bsn.LDT_BurgerServicenummer
 - Sleutelelement: ja
 - Retourcode: 0001
 - Domein: Jeugdwet
@@ -15527,21 +15529,21 @@ JW319 binnen berichtklasse Woonplaatsbeginsel.
 De waarde moet voldoen aan de 11-proef.
 
 ## Technisch pad
-`JW323.Client.Bsn_BurgerServicenummer`
+`JW323.Client.Bsn.LDT_BurgerServicenummer`
 
 ## Zoektermen
 - 11-proef
 - bsn_burgerservicenummer
 - client
 - constraint
-- cs002
+- CS002
 - jw323
 - moet
 - voldoen
 - waarde
 
 ## Veelgestelde vragen
-### Welke regel hoort bij Bsn_BurgerServicenummer?
+### Welke regel hoort bij Bsn.LDT_BurgerServicenummer?
 Dit is regel CS002.
 
 ### Wat zegt regel CS002?
@@ -15552,14 +15554,14 @@ JW323 binnen berichtklasse Client.
 
 ---
 
-# Regel RS015 - Bsn_BurgerServicenummer
+# Regel RS015 - Bsn.LDT_BurgerServicenummer
 
 ## Metadata
 - Regelcode: RS015
 - Type: Restrictie
 - Bericht: JW323
 - Berichtklasse: Client
-- Element: Bsn_BurgerServicenummer
+- Element: Bsn.LDT_BurgerServicenummer
 - Sleutelelement: ja
 - Domein: Jeugdwet
 - Release: iJw 3.2.0
@@ -15568,7 +15570,7 @@ JW323 binnen berichtklasse Client.
 Maximale lengte 9 posities
 
 ## Technisch pad
-`JW323.Client.Bsn_BurgerServicenummer`
+`JW323.Client.Bsn.LDT_BurgerServicenummer`
 
 ## Zoektermen
 - bsn_burgerservicenummer
@@ -15581,7 +15583,7 @@ Maximale lengte 9 posities
 - rs015
 
 ## Veelgestelde vragen
-### Welke regel hoort bij Bsn_BurgerServicenummer?
+### Welke regel hoort bij Bsn.LDT_BurgerServicenummer?
 Dit is regel RS015.
 
 ### Wat zegt regel RS015?
@@ -15592,14 +15594,14 @@ JW323 binnen berichtklasse Client.
 
 ---
 
-# Regel RS037 - Bsn_BurgerServicenummer
+# Regel RS037 - Bsn.LDT_BurgerServicenummer
 
 ## Metadata
 - Regelcode: RS037
 - Type: Restrictie
 - Bericht: JW323
 - Berichtklasse: Client
-- Element: Bsn_BurgerServicenummer
+- Element: Bsn.LDT_BurgerServicenummer
 - Sleutelelement: ja
 - Domein: Jeugdwet
 - Release: iJw 3.2.0
@@ -15608,7 +15610,7 @@ JW323 binnen berichtklasse Client.
 Vullen met 9 cijfers.
 
 ## Technisch pad
-`JW323.Client.Bsn_BurgerServicenummer`
+`JW323.Client.Bsn.LDT_BurgerServicenummer`
 
 ## Zoektermen
 - bsn_burgerservicenummer
@@ -15620,7 +15622,7 @@ Vullen met 9 cijfers.
 - vullen
 
 ## Veelgestelde vragen
-### Welke regel hoort bij Bsn_BurgerServicenummer?
+### Welke regel hoort bij Bsn.LDT_BurgerServicenummer?
 Dit is regel RS037.
 
 ### Wat zegt regel RS037?
@@ -16418,7 +16420,7 @@ BerichtVersie vullen met 3.
 ## Zoektermen
 - berichtversie
 - constraint
-- cs025
+- CS025
 - header
 - jw323
 - vullen
@@ -16531,7 +16533,7 @@ BerichtSubversie vullen met 2.
 ## Zoektermen
 - berichtsubversie
 - constraint
-- cs015
+- CS015
 - header
 - jw323
 - vullen
@@ -16778,7 +16780,7 @@ Verplicht vullen indien DebetCredit bij het ingediende bedrag de waarde C (credi
 ## Zoektermen
 - anders
 - bedrag
-- cd060
+- CD060
 - conditie
 - credit
 - debetcredit
@@ -17348,7 +17350,7 @@ Als eenheid ongelijk is aan 83 (euro’s) dan verplicht vullen, anders leeg late
 
 ## Zoektermen
 - anders
-- cd087
+- CD087
 - conditie
 - eenheid
 - euro
@@ -17662,14 +17664,14 @@ JW323 binnen berichtklasse Prestatie.
 
 ---
 
-# Regel CS002 - Bsn_BurgerServicenummer
+# Regel CS002 - Bsn.LDT_BurgerServicenummer
 
 ## Metadata
 - Regelcode: CS002
 - Type: Constraint
 - Bericht: JW325
 - Berichtklasse: Client
-- Element: Bsn_BurgerServicenummer
+- Element: Bsn.LDT_BurgerServicenummer
 - Sleutelelement: ja
 - Retourcode: 0001
 - Domein: Jeugdwet
@@ -17679,21 +17681,21 @@ JW323 binnen berichtklasse Prestatie.
 De waarde moet voldoen aan de 11-proef.
 
 ## Technisch pad
-`JW325.Client.Bsn_BurgerServicenummer`
+`JW325.Client.Bsn.LDT_BurgerServicenummer`
 
 ## Zoektermen
 - 11-proef
 - bsn_burgerservicenummer
 - client
 - constraint
-- cs002
+- CS002
 - jw325
 - moet
 - voldoen
 - waarde
 
 ## Veelgestelde vragen
-### Welke regel hoort bij Bsn_BurgerServicenummer?
+### Welke regel hoort bij Bsn.LDT_BurgerServicenummer?
 Dit is regel CS002.
 
 ### Wat zegt regel CS002?
@@ -17704,14 +17706,14 @@ JW325 binnen berichtklasse Client.
 
 ---
 
-# Regel RS015 - Bsn_BurgerServicenummer
+# Regel RS015 - Bsn.LDT_BurgerServicenummer
 
 ## Metadata
 - Regelcode: RS015
 - Type: Restrictie
 - Bericht: JW325
 - Berichtklasse: Client
-- Element: Bsn_BurgerServicenummer
+- Element: Bsn.LDT_BurgerServicenummer
 - Sleutelelement: ja
 - Domein: Jeugdwet
 - Release: iJw 3.2.0
@@ -17720,7 +17722,7 @@ JW325 binnen berichtklasse Client.
 Maximale lengte 9 posities
 
 ## Technisch pad
-`JW325.Client.Bsn_BurgerServicenummer`
+`JW325.Client.Bsn.LDT_BurgerServicenummer`
 
 ## Zoektermen
 - bsn_burgerservicenummer
@@ -17733,7 +17735,7 @@ Maximale lengte 9 posities
 - rs015
 
 ## Veelgestelde vragen
-### Welke regel hoort bij Bsn_BurgerServicenummer?
+### Welke regel hoort bij Bsn.LDT_BurgerServicenummer?
 Dit is regel RS015.
 
 ### Wat zegt regel RS015?
@@ -17744,14 +17746,14 @@ JW325 binnen berichtklasse Client.
 
 ---
 
-# Regel RS037 - Bsn_BurgerServicenummer
+# Regel RS037 - Bsn.LDT_BurgerServicenummer
 
 ## Metadata
 - Regelcode: RS037
 - Type: Restrictie
 - Bericht: JW325
 - Berichtklasse: Client
-- Element: Bsn_BurgerServicenummer
+- Element: Bsn.LDT_BurgerServicenummer
 - Sleutelelement: ja
 - Domein: Jeugdwet
 - Release: iJw 3.2.0
@@ -17760,7 +17762,7 @@ JW325 binnen berichtklasse Client.
 Vullen met 9 cijfers.
 
 ## Technisch pad
-`JW325.Client.Bsn_BurgerServicenummer`
+`JW325.Client.Bsn.LDT_BurgerServicenummer`
 
 ## Zoektermen
 - bsn_burgerservicenummer
@@ -17772,7 +17774,7 @@ Vullen met 9 cijfers.
 - vullen
 
 ## Veelgestelde vragen
-### Welke regel hoort bij Bsn_BurgerServicenummer?
+### Welke regel hoort bij Bsn.LDT_BurgerServicenummer?
 Dit is regel RS037.
 
 ### Wat zegt regel RS037?
@@ -18489,7 +18491,7 @@ BerichtVersie vullen met 3.
 ## Zoektermen
 - berichtversie
 - constraint
-- cs025
+- CS025
 - header
 - jw325
 - vullen
@@ -18602,7 +18604,7 @@ BerichtSubversie vullen met 2.
 ## Zoektermen
 - berichtsubversie
 - constraint
-- cs015
+- CS015
 - header
 - jw325
 - vullen
@@ -19104,7 +19106,7 @@ Verplicht vullen indien DebetCredit bij het ingediende bedrag de waarde C (credi
 ## Zoektermen
 - anders
 - bedrag
-- cd060
+- CD060
 - conditie
 - credit
 - debetcredit
