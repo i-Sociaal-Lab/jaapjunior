@@ -1,0 +1,84 @@
+# OP281 — Een declaratiebericht kan prestaties van één of meer cliënten bevatten
+
+## Definitie
+Een declaratiebericht mag prestaties bevatten van één of meerdere cliënten.
+
+---
+
+## Samenvatting
+Deze bedrijfsregel bepaalt dat binnen één declaratiebericht prestaties voor meerdere cliënten mogen worden opgenomen.
+
+Hiermee ondersteunt de iJw-standaard efficiënte verwerking van declaraties en bundeling van prestaties binnen één bericht.
+
+---
+
+## Regel
+Een declaratiebericht kan prestaties bevatten van één of meer cliënten.
+
+---
+
+## Toelichting
+Binnen één declaratiebericht mogen:
+- prestaties van één cliënt
+- prestaties van meerdere cliënten
+
+worden gecombineerd.
+
+De regel biedt flexibiliteit in de samenstelling van declaratieberichten.
+
+---
+
+## Kernbegrippen
+- declaratiebericht
+- prestaties
+- cliënten
+- declareren
+- bundeling
+- financiële verwerking
+
+---
+
+## Metadata
+
+| Eigenschap | Waarde |
+|---|---|
+| Regelcode | OP281 |
+| Titel | Een declaratiebericht kan prestaties van één of meer cliënten bevatten |
+| Afkorting | OP |
+| Type | Bedrijfsregel |
+| Domein | Jeugdwet (iJw) |
+| Standaardversie | iJw 3.2.0 |
+| Berichttype | JW323 |
+| Documenttype | iJw bedrijfsregels |
+| Bron | https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op281/ |
+
+---
+
+## Toepassing
+Deze regel is relevant bij:
+- opstellen van declaratieberichten
+- bundelen van declaraties
+- verwerking van JW323-berichten
+- financiële administratie
+- declaratieverwerking
+- verwerking van prestaties van meerdere cliënten
+
+---
+
+## Zoektermen
+declaratiebericht, prestaties, cliënten, meerdere cliënten, declareren, JW323, iJw, jeugdwet, bundeling declaraties, financiële verwerking
+
+---
+
+## Verwante concepten
+- declaratieverwerking
+- prestaties registreren
+- financiële administratie
+- periodieke declaraties
+- cliëntadministratie
+- berichtverwerking
+
+---
+
+## Gerelateerde uitgangspunten
+- UP025

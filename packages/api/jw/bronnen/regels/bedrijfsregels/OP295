@@ -1,0 +1,131 @@
+# OP295 — Gebruik van regieberichten (start-/stopberichten) is verplicht
+
+## Definitie
+Het gebruik van regieberichten is verplicht bij:
+- inspanningsgerichte uitvoering
+- outputgerichte uitvoering
+
+Een Stopbericht mag alleen worden verzonden wanneer eerder een Startbericht is verzonden.
+
+Voor oudere leveringen uit:
+- iWmo/iJw release 2.4
+- van vóór 2021
+
+geldt:
+- wanneer geen Startbericht bestaat, mag geen Stopbericht worden verzonden
+
+---
+
+## Samenvatting
+Deze bedrijfsregel bepaalt wanneer het gebruik van Start- en Stopberichten verplicht is binnen de iJw-standaard.
+
+Bij inspanningsgerichte en outputgerichte ondersteuning:
+- moeten regieberichten gebruikt worden
+
+Daarnaast geldt:
+- een Stopbericht kan alleen bestaan wanneer eerder een Startbericht is verstuurd
+
+Voor oudere leveringen zonder historisch Startbericht:
+- is verzending van een Stopbericht niet toegestaan
+
+De regel ondersteunt consistente registratie van leveringen en administratieve opvolging van ondersteuning.
+
+---
+
+## Regel
+- Gebruik van regieberichten is verplicht bij:
+  - inspanningsgerichte uitvoering
+  - outputgerichte uitvoering
+- Een Stopbericht mag alleen gestuurd worden als eerder een Startbericht is verzonden.
+- Voor oudere leveringen uit iWmo/iJw release 2.4 (vóór 2021):
+  - zonder bestaand Startbericht mag geen Stopbericht worden gestuurd.
+
+---
+
+## Toelichting
+
+### Verplicht gebruik regieberichten
+Bij de uitvoeringsvarianten:
+- inspanningsgericht
+- outputgericht
+
+zijn regieberichten verplicht.
+
+Dit betreft:
+- Startberichten
+- Stopberichten
+
+### Relatie tussen Start- en Stopbericht
+Een Stopbericht:
+- mag alleen worden verstuurd wanneer eerder een Startbericht bestaat
+
+### Oudere leveringen
+Voor historische leveringen uit:
+- iWmo/iJw release 2.4
+- vóór 2021
+
+geldt:
+- wanneer geen Startbericht geregistreerd is
+- geen Stopbericht mag worden verstuurd
+
+---
+
+## Kernbegrippen
+- regiebericht
+- Startbericht
+- Stopbericht
+- inspanningsgericht
+- outputgericht
+- levering ondersteuning
+- historische levering
+- uitvoeringsvariant
+
+---
+
+## Metadata
+
+| Eigenschap | Waarde |
+|---|---|
+| Regelcode | OP295 |
+| Titel | Gebruik van regieberichten (start-/stopberichten) is verplicht |
+| Afkorting | OP |
+| Type | Bedrijfsregel |
+| Domein | Jeugdwet (iJw) |
+| Standaardversie | iJw 3.2.0 |
+| Berichttypen | JW305, JW307 |
+| Documenttype | iJw bedrijfsregels |
+| Bron | https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op295/ |
+
+---
+
+## Toepassing
+Deze regel is relevant bij:
+- verwerking van regieberichten
+- gebruik van Startberichten
+- gebruik van Stopberichten
+- inspanningsgerichte ondersteuning
+- outputgerichte ondersteuning
+- verwerking van JW305- en JW307-berichten
+- historische leveringen
+- administratieve opvolging van ondersteuning
+
+---
+
+## Zoektermen
+regiebericht, Startbericht, Stopbericht, inspanningsgericht, outputgericht, historische levering, uitvoeringsvariant, JW305, JW307, iJw, jeugdwet, ondersteuning starten, ondersteuning stoppen
+
+---
+
+## Verwante concepten
+- regieberichten
+- levering ondersteuning
+- uitvoeringsvarianten
+- historische zorgadministratie
+- administratieve verwerking
+- berichtverwerking
+
+---
+
+## Gerelateerde uitgangspunten
+- UP001
+- UP017

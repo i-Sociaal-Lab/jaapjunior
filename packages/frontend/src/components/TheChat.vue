@@ -81,6 +81,9 @@ const hasToPickMessage = computed(() => {
 	return Array.isArray(lastMessage);
 });
 
+const canSelectAgent = import.meta.env.VITE_TEST_ENV === "true";
+const selectedAgent = ref<"jw" | "wmo" | undefined>("jw");
+
 // Computed property to determine if send button should be disabled
 const isSendDisabled = computed(() => {
 	return (
@@ -199,14 +202,11 @@ async function sendMessage() {
 		}
 
 		const model = selectedMode.value === "rate" ? "rate" : selectedModel.value;
-		if (!model) {
-			throw new Error("No model selected");
-		}
-
 		const response = await api.conversations[":id"].$post({
 			param: { id: conversationId.value },
 			json: {
 				inputText: messageText,
+				agent: selectedAgent.value,
 				model,
 			},
 		});
@@ -332,6 +332,8 @@ watch(
 			v-model="messageInput"
 			v-model:mode="selectedMode"
 			v-model:selected-model="selectedModel"
+			v-model:selected-agent="selectedAgent"
+            :can-select-agent="canSelectAgent"
 			@submit="sendMessage"
 			@feedback="showFeedbackDialog = true"
 			autofocus

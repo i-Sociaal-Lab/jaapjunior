@@ -1,0 +1,106 @@
+# OP354 — Zorg of ondersteuning geleverd aan een cliënt tijdens een bepaalde declaratieperiode wordt direct in de erop volgende declaratieperiode of achteraf in een latere declaratieperiode gedeclareerd
+
+## Definitie
+Zorg of ondersteuning die geleverd is aan een cliënt tijdens een declaratieperiode wordt:
+- gedeclareerd in de direct daarop volgende declaratieperiode
+- of achteraf in een latere declaratieperiode
+
+---
+
+## Samenvatting
+Deze bedrijfsregel bepaalt wanneer geleverde zorg of ondersteuning gedeclareerd mag worden.
+
+Prestaties worden:
+- normaal gesproken gedeclareerd in de eerstvolgende declaratieperiode
+- maar mogen ook later alsnog worden gedeclareerd
+
+De regel ondersteunt flexibele en correcte verwerking van declaraties binnen de iJw-standaard.
+
+---
+
+## Regel
+Zorg of ondersteuning geleverd aan een cliënt tijdens een bepaalde declaratieperiode wordt:
+- direct in de erop volgende declaratieperiode gedeclareerd
+- of achteraf in een latere declaratieperiode gedeclareerd
+
+---
+
+## Toelichting
+
+### Eerstvolgende declaratieperiode
+Geleverde ondersteuning wordt bij voorkeur:
+- zo snel mogelijk gedeclareerd
+- in de eerstvolgende declaratieperiode
+
+### Latere declaratieperiode
+Wanneer declaratie niet direct plaatsvindt:
+- mag de ondersteuning alsnog in een latere declaratieperiode worden gedeclareerd
+
+### Doel
+De regel ondersteunt:
+- correcte financiële verwerking
+- administratieve flexibiliteit
+- verwerking van nagekomen declaraties
+
+---
+
+## Kernbegrippen
+- declaratieperiode
+- geleverde zorg
+- geleverde ondersteuning
+- declareren
+- latere declaratie
+- prestaties
+- cliënt
+
+---
+
+## Metadata
+
+| Eigenschap | Waarde |
+|---|---|
+| Regelcode | OP354 |
+| Titel | Zorg of ondersteuning geleverd aan een cliënt tijdens een bepaalde declaratieperiode wordt direct in de erop volgende declaratieperiode of achteraf in een latere declaratieperiode gedeclareerd |
+| Afkorting | OP |
+| Type | Bedrijfsregel |
+| Domein | Jeugdwet (iJw) |
+| Standaardversie | iJw 3.2.0 |
+| Berichttype | JW323 |
+| Documenttype | iJw bedrijfsregels |
+| Bron | https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op354 |
+
+---
+
+## Toepassing
+Deze regel is relevant bij:
+- declaratieverwerking
+- verwerking van nagekomen declaraties
+- financiële administratie
+- verwerking van JW323-berichten
+- beheer van declaratieperioden
+- registratie van geleverde ondersteuning
+
+---
+
+## Zoektermen
+declaratieperiode, geleverde zorg, geleverde ondersteuning, declareren, latere declaratieperiode, prestaties, JW323, iJw, jeugdwet, nagekomen declaratie
+
+---
+
+## Verwante concepten
+- declaratieverwerking
+- financiële administratie
+- periodieke declaraties
+- prestaties registreren
+- ondersteuning declareren
+- declaratiebeheer
+
+---
+
+## Gerelateerde technische regels
+- TR335
+
+---
+
+## Gerelateerde uitgangspunten
+- UP025

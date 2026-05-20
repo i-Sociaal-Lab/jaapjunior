@@ -1,0 +1,112 @@
+# OP365 — De aanbieder declareert een zorg- of ondersteuningsproduct met een omvang die aansluit bij de toewijzing en/of gecontracteerde afspraken
+
+## Definitie
+De aanbieder declareert een zorg- of ondersteuningsproduct met een omvang die aansluit bij:
+- de afgegeven toewijzing
+- en/of de gemaakte contractafspraken
+
+---
+
+## Samenvatting
+Deze bedrijfsregel bepaalt dat de omvang van gedeclareerde ondersteuning moet overeenkomen met de toegewezen of contractueel afgesproken ondersteuning.
+
+De gedeclareerde omvang moet passen binnen:
+- de grenzen van de toewijzing
+- of de overeengekomen contractafspraken tussen gemeente en aanbieder
+
+De regel ondersteunt correcte financiële verwerking en consistente declaratiecontrole binnen de iJw-standaard.
+
+---
+
+## Regel
+De aanbieder declareert een zorg- of ondersteuningsproduct met een omvang die aansluit bij:
+- de toewijzing
+- en/of gecontracteerde afspraken
+
+---
+
+## Toelichting
+
+### Aansluiting op toewijzing
+De gedeclareerde omvang:
+- moet overeenkomen met de omvang die in de toewijzing is vastgelegd
+
+### Contractafspraken
+Wanneer aanvullende contractafspraken gelden:
+- moet de declaratie ook daarop aansluiten
+
+Dit kan betrekking hebben op:
+- volumes
+- aantallen
+- tijdseenheden
+- budgetten
+
+### Doel
+De regel ondersteunt:
+- correcte declaratieverwerking
+- consistente financiële controle
+- naleving van contractafspraken
+
+---
+
+## Kernbegrippen
+- declareren
+- omvang
+- toewijzing
+- contractafspraken
+- ondersteuningsproduct
+- gedeclareerde ondersteuning
+- declaratiecontrole
+
+---
+
+## Metadata
+
+| Eigenschap | Waarde |
+|---|---|
+| Regelcode | OP365 |
+| Titel | De aanbieder declareert een zorg- of ondersteuningsproduct met een omvang die aansluit bij de toewijzing en/of gecontracteerde afspraken |
+| Afkorting | OP |
+| Type | Bedrijfsregel |
+| Domein | Jeugdwet (iJw) |
+| Standaardversie | iJw 3.2.0 |
+| Berichttype | JW323 |
+| Documenttype | iJw bedrijfsregels |
+| Bron | https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op365 |
+
+---
+
+## Toepassing
+Deze regel is relevant bij:
+- declaratieverwerking
+- controle op omvang van ondersteuning
+- financiële administratie
+- verwerking van JW323-berichten
+- contractbeheer
+- validatie van gedeclareerde prestaties
+
+---
+
+## Zoektermen
+declareren, omvang, toewijzing, contractafspraken, ondersteuningsproduct, declaratiecontrole, JW323, iJw, jeugdwet, gedeclareerde ondersteuning
+
+---
+
+## Verwante concepten
+- declaratieverwerking
+- contractbeheer
+- financiële controle
+- toewijzingsbeheer
+- prestatievalidatie
+- ondersteuning declareren
+
+---
+
+## Gerelateerde technische regels
+- TR321
+- TR322
+
+---
+
+## Gerelateerde uitgangspunten
+- UP027

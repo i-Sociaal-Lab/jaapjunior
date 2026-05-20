@@ -1,0 +1,101 @@
+# OP298 — Het verlagen van het Volume bij de frequentie totaal binnen geldigheid toewijzing is alleen toegestaan na overleg met en instemming van de betreffende aanbieder
+
+## Definitie
+Het verlagen van het volume bij de frequentie `totaal binnen geldigheidsduur toewijzing` is uitsluitend toegestaan:
+- na overleg met de betreffende aanbieder
+- en met instemming van de aanbieder
+
+---
+
+## Samenvatting
+Deze bedrijfsregel bepaalt dat een gemeente het toegewezen volume niet eenzijdig mag verlagen wanneer de frequentie gebaseerd is op het totaal binnen de geldigheidsduur van de toewijzing.
+
+Een wijziging van het volume is alleen toegestaan:
+- na afstemming met de aanbieder
+- en wanneer de aanbieder hiermee instemt
+
+De regel ondersteunt zorgvuldige wijziging van toewijzingen en voorkomt onverwachte aanpassingen in lopende ondersteuning.
+
+---
+
+## Regel
+Het verlagen van het volume bij de frequentie `totaal binnen geldigheidsduur toewijzing` is alleen toegestaan na overleg met en instemming van de aanbieder.
+
+---
+
+## Toelichting
+
+### Frequentie totaal binnen geldigheidsduur
+Deze frequentie betekent:
+- dat een totaal volume geldt voor de volledige looptijd van de toewijzing
+
+### Verlaging volume
+Een verlaging van het toegekende volume:
+- mag niet eenzijdig plaatsvinden
+- vereist overleg met de aanbieder
+- vereist expliciete instemming van de aanbieder
+
+### Doel
+De regel ondersteunt:
+- voorspelbaarheid van ondersteuning
+- correcte contractuitvoering
+- afstemming tussen gemeente en aanbieder
+
+---
+
+## Kernbegrippen
+- volume
+- geldigheidsduur
+- toewijzing
+- frequentie
+- aanbieder
+- instemming
+- overleg
+- volumeverlaging
+
+---
+
+## Metadata
+
+| Eigenschap | Waarde |
+|---|---|
+| Regelcode | OP298 |
+| Titel | Het verlagen van het Volume bij de frequentie totaal binnen geldigheid toewijzing is alleen toegestaan na overleg met en instemming van de betreffende aanbieder |
+| Afkorting | OP |
+| Type | Bedrijfsregel |
+| Domein | Jeugdwet (iJw) |
+| Standaardversie | iJw 3.2.0 |
+| Berichttype | JW301 |
+| Documenttype | iJw bedrijfsregels |
+| Bron | https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op298/ |
+
+---
+
+## Toepassing
+Deze regel is relevant bij:
+- wijzigen van toewijzingen
+- aanpassen van volumes
+- beheer van ondersteuning
+- verwerking van JW301-berichten
+- afstemming tussen gemeente en aanbieder
+- ondersteuning met totaalvolume binnen geldigheidsduur
+
+---
+
+## Zoektermen
+volume verlagen, geldigheidsduur toewijzing, totaal binnen geldigheidsduur, aanbieder instemming, volumewijziging, overleg aanbieder, JW301, iJw, jeugdwet, toewijzing wijzigen
+
+---
+
+## Verwante concepten
+- volumebeheer
+- toewijzingsbeheer
+- contractafspraken
+- ondersteuning wijzigen
+- frequenties
+- administratieve mutaties
+
+---
+
+## Gerelateerde uitgangspunten
+- UP031
