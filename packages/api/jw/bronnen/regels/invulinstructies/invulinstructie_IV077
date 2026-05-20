@@ -47,10 +47,10 @@ Maximaal volume per productperiode: Het aantal zondagen vermenigvuldigd met het 
 Voorbeeld 2 bij Outputgerichte toewijzing:
 Cliënt heeft een toewijzing voor 300 euro per week met ingangsdatum 07-07-2025 en einddatum 05-09-2025
 Het aantal zondagen in de productperiodes:
-- Juli:    07-07 t/m 31-07 -> telt 3 zondagen
-- Augustus: 1-08 t/m 31-08 -> telt 5 zondagen
- 1-08 t/m 31-08 -> telt 5 zondagen. Daar wordt een weekvolume bijgeteld, omdat de einddatum van de toewijzing niet op zondag is, de laatste zondag van de toewijzing 31 augustus is.
+- Juli:     07-07-2025 t/m 31-07-2025 -> telt 3 zondagen
+- Augustus: 01-08-2025 t/m 31-08-2025 -> telt 5 zondagen
+ 1-08-2025 t/m 31-08-2025 -> telt 5 zondagen. Daar wordt een weekvolume bijgeteld, omdat de einddatum van de toewijzing niet op zondag is, de laatste zondag van de toewijzing 31 augustus is.
   
 Maximaal volume per productperiode: Het aantal zondagen vermenigvuldigd met het volume uit de toewijzing (evt. vermeerderd met een extra weekvolume):
-- Juli 3 zondagen : 3 x weekvolume (300 euro) = 900 euro
-- Augustus 5 zondagen + 1 weekvolume: 6 x weekvolumes (300 euro) = 1800 euro
+- Juli 2025,    3 zondagen : 3 x weekvolume (300 euro) = 900 euro
+- Augustus2025, 5 zondagen + 1 weekvolume: 6 x weekvolumes (300 euro) = 1800 euro
