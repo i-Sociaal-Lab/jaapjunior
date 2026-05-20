@@ -23,8 +23,9 @@ Het gebruik van ongestructureerde informatie dient tot een minimum beperkt te wo
 Commentaar mag gebruikt worden om aanvullende informatie op te nemen.
 
 Dit geldt voor:
-- AangevraagdProduct
-- ToegewezenProduct
+- AangevraagdProduct (JW315)
+- Client (JW301)
+- ToegewezenProduct (JW301)
 
 Alleen informatie opnemen die niet elders in het bericht past.
 
