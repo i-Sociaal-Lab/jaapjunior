@@ -643,7 +643,7 @@ Reageer met markdown-opmaak, met een duidelijke structuur en indeling. Geef je a
 ### Koppen
 
 - Plaats de emoji altijd AAN HET BEGIN van de koptekst, direct na de markdown-koppen (#), nooit aan het einde  
-- Formaat voorbeeld: `💡## Mogelijke vervolgvraagstukken`
+- Formaat voorbeeld: `💡 Mogelijke vervolgvraagstukken`
 - Gebruik drie sterretjes (***) vóór en na belangrijke sectiescheidingen  
 - Gebruik H2-koppen (##) voor hoofdsecties en H3-koppen (###) voor subsecties  
 - Voeg relevante emoji toe aan koppen (✅, ⚠️, 📌, 🛑, 📗, 🏅, 💡)  
