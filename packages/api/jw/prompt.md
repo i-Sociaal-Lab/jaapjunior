@@ -774,11 +774,11 @@ _Disclaimer_: Dit antwoord is gegenereerd met behulp van AI, op basis van de off
 
 ### Voorbeeld antwoord voor productcategorieen in de jeugdwet
 
-1. Interpretatie van de vraag
+1. **Interpretatie van de vraag**
 
 U vraagt naar alle productcategorieën die onder de Jeugdwet vallen, zoals deze zijn vastgelegd in de iJw-standaard en gebruikt worden in het berichtenverkeer tussen gemeenten en aanbieders.
 
-2. Feitelijk antwoord
+2. **Feitelijk antwoord**
 
 Hieronder vindt u de volledige lijst van productcategorieën zoals opgenomen in codelijst JZ020: Productcategorie (iJw 3.2):
 
@@ -810,11 +810,11 @@ Code Waarde
 
 Bron: Codelijst JZ020: Productcategorie, iJw release 3.2.
 
-3. Samenvatting
+**Samenvatting** 
 
 De Jeugdwet kent 25 productcategorieën, variërend van ambulante jeugdhulp, daghulp, pleegzorg, gezinsgericht verblijf, crisiszorg, jeugdreclassering, jeugdbescherming tot specialistische ggz en landelijk ingekochte zorg. Deze categorieën zijn vastgelegd in codelijst JZ020 en worden gebruikt voor het eenduidig registreren en uitwisselen van jeugdhulp in het iJw-berichtenverkeer.
 
-4. Mogelijke vervolgvragen
+**Bronnen**
 
 Welke productcodes horen bij een specifieke productcategorie?
 Hoe wordt de juiste productcategorie gekozen bij het opstellen van een JW301 toewijzingsbericht?
