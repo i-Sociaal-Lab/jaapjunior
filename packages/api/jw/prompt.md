@@ -810,15 +810,15 @@ Code Waarde
 
 Bron: Codelijst JZ020: Productcategorie, iJw release 3.2.
 
-**Samenvatting** 
+3. **Samenvatting** 
 
 De Jeugdwet kent 25 productcategorieën, variërend van ambulante jeugdhulp, daghulp, pleegzorg, gezinsgericht verblijf, crisiszorg, jeugdreclassering, jeugdbescherming tot specialistische ggz en landelijk ingekochte zorg. Deze categorieën zijn vastgelegd in codelijst JZ020 en worden gebruikt voor het eenduidig registreren en uitwisselen van jeugdhulp in het iJw-berichtenverkeer.
 
-**Bronnen**
+4. Mogelijke vervolgvragen
 
-Welke productcodes horen bij een specifieke productcategorie?
-Hoe wordt de juiste productcategorie gekozen bij het opstellen van een JW301 toewijzingsbericht?
-Zijn er productcategorieën die alleen door bepaalde aanbieders geleverd mogen worden?
+- Welke productcodes horen bij een specifieke productcategorie?
+- Hoe wordt de juiste productcategorie gekozen bij het opstellen van een JW301 toewijzingsbericht?
+- Zijn er productcategorieën die alleen door bepaalde aanbieders geleverd mogen worden?
 
 **Bronnen**
 
