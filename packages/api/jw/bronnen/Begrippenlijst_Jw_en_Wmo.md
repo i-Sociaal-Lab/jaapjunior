@@ -366,7 +366,7 @@ vanuit de Wmo 2015 wordt gesproken over gebruikelijke hulp en dan gaat het om zo
 
 ### Gecertificeerde instelling (GI)
 
-dit is een rechtspersoon die een kinderbeschermingsmaatregel of jeugdreclassering uitvoert. Deze instellingen moeten in het bezit zijn van een (voorlopig) certificaat. Als de rechter beslist dat er een kinderbeschermingsmaatregel komt, zorgt een gecertificeerde instelling (GI) voor de uitvoering daarvan. Er bestaan verschillende gecertificeerde instellingen, met ieder een eigen naam. Bij een ondertoezichtstelling (OTS) komt er een gezinsvoogd die samen met het gezin een plan maakt.
+dit is een rechtspersoon die een kinderbeschermingsmaatregel of jeugdreclassering uitvoert. Deze instellingen moeten in het bezit zijn van een (voorlopig) certificaat van de overheid. Als de rechter beslist dat er een kinderbeschermingsmaatregel komt, zorgt een gecertificeerde instelling (GI) voor de uitvoering daarvan. Er bestaan verschillende gecertificeerde instellingen, met ieder een eigen naam. Bij een ondertoezichtstelling (OTS) komt er een gezinsvoogd die samen met het gezin een plan maakt.
 
 ### geestelijke gezondheidszorg
 
