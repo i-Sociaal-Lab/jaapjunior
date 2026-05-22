@@ -22,12 +22,12 @@ Voorbeeld
 
 In onderstaande voorbeeld wordt uitgegaan van de volgende situatie:
 
-Het ToegewezenProduct heeft Ingangsdatum 08-04-2025 en Einddatum 17-06-2025 (dit is de toegewezen periode)
+Het ToegewezenProduct heeft Ingangsdatum 08-04-2026 en Einddatum 17-06-2026 (dit is de toegewezen periode)
 ProductPeriodes voor de maanden April, Mei en Juni zijn dan:
 
-- April: 08-04-2025 t/m 30-04-2025
-- Mei  : 01-05-2025 t/m 31-05-2025
-- Juni : 01-06-2025 t/m 17-06-2025
+- April: 08-04-2026 t/m 30-04-2026
+- Mei  : 01-05-2026 t/m 31-05-2026
+- Juni : 01-06-2026 t/m 17-06-2026
 
 Trajectfinanciering
 
@@ -38,6 +38,6 @@ Als het resultaat pas aan het eind van het traject kan worden vastgesteld, wordt
 Voorbeeld
 
 Afspraak is dat op het eind van het traject de declaratie mag worden ingediend.
-Cliënt ontvangt outputgerichte hulp vanaf het begin tot het eind van toegewezen periode (08-04-2025 t/m 17-06-2025). Pas op 17-06-2025 kan het resultaat van de outputgerichte hulp worden vastgesteld. In de maanden April en Mei wordt er geen declaratie ingediend voor deze cliënt. Er volgt in de maand juni 1 Prestatie met de volgende ProductPeriode:
+Cliënt ontvangt outputgerichte hulp vanaf het begin tot het eind van toegewezen periode (08-04-2026 t/m 17-06-2026). Pas op 17-06-2026 kan het resultaat van de outputgerichte hulp worden vastgesteld. In de maanden April en Mei wordt er geen declaratie ingediend voor deze cliënt. Er volgt in de maand juni 1 Prestatie met de volgende ProductPeriode:
 
-- Juni: 01-06-2025 t/m 17-06-2025
+- Juni: 01-06-2026 t/m 17-06-2026
