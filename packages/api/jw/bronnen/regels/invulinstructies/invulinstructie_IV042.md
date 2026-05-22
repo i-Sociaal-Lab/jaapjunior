@@ -12,24 +12,28 @@ Als Eenheid een andere waarde dan 83 (Euro's) bevat, wordt GeleverdVolume gevuld
 
 Voorbeelden
 
-Voorbeeld 1A:
+*Voorbeeld 1A:* 
+
 In een inspanningsgerichte toewijzing wordt aangegeven dat een cliënt recht heeft op 5 dagdelen per week ondersteuning. Omvang in de toewijzing wordt als volgt gevuld:
 Volume: 5
 Eenheid: 16 (Dagdeel (4 uur))
 Frequentie: 2 (Per week)
 
-Voorbeeld 2A:
+*Voorbeeld 2A:* 
+
 In een outputgerichte toewijzing wordt aangegeven dat een cliënt ondersteuning krijgt voor een vast bedrag van 200 euro per maand. Omvang in de toewijzing wordt als volgt gevuld:
 Volume: 20000
 Eenheid: 83 (Euro's)
 Frequentie: 4 (Per maand)
 
-Voorbeeld 1B:
+*Voorbeeld 1B:* 
+
 In een declaratie wordt aangegeven dat in de afgelopen productperiode in totaal 20 dagdelen ondersteuning is geleverd. Dit wordt als volgt aangegeven in het declaratiebericht:
 GeleverdVolume: 20
 Eenheid: 16 (Dagdeel (4 uur))
 
-Voorbeeld 2B:
+*Voorbeeld 2B:*
+
 In een declaratie wordt aangegeven dat in de afgelopen productperiode ondersteuning is geleverd volgens het vaste, afgesproken maandbedrag van 200 euro. Dit wordt als volgt aangegeven in het declaratiebericht:
 GeleverdVolume: 20000
 Eenheid: 83 (Euro's)
