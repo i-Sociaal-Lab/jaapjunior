@@ -10,18 +10,18 @@ De lijst bevat gemeentecodes, gemeentenamen en provincies zoals gebruikt binnen 
 
 ## Metadata
 
-| Veld             | Waarde                                                                                                                                                                                                                                                                                                                                   |
-| ------------ | ----------------------------- | ------------- | ------------------------ |
-| Naam             | CBS Gemeentecodes                                                                                                                                                                                                                                                                                                                        |
-| Element          | LDT_GemeenteCode                                                                                                                                                                                                                                                                                                                         |
-| Type             | Referentielijst                                                                                                                                                                                                                                                                                                                          |
-| Standaard        | iJw 3.2                                                                                                                                                                                                                                                                                                                                  |
-| Status           | Productie                                                                                                                                                                                                                                                                                                                                |
-| Auteur           | CBS                                                                                                                                                                                                                                                                                                                                      |
-| Peildatum        | 01-01-2025                                                                                                                                                                                                                                                                                                                               |
-| Aantal gemeenten | 342                                                                                                                                                                                                                                                                                                                                      |
-| Bron             | [https://www.cbs.nl/nl-nl/onze-diensten/methoden/classificaties/overig/gemeentelijke-indelingen-per-jaar/indeling-per-jaar/gemeentelijke-indeling-op-1-januari-2025](https://www.cbs.nl/nl-nl/onze-diensten/methoden/classificaties/overig/gemeentelijke-indelingen-per-jaar/indeling-per-jaar/gemeentelijke-indeling-op-1-januari-2025) |
-| AI-agent         | Jw-agent                                                                                                                                                                                                                                                                                                                                 |
+| Veld             | Waarde    |
+| ------------ | ----------------------------- | 
+| Naam             | CBS Gemeentecodes|
+| Element          | LDT_GemeenteCode          |
+| Type             | Referentielijst           |
+| Standaard        | iJw 3.2                   |
+| Status           | Productie                 |
+| Auteur           | CBS                       |
+| Peildatum        | 01-01-2026                |
+| Aantal gemeenten | 342                       |
+| Bron             | https://www.cbs.nl/nl-nl/onze-diensten/methoden/classificaties/overig/gemeentelijke-indelingen-per-jaar/indeling-per-jaar/gemeentelijke-indeling-op-1-januari-2026) |
+| AI-agent         | Jw-agent, Wmo-agent |
 
 ---
 
