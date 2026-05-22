@@ -2,7 +2,12 @@
 
 *Hoe moet worden omgegaan met debet en credit prestaties in een declaratiebericht?*
 
-Wanneer een eerder ingediende prestatie door de aanbieder onjuist is bevonden, kan deze door de aanbieder worden ingetrokken door aanlevering van een credit prestatie.
-Dit kan alleen nadat er een declaratie-antwoordbericht op de debet prestatie is ontvangen en de prestatie daarin niet is afgekeurd. Een door de gemeente afgekeurde prestatie wordt nooit gecrediteerd.
+Debet en credit prestaties kunnen in 1 declaratiebericht worden aangeleverd. Hierbij geldt:
 
-NB: een creditering is een eenzijdige handeling van de aanbieder, die niet bestreden kan worden door een gemeente. De gemeente kan een ingediende credit prestatie dus niet afkeuren, tenzij het technische afkeur betreft. Zie hiervoor invulinstructies IV088 en IV087).
+- Een 1e debet prestatie en een identieke credit prestatie mogen niet in 1 declaratiebericht worden aangeleverd.
+Als de 1e debet en credit prestatie op 1 moment bekend zijn, dan horen die tegen elkaar weg te vallen en niet in 1 bericht te staan.
+- Een credit prestatie en een 2e debet prestatie kunnen desgewenst in hetzelfde bericht worden aangeleverd.
+
+Totaal declaratiebedrag
+
+Het totale declaratiebedrag van alle debet en credit prestaties in het declaratiebericht wordt ingevuld in TotaalIngediendBedrag in de header van het bericht. Hierbij worden debetbedragen opgeteld en creditbedragen afgetrokken.
