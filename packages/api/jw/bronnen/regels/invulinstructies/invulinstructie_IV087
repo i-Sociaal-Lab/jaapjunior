@@ -37,7 +37,9 @@ Voorbeeld:
 Indien een fout geconstateerd is in de berichtklassen onder Declaratie, wordt de Header retour gestuurd met retourcode 0200 (Geen opmerking over deze berichtklasse). TotaalToegekendBedrag in de berichtklasse DeclaratieAntwoord wordt gevuld met het totaal goedgekeurde bedrag (som van alle toegekende prestaties) en de klasse krijgt retourcode 0200. Indien een fout is geconstateerd in Cliënt wordt de betreffende retourcode bij de Cliënt gevuld en worden alle onderliggende Prestaties retour gestuurd met retourcode 0233 (Berichtklasse is niet beoordeeld). Indien een fout is geconstateerd in een Prestatie, wordt deze Prestatie retour gestuurd met de bijbehorende retourcode. Hierbij wordt tevens de bijbehorende klasse Cliënt meegestuurd met retourcode 0200 (Geen opmerking over deze berichtklasse). In de retour gestuurde Prestaties worden één of meerdere retourcodes gevuld om de inhoudelijke reden van afwijzing aan te geven.
 NB: Prestaties worden altijd volledig goed of volledig afgekeurd. Prestaties waarvan het ingediende bedrag wordt toegekend, worden niet opgenomen in het declaratie-antwoordbericht.
 Het declaratie-antwoordbericht dient niet:
+
 - Als ontvangstbevestiging.
 - Voor het opvragen van (extra) informatie door de gemeente.
 - Voor het doorgeven van correcties op declaratiegegevens aan de aanbieder.
+
 NB: Een bericht kan informatie over meerdere cliënten bevatten. Cliënten waarin geen fouten zijn geconstateerd, worden niet opgenomen in het declaratie-antwoordbericht.
