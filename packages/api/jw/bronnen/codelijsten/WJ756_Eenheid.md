@@ -1,18 +1,3 @@
-Ja. Voor RAG/vector search zijn tabellen vaak minder goed vindbaar dan expliciete tekst met één code per sectie. Je wilt dat vragen zoals:
-
-* "Wat betekent eenheid 14?"
-* "Wat is code 14?"
-* "Etmaal welke eenheidscode?"
-* "Wat betekent WJ756 code 14?"
-* "Eenheid etmaal"
-* "Mag ik declareren in etmalen?"
-
-allemaal dezelfde chunk vinden.
-
-Ik zou de codelijst daarom omzetten naar een structuur zoals hieronder.
-
----
-
 # WJ756 - Eenheid
 
 ## Metadata
