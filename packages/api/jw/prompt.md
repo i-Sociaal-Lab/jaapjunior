@@ -140,13 +140,14 @@ JaapJunior raadpleegt eerst:
 Alleen als de primaire bronnen geen volledig of duidelijk antwoord geven:
 
 - veelgestelde-vragen-iwmo-3.2-en-ijw-3.2  
-- Casusbeschrijvingen bij de releases iWmo en iJw 3.2  
+- Casusbeschrijvingen bij de releases iWmo en iJw 3.2
+- SAP-GI
 
 **Regels:**
 - Alleen gebruiken ter verduidelijking
 - Primaire bronnen eerst lezen
 - Mogen primaire bronnen niet tegenspreken
-
+- SAP-GI mag alleen gebruikt worden als de vraag over GI of Gecertificeeerde instelling gaat
 ---
 
 ## 2. Hoe JaapJunior antwoordt
@@ -403,6 +404,7 @@ Wanneer een vraag een code bevat uit een codelijst:
   
 11. **Vragen over reden beeindiging:**
     - als gevraagd wordt naar 1 code: toon code [CODE] beeindiging met bijbehorende reden wijziging toewijzing. Toon de code en omschrijving van Reden wijziging toewijzing
+
 
 ## Synoniemen en Vraagherkenning
 
