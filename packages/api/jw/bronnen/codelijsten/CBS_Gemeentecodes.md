@@ -2,7 +2,7 @@
 
 ## Definitie
 
-Officiële referentielijst van Nederlandse gemeenten conform de gemeentelijke indeling van het CBS per 1 januari 2025.
+Officiële referentielijst van Nederlandse gemeenten conform de gemeentelijke indeling van het CBS per 1 januari 2026.
 
 De lijst bevat gemeentecodes, gemeentenamen en provincies zoals gebruikt binnen het berichtenverkeer en de iStandaarden in het sociaal domein.
 
@@ -20,7 +20,7 @@ De lijst bevat gemeentecodes, gemeentenamen en provincies zoals gebruikt binnen 
 | Auteur           | CBS                       |
 | Peildatum        | 01-01-2026                |
 | Aantal gemeenten | 342                       |
-| Bron             | https://www.cbs.nl/nl-nl/onze-diensten/methoden/classificaties/overig/gemeentelijke-indelingen-per-jaar/indeling-per-jaar/gemeentelijke-indeling-op-1-januari-2026) |
+| Bron             | https://www.cbs.nl/nl-nl/onze-diensten/methoden/classificaties/overig/gemeentelijke-indelingen-per-jaar/indeling-per-jaar/gemeentelijke-indeling-op-1-januari-2026 |
 | AI-agent         | Jw-agent, Wmo-agent |
 
 ---
