@@ -1,0 +1,29 @@
+
+# Uitgangspunten iStandaarden iJw 3.2
+
+Deze uitgangspunten vormen de basis van het informatiemodel iJw 3.2 en beschrijven de fundamentele principes voor het berichtenverkeer binnen de Jeugdwet.
+
+| Code | Uitgangspunt | Gerelateerd aan |
+|--------|--------|--------|
+| UP001 | De Jw-berichtenfamilie ondersteunt het toewijzen, leveren en declareren van jeugdhulp in het kader van de Jeugdwet die geleverd wordt als Zorg in Natura (ZIN). | OP086, OP295, OP296, OP297 |
+| UP003 | De privacy van de cliënt is in de iJw geborgd doordat aangesloten ketenpartijen zich conformeren aan de Algemene Verordening Gegevensbescherming (AVG). | OP003, OP087, OP191 |
+| UP004 | De volgens de wet verantwoordelijke gemeente coördineert de inzet van jeugdhulp voor de cliënt door middel van toewijzingen (inspannings- en outputgericht). | OP001, OP002, OP043, OP086, OP087, OP186, OP079 |
+| UP006 | De cliënt wordt in de informatievoorziening Jw geïdentificeerd met zijn BSN. | OP079 |
+| UP007 | De gemeente legt in een beschikking vast of een cliënt recht heeft op ondersteuning vanuit de Jeugdwet (inspannings- en outputgericht). | OP257, OP258, OP259 |
+| UP016 | Jeugdhulp wordt uitgedrukt in jeugdhulpproducten. | OP260 |
+| UP017 | De informatie-uitwisseling in de Jeugdwet is gebaseerd op gestandaardiseerd berichtenverkeer. | OP033, OP047, OP065, OP071, OP072, OP076 |
+| UP019 | De cliënt staat centraal. | n.v.t. |
+| UP023 | Informatie wordt eenmalig bij de cliënt uitgevraagd. | OP039, OP076, OP091, OP130 |
+| UP024 | De informatievoorziening Jw conformeert zich aan de wet- en regelgeving die voortvloeit uit de Jeugdwet. | OP076, OP079, OP297 |
+| UP025 | De geleverde jeugdhulp wordt gedeclareerd op cliëntniveau (inspannings- en outputgericht). | OP280, OP281, OP283, OP349, OP354 |
+| UP026 | De Jeugdwet-berichtenfamilie ondersteunt drie verschillende uitvoeringsvarianten: outputgericht, inspanningsgericht en taakgericht. | OP011, OP086, OP261, OP262, OP264, OP270, OP363 |
+| UP027 | De declaratie moet passen binnen de contractafspraken en binnen de toewijzing (inspannings- en outputgericht). | OP267, OP276, OP279, OP302, OP303, OP304 |
+| UP028 | Gemeente en aanbieder leggen een uitvoeringsvariant en een financieringsvorm voor de te verlenen jeugdhulp in een contract vast. | OP262, OP263, OP264, OP296, OP305 |
+| UP031 | De gemeente doet geen aanpassingen in toewijzingen die bij de zorgaanbieder tot verlies van rechtmatigheid van geleverde en/of gedeclareerde zorg leiden. | OP298, OP299, OP345, OP362 |
+| UP032 | De zorgaanbieder stelt de gemeente op de hoogte van (veranderingen in) de zorgvraag door middel van een Verzoek om Toewijzing of een ander daarvoor bestemd proces. | OP306, OP307, OP308, OP343, OP344, OP346 |
+| UP037 | De gemeente geeft iedere beschikking binnen het Jw-domein een uniek nummer. | n.b. |
+```
+
+Bron: Informatiemodel iJw 3.2 – Uitgangspunten en specificaties Release 3.2. ([informatiemodel.istandaarden.nl][1])
+
+[1]: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/uitgangspunt/?utm_source=chatgpt.com "Informatiemodel iJw 3.2 (in productie) | Regels"
