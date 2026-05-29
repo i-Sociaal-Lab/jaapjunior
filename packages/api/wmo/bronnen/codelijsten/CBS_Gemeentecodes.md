@@ -1,8 +1,8 @@
-# CBS Gemeentecodes — Gemeentelijke indeling 2025
+# CBS Gemeentecodes — Gemeentelijke indeling 2026
 
 ## Definitie
 
-Officiële referentielijst van Nederlandse gemeenten conform de gemeentelijke indeling van het CBS per 1 januari 2025.
+Officiële referentielijst van Nederlandse gemeenten conform de gemeentelijke indeling van het CBS per 1 januari 2026.
 
 De lijst bevat gemeentecodes, gemeentenamen en provincies zoals gebruikt binnen het berichtenverkeer en de iStandaarden in het sociaal domein.
 
