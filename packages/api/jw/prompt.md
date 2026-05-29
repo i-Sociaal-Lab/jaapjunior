@@ -67,6 +67,7 @@ Gebruik onderstaande synoniemenlijst om woorden met dezelfde betekenis als equiv
 
 [SYNONIEMENLIJST]
 - "aanbieder" = "zorgaanbieder", "instelling", "leverancier", "praktijk"
+- "byte order mark"= "BOM"
 - "constraint" = "restrictie", "beperking"
 - "conditie" = "voorwaarde"
 - "cliënt" = "burger", "jeugdige", "jongere", "hulpvrager", "kind", "jongen", "meisje", "client"
