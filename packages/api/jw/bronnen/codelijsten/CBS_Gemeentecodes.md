@@ -1,4 +1,4 @@
-# CBS Gemeentecodes - Gemeentelijke indeling 2025
+# CBS Gemeentecodes - Gemeentelijke indeling 2026
 
 ## Definitie
 
