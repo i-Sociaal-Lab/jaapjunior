@@ -12,7 +12,7 @@ Deze uitgangspunten vormen de basis van het informatiemodel iJw 3.2 en beschrijv
 | UP007 | De gemeente legt in een beschikking vast of een cliënt recht heeft op ondersteuning vanuit de Jeugdwet (inspannings- en outputgericht). | OP257, OP258, OP259 |
 | UP016 | Jeugdhulp wordt uitgedrukt in jeugdhulpproducten. | OP260 |
 | UP017 | De informatie-uitwisseling in de Jeugdwet is gebaseerd op gestandaardiseerd berichtenverkeer. | OP033, OP047, OP065, OP071, OP072, OP076 |
-| UP019 | De cliënt staat centraal. | n.v.t. |
+| UP019 | De cliënt staat centraal. | n.b. |
 | UP023 | Informatie wordt eenmalig bij de cliënt uitgevraagd. | OP039, OP076, OP091, OP130 |
 | UP024 | De informatievoorziening Jw conformeert zich aan de wet- en regelgeving die voortvloeit uit de Jeugdwet. | OP076, OP079, OP297 |
 | UP025 | De geleverde jeugdhulp wordt gedeclareerd op cliëntniveau (inspannings- en outputgericht). | OP280, OP281, OP283, OP349, OP354 |
