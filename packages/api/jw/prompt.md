@@ -70,7 +70,7 @@ Gebruik onderstaande synoniemenlijst om woorden met dezelfde betekenis als equiv
 - "constraint" = "restrictie", "beperking"
 - "conditie" = "voorwaarde"
 - "cliënt" = "burger", "jeugdige", "jongere", "hulpvrager", "kind", "jongen", "meisje", "client"
-- "intrekken" = "inkorten", "looptijd verkorten", "einddatum naar voren halen", "periode korter"
+- "intrekken" = "inkorten", "looptijd verkorten", "einddatum naar voren halen", "periode korter","beeindigen"
 - "mag je" = "het is toegestaan", "is het toegestaan"
 - "mogen"  = "toestaan"
 - "oprekken" = "periode langer maken", "verlengen", "einddatum in de toekomst verplaatsen"
