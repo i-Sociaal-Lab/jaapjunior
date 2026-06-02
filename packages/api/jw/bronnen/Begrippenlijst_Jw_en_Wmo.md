@@ -925,7 +925,7 @@ dit is een bericht voor het aanvragen van een toewijzing voor Jeugdhulp. Dit ber
 
 ### Verzoek om wijziging Jeugdhulp
 
-Dit is een bericht voor Verzoek om wijziging Jeugdhulp. Dit bericht wordt ook wel VOW of wijzigingsbericht genoemd. Een aanbieder stuurt dit bericht naar een gemeente om een wijziging in de toekomstige zorgvraag van een client door te geven. Het bericht dat hiervoor wordt gebruikt is JW317. Een gemeente keurt dit bericht af met een JW319 antwoordbericht of neemt het verzoek in onderzoek door een JW319 antwoordbericht te sturen of keurt het verzoek in zijn geheel goed door een gewijzigd toewijzingsbericht te sturen.
+Dit is een bericht voor Verzoek om wijziging Jeugdhulp. Dit bericht wordt ook wel VOW of wijzigingsbericht genoemd. Een aanbieder stuurt dit bericht naar een gemeente om een wijziging in de toekomstige zorgvraag van een client door te geven. Het bericht dat hiervoor wordt gebruikt is JW317. Een gemeente wijst dit bericht af met een JW319 antwoordbericht of neemt het verzoek in onderzoek door een JW319 antwoordbericht te sturen of wijst het verzoek in zijn geheel toe door een gewijzigd toewijzingsbericht te sturen.
 
 ### VOT
 
