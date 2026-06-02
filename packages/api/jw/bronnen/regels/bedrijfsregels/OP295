@@ -7,11 +7,7 @@ Het gebruik van regieberichten is verplicht bij:
 
 Een Stopbericht mag alleen worden verzonden wanneer eerder een Startbericht is verzonden.
 
-Voor oudere leveringen uit:
-- iWmo/iJw release 2.4
-- van vóór 2021
-
-geldt:
+Voor oudere leveringen voor iWmo/iJw release 2.4, geldt: 
 - wanneer geen Startbericht bestaat, mag geen Stopbericht worden verzonden
 
 ---
