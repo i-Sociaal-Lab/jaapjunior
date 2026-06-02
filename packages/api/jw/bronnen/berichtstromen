@@ -19,6 +19,8 @@ Stop na start: JW305, JW307 (definitief)
 tijdelijke Stop na start: JW305, JW307 (tijdelijk),
 Definitieve Stop na start: JW305, JW307 (Definitief)
 Definitieve Stop na tijdelijk stop : JW305, JW307 (tijdelijk), JW307 (definitief)
-Start na stop: JW305, JW305 (tijdelijk of definitief), JW305 
+Start na stop: JW305, JW305 (tijdelijk of definitief), JW305
+Verwijderen Start : JW305,JW305 (statusaanlevering 3)
 Correctie start : JW305, JW305 (statusaanlevering 3), jw305 (statusaanlevering 1)
+Verwijderen stop : JW307, JW307 (statusaanlevering 3)
 Correctie stop : JW307, JW307 (statusaanlevering 3), JW307 (statusaanlevering 1)
