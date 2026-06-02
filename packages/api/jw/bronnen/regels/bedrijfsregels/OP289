@@ -1,7 +1,7 @@
 # OP289 — Bij een toegewezen product kan slechts één Startbericht actueel zijn
 
 ## Definitie
-Per toegewezen product kan slechts één actuele startdatum bestaan.
+Per toegewezen product kan slechts één Startbericht actueel zijn.
 
 Een nieuw Startbericht mag niet volgen op een bestaand actueel Startbericht voor hetzelfde product of dezelfde productcategorie, tenzij:
 - een (tijdelijke) beëindiging is doorgegeven via een Stopbericht, of
