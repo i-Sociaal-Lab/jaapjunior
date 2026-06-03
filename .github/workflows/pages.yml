@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       # Haal je begrippenlijst op en leg hem klaar voor Jekyll include
       - name: Fetch glossary markdown
