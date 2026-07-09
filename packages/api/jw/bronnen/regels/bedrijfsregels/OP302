@@ -1,0 +1,136 @@
+# OP302 — De aanbieder declareert een zorg- of ondersteuningsproduct dat aansluit bij de toewijzing
+
+## Definitie
+De aanbieder moet een zorg- of ondersteuningsproduct declareren dat aansluit bij de afgegeven toewijzing.
+
+De declaratieregels verschillen afhankelijk van het type toewijzing:
+- specifieke toewijzing
+- aspecifieke toewijzing
+- generieke toewijzing
+
+---
+
+## Samenvatting
+Deze bedrijfsregel bepaalt hoe gedeclareerde zorg- of ondersteuningsproducten moeten aansluiten op de toegewezen ondersteuning.
+
+Afhankelijk van de inhoud van de toewijzing gelden verschillende regels voor:
+- productcategorie
+- productcode
+- budget
+
+De regel ondersteunt consistente declaratieverwerking en correcte aansluiting tussen toewijzing en declaratie binnen de iJw-standaard.
+
+---
+
+## Regel
+De aanbieder declareert een zorg- of ondersteuningsproduct dat aansluit bij de toewijzing.
+
+---
+
+## Soorten toewijzingen
+
+### Specifieke toewijzing
+Bij een specifieke toewijzing:
+- zijn productcategorie en productcode beide gevuld in de toewijzing
+
+De aanbieder declareert:
+- hetzelfde zorg- of ondersteuningsproduct
+- oftewel dezelfde combinatie van productcategorie en productcode
+
+---
+
+### Aspecifieke toewijzing
+Bij een aspecifieke toewijzing:
+- is alleen productcategorie gevuld
+- is productcode leeg
+
+De aanbieder declareert:
+- één of meer nader gespecificeerde zorg- of ondersteuningsproducten
+
+Dat betekent:
+- binnen de toegewezen productcategorie
+- declareert de aanbieder één of meer productcodes
+- die volgens de gebruikte productcodelijst horen bij die productcategorie
+
+---
+
+### Generieke toewijzing
+Bij een generieke toewijzing:
+- is alleen het budget gevuld
+- zijn productcategorie en productcode leeg
+
+De aanbieder declareert:
+- één of meer productcategorieën
+- met bijpassende productcodes
+- passend binnen het afgesproken contract met de gemeente
+
+---
+
+## Kernbegrippen
+- declareren
+- toewijzing
+- specifiek product
+- aspecifiek product
+- generiek product
+- productcategorie
+- productcode
+- budget
+- declaratieproduct
+- productcodelijst
+
+---
+
+## Metadata
+
+| Eigenschap | Waarde |
+|---|---|
+| Regelcode | OP302 |
+| Titel | De aanbieder declareert een zorg- of ondersteuningsproduct dat aansluit bij de toewijzing |
+| Afkorting | OP |
+| Type | Bedrijfsregel |
+| Domein | Jeugdwet (iJw) |
+| Standaardversie | iJw 3.2.0 |
+| Berichttype | JW323 |
+| Documenttype | iJw bedrijfsregels |
+| Bron | https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op302/ |
+
+---
+
+## Toepassing
+Deze regel is relevant bij:
+- declaratieverwerking
+- controle op productcodes
+- aansluiting tussen toewijzing en declaratie
+- verwerking van JW323-berichten
+- validatie van gedeclareerde producten
+- beheer van productcategorieën en productcodes
+- contractafspraken tussen gemeente en aanbieder
+
+---
+
+## Zoektermen
+declareren, toewijzing, specifiek product, aspecifiek product, generiek product, productcategorie, productcode, declaratieproduct, productcodelijst, JW323, iJw, jeugdwet, productvalidatie
+
+---
+
+## Verwante concepten
+- toewijzingsbeheer
+- declaratievalidatie
+- productcodelijsten
+- financiële administratie
+- zorgproducten
+- productclassificatie
+- contractafspraken
+
+---
+
+## Gerelateerde technische regels
+- TR338
+- TR339
+- TR340
+- TR369
+
+---
+
+## Gerelateerde uitgangspunten
+- UP027

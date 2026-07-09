@@ -1,0 +1,124 @@
+# OP380 — Het oprekken van de einddatum van de bestaande toewijzing voor een verlenging van de zorg of ondersteuning is verplicht
+
+## Definitie
+Bij verlenging van zorg of ondersteuning moet de einddatum van de bestaande toewijzing worden opgerekt wanneer aan bepaalde voorwaarden wordt voldaan.
+
+Deze werkwijze is verplicht wanneer:
+
+* het volume gelijk blijft of leeg is
+* de frequentie leeg is of ongelijk is aan `totaal binnen geldigheidsduur toewijzing`
+* de frequentie gelijk blijft
+* de einddatum van de bestaande toewijzing nog niet verstreken is op het moment van verlengen en versturen
+
+---
+
+## Samenvatting
+Deze bedrijfsregel bepaalt dat bij bepaalde verlengingen geen nieuwe toewijzing wordt afgegeven, maar dat de bestaande toewijzing wordt verlengd door de einddatum aan te passen.
+
+Dit is verplicht wanneer:
+- de inhoud van de ondersteuning inhoudelijk gelijk blijft
+- en de bestaande toewijzing nog actief is
+
+De regel ondersteunt consistente verlenging van ondersteuning en voorkomt onnodige nieuwe toewijzingen binnen de iJw-standaard.
+
+---
+
+## Regel
+Het oprekken van de einddatum van de bestaande toewijzing is verplicht wanneer:
+- het volume gelijk blijft of leeg is
+- de frequentie leeg is of niet gelijk is aan `totaal binnen geldigheidsduur toewijzing`
+- de frequentie gelijk blijft
+- de einddatum van de bestaande toewijzing nog niet verstreken is op het moment van verlengen en versturen
+
+---
+
+## Toelichting
+
+### Verlenging bestaande toewijzing
+Bij verlenging van ondersteuning:
+- wordt de bestaande toewijzing aangepast
+- door de einddatum te verlengen
+
+### Geen inhoudelijke wijziging
+Deze werkwijze geldt wanneer:
+- het volume gelijk blijft
+- of geen volume is vastgelegd
+- en de frequentie niet inhoudelijk wijzigt
+
+### Uitzondering frequentie
+De frequentie:
+- mag leeg zijn
+- of moet ongelijk zijn aan `totaal binnen geldigheidsduur toewijzing`
+
+Daarnaast:
+- moet de frequentie gelijk blijven
+
+### Actieve toewijzing vereist
+De bestaande toewijzing:
+- mag nog niet verlopen zijn op het moment dat de verlenging wordt verstuurd
+
+### Doel
+De regel ondersteunt:
+- consistente verlengingen
+- administratieve eenvoud
+- behoud van bestaande toewijzingen
+- het versturen van stop- startberichten is niet nodig is 
+
+---
+
+## Kernbegrippen
+- toewijzing verlengen
+- einddatum oprekken
+- verlenging ondersteuning
+- volume
+- frequentie
+- geldigheidsduur
+- bestaande toewijzing
+- actieve toewijzing
+
+---
+
+## Metadata
+
+| Eigenschap | Waarde |
+|---|---|
+| Regelcode | OP380 |
+| Titel | Het oprekken van de einddatum van de bestaande toewijzing voor een verlenging van de zorg of ondersteuning is verplicht |
+| Afkorting | OP |
+| Type | Bedrijfsregel |
+| Domein | Jeugdwet (iJw) |
+| Standaardversie | iJw 3.2.0 |
+| Berichttype | JW301 |
+| Documenttype | iJw bedrijfsregels |
+| Bron | https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op380 |
+
+---
+
+## Toepassing
+Deze regel is relevant bij:
+- verlengen van ondersteuning
+- aanpassen van toewijzingen
+- beheer van einddatums
+- verwerking van JW301-berichten
+- administratieve verlengingen
+- beheer van actieve toewijzingen
+
+---
+
+## Zoektermen
+toewijzing verlengen, einddatum oprekken, verlenging ondersteuning, volume, frequentie, geldigheidsduur, actieve toewijzing, JW301, iJw, jeugdwet
+
+---
+
+## Verwante concepten
+- toewijzingsbeheer
+- ondersteuning verlengen
+- administratieve mutaties
+- geldigheidsduur
+- ondersteuning wijzigen
+- actieve ondersteuning
+
+---
+
+## Gerelateerde uitgangspunten
+- UP017
