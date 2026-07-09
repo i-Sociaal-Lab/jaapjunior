@@ -12,6 +12,7 @@ De reden van beëindiging van de Jeugdhulp bij een cliënt.
 | ------------ | ---------------------------------------------------------------------------------- |
 | ID           | JZ588                                                                              |
 | Naam         | Reden beëindiging                                                                  |
+| Bericht      | JW307                                                                              |
 | Status       | Productie                                                                          |
 | Element      | LDT_RedenBeeindiging                                                               |
 | Type bestand | Codelijst                                                                          |
@@ -24,8 +25,8 @@ De reden van beëindiging van de Jeugdhulp bij een cliënt.
 
 ## Gebruikt in berichten
 
-* JW307
-* JW308
+JW307
+JW308
 
 ---
 
