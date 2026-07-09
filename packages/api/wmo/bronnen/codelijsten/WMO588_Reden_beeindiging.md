@@ -26,8 +26,8 @@ De reden van beeindiging van de Wmo-ondersteuning bij een client.
 
 ## Gebruikt in berichten
 
-* WMO307
-* WMO308
+- WMO307
+- WMO308
 
 ---
 
