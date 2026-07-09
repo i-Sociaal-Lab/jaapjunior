@@ -25,8 +25,8 @@ De reden van beëindiging van de Jeugdhulp bij een cliënt.
 
 ## Gebruikt in berichten
 
-JW307
-JW308
+- JW307
+- JW308
 
 ---
 
