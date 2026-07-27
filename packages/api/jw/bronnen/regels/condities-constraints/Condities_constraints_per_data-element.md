@@ -13,6 +13,8 @@ Deze versie is geoptimaliseerd voor vector search, embeddings en retrieval augme
 - Berichtklasse: Header
 - Element: IdentificatieRetour_IdentificatieBericht
 - Domein: Jeugdwet
+- Bron: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/conditie/
+- Bron: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/constraints/
 - Release: iJw 3.2.0
 
 ## Regel
