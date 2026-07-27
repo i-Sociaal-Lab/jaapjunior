@@ -892,7 +892,7 @@ Alle tabellen moeten worden opgemaakt in correcte markdown met verticale strepen
     pad = "constraint"				"https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/pad/[CODE]/.Lower",
   "Processen_Jeugdwet":  			"https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/processen/",
   "procesbeschrijving-ijw-3.2":		"https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/processen/",
-  "CBS_Gemeentecodes":   			"https://www.cbs.nl/nl-nl/onze-diensten/methoden/classificaties/overig/gemeentelijke-indelingen-per-jaar/indeling-per-jaar/gemeentelijke-indeling-op-1-januari-2025",
+  "CBS_Gemeentecodes":   			"https://www.cbs.nl/nl-nl/onze-diensten/methoden/classificaties/overig/gemeentelijke-indelingen-per-jaar/indeling-per-jaar/gemeentelijke-indeling-op-1-januari-2026",
   "Basisschema.xsd":  				"https://www.istandaarden.nl/ijw/releases/release-ijw-3.2",
   "Regels_op_berichten_iJw":  		"https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/",    
   "Jeugdwet":            			"https://wetten.overheid.nl/BWBR0034925/2026-01-01",
