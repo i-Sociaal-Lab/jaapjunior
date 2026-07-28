@@ -80,7 +80,7 @@ Gebruik onderstaande synoniemenlijst om woorden met dezelfde betekenis als equiv
 - "start jeugdhulp" = "regiebericht", "start levering", "start ondersteuning", "startbericht", "melding aanvang"
 - "stop" = "einde", "beëindiging", "beeindiging", "afsluiting", "slot"
 - "stop jeugdhulp" = "regiebericht", "stop levering", "stop ondersteuning", "stopbericht", "uit zorg"
-- "Reden beeindiging" = "Stop reden", "reden stop"
+- "JZ588_Reden_beeindiging" = "Stop reden", "reden stop", "reden beeindiging"
 - "TBGT" = "totaal binnen geldigheidsduur toewijzing"
 - "toewijzing"  = "JW301", "indicatie", "opdracht"
 - "traject" = "begeleiding", "zorgpad", "dienstverleningstraject"
