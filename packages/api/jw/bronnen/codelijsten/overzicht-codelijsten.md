@@ -25,6 +25,7 @@ Deze codelijsten worden gebruikt voor validatie, codering, retourmeldingen en fu
 | Code | Naam | Beschrijving | Bestand |
 |---|---|---|---|
 | Fo01 | Foutcodelijst | Deze lijst bevat de foutcodes die kunnen optreden binnen het iJw/iWmo berichtenverkeer via het GGK, BIDN, VECOZO, CAK en VWS. Gebruik deze lijst als naslagwerk bij het analyseren van retourmeldingen. | `Fo01_Foutcodelijst.md` |
+| CBS_Gemeentecodes | Gemeentecode | Standaard gemeentecode vastgesteld door CBS | CBS_Gemeentecodes.md |
 | COD002VEKTIS | Berichtcode | Verplicht veld in de berichtheader conform Vektis-standaard. | `COD002VEKTIS_Berichtcode.md` |
 | COD032 | Land | Identificatie van een (historisch/actueel) land of gebiedsdeel. | `COD032_Land.json` |
 | COD043 | Indicatie debet/credit | Gecodeerde aanduiding voor debet of credit. | `COD043_Indicatie_debet_credit.md` |
