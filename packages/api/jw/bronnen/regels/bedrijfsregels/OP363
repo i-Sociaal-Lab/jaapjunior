@@ -1,0 +1,131 @@
+# OP363 — Bij een output- of inspanningsgerichte werkwijze meldt de aanbieder een start en stop van de ondersteuning van producten waarvoor een toewijzing is ontvangen
+
+## Definitie
+Bij een outputgerichte of inspanningsgerichte werkwijze meldt de aanbieder:
+- de start van ondersteuning
+- en de stop van ondersteuning
+
+voor producten waarvoor een toewijzing is ontvangen.
+
+De meldingen worden gedaan met:
+- een Startbericht
+- of een Stopbericht
+
+---
+
+## Samenvatting
+Deze bedrijfsregel bepaalt dat aanbieders verplicht zijn om de feitelijke start en beëindiging van ondersteuning administratief te melden bij outputgerichte en inspanningsgerichte ondersteuning.
+
+Voor toegewezen producten:
+- wordt de start gemeld met een Startbericht
+- wordt de beëindiging gemeld met een Stopbericht
+
+De regel ondersteunt actuele registratie van leveringen en consistente verwerking van regieberichten binnen de iJw-standaard.
+
+---
+
+## Regel
+Bij een output- of inspanningsgerichte werkwijze meldt de aanbieder:
+- de start van ondersteuning
+- en de stop van ondersteuning
+
+met:
+- een Startbericht
+- of een Stopbericht
+
+voor producten waarvoor een toewijzing is ontvangen.
+
+---
+
+## Toelichting
+
+### Outputgerichte en inspanningsgerichte werkwijze
+De regel geldt voor ondersteuning die:
+- outputgericht
+- of inspanningsgericht
+
+is georganiseerd.
+
+### Start van ondersteuning
+Wanneer ondersteuning feitelijk begint:
+- verstuurt de aanbieder een Startbericht
+
+### Stop van ondersteuning
+Wanneer ondersteuning eindigt:
+- verstuurt de aanbieder een Stopbericht
+
+### Toewijzing vereist
+De meldingen gelden uitsluitend voor:
+- producten waarvoor een geldige toewijzing bestaat
+
+### Doel
+De regel ondersteunt:
+- actuele registratie van ondersteuning
+- administratieve opvolging van leveringen
+- correcte verwerking van regieberichten
+
+---
+
+## Kernbegrippen
+- outputgericht
+- inspanningsgericht
+- Startbericht
+- Stopbericht
+- ondersteuning starten
+- ondersteuning stoppen
+- regiebericht
+- toewijzing
+
+---
+
+## Metadata
+
+| Eigenschap | Waarde |
+|---|---|
+| Regelcode | OP363 |
+| Titel | Bij een output- of inspanningsgerichte werkwijze meldt de aanbieder een start en stop van de ondersteuning van producten waarvoor een toewijzing is ontvangen |
+| Afkorting | OP |
+| Type | Bedrijfsregel |
+| Domein | Jeugdwet (iJw) |
+| Standaardversie | iJw 3.2.0 |
+| Berichttypen | JW305, JW307 |
+| Documenttype | iJw bedrijfsregels |
+| Bron | https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op363 |
+
+---
+
+## Toepassing
+Deze regel is relevant bij:
+- verwerking van Startberichten
+- verwerking van Stopberichten
+- outputgerichte ondersteuning
+- inspanningsgerichte ondersteuning
+- verwerking van JW305- en JW307-berichten
+- registratie van ondersteuning
+- administratieve opvolging van leveringen
+
+---
+
+## Zoektermen
+outputgericht, inspanningsgericht, Startbericht, Stopbericht, ondersteuning starten, ondersteuning stoppen, regiebericht, JW305, JW307, iJw, jeugdwet, toewijzing
+
+---
+
+## Verwante concepten
+- regieberichten
+- ondersteuning registreren
+- leveringsadministratie
+- toewijzingsbeheer
+- ondersteuning beëindigen
+- administratieve verwerking
+
+---
+
+## Gerelateerde technische regels
+- TR019
+
+---
+
+## Gerelateerde uitgangspunten
+- UP017
+- UP026

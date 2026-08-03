@@ -1,0 +1,100 @@
+# OP367 — Een productperiode valt altijd binnen een kalendermaand
+
+## Definitie
+Een productperiode valt altijd volledig binnen één kalendermaand.
+
+---
+
+## Samenvatting
+Deze bedrijfsregel bepaalt dat een productperiode niet over meerdere kalendermaanden mag lopen.
+
+De begin- en einddatum van een productperiode moeten:
+- binnen dezelfde kalendermaand vallen
+
+De regel ondersteunt uniforme declaratieverwerking en consistente administratieve periodisering binnen de iJw-standaard.
+
+---
+
+## Regel
+Een productperiode valt altijd binnen één kalendermaand.
+
+---
+
+## Toelichting
+
+### Productperiode
+Een productperiode betreft:
+- de periode waarop een gedeclareerde prestatie of ondersteuning betrekking heeft
+
+### Binnen één kalendermaand
+De productperiode:
+- mag niet doorlopen naar een volgende maand
+- moet volledig binnen dezelfde kalendermaand liggen
+
+### Doel
+De regel ondersteunt:
+- eenduidige declaratieperioden
+- consistente financiële verwerking
+- uniforme maandafsluiting
+
+---
+
+## Kernbegrippen
+- productperiode
+- kalendermaand
+- declaratieperiode
+- prestatieperiode
+- ondersteuning
+- periodisering
+
+---
+
+## Metadata
+
+| Eigenschap | Waarde |
+|---|---|
+| Regelcode | OP367 |
+| Titel | Een productperiode valt altijd binnen een kalendermaand |
+| Afkorting | OP |
+| Type | Bedrijfsregel |
+| Domein | Jeugdwet (iJw) |
+| Standaardversie | iJw 3.2.0 |
+| Berichttype | JW323 |
+| Documenttype | iJw bedrijfsregels |
+| Bron | https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op367 |
+
+---
+
+## Toepassing
+Deze regel is relevant bij:
+- declaratieverwerking
+- vastleggen van productperioden
+- periodisering van prestaties
+- verwerking van JW323-berichten
+- maandelijkse financiële verwerking
+- controle op declaratieperioden
+
+---
+
+## Zoektermen
+productperiode, kalendermaand, declaratieperiode, prestatieperiode, periodisering, JW323, iJw, jeugdwet, maandafsluiting
+
+---
+
+## Verwante concepten
+- declaratieverwerking
+- periodisering
+- financiële administratie
+- maandelijkse declaraties
+- prestatieverwerking
+- ondersteuning declareren
+
+---
+
+## Gerelateerde constraints
+- CS337
+
+---
+
+## Gerelateerde uitgangspunten
+- UP017

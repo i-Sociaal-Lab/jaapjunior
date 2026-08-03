@@ -8,6 +8,7 @@
 	},
 	"scripts": {
 		"dev": "bun --watch src/index.ts",
+		"jw:generate": "bun run jw/scripts/generateAll.ts",
 		"build": "tsc && bun build --compile --minify --sourcemap ./src/index.ts --outfile dist/api",
 		"start": "./dist/api",
 		"typecheck": "tsc --noEmit"

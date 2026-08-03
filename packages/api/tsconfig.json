@@ -1,15 +1,14 @@
 {
-	"compilerOptions": {
-		"target": "esnext",
-		"module": "NodeNext",
-		"moduleResolution": "NodeNext",
-		"esModuleInterop": true,
-		"strict": true,
-		"outDir": "dist",
-		"skipLibCheck": true,
-		"forceConsistentCasingInFileNames": true,
-		"declaration": true
-	},
-	"include": ["src/**/*"],
-	"exclude": ["node_modules"]
+  "extends": "./tsconfig.base.json",
+  "include": [
+    "src/**/*",
+    "jw/engine/**/*",
+    "generated/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "jw/scripts/**/*",
+    "jw/query/**/*"
+  ]
 }

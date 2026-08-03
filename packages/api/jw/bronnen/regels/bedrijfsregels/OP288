@@ -1,0 +1,105 @@
+# OP288 — Indien de start van de levering gemeld is met een Startbericht, wordt de beëindiging van die levering altijd doorgegeven met een Stopbericht
+
+## Definitie
+Wanneer de start van een levering is gemeld met een Startbericht, moet de beëindiging van die levering altijd worden doorgegeven met een Stopbericht.
+
+Dit geldt ook:
+- wanneer de levering volgens planning eindigt
+- wanneer de levering stopt op de einddatum van de toewijzing
+
+---
+
+## Samenvatting
+Deze bedrijfsregel bepaalt dat iedere levering die administratief gestart is met een Startbericht ook administratief moet worden afgesloten met een Stopbericht.
+
+Hiermee blijft de registratie van de levering volledig en consistent binnen de iJw-standaard.
+
+De verplichting geldt ongeacht:
+- de reden van beëindiging
+- of de ondersteuning regulier afloopt
+
+---
+
+## Regel
+- Als een Startbericht is gestuurd, wordt de beëindiging altijd doorgegeven met een Stopbericht.
+- Dit geldt ook bij:
+  - levering volgens plan
+  - beëindiging op de einddatum van de toewijzing
+
+---
+
+## Toelichting
+
+### Verplichte afsluiting
+Een levering waarvoor een Startbericht is verzonden:
+- moet altijd worden afgesloten met een Stopbericht
+
+### Reguliere beëindiging
+Ook wanneer:
+- de ondersteuning volgens planning eindigt
+- de einddatum van de toewijzing bereikt wordt
+
+blijft een Stopbericht verplicht.
+
+---
+
+## Kernbegrippen
+- Startbericht
+- Stopbericht
+- levering ondersteuning
+- beëindiging levering
+- regiebericht
+- ondersteuning stoppen
+- toewijzing
+
+---
+
+## Metadata
+
+| Eigenschap | Waarde |
+|---|---|
+| Regelcode | OP288 |
+| Titel | Indien de start van de levering gemeld is met een Startbericht, wordt de beëindiging van die levering altijd doorgegeven met een Stopbericht |
+| Afkorting | OP |
+| Type | Bedrijfsregel |
+| Domein | Jeugdwet (iJw) |
+| Standaardversie | iJw 3.2.0 |
+| Berichttypen | JW305, JW307 |
+| Documenttype | iJw bedrijfsregels |
+| Bron | https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op288/ |
+
+---
+
+## Toepassing
+Deze regel is relevant bij:
+- verwerking van Startberichten
+- verwerking van Stopberichten
+- beëindigen van ondersteuning
+- administratieve afsluiting van leveringen
+- verwerking van JW305- en JW307-berichten
+- regieberichten binnen de Jeugdwet
+
+---
+
+## Zoektermen
+Startbericht, Stopbericht, levering beëindigen, ondersteuning stoppen, regiebericht, JW305, JW307, iJw, jeugdwet, levering afsluiten, toewijzing einddatum
+
+---
+
+## Verwante concepten
+- regieberichten
+- ondersteuning starten
+- ondersteuning beëindigen
+- administratieve afsluiting
+- berichtverwerking
+- zorgadministratie
+
+---
+
+## Gerelateerde technische regels
+- TR382
+
+---
+
+## Gerelateerde uitgangspunten
+- UP017

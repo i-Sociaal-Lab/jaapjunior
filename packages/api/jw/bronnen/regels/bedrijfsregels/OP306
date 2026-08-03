@@ -1,0 +1,124 @@
+# OP306 — Het verzoek om wijziging bericht wordt gebruikt als tijdens levering van zorg en/of ondersteuning blijkt dat een ander pakket van toegewezen producten nodig is
+
+## Definitie
+Een Verzoek om Wijziging bericht wordt gebruikt wanneer tijdens de levering van zorg en/of ondersteuning blijkt dat een ander pakket van toegewezen producten nodig is.
+
+Het bericht:
+- wordt altijd verstuurd vanuit een situatie met één of meer actuele toewijzingen
+- bevat de complete gewenste situatie
+- kan niet gebruikt worden zonder actuele toewijzing
+
+---
+
+## Samenvatting
+Deze bedrijfsregel bepaalt wanneer een Verzoek om Wijziging gebruikt mag worden binnen de iJw-standaard.
+
+Het bericht wordt gebruikt:
+- bij veranderingen in de zorgsituatie van een cliënt
+- wanneer aanpassing van bestaande ondersteuning nodig is
+
+Het wijzigingsverzoek:
+- vertrekt vanuit bestaande actuele toewijzingen
+- bevat zowel ongewijzigde, gewijzigde als nieuwe producten
+- beschrijft de volledig gewenste toekomstige situatie
+
+De regel ondersteunt consistente wijziging van lopende ondersteuning.
+
+---
+
+## Regel
+- Een verzoek om wijziging bericht wordt altijd verstuurd vanuit een situatie waarbij al geleverd wordt op basis van één of meer actuele toewijzingen.
+- Het bericht wordt gebruikt bij veranderingen in de zorgsituatie van een cliënt.
+- Het bericht bevat de complete gewenste situatie:
+  - ongewijzigde producten
+  - gewijzigde producten
+  - nieuwe producten
+- Het bericht kan niet gebruikt worden zonder actuele toewijzing.
+
+---
+
+## Toelichting
+
+### Gebruik tijdens lopende ondersteuning
+Een Verzoek om Wijziging:
+- wordt gebruikt wanneer ondersteuning al actief geleverd wordt
+- is gebaseerd op bestaande actuele toewijzingen
+
+### Wijziging zorgsituatie
+Het bericht wordt gebruikt wanneer:
+- de ondersteuningsbehoefte verandert
+- uitbreiding of aanpassing van ondersteuning nodig is
+- producten wijzigen of toegevoegd moeten worden
+
+### Complete gewenste situatie
+Het wijzigingsverzoek bevat:
+- alle producten die moeten blijven bestaan
+- alle producten die gewijzigd worden
+- alle nieuw gewenste producten
+
+Hierdoor ontstaat:
+- een volledig overzicht van de gewenste situatie na wijziging
+
+### Geen actuele toewijzing
+Zonder bestaande actuele toewijzing:
+- mag geen Verzoek om Wijziging worden gebruikt
+
+---
+
+## Kernbegrippen
+- Verzoek om Wijziging
+- actuele toewijzing
+- wijziging zorgsituatie
+- ondersteuning wijzigen
+- toegewezen producten
+- lopende ondersteuning
+- gewenste situatie
+- wijzigingsverzoek
+
+---
+
+## Metadata
+
+| Eigenschap | Waarde |
+|---|---|
+| Regelcode | OP306 |
+| Titel | Het verzoek om wijziging bericht wordt gebruikt als tijdens levering van zorg en/of ondersteuning blijkt dat een ander pakket van toegewezen producten nodig is |
+| Afkorting | OP |
+| Type | Bedrijfsregel |
+| Domein | Jeugdwet (iJw) |
+| Standaardversie | iJw 3.2.0 |
+| Berichttype | JW317 |
+| Documenttype | iJw bedrijfsregels |
+| Bron | https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op306/ |
+
+---
+
+## Toepassing
+Deze regel is relevant bij:
+- wijziging van ondersteuning
+- lopende zorgtrajecten
+- aanpassen van toewijzingen
+- verwerking van JW317-berichten
+- wijzigingen in zorgsituaties
+- beheer van actuele toewijzingen
+- administratieve wijzigingsprocessen
+
+---
+
+## Zoektermen
+Verzoek om Wijziging, actuele toewijzing, wijziging zorgsituatie, ondersteuning wijzigen, toegewezen producten, JW317, iJw, jeugdwet, wijzigingsverzoek, lopende ondersteuning
+
+---
+
+## Verwante concepten
+- wijzigingsbeheer
+- toewijzingsbeheer
+- zorgaanpassing
+- administratieve mutaties
+- ondersteuningstraject
+- actuele ondersteuning
+
+---
+
+## Gerelateerde uitgangspunten
+- UP032

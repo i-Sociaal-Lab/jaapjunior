@@ -1,0 +1,126 @@
+# OP364 — Regieberichten worden niet voorwaardelijk gesteld aan declaratie
+
+## Definitie
+Regieberichten zijn niet voorwaardelijk voor declaratie.
+
+Een prestatie in een declaratiebericht:
+- mag niet worden afgekeurd op basis van:
+  - de startdatum of stopdatum in een regiebericht
+  - ontbrekende Startberichten
+  - ontbrekende Stopberichten
+
+---
+
+## Samenvatting
+Deze bedrijfsregel bepaalt dat declaraties niet afhankelijk mogen worden gemaakt van de aanwezigheid of inhoud van regieberichten.
+
+Een declaratie:
+- mag niet worden afgewezen omdat:
+  - een Startbericht ontbreekt
+  - een Stopbericht ontbreekt
+  - datums uit regieberichten afwijken
+
+De regel ondersteunt scheiding tussen:
+- regie-informatie
+- en financiële declaratieverwerking
+
+Hiermee wordt voorkomen dat administratieve leveringsmeldingen direct leiden tot afkeuring van declaraties.
+
+---
+
+## Regel
+- Regieberichten zijn niet voorwaardelijk voor declaratie.
+- Een prestatie in een declaratiebericht mag niet worden afgekeurd op basis van:
+  - startdatum in een regiebericht
+  - stopdatum in een regiebericht
+  - ontbrekende Startberichten
+  - ontbrekende Stopberichten
+
+---
+
+## Toelichting
+
+### Geen afhankelijkheid
+Declaratieverwerking:
+- mag niet afhankelijk zijn van regieberichten
+
+### Regieberichten
+Regieberichten bevatten:
+- informatie over start van ondersteuning
+- informatie over beëindiging van ondersteuning
+
+Deze informatie:
+- mag niet als afkeuringsgrond dienen voor declaraties
+
+### Declaratieberichten
+Een prestatie:
+- mag niet worden afgekeurd uitsluitend vanwege:
+  - verschillen in start- of stopdata
+  - ontbrekende regieberichten
+
+### Doel
+De regel ondersteunt:
+- onafhankelijke declaratieverwerking
+- scheiding tussen leveringsinformatie en financiële verwerking
+- consistente verwerking van declaraties
+
+---
+
+## Kernbegrippen
+- regiebericht
+- Startbericht
+- Stopbericht
+- declaratiebericht
+- prestatie
+- afkeuring declaratie
+- startdatum
+- stopdatum
+- declaratieverwerking
+
+---
+
+## Metadata
+
+| Eigenschap | Waarde |
+|---|---|
+| Regelcode | OP364 |
+| Titel | Regieberichten worden niet voorwaardelijk gesteld aan declaratie |
+| Afkorting | OP |
+| Type | Bedrijfsregel |
+| Domein | Jeugdwet (iJw) |
+| Standaardversie | iJw 3.2.0 |
+| Berichttypen | JW305, JW307 |
+| Documenttype | iJw bedrijfsregels |
+| Bron | https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op364 |
+
+---
+
+## Toepassing
+Deze regel is relevant bij:
+- verwerking van declaraties
+- verwerking van regieberichten
+- controle op Startberichten
+- controle op Stopberichten
+- verwerking van JW305- en JW307-berichten
+- financiële afhandeling van ondersteuning
+- foutafhandeling van declaraties
+
+---
+
+## Zoektermen
+regiebericht, Startbericht, Stopbericht, declaratiebericht, afkeuring declaratie, declaratieverwerking, startdatum, stopdatum, JW305, JW307, iJw, jeugdwet
+
+---
+
+## Verwante concepten
+- regieberichten
+- declaratieverwerking
+- financiële administratie
+- leveringsadministratie
+- foutafhandeling
+- ondersteuning registreren
+
+---
+
+## Gerelateerde uitgangspunten
+- UP027

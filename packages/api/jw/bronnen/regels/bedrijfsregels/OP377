@@ -1,0 +1,116 @@
+# OP377 — Alleen een tijdelijke stop mag zonder tussenkomst van een startbericht gevolgd worden door een definitieve stop
+
+## Definitie
+Een (tijdelijk) Stopbericht moet altijd volgen op een eerder Startbericht.
+
+Uitzondering:
+- een definitieve stop mag direct volgen op een tijdelijke stop
+- zonder dat tussendoor opnieuw een Startbericht wordt verstuurd
+
+---
+
+## Samenvatting
+Deze bedrijfsregel bepaalt de toegestane volgorde van Start- en Stopberichten binnen de iJw-standaard.
+
+Normaal geldt:
+- een Stopbericht volgt op een actief Startbericht
+
+Bij een tijdelijke stop:
+- mag later een definitieve stop volgen
+- zonder dat de ondersteuning eerst opnieuw gestart hoeft te worden
+
+De regel ondersteunt consistente registratie van de status van ondersteuning.
+
+---
+
+## Regel
+- Een (tijdelijk) Stopbericht volgt op een eerder Startbericht.
+- Alleen een tijdelijke stop mag zonder tussenkomst van een Startbericht gevolgd worden door een definitieve stop.
+
+---
+
+## Toelichting
+
+### Relatie tussen Start- en Stopbericht
+Een Stopbericht:
+- kan alleen bestaan wanneer eerder een Startbericht is verstuurd
+
+### Tijdelijke stop
+Bij een tijdelijke onderbreking:
+- blijft de ondersteuning administratief gekoppeld aan het eerdere Startbericht
+
+### Definitieve stop na tijdelijke stop
+Wanneer ondersteuning definitief eindigt na een tijdelijke stop:
+- mag direct een definitief Stopbericht worden verstuurd
+- zonder nieuw Startbericht
+
+### Doel
+De regel ondersteunt:
+- correcte statusregistratie
+- consistente verwerking van regieberichten
+- juiste administratieve opvolging van ondersteuning
+
+---
+
+## Kernbegrippen
+- Startbericht
+- Stopbericht
+- tijdelijke stop
+- definitieve stop
+- regiebericht
+- ondersteuning beëindigen
+- ondersteuning onderbreken
+- status ondersteuning
+
+---
+
+## Metadata
+
+| Eigenschap | Waarde |
+|---|---|
+| Regelcode | OP377 |
+| Titel | Alleen een tijdelijke stop mag zonder tussenkomst van een startbericht gevolgd worden door een definitieve stop |
+| Afkorting | OP |
+| Type | Bedrijfsregel |
+| Domein | Jeugdwet (iJw) |
+| Standaardversie | iJw 3.2.0 |
+| Berichttype | JW307 |
+| Documenttype | iJw bedrijfsregels |
+| Bron | https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op377 |
+
+---
+
+## Toepassing
+Deze regel is relevant bij:
+- verwerking van Stopberichten
+- tijdelijke beëindiging van ondersteuning
+- definitieve beëindiging van ondersteuning
+- verwerking van JW307-berichten
+- regieberichten
+- statusbeheer van ondersteuning
+
+---
+
+## Zoektermen
+Startbericht, Stopbericht, tijdelijke stop, definitieve stop, regiebericht, ondersteuning beëindigen, ondersteuning onderbreken, JW307, iJw, jeugdwet
+
+---
+
+## Verwante concepten
+- regieberichten
+- ondersteuning starten
+- ondersteuning stoppen
+- tijdelijke onderbreking
+- administratieve status
+- leveringsregistratie
+
+---
+
+## Gerelateerde technische regels
+- TR414
+- TR415
+
+---
+
+## Gerelateerde uitgangspunten
+- UP017

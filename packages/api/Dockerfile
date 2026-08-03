@@ -1,49 +1,31 @@
 # Build stage
 FROM oven/bun:1.2.22-alpine AS builder
-
 WORKDIR /app
-
-# Install build dependencies voor native modules (better-sqlite3)
 RUN apk add --no-cache python3 make g++
-
-# Stap 1: Kopieer workspace files
 COPY package.json bun.lock ./
 COPY packages/api ./packages/api
-
-# Stap 2: Install (werkt nu native op Azure AMD64)
 RUN bun install --no-optional || bun install
-
-# Stap 3: Build API
 WORKDIR /app/packages/api
 RUN bun run build
 
-# Production stage  
+# Production stage
 FROM oven/bun:1.2.22-alpine
-
 WORKDIR /app
-
-# Kopieer built artifacts + runtime files + node_modules
+RUN apk add --no-cache curl wget
+RUN wget -q https://github.com/qdrant/qdrant/releases/download/v1.17.1/qdrant-x86_64-unknown-linux-musl.tar.gz \
+    && tar -xzf qdrant-x86_64-unknown-linux-musl.tar.gz \
+    && mv qdrant /usr/local/bin/qdrant \
+    && rm qdrant-x86_64-unknown-linux-musl.tar.gz
 COPY --from=builder /app/packages/api/dist ./dist
 COPY --from=builder /app/packages/api/jw ./jw
 COPY --from=builder /app/packages/api/wmo ./wmo
 COPY --from=builder /app/packages/api/cs-wmo ./cs-wmo
 COPY --from=builder /app/node_modules ./node_modules
-
-# Runtime setup
-RUN apk add --no-cache curl
-RUN mkdir -p /app/data
-
-# Set environment
+RUN mkdir -p /app/data /qdrant/storage
 ENV NODE_ENV=production
 ENV PORT=3000
-
-# Expose port
 EXPOSE 3000
-
-# Health check
-HEALTHCHECK --interval=30s --timeout=10s --retries=3 \
-  CMD curl -f http://localhost:3000/api/v1 || exit 1
-
-# Start application
-CMD ["bun", "run", "dist/index.js"]
-
+COPY packages/api/start.sh /start.sh
+RUN sed -i "s/\r//" /start.sh
+RUN chmod +x /start.sh
+CMD ["/start.sh"]

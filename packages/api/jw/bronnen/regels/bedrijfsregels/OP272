@@ -1,0 +1,98 @@
+# OP272 — De aanbieder verzendt een stopbericht binnen vijf werkdagen na de daadwerkelijke datum waarop de ondersteuning beëindigd is
+
+## Definitie
+De aanbieder moet een stopbericht verzenden binnen vijf werkdagen na de daadwerkelijke datum waarop de ondersteuning is beëindigd.
+
+Wanneer een definitieve stop volgt op een tijdelijke stop:
+- moet het stopbericht binnen vijf werkdagen worden verzonden nadat bekend is geworden dat de levering definitief is beëindigd
+
+---
+
+## Samenvatting
+Deze bedrijfsregel bepaalt binnen welke termijn een aanbieder een stopbericht moet versturen nadat ondersteuning is beëindigd.
+
+De standaardtermijn is:
+- vijf werkdagen na de daadwerkelijke einddatum van de ondersteuning
+
+Bij een definitieve beëindiging na een tijdelijke stop geldt:
+- vijf werkdagen nadat duidelijk is dat de ondersteuning definitief stopt
+
+De regel ondersteunt tijdige en correcte administratieve verwerking van beëindigde ondersteuning.
+
+---
+
+## Regel
+- Aanbieder verzendt binnen vijf werkdagen na daadwerkelijke beëindiging van de ondersteuning een stopbericht.
+- Definitieve stop volgend op tijdelijke stop:
+  - binnen vijf werkdagen nadat bekend is dat de levering definitief beëindigd is.
+
+---
+
+## Toelichting
+
+### Standaardsituatie
+Het stopbericht wordt verzonden:
+- binnen vijf werkdagen na de daadwerkelijke einddatum van de ondersteuning
+
+### Definitieve stop na tijdelijke stop
+Wanneer ondersteuning eerst tijdelijk stopt en later definitief beëindigd blijkt:
+- wordt het stopbericht verzonden binnen vijf werkdagen nadat dit definitief bekend is
+
+---
+
+## Kernbegrippen
+- stopbericht
+- ondersteuning beëindigd
+- daadwerkelijke einddatum
+- tijdelijke stop
+- definitieve stop
+- aanbieder
+- termijn
+- vijf werkdagen
+
+---
+
+## Metadata
+
+| Eigenschap | Waarde |
+|---|---|
+| Regelcode | OP272 |
+| Titel | De aanbieder verzendt een stopbericht binnen vijf werkdagen na de daadwerkelijke datum waarop de ondersteuning beëindigd is |
+| Afkorting | OP |
+| Type | Bedrijfsregel |
+| Domein | Jeugdwet (iJw) |
+| Standaardversie | iJw 3.2.0 |
+| Berichttype | JW307 |
+| Documenttype | iJw bedrijfsregels |
+| Bron | https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op272/ |
+
+---
+
+## Toepassing
+Deze regel is relevant bij:
+- beëindigen van ondersteuning
+- verzenden van stopberichten
+- verwerking van JW307-berichten
+- tijdelijke en definitieve stops
+- administratieve verwerking van ondersteuning
+- communicatie tussen aanbieder en gemeente
+
+---
+
+## Zoektermen
+stopbericht, JW307, ondersteuning beëindigd, daadwerkelijke einddatum, tijdelijke stop, definitieve stop, vijf werkdagen, aanbieder, iJw, jeugdwet, ondersteuning stoppen
+
+---
+
+## Verwante concepten
+- regiebericht
+- ondersteuning beëindigen
+- tijdelijke onderbreking
+- administratieve verwerking
+- berichttermijnen
+- zorgadministratie
+
+---
+
+## Gerelateerde uitgangspunten
+- UP017

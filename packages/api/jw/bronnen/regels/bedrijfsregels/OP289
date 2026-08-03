@@ -1,0 +1,133 @@
+# OP289 — Bij een toegewezen product kan slechts één Startbericht actueel zijn
+
+## Definitie
+Per toegewezen product kan slechts één Startbericht actueel zijn.
+
+Een nieuw Startbericht mag niet volgen op een bestaand actueel Startbericht voor hetzelfde product of dezelfde productcategorie, tenzij:
+- een (tijdelijke) beëindiging is doorgegeven via een Stopbericht, of
+- het nieuwe Startbericht een correctie betreft op een eerder Startbericht
+
+Deze regel geldt voor:
+- generieke producten
+- aspecifieke producten
+- specifieke producten
+
+---
+
+## Samenvatting
+Deze bedrijfsregel voorkomt dat voor hetzelfde toegewezen product meerdere gelijktijdige actieve Startberichten bestaan.
+
+Een Startbericht mag alleen opnieuw worden verzonden wanneer:
+- de eerdere levering is beëindigd, of
+- het gaat om een correctie van een eerder verzonden Startbericht
+
+De regel ondersteunt consistente registratie van actieve leveringen binnen de iJw-standaard.
+
+---
+
+## Regel
+- Per toegewezen product kan slechts één startdatum actueel zijn.
+- Een Startbericht mag niet volgen op een bestaand actueel Startbericht voor hetzelfde product of dezelfde productcategorie.
+- Uitzonderingen:
+  - een (tijdelijke) beëindiging via Stopbericht
+  - correctie van een eerder Startbericht
+
+---
+
+## Toelichting
+
+### Eén actueel Startbericht
+Voor een toegewezen product:
+- mag slechts één actuele levering actief zijn
+
+### Nieuw Startbericht niet toegestaan
+Een nieuw Startbericht voor hetzelfde product of dezelfde productcategorie:
+- is niet toegestaan zolang een eerdere levering nog actief is
+
+### Uitzonderingen
+
+#### Stopbericht aanwezig
+Een nieuw Startbericht is toegestaan wanneer:
+- eerst een (tijdelijke) beëindiging is doorgegeven via een Stopbericht
+
+#### Correctie
+Een nieuw Startbericht is toegestaan wanneer:
+- het een correctie betreft op een eerder verzonden Startbericht
+
+### Producttypen
+Deze regel geldt voor:
+- generieke producten
+- aspecifieke producten
+- specifieke producten
+
+---
+
+## Kernbegrippen
+- Startbericht
+- Stopbericht
+- actuele startdatum
+- toegewezen product
+- productcategorie
+- correctiebericht
+- tijdelijke beëindiging
+- generiek product
+- aspecifiek product
+- specifiek product
+
+---
+
+## Metadata
+
+| Eigenschap | Waarde |
+|---|---|
+| Regelcode | OP289 |
+| Titel | Bij een toegewezen product kan slechts één Startbericht actueel zijn |
+| Afkorting | OP |
+| Type | Bedrijfsregel |
+| Domein | Jeugdwet (iJw) |
+| Standaardversie | iJw 3.2.0 |
+| Berichttypen | JW305, JW307 |
+| Documenttype | iJw bedrijfsregels |
+| Bron | https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op289/ |
+
+---
+
+## Toepassing
+Deze regel is relevant bij:
+- verwerking van Startberichten
+- verwerking van Stopberichten
+- controle op actieve leveringen
+- correcties van regieberichten
+- verwerking van JW305- en JW307-berichten
+- validatie van productleveringen
+- beheer van productstatussen
+
+---
+
+## Zoektermen
+Startbericht, Stopbericht, actuele startdatum, toegewezen product, productcategorie, correctie Startbericht, tijdelijke beëindiging, generiek product, aspecifiek product, specifiek product, JW305, JW307, iJw, jeugdwet
+
+---
+
+## Verwante concepten
+- regieberichten
+- levering starten
+- levering beëindigen
+- correctieberichten
+- productstatus
+- zorgadministratie
+
+---
+
+## Gerelateerde invulinstructies
+- IV008
+
+---
+
+## Gerelateerde technische regels
+- TR326
+
+---
+
+## Gerelateerde uitgangspunten
+- UP017
