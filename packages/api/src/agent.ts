@@ -26,6 +26,7 @@ const qdrantUri = getEnvOrThrow("QDRANT_URI");
 const jinaApiKey = getEnvOrThrow("JINAAI_API_KEY");
 
 const resolver = new ReferenceResolver();
+const queryPipeline = new QueryPipeline();
 
 // Qdrant URL configuration for different environments
 function getQdrantConfig(uri: string) {
@@ -188,6 +189,10 @@ class Agent {
 		const startTime = Date.now();
 
 		console.log("Chat engine created. Sending message");
+		const pipelineResult = await queryPipeline.process(q);
+		console.log("===== QUERY PIPELINE =====");
+		console.dir(pipelineResult, { depth: null });
+		console.log("==========================");
 		const response = await chatEngine.chat({
 		message: q,
 		chatHistory,
