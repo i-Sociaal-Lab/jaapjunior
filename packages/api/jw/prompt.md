@@ -987,7 +987,7 @@ Alle tabellen moeten worden opgemaakt in correcte markdown met verticale strepen
 - Gebruik altijd de waarde letterlijk zoals opgegeven. Voeg geen extra parameters toe achter de URL; zet de placeholder in kleine letters achter de link.
 {DOCS = {
   "🔗 Begrippenlijst_iJw_en_iWmo":   	"https://i-sociaal-lab.github.io/jaapjunior/Begrippenlijst-Jw-en-Wmo.html",
-  "🔗 veelgestelde-vragen-iwmo-3.2-en-ijw-3.2": ""
+  "🔗 veelgestelde-vragen-iwmo-3.2-en-ijw-3.2": "https://www.istandaarden.nl/algemeen/ondersteunende-documenten-iwmo-en-ijw-3-0",
   "🔗Casusbeschrijvingen": 			"https://www.istandaarden.nl/binaries/content/assets/istandaarden/iwmo/iwmo-3.2/casusbeschrijvingen-iwmo-3.2-en-ijw-3.2.pdf",
   "COD002VEKTIS_Berichtcode":		"https://www.vektis.nl/standaardisatie/codelijsten/COD002-VEKT",
   if ID <> ""
