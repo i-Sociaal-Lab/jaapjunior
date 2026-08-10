@@ -17,6 +17,16 @@ De eenheid waarin het volume van een product, prestatie of zorg wordt uitgedrukt
 De code uit deze codelijst bepaalt hoe het volume en de frequentie van een toewijzing of declaratie moeten worden geïnterpreteerd.
 
 ---
+## Gebruikt in berichten
+
+- JW301
+- JW302
+- JW315
+- JW316
+- JW317
+- JW318
+- JW323
+- JW325
 
 ## Zoekindex
 
