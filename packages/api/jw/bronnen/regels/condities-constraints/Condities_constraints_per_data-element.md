@@ -4732,7 +4732,7 @@ JW301 binnen berichtklasse ToegewezenProduct.
 - Bericht: JW301
 - Berichtklasse: ToegewezenProduct
 - Element: Product_Product
-- CDT-element: Categorie_ProductCategorie
+- CDT-element: Categorie
 - Codelijst: JZ020
 - Domein: Jeugdwet
 - Release: iJw 3.2.0
@@ -4773,7 +4773,7 @@ JW301 binnen berichtklasse ToegewezenProduct.
 - Bericht: JW301
 - Berichtklasse: ToegewezenProduct
 - Element: Product_Product
-- CDT-element: Code_ProductCode
+- CDT-element: Code
 - Domein: Jeugdwet
 - Release: iJw 3.2.0
 
@@ -4813,7 +4813,7 @@ JW301 binnen berichtklasse ToegewezenProduct.
 - Bericht: JW301
 - Berichtklasse: ToegewezenProduct
 - Element: Product_Product
-- CDT-element: Code_ProductCode
+- CDT-element: Code
 - Domein: Jeugdwet
 - Release: iJw 3.2.0
 
@@ -7202,7 +7202,7 @@ JW305 binnen berichtklasse StartProduct.
 - Bericht: JW305
 - Berichtklasse: StartProduct
 - Element: Product_Product
-- CDT-element: Categorie_ProductCategorie
+- CDT-element: Categorie
 - Sleutelelement: ja
 - Codelijst: JZ020
 - Domein: Jeugdwet
@@ -7244,7 +7244,7 @@ JW305 binnen berichtklasse StartProduct.
 - Bericht: JW305
 - Berichtklasse: StartProduct
 - Element: Product_Product
-- CDT-element: Code_ProductCode
+- CDT-element: Code
 - Sleutelelement: ja
 - Domein: Jeugdwet
 - Release: iJw 3.2.0
@@ -7285,7 +7285,7 @@ JW305 binnen berichtklasse StartProduct.
 - Bericht: JW305
 - Berichtklasse: StartProduct
 - Element: Product_Product
-- CDT-element: Code_ProductCode
+- CDT-element: Code
 - Sleutelelement: ja
 - Domein: Jeugdwet
 - Release: iJw 3.2.0
@@ -8814,7 +8814,7 @@ JW307 binnen berichtklasse StopProduct.
 - Bericht: JW307
 - Berichtklasse: StopProduct
 - Element: Product_Product
-- CDT-element: Categorie_ProductCategorie
+- CDT-element: Categorie
 - Sleutelelement: ja
 - Codelijst: JZ020
 - Domein: Jeugdwet
@@ -8856,7 +8856,7 @@ JW307 binnen berichtklasse StopProduct.
 - Bericht: JW307
 - Berichtklasse: StopProduct
 - Element: Product_Product
-- CDT-element: Code_ProductCode
+- CDT-element: Code
 - Sleutelelement: ja
 - Domein: Jeugdwet
 - Release: iJw 3.2.0
@@ -8897,7 +8897,7 @@ JW307 binnen berichtklasse StopProduct.
 - Bericht: JW307
 - Berichtklasse: StopProduct
 - Element: Product_Product
-- CDT-element: Code_ProductCode
+- CDT-element: Code
 - Sleutelelement: ja
 - Domein: Jeugdwet
 - Release: iJw 3.2.0
@@ -9301,7 +9301,7 @@ JW315 binnen berichtklasse AangevraagdProduct.
 - Bericht: JW315
 - Berichtklasse: AangevraagdProduct
 - Element: Product_Product
-- CDT-element: Categorie_ProductCategorie
+- CDT-element: Categorie
 - Codelijst: JZ020
 - Domein: Jeugdwet
 - Release: iJw 3.2.0
@@ -9342,7 +9342,7 @@ JW315 binnen berichtklasse AangevraagdProduct.
 - Bericht: JW315
 - Berichtklasse: AangevraagdProduct
 - Element: Product_Product
-- CDT-element: Code_ProductCode
+- CDT-element: Code
 - Domein: Jeugdwet
 - Release: iJw 3.2.0
 
@@ -9382,7 +9382,7 @@ JW315 binnen berichtklasse AangevraagdProduct.
 - Bericht: JW315
 - Berichtklasse: AangevraagdProduct
 - Element: Product_Product
-- CDT-element: Code_ProductCode
+- CDT-element: Code
 - Domein: Jeugdwet
 - Release: iJw 3.2.0
 
@@ -12795,7 +12795,7 @@ JW317 binnen berichtklasse NieuwProduct.
 - Bericht: JW317
 - Berichtklasse: NieuwProduct
 - Element: Product_Product
-- CDT-element: Categorie_ProductCategorie
+- CDT-element: Categorie
 - Sleutelelement: ja
 - Codelijst: JZ020
 - Domein: Jeugdwet
@@ -12837,7 +12837,7 @@ JW317 binnen berichtklasse NieuwProduct.
 - Bericht: JW317
 - Berichtklasse: NieuwProduct
 - Element: Product_Product
-- CDT-element: Code_ProductCode
+- CDT-element: Code
 - Sleutelelement: ja
 - Domein: Jeugdwet
 - Release: iJw 3.2.0
@@ -12878,7 +12878,7 @@ JW317 binnen berichtklasse NieuwProduct.
 - Bericht: JW317
 - Berichtklasse: NieuwProduct
 - Element: Product_Product
-- CDT-element: Code_ProductCode
+- CDT-element: Code
 - Sleutelelement: ja
 - Domein: Jeugdwet
 - Release: iJw 3.2.0
@@ -16964,14 +16964,14 @@ JW323 binnen berichtklasse Prestatie.
 
 ---
 
-# Regel RS009 - ProductCategorie
+# Regel RS009 - Categorie
 
 ## Metadata
 - Regelcode: RS009
 - Type: Restrictie
 - Bericht: JW323
 - Berichtklasse: Prestatie
-- Element: ProductCategorie
+- Element: Categorie
 - Codelijst: JZ020
 - Domein: Jeugdwet
 - Release: iJw 3.2.0
@@ -16980,7 +16980,7 @@ JW323 binnen berichtklasse Prestatie.
 Maximale lengte 2 posities
 
 ## Technisch pad
-`JW323.Prestatie.ProductCategorie`
+`JW323.Prestatie.Categorie`
 
 ## Zoektermen
 - JW323
@@ -16988,12 +16988,12 @@ Maximale lengte 2 posities
 - maximale
 - posities
 - prestatie
-- productcategorie
+- Categorie
 - restrictie
 - RS009
 
 ## Veelgestelde vragen
-### Welke regel hoort bij ProductCategorie?
+### Welke regel hoort bij Categorie?
 Dit is regel RS009.
 
 ### Wat zegt regel RS009?
@@ -17071,7 +17071,7 @@ Geen lege elementen in XML.
 - RS033
 
 ## Veelgestelde vragen
-### Welke regel hoort bij ProductCode?
+### Welke regel hoort bij Code?
 Dit is regel RS033.
 
 ### Wat zegt regel RS033?
@@ -19290,14 +19290,14 @@ JW325 binnen berichtklasse Prestatie.
 
 ---
 
-# Regel RS009 - ProductCategorie
+# Regel RS009 - Categorie
 
 ## Metadata
 - Regelcode: RS009
 - Type: Restrictie
 - Bericht: JW325
 - Berichtklasse: Prestatie
-- Element: ProductCategorie
+- Element: Categorie
 - Codelijst: JZ020
 - Domein: Jeugdwet
 - Release: iJw 3.2.0
@@ -19306,7 +19306,7 @@ JW325 binnen berichtklasse Prestatie.
 Maximale lengte 2 posities
 
 ## Technisch pad
-`JW325.Prestatie.ProductCategorie`
+`JW325.Prestatie.Categorie`
 
 ## Zoektermen
 - JW325
@@ -19330,14 +19330,14 @@ JW325 binnen berichtklasse Prestatie.
 
 ---
 
-# Regel RS012 - ProductCode
+# Regel RS012 - Code
 
 ## Metadata
 - Regelcode: RS012
 - Type: Restrictie
 - Bericht: JW325
 - Berichtklasse: Prestatie
-- Element: ProductCode
+- Element: Code
 - Domein: Jeugdwet
 - Release: iJw 3.2.0
 
@@ -19345,7 +19345,7 @@ JW325 binnen berichtklasse Prestatie.
 Maximale lengte 5 posities
 
 ## Technisch pad
-`JW325.Prestatie.ProductCode`
+`JW325.Prestatie.Code`
 
 ## Zoektermen
 - JW325
@@ -19353,12 +19353,12 @@ Maximale lengte 5 posities
 - maximale
 - posities
 - prestatie
-- ProductCode
+- Code
 - restrictie
 - RS012
 
 ## Veelgestelde vragen
-### Welke regel hoort bij ProductCode?
+### Welke regel hoort bij Code?
 Dit is regel RS012.
 
 ### Wat zegt regel RS012?
@@ -19369,14 +19369,14 @@ JW325 binnen berichtklasse Prestatie.
 
 ---
 
-# Regel RS033 - ProductCode
+# Regel RS033 - Code
 
 ## Metadata
 - Regelcode: RS033
 - Type: Restrictie
 - Bericht: JW325
 - Berichtklasse: Prestatie
-- Element: ProductCode
+- Element: Code
 - Domein: Jeugdwet
 - Release: iJw 3.2.0
 
@@ -19384,7 +19384,7 @@ JW325 binnen berichtklasse Prestatie.
 Geen lege elementen in XML.
 
 ## Technisch pad
-`JW325.Prestatie.ProductCode`
+`JW325.Prestatie.Code`
 
 ## Zoektermen
 - elementen
@@ -19392,12 +19392,12 @@ Geen lege elementen in XML.
 - JW325
 - lege
 - prestatie
-- ProductCode
+- Code
 - restrictie
 - RS033
 
 ## Veelgestelde vragen
-### Welke regel hoort bij ProductCode?
+### Welke regel hoort bij Code?
 Dit is regel RS033.
 
 ### Wat zegt regel RS033?
