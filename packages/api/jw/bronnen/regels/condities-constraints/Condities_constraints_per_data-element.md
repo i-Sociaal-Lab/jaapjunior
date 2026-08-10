@@ -16964,14 +16964,14 @@ JW323 binnen berichtklasse Prestatie.
 
 ---
 
-# Regel RS009 - ProductCategorie_ProductCategorie
+# Regel RS009 - ProductCategorie
 
 ## Metadata
 - Regelcode: RS009
 - Type: Restrictie
 - Bericht: JW323
 - Berichtklasse: Prestatie
-- Element: ProductCategorie_ProductCategorie
+- Element: ProductCategorie
 - Codelijst: JZ020
 - Domein: Jeugdwet
 - Release: iJw 3.2.0
@@ -16980,7 +16980,7 @@ JW323 binnen berichtklasse Prestatie.
 Maximale lengte 2 posities
 
 ## Technisch pad
-`JW323.Prestatie.ProductCategorie_ProductCategorie`
+`JW323.Prestatie.ProductCategorie`
 
 ## Zoektermen
 - JW323
@@ -16988,12 +16988,12 @@ Maximale lengte 2 posities
 - maximale
 - posities
 - prestatie
-- productcategorie_productcategorie
+- productcategorie
 - restrictie
 - RS009
 
 ## Veelgestelde vragen
-### Welke regel hoort bij ProductCategorie_ProductCategorie?
+### Welke regel hoort bij ProductCategorie?
 Dit is regel RS009.
 
 ### Wat zegt regel RS009?
@@ -17004,14 +17004,14 @@ JW323 binnen berichtklasse Prestatie.
 
 ---
 
-# Regel RS012 - ProductCode_ProductCode
+# Regel RS012 - ProductCode
 
 ## Metadata
 - Regelcode: RS012
 - Type: Restrictie
 - Bericht: JW323
 - Berichtklasse: Prestatie
-- Element: ProductCode_ProductCode
+- Element: ProductCode
 - Domein: Jeugdwet
 - Release: iJw 3.2.0
 
@@ -17019,7 +17019,7 @@ JW323 binnen berichtklasse Prestatie.
 Maximale lengte 5 posities
 
 ## Technisch pad
-`JW323.Prestatie.ProductCode_ProductCode`
+`JW323.Prestatie.ProductCode`
 
 ## Zoektermen
 - JW323
@@ -17027,12 +17027,12 @@ Maximale lengte 5 posities
 - maximale
 - posities
 - prestatie
-- productcode_productcode
+- ProductCode
 - restrictie
 - RS012
 
 ## Veelgestelde vragen
-### Welke regel hoort bij ProductCode_ProductCode?
+### Welke regel hoort bij ProductCode?
 Dit is regel RS012.
 
 ### Wat zegt regel RS012?
@@ -17043,14 +17043,14 @@ JW323 binnen berichtklasse Prestatie.
 
 ---
 
-# Regel RS033 - ProductCode_ProductCode
+# Regel RS033 - ProductCode
 
 ## Metadata
 - Regelcode: RS033
 - Type: Restrictie
 - Bericht: JW323
 - Berichtklasse: Prestatie
-- Element: ProductCode_ProductCode
+- Element: ProductCode
 - Domein: Jeugdwet
 - Release: iJw 3.2.0
 
@@ -17058,7 +17058,7 @@ JW323 binnen berichtklasse Prestatie.
 Geen lege elementen in XML.
 
 ## Technisch pad
-`JW323.Prestatie.ProductCode_ProductCode`
+`JW323.Prestatie.ProductCode`
 
 ## Zoektermen
 - elementen
@@ -17066,12 +17066,12 @@ Geen lege elementen in XML.
 - JW323
 - lege
 - prestatie
-- productcode_productcode
+- ProductCode
 - restrictie
 - RS033
 
 ## Veelgestelde vragen
-### Welke regel hoort bij ProductCode_ProductCode?
+### Welke regel hoort bij ProductCode?
 Dit is regel RS033.
 
 ### Wat zegt regel RS033?
@@ -19290,14 +19290,14 @@ JW325 binnen berichtklasse Prestatie.
 
 ---
 
-# Regel RS009 - ProductCategorie_ProductCategorie
+# Regel RS009 - ProductCategorie
 
 ## Metadata
 - Regelcode: RS009
 - Type: Restrictie
 - Bericht: JW325
 - Berichtklasse: Prestatie
-- Element: ProductCategorie_ProductCategorie
+- Element: ProductCategorie
 - Codelijst: JZ020
 - Domein: Jeugdwet
 - Release: iJw 3.2.0
@@ -19306,7 +19306,7 @@ JW325 binnen berichtklasse Prestatie.
 Maximale lengte 2 posities
 
 ## Technisch pad
-`JW325.Prestatie.ProductCategorie_ProductCategorie`
+`JW325.Prestatie.ProductCategorie`
 
 ## Zoektermen
 - JW325
@@ -19314,12 +19314,12 @@ Maximale lengte 2 posities
 - maximale
 - posities
 - prestatie
-- productcategorie_productcategorie
+- ProductCategorie
 - restrictie
 - RS009
 
 ## Veelgestelde vragen
-### Welke regel hoort bij ProductCategorie_ProductCategorie?
+### Welke regel hoort bij ProductCategorie?
 Dit is regel RS009.
 
 ### Wat zegt regel RS009?
@@ -19330,14 +19330,14 @@ JW325 binnen berichtklasse Prestatie.
 
 ---
 
-# Regel RS012 - ProductCode_ProductCode
+# Regel RS012 - ProductCode
 
 ## Metadata
 - Regelcode: RS012
 - Type: Restrictie
 - Bericht: JW325
 - Berichtklasse: Prestatie
-- Element: ProductCode_ProductCode
+- Element: ProductCode
 - Domein: Jeugdwet
 - Release: iJw 3.2.0
 
@@ -19345,7 +19345,7 @@ JW325 binnen berichtklasse Prestatie.
 Maximale lengte 5 posities
 
 ## Technisch pad
-`JW325.Prestatie.ProductCode_ProductCode`
+`JW325.Prestatie.ProductCode`
 
 ## Zoektermen
 - JW325
@@ -19353,12 +19353,12 @@ Maximale lengte 5 posities
 - maximale
 - posities
 - prestatie
-- productcode_productcode
+- ProductCode
 - restrictie
 - RS012
 
 ## Veelgestelde vragen
-### Welke regel hoort bij ProductCode_ProductCode?
+### Welke regel hoort bij ProductCode?
 Dit is regel RS012.
 
 ### Wat zegt regel RS012?
@@ -19369,14 +19369,14 @@ JW325 binnen berichtklasse Prestatie.
 
 ---
 
-# Regel RS033 - ProductCode_ProductCode
+# Regel RS033 - ProductCode
 
 ## Metadata
 - Regelcode: RS033
 - Type: Restrictie
 - Bericht: JW325
 - Berichtklasse: Prestatie
-- Element: ProductCode_ProductCode
+- Element: ProductCode
 - Domein: Jeugdwet
 - Release: iJw 3.2.0
 
@@ -19384,7 +19384,7 @@ JW325 binnen berichtklasse Prestatie.
 Geen lege elementen in XML.
 
 ## Technisch pad
-`JW325.Prestatie.ProductCode_ProductCode`
+`JW325.Prestatie.ProductCode`
 
 ## Zoektermen
 - elementen
@@ -19392,12 +19392,12 @@ Geen lege elementen in XML.
 - JW325
 - lege
 - prestatie
-- productcode_productcode
+- ProductCode
 - restrictie
 - RS033
 
 ## Veelgestelde vragen
-### Welke regel hoort bij ProductCode_ProductCode?
+### Welke regel hoort bij ProductCode?
 Dit is regel RS033.
 
 ### Wat zegt regel RS033?
