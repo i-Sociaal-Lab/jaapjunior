@@ -1,0 +1,46 @@
+# TR378 - Technische regel
+
+## Definitie
+
+TR378: Vullen met een bestaande gemeentecode uit het overzicht van CBS dat actueel is op Ingangsdatum of ToewijzingIngangsdatum.
+
+---
+
+## Metadata
+
+| Eigenschap | Waarde |
+|---|---|
+| Regelcode | TR378 |
+| Type | Technische regel |
+| Controleniveau | externe bron |
+| Retourcode | S300 |
+| Bron | iWmo standaard |
+| Bestandstype | Technische regel |
+
+---
+
+## Toelichting
+
+De gemeentecode moet voorkomen in de Gemeentelijke indeling (zie https://www.cbs.nl/). Indien er sprake is van een gemeentelijke herindeling is het toegestaan om een oudere CBS lijst met gemeentecodes te gebruiken die actueel is op Ingangsdatum van ToegewezenProduct (uit 301-bericht) of in geval van een Verzoek om toewijzing (315-bericht) op ToewijzingIngangsdatum in AangevraagdProduct (uit 315-bericht).
+
+---
+
+## Gebruik in berichten
+
+- WMO301
+- WMO305
+- WMO307
+- WMO315
+- WMO317
+- WMO319
+- WMO323
+- WMO325
+
+
+---
+
+## Structuur
+
+- Map: `externe-bron`
+- Bestand: `TR378`
+
