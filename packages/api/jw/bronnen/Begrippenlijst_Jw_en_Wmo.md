@@ -328,6 +328,10 @@ Bericht met verwerkingsinformatie voor declaratie Jeugdhulp. In dit bericht staa
 
 een van de vier deelprocessen uit het primair proces van de iStandaarden; Wanneer de aanbieder vaststelt dat de declaratieperiode is afgelopen of een declaratie is afgekeurd stuurt de aanbieder een declaratie naar de gemeente. De aanbieder stuurt hiervoor een declaratiebericht en geeft in dit bericht aan welke prestaties, in welke declaratieperiode en voor welk totaal ingediend bedrag worden gedeclareerd. De gehele declaratie krijgt een declaratienummer als unieke identificatie van de declaratie. Dit declaratienummer dient ook om het antwoordbericht volgend op de declaratie aan het declaratiebericht te kunnen koppelen. In het declaratie antwoordbericht geeft de gemeente terugkoppeling aan de aanbieder of de prestaties correct zijn ingediend en wat het totaal toegekend bedrag is.
 
+### DMO
+
+Directie Maatschappelijke Ondersteuning. Een afdeling die helpt bij zorgtaken rondom de Wet maatschappelijke ondersteuning (Wmo)
+
 ### eenheid of eenheden
 
 verwijst naar codelijst Eenheid. Deze code wordt gebruikt om aan te geven in welke eenheid de omvang van de geleverde of toe te wijzen jeugdhulp wordt uitgedrukt. Deze code wordt toegepast in een toewijzingbericht (JW301), in een verzoek om toewijzing (JW315), in een verzoek om wijziging (JW317) en in declaratieberichten (JW323).
