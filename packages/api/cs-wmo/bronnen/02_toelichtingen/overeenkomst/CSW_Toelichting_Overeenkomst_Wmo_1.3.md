@@ -1,4 +1,4 @@
-# Contractstandaarden Wmo -- Toelichting overeenkomst versie 1.3
+7# Contractstandaarden Wmo -- Toelichting overeenkomst versie 1.3
 
 > **Chatbot/RAG-versie van de toelichting op de overeenkomst Wmo versie
 > 1.3**
