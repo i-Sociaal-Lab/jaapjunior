@@ -1,0 +1,28 @@
+---
+document: Overeenkomst Wmo
+versie: "1.3"
+artikel: "3.25"
+bron: CSW_Overeenkomst_Wmo_1.3.md
+bronstatus: primaire bron
+---
+
+# Artikel 3.25 – Nietigheid
+
+## Bronvermelding
+
+Dit bestand bevat de tekst van artikel 3.25 uit de primaire bron **CSW_Overeenkomst_Wmo_1.3.md**, versie 1.3.
+
+## Contracttekst
+
+## Artikel 3.25 – Nietigheid
+
+### Mogelijke chatbotvragen
+
+- Wat staat er in artikel 3.25 over nietigheid?
+- Wat bepaalt artikel 3.25?
+
+### Brontekst
+
+**Artikel 3.25 – Nietigheid**
+
+Als een bepaling in deze overeenkomst ongeldig is of als een rechter die ongeldig verklaart, dan blijven de andere bepalingen gewoon geldig. Partijen overleggen samen over een vervangende afspraak die past binnen de wet. Die afspraak moet zo goed mogelijk aansluiten bij de bedoeling van deze overeenkomst.

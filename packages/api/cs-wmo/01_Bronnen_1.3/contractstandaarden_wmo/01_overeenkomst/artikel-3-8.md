@@ -1,0 +1,32 @@
+---
+document: Overeenkomst Wmo
+versie: "1.3"
+artikel: "3.8"
+bron: CSW_Overeenkomst_Wmo_1.3.md
+bronstatus: primaire bron
+---
+
+# Artikel 3.8 – Wijziging ondersteuningsbehoefte
+
+## Bronvermelding
+
+Dit bestand bevat de tekst van artikel 3.8 uit de primaire bron **CSW_Overeenkomst_Wmo_1.3.md**, versie 1.3.
+
+## Contracttekst
+
+## Artikel 3.8 – Wijziging ondersteuningsbehoefte
+
+### Mogelijke chatbotvragen
+
+- Wat staat er in artikel 3.8 over wijziging ondersteuningsbehoefte?
+- Wat bepaalt artikel 3.8?
+
+### Brontekst
+
+**Artikel 3.8 – Wijziging ondersteuningsbehoefte**
+
+Bij inspanningsgerichte en outputgerichte uitvoering:
+Als de ondersteuningsvraag van de cliënt verandert, dan overlegt Opdrachtnemer op tijd met de cliënt over het aanvragen van een nieuw besluit bij het college. Als Opdrachtnemer is gemachtigd door de cliënt, dan doet hij de aanvraag namens de cliënt, in overleg met de cliënt.
+
+Bij taakgerichte uitvoering:
+Als de ondersteuningsvraag van de cliënt verandert, dan overlegt Opdrachtnemer op tijd met de cliënt over het aanpassen van de ondersteuning.
