@@ -1,0 +1,38 @@
+---
+document_type: overeenkomst
+document_version: "1.3"
+article: "3.4"
+source_priority: 1
+source: "CSW_Overeenkomst_Wmo_1.3.md"
+---
+
+# Artikel 3.4 – Continuïteit van maatschappelijke ondersteuning
+
+### Mogelijke chatbotvragen
+
+- Wat staat er in artikel 3.4 over continuïteit van maatschappelijke ondersteuning?
+- Wat bepaalt artikel 3.4?
+
+### Brontekst
+
+**Artikel 3.4 – Continuïteit van maatschappelijke ondersteuning**
+
+3.4.1
+Opdrachtnemer garandeert dat de ondersteuning voor cliënten doorgaat.
+
+3.4.2
+Als Opdrachtnemer een risico ziet voor het doorgaan van de ondersteuning, dan meldt hij dit direct aan Opdrachtgever, met inachtneming van de privacyregels. Opdrachtnemer bevestigt deze melding schriftelijk. Op verzoek geeft hij Opdrachtgever inzage in relevante documenten. Opdrachtgever mag dan een extern onderzoek (bijvoorbeeld door een accountant) laten doen.
+
+Partijen beschouwen de volgende situaties altijd als risicovol voor het doorgaan van maatschappelijke ondersteuning:
+
+a) de afgelopen drie jaar achter elkaar negatieve jaarresultaten,
+b) geldproblemen (liquiditeitsproblemen),
+c) bestuurlijke onrust,
+d) maatregelen door inspectie, gemeente of een andere toezichthouder,
+
+e) een tuchtrechtelijke of strafrechtelijke maatregel.
+
+Partijen overleggen altijd bij dit soort situaties.
+
+## Bron
+CSW_Overeenkomst_Wmo_1.3.md, artikel 3.4
