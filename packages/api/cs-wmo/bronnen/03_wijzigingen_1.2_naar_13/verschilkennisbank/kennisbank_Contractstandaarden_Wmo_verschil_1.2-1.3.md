@@ -89,7 +89,7 @@ Overeenkomst Wmo – Was-Wordt-Tabel Contractstandaarden Wmo 1.2 → 1.3
 
 ### Antwoord / kern van de wijziging
 
-Vanwege de wijzigingen is de inhoudsopgave aangepast.
+Vanwege de wijzigingen in de overeenkomst is de inhoudsopgave aangepast.
 
 ### Bron
 
