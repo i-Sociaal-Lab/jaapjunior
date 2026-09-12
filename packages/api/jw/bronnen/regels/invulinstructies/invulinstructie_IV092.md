@@ -1,0 +1,82 @@
+**IV092**
+
+*Hoe moet een Verzoek om Wijziging (VOW bericht) gevuld worden?*
+
+Op berichtniveau wordt een uniek Referentienummer gevuld en wordt verplicht de reden van het verzoek ingevuld.
+Het verzoek om wijziging bevat alle actuele toegewezen producten bij de cliënt.
+Het VOW bericht bevat drie groepen gegevens om de gewenste nieuwe situatie aan te vragen:
+
+- OngewijzigdProduct: hiermee worden de toewijzingen geïdentificeerd (via ToewijzingNummer) die ongewijzigd moeten blijven.
+- TeWijzigenProduct: hiermee worden de toewijzingen geïdentificeerd (via ToewijzingNummer) waarvoor een wijziging gewenst is, en worden de wijzigingen aangegeven.
+- NieuwProduct: hiermee worden de gegevens voor een gewenste nieuwe toewijzing van een nieuw Product aangegeven.
+
+Het gebruik en de vulling wordt hieronder nader toegelicht:
+
+OngewijzigdProduct
+
+Dit wordt gevuld voor elke actuele toewijzing waar niets aan hoeft te veranderen. Hetzelfde product met dezelfde kenmerken zijn gewenst in de nieuwe situatie.
+
+TeWijzigenProduct
+
+Dit wordt gevuld voor elke actuele toewijzing waarbij de omvang, het budget en/of de einddatum moet veranderen. Hierbij gelden de volgende voorwaarden:
+
+- Het Product is gelijk aan dat van de originele toewijzing en zit daarom niet in de berichtklasse.
+- In de Omvang mogen het Volume, Eenheid en Frequentie worden gewijzigd.
+- De gewenste wijziging mag niet leiden tot onrechtmatigheid van reeds geleverde zorg.
+- De GewensteIngangsdatum geeft aan op welk moment de wijziging zou moeten ingaan. Deze datum moet ofwel in de toekomst liggen (maar wel binnen de periode van de originele toewijzing), ofwel moet deze gelijk zijn aan de originele ingangsdatum als het een wijziging over de gehele periode betreft.
+- Als de wijziging een toegewezen Budget betreft, dan moet de GewensteIngangsdatum gelijk zijn aan de ingangsdatum van de originele toewijzing. De einddatum mag wel worden aangepast samen met de budgetwijziging. Oftewel: het gehele budget wordt aangepast en daarbij mag de periode worden ingekort of verlengd.
+- Als de wijziging betrekking heeft op een toewijzing met als Frequentie totaal binnen toewijzingsperiode, dan moet de GewensteIngangsdatum gelijk zijn aan de ingangsdatum van de originele toewijzing. De einddatum mag wel worden aangepast samen met deze wijziging. Oftewel: het totaal wordt aangepast en daarbij mag de periode worden ingekort of verlengd.
+
+NieuwProduct
+
+Dit wordt gevuld voor het aanvragen van producten waarvoor geen actuele toewijzing is. Ook een bestaand product maar voor een geheel nieuwe periode (GewensteIngangsdatum ligt na de einddatum van de originele toewijzing) wordt aangevraagd in de groep NieuwProduct.
+De kenmerken behorend bij deze gewenste nieuwe toewijzing worden gevuld, conform de regels rond het aanvragen en toewijzen van inspanningsgerichte en outputgerichte producten in de verschillende variaties.
+
+Afhankelijk van de wijzigingen in TewijzigenProduct kan bij honoreren door de gemeente gebruik gemaakt worden van dezelfde toewijzing met gewijzigde gegevens, of moet de actuele toewijzing worden ingetrokken en een nieuwe aansluitende toewijzing worden gemaakt. Bedrijfsregels OP33x1 en OP257 beschrijven in detail wanneer een bestaande toewijzing kan worden gebruikt of een nieuwe toewijzing moet worden gemaakt.
+
+Voorbeelden:
+
+Voorbeeld 1, Actuele situatie:
+
+Toewijzing 432, product B1, vanaf 1 maart 2025, 3 uur per week, einddatum 31 december 2026
+
+Toewijzing 543, product C1, vanaf 1 maart 2025, 80 uur totaal over periode, einddatum 31 december 2025
+
+Gewenst is om het product B1 vanaf 1 september 2025 te vervangen door product B2, voor 6 uur per week tot eind 2026 (en daarom moet product B1 dus stoppen per 31 augustus)
+
+VOW bericht bevat:
+
+- OngewijzigdProduct: ToewijzingNummer 543
+- TeWijzigenProduct: ToewijzingNummer 432, GewensteIngangsdatum 1 maart 2025, 3 uur per week, einddatum 31 augustus 2025
+- NieuwProduct: Product B2, GewensteIngangsdatum 1 september 2025, 6 uur per week, einddatum 31 december 2026
+
+Voorbeeld 2a, Actuele situatie:
+
+Toewijzing 789, product A1, vanaf 1 maart 2025, 3 uur per week, einddatum 31 december 2025
+
+Toewijzing 910, product C1, vanaf 1 maart 2025, 4 dagdelen per maand, einddatum 31 december 2025
+
+In oktober 2025 wordt duidelijk: gewenst is om voor product A1 de levering te verlengen én te verhogen: vanaf 1 november 2025 met 5 uur per week, tot 1 juli volgend jaar
+
+Daarnaast is het nodig om na 31 december 2025 ook nog door te gaan met Product C1, ook tot 1 juli.
+
+VOW bericht bevat:
+
+- TeWijzigenProduct: ToewijzingNummer 789, GewensteIngangsdatum 1 november 2025, 5 uur per week, einddatum 1 juli 2026
+- TeWijzigenProduct: ToewijzigenNummer 910, GewensteIngangsdatum 1 maart 2025, 4 dagdelen per maand, einddatum 1 juli 2026
+
+Voorbeeld 2b, Actuele situatie:
+
+Toewijzing 789, product A1, vanaf 1 maart 2025, 3 uur per week, einddatum 31 december 2025
+
+Toewijzing 910, product C1, vanaf 1 maart 2025, 4 dagdelen per maand, einddatum 31 december 2025
+
+In oktober 2025 wordt duidelijk: gewenst is om voor product A1 de levering te verlengen én te verhogen: vanaf 1 november 2025 met 5 uur per week, tot 1 juli volgend jaar
+
+Daarnaast is het nodig om vanaf 1 januari 2026 ook nog door te gaan met Product C1, maar dan voor 2 dagdelen per maand, ook tot 1 juli. Dit is een ingangsdatum die niet overlapt met de actuele wijziging, dus hiervoor wordt NieuwProduct gebruikt.
+
+VOW bericht bevat:
+
+- OngewijzigdProduct: ToewijzingNummer 910
+- TeWijzigenProduct: ToewijzingNummer 789, GewensteIngangsdatum 1 november 2025, 5 uur per week, einddatum 1 juli 2026
+- NieuwProduct: Product C1 GewensteIngangsdatum 1 januari 2026, 2 dagdelen per maand, einddatum 1 juli 2026
