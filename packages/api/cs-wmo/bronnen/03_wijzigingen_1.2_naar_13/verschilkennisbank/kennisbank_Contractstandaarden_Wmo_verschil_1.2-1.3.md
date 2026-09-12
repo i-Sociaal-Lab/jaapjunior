@@ -61,24 +61,6 @@ Dit is een samenvatting. Voor een specifieke wijziging is het afzonderlijke wijz
 
 # 4. Wijzigingen – Overeenkomst Wmo
 
-## CSW-001 – Wat is er veranderd in de betreffende versie- of artikelnummering?
-
-**Type wijziging:** wijziging
-
-**Versie 1.2:** Versie 1.2. artikelnummer + deel
-
-**Versie 1.3:** Versie 1.3 artikelnummer
-
-### Antwoord / kern van de wijziging
-
-Overeenkomst Wmo versie 1.3 (WORDT)
-
-### Bron
-
-Overeenkomst Wmo – Was-Wordt-Tabel Contractstandaarden Wmo 1.2 → 1.3
-
----
-
 ## CSW-002 – Wat is er veranderd bij Overwegingen?
 
 **Type wijziging:** wijziging
