@@ -30,7 +30,10 @@ Gebruik deze map voor vragen over veranderingen tussen versie 1.2 en 1.3.
 ### 04_faq
 Gebruik deze map voor veelgestelde vragen en praktische vraagformuleringen.
 
-### 05_metadata
+### 05_begrippenregister
+Gebruik deze map voor vragen over termen, begrippen of afkortingen
+
+### 06_metadata
 Bevat routerings- en manifestinformatie voor de kennisbank.
 
 ## Bronhiërarchie
@@ -39,7 +42,8 @@ Bevat routerings- en manifestinformatie voor de kennisbank.
 2. Was-Wordt 1.2 → 1.3 voor wijzigingsvragen
 3. Toelichting versie 1.3 voor ratio en bedoeling
 4. FAQ voor praktische formuleringen
-5. Samenvattende verschilkennisbank als aanvullende bron
+5. Begrippenregister
+6. Samenvattende verschilkennisbank als aanvullende bron
 
 ## Antwoordregels
 
