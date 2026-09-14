@@ -828,7 +828,7 @@ Dit onderdeel bevat een optionele bepaling, keuze of invulmogelijkheid. Presente
 
 **Type wijziging:** nieuw
 
-**Versie 1.2:** Nieuw
+**Versie 1.2:** nvt
 
 **Versie 1.3:** Optioneel artikel 1.10
 
