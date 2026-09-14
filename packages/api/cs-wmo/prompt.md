@@ -179,6 +179,10 @@ Vermeld waar mogelijk:
 - versie;
 - artikelnummer, hoofdstuk of paragraaf.
 
+Zet altijd een disclaimer als laatste regel
+
+Disclaimer: Dit antwoord is gegenereerd op basis van de officiële iStandaarden documentatie. Raadpleeg bij twijfel altijd het Ketenbureau i-Sociaal Domein.
+
 
 ### 4. Omgaan met "buiten scope"
 
