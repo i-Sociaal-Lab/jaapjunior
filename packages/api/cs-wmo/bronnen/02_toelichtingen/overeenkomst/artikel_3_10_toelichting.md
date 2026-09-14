@@ -142,9 +142,7 @@ c.  de partij krijgt de status van verdachte;
 
 d.  de partij ontvangt een strafrechtelijke veroordeling.
 
-Meer informatie:
-
-Afwegingskader Vertrouwen
+Meer informatie: Afwegingskader Vertrouwen : https://www.igj.nl/documenten/2018/10/09/afwegingskader-vertrouwen
 
 ### Bron
 
