@@ -118,7 +118,7 @@ onderdelen die u nodig heeft.
 
 4 / 23 
 f. Kunnen per Wmo-vorm (dagbesteding, begeleiding, et cetera) aparte 
-contractstandaarden worden aanhouden of is het handiger om in één (1) 
+contractstandaarden worden aangehouden of is het handiger om in één (1) 
 contractstandaard alle Wmo-diensten te implementeren, met uitzondering van 
 hulpmiddelen? 
  
@@ -251,18 +251,14 @@ toevoeging zijn.
 Antwoord: De in te kopen producten, zoals verblijf, vallen onder de kernbedingen. Dat 
 is eigen invulling van gemeenten.  
  
-r. Als na verloop van de aanbesteding blijkt dat de overeenkomst volgens het 
+Als na verloop van de aanbesteding blijkt dat de overeenkomst volgens het 
 Ketenbureau niet volgens de standaarden is, is de gemeente dan verplicht na de 
 aanbesteding de overeenkomst de wijzigen? 
  
 Antwoord: Nadat de Algemene Ledenvergadering van de VNG zich positief heeft 
 uitgesproken over de contractstandaard is deze verplicht om te gebruiken bij nieuwe 
-aanbestedingen. Hiermee zorgen we gezamenlijk voor vermindering van de
-
-### Bronpagina 7
-
-7 / 23 
-administratieve lasten. Het Ketenbureau adviseert gemeenten daarom dringend zich 
+aanbestedingen. Hiermee zorgen we gezamenlijk voor vermindering van de administratieve lasten. 
+Het Ketenbureau adviseert gemeenten daarom dringend zich 
 aan de contractstandaarden te houden, maar kan dat niet afdwingen. 
  
 s. Mag je nu wel de standaardartikelen voor Bibob en SROI inhoudelijk aanpassen naar 
@@ -488,18 +484,13 @@ De onderstaande vraag-en-antwoordblokken zijn broninhoud. Gebruik het antwoord d
 12 / 23 
 c. Deel 2 
  
- 
- 
- 
- 
 d. Deel 3 
 a. Artikel 3.2 lid 1 van (de nu geldende) versie 1.4 van de contractstandaarden 
 schrijft de berekeningswijze voor die wij als opdrachtgever jaarlijks zouden 
 moeten toepassen, namelijk aan de hand van een prognose voor volgend 
 jaar (t+1) plus het verschil tussen de eerdere schatting (t-1) en het definitieve 
 percentage van het lopende jaar (t). Deze berekeningswijze voorziet dus in 
-een compensatie/correctie in het volgende jaar (t+1) voor het lopende jaar 
-(t). 
+een compensatie/correctie in het volgende jaar (t+1) voor het lopende jaar (t). 
  
 Hoe adviseert het Ketenbureau om te gaan met deze berekeningswijze of 
 met de compenserende maatregel als geen sprake (meer) is van een volgend 
@@ -548,10 +539,6 @@ De onderstaande vraag-en-antwoordblokken zijn broninhoud. Gebruik het antwoord d
 
 12 / 23 
 c. Deel 2 
- 
- 
- 
- 
  
 d. Deel 3 
 a. Artikel 3.2 lid 1 van (de nu geldende) versie 1.4 van de contractstandaarden 
@@ -858,12 +845,7 @@ versie 1.1 naar 1.2 gebruiken zodat u de wijzigingen snel kunt overnemen.
 ### Bronpagina 19
 
 19 / 23 
- 
- 
- 
- 
- 
- 
+
 c. Volgens ons ontbreken er een aantal belangrijke voorbehouden in de standaard. 
 Kan de volgende tekst worden toegevoegd? Zo nee, waarom niet?  
 “De Opdrachtgever behoudt zich het recht voor om een toelichting op of 
