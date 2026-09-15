@@ -256,7 +256,7 @@ Ketenbureau niet volgens de standaarden is, is de gemeente dan verplicht na de
 aanbesteding de overeenkomst de wijzigen? 
  
 Antwoord: Nadat de Algemene Ledenvergadering van de VNG zich positief heeft 
-uitgesproken over de contractstandaard is verplicht om te gebruiken bij nieuwe 
+uitgesproken over de contractstandaard is deze verplicht om te gebruiken bij nieuwe 
 aanbestedingen. Hiermee zorgen we gezamenlijk voor vermindering van de
 
 ### Bronpagina 7
