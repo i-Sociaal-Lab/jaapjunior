@@ -1,0 +1,16 @@
+{
+  "knowledge_base": "Contractstandaarden Wmo",
+  "version": "1.3",
+  "source_priority": {
+    "1": "primaire actuele contracttekst",
+    "2": "Was-Wordt 1.2 naar 1.3",
+    "3": "toelichting",
+    "4": "FAQ",
+    "5": "verschilkennisbank"
+  },
+  "article_split": {
+    "overeenkomst_contracttekst": true,
+    "overeenkomst_toelichting": true,
+    "inkoopdocumenten": "later"
+  }
+}
