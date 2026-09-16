@@ -11,13 +11,11 @@ source: "CSW_Toelichting_Overeenkomst_Wmo_1.3.md"
 
 ### Mogelijke chatbotvragen
 
--   Wat is de ratio van Artikel 3.16 -- Toezicht en handhaving?
--   Wat is de inhoud van Artikel 3.16 -- Toezicht en handhaving?
--   Wat bepaalt de toelichting bij Artikel 3.16 -- Toezicht en
-    handhaving?
--   Waarom is Artikel 3.16 -- Toezicht en handhaving opgenomen in de
-    contractstandaard?
--   Wat moet ik weten over Artikel 3.16 -- Toezicht en handhaving?
+-   Wat is de ratio van Artikel 3.16 - Toezicht en handhaving?
+-   Wat is de inhoud van Artikel 3.16 - Toezicht en handhaving?
+-   Wat bepaalt de toelichting bij Artikel 3.16 - Toezicht en handhaving?
+-   Waarom is Artikel 3.16 - Toezicht en handhaving opgenomen in de contractstandaard?
+-   Wat moet ik weten over Artikel 3.16 - Toezicht en handhaving?
 
 ### Brontekst van de toelichting
 
@@ -95,7 +93,7 @@ Melden van fraude bij IKZ
 
 ### Bron
 
-**Toelichting Overeenkomst Wmo versie 1.3**, onderdeel **Artikel 3.16 --
+**Toelichting Overeenkomst Wmo versie 1.3**, onderdeel **Artikel 3.16 -
 Toezicht en handhaving**.
 
 ------------------------------------------------------------------------
