@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jw317:Bericht xmlns:ijw="http://www.istandaarden.nl/ijw/3_2/basisschema/schema" xmlns:jw317="http://www.istandaarden.nl/ijw/3_2/jw317/schema" >
+	<jw317:Header>
+		<jw317:BerichtCode>486</jw317:BerichtCode>
+		<jw317:BerichtVersie>3</jw317:BerichtVersie>
+		<jw317:BerichtSubversie>2</jw317:BerichtSubversie>
+		<jw317:Afzender>65656055</jw317:Afzender>
+		<jw317:Ontvanger>0384</jw317:Ontvanger>
+		<jw317:BerichtIdentificatie>
+			<ijw:Identificatie>987654321</ijw:Identificatie>
+			<ijw:Dagtekening>2026-01-02</ijw:Dagtekening>
+		</jw317:BerichtIdentificatie>
+		<jw317:XsdVersie>
+			<ijw:BasisschemaXsdVersie>1.0.0</ijw:BasisschemaXsdVersie>
+			<ijw:BerichtXsdVersie>1.0.0</ijw:BerichtXsdVersie>
+		</jw317:XsdVersie>
+	</jw317:Header>
+	<jw317:Client>
+		<jw317:Bsn>999900006</jw317:Bsn>
+		<jw317:Verzoek>
+			<jw317:ReferentieAanbieder>9003</jw317:ReferentieAanbieder>
+			<jw317:RedenVerzoek>1</jw317:RedenVerzoek>
+			<jw317:OngewijzigdeProducten>
+				<jw317:OngewijzigdProduct>
+					<jw317:ToewijzingNummer>10071</jw317:ToewijzingNummer>
+				</jw317:OngewijzigdProduct>
+			</jw317:OngewijzigdeProducten>
+			<jw317:NieuweProducten>
+				<jw317:NieuwProduct>
+					<jw317:Product>
+						<ijw:Categorie>45</ijw:Categorie>
+						<ijw:Code>45A03</ijw:Code>
+					</jw317:Product>
+					<jw317:GewensteIngangsdatum>2026-11-01</jw317:GewensteIngangsdatum>
+					<jw317:Einddatum>2024-02-28</jw317:Einddatum>
+					<jw317:Omvang>
+						<ijw:Volume>4</ijw:Volume>
+						<ijw:Eenheid>04</ijw:Eenheid>
+						<ijw:Frequentie>4</ijw:Frequentie>
+					</jw317:Omvang>
+				</jw317:NieuwProduct>
+			</jw317:NieuweProducten>
+		</jw317:Verzoek>
+	</jw317:Client>
+</jw317:Bericht>
