@@ -13,7 +13,6 @@ import {
 import type { IDB } from "./api.js";
 import { getEnvOrThrow } from "./get-env.js";
 import { Openrouter } from "./openrouter.js";
-import { QueryPipeline } from "../jw/engine/pipeline/QueryPipeline.js";
 import { VragenAgent, type QuestionAnalysis } from "./vragen-agent.js";
 
 Settings.embedModel = new OpenAIEmbedding({
@@ -24,14 +23,13 @@ Settings.chunkOverlap = 100;
 const qdrantUri = getEnvOrThrow("QDRANT_URI");
 const jinaApiKey = getEnvOrThrow("JINAAI_API_KEY");
 
-const queryPipeline = new QueryPipeline();
-
 function getQdrantConfig(uri: string) {
 	if (uri.includes("localhost") || uri.includes("127.0.0.1")) {
 		return { url: uri };
 	}
 
 	const urlWithoutPort = uri.replace(/:6333$/, "");
+
 	if (uri.includes(".internal.") || uri.includes(".azurecontainerapps.io")) {
 		return { url: urlWithoutPort };
 	}
@@ -43,6 +41,7 @@ function createJinaReranker(topN: number, model: string) {
 	return {
 		async postprocessNodes(nodes: any[], query: any) {
 			if (nodes.length === 0) return [];
+
 			if (query === undefined) {
 				throw new Error("Reranker requires a query");
 			}
@@ -52,7 +51,9 @@ function createJinaReranker(topN: number, model: string) {
 					? query
 					: (query?.query ?? String(query));
 
-			const documents = nodes.map((n: any) => n.node.getContent("ALL"));
+			const documents = nodes.map((n: any) =>
+				n.node.getContent(),
+			);
 
 			const response = await fetch("https://api.jina.ai/v1/rerank", {
 				method: "POST",
@@ -70,11 +71,16 @@ function createJinaReranker(topN: number, model: string) {
 
 			if (!response.ok) {
 				const errText = await response.text();
-				throw new Error(`Jina rerank failed: ${response.status} ${errText}`);
+				throw new Error(
+					`Jina rerank failed: ${response.status} ${errText}`,
+				);
 			}
 
 			const json = (await response.json()) as {
-				results: Array<{ index: number; relevance_score: number }>;
+				results: Array<{
+					index: number;
+					relevance_score: number;
+				}>;
 			};
 
 			return json.results.map((r) => ({
@@ -85,33 +91,48 @@ function createJinaReranker(topN: number, model: string) {
 	};
 }
 
-async function createIndex(collectionName: string, dataDir = "./jw") {
+async function createIndex(
+	collectionName: string,
+	dataDir = "./jw",
+) {
 	console.log(
 		`Creating index. collectionName: ${collectionName}, dataDir: ${dataDir}`,
 	);
 
 	const qdrantConfig = getQdrantConfig(qdrantUri);
+
 	const vectorStore = new QdrantVectorStore({
 		collectionName,
 		...qdrantConfig,
 	});
 
-	const storageContext = await storageContextFromDefaults({ vectorStore });
+	const storageContext = await storageContextFromDefaults({
+		vectorStore,
+	});
 
 	const reader = new SimpleDirectoryReader();
 	const docs = await reader.loadData(dataDir);
 
-	console.log(`Creating vector store index with ${docs.length} documents...`);
+	console.log(
+		`Creating vector store index with ${docs.length} documents...`,
+	);
+
 	const index = await VectorStoreIndex.fromDocuments(docs, {
 		storageContext,
 	});
 
 	console.log("Index created successfully");
+
 	return index;
 }
 
 export const llms = {
-	"4.1": () => new OpenAI({ model: "gpt-4.1", temperature: 0.2 }),
+	"4.1": () =>
+		new OpenAI({
+			model: "gpt-4.1",
+			temperature: 0.2,
+		}),
+
 	qwen3: () =>
 		new Openrouter({
 			model: "qwen/qwen3-235b-a22b-2507",
@@ -123,6 +144,7 @@ export const llms = {
 				},
 			},
 		}),
+
 	"haiku-4.5": () =>
 		new Anthropic({
 			model: "claude-haiku-4-5-20251001",
@@ -147,36 +169,49 @@ class Agent {
 	) {}
 
 	static async fromConfig(config: AgentConfig) {
-		const index = await createIndex(config.collectionName, config.dataPath);
-		const prompt = await Bun.file(config.promptPath).text();
+		const index = await createIndex(
+			config.collectionName,
+			config.dataPath,
+		);
+
+		const prompt = await Bun.file(
+			config.promptPath,
+		).text();
 
 		let vragenAgent: VragenAgent | undefined;
 
 		if (config.questionPromptPath) {
-			const questionPrompt = await Bun.file(config.questionPromptPath).text();
-			vragenAgent = new VragenAgent(llms["4.1"](), questionPrompt);
+			const questionPrompt = await Bun.file(
+				config.questionPromptPath,
+			).text();
+
+			vragenAgent = new VragenAgent(
+				llms["4.1"](),
+				questionPrompt,
+			);
 		}
 
-		return new Agent(index, config.model, prompt, vragenAgent);
+		return new Agent(
+			index,
+			config.model,
+			prompt,
+			vragenAgent,
+		);
 	}
 
 	/**
-	 * Build a retriever for the supplied search queries.
+	 * Executes one or more retrieval queries against Qdrant.
 	 *
-	 * For JW the Vragen Agent can return multiple targeted searches.
-	 * Each search is executed independently against Qdrant and the
-	 * resulting nodes are merged and deduplicated before Jina reranking.
+	 * The original user question is always included.
+	 * For JW, the Vragen Agent can add targeted search queries.
 	 *
-	 * WMO and CS-WMO continue to use the original single-query retrieval.
+	 * All retrieved nodes are combined and duplicate content is
+	 * removed before the results are passed to the Jina reranker.
 	 */
 	private createRetriever(searchQueries: string[]) {
 		const baseRetriever = this.index.asRetriever({
 			similarityTopK: 20,
 		});
-
-		if (searchQueries.length === 0) {
-			return baseRetriever;
-		}
 
 		return {
 			async retrieve() {
@@ -184,17 +219,23 @@ class Agent {
 				const seen = new Set<string>();
 
 				for (const searchQuery of searchQueries) {
-					const results = await baseRetriever.retrieve(searchQuery);
+					const results =
+						await baseRetriever.retrieve(searchQuery);
 
 					for (const result of results) {
 						const node = result.node;
-						const key =
-							typeof node?.getId === "function"
-								? node.getId()
-								: node?.nodeId ?? node?.id_ ?? node?.getContent?.("ALL");
 
-						if (!key || !seen.has(String(key))) {
-							if (key) seen.add(String(key));
+						// BaseNode in the installed LlamaIndex version
+						// does not expose getId()/nodeId in its TypeScript type.
+						// The node content is therefore used as a stable
+						// deduplication key.
+						const key =
+							typeof node?.getContent === "function"
+								? node.getContent()
+								: String(node);
+
+						if (!seen.has(key)) {
+							seen.add(key);
 							allResults.push(result);
 						}
 					}
@@ -213,30 +254,54 @@ class Agent {
 	) {
 		const actualModel = model || this.model;
 
-		let searchQueries = [q];
+		// Always start retrieval with the original question.
+		let searchQueries: string[] = [q];
+
 		let analysis: QuestionAnalysis | undefined;
 
-		// Alleen JW heeft een Vragen Agent.
-		// WMO en CS-WMO gebruiken exact de bestaande retrieval.
+		/*
+		 * Only JW has the Vragen Agent configured.
+		 *
+		 * The Vragen Agent does not answer the question. It analyses
+		 * the question and supplies additional targeted retrieval
+		 * queries.
+		 */
 		if (this.vragenAgent) {
-			analysis = await this.vragenAgent.analyze(q, chatHistory);
+			analysis = await this.vragenAgent.analyze(
+				q,
+				chatHistory,
+			);
 
-			if (analysis.zoekopdrachten.length > 0) {
-				searchQueries = [
-					q,
-					...analysis.zoekopdrachten.filter(
-						(searchQuery) => searchQuery.trim().length > 0,
-					),
-				];
-			}
+			const additionalQueries =
+				analysis.zoekopdrachten
+					.filter(
+						(searchQuery: string) =>
+							searchQuery.trim().length > 0,
+					)
+					.map(
+						(searchQuery: string) =>
+							searchQuery.trim(),
+					);
+
+			searchQueries = [
+				q,
+				...additionalQueries,
+			];
 
 			console.log("===== VRAGEN AGENT =====");
 			console.dir(analysis, { depth: null });
 			console.log("=======================");
+
+			console.log("===== RETRIEVAL QUERIES =====");
+			console.dir(searchQueries, { depth: null });
+			console.log("=============================");
 		}
 
-		const retriever = this.createRetriever(searchQueries);
+		const retriever =
+			this.createRetriever(searchQueries);
+
 		const llm = llms[actualModel]();
+
 		const reranker = createJinaReranker(
 			10,
 			"jina-reranker-v2-base-multilingual",
@@ -251,15 +316,10 @@ class Agent {
 
 		const startTime = Date.now();
 
-		// Keep the user's original question as the message to the answer agent.
-		// The Vragen Agent analysis is used for retrieval, not as user-visible
-		// answer instructions.
-		const pipelineResult = await queryPipeline.process(q);
-
-		console.log("===== QUERY PIPELINE =====");
-		console.dir(pipelineResult, { depth: null });
-		console.log("==========================");
-
+		/*
+		 * The answer agent receives the original user question.
+		 * The Vragen Agent is used only to improve retrieval.
+		 */
 		const response = await chatEngine.chat({
 			message: q,
 			chatHistory,
@@ -268,7 +328,11 @@ class Agent {
 		const endTime = Date.now();
 		const responseTime = endTime - startTime;
 
-		console.log("Model responded", actualModel, responseTime);
+		console.log(
+			"Model responded",
+			actualModel,
+			responseTime,
+		);
 
 		db.prepare(
 			"INSERT INTO model_responses (model, response_time) VALUES ($1, $2)",
@@ -278,8 +342,10 @@ class Agent {
 		});
 
 		response.message.options ??= {};
+
 		// @ts-expect-error
 		response.message.options.model = actualModel;
+
 		// @ts-expect-error
 		response.message.options.prompt = this.prompt;
 
@@ -295,12 +361,14 @@ const agentConfigs = {
 		questionPromptPath: "./jw/vragen-agent.md",
 		model: "4.1" as keyof typeof llms,
 	},
+
 	wmo: {
 		collectionName: "wmo",
 		dataPath: "./wmo/bronnen",
 		promptPath: "./wmo/prompt.md",
 		model: "4.1" as keyof typeof llms,
 	},
+
 	"cs-wmo": {
 		collectionName: "cs-wmo",
 		dataPath: "./cs-wmo/bronnen",
@@ -309,13 +377,22 @@ const agentConfigs = {
 	},
 } satisfies Record<string, AgentConfig>;
 
-const agentCache: Partial<Record<keyof typeof agentConfigs, Promise<Agent>>> = {};
+const agentCache: Partial<
+	Record<keyof typeof agentConfigs, Promise<Agent>>
+> = {};
 
-async function getAgent(name: keyof typeof agentConfigs): Promise<Agent> {
+async function getAgent(
+	name: keyof typeof agentConfigs,
+): Promise<Agent> {
 	if (!agentCache[name]) {
-		console.log(`🚀 Initializing ${name.toUpperCase()} agent...`);
-		agentCache[name] = Agent.fromConfig(agentConfigs[name]);
+		console.log(
+			`🚀 Initializing ${name.toUpperCase()} agent...`,
+		);
+
+		agentCache[name] =
+			Agent.fromConfig(agentConfigs[name]);
 	}
+
 	return agentCache[name]!;
 }
 
