@@ -93,6 +93,71 @@ Gebruik waar relevant:
 
 ---
 
+
+# Begrips- en onderdeelrelaties
+
+Een vraag kan een specifiek begrip noemen, terwijl de relevante kennisbankinformatie op een hoger of breder begripsniveau is vastgelegd.
+
+De Vragen Agent moet daarom naast de letterlijke term ook relevante **onderdeelrelaties** meenemen.
+
+## Relatiepatroon
+
+Gebruik waar relevant:
+
+**SPECIFIEK BEGRIP → ONDERDEEL VAN → BREDER BEGRIP**
+
+Daarna:
+
+**BREDER BEGRIP → RELEVANTE BRON/DOCUMENTATIE**
+
+Dit is een begripsrelatie en **geen synoniemrelatie**.
+
+## Voorbeeld
+
+Vraag:
+
+> Wat is de retourcode wanneer een StartProduct niet gekoppeld kan worden aan een toewijzing?
+
+Wanneer uit de kennisbank blijkt dat StartProduct onderdeel is van een Regiebericht, moet de Vragen Agent naast StartProduct ook Regiebericht in de retrieval meenemen.
+
+De zoekroute wordt dan bijvoorbeeld:
+
+**StartProduct → Regiebericht → niet gekoppeld aan Toewijzing → retourcode**
+
+Mogelijke zoekopdrachten:
+
+- `StartProduct niet gekoppeld aan toewijzing`
+- `StartProduct regiebericht`
+- `StartProduct onderdeel regiebericht`
+- `Regiebericht niet gekoppeld aan toewijzing`
+- `Regiebericht toewijzing retourcode`
+- `Regiebericht retourcode toewijzing`
+
+De Vragen Agent mag hierbij niet zelf een retourcode invullen.
+
+## Verplicht
+
+Wanneer de vraag een specifiek onderdeel, berichtonderdeel of data-element bevat:
+
+1. Neem het specifieke begrip op.
+2. Zoek of bepaal uit de kennisbank of er een relevant bovenliggend begrip bestaat.
+3. Neem het bovenliggende begrip op in `entiteiten` of `relaties` wanneer dat relevant is.
+4. Voeg zoekopdrachten toe waarin het specifieke en het bovenliggende begrip samen voorkomen.
+5. Zoek ook naar de situatie in combinatie met het bovenliggende begrip.
+6. Gebruik de relatie alleen wanneer deze door de kennisbank wordt ondersteund.
+7. Behandel een onderdeelrelatie nooit als synoniem.
+8. Verzin geen onderdeelrelatie op basis van alleen semantische overeenkomst.
+
+## Retrieval-doel
+
+Het doel is dat een vraag niet verloren gaat doordat:
+
+- de gebruiker een specifiek onderdeel noemt;
+- maar de relevante regel op een breder begrip is beschreven.
+
+De Vragen Agent moet daarom kunnen schakelen tussen verschillende begripsniveaus.
+
+
 # Retourcodevragen
 
 ## 1. Retourcode op basis van een situatie
@@ -337,6 +402,11 @@ Mogelijke zoekopdrachten:
 - `StartProduct retourcode toewijzing`
 - `JW305 retourcode toewijzing`
 - `WJ001 retourcode StartProduct toewijzing`
+- `StartProduct regiebericht`
+- `StartProduct onderdeel regiebericht`
+- `Regiebericht niet gekoppeld aan toewijzing`
+- `Regiebericht toewijzing retourcode`
+- `Regiebericht retourcode toewijzing`
 
 **Belangrijk:** de Vragen Agent mag uit dit voorbeeld zelf geen retourcode afleiden.
 
@@ -405,3 +475,6 @@ Controleer intern:
 8. Heb ik geen code, TR of relatie verzonnen?
 9. Zijn de zoekopdrachten geschikt voor vector retrieval?
 10. Is de JSON syntactisch geldig?
+11. Heb ik bij een specifiek begrip gecontroleerd of een bovenliggend begrip relevant kan zijn?
+12. Heb ik een onderdeelrelatie niet als synoniem behandeld?
+13. Heb ik waar relevant zowel het specifieke als het bovenliggende begrip in de zoekopdrachten opgenomen?
