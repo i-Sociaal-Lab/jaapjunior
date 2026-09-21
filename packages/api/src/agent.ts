@@ -88,24 +88,75 @@ class Agent {
         return new Agent(index, config.model, prompt, vragenAgent);
     }
 
-    private createRetriever(searchQueries: string[], similarityTopK = 20) {
+    private createRetriever(
+        searchQueries: string[],
+        similarityTopK = 20,
+        options: { exactMessageCodes?: string[]; ruleOverview?: boolean } = {},
+    ) {
         const baseRetriever = this.index.asRetriever({ similarityTopK });
+        const exactMessageCodes = options.exactMessageCodes ?? [];
+        const ruleOverview = options.ruleOverview ?? false;
+
         return {
             async retrieve() {
                 const allResults: any[] = [];
                 const seen = new Set<string>();
+
                 for (const searchQuery of searchQueries) {
                     const results = await baseRetriever.retrieve(searchQuery);
+
                     for (const result of results) {
                         const node = result.node;
-                        const key = typeof node?.getContent === "function" ? node.getContent(MetadataMode.ALL) : String(node);
+                        const key =
+                            typeof node?.getContent === "function"
+                                ? node.getContent(MetadataMode.ALL)
+                                : String(node);
+
                         if (!seen.has(key)) {
                             seen.add(key);
                             allResults.push(result);
                         }
                     }
                 }
-                return allResults;
+
+                if (!ruleOverview || exactMessageCodes.length === 0) {
+                    return allResults;
+                }
+
+                // Bij een regeloverzicht heeft een letterlijke berichtcode
+                // voorrang op puur semantische overeenkomst. Zo blijft een
+                // TR/UP/OP-regel die expliciet JW305/JW307 noemt behouden,
+                // ook wanneer de tekst inhoudelijk vooral over een ander
+                // onderwerp gaat.
+                const scored = allResults.map((result, index) => {
+                    const node = result.node;
+                    const content =
+                        typeof node?.getContent === "function"
+                            ? node.getContent(MetadataMode.ALL)
+                            : String(node);
+
+                    const upper = content.toUpperCase();
+                    const exactHits = exactMessageCodes.reduce(
+                        (count, code) =>
+                            count + (upper.includes(code.toUpperCase()) ? 1 : 0),
+                        0,
+                    );
+
+                    return {
+                        result,
+                        index,
+                        priority: exactHits * 1000 + (Number(result.score) || 0),
+                    };
+                });
+
+                scored.sort((a, b) => {
+                    if (b.priority !== a.priority) return b.priority - a.priority;
+                    return a.index - b.index;
+                });
+
+                // Houd de context begrensd, maar geef exacte berichtcode-hits
+                // nadrukkelijk voorrang.
+                return scored.slice(0, 80).map((item) => item.result);
             },
         };
     }
@@ -131,7 +182,23 @@ class Agent {
 
         const isRuleOverview = analysis?.zoekstrategie === "rule_overview";
         const isCompleteList = analysis?.zoekstrategie === "complete_list";
-        const retriever = this.createRetriever(searchQueries, isRuleOverview ? 20 : 20);
+
+        const exactMessageCodes = [
+            ...(analysis?.berichttypen ?? []),
+            ...searchQueries.flatMap((query) =>
+                query.match(/\b(?:JW|WMO)\d{3}\b/gi) ?? [],
+            ),
+        ]
+            .map((code) => code.toUpperCase())
+            .filter((code, index, arr) => arr.indexOf(code) === index);
+
+        // Rule-overviews gebruiken een grotere kandidaatpool. Daarna worden
+        // nodes met een letterlijke berichtcode vooraan gezet.
+        const retriever = this.createRetriever(
+            searchQueries,
+            isRuleOverview ? 100 : 20,
+            { exactMessageCodes, ruleOverview: isRuleOverview },
+        );
         const llm = llms[actualModel]();
 
         // A rule overview must preserve coverage across UP/OP/TR/CD/CS/invulinstructie.
