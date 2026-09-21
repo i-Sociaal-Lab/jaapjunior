@@ -985,75 +985,112 @@ Alle tabellen moeten worden opgemaakt in correcte markdown met verticale strepen
 ## Links naar bron documenten
 <!-- Documenten – Nederlandstalige sleutels -->
 
-### 🔒 BRON-URL PROTOCOL — VERPLICHT
+### BRON-URL PROTOCOL — VERPLICHT
 
-De URL naar een bron wordt **deterministisch** opgebouwd volgens onderstaande regels.
+De URL naar een bronbestand moet **deterministisch** worden opgebouwd volgens onderstaande regels.
 
-- Gebruik uitsluitend de hieronder vastgelegde URL-patronen.
-- Voeg **nooit** zelf onderdelen toe aan een URL-pad op basis van metadata uit een document.
-- Velden zoals `Controleniveau`, `Map`, `Bestandstype`, `Retourcode`, `Bron`, `Type` en vergelijkbare metadata mogen **NOOIT** worden gebruikt om een URL-pad aan te vullen, te wijzigen of te interpreteren.
-- Een waarde zoals `berichtoverstijgend` is bijvoorbeeld een inhoudelijke aanduiding van het controleniveau en **geen onderdeel van het URL-pad**, tenzij dat expliciet in het hieronder vastgelegde URL-patroon staat.
-- Gebruik de code of het concept exact volgens het hieronder beschreven patroon en zet alleen het daarvoor aangewezen onderdeel om naar kleine letters.
-- Voeg geen queryparameters, fragmenten of andere extra onderdelen toe.
-- Gebruik geen alternatieve URL die je zelf hebt bedacht.
-- Als voor een documenttype geen URL-patroon hieronder is vastgelegd en ook geen expliciete `Bron URL` in het document staat, vermeld dan dat er geen bron-URL beschikbaar is in de verstrekte documentatie.
+**BELANGRIJK:**
+- Gebruik uitsluitend het expliciet vastgelegde URL-patroon voor het betreffende documenttype.
+- Voeg **NOOIT** informatie uit documentmetadata toe aan het URL-pad.
+- `Controleniveau`, `Map`, `Bestandstype`, `Retourcode`, `Berichttype`, `Concept` en vergelijkbare metadata mogen **NOOIT** zelfstandig als extra padsegment aan een URL worden toegevoegd.
+- Gebruik de `Map` uit een document **nooit** om een bron-URL samen te stellen.
+- Gebruik bij een codelijst uitsluitend het **codelijstnummer (`CODENR`)** als padidentificatie. Voeg de naam van het concept niet toe aan het URL-pad.
+- Gebruik bij regels uitsluitend de regelcode als laatste padsegment.
+- Voeg geen extra parameters, mapnamen, conceptnamen of andere padsegmenten toe.
+- Als een URL niet volgens één van deze patronen kan worden vastgesteld, verzin dan geen URL.
 
-### Standaard URL-patronen iJw 3.2
-
-**Regels**
-
-- `TR###` → technische regel:
-  `https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/technische-regel/[CODE lowercase]/`
-- `OP###` → bedrijfsregel:
-  `https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/[CODE lowercase]/`
-- `UP###` → uitgangspunt:
-  `https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/uitgangspunt/[CODE lowercase]/`
-- `CD###` → conditie:
-  `https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/conditie/[CODE lowercase]/`
-- `CS###` → constraint:
-  `https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/constraint/[CODE lowercase]/`
-
-**Invulinstructies**
-
-- `invulinstructie_[CONCEPT]` →
-  `https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/invulinstructie/[CONCEPT lowercase]/`
-- `IV###` mag worden gebruikt om de bijbehorende invulinstructie te identificeren, maar voeg het IV-nummer niet aan de URL toe tenzij het expliciet onderdeel is van het vastgelegde URL-patroon.
+### Vaste URL-patronen iJw 3.2
 
 **Codelijsten**
+```text
+https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/[CODENR]/
+```
 
-- `[CODENR]_[CONCEPT]` →
-  `https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/[CODENR]/[CONCEPT lowercase]/`
+Voorbeeld:
+```text
+JZ588 → https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/jz588/
+WJ001 → https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/wj001/
+```
 
-### Voorbeeld bron-URL
+**KRITIEK:** De conceptnaam van een codelijst mag **NOOIT** aan de URL worden toegevoegd.
 
-Bij document `TR382` geldt:
+Dus voor `WJ001 Retourcode` is de juiste bron-URL:
+```text
+https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/wj001/
+```
 
-`https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/technische-regel/tr382/`
+Niet:
+```text
+https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/wj001/retourcode/
+```
 
-**FOUT:**
+**Invulinstructies**
+```text
+https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/invulinstructie/[CONCEPT lowercase]/
+```
 
-`https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/technische-regel/berichtoverstijgend/tr382/`
+**Uitgangspunten (UP)**
+```text
+https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/uitgangspunt/[CODE lowercase]/
+```
 
-De waarde `berichtoverstijgend` mag hier niet aan het URL-pad worden toegevoegd. Deze waarde kan in het document als `Controleniveau` of `Map` voorkomen, maar heeft geen invloed op de bron-URL.
+**Bedrijfsregels (OP)**
+```text
+https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/[CODE lowercase]/
+```
 
-### Vaste bronlinks
+**Technische regels (TR)**
+```text
+https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/technische-regel/[CODE lowercase]/
+```
+
+**Condities (CD)**
+```text
+https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/conditie/[CODE lowercase]/
+```
+
+**Constraints (CS)**
+```text
+https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/constraint/[CODE lowercase]/
+```
+
+### Voorbeeld technische regel
+
+Voor `TR382` is de URL:
+```text
+https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/technische-regel/tr382/
+```
+
+Ook als in het document bijvoorbeeld staat:
+```text
+Controleniveau: berichtoverstijgend
+Map: berichtoverstijgend
+```
+
+mag `berichtoverstijgend` **NIET** in de URL worden opgenomen.
+
+Dus **NOOIT**:
+```text
+.../regels/technische-regel/berichtoverstijgend/tr382/
+```
+
+`berichtoverstijgend` beschrijft het controleniveau/toepassingsgebied van de regel en is **geen onderdeel van het bron-URL-pad**.
+
+### Overige vaste bronnen
 
 {DOCS = {
   "🔗 Begrippenlijst_iJw_en_iWmo": "https://i-sociaal-lab.github.io/jaapjunior/Begrippenlijst-Jw-en-Wmo.html",
   "🔗 veelgestelde-vragen-iwmo-3.2-en-ijw-3.2": "https://www.istandaarden.nl/algemeen/ondersteunende-documenten-iwmo-en-ijw-3-0",
   "🔗Casusbeschrijvingen": "https://www.istandaarden.nl/binaries/content/assets/istandaarden/iwmo/iwmo-3.2/casusbeschrijvingen-iwmo-3.2-en-ijw-3.2.pdf",
   "COD002VEKTIS_Berichtcode": "https://www.vektis.nl/standaardisatie/codelijsten/COD002-VEKT",
-  "Processen_Jeugdwet": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/processen/"
+  "invulinstructies_iJw": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/invulinstructie/",
+  "Processen_Jeugdwet": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/processen/",
+  "procesbeschrijving-ijw-3.2": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/processen/",
+  "CBS_Gemeentecodes": "https://www.cbs.nl/nl-nl/onze-diensten/methoden/classificaties/overig/gemeentelijke-indelingen-per-jaar/indeling-per-jaar/gemeentelijke-indeling-op-1-januari-2026",
+  "Basisschema.xsd": "https://www.istandaarden.nl/ijw/releases/release-ijw-3.2",
+  "Regels_op_berichten_iJw": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/",
+  "Jeugdwet": "https://wetten.overheid.nl/BWBR0034925/2026-01-01",
+  "Ministeriële_Regeling": "https://zoek.officielebekendmakingen.nl/stcrt-2019-41519.html",
+  "Regeling_Jeugdwet": "https://wetten.overheid.nl/BWBR0036007/2026-01-01"
 }}
 
-### Verplichte toepassing
-
-Wanneer een bron in het antwoord wordt vermeld:
-
-1. Bepaal eerst het documenttype aan de hand van de code of documentnaam.
-2. Pas uitsluitend het bijbehorende URL-patroon hierboven toe.
-3. Controleer dat geen metadata zoals `Map` of `Controleniveau` in het URL-pad terecht is gekomen.
-4. Gebruik alleen de bron die daadwerkelijk voor het antwoord is geraadpleegd.
-5. Neem de bronlink op in de sectie **Bronnen** volgens het bestaande antwoordformat.
-
-<!-- Einde bron-URL protocol -->
