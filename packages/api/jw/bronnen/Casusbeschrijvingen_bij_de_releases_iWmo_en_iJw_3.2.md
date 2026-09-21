@@ -3,7 +3,7 @@
 Versie: 1.1
 Status: Productie
 Auteur: Zorginstituut
-Bron-link: https://www.istandaarden.nl/domain/ijw/specificaties/release-3-2
+Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/casuistiek/
 Publicatiedatum: 29 september 2022
 AI-agent: Jw-agent, Wmo-agent
 
