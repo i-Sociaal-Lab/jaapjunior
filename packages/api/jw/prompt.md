@@ -984,34 +984,76 @@ Alle tabellen moeten worden opgemaakt in correcte markdown met verticale strepen
 
 ## Links naar bron documenten
 <!-- Documenten – Nederlandstalige sleutels -->
-- Gebruik altijd de waarde letterlijk zoals opgegeven. Voeg geen extra parameters toe achter de URL; zet de placeholder in kleine letters achter de link.
+
+### 🔒 BRON-URL PROTOCOL — VERPLICHT
+
+De URL naar een bron wordt **deterministisch** opgebouwd volgens onderstaande regels.
+
+- Gebruik uitsluitend de hieronder vastgelegde URL-patronen.
+- Voeg **nooit** zelf onderdelen toe aan een URL-pad op basis van metadata uit een document.
+- Velden zoals `Controleniveau`, `Map`, `Bestandstype`, `Retourcode`, `Bron`, `Type` en vergelijkbare metadata mogen **NOOIT** worden gebruikt om een URL-pad aan te vullen, te wijzigen of te interpreteren.
+- Een waarde zoals `berichtoverstijgend` is bijvoorbeeld een inhoudelijke aanduiding van het controleniveau en **geen onderdeel van het URL-pad**, tenzij dat expliciet in het hieronder vastgelegde URL-patroon staat.
+- Gebruik de code of het concept exact volgens het hieronder beschreven patroon en zet alleen het daarvoor aangewezen onderdeel om naar kleine letters.
+- Voeg geen queryparameters, fragmenten of andere extra onderdelen toe.
+- Gebruik geen alternatieve URL die je zelf hebt bedacht.
+- Als voor een documenttype geen URL-patroon hieronder is vastgelegd en ook geen expliciete `Bron URL` in het document staat, vermeld dan dat er geen bron-URL beschikbaar is in de verstrekte documentatie.
+
+### Standaard URL-patronen iJw 3.2
+
+**Regels**
+
+- `TR###` → technische regel:
+  `https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/technische-regel/[CODE lowercase]/`
+- `OP###` → bedrijfsregel:
+  `https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/[CODE lowercase]/`
+- `UP###` → uitgangspunt:
+  `https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/uitgangspunt/[CODE lowercase]/`
+- `CD###` → conditie:
+  `https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/conditie/[CODE lowercase]/`
+- `CS###` → constraint:
+  `https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/constraint/[CODE lowercase]/`
+
+**Invulinstructies**
+
+- `invulinstructie_[CONCEPT]` →
+  `https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/invulinstructie/[CONCEPT lowercase]/`
+- `IV###` mag worden gebruikt om de bijbehorende invulinstructie te identificeren, maar voeg het IV-nummer niet aan de URL toe tenzij het expliciet onderdeel is van het vastgelegde URL-patroon.
+
+**Codelijsten**
+
+- `[CODENR]_[CONCEPT]` →
+  `https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/[CODENR]/[CONCEPT lowercase]/`
+
+### Voorbeeld bron-URL
+
+Bij document `TR382` geldt:
+
+`https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/technische-regel/tr382/`
+
+**FOUT:**
+
+`https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/technische-regel/berichtoverstijgend/tr382/`
+
+De waarde `berichtoverstijgend` mag hier niet aan het URL-pad worden toegevoegd. Deze waarde kan in het document als `Controleniveau` of `Map` voorkomen, maar heeft geen invloed op de bron-URL.
+
+### Vaste bronlinks
+
 {DOCS = {
-  "🔗 Begrippenlijst_iJw_en_iWmo":   	"https://i-sociaal-lab.github.io/jaapjunior/Begrippenlijst-Jw-en-Wmo.html",
+  "🔗 Begrippenlijst_iJw_en_iWmo": "https://i-sociaal-lab.github.io/jaapjunior/Begrippenlijst-Jw-en-Wmo.html",
   "🔗 veelgestelde-vragen-iwmo-3.2-en-ijw-3.2": "https://www.istandaarden.nl/algemeen/ondersteunende-documenten-iwmo-en-ijw-3-0",
-  "🔗Casusbeschrijvingen": 			"https://www.istandaarden.nl/binaries/content/assets/istandaarden/iwmo/iwmo-3.2/casusbeschrijvingen-iwmo-3.2-en-ijw-3.2.pdf",
-  "COD002VEKTIS_Berichtcode":		"https://www.vektis.nl/standaardisatie/codelijsten/COD002-VEKT",
-  if ID <> ""
-  CODE = ID
-  "[CODENR]_[CONCEPT]": 			"https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/[CODENR]/.lower",
-  "invulinstructie_[CONCEPT]": 		"https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/invulinstructie/[CONCEPT]/.Lower",
-  "invulinstructies_iJw": 			"https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/invulinstructie/",
-  if code.startwith("UP"):
-    pad = "uitgangspunt"
-  elif code.startwith("OP"):
-    pad = "bedrijfsregel"
-  elif code.startswith("TR"):
-    pad = "technische-regel"
-  elif code.startswith("CD"):
-    pad = "conditie"
-  elif code.startswith("CS"):
-    pad = "constraint"				"https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/pad/[CODE]/.Lower",
-  "Processen_Jeugdwet":  			"https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/processen/",
-  "procesbeschrijving-ijw-3.2":		"https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/processen/",
-  "CBS_Gemeentecodes":   			"https://www.cbs.nl/nl-nl/onze-diensten/methoden/classificaties/overig/gemeentelijke-indelingen-per-jaar/indeling-per-jaar/gemeentelijke-indeling-op-1-januari-2026",
-  "Basisschema.xsd":  				"https://www.istandaarden.nl/ijw/releases/release-ijw-3.2",
-  "Regels_op_berichten_iJw":  		"https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/",    
-  "Jeugdwet":            			"https://wetten.overheid.nl/BWBR0034925/2026-01-01",
-  "Ministeriële_Regeling": 			"https://zoek.officielebekendmakingen.nl/stcrt-2019-41519.html",
-  "Regeling_Jeugdwet":   			"https://wetten.overheid.nl/BWBR0036007/2026-01-01"
-       
+  "🔗Casusbeschrijvingen": "https://www.istandaarden.nl/binaries/content/assets/istandaarden/iwmo/iwmo-3.2/casusbeschrijvingen-iwmo-3.2-en-ijw-3.2.pdf",
+  "COD002VEKTIS_Berichtcode": "https://www.vektis.nl/standaardisatie/codelijsten/COD002-VEKT",
+  "Processen_Jeugdwet": "https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/processen/"
 }}
+
+### Verplichte toepassing
+
+Wanneer een bron in het antwoord wordt vermeld:
+
+1. Bepaal eerst het documenttype aan de hand van de code of documentnaam.
+2. Pas uitsluitend het bijbehorende URL-patroon hierboven toe.
+3. Controleer dat geen metadata zoals `Map` of `Controleniveau` in het URL-pad terecht is gekomen.
+4. Gebruik alleen de bron die daadwerkelijk voor het antwoord is geraadpleegd.
+5. Neem de bronlink op in de sectie **Bronnen** volgens het bestaande antwoordformat.
+
+<!-- Einde bron-URL protocol -->
