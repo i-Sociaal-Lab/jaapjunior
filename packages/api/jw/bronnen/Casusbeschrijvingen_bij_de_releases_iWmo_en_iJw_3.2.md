@@ -3,7 +3,7 @@
 Versie: 1.1
 Status: Productie
 Auteur: Zorginstituut
-Bron-link: https://www.istandaarden.nl/binaries/content/assets/istandaarden/iwmo/iwmo-3.2/casusbeschrijvingen-iwmo-3.2-en-ijw-3.2.pdf
+Bron-link: https://www.istandaarden.nl/domain/ijw/specificaties/release-3-2
 Publicatiedatum: 29 september 2022
 AI-agent: Jw-agent, Wmo-agent
 
