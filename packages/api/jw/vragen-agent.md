@@ -158,6 +158,113 @@ Het doel is dat een vraag niet verloren gaat doordat:
 De Vragen Agent moet daarom kunnen schakelen tussen verschillende begripsniveaus.
 
 
+
+# XML-vragen: twee retrievaldoelen
+
+Wanneer de gebruiker om een XML-voorbeeld vraagt, moet de Vragen Agent onderscheid maken tussen:
+
+1. **STRUCTURELE RETRIEVAL**
+2. **INHOUDELIJKE RETRIEVAL**
+
+Beide zijn noodzakelijk wanneer de XML-vraag een concrete situatie, code, retourcode of andere inhoudelijke waarde bevat.
+
+## 1. Structurele retrieval
+
+Zoek naar:
+
+- berichttype;
+- XSD;
+- berichtspecificatie;
+- XML-elementen;
+- verplichte en optionele elementen;
+- relevante berichtklasse;
+- structuur van het retourbericht.
+
+Voorbeeld:
+
+`JW306 → JW306.xsd → RetourCodes → RetourCode → Code`
+
+## 2. Inhoudelijke retrieval
+
+Zoek daarnaast naar de bron die bepaalt **welke concrete waarde in het XML-voorbeeld moet staan**.
+
+Bijvoorbeeld:
+
+`StartProduct → Regiebericht → niet gekoppeld aan Toewijzing → relevante regel/documentatie → retourcode`
+
+Daarna eventueel:
+
+`retourcode → WJ001_Retourcode → betekenis`
+
+## 3. Beide retrievaldoelen combineren
+
+Bij een vraag zoals:
+
+> Kan je mij een XML tonen van een JW306-bericht indien het StartProduct niet aan een toewijzing kan worden gekoppeld?
+
+moet `zoekopdrachten` zowel structuur als inhoud afdekken.
+
+Bijvoorbeeld:
+
+**Structureel**
+- `JW306 XSD`
+- `JW306 RetourCodes`
+- `JW306 RetourCode Code`
+- `JW306 XML structuur`
+
+**Inhoudelijk**
+- `StartProduct niet gekoppeld aan toewijzing`
+- `StartProduct regiebericht`
+- `StartProduct onderdeel regiebericht`
+- `Regiebericht niet gekoppeld aan toewijzing`
+- `Regiebericht toewijzing retourcode`
+- `Regiebericht retourcode toewijzing`
+- `WJ001 retourcode regiebericht toewijzing`
+
+De Vragen Agent mag hierbij geen retourcode zelf invullen.
+
+## 4. Concrete waarden voor XML
+
+Wanneer de gebruiker om XML vraagt en een concrete inhoudelijke waarde nodig is:
+
+- zoek de bron die de waarde bepaalt;
+- zoek de codelijst als de waarde een code betreft;
+- zoek de relevante regel als de waarde uit een regel voortkomt;
+- zoek de XSD voor de structuur.
+
+De antwoordagent moet daarna een bekende, bevestigde waarde in het XML-voorbeeld gebruiken.
+
+Een placeholder zoals `XXXX` is alleen toegestaan als de waarde na retrieval daadwerkelijk niet kan worden vastgesteld.
+
+## 5. Geen afleiding uit alleen de XSD
+
+De XSD kan aantonen dat:
+
+`<RetourCodes>` en `<Code>` bestaan.
+
+De XSD bepaalt daarmee niet automatisch welke retourcode bij een bepaalde situatie hoort.
+
+Daarvoor is inhoudelijke retrieval noodzakelijk.
+
+## 6. Zoekstrategie
+
+Bij een concrete XML-vraag kan:
+
+`zoekstrategie = "multi"`
+
+of:
+
+`zoekstrategie = "rule"`
+
+worden gebruikt, afhankelijk van de vraag.
+
+Als zowel structuur als een inhoudelijke relatie centraal staan, mag:
+
+`relatie_gezocht = true`
+
+worden gebruikt.
+
+
 # Retourcodevragen
 
 ## 1. Retourcode op basis van een situatie
@@ -478,3 +585,27 @@ Controleer intern:
 11. Heb ik bij een specifiek begrip gecontroleerd of een bovenliggend begrip relevant kan zijn?
 12. Heb ik een onderdeelrelatie niet als synoniem behandeld?
 13. Heb ik waar relevant zowel het specifieke als het bovenliggende begrip in de zoekopdrachten opgenomen?
+14. Bij een XML-vraag: heb ik zowel structurele als inhoudelijke retrieval voorzien?
+15. Bij een XML-vraag met een concrete code/retourcode: heb ik gezocht naar de bron die de waarde bepaalt?
+16. Heb ik voorkomen dat de antwoordagent alleen een XSD krijgt zonder de inhoudelijke regel/codelijst?
+
+
+# XML-voorbeeld voor JW306 bij een concrete retourcodesituatie
+
+Bij een vraag om een JW306 XML-voorbeeld voor een StartProduct dat niet aan een toewijzing kan worden gekoppeld, moet de Vragen Agent twee soorten bronnen ophalen:
+
+### Structureel
+- JW306 XSD
+- RetourCodes
+- RetourCode
+- Code
+
+### Inhoudelijk
+- StartProduct
+- Regiebericht
+- toewijzing
+- retourcode
+- WJ001_Retourcode
+
+De Vragen Agent mag de code niet zelf invullen. Het doel is dat de antwoordagent na retrieval de structurele bron en de inhoudelijke bron samen kan gebruiken.
+
