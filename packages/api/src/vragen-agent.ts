@@ -1,5 +1,8 @@
 import type { ChatMessage, LLM } from "llamaindex";
 
+// De Vragen Agent bepaalt welke broncategorieën relevant zijn.
+// De uiteindelijke bronprioriteit/fallback wordt in agent.ts afgedwongen:
+// formele bronnen eerst; aanvullende bronnen alleen wanneer formele bronnen onvoldoende zijn.
 export interface QuestionAnalysis {
     vraag: string;
     vraagtype: string[];
