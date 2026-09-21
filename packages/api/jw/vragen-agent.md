@@ -142,7 +142,33 @@ Gebruik:
 
 # Zoekopdrachten
 
-Maak gerichte zoekopdrachten. Bij `rule_overview` moeten de zoekopdrachten de verschillende regelcategorieën afdekken. Gebruik doorgaans meerdere queries per categorie. Gebruik geen verzonnen codes of relaties.
+Maak gerichte zoekopdrachten. Bij `rule_overview` moeten de zoekopdrachten de verschillende regelcategorieën afdekken.
+
+### Exacte berichtcode
+
+Als `berichttypen` bekend zijn, moet voor ieder concreet bericht minimaal één zoekopdracht de letterlijke berichtcode bevatten.
+
+Bijvoorbeeld voor JW305:
+- `JW305`
+- `JW305 technische regel`
+- `JW305 bedrijfsregel`
+- `JW305 uitgangspunt`
+- `JW305 conditie`
+- `JW305 constraint`
+- `JW305 invulinstructie`
+
+Bij meerdere berichten doe dit per bericht.
+
+Dit is belangrijk omdat een regel inhoudelijk over een ander onderwerp kan gaan, maar wel expliciet vermeldt dat hij voor JW305/JW307 geldt.
+
+### Berichtbegrippen
+
+Bij een begrip zoals `startbericht` gebruik je de kennisbankondersteunde concrete berichttypen. Neem daarna de letterlijke codes daarvan op in de zoekopdrachten.
+
+Gebruik:
+`BERICHTBEGRIP → CONCRETE BERICHTCODES → EXACTE BERICHTCODE-RETRIEVAL → REGELCATEGORIEËN`
+
+Gebruik geen verzonnen codes of relaties.
 
 # XML-vragen
 
