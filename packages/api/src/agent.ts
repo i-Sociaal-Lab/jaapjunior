@@ -5,6 +5,7 @@ import { SimpleDirectoryReader } from "@llamaindex/readers/directory";
 import {
 	type ChatMessage,
 	ContextChatEngine,
+	MetadataMode,
 	type LLM,
 	Settings,
 	storageContextFromDefaults,
@@ -52,7 +53,7 @@ function createJinaReranker(topN: number, model: string) {
 					: (query?.query ?? String(query));
 
 			const documents = nodes.map((n: any) =>
-				n.node.getContent(),
+				n.node.getContent(MetadataMode.ALL),
 			);
 
 			const response = await fetch("https://api.jina.ai/v1/rerank", {
@@ -231,7 +232,7 @@ class Agent {
 						// deduplication key.
 						const key =
 							typeof node?.getContent === "function"
-								? node.getContent()
+								? node.getContent(MetadataMode.ALL)
 								: String(node);
 
 						if (!seen.has(key)) {
