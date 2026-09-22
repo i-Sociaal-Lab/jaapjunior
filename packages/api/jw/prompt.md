@@ -1019,6 +1019,22 @@ De URL naar een bron wordt **deterministisch** opgebouwd volgens onderstaande re
   `https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/invulinstructie/[CONCEPT lowercase]/`
 - `IV###` mag worden gebruikt om de bijbehorende invulinstructie te identificeren, maar voeg het IV-nummer niet aan de URL toe tenzij het expliciet onderdeel is van het vastgelegde URL-patroon.
 
+### Berichten en berichtdefinities (JW/WMO)
+
+Wanneer een antwoord gebruikmaakt van de formele definitie, structuur of XSD van een berichttype, gebruik dan altijd de berichtpagina van het Informatiemodel. Gebruik **nooit** een directe `.xsd`-URL.
+
+- `JW###` → `https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/berichten/[BERICHTTYPE lowercase]/`
+- De zichtbare naam van het bericht blijft bijvoorbeeld `JW305` of `JW305.xsd`.
+- Alleen het berichttype in de URL wordt volledig naar kleine letters omgezet.
+
+Voorbeeld:
+
+- `JW305` → `https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/berichten/jw305/`
+
+**FOUT:** `https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/xsd/jw305.xsd`
+
+**GOED:** `https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/berichten/jw305/`
+
 **Codelijsten**
 
 - `[CODENR]_[CONCEPT]` →
