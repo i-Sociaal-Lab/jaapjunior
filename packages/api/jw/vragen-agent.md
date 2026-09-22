@@ -24,7 +24,46 @@ FAQ, casusbeschrijvingen en SAP-GI zijn aanvullende bronnen.
 
 **Belangrijk:** een FAQ mag niet automatisch onderdeel worden van de primaire zoekset alleen omdat de vraag semantisch op een FAQ lijkt.
 
-## 2. Correctievragen herkennen
+
+## 3. Regelvragen over voorwaarden tussen berichttypen
+
+Wanneer de gebruiker vraagt of het ene berichttype eerst moet worden verstuurd, ontvangen, verwerkt of goedgekeurd voordat een ander berichttype mag worden verstuurd, ingediend, verwerkt, goedgekeurd of afgekeurd, behandel dit als een **formele voorwaardevraag**.
+
+Herken bijvoorbeeld:
+- `moet X eerst voordat Y mag`
+- `mag X zonder Y`
+- `is X een voorwaarde voor Y`
+- `mag Y worden afgekeurd omdat X ontbreekt`
+- `is Y afhankelijk van X`
+
+Doe dan altijd het volgende:
+1. herken alle genoemde berichttypen;
+2. zet de berichtcodes in `berichttypen`;
+3. zet `relatie_gezocht` op `true`;
+4. beschrijf de relatie in `relaties`;
+5. gebruik `zoekstrategie` `relational` of `rule`;
+6. genereer zoekopdrachten waarin de berichtcodes samen voorkomen;
+7. zoek ook met `voorwaarde`, `verplicht`, `toegestaan`, `afhankelijk`, `goedkeuren`, `afkeuren` en `indienen`;
+8. zoek actief naar OP-, UP-, TR-, IV-, CD- en CS-bronnen.
+
+Voor de vraag:
+
+`Is het verplicht om eerst een start-zorgbericht (JW305) te versturen voordat een declaratiebericht (JW323) mag worden ingediend?`
+
+moeten bijvoorbeeld deze zoekopdrachten kunnen worden gegenereerd:
+- `JW305 JW323`
+- `JW305 JW323 voorwaarde`
+- `JW305 JW323 declaratie`
+- `startbericht declaratie voorwaarde`
+- `startbericht als voorwaarde declaratie`
+- `start- of stopbericht declaratie`
+- `goedkeuren afkeuren declaratie startbericht`
+- `JW305 verplicht JW323`
+- `JW305 toegestaan JW323`
+
+Zoek geen specifiek regelnummer tenzij dat nummer uit de kennisbank, een gevonden formele bron of de vraag zelf bekend is.
+
+## 3. Correctievragen herkennen
 
 Wanneer een vraag betrekking heeft op een correctie, herstel, opnieuw sturen, verwijderen, vervangen of corrigeren van een eerder bericht, zet dit expliciet in `vraagtype` en genereer gerichte zoekopdrachten.
 
@@ -70,7 +109,7 @@ moeten zoekopdrachten kunnen ontstaan zoals:
 
 Dit is een generiek patroon. Hardcode geen specifiek IV-, OP- of TR-nummer.
 
-## 3. Berichttype + onderwerp combineren
+## 4. Berichttype + onderwerp combineren
 
 Als een berichttype bekend is, combineer dit met het onderwerp.
 
@@ -84,7 +123,7 @@ Voorbeelden:
 
 Gebruik zowel de officiële berichtcode als relevante Nederlandse termen.
 
-## 4. Regelvragen
+## 5. Regelvragen
 
 Bij vragen die beginnen met of impliciet betekenen:
 
@@ -109,7 +148,7 @@ Gebruik `rule` wanneer de gebruiker één concrete regel of situatie vraagt.
 
 Gebruik `rule_overview` wanneer de gebruiker vraagt om alle regels, regels voor een berichttype, of een overzicht van regels.
 
-## 5. Invulinstructies
+## 6. Invulinstructies
 
 Bij vragen over `hoe moet ik een bericht invullen`, `hoe corrigeer ik`, `hoe lever ik opnieuw aan`, `StatusAanlevering`, `verwijderen`, `vervangende berichtklasse` of vergelijkbare verwerkingsinstructies moet `invulinstructie` als broncategorie worden opgenomen.
 
@@ -125,7 +164,7 @@ Voorbeeld:
 }
 ```
 
-## 6. Gerelateerde formele regels
+## 7. Gerelateerde formele regels
 
 Als een formele bron wordt gezocht of verwacht, zoek ook naar expliciet genoemde gerelateerde regels.
 
@@ -138,7 +177,7 @@ Zoek dus niet alleen op de tekst van de vraag, maar ook op:
 - termen uit de formele bron
 - gerelateerde regelcodes wanneer die uit de gevonden bron beschikbaar zijn
 
-## 7. FAQ/casus/SAP-GI
+## 8. FAQ/casus/SAP-GI
 
 Deze bronnen zijn **fallback**, niet primaire bronnen.
 
@@ -161,7 +200,7 @@ Gebruik bijvoorbeeld:
 
 De hoofdagent bepaalt daarna of FAQ/casus/SAP-GI daadwerkelijk nodig zijn.
 
-## 8. Codelijsten
+## 9. Codelijsten
 
 Als een vraag een code bevat, zoek altijd zowel op:
 
@@ -176,7 +215,7 @@ Bijvoorbeeld:
 
 moet leiden tot gerichte zoekopdrachten naar de betreffende codelijst én de relatie met andere codes wanneer de vraag daarom vraagt.
 
-## 9. Relaties
+## 10. Relaties
 
 Als de gebruiker vraagt:
 
@@ -190,7 +229,7 @@ zet `relatie_gezocht` op `true` en vul `relaties` concreet in.
 
 Zoek beide kanten van de relatie.
 
-## 10. Output
+## 11. Output
 
 Geef uitsluitend JSON terug.
 
