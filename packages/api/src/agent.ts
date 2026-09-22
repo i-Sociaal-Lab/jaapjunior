@@ -97,28 +97,33 @@ const SUPPLEMENTAL_PATTERNS = [
 function buildSourceUrl(code: string): string | null {
     const normalized = code.trim().toLowerCase();
 
+    // Rule codes are treated as one complete code. Never split a code such as
+    // OP033X1, OP002X2 or OP090X4 into separate URL path segments. Only the
+    // complete code is normalized to lowercase.
+
+
     if (/^jw\d{3}$/.test(normalized)) {
         return `https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/berichten/${normalized}/`;
     }
     if (/^wmo\d{3}$/.test(normalized)) {
         return `https://informatiemodel.istandaarden.nl/informatiemodel/iwmo/3.2/berichten/${normalized}/`;
     }
-    if (/^op\d{3}$/.test(normalized)) {
+    if (/^op\d+[a-z0-9]*$/.test(normalized)) {
         return `https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/${normalized}/`;
     }
-    if (/^up\d{3}$/.test(normalized)) {
+    if (/^up\d+[a-z0-9]*$/.test(normalized)) {
         return `https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/uitgangspunt/${normalized}/`;
     }
-    if (/^tr\d{3}$/.test(normalized)) {
+    if (/^tr\d+[a-z0-9]*$/.test(normalized)) {
         return `https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/technische-regel/${normalized}/`;
     }
-    if (/^cd\d{3}$/.test(normalized)) {
+    if (/^cd\d+[a-z0-9]*$/.test(normalized)) {
         return `https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/conditie/${normalized}/`;
     }
-    if (/^cs\d{3}$/.test(normalized)) {
+    if (/^cs\d+[a-z0-9]*$/.test(normalized)) {
         return `https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/constraint/${normalized}/`;
     }
-    if (/^iv\d{3}$/.test(normalized)) {
+    if (/^iv\d+[a-z0-9]*$/.test(normalized)) {
         return `https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/invulinstructie/${normalized}/`;
     }
     return null;
@@ -134,13 +139,20 @@ function normalizeSourceUrls(content: any): any {
     );
 
     // Correct rule URLs with uppercase codes and the obsolete /regels/pad/ form.
+    // Correct accidentally split composite rule codes such as /op033/x1/.
+    // The complete code must be one path segment: /op033x1/.
     content = content.replace(
-        /https:\/\/informatiemodel\.istandaarden\.nl\/informatiemodel\/ijw\/3\.2\/regels\/pad\/(up|op|tr|cd|cs|iv)(\d{3})\/?/gi,
+        /https:\/\/informatiemodel\.istandaarden\.nl\/informatiemodel\/ijw\/3\.2\/regels\/(uitgangspunt|bedrijfsregel|technische-regel|conditie|constraint|invulinstructie)\/((?:up|op|tr|cd|cs|iv)\d+)\/([a-z]\d+)\/?/gi,
+        (_match: string, path: string, prefixNumber: string, suffix: string) => buildSourceUrl(`${prefixNumber}${suffix}`) ?? _match,
+    );
+
+    content = content.replace(
+        /https:\/\/informatiemodel\.istandaarden\.nl\/informatiemodel\/ijw\/3\.2\/regels\/pad\/(up|op|tr|cd|cs|iv)(\d+[a-z0-9]*)\/?/gi,
         (_match: string, type: string, number: string) => buildSourceUrl(`${type}${number}`) ?? _match,
     );
 
     content = content.replace(
-        /https:\/\/informatiemodel\.istandaarden\.nl\/informatiemodel\/ijw\/3\.2\/regels\/(uitgangspunt|bedrijfsregel|technische-regel|conditie|constraint|invulinstructie)\/((?:up|op|tr|cd|cs|iv)\d{3})\/?/gi,
+        /https:\/\/informatiemodel\.istandaarden\.nl\/informatiemodel\/ijw\/3\.2\/regels\/(uitgangspunt|bedrijfsregel|technische-regel|conditie|constraint|invulinstructie)\/((?:up|op|tr|cd|cs|iv)\d+[a-z0-9]*)\/?/gi,
         (_match: string, _path: string, code: string) => buildSourceUrl(code) ?? _match,
     );
 
