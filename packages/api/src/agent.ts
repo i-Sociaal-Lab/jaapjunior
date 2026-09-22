@@ -126,6 +126,14 @@ function buildSourceUrl(code: string): string | null {
     if (/^iv\d+[a-z0-9]*$/.test(normalized)) {
         return `https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/invulinstructie/${normalized}/`;
     }
+
+    // Codelijsten gebruiken uitsluitend het codelijstnummer in de URL.
+    // Bijvoorbeeld WJ756_Eenheid -> /codelijsten/wj756/
+    // De naam van de codelijst (zoals "Eenheid") hoort niet in het URL-pad.
+    if (/^(?:jz|wj|cod|wmo)\d{3}$/i.test(normalized)) {
+        return `https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/${normalized}/`;
+    }
+
     return null;
 }
 
@@ -154,6 +162,14 @@ function normalizeSourceUrls(content: any): any {
     content = content.replace(
         /https:\/\/informatiemodel\.istandaarden\.nl\/informatiemodel\/ijw\/3\.2\/regels\/(uitgangspunt|bedrijfsregel|technische-regel|conditie|constraint|invulinstructie)\/((?:up|op|tr|cd|cs|iv)\d+[a-z0-9]*)\/?/gi,
         (_match: string, _path: string, code: string) => buildSourceUrl(code) ?? _match,
+    );
+
+    // Codelijsten hebben één canonieke URL op basis van alleen het
+    // codelijstnummer. Corrigeer eventuele detailpaden zoals
+    // /codelijsten/wj756/eenheid/ naar /codelijsten/wj756/.
+    content = content.replace(
+        /https:\/\/informatiemodel\.istandaarden\.nl\/informatiemodel\/ijw\/3\.2\/codelijsten\/((?:jz|wj|cod|wmo)\d{3})(?:\/[^\s)]+)?\/?/gi,
+        (_match: string, code: string) => buildSourceUrl(code) ?? _match,
     );
 
     return content;
