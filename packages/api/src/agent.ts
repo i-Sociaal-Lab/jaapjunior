@@ -204,6 +204,8 @@ class Agent {
         searchQueries: string[],
         options: { exactMessageCodes?: string[]; ruleOverview?: boolean } = {},
     ) {
+        const exactMessageCodes = options.exactMessageCodes ?? [];
+
         const formalQuerySet = new Set<string>([
             ...searchQueries,
             `${question} formele regel`,
