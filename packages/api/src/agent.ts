@@ -255,6 +255,114 @@ class Agent {
         };
     }
 
+    private nodeContent(node: any): string {
+        return typeof node?.getContent === "function"
+            ? node.getContent(MetadataMode.ALL)
+            : String(node ?? "");
+    }
+
+    private codelistIdentifier(value: string): string | null {
+        const match = String(value ?? "").match(/\b(?:JZ|WJ|COD|WMO)\d{3}\b/i);
+        return match ? match[0].toUpperCase() : null;
+    }
+
+    private codelistContainsExactCode(content: string, code: string): boolean {
+        const escaped = code.trim().replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+        if (!escaped) return false;
+
+        // Codelijsten in de kennisbank zijn markdown-tabellen. Een code moet
+        // als zelfstandige cel/waarde voorkomen; een toevallig getal in een
+        // toelichting telt niet als bewijs dat de code bestaat.
+        const rowCode = new RegExp(`(?:^|\\n)\\s*\\|\\s*${escaped}\\s*\\|`, "i");
+        const listCode = new RegExp(`(?:^|\\n)\\s*(?:[-*]\\s*)?${escaped}(?:\\s|[-–:]|$)`, "i");
+        return rowCode.test(content) || listCode.test(content);
+    }
+
+    /**
+     * Valideert bij relatievragen eerst de broncode in de broncodelijst.
+     * Dit voorkomt dat bijvoorbeeld "reden beëindiging 13" ten onrechte
+     * wordt opgezocht als "reden wijziging toewijzing 13" wanneer code 13
+     * niet in JZ588 bestaat.
+     */
+    private sourceCodelistIdentifiers(analysis: QuestionAnalysis): string[] {
+        const refs = (analysis.codelijsten ?? [])
+            .map((value) => ({ value, id: this.codelistIdentifier(value) }))
+            .filter((item): item is { value: string; id: string } => Boolean(item.id));
+
+        if (refs.length === 0) return [];
+        if (refs.length === 1) return [refs[0].id];
+
+        const question = analysis.vraag.toLowerCase();
+
+        // Bij een relatievraag is de codelijst die de gebruiker als bron van
+        // de opgegeven code noemt de primaire validatiebron. Bijvoorbeeld:
+        // "reden beëindiging 13" -> JZ588; pas daarna mag JZ002 worden geraadpleegd.
+        const conceptPriority: Array<[RegExp, string]> = [
+            [/reden\s+(?:van\s+)?be[eë]indiging/i, "JZ588"],
+            [/reden\s+wijziging\s+toewijzing/i, "JZ002"],
+        ];
+
+        for (const [pattern, id] of conceptPriority) {
+            if (pattern.test(question) && refs.some((ref) => ref.id === id)) return [id];
+        }
+
+        // Vragen zoals "welke X hoort bij Y" gebruiken de eerste expliciet
+        // genoemde codelijst als broncode, tenzij de prompt een specifiekere
+        // bronrichting heeft aangegeven.
+        return [refs[0].id];
+    }
+
+    private async validateCodelistSourceCodes(
+        analysis: QuestionAnalysis,
+    ): Promise<{ invalid: boolean; message?: string }> {
+        if (!analysis.relatie_gezocht || !analysis.codelijsten?.length || !analysis.codes?.length) {
+            return { invalid: false };
+        }
+
+        const sourceCodelists = this.sourceCodelistIdentifiers(analysis);
+        if (sourceCodelists.length === 0) return { invalid: false };
+
+        for (const codelistId of sourceCodelists) {
+            const codes = [...new Set(analysis.codes.map((code) => String(code).trim()).filter(Boolean))];
+            if (codes.length === 0) continue;
+
+            const queries = [
+                codelistId,
+                ...codes.map((code) => `${codelistId} code ${code}`),
+            ];
+
+            const retriever = this.createRetriever(queries, 100);
+            const results = (await retriever.retrieve()).filter((result: any) => {
+                const content = this.nodeContent(result.node);
+                return sourceTier(result.node) === "formal" && content.toUpperCase().includes(codelistId);
+            });
+
+            // Alleen een daadwerkelijk gevonden codelijst kan een negatieve
+            // validatie opleveren. Bij onvoldoende bronmateriaal blijft de
+            // normale retrieval intact; we gokken dus nooit dat een code niet bestaat.
+            if (results.length === 0) continue;
+
+            for (const code of codes) {
+                const exists = results.some((result: any) =>
+                    this.codelistContainsExactCode(this.nodeContent(result.node), code),
+                );
+
+                if (!exists) {
+                    return {
+                        invalid: true,
+                        message:
+                            `Formele codevalidatie: code ${code} is niet gevonden in codelijst ${codelistId}. ` +
+                            `Beantwoord de gebruikersvraag daarom uitsluitend met de mededeling dat deze code niet bestaat in ${codelistId}. ` +
+                            `Zoek deze code NIET op in een andere codelijst en leid geen relatie af op basis van hetzelfde nummer. ` +
+                            `Vraag de gebruiker eventueel om een andere code te noemen.`,
+                    };
+                }
+            }
+        }
+
+        return { invalid: false };
+    }
+
     /**
      * Formele bronretrieval voor regel- en correctievragen.
      *
@@ -406,8 +514,25 @@ class Agent {
 
         const llm = llms[actualModel]();
         let retrievedNodes: any[];
+        let codelistValidationMessage: string | undefined;
 
-        if (isFormalFirst) {
+        if (analysis) {
+            const validation = await this.validateCodelistSourceCodes(analysis);
+            if (validation.invalid) {
+                codelistValidationMessage = validation.message;
+                console.log("===== CODELIJST VALIDATIE =====");
+                console.log(codelistValidationMessage);
+            }
+        }
+
+        if (codelistValidationMessage) {
+            retrievedNodes = [{
+                node: {
+                    getContent: () => codelistValidationMessage,
+                },
+                score: 1,
+            }];
+        } else if (isFormalFirst) {
             const formalResults = await this.retrieveFormalFirst(q, searchQueries, {
                 exactMessageCodes,
                 ruleOverview: isRuleOverview,
@@ -440,6 +565,10 @@ class Agent {
                 ? []
                 : [createJinaReranker(10, "jina-reranker-v2-base-multilingual") as any];
 
+        const effectivePrompt = codelistValidationMessage
+            ? `${this.prompt}\n\n### HARDE CODELIJSTVALIDATIE\n${codelistValidationMessage}\nGeef geen gekoppelde code uit een andere codelijst. Beantwoord alleen dat de opgegeven broncode niet bestaat en vraag zo nodig om een andere code.`
+            : this.prompt;
+
         const chatEngine = new ContextChatEngine({
             retriever: {
                 async retrieve() {
@@ -447,7 +576,7 @@ class Agent {
                 },
             } as any,
             nodePostprocessors,
-            systemPrompt: this.prompt,
+            systemPrompt: effectivePrompt,
             chatModel: llm,
         });
 
