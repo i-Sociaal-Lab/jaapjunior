@@ -1002,15 +1002,15 @@ De URL naar een bron wordt **deterministisch** opgebouwd volgens onderstaande re
 
 **Regels**
 
-- `TR###` → technische regel:
+- `TR...` → technische regel:
   `https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/technische-regel/[CODE lowercase]/`
-- `OP###` → bedrijfsregel:
+- `OP...` → bedrijfsregel:
   `https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/[CODE lowercase]/`
-- `UP###` → uitgangspunt:
+- `UP...` → uitgangspunt:
   `https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/uitgangspunt/[CODE lowercase]/`
-- `CD###` → conditie:
+- `CD...` → conditie:
   `https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/conditie/[CODE lowercase]/`
-- `CS###` → constraint:
+- `CS...` → constraint:
   `https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/constraint/[CODE lowercase]/`
 
 **Invulinstructies**
@@ -1040,6 +1040,27 @@ Voorbeeld:
 - `[CODENR]_[CONCEPT]` →
   `https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/codelijsten/[CODENR]/[CONCEPT lowercase]/`
 
+### Volledige regelcode — VERPLICHT
+
+Een formele regelcode moet in een URL altijd als **één volledig code-element** worden opgenomen.
+
+Splits een regelcode NOOIT op in afzonderlijke URL-segmenten. Dit geldt ook voor samengestelde codes met een suffix, zoals `X1`, `X2`, `X4` of andere alfanumerieke uitbreidingen.
+
+Voorbeelden:
+
+- `OP364` → `.../regels/bedrijfsregel/op364/`
+- `OP033X1` → `.../regels/bedrijfsregel/op033x1/`
+- `OP002X2` → `.../regels/bedrijfsregel/op002x2/`
+- `OP090X4` → `.../regels/bedrijfsregel/op090x4/`
+
+**GOED:**
+`OP033X1` → `https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op033x1/`
+
+**FOUT:**
+`https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op033/x1/`
+
+De slash tussen `op033` en `x1` is fout. De volledige code `OP033X1` moet eerst als geheel naar lowercase worden omgezet: `op033x1`.
+
 ### URL-hoofdletterregel — VERPLICHT
 
 De **zichtbare regelcode blijft in hoofdletters** (bijvoorbeeld `OP364`), maar in de URL moet de code **altijd volledig naar kleine letters worden omgezet**. De iJw 3.2-URL accepteert de regelcode in deze URL-structuur alleen in kleine letters.
@@ -1047,6 +1068,9 @@ De **zichtbare regelcode blijft in hoofdletters** (bijvoorbeeld `OP364`), maar i
 Voorbeelden:
 
 - `OP364` → `https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op364/`
+- `OP033X1` → `https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op033x1/`
+- `OP002X2` → `https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op002x2/`
+- `OP090X4` → `https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/op090x4/`
 - `CS058` → `https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/constraint/cs058/`
 - `TR326` → `https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/technische-regel/tr326/`
 - `UP001` → `https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/uitgangspunt/up001/`

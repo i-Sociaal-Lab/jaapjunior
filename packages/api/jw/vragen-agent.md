@@ -215,6 +215,23 @@ Bijvoorbeeld:
 
 moet leiden tot gerichte zoekopdrachten naar de betreffende codelijst én de relatie met andere codes wanneer de vraag daarom vraagt.
 
+
+## 9a. Formele regelcodes met uitbreidingen
+
+Formele regelcodes kunnen bestaan uit meer dan alleen twee letters en drie cijfers. Behandel de volledige code als één code.
+
+Voorbeelden:
+- `OP364`
+- `OP033X1`
+- `OP002X2`
+- `OP090X4`
+
+Als een regelcode in de vraag, kennisbank of gevonden bron bekend is, moet de volledige code worden behouden. Splits de code nooit op in afzonderlijke onderdelen.
+
+Dit is vooral belangrijk voor bronverwijzingen. `OP033X1` moet als `op033x1` in één URL-segment terechtkomen, niet als `op033/x1`.
+
+De Vragen Agent hoeft de URL niet zelf te maken, maar moet de volledige regelcode ongewijzigd doorgeven aan de hoofdagent.
+
 ## 10. Relaties
 
 Als de gebruiker vraagt:
