@@ -94,6 +94,59 @@ const SUPPLEMENTAL_PATTERNS = [
     /sap[-_ ]?gi/i,
 ];
 
+function buildSourceUrl(code: string): string | null {
+    const normalized = code.trim().toLowerCase();
+
+    if (/^jw\d{3}$/.test(normalized)) {
+        return `https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/berichten/${normalized}/`;
+    }
+    if (/^wmo\d{3}$/.test(normalized)) {
+        return `https://informatiemodel.istandaarden.nl/informatiemodel/iwmo/3.2/berichten/${normalized}/`;
+    }
+    if (/^op\d{3}$/.test(normalized)) {
+        return `https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/bedrijfsregel/${normalized}/`;
+    }
+    if (/^up\d{3}$/.test(normalized)) {
+        return `https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/uitgangspunt/${normalized}/`;
+    }
+    if (/^tr\d{3}$/.test(normalized)) {
+        return `https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/technische-regel/${normalized}/`;
+    }
+    if (/^cd\d{3}$/.test(normalized)) {
+        return `https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/conditie/${normalized}/`;
+    }
+    if (/^cs\d{3}$/.test(normalized)) {
+        return `https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/constraint/${normalized}/`;
+    }
+    if (/^iv\d{3}$/.test(normalized)) {
+        return `https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/regels/invulinstructie/${normalized}/`;
+    }
+    return null;
+}
+
+function normalizeSourceUrls(content: any): any {
+    if (typeof content !== "string") return content;
+
+    // Correct legacy/direct XSD links to the canonical message page.
+    content = content.replace(
+        /https:\/\/informatiemodel\.istandaarden\.nl\/informatiemodel\/ijw\/3\.2\/xsd\/(jw\d{3})\.xsd\/?/gi,
+        (_match: string, code: string) => buildSourceUrl(code) ?? _match,
+    );
+
+    // Correct rule URLs with uppercase codes and the obsolete /regels/pad/ form.
+    content = content.replace(
+        /https:\/\/informatiemodel\.istandaarden\.nl\/informatiemodel\/ijw\/3\.2\/regels\/pad\/(up|op|tr|cd|cs|iv)(\d{3})\/?/gi,
+        (_match: string, type: string, number: string) => buildSourceUrl(`${type}${number}`) ?? _match,
+    );
+
+    content = content.replace(
+        /https:\/\/informatiemodel\.istandaarden\.nl\/informatiemodel\/ijw\/3\.2\/regels\/(uitgangspunt|bedrijfsregel|technische-regel|conditie|constraint|invulinstructie)\/((?:up|op|tr|cd|cs|iv)\d{3})\/?/gi,
+        (_match: string, _path: string, code: string) => buildSourceUrl(code) ?? _match,
+    );
+
+    return content;
+}
+
 function sourceTier(node: any): SourceTier | "unknown" {
     const metadata = node?.metadata ?? {};
     const text = [
@@ -388,6 +441,10 @@ class Agent {
 
         const startTime = Date.now();
         const response = await chatEngine.chat({ message: q, chatHistory });
+        const responseAny = response as any;
+        if (typeof responseAny?.message?.content === "string") {
+            responseAny.message.content = normalizeSourceUrls(responseAny.message.content);
+        }
         const responseTime = Date.now() - startTime;
 
         db.prepare("INSERT INTO model_responses (model, response_time) VALUES ($1, $2)").run({
