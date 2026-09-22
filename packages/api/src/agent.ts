@@ -74,6 +74,43 @@ interface AgentConfig {
     questionPromptPath?: string;
 }
 
+type SourceTier = "formal" | "supplemental";
+
+const FORMAL_PATTERNS = [
+    /(?:^|[/\\\s#:_-])(?:op|up|tr|cd|cs|iv)\d{3}[a-z0-9_-]*(?:\.md)?(?:$|[/\\\s:)]|[-–])/i,
+    /(?:^|[/\\\s#:_-])(?:op|up|tr)\d+[a-z0-9_-]*\.md$/i,
+    /invulinstructie/i,
+    /condit/i,
+    /constraint/i,
+    /codelijst/i,
+    /(^|[/\\])(?:xsd|schema)/i,
+    /basisschema/i,
+];
+
+const SUPPLEMENTAL_PATTERNS = [
+    /faq/i,
+    /veelgestelde-vragen/i,
+    /casus/i,
+    /sap[-_ ]?gi/i,
+];
+
+function sourceTier(node: any): SourceTier | "unknown" {
+    const metadata = node?.metadata ?? {};
+    const text = [
+        metadata.file_name,
+        metadata.filename,
+        metadata.file_path,
+        metadata.source,
+        metadata.url,
+        metadata.title,
+        typeof node?.getContent === "function" ? node.getContent(MetadataMode.ALL) : "",
+    ].filter(Boolean).join(" ");
+
+    if (SUPPLEMENTAL_PATTERNS.some((p) => p.test(text))) return "supplemental";
+    if (FORMAL_PATTERNS.some((p) => p.test(text))) return "formal";
+    return "unknown";
+}
+
 class Agent {
     private constructor(public index: VectorStoreIndex, public model: keyof typeof llms, public prompt: string, private readonly vragenAgent?: VragenAgent) {}
 
@@ -123,11 +160,6 @@ class Agent {
                     return allResults;
                 }
 
-                // Bij een regeloverzicht heeft een letterlijke berichtcode
-                // voorrang op puur semantische overeenkomst. Zo blijft een
-                // TR/UP/OP-regel die expliciet JW305/JW307 noemt behouden,
-                // ook wanneer de tekst inhoudelijk vooral over een ander
-                // onderwerp gaat.
                 const scored = allResults.map((result, index) => {
                     const node = result.node;
                     const content =
@@ -137,8 +169,7 @@ class Agent {
 
                     const upper = content.toUpperCase();
                     const exactHits = exactMessageCodes.reduce(
-                        (count, code) =>
-                            count + (upper.includes(code.toUpperCase()) ? 1 : 0),
+                        (count, code) => count + (upper.includes(code.toUpperCase()) ? 1 : 0),
                         0,
                     );
 
@@ -154,11 +185,124 @@ class Agent {
                     return a.index - b.index;
                 });
 
-                // Houd de context begrensd, maar geef exacte berichtcode-hits
-                // nadrukkelijk voorrang.
                 return scored.slice(0, 80).map((item) => item.result);
             },
         };
+    }
+
+    /**
+     * Formele bronretrieval voor regel- en correctievragen.
+     *
+     * Belangrijk: FAQ/casus/SAP-GI zitten hier bewust nog niet in.
+     * Eerst wordt uitsluitend gezocht naar formele bronnen. Pas wanneer
+     * die formele kandidaatset onvoldoende is, wordt de aanvullende set
+     * toegevoegd. Hierdoor kan een FAQ niet toevallig de formele bron
+     * verdringen tijdens de eerste retrieval/reranking.
+     */
+    private async retrieveFormalFirst(
+        question: string,
+        searchQueries: string[],
+        options: { exactMessageCodes?: string[]; ruleOverview?: boolean } = {},
+    ) {
+        const formalQuerySet = new Set<string>([
+            ...searchQueries,
+            `${question} formele regel`,
+            `${question} invulinstructie`,
+            `${question} bedrijfsregel`,
+            `${question} technische regel`,
+            `${question} voorwaarde`,
+            `${question} toegestaan`,
+            `${question} verplicht`,
+        ]);
+
+        // Bij een vraag over een afhankelijkheid tussen berichttypen moet de
+        // combinatie van de berichtcodes expliciet worden gezocht. Dit is
+        // belangrijk voor vragen zoals: "moet JW305 eerst voordat JW323 mag?"
+        if (exactMessageCodes.length >= 2) {
+            const codes = [...new Set(exactMessageCodes)];
+            formalQuerySet.add(codes.join(" "));
+            formalQuerySet.add(`${codes.join(" ")} voorwaarde`);
+            formalQuerySet.add(`${codes.join(" ")} declaratie`);
+            formalQuerySet.add(`${codes.join(" ")} toegestaan`);
+            formalQuerySet.add(`${codes.join(" ")} verplicht`);
+            formalQuerySet.add(`${codes.join(" ")} goedkeuren afkeuren`);
+            formalQuerySet.add(`startbericht als voorwaarde declaratie`);
+            formalQuerySet.add(`start- of stopbericht voorwaarde declaratie`);
+            formalQuerySet.add(`declaratie niet afhankelijk startbericht`);
+        }
+
+        const formalQueries = [...formalQuerySet];
+
+        const retriever = this.createRetriever(
+            formalQueries,
+            options.ruleOverview ? 100 : 30,
+            options,
+        );
+
+        const results = await retriever.retrieve();
+        return results.filter((r: any) => sourceTier(r.node) === "formal");
+    }
+
+    private async retrieveSupplemental(
+        question: string,
+        searchQueries: string[],
+    ) {
+        const supplementalQueries = [...new Set([
+            question,
+            ...searchQueries,
+            `${question} FAQ`,
+            `${question} casus`,
+            `${question} SAP GI`,
+        ])];
+
+        const retriever = this.createRetriever(supplementalQueries, 20);
+        const results = await retriever.retrieve();
+        return results.filter((r: any) => sourceTier(r.node) === "supplemental");
+    }
+
+    private async formalSourcesAreSufficient(
+        question: string,
+        formalResults: any[],
+        llm: LLM,
+    ): Promise<boolean> {
+        if (formalResults.length === 0) return false;
+
+        const context = formalResults
+            .slice(0, 20)
+            .map((r, i) => `BRON ${i + 1}:\n${r.node.getContent(MetadataMode.ALL)}`)
+            .join("\n\n---\n\n");
+
+        const response = await llm.chat({
+            messages: [
+                {
+                    role: "system",
+                    content:
+                        `Beoordeel uitsluitend of de formele bronnen de gebruikersvraag volledig en concreet beantwoorden.
+` +
+                        `Geef uitsluitend JSON terug: {"voldoende":true} of {"voldoende":false}.
+` +
+                        `Een bron is voldoende als de vraag inhoudelijk kan worden beantwoord zonder FAQ, casus of SAP-GI.
+` +
+                        `Als een aanvullende bron alleen hetzelfde antwoord herhaalt, is de formele bronset voldoende.
+` +
+                        `Bij twijfel: false.`,
+                },
+                {
+                    role: "user",
+                    content: `VRAAG:\n${question}\n\nFORMELE BRONNEN:\n${context}`,
+                },
+            ],
+        });
+
+        const content = String(response.message.content).trim();
+        const match = content.match(/\{[\s\S]*\}/);
+        if (!match) return false;
+
+        try {
+            return Boolean(JSON.parse(match[0]).voldoende);
+        } catch {
+            return false;
+        }
     }
 
     async query(q: string, chatHistory: ChatMessage[], db: IDB, model?: keyof typeof llms) {
@@ -174,41 +318,67 @@ class Agent {
             searchQueries = [q, ...additionalQueries];
             console.log("===== VRAGEN AGENT =====");
             console.dir(analysis, { depth: null });
-            console.log("=======================");
             console.log("===== RETRIEVAL QUERIES =====");
             console.dir(searchQueries, { depth: null });
-            console.log("=============================");
         }
 
         const isRuleOverview = analysis?.zoekstrategie === "rule_overview";
         const isCompleteList = analysis?.zoekstrategie === "complete_list";
+        const isFormalFirst = ["rule", "rule_overview", "relational", "process"].includes(
+            analysis?.zoekstrategie ?? "",
+        ) || analysis?.vraagtype?.some((x) =>
+            /regel|correctie|invulinstructie|voorwaarde|verplicht/i.test(x),
+        );
 
         const exactMessageCodes = [
             ...(analysis?.berichttypen ?? []),
-            ...searchQueries.flatMap((query) =>
-                query.match(/\b(?:JW|WMO)\d{3}\b/gi) ?? [],
-            ),
+            ...searchQueries.flatMap((query) => query.match(/\b(?:JW|WMO)\d{3}\b/gi) ?? []),
         ]
             .map((code) => code.toUpperCase())
             .filter((code, index, arr) => arr.indexOf(code) === index);
 
-        // Rule-overviews gebruiken een grotere kandidaatpool. Daarna worden
-        // nodes met een letterlijke berichtcode vooraan gezet.
-        const retriever = this.createRetriever(
-            searchQueries,
-            isRuleOverview ? 100 : 20,
-            { exactMessageCodes, ruleOverview: isRuleOverview },
-        );
         const llm = llms[actualModel]();
+        let retrievedNodes: any[];
 
-        // A rule overview must preserve coverage across UP/OP/TR/CD/CS/invulinstructie.
-        // Jina reranking can discard whole categories, so it is deliberately skipped here.
-        const nodePostprocessors = (isRuleOverview || isCompleteList)
-            ? []
-            : [createJinaReranker(10, "jina-reranker-v2-base-multilingual") as any];
+        if (isFormalFirst) {
+            const formalResults = await this.retrieveFormalFirst(q, searchQueries, {
+                exactMessageCodes,
+                ruleOverview: isRuleOverview,
+            });
+
+            const formalEnough = await this.formalSourcesAreSufficient(q, formalResults, llm);
+
+            console.log("===== FORMELE BRONNEN =====");
+            console.log(`gevonden: ${formalResults.length}`);
+            console.log(`voldoende: ${formalEnough}`);
+
+            if (formalEnough) {
+                retrievedNodes = formalResults;
+            } else {
+                const supplementalResults = await this.retrieveSupplemental(q, searchQueries);
+                retrievedNodes = [...formalResults, ...supplementalResults];
+                console.log(`aanvullende bronnen: ${supplementalResults.length}`);
+            }
+        } else {
+            const retriever = this.createRetriever(
+                searchQueries,
+                isRuleOverview ? 100 : 20,
+                { exactMessageCodes, ruleOverview: isRuleOverview },
+            );
+            retrievedNodes = await retriever.retrieve();
+        }
+
+        const nodePostprocessors =
+            (isRuleOverview || isCompleteList || isFormalFirst)
+                ? []
+                : [createJinaReranker(10, "jina-reranker-v2-base-multilingual") as any];
 
         const chatEngine = new ContextChatEngine({
-            retriever: retriever as any,
+            retriever: {
+                async retrieve() {
+                    return retrievedNodes;
+                },
+            } as any,
             nodePostprocessors,
             systemPrompt: this.prompt,
             chatModel: llm,
@@ -218,7 +388,10 @@ class Agent {
         const response = await chatEngine.chat({ message: q, chatHistory });
         const responseTime = Date.now() - startTime;
 
-        db.prepare("INSERT INTO model_responses (model, response_time) VALUES ($1, $2)").run({ $1: actualModel, $2: responseTime });
+        db.prepare("INSERT INTO model_responses (model, response_time) VALUES ($1, $2)").run({
+            $1: actualModel,
+            $2: responseTime,
+        });
         response.message.options ??= {};
         // @ts-expect-error
         response.message.options.model = actualModel;
