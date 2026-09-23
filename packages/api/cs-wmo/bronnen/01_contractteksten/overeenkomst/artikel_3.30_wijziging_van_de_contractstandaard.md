@@ -1,4 +1,4 @@
-## Artikel 3.30 – Wijziging van de contractstandaard
+## Artikel 3.30 Wijziging van de contractstandaard
 
 ### Mogelijke chatbotvragen
 
@@ -7,7 +7,7 @@
 
 ### Brontekst
 
-**Artikel 3.30 – Wijziging van de contractstandaard**
+**Artikel 3.30 Wijziging van de contractstandaard**
 
 3.30.1
 Als de landelijke contractstandaard maatwerkovereenkomsten maatschappelijke ondersteuning (voor inspanningsgericht, outputgericht of taakgericht) wijzigt, dan passen Partijen deze overeenkomst aan.
