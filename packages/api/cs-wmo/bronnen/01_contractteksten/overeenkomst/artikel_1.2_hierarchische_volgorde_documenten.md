@@ -1,4 +1,4 @@
-## Artikel 1.2 – Hiërarchische volgorde documenten
+## Artikel 1.2 Hiërarchische volgorde documenten
 
 ### Mogelijke chatbotvragen
 
@@ -7,7 +7,7 @@
 
 ### Brontekst
 
-**Artikel 1.2 – Hiërarchische volgorde documenten**
+**Artikel 1.2 Hiërarchische volgorde documenten**
 
 De volgende documenten en bijlagen zijn (in hiërarchische volgorde) van toepassing. Zij maken integraal onderdeel uit van de overeenkomst die Partijen sluiten. Het gaat steeds om de gepubliceerde, meest actuele versie van:
 
