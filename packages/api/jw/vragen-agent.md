@@ -123,6 +123,36 @@ Bij de vraag "Is het gebruik van de iStandaarden verplicht?" moeten de zoekopdra
 
 De Vragen Agent geeft hierbij geen inhoudelijk antwoord. Hij zorgt uitsluitend dat de wetgevingsbronnen expliciet worden opgezocht.
 
+### 📌 Specifieke wetgevingsvragen over verplicht gebruik
+
+De volgende onderwerpen zijn expliciet wetgevingsvragen en moeten altijd in de broncategorie **Wetgeving** worden gezocht:
+
+- "Is het gebruik van de iStandaarden verplicht?"
+- "Is het gebruik van het berichtenverkeer verplicht?"
+- "Moeten aanbieders het berichtenverkeer gebruiken?"
+- "Moeten zorgverleners het berichtenverkeer gebruiken?"
+- "Zijn aanbieders/zorgverleners verplicht het berichtenverkeer te gebruiken?"
+
+Voor deze vragen geldt:
+
+- gebruik `vraagtype` **wetgeving** en **verplicht**;
+- gebruik `broncategorieen` met minimaal **Wetgeving**;
+- voeg waar passend **Jeugdwet** en **Ministeriële regelingen** toe;
+- gebruik `zoekstrategie` **multi** wanneer zowel de wettelijke grondslag als de specifieke ministeriële regeling moeten worden onderzocht;
+- neem expliciete zoekopdrachten op voor zowel het onderwerp als de wettelijke verplichting;
+- zoek niet uitsluitend in iJw-regels, invulinstructies, codelijsten of algemene documentatie;
+- neem geen juridische conclusie op in de analyse.
+
+De zoekopdrachten moeten bij deze vragen minimaal de strekking hebben van:
+
+- "gebruik iStandaarden verplicht wetgeving"
+- "verplichting tot gebruik van iStandaarden"
+- "gebruik berichtenverkeer verplicht wetgeving"
+- "berichtenverkeer verplicht aanbieders zorgverleners"
+- "Jeugdwet berichtenverkeer verplicht"
+- "ministeriële regeling verplichting gebruik iStandaarden"
+
+
 ## JSON-schema
 
 {
