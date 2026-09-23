@@ -1,4 +1,4 @@
-## Artikel 3.24 – Ongeldige overeenkomst
+## Artikel 3.24 Ongeldige overeenkomst
 
 ### Mogelijke chatbotvragen
 
@@ -7,6 +7,6 @@
 
 ### Brontekst
 
-**Artikel 3.24 – Ongeldige overeenkomst**
+**Artikel 3.24 Ongeldige overeenkomst**
 
 Als Opdrachtnemer een overeenkomst terugstuurt met doorhalingen of opmerkingen, dan mag Opdrachtgever die overeenkomst ongeldig verklaren. Opdrachtgever meldt dit schriftelijk aan Opdrachtnemer. Daarna stuurt Opdrachtgever een nieuwe, ongewijzigde versie van de overeenkomst. Opdrachtnemer krijgt 3 weken om deze alsnog te ondertekenen en terug te sturen.
