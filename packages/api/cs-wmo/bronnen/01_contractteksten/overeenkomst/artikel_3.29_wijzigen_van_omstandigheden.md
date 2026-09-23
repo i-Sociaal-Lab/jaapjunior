@@ -1,4 +1,4 @@
-## Artikel 3.29 – Wijzigen van omstandigheden
+## Artikel 3.29 Wijzigen van omstandigheden
 
 ### Mogelijke chatbotvragen
 
@@ -7,7 +7,7 @@
 
 ### Brontekst
 
-**Artikel 3.29 – Wijzigen van omstandigheden**
+**Artikel 3.29 Wijzigen van omstandigheden**
 
 3.29.1
 Als er iets belangrijks verandert dat invloed heeft op deze overeenkomst, dan informeren Partijen elkaar daar terstond over.
