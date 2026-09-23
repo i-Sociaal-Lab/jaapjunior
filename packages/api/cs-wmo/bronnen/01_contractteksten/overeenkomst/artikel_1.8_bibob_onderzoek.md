@@ -1,4 +1,4 @@
-## Artikel 1.8 – Bibob Onderzoek
+## Artikel 1.8 Bibob Onderzoek
 
 ### Mogelijke chatbotvragen
 
@@ -7,7 +7,7 @@
 
 ### Brontekst
 
-**Artikel 1.8 – Bibob Onderzoek**
+**Artikel 1.8 Bibob Onderzoek**
 
 
 **1.8.1**
