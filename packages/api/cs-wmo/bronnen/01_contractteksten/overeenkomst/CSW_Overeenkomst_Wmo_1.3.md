@@ -58,7 +58,7 @@ Definities	9
 # Deel 1: Bepalingen die gelden tussen Opdrachtgever en alle Opdrachtnemers waarmee Opdrachtgever een overeenkomst sluit	11
 
 
-## Artikel 1.1 – Voorwerp van de overeenkomst	11
+## Artikel 1.1 Voorwerp van de overeenkomst	11
 
 ### Mogelijke chatbotvragen
 
@@ -67,10 +67,10 @@ Definities	9
 
 ### Brontekst
 
-**Artikel 1.1 – Voorwerp van de overeenkomst	11**
+**Artikel 1.1 Voorwerp van de overeenkomst	11**
 
 
-## Artikel 1.2 – Hiërarchische volgorde documenten	11
+## Artikel 1.2 Hiërarchische volgorde documenten	11
 
 ### Mogelijke chatbotvragen
 
@@ -79,10 +79,10 @@ Definities	9
 
 ### Brontekst
 
-**Artikel 1.2 – Hiërarchische volgorde documenten	11**
+**Artikel 1.2 Hiërarchische volgorde documenten	11**
 
 
-## Artikel 1.3 – Looptijd	11
+## Artikel 1.3 Looptijd	11
 
 ### Mogelijke chatbotvragen
 
@@ -91,10 +91,10 @@ Definities	9
 
 ### Brontekst
 
-**Artikel 1.3 – Looptijd	11**
+**Artikel 1.3 Looptijd	11**
 
 
-## Artikel 1.4 – Herzieningsclausule	12
+## Artikel 1.4 Herzieningsclausule	12
 
 ### Mogelijke chatbotvragen
 
@@ -103,10 +103,10 @@ Definities	9
 
 ### Brontekst
 
-**Artikel 1.4 – Herzieningsclausule	12**
+**Artikel 1.4 Herzieningsclausule	12**
 
 
-## Artikel 1.5 – Bestedingsruimte	13
+## Artikel 1.5 Bestedingsruimte	13
 
 ### Mogelijke chatbotvragen
 
@@ -115,10 +115,10 @@ Definities	9
 
 ### Brontekst
 
-**Artikel 1.5 – Bestedingsruimte	13**
+**Artikel 1.5 Bestedingsruimte	13**
 
 
-## Artikel 1.6 – Opzegging bij onvoldoende inzet	15
+## Artikel 1.6 Opzegging bij onvoldoende inzet	15
 
 ### Mogelijke chatbotvragen
 
@@ -127,10 +127,10 @@ Definities	9
 
 ### Brontekst
 
-**Artikel 1.6 – Opzegging bij onvoldoende inzet	15**
+**Artikel 1.6 Opzegging bij onvoldoende inzet	15**
 
 
-## Artikel 1.7 – 18-/18+	15
+## Artikel 1.7 18-/18+	15
 
 ### Mogelijke chatbotvragen
 
@@ -139,10 +139,10 @@ Definities	9
 
 ### Brontekst
 
-**Artikel 1.7 – 18-/18+	15**
+**Artikel 1.7 18-/18+	15**
 
 
-## Artikel 1.8 – Bibob Onderzoek	16
+## Artikel 1.8 Bibob Onderzoek	16
 
 ### Mogelijke chatbotvragen
 
@@ -151,10 +151,10 @@ Definities	9
 
 ### Brontekst
 
-**Artikel 1.8 – Bibob Onderzoek	16**
+**Artikel 1.8 Bibob Onderzoek	16**
 
 
-## Artikel 1.9 – Social Return on Investment	16
+## Artikel 1.9 Social Return on Investment	16
 
 ### Mogelijke chatbotvragen
 
@@ -163,10 +163,10 @@ Definities	9
 
 ### Brontekst
 
-**Artikel 1.9 – Social Return on Investment	16**
+**Artikel 1.9 Social Return on Investment	16**
 
 
-## Artikel 1.10 – Implementatiebepaling	16
+## Artikel 1.10 Implementatiebepaling	16
 
 ### Mogelijke chatbotvragen
 
@@ -175,7 +175,7 @@ Definities	9
 
 ### Brontekst
 
-**Artikel 1.10 – Implementatiebepaling	16**
+**Artikel 1.10 Implementatiebepaling	16**
 
 [Optioneel:] Artikel 1.n [vul in]	17
 
@@ -189,7 +189,7 @@ Definities	9
 # Hoofdstuk 1: Levering van maatschappelijke ondersteuning	19
 
 
-## Artikel 3.1 – Levering van maatschappelijke ondersteuning	19
+## Artikel 3.1 Levering van maatschappelijke ondersteuning	19
 
 ### Mogelijke chatbotvragen
 
@@ -198,10 +198,10 @@ Definities	9
 
 ### Brontekst
 
-**Artikel 3.1 – Levering van maatschappelijke ondersteuning	19**
+**Artikel 3.1 Levering van maatschappelijke ondersteuning	19**
 
 
-## Artikel 3.2 – Indexering	20
+## Artikel 3.2 Indexering	20
 
 ### Mogelijke chatbotvragen
 
@@ -210,10 +210,10 @@ Definities	9
 
 ### Brontekst
 
-**Artikel 3.2 – Indexering	20**
+**Artikel 3.2 Indexering	20**
 
 
-## Artikel 3.3 – Marketing	20
+## Artikel 3.3 Marketing	20
 
 ### Mogelijke chatbotvragen
 
@@ -222,10 +222,10 @@ Definities	9
 
 ### Brontekst
 
-**Artikel 3.3 – Marketing	20**
+**Artikel 3.3 Marketing	20**
 
 
-## Artikel 3.4 – Continuïteit van maatschappelijke ondersteuning	20
+## Artikel 3.4 Continuïteit van maatschappelijke ondersteuning	20
 
 ### Mogelijke chatbotvragen
 
@@ -234,10 +234,10 @@ Definities	9
 
 ### Brontekst
 
-**Artikel 3.4 – Continuïteit van maatschappelijke ondersteuning	20**
+**Artikel 3.4 Continuïteit van maatschappelijke ondersteuning	20**
 
 
-## Artikel 3.5 – Wachttijden en cliëntenstop door Opdrachtgever	21
+## Artikel 3.5 Wachttijden en cliëntenstop door Opdrachtgever	21
 
 ### Mogelijke chatbotvragen
 
@@ -246,10 +246,10 @@ Definities	9
 
 ### Brontekst
 
-**Artikel 3.5 – Wachttijden en cliëntenstop door Opdrachtgever	21**
+**Artikel 3.5 Wachttijden en cliëntenstop door Opdrachtgever	21**
 
 
-## Artikel 3.6 – Cliëntenstop door Opdrachtnemer	21
+## Artikel 3.6 Cliëntenstop door Opdrachtnemer	21
 
 ### Mogelijke chatbotvragen
 
@@ -258,10 +258,10 @@ Definities	9
 
 ### Brontekst
 
-**Artikel 3.6 – Cliëntenstop door Opdrachtnemer	21**
+**Artikel 3.6 Cliëntenstop door Opdrachtnemer	21**
 
 
-## Artikel 3.7 – Weigering en beëindiging van maatschappelijke ondersteuning	22
+## Artikel 3.7 Weigering en beëindiging van maatschappelijke ondersteuning	22
 
 ### Mogelijke chatbotvragen
 
@@ -270,10 +270,10 @@ Definities	9
 
 ### Brontekst
 
-**Artikel 3.7 – Weigering en beëindiging van maatschappelijke ondersteuning	22**
+**Artikel 3.7 Weigering en beëindiging van maatschappelijke ondersteuning	22**
 
 
-## Artikel 3.8 – Wijziging ondersteuningsbehoefte	22
+## Artikel 3.8 Wijziging ondersteuningsbehoefte	22
 
 ### Mogelijke chatbotvragen
 
@@ -282,10 +282,10 @@ Definities	9
 
 ### Brontekst
 
-**Artikel 3.8 – Wijziging ondersteuningsbehoefte	22**
+**Artikel 3.8 Wijziging ondersteuningsbehoefte	22**
 
 
-## Artikel 3.9 – Hoofd- en onderaanneming	22
+## Artikel 3.9 Hoofd- en onderaanneming	22
 
 ### Mogelijke chatbotvragen
 
@@ -294,10 +294,10 @@ Definities	9
 
 ### Brontekst
 
-**Artikel 3.9 – Hoofd- en onderaanneming	22**
+**Artikel 3.9 Hoofd- en onderaanneming	22**
 
 
-## Artikel 3.9a – Verklaring omtrent gedrag personeel	23
+## Artikel 3.9a Verklaring omtrent gedrag personeel	23
 
 ### Mogelijke chatbotvragen
 
@@ -306,13 +306,13 @@ Definities	9
 
 ### Brontekst
 
-**Artikel 3.9a – Verklaring omtrent gedrag personeel	23**
+**Artikel 3.9a Verklaring omtrent gedrag personeel	23**
 
 
 # Hoofdstuk 2: Informatievoorziening, overleg en uitwisseling gegevens	24
 
 
-## Artikel 3.10 – Informatievoorziening aan de gemeente	24
+## Artikel 3.10 Informatievoorziening aan de gemeente	24
 
 ### Mogelijke chatbotvragen
 
@@ -321,13 +321,13 @@ Definities	9
 
 ### Brontekst
 
-**Artikel 3.10 – Informatievoorziening aan de gemeente	24**
+**Artikel 3.10 Informatievoorziening aan de gemeente	24**
 
 
 # Hoofdstuk 3: iWmo	26
 
 
-## Artikel 3.11 – iWmo	26
+## Artikel 3.11 iWmo	26
 
 ### Mogelijke chatbotvragen
 
@@ -336,13 +336,13 @@ Definities	9
 
 ### Brontekst
 
-**Artikel 3.11 – iWmo	26**
+**Artikel 3.11 iWmo	26**
 
 
 # Hoofdstuk 4: Declaratie en betaling	27
 
 
-## Artikel 3.12 – Onverschuldigde betaling	27
+## Artikel 3.12 Onverschuldigde betaling	27
 
 ### Mogelijke chatbotvragen
 
@@ -351,10 +351,10 @@ Definities	9
 
 ### Brontekst
 
-**Artikel 3.12 – Onverschuldigde betaling	27**
+**Artikel 3.12 Onverschuldigde betaling	27**
 
 
-## Artikel 3.13 – Declaratie en betaling van de geleverde maatschappelijke ondersteuning	27
+## Artikel 3.13 Declaratie en betaling van de geleverde maatschappelijke ondersteuning	27
 
 ### Mogelijke chatbotvragen
 
@@ -363,10 +363,10 @@ Definities	9
 
 ### Brontekst
 
-**Artikel 3.13 – Declaratie en betaling van de geleverde maatschappelijke ondersteuning	27**
+**Artikel 3.13 Declaratie en betaling van de geleverde maatschappelijke ondersteuning	27**
 
 
-## Artikel 3.14 – Uitgangspunten voor betaling	27
+## Artikel 3.14 Uitgangspunten voor betaling	27
 
 ### Mogelijke chatbotvragen
 
@@ -375,13 +375,13 @@ Definities	9
 
 ### Brontekst
 
-**Artikel 3.14 – Uitgangspunten voor betaling	27**
+**Artikel 3.14 Uitgangspunten voor betaling	27**
 
 
 # Hoofdstuk 5: Fraude en integriteit	28
 
 
-## Artikel 3.15 – UBO (Ultimate Beneficial Owner)	28
+## Artikel 3.15 UBO (Ultimate Beneficial Owner)	28
 
 ### Mogelijke chatbotvragen
 
@@ -390,10 +390,10 @@ Definities	9
 
 ### Brontekst
 
-**Artikel 3.15 – UBO (Ultimate Beneficial Owner)	28**
+**Artikel 3.15 UBO (Ultimate Beneficial Owner)	28**
 
 
-## Artikel 3.16 – Toezicht en handhaving	28
+## Artikel 3.16 Toezicht en handhaving	28
 
 ### Mogelijke chatbotvragen
 
@@ -402,10 +402,10 @@ Definities	9
 
 ### Brontekst
 
-**Artikel 3.16 – Toezicht en handhaving	28**
+**Artikel 3.16 Toezicht en handhaving	28**
 
 
-## Artikel 3.17 – Integriteit	29
+## Artikel 3.17 Integriteit	29
 
 ### Mogelijke chatbotvragen
 
@@ -414,10 +414,10 @@ Definities	9
 
 ### Brontekst
 
-**Artikel 3.17 – Integriteit	29**
+**Artikel 3.17 Integriteit	29**
 
 
-## Artikel 3.18 – Bevindingen toezichthouders	29
+## Artikel 3.18 Bevindingen toezichthouders	29
 
 ### Mogelijke chatbotvragen
 
@@ -426,13 +426,13 @@ Definities	9
 
 ### Brontekst
 
-**Artikel 3.18 – Bevindingen toezichthouders	29**
+**Artikel 3.18 Bevindingen toezichthouders	29**
 
 
 # Hoofdstuk 6: Niet-nakoming, opzegging en ontbinding	30
 
 
-## Artikel 3.19 – Niet-nakoming, opzegging en ontbinding	30
+## Artikel 3.19 Niet-nakoming, opzegging en ontbinding	30
 
 ### Mogelijke chatbotvragen
 
@@ -441,13 +441,13 @@ Definities	9
 
 ### Brontekst
 
-**Artikel 3.19 – Niet-nakoming, opzegging en ontbinding	30**
+**Artikel 3.19 Niet-nakoming, opzegging en ontbinding	30**
 
 
 # Hoofdstuk 7: Slotbepalingen	32
 
 
-## Artikel 3.20 – Overdracht van rechten en fusie	32
+## Artikel 3.20 Overdracht van rechten en fusie	32
 
 ### Mogelijke chatbotvragen
 
@@ -456,10 +456,10 @@ Definities	9
 
 ### Brontekst
 
-**Artikel 3.20 – Overdracht van rechten en fusie	32**
+**Artikel 3.20 Overdracht van rechten en fusie	32**
 
 
-## Artikel 3.21 – Financiële verantwoordelijkheid	32
+## Artikel 3.21 Financiële verantwoordelijkheid	32
 
 ### Mogelijke chatbotvragen
 
@@ -468,10 +468,10 @@ Definities	9
 
 ### Brontekst
 
-**Artikel 3.21 – Financiële verantwoordelijkheid	32**
+**Artikel 3.21 Financiële verantwoordelijkheid	32**
 
 
-## Artikel 3.22 – Noodzakelijke aanpassing	32
+## Artikel 3.22 Noodzakelijke aanpassing	32
 
 ### Mogelijke chatbotvragen
 
@@ -480,10 +480,10 @@ Definities	9
 
 ### Brontekst
 
-**Artikel 3.22 – Noodzakelijke aanpassing	32**
+**Artikel 3.22 Noodzakelijke aanpassing	32**
 
 
-## Artikel 3.23 – Geschillenregeling	32
+## Artikel 3.23 Geschillenregeling	32
 
 ### Mogelijke chatbotvragen
 
@@ -492,10 +492,10 @@ Definities	9
 
 ### Brontekst
 
-**Artikel 3.23 – Geschillenregeling	32**
+**Artikel 3.23 Geschillenregeling	32**
 
 
-## Artikel 3.24 – Ongeldige overeenkomst	32
+## Artikel 3.24 Ongeldige overeenkomst	32
 
 ### Mogelijke chatbotvragen
 
@@ -504,10 +504,10 @@ Definities	9
 
 ### Brontekst
 
-**Artikel 3.24 – Ongeldige overeenkomst	32**
+**Artikel 3.24 Ongeldige overeenkomst	32**
 
 
-## Artikel 3.25 – Nietigheid	33
+## Artikel 3.25 Nietigheid	33
 
 ### Mogelijke chatbotvragen
 
@@ -516,10 +516,10 @@ Definities	9
 
 ### Brontekst
 
-**Artikel 3.25 – Nietigheid	33**
+**Artikel 3.25 Nietigheid	33**
 
 
-## Artikel 3.26 – Kennisgevingen en algemene inkoopvoorwaarden	33
+## Artikel 3.26 Kennisgevingen en algemene inkoopvoorwaarden	33
 
 ### Mogelijke chatbotvragen
 
@@ -528,10 +528,10 @@ Definities	9
 
 ### Brontekst
 
-**Artikel 3.26 – Kennisgevingen en algemene inkoopvoorwaarden	33**
+**Artikel 3.26 Kennisgevingen en algemene inkoopvoorwaarden	33**
 
 
-## Artikel 3.27 – Betekenis na beëindiging	33
+## Artikel 3.27 Betekenis na beëindiging	33
 
 ### Mogelijke chatbotvragen
 
@@ -540,10 +540,10 @@ Definities	9
 
 ### Brontekst
 
-**Artikel 3.27 – Betekenis na beëindiging	33**
+**Artikel 3.27 Betekenis na beëindiging	33**
 
 
-## Artikel 3.28 – Aansprakelijkheid	33
+## Artikel 3.28 Aansprakelijkheid	33
 
 ### Mogelijke chatbotvragen
 
@@ -552,10 +552,10 @@ Definities	9
 
 ### Brontekst
 
-**Artikel 3.28 – Aansprakelijkheid	33**
+**Artikel 3.28 Aansprakelijkheid	33**
 
 
-## Artikel 3.29 – Wijzigen van omstandigheden	34
+## Artikel 3.29 Wijzigen van omstandigheden	34
 
 ### Mogelijke chatbotvragen
 
@@ -564,10 +564,10 @@ Definities	9
 
 ### Brontekst
 
-**Artikel 3.29 – Wijzigen van omstandigheden	34**
+**Artikel 3.29 Wijzigen van omstandigheden	34**
 
 
-## Artikel 3.30 – Wijziging van de contractstandaard	34
+## Artikel 3.30 Wijziging van de contractstandaard	34
 
 ### Mogelijke chatbotvragen
 
@@ -576,10 +576,10 @@ Definities	9
 
 ### Brontekst
 
-**Artikel 3.30 – Wijziging van de contractstandaard	34**
+**Artikel 3.30 Wijziging van de contractstandaard	34**
 
 
-## Artikel 3.31 – Inbreuk persoonsgegevens	35
+## Artikel 3.31 Inbreuk persoonsgegevens	35
 
 ### Mogelijke chatbotvragen
 
@@ -588,7 +588,7 @@ Definities	9
 
 ### Brontekst
 
-**Artikel 3.31 – Inbreuk persoonsgegevens	35**
+**Artikel 3.31 Inbreuk persoonsgegevens	35**
 
 
 # Partijen
@@ -741,7 +741,7 @@ Specifieke toewijzing: Opdrachtgever bepaalt in een opdracht aan Opdrachtnemer p
 # Deel 1: Bepalingen die gelden tussen Opdrachtgever en alle Opdrachtnemers waarmee Opdrachtgever een overeenkomst sluit
 
 
-## Artikel 1.1 – Voorwerp van de overeenkomst
+## Artikel 1.1 Voorwerp van de overeenkomst
 
 ### Mogelijke chatbotvragen
 
@@ -750,7 +750,7 @@ Specifieke toewijzing: Opdrachtgever bepaalt in een opdracht aan Opdrachtnemer p
 
 ### Brontekst
 
-**Artikel 1.1 – Voorwerp van de overeenkomst**
+**Artikel 1.1 Voorwerp van de overeenkomst**
 
 De overeenkomst heeft betrekking op maatschappelijke ondersteuning bestaande uit activiteiten gericht op het bevorderen van zelfredzaamheid en participatie van de cliënt opdat hij zo lang mogelijk in zijn eigen leefomgeving kan blijven.
 
@@ -759,7 +759,7 @@ Meer specifiek gaat het om de volgende maatschappelijke ondersteuning:
 [Uitwerken vorm(en) van ondersteuning, bijvoorbeeld ‘huishoudelijke ondersteuning’, de kwaliteitseisen die daaraan zijn gesteld (of verwijzen naar de vindplaats daarvan, tenzij wettelijk voorgeschreven) en de prijs die de Gemeente ervoor betaalt]
 
 
-## Artikel 1.2 – Hiërarchische volgorde documenten
+## Artikel 1.2 Hiërarchische volgorde documenten
 
 ### Mogelijke chatbotvragen
 
@@ -768,7 +768,7 @@ Meer specifiek gaat het om de volgende maatschappelijke ondersteuning:
 
 ### Brontekst
 
-**Artikel 1.2 – Hiërarchische volgorde documenten**
+**Artikel 1.2 Hiërarchische volgorde documenten**
 
 De volgende documenten en bijlagen zijn (in hiërarchische volgorde) van toepassing. Zij maken integraal onderdeel uit van de overeenkomst die Partijen sluiten. Het gaat steeds om de gepubliceerde, meest actuele versie van:
 
@@ -809,7 +809,7 @@ en/of
 4.3.2.	[bijlagen benoemen]
 
 
-## Artikel 1.3 – Looptijd
+## Artikel 1.3 Looptijd
 
 ### Mogelijke chatbotvragen
 
@@ -818,7 +818,7 @@ en/of
 
 ### Brontekst
 
-**Artikel 1.3 – Looptijd**
+**Artikel 1.3 Looptijd**
 
 1.3.1
 De overeenkomst start op [begindatum] en loopt tot en met [einddatum].
@@ -843,7 +843,7 @@ Opdrachtgever mag naast de mogelijkheden genoemd in artikel 1.4.2, [1.6.1], 3.19
 Opdrachtnemer moet dan wel voldoen aan de volgende voorwaarden: [voorwaarden benoemen].
 
 
-## Artikel 1.4 – Herzieningsclausule
+## Artikel 1.4 Herzieningsclausule
 
 ### Mogelijke chatbotvragen
 
@@ -852,7 +852,7 @@ Opdrachtnemer moet dan wel voldoen aan de volgende voorwaarden: [voorwaarden ben
 
 ### Brontekst
 
-**Artikel 1.4 – Herzieningsclausule**
+**Artikel 1.4 Herzieningsclausule**
 
 1.4.1
 Opdrachtgever mag de overeenkomst tussentijds wijzigen na overleg met Opdrachtnemer. Deze wijzigingsbevoegdheid komt boven op de mogelijkheden in artikel 3.22, 3.25, 3.29.2 en 3.30.
@@ -880,7 +880,7 @@ Opdrachtnemer weigert een wijziging niet zonder goede reden. Als Opdrachtnemer d
 Bij opzegging op basis van dit artikel vergoeden Partijen geen schade of kosten. Andere wijzigingsbepalingen in de overeenkomst blijven ook gelden. (Bij Europese aanbestedingsprocedures:) De wijzigingsmogelijkheden uit de Aanbestedingswet 2012 gelden: artikel 2.163b, 2.163d, 2.163e en 2.163f.
 
 
-## Artikel 1.5 – Bestedingsruimte
+## Artikel 1.5 Bestedingsruimte
 
 ### Mogelijke chatbotvragen
 
@@ -889,7 +889,7 @@ Bij opzegging op basis van dit artikel vergoeden Partijen geen schade of kosten.
 
 ### Brontekst
 
-**Artikel 1.5 – Bestedingsruimte**
+**Artikel 1.5 Bestedingsruimte**
 
 1.5.1
 Opdrachtgever mag alleen via artikel 1.4, gedurende de looptijd van de overeenkomst, een bestedingsruimte invoeren of aanpassen.
@@ -974,7 +974,7 @@ Verwacht één van de Partijen dat de maximale ruimte wordt bereikt, dan kunnen 
 Opdrachtgever heft de cliëntenstop op als Opdrachtnemer weer ruimte heeft binnen de nieuwe bestedingsruimte. Opdrachtnemer onderbouwt die ruimte met cijfers. Opdrachtgever beslist of er daadwerkelijk genoeg ruimte is om de stop op te heffen.
 
 
-## Artikel 1.6 – Opzegging bij onvoldoende inzet
+## Artikel 1.6 Opzegging bij onvoldoende inzet
 
 ### Mogelijke chatbotvragen
 
@@ -983,7 +983,7 @@ Opdrachtgever heft de cliëntenstop op als Opdrachtnemer weer ruimte heeft binne
 
 ### Brontekst
 
-**Artikel 1.6 – Opzegging bij onvoldoende inzet**
+**Artikel 1.6 Opzegging bij onvoldoende inzet**
 
 1.6.1
 Als Opdrachtnemer binnen 12 kalendermaanden na de start van de overeenkomst onvoldoende inzet pleegt, dan mag Opdrachtgever de overeenkomst schriftelijk opzeggen met een opzegtermijn van 6 maanden. Met onvoldoende inzet bedoelen Partijen: [bijvoorbeeld minder dan een concrete omzet of minder dan een concreet aantal geholpen cliënten]
@@ -998,7 +998,7 @@ Opdrachtnemer een aantoonbaar uniek aanbod levert dat anders zou verdwijnen;
 Opdrachtnemer binnen 12 kalendermaanden een gemiddelde klanttevredenheid van 8.5 of hoger haalt, gemeten met een door Opdrachtgever goedgekeurde methode.
 
 
-## Artikel 1.7 – 18-/18+
+## Artikel 1.7 18-/18+
 
 ### Mogelijke chatbotvragen
 
@@ -1007,7 +1007,7 @@ Opdrachtnemer binnen 12 kalendermaanden een gemiddelde klanttevredenheid van 8.5
 
 ### Brontekst
 
-**Artikel 1.7 – 18-/18+**
+**Artikel 1.7 18-/18+**
 
 
 **1.7.1**
@@ -1020,7 +1020,7 @@ Opdrachtnemer die een maatwerkvoorziening levert of gaat leveren aan een cliënt
 Opdrachtnemer organiseert de voorwaarden voor de inzet van een maatwerkvoorziening als de jeugdhulpaanbieder aantoont dat vanuit goed hulpverlenerschap van de jeugdhulpaanbieder is te verwachten dat deze ook die maatwerkvoorziening organiseert vóór het 18e levensjaar van een jeugdige. Voor de inzet van de maatwerkvoorziening onder dit lid is schriftelijke goedkeuring nodig van Opdrachtgever.
 
 
-## Artikel 1.8 – Bibob Onderzoek
+## Artikel 1.8 Bibob Onderzoek
 
 ### Mogelijke chatbotvragen
 
@@ -1029,7 +1029,7 @@ Opdrachtnemer organiseert de voorwaarden voor de inzet van een maatwerkvoorzieni
 
 ### Brontekst
 
-**Artikel 1.8 – Bibob Onderzoek**
+**Artikel 1.8 Bibob Onderzoek**
 
 
 **1.8.1**
@@ -1059,7 +1059,7 @@ Opdrachtgever laat Opdrachtnemer weten wanneer hij een Bibob-advies aanvraagt bi
 
 **1.8.4**
 
-Na ontvangst van het advies – zoals bedoeld in artikel 1.8.3 van deze overeenkomst - informeert Opdrachtgever Opdrachtnemer en biedt hij de mogelijkheid om een zienswijze te geven. Daarbij respecteert Opdrachtgever het beginsel van hoor en wederhoor. Vervolgens beslist Opdrachtgever of hij gevolgen verbindt aan het advies en zo ja, welke. Hij houdt daarbij rekening met de regels uit de Wet Bibob.
+Na ontvangst van het advies zoals bedoeld in artikel 1.8.3 van deze overeenkomst - informeert Opdrachtgever Opdrachtnemer en biedt hij de mogelijkheid om een zienswijze te geven. Daarbij respecteert Opdrachtgever het beginsel van hoor en wederhoor. Vervolgens beslist Opdrachtgever of hij gevolgen verbindt aan het advies en zo ja, welke. Hij houdt daarbij rekening met de regels uit de Wet Bibob.
 
 
 **1.8.5**
@@ -1071,7 +1071,7 @@ a. de overeenkomst met Opdrachtnemer te ontbinden; of
 b. wel of geen toestemming te geven voor de inzet van een (beoogde) onderaannemer.
 
 
-## Artikel 1.9 – Social Return on Investment
+## Artikel 1.9 Social Return on Investment
 
 ### Mogelijke chatbotvragen
 
@@ -1080,12 +1080,12 @@ b. wel of geen toestemming te geven voor de inzet van een (beoogde) onderaanneme
 
 ### Brontekst
 
-**Artikel 1.9 – Social Return on Investment**
+**Artikel 1.9 Social Return on Investment**
 
 Opdrachtgever wil de volgende voorwaarden stellen: [invullen]
 
 
-## Artikel 1.10 – Implementatiebepaling
+## Artikel 1.10 Implementatiebepaling
 
 ### Mogelijke chatbotvragen
 
@@ -1094,7 +1094,7 @@ Opdrachtgever wil de volgende voorwaarden stellen: [invullen]
 
 ### Brontekst
 
-**Artikel 1.10 – Implementatiebepaling**
+**Artikel 1.10 Implementatiebepaling**
 
 De opdrachtgever vult hier in hoe hij wil omgaan met de overgang naar een nieuwe overeenkomst zowel voor bestaande als voor nieuwe aanbieders als het gaat om de duur en bekostiging van lopende beschikkingen onder oude overeenkomst en wanneer en hoe overgang naar nieuwe overeenkomst.
 
@@ -1118,7 +1118,7 @@ De opdrachtgever vult hier in hoe hij wil omgaan met de overgang naar een nieuwe
 # Hoofdstuk 1: Levering van maatschappelijke ondersteuning
 
 
-## Artikel 3.1 – Levering van maatschappelijke ondersteuning
+## Artikel 3.1 Levering van maatschappelijke ondersteuning
 
 ### Mogelijke chatbotvragen
 
@@ -1127,7 +1127,7 @@ De opdrachtgever vult hier in hoe hij wil omgaan met de overgang naar een nieuwe
 
 ### Brontekst
 
-**Artikel 3.1 – Levering van maatschappelijke ondersteuning**
+**Artikel 3.1 Levering van maatschappelijke ondersteuning**
 
 3.1.1
 Bij inspanningsgerichte of outputgerichte uitvoeringsvariant:
@@ -1163,7 +1163,7 @@ naam, telefoonnummer en e-mailadres van de contactpersoon
 Als Partijen aparte afspraken maken over individuele opdrachten onder deze overeenkomst in een nadere overeenkomst, dan blijven de regels uit deze overeenkomst volledig van kracht.
 
 
-## Artikel 3.2 – Indexering
+## Artikel 3.2 Indexering
 
 ### Mogelijke chatbotvragen
 
@@ -1172,7 +1172,7 @@ Als Partijen aparte afspraken maken over individuele opdrachten onder deze overe
 
 ### Brontekst
 
-**Artikel 3.2 – Indexering**
+**Artikel 3.2 Indexering**
 
 
 **3.2.1**
@@ -1185,7 +1185,7 @@ Opdrachtgever past [periode] een indexering toe op de tarieven (inspanningsgeric
 Opdrachtgever verhoogt of verlaagt de tarieven (inspanningsgerichte en outputgerichte uitvoeringsvariant) / het taakgerichte budget (taakgerichte uitvoeringsvariant) voor [xx]% op basis van het geprognosticeerde en definitieve [gebruikte indexcijfer] voor personele kosten en voor [xx]% op basis van het geprognosticeerde en definitieve [gebruikte indexcijfer] voor materiële kosten.
 
 
-## Artikel 3.3 – Marketing
+## Artikel 3.3 Marketing
 
 ### Mogelijke chatbotvragen
 
@@ -1194,7 +1194,7 @@ Opdrachtgever verhoogt of verlaagt de tarieven (inspanningsgerichte en outputger
 
 ### Brontekst
 
-**Artikel 3.3 – Marketing**
+**Artikel 3.3 Marketing**
 
 3.3.1
 Als Opdrachtnemer marketing gebruikt, dan houdt hij zich aan de gedragsregels voor marketing. Deze regels zijn:
@@ -1211,7 +1211,7 @@ g) Hij gebruikt geen agressieve verkooptechnieken richting cliënten.
 Opdrachtnemer houdt zich ook aan deze regels bij marketing voor diensten die hij levert via een persoonsgebonden budget in de gemeente.
 
 
-## Artikel 3.4 – Continuïteit van maatschappelijke ondersteuning
+## Artikel 3.4 Continuïteit van maatschappelijke ondersteuning
 
 ### Mogelijke chatbotvragen
 
@@ -1220,7 +1220,7 @@ Opdrachtnemer houdt zich ook aan deze regels bij marketing voor diensten die hij
 
 ### Brontekst
 
-**Artikel 3.4 – Continuïteit van maatschappelijke ondersteuning**
+**Artikel 3.4 Continuïteit van maatschappelijke ondersteuning**
 
 3.4.1
 Opdrachtnemer garandeert dat de ondersteuning voor cliënten doorgaat.
@@ -1240,7 +1240,7 @@ e) een tuchtrechtelijke of strafrechtelijke maatregel.
 Partijen overleggen altijd bij dit soort situaties.
 
 
-## Artikel 3.5 – Wachttijden en cliëntenstop door Opdrachtgever
+## Artikel 3.5 Wachttijden en cliëntenstop door Opdrachtgever
 
 ### Mogelijke chatbotvragen
 
@@ -1249,7 +1249,7 @@ Partijen overleggen altijd bij dit soort situaties.
 
 ### Brontekst
 
-**Artikel 3.5 – Wachttijden en cliëntenstop door Opdrachtgever**
+**Artikel 3.5 Wachttijden en cliëntenstop door Opdrachtgever**
 
 3.5.1
 Opdrachtnemer doet zijn best om wachttijden te voorkomen. Als er landelijke wachttijdnormen zijn, dan past Opdrachtnemer deze toe. Als er geen normen zijn, dan gelden de Treeknormen. Als Opdrachtnemer niet onder een Treeknorm voor een specifieke branche valt, dan gelden de Treeknormen Gehandicaptenzorg. Als Partijen de Treeknormen Gehandicaptenzorg niet passend vinden, dan spreken zij samen een andere norm af en leggen die vast in deel 1 of 2.
@@ -1279,7 +1279,7 @@ een cliëntenstop instellen,
 of een opdracht beëindigen en aan een andere opdrachtnemer geven.
 
 
-## Artikel 3.6 – Cliëntenstop door Opdrachtnemer
+## Artikel 3.6 Cliëntenstop door Opdrachtnemer
 
 ### Mogelijke chatbotvragen
 
@@ -1288,14 +1288,14 @@ of een opdracht beëindigen en aan een andere opdrachtnemer geven.
 
 ### Brontekst
 
-**Artikel 3.6 – Cliëntenstop door Opdrachtnemer**
+**Artikel 3.6 Cliëntenstop door Opdrachtnemer**
 
 Alleen bij de inspannings- of outputgerichte uitvoeringsvariant met meerdere opdrachtnemers of samenwerkingen:
 
 Als Opdrachtnemer een cliëntenstop wil instellen voor een bepaalde vorm van maatschappelijke ondersteuning dan overlegt hij vooraf met Opdrachtgever over een mogelijke oplossing. Opdrachtnemer informeert Opdrachtgever schriftelijk volgens de gemaakte afspraken. Hij meldt ook of er alternatieve of passende maatschappelijke ondersteuning beschikbaar is. Dit doet hij minimaal 14 kalenderdagen voordat de cliëntenstop ingaat. Opdrachtnemer stelt de cliëntenstop pas in na schriftelijke toestemming van Opdrachtgever. Opdrachtnemer zorgt altijd voor voldoende crisishulp en andere acute hulp. Hij mag deze ondersteuning nooit weigeren.
 
 
-## Artikel 3.7 – Weigering en beëindiging van maatschappelijke ondersteuning
+## Artikel 3.7 Weigering en beëindiging van maatschappelijke ondersteuning
 
 ### Mogelijke chatbotvragen
 
@@ -1304,12 +1304,12 @@ Als Opdrachtnemer een cliëntenstop wil instellen voor een bepaalde vorm van maa
 
 ### Brontekst
 
-**Artikel 3.7 – Weigering en beëindiging van maatschappelijke ondersteuning**
+**Artikel 3.7 Weigering en beëindiging van maatschappelijke ondersteuning**
 
 Opdrachtnemer mag ondersteuning aan een cliënt alleen weigeren of stoppen, als dit mag volgens de wet. Bij beëindiging houdt Opdrachtnemer minimaal één maand opzegtermijn aan. Op verzoek van Opdrachtgever helpt Opdrachtnemer actief met het vinden van een passend alternatief. Als er een dringende reden is, dan mag de opzegtermijn korter zijn, maar de zorgvuldigheid blijft verplicht. Totdat een alternatief is gevonden, blijft Opdrachtnemer verantwoordelijk voor de maatschappelijke ondersteuning of regelt hij overbruggingszorg.
 
 
-## Artikel 3.8 – Wijziging ondersteuningsbehoefte
+## Artikel 3.8 Wijziging ondersteuningsbehoefte
 
 ### Mogelijke chatbotvragen
 
@@ -1318,7 +1318,7 @@ Opdrachtnemer mag ondersteuning aan een cliënt alleen weigeren of stoppen, als 
 
 ### Brontekst
 
-**Artikel 3.8 – Wijziging ondersteuningsbehoefte**
+**Artikel 3.8 Wijziging ondersteuningsbehoefte**
 
 Bij inspanningsgerichte en outputgerichte uitvoering:
 Als de ondersteuningsvraag van de cliënt verandert, dan overlegt Opdrachtnemer op tijd met de cliënt over het aanvragen van een nieuw besluit bij het college. Als Opdrachtnemer is gemachtigd door de cliënt, dan doet hij de aanvraag namens de cliënt, in overleg met de cliënt.
@@ -1327,7 +1327,7 @@ Bij taakgerichte uitvoering:
 Als de ondersteuningsvraag van de cliënt verandert, dan overlegt Opdrachtnemer op tijd met de cliënt over het aanpassen van de ondersteuning.
 
 
-## Artikel 3.9 – Hoofd- en onderaanneming
+## Artikel 3.9 Hoofd- en onderaanneming
 
 ### Mogelijke chatbotvragen
 
@@ -1336,10 +1336,10 @@ Als de ondersteuningsvraag van de cliënt verandert, dan overlegt Opdrachtnemer 
 
 ### Brontekst
 
-**Artikel 3.9 – Hoofd- en onderaanneming**
+**Artikel 3.9 Hoofd- en onderaanneming**
 
 3.9.1
-Opdrachtnemer meldt vooraf aan Opdrachtgever als hij maatschappelijke ondersteuning wil uitbesteden aan een onderaannemer. Hij heeft daarvoor schriftelijke toestemming nodig, behalve bij een zelfstandige zonder personeel. De onderaannemer houdt zich aan de geldende wet- en regelgeving en de bepalingen zoals opgenomen in deze overeenkomst.  Opdrachtgever mag – om dat te kunnen toetsen - daarvoor een Bibob-onderzoek uitvoeren of laten uitvoeren, zoals bedoeld in artikel 1.8 van de overeenkomst. Als de uitkomst van dat onderzoek daartoe aanleiding geeft, weigert Opdrachtgever de inzet van de onderaannemer.  Opdrachtnemer stelt zelf het ondersteuningsaanbod voor de cliënt samen en legt hierover verantwoording af aan Opdrachtgever.
+Opdrachtnemer meldt vooraf aan Opdrachtgever als hij maatschappelijke ondersteuning wil uitbesteden aan een onderaannemer. Hij heeft daarvoor schriftelijke toestemming nodig, behalve bij een zelfstandige zonder personeel. De onderaannemer houdt zich aan de geldende wet- en regelgeving en de bepalingen zoals opgenomen in deze overeenkomst.  Opdrachtgever mag om dat te kunnen toetsen - daarvoor een Bibob-onderzoek uitvoeren of laten uitvoeren, zoals bedoeld in artikel 1.8 van de overeenkomst. Als de uitkomst van dat onderzoek daartoe aanleiding geeft, weigert Opdrachtgever de inzet van de onderaannemer.  Opdrachtnemer stelt zelf het ondersteuningsaanbod voor de cliënt samen en legt hierover verantwoording af aan Opdrachtgever.
 
 3.9.2
 Opdrachtnemer schakelt de onderaannemer in op eigen risico. Hij blijft volledig verantwoordelijk voor zijn afspraken uit deze overeenkomst. De onderaannemer moet staan ingeschreven in het Handelsregister. Er mag geen straf-, bestuurs- of fraudeonderzoek lopen tegen de onderaannemer.
@@ -1357,7 +1357,7 @@ Opdrachtnemer maakt met elke onderaannemer afspraken. De onderaannemer mag zelf 
 Opdrachtnemer is het aanspreekpunt voor Opdrachtgever. Hij mag namens alle betrokkenen contact hebben met Opdrachtgever. Opdrachtgever betaalt alleen aan Opdrachtnemer, niet aan onderaannemers. Alleen Opdrachtnemer kan rechten uitoefenen tegenover Opdrachtgever.
 
 
-## Artikel 3.9a – Verklaring omtrent gedrag personeel
+## Artikel 3.9a Verklaring omtrent gedrag personeel
 
 ### Mogelijke chatbotvragen
 
@@ -1366,7 +1366,7 @@ Opdrachtnemer is het aanspreekpunt voor Opdrachtgever. Hij mag namens alle betro
 
 ### Brontekst
 
-**Artikel 3.9a – Verklaring omtrent gedrag personeel**
+**Artikel 3.9a Verklaring omtrent gedrag personeel**
 
 3.9a.1
 
@@ -1388,7 +1388,7 @@ Opdrachtgever kan ook buiten de termijn van drie jaar om een nieuwe VOG vragen. 
 # Hoofdstuk 2: Informatievoorziening, overleg en uitwisseling gegevens
 
 
-## Artikel 3.10 – Informatievoorziening aan de gemeente
+## Artikel 3.10 Informatievoorziening aan de gemeente
 
 ### Mogelijke chatbotvragen
 
@@ -1397,7 +1397,7 @@ Opdrachtgever kan ook buiten de termijn van drie jaar om een nieuwe VOG vragen. 
 
 ### Brontekst
 
-**Artikel 3.10 – Informatievoorziening aan de gemeente**
+**Artikel 3.10 Informatievoorziening aan de gemeente**
 
 3.10.1
 Opdrachtnemer geeft Opdrachtgever op verzoek de gegevens die nodig zijn om zijn taken goed uit te voeren. Dit mag alleen als dat verplicht is volgens de Wmo 2015 of andere regels.  Opdrachtgever vraagt geen gegevens op als hij deze al heeft of kan krijgen van het CBS.  Opdrachtgever voorkomt onnodige administratieve lasten.
@@ -1451,7 +1451,7 @@ Opdrachtgever kan aan de melding rechtsgevolgen verbinden.
 # Hoofdstuk 3: iWmo
 
 
-## Artikel 3.11 – iWmo
+## Artikel 3.11 iWmo
 
 ### Mogelijke chatbotvragen
 
@@ -1460,7 +1460,7 @@ Opdrachtgever kan aan de melding rechtsgevolgen verbinden.
 
 ### Brontekst
 
-**Artikel 3.11 – iWmo**
+**Artikel 3.11 iWmo**
 
 Alleen bij inspanningsgerichte en outputgerichte uitvoeringsvariant
 
@@ -1470,7 +1470,7 @@ Partijen volgen altijd de meest actuele regels uit het Informatiemodel iStandaar
 # Hoofdstuk 4: Declaratie en betaling
 
 
-## Artikel 3.12 – Onverschuldigde betaling
+## Artikel 3.12 Onverschuldigde betaling
 
 ### Mogelijke chatbotvragen
 
@@ -1479,12 +1479,12 @@ Partijen volgen altijd de meest actuele regels uit het Informatiemodel iStandaar
 
 ### Brontekst
 
-**Artikel 3.12 – Onverschuldigde betaling**
+**Artikel 3.12 Onverschuldigde betaling**
 
 Als Opdrachtgever per ongeluk te veel betaalt, dan vordert hij dit bedrag terug, ook als het om eerdere jaren gaat. Opdrachtgever mag dit bedrag ook verrekenen met openstaande of toekomstige declaraties. Ze telt daar wettelijke rente en kosten bij op.
 
 
-## Artikel 3.13 – Declaratie en betaling van de geleverde maatschappelijke ondersteuning
+## Artikel 3.13 Declaratie en betaling van de geleverde maatschappelijke ondersteuning
 
 ### Mogelijke chatbotvragen
 
@@ -1493,13 +1493,13 @@ Als Opdrachtgever per ongeluk te veel betaalt, dan vordert hij dit bedrag terug,
 
 ### Brontekst
 
-**Artikel 3.13 – Declaratie en betaling van de geleverde maatschappelijke ondersteuning**
+**Artikel 3.13 Declaratie en betaling van de geleverde maatschappelijke ondersteuning**
 
 3.13.1
 Partijen passen het actuele Standaard Administratieprotocol van het Ketenbureau i-Sociaal Domein toe. Dit protocol moet passen bij de afgesproken uitvoeringsvariant.
 
 
-## Artikel 3.14 – Uitgangspunten voor betaling
+## Artikel 3.14 Uitgangspunten voor betaling
 
 ### Mogelijke chatbotvragen
 
@@ -1508,7 +1508,7 @@ Partijen passen het actuele Standaard Administratieprotocol van het Ketenbureau 
 
 ### Brontekst
 
-**Artikel 3.14 – Uitgangspunten voor betaling**
+**Artikel 3.14 Uitgangspunten voor betaling**
 
 3.14.1
 Opdrachtgever betaalt voor de maatschappelijke ondersteuning volgens de afspraken in deel 1 en/of deel 2 van deze overeenkomst.
@@ -1520,7 +1520,7 @@ Opdrachtgever betaalt alleen voor ondersteuning die Opdrachtnemer echt en goed h
 # Hoofdstuk 5: Fraude en integriteit
 
 
-## Artikel 3.15 – UBO (Ultimate Beneficial Owner)
+## Artikel 3.15 UBO (Ultimate Beneficial Owner)
 
 ### Mogelijke chatbotvragen
 
@@ -1529,7 +1529,7 @@ Opdrachtgever betaalt alleen voor ondersteuning die Opdrachtnemer echt en goed h
 
 ### Brontekst
 
-**Artikel 3.15 – UBO (Ultimate Beneficial Owner)**
+**Artikel 3.15 UBO (Ultimate Beneficial Owner)**
 
 
 **3.15.1**
@@ -1551,7 +1551,7 @@ Onverminderd de geldigheid van deze overeenkomst betaalt de Opdrachtgever nooit 
 Indien de Opdrachtgever de UBO('s) van de Opdrachtnemer niet kan achterhalen en de Opdrachtnemer na het eerste verzoek van de Opdrachtgever geen informatie verstrekt over de UBO('s) zoals bedoeld in lid 2, dan heeft de Opdrachtgever de mogelijkheid om betalingen aan de Aanbieder op te schorten totdat de Opdrachtgever toereikende informatie over de UBO('s) van de Opdrachtnemer heeft verkregen.
 
 
-## Artikel 3.16 – Toezicht en handhaving
+## Artikel 3.16 Toezicht en handhaving
 
 ### Mogelijke chatbotvragen
 
@@ -1560,7 +1560,7 @@ Indien de Opdrachtgever de UBO('s) van de Opdrachtnemer niet kan achterhalen e
 
 ### Brontekst
 
-**Artikel 3.16 – Toezicht en handhaving**
+**Artikel 3.16 Toezicht en handhaving**
 
 
 **3.16.1**
@@ -1578,7 +1578,7 @@ Onverlet wettelijke bepalingen, verliest de Opdrachtnemer bij misbruik of fraude
 Wanneer de Opdrachtgever of de toezichthouder strafbare feiten constateert en fraude in de zin van deze overeenkomst, doet hij aangifte hiervan bij het Openbaar Ministerie en meldt dit bij het Informatie Knooppunt Zorgfraude.
 
 
-## Artikel 3.17 – Integriteit
+## Artikel 3.17 Integriteit
 
 ### Mogelijke chatbotvragen
 
@@ -1587,12 +1587,12 @@ Wanneer de Opdrachtgever of de toezichthouder strafbare feiten constateert en fr
 
 ### Brontekst
 
-**Artikel 3.17 – Integriteit**
+**Artikel 3.17 Integriteit**
 
 De organisatie en de bedrijfsvoering van de Opdrachtnemer is zo ingericht dat het goed en rechtmatig functioneren voldoende is geborgd. De Opdrachtnemer verklaart met het ondertekenen van deze overeenkomst dat hij daarvan doordrongen is.
 
 
-## Artikel 3.18 – Bevindingen toezichthouders
+## Artikel 3.18 Bevindingen toezichthouders
 
 ### Mogelijke chatbotvragen
 
@@ -1601,7 +1601,7 @@ De organisatie en de bedrijfsvoering van de Opdrachtnemer is zo ingericht dat he
 
 ### Brontekst
 
-**Artikel 3.18 – Bevindingen toezichthouders**
+**Artikel 3.18 Bevindingen toezichthouders**
 
 Als bevindingen van toezichthoudende organen waaronder, maar niet beperkt tot de Wmo- en Jeugdtoezichthouder, de IGJ, de NZa, de Belastingdienst, de Nederlandse Arbeidsinspectie en/of de Autoriteit Consument en Markt, leiden tot een oordeel ten aanzien van de levering van maatschappelijke ondersteuning geleverd door de Opdrachtnemer, dan betrekt de Opdrachtgever de gevolgen van deze bevindingen op deze overeenkomst. Dit geldt ook als de rapporten betrekking hebben op één of meer vertegenwoordigers van de Opdrachtnemer, zoals bestuurders of toezichthouders.
 
@@ -1609,7 +1609,7 @@ Als bevindingen van toezichthoudende organen waaronder, maar niet beperkt tot de
 # Hoofdstuk 6: Niet-nakoming, opzegging en ontbinding
 
 
-## Artikel 3.19 – Niet-nakoming, opzegging en ontbinding
+## Artikel 3.19 Niet-nakoming, opzegging en ontbinding
 
 ### Mogelijke chatbotvragen
 
@@ -1618,7 +1618,7 @@ Als bevindingen van toezichthoudende organen waaronder, maar niet beperkt tot de
 
 ### Brontekst
 
-**Artikel 3.19 – Niet-nakoming, opzegging en ontbinding**
+**Artikel 3.19 Niet-nakoming, opzegging en ontbinding**
 
 3.19.1
 Als Opdrachtnemer zijn afspraken niet nakomt, dan mag Opdrachtgever maatregelen nemen om dat te herstellen.
@@ -1668,7 +1668,7 @@ Als de overeenkomst stopt of Opdrachtnemer met zijn werk stopt, dan zorgt Opdrac
 # Hoofdstuk 7: Slotbepalingen
 
 
-## Artikel 3.20 – Overdracht van rechten en fusie
+## Artikel 3.20 Overdracht van rechten en fusie
 
 ### Mogelijke chatbotvragen
 
@@ -1677,7 +1677,7 @@ Als de overeenkomst stopt of Opdrachtnemer met zijn werk stopt, dan zorgt Opdrac
 
 ### Brontekst
 
-**Artikel 3.20 – Overdracht van rechten en fusie**
+**Artikel 3.20 Overdracht van rechten en fusie**
 
 3.20.1
 Slechts met voorafgaande schriftelijke goedkeuring van de Opdrachtgever, kan de Opdrachtnemer de uitvoering van de overeenkomst geheel of gedeeltelijk laten uitvoeren door derden of uit de Overeenkomst voortvloeiende rechten en/of plichten overdragen aan derden. Dit geldt niet voor het vestigen van beperkte rechten, zoals een pandrecht. De Opdrachtgever is te allen tijde bevoegd om deze goedkeuring in te trekken, indien blijkt dat deze derden niet in staat zijn om (hun deel van) de overeenkomst uit te voeren.
@@ -1689,7 +1689,7 @@ Als Opdrachtnemer zijn organisatie wil overdragen of de zeggenschap veranderen, 
 Als Opdrachtgever zijn rechten en plichten mag overdragen aan een ander, dan garandeert hij dat die partij de verplichtingen tegenover Opdrachtnemer blijft nakomen.
 
 
-## Artikel 3.21 – Financiële verantwoordelijkheid
+## Artikel 3.21 Financiële verantwoordelijkheid
 
 ### Mogelijke chatbotvragen
 
@@ -1698,7 +1698,7 @@ Als Opdrachtgever zijn rechten en plichten mag overdragen aan een ander, dan gar
 
 ### Brontekst
 
-**Artikel 3.21 – Financiële verantwoordelijkheid**
+**Artikel 3.21 Financiële verantwoordelijkheid**
 
 3.21.1
 Opdrachtnemer staat niet garant voor derden, tenzij Opdrachtgever daarvoor vooraf schriftelijke toestemming geeft.
@@ -1710,7 +1710,7 @@ Als Opdrachtgever een voorschot betaalt, dan mag hij dit op elk moment terugvrag
 Als iemand beslag legt op geld van Opdrachtnemer bij Opdrachtgever (derdenbeslag), dan mag Opdrachtgever de kosten die hierdoor ontstaan verhalen op Opdrachtnemer.
 
 
-## Artikel 3.22 – Noodzakelijke aanpassing
+## Artikel 3.22 Noodzakelijke aanpassing
 
 ### Mogelijke chatbotvragen
 
@@ -1719,12 +1719,12 @@ Als iemand beslag legt op geld van Opdrachtnemer bij Opdrachtgever (derdenbeslag
 
 ### Brontekst
 
-**Artikel 3.22 – Noodzakelijke aanpassing**
+**Artikel 3.22 Noodzakelijke aanpassing**
 
 Als Partijen de overeenkomst moeten aanpassen, bijvoorbeeld door een wetswijziging of nieuw beleid, dan overleggen Partijen zo snel mogelijk over een aanpassing. Als Partijen er niet uitkomen of is aanpassen juridisch niet toegestaan, bijvoorbeeld door aanbestedingsregels, dan mag elke partij de overeenkomst opzeggen met een termijn van 3 kalendermaanden. Daarvoor is geen rechter nodig. Als het gaat om een wetswijziging, dan geldt deze meteen, tenzij de wet iets anders bepaalt.
 
 
-## Artikel 3.23 – Geschillenregeling
+## Artikel 3.23 Geschillenregeling
 
 ### Mogelijke chatbotvragen
 
@@ -1733,12 +1733,12 @@ Als Partijen de overeenkomst moeten aanpassen, bijvoorbeeld door een wetswijzigi
 
 ### Brontekst
 
-**Artikel 3.23 – Geschillenregeling**
+**Artikel 3.23 Geschillenregeling**
 
 Als Partijen een conflict krijgen over de uitvoering van de overeenkomst, dan overleggen zij eerst samen om een oplossing te vinden. Als dat niet lukt, leggen zij het conflict voor aan de Geschillencommissie Sociaal Domein of aan de bevoegde rechter.
 
 
-## Artikel 3.24 – Ongeldige overeenkomst
+## Artikel 3.24 Ongeldige overeenkomst
 
 ### Mogelijke chatbotvragen
 
@@ -1747,12 +1747,12 @@ Als Partijen een conflict krijgen over de uitvoering van de overeenkomst, dan ov
 
 ### Brontekst
 
-**Artikel 3.24 – Ongeldige overeenkomst**
+**Artikel 3.24 Ongeldige overeenkomst**
 
 Als Opdrachtnemer een overeenkomst terugstuurt met doorhalingen of opmerkingen, dan mag Opdrachtgever die overeenkomst ongeldig verklaren. Opdrachtgever meldt dit schriftelijk aan Opdrachtnemer. Daarna stuurt Opdrachtgever een nieuwe, ongewijzigde versie van de overeenkomst. Opdrachtnemer krijgt 3 weken om deze alsnog te ondertekenen en terug te sturen.
 
 
-## Artikel 3.25 – Nietigheid
+## Artikel 3.25 Nietigheid
 
 ### Mogelijke chatbotvragen
 
@@ -1761,12 +1761,12 @@ Als Opdrachtnemer een overeenkomst terugstuurt met doorhalingen of opmerkingen, 
 
 ### Brontekst
 
-**Artikel 3.25 – Nietigheid**
+**Artikel 3.25 Nietigheid**
 
 Als een bepaling in deze overeenkomst ongeldig is of als een rechter die ongeldig verklaart, dan blijven de andere bepalingen gewoon geldig. Partijen overleggen samen over een vervangende afspraak die past binnen de wet. Die afspraak moet zo goed mogelijk aansluiten bij de bedoeling van deze overeenkomst.
 
 
-## Artikel 3.26 – Kennisgevingen en algemene inkoopvoorwaarden
+## Artikel 3.26 Kennisgevingen en algemene inkoopvoorwaarden
 
 ### Mogelijke chatbotvragen
 
@@ -1775,7 +1775,7 @@ Als een bepaling in deze overeenkomst ongeldig is of als een rechter die ongeldi
 
 ### Brontekst
 
-**Artikel 3.26 – Kennisgevingen en algemene inkoopvoorwaarden**
+**Artikel 3.26 Kennisgevingen en algemene inkoopvoorwaarden**
 
 3.26.1
 a) Partijen sturen mededelingen over deze overeenkomst altijd schriftelijk. Mondelinge afspraken gelden pas als die schriftelijk zijn bevestigd.
@@ -1788,7 +1788,7 @@ c) Deze afspraken gelden ook voor andere overeenkomsten die Partijen later sluit
 Op deze overeenkomst gelden de laatste model-inkoopvoorwaarden van de VNG (september 2024). Afwijkingen daarvan zijn in deze overeenkomst opgenomen. De volgende artikelen uit de VNG-voorwaarden gelden niet: 16, 20.1, 20.2, 21, 22, 23 en 25.3. Opdrachtnemer verklaart dat hij deze voorwaarden heeft ontvangen en hiermee akkoord gaat. Voorwaarden van Opdrachtnemer of derden gelden niet.
 
 
-## Artikel 3.27 – Betekenis na beëindiging
+## Artikel 3.27 Betekenis na beëindiging
 
 ### Mogelijke chatbotvragen
 
@@ -1797,12 +1797,12 @@ Op deze overeenkomst gelden de laatste model-inkoopvoorwaarden van de VNG (septe
 
 ### Brontekst
 
-**Artikel 3.27 – Betekenis na beëindiging**
+**Artikel 3.27 Betekenis na beëindiging**
 
 Als er afspraken in deze overeenkomst staan die ook na afloop belangrijk blijven, dan mogen Partijen zich ook na afloop op die afspraken beroepen.
 
 
-## Artikel 3.28 – Aansprakelijkheid
+## Artikel 3.28 Aansprakelijkheid
 
 ### Mogelijke chatbotvragen
 
@@ -1811,7 +1811,7 @@ Als er afspraken in deze overeenkomst staan die ook na afloop belangrijk blijven
 
 ### Brontekst
 
-**Artikel 3.28 – Aansprakelijkheid**
+**Artikel 3.28 Aansprakelijkheid**
 
 
 **3.28.1**
@@ -1858,7 +1858,7 @@ Opdrachtnemer wijzigt het verzekerde bedrag of de polisvoorwaarden tijdens de lo
 Als Opdrachtnemer nog niet beschikt over een verzekering die nodig is voor de uitvoering van de overeenkomst, sluit hij deze alsnog af. Hij houdt deze verzekering ten minste aan zolang de uitvoering van de overeenkomst duurt.
 
 
-## Artikel 3.29 – Wijzigen van omstandigheden
+## Artikel 3.29 Wijzigen van omstandigheden
 
 ### Mogelijke chatbotvragen
 
@@ -1867,7 +1867,7 @@ Als Opdrachtnemer nog niet beschikt over een verzekering die nodig is voor de ui
 
 ### Brontekst
 
-**Artikel 3.29 – Wijzigen van omstandigheden**
+**Artikel 3.29 Wijzigen van omstandigheden**
 
 3.29.1
 Als er iets belangrijks verandert dat invloed heeft op deze overeenkomst, dan informeren Partijen elkaar daar terstond over.
@@ -1882,7 +1882,7 @@ Opdrachtnemer meldt altijd:
 Als de wet (bijvoorbeeld de Wmo 2015) verandert waardoor de afgesproken maatschappelijke ondersteuning niet meer vergoed wordt, dan stopt dat deel van de overeenkomst automatisch, vanaf de datum waarop de wijziging ingaat. Opdrachtgever hoeft in dat geval geen schadevergoeding te betalen.
 
 
-## Artikel 3.30 – Wijziging van de contractstandaard
+## Artikel 3.30 Wijziging van de contractstandaard
 
 ### Mogelijke chatbotvragen
 
@@ -1891,7 +1891,7 @@ Als de wet (bijvoorbeeld de Wmo 2015) verandert waardoor de afgesproken maatscha
 
 ### Brontekst
 
-**Artikel 3.30 – Wijziging van de contractstandaard**
+**Artikel 3.30 Wijziging van de contractstandaard**
 
 3.30.1
 Als de landelijke contractstandaard maatwerkovereenkomsten maatschappelijke ondersteuning (voor inspanningsgericht, outputgericht of taakgericht) wijzigt, dan passen Partijen deze overeenkomst aan.
@@ -1931,7 +1931,7 @@ Opdrachtnemer weigert een wijziging niet zonder goede reden. Als Opdrachtnemer d
 Opzegging op basis van dit artikel geeft geen recht op schadevergoeding. (Bij een Europese aanbestedingsprocedure:) De artikelen 2.163b, 2.163d, 2.163e en 2.163f van de Aanbestedingswet 2012 blijven gelden.
 
 
-## Artikel 3.31 – Inbreuk persoonsgegevens
+## Artikel 3.31 Inbreuk persoonsgegevens
 
 ### Mogelijke chatbotvragen
 
@@ -1940,7 +1940,7 @@ Opzegging op basis van dit artikel geeft geen recht op schadevergoeding. (Bij ee
 
 ### Brontekst
 
-**Artikel 3.31 – Inbreuk persoonsgegevens**
+**Artikel 3.31 Inbreuk persoonsgegevens**
 
 Als Opdrachtnemer zelf verantwoordelijk is voor de verwerking van persoonsgegevens, dan meldt hij een (mogelijk) datalek direct aan Opdrachtgever, maar in ieder geval binnen 24 uur na ontdekking. Opdrachtnemer geeft daarbij aan:
 – wat de vermoedelijke oorzaak is,
