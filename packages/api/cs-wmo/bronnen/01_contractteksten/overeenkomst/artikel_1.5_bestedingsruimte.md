@@ -1,4 +1,4 @@
-## Artikel 1.5 – Bestedingsruimte
+## Artikel 1.5 Bestedingsruimte
 
 ### Mogelijke chatbotvragen
 
@@ -7,7 +7,7 @@
 
 ### Brontekst
 
-**Artikel 1.5 – Bestedingsruimte**
+**Artikel 1.5 Bestedingsruimte**
 
 1.5.1
 Opdrachtgever mag alleen via artikel 1.4, gedurende de looptijd van de overeenkomst, een bestedingsruimte invoeren of aanpassen.
