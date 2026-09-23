@@ -1,4 +1,4 @@
-## Artikel 3.5 – Wachttijden en cliëntenstop door Opdrachtgever
+## Artikel 3.5 Wachttijden en cliëntenstop door Opdrachtgever
 
 ### Mogelijke chatbotvragen
 
@@ -7,7 +7,7 @@
 
 ### Brontekst
 
-**Artikel 3.5 – Wachttijden en cliëntenstop door Opdrachtgever**
+**Artikel 3.5 Wachttijden en cliëntenstop door Opdrachtgever**
 
 3.5.1
 Opdrachtnemer doet zijn best om wachttijden te voorkomen. Als er landelijke wachttijdnormen zijn, dan past Opdrachtnemer deze toe. Als er geen normen zijn, dan gelden de Treeknormen. Als Opdrachtnemer niet onder een Treeknorm voor een specifieke branche valt, dan gelden de Treeknormen Gehandicaptenzorg. Als Partijen de Treeknormen Gehandicaptenzorg niet passend vinden, dan spreken zij samen een andere norm af en leggen die vast in deel 1 of 2.
