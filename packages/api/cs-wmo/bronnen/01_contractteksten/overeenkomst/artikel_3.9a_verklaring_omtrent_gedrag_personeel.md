@@ -1,4 +1,4 @@
-## Artikel 3.9a – Verklaring omtrent gedrag personeel
+## Artikel 3.9a Verklaring omtrent gedrag personeel
 
 ### Mogelijke chatbotvragen
 
@@ -7,7 +7,7 @@
 
 ### Brontekst
 
-**Artikel 3.9a – Verklaring omtrent gedrag personeel**
+**Artikel 3.9a Verklaring omtrent gedrag personeel**
 
 3.9a.1
 
@@ -25,5 +25,3 @@ Opdrachtgever kan elke drie jaar van opdrachtnemer verlangen dat hij aantoont da
 
 Opdrachtgever kan ook buiten de termijn van drie jaar om een nieuwe VOG vragen. Dit doet hij als hij goede reden heeft om te denken dat iemand niet meer voldoet aan de eisen voor een VOG. In dat geval levert de betrokken persoon de nieuwe VOG in binnen tien weken. Die VOG is niet ouder dan drie maanden.
 
-
-# Hoofdstuk 2: Informatievoorziening, overleg en uitwisseling gegevens
