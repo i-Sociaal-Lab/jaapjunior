@@ -1,4 +1,4 @@
-## Artikel 3.20 – Overdracht van rechten en fusie
+## Artikel 3.20 Overdracht van rechten en fusie
 
 ### Mogelijke chatbotvragen
 
@@ -7,7 +7,7 @@
 
 ### Brontekst
 
-**Artikel 3.20 – Overdracht van rechten en fusie**
+**Artikel 3.20 Overdracht van rechten en fusie**
 
 3.20.1
 Slechts met voorafgaande schriftelijke goedkeuring van de Opdrachtgever, kan de Opdrachtnemer de uitvoering van de overeenkomst geheel of gedeeltelijk laten uitvoeren door derden of uit de Overeenkomst voortvloeiende rechten en/of plichten overdragen aan derden. Dit geldt niet voor het vestigen van beperkte rechten, zoals een pandrecht. De Opdrachtgever is te allen tijde bevoegd om deze goedkeuring in te trekken, indien blijkt dat deze derden niet in staat zijn om (hun deel van) de overeenkomst uit te voeren.
