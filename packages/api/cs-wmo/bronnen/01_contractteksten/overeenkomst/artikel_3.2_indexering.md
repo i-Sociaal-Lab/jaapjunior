@@ -1,4 +1,4 @@
-## Artikel 3.2 – Indexering
+## Artikel 3.2 Indexering
 
 ### Mogelijke chatbotvragen
 
@@ -7,7 +7,7 @@
 
 ### Brontekst
 
-**Artikel 3.2 – Indexering**
+**Artikel 3.2 Indexering**
 
 
 **3.2.1**
