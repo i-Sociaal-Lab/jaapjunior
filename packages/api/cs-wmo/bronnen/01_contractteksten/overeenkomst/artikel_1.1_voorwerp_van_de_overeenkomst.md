@@ -1,4 +1,4 @@
-## Artikel 1.1 – Voorwerp van de overeenkomst
+## Artikel 1.1 Voorwerp van de overeenkomst
 
 ### Mogelijke chatbotvragen
 
@@ -7,7 +7,7 @@
 
 ### Brontekst
 
-**Artikel 1.1 – Voorwerp van de overeenkomst**
+**Artikel 1.1 Voorwerp van de overeenkomst**
 
 De overeenkomst heeft betrekking op maatschappelijke ondersteuning bestaande uit activiteiten gericht op het bevorderen van zelfredzaamheid en participatie van de cliënt opdat hij zo lang mogelijk in zijn eigen leefomgeving kan blijven.
 
