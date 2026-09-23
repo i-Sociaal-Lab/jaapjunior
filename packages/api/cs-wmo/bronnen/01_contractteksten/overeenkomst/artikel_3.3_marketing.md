@@ -1,4 +1,4 @@
-## Artikel 3.3 – Marketing
+## Artikel 3.3 Marketing
 
 ### Mogelijke chatbotvragen
 
@@ -7,7 +7,7 @@
 
 ### Brontekst
 
-**Artikel 3.3 – Marketing**
+**Artikel 3.3 Marketing**
 
 3.3.1
 Als Opdrachtnemer marketing gebruikt, dan houdt hij zich aan de gedragsregels voor marketing. Deze regels zijn:
