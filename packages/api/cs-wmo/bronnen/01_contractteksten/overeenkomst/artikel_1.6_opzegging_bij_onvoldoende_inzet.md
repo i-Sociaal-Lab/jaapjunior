@@ -1,4 +1,4 @@
-## Artikel 1.6 – Opzegging bij onvoldoende inzet
+## Artikel 1.6 Opzegging bij onvoldoende inzet
 
 ### Mogelijke chatbotvragen
 
@@ -7,7 +7,7 @@
 
 ### Brontekst
 
-**Artikel 1.6 – Opzegging bij onvoldoende inzet**
+**Artikel 1.6 Opzegging bij onvoldoende inzet**
 
 1.6.1
 Als Opdrachtnemer binnen 12 kalendermaanden na de start van de overeenkomst onvoldoende inzet pleegt, dan mag Opdrachtgever de overeenkomst schriftelijk opzeggen met een opzegtermijn van 6 maanden. Met onvoldoende inzet bedoelen Partijen: [bijvoorbeeld minder dan een concrete omzet of minder dan een concreet aantal geholpen cliënten]
