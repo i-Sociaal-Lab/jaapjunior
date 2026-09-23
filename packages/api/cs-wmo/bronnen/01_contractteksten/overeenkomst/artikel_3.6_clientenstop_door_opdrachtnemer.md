@@ -1,4 +1,4 @@
-## Artikel 3.6 – Cliëntenstop door Opdrachtnemer
+## Artikel 3.6 Cliëntenstop door Opdrachtnemer
 
 ### Mogelijke chatbotvragen
 
@@ -7,7 +7,7 @@
 
 ### Brontekst
 
-**Artikel 3.6 – Cliëntenstop door Opdrachtnemer**
+**Artikel 3.6 Cliëntenstop door Opdrachtnemer**
 
 Alleen bij de inspannings- of outputgerichte uitvoeringsvariant met meerdere opdrachtnemers of samenwerkingen:
 
