@@ -1,4 +1,4 @@
-## Artikel 1.4 – Herzieningsclausule
+## Artikel 1.4 Herzieningsclausule
 
 ### Mogelijke chatbotvragen
 
@@ -7,7 +7,7 @@
 
 ### Brontekst
 
-**Artikel 1.4 – Herzieningsclausule**
+**Artikel 1.4 Herzieningsclausule**
 
 1.4.1
 Opdrachtgever mag de overeenkomst tussentijds wijzigen na overleg met Opdrachtnemer. Deze wijzigingsbevoegdheid komt boven op de mogelijkheden in artikel 3.22, 3.25, 3.29.2 en 3.30.
