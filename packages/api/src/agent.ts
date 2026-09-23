@@ -94,6 +94,15 @@ const SUPPLEMENTAL_PATTERNS = [
     /sap[-_ ]?gi/i,
 ];
 
+const LEGISLATION_PATTERNS = [
+    /wetgeving/i,
+    /ministeri[eë]le regeling/i,
+    /regeling jeugdwet/i,
+    /jeugdwet/i,
+    /verplichting.*istandaarden/i,
+    /istandaarden.*verplicht/i,
+];
+
 function buildSourceUrl(code: string): string | null {
     const normalized = code.trim().toLowerCase();
 
@@ -188,8 +197,14 @@ function sourceTier(node: any): SourceTier | "unknown" {
     ].filter(Boolean).join(" ");
 
     if (SUPPLEMENTAL_PATTERNS.some((p) => p.test(text))) return "supplemental";
+    if (LEGISLATION_PATTERNS.some((p) => p.test(text))) return "formal";
     if (FORMAL_PATTERNS.some((p) => p.test(text))) return "formal";
     return "unknown";
+}
+
+
+function isLegislationSource(text: string): boolean {
+    return LEGISLATION_PATTERNS.some((pattern) => pattern.test(text));
 }
 
 class Agent {
@@ -434,6 +449,47 @@ class Agent {
         return results.filter((r: any) => sourceTier(r.node) === "formal");
     }
 
+    /**
+     * Wetgevingsbronretrieval voor juridische/verplichtingsvragen.
+     *
+     * Deze bronnen worden expliciet gezocht omdat een korte vraag zoals
+     * "Is het gebruik van de iStandaarden verplicht?" anders kan worden
+     * overschaduwd door technische iJw-bronnen die het woord "verplicht"
+     * bevatten. De relevante wetgevingsdocumenten zijn formele bronnen.
+     */
+    private async retrieveLegislation(question: string, searchQueries: string[]) {
+        const legislationQueries = [...new Set([
+            question,
+            ...searchQueries,
+            `${question} wetgeving`,
+            `${question} Jeugdwet`,
+            `${question} ministeriële regeling`,
+            `${question} verplichting iStandaarden`,
+            "Ministeriële Regeling 25 juli 2019 verplichting iStandaarden",
+            "ministeriële regeling verplichting tot gebruik van iStandaarden",
+            "gebruik iStandaarden verplicht",
+        ])];
+
+        const retriever = this.createRetriever(legislationQueries, 50);
+        const results = await retriever.retrieve();
+
+        return results.filter((r: any) => {
+            const metadata = r.node?.metadata ?? {};
+            const text = [
+                metadata.file_name,
+                metadata.filename,
+                metadata.file_path,
+                metadata.source,
+                metadata.title,
+                typeof r.node?.getContent === "function"
+                    ? r.node.getContent(MetadataMode.ALL)
+                    : "",
+            ].filter(Boolean).join(" ");
+
+            return isLegislationSource(text);
+        });
+    }
+
     private async retrieveSupplemental(
         question: string,
         searchQueries: string[],
@@ -515,6 +571,10 @@ class Agent {
 
         const isRuleOverview = analysis?.zoekstrategie === "rule_overview";
         const isCompleteList = analysis?.zoekstrategie === "complete_list";
+        const isLegislationQuestion =
+            analysis?.vraagtype?.some((x) => /verplicht|wetgeving|juridisch|wet/i.test(x)) ||
+            analysis?.broncategorieen?.some((x) => /wetgeving|jeugdwet|ministeriële regeling/i.test(x)) ||
+            /\b(?:verplicht|verplichting|wettelijk|wetgeving|ministeriële regeling|jeugdwet|juridisch)\b/i.test(q);
         const isFormalFirst = ["rule", "rule_overview", "relational", "process"].includes(
             analysis?.zoekstrategie ?? "",
         ) || analysis?.vraagtype?.some((x) =>
@@ -548,24 +608,38 @@ class Agent {
                 },
                 score: 1,
             }];
-        } else if (isFormalFirst) {
+        } else if (isFormalFirst || isLegislationQuestion) {
             const formalResults = await this.retrieveFormalFirst(q, searchQueries, {
                 exactMessageCodes,
                 ruleOverview: isRuleOverview,
             });
 
-            const formalEnough = await this.formalSourcesAreSufficient(q, formalResults, llm);
-
-            console.log("===== FORMELE BRONNEN =====");
-            console.log(`gevonden: ${formalResults.length}`);
-            console.log(`voldoende: ${formalEnough}`);
-
-            if (formalEnough) {
-                retrievedNodes = formalResults;
+            if (isLegislationQuestion) {
+                const legislationResults = await this.retrieveLegislation(q, searchQueries);
+                const merged = [...formalResults, ...legislationResults];
+                const seen = new Set<string>();
+                retrievedNodes = merged.filter((result: any) => {
+                    const key = result.node?.getContent?.(MetadataMode.ALL) ?? String(result.node);
+                    if (seen.has(key)) return false;
+                    seen.add(key);
+                    return true;
+                });
+                console.log("===== WETGEVINGSBRONNEN =====");
+                console.log(`gevonden: ${legislationResults.length}`);
             } else {
-                const supplementalResults = await this.retrieveSupplemental(q, searchQueries);
-                retrievedNodes = [...formalResults, ...supplementalResults];
-                console.log(`aanvullende bronnen: ${supplementalResults.length}`);
+                const formalEnough = await this.formalSourcesAreSufficient(q, formalResults, llm);
+
+                console.log("===== FORMELE BRONNEN =====");
+                console.log(`gevonden: ${formalResults.length}`);
+                console.log(`voldoende: ${formalEnough}`);
+
+                if (formalEnough) {
+                    retrievedNodes = formalResults;
+                } else {
+                    const supplementalResults = await this.retrieveSupplemental(q, searchQueries);
+                    retrievedNodes = [...formalResults, ...supplementalResults];
+                    console.log(`aanvullende bronnen: ${supplementalResults.length}`);
+                }
             }
         } else {
             const retriever = this.createRetriever(
