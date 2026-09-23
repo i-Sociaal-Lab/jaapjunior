@@ -1,4 +1,4 @@
-## Artikel 3.10 – Informatievoorziening aan de gemeente
+## Artikel 3.10 Informatievoorziening aan de gemeente
 
 ### Mogelijke chatbotvragen
 
@@ -7,7 +7,7 @@
 
 ### Brontekst
 
-**Artikel 3.10 – Informatievoorziening aan de gemeente**
+**Artikel 3.10 Informatievoorziening aan de gemeente**
 
 3.10.1
 Opdrachtnemer geeft Opdrachtgever op verzoek de gegevens die nodig zijn om zijn taken goed uit te voeren. Dit mag alleen als dat verplicht is volgens de Wmo 2015 of andere regels.  Opdrachtgever vraagt geen gegevens op als hij deze al heeft of kan krijgen van het CBS.  Opdrachtgever voorkomt onnodige administratieve lasten.
@@ -57,5 +57,3 @@ d. de partij ontvangt een strafrechtelijke veroordeling.
 
 Opdrachtgever kan aan de melding rechtsgevolgen verbinden.
 
-
-# Hoofdstuk 3: iWmo
