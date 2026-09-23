@@ -1,4 +1,4 @@
-## Artikel 1.9 – Social Return on Investment
+## Artikel 1.9 Social Return on Investment
 
 ### Mogelijke chatbotvragen
 
@@ -7,6 +7,6 @@
 
 ### Brontekst
 
-**Artikel 1.9 – Social Return on Investment**
+**Artikel 1.9 Social Return on Investment**
 
 Opdrachtgever wil de volgende voorwaarden stellen: [invullen]
