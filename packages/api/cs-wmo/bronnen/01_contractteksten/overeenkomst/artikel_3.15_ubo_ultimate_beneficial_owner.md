@@ -1,4 +1,4 @@
-## Artikel 3.15 – UBO (Ultimate Beneficial Owner)
+## Artikel 3.15 UBO (Ultimate Beneficial Owner)
 
 ### Mogelijke chatbotvragen
 
@@ -7,7 +7,7 @@
 
 ### Brontekst
 
-**Artikel 3.15 – UBO (Ultimate Beneficial Owner)**
+**Artikel 3.15 UBO (Ultimate Beneficial Owner)**
 
 
 **3.15.1**
