@@ -1,4 +1,4 @@
-## Artikel 3.28 – Aansprakelijkheid
+## Artikel 3.28 Aansprakelijkheid
 
 ### Mogelijke chatbotvragen
 
@@ -7,7 +7,7 @@
 
 ### Brontekst
 
-**Artikel 3.28 – Aansprakelijkheid**
+**Artikel 3.28 Aansprakelijkheid**
 
 
 **3.28.1**
