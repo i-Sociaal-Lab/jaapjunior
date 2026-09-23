@@ -1,4 +1,4 @@
-## Artikel 3.16 – Toezicht en handhaving
+## Artikel 3.16 Toezicht en handhaving
 
 ### Mogelijke chatbotvragen
 
@@ -7,7 +7,7 @@
 
 ### Brontekst
 
-**Artikel 3.16 – Toezicht en handhaving**
+**Artikel 3.16 Toezicht en handhaving**
 
 
 **3.16.1**
