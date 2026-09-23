@@ -1,4 +1,4 @@
-## Artikel 3.31 – Inbreuk persoonsgegevens
+## Artikel 3.31 Inbreuk persoonsgegevens
 
 ### Mogelijke chatbotvragen
 
@@ -7,7 +7,7 @@
 
 ### Brontekst
 
-**Artikel 3.31 – Inbreuk persoonsgegevens**
+**Artikel 3.31 Inbreuk persoonsgegevens**
 
 Als Opdrachtnemer zelf verantwoordelijk is voor de verwerking van persoonsgegevens, dan meldt hij een (mogelijk) datalek direct aan Opdrachtgever, maar in ieder geval binnen 24 uur na ontdekking. Opdrachtnemer geeft daarbij aan:
 – wat de vermoedelijke oorzaak is,
