@@ -1,4 +1,4 @@
-## Artikel 3.26 – Kennisgevingen en algemene inkoopvoorwaarden
+## Artikel 3.26 Kennisgevingen en algemene inkoopvoorwaarden
 
 ### Mogelijke chatbotvragen
 
@@ -7,7 +7,7 @@
 
 ### Brontekst
 
-**Artikel 3.26 – Kennisgevingen en algemene inkoopvoorwaarden**
+**Artikel 3.26 Kennisgevingen en algemene inkoopvoorwaarden**
 
 3.26.1
 a) Partijen sturen mededelingen over deze overeenkomst altijd schriftelijk. Mondelinge afspraken gelden pas als die schriftelijk zijn bevestigd.
