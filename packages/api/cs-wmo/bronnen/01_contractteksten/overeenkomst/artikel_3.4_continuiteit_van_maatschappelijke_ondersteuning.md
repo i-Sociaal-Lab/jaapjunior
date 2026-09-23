@@ -1,4 +1,4 @@
-## Artikel 3.4 – Continuïteit van maatschappelijke ondersteuning
+## Artikel 3.4 Continuïteit van maatschappelijke ondersteuning
 
 ### Mogelijke chatbotvragen
 
@@ -7,7 +7,7 @@
 
 ### Brontekst
 
-**Artikel 3.4 – Continuïteit van maatschappelijke ondersteuning**
+**Artikel 3.4 Continuïteit van maatschappelijke ondersteuning**
 
 3.4.1
 Opdrachtnemer garandeert dat de ondersteuning voor cliënten doorgaat.
@@ -21,7 +21,6 @@ a) de afgelopen drie jaar achter elkaar negatieve jaarresultaten,
 b) geldproblemen (liquiditeitsproblemen),
 c) bestuurlijke onrust,
 d) maatregelen door inspectie, gemeente of een andere toezichthouder,
-
 e) een tuchtrechtelijke of strafrechtelijke maatregel.
 
 Partijen overleggen altijd bij dit soort situaties.
