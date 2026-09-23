@@ -1,4 +1,4 @@
-## Artikel 3.9 – Hoofd- en onderaanneming
+## Artikel 3.9 Hoofd- en onderaanneming
 
 ### Mogelijke chatbotvragen
 
@@ -7,7 +7,7 @@
 
 ### Brontekst
 
-**Artikel 3.9 – Hoofd- en onderaanneming**
+**Artikel 3.9 Hoofd- en onderaanneming**
 
 3.9.1
 Opdrachtnemer meldt vooraf aan Opdrachtgever als hij maatschappelijke ondersteuning wil uitbesteden aan een onderaannemer. Hij heeft daarvoor schriftelijke toestemming nodig, behalve bij een zelfstandige zonder personeel. De onderaannemer houdt zich aan de geldende wet- en regelgeving en de bepalingen zoals opgenomen in deze overeenkomst.  Opdrachtgever mag – om dat te kunnen toetsen - daarvoor een Bibob-onderzoek uitvoeren of laten uitvoeren, zoals bedoeld in artikel 1.8 van de overeenkomst. Als de uitkomst van dat onderzoek daartoe aanleiding geeft, weigert Opdrachtgever de inzet van de onderaannemer.  Opdrachtnemer stelt zelf het ondersteuningsaanbod voor de cliënt samen en legt hierover verantwoording af aan Opdrachtgever.
