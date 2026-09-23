@@ -1,4 +1,4 @@
-## Artikel 3.19 – Niet-nakoming, opzegging en ontbinding
+## Artikel 3.19 Niet-nakoming, opzegging en ontbinding
 
 ### Mogelijke chatbotvragen
 
@@ -7,7 +7,7 @@
 
 ### Brontekst
 
-**Artikel 3.19 – Niet-nakoming, opzegging en ontbinding**
+**Artikel 3.19 Niet-nakoming, opzegging en ontbinding**
 
 3.19.1
 Als Opdrachtnemer zijn afspraken niet nakomt, dan mag Opdrachtgever maatregelen nemen om dat te herstellen.
@@ -53,5 +53,3 @@ Bij overmacht die langer dan 30 kalenderdagen duurt, mogen Partijen de overeenko
 3.19.6
 Als de overeenkomst stopt of Opdrachtnemer met zijn werk stopt, dan zorgt Opdrachtnemer voor een goede overdracht van de cliënten, met toestemming van Opdrachtgever. Op verzoek stuurt hij direct een lijst met klantgegevens, waarbij hij rekening houdt met de privacyregels. Als er geen overdracht kan plaatsvinden, dan blijven de prestaties en tarieven gelden.
 
-
-# Hoofdstuk 7: Slotbepalingen
