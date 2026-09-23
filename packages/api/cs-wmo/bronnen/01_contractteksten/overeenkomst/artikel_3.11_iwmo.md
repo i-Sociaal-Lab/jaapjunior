@@ -1,4 +1,4 @@
-## Artikel 3.11 – iWmo
+## Artikel 3.11 iWmo
 
 ### Mogelijke chatbotvragen
 
@@ -7,7 +7,7 @@
 
 ### Brontekst
 
-**Artikel 3.11 – iWmo**
+**Artikel 3.11 iWmo**
 
 Alleen bij inspanningsgerichte en outputgerichte uitvoeringsvariant
 
