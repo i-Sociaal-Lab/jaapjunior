@@ -1,4 +1,4 @@
-## Artikel 3.12 – Onverschuldigde betaling
+## Artikel 3.12 Onverschuldigde betaling
 
 ### Mogelijke chatbotvragen
 
@@ -7,6 +7,6 @@
 
 ### Brontekst
 
-**Artikel 3.12 – Onverschuldigde betaling**
+**Artikel 3.12 Onverschuldigde betaling**
 
 Als Opdrachtgever per ongeluk te veel betaalt, dan vordert hij dit bedrag terug, ook als het om eerdere jaren gaat. Opdrachtgever mag dit bedrag ook verrekenen met openstaande of toekomstige declaraties. Ze telt daar wettelijke rente en kosten bij op.
