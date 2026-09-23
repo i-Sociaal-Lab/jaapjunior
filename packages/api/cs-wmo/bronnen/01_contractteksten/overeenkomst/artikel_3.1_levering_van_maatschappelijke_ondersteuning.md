@@ -1,4 +1,4 @@
-## Artikel 3.1 – Levering van maatschappelijke ondersteuning
+## Artikel 3.1 Levering van maatschappelijke ondersteuning
 
 ### Mogelijke chatbotvragen
 
