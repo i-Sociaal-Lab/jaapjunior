@@ -1,4 +1,4 @@
-## Artikel 1.7 – 18-/18+
+## Artikel 1.7 18-/18+
 
 ### Mogelijke chatbotvragen
 
@@ -7,7 +7,7 @@
 
 ### Brontekst
 
-**Artikel 1.7 – 18-/18+**
+**Artikel 1.7 18-/18+**
 
 
 **1.7.1**
