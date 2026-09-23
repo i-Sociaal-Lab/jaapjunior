@@ -83,6 +83,11 @@ const FORMAL_PATTERNS = [
     /condit/i,
     /constraint/i,
     /codelijst/i,
+    /wetgeving/i,
+    /jeugdwet/i,
+    /ministeri[eë]le regeling/i,
+    /regeling jeugdwet/i,
+    /verplichting tot gebruik van istandaarden/i,
     /(^|[/\\])(?:xsd|schema)/i,
     /basisschema/i,
 ];
@@ -410,6 +415,21 @@ class Agent {
             `${question} toegestaan`,
             `${question} verplicht`,
         ]);
+
+        // Wettelijke/verplichtingsvragen moeten expliciet in de formele
+        // wetgevingsbronnen worden gezocht.
+        if (
+            /iStandaa?rden|berichtenverkeer|zorgaanbieders|zorgverleners|aanbieders/i.test(question)
+            && /verplicht|verplichting|wettelijk|wetgeving|ministeri[eë]le regeling/i.test(question)
+        ) {
+            formalQuerySet.add(`${question} wetgeving`);
+            formalQuerySet.add(`${question} Jeugdwet`);
+            formalQuerySet.add(`${question} ministeriële regeling`);
+            formalQuerySet.add(`gebruik iStandaarden verplicht wetgeving`);
+            formalQuerySet.add(`verplichting tot gebruik van iStandaarden`);
+            formalQuerySet.add(`gebruik berichtenverkeer verplicht wetgeving`);
+            formalQuerySet.add(`aanbieders zorgverleners berichtenverkeer verplicht`);
+        }
 
         // Bij een vraag over een afhankelijkheid tussen berichttypen moet de
         // combinatie van de berichtcodes expliciet worden gezocht. Dit is
