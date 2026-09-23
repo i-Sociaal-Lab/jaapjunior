@@ -1,4 +1,4 @@
-## Artikel 1.3 – Looptijd
+## Artikel 1.3 Looptijd
 
 ### Mogelijke chatbotvragen
 
@@ -7,7 +7,7 @@
 
 ### Brontekst
 
-**Artikel 1.3 – Looptijd**
+**Artikel 1.3 Looptijd**
 
 1.3.1
 De overeenkomst start op [begindatum] en loopt tot en met [einddatum].
