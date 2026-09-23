@@ -1,4 +1,4 @@
-## Artikel 3.21 – Financiële verantwoordelijkheid
+## Artikel 3.21 Financiële verantwoordelijkheid
 
 ### Mogelijke chatbotvragen
 
@@ -7,7 +7,7 @@
 
 ### Brontekst
 
-**Artikel 3.21 – Financiële verantwoordelijkheid**
+**Artikel 3.21 Financiële verantwoordelijkheid**
 
 3.21.1
 Opdrachtnemer staat niet garant voor derden, tenzij Opdrachtgever daarvoor vooraf schriftelijke toestemming geeft.
