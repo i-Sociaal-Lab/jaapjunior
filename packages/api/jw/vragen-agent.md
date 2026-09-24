@@ -51,6 +51,7 @@ Gebruik een of meer van:
 - begrip
 - codebetekenis
 - codelijst
+- overzicht
 - relatie_codelijsten
 - relatie_codes
 - berichttype
@@ -84,6 +85,26 @@ Gebruik waar relevant:
 - Wetgeving
 - Jeugdwet
 - Ministeriële regelingen
+
+
+## Specifieke instructie: volledige codelijst / alle codes
+
+Herken expliciet vragen waarin de gebruiker vraagt om de volledige inhoud van een codelijst, bijvoorbeeld:
+- "toon alle stopredenen"
+- "toon alle codes van JZ588"
+- "geef alle reden beëindiging codes"
+- "welke codes staan in JZ588?"
+- "toon de volledige codelijst JZ588"
+- "geef alle waarden van deze codelijst"
+
+Bij dit type vraag:
+- zet `vraagtype` minimaal op `codelijst` en `overzicht`
+- zet `zoekstrategie` op `complete_list`
+- bepaal de codelijst expliciet als dat met voldoende zekerheid kan, bijvoorbeeld `JZ588` bij "stopredenen" of "reden beëindiging"
+- zet `broncategorieen` minimaal op `Codelijsten`
+- maak gerichte zoekopdrachten voor de volledige codelijst, waaronder het codelijstnummer en combinaties met `codes`, `betekenis`, `omschrijving`, `waarden` en `volledige codelijst`
+- een document met alleen metadata, definitie of een verwijzing naar de codelijst is niet voldoende voor een vraag naar alle codes
+- geef geen inhoudelijk antwoord en verzin geen codes; de uiteindelijke agent moet de daadwerkelijk gevonden codewaarden uit de bron halen
 
 ## Zoekstrategie
 

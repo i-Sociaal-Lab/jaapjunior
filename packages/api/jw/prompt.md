@@ -425,6 +425,24 @@ Wanneer een vraag een code bevat uit een codelijst:
 - Als een code niet kan worden gevonden, meld dit expliciet.
 - Bij berekeningen moeten codes eerst worden vertaald naar hun betekenis voordat de berekening wordt uitgevoerd.
 
+### Volledige codelijsten en vragen als "toon alle ..."
+
+→ Wanneer de gebruiker vraagt om **alle codes, alle waarden, de volledige codelijst, een volledig overzicht** of een vergelijkbare formulering, behandel dit als een `complete_list`-vraag.
+
+→ Identificeer eerst de betreffende codelijst. Voorbeelden:
+- "toon alle stopredenen" / "toon alle redenen beëindiging" → zoek de volledige codelijst **JZ588_Reden_beeindiging**
+- "toon alle reden wijziging codes" → zoek de volledige codelijst **JZ002_Reden_wijziging_toewijzing**
+
+→ Een gevonden document met alleen de **definitie, metadata, gebruik, status of een verwijzing naar de codelijst** is NIET voldoende om te concluderen dat de codewaarden ontbreken.
+
+→ Zoek door naar de daadwerkelijke codewaarden en betekenissen/omschrijvingen in de specifieke codelijst.
+
+→ Neem bij een volledig overzicht **alle daadwerkelijk in de relevante codelijst gevonden codes** over, in de oorspronkelijke volgorde en exact zoals opgenomen in de bron.
+
+→ Als de volledige codewaarden na gerichte retrieval echt niet beschikbaar zijn, formuleer dan uitsluitend dat de codewaarden in de opgehaalde broncontext niet zijn gevonden. Zeg NIET dat de documentatie de codes niet bevat, tenzij dat letterlijk en aantoonbaar uit de bron blijkt.
+
+→ Gebruik voor een volledige codelijst geen samenvatting of alternatieve bron als vervanging voor de specifieke codelijst.
+
 **Vragen over codes en codelijsten die in berichten worden gebruikt:**
    → Zoek eerst naar specifieke codelijstdocumenten volgens het patroon "[CODENR]_[CONCEPT]" (bijvoorbeeld: "WJ003_wettelijkevertegenwoordiging", "JZ020_productcategorie")
    → Verwijder alle spaties uit het [CONCEPT] en noem dit [CONCEPT2]
