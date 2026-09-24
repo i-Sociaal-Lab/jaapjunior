@@ -398,6 +398,82 @@ class Agent {
      * toegevoegd. Hierdoor kan een FAQ niet toevallig de formele bron
      * verdringen tijdens de eerste retrieval/reranking.
      */
+    /**
+     * Exacte retrieval voor vragen naar één concrete code.
+     *
+     * Vector search mag hier alleen kandidaat-chunks leveren. De uiteindelijke
+     * selectie gebeurt op een exacte codewaarde in de bron. Daardoor kan een
+     * semantisch vergelijkbare gemeenteregel niet worden gebruikt voor een
+     * vraag naar bijvoorbeeld gemeentecode 1952.
+     */
+    private async retrieveExactCode(
+        question: string,
+        searchQueries: string[],
+        analysis?: QuestionAnalysis,
+    ) {
+        const analysisCodes = (analysis?.codes ?? [])
+            .map((code) => String(code).trim())
+            .filter(Boolean);
+
+        // Als de Vragen Agent de code niet heeft geëxtraheerd, herken dan
+        // alleen een concrete code wanneer de vraag duidelijk om een code
+        // vraagt. Zo wordt een jaartal niet automatisch als code behandeld.
+        const explicitCodeMatches = question.match(
+            /\b(?:code\s+)?(\d{1,6})\b/gi,
+        ) ?? [];
+        const questionCodes = explicitCodeMatches
+            .map((value) => value.match(/\d{1,6}/)?.[0] ?? "")
+            .filter(Boolean);
+
+        const codes = [...new Set([...analysisCodes, ...questionCodes])];
+        if (codes.length === 0) return [];
+
+        const asksForCodeMeaning =
+            /welke\s+(?:gemeente|naam|omschrijving|betekenis)|wat\s+(?:is|betekent)|betekenis|omschrijving|naam|hoort\s+bij|code\s+\d/i.test(question) ||
+            (analysis?.vraagtype ?? []).some((x) => /codebetekenis/i.test(x));
+
+        if (!asksForCodeMeaning) return [];
+
+        const codelistValues = analysis?.codelijsten ?? [];
+        const codelistHints = codelistValues.join(" ");
+        const queries = new Set<string>();
+        for (const code of codes) {
+            queries.add(code);
+            queries.add(`code ${code}`);
+            if (codelistHints) queries.add(`${codelistHints} code ${code}`);
+            if (/gemeente|gemeentecode|cbs/i.test(question + " " + codelistHints)) {
+                queries.add(`gemeentecode ${code}`);
+                queries.add(`CBS gemeentecode ${code}`);
+            }
+        }
+
+        // De vectorzoeker levert alleen kandidaten. Met een hoge top-K is de
+        // kans groot dat de chunk met de exacte rij wordt meegenomen; daarna
+        // filteren we deterministisch op de code zelf.
+        const retriever = this.createRetriever([...queries, ...searchQueries], 100);
+        const candidates = await retriever.retrieve();
+
+        const exactResults = candidates.filter((result: any) => {
+            const content = this.nodeContent(result.node);
+            return codes.some((code) => this.codelistContainsExactCode(content, code));
+        });
+
+        if (exactResults.length === 0) return [];
+
+        // Wanneer een codelijst expliciet bekend is, geef voorkeur aan chunks
+        // waarin die codelijst ook daadwerkelijk wordt genoemd. Voor CBS-
+        // gemeentecodes is de exacte tabelrij zelf voldoende bewijs.
+        const preferred = exactResults.filter((result: any) => {
+            if (!codelistHints) return true;
+            const content = this.nodeContent(result.node).toLowerCase();
+            return codelistValues.some((value) =>
+                content.includes(String(value).toLowerCase()),
+            );
+        });
+
+        return preferred.length > 0 ? preferred : exactResults;
+    }
+
     private async retrieveCompleteCodelist(
         question: string,
         searchQueries: string[],
@@ -644,6 +720,29 @@ class Agent {
                 },
                 score: 1,
             }];
+        } else if (
+            analysis &&
+            !isCompleteList &&
+            (analysis.codes?.length || /\b(?:code\s+)?\d{1,6}\b/i.test(q))
+        ) {
+            // Een concrete codevraag krijgt voorrang boven normale semantische
+            // retrieval. Alleen exact gevonden codewaarden mogen als context
+            // voor het antwoord worden gebruikt.
+            const exactCodeResults = await this.retrieveExactCode(q, searchQueries, analysis);
+            if (exactCodeResults.length > 0) {
+                retrievedNodes = exactCodeResults;
+                console.log("===== EXACTE CODE RETRIEVAL =====");
+                console.log(`gevonden exacte code-chunks: ${retrievedNodes.length}`);
+            } else {
+                const retriever = this.createRetriever(
+                    searchQueries,
+                    isRuleOverview ? 100 : 20,
+                    { exactMessageCodes, ruleOverview: isRuleOverview },
+                );
+                retrievedNodes = await retriever.retrieve();
+                console.log("===== EXACTE CODE RETRIEVAL =====");
+                console.log("geen exacte code-chunk gevonden; normale retrieval gebruikt");
+            }
         } else if (isCompleteList) {
             // Een volledige codelijst vraagt om andere retrieval dan een
             // gewone vraag. Zoek breed en gericht naar de daadwerkelijke
