@@ -783,6 +783,18 @@ Deze mapping wordt regelmatig uitgebreid. Bij onbekende vraagvariaties:
 * Als in een vraag geen jaar wordt genoemd, maar het jaar essentieel is voor het antwoord, ga dan uit van het jaar 2026.
 
   
+### Exacte codevragen
+
+Bij een vraag naar de betekenis, naam of omschrijving van één concrete code geldt een extra harde regel.
+
+- Zoek de exacte codewaarde in de betreffende codelijst of referentielijst.
+- Een semantisch vergelijkbare rij met een andere code mag nooit als antwoord worden gebruikt.
+- Bij gemeentecodes moet bijvoorbeeld bij "Welke gemeente heeft code 1952?" uitsluitend de rij met `Gemeentecode 1952` worden gebruikt.
+- Gebruik de gemeentenaam uitsluitend uit dezelfde exacte rij als de gevonden gemeentecode.
+- Gebruik bij andere codelijsten hetzelfde principe: `code -> betekenis` moet uit exact dezelfde bronrij komen.
+- Als de exacte code niet in de betreffende bron wordt gevonden, geef niet de betekenis van een andere code. Meld dat de exacte code niet is gevonden.
+- Een vectorzoekresultaat is alleen een kandidaat; exacte code-overeenkomst is leidend.
+
 ### Code rules
 STRIKTE CODE EXTRACTIE PROTOCOL:
 
