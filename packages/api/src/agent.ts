@@ -398,6 +398,77 @@ class Agent {
      * toegevoegd. Hierdoor kan een FAQ niet toevallig de formele bron
      * verdringen tijdens de eerste retrieval/reranking.
      */
+    private async retrieveCompleteCodelist(
+        question: string,
+        searchQueries: string[],
+        analysis?: QuestionAnalysis,
+    ) {
+        const ids = new Set<string>();
+
+        for (const value of analysis?.codelijsten ?? []) {
+            const id = this.codelistIdentifier(value);
+            if (id) ids.add(id);
+        }
+
+        // Herken ook natuurlijke taal wanneer de Vragen Agent het nummer niet
+        // expliciet heeft teruggegeven. Dit zijn alleen deterministische
+        // synoniemen; er worden geen nieuwe codes of codelijsten verzonnen.
+        const normalizedQuestion = question.toLowerCase();
+        if (/stopredenen|reden(?:en)?\s+(?:van\s+)?be[eë]indiging|reden(?:en)?\s+beeindiging/.test(normalizedQuestion)) {
+            ids.add("JZ588");
+        }
+        if (/reden(?:en)?\s+wijziging\s+toewijzing/.test(normalizedQuestion)) {
+            ids.add("JZ002");
+        }
+
+        const idList = [...ids];
+        const queries = new Set<string>([
+            question,
+            ...searchQueries,
+            ...idList.flatMap((id) => [
+                id,
+                `${id} alle codes`,
+                `${id} code betekenis`,
+                `${id} code omschrijving`,
+                `${id} waarden`,
+                `${id} volledige codelijst`,
+            ]),
+        ]);
+
+        const retriever = this.createRetriever([...queries], 100);
+        const results = await retriever.retrieve();
+
+        // Behoud alle relevante codelijst-chunks. Een codelijst kan over
+        // meerdere chunks zijn verdeeld; daarom mag uitsluitend op een chunk
+        // met de titel/metadata van de codelijst worden gefilterd.
+        const scored = results.map((result: any, index: number) => {
+            const content = this.nodeContent(result.node);
+            const upper = content.toUpperCase();
+            const idHits = idList.reduce(
+                (count, id) => count + (upper.includes(id) ? 1 : 0),
+                0,
+            );
+            const codeTableHits = (content.match(/(?:^|\n)\s*\|\s*[^|\n]+\s*\|/g) ?? []).length;
+            const meaningHits = (content.match(/\b(?:betekenis|omschrijving|toelichting|code)\b/gi) ?? []).length;
+            const tierBonus = sourceTier(result.node) === "formal" ? 100 : 0;
+
+            return {
+                result,
+                index,
+                priority: tierBonus + idHits * 1000 + Math.min(codeTableHits, 20) * 20 + Math.min(meaningHits, 10),
+            };
+        });
+
+        scored.sort((a, b) => {
+            if (b.priority !== a.priority) return b.priority - a.priority;
+            return a.index - b.index;
+        });
+
+        // Geef voldoende ruimte aan een volledige codelijst, maar voorkom dat
+        // honderden irrelevante chunks het antwoordcontext vullen.
+        return scored.slice(0, 100).map((item) => item.result);
+    }
+
     private async retrieveFormalFirst(
         question: string,
         searchQueries: string[],
@@ -573,6 +644,13 @@ class Agent {
                 },
                 score: 1,
             }];
+        } else if (isCompleteList) {
+            // Een volledige codelijst vraagt om andere retrieval dan een
+            // gewone vraag. Zoek breed en gericht naar de daadwerkelijke
+            // codewaarden; een metadata-chunk alleen mag niet volstaan.
+            retrievedNodes = await this.retrieveCompleteCodelist(q, searchQueries, analysis);
+            console.log("===== VOLLEDIGE CODELIJST =====");
+            console.log(`gevonden chunks: ${retrievedNodes.length}`);
         } else if (isFormalFirst) {
             const formalResults = await this.retrieveFormalFirst(q, searchQueries, {
                 exactMessageCodes,
