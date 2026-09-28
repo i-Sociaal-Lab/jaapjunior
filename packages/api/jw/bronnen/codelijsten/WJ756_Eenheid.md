@@ -67,7 +67,7 @@ De zorg wordt uitgedrukt in minuten.
 
 ## Voorbeeld
 
-Volume 120, code 01:  betekent 120 minuten zorg.
+Volume 120, eenheid 01:  betekent 120 minuten zorg.
 
 ---
 
@@ -92,7 +92,7 @@ De zorg wordt uitgedrukt in uren.
 
 ## Voorbeeld
 
-Volume 8, code 04: betekent 8 uur zorg.
+Volume 8, eenheid 04: betekent 8 uur zorg.
 
 ---
 
