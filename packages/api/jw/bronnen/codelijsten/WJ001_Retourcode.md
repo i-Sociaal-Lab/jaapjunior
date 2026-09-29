@@ -31,7 +31,7 @@ Melding in een retourbericht. Het betreft een code die in een retourbericht het 
 | 0200 | Geen opmerking over deze berichtklasse. | — | JW301, JW305, JW307, JW315, JW317, JW319, JW323 |
 | 0233 | Berichtklasse is niet beoordeeld. | — | JW301, JW305, JW307, JW315, JW317, JW319, JW323 |
 | 8848 | Dagtekening moet gelijk zijn aan of voor de systeemdatum liggen. | TR135 | JW301, JW305, JW307, JW315, JW317, JW319, JW323, JW325 |
-| 9056 | Identificatie moet uniek zijn. | TR056 | JW301, JW305, JW307, JW315, JW317, JW319, JW323, JW325 |
+| 9056 | Identificatie moet per berichtsoort uniek zijn voor de verzendende partij. | TR056 | JW301, JW305, JW307, JW315, JW317, JW319, JW323, JW325 |
 
 ---
 
@@ -103,6 +103,7 @@ Melding in een retourbericht. Het betreft een code die in een retourbericht het 
 | 9349 | Het VOW bericht bevat niet alle actuele toegewezen producten van de cliënt, hetzij in OngewijzigdProduct, hetzij in TeWijzigenProduct. | TR349 | JW317 |
 | 9350 | OngewijzigdProduct is niet gerelateerd aan een actueel toegewezen product op basis van het toewijzingnummer. | TR350 | JW317 |
 | 9351 | TeWijzigenProduct is niet gerelateerd aan een actuele toewijzing op basis van ToewijzingNummer. | TR351 | JW317 |
+| 9355 | ReferentieAanbieder in het antwoordbericht komt niet voor in een eerder verzoek om toewijzing of verzoek om wijziging. | TR355 | JW319 |
 | 9357 | GewensteIngangsdatum is kleiner dan of gelijk aan de dagtekening, maar niet gelijk aan de ingangsdatum van het originele ToegewezenProduct. | TR357 | JW317 |
 | 9359 | Er is al een toewijzing gestuurd met deze ReferentieAanbieder. | TR359 | JW319 |
 | 9360 | Er is al een antwoordbericht met deze ReferentieAanbieder, terwijl antwoordbericht in VerzoekAntwoord waarde 2 (aanvraag in onderzoek) heeft. | TR360 | JW319 |
