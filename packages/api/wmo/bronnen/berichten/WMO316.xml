@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wmo316:Bericht xmlns:iwmo="http://www.istandaarden.nl/iwmo/3_2/basisschema/schema" xmlns:wmo316="http://www.istandaarden.nl/iwmo/3_2/wmo316/schema" >
+	<wmo316:Header>
+		<wmo316:BerichtCode>445</wmo316:BerichtCode>
+		<wmo316:BerichtVersie>3</wmo316:BerichtVersie>
+		<wmo316:BerichtSubversie>2</wmo316:BerichtSubversie>
+		<wmo316:Afzender>42420001</wmo316:Afzender>
+		<wmo316:Ontvanger>0384</wmo316:Ontvanger>
+		<wmo316:BerichtIdentificatie>
+			<iwmo:Identificatie>123456789012</iwmo:Identificatie>
+			<iwmo:Dagtekening>2023-07-15</iwmo:Dagtekening>
+		</wmo316:BerichtIdentificatie>
+		<wmo316:XsdVersie>
+			<iwmo:BasisschemaXsdVersie>1.0.0</iwmo:BasisschemaXsdVersie>
+			<iwmo:BerichtXsdVersie>1.0.0</iwmo:BerichtXsdVersie>
+		</wmo316:XsdVersie>
+		<wmo316:IdentificatieRetour>bf385732-a6f</wmo316:IdentificatieRetour>
+		<wmo316:DagtekeningRetour>2023-07-17</wmo316:DagtekeningRetour>
+		<wmo316:XsdVersieRetour>
+			<iwmo:BasisschemaXsdVersie>1.0.0</iwmo:BasisschemaXsdVersie>
+			<iwmo:BerichtXsdVersie>1.0.0</iwmo:BerichtXsdVersie>
+		</wmo316:XsdVersieRetour>
+	</wmo316:Header>
+</wmo316:Bericht>
