@@ -39,8 +39,8 @@ Melding in een retourbericht. Het betreft een code die in een retourbericht het 
 
 | Code | Betekenis | TR-regel | Berichttypen |
 |---|---|---|---|
-| S300 | Gemeentecode ongeldig. | TR378 | JW301, JW305, JW307, JW315, JW317, JW319 |
-| S329 | ProductCode ongeldig. | TR381 | JW301, JW305, JW307, JW315, JW317 |
+| S300 | Gemeentecode komt niet voor in de lijst van CBS.  | TR378 | JW301, JW305, JW307, JW315, JW317, JW319 |
+| S329 | ProductCode hoort niet bij de ProductCategorie.  | TR381 | JW301, JW305, JW307, JW315, JW317 |
 
 
 ---
@@ -50,8 +50,8 @@ Melding in een retourbericht. Het betreft een code die in een retourbericht het 
 | Code | Betekenis | TR-regel | Berichttypen |
 |---|---|---|---|
 | 9019 | Het regiebericht kan niet gekoppeld worden aan een toewijzing. | TR019 | JW305, JW307 |
-| 9063 | Het bericht kan niet verwerkt worden omdat geen eerder bericht ontvangen is | TR063 | JW305, JW307 |
-| 9069 | Er is geen actueel startbericht met dezelfde sleutel. | TR069 | JW307 |
+| 9063 | Het bericht kan niet verwerkt worden omdat geen eerder bericht ontvangen is. | TR063 | JW305, JW307 |
+| 9069 | Er is geen actueel startbericht met dezelfde sleutel. | TR382 | JW307 |
 | 9071 | Het eerdere startbericht kan niet verwijderd worden omdat de zorg al beeindigd is. | TR071 | JW305 |
 | 9074 | Er is al een eerder bericht ontvangen met dezelfde sleutel. | TR074 | JW305, JW307 |
 | 9326 | De actuele levering is nog niet gestopt met een Stopbericht. | TR326 | JW305 |
@@ -65,8 +65,8 @@ Melding in een retourbericht. Het betreft een code die in een retourbericht het 
 
 | Code | Betekenis | TR-regel | Berichttypen |
 |---|---|---|---|
-| S300 | Gemeentecode ongeldig. | TR378 | JW323, JW325 |
-| S329 | ProductCode ongeldig. | TR381 | JW323 |
+| S300 | Gemeentecode komt niet voor in de lijst van CBS. | TR378 | JW323, JW325 |
+| S329 | ProductCode hoort niet bij de ProductCategorie. | TR381 | JW323 |
 | 8001 | Declaratie is volledig toegewezen. | — | JW323 |
 | 0611 | Het ingediende tarief komt niet overeen met het contractuele tarief. | TR418 | JW323 |
 | 8017 | Van deze credit prestatie is geen debet prestatie bekend. | TR323 | JW323 |
