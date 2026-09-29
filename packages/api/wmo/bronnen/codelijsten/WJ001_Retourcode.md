@@ -39,8 +39,8 @@ Melding in een retourbericht. Het betreft een code die in een retourbericht het 
 
 | Code | Betekenis | TR-regel | Berichttypen |
 |---|---|---|---|
-| S300 | Gemeentecode ongeldig. | TR378 | WMO301, WMO305, WMO307, WMO315, WMO317, WMO319, WMO323, WMO325 |
-| S329 | ProductCode ongeldig. | TR381 | WMO301, WMO305, WMO307, WMO315, WMO317, WMO323 |
+| S300 | Gemeentecode komt niet voor in de lijst van CBS. | TR378 | WMO301, WMO305, WMO307, WMO315, WMO317, WMO319, WMO323, WMO325 |
+| S329 | ProductCode hoort niet bij de ProductCategorie. | TR381 | WMO301, WMO305, WMO307, WMO315, WMO317, WMO323 |
 
 
 ---
@@ -65,7 +65,7 @@ Melding in een retourbericht. Het betreft een code die in een retourbericht het 
 
 | Code | Betekenis | TR-regel | Berichttypen |
 |---|---|---|---|
-| 0611 | Het ingediende tarief komt niet overeen met het contractuele tarief | TR418 | WMO323 |
+| 0611 | Het ingediende tarief komt niet overeen met het contractuele tarief. | TR418 | WMO323 |
 | 8001 | Declaratie is volledig toegewezen. | — | WMO323 |
 | 8017 | Van deze credit prestatie is geen debet prestatie bekend. | TR323 | WMO323 |
 | 8021 | Referentienummer prestatie is reeds aangeleverd. | TR314 | WMO323 |
@@ -101,6 +101,7 @@ Melding in een retourbericht. Het betreft een code die in een retourbericht het 
 | 9349 | Het VOW bericht bevat niet alle actuele toegewezen producten van de cliënt, hetzij in OngewijzigdProduct, hetzij in TeWijzigenProduct. | TR349 | WMO317 |
 | 9350 | OngewijzigdProduct is niet gerelateerd aan een actueel toegewezen product op basis van het toewijzingnummer. | TR350 | WMO317 |
 | 9351 | TeWijzigenProduct is niet gerelateerd aan een actuele toewijzing op basis van ToewijzingNummer. | TR351 | WMO317 |
+| 9355 | ReferentieAanbieder in het antwoordbericht komt niet voor in een eerder verzoek om toewijzing of verzoek om wijziging. | TR355 | WMO319 |
 | 9357 | GewensteIngangsdatum is kleiner dan of gelijk aan de dagtekening, maar niet gelijk aan de ingangsdatum van het originele ToegewezenProduct. | TR357 | WMO317 |
 | 9359 | Er is al een toewijzing gestuurd met deze ReferentieAanbieder. | TR359 | WMO319 |
 | 9360 | Er is al een antwoordbericht met deze ReferentieAanbieder, terwijl antwoordbericht in VerzoekAntwoord waarde 2 (aanvraag in onderzoek) heeft. | TR360 | WMO319 |
