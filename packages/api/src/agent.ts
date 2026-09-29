@@ -687,6 +687,7 @@ class Agent {
 
         const isRuleOverview = analysis?.zoekstrategie === "rule_overview";
         const isCompleteList = analysis?.zoekstrategie === "complete_list";
+        const isRelational = analysis?.zoekstrategie === "relational";
         const isFormalFirst = ["rule", "rule_overview", "relational", "process"].includes(
             analysis?.zoekstrategie ?? "",
         ) || analysis?.vraagtype?.some((x) =>
@@ -720,6 +721,23 @@ class Agent {
                 },
                 score: 1,
             }];
+        } else if (analysis && isRelational) {
+            // Relationele vragen hebben een tweestapsrelatie:
+            // 1. vind de opgegeven code in de primaire codelijst;
+            // 2. haal vervolgens ook de codelijst op waarin de gekoppelde
+            //    codes hun eigen omschrijving hebben.
+            //
+            // Bijvoorbeeld:
+            // "reden beëindiging 36" -> JZ588 -> JZ002 codes 03,05,08,10,11.
+            //
+            // retrieveCompleteCodelist() voegt voor natuurlijke taal
+            // "reden beëindiging" en "reden wijziging toewijzing" deterministisch
+            // respectievelijk JZ588 en JZ002 toe. Daardoor hoeft de Vragen Agent
+            // de tweede codelijst niet al vooraf te kennen.
+            retrievedNodes = await this.retrieveCompleteCodelist(q, searchQueries, analysis);
+
+            console.log("===== RELATIONELE CODELIJST RETRIEVAL =====");
+            console.log(`gevonden relationele codelijst-chunks: ${retrievedNodes.length}`);
         } else if (
             analysis &&
             !isCompleteList &&
@@ -779,7 +797,7 @@ class Agent {
         }
 
         const nodePostprocessors =
-            (isRuleOverview || isCompleteList || isFormalFirst)
+            (isRuleOverview || isCompleteList || isRelational || isFormalFirst)
                 ? []
                 : [createJinaReranker(10, "jina-reranker-v2-base-multilingual") as any];
 
