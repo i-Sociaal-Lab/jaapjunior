@@ -12,7 +12,7 @@
 
 ## Definitie
 
-De eenheid waarin het volume van een product, prestatie of zorg wordt uitgedrukt.
+Gecodeerde aanduiding van de mate van zorg betreffende een product, uitgedrukt in een eenheid.
 
 De code uit deze codelijst bepaalt hoe het volume en de frequentie van een toewijzing of declaratie moeten worden geïnterpreteerd.
 
