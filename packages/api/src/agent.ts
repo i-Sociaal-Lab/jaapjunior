@@ -474,6 +474,106 @@ class Agent {
         return preferred.length > 0 ? preferred : exactResults;
     }
 
+    /**
+     * Exact retrieval for questions about one concrete formal rule.
+     *
+     * When the question names a specific TR/OP/UP/CD/CS/IV code, semantic
+     * retrieval over dozens of formal chunks is unnecessarily broad. The
+     * concrete rule code is used as a deterministic anchor so the final
+     * context is dominated by the requested rule itself.
+     */
+    private async retrieveExactRule(
+        question: string,
+        searchQueries: string[],
+        analysis?: QuestionAnalysis,
+    ) {
+        const combined = [
+            question,
+            ...(analysis?.entiteiten ?? []),
+            ...searchQueries,
+        ].join(" ");
+
+        const ruleCodes = [
+            ...combined.matchAll(/\b(?:TR|OP|UP|CD|CS|IV)\d{3}[A-Z0-9_-]*\b/gi),
+        ]
+            .map((match) => match[0].toUpperCase())
+            .filter((code, index, arr) => arr.indexOf(code) === index);
+
+        if (ruleCodes.length === 0) return [];
+
+        const queries = new Set<string>();
+        for (const code of ruleCodes) {
+            queries.add(code);
+            queries.add(`${code} definitie`);
+            queries.add(`${code} gebruik in berichten`);
+            queries.add(`${code} toepassingsgebied`);
+            queries.add(`${code} gegevenselementen`);
+            queries.add(`${code} effect op elementen`);
+        }
+
+        // Keep the user's original and Vragen Agent queries as candidate
+        // searches, but rank the exact rule code deterministically afterwards.
+        for (const query of searchQueries) queries.add(query);
+
+        const retriever = this.createRetriever([...queries], 100);
+        const candidates = await retriever.retrieve();
+
+        const exactResults = candidates.filter((result: any) => {
+            const content = this.nodeContent(result.node);
+            const upper = content.toUpperCase();
+
+            return ruleCodes.some((code) => {
+                // The requested rule must occur as a complete rule identifier.
+                // This avoids TR135 accidentally matching another TR code or
+                // an unrelated number mentioned in a text.
+                const escaped = code.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+                const exactCode = new RegExp(`(?:^|[^A-Z0-9])${escaped}(?:[^A-Z0-9]|$)`, "i");
+                return exactCode.test(upper);
+            });
+        });
+
+        if (exactResults.length === 0) return [];
+
+        // Strongly prefer formal chunks that explicitly contain the requested
+        // rule code. For a single-rule question, retain only those exact chunks.
+        const formalExact = exactResults.filter((result: any) => {
+            return sourceTier(result.node) === "formal";
+        });
+
+        const selected = formalExact.length > 0 ? formalExact : exactResults;
+
+        // Put chunks containing the rule heading/title first. This is useful
+        // when a rule spans multiple chunks and the first chunk contains the
+        // definition while later chunks contain usage metadata.
+        const scored = selected.map((result: any, index: number) => {
+            const content = this.nodeContent(result.node);
+            const upper = content.toUpperCase();
+
+            const headingHit = ruleCodes.some((code) => {
+                const escaped = code.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+                return new RegExp(`(?:^|\\n)\\s*#\\s*${escaped}\\b`, "i").test(content);
+            });
+
+            const sectionHits =
+                (/\bdefinitie\b/i.test(content) ? 10 : 0) +
+                (/\bgebruik in berichten\b/i.test(content) ? 10 : 0) +
+                (/\bmetadata\b/i.test(content) ? 2 : 0);
+
+            return {
+                result,
+                index,
+                priority: (headingHit ? 1000 : 0) + sectionHits + (Number(result.score) || 0),
+            };
+        });
+
+        scored.sort((a, b) => {
+            if (b.priority !== a.priority) return b.priority - a.priority;
+            return a.index - b.index;
+        });
+
+        return scored.slice(0, 20).map((item) => item.result);
+    }
+
     private async retrieveCompleteCodelist(
         question: string,
         searchQueries: string[],
@@ -688,6 +788,27 @@ class Agent {
         const isRuleOverview = analysis?.zoekstrategie === "rule_overview";
         const isCompleteList = analysis?.zoekstrategie === "complete_list";
         const isRelational = analysis?.zoekstrategie === "relational";
+
+        // A concrete TR/OP/UP/CD/CS/IV reference is handled separately from
+        // broad formal-rule retrieval. This prevents one exact rule question
+        // from expanding into 100+ semantically related formal chunks.
+        const exactRuleCodes = [
+            ...new Set(
+                [
+                    q,
+                    ...(analysis?.entiteiten ?? []),
+                    ...searchQueries,
+                ]
+                    .flatMap((value) =>
+                        String(value).match(/\b(?:TR|OP|UP|CD|CS|IV)\d{3}[A-Z0-9_-]*\b/gi) ?? [],
+                    )
+                    .map((code) => code.toUpperCase()),
+            ),
+        ];
+        const isExactRuleQuestion =
+            exactRuleCodes.length > 0 &&
+            !isCompleteList &&
+            !isRelational;
         const isFormalFirst = ["rule", "rule_overview", "relational", "process"].includes(
             analysis?.zoekstrategie ?? "",
         ) || analysis?.vraagtype?.some((x) =>
@@ -721,6 +842,24 @@ class Agent {
                 },
                 score: 1,
             }];
+        } else if (analysis && isExactRuleQuestion) {
+            retrievedNodes = await this.retrieveExactRule(q, searchQueries, analysis);
+
+            console.log("===== EXACTE REGELRETRIEVAL =====");
+            console.log(`regelcodes: ${exactRuleCodes.join(", ")}`);
+            console.log(`gevonden exacte regel-chunks: ${retrievedNodes.length}`);
+
+            // If exact rule retrieval unexpectedly finds nothing, fall back to
+            // the existing retrieval path instead of inventing a result.
+            if (retrievedNodes.length === 0) {
+                const retriever = this.createRetriever(
+                    searchQueries,
+                    isRuleOverview ? 100 : 20,
+                    { exactMessageCodes, ruleOverview: isRuleOverview },
+                );
+                retrievedNodes = await retriever.retrieve();
+                console.log("geen exacte regel-chunk gevonden; normale retrieval gebruikt");
+            }
         } else if (analysis && isRelational) {
             // Relationele vragen hebben een tweestapsrelatie:
             // 1. vind de opgegeven code in de primaire codelijst;
@@ -797,7 +936,7 @@ class Agent {
         }
 
         const nodePostprocessors =
-            (isRuleOverview || isCompleteList || isRelational || isFormalFirst)
+            (isRuleOverview || isCompleteList || isRelational || isExactRuleQuestion || isFormalFirst)
                 ? []
                 : [createJinaReranker(10, "jina-reranker-v2-base-multilingual") as any];
 
