@@ -72,7 +72,7 @@ Melding in een retourbericht. Het betreft een code die in een retourbericht het 
 | 8017 | Van deze credit prestatie is geen debet prestatie bekend. | TR323 | JW323 |
 | 8021 | Referentienummer prestatie is reeds aangeleverd. | TR314 | JW323 |
 | 8214 | DeclaratiePeriode is niet de kalendermaand die volgt op voorgaande DeclaratiePeriode terwijl iedere declaratieperiode zorg geleverd is. | TR318 | JW323 |
-| 8187 | De prestatie hoort niet bij deze cliënt. | TR304 | JW325 |
+| 8187 | De prestatie hoort niet bij deze client. | TR304 | JW325 |
 | 9307 | Begindatum prestatie ligt niet tussen de ingangsdatum en einddatum toewijzing. | TR307 | JW323 |
 | 9308 | Einddatum prestatie ligt niet tussen de ingangsdatum en einddatum toewijzing. | TR308 | JW323 |
 | 9319 | De ProductPeriode valt niet geheel binnen een DeclaratiePeriode. | TR319 | JW323 |
