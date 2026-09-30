@@ -31,7 +31,7 @@ jobs:
 
       # Configure Pages
       - name: Setup Pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v6
 
       # Build met de officiële Jekyll action; bron = ./docs
       - name: Build with Jekyll
