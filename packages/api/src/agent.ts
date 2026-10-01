@@ -1,7 +1,6 @@
 import { Anthropic } from "@llamaindex/anthropic";
 import { QdrantVectorStore } from "@llamaindex/qdrant";
 import { OpenAI, OpenAIEmbedding } from "@llamaindex/openai";
-import { SimpleDirectoryReader } from "@llamaindex/readers/directory";
 import {
     type ChatMessage,
     ContextChatEngine,
@@ -13,6 +12,7 @@ import {
 } from "llamaindex";
 import type { IDB } from "./api.js";
 import { getEnvOrThrow } from "./get-env.js";
+import { loadMarkdownDocuments } from "./markdown-loader.js";
 import { Openrouter } from "./openrouter.js";
 import { VragenAgent, type QuestionAnalysis } from "./vragen-agent.js";
 
@@ -55,8 +55,7 @@ async function createIndex(collectionName: string, dataDir = "./jw") {
     const qdrantConfig = getQdrantConfig(qdrantUri);
     const vectorStore = new QdrantVectorStore({ collectionName, ...qdrantConfig });
     const storageContext = await storageContextFromDefaults({ vectorStore });
-    const reader = new SimpleDirectoryReader();
-    const docs = await reader.loadData(dataDir);
+    const docs = await loadMarkdownDocuments(dataDir);
     return VectorStoreIndex.fromDocuments(docs, { storageContext });
 }
 
