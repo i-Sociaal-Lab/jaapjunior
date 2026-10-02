@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wmo320:Bericht xmlns:iwmo="http://www.istandaarden.nl/iwmo/3_2/basisschema/schema" xmlns:wmo320="http://www.istandaarden.nl/iwmo/3_2/wmo320/schema" >
+	<wmo320:Header>
+		<wmo320:BerichtCode>483</wmo320:BerichtCode>
+		<wmo320:BerichtVersie>3</wmo320:BerichtVersie>
+		<wmo320:BerichtSubversie>2</wmo320:BerichtSubversie>
+		<wmo320:Afzender>0384</wmo320:Afzender>
+		<wmo320:Ontvanger>65656055</wmo320:Ontvanger>
+		<wmo320:BerichtIdentificatie>
+			<iwmo:Identificatie>876543219</iwmo:Identificatie>
+			<iwmo:Dagtekening>2023-01-04</iwmo:Dagtekening>
+		</wmo320:BerichtIdentificatie>
+		<wmo320:XsdVersie>
+			<iwmo:BasisschemaXsdVersie>1.0.0</iwmo:BasisschemaXsdVersie>
+			<iwmo:BerichtXsdVersie>1.0.0</iwmo:BerichtXsdVersie>
+		</wmo320:XsdVersie>
+		<wmo320:IdentificatieRetour>RT321</wmo320:IdentificatieRetour>
+		<wmo320:DagtekeningRetour>2023-01-05</wmo320:DagtekeningRetour>
+		<wmo320:XsltVersie>1.0.0</wmo320:XsltVersie>
+		<wmo320:XsdVersieRetour>
+			<iwmo:BasisschemaXsdVersie>1.0.0</iwmo:BasisschemaXsdVersie>
+			<iwmo:BerichtXsdVersie>1.0.0</iwmo:BerichtXsdVersie>
+		</wmo320:XsdVersieRetour>
+		<wmo320:RetourCodes>
+			<wmo320:RetourCode>0200</wmo320:RetourCode>
+		</wmo320:RetourCodes>
+	</wmo320:Header>
+	<wmo320:Antwoord>
+		<wmo320:ReferentieAanbieder>9003</wmo320:ReferentieAanbieder>
+		<wmo320:VerzoekAntwoord>2</wmo320:VerzoekAntwoord>
+		<wmo320:RetourCodes>
+			<wmo320:RetourCode>9360</wmo320:RetourCode>
+		</wmo320:RetourCodes>
+	</wmo320:Antwoord>
+</wmo320:Bericht>

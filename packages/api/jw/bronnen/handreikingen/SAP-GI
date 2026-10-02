@@ -1,0 +1,521 @@
+# SAP GI v1.3 - Standaard Administratieprotocol Gecertificeerde Instellingen
+
+## Metadata
+
+- Documentnaam: Standaard Administratieprotocol Gecertificeerde Instellingen
+- Afkorting: SAP GI
+- Versie: 1.3
+- Publicatiedatum: 11-12-2024
+- Domein: Jeugdwet
+- Organisatie: Ketenbureau i-Sociaal Domein
+- Onderwerp: Financieel-administratief proces Gecertificeerde Instellingen
+- Uitvoeringsvariant: Outputgericht
+- Van toepassing op:
+  - Jeugdbescherming (JB)
+  - Jeugdreclassering (JR)
+  - Gedragsbeïnvloedende maatregel (GBM-Advies)
+
+---
+
+## 🔗 Samenvatting
+
+Dit protocol beschrijft het administratieve berichtenverkeer tussen gemeenten en Gecertificeerde Instellingen (GI's).
+
+Belangrijkste uitgangspunten:
+
+- GI's werken uitsluitend met de outputgerichte uitvoeringsvariant.
+- JB- en JR-maatregelen worden gedeclareerd via maandtarieven.
+- De GI vraagt een toewijzing aan via een Verzoek om Toewijzing (JW315).
+- Toewijzingen worden vrijwel altijd met terugwerkende kracht aangevraagd.
+- Startzorg- en Stopzorgberichten zijn verplicht.
+- Het bericht Verzoek om Wijziging (JW317) wordt niet gebruikt voor JB/JR.
+- Gemeenten mogen uitsluitend onderzoek doen naar het woonplaatsbeginsel.
+- Het protocol heeft als doel administratieve lasten te verminderen.
+
+Trefwoorden:
+GI, Jeugdbescherming, Jeugdreclassering, VOT, JW315, JW301, Startzorg, Stopzorg, Declaratie, Woonplaatsbeginsel, Outputgericht
+
+---
+
+# Hoofdstuk 1 - Inleiding
+
+## Doel van het protocol
+
+Het protocol beschrijft het financieel-administratieve proces tussen gemeenten en Gecertificeerde Instellingen voor de uitvoering van wettelijke maatregelen binnen de Jeugdwet.
+
+### Belangrijkste doelstellingen
+
+- vermindering administratieve lasten
+- landelijke uniformiteit
+- standaardisatie van berichtenverkeer
+- ondersteuning van de outputgerichte uitvoeringsvariant
+
+---
+
+## Uitgangspunten
+
+### Uitgangspunt: Outputgerichte uitvoeringsvariant
+
+Voor Jeugdbescherming (JB) en Jeugdreclassering (JR) wordt uitsluitend gewerkt volgens de outputgerichte uitvoeringsvariant.
+
+### Uitgangspunt: Declareren via maandtarief
+
+Kenmerken:
+
+- eerste gebroken maand wordt niet gedeclareerd
+- laatste gebroken maand wordt volledig gedeclareerd
+- maandtarief per maatregel
+
+### Uitzondering: GBM-Advies
+
+Kenmerken:
+
+- stuksprijs
+- éénmalige declaratie
+- volledige bedrag ineens
+
+### Uitgangspunt: Geen aanvullende gegevensuitvraag
+
+Gegevens die via het berichtenverkeer beschikbaar zijn mogen niet opnieuw worden opgevraagd.
+
+---
+
+## Preventieve Jeugdbescherming
+
+Voor preventieve jeugdbeschermingsmaatregelen bestaan geen bindende landelijke afspraken.
+
+Advies:
+
+- ook hier outputgerichte uitvoeringsvariant gebruiken
+
+---
+
+# Hoofdstuk 2 - Standaard proces
+
+## Overzicht proces
+
+Het standaardproces bestaat uit:
+
+1. Toewijzingsproces
+2. Zorgverleningsproces
+3. Declaratieproces
+
+---
+
+# Toewijzingsproces
+
+## Doel
+
+Een gemeente bevestigt dat zij financieel verantwoordelijk is voor de maatregel.
+
+---
+
+## Verzoek om Toewijzing (JW315)
+
+### Beschrijving
+
+De GI verstuurt een VOT-bericht naar de gemeente.
+
+### Inhoud
+
+- productcode
+- omvang
+- verwijzer
+- cliëntgegevens
+
+### Verwijzercode
+
+Bij een maatregel vanuit justitie gebruikt de GI:
+
+- Type Verwijzer = 08
+
+---
+
+## Beschikking van de rechtbank
+
+### Belangrijk
+
+De beschikking komt vaak later beschikbaar dan de start van de maatregel.
+
+Daarom:
+
+- VOT wordt meestal met terugwerkende kracht verzonden
+- uiterlijk binnen 5 werkdagen na ontvangst beschikking versturen
+
+---
+
+## Reactie van de gemeente
+
+Binnen 5 werkdagen:
+
+### Mogelijkheid 1: Toewijzing
+
+Gemeente verstuurt JW301.
+
+### Mogelijkheid 2: Afwijzing
+
+Gemeente verstuurt JW319 met reden.
+
+### Mogelijkheid 3: Onderzoek
+
+Gemeente stuurt antwoord "Aanvraag in onderzoek".
+
+---
+
+## Onderzoek woonplaatsbeginsel
+
+Gemeente mag uitsluitend onderzoek doen naar:
+
+- woonplaatsbeginsel
+
+Maximale duur:
+
+- 14 dagen
+
+---
+
+## Afwijkende toewijzing
+
+Indien gemeente wil afwijken:
+
+1. contact buiten berichtenverkeer
+2. afwijzing versturen
+3. GI dient nieuw VOT in
+
+---
+
+## Toewijzing met terugwerkende kracht
+
+### Regel
+
+Een GI vraagt een toewijzing vrijwel altijd met terugwerkende kracht aan.
+
+### Reden
+
+Uitvoering start direct na uitspraak rechtbank.
+
+---
+
+# Zorgverleningsproces
+
+## Doel
+
+Registreren van daadwerkelijke start en stop van de maatregel.
+
+---
+
+## Startzorgbericht (JW305)
+
+### Verplicht
+
+Ja
+
+### Termijn
+
+Binnen 5 werkdagen:
+
+- na start regievoering
+- of na ontvangst JW301
+
+### Retourbericht
+
+JW306 binnen 3 werkdagen.
+
+---
+
+## Stopzorgbericht (JW307)
+
+### Verplicht
+
+Ja
+
+Ook wanneer maatregel regulier eindigt.
+
+### Termijn
+
+Binnen 5 werkdagen na beëindiging.
+
+### Retourbericht
+
+JW308 binnen 3 werkdagen.
+
+---
+
+## Correctie Startzorgbericht
+
+Procedure:
+
+1. Startzorg verwijderen
+2. nieuw Startzorgbericht sturen
+3. gemeente stuurt retour
+
+Status verwijderen:
+
+- Status aanlevering = 3
+
+---
+
+## Correctie Stopzorgbericht
+
+Procedure:
+
+1. Stopzorg verwijderen
+2. gemeente stuurt retour
+
+Status verwijderen:
+
+- Status aanlevering = 3
+
+---
+
+## Voortijdige definitieve stop
+
+Mogelijk indien:
+
+- rechtbank
+- officier van justitie
+- Raad voor de Kinderbescherming
+
+de maatregel beëindigt.
+
+---
+
+# Declaratieproces
+
+## Uitgangspunten
+
+- maandelijkse declaratie
+- outputgericht
+- volgens contractafspraken
+
+---
+
+## Declareren
+
+### Bericht
+
+JW323
+
+### Termijn
+
+Uiterlijk laatste dag van de maand volgend op de declaratieperiode.
+
+---
+
+## Declaratie-eenheid
+
+### JB en JR
+
+- maandtarief
+
+### GBM-Advies
+
+- 1 stuk
+- éénmalige declaratie
+
+---
+
+## Declaratieantwoordbericht
+
+### Bericht
+
+JW325
+
+### Termijn
+
+Binnen 10 werkdagen.
+
+### Inhoud
+
+- ingediend bedrag
+- goedgekeurd bedrag
+- afwijzingen
+
+---
+
+## Correcties op declaraties
+
+### Afgekeurde declaratie
+
+Opnieuw indienen.
+
+### Goedgekeurde declaratie
+
+Eerst crediteren.
+
+Daarna gecorrigeerde regel indienen.
+
+---
+
+# Hoofdstuk 3 - Overige onderwerpen
+
+## Gezinsgericht werken
+
+### Kern
+
+Het berichtenverkeer ondersteunt geen gezin als entiteit.
+
+### Advies
+
+Toewijzen op BSN van het jongste kind.
+
+---
+
+## Woonplaatsbeginsel
+
+### Afwijzen VOT
+
+Gemeente mag afwijzen indien:
+
+- andere gemeente verantwoordelijk is
+
+Verplicht:
+
+- gemeentecode verantwoordelijke gemeente vermelden
+
+---
+
+## Verhuizing naar andere gemeente
+
+### Ambulante jeugdhulp
+
+Ontvangende gemeente:
+
+- neemt bestaande hulp over
+- verstuurt nieuwe toewijzing
+
+---
+
+## Cliënten zonder BSN
+
+### Berichtenverkeer mogelijk?
+
+Nee
+
+### Werkwijze
+
+- beveiligde communicatie
+- facturatie buiten iJw-berichtenverkeer
+
+---
+
+## Geheimhouding verblijfplaats
+
+Wanneer BSN niet gebruikt kan worden:
+
+- geen berichtenverkeer
+- declareren via beveiligde factuur
+
+---
+
+## Verzoek om Wijziging (JW317)
+
+### Wordt gebruikt?
+
+Nee
+
+### Reden
+
+JB/JR-maatregelen zijn gebaseerd op een rechterlijke uitspraak.
+
+Nieuwe situatie:
+
+- nieuw VOT-bericht
+- nieuwe toewijzing
+
+---
+
+# Begrippenlijst
+
+## Gecertificeerde Instelling (GI)
+
+Instelling die bevoegd is om:
+
+- Jeugdbescherming
+- Jeugdreclassering
+
+uit te voeren.
+
+---
+
+## Toewijzingsbericht (JW301)
+
+Opdracht van gemeente aan GI om maatregel uit te voeren.
+
+---
+
+## Verzoek om Toewijzing (JW315)
+
+Verzoek van GI aan gemeente om een toewijzing te versturen.
+
+---
+
+## Startzorgbericht (JW305)
+
+Melding van daadwerkelijke start van de maatregel.
+
+---
+
+## Stopzorgbericht (JW307)
+
+Melding van beëindiging van de maatregel.
+
+---
+
+## Outputgerichte uitvoeringsvariant
+
+Uitvoering op basis van resultaat in plaats van urenregistratie.
+
+---
+
+# Veelgestelde vragen
+
+## Wat is een GI-toewijzing?
+
+Een bevestiging van de gemeente dat zij financieel verantwoordelijk is voor de maatregel.
+
+Bron:
+Hoofdstuk 2.1 Toewijzingsproces
+
+---
+
+## Mag een gemeente een VOT afwijzen?
+
+Ja.
+
+Alleen wanneer:
+
+- woonplaatsbeginsel anders ligt
+- of contractuele redenen spelen
+
+Bron:
+Paragraaf 2.1
+
+---
+
+## Wanneer moet een Startzorgbericht worden verstuurd?
+
+Binnen 5 werkdagen na start van de regievoering of ontvangst van de toewijzing.
+
+Bron:
+Paragraaf 2.2.1
+
+---
+
+## Wanneer moet een Stopzorgbericht worden verstuurd?
+
+Binnen 5 werkdagen na beëindiging van de maatregel.
+
+Bron:
+Paragraaf 2.2.2
+
+---
+
+## Wordt JW317 gebruikt bij GI's?
+
+Nee.
+
+Voor JB/JR wordt altijd een nieuw VOT-bericht gebruikt.
+
+Bron:
+Paragraaf 3.5
