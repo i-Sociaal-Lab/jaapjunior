@@ -573,6 +573,111 @@ class Agent {
         return scored.slice(0, 20).map((item) => item.result);
     }
 
+    /**
+     * Haalt formele regels op via de expliciete relatievelden uit de YAML
+     * front matter van de bronregel. Dit is bewust een aparte route naast
+     * codelijst-relaties: OP/TR/UP/IV/CD/CS-relaties zijn documentrelaties,
+     * geen codelijstrelaties.
+     */
+    private async retrieveRelatedRules(
+        question: string,
+        searchQueries: string[],
+        analysis?: QuestionAnalysis,
+    ) {
+        const combined = [
+            question,
+            ...(analysis?.entiteiten ?? []),
+            ...searchQueries,
+        ].join(" ");
+
+        const sourceCodes = [
+            ...combined.matchAll(/\b(?:TR|OP|UP|CD|CS|IV)\d{3}[A-Z0-9_-]*\b/gi),
+        ]
+            .map((match) => match[0].toUpperCase())
+            .filter((code, index, arr) => arr.indexOf(code) === index);
+
+        if (sourceCodes.length === 0) return [];
+
+        // Vind eerst de bronregel zelf. De exacte regelretrieval gebruikt de
+        // volledige regelcode als deterministische ankerwaarde.
+        const sourceResults: any[] = [];
+        for (const sourceCode of sourceCodes) {
+            const results = await this.retrieveExactRule(
+                sourceCode,
+                [sourceCode],
+            );
+            sourceResults.push(...results);
+        }
+
+        if (sourceResults.length === 0) return [];
+
+        const relationFields = [
+            "gerelateerde_bedrijfsregels",
+            "gerelateerde_condities",
+            "gerelateerde_uitgangspunten",
+            "gerelateerde_invulinstructies",
+            "gerelateerde_technische_regels",
+            "gerelateerde_constraints",
+        ];
+
+        const wantedField = (() => {
+            const text = question.toLowerCase();
+            if (/technische\s+regels?|tr\d/i.test(text)) return "gerelateerde_technische_regels";
+            if (/bedrijfsregels?|op\d/i.test(text)) return "gerelateerde_bedrijfsregels";
+            if (/uitgangspunten?|up\d/i.test(text)) return "gerelateerde_uitgangspunten";
+            if (/invulinstructies?|iv\d/i.test(text)) return "gerelateerde_invulinstructies";
+            if (/condities?|cd\d/i.test(text)) return "gerelateerde_condities";
+            if (/constraints?|cs\d/i.test(text)) return "gerelateerde_constraints";
+            return null;
+        })();
+
+        const relationCodes = new Set<string>();
+
+        for (const result of sourceResults) {
+            const metadata = result?.node?.metadata ?? {};
+            const fields = wantedField ? [wantedField] : relationFields;
+
+            for (const field of fields) {
+                const value = metadata[field];
+                const values = Array.isArray(value)
+                    ? value
+                    : typeof value === "string"
+                        ? value.split(/[,;\n]+/)
+                        : [];
+
+                for (const item of values) {
+                    const matches = String(item).match(/\b(?:TR|OP|UP|CD|CS|IV)\d{3}[A-Z0-9_-]*\b/gi) ?? [];
+                    for (const code of matches) {
+                        const normalized = code.toUpperCase();
+                        if (!sourceCodes.includes(normalized)) relationCodes.add(normalized);
+                    }
+                }
+            }
+        }
+
+        if (relationCodes.size === 0) return sourceResults;
+
+        const relatedResults: any[] = [];
+        for (const code of relationCodes) {
+            const results = await this.retrieveExactRule(
+                code,
+                [code],
+            );
+            relatedResults.push(...results);
+        }
+
+        // Neem de bronregel mee zodat de LLM de relatie kan uitleggen vanuit
+        // de feitelijke metadata en niet alleen vanuit losse doelregels.
+        const allResults = [...sourceResults, ...relatedResults];
+        const seen = new Set<string>();
+        return allResults.filter((result: any) => {
+            const key = this.nodeContent(result.node);
+            if (seen.has(key)) return false;
+            seen.add(key);
+            return true;
+        });
+    }
+
     private async retrieveCompleteCodelist(
         question: string,
         searchQueries: string[],
@@ -860,22 +965,21 @@ class Agent {
                 console.log("geen exacte regel-chunk gevonden; normale retrieval gebruikt");
             }
         } else if (analysis && isRelational) {
-            // Relationele vragen hebben een tweestapsrelatie:
-            // 1. vind de opgegeven code in de primaire codelijst;
-            // 2. haal vervolgens ook de codelijst op waarin de gekoppelde
-            //    codes hun eigen omschrijving hebben.
-            //
-            // Bijvoorbeeld:
-            // "reden beëindiging 36" -> JZ588 -> JZ002 codes 03,05,08,10,11.
-            //
-            // retrieveCompleteCodelist() voegt voor natuurlijke taal
-            // "reden beëindiging" en "reden wijziging toewijzing" deterministisch
-            // respectievelijk JZ588 en JZ002 toe. Daardoor hoeft de Vragen Agent
-            // de tweede codelijst niet al vooraf te kennen.
-            retrievedNodes = await this.retrieveCompleteCodelist(q, searchQueries, analysis);
+            const ruleRelationQuestion = /\b(?:OP|UP|TR|CD|CS|IV)\d{3}[A-Z0-9_-]*\b/i.test(q)
+                || /(?:bedrijfsregels?|technische\s+regels?|uitgangspunten?|invulinstructies?|condities?|constraints?)/i.test(q);
 
-            console.log("===== RELATIONELE CODELIJST RETRIEVAL =====");
-            console.log(`gevonden relationele codelijst-chunks: ${retrievedNodes.length}`);
+            if (ruleRelationQuestion) {
+                retrievedNodes = await this.retrieveRelatedRules(q, searchQueries, analysis);
+
+                console.log("===== RELATIONELE REGELRETRIEVAL =====");
+                console.log(`gevonden relationele regel-chunks: ${retrievedNodes.length}`);
+            } else {
+                // Relationele codelijstvragen behouden de bestaande tweestapsroute.
+                retrievedNodes = await this.retrieveCompleteCodelist(q, searchQueries, analysis);
+
+                console.log("===== RELATIONELE CODELIJST RETRIEVAL =====");
+                console.log(`gevonden relationele codelijst-chunks: ${retrievedNodes.length}`);
+            }
         } else if (
             analysis &&
             !isCompleteList &&
