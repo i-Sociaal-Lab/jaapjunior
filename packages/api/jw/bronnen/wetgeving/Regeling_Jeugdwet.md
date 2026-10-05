@@ -843,7 +843,7 @@ b.indien uit de informatie die de zorgautoriteit op grond van artikel 9a.2, twee
 
 4°.voor zover van toepassing, de naam en instellingscode, praktijkcode of zorgverlenerscode van de jeugdhulpverlener of gecertificeerde instelling waarop de ontwikkelingen betrekking hebben.
 
-Artikel 8i	Druk de vergelijking van het onderdeel af
+Artikel 8i	
 De zorgautoriteit verstrekt aan de in artikel 71f van de Wet marktordening gezondheidszorg genoemde instanties persoonsgegevens indien en voor zover verwerking van die gegevens voor de uitoefening van hun taken en bevoegdheden noodzakelijk is en voor zover die gegevens behoren tot de hieronder bij die instanties vermelde categorieën van persoonsgegevens:
 
 a.de Inspectie gezondheidszorg en jeugd, de Inspectie Justitie en Veiligheid, de Nederlandse Arbeidsinspectie en de FIOD-ECD: identificerende persoonsgegevens en persoonsgegevens van strafrechtelijke aard betreffende jeugdhulpaanbieders en bestuurders of medewerkers van jeugdhulpaanbieders en gecertificeerde instellingen;
