@@ -84,7 +84,9 @@ college de materiële controle daar ook toe wenst uit te strekken, of die presta
 
 a. aansluit bij een door of namens het college afgegeven beschikking, inhoudende dat recht bestaat op preventie of jeugdhulp,
 
-b. indien het college een aanbieder heeft gemandateerd om namens hem preventie of jeugdhulp te verstrekken, binnen dat mandaat valt, past binnen een verwijzing door een huisarts, medisch specialist of jeugdarts, c.
+b. indien het college een aanbieder heeft gemandateerd om namens hem preventie of jeugdhulp te verstrekken, binnen dat mandaat valt, 
+
+c. past binnen een verwijzing door een huisarts, medisch specialist of jeugdarts,
 
 d. aansluit op een door de gecertificeerde instelling genomen beschikking als bedoeld in artikel 3.5 van de wet, inhoudende dat jeugdhulp aangewezen is;
 
@@ -236,7 +238,7 @@ Jaarverantwoording Jeugd over de verslagjaren 2019 of 2020 worden ingediend vó�
 
 Een jeugdhulpaanbieder die moet voldoen aan artikel 4.4.1, eerste lid, van de wet en een gecertificeerde instelling legt op de volgende wijze vast hoe hij voldoet aan het bepaalde bij en krachtens artikel 4.4.1, eerste en tweede lid, van de wet:
 a. een jeugdhulpaanbieder die een rechtspersoon is en een gecertificeerde instelling legt dit in zijn statuten vast;
-b.een jeugdhulpaanbieder die geen rechtspersoon is ligt dit anderszins schriftelijk vast.
+b. een jeugdhulpaanbieder die geen rechtspersoon is ligt dit anderszins schriftelijk vast.
 
 
 **§ 5. Basisbedragen en toeslagen pleegvergoeding**
