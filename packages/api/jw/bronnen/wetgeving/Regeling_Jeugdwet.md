@@ -53,7 +53,7 @@ In deze regeling wordt verstaan onder:
 
 −*Covid-19:* de ziekte veroorzaakt door coronavirus-SARS-CoV-2;
 
-− *detailcontrole:* onderzoek door het college of door een door het college aangewezen persoon naar bij een aanbieder berustende persoonsgegevens met betrekking tot jeugdigen die hun woonplaats hebben in de gemeente waarvoor het desbetreffende college werkzaam is, ten behoeve van materiële controle of fraudeonderzoek;
+− *detailcontrole:* onderzoek door het college of door een door het college aangewezen persoon naar bij een aanbieder berustende persoonsgegevens met betrekking tot jeugdigen die hun woonplaats hebben in de gemeente waarvoor het desbetreffende college werkzaam is, ten behoeve van materiële controle of fraude-onderzoek;
 
 − *formele controle:* een onderzoek waarbij het college of een door het college aangewezen persoon nagaat of:
 
