@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jw302:Bericht xmlns:jw302="http://www.istandaarden.nl/ijw/3_2/jw302/schema" xmlns:ijw="http://www.istandaarden.nl/ijw/3_2/basisschema/schema" >
+	<jw302:Header>
+		<jw302:BerichtCode>437</jw302:BerichtCode>
+		<jw302:BerichtVersie>3</jw302:BerichtVersie>
+		<jw302:BerichtSubversie>2</jw302:BerichtSubversie>
+		<jw302:Afzender>0384</jw302:Afzender>
+		<jw302:Ontvanger>42420001</jw302:Ontvanger>
+		<jw302:BerichtIdentificatie>
+			<ijw:Identificatie>123456789012</ijw:Identificatie>
+			<ijw:Dagtekening>2023-07-15</ijw:Dagtekening>
+		</jw302:BerichtIdentificatie>
+		<jw302:XsdVersie>
+			<ijw:BasisschemaXsdVersie>1.0.0</ijw:BasisschemaXsdVersie>
+			<ijw:BerichtXsdVersie>1.0.0</ijw:BerichtXsdVersie>
+		</jw302:XsdVersie>
+		<jw302:IdentificatieRetour>9452b7eb-c87</jw302:IdentificatieRetour>
+		<jw302:DagtekeningRetour>2023-07-16</jw302:DagtekeningRetour>
+		<jw302:XsdVersieRetour>
+			<ijw:BasisschemaXsdVersie>1.0.0</ijw:BasisschemaXsdVersie>
+			<ijw:BerichtXsdVersie>1.0.0</ijw:BerichtXsdVersie>
+		</jw302:XsdVersieRetour>
+		<jw302:RetourCodes>
+			<jw302:RetourCode>8848</jw302:RetourCode>
+		</jw302:RetourCodes>
+	</jw302:Header>
+</jw302:Bericht>

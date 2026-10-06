@@ -3,7 +3,7 @@
 Versie: 1.1
 Status: Productie
 Auteur: Zorginstituut
-Bron-link: https://www.istandaarden.nl/binaries/content/assets/istandaarden/iwmo/iwmo-3.2/casusbeschrijvingen-iwmo-3.2-en-ijw-3.2.pdf
+Bron-link: https://informatiemodel.istandaarden.nl/informatiemodel/ijw/3.2/casuistiek/
 Publicatiedatum: 29 september 2022
 AI-agent: Jw-agent, Wmo-agent
 
@@ -73,7 +73,7 @@ In de berichtvoorbeelden zijn de veldnamen en veldwaarden op een functionele man
 
 | **Soort veld** | **Functionele vulling document** | **Technische vulling in bericht** |
 | --- |:---:|:---:|
-| Datumveld | dd-mm-eejj 21-10-2025 | eejjmmdd 20251021 |
+| Datumveld | dd-mm-eejj 21-10-2026 | eejjmmdd 20261021 |
 | Codevelden | Code + omschrijving 04 (uur) | Code 04 |
 | Bedragen | Bedrag in euro's 1234,00 | Bedrag in eurocenten 123400 |
 | Negatieve bedragen | Negatieve bedragen worden functioneel weergegeven als: -1234,00 |  |

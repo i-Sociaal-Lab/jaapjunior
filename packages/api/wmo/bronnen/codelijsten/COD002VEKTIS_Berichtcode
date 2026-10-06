@@ -69,3 +69,13 @@ De berichtcode van een `WMO318`-bericht is `481`.
 | WMO320 | 483 |
 | WMO323 | 484 |
 | WMO325 | 485 |
+
+---
+
+## AI-context
+
+Dit betreft een referentielijst voor `LDT_Berichtcode` binnen iWmo 3.2.
+
+De berichtcode identificeert het type iJw-bericht in de technische berichtheader conform de Vektis-standaard.
+
+Elke berichtsoort (`WMO301`, `WMO317`, `WMO323`, etc.) heeft een unieke numerieke berichtcode.

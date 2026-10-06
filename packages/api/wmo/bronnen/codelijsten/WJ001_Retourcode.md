@@ -31,7 +31,7 @@ Melding in een retourbericht. Het betreft een code die in een retourbericht het 
 | 0200 | Geen opmerking over deze berichtklasse. | — | WMO301, WMO305, WMO307, WMO315, WMO317, WMO319, WMO323 |
 | 0233 | Berichtklasse is niet beoordeeld. | — | WMO301, WMO305, WMO307, WMO315, WMO317, WMO319, WMO323 |
 | 8848 | Dagtekening moet gelijk zijn aan of voor de systeemdatum liggen. | TR135 | WMO301, WMO305, WMO307, WMO315, WMO317, WMO319, WMO323, WMO325 |
-| 9056 | Identificatie moet uniek zijn. | TR056 | WMO301, WMO305, WMO307, WMO315, WMO317, WMO319, WMO323, WMO325 |
+| 9056 | Identificatie moet per berichtsoort uniek zijn voor de verzendende partij. | TR056 | WMO301, WMO305, WMO307, WMO315, WMO317, WMO319, WMO323, WMO325 |
 
 ---
 
@@ -39,8 +39,8 @@ Melding in een retourbericht. Het betreft een code die in een retourbericht het 
 
 | Code | Betekenis | TR-regel | Berichttypen |
 |---|---|---|---|
-| S300 | Gemeentecode ongeldig. | TR378 | WMO301, WMO305, WMO307, WMO315, WMO317, WMO319, WMO323, WMO325 |
-| S329 | ProductCode ongeldig. | TR381 | WMO301, WMO305, WMO307, WMO315, WMO317, WMO323 |
+| S300 | Gemeentecode komt niet voor in de lijst van CBS. | TR378 | WMO301, WMO305, WMO307, WMO315, WMO317, WMO319, WMO323, WMO325 |
+| S329 | ProductCode hoort niet bij de ProductCategorie. | TR381 | WMO301, WMO305, WMO307, WMO315, WMO317, WMO323 |
 
 
 ---
@@ -50,8 +50,8 @@ Melding in een retourbericht. Het betreft een code die in een retourbericht het 
 | Code | Betekenis | TR-regel | Berichttypen |
 |---|---|---|---|
 | 9019 | Het regiebericht kan niet gekoppeld worden aan een toewijzing. | TR019 | WMO305, WMO307 |
-| 9063 | Het bericht kan niet verwerkt worden omdat geen eerder bericht ontvangen is | TR063 | WMO305, WMO307 |
-| 9069 | Er is geen actueel startbericht met dezelfde sleutel. | TR069 | WMO307 |
+| 9063 | Het bericht kan niet verwerkt worden omdat geen eerder bericht ontvangen is. | TR063 | WMO305, WMO307 |
+| 9069 | Er is geen actueel startbericht met dezelfde sleutel. | TR382 | WMO307 |
 | 9071 | Het eerdere startbericht kan niet verwijderd worden omdat de zorg al beeindigd is. | TR071 | WMO305 |
 | 9074 | Er is al een eerder bericht ontvangen met dezelfde sleutel. | TR074 | WMO305, WMO307 |
 | 9326 | De actuele levering is nog niet gestopt met een Stopbericht. | TR326 | WMO305 |
@@ -65,11 +65,11 @@ Melding in een retourbericht. Het betreft een code die in een retourbericht het 
 
 | Code | Betekenis | TR-regel | Berichttypen |
 |---|---|---|---|
-| 0611 | Het ingediende tarief komt niet overeen met het contractuele tarief | TR418 | WMO323 |
+| 0611 | Het ingediende tarief komt niet overeen met het contractuele tarief. | TR418 | WMO323 |
 | 8001 | Declaratie is volledig toegewezen. | — | WMO323 |
 | 8017 | Van deze credit prestatie is geen debet prestatie bekend. | TR323 | WMO323 |
 | 8021 | Referentienummer prestatie is reeds aangeleverd. | TR314 | WMO323 |
-| 8187 | De prestatie hoort niet bij deze cliënt. | TR304 | WMO323 |
+| 8187 | De prestatie hoort niet bij deze client. | TR304 | WMO323 |
 | 8214 | DeclaratiePeriode is niet de kalendermaand die volgt op voorgaande DeclaratiePeriode terwijl iedere declaratieperiode zorg geleverd is. | TR318 | WMO323 |
 | 9307 | Begindatum prestatie ligt niet tussen de ingangsdatum en einddatum toewijzing. | TR307 | WMO323 |
 | 9308 | Einddatum prestatie ligt niet tussen de ingangsdatum en einddatum toewijzing. | TR308 | WMO323 |
@@ -101,6 +101,7 @@ Melding in een retourbericht. Het betreft een code die in een retourbericht het 
 | 9349 | Het VOW bericht bevat niet alle actuele toegewezen producten van de cliënt, hetzij in OngewijzigdProduct, hetzij in TeWijzigenProduct. | TR349 | WMO317 |
 | 9350 | OngewijzigdProduct is niet gerelateerd aan een actueel toegewezen product op basis van het toewijzingnummer. | TR350 | WMO317 |
 | 9351 | TeWijzigenProduct is niet gerelateerd aan een actuele toewijzing op basis van ToewijzingNummer. | TR351 | WMO317 |
+| 9355 | ReferentieAanbieder in het antwoordbericht komt niet voor in een eerder verzoek om toewijzing of verzoek om wijziging. | TR355 | WMO319 |
 | 9357 | GewensteIngangsdatum is kleiner dan of gelijk aan de dagtekening, maar niet gelijk aan de ingangsdatum van het originele ToegewezenProduct. | TR357 | WMO317 |
 | 9359 | Er is al een toewijzing gestuurd met deze ReferentieAanbieder. | TR359 | WMO319 |
 | 9360 | Er is al een antwoordbericht met deze ReferentieAanbieder, terwijl antwoordbericht in VerzoekAntwoord waarde 2 (aanvraag in onderzoek) heeft. | TR360 | WMO319 |

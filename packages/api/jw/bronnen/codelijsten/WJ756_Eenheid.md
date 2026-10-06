@@ -12,11 +12,21 @@
 
 ## Definitie
 
-De eenheid waarin het volume van een product, prestatie of zorg wordt uitgedrukt.
+Gecodeerde aanduiding van de mate van zorg betreffende een product, uitgedrukt in een eenheid.
 
 De code uit deze codelijst bepaalt hoe het volume en de frequentie van een toewijzing of declaratie moeten worden geïnterpreteerd.
 
 ---
+## Gebruikt in berichten
+
+- JW301
+- JW302
+- JW315
+- JW316
+- JW317
+- JW318
+- JW323
+- JW325
 
 ## Zoekindex
 
@@ -57,7 +67,7 @@ De zorg wordt uitgedrukt in minuten.
 
 ## Voorbeeld
 
-Volume 120 betekent 120 minuten zorg.
+Volume 120, eenheid 01:  betekent 120 minuten zorg.
 
 ---
 
@@ -82,7 +92,7 @@ De zorg wordt uitgedrukt in uren.
 
 ## Voorbeeld
 
-Volume 8 betekent 8 uur zorg.
+Volume 8, eenheid 04: betekent 8 uur zorg.
 
 ---
 
@@ -109,7 +119,7 @@ De zorg wordt uitgedrukt in etmalen.
 
 ## Voorbeeld
 
-Volume 6 betekent 6 etmalen zorg.
+Volume 6 eenheid 14, betekent 6 etmalen zorg.
 
 ### Veelgestelde vragen
 
@@ -144,7 +154,7 @@ De zorg wordt uitgedrukt in dagdelen van vier uur.
 
 ## Voorbeeld
 
-Volume 3 betekent 3 dagdelen van ieder 4 uur.
+Volume 3, eenheid 16 betekent 3 dagdelen van ieder 4 uur.
 
 ---
 
@@ -152,7 +162,7 @@ Volume 3 betekent 3 dagdelen van ieder 4 uur.
 
 ## Betekenis
 
-De zorg wordt uitgedrukt in geleverde producten of resultaten.
+De zorg wordt uitgedrukt in geleverde producten of resultaten. (Outputgericht)
 
 ## Code
 
@@ -193,7 +203,7 @@ De zorg wordt uitgedrukt in euro's.
 
 ## Betekenis
 
-De zorg wordt uitgedrukt in aantallen verrichte activiteiten of inspanningen.
+De zorg wordt uitgedrukt in aantallen verrichte activiteiten of inspanningen. (Inspanningsgericht)
 
 ## Code
 

@@ -2,7 +2,7 @@
 
 ## Definitie
 
-TR381: ProductCode vullen met een code die, volgens de gehanteerde productcodelijst, past bij de ProductCategorie.
+ProductCode vullen met een code die, volgens de gehanteerde productcodelijst, past bij de ProductCategorie.
 
 ---
 
@@ -15,13 +15,14 @@ TR381: ProductCode vullen met een code die, volgens de gehanteerde productcodeli
 | Controleniveau | externe bron |
 | Retourcode | S329 |
 | Bron | iWmo standaard |
+| Bronpagina | https://informatiemodel.istandaarden.nl/informatiemodel/iwmo/3.2/regels/technische-regel/tr381/ |
 | Bestandstype | Technische regel |
 
 ---
 
 ## Toelichting
 
-Geen aanvullende toelichting beschikbaar.
+De iWmo 3.2-regeldocumentatie bevat voor deze regel geen aanvullende toelichting.
 
 ---
 
@@ -34,6 +35,12 @@ Geen aanvullende toelichting beschikbaar.
 - WMO317
 - WMO323
 
+
+---
+
+## Gerelateerde bedrijfsregels
+
+- OP047
 
 ---
 

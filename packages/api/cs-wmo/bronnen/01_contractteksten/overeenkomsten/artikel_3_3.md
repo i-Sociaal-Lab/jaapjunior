@@ -1,0 +1,35 @@
+---
+document_type: overeenkomst
+document_version: "1.3"
+article: "3.3"
+source_priority: 1
+source: "CSW_Overeenkomst_Wmo_1.3.md"
+---
+
+# Artikel 3.3 – Marketing
+
+### Mogelijke chatbotvragen
+
+- Wat staat er in artikel 3.3 over marketing?
+- Wat bepaalt artikel 3.3?
+
+### Brontekst
+
+**Artikel 3.3 – Marketing**
+
+3.3.1
+Als Opdrachtnemer marketing gebruikt, dan houdt hij zich aan de gedragsregels voor marketing. Deze regels zijn:
+
+a) Opdrachtnemer laat duidelijk zien wie hij is op al het marketingmateriaal.
+b) Hij gebruikt geen telefonische marketing, huis-aan-huisverkoop of verkoop op plekken waar cliënten veel zijn.
+c) Hij geeft cliënten de mogelijkheid om aan te geven dat zij geen marketing meer willen ontvangen.
+d) Hij levert geen diensten aan cliënten als zij daar wettelijk nog geen recht op hebben.
+e) Hij doet zich nooit anders voor, bijvoorbeeld niet als onderzoeksbureau of enquêteur.
+f) Als hij persoonlijke gegevens voor marketing vraagt, dan meldt hij dit duidelijk en vraagt hij schriftelijke toestemming.
+g) Hij gebruikt geen agressieve verkooptechnieken richting cliënten.
+
+3.3.2
+Opdrachtnemer houdt zich ook aan deze regels bij marketing voor diensten die hij levert via een persoonsgebonden budget in de gemeente.
+
+## Bron
+CSW_Overeenkomst_Wmo_1.3.md, artikel 3.3

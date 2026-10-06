@@ -42,7 +42,7 @@ Gebruik deze lijst als naslagwerk bij het analyseren van retourmeldingen.
 - *BIDN* = Berichtenverkeer i-Domein Nederland  
 - *CAK* = Centraal Administratie Kantoor  
 - *VWS* = Ministerie van Volksgezondheid, Welzijn en Sport  
-- *VECOZO* = VEilig COmmunicatie ZOrg  
+- *VECOZO* = VEilige COmmunicatie in de ZOrg  
 
 ---
 
