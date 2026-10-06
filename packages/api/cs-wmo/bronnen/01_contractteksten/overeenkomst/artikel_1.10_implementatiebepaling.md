@@ -2,11 +2,13 @@
 document_type: toelichting_overeenkomst
 document_version: "1.3"
 article: "1.10"
-title: "[Optioneel:] Artikel 1.10: Implementatiebepaling"
+title: "Artikel 1.10: Implementatiebepaling"
+status: optioneel
+opname_verplicht: false
 source_file: "artikel_1_10_Implementatiebepaling.md"
 ---
 
-# [Optioneel:] Artikel 1.10: Implementatiebepaling
+# Artikel 1.10: Implementatiebepaling
 
 ### Mogelijke chatbotvragen
 
@@ -53,7 +55,6 @@ de overeenkomst.
 
 ### Bron
 
-**Toelichting Overeenkomst Wmo versie 1.3**, onderdeel **[Optioneel:]
-Artikel 1.10: Implementatiebepaling**.
+**Toelichting Overeenkomst Wmo versie 1.3**, onderdeel **Artikel 1.10: Implementatiebepaling**.
 
 ------------------------------------------------------------------------
