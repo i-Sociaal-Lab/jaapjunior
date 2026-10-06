@@ -5,6 +5,7 @@ import {
     type ChatMessage,
     ContextChatEngine,
     MetadataMode,
+    TextNode,
     type LLM,
     Settings,
     storageContextFromDefaults,
@@ -940,10 +941,15 @@ class Agent {
         }
 
         if (codelistValidationMessage) {
-            retrievedNodes = [{
-                node: {
-                    getContent: () => codelistValidationMessage,
+            const validationNode = new TextNode({
+                text: codelistValidationMessage,
+                metadata: {
+                    source: "codelist-validation",
                 },
+            });
+
+            retrievedNodes = [{
+                node: validationNode,
                 score: 1,
             }];
         } else if (analysis && isExactRuleQuestion) {
@@ -1043,9 +1049,30 @@ class Agent {
                 ? []
                 : [createJinaReranker(10, "jina-reranker-v2-base-multilingual") as any];
 
-        const effectivePrompt = codelistValidationMessage
-            ? `${this.prompt}\n\n### HARDE CODELIJSTVALIDATIE\n${codelistValidationMessage}\nGeef geen gekoppelde code uit een andere codelijst. Beantwoord alleen dat de opgegeven broncode niet bestaat en vraag zo nodig om een andere code.`
-            : this.prompt;
+        const startTime = Date.now();
+
+        // Harde stop bij een negatieve codelijstvalidatie. De validatiemelding
+        // is het definitieve antwoord; het LLM mag hier niet opnieuw zoeken
+        // of een gelijk genummerde code uit een andere codelijst gebruiken.
+        if (codelistValidationMessage) {
+            const responseTime = Date.now() - startTime;
+            db.prepare("INSERT INTO model_responses (model, response_time) VALUES ($1, $2)").run({
+                $1: actualModel,
+                $2: responseTime,
+            });
+
+            return {
+                message: {
+                    content: codelistValidationMessage,
+                    options: {
+                        model: actualModel,
+                        prompt: this.prompt,
+                    },
+                },
+            } as any;
+        }
+
+        const effectivePrompt = this.prompt;
 
         const chatEngine = new ContextChatEngine({
             retriever: {
@@ -1058,7 +1085,6 @@ class Agent {
             chatModel: llm,
         });
 
-        const startTime = Date.now();
         const response = await chatEngine.chat({ message: q, chatHistory });
         const responseAny = response as any;
         if (typeof responseAny?.message?.content === "string") {
