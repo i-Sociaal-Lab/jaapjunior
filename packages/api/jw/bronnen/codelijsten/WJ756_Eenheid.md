@@ -162,7 +162,7 @@ Volume 3, eenheid 16 betekent 3 dagdelen van ieder 4 uur.
 
 ## Betekenis
 
-De zorg wordt uitgedrukt in geleverde producten of resultaten.
+De zorg wordt uitgedrukt in geleverde producten of resultaten. (Outputgericht)
 
 ## Code
 
@@ -203,7 +203,7 @@ De zorg wordt uitgedrukt in euro's.
 
 ## Betekenis
 
-De zorg wordt uitgedrukt in aantallen verrichte activiteiten of inspanningen.
+De zorg wordt uitgedrukt in aantallen verrichte activiteiten of inspanningen. (Inspanningsgericht)
 
 ## Code
 
