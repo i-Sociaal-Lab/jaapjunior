@@ -1,17 +1,61 @@
+---
+title: "Ministeriële Regeling verplichting iStandaarden"
+document_type: "Ministeriële regeling"
+status: "Productie"
+author: "Ministerie van VWS"
+publication_date: "2019-07-25"
+publication_source: "Staatscourant 2019, nr. 41519"
+source_url: "https://zoek.officielebekendmakingen.nl/stcrt-2019-41519.pdf"
+domain:
+  - "Jeugdwet"
+  - "Wmo 2015"
+  - "iJw"
+  - "iWmo"
+  - "iStandaarden"
+  - "berichtenverkeer"
+  - "uitvoeringsvarianten"
+  - "administratieve lasten"
+document_role:
+  - "Brondocument Jw-agent"
+  - "Brondocument Wmo-agent"
+key_topics:
+  - "verplichting toepassing iJw"
+  - "verplichting toepassing iWmo"
+  - "inspanningsgerichte uitvoeringsvariant"
+  - "outputgerichte uitvoeringsvariant"
+  - "taakgerichte uitvoeringsvariant"
+  - "elektronisch berichtenverkeer"
+  - "toewijzen"
+  - "leveren"
+  - "factureren en declareren"
+  - "bedrijfsregels"
+  - "beheer en publicatie iStandaarden"
+  - "overgangsregeling bestaande contracten"
+entities:
+  - "Zorginstituut Nederland (ZINL)"
+  - "VNG"
+  - "Ketenbureau i-Sociaal Domein"
+  - "Stuurgroep ketenregie i-Sociaal Domein"
+related_laws:
+  - "Jeugdwet"
+  - "Wet maatschappelijke ondersteuning 2015"
+answering_note: "Gebruik voor beantwoording uitsluitend de inhoud van dit document. Maak onderscheid tussen de normatieve regeling en de toelichting."
+---
+
 # Ministeriële Regeling verplichting iStandaarden
 
-Status: Productie
-Auteur: Ministerie van VWS
-Toelichting: MR waarmee de iStandaarden iJw en iWmo verplicht werden voor inspannings- en outputgerichte uitvoeringsvarianten en rol Ketenbureau voor monitoren iStandaarden staat beschreven.
-Bron: https://zoek.officielebekendmakingen.nl/stcrt-2019-41519.pdf
-Publicatiedatum: 25 juli 2019
-Type document: Brondocument Jw-agent, Brondocument Wmo-agent
+> **Documentdoel:** bron voor vragen over de wettelijke verplichting tot toepassing van de iJw- en iWmo-standaarden bij de inspanningsgerichte en outputgerichte uitvoeringsvariant, inclusief de regels over berichtenverkeer, bestaande contracten en beheer/publicatie van wijzigingen.
 
-# **STAATSCOURANT**
+> **Bron:** Staatscourant 2019, nr. 41519, gepubliceerd op 25 juli 2019.  
+> **Officiële bron:** https://zoek.officielebekendmakingen.nl/stcrt-2019-41519.pdf
+
+## 1. Staatscourant en regeling
+
+
 
 Officiële uitgave van het Koninkrijk der Nederlanden sinds 1814. 25 juli 2019
 
-**Nr. 41519**
+### Staatscourant nr. 41519
 
 **Regeling van de Minister van Volksgezondheid, Welzijn en Sport en de Minister voor Rechtsbescherming van 18 juli 2019, kenmerk 1483284-187122-WJZ, tot wijziging van de Regeling Jeugdwet en de Uitvoeringsregeling Wmo 2015 in verband met het stellen van regels ten behoeve van het beperken van vermijdbare uitvoeringslasten in het kader van de Jeugdwet en de Wet maatschappelijke ondersteuning 2015**
 
@@ -21,11 +65,11 @@ Gelet op de artikelen 2.15 van de Jeugdwet en 2.6.7a van de Wet maatschappelijke
 
 Besluiten:
 
-**ARTIKEL I**
+## 2. Artikel I — Regeling Jeugdwet
 
 De Regeling Jeugdwet wordt als volgt gewijzigd:
 
-A
+#### Onderdeel A
 
 In artikel 1 worden in de alfabetische rangschikking ingevoegd:
 
@@ -35,13 +79,13 @@ In artikel 1 worden in de alfabetische rangschikking ingevoegd:
 
 – *outputgerichte uitvoeringsvariant:* uitvoering van jeugdhulp of werkzaamheden van een gekwalificeerde gedragswetenschapper waarbij er een afspraak is tussen het college en de aanbieder of de gekwalificeerde gedragswetenschapper over het te behalen resultaat;.
 
-B
+#### Onderdeel B
 
 Na artikel 6b.7 wordt een nieuwe paragraaf ingevoegd, luidende:
 
 *§ 6c. Beperking uitvoeringslasten Jeugdwet*
 
-**Artikel 6c.1**
+### Artikel 6c.1
 
 1. Bij de bekostiging van aanbieders of gekwalificeerde gedragswetenschappers, bedoeld in artikel 2.15, eerste lid, onderdeel a, van de wet kan het college gebruik maken van een: a. inspanningsgerichte uitvoeringsvariant, of
 
@@ -51,13 +95,13 @@ b. outputgerichte uitvoeringsvariant.
 
 3. Toepassing van de iJw houdt in ieder geval in dat er overeenkomstig de iJw elektronisch berichtenverkeer is tussen gemeenten en de in het eerste lid bedoelde personen en instanties bij het toewijzen, factureren en declareren, en leveren van producten, diensten of resultaten.
 
-**Artikel 6c.2**
+### Artikel 6c.2
 
 Indien de iJw worden gewijzigd, wordt de wijziging van kracht vanaf het moment waarop deze openbaar is gemaakt door het Zorginstituut.
 
 Na artikel 9.1 wordt een artikel ingevoegd, luidende:
 
-**Artikel 9.1a**
+### Artikel 9.1a
 
 In afwijking van artikel 6c.1, tweede lid, hoeven de iJw niet te worden toegepast bij de uitvoering van contracten die door de contractspartijen zijn ondertekend voor de datum waarop deze regeling in werking treedt, behalve voor zover:
 
@@ -65,11 +109,11 @@ a. deze contracten volgens de gezamenlijke contractspartijen ruimte laten voor t
 
 b. deze contracten na de inwerkingtreding van deze regeling worden gewijzigd.
 
-**ARTIKEL II**
+## 3. Artikel II — Uitvoeringsregeling Wmo 2015
 
 De Uitvoeringsregeling Wmo 2015 wordt als volgt gewijzigd:
 
-A
+#### Onderdeel A
 
 Aan artikel 1 worden onder vervanging van de punt aan het slot van de omschrijving van het begrip ‘Ministers’ door een puntkomma, de volgende begripsomschrijvingen toegevoegd:
 
@@ -79,13 +123,13 @@ Aan artikel 1 worden onder vervanging van de punt aan het slot van de omschrijvi
 
 – *outputgerichte uitvoeringsvariant:* uitvoering van maatschappelijke ondersteuning waarbij er een afspraak is tussen het college en de aanbieder over het te behalen resultaat.
 
-B
+#### Onderdeel B
 
 Na Hoofdstuk 3a wordt een nieuw hoofdstuk ingevoegd, luidende:
 
 **Hoofdstuk 3b. Beperking uitvoeringslasten Wmo 2015**
 
-**Artikel 3j**
+### Artikel 3j
 
 1. Bij de bekostiging van aanbieders, bedoeld in artikel 2.6.7a, eerste lid, onderdeel a, van de wet kan het college gebruik maken van een:
 
@@ -97,15 +141,15 @@ b. outputgerichte uitvoeringsvariant.
 
 3. Toepassing van de iWmo houdt in ieder geval in dat er overeenkomstig de iWmo elektronisch berichtenverkeer is tussen gemeenten en de in het eerste lid bedoelde aanbieders bij het toewijzen, factureren en declareren, en leveren van producten, diensten of resultaten.
 
-**Artikel 3k**
+### Artikel 3k
 
 Indien de iWmo worden gewijzigd, wordt de wijziging van kracht vanaf het moment waarop deze openbaar is gemaakt door het Zorginstituut.
 
-C
+#### Onderdeel C
 
 Na artikel 19 wordt een artikel ingevoegd, luidende:
 
-**Artikel 19a**
+### Artikel 19a
 
 In afwijking van artikel 3j, tweede lid, hoeven de iWmo niet te worden toegepast bij de uitvoering van contracten die door de contractspartijen zijn ondertekend voor de datum waarop deze regeling in werking treedt, behalve voor zover:
 
@@ -113,7 +157,7 @@ a. deze contracten volgens de gezamenlijke contractspartijen ruimte laten voor t
 
 b. deze contracten na de inwerkingtreding van deze regeling worden gewijzigd.
 
-**ARTIKEL III**
+## 4. Artikel III — Inwerkingtreding
 
 Deze regeling treedt in werking met ingang van de dag na de datum van uitgifte van de Staatscourant waarin zij wordt geplaatst.
 
@@ -127,15 +171,15 @@ Deze regeling zal met de toelichting in de Staatscourant worden geplaatst.
 
 *S. Dekker*
 
-## **TOELICHTING**
+## 5. Toelichting
 
 **Algemeen**
 
-***1. Aanleiding en doel***
+### 1. Aanleiding en doel
 
 Sinds de inwerkingtreding van de Jeugdwet en de Wet maatschappelijke ondersteuning 2015 (Wmo 2015) zijn de vermijdbare uitvoeringslasten bij aanbieders van (jeugd)hulp, gecertificeerde instellingen en maatschappelijke ondersteuning gestegen. Uitvoeringslasten zijn de lasten die samenhangen met administratieve handelingen die verricht worden bij de uitvoering van de regelgeving. In de Jeugdwet en de Wmo 2015 zijn delegatiebepalingen (artikelen 2.15, eerste lid, van de Jeugdwet en artikel 2.6.7a, eerste lid, van de Wmo 2015) opgenomen op grond waarvan bij ministeriële regeling regels worden gesteld ter beperking van de uitvoeringslasten. Deze regeling strekt tot invulling van deze delegatiebe-palingen en bevat regels over de manier waarop administratieve handelingen verricht moeten worden in het kader van de Jeugdwet en de Wmo 2015. In deze regeling worden gemeenten en aanbieders die de inspanningsgerichte uitvoeringsvariant of de outputgerichte uitvoeringsvariant gebruiken, verplicht om de bij die uitvoeringsvarianten behorende standaarden iJw en iWmo voor het elektronisch berichtenverkeer te gebruiken.
 
-***2. Reikwijdte en werking van de regeling***
+### 2. Reikwijdte en werking van de regeling
 
 Aanbieders van jeugdhulp en maatschappelijke ondersteuning ervaren in de praktijk uitvoeringslasten die vermijdbaar zijn. Veel aanbieders werken voor meerdere gemeenten en ervaren veel last van verschillen in werkwijzen van gemeenten. Om dit type uitvoeringslasten terug te dringen zijn door het programma i-Sociaal Domein (in opdracht van Vereniging van Nederlandse Gemeenten (VNG) en branches voor aanbieders) uitvoeringsvarianten ontwikkeld. Uitvoeringsvarianten zijn werkwijzen waaruit gemeenten kunnen kiezen bij een bepaald type bekostiging (te weten de typen ‘betaling per geleverd product of dienst’, ‘betaling per behaald resultaat’ of betaling door middel van het verstrek-ken van een lump sum). Door gebruik te maken van de uitvoeringsvarianten standaardiseren gemeenten hun administratieve werkwijzen. Er zijn op dit moment drie typen uitvoeringsvarianten: inspanningsgericht (P*Q-financiering), outputgericht (bijvoorbeeld trajectfinanciering) en taakgericht (bijvoorbeeld lump sum- of populatiebekostiging).
 
@@ -157,9 +201,9 @@ In deze regeling worden geen voorschriften gesteld voor de ontwikkeling van nieu
 
 Deze regeling wordt in ieder geval jaarlijks besproken in een bestuurlijk overleg met de VNG en de branches voor aanbieders. Dit is een natuurlijk moment om het effect van de voorschriften te bespreken. Ook wordt dit overleg benut om te bekijken of het aanpassen van de regeling noodzakelijk is. Als hier aanleiding toe is, dienen de VNG en de branches voorafgaand aan het bestuurlijk overleg een gezamenlijk advies uit te brengen.
 
-***3. Toelichting op verplicht gestelde instrumenten***
+### 3. Toelichting op verplicht gestelde instrumenten
 
-*3.1 Uitvoeringsvarianten*
+#### 3.1 Uitvoeringsvarianten
 
 Zoals hierboven is aangegeven bestaan uitvoeringsvarianten uit vier onderdelen: i-standaarden (iJw en iWmo), het accountantsprotocol, standaardartikelen voor in de overeenkomsten die tussen gemeenten en aanbieders gesloten worden en productcodes.
 
@@ -169,7 +213,7 @@ Voor elk van de drie uitvoeringsvarianten bieden de standaarden iJw en iWmo een 
 
 Voor een nadere toelichting op de i-standaarden wordt verwezen naar paragraaf 3.2 van deze toelichting.
 
-*3.2 iJw en iWmo*
+#### 3.2 iJw en iWmo
 
 In het Jeugdwet- en Wmo-berichtenverkeer wisselen gemeenten en aanbieders in verschillende processtappen (zorgtoewijzing, -levering en facturatie of declaratie) op een elektronische wijze informatie uit over de producten en diensten die worden geleverd. Om te zorgen dat gemeenten en aanbieders dezelfde taal spreken zijn de informatiestandaarden ontwikkeld. Deze standaarden hebben dus een ondersteunend karakter bij de uitvoering van de Jeugdwet en Wmo 2015. De iJw- en iWmo- standaarden beschrijven naast een systematiek om de administratieve processen te volgen (via zorgtoewijzing en -levering tot de facturatie of declaratie) tot in detail de opbouw van en de manier waarop een bericht gevuld moet worden. Zij bevorderen daarmee een snelle en soepele elektronische informatieoverdracht, die bij consequent en correct gebruik uiteindelijk leidt tot een vermindering van vermijdbare uitvoeringslasten.
 
@@ -203,7 +247,7 @@ De iStandaarden worden regelmatig aangepast op basis van nieuwe ontwikkelingen, 
 
 Het ZINL stemt deze wijzigingen af met partners binnen het sociaal domein of (langdurige) zorg die geen zitting hebben in de stuurgroep. Dit zijn bijvoorbeeld het Centraal Indicatieorgaan Zorg (CIZ), het CAK, zorgkantoren, zorgverzekeraars of aanbieders van langdurige zorg. Als blijkt dat een genomen besluit van de stuurgroep leidt tot knelpunten elders, dient dit besproken te worden in deze stuur-groep. Indien geen overeenstemming wordt bereikt, is nader overleg aangewezen. Afhankelijk van het type conflict wordt gekozen voor een afvaardiging van gemeenten en zorgbranches, die met elkaar tot een oplossing dienen te komen. VWS kan hierin gevraagd worden als bemiddelende partij.
 
-**Artikelsgewijs**
+### Artikelsgewijze toelichting
 
 ***Artikel I, onderdeel A, en Artikel II, onderdeel A***
 
@@ -224,3 +268,25 @@ De in de onderdelen A geregelde verplichting heeft als gevolg dat colleges en aa
 *De Minister voor Rechtsbescherming,*
 
 *S. Dekker*
+
+## 6. Zoekindex voor JaapJunior
+
+### Begrippen
+- iJw: door het Zorginstituut beheerde standaarden als bedoeld in artikel 2.15, derde lid, van de Jeugdwet.
+- iWmo: door het Zorginstituut beheerde standaarden als bedoeld in artikel 2.6.7a, derde lid, van de Wet maatschappelijke ondersteuning 2015.
+- inspanningsgerichte uitvoeringsvariant
+- outputgerichte uitvoeringsvariant
+- taakgerichte uitvoeringsvariant
+
+### Verplichtingen
+- Bij de inspanningsgerichte uitvoeringsvariant: toepassing van iJw respectievelijk iWmo.
+- Bij de outputgerichte uitvoeringsvariant: toepassing van iJw respectievelijk iWmo.
+- Toepassing omvat elektronisch berichtenverkeer bij toewijzen, factureren/declareren en leveren.
+
+### Belangrijke uitzonderingen
+- Bestaande contracten die vóór inwerkingtreding zijn ondertekend hoeven de iJw/iWmo niet zonder meer toe te passen.
+- Uitzondering geldt niet wanneer het contract ruimte laat voor toepassing of wanneer het contract na inwerkingtreding wordt gewijzigd.
+
+### Beheer en wijzigingen
+- Wijzigingen van iJw/iWmo worden van kracht vanaf het moment waarop deze openbaar zijn gemaakt door het Zorginstituut.
+- De toelichting beschrijft de rollen van het Zorginstituut, de Stuurgroep ketenregie i-Sociaal Domein, VNG, gemeenten, branches en het Ketenbureau.
