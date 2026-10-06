@@ -1,31 +1,59 @@
-## Artikel 1.10 Implementatiebepaling
+---
+document_type: toelichting_overeenkomst
+document_version: "1.3"
+article: "1.10"
+title: "[Optioneel:] Artikel 1.10: Implementatiebepaling"
+source_file: "artikel_1_10_Implementatiebepaling.md"
+---
+
+# [Optioneel:] Artikel 1.10: Implementatiebepaling
 
 ### Mogelijke chatbotvragen
 
-- Wat staat er in artikel 1.10 over implementatiebepaling?
-- Wat bepaalt artikel 1.10?
+-   Wat is de ratio van Artikel 1.10: Implementatiebepaling?
+-   Wat is de inhoud van Artikel 1.10: Implementatiebepaling?
+-   Wat bepaalt de toelichting bij Artikel 1.10: Implementatiebepaling?
+-   Waarom is Artikel 1.10: Implementatiebepaling opgenomen in de
+    contractstandaard?
+-   Wat moet ik weten over Artikel 1.10: Implementatiebepaling?
 
-### Brontekst
+### Brontekst van de toelichting
 
-**Artikel 1.10 Implementatiebepaling**
+Ratio:
 
-De opdrachtgever vult hier in hoe hij wil omgaan met de overgang naar een nieuwe overeenkomst zowel voor bestaande als voor nieuwe aanbieders als het gaat om de duur en bekostiging van lopende beschikkingen onder oude overeenkomst en wanneer en hoe overgang naar nieuwe overeenkomst.
+-   Bij de overgang naar een nieuwe overeenkomst is het soms wenselijk
+    dat cliënten nog bij de huidige aanbieder blijven. Het is voor
+    partijen belangrijk om te weten hoe lang dit duurt en tegen welke
+    voorwaarden (bekostiging oude overeenkomst of bekostiging nieuwe
+    overeenkomst).
 
-[Optioneel:] Artikel 1.n [vul in]
+-   Hoe gaat de opdrachtgever om met opdrachtnemers die in de nieuwe
+    inkoopronde geen overeenkomst hebben, maar nog wel cliënten.
 
-[Indien aanwezig: Invullen overige bepalingen die gelden tussen Opdrachtgever en alle Opdrachtnemers waarmee Opdrachtgever een overeenkomst sluit]
+-   Hoe vindt de toeleiding plaats na de overeenkomst naar alle
+    opdrachtnemers.
 
+Inhoud:
 
-# Deel 2 Bepalingen die gelden tussen Opdrachtgever en een individuele Opdrachtnemer waarmee Opdrachtgever een overeenkomst sluit
+-   De gemeente bepaalt zelf hoe zij de overgang van de oude naar de
+    nieuwe overeenkomst invult en verwerkt in de overeenkomst. Dat moet
+    wel op deze plek.
 
-[Optioneel:] Artikel 2.n [vul in]
+[Optioneel:] Artikel 1.n-- Maximale omvang en duur raamovereenkomst
 
-2.n.1
+Het Hof van Justitie van de Europese Unie (HvJEU) heeft in het arrest
+Simonsen & Weel (C-23/20) en in de zaak Autorità Garante della
+Concorrenza e del Mercato (C-216/17) bevestigd dat een raamovereenkomst
+een duidelijke maximale omvang (in waarde en/of hoeveelheid) moet
+bevatten, die aan de voorkant wordt bepaald. Deze uitspraken betroffen
+geen SAS-procedures, waarmee nog niet onomstotelijk is vastgesteld of
+dit ook geldt voor raamovereenkomsten afgesloten na een SAS-procedure.
+Het is aan de gemeente om af te wegen of ze de omvang willen opnemen in
+de overeenkomst.
 
-[Indien aanwezig: Als de Opdrachtgever met meer Opdrachtnemers een overeenkomst sluit en met individuele Opdrachtnemers ook individuele afspraken maakt, dan deze individuele afspraken hier opnemen]
+### Bron
 
+**Toelichting Overeenkomst Wmo versie 1.3**, onderdeel **[Optioneel:]
+Artikel 1.10: Implementatiebepaling**.
 
-# Deel 3 Generieke bepalingen
-
-
-# Hoofdstuk 1: Levering van maatschappelijke ondersteuning
+------------------------------------------------------------------------
