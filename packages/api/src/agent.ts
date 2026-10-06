@@ -18,7 +18,14 @@ import { Openrouter } from "./openrouter.js";
 import { VragenAgent, type QuestionAnalysis } from "./vragen-agent.js";
 
 Settings.embedModel = new OpenAIEmbedding({ model: "text-embedding-ada-002" });
-Settings.chunkOverlap = 100;
+
+// Wettelijke teksten bevatten vaak lange artikelen en geneste opsommingen.
+// Met een grotere chunk blijven begripsbepalingen en hun voorwaarden zoveel
+// mogelijk bij elkaar, zodat een citaat niet midden in een bepaling eindigt.
+// De overlap zorgt ervoor dat een bepaling die toch over een chunkgrens valt
+// in de volgende chunk opnieuw gedeeltelijk beschikbaar is.
+Settings.chunkSize = 4096;
+Settings.chunkOverlap = 600;
 
 const qdrantUri = getEnvOrThrow("QDRANT_URI");
 const jinaApiKey = getEnvOrThrow("JINAAI_API_KEY");
