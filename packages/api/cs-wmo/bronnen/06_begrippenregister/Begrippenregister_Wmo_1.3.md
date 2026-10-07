@@ -17,8 +17,9 @@ Gebruik bij antwoorden de volgende volgorde:
 1. **Overeenkomst Wmo 1.3** – primaire bron voor de betekenis en verplichtingen in de overeenkomst.
 2. **Inkoopdocumenten Wmo 1.3** – primaire bron voor de concrete bepalingen van de inkoopprocedure.
 3. **Toelichtingen Wmo 1.3** – uitleg over betekenis, bedoeling en toepassing.
-4. **Was-Wordt-tabel 1.2 → 1.3** – primaire bron voor vragen over wijzigingen.
-5. **Q&A Contractstandaarden** – aanvullende bron voor veelgestelde praktische vragen.
+4. **wet_en_regelgeving** - wetten die bovenliggend zijn en iets zeggen of contracten Wmo.
+5. **Was-Wordt-tabel 1.2 → 1.3** – primaire bron voor vragen over wijzigingen.
+6. **Q&A Contractstandaarden** – aanvullende bron voor veelgestelde praktische vragen.
 
 Het begrippenregister vervangt deze bronnen niet. Bij een conflict of detailvraag moet de onderliggende bron worden geraadpleegd.
 
