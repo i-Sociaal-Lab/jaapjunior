@@ -83,6 +83,9 @@ interface AgentConfig {
 
 type SourceTier = "formal" | "supplemental";
 
+const SOURCE_ONLY_REFUSAL =
+  "Ik kan deze vraag niet beantwoorden op basis van de beschikbare brondocumenten. De benodigde informatie kan niet voldoende uit de kennisbank worden onderbouwd.";
+
 const FORMAL_PATTERNS = [
     /(?:^|[/\\\s#:_-])(?:op|up|tr|cd|cs|iv)\d{3}[a-z0-9_-]*(?:\.md)?(?:$|[/\\\s:)]|[-–])/i,
     /(?:^|[/\\\s#:_-])(?:op|up|tr)\d+[a-z0-9_-]*\.md$/i,
@@ -98,6 +101,39 @@ const FORMAL_PATTERNS = [
     /(^|[/\\])(?:xsd|schema)/i,
     /basisschema/i,
 ];
+
+/**
+ * Bepaalt de bronlaag op basis van het daadwerkelijke bronpad.
+ *
+ * Prioriteit:
+ *   primary   = 01, 02, 03 of 04
+ *   faq       = 05_faq
+ *   other     = overige bronnen
+ *
+ * De mapvolgorde is bewust strenger dan sourceTier(): een FAQ mag nooit
+ * automatisch naast 01-04 terechtkomen als primaire antwoordbron.
+ */
+function knowledgeBaseFolderTier(node: any): "primary" | "faq" | "other" {
+    const metadata = node?.metadata ?? {};
+    const pathText = [
+        metadata.file_path,
+        metadata.filePath,
+        metadata.file_name,
+        metadata.filename,
+        metadata.source,
+        metadata.url,
+    ].filter(Boolean).join(" ");
+
+    if (/(?:^|[/\\])0[1-4](?:[_-][^/\\\s]+)?[/\\]/i.test(pathText)) {
+        return "primary";
+    }
+
+    if (/(?:^|[/\\])05_faq(?:[/\\]|$)/i.test(pathText)) {
+        return "faq";
+    }
+
+    return "other";
+}
 
 const SUPPLEMENTAL_PATTERNS = [
     /faq/i,
@@ -835,6 +871,81 @@ class Agent {
         return results.filter((r: any) => sourceTier(r.node) === "supplemental");
     }
 
+    /**
+     * Pas de gewenste bronvolgorde toe:
+     *
+     * 1. Alleen documenten uit 01, 02, 03 en 04 worden eerst beoordeeld.
+     * 2. Als deze bronnen de vraag voldoende onderbouwen, worden FAQ-bronnen
+     *    volledig uit de antwoordcontext verwijderd.
+     * 3. Alleen wanneer 01-04 onvoldoende zijn, wordt 05_faq toegevoegd.
+     *
+     * Dit is bewust een tweede controle naast sourceTier(). FAQ is dus niet
+     * slechts "minder belangrijk"; FAQ wordt daadwerkelijk uitgesloten zolang
+     * de primaire bronlaag voldoende is.
+     */
+    private async applyFaqFallback(
+        question: string,
+        candidateNodes: any[],
+        searchQueries: string[],
+        llm: LLM,
+    ): Promise<any[]> {
+        const primaryCandidates = candidateNodes.filter(
+            (result: any) => knowledgeBaseFolderTier(result.node) === "primary",
+        );
+
+        const faqCandidates = candidateNodes.filter(
+            (result: any) => knowledgeBaseFolderTier(result.node) === "faq",
+        );
+
+        const otherCandidates = candidateNodes.filter(
+            (result: any) => knowledgeBaseFolderTier(result.node) === "other",
+        );
+
+        // 01-04 zijn de primaire inhoudelijke bronnen. Overige bronnen mogen
+        // niet dienen als verborgen vervanging van 01-04.
+        const primaryResults = primaryCandidates.length > 0
+            ? primaryCandidates
+            : otherCandidates.filter((result: any) => sourceTier(result.node) === "formal");
+
+        if (primaryResults.length > 0) {
+            const primaryEnough = await this.formalSourcesAreSufficient(
+                question,
+                primaryResults,
+                llm,
+            );
+
+            console.log("===== BRONPRIORITEIT 01-04 =====");
+            console.log(`kandidaten 01-04: ${primaryResults.length}`);
+            console.log(`voldoende zonder FAQ: ${primaryEnough}`);
+            console.log(`FAQ-kandidaten beschikbaar: ${faqCandidates.length}`);
+
+            if (primaryEnough) {
+                // Cruciaal: FAQ en andere niet-primaire bronnen worden hier
+                // verwijderd voordat de antwoordgenerator wordt aangeroepen.
+                return primaryResults;
+            }
+        } else {
+            console.log("===== BRONPRIORITEIT 01-04 =====");
+            console.log("geen bruikbare bron uit 01-04 gevonden");
+        }
+
+        // Alleen bij onvoldoende primaire onderbouwing mag FAQ worden gebruikt.
+        if (faqCandidates.length > 0) {
+            const combined = [...primaryResults, ...faqCandidates];
+
+            // Deduplicatie op broninhoud.
+            const seen = new Set<string>();
+            return combined.filter((result: any) => {
+                const key = this.nodeContent(result.node);
+                if (seen.has(key)) return false;
+                seen.add(key);
+                return true;
+            });
+        }
+
+        return primaryResults;
+    }
+
     private async formalSourcesAreSufficient(
         question: string,
         formalResults: any[],
@@ -880,7 +991,131 @@ class Agent {
         }
     }
 
-    async query(q: string, chatHistory: ChatMessage[], db: IDB, model?: keyof typeof llms) {
+    private buildSourceContext(nodes: any[]): string {
+    return nodes.map((node: any, index: number) => {
+      const content =
+        typeof node?.getContent === "function"
+          ? node.getContent()
+          : node?.text ?? node?.node?.text ?? "";
+      const metadata = node?.metadata ?? node?.node?.metadata ?? {};
+      const source =
+        metadata.file_name ??
+        metadata.filename ??
+        metadata.file_path ??
+        metadata.source ??
+        `brondocument ${index + 1}`;
+
+      return `--- BRONDOCUMENT ${index + 1}: ${source} ---\n${content}`;
+    }).join("\n\n");
+  }
+
+  private async sourcesAreSufficient(
+    question: string,
+    nodes: any[],
+    llm: any,
+  ): Promise<boolean> {
+    if (!nodes?.length) return false;
+
+    const sourceContext = this.buildSourceContext(nodes);
+
+    const prompt = `
+Je bent een strikte broncontroleur voor een gesloten kennisbank.
+
+BRONPRIORITEIT:
+- Documenten uit mappen 01, 02, 03 en 04 hebben voorrang.
+- Documenten uit 05_faq mogen alleen worden gebruikt wanneer de informatie
+  niet voldoende uit 01, 02, 03 en 04 kan worden onderbouwd.
+- Als 01-04 voldoende zijn, mogen FAQ-documenten niet als aanvullende bron
+  worden gebruikt.
+
+VRAAG:
+${question}
+
+BRONDOCUMENTEN:
+${sourceContext}
+
+Bepaal uitsluitend op basis van deze brondocumenten of de vraag voldoende
+kan worden beantwoord.
+
+Regels:
+- Gebruik uitsluitend de brondocumenten.
+- Gebruik geen eigen kennis, internet of eerdere gesprekken.
+- Vul ontbrekende informatie niet aan.
+- Als slechts een deel van de vraag wordt ondersteund: ONVOLDOENDE.
+- Bij twijfel: ONVOLDOENDE.
+
+Geef uitsluitend JSON:
+{"voldoende":true}
+of
+{"voldoende":false}
+`;
+
+    try {
+      const result = await llm.complete({ prompt });
+      const raw = typeof result?.text === "string" ? result.text : String(result ?? "");
+      const match = raw.match(/\{[\s\S]*?"voldoende"\s*:\s*(true|false)[\s\S]*?\}/i);
+      return !!match && /"voldoende"\s*:\s*true/i.test(match[0]);
+    } catch {
+      return false;
+    }
+  }
+
+  private async answerIsGrounded(
+    question: string,
+    answer: string,
+    nodes: any[],
+    llm: any,
+  ): Promise<boolean> {
+    if (!answer?.trim() || !nodes?.length) return false;
+
+    const sourceContext = this.buildSourceContext(nodes);
+
+    const prompt = `
+Je bent een strikte bronverificator voor een gesloten kennisbank.
+
+BRONPRIORITEIT:
+- Mappen 01, 02, 03 en 04 zijn primaire bronnen.
+- 05_faq is uitsluitend een fallbackbron.
+- Controleer dat een antwoord geen informatie uit 05_faq gebruikt wanneer
+  het antwoord volledig door 01-04 wordt gedragen.
+
+VRAAG:
+${question}
+
+GEGENEREERD ANTWOORD:
+${answer}
+
+BRONDOCUMENTEN:
+${sourceContext}
+
+Controleer of alle inhoudelijke beweringen in het antwoord rechtstreeks
+door de brondocumenten worden ondersteund.
+
+Regels:
+- Alleen de brondocumenten zijn inhoudelijke bron.
+- Geen eigen kennis, internet of eerdere gesprekken.
+- Geen aannames of juridische interpretaties die niet in de bronnen staan.
+- Als één wezenlijke bewering niet door de bronnen wordt ondersteund:
+  AFKEUREN.
+- Bij twijfel: AFKEUREN.
+
+Geef uitsluitend JSON:
+{"ondersteund":true}
+of
+{"ondersteund":false}
+`;
+
+    try {
+      const result = await llm.complete({ prompt });
+      const raw = typeof result?.text === "string" ? result.text : String(result ?? "");
+      const match = raw.match(/\{[\s\S]*?"ondersteund"\s*:\s*(true|false)[\s\S]*?\}/i);
+      return !!match && /"ondersteund"\s*:\s*true/i.test(match[0]);
+    } catch {
+      return false;
+    }
+  }
+
+  async query(q: string, chatHistory: ChatMessage[], db: IDB, model?: keyof typeof llms) {
         const actualModel = model || this.model;
         let searchQueries: string[] = [q];
         let analysis: QuestionAnalysis | undefined;
@@ -1043,12 +1278,22 @@ class Agent {
                 console.log(`aanvullende bronnen: ${supplementalResults.length}`);
             }
         } else {
+            // Normale retrieval haalt bewust een grotere kandidaatset op.
+            // Daarna bepaalt applyFaqFallback() of FAQ nodig is. Daardoor kan
+            // een hoog scorende FAQ-chunk 01-04 niet vroegtijdig verdringen.
             const retriever = this.createRetriever(
                 searchQueries,
-                isRuleOverview ? 100 : 20,
+                isRuleOverview ? 100 : 100,
                 { exactMessageCodes, ruleOverview: isRuleOverview },
             );
-            retrievedNodes = await retriever.retrieve();
+            const candidateNodes = await retriever.retrieve();
+
+            retrievedNodes = await this.applyFaqFallback(
+                q,
+                candidateNodes,
+                searchQueries,
+                llm,
+            );
         }
 
         const nodePostprocessors =
@@ -1079,7 +1324,30 @@ class Agent {
             } as any;
         }
 
-        const effectivePrompt = this.prompt;
+        // Harde broncontrole vóór antwoordgeneratie.
+        // Zonder voldoende onderbouwde kennisbankcontext wordt geen
+        // inhoudelijk antwoord gegenereerd.
+        const sourcesSufficient = await this.sourcesAreSufficient(
+            q,
+            retrievedNodes,
+            llm,
+        );
+
+        if (!sourcesSufficient) {
+            return SOURCE_ONLY_REFUSAL;
+        }
+
+        const effectivePrompt = `${this.prompt}
+
+HARD SOURCE-ONLY REGEL:
+- Gebruik uitsluitend informatie uit de aan jou verstrekte kennisbankcontext.
+- De gespreksgeschiedenis is GEEN bron van inhoudelijke feiten.
+- Gebruik geen eigen modelkennis, internetkennis, aannames of niet-verstrekte regelgeving.
+- Als de vraag niet door de kennisbankcontext wordt ondersteund, geef geen inhoudelijk antwoord.
+- Brontrouw gaat vóór volledigheid.
+- BRONPRIORITEIT: gebruik eerst uitsluitend documenten uit mappen 01, 02, 03 en 04.
+- Gebruik documenten uit 05_faq uitsluitend wanneer 01-04 onvoldoende zijn om de vraag te onderbouwen.
+- Als 01-04 voldoende zijn, mag informatie uit 05_faq niet worden gebruikt of toegevoegd.`;
 
         const chatEngine = new ContextChatEngine({
             retriever: {
@@ -1092,8 +1360,34 @@ class Agent {
             chatModel: llm,
         });
 
-        const response = await chatEngine.chat({ message: q, chatHistory });
+        // De uiteindelijke antwoordgenerator krijgt bewust geen
+        // chatgeschiedenis. Die mag niet als kennisbron fungeren.
+        const response = await chatEngine.chat({
+            message: q,
+            chatHistory: [],
+        });
+
         const responseAny = response as any;
+        const answerText =
+            typeof responseAny?.message?.content === "string"
+                ? responseAny.message.content
+                : typeof responseAny?.response === "string"
+                    ? responseAny.response
+                    : String(responseAny ?? "");
+
+        // Harde broncontrole ná antwoordgeneratie.
+        // Bij twijfel wordt het antwoord niet teruggegeven.
+        const grounded = await this.answerIsGrounded(
+            q,
+            answerText,
+            retrievedNodes,
+            llm,
+        );
+
+        if (!grounded) {
+            return SOURCE_ONLY_REFUSAL;
+        }
+
         if (typeof responseAny?.message?.content === "string") {
             responseAny.message.content = normalizeSourceUrls(responseAny.message.content);
         }
