@@ -1,4 +1,4 @@
-# Contractstandaarden Jeugd & Wmo – Veelgestelde vragen en antwoorden
+R# Contractstandaarden Jeugd & Wmo – Veelgestelde vragen en antwoorden
 
 ## Doel van dit document
 
@@ -255,9 +255,9 @@ Als na verloop van de aanbesteding blijkt dat de overeenkomst volgens het
 Ketenbureau niet volgens de standaarden is, is de gemeente dan verplicht na de 
 aanbesteding de overeenkomst de wijzigen? 
  
-Antwoord: Nadat de Algemene Ledenvergadering van de VNG zich positief heeft 
-uitgesproken over de contractstandaard is deze verplicht om te gebruiken bij nieuwe 
-aanbestedingen. Hiermee zorgen we gezamenlijk voor vermindering van de administratieve lasten. 
+Antwoord: De Algemene Ledenvergadering van de VNG heeft de contractstandaarden WMO op 29-11-2024 
+vastgestekd eb algemeen verbindend verklaard.
+Hiermee zorgen we gezamenlijk voor vermindering van de administratieve lasten. 
 Het Ketenbureau adviseert gemeenten daarom dringend zich 
 aan de contractstandaarden te houden, maar kan dat niet afdwingen. 
  
