@@ -27,9 +27,9 @@ De oorspronkelijke vraag-en-antwoordstructuur is behouden. Voor gebruik als chat
 6. Vul ontbrekende informatie niet zelfstandig aan.
 7. Let op dat sommige vragen betrekking hebben op Jeugd én Wmo en andere op één van beide.
 
-### Belangrijk onderscheid met andere kennisbronnen
+### Belangrijk onderscheid met andere kennisnen
 
-Deze Q&A is een **secundaire kennisbron met vragen en antwoorden**. Voor de letterlijke tekst van een contractbepaling of het inkoopdocument moeten de primaire contractstandaarden en inkoopdocumenten worden geraadpleegd.
+Deze Q&A is een **secundaire kennis met vragen en antwoorden**. Voor de letterlijke tekst van een contractbepaling of het inkoopdocument moeten de primaire contractstandaarden en inkoopdocumenten worden geraadpleegd.
 
 De Q&A kan juist waardevol zijn voor vragen als:
 - Waarom is een bepaling zo vormgegeven?
@@ -50,7 +50,7 @@ De Q&A kan juist waardevol zijn voor vragen als:
 - Wat gebeurt er met een wijzigingsverzoek dat niet tot een wijziging leidt?
 - Wanneer kan een tussentijdse release noodzakelijk zijn?
 
-### Bronantwoord
+### antwoord
 
 Verzoeken tot wijziging van bepalingen of toelichtingen kunnen, nadat de vorige versie van de contractstandaarden is geaccordeerd, via een digitaal wijzigingsformulier worden ingediend. Het verzoek moet vóór 1 januari van het lopende jaar worden ingediend. Het expertteam beoordeelt de juridische haalbaarheid en adviseert de begeleidingsgroep. De begeleidingsgroep beoordeelt onder meer de praktische haalbaarheid en de bijdrage aan verlaging van administratieve lasten.
 
