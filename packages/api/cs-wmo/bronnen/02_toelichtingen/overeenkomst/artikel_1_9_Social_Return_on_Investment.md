@@ -2,7 +2,7 @@
 document_type: toelichting_overeenkomst
 document_version: "1.3"
 article: "1.9"
-title: "\[Optioneel:\] Artikel 1.9: Social Return on Investment"
+title: "[Optioneel:] Artikel 1.9: Social Return on Investment"
 source_file: "artikel_1_3_toelichting.md"
 ---
 
@@ -37,7 +37,7 @@ Inhoud:
 
 ### Bron
 
-**Toelichting Overeenkomst Wmo versie 1.3**, onderdeel **\[Optioneel:\]
+**Toelichting Overeenkomst Wmo versie 1.3**, onderdeel **[Optioneel:]
 Artikel 1.9: Social Return on Investment**.
 
 ------------------------------------------------------------------------

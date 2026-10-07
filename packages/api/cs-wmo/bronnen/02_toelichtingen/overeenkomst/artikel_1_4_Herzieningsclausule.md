@@ -2,7 +2,7 @@
 document_type: toelichting_overeenkomst
 document_version: "1.3"
 article: "1.4"
-title: "\[Optioneel:\] Artikel 1.4: Herzieningsclausule"
+title: "[Optioneel:] Artikel 1.4: Herzieningsclausule"
 source_file: "artikel_1_3_toelichting.md"
 ---
 
@@ -96,7 +96,7 @@ na overleg met aanbieders).
 
 ### Bron
 
-**Toelichting Overeenkomst Wmo versie 1.3**, onderdeel **\[Optioneel:\]
+**Toelichting Overeenkomst Wmo versie 1.3**, onderdeel **[Optioneel:]
 Artikel 1.4: Herzieningsclausule**.
 
 ------------------------------------------------------------------------

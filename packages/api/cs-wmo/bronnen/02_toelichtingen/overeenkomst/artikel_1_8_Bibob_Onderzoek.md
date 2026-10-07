@@ -2,7 +2,7 @@
 document_type: toelichting_overeenkomst
 document_version: "1.3"
 article: "1.8"
-title: "\[Optioneel:\] Artikel 1.8: Bibob Onderzoek"
+title: "[Optioneel:] Artikel 1.8: Bibob Onderzoek"
 source_file: "artikel_1_3_toelichting.md"
 ---
 
@@ -71,7 +71,7 @@ Factsheet aanbesteden en BIBOB
 
 ### Bron
 
-**Toelichting Overeenkomst Wmo versie 1.3**, onderdeel **\[Optioneel:\]
+**Toelichting Overeenkomst Wmo versie 1.3**, onderdeel **[Optioneel:]
 Artikel 1.8: Bibob Onderzoek**.
 
 ------------------------------------------------------------------------

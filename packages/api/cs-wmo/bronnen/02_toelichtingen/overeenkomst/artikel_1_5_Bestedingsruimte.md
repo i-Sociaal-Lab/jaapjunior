@@ -2,7 +2,7 @@
 document_type: toelichting_overeenkomst
 document_version: "1.3"
 article: "1.5"
-title: "\[Optioneel:\] Artikel 1.5: Bestedingsruimte"
+title: "[Optioneel:] Artikel 1.5: Bestedingsruimte"
 source_file: "artikel_1_3_toelichting.md"
 ---
 
@@ -167,7 +167,7 @@ Artikel 1.5.10:
 
 ### Bron
 
-**Toelichting Overeenkomst Wmo versie 1.3**, onderdeel **\[Optioneel:\]
+**Toelichting Overeenkomst Wmo versie 1.3**, onderdeel **[Optioneel:]
 Artikel 1.5: Bestedingsruimte**.
 
 ------------------------------------------------------------------------
