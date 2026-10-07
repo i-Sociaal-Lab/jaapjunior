@@ -71,7 +71,7 @@ De onderstaande vraag-en-antwoordblokken zijn broninhoud. Gebruik het antwoord d
 ### Bronpagina 3
 
 3 / 23 
-a. Algemene vragen 
+## Algemene vragen 
 a. Wanneer start de aanbestedingsprocedure? 
  
 Antwoord: De inkoop start bij de formulering van de beleidsdoelen en de verordening. 
