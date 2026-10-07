@@ -2,11 +2,11 @@
 document_type: toelichting_overeenkomst
 document_version: "1.3"
 article: "1.10"
-title: "\[Optioneel:\] Artikel 1.10: Implementatiebepaling"
+title: "[Optioneel:] Artikel 1.10: Implementatiebepaling"
 source_file: "artikel_1_3_toelichting.md"
 ---
 
-# \[Optioneel:\] Artikel 1.10: Implementatiebepaling
+# [Optioneel:] Artikel 1.10: Implementatiebepaling
 
 ### Mogelijke chatbotvragen
 
@@ -39,7 +39,7 @@ Inhoud:
     nieuwe overeenkomst invult en verwerkt in de overeenkomst. Dat moet
     wel op deze plek.
 
-\[Optioneel:\] Artikel 1.n-- Maximale omvang en duur raamovereenkomst
+[Optioneel:] Artikel 1.n-- Maximale omvang en duur raamovereenkomst
 
 Het Hof van Justitie van de Europese Unie (HvJEU) heeft in het arrest
 Simonsen & Weel (C-23/20) en in de zaak Autorità Garante della
@@ -53,7 +53,7 @@ de overeenkomst.
 
 ### Bron
 
-**Toelichting Overeenkomst Wmo versie 1.3**, onderdeel **\[Optioneel:\]
+**Toelichting Overeenkomst Wmo versie 1.3**, onderdeel **[Optioneel:]
 Artikel 1.10: Implementatiebepaling**.
 
 ------------------------------------------------------------------------
