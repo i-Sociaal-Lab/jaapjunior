@@ -18,10 +18,11 @@ te veranderen.
 
 ### 1. Wijzigingsverzoek indienen
 
-Wijzigingsverzoeken kunnen ieder jaar worden ingediend tot **1 januari**.
-
+Wijzigingsverzoeken voor een contractstandaarden versie in het jaar t, moeten ingediend worden voor **1 januari** van 
+jaar t-1. Voorbeeld: Wijzigingsverzoeken voor de contractstandaard versie 1.4 moeten dus binnen zijn voor 1 januari 2027.
 Een verzoek kan vanuit verschillende groepen komen. Ook kunnen er
 verschillende redenen zijn om een wijzigingsverzoek in te dienen.
+Met groepen wordt bedoeld: vertegenwoordigers van een zorgaanbieder of een gemeente, leden expertgroep, brancheorganisaties van zorgaanbieders (o.a. de Nederlandse GGZ, Jeugdzorg Nederland, VGN), VNG of VWS.
 
 ### 2. Eerste beoordeling door het Ketenbureau
 
@@ -91,8 +92,7 @@ doorlopen.
 
 ## Wanneer gaat een gemeente over naar een nieuwe versie?
 
-Gemeenten die al met de Contractstandaarden werken, stappen binnen **6
-maanden na publicatie** over naar de nieuwe versie.
+Gemeenten die al met de Contractstandaarden werken, stappen binnen **6 maanden na publicatie** over naar de nieuwe versie.
 
 Gemeenten die de Contractstandaarden voor het eerst gaan gebruiken,
 gebruiken direct de **nieuwste versie**.
