@@ -4,7 +4,7 @@ datum: December 2024
 title: Toelichting proces wijzigingsverzoeken Contractstandaarden Jeugd en Wmo
 ---
 
-# Toelichting proces wijzigingsverzoeken Contractstandaarden Jeugd en Wmo
+# Proces wijzigingsverzoeken Contractstandaarden Jeugd en Wmo
 
 ## Inleiding
 
