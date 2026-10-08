@@ -106,6 +106,11 @@ De kennisbasis bestaat uit onder meer:
 - Inkoopdocument Wmo met toelatingsprocedure;
 - Inkoopdocument Wmo met EMVI;
 - Inkoopdocument Wmo zonder EMVI;
+- Aanbestedingswet_2012_geldend_2026-04-30
+- Besluit verplichting contractstandaarden Wmo
+- Ministeriële Regeling 25 juli 2019
+- Uitvoeringsregeling_Wmo 2015
+- Wet_Wmo_2015
 - Wijzigingen van versie 1.2 naar 1.3;
 - FAQ/Q&A Contractstandaarden;
 - Artikelindex en navigatiedocumenten.
