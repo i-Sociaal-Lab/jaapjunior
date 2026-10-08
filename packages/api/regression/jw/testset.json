@@ -1,0 +1,347 @@
+{
+  "name": "JaapJunior JW regression golden set",
+  "version": "1.0",
+  "standard": "iJw 3.2",
+  "description": "De 23 vragen die daadwerkelijk zijn getest. De status is de huidige nulmeting; nieuwe runs moeten tegen de required_facts en expected_sources worden beoordeeld.",
+  "tests": [
+    {
+      "id": "JW-001",
+      "question": "Is het verplicht om eerst een JW305 te versturen voordat een JW323 mag worden ingediend?",
+      "status": "PASS",
+      "expected_sources": [
+        "OP364",
+        "OP363"
+      ],
+      "required_facts": [
+        "Een JW305/startbericht is geen voorwaarde voor het indienen van een declaratie/JW323.",
+        "Een declaratie mag niet worden afgekeurd wegens een ontbrekend start- of stopbericht.",
+        "OP364 is de primaire formele bron."
+      ]
+    },
+    {
+      "id": "JW-002",
+      "question": "Mag een declaratie worden afgekeurd omdat een JW307 ontbreekt?",
+      "status": "PASS",
+      "expected_sources": [
+        "OP364"
+      ],
+      "required_facts": [
+        "Nee.",
+        "Een ontbrekend stopbericht mag geen grond zijn om een declaratie af te keuren."
+      ]
+    },
+    {
+      "id": "JW-003",
+      "question": "Welke bedrijfsregel beschrijft dat regieberichten niet voorwaardelijk zijn voor declaratie?",
+      "status": "PASS",
+      "expected_sources": [
+        "OP364"
+      ],
+      "required_facts": [
+        "De bedrijfsregel is OP364.",
+        "Regieberichten zijn niet voorwaardelijk voor declaratie."
+      ]
+    },
+    {
+      "id": "JW-004",
+      "question": "Welke reden wijziging toewijzing hoort bij reden beëindiging 36?",
+      "status": "PASS",
+      "expected_sources": [
+        "JZ588",
+        "JZ002"
+      ],
+      "required_facts": [
+        "JZ588 code 36 is Geïnitieerd door de gemeente.",
+        "De gekoppelde JZ002-codes zijn 03, 05, 08, 10 en 11."
+      ]
+    },
+    {
+      "id": "JW-005",
+      "question": "Welke reden wijziging toewijzing hoort bij reden beëindiging 13?",
+      "status": "FAIL",
+      "expected_sources": [
+        "JZ588"
+      ],
+      "required_facts": [
+        "Eerst controleren of code 13 bestaat in JZ588.",
+        "Code 13 bestaat niet in JZ588.",
+        "Geen relatie 13 -> 13 uit JZ002 afleiden."
+      ]
+    },
+    {
+      "id": "JW-006",
+      "question": "Wat betekent reden wijziging toewijzing 13?",
+      "status": "PASS",
+      "expected_sources": [
+        "JZ002"
+      ],
+      "required_facts": [
+        "JZ002 code 13 = Verwijderd.",
+        "De toewijzing is ten onrechte verstuurd en wordt ongedaan gemaakt.",
+        "Einddatum wordt gelijk gesteld aan ingangsdatum."
+      ]
+    },
+    {
+      "id": "JW-007",
+      "question": "Wat betekent reden beëindiging 02?",
+      "status": "PASS",
+      "expected_sources": [
+        "JZ588",
+        "JZ002"
+      ],
+      "required_facts": [
+        "JZ588 code 02 = Overlijden.",
+        "Gebruik: indien een cliënt is overleden.",
+        "Gerelateerde JZ002-code is 02."
+      ]
+    },
+    {
+      "id": "JW-008",
+      "question": "Hoe moet een correctie van een eerder verstuurd startbericht worden uitgevoerd?",
+      "status": "PASS",
+      "expected_sources": [
+        "IV008",
+        "OP033",
+        "OP289",
+        "COD467",
+        "TR063"
+      ],
+      "required_facts": [
+        "StatusAanlevering 3 verwijdert de foutieve berichtklasse.",
+        "StatusAanlevering 1 is de vervangende aanlevering.",
+        "De logische sleutel bepaalt of vervanging in hetzelfde of een apart bericht plaatsvindt."
+      ]
+    },
+    {
+      "id": "JW-009",
+      "question": "Wanneer kan een gecorrigeerde berichtklasse samen met de vervangende berichtklasse worden verstuurd?",
+      "status": "PASS",
+      "expected_sources": [
+        "IV008"
+      ],
+      "required_facts": [
+        "Als het te corrigeren element onderdeel is van de logische sleutel kan correctie en vervanging in hetzelfde bericht.",
+        "ToewijzingNummer, Product en Begindatum zijn onderdeel van de logische sleutel.",
+        "ToewijzingIngangsdatum is geen onderdeel van de logische sleutel en vereist een apart bericht."
+      ]
+    },
+    {
+      "id": "JW-010",
+      "question": "Hoe wordt de sleutel van een startbericht gevuld bij een taakgerichte uitvoeringsvariant?",
+      "status": "PASS",
+      "expected_sources": [
+        "IV096"
+      ],
+      "required_facts": [
+        "Bij taakgericht bestaat geen ToewijzingNummer als sleutelrelatie.",
+        "De sleutel bestaat uit Product en Begindatum."
+      ]
+    },
+    {
+      "id": "JW-011",
+      "question": "Kan je met een verzoek om toewijzing ook generiek toewijzen?",
+      "status": "PASS",
+      "expected_sources": [
+        "IV075",
+        "OP302"
+      ],
+      "required_facts": [
+        "Ja, een VOT kan een generieke toewijzing aanvragen.",
+        "Bij een generieke aanvraag zijn productcategorie en productcode niet gevuld."
+      ]
+    },
+    {
+      "id": "JW-012",
+      "question": "Zijn de iStandaarden verplicht om te gebruiken?",
+      "status": "PASS",
+      "expected_sources": [
+        "Ministeriële Regeling",
+        "UP017",
+        "OP003"
+      ],
+      "required_facts": [
+        "Het gebruik van de iStandaarden/iJw voor het betreffende elektronische berichtenverkeer is verplicht.",
+        "De verplichting is gebaseerd op de Ministeriële Regeling van 25 juli 2019.",
+        "OP003 beschrijft een uitzonderingssituatie."
+      ]
+    },
+    {
+      "id": "JW-013",
+      "question": "Kan je op basis van een generieke toewijzing meerdere zorgtrajecten starten?",
+      "status": "PASS",
+      "expected_sources": [
+        "FAQ",
+        "OP302"
+      ],
+      "required_facts": [
+        "Ja, meerdere zorgtrajecten kunnen op basis van één generieke toewijzing worden gestart en gedeclareerd.",
+        "Voor de gehele toewijzing wordt één generiek startbericht gemaakt bij de start van de eerste levering."
+      ]
+    },
+    {
+      "id": "JW-014",
+      "question": "Moet ik in een 315 bericht altijd een productcategorie invullen?",
+      "status": "PASS",
+      "expected_sources": [
+        "IV075"
+      ],
+      "required_facts": [
+        "Nee, niet altijd.",
+        "Specifiek: productcategorie en productcode.",
+        "Aspecifiek: alleen productcategorie.",
+        "Generiek: productcategorie en productcode leeg."
+      ]
+    },
+    {
+      "id": "JW-015",
+      "question": "Ik heb een toewijzing voor 2 uur per week. ingangsdatum 1 aug 2025 einddatum 18 sept 2025. Ik lever alleen op vrijdag, andere dagen niet. Hoeveel uur mag ik elke maand declareren?",
+      "status": "PASS",
+      "expected_sources": [
+        "OP279",
+        "OP368",
+        "IV076",
+        "IV078",
+        "IV089"
+      ],
+      "required_facts": [
+        "Augustus: maximaal 10 uur bij vijf vrijdagen van 2 uur.",
+        "September: maximaal 4 uur bij twee vrijdagen van 2 uur.",
+        "Alleen daadwerkelijk geleverde uren mogen worden gedeclareerd."
+      ]
+    },
+    {
+      "id": "JW-016",
+      "question": "Geef mij een voorbeeld van startproducten waarbij ik een eerder gestuurd startbericht corrigeer. de startdatum van het foutief gestuurde startbericht is 04-01-2026. Inclusief een voorbeeld xml",
+      "status": "REVIEW_FAIL",
+      "expected_sources": [
+        "IV008",
+        "OP033"
+      ],
+      "required_facts": [
+        "Foutieve StartProduct krijgt StatusAanlevering 3.",
+        "Vervangende StartProduct krijgt StatusAanlevering 1.",
+        "Bij wijziging van Begindatum kan correctie en vervanging in hetzelfde bericht.",
+        "Oude en nieuwe StartProduct hebben verschillende unieke logische sleutels."
+      ],
+      "notes": "Het geleverde antwoord zei ten onrechte dat oude en nieuwe StartProduct dezelfde logische sleutel hebben."
+    },
+    {
+      "id": "JW-017",
+      "question": "Toewijzing met 1 stuks outputgericht per week. Geldigheid toegewezen product: 18-3-2024 t/m 1-8-2024. De toewijzing eindigt dus niet op een zondag. Declaratie over de maand juli 2024: 5 stuks (4 zondagen +1). De gemeente keurt dit af en geeft aan dat dit 4 stuks zouden moeten zijn. Is dat terecht?",
+      "status": "PASS",
+      "expected_sources": [
+        "IV076",
+        "IV077"
+      ],
+      "required_facts": [
+        "Juli heeft vier zondagen.",
+        "De einddatum is geen zondag.",
+        "De laatste zondag valt in juli en daarom geldt +1.",
+        "Maximum juli is 5 stuks."
+      ]
+    },
+    {
+      "id": "JW-018",
+      "question": "mag je een startbericht sturen nadat je een definitief stopbericht hebt gestuurd?",
+      "status": "PASS",
+      "expected_sources": [
+        "OP379",
+        "OP289",
+        "TR326"
+      ],
+      "required_facts": [
+        "Ja, na een definitieve stop mag opnieuw een startbericht worden gestuurd.",
+        "Er mag geen actueel Startbericht voor het betreffende toegewezen product bestaan."
+      ]
+    },
+    {
+      "id": "JW-019",
+      "question": "kan je een declaratie sturen met verschillende productcodes met hetzelfde toewijzingnummer?",
+      "status": "PASS",
+      "expected_sources": [
+        "OP302",
+        "IV075"
+      ],
+      "required_facts": [
+        "Specifiek: alleen toegewezen product.",
+        "Aspecifiek: meerdere productcodes binnen de toegewezen categorie mogelijk.",
+        "Generiek: meerdere productcategorieën/productcodes mogelijk."
+      ]
+    },
+    {
+      "id": "JW-020",
+      "question": "Mag je een startbericht sturen als er nog geen toewijzing is?",
+      "status": "PASS",
+      "expected_sources": [
+        "OP086",
+        "OP363",
+        "IV096",
+        "Begrippenlijst iJw en iWmo"
+      ],
+      "required_facts": [
+        "Inspanningsgericht/outputgericht: geldige toewijzing vereist.",
+        "Taakgericht kan zonder Toewijzingsnummer worden gewerkt als geen toewijzingsbericht wordt gebruikt.",
+        "Taakgericht: sleutel Product + Begindatum."
+      ]
+    },
+    {
+      "id": "JW-021",
+      "question": "Mag je een stopbericht sturen zonder dat er eerder een startbericht is gestuurd?",
+      "status": "PASS",
+      "expected_sources": [
+        "OP295",
+        "OP377",
+        "OP378",
+        "OP072"
+      ],
+      "required_facts": [
+        "Een Stopbericht vereist een eerder Startbericht.",
+        "Na tijdelijke stop mag definitieve stop volgen zonder tussentijds nieuw Startbericht.",
+        "Er moet oorspronkelijk wel een Startbericht zijn geweest."
+      ]
+    },
+    {
+      "id": "JW-026",
+      "question": "Bestaat reden beëindiging 13 in JZ588?",
+      "status": "PASS",
+      "expected_sources": [
+        "JZ588"
+      ],
+      "required_facts": [
+        "Code 13 komt niet voor in JZ588.",
+        "JZ002 code 13 mag niet als reden beëindiging worden gepresenteerd."
+      ]
+    },
+    {
+      "id": "JW-033",
+      "question": "Ik heb een startbericht gestuurd met een verkeerde Begindatum. Moet ik de correctie in een apart bericht sturen?",
+      "status": "PASS",
+      "expected_sources": [
+        "IV008"
+      ],
+      "required_facts": [
+        "Begindatum is onderdeel van de logische sleutel.",
+        "Correctie en vervangende berichtklasse mogen in hetzelfde JW305-bericht.",
+        "Verwijdering: StatusAanlevering 3; vervanging: 1.",
+        "Oude en nieuwe berichtklassen hebben verschillende unieke sleutels."
+      ]
+    },
+    {
+      "id": "JW-038",
+      "question": "Een toewijzing van 1 stuk output per week loopt van maandag 1 juli tot en met donderdag 1 augustus. Hoeveel stuks mag ik in juli en augustus declareren?",
+      "status": "PASS",
+      "expected_sources": [
+        "IV076",
+        "IV077",
+        "OP367",
+        "OP279",
+        "OP368"
+      ],
+      "required_facts": [
+        "Juli: 5 stuks.",
+        "Augustus: 0 stuks.",
+        "De laatste gebroken week wordt toegerekend aan de productperiode waarin de laatste zondag valt."
+      ]
+    }
+  ]
+}
