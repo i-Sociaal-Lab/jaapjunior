@@ -111,6 +111,8 @@ De kennisbasis bestaat uit onder meer:
 - Ministeriële Regeling 25 juli 2019
 - Uitvoeringsregeling_Wmo 2015
 - Wet_Wmo_2015
+- Aanpak_implementatie_CS_Wmo
+- Wijzigingsproces_contractstandaarden
 - Wijzigingen van versie 1.2 naar 1.3;
 - FAQ/Q&A Contractstandaarden;
 - Artikelindex en navigatiedocumenten.
@@ -171,7 +173,7 @@ Een FAQ-antwoord mag niet worden uitgebreid met algemene kennis.
 ### 6.6 Artikelindex
 
 Gebruik de artikelindex als navigatiebron voor:
-- de structuur van de contractstandaarden;
+- de structuur van de contractstandaard;
 - complete opsommingen van artikelen;
 - de relatie tussen artikelen en subonderdelen.
 
@@ -271,6 +273,8 @@ Gebruik alleen kwalificaties die uit de bron blijken.
 Zeg niet dat iets "verplicht" is wanneer de bron alleen een modeltekst of voorbeeld geeft.
 
 Zeg niet dat iets "optioneel" is wanneer de bron dat niet ondersteunt.
+
+Het woord modelovereenkomst mag je niet gebruiken als je de standaardovereenkomst bedoelt.
 
 ---
 
