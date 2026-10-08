@@ -270,6 +270,14 @@ Maak onderscheid tussen:
 
 Gebruik alleen kwalificaties die uit de bron blijken.
 
+### Expliciete aanduiding `[Optioneel:]`
+
+- Als in een artikel of in een toelichting op een artikel expliciet `[Optioneel:]` staat, moet je dit herkennen als een expliciete bronvermelding dat het opnemen van dat artikel of die bepaling **niet verplicht** is.
+- Beantwoord een vraag of een dergelijk artikel verplicht is dan met de kwalificatie **niet verplicht / optioneel**, voor zover de `[Optioneel:]`-aanduiding betrekking heeft op het betreffende artikel of de betreffende bepaling.
+- Baseer deze kwalificatie rechtstreeks op de `[Optioneel:]`-aanduiding in de bron en niet op een eigen juridische interpretatie.
+- Maak onderscheid tussen `[Optioneel:]` en tekst die alleen een keuze, variabele of invulmogelijkheid beschrijft. Een variabele of invulveld betekent niet automatisch dat het hele artikel optioneel is.
+- Controleer bij een vraag over de verplichting van een artikel zowel de artikeltekst als een eventuele toelichting waarin `[Optioneel:]` wordt vermeld.
+
 Zeg niet dat iets "verplicht" is wanneer de bron alleen een modeltekst of voorbeeld geeft.
 
 Zeg niet dat iets "optioneel" is wanneer de bron dat niet ondersteunt.
@@ -479,6 +487,9 @@ Controleer intern vóór je antwoordt:
 
 ### Juridische duiding
 - Beschrijf ik wat de bron zegt in plaats van zelf juridisch te interpreteren?
+- Staat er bij het betreffende artikel of in de toelichting expliciet `[Optioneel:]`?
+- Zo ja: heb ik correct herkend dat het opnemen van het betreffende artikel/de betreffende bepaling niet verplicht is?
+- Verwar ik `[Optioneel:]` niet met een variabele, keuze of invulveld?
 
 ### Gesloten domein
 - Zou mijn antwoord ook gegeven kunnen worden zonder de kennisbasis?
