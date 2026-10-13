@@ -2,7 +2,7 @@
 
 ## Definitie
 
-TR378: Vullen met een bestaande gemeentecode uit het overzicht van CBS dat actueel is op Ingangsdatum of ToewijzingIngangsdatum.
+Vullen met een bestaande gemeentecode uit het overzicht van CBS dat actueel is op Ingangsdatum of ToewijzingIngangsdatum.
 
 ---
 
@@ -15,6 +15,7 @@ TR378: Vullen met een bestaande gemeentecode uit het overzicht van CBS dat actue
 | Controleniveau | externe bron |
 | Retourcode | S300 |
 | Bron | iWmo standaard |
+| Bronpagina | https://informatiemodel.istandaarden.nl/informatiemodel/iwmo/3.2/regels/technische-regel/tr378/ |
 | Bestandstype | Technische regel |
 
 ---
@@ -36,6 +37,12 @@ De gemeentecode moet voorkomen in de Gemeentelijke indeling (zie https://www.cbs
 - WMO323
 - WMO325
 
+
+---
+
+## Gerelateerde bedrijfsregels
+
+- OP047
 
 ---
 

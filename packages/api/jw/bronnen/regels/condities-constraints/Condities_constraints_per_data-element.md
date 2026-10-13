@@ -7471,7 +7471,7 @@ Maximale lengte 1 positie
 - statusaanlevering
 
 ## Veelgestelde vragen
-### Welke regel hoort bij StatusAanlevering_StatusAanlevering?
+### Welke regel hoort bij StatusAanlevering?
 Dit is regel RS008.
 
 ### Wat zegt regel RS008?

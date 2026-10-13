@@ -2,7 +2,7 @@
 
 ## Definitie
 
-TR346: Indien Eenheid ongelijk is aan waarde 83 (Euro’s), moet IngediendBedrag gelijk zijn aan GeleverdVolume vermenigvuldigd met ProductTarief.
+Indien Eenheid ongelijk is aan waarde 83 (Euro’s), moet IngediendBedrag gelijk zijn aan GeleverdVolume vermenigvuldigd met ProductTarief.
 
 ---
 
@@ -15,6 +15,7 @@ TR346: Indien Eenheid ongelijk is aan waarde 83 (Euro’s), moet IngediendBedrag
 | Controleniveau | externe bron |
 | Retourcode | 9346 |
 | Bron | iWmo standaard |
+| Bronpagina | https://informatiemodel.istandaarden.nl/informatiemodel/iwmo/3.2/regels/technische-regel/tr346/ |
 | Bestandstype | Technische regel |
 
 ---
@@ -29,6 +30,12 @@ Indien tarief per uur is afgesproken en de declaratie in minuten wordt gedaan, v
 
 - WMO323
 
+
+---
+
+## Gerelateerde bedrijfsregels
+
+- OP267
 
 ---
 

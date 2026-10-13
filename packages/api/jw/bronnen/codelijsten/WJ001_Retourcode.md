@@ -31,7 +31,7 @@ Melding in een retourbericht. Het betreft een code die in een retourbericht het 
 | 0200 | Geen opmerking over deze berichtklasse. | — | JW301, JW305, JW307, JW315, JW317, JW319, JW323 |
 | 0233 | Berichtklasse is niet beoordeeld. | — | JW301, JW305, JW307, JW315, JW317, JW319, JW323 |
 | 8848 | Dagtekening moet gelijk zijn aan of voor de systeemdatum liggen. | TR135 | JW301, JW305, JW307, JW315, JW317, JW319, JW323, JW325 |
-| 9056 | Identificatie moet uniek zijn. | TR056 | JW301, JW305, JW307, JW315, JW317, JW319, JW323, JW325 |
+| 9056 | Identificatie moet per berichtsoort uniek zijn voor de verzendende partij. | TR056 | JW301, JW305, JW307, JW315, JW317, JW319, JW323, JW325 |
 
 ---
 
@@ -39,8 +39,8 @@ Melding in een retourbericht. Het betreft een code die in een retourbericht het 
 
 | Code | Betekenis | TR-regel | Berichttypen |
 |---|---|---|---|
-| S300 | Gemeentecode ongeldig. | TR378 | JW301, JW305, JW307, JW315, JW317, JW319 |
-| S329 | ProductCode ongeldig. | TR381 | JW301, JW305, JW307, JW315, JW317 |
+| S300 | Gemeentecode komt niet voor in de lijst van CBS.  | TR378 | JW301, JW305, JW307, JW315, JW317, JW319 |
+| S329 | ProductCode hoort niet bij de ProductCategorie.  | TR381 | JW301, JW305, JW307, JW315, JW317 |
 
 
 ---
@@ -50,8 +50,8 @@ Melding in een retourbericht. Het betreft een code die in een retourbericht het 
 | Code | Betekenis | TR-regel | Berichttypen |
 |---|---|---|---|
 | 9019 | Het regiebericht kan niet gekoppeld worden aan een toewijzing. | TR019 | JW305, JW307 |
-| 9063 | Het bericht kan niet verwerkt worden omdat geen eerder bericht ontvangen is | TR063 | JW305, JW307 |
-| 9069 | Er is geen actueel startbericht met dezelfde sleutel. | TR069 | JW307 |
+| 9063 | Het bericht kan niet verwerkt worden omdat geen eerder bericht ontvangen is. | TR063 | JW305, JW307 |
+| 9069 | Er is geen actueel startbericht met dezelfde sleutel. | TR382 | JW307 |
 | 9071 | Het eerdere startbericht kan niet verwijderd worden omdat de zorg al beeindigd is. | TR071 | JW305 |
 | 9074 | Er is al een eerder bericht ontvangen met dezelfde sleutel. | TR074 | JW305, JW307 |
 | 9326 | De actuele levering is nog niet gestopt met een Stopbericht. | TR326 | JW305 |
@@ -65,14 +65,14 @@ Melding in een retourbericht. Het betreft een code die in een retourbericht het 
 
 | Code | Betekenis | TR-regel | Berichttypen |
 |---|---|---|---|
-| S300 | Gemeentecode ongeldig. | TR378 | JW323, JW325 |
-| S329 | ProductCode ongeldig. | TR381 | JW323 |
+| S300 | Gemeentecode komt niet voor in de lijst van CBS. | TR378 | JW323, JW325 |
+| S329 | ProductCode hoort niet bij de ProductCategorie. | TR381 | JW323 |
 | 8001 | Declaratie is volledig toegewezen. | — | JW323 |
 | 0611 | Het ingediende tarief komt niet overeen met het contractuele tarief. | TR418 | JW323 |
 | 8017 | Van deze credit prestatie is geen debet prestatie bekend. | TR323 | JW323 |
 | 8021 | Referentienummer prestatie is reeds aangeleverd. | TR314 | JW323 |
 | 8214 | DeclaratiePeriode is niet de kalendermaand die volgt op voorgaande DeclaratiePeriode terwijl iedere declaratieperiode zorg geleverd is. | TR318 | JW323 |
-| 8187 | De prestatie hoort niet bij deze cliënt. | TR304 | JW325 |
+| 8187 | De prestatie hoort niet bij deze client. | TR304 | JW325 |
 | 9307 | Begindatum prestatie ligt niet tussen de ingangsdatum en einddatum toewijzing. | TR307 | JW323 |
 | 9308 | Einddatum prestatie ligt niet tussen de ingangsdatum en einddatum toewijzing. | TR308 | JW323 |
 | 9319 | De ProductPeriode valt niet geheel binnen een DeclaratiePeriode. | TR319 | JW323 |
@@ -103,6 +103,7 @@ Melding in een retourbericht. Het betreft een code die in een retourbericht het 
 | 9349 | Het VOW bericht bevat niet alle actuele toegewezen producten van de cliënt, hetzij in OngewijzigdProduct, hetzij in TeWijzigenProduct. | TR349 | JW317 |
 | 9350 | OngewijzigdProduct is niet gerelateerd aan een actueel toegewezen product op basis van het toewijzingnummer. | TR350 | JW317 |
 | 9351 | TeWijzigenProduct is niet gerelateerd aan een actuele toewijzing op basis van ToewijzingNummer. | TR351 | JW317 |
+| 9355 | ReferentieAanbieder in het antwoordbericht komt niet voor in een eerder verzoek om toewijzing of verzoek om wijziging. | TR355 | JW319 |
 | 9357 | GewensteIngangsdatum is kleiner dan of gelijk aan de dagtekening, maar niet gelijk aan de ingangsdatum van het originele ToegewezenProduct. | TR357 | JW317 |
 | 9359 | Er is al een toewijzing gestuurd met deze ReferentieAanbieder. | TR359 | JW319 |
 | 9360 | Er is al een antwoordbericht met deze ReferentieAanbieder, terwijl antwoordbericht in VerzoekAntwoord waarde 2 (aanvraag in onderzoek) heeft. | TR360 | JW319 |
