@@ -71,7 +71,7 @@ De codes hebben geen hiërarchische of inhoudelijke betekenis.
 
 ## Codes
 
-| Gemeentecode | Gemeentenaam | Provincienaam | Jeugdzorgregio |
+| Gemeentecode | Gemeente | Provincie| Jeugdzorgregio |
 | ------------ | ------------ | ------------- | ------------------------ |
 | 1680 | Aa en Hunze | Drenthe | Drenthe |
 | 0358 | Aalsmeer | Noord-Holland | Amsterdam-Amstelland |
