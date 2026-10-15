@@ -191,7 +191,7 @@ const resetItems = ref<DropdownMenuItem[]>([
 	width: 100%;
 	padding: 10px 14px;
 	border: none;
-	font-size: 14px;
+	font-size: 18px; font-family: "Poppins", sans-serif; font-weight: 300;
 	outline: none;
 	resize: none;
 	min-height: 20px;

@@ -29,15 +29,13 @@ const translations = {
 		error: "An error occurred. Please try again.",
 	},
 	nl: {
-		emptyState: `Welkom! Ik ben __Assistent Berichtenverkeer & Zorgadministratie__, een __AI-assistent__.
+		emptyState: `Ik help met vragen over correct gebruik van het berichtenverkeer en de iStandaarden.
 
-Ik help met vragen over __correct gebruik van het berichtenverkeer__ en de __iStandaarden__.
+Mijn antwoorden kunnen onjuist of onvolledig zijn. Controleer ze altijd aan de hand van je beleidsinformatie of andere informatiebronnen.
 
-Mijn antwoorden kunnen onjuist of onvolledig zijn. __Controleer__ ze altijd aan de hand van je beleid/bronpagina's.
+Deel geen privacygegevens (bijv. namen cliënten, BSN, dossierdetails).
 
-__Geen privacygegevens delen__ (bijv. namen cliënten, BSN, dossierdetails).
-
-__Fout of twijfel?__ Neem contact op met het <a href="https://i-sociaaldomein.nl/contact/" target="_blank" rel="noopener noreferrer"><strong>Ketenbureau i-Sociaal Domein</strong></a>.`,
+Heb je tips of vragen? Neem contact op met het <a href="https://i-sociaaldomein.nl/contact/" target="_blank" rel="noopener noreferrer">Ketenbureau i-Sociaal Domein</a>.`,
 		inputPlaceholder: "Typ hier je vraag...",
 		sendButton: "Versturen",
 		sendButtonHasToPick: "Kies eerst welk bericht je voorkeur heeft",
@@ -268,7 +266,7 @@ watch(
 			const lastEl = userMessages[userMessages.length - 1];
 
 			if (lastEl && "scrollIntoView" in lastEl) {
-				lastEl?.scrollIntoView({ behavior: "smooth", block: "start" });
+				window.scrollTo({ top: lastEl.getBoundingClientRect().top + window.scrollY - 20, behavior: "smooth" });
 			}
 		});
 	},
@@ -460,9 +458,28 @@ watch(
 }
 
 .empty-state {
-	color: #888;
+	color: #1a237e;
+	font-family: "Poppins", sans-serif;
+	font-size: 18px; font-weight: 300;
 	text-align: center;
 	margin-top: 48px;
+}
+
+.empty-state .markdown-content {
+	line-height: 1.6;
+}
+
+.empty-state :deep(p) {
+	margin: 0.25em 0;
+}
+
+.empty-state :deep(strong) {
+	font-weight: normal;
+}
+
+.empty-state :deep(a) {
+	color: inherit;
+	text-decoration: underline;
 }
 
 .error-message {
@@ -502,4 +519,4 @@ watch(
 	color: var(--secondary-foreground);
 	font-style: italic;
 }
-</style>
+</style>

@@ -54,6 +54,13 @@ server {
     # Main location - SPA routing
     location / {
         try_files $uri $uri/ /index.html;
+
+        # Pagina zelf nooit uit de cache halen, zodat updates direct zichtbaar zijn
+        add_header Cache-Control "no-cache" always;
+        # Beveiligingsheaders herhalen: nginx neemt ze niet over zodra een location eigen headers heeft
+        add_header Content-Security-Policy "frame-ancestors 'self' https://i-sociaaldomein.nl https://www.i-sociaaldomein.nl" always;
+        add_header X-Content-Type-Options "nosniff" always;
+        add_header X-XSS-Protection "1; mode=block" always;
     }
 
     # Static assets with long cache
