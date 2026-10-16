@@ -1,0 +1,26 @@
+onderstaande berichtstromen zijn mogelijk
+
+## VOT
+Direct toewijzingen: JW315, JW301
+Toewijzen na onderzoek: JW315, JW319 (onderzoek), JW301
+Direct afwijzen: JW315, JW319 (afwijzen)
+Afwijzen na onderzoek : JW315, JW319 (onderzoek), JW319 (Afwijzen)
+Afwijzing nav woonplaatsbeginsel: JW315, JW319 (onderzoek), JW319 (RedenAfwijzingVerzoek 8, woonplaatsbeginsel)
+
+
+## VOW
+Direct toewijzen: JW317, JW301
+Toewijzen na onderzoek: JW317, JW319 (onderzoek), JW301
+Direct afwijzen: JW317, JW319 (afwijzen)
+Afwijzen na onderzoek : JW317, JW319 (onderzoek), JW319 (Afwijzen)
+
+## JW305
+Stop na start: JW305, JW307 (definitief)
+tijdelijke Stop na start: JW305, JW307 (tijdelijk),
+Definitieve Stop na start: JW305, JW307 (Definitief)
+Definitieve Stop na tijdelijk stop : JW305, JW307 (tijdelijk), JW307 (definitief)
+Start na stop: JW305, JW305 (tijdelijk of definitief), JW305
+Verwijderen Start : JW305,JW305 (statusaanlevering 3)
+Correctie start : JW305, JW305 (statusaanlevering 3), jw305 (statusaanlevering 1)
+Verwijderen stop : JW307, JW307 (statusaanlevering 3)
+Correctie stop : JW307, JW307 (statusaanlevering 3), JW307 (statusaanlevering 1)

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wmo306:Bericht xmlns:iwmo="http://www.istandaarden.nl/iwmo/3_2/basisschema/schema" xmlns:wmo306="http://www.istandaarden.nl/iwmo/3_2/wmo306/schema" >
+	<wmo306:Header>
+		<wmo306:BerichtCode>419</wmo306:BerichtCode>
+		<wmo306:BerichtVersie>3</wmo306:BerichtVersie>
+		<wmo306:BerichtSubversie>2</wmo306:BerichtSubversie>
+		<wmo306:Afzender>65656055</wmo306:Afzender>
+		<wmo306:Ontvanger>0363</wmo306:Ontvanger>
+		<wmo306:BerichtIdentificatie>
+			<iwmo:Identificatie>123456789013</iwmo:Identificatie>
+			<iwmo:Dagtekening>2023-07-25</iwmo:Dagtekening>
+		</wmo306:BerichtIdentificatie>
+		<wmo306:XsdVersie>
+			<iwmo:BasisschemaXsdVersie>1.0.0</iwmo:BasisschemaXsdVersie>
+			<iwmo:BerichtXsdVersie>1.0.0</iwmo:BerichtXsdVersie>
+		</wmo306:XsdVersie>
+		<wmo306:IdentificatieRetour>7ae60051-e0f</wmo306:IdentificatieRetour>
+		<wmo306:DagtekeningRetour>2023-07-26</wmo306:DagtekeningRetour>
+		<wmo306:XsltVersie>1.0.0</wmo306:XsltVersie>
+		<wmo306:XsdVersieRetour>
+			<iwmo:BasisschemaXsdVersie>1.0.0</iwmo:BasisschemaXsdVersie>
+			<iwmo:BerichtXsdVersie>1.0.0</iwmo:BerichtXsdVersie>
+		</wmo306:XsdVersieRetour>
+		<wmo306:RetourCodes>
+			<wmo306:RetourCode>8848</wmo306:RetourCode>
+		</wmo306:RetourCodes>
+	</wmo306:Header>
+</wmo306:Bericht>

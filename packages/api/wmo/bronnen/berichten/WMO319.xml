@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wmo319:Bericht xmlns:iwmo="http://www.istandaarden.nl/iwmo/3_2/basisschema/schema" xmlns:wmo319="http://www.istandaarden.nl/iwmo/3_2/wmo319/schema">
+	<wmo319:Header>
+		<wmo319:BerichtCode>482</wmo319:BerichtCode>
+		<wmo319:BerichtVersie>3</wmo319:BerichtVersie>
+		<wmo319:BerichtSubversie>2</wmo319:BerichtSubversie>
+		<wmo319:Afzender>0384</wmo319:Afzender>
+		<wmo319:Ontvanger>65656055</wmo319:Ontvanger>
+		<wmo319:BerichtIdentificatie>
+			<iwmo:Identificatie>876543219</iwmo:Identificatie>
+			<iwmo:Dagtekening>2023-04-02</iwmo:Dagtekening>
+		</wmo319:BerichtIdentificatie>
+		<wmo319:XsdVersie>
+			<iwmo:BasisschemaXsdVersie>1.0.0</iwmo:BasisschemaXsdVersie>
+			<iwmo:BerichtXsdVersie>1.0.0</iwmo:BerichtXsdVersie>
+		</wmo319:XsdVersie>
+	</wmo319:Header>
+	<wmo319:Antwoord>
+		<wmo319:ReferentieAanbieder>9003</wmo319:ReferentieAanbieder>
+		<wmo319:VerzoekAntwoord>1</wmo319:VerzoekAntwoord>
+		<wmo319:RedenAfwijzingVerzoek>7</wmo319:RedenAfwijzingVerzoek>
+	</wmo319:Antwoord>
+</wmo319:Bericht>

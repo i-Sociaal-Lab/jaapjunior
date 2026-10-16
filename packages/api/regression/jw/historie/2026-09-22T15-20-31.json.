@@ -1,0 +1,133 @@
+{
+  "name": "JaapJunior JW regression results",
+  "version": "1.0",
+  "standard": "iJw 3.2",
+  "summary": {
+    "tested": 23,
+    "pass": 21,
+    "fail": 1,
+    "review_fail": 1
+  },
+  "results": [
+    {
+      "id": "JW-001",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "id": "JW-002",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "id": "JW-003",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "id": "JW-004",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "id": "JW-005",
+      "status": "FAIL",
+      "notes": ""
+    },
+    {
+      "id": "JW-006",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "id": "JW-007",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "id": "JW-008",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "id": "JW-009",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "id": "JW-010",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "id": "JW-011",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "id": "JW-012",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "id": "JW-013",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "id": "JW-014",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "id": "JW-015",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "id": "JW-016",
+      "status": "REVIEW_FAIL",
+      "notes": "Het geleverde antwoord zei ten onrechte dat oude en nieuwe StartProduct dezelfde logische sleutel hebben."
+    },
+    {
+      "id": "JW-017",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "id": "JW-018",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "id": "JW-019",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "id": "JW-020",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "id": "JW-021",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "id": "JW-026",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "id": "JW-033",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "id": "JW-038",
+      "status": "PASS",
+      "notes": ""
+    }
+  ]
+}

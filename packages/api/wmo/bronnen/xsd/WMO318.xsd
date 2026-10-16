@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:iwmo="http://www.istandaarden.nl/iwmo/3_2/basisschema/schema" xmlns:wmo318="http://www.istandaarden.nl/iwmo/3_2/wmo318/schema" targetNamespace="http://www.istandaarden.nl/iwmo/3_2/wmo318/schema" elementFormDefault="qualified">
+	<xs:import namespace="http://www.istandaarden.nl/iwmo/3_2/basisschema/schema" schemaLocation="basisschema.xsd"></xs:import>
+	<xs:annotation>
+		<xs:appinfo>
+			<iwmo:standaard>iwmo</iwmo:standaard>
+			<iwmo:bericht>wmo318</iwmo:bericht>
+			<iwmo:release>3.2</iwmo:release>
+			<iwmo:BerichtXsdVersie>1.0.0</iwmo:BerichtXsdVersie>
+			<iwmo:BerichtXsdMinVersie>1.0.0</iwmo:BerichtXsdMinVersie>
+			<iwmo:BerichtXsdMaxVersie>1.0.0</iwmo:BerichtXsdMaxVersie>
+			<iwmo:BasisschemaXsdVersie>1.0.0</iwmo:BasisschemaXsdVersie>
+			<iwmo:BasisschemaXsdMinVersie>1.0.0</iwmo:BasisschemaXsdMinVersie>
+			<iwmo:BasisschemaXsdMaxVersie>1.0.0</iwmo:BasisschemaXsdMaxVersie>
+		</xs:appinfo>
+	</xs:annotation>
+	<xs:element name="Bericht" type="wmo318:Root"></xs:element>
+	<xs:complexType name="Root">
+		<xs:annotation>
+			<xs:documentation>Bericht voor Verzoek om wijziging Wmo-hulp.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="Header" type="wmo318:Header"></xs:element>
+			<xs:element name="Client" type="wmo318:Client" minOccurs="0"></xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="Header">
+		<xs:sequence>
+			<xs:element name="BerichtCode">
+				<xs:annotation>
+					<xs:documentation>Code ter identificatie van een soort bericht.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="iwmo:LDT_BerichtCode">
+						<xs:pattern value="481"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="BerichtVersie">
+				<xs:annotation>
+					<xs:documentation>Volgnummer van de formele uitgifte van een major release van een iStandaard.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="iwmo:LDT_BerichtVersie">
+						<xs:pattern value="3"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="BerichtSubversie">
+				<xs:annotation>
+					<xs:documentation>Volgnummer van de formele uitgifte van een minor release van een iStandaard.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="iwmo:LDT_BerichtSubversie">
+						<xs:pattern value="2"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Afzender" type="iwmo:LDT_AgbCode">
+				<xs:annotation>
+					<xs:documentation>Identificerende code van een aanbieder van zorg of ondersteuning.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Ontvanger" type="iwmo:LDT_Gemeente">
+				<xs:annotation>
+					<xs:documentation>Identificatie van een gemeente die betrokken is bij de uitvoering van zorg of ondersteuning.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="BerichtIdentificatie" type="iwmo:CDT_BerichtIdentificatie">
+				<xs:annotation>
+					<xs:documentation>Naam of nummer en dagtekening ter identificatie van een totale aanlevering.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="XsdVersie" type="iwmo:CDT_XsdVersie">
+				<xs:annotation>
+					<xs:documentation>Volgnummer van de formele uitgifte van een versie van de XSD's die zijn ingezet voor het opstellen van het heenbericht.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="IdentificatieRetour" type="iwmo:LDT_IdentificatieBericht">
+				<xs:annotation>
+					<xs:documentation>Naam of nummer ter identificatie van een retourbericht.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="DagtekeningRetour" type="iwmo:LDT_Datum">
+				<xs:annotation>
+					<xs:documentation>Dagtekening van het retourbericht.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="XsltVersie" type="iwmo:LDT_Versie" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Volgnummer van de formele uitgifte van een versie van de XSLT's die zijn ingezet voor de controle van het heenbericht.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="XsdVersieRetour" type="iwmo:CDT_XsdVersie">
+				<xs:annotation>
+					<xs:documentation>Volgnummer van de formele uitgifte van een versie van de XSD's die zijn ingezet voor het opstellen van het retourbericht.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="RetourCodes" type="wmo318:RetourCodes" minOccurs="0"></xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="RetourCodes">
+		<xs:sequence>
+			<xs:element name="RetourCode" type="iwmo:LDT_RetourCode" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Gecodeerde aanduiding in een retourbericht van het resultaat van de beoordeling van een (deel van het) ontvangen bericht.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="Client">
+		<xs:sequence>
+			<xs:element name="Bsn" type="iwmo:LDT_BurgerServicenummer">
+				<xs:annotation>
+					<xs:documentation>Een door de overheid toegekend identificerend nummer in het kader van het vereenvoudigen van het contact tussen overheid en burgers en het verminderen van de administratieve lasten.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Verzoek" type="wmo318:Verzoek"></xs:element>
+			<xs:element name="RetourCodes" type="wmo318:RetourCodes"></xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="Verzoek">
+		<xs:sequence>
+			<xs:element name="ReferentieAanbieder" type="iwmo:LDT_Referentie">
+				<xs:annotation>
+					<xs:documentation>Naam of nummer die als referentie kan worden meegegeven.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="RedenVerzoek" type="iwmo:LDT_RedenVerzoek">
+				<xs:annotation>
+					<xs:documentation>Reden waarom een verzoek wordt ingediend.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="OngewijzigdeProducten" type="wmo318:OngewijzigdeProducten" minOccurs="0"></xs:element>
+			<xs:element name="TeWijzigenProducten" type="wmo318:TeWijzigenProducten" minOccurs="0"></xs:element>
+			<xs:element name="NieuweProducten" type="wmo318:NieuweProducten" minOccurs="0"></xs:element>
+			<xs:element name="RetourCodes" type="wmo318:RetourCodes"></xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="OngewijzigdeProducten">
+		<xs:sequence>
+			<xs:element name="OngewijzigdProduct" type="wmo318:OngewijzigdProduct"  maxOccurs="unbounded"></xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="OngewijzigdProduct">
+		<xs:annotation>
+			<xs:documentation>Gegevens over het product dat ongewijzigd voortgezet gaat worden.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="ToewijzingNummer" type="iwmo:LDT_Nummer">
+				<xs:annotation>
+					<xs:documentation>Identificerend nummer van de opdracht om een zorg - of ondersteuningsproduct te leveren, zoals vastgesteld door de gemeente.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="RetourCodes" type="wmo318:RetourCodes"></xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="TeWijzigenProducten">
+		<xs:sequence>
+			<xs:element name="TeWijzigenProduct" type="wmo318:TeWijzigenProduct"  maxOccurs="unbounded"></xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="TeWijzigenProduct">
+		<xs:annotation>
+			<xs:documentation>Gegevens over het product waarvoor een wijziging wordt aangevraagd.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="ToewijzingNummer" type="iwmo:LDT_Nummer">
+				<xs:annotation>
+					<xs:documentation>Identificerend nummer van de opdracht om een zorg - of ondersteuningsproduct te leveren, zoals vastgesteld door de gemeente.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="GewensteIngangsdatum" type="iwmo:LDT_Datum">
+				<xs:annotation>
+					<xs:documentation>De gewenste ingangsdatum van het te wijzigen product of budget.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Einddatum" type="iwmo:LDT_Datum" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>De gewenste Einddatum van het toe te wijzen Product of Budget.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Omvang" type="iwmo:CDT_Omvang" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Aanduiding van de omvang van de te leveren of geleverde ondersteuning, uitgedrukt in Volume, Eenheid en Frequentie.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Budget" type="iwmo:LDT_Budget" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Aanduiding van het toe te wijzen budget</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="RetourCodes" type="wmo318:RetourCodes"></xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="NieuweProducten">
+		<xs:sequence>
+			<xs:element name="NieuwProduct" type="wmo318:NieuwProduct"  maxOccurs="unbounded"></xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="NieuwProduct">
+		<xs:annotation>
+			<xs:documentation>Gegevens over het product waarvoor een toewijzing wordt aangevraagd.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="Product" type="iwmo:CDT_Product" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Gecodeerde omschrijving van een product, dienst of resultaat ten behoeve van het leveren van ondersteuning aan een client.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="GewensteIngangsdatum" type="iwmo:LDT_Datum">
+				<xs:annotation>
+					<xs:documentation>De gewenste ingangsdatum van het nieuw toe te wijzen product of budget.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Einddatum" type="iwmo:LDT_Datum" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>De gewenste Einddatum van het toe te wijzen Product of Budget.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Omvang" type="iwmo:CDT_Omvang" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Aanduiding van de omvang van de te leveren of geleverde ondersteuning, uitgedrukt in Volume, Eenheid en Frequentie.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Budget" type="iwmo:LDT_Budget" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Aanduiding van het toe te wijzen budget</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="RetourCodes" type="wmo318:RetourCodes"></xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>
