@@ -1,0 +1,52 @@
+# TR135 - Technische regel
+
+## Definitie
+
+Vullen met een bestaande datum die niet in de toekomst ligt.
+
+---
+
+## Metadata
+
+| Eigenschap | Waarde |
+|---|---|
+| Regelcode | TR135 |
+| Type | Technische regel |
+| Controleniveau | externe bron |
+| Retourcode | 8848 |
+| Bron | iWmo standaard |
+| Bronpagina | https://informatiemodel.istandaarden.nl/informatiemodel/iwmo/3.2/regels/technische-regel/tr135/ |
+| Bestandstype | Technische regel |
+
+---
+
+## Toelichting
+
+De iWmo 3.2-regeldocumentatie bevat voor deze regel geen aanvullende toelichting.
+
+---
+
+## Gebruik in berichten
+
+- WMO301
+- WMO305
+- WMO307
+- WMO315
+- WMO317
+- WMO319
+- WMO323
+- WMO325
+
+
+---
+
+## Gerelateerde bedrijfsregels
+
+- OP047
+
+---
+
+## Structuur
+
+- Map: `externe-bron`
+- Bestand: `TR135`

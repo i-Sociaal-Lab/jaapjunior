@@ -1,0 +1,185 @@
+## JW323.xsd
+
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ijw="http://www.istandaarden.nl/ijw/3_2/basisschema/schema" xmlns:jw323="http://www.istandaarden.nl/ijw/3_2/jw323/schema" targetNamespace="http://www.istandaarden.nl/ijw/3_2/jw323/schema" elementFormDefault="qualified">
+	<xs:import namespace="http://www.istandaarden.nl/ijw/3_2/basisschema/schema" schemaLocation="basisschema.xsd"></xs:import>
+	<xs:annotation>
+		<xs:appinfo>
+			<ijw:standaard>ijw</ijw:standaard>
+			<ijw:bericht>jw323</ijw:bericht>
+			<ijw:release>3.2</ijw:release>
+			<ijw:BerichtXsdVersie>0.1.0</ijw:BerichtXsdVersie>
+			<ijw:BerichtXsdMinVersie>0.1.0</ijw:BerichtXsdMinVersie>
+			<ijw:BerichtXsdMaxVersie>0.1.0</ijw:BerichtXsdMaxVersie>
+			<ijw:BasisschemaXsdVersie>0.1.0</ijw:BasisschemaXsdVersie>
+			<ijw:BasisschemaXsdMinVersie>0.1.0</ijw:BasisschemaXsdMinVersie>
+			<ijw:BasisschemaXsdMaxVersie>0.1.0</ijw:BasisschemaXsdMaxVersie>
+		</xs:appinfo>
+	</xs:annotation>
+	<xs:element name="Bericht" type="jw323:Root"></xs:element>
+	<xs:complexType name="Root">
+		<xs:annotation>
+			<xs:documentation>Bericht voor declaratie Jeugdhulp.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="Header" type="jw323:Header"></xs:element>
+			<xs:element name="Declaratie" type="jw323:Declaratie"></xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="Header">
+		<xs:sequence>
+			<xs:element name="BerichtCode">
+				<xs:annotation>
+					<xs:documentation>Code ter identificatie van een soort bericht.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="ijw:LDT_BerichtCode">
+						<xs:pattern value="490"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="BerichtVersie">
+				<xs:annotation>
+					<xs:documentation>Volgnummer van de formele uitgifte van een major release van een iStandaard.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="ijw:LDT_BerichtVersie">
+						<xs:pattern value="3"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="BerichtSubversie">
+				<xs:annotation>
+					<xs:documentation>Volgnummer van de formele uitgifte van een minor release van een iStandaard.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="ijw:LDT_BerichtSubversie">
+						<xs:pattern value="2"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Afzender" type="ijw:LDT_AgbCode">
+				<xs:annotation>
+					<xs:documentation>Identificerende code van een aanbieder van zorg of ondersteuning.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Ontvanger" type="ijw:LDT_Gemeente">
+				<xs:annotation>
+					<xs:documentation>Identificatie van een gemeente die betrokken is bij de uitvoering van zorg of ondersteuning.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="BerichtIdentificatie" type="ijw:CDT_BerichtIdentificatie">
+				<xs:annotation>
+					<xs:documentation>Naam of nummer en dagtekening ter identificatie van een totale aanlevering.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="XsdVersie" type="ijw:CDT_XsdVersie">
+				<xs:annotation>
+					<xs:documentation>Volgnummer van de formele uitgifte van een versie van de XSD's die zijn ingezet voor het opstellen van het heenbericht.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="Declaratie">
+		<xs:annotation>
+			<xs:documentation>Gegevens over de ingediende declaratie.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="DeclaratieNummer">
+				<xs:annotation>
+					<xs:documentation>Unieke identificatie van een declaratie</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="ijw:LDT_IdentificatieDeclaratie">
+						<xs:pattern value="([a-zA-Z0-9])+"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="DeclaratiePeriode" type="ijw:CDT_GeslotenPeriode">
+				<xs:annotation>
+					<xs:documentation>Eerste en laatste dag van een administratieve periode waarop de gegevensuitwisseling betrekking heeft.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="DeclaratieDagtekening" type="ijw:LDT_Datum">
+				<xs:annotation>
+					<xs:documentation>Datum van ondertekening van een declaratie door de declarant.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="TotaalIngediendBedrag" type="ijw:CDT_TotaalBedragMetDC">
+				<xs:annotation>
+					<xs:documentation>Het bedrag dat in zijn totaliteit gedeclareerd is.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Clienten" type="jw323:Clienten"></xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="Clienten">
+		<xs:sequence>
+			<xs:element name="Client" type="jw323:Client"  maxOccurs="unbounded"></xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="Client">
+		<xs:sequence>
+			<xs:element name="Bsn" type="ijw:LDT_BurgerServicenummer">
+				<xs:annotation>
+					<xs:documentation>Een door de overheid toegekend identificerend nummer in het kader van het vereenvoudigen van het contact tussen overheid en burgers en het verminderen van de administratieve lasten.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Prestaties" type="jw323:Prestaties"></xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="Prestaties">
+		<xs:sequence>
+			<xs:element name="Prestatie" type="jw323:Prestatie"  maxOccurs="unbounded"></xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="Prestatie">
+		<xs:sequence>
+			<xs:element name="ProductReferentie" type="ijw:CDT_Referentie">
+				<xs:annotation>
+					<xs:documentation>Identificerende referentie van de declaratie van een zorg - of ondersteuningsprestatie.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ToewijzingNummer" type="ijw:LDT_Nummer">
+				<xs:annotation>
+					<xs:documentation>Identificerend nummer van de opdracht om een zorg - of ondersteuningsproduct te leveren, zoals vastgesteld door de gemeente.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ProductCategorie" type="ijw:LDT_ProductCategorie">
+				<xs:annotation>
+					<xs:documentation>Gecodeerde aanduiding van hoofdcategorieen van producten in het kader van de Jeugdwet (Jw)</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ProductCode" type="ijw:LDT_ProductCode">
+				<xs:annotation>
+					<xs:documentation>Gecodeerde aanduiding van producten in het kader van de Jeugdwet (Jw)</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ProductPeriode" type="ijw:CDT_GeslotenPeriode">
+				<xs:annotation>
+					<xs:documentation>Periode binnen de declaratieperiode waarop het product feitelijk is of wordt uitgevoerd.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="GeleverdVolume" type="ijw:LDT_Volume">
+				<xs:annotation>
+					<xs:documentation>Hoeveelheid verricht product in een prestatieperiode.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Eenheid" type="ijw:LDT_Eenheid">
+				<xs:annotation>
+					<xs:documentation>De eenheid waarin de zorg/behandeling wordt uitgedrukt.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ProductTarief" type="ijw:LDT_Bedrag" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Tarief van een individueel product.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="IngediendBedrag" type="ijw:CDT_BedragMetDC">
+				<xs:annotation>
+					<xs:documentation>Het bedrag dat gedeclareerd wordt.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

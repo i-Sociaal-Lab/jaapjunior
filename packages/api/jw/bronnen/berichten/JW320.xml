@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jw320:Bericht xmlns:ijw="http://www.istandaarden.nl/ijw/3_2/basisschema/schema" xmlns:jw320="http://www.istandaarden.nl/ijw/3_2/jw320/schema" >
+	<jw320:Header>
+		<jw320:BerichtCode>489</jw320:BerichtCode>
+		<jw320:BerichtVersie>3</jw320:BerichtVersie>
+		<jw320:BerichtSubversie>2</jw320:BerichtSubversie>
+		<jw320:Afzender>0384</jw320:Afzender>
+		<jw320:Ontvanger>65656055</jw320:Ontvanger>
+		<jw320:BerichtIdentificatie>
+			<ijw:Identificatie>876543219</ijw:Identificatie>
+			<ijw:Dagtekening>2023-04-04</ijw:Dagtekening>
+		</jw320:BerichtIdentificatie>
+		<jw320:XsdVersie>
+			<ijw:BasisschemaXsdVersie>1.0.0</ijw:BasisschemaXsdVersie>
+			<ijw:BerichtXsdVersie>1.0.0</ijw:BerichtXsdVersie>
+		</jw320:XsdVersie>
+		<jw320:IdentificatieRetour>RT321</jw320:IdentificatieRetour>
+		<jw320:DagtekeningRetour>2023-04-04</jw320:DagtekeningRetour>
+		<jw320:XsltVersie>1.1.1</jw320:XsltVersie>
+		<jw320:XsdVersieRetour>
+			<ijw:BasisschemaXsdVersie>1.0.0</ijw:BasisschemaXsdVersie>
+			<ijw:BerichtXsdVersie>1.0.0</ijw:BerichtXsdVersie>
+		</jw320:XsdVersieRetour>
+		<jw320:RetourCodes>
+			<jw320:RetourCode>0200</jw320:RetourCode>
+		</jw320:RetourCodes>
+	</jw320:Header>
+	<jw320:Antwoord>
+		<jw320:ReferentieAanbieder>9003</jw320:ReferentieAanbieder>
+		<jw320:VerzoekAntwoord>2</jw320:VerzoekAntwoord>
+		<jw320:RetourCodes>
+			<jw320:RetourCode>9360</jw320:RetourCode>
+		</jw320:RetourCodes>
+	</jw320:Antwoord>
+</jw320:Bericht>
