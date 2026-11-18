@@ -5,6 +5,38 @@
 
 @custom-variant dark (&:is(.dark *));
 
+/* Altijd het lichte thema tonen, ongeacht de instellingen van browser of telefoon. */
+html,
+body,
+#app {
+	color-scheme: only light;
+	background-color: #ffffff;
+	color: oklch(0.129 0.042 264.695);
+}
+
+@layer base {
+	textarea,
+	input,
+	select,
+	button {
+		color-scheme: only light;
+	}
+
+	textarea,
+	input {
+		background-color: #ffffff;
+		color: oklch(0.129 0.042 264.695);
+		-webkit-text-fill-color: currentColor;
+	}
+
+	textarea::placeholder,
+	input::placeholder {
+		color: oklch(0.554 0.046 257.417);
+		-webkit-text-fill-color: currentColor;
+		opacity: 1;
+	}
+}
+
 @theme inline {
 	--color-background: var(--background);
 	--color-foreground: var(--foreground);

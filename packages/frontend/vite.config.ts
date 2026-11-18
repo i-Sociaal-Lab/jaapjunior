@@ -13,7 +13,7 @@ export default defineConfig({
 			"/api": "http://localhost:3000",
 		},
 	},
-	plugins: [vue(), tailwindcss(), ui(), vueDevTools()],
+	plugins: [vue(), tailwindcss(), ui({ colorMode: false }), vueDevTools()],
 	resolve: {
 		alias: {
 			"@": fileURLToPath(new URL("./src", import.meta.url)),
